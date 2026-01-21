@@ -1,0 +1,13 @@
+---
+MainSourceFile:  /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls/.autopilot/db/top.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_11_1:  '
+    FileOffset:      11
+    FilePath:        top.cpp
+    Replacements:    
+      - FilePath:        /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls/.autopilot/db/top.pp.0.cpp
+        Offset:          26580
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_11_1: '
+...

@@ -53,7 +53,7 @@ First, compile and run the C version of the program.
 
 ```
 make
-./result.out
+./result
 ```
 
 You should see output indicating that the correctness test has passed.
@@ -69,6 +69,7 @@ If this step fails:
 Once C simulation passes, run Vitis HLS using the provided TCL script.
 
 ```
+source /tools/software/xilinx/setup_env.sh
 vitis-run --tcl script.tcl
 ```
 

@@ -1,0 +1,204 @@
+<ENTRY>
+{
+ "thisFile": "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/project_1.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Jan 20 23:23:52 2026",
+ "timestampMillis": "1768969432034",
+ "buildStep": {
+  "cmdId": "897ce5bb-6422-43eb-ad78-2ff76346f389",
+  "name": "vitis-run",
+  "logFile": "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/logs/hls_compile.log",
+  "commandLine": "vitis-run --mode hls --tcl /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/script.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 20 23:23:52 2026",
+ "timestampMillis": "1768969432035",
+ "status": {
+  "cmdId": "897ce5bb-6422-43eb-ad78-2ff76346f389",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Jan 20 23:23:52 2026",
+ "timestampMillis": "1768969432035",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "top_kernel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/top.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jan 20 23:23:52 2026",
+ "timestampMillis": "1768969432036",
+ "buildStep": {
+  "cmdId": "0e76206b-fca6-4595-8565-c20ab88dde54",
+  "name": "csynth_design",
+  "logFile": "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 20 23:23:52 2026",
+ "timestampMillis": "1768969432036",
+ "status": {
+  "cmdId": "0e76206b-fca6-4595-8565-c20ab88dde54",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 20 23:23:52 2026",
+ "timestampMillis": "1768969432037",
+ "report": {
+  "path": "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 20 23:23:52 2026",
+ "timestampMillis": "1768969432037",
+ "report": {
+  "path": "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 20 23:23:52 2026",
+ "timestampMillis": "1768969432038",
+ "report": {
+  "path": "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 20 23:24:06 2026",
+ "timestampMillis": "1768969446173",
+ "report": {
+  "path": "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 20 23:24:06 2026",
+ "timestampMillis": "1768969446174",
+ "report": {
+  "path": "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 20 23:24:06 2026",
+ "timestampMillis": "1768969446174",
+ "report": {
+  "path": "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 20 23:24:06 2026",
+ "timestampMillis": "1768969446175",
+ "status": {
+  "cmdId": "0e76206b-fca6-4595-8565-c20ab88dde54",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 20 23:24:06 2026",
+ "timestampMillis": "1768969446246",
+ "status": {
+  "cmdId": "897ce5bb-6422-43eb-ad78-2ff76346f389",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
