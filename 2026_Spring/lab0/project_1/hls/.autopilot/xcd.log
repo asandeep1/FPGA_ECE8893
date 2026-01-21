@@ -68,3 +68,14 @@ Tue Jan 20 23:29:00 2026: Dispatch Server: Accepted socket connection from clien
 Tue Jan 20 23:29:00 2026: Starting Socket connection
 Tue Jan 20 23:31:42 2026: Dispatch Server: Accepted socket connection from client
 Tue Jan 20 23:31:42 2026: Starting Socket connection
+Tue Jan 20 23:44:16 2026: STOP_SERVER received, server token: ebaec1b8-9642-4ead-be83-ade8dd3ebb31, passed token: ebaec1b8-9642-4ead-be83-ade8dd3ebb31
+Tue Jan 20 23:44:16 2026: Socket received request to stop server.
+Tue Jan 20 23:44:16 2026: Dispatch Server: do_await_stop
+Tue Jan 20 23:44:16 2026: Dispatch Server: stopping mainFifo_
+Tue Jan 20 23:44:16 2026: XCD main fifo: Stopping
+Tue Jan 20 23:44:16 2026: XCD main fifo: do_read error code: Operation canceled
+Tue Jan 20 23:44:16 2026: XCD main fifo: bytes_transferred: 0
+Tue Jan 20 23:44:16 2026: SERVER: destructor for server bound to port 36193
+Tue Jan 20 23:44:16 2026: XCD main fifo: Good unlink of /tmp/xcdmainebaec1b8-9642-4ead-be83-ade8dd3ebb31
+Tue Jan 20 23:44:16 2026: Server exiting with status 0.
+Tue Jan 20 23:44:16 2026: Closing log file.

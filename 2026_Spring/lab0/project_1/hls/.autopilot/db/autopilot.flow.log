@@ -709,3 +709,19 @@ Execute       source /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/
 Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
 Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
 INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls/impl/verilog/impl.sh
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report topinfo_dict='RtlTopPrefix {} RtlSubPrefix top_kernel_ TopModuleNoPrefix top_kernel TopModuleWithPrefix top_kernel' export_design_flow='impl' impl_dir='/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls/impl' lang='verilog' out_dir=''
+INFO-FLOW: DBG:PUTS:     auto_impl_report: impl processing xml
+Execute       ap_part_info -quiet -data family -name xczu3eg-sbva484-1-e 
+INFO-FLOW: DBG:PUTS:     writing export xml file: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls/impl/report/verilog/export_impl.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode0x7f59194e1968' export_design_flow='impl' export_rpt='/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls/impl/report/verilog/export_impl.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_impl.rpt
+INFO-FLOW: DBG:PUTS:     auto_impl_report: syn processing xml
+Execute       ap_part_info -quiet -data family -name xczu3eg-sbva484-1-e 
+INFO-FLOW: DBG:PUTS:     writing export xml file: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls/impl/report/verilog/export_syn.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode0x7f5919469b18' export_design_flow='syn' export_rpt='/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls/impl/report/verilog/export_syn.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_syn.rpt
+Execute       send_msg_by_id INFO @200-802@%s project_1/hls/impl/export.zip 
+INFO: [HLS 200-802] Generated output file project_1/hls/impl/export.zip
+Command     export_design done; 1148.12 sec.
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:19:08; Allocated memory: 5.363 MB.
+Execute     cleanup_all 

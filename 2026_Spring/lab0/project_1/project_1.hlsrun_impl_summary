@@ -180,3 +180,53 @@
  }
 }
 </ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 20 23:44:15 2026",
+ "timestampMillis": "1768970655169",
+ "report": {
+  "path": "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 20 23:44:15 2026",
+ "timestampMillis": "1768970655174",
+ "report": {
+  "path": "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab0/project_1/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 20 23:44:15 2026",
+ "timestampMillis": "1768970655177",
+ "status": {
+  "cmdId": "c927e91f-d14b-4b3e-bc44-dd4fed3cc4e1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 20 23:44:15 2026",
+ "timestampMillis": "1768970655239",
+ "status": {
+  "cmdId": "25529e53-e6bf-4adb-8cdd-a69cd7b83df7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
