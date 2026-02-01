@@ -1,0 +1,4 @@
+  **** HLS Build v2025.1.1 6214317
+ERROR: HLS Tcl script does not exist: /nethome/asandeep6/FPGA_ECE8893/script.tcl
+INFO: [HLS 200-112] Total CPU user time: 1.23 seconds. Total CPU system time: 0.77 seconds. Total elapsed time: 3.18 seconds; peak allocated memory: 139.602 MB.
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

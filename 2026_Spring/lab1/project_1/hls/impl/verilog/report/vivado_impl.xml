@@ -1,0 +1,189 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2025.1.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>6.999</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>6.999</CP_FINAL>
+  <CP_ROUTE>6.999</CP_ROUTE>
+  <CP_SYNTH>6.637</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>3.001</SLACK_FINAL>
+  <SLACK_ROUTE>3.001</SLACK_ROUTE>
+  <SLACK_SYNTH>3.363</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>3.001</WNS_FINAL>
+  <WNS_ROUTE>3.001</WNS_ROUTE>
+  <WNS_SYNTH>3.363</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>22</BRAM>
+    <CLB>115</CLB>
+    <DSP>1</DSP>
+    <FF>503</FF>
+    <LATCH>0</LATCH>
+    <LUT>530</LUT>
+    <SRL>4</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>432</BRAM>
+    <CLB>8820</CLB>
+    <DSP>360</DSP>
+    <FF>141120</FF>
+    <LUT>70560</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="top_kernel" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="3">mul_24s_17s_41_1_1_U2 sdiv_38ns_24s_38_42_seq_1_U1 tmp_U</SubModules>
+    <Resources BRAM="22" DSP="1" FF="503" LUT="530" LogicLUT="526" RAMB36="11" SRL="4"/>
+    <LocalResources FF="289" LUT="144" LogicLUT="142" SRL="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_24s_17s_41_1_1_U2" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_mul_24s_17s_41_1_1">
+    <Resources DSP="1" LUT="59" LogicLUT="59"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sdiv_38ns_24s_38_42_seq_1_U1" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_sdiv_38ns_24s_38_42_seq_1">
+    <SubModules count="1">top_kernel_sdiv_38ns_24s_38_42_seq_1_divseq_u</SubModules>
+    <Resources FF="214" LUT="229" LogicLUT="227" SRL="2"/>
+    <LocalResources FF="87" LUT="101" LogicLUT="101"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sdiv_38ns_24s_38_42_seq_1_U1/top_kernel_sdiv_38ns_24s_38_42_seq_1_divseq_u" DEPTH="2" FILE_NAME="top_kernel_sdiv_38ns_24s_38_42_seq_1.v" ORIG_REF_NAME="top_kernel_sdiv_38ns_24s_38_42_seq_1_divseq">
+    <Resources FF="127" LUT="128" LogicLUT="126" SRL="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/tmp_U" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_tmp_RAM_AUTO_1R1W">
+    <Resources BRAM="22" LUT="99" LogicLUT="99" RAMB36="11"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="6.835" DATAPATH_LOGIC_DELAY="5.148" DATAPATH_NET_DELAY="1.687" ENDPOINT_PIN="bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[0]/S" LOGIC_LEVELS="18" MAX_FANOUT="24" SLACK="3.001" STARTPOINT_PIN="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[23]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel.v" LINE_NUMBER="494"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.835" DATAPATH_LOGIC_DELAY="5.148" DATAPATH_NET_DELAY="1.687" ENDPOINT_PIN="bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[1]/S" LOGIC_LEVELS="18" MAX_FANOUT="24" SLACK="3.001" STARTPOINT_PIN="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[23]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel.v" LINE_NUMBER="494"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.835" DATAPATH_LOGIC_DELAY="5.148" DATAPATH_NET_DELAY="1.687" ENDPOINT_PIN="bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[6]/S" LOGIC_LEVELS="18" MAX_FANOUT="24" SLACK="3.001" STARTPOINT_PIN="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[23]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[6]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel.v" LINE_NUMBER="494"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.835" DATAPATH_LOGIC_DELAY="5.148" DATAPATH_NET_DELAY="1.687" ENDPOINT_PIN="bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[7]/S" LOGIC_LEVELS="18" MAX_FANOUT="24" SLACK="3.001" STARTPOINT_PIN="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[23]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[7]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel.v" LINE_NUMBER="494"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.835" DATAPATH_LOGIC_DELAY="5.148" DATAPATH_NET_DELAY="1.687" ENDPOINT_PIN="bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[2]/S" LOGIC_LEVELS="18" MAX_FANOUT="24" SLACK="3.002" STARTPOINT_PIN="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_tmp_RAM_AUTO_1R1W.v" LINE_NUMBER="45"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[23]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="945"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[2]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel.v" LINE_NUMBER="494"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/top_kernel_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/top_kernel_failfast_routed.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/top_kernel_power_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="verilog/report/top_kernel_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/top_kernel_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/top_kernel_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/top_kernel_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/top_kernel_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

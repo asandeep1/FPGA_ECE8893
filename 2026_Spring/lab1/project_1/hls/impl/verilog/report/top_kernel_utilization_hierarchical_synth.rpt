@@ -1,0 +1,37 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
+| Date         : Fri Jan 23 18:09:14 2026
+| Host         : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/top_kernel_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xczu3eg-sbva484-1-e
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------------------------------------------+-------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+|                         Instance                        |                            Module                           | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++---------------------------------------------------------+-------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+| bd_0_wrapper                                            |                                                       (top) |        536 |        532 |       0 |    4 | 503 |     11 |      0 |    0 |          1 |
+|   bd_0_i                                                |                                                        bd_0 |        536 |        532 |       0 |    4 | 503 |     11 |      0 |    0 |          1 |
+|     hls_inst                                            |                                             bd_0_hls_inst_0 |        536 |        532 |       0 |    4 | 503 |     11 |      0 |    0 |          1 |
+|       inst                                              |                                  bd_0_hls_inst_0_top_kernel |        536 |        532 |       0 |    4 | 503 |     11 |      0 |    0 |          1 |
+|         (inst)                                          |                                  bd_0_hls_inst_0_top_kernel |        148 |        146 |       0 |    2 | 289 |      0 |      0 |    0 |          0 |
+|         mul_24s_17s_41_1_1_U2                           |               bd_0_hls_inst_0_top_kernel_mul_24s_17s_41_1_1 |         59 |         59 |       0 |    0 |   0 |      0 |      0 |    0 |          1 |
+|         sdiv_38ns_24s_38_42_seq_1_U1                    |        bd_0_hls_inst_0_top_kernel_sdiv_38ns_24s_38_42_seq_1 |        230 |        228 |       0 |    2 | 214 |      0 |      0 |    0 |          0 |
+|           (sdiv_38ns_24s_38_42_seq_1_U1)                |        bd_0_hls_inst_0_top_kernel_sdiv_38ns_24s_38_42_seq_1 |        101 |        101 |       0 |    0 |  87 |      0 |      0 |    0 |          0 |
+|           top_kernel_sdiv_38ns_24s_38_42_seq_1_divseq_u | bd_0_hls_inst_0_top_kernel_sdiv_38ns_24s_38_42_seq_1_divseq |        129 |        127 |       0 |    2 | 127 |      0 |      0 |    0 |          0 |
+|         tmp_U                                           |                bd_0_hls_inst_0_top_kernel_tmp_RAM_AUTO_1R1W |         99 |         99 |       0 |    0 |   0 |     11 |      0 |    0 |          0 |
++---------------------------------------------------------+-------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+
+

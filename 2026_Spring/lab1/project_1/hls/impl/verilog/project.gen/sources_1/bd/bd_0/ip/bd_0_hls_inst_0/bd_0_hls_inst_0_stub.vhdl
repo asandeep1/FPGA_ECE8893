@@ -1,0 +1,79 @@
+-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
+-- Date        : Fri Jan 23 18:06:41 2026
+-- Host        : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+-- Command     : write_vhdl -force -mode synth_stub
+--               /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0_stub.vhdl
+-- Design      : bd_0_hls_inst_0
+-- Purpose     : Stub declaration of top-level module interface
+-- Device      : xczu3eg-sbva484-1-e
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity bd_0_hls_inst_0 is
+  Port ( 
+    A_ce0 : out STD_LOGIC;
+    C_ce0 : out STD_LOGIC;
+    C_we0 : out STD_LOGIC;
+    ap_clk : in STD_LOGIC;
+    ap_rst : in STD_LOGIC;
+    ap_done : out STD_LOGIC;
+    ap_idle : out STD_LOGIC;
+    ap_ready : out STD_LOGIC;
+    ap_start : in STD_LOGIC;
+    A_address0 : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    A_q0 : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    C_address0 : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    C_d0 : out STD_LOGIC_VECTOR ( 23 downto 0 )
+  );
+
+  attribute CHECK_LICENSE_TYPE : string;
+  attribute CHECK_LICENSE_TYPE of bd_0_hls_inst_0 : entity is "bd_0_hls_inst_0,top_kernel,{}";
+  attribute CORE_GENERATION_INFO : string;
+  attribute CORE_GENERATION_INFO of bd_0_hls_inst_0 : entity is "bd_0_hls_inst_0,top_kernel,{x_ipProduct=Vivado 2025.1.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=top_kernel,x_ipVersion=1.0,x_ipCoreRevision=2114448964,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}";
+  attribute DowngradeIPIdentifiedWarnings : string;
+  attribute DowngradeIPIdentifiedWarnings of bd_0_hls_inst_0 : entity is "yes";
+  attribute IP_DEFINITION_SOURCE : string;
+  attribute IP_DEFINITION_SOURCE of bd_0_hls_inst_0 : entity is "HLS";
+  attribute hls_module : string;
+  attribute hls_module of bd_0_hls_inst_0 : entity is "yes";
+end bd_0_hls_inst_0;
+
+architecture stub of bd_0_hls_inst_0 is
+  attribute syn_black_box : boolean;
+  attribute black_box_pad_pin : string;
+  attribute syn_black_box of stub : architecture is true;
+  attribute black_box_pad_pin of stub : architecture is "A_ce0,C_ce0,C_we0,ap_clk,ap_rst,ap_done,ap_idle,ap_ready,ap_start,A_address0[13:0],A_q0[23:0],C_address0[13:0],C_d0[23:0]";
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of ap_clk : signal is "xilinx.com:signal:clock:1.0 ap_clk CLK";
+  attribute X_INTERFACE_MODE : string;
+  attribute X_INTERFACE_MODE of ap_clk : signal is "slave";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of ap_clk : signal is "XIL_INTERFACENAME ap_clk, ASSOCIATED_RESET ap_rst, FREQ_HZ 100000000.0, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN bd_0_ap_clk_0, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO of ap_rst : signal is "xilinx.com:signal:reset:1.0 ap_rst RST";
+  attribute X_INTERFACE_MODE of ap_rst : signal is "slave";
+  attribute X_INTERFACE_PARAMETER of ap_rst : signal is "XIL_INTERFACENAME ap_rst, POLARITY ACTIVE_HIGH, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO of ap_done : signal is "xilinx.com:interface:acc_handshake:1.0 ap_ctrl done";
+  attribute X_INTERFACE_MODE of ap_done : signal is "slave";
+  attribute X_INTERFACE_INFO of ap_idle : signal is "xilinx.com:interface:acc_handshake:1.0 ap_ctrl idle";
+  attribute X_INTERFACE_INFO of ap_ready : signal is "xilinx.com:interface:acc_handshake:1.0 ap_ctrl ready";
+  attribute X_INTERFACE_INFO of ap_start : signal is "xilinx.com:interface:acc_handshake:1.0 ap_ctrl start";
+  attribute X_INTERFACE_INFO of A_address0 : signal is "xilinx.com:signal:data:1.0 A_address0 DATA";
+  attribute X_INTERFACE_MODE of A_address0 : signal is "master";
+  attribute X_INTERFACE_PARAMETER of A_address0 : signal is "XIL_INTERFACENAME A_address0, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of A_q0 : signal is "xilinx.com:signal:data:1.0 A_q0 DATA";
+  attribute X_INTERFACE_MODE of A_q0 : signal is "slave";
+  attribute X_INTERFACE_PARAMETER of A_q0 : signal is "XIL_INTERFACENAME A_q0, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of C_address0 : signal is "xilinx.com:signal:data:1.0 C_address0 DATA";
+  attribute X_INTERFACE_MODE of C_address0 : signal is "master";
+  attribute X_INTERFACE_PARAMETER of C_address0 : signal is "XIL_INTERFACENAME C_address0, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of C_d0 : signal is "xilinx.com:signal:data:1.0 C_d0 DATA";
+  attribute X_INTERFACE_MODE of C_d0 : signal is "master";
+  attribute X_INTERFACE_PARAMETER of C_d0 : signal is "XIL_INTERFACENAME C_d0, LAYERED_METADATA undef";
+  attribute X_CORE_INFO : string;
+  attribute X_CORE_INFO of stub : architecture is "top_kernel,Vivado 2025.1.1";
+begin
+end;
