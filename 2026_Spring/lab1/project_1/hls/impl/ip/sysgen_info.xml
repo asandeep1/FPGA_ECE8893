@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AdditionalInfo>
   <CTypeInfo>
-      <RtlPort>
-        <name>A_address0</name>
-        <type>Unsigned</type>
-        <fractionWidth>0</fractionWidth>
-      </RtlPort>
-      <RtlPort>
-        <name>A_ce0</name>
-        <type>bool</type>
-        <fractionWidth>0</fractionWidth>
-      </RtlPort>
-      <RtlPort>
-        <name>A_q0</name>
-        <type>Signed</type>
-        <fractionWidth>14</fractionWidth>
-      </RtlPort>
-      <RtlPort>
-        <name>C_address0</name>
-        <type>Unsigned</type>
-        <fractionWidth>0</fractionWidth>
-      </RtlPort>
-      <RtlPort>
-        <name>C_ce0</name>
-        <type>bool</type>
-        <fractionWidth>0</fractionWidth>
-      </RtlPort>
-      <RtlPort>
-        <name>C_d0</name>
-        <type>Signed</type>
-        <fractionWidth>14</fractionWidth>
-      </RtlPort>
-      <RtlPort>
-        <name>C_we0</name>
-        <type>bool</type>
-        <fractionWidth>0</fractionWidth>
-      </RtlPort>
   </CTypeInfo>
   <DesignConstraint>
     <clk_period>10</clk_period>
@@ -43,7 +8,7 @@
   <Machine>64</Machine>
   <modelParameters>
     <combinational>0</combinational>
-    <latency>78658</latency>
-    <II>78659</II>
+    <latency>62618</latency>
+    <II>62619</II>
   </modelParameters>
 </AdditionalInfo>

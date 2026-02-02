@@ -77,7 +77,8 @@ proc check_tvin_file {} {
 	}
     set rtlfilelist {
          "c.top_kernel.autotvin_A.dat"
-         "c.top_kernel.autotvin_C.dat"
+         "c.top_kernel.autotvin_A_DRAM.dat"
+         "c.top_kernel.autotvin_C_DRAM.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

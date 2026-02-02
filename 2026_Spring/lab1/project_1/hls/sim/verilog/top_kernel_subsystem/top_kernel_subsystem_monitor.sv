@@ -9,6 +9,12 @@
 `ifndef TOP_KERNEL_SUBSYSTEM_MONITOR_SV
 `define TOP_KERNEL_SUBSYSTEM_MONITOR_SV
 
+`uvm_analysis_imp_decl(_axi_wtr_A)
+`uvm_analysis_imp_decl(_axi_rtr_A)
+`uvm_analysis_imp_decl(_axi_wtr_C)
+`uvm_analysis_imp_decl(_axi_rtr_C)
+`uvm_analysis_imp_decl(_axi_wtr_control)
+`uvm_analysis_imp_decl(_axi_rtr_control)
 
 class top_kernel_subsystem_monitor extends uvm_component;
 
@@ -18,6 +24,12 @@ class top_kernel_subsystem_monitor extends uvm_component;
     `uvm_component_utils_begin(top_kernel_subsystem_monitor)
     `uvm_component_utils_end
 
+    uvm_analysis_imp_axi_wtr_A#(axi_pkg::axi_transfer, top_kernel_subsystem_monitor) A_wtr_imp;
+    uvm_analysis_imp_axi_rtr_A#(axi_pkg::axi_transfer, top_kernel_subsystem_monitor) A_rtr_imp;
+    uvm_analysis_imp_axi_wtr_C#(axi_pkg::axi_transfer, top_kernel_subsystem_monitor) C_wtr_imp;
+    uvm_analysis_imp_axi_rtr_C#(axi_pkg::axi_transfer, top_kernel_subsystem_monitor) C_rtr_imp;
+    uvm_analysis_imp_axi_wtr_control#(axi_pkg::axi_transfer, top_kernel_subsystem_monitor) control_wtr_imp;
+    uvm_analysis_imp_axi_rtr_control#(axi_pkg::axi_transfer, top_kernel_subsystem_monitor) control_rtr_imp;
 
     virtual function void build_phase(uvm_phase phase);
         super.build_phase(phase);
@@ -33,6 +45,42 @@ class top_kernel_subsystem_monitor extends uvm_component;
 
     function new (string name = "", uvm_component parent = null);
         super.new(name, parent);
+        A_wtr_imp = new("A_wtr_imp", this);
+        A_rtr_imp = new("A_rtr_imp", this);
+        C_wtr_imp = new("C_wtr_imp", this);
+        C_rtr_imp = new("C_rtr_imp", this);
+        control_wtr_imp = new("control_wtr_imp", this);
+        control_rtr_imp = new("control_rtr_imp", this);
+    endfunction
+
+    virtual function void write_axi_wtr_A(axi_transfer tr);
+        refm.write_axi_wtr_A(tr);
+        scbd.write_axi_wtr_A(tr);
+    endfunction
+
+    virtual function void write_axi_rtr_A(axi_transfer tr);
+        refm.write_axi_rtr_A(tr);
+        scbd.write_axi_rtr_A(tr);
+    endfunction
+
+    virtual function void write_axi_wtr_C(axi_transfer tr);
+        refm.write_axi_wtr_C(tr);
+        scbd.write_axi_wtr_C(tr);
+    endfunction
+
+    virtual function void write_axi_rtr_C(axi_transfer tr);
+        refm.write_axi_rtr_C(tr);
+        scbd.write_axi_rtr_C(tr);
+    endfunction
+
+    virtual function void write_axi_wtr_control(axi_transfer tr);
+        refm.write_axi_wtr_control(tr);
+        scbd.write_axi_wtr_control(tr);
+    endfunction
+
+    virtual function void write_axi_rtr_control(axi_transfer tr);
+        refm.write_axi_rtr_control(tr);
+        scbd.write_axi_rtr_control(tr);
     endfunction
 endclass
 `endif

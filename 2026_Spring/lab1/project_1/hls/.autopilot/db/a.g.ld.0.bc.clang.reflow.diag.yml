@@ -1,3 +1,75 @@
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: top.cpp, Line: 6, Column: 0 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_54_7
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:54:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: top.cpp, Line: 6, Column: 0 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_64_8
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:64:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: top.cpp, Line: 6, Column: 0 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_32_4
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:32:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: top.cpp, Line: 6, Column: 0 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_42_5
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:42:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '4'
+...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
@@ -10,18 +82,76 @@ Args:
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 12, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          A
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 13, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          C
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
 Pass:            reflow-aggr
 Name:            AggrSucc
 Function:        apatb_top_kernel_ir
 Args:            
   - String:          'Aggregating '
-  - HwTyName:        bram
+  - HwTyName:        maxi
   - String:          ' variable '''
-  - Name:            C
+  - Name:            C_DRAM
   - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
+  - AggregateTypeName: 'compact=none'
   - String:          ' mode in '
-  - Bitwidth:        '24'
+  - Bitwidth:        '32'
   - String:          '-bits'
 ...
 --- !Passed
@@ -30,12 +160,4194 @@ Name:            AggrSucc
 Function:        apatb_top_kernel_ir
 Args:            
   - String:          'Aggregating '
-  - HwTyName:        bram
+  - HwTyName:        maxi
   - String:          ' variable '''
-  - Name:            A
+  - Name:            A_DRAM
   - String:          ''' with '
-  - AggregateTypeName: 'compact=bit'
+  - AggregateTypeName: 'compact=none'
   - String:          ' mode in '
-  - Bitwidth:        '24'
+  - Bitwidth:        '32'
   - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: top.cpp, Line: 20, Column: 19 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16384'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        A_DRAM3seq
+  - ArrayName:       A_DRAM
+  - String:          ' '
+  - BundleName:      A
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_20_1
+  - String:          ' '
+  - LoopLoc:         'top.cpp:20:19'
+  - String:          ' '
+  - Function:        'top_kernel(ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64], ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64])'
+    DebugLoc:        { File: top.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: top.cpp, Line: 23, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.15
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: top.cpp, Line: 71, Column: 22 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '16384'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        C_DRAM4seq
+  - ArrayName:       C_DRAM
+  - String:          ' '
+  - BundleName:      C
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_71_9
+  - String:          ' '
+  - LoopLoc:         'top.cpp:71:22'
+  - String:          ' '
+  - Function:        'top_kernel(ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64], ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64])'
+    DebugLoc:        { File: top.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: top.cpp, Line: 74, Column: 15 }
+  - OrigDirection:   write
+  - OrigID:          for.inc112.store.16
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: top.cpp, Line: 71, Column: 22 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: top.cpp, Line: 71, Column: 22 }
+  - OrigDirection:   write
+  - OrigID:          C_DRAM4seq
+  - ArrayName:       C_DRAM
+  - String:          ' '
+  - BundleName:      C
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_72_10
+  - String:          ' '
+  - LoopLoc:         'top.cpp:72:27'
+  - String:          ' '
+  - Function:        'top_kernel(ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64], ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64])'
+    DebugLoc:        { File: top.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: top.cpp, Line: 20, Column: 19 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: top.cpp, Line: 20, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          A_DRAM3seq
+  - ArrayName:       A_DRAM
+  - String:          ' '
+  - BundleName:      A
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_21_2
+  - String:          ' '
+  - LoopLoc:         'top.cpp:21:26'
+  - String:          ' '
+  - Function:        'top_kernel(ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64], ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64])'
+    DebugLoc:        { File: top.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_0'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_0
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_0
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_1'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_1
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_1
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_10'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_10
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_10
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_11'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_11
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_11
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_12'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_12
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_12
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_13'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_13
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_13
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_14'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_14
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_14
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_15'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_15
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_15
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_16'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_16
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_16
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_17'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_17
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_17
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_18'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_18
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_18
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_19'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_19
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_19
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_2'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_2
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_2
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_20'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_20
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_20
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_21'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_21
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_21
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_22'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_22
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_22
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_23'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_23
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_23
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_24'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_24
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_24
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_25'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_25
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_25
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_26'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_26
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_26
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_27'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_27
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_27
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_28'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_28
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_28
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_29'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_29
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_29
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_30'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_30
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_30
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_31'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_31
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_31
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_32'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_32
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_32
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_33'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_33
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_33
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_34'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_34
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_34
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_35'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_35
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_35
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_36'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_36
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_36
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_37'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_37
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_37
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_38'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_38
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_38
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_39'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_39
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_39
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_4'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_4
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_4
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_40'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_40
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_40
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_41'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_41
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_41
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_42'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_42
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_42
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_43'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_43
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_43
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_44'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_44
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_44
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_45'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_45
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_45
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_46'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_46
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_46
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_47'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_47
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_47
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_48'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_48
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_48
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_49'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_49
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_49
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_5'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_5
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_5
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_50'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_50
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_50
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_51'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_51
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_51
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_52'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_52
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_52
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_53'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_53
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_53
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_54'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_54
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_54
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_55'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_55
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_55
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_56'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_56
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_56
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_57'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_57
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_57
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_58'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_58
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_58
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_59'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_59
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_59
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_6'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_6
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_6
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_60'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_60
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_60
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_61'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_61
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_61
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_62'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_62
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_62
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_63'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_63
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_63
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_7'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_7
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_7
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_8'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_8
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_8
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=tmp_9'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:14:8'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:55:9'
+    DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+  - VarName:         tmp_9
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 55, Column: 9 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '2'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tmp_9
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_5
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_6
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_7
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_8
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_9
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_10
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_11
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_12
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_13
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_14
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_15
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_16
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_17
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_18
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_19
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_20
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_21
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_22
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_23
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_24
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_25
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_26
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_27
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_28
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_29
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_30
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_31
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_32
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_33
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_34
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_35
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_36
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_37
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_38
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_39
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_40
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_41
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_42
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_43
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_44
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_45
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_46
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_47
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_48
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_49
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_50
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_51
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_52
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_53
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_54
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_55
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_56
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_57
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_58
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_59
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_60
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_61
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_62
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 14, Column: 8 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp_63
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: top.cpp, Line: 20, Column: 19 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16384'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      A
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_20_1
+  - String:          ' '
+  - LoopLoc:         'top.cpp:20:19'
+  - String:          ' '
+  - Function:        'top_kernel(ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64], ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64])'
+    DebugLoc:        { File: top.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: top.cpp, Line: 20, Column: 19 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16384'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_20_1
+  - String:          '''('
+  - LoopLoc:         'top.cpp:20:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      A
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: top.cpp, Line: 71, Column: 22 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16384'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      C
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_71_9
+  - String:          ' '
+  - LoopLoc:         'top.cpp:71:22'
+  - String:          ' '
+  - Function:        'top_kernel(ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64], ap_fixed<24, 10, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [64])'
+    DebugLoc:        { File: top.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: top.cpp, Line: 71, Column: 22 }
+Function:        _Z10top_kernelPA64_8ap_fixedILi24ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EES4_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16384'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_71_9
+  - String:          '''('
+  - LoopLoc:         'top.cpp:71:22'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      C
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
 ...

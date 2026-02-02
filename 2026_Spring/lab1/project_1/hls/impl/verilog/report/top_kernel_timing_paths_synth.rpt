@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date              : Fri Jan 23 18:09:41 2026
+| Date              : Sun Feb  1 18:53:28 2026
 | Host              : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command           : report_timing -max_paths 10 -file ./report/top_kernel_timing_paths_synth.rpt
 | Design            : bd_0_wrapper
@@ -16,7 +16,7 @@ Timing Report
 Slack (MET) :             3.363ns  (required time - arrival time)
   Source:                 bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
                             (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[11]/D
+  Destination:            bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[11]/D
                             (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
@@ -37,30 +37,30 @@ Slack (MET) :             3.363ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
+                         net (fo=3047, unset)         0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
                          RAMB36E2                                     r  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
   -------------------------------------------------------------------    -------------------
                          RAMB36E2 (Prop_RAMB36E2_CLKARDCLK_CASDOUTA[1])
                                                       1.200     1.281 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_37
+                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.540 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_37
+                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.799 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_37
+                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.058 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_37
+                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.317 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_37
+                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.576 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_37
+                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.835 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_37
+                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_DOUTADOUT[1])
                                                       0.120     2.994 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7/DOUTADOUT[1]
                          net (fo=5, unplaced)         0.373     3.367    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/A[1]
@@ -81,32 +81,32 @@ Slack (MET) :             3.363ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.000     5.111    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU.ALU_OUT<13>
                          DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[13]_P[13])
                                                       0.141     5.252 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST/P[13]
-                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln46_fu_890_p1
-                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3/O
-                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3_n_3
+                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln56_fu_1147_p1
+                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3/O
+                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3_n_5
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2_n_3
+                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_CO[7])
-                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2_n_3
+                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3/O[7]
-                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_17_fu_900_p3
-                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2/O
-                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2_n_3
-                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[11]_i_1/O
-                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_15
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[11]/D
+                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3/O[7]
+                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_20_fu_1157_p3
+                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2/O
+                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2_n_5
+                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[11]_i_1/O
+                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_18
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[11]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[11]/C
+                         net (fo=3047, unset)         0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[11]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
-                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[11]
+                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[11]
   -------------------------------------------------------------------
                          required time                         10.018    
                          arrival time                          -6.655    
@@ -116,7 +116,7 @@ Slack (MET) :             3.363ns  (required time - arrival time)
 Slack (MET) :             3.363ns  (required time - arrival time)
   Source:                 bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
                             (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[13]/D
+  Destination:            bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[13]/D
                             (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
@@ -137,30 +137,30 @@ Slack (MET) :             3.363ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
+                         net (fo=3047, unset)         0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
                          RAMB36E2                                     r  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
   -------------------------------------------------------------------    -------------------
                          RAMB36E2 (Prop_RAMB36E2_CLKARDCLK_CASDOUTA[1])
                                                       1.200     1.281 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_37
+                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.540 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_37
+                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.799 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_37
+                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.058 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_37
+                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.317 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_37
+                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.576 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_37
+                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.835 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_37
+                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_DOUTADOUT[1])
                                                       0.120     2.994 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7/DOUTADOUT[1]
                          net (fo=5, unplaced)         0.373     3.367    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/A[1]
@@ -181,32 +181,32 @@ Slack (MET) :             3.363ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.000     5.111    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU.ALU_OUT<13>
                          DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[13]_P[13])
                                                       0.141     5.252 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST/P[13]
-                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln46_fu_890_p1
-                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3/O
-                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3_n_3
+                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln56_fu_1147_p1
+                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3/O
+                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3_n_5
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2_n_3
+                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_CO[7])
-                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2_n_3
+                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3/O[7]
-                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_17_fu_900_p3
-                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2/O
-                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2_n_3
-                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[13]_i_1/O
-                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_17
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[13]/D
+                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3/O[7]
+                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_20_fu_1157_p3
+                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2/O
+                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2_n_5
+                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[13]_i_1/O
+                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_20
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[13]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[13]/C
+                         net (fo=3047, unset)         0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[13]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
-                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[13]
+                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[13]
   -------------------------------------------------------------------
                          required time                         10.018    
                          arrival time                          -6.655    
@@ -216,7 +216,7 @@ Slack (MET) :             3.363ns  (required time - arrival time)
 Slack (MET) :             3.363ns  (required time - arrival time)
   Source:                 bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
                             (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[15]/D
+  Destination:            bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[15]/D
                             (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
@@ -237,30 +237,30 @@ Slack (MET) :             3.363ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
+                         net (fo=3047, unset)         0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
                          RAMB36E2                                     r  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
   -------------------------------------------------------------------    -------------------
                          RAMB36E2 (Prop_RAMB36E2_CLKARDCLK_CASDOUTA[1])
                                                       1.200     1.281 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_37
+                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.540 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_37
+                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.799 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_37
+                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.058 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_37
+                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.317 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_37
+                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.576 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_37
+                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.835 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_37
+                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_DOUTADOUT[1])
                                                       0.120     2.994 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7/DOUTADOUT[1]
                          net (fo=5, unplaced)         0.373     3.367    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/A[1]
@@ -281,32 +281,32 @@ Slack (MET) :             3.363ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.000     5.111    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU.ALU_OUT<13>
                          DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[13]_P[13])
                                                       0.141     5.252 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST/P[13]
-                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln46_fu_890_p1
-                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3/O
-                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3_n_3
+                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln56_fu_1147_p1
+                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3/O
+                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3_n_5
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2_n_3
+                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_CO[7])
-                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2_n_3
+                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3/O[7]
-                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_17_fu_900_p3
-                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2/O
-                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2_n_3
-                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[15]_i_1/O
-                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_19
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[15]/D
+                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3/O[7]
+                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_20_fu_1157_p3
+                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2/O
+                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2_n_5
+                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[15]_i_1/O
+                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_22
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[15]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[15]/C
+                         net (fo=3047, unset)         0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[15]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
-                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[15]
+                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[15]
   -------------------------------------------------------------------
                          required time                         10.018    
                          arrival time                          -6.655    
@@ -316,7 +316,7 @@ Slack (MET) :             3.363ns  (required time - arrival time)
 Slack (MET) :             3.363ns  (required time - arrival time)
   Source:                 bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
                             (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[17]/D
+  Destination:            bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[17]/D
                             (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
@@ -337,30 +337,30 @@ Slack (MET) :             3.363ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
+                         net (fo=3047, unset)         0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
                          RAMB36E2                                     r  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
   -------------------------------------------------------------------    -------------------
                          RAMB36E2 (Prop_RAMB36E2_CLKARDCLK_CASDOUTA[1])
                                                       1.200     1.281 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_37
+                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.540 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_37
+                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.799 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_37
+                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.058 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_37
+                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.317 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_37
+                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.576 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_37
+                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.835 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_37
+                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_DOUTADOUT[1])
                                                       0.120     2.994 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7/DOUTADOUT[1]
                          net (fo=5, unplaced)         0.373     3.367    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/A[1]
@@ -381,32 +381,32 @@ Slack (MET) :             3.363ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.000     5.111    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU.ALU_OUT<13>
                          DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[13]_P[13])
                                                       0.141     5.252 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST/P[13]
-                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln46_fu_890_p1
-                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3/O
-                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3_n_3
+                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln56_fu_1147_p1
+                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3/O
+                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3_n_5
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2_n_3
+                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_CO[7])
-                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2_n_3
+                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3/O[7]
-                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_17_fu_900_p3
-                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2/O
-                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2_n_3
-                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[17]_i_1/O
-                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_21
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[17]/D
+                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3/O[7]
+                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_20_fu_1157_p3
+                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2/O
+                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2_n_5
+                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[17]_i_1/O
+                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_24
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[17]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[17]/C
+                         net (fo=3047, unset)         0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[17]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
-                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[17]
+                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[17]
   -------------------------------------------------------------------
                          required time                         10.018    
                          arrival time                          -6.655    
@@ -416,7 +416,7 @@ Slack (MET) :             3.363ns  (required time - arrival time)
 Slack (MET) :             3.363ns  (required time - arrival time)
   Source:                 bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
                             (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[19]/D
+  Destination:            bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[19]/D
                             (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
@@ -437,30 +437,30 @@ Slack (MET) :             3.363ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
+                         net (fo=3047, unset)         0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
                          RAMB36E2                                     r  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
   -------------------------------------------------------------------    -------------------
                          RAMB36E2 (Prop_RAMB36E2_CLKARDCLK_CASDOUTA[1])
                                                       1.200     1.281 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_37
+                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.540 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_37
+                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.799 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_37
+                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.058 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_37
+                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.317 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_37
+                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.576 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_37
+                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.835 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_37
+                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_DOUTADOUT[1])
                                                       0.120     2.994 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7/DOUTADOUT[1]
                          net (fo=5, unplaced)         0.373     3.367    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/A[1]
@@ -481,32 +481,32 @@ Slack (MET) :             3.363ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.000     5.111    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU.ALU_OUT<13>
                          DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[13]_P[13])
                                                       0.141     5.252 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST/P[13]
-                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln46_fu_890_p1
-                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3/O
-                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3_n_3
+                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln56_fu_1147_p1
+                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3/O
+                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3_n_5
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2_n_3
+                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_CO[7])
-                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2_n_3
+                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3/O[7]
-                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_17_fu_900_p3
-                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2/O
-                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2_n_3
-                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[19]_i_1/O
-                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_23
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[19]/D
+                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3/O[7]
+                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_20_fu_1157_p3
+                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2/O
+                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2_n_5
+                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[19]_i_1/O
+                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_26
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[19]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[19]/C
+                         net (fo=3047, unset)         0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[19]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
-                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[19]
+                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[19]
   -------------------------------------------------------------------
                          required time                         10.018    
                          arrival time                          -6.655    
@@ -516,7 +516,7 @@ Slack (MET) :             3.363ns  (required time - arrival time)
 Slack (MET) :             3.363ns  (required time - arrival time)
   Source:                 bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
                             (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[1]/D
+  Destination:            bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[1]/D
                             (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
@@ -537,30 +537,30 @@ Slack (MET) :             3.363ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
+                         net (fo=3047, unset)         0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
                          RAMB36E2                                     r  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
   -------------------------------------------------------------------    -------------------
                          RAMB36E2 (Prop_RAMB36E2_CLKARDCLK_CASDOUTA[1])
                                                       1.200     1.281 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_37
+                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.540 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_37
+                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.799 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_37
+                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.058 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_37
+                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.317 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_37
+                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.576 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_37
+                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.835 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_37
+                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_DOUTADOUT[1])
                                                       0.120     2.994 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7/DOUTADOUT[1]
                          net (fo=5, unplaced)         0.373     3.367    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/A[1]
@@ -581,32 +581,32 @@ Slack (MET) :             3.363ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.000     5.111    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU.ALU_OUT<13>
                          DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[13]_P[13])
                                                       0.141     5.252 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST/P[13]
-                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln46_fu_890_p1
-                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3/O
-                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3_n_3
+                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln56_fu_1147_p1
+                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3/O
+                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3_n_5
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2_n_3
+                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_CO[7])
-                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2_n_3
+                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3/O[7]
-                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_17_fu_900_p3
-                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2/O
-                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2_n_3
-                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[1]_i_1/O
-                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_5
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[1]/D
+                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3/O[7]
+                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_20_fu_1157_p3
+                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2/O
+                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2_n_5
+                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[1]_i_1/O
+                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_8
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[1]/C
+                         net (fo=3047, unset)         0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[1]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
-                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[1]
+                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[1]
   -------------------------------------------------------------------
                          required time                         10.018    
                          arrival time                          -6.655    
@@ -616,7 +616,7 @@ Slack (MET) :             3.363ns  (required time - arrival time)
 Slack (MET) :             3.363ns  (required time - arrival time)
   Source:                 bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
                             (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[21]/D
+  Destination:            bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[21]/D
                             (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
@@ -637,30 +637,30 @@ Slack (MET) :             3.363ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
+                         net (fo=3047, unset)         0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
                          RAMB36E2                                     r  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
   -------------------------------------------------------------------    -------------------
                          RAMB36E2 (Prop_RAMB36E2_CLKARDCLK_CASDOUTA[1])
                                                       1.200     1.281 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_37
+                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.540 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_37
+                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.799 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_37
+                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.058 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_37
+                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.317 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_37
+                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.576 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_37
+                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.835 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_37
+                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_DOUTADOUT[1])
                                                       0.120     2.994 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7/DOUTADOUT[1]
                          net (fo=5, unplaced)         0.373     3.367    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/A[1]
@@ -681,32 +681,32 @@ Slack (MET) :             3.363ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.000     5.111    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU.ALU_OUT<13>
                          DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[13]_P[13])
                                                       0.141     5.252 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST/P[13]
-                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln46_fu_890_p1
-                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3/O
-                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3_n_3
+                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln56_fu_1147_p1
+                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3/O
+                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3_n_5
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2_n_3
+                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_CO[7])
-                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2_n_3
+                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3/O[7]
-                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_17_fu_900_p3
-                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2/O
-                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2_n_3
-                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[21]_i_1/O
-                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_25
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[21]/D
+                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3/O[7]
+                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_20_fu_1157_p3
+                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2/O
+                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2_n_5
+                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[21]_i_1/O
+                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_28
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[21]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[21]/C
+                         net (fo=3047, unset)         0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[21]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
-                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[21]
+                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[21]
   -------------------------------------------------------------------
                          required time                         10.018    
                          arrival time                          -6.655    
@@ -716,7 +716,7 @@ Slack (MET) :             3.363ns  (required time - arrival time)
 Slack (MET) :             3.363ns  (required time - arrival time)
   Source:                 bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
                             (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[3]/D
+  Destination:            bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[3]/D
                             (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
@@ -737,30 +737,30 @@ Slack (MET) :             3.363ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
+                         net (fo=3047, unset)         0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
                          RAMB36E2                                     r  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
   -------------------------------------------------------------------    -------------------
                          RAMB36E2 (Prop_RAMB36E2_CLKARDCLK_CASDOUTA[1])
                                                       1.200     1.281 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_37
+                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.540 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_37
+                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.799 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_37
+                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.058 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_37
+                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.317 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_37
+                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.576 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_37
+                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.835 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_37
+                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_DOUTADOUT[1])
                                                       0.120     2.994 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7/DOUTADOUT[1]
                          net (fo=5, unplaced)         0.373     3.367    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/A[1]
@@ -781,32 +781,32 @@ Slack (MET) :             3.363ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.000     5.111    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU.ALU_OUT<13>
                          DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[13]_P[13])
                                                       0.141     5.252 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST/P[13]
-                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln46_fu_890_p1
-                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3/O
-                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3_n_3
+                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln56_fu_1147_p1
+                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3/O
+                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3_n_5
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2_n_3
+                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_CO[7])
-                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2_n_3
+                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3/O[7]
-                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_17_fu_900_p3
-                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2/O
-                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2_n_3
-                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[3]_i_1/O
-                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_7
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[3]/D
+                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3/O[7]
+                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_20_fu_1157_p3
+                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2/O
+                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2_n_5
+                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[3]_i_1/O
+                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_10
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[3]/C
+                         net (fo=3047, unset)         0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[3]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
-                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[3]
+                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[3]
   -------------------------------------------------------------------
                          required time                         10.018    
                          arrival time                          -6.655    
@@ -816,7 +816,7 @@ Slack (MET) :             3.363ns  (required time - arrival time)
 Slack (MET) :             3.363ns  (required time - arrival time)
   Source:                 bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
                             (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[5]/D
+  Destination:            bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[5]/D
                             (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
@@ -837,30 +837,30 @@ Slack (MET) :             3.363ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
+                         net (fo=3047, unset)         0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
                          RAMB36E2                                     r  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
   -------------------------------------------------------------------    -------------------
                          RAMB36E2 (Prop_RAMB36E2_CLKARDCLK_CASDOUTA[1])
                                                       1.200     1.281 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_37
+                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.540 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_37
+                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.799 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_37
+                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.058 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_37
+                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.317 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_37
+                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.576 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_37
+                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.835 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_37
+                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_DOUTADOUT[1])
                                                       0.120     2.994 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7/DOUTADOUT[1]
                          net (fo=5, unplaced)         0.373     3.367    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/A[1]
@@ -881,32 +881,32 @@ Slack (MET) :             3.363ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.000     5.111    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU.ALU_OUT<13>
                          DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[13]_P[13])
                                                       0.141     5.252 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST/P[13]
-                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln46_fu_890_p1
-                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3/O
-                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3_n_3
+                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln56_fu_1147_p1
+                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3/O
+                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3_n_5
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2_n_3
+                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_CO[7])
-                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2_n_3
+                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3/O[7]
-                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_17_fu_900_p3
-                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2/O
-                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2_n_3
-                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[5]_i_1/O
-                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_9
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[5]/D
+                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3/O[7]
+                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_20_fu_1157_p3
+                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2/O
+                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2_n_5
+                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[5]_i_1/O
+                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_12
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[5]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[5]/C
+                         net (fo=3047, unset)         0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[5]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
-                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[5]
+                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[5]
   -------------------------------------------------------------------
                          required time                         10.018    
                          arrival time                          -6.655    
@@ -916,7 +916,7 @@ Slack (MET) :             3.363ns  (required time - arrival time)
 Slack (MET) :             3.363ns  (required time - arrival time)
   Source:                 bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
                             (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[7]/D
+  Destination:            bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[7]/D
                             (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
@@ -937,30 +937,30 @@ Slack (MET) :             3.363ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
+                         net (fo=3047, unset)         0.081     0.081    bd_0_i/hls_inst/inst/tmp_U/ap_clk
                          RAMB36E2                                     r  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CLKARDCLK
   -------------------------------------------------------------------    -------------------
                          RAMB36E2 (Prop_RAMB36E2_CLKARDCLK_CASDOUTA[1])
                                                       1.200     1.281 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_37
+                         net (fo=1, unplaced)         0.039     1.320    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_0_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.540 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_37
+                         net (fo=1, unplaced)         0.039     1.579    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_1_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     1.799 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_37
+                         net (fo=1, unplaced)         0.039     1.838    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_2_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.058 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_37
+                         net (fo=1, unplaced)         0.039     2.097    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_3_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.317 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_37
+                         net (fo=1, unplaced)         0.039     2.356    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_4_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.576 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_37
+                         net (fo=1, unplaced)         0.039     2.615    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_5_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_CASDOUTA[1])
                                                       0.220     2.835 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6/CASDOUTA[1]
-                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_37
+                         net (fo=1, unplaced)         0.039     2.874    bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_6_n_39
                          RAMB36E2 (Prop_RAMB36E2_CASDINA[1]_DOUTADOUT[1])
                                                       0.120     2.994 f  bd_0_i/hls_inst/inst/tmp_U/ram_reg_bram_7/DOUTADOUT[1]
                          net (fo=5, unplaced)         0.373     3.367    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/A[1]
@@ -981,32 +981,32 @@ Slack (MET) :             3.363ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.000     5.111    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU.ALU_OUT<13>
                          DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[13]_P[13])
                                                       0.141     5.252 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST/P[13]
-                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln46_fu_890_p1
-                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3/O
-                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_3_n_3
+                         net (fo=1, unplaced)         0.292     5.544    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/zext_ln56_fu_1147_p1
+                         LUT2 (Prop_LUT2_I1_O)        0.040     5.584 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3/O
+                         net (fo=1, unplaced)         0.021     5.605    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3_n_5
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[7]_i_2_n_3
+                                                      0.248     5.853 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.860    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_CO[7])
-                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[15]_i_2_n_3
+                                                      0.030     5.890 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     5.897    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2_n_5
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199_reg[23]_i_3/O[7]
-                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_17_fu_900_p3
-                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2/O
-                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[22]_i_2_n_3
-                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln46_3_reg_1199[7]_i_1/O
-                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_11
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[7]/D
+                                                      0.146     6.043 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3/O[7]
+                         net (fo=3, unplaced)         0.163     6.206    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_20_fu_1157_p3
+                         LUT6 (Prop_LUT6_I2_O)        0.040     6.246 f  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2/O
+                         net (fo=23, unplaced)        0.266     6.512    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2_n_5
+                         LUT2 (Prop_LUT2_I1_O)        0.085     6.597 r  bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_1/O
+                         net (fo=1, unplaced)         0.058     6.655    bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2_n_14
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[7]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=523, unset)          0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
-                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[7]/C
+                         net (fo=3047, unset)         0.026    10.026    bd_0_i/hls_inst/inst/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[7]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
-                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln46_3_reg_1199_reg[7]
+                         FDSE (Setup_FDSE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/select_ln56_3_reg_1580_reg[7]
   -------------------------------------------------------------------
                          required time                         10.018    
                          arrival time                          -6.655    

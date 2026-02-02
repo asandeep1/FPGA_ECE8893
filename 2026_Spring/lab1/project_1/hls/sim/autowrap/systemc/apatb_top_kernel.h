@@ -7,5 +7,5 @@
 // ==============================================================
 
 extern "C" void AESL_WRAP_top_kernel (
-volatile void* A,
-volatile void* C);
+volatile void* A_DRAM,
+volatile void* C_DRAM);

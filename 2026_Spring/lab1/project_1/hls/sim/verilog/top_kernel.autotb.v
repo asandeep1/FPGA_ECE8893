@@ -17,23 +17,27 @@
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
 `define AUTOTB_CLOCK_PERIOD_DIV2 5.00
 
-`define AESL_MEM_A AESL_automem_A
-`define AESL_MEM_INST_A mem_inst_A
-`define AESL_MEM_C AESL_automem_C
-`define AESL_MEM_INST_C mem_inst_C
+`define AESL_DEPTH_A 1
+`define AESL_DEPTH_C 1
+`define AESL_DEPTH_A_DRAM 1
+`define AESL_DEPTH_C_DRAM 1
 `define AUTOTB_TVIN_A  "../tv/cdatafile/c.top_kernel.autotvin_A.dat"
-`define AUTOTB_TVIN_C  "../tv/cdatafile/c.top_kernel.autotvin_C.dat"
+`define AUTOTB_TVIN_A_DRAM  "../tv/cdatafile/c.top_kernel.autotvin_A_DRAM.dat"
+`define AUTOTB_TVIN_C_DRAM  "../tv/cdatafile/c.top_kernel.autotvin_C_DRAM.dat"
 `define AUTOTB_TVIN_A_out_wrapc  "../tv/rtldatafile/rtl.top_kernel.autotvin_A.dat"
-`define AUTOTB_TVIN_C_out_wrapc  "../tv/rtldatafile/rtl.top_kernel.autotvin_C.dat"
+`define AUTOTB_TVIN_A_DRAM_out_wrapc  "../tv/rtldatafile/rtl.top_kernel.autotvin_A_DRAM.dat"
+`define AUTOTB_TVIN_C_DRAM_out_wrapc  "../tv/rtldatafile/rtl.top_kernel.autotvin_C_DRAM.dat"
 `define AUTOTB_TVOUT_C  "../tv/cdatafile/c.top_kernel.autotvout_C.dat"
 `define AUTOTB_TVOUT_C_out_wrapc  "../tv/rtldatafile/rtl.top_kernel.autotvout_C.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 78658;
+parameter LATENCY_ESTIMATION = 62618;
 parameter LENGTH_A = 16384;
+parameter LENGTH_A_DRAM = 1;
 parameter LENGTH_C = 16384;
+parameter LENGTH_C_DRAM = 1;
 
 reg AESL_clock;
 reg rst;
@@ -53,17 +57,114 @@ reg AESL_done_delay2 = 0;
 reg AESL_ready_delay = 0;
 wire ready;
 wire ready_wire;
-wire ap_start;
-wire ap_done;
-wire ap_idle;
-wire ap_ready;
-wire [13 : 0] A_address0;
-wire  A_ce0;
-wire [23 : 0] A_q0;
-wire [13 : 0] C_address0;
-wire  C_ce0;
-wire  C_we0;
-wire [23 : 0] C_d0;
+wire [5 : 0] control_AWADDR;
+wire  control_AWVALID;
+wire  control_AWREADY;
+wire  control_WVALID;
+wire  control_WREADY;
+wire [31 : 0] control_WDATA;
+wire [3 : 0] control_WSTRB;
+wire [5 : 0] control_ARADDR;
+wire  control_ARVALID;
+wire  control_ARREADY;
+wire  control_RVALID;
+wire  control_RREADY;
+wire [31 : 0] control_RDATA;
+wire [1 : 0] control_RRESP;
+wire  control_BVALID;
+wire  control_BREADY;
+wire [1 : 0] control_BRESP;
+wire  control_INTERRUPT;
+wire  A_AWVALID;
+wire  A_AWREADY;
+wire [63 : 0] A_AWADDR;
+wire [0 : 0] A_AWID;
+wire [7 : 0] A_AWLEN;
+wire [2 : 0] A_AWSIZE;
+wire [1 : 0] A_AWBURST;
+wire [1 : 0] A_AWLOCK;
+wire [3 : 0] A_AWCACHE;
+wire [2 : 0] A_AWPROT;
+wire [3 : 0] A_AWQOS;
+wire [3 : 0] A_AWREGION;
+wire [0 : 0] A_AWUSER;
+wire  A_WVALID;
+wire  A_WREADY;
+wire [31 : 0] A_WDATA;
+wire [3 : 0] A_WSTRB;
+wire  A_WLAST;
+wire [0 : 0] A_WID;
+wire [0 : 0] A_WUSER;
+wire  A_ARVALID;
+wire  A_ARREADY;
+wire [63 : 0] A_ARADDR;
+wire [0 : 0] A_ARID;
+wire [7 : 0] A_ARLEN;
+wire [2 : 0] A_ARSIZE;
+wire [1 : 0] A_ARBURST;
+wire [1 : 0] A_ARLOCK;
+wire [3 : 0] A_ARCACHE;
+wire [2 : 0] A_ARPROT;
+wire [3 : 0] A_ARQOS;
+wire [3 : 0] A_ARREGION;
+wire [0 : 0] A_ARUSER;
+wire  A_RVALID;
+wire  A_RREADY;
+wire [31 : 0] A_RDATA;
+wire  A_RLAST;
+wire [0 : 0] A_RID;
+wire [0 : 0] A_RUSER;
+wire [1 : 0] A_RRESP;
+wire  A_BVALID;
+wire  A_BREADY;
+wire [1 : 0] A_BRESP;
+wire [0 : 0] A_BID;
+wire [0 : 0] A_BUSER;
+wire  C_AWVALID;
+wire  C_AWREADY;
+wire [63 : 0] C_AWADDR;
+wire [0 : 0] C_AWID;
+wire [7 : 0] C_AWLEN;
+wire [2 : 0] C_AWSIZE;
+wire [1 : 0] C_AWBURST;
+wire [1 : 0] C_AWLOCK;
+wire [3 : 0] C_AWCACHE;
+wire [2 : 0] C_AWPROT;
+wire [3 : 0] C_AWQOS;
+wire [3 : 0] C_AWREGION;
+wire [0 : 0] C_AWUSER;
+wire  C_WVALID;
+wire  C_WREADY;
+wire [31 : 0] C_WDATA;
+wire [3 : 0] C_WSTRB;
+wire  C_WLAST;
+wire [0 : 0] C_WID;
+wire [0 : 0] C_WUSER;
+wire  C_ARVALID;
+wire  C_ARREADY;
+wire [63 : 0] C_ARADDR;
+wire [0 : 0] C_ARID;
+wire [7 : 0] C_ARLEN;
+wire [2 : 0] C_ARSIZE;
+wire [1 : 0] C_ARBURST;
+wire [1 : 0] C_ARLOCK;
+wire [3 : 0] C_ARCACHE;
+wire [2 : 0] C_ARPROT;
+wire [3 : 0] C_ARQOS;
+wire [3 : 0] C_ARREGION;
+wire [0 : 0] C_ARUSER;
+wire  C_RVALID;
+wire  C_RREADY;
+wire [31 : 0] C_RDATA;
+wire  C_RLAST;
+wire [0 : 0] C_RID;
+wire [0 : 0] C_RUSER;
+wire [1 : 0] C_RRESP;
+wire  C_BVALID;
+wire  C_BREADY;
+wire [1 : 0] C_BRESP;
+wire [0 : 0] C_BID;
+wire [0 : 0] C_BUSER;
 integer done_cnt = 0;
 integer AESL_ready_cnt = 0;
 integer ready_cnt = 0;
@@ -73,30 +174,140 @@ reg ready_last_n;
 reg ready_delay_last_n;
 reg done_delay_last_n;
 reg interface_done = 0;
+wire control_write_data_finish;
+wire AESL_slave_start;
+reg AESL_slave_start_lock = 0;
+wire AESL_slave_write_start_in;
+wire AESL_slave_write_start_finish;
+reg AESL_slave_ready;
+wire AESL_slave_output_done;
+wire AESL_slave_done;
+reg ready_rise = 0;
+reg start_rise = 0;
+reg slave_start_status = 0;
+reg slave_done_status = 0;
+reg ap_done_lock = 0;
 
 
 wire all_finish;
 wire ap_clk;
-wire ap_rst;
 wire ap_rst_n;
+wire ap_rst_n_n;
 
 `AUTOTB_DUT `AUTOTB_DUT_INST(
+    .s_axi_control_AWADDR(control_AWADDR),
+    .s_axi_control_AWVALID(control_AWVALID),
+    .s_axi_control_AWREADY(control_AWREADY),
+    .s_axi_control_WVALID(control_WVALID),
+    .s_axi_control_WREADY(control_WREADY),
+    .s_axi_control_WDATA(control_WDATA),
+    .s_axi_control_WSTRB(control_WSTRB),
+    .s_axi_control_ARADDR(control_ARADDR),
+    .s_axi_control_ARVALID(control_ARVALID),
+    .s_axi_control_ARREADY(control_ARREADY),
+    .s_axi_control_RVALID(control_RVALID),
+    .s_axi_control_RREADY(control_RREADY),
+    .s_axi_control_RDATA(control_RDATA),
+    .s_axi_control_RRESP(control_RRESP),
+    .s_axi_control_BVALID(control_BVALID),
+    .s_axi_control_BREADY(control_BREADY),
+    .s_axi_control_BRESP(control_BRESP),
+    .interrupt(control_INTERRUPT),
     .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(ap_start),
-    .ap_done(ap_done),
-    .ap_idle(ap_idle),
-    .ap_ready(ap_ready),
-    .A_address0(A_address0),
-    .A_ce0(A_ce0),
-    .A_q0(A_q0),
-    .C_address0(C_address0),
-    .C_ce0(C_ce0),
-    .C_we0(C_we0),
-    .C_d0(C_d0));
+    .ap_rst_n(ap_rst_n),
+    .m_axi_A_AWVALID(A_AWVALID),
+    .m_axi_A_AWREADY(A_AWREADY),
+    .m_axi_A_AWADDR(A_AWADDR),
+    .m_axi_A_AWID(A_AWID),
+    .m_axi_A_AWLEN(A_AWLEN),
+    .m_axi_A_AWSIZE(A_AWSIZE),
+    .m_axi_A_AWBURST(A_AWBURST),
+    .m_axi_A_AWLOCK(A_AWLOCK),
+    .m_axi_A_AWCACHE(A_AWCACHE),
+    .m_axi_A_AWPROT(A_AWPROT),
+    .m_axi_A_AWQOS(A_AWQOS),
+    .m_axi_A_AWREGION(A_AWREGION),
+    .m_axi_A_AWUSER(A_AWUSER),
+    .m_axi_A_WVALID(A_WVALID),
+    .m_axi_A_WREADY(A_WREADY),
+    .m_axi_A_WDATA(A_WDATA),
+    .m_axi_A_WSTRB(A_WSTRB),
+    .m_axi_A_WLAST(A_WLAST),
+    .m_axi_A_WID(A_WID),
+    .m_axi_A_WUSER(A_WUSER),
+    .m_axi_A_ARVALID(A_ARVALID),
+    .m_axi_A_ARREADY(A_ARREADY),
+    .m_axi_A_ARADDR(A_ARADDR),
+    .m_axi_A_ARID(A_ARID),
+    .m_axi_A_ARLEN(A_ARLEN),
+    .m_axi_A_ARSIZE(A_ARSIZE),
+    .m_axi_A_ARBURST(A_ARBURST),
+    .m_axi_A_ARLOCK(A_ARLOCK),
+    .m_axi_A_ARCACHE(A_ARCACHE),
+    .m_axi_A_ARPROT(A_ARPROT),
+    .m_axi_A_ARQOS(A_ARQOS),
+    .m_axi_A_ARREGION(A_ARREGION),
+    .m_axi_A_ARUSER(A_ARUSER),
+    .m_axi_A_RVALID(A_RVALID),
+    .m_axi_A_RREADY(A_RREADY),
+    .m_axi_A_RDATA(A_RDATA),
+    .m_axi_A_RLAST(A_RLAST),
+    .m_axi_A_RID(A_RID),
+    .m_axi_A_RUSER(A_RUSER),
+    .m_axi_A_RRESP(A_RRESP),
+    .m_axi_A_BVALID(A_BVALID),
+    .m_axi_A_BREADY(A_BREADY),
+    .m_axi_A_BRESP(A_BRESP),
+    .m_axi_A_BID(A_BID),
+    .m_axi_A_BUSER(A_BUSER),
+    .m_axi_C_AWVALID(C_AWVALID),
+    .m_axi_C_AWREADY(C_AWREADY),
+    .m_axi_C_AWADDR(C_AWADDR),
+    .m_axi_C_AWID(C_AWID),
+    .m_axi_C_AWLEN(C_AWLEN),
+    .m_axi_C_AWSIZE(C_AWSIZE),
+    .m_axi_C_AWBURST(C_AWBURST),
+    .m_axi_C_AWLOCK(C_AWLOCK),
+    .m_axi_C_AWCACHE(C_AWCACHE),
+    .m_axi_C_AWPROT(C_AWPROT),
+    .m_axi_C_AWQOS(C_AWQOS),
+    .m_axi_C_AWREGION(C_AWREGION),
+    .m_axi_C_AWUSER(C_AWUSER),
+    .m_axi_C_WVALID(C_WVALID),
+    .m_axi_C_WREADY(C_WREADY),
+    .m_axi_C_WDATA(C_WDATA),
+    .m_axi_C_WSTRB(C_WSTRB),
+    .m_axi_C_WLAST(C_WLAST),
+    .m_axi_C_WID(C_WID),
+    .m_axi_C_WUSER(C_WUSER),
+    .m_axi_C_ARVALID(C_ARVALID),
+    .m_axi_C_ARREADY(C_ARREADY),
+    .m_axi_C_ARADDR(C_ARADDR),
+    .m_axi_C_ARID(C_ARID),
+    .m_axi_C_ARLEN(C_ARLEN),
+    .m_axi_C_ARSIZE(C_ARSIZE),
+    .m_axi_C_ARBURST(C_ARBURST),
+    .m_axi_C_ARLOCK(C_ARLOCK),
+    .m_axi_C_ARCACHE(C_ARCACHE),
+    .m_axi_C_ARPROT(C_ARPROT),
+    .m_axi_C_ARQOS(C_ARQOS),
+    .m_axi_C_ARREGION(C_ARREGION),
+    .m_axi_C_ARUSER(C_ARUSER),
+    .m_axi_C_RVALID(C_RVALID),
+    .m_axi_C_RREADY(C_RREADY),
+    .m_axi_C_RDATA(C_RDATA),
+    .m_axi_C_RLAST(C_RLAST),
+    .m_axi_C_RID(C_RID),
+    .m_axi_C_RUSER(C_RUSER),
+    .m_axi_C_RRESP(C_RRESP),
+    .m_axi_C_BVALID(C_BVALID),
+    .m_axi_C_BREADY(C_BREADY),
+    .m_axi_C_BRESP(C_BRESP),
+    .m_axi_C_BID(C_BID),
+    .m_axi_C_BUSER(C_BUSER));
 assign ap_clk = AESL_clock;
-assign ap_rst = AESL_reset;
-assign ap_rst_n = ~AESL_reset;
+assign ap_rst_n = AESL_reset;
+assign ap_rst_n_n = ~AESL_reset;
 assign AESL_reset = dut_rst;
 assign AESL_start = svtb_top.misc_if.tb2dut_ap_start;
 assign AESL_ready = svtb_top.misc_if.dut2tb_ap_ready;
@@ -104,19 +315,19 @@ assign AESL_done  = svtb_top.misc_if.dut2tb_ap_done;
 assign all_finish = svtb_top.misc_if.finished;
 initial begin : initial_process
     integer proc_rand;
-    rst = 1;
+    rst = 0;
     # 100;
     repeat(0+3) @ (posedge AESL_clock);
     # 0.1;
-    rst = 0;
+    rst = 1;
 end
 initial begin : initial_process_for_dut_rst
     integer proc_rand;
-    dut_rst = 1;
+    dut_rst = 0;
     # 100;
     repeat(3) @ (posedge AESL_clock);
     # 0.1;
-    dut_rst = 0;
+    dut_rst = 1;
 end
 initial begin
     AESL_clock = 0;
@@ -124,108 +335,6 @@ initial begin
 end
 
     sv_module_top svtb_top();
-//------------------------arrayA Instantiation--------------
-
-// The input and output of arrayA
-wire    arrayA_ce0, arrayA_ce1;
-wire [3 - 1 : 0]    arrayA_we0, arrayA_we1;
-wire    [13 : 0]    arrayA_address0, arrayA_address1;
-wire    [23 : 0]    arrayA_din0, arrayA_din1;
-wire    [23 : 0]    arrayA_dout0, arrayA_dout1;
-wire    arrayA_ready;
-wire    arrayA_done;
-
-`AESL_MEM_A `AESL_MEM_INST_A(
-    .clk        (AESL_clock),
-    .rst        (AESL_reset),
-    .ce0        (arrayA_ce0),
-    .we0        (arrayA_we0),
-    .address0   (arrayA_address0),
-    .din0       (arrayA_din0),
-    .dout0      (arrayA_dout0),
-    .ce1        (arrayA_ce1),
-    .we1        (arrayA_we1),
-    .address1   (arrayA_address1),
-    .din1       (arrayA_din1),
-    .dout1      (arrayA_dout1),
-    .ready      (arrayA_ready),
-    .done    (arrayA_done)
-);
-
-// Assignment between dut and arrayA
-assign arrayA_address0 = A_address0;
-assign arrayA_ce0 = A_ce0;
-assign A_q0 = arrayA_dout0;
-assign arrayA_we0 = 0;
-assign arrayA_din0 = 0;
-assign arrayA_we1 = 0;
-assign arrayA_din1 = 0;
-assign arrayA_ready=    ready;
-assign arrayA_done = 0;
-
-event A_reshape_ap_done_evt;
-event A_reshape_ap_ready_evt;
-initial begin
-     `AESL_MEM_INST_A.initialed       = svtb_top.misc_if.initialed_evt  ;
-     `AESL_MEM_INST_A.finished        = svtb_top.misc_if.finished_evt   ;
-     `AESL_MEM_INST_A.dut2tb_ap_ready = svtb_top.misc_if.dut2tb_ap_ready_evt;
-     `AESL_MEM_INST_A.dut2tb_ap_done = svtb_top.misc_if.dut2tb_ap_ready_evt;
-end
-//------------------------arrayC Instantiation--------------
-
-// The input and output of arrayC
-wire    arrayC_ce0, arrayC_ce1;
-wire [3 - 1 : 0]    arrayC_we0, arrayC_we1;
-wire    [13 : 0]    arrayC_address0, arrayC_address1;
-wire    [23 : 0]    arrayC_din0, arrayC_din1;
-wire    [23 : 0]    arrayC_dout0, arrayC_dout1;
-wire    arrayC_ready;
-wire    arrayC_done;
-
-`AESL_MEM_C `AESL_MEM_INST_C(
-    .clk        (AESL_clock),
-    .rst        (AESL_reset),
-    .ce0        (arrayC_ce0),
-    .we0        (arrayC_we0),
-    .address0   (arrayC_address0),
-    .din0       (arrayC_din0),
-    .dout0      (arrayC_dout0),
-    .ce1        (arrayC_ce1),
-    .we1        (arrayC_we1),
-    .address1   (arrayC_address1),
-    .din1       (arrayC_din1),
-    .dout1      (arrayC_dout1),
-    .ready      (arrayC_ready),
-    .done    (arrayC_done)
-);
-
-// Assignment between dut and arrayC
-assign arrayC_address0 = C_address0;
-assign arrayC_ce0 = C_ce0;
-assign arrayC_we0[0] = C_we0;
-assign arrayC_we0[1] = C_we0;
-assign arrayC_we0[2] = C_we0;
-assign arrayC_din0 = C_d0;
-assign arrayC_we1 = 0;
-assign arrayC_din1 = 0;
-assign arrayC_ready= ready_initial | arrayC_done;
-assign arrayC_done =    AESL_done_delay;
-
-event C_reshape_ap_done_evt;
-event C_reshape_ap_ready_evt;
-initial begin
-     `AESL_MEM_INST_C.initialed       = svtb_top.misc_if.initialed_evt  ;
-     `AESL_MEM_INST_C.finished        = svtb_top.misc_if.finished_evt   ;
-     `AESL_MEM_INST_C.dut2tb_ap_done  = svtb_top.misc_if.dut2tb_ap_done_evt;
-     `AESL_MEM_INST_C.dut2tb_ap_ready = C_reshape_ap_ready_evt;
-end
-initial begin
-    forever begin
-        @svtb_top.misc_if.dut2tb_ap_done_evt;
-        #0;
-        -> C_reshape_ap_ready_evt;
-    end
-end
 
 ////////////////////////////////////////////
 // progress and performance
@@ -242,7 +351,7 @@ reg AESL_ready_p1;
 reg AESL_start_p1;
 
 always @ (posedge AESL_clock) begin
-    if (AESL_reset == 1) begin
+    if (AESL_reset == 0) begin
         clk_cnt <= 32'h0;
         AESL_ready_p1 <= 1'b0;
         AESL_start_p1 <= 1'b0;
@@ -273,7 +382,7 @@ initial begin
     start_cnt = 0;
     finish_cnt = 0;
     ap_ready_cnt = 0;
-    wait (AESL_reset == 0);
+    wait (AESL_reset == 1);
     wait_start();
     start_timestamp[start_cnt] = clk_cnt;
     start_cnt = start_cnt + 1;
@@ -310,7 +419,7 @@ reg [31:0] progress_timeout;
 
 initial begin : simulation_progress
     real intra_progress;
-    wait (AESL_reset == 0);
+    wait (AESL_reset == 1);
     progress_timeout = PROGRESS_TIMEOUT;
     $display("////////////////////////////////////////////////////////////////////////////////////");
     $display("// Inter-Transaction Progress: Completed Transaction / Total Transaction");
@@ -460,7 +569,7 @@ endtask
 ///////////////////////////////////////////////////////
 dataflow_monitor U_dataflow_monitor(
     .clock(AESL_clock),
-    .reset(rst),
+    .reset(~rst),
     .finish(all_finish));
 
 `include "fifo_para.vh"

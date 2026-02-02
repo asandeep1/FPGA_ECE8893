@@ -14,6 +14,7 @@
                                                      
         import uvm_pkg::*;                           
         import file_agent_pkg::*;                    
+        import axi_pkg::*;
                                                      
         `include "uvm_macros.svh"                  
                                                      

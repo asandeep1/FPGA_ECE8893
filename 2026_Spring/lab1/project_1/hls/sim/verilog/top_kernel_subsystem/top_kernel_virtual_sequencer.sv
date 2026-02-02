@@ -9,6 +9,9 @@
     `define TOP_KERNEL_VIRTUAL_SEQUENCER__SV                    
                                                                        
     class top_kernel_virtual_sequencer extends uvm_sequencer;         
+        axi_pkg::axi_virtual_sequencer A_sqr; 
+        axi_pkg::axi_virtual_sequencer C_sqr; 
+        axi_pkg::axi_virtual_sequencer control_sqr; 
  
         function new (string name, uvm_component parent);              
             super.new(name, parent);                                   

@@ -8,8 +8,34 @@
 
 `ifndef TOP_KERNEL_REFERENCE_MODEL_SV
 `define TOP_KERNEL_REFERENCE_MODEL_SV
+typedef class top_kernel_reference_model;
+class memaccess_axi_state_cbs extends axi_pkg::axi_state_cbs;
+    top_kernel_reference_model refm;
+    string memid;
+    //function new(string name="memaccess_axi_state_cbs");
+    //    super.new(name);
+    //endfunction
+    virtual function void memmodel_read_fromar(ref logic[7:0] data[$], input longint addr, input longint len);
+        if(memid=="A") refm.mem_blk_pages_A.read_elems_pipepage(data, addr, len);
+        if(memid=="C") refm.mem_blk_pages_C.read_elems_pipepage(data, addr, len);
+    endfunction
+endclass
 
 class top_kernel_reference_model extends uvm_component;
+`define TV_IN_A "../tv/cdatafile/c.top_kernel.autotvin_A.dat"
+`define TV_OUT_A "../tv/rtldatafile/rtl.top_kernel.autotvout_A.dat"
+`define TV_IN_OFFSET_A_DRAM "../tv/cdatafile/c.top_kernel.autotvin_A_DRAM.dat"
+`define TV_IN_C "../tv/cdatafile/c.top_kernel.autotvin_C.dat"
+`define TV_OUT_C "../tv/rtldatafile/rtl.top_kernel.autotvout_C.dat"
+`define TV_IN_OFFSET_C_DRAM "../tv/cdatafile/c.top_kernel.autotvin_C_DRAM.dat"
+`define TV_IN_A_DRAM "../tv/cdatafile/c.top_kernel.autotvin_A_DRAM.dat"
+`define TV_OUT_A_DRAM ""
+`define TV_IN_C_DRAM "../tv/cdatafile/c.top_kernel.autotvin_C_DRAM.dat"
+`define TV_OUT_C_DRAM ""
+    bit  write_data_finish_control;
+    event allaxilite_write_data_finish;
+    event allaxilite_write_one_transaction_finish;
+    event write_start_finish;
     int trans_num_total = 1;
     int trans_num_idx;
     int ap_done_cnt=1;
@@ -21,6 +47,14 @@ class top_kernel_reference_model extends uvm_component;
     top_kernel_config top_kernel_cfg;
     virtual interface misc_interface misc_if;
 
+    mem_model_pages_with_diffofst#(32,8) mem_blk_pages_A;
+    int blk_id_A = 0;
+    memaccess_axi_state_cbs axi_memaccess_cb_A;
+
+    mem_model_pages_with_diffofst#(32,8) mem_blk_pages_C;
+    int blk_id_C = 0;
+    memaccess_axi_state_cbs axi_memaccess_cb_C;
+
     
     `uvm_component_utils_begin(top_kernel_reference_model)
         `uvm_field_int (trans_num_idx, UVM_DEFAULT)
@@ -30,6 +64,12 @@ class top_kernel_reference_model extends uvm_component;
         super.build_phase(phase);
         if(!uvm_config_db#(virtual misc_interface)::get(this, "", "misc_if", misc_if))
             `uvm_fatal(this.get_full_name(), "No misc_if from high level")
+        axi_memaccess_cb_A = new;
+        axi_memaccess_cb_A.refm = this;
+        axi_memaccess_cb_A.memid = "A";
+        axi_memaccess_cb_C = new;
+        axi_memaccess_cb_C.refm = this;
+        axi_memaccess_cb_C.memid = "C";
     endfunction
 
     function new (string name = "", uvm_component parent = null);
@@ -39,13 +79,40 @@ class top_kernel_reference_model extends uvm_component;
 
     virtual task run_phase(uvm_phase phase);
         string fpath[$];
+misc_if.dut2tb_ap_done = 0;
+        fpath.push_back(`TV_IN_A);
+        mem_blk_pages_A = mem_model_pages_with_diffofst#(32,8)::type_id::create("mem_blk_pages_A");
+        mem_blk_pages_A.whole_page_size=65600;
+        mem_blk_pages_A.maxi_bundlevar_fpath["A_DRAM"]=`TV_IN_OFFSET_A_DRAM;
+        mem_blk_pages_A.set_binary(1);
+        mem_blk_pages_A.tvinload_pagechk_atinit(fpath, 16384*((32+7)/8), 0, 0, "");
+        fpath.delete();
+
+        fpath.push_back(`TV_IN_C);
+        mem_blk_pages_C = mem_model_pages_with_diffofst#(32,8)::type_id::create("mem_blk_pages_C");
+        mem_blk_pages_C.whole_page_size=65600;
+        mem_blk_pages_C.maxi_bundlevar_fpath["C_DRAM"]=`TV_IN_OFFSET_C_DRAM;
+        mem_blk_pages_C.set_binary(1);
+        mem_blk_pages_C.tvinload_pagechk_atinit(fpath, 16384*((32+7)/8), 0, 0, "");
+        mem_blk_pages_C.tvoutdump_atinit(`TV_OUT_C);
+        fpath.delete();
+
         fork
+            forever begin
+                wait(write_data_finish_control);
+                `uvm_info("", "trigger_allaxilite_data_write_finish", UVM_LOW)
+                @(posedge misc_if.clock);
+                write_data_finish_control = 0;
+                -> allaxilite_write_data_finish;
+            end
             forever begin
                 //this is non-pipeline case
                 forever begin
                     @(negedge misc_if.clock);
                     if(misc_if.dut2tb_ap_done===1) break;
                 end
+                @(posedge misc_if.clock);
+                @allaxilite_write_data_finish;
                 @(posedge misc_if.clock);
                 -> ap_ready_for_nexttrans;
                 `uvm_info(this.get_full_name(), "trigger event ap_ready_for_nexttrans", UVM_LOW)
@@ -82,14 +149,10 @@ class top_kernel_reference_model extends uvm_component;
                 join_none
             end
 
-            forever begin
-                forever begin
-                    @(negedge misc_if.clock);
-                    if (misc_if.dut2tb_ap_done===1)   break;
-                end
-                @(posedge misc_if.clock);
-                -> dut2tb_ap_done;
-                `uvm_info(this.get_full_name(), "trigger event DUT2TB_AP_DONE", UVM_LOW)
+            for(int i=1; i<1; i++) begin
+                @dut2tb_ap_ready;
+                mem_blk_pages_A.incr_rd_page_idx() ;
+                mem_blk_pages_C.incr_rd_page_idx() ;
             end
             forever begin
                 forever begin
@@ -99,8 +162,52 @@ class top_kernel_reference_model extends uvm_component;
                 @(posedge misc_if.clock);
                 `uvm_info(this.get_full_name(), "trigger event DUT2TB_AP_READY", UVM_LOW)
                 -> dut2tb_ap_ready;
+                 misc_if.tb2dut_ap_start = 0;
             end
         join
     endtask
+
+    virtual function void write_axi_wtr_A(axi_pkg::axi_transfer tr);
+        mem_blk_pages_A.write_elems_pipepage(tr.data,tr.byte_addr);
+    endfunction
+
+    virtual function void write_axi_rtr_A(axi_pkg::axi_transfer tr);
+    endfunction
+
+    virtual function void write_axi_wtr_C(axi_pkg::axi_transfer tr);
+        mem_blk_pages_C.write_elems_pipepage(tr.data,tr.byte_addr);
+    endfunction
+
+    virtual function void write_axi_rtr_C(axi_pkg::axi_transfer tr);
+    endfunction
+
+    virtual function void write_axi_wtr_control(axi_pkg::axi_transfer tr);
+        if(tr.addr == 0 && tr.len == 0 && tr.data[0][0]==1) begin //addr 0 and bit 0 are parameter
+            -> write_start_finish;
+            misc_if.tb2dut_ap_start = 1;
+        end
+    endfunction
+    virtual function void write_axi_rtr_control(axi_pkg::axi_transfer tr);
+            `uvm_info("receive axi read data", tr.sprint(), UVM_HIGH)
+        if(tr.addr == 0 && tr.len == 0) begin
+            if(tr.data[0][1]==1) begin  //bit 1 is parameter
+                `uvm_info("status polling", "ap_done is polled", UVM_LOW);
+                fork
+                    begin
+                        misc_if.dut2tb_ap_done = 1;
+                        @(posedge misc_if.clock);
+                        #0;
+                        misc_if.dut2tb_ap_done = 0;
+                        misc_if.tb2dut_ap_continue = 0;
+                        -> dut2tb_ap_done;
+                    end
+                join_none
+            end
+            begin
+                misc_if.dut2tb_ap_idle = tr.data[0][2];
+            end
+        end else begin
+        end
+    endfunction
 endclass
 `endif

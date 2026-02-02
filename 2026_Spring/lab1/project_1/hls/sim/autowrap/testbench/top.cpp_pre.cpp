@@ -59257,19 +59257,36 @@ void top_kernel(data_t A[256][64],
 
 
 
-void top_kernel(data_t A[256][64],
-                data_t C[256][64]) {
+void top_kernel(data_t A_DRAM[256][64],
+                data_t C_DRAM[256][64]) {
+#pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A
+#pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C
+#pragma HLS interface s_axilite port=return
 
-    static data_t tmp[256][64];
+
+data_t A[256][64];
+data_t C[256][64];
+data_t tmp[256][64];
+
+#pragma HLS array_partition variable=A cyclic factor=4 dim=2
+#pragma HLS array_partition variable=tmp complete dim=2
+#pragma HLS array_partition variable=C cyclic factor=4 dim=1
+
+    for (int i = 0; i < 256; i++) {
+        for (int j = 0; j < 64; j++) {
+#pragma HLS PIPELINE II=1
+            A[i][j] = A_DRAM[i][j];
+        }
+    }
 
 
     for (int i = 0; i < 256; i++) {
         data_t row_sum = 0.0;
 
 
-
         for (int j = 0; j < 64; j++) {
-#pragma HLS pipeline II=1
+#pragma HLS PIPELINE II=1
+#pragma HLS UNROLL factor=4
             row_sum += A[i][j];
         }
 
@@ -59277,9 +59294,9 @@ void top_kernel(data_t A[256][64],
         data_t denom = row_sum + (data_t)1.0;
 
 
-
         for (int j = 0; j < 64; j++) {
-#pragma HLS pipeline II=1
+#pragma HLS PIPELINE II=1
+#pragma HLS UNROLL factor=4
             tmp[i][j] = A[i][j] / denom;
         }
     }
@@ -59289,9 +59306,9 @@ void top_kernel(data_t A[256][64],
         data_t col_sum = 0.0;
 
 
-
         for (int i = 0; i < 256; i++) {
-#pragma HLS pipeline II=1
+#pragma HLS PIPELINE II=1
+#pragma HLS UNROLL factor=4
             col_sum += tmp[i][j];
         }
 
@@ -59299,11 +59316,17 @@ void top_kernel(data_t A[256][64],
         data_t scale = col_sum / (data_t)256;
 
 
-
         for (int i = 0; i < 256; i++) {
-#pragma HLS pipeline II=1
+#pragma HLS PIPELINE II=1
+#pragma HLS UNROLL factor=4
             C[i][j] = tmp[i][j] * scale;
         }
     }
-# 89 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp"
+
+    for (int i = 0; i < 256; i++) {
+        for (int j = 0; j < 64; j++) {
+#pragma HLS PIPELINE II=1
+            C_DRAM[i][j] = C[i][j];
+        }
+    }
 }

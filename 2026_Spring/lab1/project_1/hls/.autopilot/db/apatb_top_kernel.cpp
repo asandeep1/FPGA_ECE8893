@@ -21,6 +21,10 @@
 using namespace std;
 
 // wrapc file define:
+#define AUTOTB_TVIN_A_DRAM "../tv/cdatafile/c.top_kernel.autotvin_A_DRAM.dat"
+#define AUTOTB_TVOUT_A_DRAM "../tv/cdatafile/c.top_kernel.autotvout_A_DRAM.dat"
+#define AUTOTB_TVIN_C_DRAM "../tv/cdatafile/c.top_kernel.autotvin_C_DRAM.dat"
+#define AUTOTB_TVOUT_C_DRAM "../tv/cdatafile/c.top_kernel.autotvout_C_DRAM.dat"
 #define AUTOTB_TVIN_A "../tv/cdatafile/c.top_kernel.autotvin_A.dat"
 #define AUTOTB_TVOUT_A "../tv/cdatafile/c.top_kernel.autotvout_A.dat"
 #define AUTOTB_TVIN_C "../tv/cdatafile/c.top_kernel.autotvin_C.dat"
@@ -28,6 +32,7 @@ using namespace std;
 
 
 // tvout file define:
+#define AUTOTB_TVOUT_PC_A "../tv/rtldatafile/rtl.top_kernel.autotvout_A.dat"
 #define AUTOTB_TVOUT_PC_C "../tv/rtldatafile/rtl.top_kernel.autotvout_C.dat"
 
 
@@ -1235,14 +1240,38 @@ extern "C"
 void top_kernel_hw_stub_wrapper(void*, void*);
 
 extern "C"
-void apatb_top_kernel_hw(void* __xlx_apatb_param_A, void* __xlx_apatb_param_C)
+void apatb_top_kernel_hw(void* __xlx_apatb_param_A_DRAM, void* __xlx_apatb_param_C_DRAM)
 {
-#ifdef USE_BINARY_TV_FILE
-  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port0 {
+  static hls::sim::Byte<4> __xlx_offset_byte_param_A_DRAM;
+  static hls::sim::Register port0 {
+    .name = "A_DRAM",
+    .width = 32,
+#ifdef POST_CHECK
 #else
-  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port0 {
+    .owriter = nullptr,
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_A_DRAM),
 #endif
-    .width = 24,
+  };
+  port0.param = &__xlx_offset_byte_param_A_DRAM;
+
+  static hls::sim::Byte<4> __xlx_offset_byte_param_C_DRAM;
+  static hls::sim::Register port1 {
+    .name = "C_DRAM",
+    .width = 32,
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_C_DRAM),
+#endif
+  };
+  port1.param = &__xlx_offset_byte_param_C_DRAM;
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port2 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port2 {
+#endif
+    .width = 32,
     .asize = 4,
     .hbm = false,
     .name = { "A" },
@@ -1258,16 +1287,16 @@ void apatb_top_kernel_hw(void* __xlx_apatb_param_A, void* __xlx_apatb_param_C)
     .hasWrite = { false },
     .max_nbytes = { 0 },
   };
-  port0.param = { __xlx_apatb_param_A };
-  port0.mname = { "A" };
-  port0.nbytes = { 65536 };
+  port2.param = { __xlx_apatb_param_A_DRAM };
+  port2.mname = { "A_DRAM" };
+  port2.nbytes = { 65536 };
 
 #ifdef USE_BINARY_TV_FILE
-  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port1 {
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port3 {
 #else
-  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port1 {
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port3 {
 #endif
-    .width = 24,
+    .width = 32,
     .asize = 4,
     .hbm = false,
     .name = { "C" },
@@ -1292,26 +1321,30 @@ void apatb_top_kernel_hw(void* __xlx_apatb_param_A, void* __xlx_apatb_param_C)
     .hasWrite = { true },
     .max_nbytes = { 0 },
   };
-  port1.param = { __xlx_apatb_param_C };
-  port1.mname = { "C" };
-  port1.nbytes = { 65536 };
+  port3.param = { __xlx_apatb_param_C_DRAM };
+  port3.mname = { "C_DRAM" };
+  port3.nbytes = { 65536 };
 
   try {
 #ifdef POST_CHECK
     CodeState = ENTER_WRAPC_PC;
-    check(port1);
+    check(port3);
 #else
     static hls::sim::RefTCL tcl("../tv/cdatafile/ref.tcl");
     tcl.containsVLA = 0;
     CodeState = DUMP_INPUTS;
-    dump(port0, port0.iwriter, tcl.AESL_transaction);
-    dump(port1, port1.iwriter, tcl.AESL_transaction);
+    delay_dump(port0, port0.iwriter, tcl.AESL_transaction);
+    delay_dump(port1, port1.iwriter, tcl.AESL_transaction);
+    dump(port2, port2.iwriter, tcl.AESL_transaction);
+    dump(port3, port3.iwriter, tcl.AESL_transaction);
     port0.doTCL(tcl);
     port1.doTCL(tcl);
+    port2.doTCL(tcl);
+    port3.doTCL(tcl);
     CodeState = CALL_C_DUT;
-    top_kernel_hw_stub_wrapper(__xlx_apatb_param_A, __xlx_apatb_param_C);
+    top_kernel_hw_stub_wrapper(__xlx_apatb_param_A_DRAM, __xlx_apatb_param_C_DRAM);
     CodeState = DUMP_OUTPUTS;
-    dump(port1, port1.owriter, tcl.AESL_transaction);
+    dump(port3, port3.owriter, tcl.AESL_transaction);
     tcl.AESL_transaction++;
 #endif
   } catch (const hls::sim::SimException &e) {

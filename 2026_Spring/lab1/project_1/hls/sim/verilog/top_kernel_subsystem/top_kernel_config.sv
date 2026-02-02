@@ -12,14 +12,23 @@
                                                             
         int check_ena;                                      
         int cover_ena;                                      
+        axi_pkg::axi_cfg A_cfg;
+        axi_pkg::axi_cfg C_cfg;
+        axi_pkg::axi_cfg control_cfg;
 
         `uvm_object_utils_begin(top_kernel_config)         
+        `uvm_field_object(A_cfg, UVM_DEFAULT);
+        `uvm_field_object(C_cfg, UVM_DEFAULT);
+        `uvm_field_object(control_cfg, UVM_DEFAULT);
         `uvm_field_int   (check_ena , UVM_DEFAULT)          
         `uvm_field_int   (cover_ena , UVM_DEFAULT)          
         `uvm_object_utils_end                               
 
         function new (string name = "top_kernel_config");
             super.new(name);                                
+        A_cfg = axi_pkg::axi_cfg::type_id::create("A_cfg");
+        C_cfg = axi_pkg::axi_cfg::type_id::create("C_cfg");
+        control_cfg = axi_pkg::axi_cfg::type_id::create("control_cfg");
         endfunction                                         
                                                             
     endclass                                                

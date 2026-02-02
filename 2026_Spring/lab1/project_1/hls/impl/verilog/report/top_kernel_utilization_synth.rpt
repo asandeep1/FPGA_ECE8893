@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date         : Fri Jan 23 18:09:14 2026
+| Date         : Sun Feb  1 18:52:59 2026
 | Host         : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command      : report_utilization -file ./report/top_kernel_utilization_synth.rpt
 | Design       : bd_0_wrapper
@@ -32,15 +32,15 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*                  |  536 |     0 |          0 |     70560 |  0.76 |
-|   LUT as Logic             |  532 |     0 |          0 |     70560 |  0.75 |
-|   LUT as Memory            |    4 |     0 |          0 |     28800 |  0.01 |
+| CLB LUTs*                  | 2089 |     0 |          0 |     70560 |  2.96 |
+|   LUT as Logic             | 1866 |     0 |          0 |     70560 |  2.64 |
+|   LUT as Memory            |  223 |     0 |          0 |     28800 |  0.77 |
 |     LUT as Distributed RAM |    0 |     0 |            |           |       |
-|     LUT as Shift Register  |    4 |     0 |            |           |       |
-| CLB Registers              |  503 |     0 |          0 |    141120 |  0.36 |
-|   Register as Flip Flop    |  503 |     0 |          0 |    141120 |  0.36 |
+|     LUT as Shift Register  |  223 |     0 |            |           |       |
+| CLB Registers              | 2784 |     0 |          0 |    141120 |  1.97 |
+|   Register as Flip Flop    | 2784 |     0 |          0 |    141120 |  1.97 |
 |   Register as Latch        |    0 |     0 |          0 |    141120 |  0.00 |
-| CARRY8                     |   42 |     0 |          0 |      8820 |  0.48 |
+| CARRY8                     |   95 |     0 |          0 |      8820 |  1.08 |
 | F7 Muxes                   |    0 |     0 |          0 |     35280 |  0.00 |
 | F8 Muxes                   |    0 |     0 |          0 |     17640 |  0.00 |
 | F9 Muxes                   |    0 |     0 |          0 |      8820 |  0.00 |
@@ -64,8 +64,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 93    |          Yes |         Set |            - |
-| 410   |          Yes |       Reset |            - |
+| 41    |          Yes |         Set |            - |
+| 2743  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -75,10 +75,11 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-------------------+------+-------+------------+-----------+-------+
 |     Site Type     | Used | Fixed | Prohibited | Available | Util% |
 +-------------------+------+-------+------------+-----------+-------+
-| Block RAM Tile    |   11 |     0 |          0 |       216 |  5.09 |
-|   RAMB36/FIFO*    |   11 |     0 |          0 |       216 |  5.09 |
-|     RAMB36E2 only |   11 |       |            |           |       |
-|   RAMB18          |    0 |     0 |          0 |       432 |  0.00 |
+| Block RAM Tile    | 33.5 |     0 |          0 |       216 | 15.51 |
+|   RAMB36/FIFO*    |   33 |     0 |          0 |       216 | 15.28 |
+|     RAMB36E2 only |   33 |       |            |           |       |
+|   RAMB18          |    1 |     0 |          0 |       432 |  0.23 |
+|     RAMB18E2 only |    1 |       |            |           |       |
 +-------------------+------+-------+------------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E2 or one FIFO18E2. However, if a FIFO18E2 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E2
 
@@ -165,17 +166,19 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  410 |            Register |
-| LUT2     |  240 |                 CLB |
-| LUT3     |  164 |                 CLB |
-| LUT4     |  122 |                 CLB |
-| FDSE     |   93 |            Register |
-| LUT1     |   82 |                 CLB |
-| LUT5     |   59 |                 CLB |
-| CARRY8   |   42 |                 CLB |
-| LUT6     |   34 |                 CLB |
-| RAMB36E2 |   11 |            BLOCKRAM |
-| SRLC32E  |    4 |                 CLB |
+| FDRE     | 2743 |            Register |
+| LUT3     |  639 |                 CLB |
+| LUT4     |  587 |                 CLB |
+| LUT2     |  369 |                 CLB |
+| LUT6     |  325 |                 CLB |
+| LUT5     |  224 |                 CLB |
+| SRL16E   |  195 |                 CLB |
+| LUT1     |  140 |                 CLB |
+| CARRY8   |   95 |                 CLB |
+| FDSE     |   41 |            Register |
+| RAMB36E2 |   33 |            BLOCKRAM |
+| SRLC32E  |   28 |                 CLB |
+| RAMB18E2 |    1 |            BLOCKRAM |
 | DSP48E2  |    1 |          Arithmetic |
 +----------+------+---------------------+
 

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date         : Fri Jan 23 18:11:50 2026
+| Date         : Sun Feb  1 18:56:01 2026
 | Host         : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command      : report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx
 | Design       : bd_0_wrapper
@@ -53,9 +53,11 @@ Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-55 net(s) have no routable loads. The problem bus(es) and/or net(s) are bd_0_i/hls_inst/inst/A_address0[13:0], bd_0_i/hls_inst/inst/A_ce0,
-bd_0_i/hls_inst/inst/C_address0[13:0], bd_0_i/hls_inst/inst/C_d0[23:0],
-bd_0_i/hls_inst/inst/ap_idle, bd_0_i/hls_inst/inst/ap_ready.
+130 net(s) have no routable loads. The problem bus(es) and/or net(s) are bd_0_i/hls_inst/inst/A_m_axi_U/bus_read/rreq_burst_conv/burst_sequential/m_axi_A_ARLEN[3:0],
+bd_0_i/hls_inst/inst/C_m_axi_U/bus_write/wreq_throttle/m_axi_C_WDATA[23:0],
+bd_0_i/hls_inst/inst/C_m_axi_U/bus_write/wreq_throttle/m_axi_C_WSTRB[3:0],
+bd_0_i/hls_inst/inst/C_m_axi_U/bus_write/wreq_throttle/rs_req/data_p1_reg[67]_0[65:0]
+bd_0_i/hls_inst/inst/control_s_axi_U/s_axi_control_RDATA[31:0].
 Related violations: <none>
 
 

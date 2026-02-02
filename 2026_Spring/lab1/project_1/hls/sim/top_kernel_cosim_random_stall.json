@@ -6,7 +6,15 @@
     "__comment__constraint_code" : "constraint code must follow system verilog contraint syntax. Brace letter should be included. The constraint variable is delay.",
     "__comment__stall_constraint_example" : "port_stall_constraint is the constraint code used in default random stall test.",
     "port_stall_constraint" : { 
-        "ap_start"    : "{ delay == 0; }" ,
+        "A wr"    : "{ delay == 0;}" ,
+        "A rd"    : "{ delay == 0;}" ,
+        "C wr"    : "{ delay == 0;}" ,
+        "C rd"    : "{ delay == 0;}" ,
+        "control wctrl"    : "{ delay == 0;}" ,
+        "control wdata"    : "{ delay == 0;}" ,
+        "control wbrsp"    : "{ delay == 0;}" ,
+        "control rctrl"    : "{ delay == 0;}" ,
+        "control rdata"    : "{ delay == 0;}" ,
         "" : {}
     }
 }   
