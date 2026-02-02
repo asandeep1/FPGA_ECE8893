@@ -6525,25 +6525,26 @@ data_t A[256][64];
 data_t C[256][64];
 data_t tmp[256][64];
 
-#pragma HLS array_partition variable=A cyclic factor=4 dim=2
-#pragma HLS array_partition variable=tmp complete dim=2
-#pragma HLS array_partition variable=C cyclic factor=4 dim=1
+#pragma HLS array_partition variable=A cyclic factor=8 dim=2
+#pragma HLS array_partition variable=tmp cyclic factor=8 dim=1
+#pragma HLS array_partition variable=tmp cyclic factor=8 dim=2
+#pragma HLS array_partition variable=C cyclic factor=8 dim=1
 
- VITIS_LOOP_20_1: for (int i = 0; i < 256; i++) {
-        VITIS_LOOP_21_2: for (int j = 0; j < 64; j++) {
+ VITIS_LOOP_21_1: for (int i = 0; i < 256; i++) {
+        VITIS_LOOP_22_2: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
  A[i][j] = A_DRAM[i][j];
         }
     }
 
 
-    VITIS_LOOP_28_3: for (int i = 0; i < 256; i++) {
+    VITIS_LOOP_29_3: for (int i = 0; i < 256; i++) {
         data_t row_sum = 0.0;
 
 
-        VITIS_LOOP_32_4: for (int j = 0; j < 64; j++) {
+        VITIS_LOOP_33_4: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=4
+#pragma HLS UNROLL factor=8
  row_sum += A[i][j];
         }
 
@@ -6551,21 +6552,21 @@ data_t tmp[256][64];
         data_t denom = row_sum + (data_t)1.0;
 
 
-        VITIS_LOOP_42_5: for (int j = 0; j < 64; j++) {
+        VITIS_LOOP_43_5: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=4
+#pragma HLS UNROLL factor=8
  tmp[i][j] = A[i][j] / denom;
         }
     }
 
 
-    VITIS_LOOP_50_6: for (int j = 0; j < 64; j++) {
+    VITIS_LOOP_51_6: for (int j = 0; j < 64; j++) {
         data_t col_sum = 0.0;
 
 
-        VITIS_LOOP_54_7: for (int i = 0; i < 256; i++) {
+        VITIS_LOOP_55_7: for (int i = 0; i < 256; i++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=4
+#pragma HLS UNROLL factor=8
  col_sum += tmp[i][j];
         }
 
@@ -6573,15 +6574,15 @@ data_t tmp[256][64];
         data_t scale = col_sum / (data_t)256;
 
 
-        VITIS_LOOP_64_8: for (int i = 0; i < 256; i++) {
+        VITIS_LOOP_65_8: for (int i = 0; i < 256; i++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=4
+#pragma HLS UNROLL factor=8
  C[i][j] = tmp[i][j] * scale;
         }
     }
 
-    VITIS_LOOP_71_9: for (int i = 0; i < 256; i++) {
-        VITIS_LOOP_72_10: for (int j = 0; j < 64; j++) {
+    VITIS_LOOP_72_9: for (int i = 0; i < 256; i++) {
+        VITIS_LOOP_73_10: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
  C_DRAM[i][j] = C[i][j];
         }

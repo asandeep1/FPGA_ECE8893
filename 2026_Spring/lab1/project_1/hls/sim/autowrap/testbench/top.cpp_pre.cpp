@@ -59268,9 +59268,10 @@ data_t A[256][64];
 data_t C[256][64];
 data_t tmp[256][64];
 
-#pragma HLS array_partition variable=A cyclic factor=4 dim=2
-#pragma HLS array_partition variable=tmp complete dim=2
-#pragma HLS array_partition variable=C cyclic factor=4 dim=1
+#pragma HLS array_partition variable=A cyclic factor=8 dim=2
+#pragma HLS array_partition variable=tmp cyclic factor=8 dim=1
+#pragma HLS array_partition variable=tmp cyclic factor=8 dim=2
+#pragma HLS array_partition variable=C cyclic factor=8 dim=1
 
     for (int i = 0; i < 256; i++) {
         for (int j = 0; j < 64; j++) {
@@ -59286,7 +59287,7 @@ data_t tmp[256][64];
 
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=4
+#pragma HLS UNROLL factor=8
             row_sum += A[i][j];
         }
 
@@ -59296,7 +59297,7 @@ data_t tmp[256][64];
 
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=4
+#pragma HLS UNROLL factor=8
             tmp[i][j] = A[i][j] / denom;
         }
     }
@@ -59308,7 +59309,7 @@ data_t tmp[256][64];
 
         for (int i = 0; i < 256; i++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=4
+#pragma HLS UNROLL factor=8
             col_sum += tmp[i][j];
         }
 
@@ -59318,7 +59319,7 @@ data_t tmp[256][64];
 
         for (int i = 0; i < 256; i++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=4
+#pragma HLS UNROLL factor=8
             C[i][j] = tmp[i][j] * scale;
         }
     }

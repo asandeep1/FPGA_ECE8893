@@ -23,18 +23,18 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE88
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_top_kernel_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_20_1_VITIS_LOOP_21_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_20_1_VITIS_LOOP_21_2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_32_4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_32_4
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_42_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_42_5
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_54_7.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_54_7
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_64_8.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_64_8
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_71_9_VITIS_LOOP_72_10.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_71_9_VITIS_LOOP_72_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_33_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_33_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_43_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_43_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_55_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_55_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_65_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_65_8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_72_9_VITIS_LOOP_73_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_72_9_VITIS_LOOP_73_10
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
@@ -80,6 +80,10 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE88
 INFO: [VRFC 10-311] analyzing module top_kernel_A_1_46_RAM_AUTO_1R1W
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_tmp_RAM_AUTO_1R1W.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_tmp_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_sparsemux_17_3_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_17_3_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_A_1_48_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_A_1_48_RAM_AUTO_1R1W
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_control_s_axi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_control_s_axi
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
@@ -107,7 +111,7 @@ Compiling package xil_defaultlib.axi_pkg
 Compiling package xil_defaultlib.top_kernel_subsystem_pkg
 Compiling package xil_defaultlib.file_agent_pkg
 Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
-Compiling module xil_defaultlib.top_kernel_A_1_46_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.top_kernel_A_1_48_RAM_AUTO_1R1W
 Compiling module xil_defaultlib.top_kernel_tmp_RAM_AUTO_1R1W
 Compiling module xil_defaultlib.top_kernel_flow_control_loop_pip...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
@@ -115,11 +119,10 @@ Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_sdiv_38ns_24s_38_42_1...
 Compiling module xil_defaultlib.top_kernel_sdiv_38ns_24s_38_42_1...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
-Compiling module xil_defaultlib.top_kernel_sparsemux_129_6_24_1_...
+Compiling module xil_defaultlib.top_kernel_sparsemux_17_3_24_1_1...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_mul_24s_17s_41_1_1(NU...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
-Compiling module xil_defaultlib.top_kernel_sparsemux_9_2_24_1_1(...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_control_s_axi
 Compiling module xil_defaultlib.top_kernel_A_m_axi_srl(DATA_WIDT...
@@ -172,7 +175,7 @@ Built simulation snapshot top_kernel
   **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
   **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
   **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-  **** Start of session at: Sun Feb  1 18:47:00 2026
+  **** Start of session at: Sun Feb  1 19:44:03 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -596,13 +599,13 @@ UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xln
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "613875000"
+// RTL Simulation : 1 / 1 [100.00%] @ "531955000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 613945 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
-run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:20 . Memory (MB): peak = 1608.957 ; gain = 0.000 ; free physical = 60118 ; free virtual = 139163
+$finish called at time : 532025 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:25 . Memory (MB): peak = 1608.957 ; gain = 0.000 ; free physical = 14300 ; free virtual = 85633
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 1112208 KB (Peak: 1144960 KB), Simulation CPU Usage: 21620 ms
-INFO: [Common 17-206] Exiting xsim at Sun Feb  1 18:47:25 2026...
+INFO: xsimkernel Simulation Memory Usage: 1110824 KB (Peak: 1168164 KB), Simulation CPU Usage: 26460 ms
+INFO: [Common 17-206] Exiting xsim at Sun Feb  1 19:44:33 2026...
 TEST PASSED!!
 INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

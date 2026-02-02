@@ -12,640 +12,67 @@
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:16:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=A cyclic factor=4 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=A cyclic factor=8 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:17:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=tmp complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=tmp cyclic factor=8 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:18:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=C cyclic factor=4 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=tmp cyclic factor=8 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:22:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=C cyclic factor=8 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:33:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:23:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:34:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=4" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:43:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=8" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:44:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=4" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:55:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:45:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=8" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:56:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=4" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:65:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:57:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=8" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:66:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=4" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:73:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="top.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_54_7' (top.cpp:54:26) in function 'top_kernel' partially with a factor of 4">
-        <args Factor="4" LoopLoc="top.cpp:54:26" LoopName="VITIS_LOOP_54_7"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:67:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=8" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="top.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_64_8' (top.cpp:64:26) in function 'top_kernel' partially with a factor of 4">
-        <args Factor="4" LoopLoc="top.cpp:64:26" LoopName="VITIS_LOOP_64_8"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:74:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="top.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_32_4' (top.cpp:32:26) in function 'top_kernel' partially with a factor of 4">
-        <args Factor="4" LoopLoc="top.cpp:32:26" LoopName="VITIS_LOOP_32_4"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="top.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_55_7' (top.cpp:55:26) in function 'top_kernel' partially with a factor of 8">
+        <args Factor="8" LoopLoc="top.cpp:55:26" LoopName="VITIS_LOOP_55_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="top.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_42_5' (top.cpp:42:26) in function 'top_kernel' partially with a factor of 4">
-        <args Factor="4" LoopLoc="top.cpp:42:26" LoopName="VITIS_LOOP_42_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="top.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_65_8' (top.cpp:65:26) in function 'top_kernel' partially with a factor of 8">
+        <args Factor="8" LoopLoc="top.cpp:65:26" LoopName="VITIS_LOOP_65_8"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:12:8" msg_body="Applying array_partition to 'A': Cyclic partitioning with factor 4 on dimension 2.">
-        <args Dim="2" Factor="4" Mode="Cyclic" UOName="A"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="top.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_33_4' (top.cpp:33:26) in function 'top_kernel' partially with a factor of 8">
+        <args Factor="8" LoopLoc="top.cpp:33:26" LoopName="VITIS_LOOP_33_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:13:8" msg_body="Applying array_partition to 'C': Cyclic partitioning with factor 4 on dimension 1.">
-        <args Dim="1" Factor="4" Mode="Cyclic" UOName="C"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="top.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_43_5' (top.cpp:43:26) in function 'top_kernel' partially with a factor of 8">
+        <args Factor="8" LoopLoc="top.cpp:43:26" LoopName="VITIS_LOOP_43_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp': Complete partitioning on dimension 2.">
-        <args Dim="2" Mode="Complete" UOName="tmp"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:12:8" msg_body="Applying array_partition to 'A': Cyclic partitioning with factor 8 on dimension 2.">
+        <args Dim="2" Factor="8" Mode="Cyclic" UOName="A"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_0 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_0">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_0" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_0" varLoc="top.cpp:14:8"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:13:8" msg_body="Applying array_partition to 'C': Cyclic partitioning with factor 8 on dimension 1.">
+        <args Dim="1" Factor="8" Mode="Cyclic" UOName="C"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_0' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_0" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_1 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_1">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_1" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_1" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_1' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_1" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_10 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_10">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_10" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_10" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_10' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_10" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_11 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_11">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_11" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_11" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_11' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_11" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_12 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_12">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_12" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_12" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_12' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_12" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_13 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_13">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_13" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_13" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_13' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_13" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_14 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_14">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_14" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_14" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_14' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_14" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_15 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_15">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_15" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_15" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_15' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_15" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_16 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_16">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_16" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_16" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_16' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_16" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_17 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_17">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_17" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_17" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_17' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_17" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_18 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_18">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_18" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_18" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_18' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_18" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_19 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_19">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_19" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_19" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_19' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_19" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_2 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_2">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_2" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_2" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_2' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_2" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_20 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_20">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_20" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_20" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_20' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_20" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_21 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_21">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_21" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_21" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_21' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_21" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_22 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_22">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_22" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_22" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_22' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_22" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_23 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_23">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_23" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_23" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_23' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_23" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_24 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_24">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_24" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_24" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_24' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_24" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_25 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_25">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_25" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_25" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_25' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_25" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_26 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_26">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_26" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_26" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_26' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_26" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_27 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_27">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_27" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_27" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_27' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_27" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_28 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_28">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_28" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_28" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_28' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_28" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_29 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_29">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_29" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_29" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_29' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_29" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_3 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_3">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_3" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_3" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_3' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_3" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_30 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_30">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_30" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_30" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_30' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_30" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_31 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_31">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_31" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_31" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_31' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_31" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_32 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_32">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_32" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_32" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_32' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_32" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_33 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_33">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_33" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_33" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_33' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_33" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_34 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_34">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_34" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_34" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_34' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_34" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_35 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_35">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_35" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_35" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_35' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_35" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_36 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_36">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_36" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_36" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_36' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_36" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_37 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_37">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_37" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_37" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_37' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_37" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_38 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_38">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_38" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_38" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_38' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_38" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_39 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_39">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_39" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_39" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_39' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_39" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_4 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_4">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_4" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_4" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_4' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_4" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_40 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_40">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_40" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_40" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_40' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_40" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_41 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_41">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_41" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_41" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_41' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_41" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_42 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_42">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_42" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_42" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_42' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_42" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_43 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_43">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_43" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_43" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_43' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_43" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_44 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_44">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_44" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_44" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_44' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_44" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_45 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_45">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_45" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_45" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_45' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_45" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_46 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_46">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_46" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_46" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_46' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_46" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_47 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_47">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_47" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_47" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_47' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_47" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_48 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_48">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_48" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_48" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_48' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_48" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_49 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_49">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_49" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_49" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_49' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_49" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_5 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_5">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_5" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_5" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_5' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_5" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_50 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_50">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_50" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_50" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_50' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_50" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_51 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_51">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_51" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_51" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_51' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_51" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_52 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_52">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_52" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_52" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_52' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_52" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_53 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_53">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_53" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_53" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_53' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_53" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_54 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_54">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_54" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_54" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_54' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_54" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_55 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_55">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_55" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_55" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_55' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_55" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_56 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_56">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_56" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_56" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_56' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_56" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_57 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_57">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_57" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_57" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_57' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_57" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_58 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_58">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_58" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_58" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_58' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_58" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_59 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_59">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_59" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_59" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_59' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_59" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_6 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_6">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_6" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_6" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_6' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_6" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_60 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_60">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_60" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_60" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_60' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_60" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_61 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_61">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_61" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_61" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_61' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_61" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_62 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_62">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_62" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_62" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_62' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_62" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_63 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_63">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_63" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_63" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_63' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_63" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_7 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_7">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_7" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_7" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_7' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_7" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_8 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_8">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_8" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_8" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_8' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_8" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="array_partition dim=1 type=cyclic factor=2 variable=tmp_9 1 top_kernel top.cpp:14:8 top.cpp:55:9tmp_9">
-        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=tmp_9" PragmaSrcLoc="top.cpp:55:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 55 Column 9" PragmaType="array_partition" VarName="tmp_9" varLoc="top.cpp:14:8"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'tmp_9' due to pipeline pragma">
-        <args Dim="1" Factor="2" Mode="cyclic" Name="tmp_9" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_0': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_1': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_2': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_2"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_3': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_3"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_4': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_4"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_5': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_5"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_6': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_6"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_7': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_7"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_8': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_8"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_9': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_9"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_10': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_10"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_11': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_11"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_12': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_12"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_13': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_13"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_14': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_14"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_15': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_15"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_16': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_16"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_17': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_17"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_18': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_18"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_19': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_19"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_20': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_20"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_21': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_21"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_22': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_22"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_23': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_23"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_24': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_24"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_25': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_25"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_26': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_26"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_27': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_27"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_28': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_28"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_29': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_29"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_30': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_30"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_31': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_31"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_32': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_32"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_33': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_33"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_34': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_34"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_35': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_35"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_36': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_36"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_37': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_37"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_38': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_38"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_39': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_39"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_40': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_40"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_41': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_41"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_42': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_42"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_43': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_43"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_44': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_44"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_45': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_45"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_46': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_46"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_47': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_47"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_48': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_48"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_49': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_49"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_50': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_50"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_51': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_51"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_52': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_52"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_53': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_53"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_54': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_54"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_55': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_55"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_56': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_56"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_57': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_57"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_58': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_58"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_59': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_59"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_60': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_60"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_61': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_61"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_62': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_62"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp_63': Cyclic partitioning with factor 2 on dimension 1.">
-        <args Dim="1" Factor="2" Mode="Cyclic" UOName="tmp_63"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:8" msg_body="Applying array_partition to 'tmp': Cyclic partitioning with factor 8 on dimension 1. Cyclic partitioning with factor 8 on dimension 2.">
+        <args Dim="islist 1 2" Factor="islist 8 8" Mode="islist Cyclic Cyclic" UOName="tmp"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

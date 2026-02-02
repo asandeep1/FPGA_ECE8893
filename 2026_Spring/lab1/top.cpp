@@ -13,9 +13,10 @@ data_t A[N_ROWS][N_COLS];
 data_t C[N_ROWS][N_COLS];
 data_t tmp[N_ROWS][N_COLS];
     
-#pragma HLS array_partition variable=A cyclic factor=4 dim=2
-#pragma HLS array_partition variable=tmp complete dim=2
-#pragma HLS array_partition variable=C cyclic factor=4 dim=1  
+#pragma HLS array_partition variable=A cyclic factor=8 dim=2
+#pragma HLS array_partition variable=tmp cyclic factor=8 dim=1
+#pragma HLS array_partition variable=tmp cyclic factor=8 dim=2
+#pragma HLS array_partition variable=C cyclic factor=8 dim=1
 
     for (int i = 0; i < N_ROWS; i++) {
         for (int j = 0; j < N_COLS; j++) {
@@ -31,7 +32,7 @@ data_t tmp[N_ROWS][N_COLS];
         // Compute row sum
         for (int j = 0; j < N_COLS; j++) {
             #pragma HLS PIPELINE II=1
-            #pragma HLS UNROLL factor=4
+            #pragma HLS UNROLL factor=8
             row_sum += A[i][j];
         }
 
@@ -41,7 +42,7 @@ data_t tmp[N_ROWS][N_COLS];
         // Normalize each element in the row
         for (int j = 0; j < N_COLS; j++) {
             #pragma HLS PIPELINE II=1
-            #pragma HLS UNROLL factor=4
+            #pragma HLS UNROLL factor=8
             tmp[i][j] = A[i][j] / denom;
         }
     }
@@ -53,7 +54,7 @@ data_t tmp[N_ROWS][N_COLS];
         // Compute column sum of normalized values
         for (int i = 0; i < N_ROWS; i++) {
             #pragma HLS PIPELINE II=1
-            #pragma HLS UNROLL factor=4
+            #pragma HLS UNROLL factor=8
             col_sum += tmp[i][j];
         }
 
@@ -63,7 +64,7 @@ data_t tmp[N_ROWS][N_COLS];
         // Apply scale to each element in the column
         for (int i = 0; i < N_ROWS; i++) {
             #pragma HLS PIPELINE II=1
-            #pragma HLS UNROLL factor=4
+            #pragma HLS UNROLL factor=8
             C[i][j] = tmp[i][j] * scale;
         }
     }
