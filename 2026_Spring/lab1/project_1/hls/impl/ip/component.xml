@@ -1492,7 +1492,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b28e79fb</spirit:value>
+            <spirit:value>1fec640c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1508,7 +1508,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>115db007</spirit:value>
+            <spirit:value>dbc41111</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1524,7 +1524,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>9dd68637</spirit:value>
+            <spirit:value>a4c6e724</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1540,7 +1540,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d8c32df0</spirit:value>
+            <spirit:value>47230c78</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3754,6 +3754,10 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/top_kernel_sparsemux_33_4_24_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/top_kernel_sparsemux_129_6_24_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
@@ -3877,6 +3881,11 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/top_kernel_sparsemux_17_3_24_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/top_kernel_sparsemux_33_4_24_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4012,6 +4021,10 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/top_kernel_sparsemux_33_4_24_1_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/top_kernel_sparsemux_129_6_24_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
@@ -4132,6 +4145,11 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/top_kernel_sparsemux_17_3_24_1_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/top_kernel_sparsemux_33_4_24_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4524,11 +4542,11 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="28">54426</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="28">50330</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="29">54427</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="29">50331</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -4541,8 +4559,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Top_kernel</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114462024</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-02-02T00:45:01Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114462047</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-02-02T01:07:25Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -4553,10 +4571,10 @@
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="93025b95"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="96736b54"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ab78605c"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3c7b1e5d"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="30448a39"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="542f0868"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6209cf17"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="35dd30d0"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="6315fd8e"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

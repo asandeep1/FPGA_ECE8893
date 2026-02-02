@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'top_kernel'" level="0">
-<item name = "Date">Sun Feb  1 19:42:41 2026
+<item name = "Date">Sun Feb  1 20:05:07 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 12.845 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 25.201 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,25 +24,25 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">54426, 54426, 0.699 ms, 0.699 ms, 54427, 54427, no</column>
+<column name="">50330, 50330, 1.268 ms, 1.268 ms, 50331, 50331, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2_fu_507">top_kernel_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2, 16387, 16387, 0.164 ms, 0.164 ms, 16385, 16385, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_33_4_fu_522">top_kernel_Pipeline_VITIS_LOOP_33_4, 11, 11, 0.141 us, 0.141 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_43_5_fu_536">top_kernel_Pipeline_VITIS_LOOP_43_5, 51, 51, 0.510 us, 0.510 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_55_7_fu_615">top_kernel_Pipeline_VITIS_LOOP_55_7, 35, 35, 0.450 us, 0.450 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_65_8_fu_686">top_kernel_Pipeline_VITIS_LOOP_65_8, 35, 35, 0.350 us, 0.350 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_top_kernel_Pipeline_VITIS_LOOP_72_9_VITIS_LOOP_73_10_fu_766">top_kernel_Pipeline_VITIS_LOOP_72_9_VITIS_LOOP_73_10, 16387, 16387, 0.164 ms, 0.164 ms, 16385, 16385, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2_fu_1343">top_kernel_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2, 16387, 16387, 0.164 ms, 0.164 ms, 16385, 16385, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_33_4_fu_1366">top_kernel_Pipeline_VITIS_LOOP_33_4, 7, 7, 0.176 us, 0.176 us, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_43_5_fu_1388">top_kernel_Pipeline_VITIS_LOOP_43_5, 47, 47, 0.470 us, 0.470 us, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_55_7_fu_1668">top_kernel_Pipeline_VITIS_LOOP_55_7, 19, 19, 0.479 us, 0.479 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_65_8_fu_1931">top_kernel_Pipeline_VITIS_LOOP_65_8, 19, 19, 0.190 us, 0.190 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_top_kernel_Pipeline_VITIS_LOOP_72_9_VITIS_LOOP_73_10_fu_2211">top_kernel_Pipeline_VITIS_LOOP_72_9_VITIS_LOOP_73_10, 16387, 16387, 0.164 ms, 0.164 ms, 16385, 16385, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_29_3">16896, 16896, 66, -, -, 256, no</column>
-<column name="- VITIS_LOOP_51_6">4736, 4736, 74, -, -, 64, no</column>
+<column name="- VITIS_LOOP_29_3">14848, 14848, 58, -, -, 256, no</column>
+<column name="- VITIS_LOOP_51_6">2688, 2688, 42, -, -, 64, no</column>
 </table>
 </item>
 </section>

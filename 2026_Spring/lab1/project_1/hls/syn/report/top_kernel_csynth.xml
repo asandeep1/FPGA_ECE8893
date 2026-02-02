@@ -18,18 +18,18 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>12.845</EstimatedClockPeriod>
+<EstimatedClockPeriod>25.201</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>54426</Best-caseLatency>
-<Average-caseLatency>54426</Average-caseLatency>
-<Worst-caseLatency>54426</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.699 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.699 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.699 ms</Worst-caseRealTimeLatency>
-<Interval-min>54427</Interval-min>
-<Interval-max>54427</Interval-max>
+<Best-caseLatency>50330</Best-caseLatency>
+<Average-caseLatency>50330</Average-caseLatency>
+<Worst-caseLatency>50330</Worst-caseLatency>
+<Best-caseRealTimeLatency>1.268 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>1.268 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>1.268 ms</Worst-caseRealTimeLatency>
+<Interval-min>50331</Interval-min>
+<Interval-max>50331</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -37,9 +37,9 @@
 <Slack>7.30</Slack>
 <TripCount>256</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>16896</Latency>
-<AbsoluteTimeLatency>217029</AbsoluteTimeLatency>
-<IterationLatency>66</IterationLatency>
+<Latency>14848</Latency>
+<AbsoluteTimeLatency>374184</AbsoluteTimeLatency>
+<IterationLatency>58</IterationLatency>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
@@ -48,9 +48,9 @@
 <Slack>7.30</Slack>
 <TripCount>64</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>4736</Latency>
-<AbsoluteTimeLatency>60833</AbsoluteTimeLatency>
-<IterationLatency>74</IterationLatency>
+<Latency>2688</Latency>
+<AbsoluteTimeLatency>67740</AbsoluteTimeLatency>
+<IterationLatency>42</IterationLatency>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
@@ -79,10 +79,10 @@
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>114</BRAM_18K>
-<DSP>8</DSP>
-<FF>28016</FF>
-<LUT>30933</LUT>
+<BRAM_18K>322</BRAM_18K>
+<DSP>16</DSP>
+<FF>53720</FF>
+<LUT>66050</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

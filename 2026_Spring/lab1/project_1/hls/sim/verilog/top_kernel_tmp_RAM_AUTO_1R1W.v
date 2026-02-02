@@ -13,8 +13,8 @@ module top_kernel_tmp_RAM_AUTO_1R1W (
     reset, clk);
 
 parameter DataWidth = 24;
-parameter AddressWidth = 8;
-parameter AddressRange = 256;
+parameter AddressWidth = 6;
+parameter AddressRange = 64;
  
 input[AddressWidth-1:0] address0;
 input ce0;

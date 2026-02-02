@@ -1,20 +1,20 @@
 {
     "1": {
-        "name": "top_kernel_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2",
+        "name": "top_kernel_Pipeline_VITIS_LOOP_43_5",
         "file": "top.cpp",
-        "fileloc": "21",
-        "instructions": "63",
-        "total_instructions": "63",
+        "fileloc": "43",
+        "instructions": "856",
+        "total_instructions": "856",
         "calls": "",
-        "basicblocks": "13",
-        "memory_accesses": "15",
+        "basicblocks": "21",
+        "memory_accesses": "274",
         "control_depth": "2",
         "def_use_depth": "1",
         "loads": {
-            "L": "3"
+            "L": "17"
         },
         "stores": {
-            "L": "14"
+            "L": "258"
         },
         "loops": {
             "L": "1"
@@ -24,15 +24,15 @@
         "name": "top_kernel_Pipeline_VITIS_LOOP_33_4",
         "file": "top.cpp",
         "fileloc": "33",
-        "instructions": "127",
-        "total_instructions": "127",
+        "instructions": "231",
+        "total_instructions": "231",
         "calls": "",
         "basicblocks": "4",
-        "memory_accesses": "12",
+        "memory_accesses": "20",
         "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
-            "L": "11"
+            "L": "19"
         },
         "stores": {
             "L": "4"
@@ -45,15 +45,15 @@
         "name": "top_kernel_Pipeline_VITIS_LOOP_72_9_VITIS_LOOP_73_10",
         "file": "top.cpp",
         "fileloc": "72",
-        "instructions": "56",
-        "total_instructions": "56",
+        "instructions": "72",
+        "total_instructions": "72",
         "calls": "",
         "basicblocks": "4",
-        "memory_accesses": "15",
+        "memory_accesses": "23",
         "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
-            "L": "11"
+            "L": "19"
         },
         "stores": {
             "L": "6"
@@ -63,21 +63,21 @@
         }
     },
     "4": {
-        "name": "top_kernel_Pipeline_VITIS_LOOP_43_5",
+        "name": "top_kernel_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2",
         "file": "top.cpp",
-        "fileloc": "43",
-        "instructions": "312",
-        "total_instructions": "312",
+        "fileloc": "21",
+        "instructions": "87",
+        "total_instructions": "87",
         "calls": "",
-        "basicblocks": "13",
-        "memory_accesses": "74",
+        "basicblocks": "21",
+        "memory_accesses": "23",
         "control_depth": "2",
         "def_use_depth": "1",
         "loads": {
-            "L": "9"
+            "L": "3"
         },
         "stores": {
-            "L": "66"
+            "L": "22"
         },
         "loops": {
             "L": "1"
@@ -87,15 +87,15 @@
         "name": "top_kernel_Pipeline_VITIS_LOOP_55_7",
         "file": "top.cpp",
         "fileloc": "55",
-        "instructions": "248",
-        "total_instructions": "248",
+        "instructions": "728",
+        "total_instructions": "728",
         "calls": "",
         "basicblocks": "4",
-        "memory_accesses": "68",
+        "memory_accesses": "260",
         "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
-            "L": "67"
+            "L": "259"
         },
         "stores": {
             "L": "4"
@@ -108,9 +108,9 @@
         "name": "top_kernel",
         "file": "top.cpp",
         "fileloc": "5",
-        "instructions": "158",
-        "total_instructions": "1411",
-        "calls": "1 2 4 5 6 3",
+        "instructions": "367",
+        "total_instructions": "3468",
+        "calls": "4 2 1 5 6 3",
         "basicblocks": "7",
         "memory_accesses": "0",
         "control_depth": "0",
@@ -129,18 +129,18 @@
         "name": "top_kernel_Pipeline_VITIS_LOOP_65_8",
         "file": "top.cpp",
         "fileloc": "65",
-        "instructions": "447",
-        "total_instructions": "447",
+        "instructions": "1127",
+        "total_instructions": "1127",
         "calls": "",
         "basicblocks": "4",
-        "memory_accesses": "74",
+        "memory_accesses": "274",
         "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
-            "L": "65"
+            "L": "257"
         },
         "stores": {
-            "L": "10"
+            "L": "18"
         },
         "loops": {
             "L": "1"
