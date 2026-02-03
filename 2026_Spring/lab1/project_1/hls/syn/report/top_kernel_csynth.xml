@@ -22,50 +22,50 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>43556</Best-caseLatency>
-<Average-caseLatency>43556</Average-caseLatency>
-<Worst-caseLatency>43556</Worst-caseLatency>
-<Best-caseRealTimeLatency>1.098 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>1.098 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>1.098 ms</Worst-caseRealTimeLatency>
-<Interval-min>43557</Interval-min>
-<Interval-max>43557</Interval-max>
+<Best-caseLatency>38212</Best-caseLatency>
+<Average-caseLatency>38212</Average-caseLatency>
+<Worst-caseLatency>38212</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.963 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.963 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.963 ms</Worst-caseRealTimeLatency>
+<Interval-min>38213</Interval-min>
+<Interval-max>38213</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_152_9>
+<VITIS_LOOP_148_9>
 <Slack>7.30</Slack>
-<TripCount>32</TripCount>
+<TripCount>16</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>2240</Latency>
-<AbsoluteTimeLatency>56450</AbsoluteTimeLatency>
-<IterationLatency>70</IterationLatency>
+<Latency>608</Latency>
+<AbsoluteTimeLatency>15322</AbsoluteTimeLatency>
+<IterationLatency>38</IterationLatency>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_152_9>
+</VITIS_LOOP_148_9>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:152</SourceLocation>
+<SourceLocation>top.cpp:148</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_152_9>
-<Name>VITIS_LOOP_152_9</Name>
+<VITIS_LOOP_148_9>
+<Name>VITIS_LOOP_148_9</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:152</SourceLocation>
-</VITIS_LOOP_152_9>
+<SourceLocation>top.cpp:148</SourceLocation>
+</VITIS_LOOP_148_9>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>546</BRAM_18K>
-<DSP>32</DSP>
-<FF>109638</FF>
-<LUT>112793</LUT>
+<BRAM_18K>578</BRAM_18K>
+<DSP>64</DSP>
+<FF>212047</FF>
+<LUT>211019</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

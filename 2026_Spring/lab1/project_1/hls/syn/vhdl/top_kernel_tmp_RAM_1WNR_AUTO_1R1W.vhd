@@ -12,8 +12,8 @@ entity top_kernel_tmp_RAM_1WNR_AUTO_1R1W is
     generic(
         MEM_TYPE        : string    := "auto"; 
         DataWidth       : integer   := 24; 
-        AddressWidth    : integer   := 9;
-        AddressRange    : integer   := 512
+        AddressWidth    : integer   := 8;
+        AddressRange    : integer   := 256
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 
@@ -30,18 +30,6 @@ entity top_kernel_tmp_RAM_1WNR_AUTO_1R1W is
         address3    : in std_logic_vector(AddressWidth-1 downto 0); 
         ce3         : in std_logic; 
         q3          : out std_logic_vector(DataWidth-1 downto 0);
-        address4    : in std_logic_vector(AddressWidth-1 downto 0); 
-        ce4         : in std_logic; 
-        q4          : out std_logic_vector(DataWidth-1 downto 0);
-        address5    : in std_logic_vector(AddressWidth-1 downto 0); 
-        ce5         : in std_logic; 
-        q5          : out std_logic_vector(DataWidth-1 downto 0);
-        address6    : in std_logic_vector(AddressWidth-1 downto 0); 
-        ce6         : in std_logic; 
-        q6          : out std_logic_vector(DataWidth-1 downto 0);
-        address7    : in std_logic_vector(AddressWidth-1 downto 0); 
-        ce7         : in std_logic; 
-        q7          : out std_logic_vector(DataWidth-1 downto 0);
         reset           : in std_logic; 
         clk             : in std_logic 
     ); 
@@ -53,10 +41,6 @@ signal address0_tmp : std_logic_vector(AddressWidth-1 downto 0);
 signal address1_tmp : std_logic_vector(AddressWidth-1 downto 0);
 signal address2_tmp : std_logic_vector(AddressWidth-1 downto 0);
 signal address3_tmp : std_logic_vector(AddressWidth-1 downto 0);
-signal address4_tmp : std_logic_vector(AddressWidth-1 downto 0);
-signal address5_tmp : std_logic_vector(AddressWidth-1 downto 0);
-signal address6_tmp : std_logic_vector(AddressWidth-1 downto 0);
-signal address7_tmp : std_logic_vector(AddressWidth-1 downto 0);
 
 type mem_array is array (0 to AddressRange-1) of std_logic_vector (DataWidth-1 downto 0); 
 attribute syn_ramstyle : string; 
@@ -74,22 +58,6 @@ attribute ram_style of ram1 : variable is MEM_TYPE;
 shared variable ram2 : mem_array; 
 attribute syn_ramstyle of ram2 : variable is "auto";
 attribute ram_style of ram2 : variable is MEM_TYPE;
-
-shared variable ram3 : mem_array; 
-attribute syn_ramstyle of ram3 : variable is "auto";
-attribute ram_style of ram3 : variable is MEM_TYPE;
-
-shared variable ram4 : mem_array; 
-attribute syn_ramstyle of ram4 : variable is "auto";
-attribute ram_style of ram4 : variable is MEM_TYPE;
-
-shared variable ram5 : mem_array; 
-attribute syn_ramstyle of ram5 : variable is "auto";
-attribute ram_style of ram5 : variable is MEM_TYPE;
-
-shared variable ram6 : mem_array; 
-attribute syn_ramstyle of ram6 : variable is "auto";
-attribute ram_style of ram6 : variable is MEM_TYPE;
 
 
 begin 
@@ -138,50 +106,6 @@ begin
     end if;
 --synthesis translate_on
 end process;
-memory_access_guard_4: process (address4) 
-begin
-    address4_tmp <= address4;
---synthesis translate_off
-    if (CONV_INTEGER(address4) > AddressRange-1) then
-        address4_tmp <= (others => '0');
-    else 
-        address4_tmp <= address4;
-    end if;
---synthesis translate_on
-end process;
-memory_access_guard_5: process (address5) 
-begin
-    address5_tmp <= address5;
---synthesis translate_off
-    if (CONV_INTEGER(address5) > AddressRange-1) then
-        address5_tmp <= (others => '0');
-    else 
-        address5_tmp <= address5;
-    end if;
---synthesis translate_on
-end process;
-memory_access_guard_6: process (address6) 
-begin
-    address6_tmp <= address6;
---synthesis translate_off
-    if (CONV_INTEGER(address6) > AddressRange-1) then
-        address6_tmp <= (others => '0');
-    else 
-        address6_tmp <= address6;
-    end if;
---synthesis translate_on
-end process;
-memory_access_guard_7: process (address7) 
-begin
-    address7_tmp <= address7;
---synthesis translate_off
-    if (CONV_INTEGER(address7) > AddressRange-1) then
-        address7_tmp <= (others => '0');
-    else 
-        address7_tmp <= address7;
-    end if;
---synthesis translate_on
-end process;
 
 p_memory_access_r_1: process (clk)  
 begin 
@@ -204,38 +128,6 @@ begin
     if (clk'event and clk = '1') then
         if (ce3 = '1') then 
             q3 <= ram2(CONV_INTEGER(address3_tmp));
-        end if;
-    end if;
-end process;
-p_memory_access_r_4: process (clk)  
-begin 
-    if (clk'event and clk = '1') then
-        if (ce4 = '1') then 
-            q4 <= ram3(CONV_INTEGER(address4_tmp));
-        end if;
-    end if;
-end process;
-p_memory_access_r_5: process (clk)  
-begin 
-    if (clk'event and clk = '1') then
-        if (ce5 = '1') then 
-            q5 <= ram4(CONV_INTEGER(address5_tmp));
-        end if;
-    end if;
-end process;
-p_memory_access_r_6: process (clk)  
-begin 
-    if (clk'event and clk = '1') then
-        if (ce6 = '1') then 
-            q6 <= ram5(CONV_INTEGER(address6_tmp));
-        end if;
-    end if;
-end process;
-p_memory_access_r_7: process (clk)  
-begin 
-    if (clk'event and clk = '1') then
-        if (ce7 = '1') then 
-            q7 <= ram6(CONV_INTEGER(address7_tmp));
         end if;
     end if;
 end process;
@@ -271,50 +163,6 @@ begin
 
             if (we0 = '1') then 
                 ram2(CONV_INTEGER(address0)) := d0; 
-            end if;
-        end if;
-    end if;
-end process;
-p_memory_access_w_3: process (clk)  
-begin 
-    if (clk'event and clk = '1') then
-        if (ce0 = '1') then 
-
-            if (we0 = '1') then 
-                ram3(CONV_INTEGER(address0)) := d0; 
-            end if;
-        end if;
-    end if;
-end process;
-p_memory_access_w_4: process (clk)  
-begin 
-    if (clk'event and clk = '1') then
-        if (ce0 = '1') then 
-
-            if (we0 = '1') then 
-                ram4(CONV_INTEGER(address0)) := d0; 
-            end if;
-        end if;
-    end if;
-end process;
-p_memory_access_w_5: process (clk)  
-begin 
-    if (clk'event and clk = '1') then
-        if (ce0 = '1') then 
-
-            if (we0 = '1') then 
-                ram5(CONV_INTEGER(address0)) := d0; 
-            end if;
-        end if;
-    end if;
-end process;
-p_memory_access_w_6: process (clk)  
-begin 
-    if (clk'event and clk = '1') then
-        if (ce0 = '1') then 
-
-            if (we0 = '1') then 
-                ram6(CONV_INTEGER(address0)) := d0; 
             end if;
         end if;
     end if;

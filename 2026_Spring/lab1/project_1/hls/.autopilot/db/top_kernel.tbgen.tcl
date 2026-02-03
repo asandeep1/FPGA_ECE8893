@@ -14,7 +14,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 14
+set cdfgNum 20
 set C_modelName {top_kernel}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
@@ -264,7 +264,7 @@ set ArgLastReadFirstWriteLatency {
 		C {Type O LastRead 19 FirstWrite 2}
 		A_DRAM {Type I LastRead 1 FirstWrite -1}
 		C_DRAM {Type I LastRead 1 FirstWrite -1}}
-	top_kernel_Pipeline_VITIS_LOOP_104_1 {
+	top_kernel_Pipeline_VITIS_LOOP_103_1 {
 		col_sums_15 {Type O LastRead -1 FirstWrite 0}
 		col_sums_14 {Type O LastRead -1 FirstWrite 0}
 		col_sums_13 {Type O LastRead -1 FirstWrite 0}
@@ -281,9 +281,9 @@ set ArgLastReadFirstWriteLatency {
 		col_sums_2 {Type O LastRead -1 FirstWrite 0}
 		col_sums_1 {Type O LastRead -1 FirstWrite 0}
 		col_sums {Type O LastRead -1 FirstWrite 0}}
-	top_kernel_Pipeline_VITIS_LOOP_110_2_VITIS_LOOP_111_3 {
+	top_kernel_Pipeline_VITIS_LOOP_109_2_VITIS_LOOP_110_3 {
 		A {Type I LastRead 1 FirstWrite -1}
-		sext_ln110 {Type I LastRead 0 FirstWrite -1}
+		sext_ln109 {Type I LastRead 0 FirstWrite -1}
 		A_1 {Type O LastRead -1 FirstWrite 2}
 		A_2 {Type O LastRead -1 FirstWrite 2}
 		A_3 {Type O LastRead -1 FirstWrite 2}
@@ -315,8 +315,72 @@ set ArgLastReadFirstWriteLatency {
 		A_29 {Type O LastRead -1 FirstWrite 2}
 		A_30 {Type O LastRead -1 FirstWrite 2}
 		A_31 {Type O LastRead -1 FirstWrite 2}
-		A_32 {Type O LastRead -1 FirstWrite 2}}
-	top_kernel_Outline_VITIS_LOOP_118_4 {
+		A_32 {Type O LastRead -1 FirstWrite 2}
+		A_33 {Type O LastRead -1 FirstWrite 2}
+		A_34 {Type O LastRead -1 FirstWrite 2}
+		A_35 {Type O LastRead -1 FirstWrite 2}
+		A_36 {Type O LastRead -1 FirstWrite 2}
+		A_37 {Type O LastRead -1 FirstWrite 2}
+		A_38 {Type O LastRead -1 FirstWrite 2}
+		A_39 {Type O LastRead -1 FirstWrite 2}
+		A_40 {Type O LastRead -1 FirstWrite 2}
+		A_41 {Type O LastRead -1 FirstWrite 2}
+		A_42 {Type O LastRead -1 FirstWrite 2}
+		A_43 {Type O LastRead -1 FirstWrite 2}
+		A_44 {Type O LastRead -1 FirstWrite 2}
+		A_45 {Type O LastRead -1 FirstWrite 2}
+		A_46 {Type O LastRead -1 FirstWrite 2}
+		A_47 {Type O LastRead -1 FirstWrite 2}
+		A_48 {Type O LastRead -1 FirstWrite 2}
+		A_49 {Type O LastRead -1 FirstWrite 2}
+		A_50 {Type O LastRead -1 FirstWrite 2}
+		A_51 {Type O LastRead -1 FirstWrite 2}
+		A_52 {Type O LastRead -1 FirstWrite 2}
+		A_53 {Type O LastRead -1 FirstWrite 2}
+		A_54 {Type O LastRead -1 FirstWrite 2}
+		A_55 {Type O LastRead -1 FirstWrite 2}
+		A_56 {Type O LastRead -1 FirstWrite 2}
+		A_57 {Type O LastRead -1 FirstWrite 2}
+		A_58 {Type O LastRead -1 FirstWrite 2}
+		A_59 {Type O LastRead -1 FirstWrite 2}
+		A_60 {Type O LastRead -1 FirstWrite 2}
+		A_61 {Type O LastRead -1 FirstWrite 2}
+		A_62 {Type O LastRead -1 FirstWrite 2}
+		A_63 {Type O LastRead -1 FirstWrite 2}
+		A_64 {Type O LastRead -1 FirstWrite 2}}
+	top_kernel_Outline_VITIS_LOOP_117_4 {
+		A_49 {Type I LastRead 0 FirstWrite -1}
+		A_50 {Type I LastRead 1 FirstWrite -1}
+		A_51 {Type I LastRead 1 FirstWrite -1}
+		A_52 {Type I LastRead 1 FirstWrite -1}
+		A_53 {Type I LastRead 1 FirstWrite -1}
+		A_54 {Type I LastRead 1 FirstWrite -1}
+		A_55 {Type I LastRead 1 FirstWrite -1}
+		A_56 {Type I LastRead 1 FirstWrite -1}
+		A_57 {Type I LastRead 1 FirstWrite -1}
+		A_58 {Type I LastRead 1 FirstWrite -1}
+		A_59 {Type I LastRead 1 FirstWrite -1}
+		A_60 {Type I LastRead 1 FirstWrite -1}
+		A_61 {Type I LastRead 1 FirstWrite -1}
+		A_62 {Type I LastRead 1 FirstWrite -1}
+		A_63 {Type I LastRead 1 FirstWrite -1}
+		A_64 {Type I LastRead 1 FirstWrite -1}
+		A_33 {Type I LastRead 0 FirstWrite -1}
+		A_34 {Type I LastRead 1 FirstWrite -1}
+		A_35 {Type I LastRead 1 FirstWrite -1}
+		A_36 {Type I LastRead 1 FirstWrite -1}
+		A_37 {Type I LastRead 1 FirstWrite -1}
+		A_38 {Type I LastRead 1 FirstWrite -1}
+		A_39 {Type I LastRead 1 FirstWrite -1}
+		A_40 {Type I LastRead 1 FirstWrite -1}
+		A_41 {Type I LastRead 1 FirstWrite -1}
+		A_42 {Type I LastRead 1 FirstWrite -1}
+		A_43 {Type I LastRead 1 FirstWrite -1}
+		A_44 {Type I LastRead 1 FirstWrite -1}
+		A_45 {Type I LastRead 1 FirstWrite -1}
+		A_46 {Type I LastRead 1 FirstWrite -1}
+		A_47 {Type I LastRead 1 FirstWrite -1}
+		A_48 {Type I LastRead 1 FirstWrite -1}
 		A_17 {Type I LastRead 0 FirstWrite -1}
 		A_18 {Type I LastRead 1 FirstWrite -1}
 		A_19 {Type I LastRead 1 FirstWrite -1}
@@ -380,8 +444,40 @@ set ArgLastReadFirstWriteLatency {
 		tmp_28 {Type O LastRead -1 FirstWrite 42}
 		tmp_29 {Type O LastRead -1 FirstWrite 42}
 		tmp_30 {Type O LastRead -1 FirstWrite 42}
-		tmp_31 {Type O LastRead -1 FirstWrite 42}}
-	top_kernel_Pipeline_VITIS_LOOP_122_5 {
+		tmp_31 {Type O LastRead -1 FirstWrite 42}
+		tmp_32 {Type O LastRead -1 FirstWrite 42}
+		tmp_33 {Type O LastRead -1 FirstWrite 42}
+		tmp_34 {Type O LastRead -1 FirstWrite 42}
+		tmp_35 {Type O LastRead -1 FirstWrite 42}
+		tmp_36 {Type O LastRead -1 FirstWrite 42}
+		tmp_37 {Type O LastRead -1 FirstWrite 42}
+		tmp_38 {Type O LastRead -1 FirstWrite 42}
+		tmp_39 {Type O LastRead -1 FirstWrite 42}
+		tmp_40 {Type O LastRead -1 FirstWrite 42}
+		tmp_41 {Type O LastRead -1 FirstWrite 42}
+		tmp_42 {Type O LastRead -1 FirstWrite 42}
+		tmp_43 {Type O LastRead -1 FirstWrite 42}
+		tmp_44 {Type O LastRead -1 FirstWrite 42}
+		tmp_45 {Type O LastRead -1 FirstWrite 42}
+		tmp_46 {Type O LastRead -1 FirstWrite 42}
+		tmp_47 {Type O LastRead -1 FirstWrite 42}
+		tmp_48 {Type O LastRead -1 FirstWrite 42}
+		tmp_49 {Type O LastRead -1 FirstWrite 42}
+		tmp_50 {Type O LastRead -1 FirstWrite 42}
+		tmp_51 {Type O LastRead -1 FirstWrite 42}
+		tmp_52 {Type O LastRead -1 FirstWrite 42}
+		tmp_53 {Type O LastRead -1 FirstWrite 42}
+		tmp_54 {Type O LastRead -1 FirstWrite 42}
+		tmp_55 {Type O LastRead -1 FirstWrite 42}
+		tmp_56 {Type O LastRead -1 FirstWrite 42}
+		tmp_57 {Type O LastRead -1 FirstWrite 42}
+		tmp_58 {Type O LastRead -1 FirstWrite 42}
+		tmp_59 {Type O LastRead -1 FirstWrite 42}
+		tmp_60 {Type O LastRead -1 FirstWrite 42}
+		tmp_61 {Type O LastRead -1 FirstWrite 42}
+		tmp_62 {Type O LastRead -1 FirstWrite 42}
+		tmp_63 {Type O LastRead -1 FirstWrite 42}}
+	top_kernel_Pipeline_VITIS_LOOP_121_5 {
 		i_1 {Type I LastRead 0 FirstWrite -1}
 		A_1 {Type I LastRead 0 FirstWrite -1}
 		A_2 {Type I LastRead 1 FirstWrite -1}
@@ -400,7 +496,7 @@ set ArgLastReadFirstWriteLatency {
 		A_15 {Type I LastRead 1 FirstWrite -1}
 		A_16 {Type I LastRead 1 FirstWrite -1}
 		p_out {Type O LastRead -1 FirstWrite 1}}
-	top_kernel_Pipeline_VITIS_LOOP_122_51 {
+	top_kernel_Pipeline_VITIS_LOOP_121_51 {
 		i_1 {Type I LastRead 0 FirstWrite -1}
 		A_17 {Type I LastRead 0 FirstWrite -1}
 		A_18 {Type I LastRead 1 FirstWrite -1}
@@ -419,7 +515,45 @@ set ArgLastReadFirstWriteLatency {
 		A_31 {Type I LastRead 1 FirstWrite -1}
 		A_32 {Type I LastRead 1 FirstWrite -1}
 		p_out {Type O LastRead -1 FirstWrite 1}}
-	top_kernel_Pipeline_VITIS_LOOP_130_6 {
+	top_kernel_Pipeline_VITIS_LOOP_121_53 {
+		i_1 {Type I LastRead 0 FirstWrite -1}
+		A_33 {Type I LastRead 0 FirstWrite -1}
+		A_34 {Type I LastRead 1 FirstWrite -1}
+		A_35 {Type I LastRead 1 FirstWrite -1}
+		A_36 {Type I LastRead 1 FirstWrite -1}
+		A_37 {Type I LastRead 1 FirstWrite -1}
+		A_38 {Type I LastRead 1 FirstWrite -1}
+		A_39 {Type I LastRead 1 FirstWrite -1}
+		A_40 {Type I LastRead 1 FirstWrite -1}
+		A_41 {Type I LastRead 1 FirstWrite -1}
+		A_42 {Type I LastRead 1 FirstWrite -1}
+		A_43 {Type I LastRead 1 FirstWrite -1}
+		A_44 {Type I LastRead 1 FirstWrite -1}
+		A_45 {Type I LastRead 1 FirstWrite -1}
+		A_46 {Type I LastRead 1 FirstWrite -1}
+		A_47 {Type I LastRead 1 FirstWrite -1}
+		A_48 {Type I LastRead 1 FirstWrite -1}
+		p_out {Type O LastRead -1 FirstWrite 1}}
+	top_kernel_Pipeline_VITIS_LOOP_121_55 {
+		i_1 {Type I LastRead 0 FirstWrite -1}
+		A_49 {Type I LastRead 0 FirstWrite -1}
+		A_50 {Type I LastRead 1 FirstWrite -1}
+		A_51 {Type I LastRead 1 FirstWrite -1}
+		A_52 {Type I LastRead 1 FirstWrite -1}
+		A_53 {Type I LastRead 1 FirstWrite -1}
+		A_54 {Type I LastRead 1 FirstWrite -1}
+		A_55 {Type I LastRead 1 FirstWrite -1}
+		A_56 {Type I LastRead 1 FirstWrite -1}
+		A_57 {Type I LastRead 1 FirstWrite -1}
+		A_58 {Type I LastRead 1 FirstWrite -1}
+		A_59 {Type I LastRead 1 FirstWrite -1}
+		A_60 {Type I LastRead 1 FirstWrite -1}
+		A_61 {Type I LastRead 1 FirstWrite -1}
+		A_62 {Type I LastRead 1 FirstWrite -1}
+		A_63 {Type I LastRead 1 FirstWrite -1}
+		A_64 {Type I LastRead 1 FirstWrite -1}
+		p_out {Type O LastRead -1 FirstWrite 1}}
+	top_kernel_Pipeline_VITIS_LOOP_129_6 {
 		i_1 {Type I LastRead 0 FirstWrite -1}
 		A_1 {Type I LastRead 0 FirstWrite -1}
 		A_2 {Type I LastRead 0 FirstWrite -1}
@@ -454,7 +588,7 @@ set ArgLastReadFirstWriteLatency {
 		tmp_14 {Type O LastRead -1 FirstWrite 42}
 		tmp_15 {Type O LastRead -1 FirstWrite 42}
 		conv_i349 {Type I LastRead 0 FirstWrite -1}}
-	top_kernel_Pipeline_VITIS_LOOP_130_62 {
+	top_kernel_Pipeline_VITIS_LOOP_129_62 {
 		i_1 {Type I LastRead 0 FirstWrite -1}
 		A_17 {Type I LastRead 0 FirstWrite -1}
 		A_18 {Type I LastRead 0 FirstWrite -1}
@@ -489,7 +623,77 @@ set ArgLastReadFirstWriteLatency {
 		tmp_30 {Type O LastRead -1 FirstWrite 42}
 		tmp_31 {Type O LastRead -1 FirstWrite 42}
 		conv_i349_1 {Type I LastRead 0 FirstWrite -1}}
-	top_kernel_Pipeline_VITIS_LOOP_143_7_VITIS_LOOP_144_8 {
+	top_kernel_Pipeline_VITIS_LOOP_129_64 {
+		i_1 {Type I LastRead 0 FirstWrite -1}
+		A_33 {Type I LastRead 0 FirstWrite -1}
+		A_34 {Type I LastRead 0 FirstWrite -1}
+		A_35 {Type I LastRead 0 FirstWrite -1}
+		A_36 {Type I LastRead 0 FirstWrite -1}
+		A_37 {Type I LastRead 0 FirstWrite -1}
+		A_38 {Type I LastRead 0 FirstWrite -1}
+		A_39 {Type I LastRead 0 FirstWrite -1}
+		A_40 {Type I LastRead 0 FirstWrite -1}
+		A_41 {Type I LastRead 0 FirstWrite -1}
+		A_42 {Type I LastRead 0 FirstWrite -1}
+		A_43 {Type I LastRead 0 FirstWrite -1}
+		A_44 {Type I LastRead 0 FirstWrite -1}
+		A_45 {Type I LastRead 0 FirstWrite -1}
+		A_46 {Type I LastRead 0 FirstWrite -1}
+		A_47 {Type I LastRead 0 FirstWrite -1}
+		A_48 {Type I LastRead 0 FirstWrite -1}
+		tmp_32 {Type O LastRead -1 FirstWrite 42}
+		tmp_33 {Type O LastRead -1 FirstWrite 42}
+		tmp_34 {Type O LastRead -1 FirstWrite 42}
+		tmp_35 {Type O LastRead -1 FirstWrite 42}
+		tmp_36 {Type O LastRead -1 FirstWrite 42}
+		tmp_37 {Type O LastRead -1 FirstWrite 42}
+		tmp_38 {Type O LastRead -1 FirstWrite 42}
+		tmp_39 {Type O LastRead -1 FirstWrite 42}
+		tmp_40 {Type O LastRead -1 FirstWrite 42}
+		tmp_41 {Type O LastRead -1 FirstWrite 42}
+		tmp_42 {Type O LastRead -1 FirstWrite 42}
+		tmp_43 {Type O LastRead -1 FirstWrite 42}
+		tmp_44 {Type O LastRead -1 FirstWrite 42}
+		tmp_45 {Type O LastRead -1 FirstWrite 42}
+		tmp_46 {Type O LastRead -1 FirstWrite 42}
+		tmp_47 {Type O LastRead -1 FirstWrite 42}
+		conv_i349_2 {Type I LastRead 0 FirstWrite -1}}
+	top_kernel_Pipeline_VITIS_LOOP_129_66 {
+		i_1 {Type I LastRead 0 FirstWrite -1}
+		A_49 {Type I LastRead 0 FirstWrite -1}
+		A_50 {Type I LastRead 0 FirstWrite -1}
+		A_51 {Type I LastRead 0 FirstWrite -1}
+		A_52 {Type I LastRead 0 FirstWrite -1}
+		A_53 {Type I LastRead 0 FirstWrite -1}
+		A_54 {Type I LastRead 0 FirstWrite -1}
+		A_55 {Type I LastRead 0 FirstWrite -1}
+		A_56 {Type I LastRead 0 FirstWrite -1}
+		A_57 {Type I LastRead 0 FirstWrite -1}
+		A_58 {Type I LastRead 0 FirstWrite -1}
+		A_59 {Type I LastRead 0 FirstWrite -1}
+		A_60 {Type I LastRead 0 FirstWrite -1}
+		A_61 {Type I LastRead 0 FirstWrite -1}
+		A_62 {Type I LastRead 0 FirstWrite -1}
+		A_63 {Type I LastRead 0 FirstWrite -1}
+		A_64 {Type I LastRead 0 FirstWrite -1}
+		tmp_48 {Type O LastRead -1 FirstWrite 42}
+		tmp_49 {Type O LastRead -1 FirstWrite 42}
+		tmp_50 {Type O LastRead -1 FirstWrite 42}
+		tmp_51 {Type O LastRead -1 FirstWrite 42}
+		tmp_52 {Type O LastRead -1 FirstWrite 42}
+		tmp_53 {Type O LastRead -1 FirstWrite 42}
+		tmp_54 {Type O LastRead -1 FirstWrite 42}
+		tmp_55 {Type O LastRead -1 FirstWrite 42}
+		tmp_56 {Type O LastRead -1 FirstWrite 42}
+		tmp_57 {Type O LastRead -1 FirstWrite 42}
+		tmp_58 {Type O LastRead -1 FirstWrite 42}
+		tmp_59 {Type O LastRead -1 FirstWrite 42}
+		tmp_60 {Type O LastRead -1 FirstWrite 42}
+		tmp_61 {Type O LastRead -1 FirstWrite 42}
+		tmp_62 {Type O LastRead -1 FirstWrite 42}
+		tmp_63 {Type O LastRead -1 FirstWrite 42}
+		conv_i349_3 {Type I LastRead 0 FirstWrite -1}}
+	top_kernel_Pipeline_VITIS_LOOP_139_7_VITIS_LOOP_140_8 {
 		tmp {Type I LastRead 1 FirstWrite -1}
 		tmp_1 {Type I LastRead 1 FirstWrite -1}
 		tmp_2 {Type I LastRead 1 FirstWrite -1}
@@ -522,6 +726,38 @@ set ArgLastReadFirstWriteLatency {
 		tmp_29 {Type I LastRead 1 FirstWrite -1}
 		tmp_30 {Type I LastRead 1 FirstWrite -1}
 		tmp_31 {Type I LastRead 1 FirstWrite -1}
+		tmp_32 {Type I LastRead 1 FirstWrite -1}
+		tmp_33 {Type I LastRead 1 FirstWrite -1}
+		tmp_34 {Type I LastRead 1 FirstWrite -1}
+		tmp_35 {Type I LastRead 1 FirstWrite -1}
+		tmp_36 {Type I LastRead 1 FirstWrite -1}
+		tmp_37 {Type I LastRead 1 FirstWrite -1}
+		tmp_38 {Type I LastRead 1 FirstWrite -1}
+		tmp_39 {Type I LastRead 1 FirstWrite -1}
+		tmp_40 {Type I LastRead 1 FirstWrite -1}
+		tmp_41 {Type I LastRead 1 FirstWrite -1}
+		tmp_42 {Type I LastRead 1 FirstWrite -1}
+		tmp_43 {Type I LastRead 1 FirstWrite -1}
+		tmp_44 {Type I LastRead 1 FirstWrite -1}
+		tmp_45 {Type I LastRead 1 FirstWrite -1}
+		tmp_46 {Type I LastRead 1 FirstWrite -1}
+		tmp_47 {Type I LastRead 1 FirstWrite -1}
+		tmp_48 {Type I LastRead 1 FirstWrite -1}
+		tmp_49 {Type I LastRead 1 FirstWrite -1}
+		tmp_50 {Type I LastRead 1 FirstWrite -1}
+		tmp_51 {Type I LastRead 1 FirstWrite -1}
+		tmp_52 {Type I LastRead 1 FirstWrite -1}
+		tmp_53 {Type I LastRead 1 FirstWrite -1}
+		tmp_54 {Type I LastRead 1 FirstWrite -1}
+		tmp_55 {Type I LastRead 1 FirstWrite -1}
+		tmp_56 {Type I LastRead 1 FirstWrite -1}
+		tmp_57 {Type I LastRead 1 FirstWrite -1}
+		tmp_58 {Type I LastRead 1 FirstWrite -1}
+		tmp_59 {Type I LastRead 1 FirstWrite -1}
+		tmp_60 {Type I LastRead 1 FirstWrite -1}
+		tmp_61 {Type I LastRead 1 FirstWrite -1}
+		tmp_62 {Type I LastRead 1 FirstWrite -1}
+		tmp_63 {Type I LastRead 1 FirstWrite -1}
 		col_sums {Type IO LastRead 0 FirstWrite 3}
 		col_sums_1 {Type IO LastRead 0 FirstWrite 3}
 		col_sums_2 {Type IO LastRead 0 FirstWrite 3}
@@ -538,81 +774,153 @@ set ArgLastReadFirstWriteLatency {
 		col_sums_13 {Type IO LastRead 0 FirstWrite 3}
 		col_sums_14 {Type IO LastRead 0 FirstWrite 3}
 		col_sums_15 {Type IO LastRead 0 FirstWrite 3}}
-	top_kernel_Pipeline_VITIS_LOOP_156_10 {
+	top_kernel_Pipeline_VITIS_LOOP_152_10 {
 		lshr_ln7 {Type I LastRead 0 FirstWrite -1}
 		C_1 {Type O LastRead -1 FirstWrite 2}
-		C_3 {Type O LastRead -1 FirstWrite 2}
 		C_5 {Type O LastRead -1 FirstWrite 2}
-		C_7 {Type O LastRead -1 FirstWrite 2}
 		C_9 {Type O LastRead -1 FirstWrite 2}
-		C_11 {Type O LastRead -1 FirstWrite 2}
 		C_13 {Type O LastRead -1 FirstWrite 2}
-		C_15 {Type O LastRead -1 FirstWrite 2}
 		C_17 {Type O LastRead -1 FirstWrite 2}
-		C_19 {Type O LastRead -1 FirstWrite 2}
 		C_21 {Type O LastRead -1 FirstWrite 2}
-		C_23 {Type O LastRead -1 FirstWrite 2}
 		C_25 {Type O LastRead -1 FirstWrite 2}
-		C_27 {Type O LastRead -1 FirstWrite 2}
 		C_29 {Type O LastRead -1 FirstWrite 2}
-		C_31 {Type O LastRead -1 FirstWrite 2}
-		tmp {Type I LastRead 4 FirstWrite -1}
-		tmp_2 {Type I LastRead 4 FirstWrite -1}
-		tmp_4 {Type I LastRead 4 FirstWrite -1}
-		tmp_6 {Type I LastRead 4 FirstWrite -1}
-		tmp_8 {Type I LastRead 4 FirstWrite -1}
-		tmp_10 {Type I LastRead 4 FirstWrite -1}
-		tmp_12 {Type I LastRead 4 FirstWrite -1}
-		tmp_14 {Type I LastRead 4 FirstWrite -1}
-		tmp_16 {Type I LastRead 4 FirstWrite -1}
-		tmp_18 {Type I LastRead 4 FirstWrite -1}
-		tmp_20 {Type I LastRead 4 FirstWrite -1}
-		tmp_22 {Type I LastRead 4 FirstWrite -1}
-		tmp_24 {Type I LastRead 4 FirstWrite -1}
-		tmp_26 {Type I LastRead 4 FirstWrite -1}
-		tmp_28 {Type I LastRead 4 FirstWrite -1}
-		tmp_30 {Type I LastRead 4 FirstWrite -1}
+		C_33 {Type O LastRead -1 FirstWrite 2}
+		C_37 {Type O LastRead -1 FirstWrite 2}
+		C_41 {Type O LastRead -1 FirstWrite 2}
+		C_45 {Type O LastRead -1 FirstWrite 2}
+		C_49 {Type O LastRead -1 FirstWrite 2}
+		C_53 {Type O LastRead -1 FirstWrite 2}
+		C_57 {Type O LastRead -1 FirstWrite 2}
+		C_61 {Type O LastRead -1 FirstWrite 2}
+		tmp {Type I LastRead 2 FirstWrite -1}
+		tmp_4 {Type I LastRead 2 FirstWrite -1}
+		tmp_8 {Type I LastRead 2 FirstWrite -1}
+		tmp_12 {Type I LastRead 2 FirstWrite -1}
+		tmp_16 {Type I LastRead 2 FirstWrite -1}
+		tmp_20 {Type I LastRead 2 FirstWrite -1}
+		tmp_24 {Type I LastRead 2 FirstWrite -1}
+		tmp_28 {Type I LastRead 2 FirstWrite -1}
+		tmp_32 {Type I LastRead 2 FirstWrite -1}
+		tmp_36 {Type I LastRead 2 FirstWrite -1}
+		tmp_40 {Type I LastRead 2 FirstWrite -1}
+		tmp_44 {Type I LastRead 2 FirstWrite -1}
+		tmp_48 {Type I LastRead 2 FirstWrite -1}
+		tmp_52 {Type I LastRead 2 FirstWrite -1}
+		tmp_56 {Type I LastRead 2 FirstWrite -1}
+		tmp_60 {Type I LastRead 2 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
 		conv7_i {Type I LastRead 0 FirstWrite -1}}
-	top_kernel_Pipeline_VITIS_LOOP_156_103 {
+	top_kernel_Pipeline_VITIS_LOOP_152_107 {
 		lshr_ln7 {Type I LastRead 0 FirstWrite -1}
 		C_2 {Type O LastRead -1 FirstWrite 2}
-		C_4 {Type O LastRead -1 FirstWrite 2}
 		C_6 {Type O LastRead -1 FirstWrite 2}
-		C_8 {Type O LastRead -1 FirstWrite 2}
 		C_10 {Type O LastRead -1 FirstWrite 2}
-		C_12 {Type O LastRead -1 FirstWrite 2}
 		C_14 {Type O LastRead -1 FirstWrite 2}
-		C_16 {Type O LastRead -1 FirstWrite 2}
 		C_18 {Type O LastRead -1 FirstWrite 2}
-		C_20 {Type O LastRead -1 FirstWrite 2}
 		C_22 {Type O LastRead -1 FirstWrite 2}
-		C_24 {Type O LastRead -1 FirstWrite 2}
 		C_26 {Type O LastRead -1 FirstWrite 2}
-		C_28 {Type O LastRead -1 FirstWrite 2}
 		C_30 {Type O LastRead -1 FirstWrite 2}
-		C_32 {Type O LastRead -1 FirstWrite 2}
-		tmp_1 {Type I LastRead 4 FirstWrite -1}
-		tmp_3 {Type I LastRead 4 FirstWrite -1}
-		tmp_5 {Type I LastRead 4 FirstWrite -1}
-		tmp_7 {Type I LastRead 4 FirstWrite -1}
-		tmp_9 {Type I LastRead 4 FirstWrite -1}
-		tmp_11 {Type I LastRead 4 FirstWrite -1}
-		tmp_13 {Type I LastRead 4 FirstWrite -1}
-		tmp_15 {Type I LastRead 4 FirstWrite -1}
-		tmp_17 {Type I LastRead 4 FirstWrite -1}
-		tmp_19 {Type I LastRead 4 FirstWrite -1}
-		tmp_21 {Type I LastRead 4 FirstWrite -1}
-		tmp_23 {Type I LastRead 4 FirstWrite -1}
-		tmp_25 {Type I LastRead 4 FirstWrite -1}
-		tmp_27 {Type I LastRead 4 FirstWrite -1}
-		tmp_29 {Type I LastRead 4 FirstWrite -1}
-		tmp_31 {Type I LastRead 4 FirstWrite -1}
+		C_34 {Type O LastRead -1 FirstWrite 2}
+		C_38 {Type O LastRead -1 FirstWrite 2}
+		C_42 {Type O LastRead -1 FirstWrite 2}
+		C_46 {Type O LastRead -1 FirstWrite 2}
+		C_50 {Type O LastRead -1 FirstWrite 2}
+		C_54 {Type O LastRead -1 FirstWrite 2}
+		C_58 {Type O LastRead -1 FirstWrite 2}
+		C_62 {Type O LastRead -1 FirstWrite 2}
+		tmp_1 {Type I LastRead 2 FirstWrite -1}
+		tmp_5 {Type I LastRead 2 FirstWrite -1}
+		tmp_9 {Type I LastRead 2 FirstWrite -1}
+		tmp_13 {Type I LastRead 2 FirstWrite -1}
+		tmp_17 {Type I LastRead 2 FirstWrite -1}
+		tmp_21 {Type I LastRead 2 FirstWrite -1}
+		tmp_25 {Type I LastRead 2 FirstWrite -1}
+		tmp_29 {Type I LastRead 2 FirstWrite -1}
+		tmp_33 {Type I LastRead 2 FirstWrite -1}
+		tmp_37 {Type I LastRead 2 FirstWrite -1}
+		tmp_41 {Type I LastRead 2 FirstWrite -1}
+		tmp_45 {Type I LastRead 2 FirstWrite -1}
+		tmp_49 {Type I LastRead 2 FirstWrite -1}
+		tmp_53 {Type I LastRead 2 FirstWrite -1}
+		tmp_57 {Type I LastRead 2 FirstWrite -1}
+		tmp_61 {Type I LastRead 2 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
 		conv7_i_1 {Type I LastRead 0 FirstWrite -1}}
-	top_kernel_Pipeline_VITIS_LOOP_164_11_VITIS_LOOP_165_12 {
+	top_kernel_Pipeline_VITIS_LOOP_152_108 {
+		lshr_ln7 {Type I LastRead 0 FirstWrite -1}
+		C_3 {Type O LastRead -1 FirstWrite 2}
+		C_7 {Type O LastRead -1 FirstWrite 2}
+		C_11 {Type O LastRead -1 FirstWrite 2}
+		C_15 {Type O LastRead -1 FirstWrite 2}
+		C_19 {Type O LastRead -1 FirstWrite 2}
+		C_23 {Type O LastRead -1 FirstWrite 2}
+		C_27 {Type O LastRead -1 FirstWrite 2}
+		C_31 {Type O LastRead -1 FirstWrite 2}
+		C_35 {Type O LastRead -1 FirstWrite 2}
+		C_39 {Type O LastRead -1 FirstWrite 2}
+		C_43 {Type O LastRead -1 FirstWrite 2}
+		C_47 {Type O LastRead -1 FirstWrite 2}
+		C_51 {Type O LastRead -1 FirstWrite 2}
+		C_55 {Type O LastRead -1 FirstWrite 2}
+		C_59 {Type O LastRead -1 FirstWrite 2}
+		C_63 {Type O LastRead -1 FirstWrite 2}
+		tmp_2 {Type I LastRead 2 FirstWrite -1}
+		tmp_6 {Type I LastRead 2 FirstWrite -1}
+		tmp_10 {Type I LastRead 2 FirstWrite -1}
+		tmp_14 {Type I LastRead 2 FirstWrite -1}
+		tmp_18 {Type I LastRead 2 FirstWrite -1}
+		tmp_22 {Type I LastRead 2 FirstWrite -1}
+		tmp_26 {Type I LastRead 2 FirstWrite -1}
+		tmp_30 {Type I LastRead 2 FirstWrite -1}
+		tmp_34 {Type I LastRead 2 FirstWrite -1}
+		tmp_38 {Type I LastRead 2 FirstWrite -1}
+		tmp_42 {Type I LastRead 2 FirstWrite -1}
+		tmp_46 {Type I LastRead 2 FirstWrite -1}
+		tmp_50 {Type I LastRead 2 FirstWrite -1}
+		tmp_54 {Type I LastRead 2 FirstWrite -1}
+		tmp_58 {Type I LastRead 2 FirstWrite -1}
+		tmp_62 {Type I LastRead 2 FirstWrite -1}
+		empty {Type I LastRead 0 FirstWrite -1}
+		conv7_i_2 {Type I LastRead 0 FirstWrite -1}}
+	top_kernel_Pipeline_VITIS_LOOP_152_109 {
+		lshr_ln7 {Type I LastRead 0 FirstWrite -1}
+		C_4 {Type O LastRead -1 FirstWrite 2}
+		C_8 {Type O LastRead -1 FirstWrite 2}
+		C_12 {Type O LastRead -1 FirstWrite 2}
+		C_16 {Type O LastRead -1 FirstWrite 2}
+		C_20 {Type O LastRead -1 FirstWrite 2}
+		C_24 {Type O LastRead -1 FirstWrite 2}
+		C_28 {Type O LastRead -1 FirstWrite 2}
+		C_32 {Type O LastRead -1 FirstWrite 2}
+		C_36 {Type O LastRead -1 FirstWrite 2}
+		C_40 {Type O LastRead -1 FirstWrite 2}
+		C_44 {Type O LastRead -1 FirstWrite 2}
+		C_48 {Type O LastRead -1 FirstWrite 2}
+		C_52 {Type O LastRead -1 FirstWrite 2}
+		C_56 {Type O LastRead -1 FirstWrite 2}
+		C_60 {Type O LastRead -1 FirstWrite 2}
+		C_64 {Type O LastRead -1 FirstWrite 2}
+		tmp_3 {Type I LastRead 2 FirstWrite -1}
+		tmp_7 {Type I LastRead 2 FirstWrite -1}
+		tmp_11 {Type I LastRead 2 FirstWrite -1}
+		tmp_15 {Type I LastRead 2 FirstWrite -1}
+		tmp_19 {Type I LastRead 2 FirstWrite -1}
+		tmp_23 {Type I LastRead 2 FirstWrite -1}
+		tmp_27 {Type I LastRead 2 FirstWrite -1}
+		tmp_31 {Type I LastRead 2 FirstWrite -1}
+		tmp_35 {Type I LastRead 2 FirstWrite -1}
+		tmp_39 {Type I LastRead 2 FirstWrite -1}
+		tmp_43 {Type I LastRead 2 FirstWrite -1}
+		tmp_47 {Type I LastRead 2 FirstWrite -1}
+		tmp_51 {Type I LastRead 2 FirstWrite -1}
+		tmp_55 {Type I LastRead 2 FirstWrite -1}
+		tmp_59 {Type I LastRead 2 FirstWrite -1}
+		tmp_63 {Type I LastRead 2 FirstWrite -1}
+		empty {Type I LastRead 0 FirstWrite -1}
+		conv7_i_3 {Type I LastRead 0 FirstWrite -1}}
+	top_kernel_Pipeline_VITIS_LOOP_160_11_VITIS_LOOP_161_12 {
 		C {Type O LastRead -1 FirstWrite 2}
-		sext_ln164 {Type I LastRead 0 FirstWrite -1}
+		sext_ln160 {Type I LastRead 0 FirstWrite -1}
 		C_1 {Type I LastRead 0 FirstWrite -1}
 		C_2 {Type I LastRead 0 FirstWrite -1}
 		C_3 {Type I LastRead 0 FirstWrite -1}
@@ -644,13 +952,45 @@ set ArgLastReadFirstWriteLatency {
 		C_29 {Type I LastRead 0 FirstWrite -1}
 		C_30 {Type I LastRead 0 FirstWrite -1}
 		C_31 {Type I LastRead 0 FirstWrite -1}
-		C_32 {Type I LastRead 0 FirstWrite -1}}}
+		C_32 {Type I LastRead 0 FirstWrite -1}
+		C_33 {Type I LastRead 0 FirstWrite -1}
+		C_34 {Type I LastRead 0 FirstWrite -1}
+		C_35 {Type I LastRead 0 FirstWrite -1}
+		C_36 {Type I LastRead 0 FirstWrite -1}
+		C_37 {Type I LastRead 0 FirstWrite -1}
+		C_38 {Type I LastRead 0 FirstWrite -1}
+		C_39 {Type I LastRead 0 FirstWrite -1}
+		C_40 {Type I LastRead 0 FirstWrite -1}
+		C_41 {Type I LastRead 0 FirstWrite -1}
+		C_42 {Type I LastRead 0 FirstWrite -1}
+		C_43 {Type I LastRead 0 FirstWrite -1}
+		C_44 {Type I LastRead 0 FirstWrite -1}
+		C_45 {Type I LastRead 0 FirstWrite -1}
+		C_46 {Type I LastRead 0 FirstWrite -1}
+		C_47 {Type I LastRead 0 FirstWrite -1}
+		C_48 {Type I LastRead 0 FirstWrite -1}
+		C_49 {Type I LastRead 0 FirstWrite -1}
+		C_50 {Type I LastRead 0 FirstWrite -1}
+		C_51 {Type I LastRead 0 FirstWrite -1}
+		C_52 {Type I LastRead 0 FirstWrite -1}
+		C_53 {Type I LastRead 0 FirstWrite -1}
+		C_54 {Type I LastRead 0 FirstWrite -1}
+		C_55 {Type I LastRead 0 FirstWrite -1}
+		C_56 {Type I LastRead 0 FirstWrite -1}
+		C_57 {Type I LastRead 0 FirstWrite -1}
+		C_58 {Type I LastRead 0 FirstWrite -1}
+		C_59 {Type I LastRead 0 FirstWrite -1}
+		C_60 {Type I LastRead 0 FirstWrite -1}
+		C_61 {Type I LastRead 0 FirstWrite -1}
+		C_62 {Type I LastRead 0 FirstWrite -1}
+		C_63 {Type I LastRead 0 FirstWrite -1}
+		C_64 {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "43556", "Max" : "43556"}
-	, {"Name" : "Interval", "Min" : "43557", "Max" : "43557"}
+	{"Name" : "Latency", "Min" : "38212", "Max" : "38212"}
+	, {"Name" : "Interval", "Min" : "38213", "Max" : "38213"}
 ]}
 
 set PipelineEnableSignalInfo {[

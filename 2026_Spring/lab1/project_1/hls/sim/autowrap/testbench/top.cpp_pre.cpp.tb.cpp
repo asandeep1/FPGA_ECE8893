@@ -59275,12 +59275,11 @@ data_t C[256][64];
 data_t tmp[256][64];
 data_t col_sums[64];
 
-
-#pragma HLS array_partition variable=A cyclic factor=2 dim=1
+#pragma HLS array_partition variable=A cyclic factor=4 dim=1
 #pragma HLS array_partition variable=A cyclic factor=16 dim=2
-#pragma HLS array_partition variable=tmp cyclic factor=2 dim=1
+#pragma HLS array_partition variable=tmp cyclic factor=4 dim=1
 #pragma HLS array_partition variable=tmp cyclic factor=16 dim=2
-#pragma HLS array_partition variable=C cyclic factor=2 dim=1
+#pragma HLS array_partition variable=C cyclic factor=4 dim=1
 #pragma HLS array_partition variable=C cyclic factor=16 dim=2
 #pragma HLS array_partition variable=col_sums cyclic factor=16
 
@@ -59300,7 +59299,7 @@ data_t col_sums[64];
 
 
     for (int i = 0; i < 256; i++) {
-#pragma HLS UNROLL factor=2
+#pragma HLS UNROLL factor=4
         data_t row_sum = 0.0;
 
         for (int j = 0; j < 64; j++) {
@@ -59316,9 +59315,6 @@ data_t col_sums[64];
 #pragma HLS UNROLL factor=16
             data_t val = A[i][j] / denom;
             tmp[i][j] = val;
-
-
-
         }
     }
 
@@ -59334,7 +59330,7 @@ data_t col_sums[64];
 
 
     for (int j = 0; j < 64; j++) {
-#pragma HLS UNROLL factor=2
+#pragma HLS UNROLL factor=4
         data_t scale = col_sums[j] / (data_t)256;
 
         for (int i = 0; i < 256; i++) {
@@ -59377,5 +59373,5 @@ apatb_top_kernel_ir(A_DRAM, C_DRAM);
 return ;
 }
 #endif
-# 170 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp"
+# 166 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp"
 

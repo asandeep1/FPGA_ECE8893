@@ -91,12 +91,11 @@ data_t C[N_ROWS][N_COLS];
 data_t tmp[N_ROWS][N_COLS];
 data_t col_sums[N_COLS]; // Buffer to store the global column sums
 
-// Partitioning: We need to access multiple rows (dim 1) AND multiple columns (dim 2)
-#pragma HLS array_partition variable=A cyclic factor=2 dim=1
+#pragma HLS array_partition variable=A cyclic factor=4 dim=1
 #pragma HLS array_partition variable=A cyclic factor=16 dim=2
-#pragma HLS array_partition variable=tmp cyclic factor=2 dim=1
+#pragma HLS array_partition variable=tmp cyclic factor=4 dim=1
 #pragma HLS array_partition variable=tmp cyclic factor=16 dim=2
-#pragma HLS array_partition variable=C cyclic factor=2 dim=1
+#pragma HLS array_partition variable=C cyclic factor=4 dim=1
 #pragma HLS array_partition variable=C cyclic factor=16 dim=2
 #pragma HLS array_partition variable=col_sums cyclic factor=16
 
@@ -116,7 +115,7 @@ data_t col_sums[N_COLS]; // Buffer to store the global column sums
 
     // Phase 1: Row-wise normalization (Unrolled by 2 rows)
     for (int i = 0; i < N_ROWS; i++) {
-        #pragma HLS UNROLL factor=2 // Process 2 rows in parallel
+        #pragma HLS UNROLL factor=4 // Process 2 rows in parallel
         data_t row_sum = 0.0;
 
         for (int j = 0; j < N_COLS; j++) {
@@ -147,7 +146,7 @@ data_t col_sums[N_COLS]; // Buffer to store the global column sums
 
     // Phase 2: Column-wise scaling (Unrolled by 2 columns)
     for (int j = 0; j < N_COLS; j++) {
-        #pragma HLS UNROLL factor=2 // Process 2 columns in parallel
+        #pragma HLS UNROLL factor=4 // Process 2 columns in parallel
         data_t scale = col_sums[j] / (data_t)N_ROWS;
 
         for (int i = 0; i < N_ROWS; i++) {
