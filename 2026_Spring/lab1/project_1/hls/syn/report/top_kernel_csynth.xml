@@ -22,67 +22,50 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>50330</Best-caseLatency>
-<Average-caseLatency>50330</Average-caseLatency>
-<Worst-caseLatency>50330</Worst-caseLatency>
-<Best-caseRealTimeLatency>1.268 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>1.268 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>1.268 ms</Worst-caseRealTimeLatency>
-<Interval-min>50331</Interval-min>
-<Interval-max>50331</Interval-max>
+<Best-caseLatency>43556</Best-caseLatency>
+<Average-caseLatency>43556</Average-caseLatency>
+<Worst-caseLatency>43556</Worst-caseLatency>
+<Best-caseRealTimeLatency>1.098 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>1.098 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>1.098 ms</Worst-caseRealTimeLatency>
+<Interval-min>43557</Interval-min>
+<Interval-max>43557</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_29_3>
+<VITIS_LOOP_152_9>
 <Slack>7.30</Slack>
-<TripCount>256</TripCount>
+<TripCount>32</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>14848</Latency>
-<AbsoluteTimeLatency>374184</AbsoluteTimeLatency>
-<IterationLatency>58</IterationLatency>
+<Latency>2240</Latency>
+<AbsoluteTimeLatency>56450</AbsoluteTimeLatency>
+<IterationLatency>70</IterationLatency>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_29_3>
-<VITIS_LOOP_51_6>
-<Slack>7.30</Slack>
-<TripCount>64</TripCount>
-<isPerfectNested>0</isPerfectNested>
-<Latency>2688</Latency>
-<AbsoluteTimeLatency>67740</AbsoluteTimeLatency>
-<IterationLatency>42</IterationLatency>
-<PerformancePragma>-</PerformancePragma>
-<InstanceList>
-</InstanceList>
-</VITIS_LOOP_51_6>
+</VITIS_LOOP_152_9>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:29</SourceLocation>
+<SourceLocation>top.cpp:152</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_29_3>
-<Name>VITIS_LOOP_29_3</Name>
+<VITIS_LOOP_152_9>
+<Name>VITIS_LOOP_152_9</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:29</SourceLocation>
-</VITIS_LOOP_29_3>
-<VITIS_LOOP_51_6>
-<Name>VITIS_LOOP_51_6</Name>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:51</SourceLocation>
-</VITIS_LOOP_51_6>
+<SourceLocation>top.cpp:152</SourceLocation>
+</VITIS_LOOP_152_9>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>322</BRAM_18K>
-<DSP>16</DSP>
-<FF>53720</FF>
-<LUT>66050</LUT>
+<BRAM_18K>546</BRAM_18K>
+<DSP>32</DSP>
+<FF>109638</FF>
+<LUT>112793</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

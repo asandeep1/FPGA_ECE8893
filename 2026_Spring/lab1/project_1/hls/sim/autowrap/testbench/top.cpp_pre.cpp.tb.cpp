@@ -12,6 +12,7 @@
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp" 2
+# 80 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp"
 # 1 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/dcl.h" 1
 
 
@@ -59260,9 +59261,7 @@ typedef ap_fixed<24, 10, AP_RND, AP_SAT> data_t;
 
 void top_kernel(data_t A[256][64],
                 data_t C[256][64]);
-# 2 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp" 2
-
-
+# 81 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp" 2
 
 void top_kernel(data_t A_DRAM[256][64],
                 data_t C_DRAM[256][64]) {
@@ -59274,11 +59273,23 @@ void top_kernel(data_t A_DRAM[256][64],
 data_t A[256][64];
 data_t C[256][64];
 data_t tmp[256][64];
+data_t col_sums[64];
 
+
+#pragma HLS array_partition variable=A cyclic factor=2 dim=1
 #pragma HLS array_partition variable=A cyclic factor=16 dim=2
-#pragma HLS array_partition variable=tmp cyclic factor=16 dim=1
+#pragma HLS array_partition variable=tmp cyclic factor=2 dim=1
 #pragma HLS array_partition variable=tmp cyclic factor=16 dim=2
-#pragma HLS array_partition variable=C cyclic factor=16 dim=1
+#pragma HLS array_partition variable=C cyclic factor=2 dim=1
+#pragma HLS array_partition variable=C cyclic factor=16 dim=2
+#pragma HLS array_partition variable=col_sums cyclic factor=16
+
+
+    for(int j = 0; j < 64; j++) {
+#pragma HLS PIPELINE II=1
+        col_sums[j] = 0.0;
+    }
+
 
     for (int i = 0; i < 256; i++) {
         for (int j = 0; j < 64; j++) {
@@ -59289,8 +59300,8 @@ data_t tmp[256][64];
 
 
     for (int i = 0; i < 256; i++) {
+#pragma HLS UNROLL factor=2
         data_t row_sum = 0.0;
-
 
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
@@ -59298,31 +59309,33 @@ data_t tmp[256][64];
             row_sum += A[i][j];
         }
 
-
         data_t denom = row_sum + (data_t)1.0;
-
 
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
 #pragma HLS UNROLL factor=16
-            tmp[i][j] = A[i][j] / denom;
+            data_t val = A[i][j] / denom;
+            tmp[i][j] = val;
+
+
+
+        }
+    }
+
+
+
+    for (int j = 0; j < 64; j++) {
+        for (int i = 0; i < 256; i++) {
+#pragma HLS PIPELINE II=1
+#pragma HLS UNROLL factor=16
+            col_sums[j] += tmp[i][j];
         }
     }
 
 
     for (int j = 0; j < 64; j++) {
-        data_t col_sum = 0.0;
-
-
-        for (int i = 0; i < 256; i++) {
-#pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=16
-            col_sum += tmp[i][j];
-        }
-
-
-        data_t scale = col_sum / (data_t)256;
-
+#pragma HLS UNROLL factor=2
+        data_t scale = col_sums[j] / (data_t)256;
 
         for (int i = 0; i < 256; i++) {
 #pragma HLS PIPELINE II=1
@@ -59330,6 +59343,7 @@ data_t tmp[256][64];
             C[i][j] = tmp[i][j] * scale;
         }
     }
+
 
     for (int i = 0; i < 256; i++) {
         for (int j = 0; j < 64; j++) {
@@ -59363,5 +59377,5 @@ apatb_top_kernel_ir(A_DRAM, C_DRAM);
 return ;
 }
 #endif
-# 78 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp"
+# 170 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp"
 

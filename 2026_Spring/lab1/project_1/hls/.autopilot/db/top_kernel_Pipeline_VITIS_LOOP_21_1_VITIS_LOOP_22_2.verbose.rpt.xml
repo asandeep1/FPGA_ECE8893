@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_22_2'" level="0">
-<item name = "Date">Sun Feb  1 20:05:07 2026
+<item name = "Date">Mon Feb  2 22:54:54 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -111,7 +111,7 @@
 <column name="i_fu_130">9, 0, 9, 0</column>
 <column name="indvar_flatten_fu_134">15, 0, 15, 0</column>
 <column name="j_fu_126">7, 0, 7, 0</column>
-<column name="trunc_ln24_reg_566">24, 0, 24, 0</column>
+<column name="trunc_ln25_reg_566">24, 0, 24, 0</column>
 </table>
 </item>
 </section>

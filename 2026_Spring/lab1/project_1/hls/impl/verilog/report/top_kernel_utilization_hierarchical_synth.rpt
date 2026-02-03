@@ -1,9 +1,9 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date         : Sun Feb  1 20:12:36 2026
+| Date         : Tue Feb  3 00:47:58 2026
 | Host         : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
-| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/top_kernel_utilization_hierarchical_synth.rpt
+| Command      : report_utilization -hierarchical -hierarchical_depth 7 -file ./report/top_kernel_utilization_hierarchical_synth.rpt
 | Design       : bd_0_wrapper
 | Device       : xczu3eg-sbva484-1-e
 | Speed File   : -1
@@ -31,19 +31,26 @@ Table of Contents
 |         A_m_axi_U                                       |                           bd_0_hls_inst_0_top_kernel_A_m_axi |        532 |        469 |       0 |   63 |  741 |      0 |      1 |    0 |          0 |
 |           bus_read                                      |                      bd_0_hls_inst_0_top_kernel_A_m_axi_read |        392 |        392 |       0 |    0 |  561 |      0 |      0 |    0 |          0 |
 |             rreq_burst_conv                             |           bd_0_hls_inst_0_top_kernel_A_m_axi_burst_converter |        314 |        314 |       0 |    0 |  459 |      0 |      0 |    0 |          0 |
+|               burst_sequential                          |          bd_0_hls_inst_0_top_kernel_A_m_axi_burst_sequential |        314 |        314 |       0 |    0 |  459 |      0 |      0 |    0 |          0 |
 |             rs_rdata                                    | bd_0_hls_inst_0_top_kernel_A_m_axi_reg_slice__parameterized0 |         40 |         40 |       0 |    0 |   71 |      0 |      0 |    0 |          0 |
 |           load_unit_0                                   |                      bd_0_hls_inst_0_top_kernel_A_m_axi_load |        140 |         77 |       0 |   63 |  180 |      0 |      1 |    0 |          0 |
 |             (load_unit_0)                               |                      bd_0_hls_inst_0_top_kernel_A_m_axi_load |          1 |          1 |       0 |    0 |   66 |      0 |      0 |    0 |          0 |
 |             buff_rdata                                  |      bd_0_hls_inst_0_top_kernel_A_m_axi_fifo__parameterized0 |         52 |         52 |       0 |    0 |   37 |      0 |      1 |    0 |          0 |
+|               (buff_rdata)                              |      bd_0_hls_inst_0_top_kernel_A_m_axi_fifo__parameterized0 |         50 |         50 |       0 |    0 |   37 |      0 |      0 |    0 |          0 |
 |             fifo_rreq                                   |                      bd_0_hls_inst_0_top_kernel_A_m_axi_fifo |         87 |         24 |       0 |   63 |   77 |      0 |      0 |    0 |          0 |
+|               U_fifo_srl                                |                       bd_0_hls_inst_0_top_kernel_A_m_axi_srl |         66 |          3 |       0 |   63 |   63 |      0 |      0 |    0 |          0 |
 |         C_m_axi_U                                       |                           bd_0_hls_inst_0_top_kernel_C_m_axi |        756 |        597 |       0 |  159 |  998 |      0 |      0 |    0 |          0 |
 |           bus_write                                     |                     bd_0_hls_inst_0_top_kernel_C_m_axi_write |        525 |        462 |       0 |   63 |  750 |      0 |      0 |    0 |          0 |
 |             wreq_burst_conv                             |           bd_0_hls_inst_0_top_kernel_C_m_axi_burst_converter |        314 |        314 |       0 |    0 |  459 |      0 |      0 |    0 |          0 |
+|               burst_sequential                          |          bd_0_hls_inst_0_top_kernel_C_m_axi_burst_sequential |        314 |        314 |       0 |    0 |  459 |      0 |      0 |    0 |          0 |
 |             wreq_throttle                               |                  bd_0_hls_inst_0_top_kernel_C_m_axi_throttle |        184 |        122 |       0 |   62 |  268 |      0 |      0 |    0 |          0 |
+|               rs_req                                    | bd_0_hls_inst_0_top_kernel_C_m_axi_reg_slice__parameterized1 |         73 |         73 |       0 |    0 |  137 |      0 |      0 |    0 |          0 |
+|               fifo_burst_gen[0].fifo_req                |      bd_0_hls_inst_0_top_kernel_C_m_axi_fifo__parameterized4 |         84 |         22 |       0 |   62 |   79 |      0 |      0 |    0 |          0 |
 |           store_unit_0                                  |                     bd_0_hls_inst_0_top_kernel_C_m_axi_store |        231 |        135 |       0 |   96 |  248 |      0 |      0 |    0 |          0 |
 |             (store_unit_0)                              |                     bd_0_hls_inst_0_top_kernel_C_m_axi_store |          2 |          2 |       0 |    0 |   78 |      0 |      0 |    0 |          0 |
 |             buff_wdata                                  |      bd_0_hls_inst_0_top_kernel_C_m_axi_fifo__parameterized1 |         62 |         34 |       0 |   28 |   48 |      0 |      0 |    0 |          0 |
 |             fifo_wreq                                   |      bd_0_hls_inst_0_top_kernel_C_m_axi_fifo__parameterized0 |         85 |         22 |       0 |   63 |   74 |      0 |      0 |    0 |          0 |
+|               U_fifo_srl                                |       bd_0_hls_inst_0_top_kernel_C_m_axi_srl__parameterized0 |         66 |          3 |       0 |   63 |   63 |      0 |      0 |    0 |          0 |
 |         control_s_axi_U                                 |                     bd_0_hls_inst_0_top_kernel_control_s_axi |        178 |        178 |       0 |    0 |  181 |      0 |      0 |    0 |          0 |
 |         mul_24s_17s_41_1_1_U2                           |                bd_0_hls_inst_0_top_kernel_mul_24s_17s_41_1_1 |         59 |         59 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
 |         sdiv_38ns_24s_38_42_seq_1_U1                    |         bd_0_hls_inst_0_top_kernel_sdiv_38ns_24s_38_42_seq_1 |        226 |        226 |       0 |    0 |  250 |      0 |      0 |    0 |          0 |
