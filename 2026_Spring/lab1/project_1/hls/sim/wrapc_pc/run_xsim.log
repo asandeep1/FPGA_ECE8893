@@ -113,6 +113,10 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE88
 INFO: [VRFC 10-311] analyzing module top_kernel_tmp_RAM_1WNR_AUTO_1R1W
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_sparsemux_9_4_24_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_9_4_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_sparsemux_65_5_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_65_5_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_sparsemux_17_5_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_17_5_24_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_control_s_axi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_control_s_axi
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
@@ -158,9 +162,9 @@ Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Outline_VI...
-Compiling module xil_defaultlib.top_kernel_sparsemux_33_4_24_1_1...
+Compiling module xil_defaultlib.top_kernel_sparsemux_65_5_24_1_1...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
-Compiling module xil_defaultlib.top_kernel_sparsemux_9_4_24_1_1(...
+Compiling module xil_defaultlib.top_kernel_sparsemux_17_5_24_1_1...
 Compiling module xil_defaultlib.top_kernel_mul_24s_17s_41_1_1(NU...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
@@ -211,7 +215,7 @@ Compiling module xil_defaultlib.nodf_module_intf_default
 Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=26)
 Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=5)
 Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
-Compiling module xil_defaultlib.upc_loop_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=4)
 Compiling module xil_defaultlib.dataflow_monitor_1
 Compiling module xil_defaultlib.apatb_top_kernel_top
 Compiling module xil_defaultlib.glbl
@@ -221,7 +225,7 @@ Built simulation snapshot top_kernel
   **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
   **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
   **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-  **** Start of session at: Tue Feb  3 01:06:06 2026
+  **** Start of session at: Thu Feb  5 21:55:36 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -645,11 +649,11 @@ UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xln
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "379695000"
+// RTL Simulation : 1 / 1 [100.00%] @ "372015000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 379765 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
-run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:27 . Memory (MB): peak = 1606.934 ; gain = 0.000 ; free physical = 27906 ; free virtual = 78961
+$finish called at time : 372085 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:31 . Memory (MB): peak = 1608.957 ; gain = 0.000 ; free physical = 23039 ; free virtual = 110253
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 1055072 KB (Peak: 1112412 KB), Simulation CPU Usage: 28100 ms
-INFO: [Common 17-206] Exiting xsim at Tue Feb  3 01:06:39 2026...
+INFO: xsimkernel Simulation Memory Usage: 1069080 KB (Peak: 1069080 KB), Simulation CPU Usage: 32730 ms
+INFO: [Common 17-206] Exiting xsim at Thu Feb  5 21:56:11 2026...
 TEST PASSED!!

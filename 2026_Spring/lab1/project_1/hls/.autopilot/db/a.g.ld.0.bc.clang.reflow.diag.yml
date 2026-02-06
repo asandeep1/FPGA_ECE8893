@@ -32,7 +32,7 @@ Args:
   - String:          ''' partially '
   - String:          ''
   - String:          'with a factor of '
-  - Factor:          '16'
+  - Factor:          '32'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -50,7 +50,7 @@ Args:
   - String:          ''' partially '
   - String:          ''
   - String:          'with a factor of '
-  - Factor:          '16'
+  - Factor:          '32'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -68,7 +68,7 @@ Args:
   - String:          ''' partially '
   - String:          ''
   - String:          'with a factor of '
-  - Factor:          '16'
+  - Factor:          '32'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -86,7 +86,7 @@ Args:
   - String:          ''' partially '
   - String:          ''
   - String:          'with a factor of '
-  - Factor:          '16'
+  - Factor:          '32'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -104,7 +104,7 @@ Args:
   - String:          ''' partially '
   - String:          ''
   - String:          'with a factor of '
-  - Factor:          '16'
+  - Factor:          '32'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -140,7 +140,7 @@ Args:
   - String:          ''' partially '
   - String:          ''
   - String:          'with a factor of '
-  - Factor:          '16'
+  - Factor:          '32'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -158,7 +158,7 @@ Args:
   - String:          ''' partially '
   - String:          ''
   - String:          'with a factor of '
-  - Factor:          '16'
+  - Factor:          '32'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -176,7 +176,7 @@ Args:
   - String:          ''' partially '
   - String:          ''
   - String:          'with a factor of '
-  - Factor:          '16'
+  - Factor:          '32'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -194,7 +194,7 @@ Args:
   - String:          ''' partially '
   - String:          ''
   - String:          'with a factor of '
-  - Factor:          '16'
+  - Factor:          '32'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -212,7 +212,7 @@ Args:
   - String:          ''' partially '
   - String:          ''
   - String:          'with a factor of '
-  - Factor:          '16'
+  - Factor:          '32'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -230,7 +230,7 @@ Args:
   - String:          ''' partially '
   - String:          ''
   - String:          'with a factor of '
-  - Factor:          '16'
+  - Factor:          '32'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -248,7 +248,7 @@ Args:
   - String:          ''' partially '
   - String:          ''
   - String:          'with a factor of '
-  - Factor:          '16'
+  - Factor:          '32'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -266,7 +266,7 @@ Args:
   - String:          ''' partially '
   - String:          ''
   - String:          'with a factor of '
-  - Factor:          '16'
+  - Factor:          '32'
 ...
 --- !Missed
 Pass:            inline
@@ -302,7 +302,7 @@ Args:
   - Mode:            Cyclic
   - String:          ' partitioning'
   - String:          ' with factor '
-  - Factor:          '16'
+  - Factor:          '32'
   - String:          ' on dimension '
   - Dim:             '2'
   - String:          .
@@ -330,7 +330,7 @@ Args:
   - Mode:            Cyclic
   - String:          ' partitioning'
   - String:          ' with factor '
-  - Factor:          '16'
+  - Factor:          '32'
   - String:          ' on dimension '
   - Dim:             '2'
   - String:          .
@@ -358,7 +358,7 @@ Args:
   - Mode:            Cyclic
   - String:          ' partitioning'
   - String:          ' with factor '
-  - Factor:          '16'
+  - Factor:          '32'
   - String:          ' on dimension '
   - Dim:             '2'
   - String:          .
@@ -378,7 +378,7 @@ Args:
   - Mode:            Cyclic
   - String:          ' partitioning'
   - String:          ' with factor '
-  - Factor:          '16'
+  - Factor:          '32'
   - String:          ' on dimension '
   - Dim:             '1'
   - String:          .
@@ -441,7 +441,7 @@ Args:
   - OrigAccess:      load
     DebugLoc:        { File: top.cpp, Line: 112, Column: 10 }
   - OrigDirection:   read
-  - OrigID:          for.inc18.load.135
+  - OrigID:          for.inc18.load.263
 ...
 --- !Passed
 Pass:            reflow-burst-inference
@@ -471,7 +471,7 @@ Args:
   - OrigAccess:      store
     DebugLoc:        { File: top.cpp, Line: 163, Column: 15 }
   - OrigDirection:   write
-  - OrigID:          for.inc134.store.142
+  - OrigID:          for.inc134.store.270
 ...
 --- !Missed
 Pass:            reflow-burst-widen

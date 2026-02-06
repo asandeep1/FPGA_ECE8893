@@ -59269,12 +59269,12 @@ data_t tmp[256][64];
 data_t col_sums[64];
 
 #pragma HLS array_partition variable=A cyclic factor=4 dim=1
-#pragma HLS array_partition variable=A cyclic factor=16 dim=2
+#pragma HLS array_partition variable=A cyclic factor=32 dim=2
 #pragma HLS array_partition variable=tmp cyclic factor=4 dim=1
-#pragma HLS array_partition variable=tmp cyclic factor=16 dim=2
+#pragma HLS array_partition variable=tmp cyclic factor=32 dim=2
 #pragma HLS array_partition variable=C cyclic factor=4 dim=1
-#pragma HLS array_partition variable=C cyclic factor=16 dim=2
-#pragma HLS array_partition variable=col_sums cyclic factor=16
+#pragma HLS array_partition variable=C cyclic factor=32 dim=2
+#pragma HLS array_partition variable=col_sums cyclic factor=32
 
 
     for(int j = 0; j < 64; j++) {
@@ -59297,7 +59297,7 @@ data_t col_sums[64];
 
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=16
+#pragma HLS UNROLL factor=32
             row_sum += A[i][j];
         }
 
@@ -59305,7 +59305,7 @@ data_t col_sums[64];
 
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=16
+#pragma HLS UNROLL factor=32
             data_t val = A[i][j] / denom;
             tmp[i][j] = val;
         }
@@ -59316,7 +59316,7 @@ data_t col_sums[64];
     for (int j = 0; j < 64; j++) {
         for (int i = 0; i < 256; i++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=16
+#pragma HLS UNROLL factor=32
             col_sums[j] += tmp[i][j];
         }
     }
@@ -59328,7 +59328,7 @@ data_t col_sums[64];
 
         for (int i = 0; i < 256; i++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=16
+#pragma HLS UNROLL factor=32
             C[i][j] = tmp[i][j] * scale;
         }
     }

@@ -21,12 +21,28 @@ module top_kernel_tmp_RAM_1WNR_AUTO_1R1W (
     address3, ce3,
     
     q3, 
+     
+    address4, ce4,
+    
+    q4, 
+     
+    address5, ce5,
+    
+    q5, 
+     
+    address6, ce6,
+    
+    q6, 
+     
+    address7, ce7,
+    
+    q7, 
     
     reset, clk);
 
 parameter DataWidth = 24;
-parameter AddressWidth = 8;
-parameter AddressRange = 256;
+parameter AddressWidth = 7;
+parameter AddressRange = 128;
 
 input[AddressWidth-1:0] address0;
 input ce0;
@@ -49,6 +65,26 @@ input ce3;
 
 output reg[DataWidth-1:0] q3; 
 
+input[AddressWidth-1:0] address4;
+input ce4;
+
+output reg[DataWidth-1:0] q4; 
+
+input[AddressWidth-1:0] address5;
+input ce5;
+
+output reg[DataWidth-1:0] q5; 
+
+input[AddressWidth-1:0] address6;
+input ce6;
+
+output reg[DataWidth-1:0] q6; 
+
+input[AddressWidth-1:0] address7;
+input ce7;
+
+output reg[DataWidth-1:0] q7; 
+
 input reset;
 input clk;
 
@@ -58,6 +94,14 @@ input clk;
 (* ram_style = "auto"  *)reg [DataWidth-1:0] ram1[0:AddressRange-1];
 
 (* ram_style = "auto"  *)reg [DataWidth-1:0] ram2[0:AddressRange-1];
+
+(* ram_style = "auto"  *)reg [DataWidth-1:0] ram3[0:AddressRange-1];
+
+(* ram_style = "auto"  *)reg [DataWidth-1:0] ram4[0:AddressRange-1];
+
+(* ram_style = "auto"  *)reg [DataWidth-1:0] ram5[0:AddressRange-1];
+
+(* ram_style = "auto"  *)reg [DataWidth-1:0] ram6[0:AddressRange-1];
 
 
  
@@ -89,6 +133,38 @@ begin
 
     end
 end
+always @(posedge clk)  
+begin 
+    if (ce0) begin
+        if (we0) 
+            ram3[address0] <= d0; 
+
+    end
+end
+always @(posedge clk)  
+begin 
+    if (ce0) begin
+        if (we0) 
+            ram4[address0] <= d0; 
+
+    end
+end
+always @(posedge clk)  
+begin 
+    if (ce0) begin
+        if (we0) 
+            ram5[address0] <= d0; 
+
+    end
+end
+always @(posedge clk)  
+begin 
+    if (ce0) begin
+        if (we0) 
+            ram6[address0] <= d0; 
+
+    end
+end
 
 always @(posedge clk)  
 begin 
@@ -106,6 +182,30 @@ always @(posedge clk)
 begin 
     if (ce3) begin
         q3 <= ram2[address3];
+    end
+end
+always @(posedge clk)  
+begin 
+    if (ce4) begin
+        q4 <= ram3[address4];
+    end
+end
+always @(posedge clk)  
+begin 
+    if (ce5) begin
+        q5 <= ram4[address5];
+    end
+end
+always @(posedge clk)  
+begin 
+    if (ce6) begin
+        q6 <= ram5[address6];
+    end
+end
+always @(posedge clk)  
+begin 
+    if (ce7) begin
+        q7 <= ram6[address7];
     end
 end
 

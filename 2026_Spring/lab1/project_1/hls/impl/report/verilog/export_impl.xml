@@ -51,14 +51,14 @@
     </RtlModule>
     <RtlModule CELL="inst/A_1_U" DEPTH="1" TYPE="resource" MODULENAME="A_1_RAM_AUTO_1R1W" DISPNAME="A_1_U" RTLNAME="top_kernel_A_1_RAM_AUTO_1R1W">
       <Resources BRAM="22" LUT="101"/>
-      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_1_U" SOURCE="top.cpp:89" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_1" VISIBLE="true"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_1_U" SOURCE="top.cpp:89" STORAGESIZE="24 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_1" VISIBLE="true"/>
     </RtlModule>
     <RtlModule CELL="inst/A_m_axi_U" DEPTH="1" TYPE="resource" MODULENAME="A_m_axi" DISPNAME="A_m_axi_U" RTLNAME="top_kernel_A_m_axi">
       <Resources BRAM="1" FF="741" LUT="493"/>
       <BindNode BINDTYPE="adapter" BRAM="2" BUNDLEDNAME="A" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="A_m_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="m_axi" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
     </RtlModule>
     <RtlModule CELL="inst/C_1_U" DEPTH="1" TYPE="resource" MODULENAME="A_1_RAM_AUTO_1R1W" DISPNAME="C_1_U" RTLNAME="top_kernel_A_1_RAM_AUTO_1R1W">
-      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="C_1_U" SOURCE="top.cpp:90" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="C_1" VISIBLE="true"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="C_1_U" SOURCE="top.cpp:90" STORAGESIZE="24 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="C_1" VISIBLE="true"/>
     </RtlModule>
     <RtlModule CELL="inst/C_m_axi_U" DEPTH="1" TYPE="resource" MODULENAME="C_m_axi" DISPNAME="C_m_axi_U" RTLNAME="top_kernel_C_m_axi">
       <Resources FF="998" LUT="683"/>
@@ -81,7 +81,7 @@
     </RtlModule>
     <RtlModule CELL="inst/tmp_U" DEPTH="1" TYPE="resource" MODULENAME="A_1_RAM_AUTO_1R1W" DISPNAME="tmp_U" RTLNAME="top_kernel_A_1_RAM_AUTO_1R1W">
       <Resources BRAM="22" LUT="98"/>
-      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="tmp_U" SOURCE="top.cpp:91" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="tmp" VISIBLE="true"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="tmp_U" SOURCE="top.cpp:91" STORAGESIZE="24 128 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="tmp" VISIBLE="true"/>
     </RtlModule>
   </RtlModules>
   <TimingPaths>
@@ -214,7 +214,7 @@
     <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/top_kernel_utilization_hierarchical_routed.rpt"/>
   </VivadoReportFiles>
   <GeneralInfo NAME="General Information">
-    <item NAME="Date" VALUE="Tue Feb 03 01:17:22 EST 2026"/>
+    <item NAME="Date" VALUE="Thu Feb 05 22:06:14 EST 2026"/>
     <item NAME="Version" VALUE="2025.1 (Build 6214317 on Sep 11 2025)"/>
     <item NAME="Project" VALUE="project_1"/>
     <item NAME="Solution" VALUE="hls (Vivado IP Flow Target)"/>

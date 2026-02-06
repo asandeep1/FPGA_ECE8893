@@ -20,12 +20,12 @@ set SynModuleInfo {
   {SRCNAME top_kernel_Outline_VITIS_LOOP_117_4 MODELNAME top_kernel_Outline_VITIS_LOOP_117_4 RTLNAME top_kernel_top_kernel_Outline_VITIS_LOOP_117_4}
   {SRCNAME top_kernel_Pipeline_VITIS_LOOP_139_7_VITIS_LOOP_140_8 MODELNAME top_kernel_Pipeline_VITIS_LOOP_139_7_VITIS_LOOP_140_8 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_139_7_VITIS_LOOP_140_8
     SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_33_4_24_1_1 RTLNAME top_kernel_sparsemux_33_4_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
+      {MODELNAME top_kernel_sparsemux_65_5_24_1_1 RTLNAME top_kernel_sparsemux_65_5_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
     }
   }
   {SRCNAME top_kernel_Pipeline_VITIS_LOOP_152_10 MODELNAME top_kernel_Pipeline_VITIS_LOOP_152_10 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_152_10
     SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_9_4_24_1_1 RTLNAME top_kernel_sparsemux_9_4_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
+      {MODELNAME top_kernel_sparsemux_17_5_24_1_1 RTLNAME top_kernel_sparsemux_17_5_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
       {MODELNAME top_kernel_mul_24s_17s_41_1_1 RTLNAME top_kernel_mul_24s_17s_41_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
     }
   }

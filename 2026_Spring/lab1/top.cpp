@@ -92,12 +92,12 @@ data_t tmp[N_ROWS][N_COLS];
 data_t col_sums[N_COLS]; // Buffer to store the global column sums
 
 #pragma HLS array_partition variable=A cyclic factor=4 dim=1
-#pragma HLS array_partition variable=A cyclic factor=16 dim=2
+#pragma HLS array_partition variable=A cyclic factor=32 dim=2
 #pragma HLS array_partition variable=tmp cyclic factor=4 dim=1
-#pragma HLS array_partition variable=tmp cyclic factor=16 dim=2
+#pragma HLS array_partition variable=tmp cyclic factor=32 dim=2
 #pragma HLS array_partition variable=C cyclic factor=4 dim=1
-#pragma HLS array_partition variable=C cyclic factor=16 dim=2
-#pragma HLS array_partition variable=col_sums cyclic factor=16
+#pragma HLS array_partition variable=C cyclic factor=32 dim=2
+#pragma HLS array_partition variable=col_sums cyclic factor=32
 
     // Init col_sums
     for(int j = 0; j < N_COLS; j++) {
@@ -120,7 +120,7 @@ data_t col_sums[N_COLS]; // Buffer to store the global column sums
 
         for (int j = 0; j < N_COLS; j++) {
             #pragma HLS PIPELINE II=1
-            #pragma HLS UNROLL factor=16
+            #pragma HLS UNROLL factor=32
             row_sum += A[i][j];
         }
 
@@ -128,7 +128,7 @@ data_t col_sums[N_COLS]; // Buffer to store the global column sums
 
         for (int j = 0; j < N_COLS; j++) {
             #pragma HLS PIPELINE II=1
-            #pragma HLS UNROLL factor=16
+            #pragma HLS UNROLL factor=32
             data_t val = A[i][j] / denom;
             tmp[i][j] = val;
         }
@@ -139,7 +139,7 @@ data_t col_sums[N_COLS]; // Buffer to store the global column sums
     for (int j = 0; j < N_COLS; j++) {
         for (int i = 0; i < N_ROWS; i++) {
             #pragma HLS PIPELINE II=1
-            #pragma HLS UNROLL factor=16 // Unroll the row access
+            #pragma HLS UNROLL factor=32 // Unroll the row access
             col_sums[j] += tmp[i][j];
         }
     }
@@ -151,7 +151,7 @@ data_t col_sums[N_COLS]; // Buffer to store the global column sums
 
         for (int i = 0; i < N_ROWS; i++) {
             #pragma HLS PIPELINE II=1
-            #pragma HLS UNROLL factor=16
+            #pragma HLS UNROLL factor=32
             C[i][j] = tmp[i][j] * scale;
         }
     }
