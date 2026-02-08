@@ -1,0 +1,54 @@
+  **** HLS Build v2025.1.1 6214317
+Sourcing Tcl script '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/script.tcl'
+INFO: [HLS 200-1510] Running: open_component project_1 
+INFO: [HLS 200-10] Creating and opening component '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_unroll -tripcount_threshold=0
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1464] Running solution command: config_compile -pipeline_loops=0
+INFO: [HLS 200-1464] Running solution command: config_compile -complex-mul-dsp=0
+INFO: [HLS 200-1464] Running solution command: config_export -flow=impl
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-2174] Applying component config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'param.hls.enable_hidden_option_error=false' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(4)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../top.cpp' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../host.cpp' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=top_kernel' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_unroll -tripcount_threshold=0
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1464] Running solution command: config_compile -pipeline_loops=0
+INFO: [HLS 200-1464] Running solution command: config_compile -complex-mul-dsp=0
+INFO: [HLS 200-1464] Running solution command: config_export -flow=impl
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sbva484-1-e' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'syn.unroll.tripcount_threshold=0' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(12)
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1465] Applying config ini 'vivado.flow=impl' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(13)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/vitis-comp.json
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg
+INFO: [HLS 200-1510] Running: set_top top_kernel 
+INFO: [HLS 200-1510] Running: add_files top.cpp 
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb host.cpp 
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1510] Running: config_unroll -tripcount_threshold 0 
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1510] Running: config_compile -pipeline_loops 0 
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.44 seconds. CPU system time: 0.17 seconds. Elapsed time: 8.2 seconds; current allocated memory: 806.555 MB.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.16 seconds. CPU system time: 1.14 seconds. Elapsed time: 6.46 seconds; current allocated memory: 808.266 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.

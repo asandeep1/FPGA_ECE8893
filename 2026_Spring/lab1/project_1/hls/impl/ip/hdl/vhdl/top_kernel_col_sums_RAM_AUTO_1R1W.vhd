@@ -12,8 +12,8 @@ entity top_kernel_col_sums_RAM_AUTO_1R1W is
     generic(
         MEM_TYPE        : string    := "auto"; 
         DataWidth       : integer   := 24; 
-        AddressWidth    : integer   := 2;
-        AddressRange    : integer   := 4
+        AddressWidth    : integer   := 1;
+        AddressRange    : integer   := 2
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 

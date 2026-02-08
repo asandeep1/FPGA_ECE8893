@@ -6,32 +6,32 @@
   </RunData>
   <TimingReport>
     <TargetClockPeriod>10.000</TargetClockPeriod>
-    <AchievedClockPeriod>7.484</AchievedClockPeriod>
+    <AchievedClockPeriod>4.841</AchievedClockPeriod>
     <CLOCK_NAME>ap_clk</CLOCK_NAME>
-    <CP_FINAL>7.484</CP_FINAL>
-    <CP_ROUTE>7.484</CP_ROUTE>
-    <CP_SYNTH>6.637</CP_SYNTH>
+    <CP_FINAL>4.841</CP_FINAL>
+    <CP_ROUTE>4.841</CP_ROUTE>
+    <CP_SYNTH>3.864</CP_SYNTH>
     <CP_TARGET>10.000</CP_TARGET>
-    <SLACK_FINAL>2.516</SLACK_FINAL>
-    <SLACK_ROUTE>2.516</SLACK_ROUTE>
-    <SLACK_SYNTH>3.363</SLACK_SYNTH>
+    <SLACK_FINAL>5.159</SLACK_FINAL>
+    <SLACK_ROUTE>5.159</SLACK_ROUTE>
+    <SLACK_SYNTH>6.136</SLACK_SYNTH>
     <TIMING_MET>TRUE</TIMING_MET>
     <TNS_FINAL>0.000</TNS_FINAL>
     <TNS_ROUTE>0.000</TNS_ROUTE>
     <TNS_SYNTH>0.000</TNS_SYNTH>
-    <WNS_FINAL>2.516</WNS_FINAL>
-    <WNS_ROUTE>2.516</WNS_ROUTE>
-    <WNS_SYNTH>3.363</WNS_SYNTH>
+    <WNS_FINAL>5.159</WNS_FINAL>
+    <WNS_ROUTE>5.159</WNS_ROUTE>
+    <WNS_SYNTH>6.136</WNS_SYNTH>
   </TimingReport>
   <AreaReport>
     <Resources>
-      <BRAM>67</BRAM>
-      <CLB>458</CLB>
+      <BRAM>97</BRAM>
+      <CLB>1207</CLB>
       <DSP>1</DSP>
-      <FF>2784</FF>
+      <FF>5764</FF>
       <LATCH>0</LATCH>
-      <LUT>1970</LUT>
-      <SRL>133</SRL>
+      <LUT>5385</LUT>
+      <SRL>205</SRL>
       <URAM>0</URAM>
     </Resources>
     <AvailableResources>
@@ -45,162 +45,362 @@
   </AreaReport>
   <RtlModules>
     <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="top_kernel" DISPNAME="inst" RTLNAME="top_kernel">
-      <SubModules count="8">A_1_U A_m_axi_U C_1_U C_m_axi_U control_s_axi_U mul_24s_17s_41_1_1_U2 sdiv_38ns_24s_38_42_seq_1_U1 tmp_U</SubModules>
-      <Resources BRAM="67" DSP="1" FF="2784" LUT="1970"/>
-      <LocalResources FF="614" LUT="104"/>
+      <SubModules count="103">A_internal_10_U A_internal_11_U A_internal_12_U A_internal_13_U A_internal_14_U A_internal_15_U A_internal_16_U A_internal_17_U A_internal_18_U A_internal_19_U A_internal_1_U A_internal_20_U A_internal_21_U A_internal_22_U A_internal_23_U A_internal_24_U A_internal_25_U A_internal_26_U A_internal_27_U A_internal_28_U A_internal_29_U A_internal_2_U A_internal_30_U A_internal_31_U A_internal_3_U A_internal_4_U A_internal_5_U A_internal_6_U A_internal_7_U A_internal_8_U A_internal_9_U A_internal_U A_m_axi_U C_m_axi_U col_sums_10_U col_sums_11_U col_sums_12_U col_sums_13_U col_sums_14_U col_sums_15_U col_sums_16_U col_sums_17_U col_sums_18_U col_sums_19_U col_sums_1_U col_sums_20_U col_sums_21_U col_sums_22_U col_sums_23_U col_sums_24_U col_sums_25_U col_sums_26_U col_sums_27_U col_sums_28_U col_sums_29_U col_sums_2_U col_sums_30_U col_sums_31_U col_sums_3_U col_sums_4_U col_sums_5_U col_sums_6_U col_sums_7_U col_sums_8_U col_sums_9_U col_sums_U control_s_axi_U grp_top_kernel_Pipeline_VITIS_LOOP_192_1_fu_523 grp_top_kernel_Pipeline_VITIS_LOOP_205_3_fu_591 grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631 grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733 row_buffer_10_U row_buffer_11_U row_buffer_12_U row_buffer_13_U row_buffer_14_U row_buffer_15_U row_buffer_16_U row_buffer_17_U row_buffer_18_U row_buffer_19_U row_buffer_1_U row_buffer_20_U row_buffer_21_U row_buffer_22_U row_buffer_23_U row_buffer_24_U row_buffer_25_U row_buffer_26_U row_buffer_27_U row_buffer_28_U row_buffer_29_U row_buffer_2_U row_buffer_30_U row_buffer_31_U row_buffer_3_U row_buffer_4_U row_buffer_5_U row_buffer_6_U row_buffer_7_U row_buffer_8_U row_buffer_9_U row_buffer_U</SubModules>
+      <Resources BRAM="97" DSP="1" FF="5764" LUT="5385"/>
+      <LocalResources FF="254" LUT="8"/>
     </RtlModule>
-    <RtlModule CELL="inst/A_1_U" DEPTH="1" TYPE="resource" MODULENAME="A_1_RAM_AUTO_1R1W" DISPNAME="A_1_U" RTLNAME="top_kernel_A_1_RAM_AUTO_1R1W">
-      <Resources BRAM="22" LUT="101"/>
-      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_1_U" SOURCE="top.cpp:89" STORAGESIZE="24 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_1" VISIBLE="true"/>
+    <RtlModule CELL="inst/A_internal_10_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_10_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_10_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_10" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_11_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_11_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_11_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_11" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_12_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_12_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_12_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_12" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_13_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_13_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_13_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_13" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_14_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_14_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_14_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_14" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_15_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_15_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_15_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_15" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_16_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_16_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_16_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_16" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_17_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_17_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_17_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_17" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_18_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_18_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_18_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_18" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_19_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_19_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_19_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_19" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_1_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_1_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_1_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_20_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_20_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_20_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_20" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_21_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_21_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_21_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_21" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_22_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_22_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_22_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_22" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_23_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_23_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_23_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_23" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_24_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_24_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_24_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_24" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_25_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_25_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_25_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_25" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_26_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_26_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_26_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_26" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_27_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_27_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_27_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_27" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_28_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_28_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_28_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_28" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_29_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_29_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_29_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_29" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_2_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_2_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_2_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_2" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_30_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_30_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_30_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_30" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_31_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_31_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_31_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_31" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_3_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_3_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_3_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_3" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_4_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_4_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_4_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_4" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_5_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_5_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_5_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_5" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_6_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_6_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_6_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_6" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_7_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_7_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_7_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_7" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_8_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_8_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_8_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_8" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_9_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_9_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_9_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal_9" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_internal_U" DEPTH="1" TYPE="resource" MODULENAME="A_internal_RAM_AUTO_1R1W" DISPNAME="A_internal_U" RTLNAME="top_kernel_A_internal_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_internal_U" SOURCE="top.cpp:184" STORAGESIZE="24 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_internal" VISIBLE="true"/>
     </RtlModule>
     <RtlModule CELL="inst/A_m_axi_U" DEPTH="1" TYPE="resource" MODULENAME="A_m_axi" DISPNAME="A_m_axi_U" RTLNAME="top_kernel_A_m_axi">
-      <Resources BRAM="1" FF="741" LUT="493"/>
+      <Resources BRAM="1" FF="741" LUT="523"/>
       <BindNode BINDTYPE="adapter" BRAM="2" BUNDLEDNAME="A" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="A_m_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="m_axi" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
     </RtlModule>
-    <RtlModule CELL="inst/C_1_U" DEPTH="1" TYPE="resource" MODULENAME="A_1_RAM_AUTO_1R1W" DISPNAME="C_1_U" RTLNAME="top_kernel_A_1_RAM_AUTO_1R1W">
-      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="C_1_U" SOURCE="top.cpp:90" STORAGESIZE="24 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="C_1" VISIBLE="true"/>
-    </RtlModule>
     <RtlModule CELL="inst/C_m_axi_U" DEPTH="1" TYPE="resource" MODULENAME="C_m_axi" DISPNAME="C_m_axi_U" RTLNAME="top_kernel_C_m_axi">
-      <Resources FF="998" LUT="683"/>
+      <Resources FF="998" LUT="706"/>
       <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="C" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="C_m_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="m_axi" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
     </RtlModule>
+    <RtlModule CELL="inst/col_sums_10_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_10_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_10_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_10" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_11_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_11_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_11_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_11" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_12_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_12_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_12_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_12" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_13_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_13_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_13_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_13" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_14_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_14_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_14_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_14" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_15_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_15_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_15_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_15" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_16_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_16_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_16_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_16" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_17_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_17_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_17_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_17" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_18_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_18_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_18_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_18" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_19_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_19_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_19_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_19" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_1_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_1_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_1_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_20_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_20_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_20_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_20" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_21_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_21_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_21_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_21" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_22_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_22_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_22_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_22" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_23_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_23_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_23_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_23" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_24_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_24_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_24_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_24" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_25_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_25_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_25_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_25" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_26_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_26_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_26_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_26" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_27_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_27_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_27_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_27" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_28_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_28_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_28_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_28" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_29_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_29_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_29_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_29" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_2_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_2_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_2_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_2" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_30_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_30_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_30_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_30" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_31_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_31_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_31_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_31" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_3_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_3_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_3_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_3" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_4_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_4_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_4_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_4" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_5_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_5_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_5_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_5" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_6_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_6_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_6_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_6" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_7_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_7_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_7_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_7" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_8_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_8_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_8_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_8" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_9_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_9_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_9_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums_9" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/col_sums_U" DEPTH="1" TYPE="resource" MODULENAME="col_sums_RAM_AUTO_1R1W" DISPNAME="col_sums_U" RTLNAME="top_kernel_col_sums_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="col_sums_U" SOURCE="top.cpp:185" STORAGESIZE="24 2 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="col_sums" VISIBLE="true"/>
+    </RtlModule>
     <RtlModule CELL="inst/control_s_axi_U" DEPTH="1" TYPE="resource" MODULENAME="control_s_axi" DISPNAME="control_s_axi_U" RTLNAME="top_kernel_control_s_axi">
-      <Resources FF="181" LUT="176"/>
+      <Resources FF="181" LUT="160"/>
       <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="control" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="control_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
     </RtlModule>
-    <RtlModule CELL="inst/mul_24s_17s_41_1_1_U2" DEPTH="1" TYPE="rtl" MODULENAME="mul_24s_17s_41_1_1" DISPNAME="mul_24s_17s_41_1_1_U2" RTLNAME="top_kernel_mul_24s_17s_41_1_1">
-      <Resources DSP="1" LUT="59"/>
+    <RtlModule CELL="inst/grp_top_kernel_Pipeline_VITIS_LOOP_192_1_fu_523" DEPTH="1" TYPE="rtl" MODULENAME="top_kernel_Pipeline_VITIS_LOOP_192_1" DISPNAME="grp_top_kernel_Pipeline_VITIS_LOOP_192_1_fu_523" RTLNAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_192_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
     </RtlModule>
-    <RtlModule CELL="inst/sdiv_38ns_24s_38_42_seq_1_U1" DEPTH="1" TYPE="rtl" MODULENAME="sdiv_38ns_24s_38_42_seq_1" DISPNAME="sdiv_38ns_24s_38_42_seq_1_U1" RTLNAME="top_kernel_sdiv_38ns_24s_38_42_seq_1">
-      <SubModules count="1">top_kernel_sdiv_38ns_24s_38_42_seq_1_divseq_u</SubModules>
-      <Resources FF="250" LUT="225"/>
-      <LocalResources FF="87" LUT="29"/>
+    <RtlModule CELL="inst/grp_top_kernel_Pipeline_VITIS_LOOP_192_1_fu_523/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="top_kernel_flow_control_loop_pipe_sequential_init"/>
+    <RtlModule CELL="inst/grp_top_kernel_Pipeline_VITIS_LOOP_205_3_fu_591" DEPTH="1" TYPE="rtl" MODULENAME="top_kernel_Pipeline_VITIS_LOOP_205_3" DISPNAME="grp_top_kernel_Pipeline_VITIS_LOOP_205_3_fu_591" RTLNAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_205_3">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="100" LUT="140"/>
+      <LocalResources FF="98" LUT="120"/>
     </RtlModule>
-    <RtlModule CELL="inst/sdiv_38ns_24s_38_42_seq_1_U1/top_kernel_sdiv_38ns_24s_38_42_seq_1_divseq_u" DEPTH="2" TYPE="rtl" MODULENAME="sdiv_38ns_24s_38_42_seq_1_divseq" DISPNAME="sdiv_38ns_24s_38_42_seq_1_divseq_u" RTLNAME="top_kernel_sdiv_38ns_24s_38_42_seq_1_divseq">
-      <Resources FF="163" LUT="196"/>
+    <RtlModule CELL="inst/grp_top_kernel_Pipeline_VITIS_LOOP_205_3_fu_591/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="top_kernel_flow_control_loop_pipe_sequential_init"/>
+    <RtlModule CELL="inst/grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631" DEPTH="1" TYPE="rtl" MODULENAME="top_kernel_Pipeline_VITIS_LOOP_215_4" DISPNAME="grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631" RTLNAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_215_4">
+      <SubModules count="2">flow_control_loop_pipe_sequential_init_U sdiv_38ns_24s_38_42_1_U69</SubModules>
+      <Resources FF="2627" LUT="2917"/>
+      <LocalResources FF="262" LUT="630"/>
     </RtlModule>
-    <RtlModule CELL="inst/tmp_U" DEPTH="1" TYPE="resource" MODULENAME="A_1_RAM_AUTO_1R1W" DISPNAME="tmp_U" RTLNAME="top_kernel_A_1_RAM_AUTO_1R1W">
-      <Resources BRAM="22" LUT="98"/>
-      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="tmp_U" SOURCE="top.cpp:91" STORAGESIZE="24 128 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="tmp" VISIBLE="true"/>
+    <RtlModule CELL="inst/grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="top_kernel_flow_control_loop_pipe_sequential_init"/>
+    <RtlModule CELL="inst/grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631/sdiv_38ns_24s_38_42_1_U69" DEPTH="2" TYPE="rtl" MODULENAME="sdiv_38ns_24s_38_42_1" DISPNAME="sdiv_38ns_24s_38_42_1_U69" RTLNAME="top_kernel_sdiv_38ns_24s_38_42_1">
+      <SubModules count="1">top_kernel_sdiv_38ns_24s_38_42_1_divider_u</SubModules>
+      <Resources FF="2363" LUT="2263"/>
+      <LocalResources FF="86" LUT="108"/>
     </RtlModule>
+    <RtlModule CELL="inst/grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631/sdiv_38ns_24s_38_42_1_U69/top_kernel_sdiv_38ns_24s_38_42_1_divider_u" DEPTH="3" TYPE="rtl" MODULENAME="sdiv_38ns_24s_38_42_1_divider" DISPNAME="sdiv_38ns_24s_38_42_1_divider_u" RTLNAME="top_kernel_sdiv_38ns_24s_38_42_1_divider">
+      <Resources FF="2277" LUT="2155"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733" DEPTH="1" TYPE="rtl" MODULENAME="top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6" DISPNAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733" RTLNAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6">
+      <SubModules count="2">flow_control_loop_pipe_sequential_init_U mul_24s_17s_41_1_1_U173</SubModules>
+      <Resources DSP="1" FF="91" LUT="537"/>
+      <LocalResources FF="89" LUT="239"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="top_kernel_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="67"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173" DEPTH="2" TYPE="rtl" MODULENAME="mul_24s_17s_41_1_1" DISPNAME="mul_24s_17s_41_1_1_U173" RTLNAME="top_kernel_mul_24s_17s_41_1_1">
+      <Resources DSP="1" LUT="232"/>
+    </RtlModule>
+    <RtlModule CELL="inst/row_buffer_10_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_10_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_11_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_11_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_12_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_12_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_13_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_13_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_14_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_14_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_15_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_15_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_16_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_16_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_17_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_17_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_18_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_18_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_19_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_19_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_1_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_1_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_20_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_20_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_21_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_21_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_22_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_22_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_23_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_23_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_24_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_24_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_25_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_25_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_26_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_26_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_27_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_27_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_28_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_28_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_29_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_29_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_2_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_2_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_30_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_30_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_31_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_31_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_3_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_3_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_4_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_4_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_5_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_5_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_6_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_6_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_7_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_7_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_8_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_8_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_9_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_9_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
+    <RtlModule CELL="inst/row_buffer_U" DEPTH="1" TYPE="rtl" MODULENAME="row_buffer_RAM_AUTO_1R1W" DISPNAME="row_buffer_U" RTLNAME="top_kernel_row_buffer_RAM_AUTO_1R1W"/>
   </RtlModules>
   <TimingPaths>
-    <TPATH DATAPATH_DELAY="7.320" DATAPATH_LOGIC_DELAY="5.044" DATAPATH_NET_DELAY="2.276" ENDPOINT_PIN="select_ln56_3_reg_1580_reg[20]/S" LOGIC_LEVELS="18" MAX_FANOUT="24" SLACK="2.516" STARTPOINT_PIN="tmp_U/ram_reg_bram_0/CLKARDCLK">
-      <CELL NAME="tmp_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_1" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_2" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_3" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_4" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_5" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_6" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_7" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel.v" LINE_NUMBER="1901"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[23]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="select_ln56_3_reg_1580_reg[20]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel.v" LINE_NUMBER="715"/>
-      <MODULE_INSTANCES>tmp_U</MODULE_INSTANCES>
+    <TPATH DATAPATH_DELAY="4.752" DATAPATH_LOGIC_DELAY="2.895" DATAPATH_NET_DELAY="1.857" ENDPOINT_PIN="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/select_ln230_3_reg_2297_reg[10]/CE" LOGIC_LEVELS="12" MAX_FANOUT="25" SLACK="5.159" STARTPOINT_PIN="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/scale_reg_2287_reg[11]/C">
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/scale_reg_2287_reg[11]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="971"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="1825"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[23]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[23]_i_6" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="9"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[23]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel.v" LINE_NUMBER="9"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/select_ln230_3_reg_2297_reg[10]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="1084"/>
     </TPATH>
-    <TPATH DATAPATH_DELAY="7.320" DATAPATH_LOGIC_DELAY="5.044" DATAPATH_NET_DELAY="2.276" ENDPOINT_PIN="select_ln56_3_reg_1580_reg[21]/S" LOGIC_LEVELS="18" MAX_FANOUT="24" SLACK="2.516" STARTPOINT_PIN="tmp_U/ram_reg_bram_0/CLKARDCLK">
-      <CELL NAME="tmp_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_1" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_2" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_3" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_4" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_5" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_6" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_7" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel.v" LINE_NUMBER="1901"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[23]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="select_ln56_3_reg_1580_reg[21]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel.v" LINE_NUMBER="715"/>
-      <MODULE_INSTANCES>tmp_U</MODULE_INSTANCES>
+    <TPATH DATAPATH_DELAY="4.753" DATAPATH_LOGIC_DELAY="2.895" DATAPATH_NET_DELAY="1.858" ENDPOINT_PIN="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/select_ln230_3_reg_2297_reg[11]/CE" LOGIC_LEVELS="12" MAX_FANOUT="25" SLACK="5.159" STARTPOINT_PIN="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/scale_reg_2287_reg[11]/C">
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/scale_reg_2287_reg[11]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="971"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="1825"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[23]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[23]_i_6" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="9"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[23]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel.v" LINE_NUMBER="9"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/select_ln230_3_reg_2297_reg[11]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="1084"/>
     </TPATH>
-    <TPATH DATAPATH_DELAY="7.320" DATAPATH_LOGIC_DELAY="5.044" DATAPATH_NET_DELAY="2.276" ENDPOINT_PIN="select_ln56_3_reg_1580_reg[22]/S" LOGIC_LEVELS="18" MAX_FANOUT="24" SLACK="2.516" STARTPOINT_PIN="tmp_U/ram_reg_bram_0/CLKARDCLK">
-      <CELL NAME="tmp_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_1" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_2" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_3" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_4" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_5" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_6" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_7" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel.v" LINE_NUMBER="1901"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[23]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="select_ln56_3_reg_1580_reg[22]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel.v" LINE_NUMBER="715"/>
-      <MODULE_INSTANCES>tmp_U</MODULE_INSTANCES>
+    <TPATH DATAPATH_DELAY="4.752" DATAPATH_LOGIC_DELAY="2.895" DATAPATH_NET_DELAY="1.857" ENDPOINT_PIN="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/select_ln230_3_reg_2297_reg[12]/CE" LOGIC_LEVELS="12" MAX_FANOUT="25" SLACK="5.159" STARTPOINT_PIN="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/scale_reg_2287_reg[11]/C">
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/scale_reg_2287_reg[11]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="971"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="1825"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[23]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[23]_i_6" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="9"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[23]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel.v" LINE_NUMBER="9"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/select_ln230_3_reg_2297_reg[12]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="1084"/>
     </TPATH>
-    <TPATH DATAPATH_DELAY="7.319" DATAPATH_LOGIC_DELAY="5.162" DATAPATH_NET_DELAY="2.157" ENDPOINT_PIN="select_ln56_3_reg_1580_reg[20]/D" LOGIC_LEVELS="19" MAX_FANOUT="23" SLACK="2.615" STARTPOINT_PIN="tmp_U/ram_reg_bram_0/CLKARDCLK">
-      <CELL NAME="tmp_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_1" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_2" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_3" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_4" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_5" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_6" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_7" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel.v" LINE_NUMBER="1901"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[20]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel.v" LINE_NUMBER="9"/>
-      <CELL NAME="select_ln56_3_reg_1580_reg[20]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel.v" LINE_NUMBER="715"/>
-      <MODULE_INSTANCES>tmp_U</MODULE_INSTANCES>
+    <TPATH DATAPATH_DELAY="4.753" DATAPATH_LOGIC_DELAY="2.895" DATAPATH_NET_DELAY="1.858" ENDPOINT_PIN="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/select_ln230_3_reg_2297_reg[13]/CE" LOGIC_LEVELS="12" MAX_FANOUT="25" SLACK="5.159" STARTPOINT_PIN="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/scale_reg_2287_reg[11]/C">
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/scale_reg_2287_reg[11]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="971"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="1825"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[23]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[23]_i_6" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="9"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[23]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel.v" LINE_NUMBER="9"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/select_ln230_3_reg_2297_reg[13]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="1084"/>
     </TPATH>
-    <TPATH DATAPATH_DELAY="7.303" DATAPATH_LOGIC_DELAY="5.182" DATAPATH_NET_DELAY="2.121" ENDPOINT_PIN="select_ln56_3_reg_1580_reg[21]/D" LOGIC_LEVELS="19" MAX_FANOUT="23" SLACK="2.631" STARTPOINT_PIN="tmp_U/ram_reg_bram_0/CLKARDCLK">
-      <CELL NAME="tmp_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_1" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_2" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_3" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_4" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_5" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_6" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="tmp_U/ram_reg_bram_7" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="top_kernel_A_1_RAM_AUTO_1R1W.v" LINE_NUMBER="42" MODULE_INSTNAME="tmp_U" IS_FUNCINST="0"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel.v" LINE_NUMBER="1901"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580_reg[23]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[22]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="988"/>
-      <CELL NAME="mul_24s_17s_41_1_1_U2/select_ln56_3_reg_1580[21]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel.v" LINE_NUMBER="9"/>
-      <CELL NAME="select_ln56_3_reg_1580_reg[21]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel.v" LINE_NUMBER="715"/>
-      <MODULE_INSTANCES>tmp_U</MODULE_INSTANCES>
+    <TPATH DATAPATH_DELAY="4.752" DATAPATH_LOGIC_DELAY="2.895" DATAPATH_NET_DELAY="1.857" ENDPOINT_PIN="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/select_ln230_3_reg_2297_reg[14]/CE" LOGIC_LEVELS="12" MAX_FANOUT="25" SLACK="5.159" STARTPOINT_PIN="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/scale_reg_2287_reg[11]/C">
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/scale_reg_2287_reg[11]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="971"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[7]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="1825"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[23]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[23]_i_6" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel.v" LINE_NUMBER="9"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[23]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel.v" LINE_NUMBER="9"/>
+      <CELL NAME="grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/select_ln230_3_reg_2297_reg[14]" PRIMITIVE_TYPE="REGISTER.SDR.FDSE" FILE_NAME="top_kernel_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6.v" LINE_NUMBER="1084"/>
     </TPATH>
   </TimingPaths>
   <VivadoReportFiles>
@@ -214,7 +414,7 @@
     <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/top_kernel_utilization_hierarchical_routed.rpt"/>
   </VivadoReportFiles>
   <GeneralInfo NAME="General Information">
-    <item NAME="Date" VALUE="Thu Feb 05 22:06:14 EST 2026"/>
+    <item NAME="Date" VALUE="Sat Feb 07 23:33:10 EST 2026"/>
     <item NAME="Version" VALUE="2025.1 (Build 6214317 on Sep 11 2025)"/>
     <item NAME="Project" VALUE="project_1"/>
     <item NAME="Solution" VALUE="hls (Vivado IP Flow Target)"/>

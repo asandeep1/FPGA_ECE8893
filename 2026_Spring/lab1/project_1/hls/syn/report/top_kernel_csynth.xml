@@ -18,54 +18,54 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>49.913</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.300</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>37444</Best-caseLatency>
-<Average-caseLatency>37444</Average-caseLatency>
-<Worst-caseLatency>37444</Worst-caseLatency>
-<Best-caseRealTimeLatency>1.869 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>1.869 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>1.869 ms</Worst-caseRealTimeLatency>
-<Interval-min>37445</Interval-min>
-<Interval-max>37445</Interval-max>
+<Best-caseLatency>44821</Best-caseLatency>
+<Average-caseLatency>44821</Average-caseLatency>
+<Worst-caseLatency>44821</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.448 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.448 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.448 ms</Worst-caseRealTimeLatency>
+<Interval-min>44822</Interval-min>
+<Interval-max>44822</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_148_9>
+<VITIS_LOOP_199_2>
 <Slack>7.30</Slack>
-<TripCount>16</TripCount>
+<TripCount>256</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>608</Latency>
-<AbsoluteTimeLatency>30347</AbsoluteTimeLatency>
-<IterationLatency>38</IterationLatency>
+<Latency>28416</Latency>
+<AbsoluteTimeLatency>284160</AbsoluteTimeLatency>
+<IterationLatency>111</IterationLatency>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_148_9>
+</VITIS_LOOP_199_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:148</SourceLocation>
+<SourceLocation>top.cpp:199</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_148_9>
-<Name>VITIS_LOOP_148_9</Name>
+<VITIS_LOOP_199_2>
+<Name>VITIS_LOOP_199_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:148</SourceLocation>
-</VITIS_LOOP_148_9>
+<SourceLocation>top.cpp:199</SourceLocation>
+</VITIS_LOOP_199_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>2178</BRAM_18K>
-<DSP>128</DSP>
-<FF>425420</FF>
-<LUT>434640</LUT>
+<BRAM_18K>66</BRAM_18K>
+<DSP>1</DSP>
+<FF>37856</FF>
+<LUT>37694</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

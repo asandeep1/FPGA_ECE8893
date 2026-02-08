@@ -1,47 +1,20 @@
 set SynModuleInfo {
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_103_1 MODELNAME top_kernel_Pipeline_VITIS_LOOP_103_1 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_103_1
+  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_205_3 MODELNAME top_kernel_Pipeline_VITIS_LOOP_205_3 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_205_3
     SUBMODULES {
       {MODELNAME top_kernel_flow_control_loop_pipe_sequential_init RTLNAME top_kernel_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME top_kernel_flow_control_loop_pipe_sequential_init_U}
     }
   }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_109_2_VITIS_LOOP_110_3 MODELNAME top_kernel_Pipeline_VITIS_LOOP_109_2_VITIS_LOOP_110_3 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_109_2_VITIS_LOOP_110_3}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_121_5 MODELNAME top_kernel_Pipeline_VITIS_LOOP_121_5 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_121_5}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_129_6 MODELNAME top_kernel_Pipeline_VITIS_LOOP_129_6 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_129_6
-    SUBMODULES {
-      {MODELNAME top_kernel_sdiv_38ns_24s_38_42_1 RTLNAME top_kernel_sdiv_38ns_24s_38_42_1 BINDTYPE op TYPE sdiv IMPL auto LATENCY 41 ALLOW_PRAGMA 1}
-    }
-  }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_121_51 MODELNAME top_kernel_Pipeline_VITIS_LOOP_121_51 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_121_51}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_129_62 MODELNAME top_kernel_Pipeline_VITIS_LOOP_129_62 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_129_62}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_121_53 MODELNAME top_kernel_Pipeline_VITIS_LOOP_121_53 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_121_53}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_129_64 MODELNAME top_kernel_Pipeline_VITIS_LOOP_129_64 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_129_64}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_121_55 MODELNAME top_kernel_Pipeline_VITIS_LOOP_121_55 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_121_55}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_129_66 MODELNAME top_kernel_Pipeline_VITIS_LOOP_129_66 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_129_66}
-  {SRCNAME top_kernel_Outline_VITIS_LOOP_117_4 MODELNAME top_kernel_Outline_VITIS_LOOP_117_4 RTLNAME top_kernel_top_kernel_Outline_VITIS_LOOP_117_4}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_139_7_VITIS_LOOP_140_8 MODELNAME top_kernel_Pipeline_VITIS_LOOP_139_7_VITIS_LOOP_140_8 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_139_7_VITIS_LOOP_140_8
+  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_225_5_VITIS_LOOP_226_6 MODELNAME top_kernel_Pipeline_VITIS_LOOP_225_5_VITIS_LOOP_226_6 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_225_5_VITIS_LOOP_226_6
     SUBMODULES {
       {MODELNAME top_kernel_sparsemux_65_5_24_1_1 RTLNAME top_kernel_sparsemux_65_5_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
-    }
-  }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_152_10 MODELNAME top_kernel_Pipeline_VITIS_LOOP_152_10 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_152_10
-    SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_17_5_24_1_1 RTLNAME top_kernel_sparsemux_17_5_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
-      {MODELNAME top_kernel_mul_24s_17s_41_1_1 RTLNAME top_kernel_mul_24s_17s_41_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-    }
-  }
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_152_107 MODELNAME top_kernel_Pipeline_VITIS_LOOP_152_107 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_152_107}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_152_108 MODELNAME top_kernel_Pipeline_VITIS_LOOP_152_108 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_152_108}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_152_109 MODELNAME top_kernel_Pipeline_VITIS_LOOP_152_109 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_152_109}
-  {SRCNAME top_kernel_Pipeline_VITIS_LOOP_160_11_VITIS_LOOP_161_12 MODELNAME top_kernel_Pipeline_VITIS_LOOP_160_11_VITIS_LOOP_161_12 RTLNAME top_kernel_top_kernel_Pipeline_VITIS_LOOP_160_11_VITIS_LOOP_161_12
-    SUBMODULES {
-      {MODELNAME top_kernel_sparsemux_9_2_24_1_1 RTLNAME top_kernel_sparsemux_9_2_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
+      {MODELNAME top_kernel_sparsemux_129_6_24_1_1 RTLNAME top_kernel_sparsemux_129_6_24_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
+      {MODELNAME top_kernel_mul_17s_24s_41_1_1 RTLNAME top_kernel_mul_17s_24s_41_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
     }
   }
   {SRCNAME top_kernel MODELNAME top_kernel RTLNAME top_kernel IS_TOP 1
     SUBMODULES {
-      {MODELNAME top_kernel_A_1_RAM_AUTO_1R1W RTLNAME top_kernel_A_1_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
-      {MODELNAME top_kernel_C_1_RAM_AUTO_1R1W RTLNAME top_kernel_C_1_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
-      {MODELNAME top_kernel_tmp_RAM_1WNR_AUTO_1R1W RTLNAME top_kernel_tmp_RAM_1WNR_AUTO_1R1W BINDTYPE storage TYPE ram_1wnr IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME top_kernel_sdiv_38ns_24s_38_42_seq_1 RTLNAME top_kernel_sdiv_38ns_24s_38_42_seq_1 BINDTYPE op TYPE sdiv IMPL auto_seq LATENCY 41 ALLOW_PRAGMA 1}
+      {MODELNAME top_kernel_A_internal_RAM_AUTO_1R1W RTLNAME top_kernel_A_internal_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_col_sums_RAM_AUTO_1R1W RTLNAME top_kernel_col_sums_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_A_m_axi RTLNAME top_kernel_A_m_axi BINDTYPE interface TYPE adapter IMPL m_axi}
       {MODELNAME top_kernel_C_m_axi RTLNAME top_kernel_C_m_axi BINDTYPE interface TYPE adapter IMPL m_axi}

@@ -17,8 +17,8 @@ module top_kernel_col_sums_RAM_AUTO_1R1W (
     reset, clk);
 
 parameter DataWidth = 24;
-parameter AddressWidth = 2;
-parameter AddressRange = 4;
+parameter AddressWidth = 1;
+parameter AddressRange = 2;
  
 input[AddressWidth-1:0] address0;
 input ce0;

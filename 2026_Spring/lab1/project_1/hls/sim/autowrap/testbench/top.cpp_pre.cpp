@@ -5,7 +5,7 @@
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp" 2
-# 80 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp"
+# 174 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp"
 # 1 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/dcl.h" 1
 
 
@@ -59254,82 +59254,53 @@ typedef ap_fixed<24, 10, AP_RND, AP_SAT> data_t;
 
 void top_kernel(data_t A[256][64],
                 data_t C[256][64]);
-# 81 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp" 2
+# 175 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp" 2
 
 void top_kernel(data_t A_DRAM[256][64],
                 data_t C_DRAM[256][64]) {
-#pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A
-#pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C
+
+#pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A max_widen_bitwidth=512
+#pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C max_widen_bitwidth=512
 #pragma HLS interface s_axilite port=return
 
 
-data_t A[256][64];
-data_t C[256][64];
-data_t tmp[256][64];
-data_t col_sums[64];
+    data_t A_internal[256][64];
+    data_t col_sums[64];
 
-#pragma HLS array_partition variable=A cyclic factor=4 dim=1
-#pragma HLS array_partition variable=A cyclic factor=32 dim=2
-#pragma HLS array_partition variable=tmp cyclic factor=4 dim=1
-#pragma HLS array_partition variable=tmp cyclic factor=32 dim=2
-#pragma HLS array_partition variable=C cyclic factor=4 dim=1
-#pragma HLS array_partition variable=C cyclic factor=32 dim=2
+
+#pragma HLS array_partition variable=A_internal cyclic factor=64 dim=2
 #pragma HLS array_partition variable=col_sums cyclic factor=32
 
 
     for(int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS UNROLL factor=64
         col_sums[j] = 0.0;
     }
 
 
     for (int i = 0; i < 256; i++) {
-        for (int j = 0; j < 64; j++) {
-#pragma HLS PIPELINE II=1
-            A[i][j] = A_DRAM[i][j];
-        }
-    }
-
-
-    for (int i = 0; i < 256; i++) {
-#pragma HLS UNROLL factor=4
+        data_t row_buffer[64];
+#pragma HLS ARRAY_PARTITION variable=row_buffer cyclic factor=64
         data_t row_sum = 0.0;
 
+
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=32
-            row_sum += A[i][j];
+            data_t val = A_DRAM[i][j];
+            row_buffer[j] = val;
+            row_sum += val;
         }
 
         data_t denom = row_sum + (data_t)1.0;
 
+
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=32
-            data_t val = A[i][j] / denom;
-            tmp[i][j] = val;
-        }
-    }
-
-
-
-    for (int j = 0; j < 64; j++) {
-        for (int i = 0; i < 256; i++) {
-#pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=32
-            col_sums[j] += tmp[i][j];
-        }
-    }
-
-
-    for (int j = 0; j < 64; j++) {
-#pragma HLS UNROLL factor=4
-        data_t scale = col_sums[j] / (data_t)256;
-
-        for (int i = 0; i < 256; i++) {
-#pragma HLS PIPELINE II=1
-#pragma HLS UNROLL factor=32
-            C[i][j] = tmp[i][j] * scale;
+#pragma HLS UNROLL factor=64
+            data_t norm_val = row_buffer[j] / denom;
+            A_internal[i][j] = norm_val;
+            col_sums[j] += norm_val;
         }
     }
 
@@ -59337,7 +59308,10 @@ data_t col_sums[64];
     for (int i = 0; i < 256; i++) {
         for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
-            C_DRAM[i][j] = C[i][j];
+
+
+            data_t scale = col_sums[j] / (data_t)256;
+            C_DRAM[i][j] = A_internal[i][j] * scale;
         }
     }
 }

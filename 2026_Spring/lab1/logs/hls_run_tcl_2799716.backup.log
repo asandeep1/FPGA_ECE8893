@@ -1,0 +1,1674 @@
+  **** HLS Build v2025.1.1 6214317
+Sourcing Tcl script '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/script.tcl'
+INFO: [HLS 200-1510] Running: open_component project_1 
+INFO: [HLS 200-10] Creating and opening component '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_unroll -tripcount_threshold=0
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1464] Running solution command: config_compile -pipeline_loops=0
+INFO: [HLS 200-1464] Running solution command: config_export -flow=impl
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-2174] Applying component config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'param.hls.enable_hidden_option_error=false' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(4)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../top.cpp' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../host.cpp' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=top_kernel' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_unroll -tripcount_threshold=0
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1464] Running solution command: config_compile -pipeline_loops=0
+INFO: [HLS 200-1464] Running solution command: config_compile -complex-mul-dsp=0
+INFO: [HLS 200-1464] Running solution command: config_export -flow=impl
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sbva484-1-e' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'syn.unroll.tripcount_threshold=0' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(12)
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1465] Applying config ini 'vivado.flow=impl' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg(13)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/vitis-comp.json
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg
+INFO: [HLS 200-1510] Running: set_top top_kernel 
+INFO: [HLS 200-1510] Running: add_files top.cpp 
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb host.cpp 
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1510] Running: config_unroll -tripcount_threshold 0 
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1510] Running: config_compile -pipeline_loops 0 
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.56 seconds. CPU system time: 0.17 seconds. Elapsed time: 8.32 seconds; current allocated memory: 790.746 MB.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.9 seconds. CPU system time: 1.26 seconds. Elapsed time: 7.32 seconds; current allocated memory: 792.363 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 4,981 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,474 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,500 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,376 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,360 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,336 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,204 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,207 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,210 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,216 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,214 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,212 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,300 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,750 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,758 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,786 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_154_11' is marked as complete unroll implied by the pipeline pragma (top.cpp:154:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_157_12' is marked as complete unroll implied by the pipeline pragma (top.cpp:157:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_126_5' is marked as complete unroll implied by the pipeline pragma (top.cpp:126:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_131_6' is marked as complete unroll implied by the pipeline pragma (top.cpp:131:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_140_8' is marked as complete unroll implied by the pipeline pragma (top.cpp:140:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_154_11' (top.cpp:154:21) in function 'top_kernel' completely with a factor of 16 (top.cpp:93:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_157_12' (top.cpp:157:32) in function 'top_kernel' completely with a factor of 16 (top.cpp:93:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_126_5' (top.cpp:126:20) in function 'top_kernel' completely with a factor of 16 (top.cpp:93:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_131_6' (top.cpp:131:31) in function 'top_kernel' completely with a factor of 16 (top.cpp:93:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_140_8' (top.cpp:140:20) in function 'top_kernel' completely with a factor of 16 (top.cpp:93:0)
+INFO: [HLS 214-248] Applying array_partition to 'A': Cyclic partitioning with factor 16 on dimension 2. (top.cpp:99:9)
+INFO: [HLS 214-248] Applying array_partition to 'tmp': Cyclic partitioning with factor 16 on dimension 2. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'col_sums': Cyclic partitioning with factor 16 on dimension 1. (top.cpp:101:12)
+INFO: [HLS 214-241] Aggregating maxi variable 'C_DRAM' with compact=none mode in 32-bits
+INFO: [HLS 214-241] Aggregating maxi variable 'A_DRAM' with compact=none mode in 32-bits
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_0' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_1' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_10' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_11' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_12' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_13' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_14' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_15' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_2' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_3' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_4' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_5' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_6' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_7' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_8' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'tmp_9' due to pipeline pragma (top.cpp:150:9)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_0': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_1': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_2': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_3': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_4': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_5': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_6': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_7': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_8': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_9': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_10': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_11': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_12': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_13': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_14': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-248] Applying array_partition to 'tmp_15': Cyclic partitioning with factor 8 on dimension 1. (top.cpp:100:12)
+INFO: [HLS 214-115] Multiple burst reads of length 16384 and bit width 32 in loop 'VITIS_LOOP_108_1'(top.cpp:108:20) has been inferred on bundle 'A'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (top.cpp:108:20)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 8.18 seconds. CPU system time: 1.43 seconds. Elapsed time: 12.06 seconds; current allocated memory: 803.039 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 803.039 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.39 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.41 seconds; current allocated memory: 807.465 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.34 seconds. CPU system time: 0 seconds. Elapsed time: 0.35 seconds; current allocated memory: 809.242 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2.36 seconds. CPU system time: 0.06 seconds. Elapsed time: 2.44 seconds; current allocated memory: 832.219 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_108_1'(top.cpp:108:20) and 'VITIS_LOOP_109_2'(top.cpp:109:27) in function 'top_kernel' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_165_13'(top.cpp:165:24) and 'VITIS_LOOP_167_14'(top.cpp:167:28) in function 'top_kernel' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_108_1' (top.cpp:108:20) in function 'top_kernel'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_147_9' (top.cpp:147:23) in function 'top_kernel' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_165_13' (top.cpp:165:24) in function 'top_kernel'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.47 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.53 seconds; current allocated memory: 878.719 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_108_1_VITIS_LOOP_109_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_108_1_VITIS_LOOP_109_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.19 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.29 seconds; current allocated memory: 880.434 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.12 seconds; current allocated memory: 880.434 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_120_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_120_4'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln132_15', top.cpp:132) to 'add' operation 25 bit ('add_ln132_25', top.cpp:132) (combination delay: 7.7225 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln132_10', top.cpp:132) to 'add' operation 25 bit ('add_ln132_21', top.cpp:132) (combination delay: 8.832 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln132_15', top.cpp:132) to 'add' operation 25 bit ('add_ln132_27', top.cpp:132) (combination delay: 9.267 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln132_6', top.cpp:132) to 'add' operation 24 bit ('add_ln132_18', top.cpp:132) (combination delay: 10.3765 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln132_13', top.cpp:132) to 'add' operation 25 bit ('add_ln132_27', top.cpp:132) (combination delay: 10.8115 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln132_5', top.cpp:132) to 'add' operation 24 bit ('add_ln132_18', top.cpp:132) (combination delay: 11.921 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln132_3', top.cpp:132) to 'add' operation 25 bit ('add_ln132_19', top.cpp:132) (combination delay: 12.356 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln132_10', top.cpp:132) to 'add' operation 24 bit ('add_ln132_26', top.cpp:132) (combination delay: 13.4655 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln132_9', top.cpp:132) to 'add' operation 25 bit ('add_ln132_27', top.cpp:132) (combination delay: 13.9005 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln132_1', top.cpp:132) to 'add' operation 24 bit ('add_ln132_18', top.cpp:132) (combination delay: 15.01 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln132_9', top.cpp:132) to 'add' operation 24 bit ('add_ln132_28', top.cpp:132) (combination delay: 15.445 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln132_10', top.cpp:132) to 'add' operation 25 bit ('add_ln132_31', top.cpp:132) (combination delay: 16.5545 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln132_3', top.cpp:132) to 'add' operation 24 bit ('add_ln132_24', top.cpp:132) (combination delay: 16.9895 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln132_4', top.cpp:132) to 'add' operation 25 bit ('add_ln132_27', top.cpp:132) (combination delay: 18.099 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln132_3', top.cpp:132) to 'add' operation 24 bit ('add_ln132_26', top.cpp:132) (combination delay: 18.534 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln132', top.cpp:132) to 'add' operation 24 bit ('add_ln132_24', top.cpp:132) (combination delay: 19.6435 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln132_1', top.cpp:132) to 'add' operation 25 bit ('add_ln132_27', top.cpp:132) (combination delay: 20.0785 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln132_5', top.cpp:132) to 'add' operation 24 bit ('add_ln132_30', top.cpp:132) (combination delay: 21.188 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln132_1', top.cpp:132) to 'add' operation 24 bit ('add_ln132_28', top.cpp:132) (combination delay: 21.623 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln132_3', top.cpp:132) to 'add' operation 25 bit ('add_ln132_31', top.cpp:132) (combination delay: 22.7325 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln132_1', top.cpp:132) to 'add' operation 25 bit ('add_ln132_31', top.cpp:132) (combination delay: 23.1675 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln132_1', top.cpp:132) to 'add' operation 25 bit ('add_ln132_31', top.cpp:132) (combination delay: 24.277 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln132_1', top.cpp:132) to 'select' operation 24 bit ('select_ln132_31', top.cpp:132) (combination delay: 24.712 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln132', top.cpp:132) to 'store' operation 0 bit ('p_lcssa667669_write_ln132', top.cpp:132) of variable 'select_ln132_31', top.cpp:132 on local variable 'p_lcssa667669' (combination delay: 25.201 ns) to honor II or Latency constraint in region 'VITIS_LOOP_120_4'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_120_4'
+WARNING: [HLS 200-871] Estimated clock period (25.201 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'top_kernel_Pipeline_VITIS_LOOP_120_4' consists of the following:
+	'load' operation 24 bit ('p_lcssa667669_load', top.cpp:132) on local variable 'p_lcssa667669' [30]  (0.000 ns)
+	'add' operation 24 bit ('add_ln132', top.cpp:132) [71]  (1.110 ns)
+	'select' operation 24 bit ('select_ln132_1', top.cpp:132) [79]  (0.435 ns)
+	'add' operation 24 bit ('add_ln132_2', top.cpp:132) [82]  (1.110 ns)
+	'select' operation 24 bit ('select_ln132_3', top.cpp:132) [90]  (0.435 ns)
+	'add' operation 25 bit ('add_ln132_5', top.cpp:132) [94]  (1.110 ns)
+	'xor' operation 1 bit ('xor_ln132_5', top.cpp:132) [99]  (0.000 ns)
+	'select' operation 24 bit ('select_ln132_5', top.cpp:132) [101]  (0.435 ns)
+	'add' operation 25 bit ('add_ln132_7', top.cpp:132) [105]  (1.110 ns)
+	'xor' operation 1 bit ('xor_ln132_6', top.cpp:132) [108]  (0.000 ns)
+	'and' operation 1 bit ('and_ln132_3', top.cpp:132) [109]  (0.000 ns)
+	'select' operation 24 bit ('select_ln132_6', top.cpp:132) [111]  (0.000 ns)
+	'select' operation 24 bit ('select_ln132_7', top.cpp:132) [112]  (0.435 ns)
+	'add' operation 24 bit ('add_ln132_8', top.cpp:132) [115]  (1.110 ns)
+	'select' operation 24 bit ('select_ln132_9', top.cpp:132) [123]  (0.435 ns)
+	'add' operation 24 bit ('add_ln132_10', top.cpp:132) [126]  (1.110 ns)
+	'select' operation 24 bit ('select_ln132_11', top.cpp:132) [134]  (0.435 ns)
+	'add' operation 24 bit ('add_ln132_12', top.cpp:132) [137]  (1.110 ns)
+	'select' operation 24 bit ('select_ln132_13', top.cpp:132) [145]  (0.435 ns)
+	'add' operation 24 bit ('add_ln132_14', top.cpp:132) [148]  (1.110 ns)
+	'select' operation 24 bit ('select_ln132_15', top.cpp:132) [156]  (0.435 ns)
+	'add' operation 24 bit ('add_ln132_16', top.cpp:132) [159]  (1.110 ns)
+	'select' operation 24 bit ('select_ln132_17', top.cpp:132) [167]  (0.435 ns)
+	'add' operation 24 bit ('add_ln132_18', top.cpp:132) [170]  (1.110 ns)
+	'select' operation 24 bit ('select_ln132_19', top.cpp:132) [178]  (0.435 ns)
+	'add' operation 24 bit ('add_ln132_20', top.cpp:132) [181]  (1.110 ns)
+	'select' operation 24 bit ('select_ln132_21', top.cpp:132) [189]  (0.435 ns)
+	'add' operation 24 bit ('add_ln132_22', top.cpp:132) [192]  (1.110 ns)
+	'select' operation 24 bit ('select_ln132_23', top.cpp:132) [200]  (0.435 ns)
+	'add' operation 24 bit ('add_ln132_24', top.cpp:132) [203]  (1.110 ns)
+	'select' operation 24 bit ('select_ln132_25', top.cpp:132) [211]  (0.435 ns)
+	'add' operation 24 bit ('add_ln132_26', top.cpp:132) [214]  (1.110 ns)
+	'select' operation 24 bit ('select_ln132_27', top.cpp:132) [222]  (0.435 ns)
+	'add' operation 24 bit ('add_ln132_28', top.cpp:132) [225]  (1.110 ns)
+	'select' operation 24 bit ('select_ln132_29', top.cpp:132) [233]  (0.435 ns)
+	'add' operation 24 bit ('add_ln132_30', top.cpp:132) [236]  (1.110 ns)
+	'select' operation 24 bit ('select_ln132_31', top.cpp:132) [244]  (0.435 ns)
+	'store' operation 0 bit ('p_lcssa667669_write_ln132', top.cpp:132) of variable 'select_ln132_31', top.cpp:132 on local variable 'p_lcssa667669' [247]  (0.489 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.71 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.75 seconds; current allocated memory: 882.262 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 882.289 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_138_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_138_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 43, loop 'VITIS_LOOP_138_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.56 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.59 seconds; current allocated memory: 886.547 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.17 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.28 seconds; current allocated memory: 887.652 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_149_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_149_10'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln158_7', top.cpp:158) to 'add' operation 24 bit ('add_ln158_16', top.cpp:158) (combination delay: 7.7225 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln158_19', top.cpp:158) to 'add' operation 24 bit ('add_ln158_28', top.cpp:158) (combination delay: 8.832 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln158_13', top.cpp:158) to 'add' operation 25 bit ('add_ln158_25', top.cpp:158) (combination delay: 9.267 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln158_8', top.cpp:158) to 'add' operation 25 bit ('add_ln158_21', top.cpp:158) (combination delay: 10.3765 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln158_9', top.cpp:158) to 'add' operation 24 bit ('add_ln158_22', top.cpp:158) (combination delay: 10.8115 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln158_5', top.cpp:158) to 'add' operation 25 bit ('add_ln158_19', top.cpp:158) (combination delay: 11.921 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln158_7', top.cpp:158) to 'add' operation 25 bit ('add_ln158_23', top.cpp:158) (combination delay: 12.356 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln158', top.cpp:158) to 'add' operation 25 bit ('add_ln158_17', top.cpp:158) (combination delay: 13.4655 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln158_1', top.cpp:158) to 'add' operation 24 bit ('add_ln158_18', top.cpp:158) (combination delay: 13.9005 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln158_7', top.cpp:158) to 'add' operation 25 bit ('add_ln158_25', top.cpp:158) (combination delay: 15.01 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln158_11', top.cpp:158) to 'add' operation 24 bit ('add_ln158_30', top.cpp:158) (combination delay: 15.445 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln158', top.cpp:158) to 'add' operation 24 bit ('add_ln158_20', top.cpp:158) (combination delay: 16.5545 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln158_9', top.cpp:158) to 'add' operation 25 bit ('add_ln158_31', top.cpp:158) (combination delay: 16.9895 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln158_1', top.cpp:158) to 'add' operation 25 bit ('add_ln158_23', top.cpp:158) (combination delay: 18.099 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln158_5', top.cpp:158) to 'add' operation 24 bit ('add_ln158_28', top.cpp:158) (combination delay: 18.534 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln158_4', top.cpp:158) to 'add' operation 24 bit ('add_ln158_28', top.cpp:158) (combination delay: 19.6435 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln158_3', top.cpp:158) to 'add' operation 24 bit ('add_ln158_28', top.cpp:158) (combination delay: 20.0785 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln158_4', top.cpp:158) to 'add' operation 24 bit ('add_ln158_30', top.cpp:158) (combination delay: 21.188 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln158_3', top.cpp:158) to 'add' operation 25 bit ('add_ln158_31', top.cpp:158) (combination delay: 21.623 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 25 bit ('add_ln158_1', top.cpp:158) to 'add' operation 25 bit ('add_ln158_29', top.cpp:158) (combination delay: 22.7325 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'select' operation 24 bit ('select_ln158_1', top.cpp:158) to 'add' operation 24 bit ('add_ln158_30', top.cpp:158) (combination delay: 23.1675 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln158', top.cpp:158) to 'add' operation 24 bit ('add_ln158_30', top.cpp:158) (combination delay: 24.277 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln158', top.cpp:158) to 'select' operation 24 bit ('select_ln158_31', top.cpp:158) (combination delay: 24.712 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'add' operation 24 bit ('add_ln158', top.cpp:158) to 'store' operation 0 bit ('p_lcssa666_write_ln158', top.cpp:158) of variable 'select_ln158_31', top.cpp:158 on local variable 'p_lcssa666' (combination delay: 25.201 ns) to honor II or Latency constraint in region 'VITIS_LOOP_149_10'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_149_10'
+WARNING: [HLS 200-871] Estimated clock period (25.201 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'top_kernel_Pipeline_VITIS_LOOP_149_10' consists of the following:
+	'load' operation 24 bit ('p_lcssa666_load', top.cpp:158) on local variable 'p_lcssa666' [144]  (0.000 ns)
+	'add' operation 24 bit ('add_ln158', top.cpp:158) [684]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_1', top.cpp:158) [692]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_2', top.cpp:158) [695]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_3', top.cpp:158) [703]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_4', top.cpp:158) [706]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_5', top.cpp:158) [714]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_6', top.cpp:158) [717]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_7', top.cpp:158) [725]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_8', top.cpp:158) [728]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_9', top.cpp:158) [736]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_10', top.cpp:158) [739]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_11', top.cpp:158) [747]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_12', top.cpp:158) [750]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_13', top.cpp:158) [758]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_14', top.cpp:158) [761]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_15', top.cpp:158) [769]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_16', top.cpp:158) [772]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_17', top.cpp:158) [780]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_18', top.cpp:158) [783]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_19', top.cpp:158) [791]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_20', top.cpp:158) [794]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_21', top.cpp:158) [802]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_22', top.cpp:158) [805]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_23', top.cpp:158) [813]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_24', top.cpp:158) [816]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_25', top.cpp:158) [824]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_26', top.cpp:158) [827]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_27', top.cpp:158) [835]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_28', top.cpp:158) [838]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_29', top.cpp:158) [846]  (0.435 ns)
+	'add' operation 24 bit ('add_ln158_30', top.cpp:158) [849]  (1.110 ns)
+	'select' operation 24 bit ('select_ln158_31', top.cpp:158) [857]  (0.435 ns)
+	'store' operation 0 bit ('p_lcssa666_write_ln158', top.cpp:158) of variable 'select_ln158_31', top.cpp:158 on local variable 'p_lcssa666' [860]  (0.489 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 3.19 seconds; current allocated memory: 897.785 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.34 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.41 seconds; current allocated memory: 898.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_VITIS_LOOP_165_13_VITIS_LOOP_167_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_165_13_VITIS_LOOP_167_14'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'VITIS_LOOP_165_13_VITIS_LOOP_167_14'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.73 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.78 seconds; current allocated memory: 900.930 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.16 seconds; current allocated memory: 900.930 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.25 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 901.977 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 901.977 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2' pipeline 'VITIS_LOOP_108_1_VITIS_LOOP_109_2' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2/m_axi_A_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2/m_axi_A_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2/m_axi_A_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2/m_axi_A_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2/m_axi_A_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2/m_axi_A_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2/m_axi_A_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2/m_axi_A_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2/m_axi_A_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2/m_axi_A_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2/m_axi_A_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2/m_axi_A_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 901.977 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_120_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_120_4' pipeline 'VITIS_LOOP_120_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_120_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.22 seconds; current allocated memory: 904.949 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_138_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_138_7' pipeline 'VITIS_LOOP_138_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sdiv_38ns_24s_38_42_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_138_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.63 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.69 seconds; current allocated memory: 918.809 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_149_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_149_10' pipeline 'VITIS_LOOP_149_10' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_24_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_149_10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.73 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.91 seconds; current allocated memory: 937.121 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_VITIS_LOOP_165_13_VITIS_LOOP_167_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_VITIS_LOOP_165_13_VITIS_LOOP_167_14' pipeline 'VITIS_LOOP_165_13_VITIS_LOOP_167_14' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_24s_17s_41_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_3_24_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_24_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_VITIS_LOOP_165_13_VITIS_LOOP_167_14'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.66 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.83 seconds; current allocated memory: 955.723 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_DRAM' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/C_DRAM' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top_kernel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'A_DRAM', 'C_DRAM' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel'.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_A_1_41_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_tmp_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_col_sums_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.66 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.8 seconds; current allocated memory: 976.762 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.94 seconds. CPU system time: 0.11 seconds. Elapsed time: 1.45 seconds; current allocated memory: 988.082 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.52 seconds. CPU system time: 0.17 seconds. Elapsed time: 1.85 seconds; current allocated memory: 1007.641 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for top_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for top_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 39.68 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:46; Allocated memory: 232.895 MB.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/tools/software/xilinx/2025.1.1/Vitis/lnx64/tools/vcxx/libexec/clang++"
+   Compiling host.cpp_pre.cpp.tb.cpp
+   Compiling apatb_top_kernel.cpp
+   Compiling top.cpp_pre.cpp.tb.cpp
+   Compiling apatb_top_kernel_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+TEST PASSED!!
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Vivado Simulator v2025.1.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/software/xilinx/2025.1.1/Vivado/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_top_kernel_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj top_kernel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_20 -L floating_point_v7_0_25 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./svtb -i ./file_agent -i ./top_kernel_subsystem -s top_kernel 
+Multi-threading is on. Using 110 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_top_kernel_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_120_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_120_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_138_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_138_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_149_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_149_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_165_13_VITIS_LOOP_167_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_165_13_VITIS_LOOP_167_14
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_sdiv_38ns_24s_38_42_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_38ns_24s_38_42_1_divider
+INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_38ns_24s_38_42_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_sparsemux_33_4_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_33_4_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_sparsemux_17_3_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_17_3_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_mul_24s_17s_41_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_24s_17s_41_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_A_1_41_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_A_1_41_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_tmp_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_tmp_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_col_sums_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_col_sums_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_A_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_A_m_axi
+INFO: [VRFC 10-311] analyzing module top_kernel_A_m_axi_load
+INFO: [VRFC 10-311] analyzing module top_kernel_A_m_axi_read
+INFO: [VRFC 10-311] analyzing module top_kernel_A_m_axi_burst_converter
+INFO: [VRFC 10-311] analyzing module top_kernel_A_m_axi_burst_interleave
+INFO: [VRFC 10-311] analyzing module top_kernel_A_m_axi_burst_sequential
+INFO: [VRFC 10-311] analyzing module top_kernel_A_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module top_kernel_A_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module top_kernel_A_m_axi_srl
+INFO: [VRFC 10-311] analyzing module top_kernel_A_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_C_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi
+INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi_store
+INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi_write
+INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi_burst_converter
+INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi_burst_interleave
+INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi_burst_sequential
+INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi_srl
+INFO: [VRFC 10-311] analyzing module top_kernel_C_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/axivip/axi_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/axivip/axi_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_subsystem/top_kernel_subsystem_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/svtb/misc_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/svtb/sv_module_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sv_module_top
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4468] File : /proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv, Line : 25994, RANDC variable size more than 8 bits. This will be treated as a RAND variable instead.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_sv_module_top_sv
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.axi_pkg
+Compiling package xil_defaultlib.top_kernel_subsystem_pkg
+Compiling package xil_defaultlib.file_agent_pkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.top_kernel_A_1_41_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.top_kernel_tmp_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.top_kernel_col_sums_RAM_AUTO_1R1...
+Compiling module xil_defaultlib.top_kernel_flow_control_loop_pip...
+Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
+Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
+Compiling module xil_defaultlib.top_kernel_sdiv_38ns_24s_38_42_1...
+Compiling module xil_defaultlib.top_kernel_sdiv_38ns_24s_38_42_1...
+Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
+Compiling module xil_defaultlib.top_kernel_sparsemux_33_4_24_1_1...
+Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
+Compiling module xil_defaultlib.top_kernel_sparsemux_17_3_24_1_1...
+Compiling module xil_defaultlib.top_kernel_mul_24s_17s_41_1_1(NU...
+Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
+Compiling module xil_defaultlib.top_kernel_control_s_axi
+Compiling module xil_defaultlib.top_kernel_A_m_axi_srl(DATA_WIDT...
+Compiling module xil_defaultlib.top_kernel_A_m_axi_fifo(DATA_WID...
+Compiling module xil_defaultlib.top_kernel_A_m_axi_mem(MEM_STYLE...
+Compiling module xil_defaultlib.top_kernel_A_m_axi_fifo(MEM_STYL...
+Compiling module xil_defaultlib.top_kernel_A_m_axi_load(NUM_READ...
+Compiling module xil_defaultlib.top_kernel_A_m_axi_reg_slice(DAT...
+Compiling module xil_defaultlib.top_kernel_A_m_axi_burst_sequent...
+Compiling module xil_defaultlib.top_kernel_A_m_axi_reg_slice(DAT...
+Compiling module xil_defaultlib.top_kernel_A_m_axi_srl(DATA_WIDT...
+Compiling module xil_defaultlib.top_kernel_A_m_axi_fifo(DATA_WID...
+Compiling module xil_defaultlib.top_kernel_A_m_axi_read(C_USER_V...
+Compiling module xil_defaultlib.top_kernel_A_m_axi(C_M_AXI_ADDR_...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_srl(DATA_WIDT...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_fifo(DATA_WID...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_srl(DATA_WIDT...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_fifo(DATA_WID...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_srl(DATA_WIDT...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_fifo(DATA_WID...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_srl(DATA_WIDT...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_fifo(DATA_WID...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_srl(DATA_WIDT...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_fifo(DATA_WID...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_store(CONSERV...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_reg_slice(DAT...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_burst_sequent...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_reg_slice(DAT...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_srl(DATA_WIDT...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_fifo(DATA_WID...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_reg_slice(DAT...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_throttle(CONS...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_reg_slice(DAT...
+Compiling module xil_defaultlib.top_kernel_C_m_axi_write(CONSERV...
+Compiling module xil_defaultlib.top_kernel_C_m_axi(C_M_AXI_ADDR_...
+Compiling module xil_defaultlib.top_kernel
+Compiling module xil_defaultlib.misc_interface_default
+Compiling module xil_defaultlib.axi_if(ADDR_WIDTH=64,STRB_WIDTH=...
+Compiling module xil_defaultlib.axi_if(ADDR_WIDTH=6,STRB_WIDTH=4...
+Compiling module xil_defaultlib.sv_module_top
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=19)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_top_kernel_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_kernel
+
+****** xsim v2025.1.1 (64-bit)
+  **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
+  **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+  **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+  **** Start of session at: Sat Feb  7 22:41:01 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/top_kernel/xsim_script.tcl
+# xsim {top_kernel} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=top_kernel_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {top_kernel.tcl}
+Time resolution is 1 ps
+source top_kernel.tcl
+## run all
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------------------------------
+Name                         Type                              Size  Value            
+--------------------------------------------------------------------------------------
+uvm_test_top                 top_kernel_test_lib               -     @369             
+  top_env                    top_kernel_env                    -     @380             
+    axi_lite_control         uvm_env                           -     @465             
+      item_rtr_port          uvm_analysis_port                 -     @484             
+      item_wtr_port          uvm_analysis_port                 -     @474             
+      master                 uvm_agent                         -     @897             
+        ardrv                uvm_driver #(REQ,RSP)             -     @1572            
+          item_read_imp      uvm_analysis_port                 -     @1601            
+          rsp_port           uvm_analysis_port                 -     @1591            
+          seq_item_port      uvm_seq_item_pull_port            -     @1581            
+          m_num_sent         integral                          32    'h0              
+        arsqr                axi_sequencer                     -     @1611            
+          rsp_export         uvm_analysis_export               -     @1620            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1738            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        awdrv                uvm_driver #(REQ,RSP)             -     @1044            
+          item_read_imp      uvm_analysis_port                 -     @1073            
+          rsp_port           uvm_analysis_port                 -     @1063            
+          seq_item_port      uvm_seq_item_pull_port            -     @1053            
+          m_num_sent         integral                          32    'h0              
+        awsqr                axi_sequencer                     -     @1083            
+          rsp_export         uvm_analysis_export               -     @1092            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1210            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        bdrv                 uvm_driver #(REQ,RSP)             -     @1396            
+          item_read_imp      uvm_analysis_port                 -     @1425            
+          rsp_port           uvm_analysis_port                 -     @1415            
+          seq_item_port      uvm_seq_item_pull_port            -     @1405            
+          m_num_sent         integral                          32    'h0              
+        bsqr                 axi_sequencer                     -     @1435            
+          rsp_export         uvm_analysis_export               -     @1444            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1562            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        rdrv                 uvm_driver #(REQ,RSP)             -     @1748            
+          item_read_imp      uvm_analysis_port                 -     @1777            
+          rsp_port           uvm_analysis_port                 -     @1767            
+          seq_item_port      uvm_seq_item_pull_port            -     @1757            
+          m_num_sent         integral                          32    'h0              
+        rsqr                 axi_sequencer                     -     @1787            
+          rsp_export         uvm_analysis_export               -     @1796            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1914            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        wdrv                 uvm_driver #(REQ,RSP)             -     @1220            
+          item_read_imp      uvm_analysis_port                 -     @1249            
+          rsp_port           uvm_analysis_port                 -     @1239            
+          seq_item_port      uvm_seq_item_pull_port            -     @1229            
+          m_num_sent         integral                          32    'h0              
+        wsqr                 axi_sequencer                     -     @1259            
+          rsp_export         uvm_analysis_export               -     @1268            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1386            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+      monitor                uvm_monitor                       -     @719             
+        item_ar2r_port       uvm_analysis_port                 -     @788             
+        item_ar_port         uvm_analysis_port                 -     @758             
+        item_aw2b_port       uvm_analysis_port                 -     @778             
+        item_aw_port         uvm_analysis_port                 -     @728             
+        item_b_port          uvm_analysis_port                 -     @748             
+        item_r_port          uvm_analysis_port                 -     @768             
+        item_w_port          uvm_analysis_port                 -     @738             
+        checks_enable        integral                          1     'h1              
+        coverage_enable      integral                          1     'h1              
+      state                  axi_state                         -     @798             
+        ar2r_imp             uvm_analysis_imp_ar2r             -     @867             
+        ar_imp               uvm_analysis_imp_ar               -     @837             
+        aw2b_imp             uvm_analysis_imp_aw2b             -     @857             
+        aw_imp               uvm_analysis_imp_aw               -     @807             
+        b_imp                uvm_analysis_imp_b                -     @827             
+        item_rtr_port        uvm_analysis_port                 -     @887             
+        item_wtr_port        uvm_analysis_port                 -     @877             
+        r_imp                uvm_analysis_imp_r                -     @847             
+        w_imp                uvm_analysis_imp_w                -     @817             
+        avg_rate             integral                          32    'h0              
+        exp_rate             integral                          32    'h0              
+        win_size             integral                          32    'h0              
+        bqnum_for_slaseq     integral                          32    'h0              
+        rq_from_model_num    integral                          32    'h0              
+      vsqr                   axi_virtual_sequencer             -     @906             
+        rsp_export           uvm_analysis_export               -     @915             
+        seq_item_export      uvm_seq_item_pull_imp             -     @1033            
+        arbitration_queue    array                             0     -                
+        lock_queue           array                             0     -                
+        num_last_reqs        integral                          32    'd1              
+        num_last_rsps        integral                          32    'd1              
+      cfg                    axi_cfg                           -     @397             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    MASTER           
+        write_latency_mode   latency_mode_enum                 32    CHANNEL_FIRST    
+        read_latency_mode    latency_mode_enum                 32    CHANNEL_FIRST    
+        clatency             axi_latency                       -     @463             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+    axi_master_A             uvm_env                           -     @403             
+      item_rtr_port          uvm_analysis_port                 -     @422             
+      item_wtr_port          uvm_analysis_port                 -     @412             
+      monitor                uvm_monitor                       -     @1997            
+        item_ar2r_port       uvm_analysis_port                 -     @2066            
+        item_ar_port         uvm_analysis_port                 -     @2036            
+        item_aw2b_port       uvm_analysis_port                 -     @2056            
+        item_aw_port         uvm_analysis_port                 -     @2006            
+        item_b_port          uvm_analysis_port                 -     @2026            
+        item_r_port          uvm_analysis_port                 -     @2046            
+        item_w_port          uvm_analysis_port                 -     @2016            
+        checks_enable        integral                          1     'h1              
+        coverage_enable      integral                          1     'h1              
+      slave                  uvm_agent                         -     @2175            
+        ardrv                uvm_driver #(REQ,RSP)             -     @2852            
+          item_read_imp      uvm_analysis_port                 -     @2881            
+          rsp_port           uvm_analysis_port                 -     @2871            
+          seq_item_port      uvm_seq_item_pull_port            -     @2861            
+          m_num_sent         integral                          32    'h0              
+        arsqr                axi_sequencer                     -     @2891            
+          rsp_export         uvm_analysis_export               -     @2900            
+          seq_item_export    uvm_seq_item_pull_imp             -     @3018            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        awdrv                uvm_driver #(REQ,RSP)             -     @2324            
+          item_read_imp      uvm_analysis_port                 -     @2353            
+          rsp_port           uvm_analysis_port                 -     @2343            
+          seq_item_port      uvm_seq_item_pull_port            -     @2333            
+          m_num_sent         integral                          32    'h0              
+        awsqr                axi_sequencer                     -     @2363            
+          rsp_export         uvm_analysis_export               -     @2372            
+          seq_item_export    uvm_seq_item_pull_imp             -     @2490            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        bdrv                 uvm_driver #(REQ,RSP)             -     @2676            
+          item_read_imp      uvm_analysis_port                 -     @2705            
+          rsp_port           uvm_analysis_port                 -     @2695            
+          seq_item_port      uvm_seq_item_pull_port            -     @2685            
+          m_num_sent         integral                          32    'h0              
+        bsqr                 axi_sequencer                     -     @2715            
+          rsp_export         uvm_analysis_export               -     @2724            
+          seq_item_export    uvm_seq_item_pull_imp             -     @2842            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        rdrv                 uvm_driver #(REQ,RSP)             -     @3028            
+          item_read_imp      uvm_analysis_port                 -     @3057            
+          rsp_port           uvm_analysis_port                 -     @3047            
+          seq_item_port      uvm_seq_item_pull_port            -     @3037            
+          m_num_sent         integral                          32    'h0              
+        rsqr                 axi_sequencer                     -     @3067            
+          rsp_export         uvm_analysis_export               -     @3076            
+          seq_item_export    uvm_seq_item_pull_imp             -     @3194            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        wdrv                 uvm_driver #(REQ,RSP)             -     @2500            
+          item_read_imp      uvm_analysis_port                 -     @2529            
+          rsp_port           uvm_analysis_port                 -     @2519            
+          seq_item_port      uvm_seq_item_pull_port            -     @2509            
+          m_num_sent         integral                          32    'h0              
+        wsqr                 axi_sequencer                     -     @2539            
+          rsp_export         uvm_analysis_export               -     @2548            
+          seq_item_export    uvm_seq_item_pull_imp             -     @2666            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+      state                  axi_state                         -     @2076            
+        ar2r_imp             uvm_analysis_imp_ar2r             -     @2145            
+        ar_imp               uvm_analysis_imp_ar               -     @2115            
+        aw2b_imp             uvm_analysis_imp_aw2b             -     @2135            
+        aw_imp               uvm_analysis_imp_aw               -     @2085            
+        b_imp                uvm_analysis_imp_b                -     @2105            
+        item_rtr_port        uvm_analysis_port                 -     @2165            
+        item_wtr_port        uvm_analysis_port                 -     @2155            
+        r_imp                uvm_analysis_imp_r                -     @2125            
+        w_imp                uvm_analysis_imp_w                -     @2095            
+        avg_rate             integral                          32    'h0              
+        exp_rate             integral                          32    'h0              
+        win_size             integral                          32    'h0              
+        bqnum_for_slaseq     integral                          32    'h0              
+        rq_from_model_num    integral                          32    'h0              
+      vsqr                   axi_virtual_sequencer             -     @2184            
+        rsp_export           uvm_analysis_export               -     @2193            
+        seq_item_export      uvm_seq_item_pull_imp             -     @2311            
+        arbitration_queue    array                             0     -                
+        lock_queue           array                             0     -                
+        num_last_reqs        integral                          32    'd1              
+        num_last_rsps        integral                          32    'd1              
+      cfg                    axi_cfg                           -     @395             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    SLAVE            
+        write_latency_mode   latency_mode_enum                 32    TRANSACTION_FIRST
+        read_latency_mode    latency_mode_enum                 32    TRANSACTION_FIRST
+        clatency             axi_latency                       -     @398             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+    axi_master_C             uvm_env                           -     @434             
+      item_rtr_port          uvm_analysis_port                 -     @453             
+      item_wtr_port          uvm_analysis_port                 -     @443             
+      monitor                uvm_monitor                       -     @3275            
+        item_ar2r_port       uvm_analysis_port                 -     @3344            
+        item_ar_port         uvm_analysis_port                 -     @3314            
+        item_aw2b_port       uvm_analysis_port                 -     @3334            
+        item_aw_port         uvm_analysis_port                 -     @3284            
+        item_b_port          uvm_analysis_port                 -     @3304            
+        item_r_port          uvm_analysis_port                 -     @3324            
+        item_w_port          uvm_analysis_port                 -     @3294            
+        checks_enable        integral                          1     'h1              
+        coverage_enable      integral                          1     'h1              
+      slave                  uvm_agent                         -     @3453            
+        ardrv                uvm_driver #(REQ,RSP)             -     @4130            
+          item_read_imp      uvm_analysis_port                 -     @4159            
+          rsp_port           uvm_analysis_port                 -     @4149            
+          seq_item_port      uvm_seq_item_pull_port            -     @4139            
+          m_num_sent         integral                          32    'h0              
+        arsqr                axi_sequencer                     -     @4169            
+          rsp_export         uvm_analysis_export               -     @4178            
+          seq_item_export    uvm_seq_item_pull_imp             -     @4296            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        awdrv                uvm_driver #(REQ,RSP)             -     @3602            
+          item_read_imp      uvm_analysis_port                 -     @3631            
+          rsp_port           uvm_analysis_port                 -     @3621            
+          seq_item_port      uvm_seq_item_pull_port            -     @3611            
+          m_num_sent         integral                          32    'h0              
+        awsqr                axi_sequencer                     -     @3641            
+          rsp_export         uvm_analysis_export               -     @3650            
+          seq_item_export    uvm_seq_item_pull_imp             -     @3768            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        bdrv                 uvm_driver #(REQ,RSP)             -     @3954            
+          item_read_imp      uvm_analysis_port                 -     @3983            
+          rsp_port           uvm_analysis_port                 -     @3973            
+          seq_item_port      uvm_seq_item_pull_port            -     @3963            
+          m_num_sent         integral                          32    'h0              
+        bsqr                 axi_sequencer                     -     @3993            
+          rsp_export         uvm_analysis_export               -     @4002            
+          seq_item_export    uvm_seq_item_pull_imp             -     @4120            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        rdrv                 uvm_driver #(REQ,RSP)             -     @4306            
+          item_read_imp      uvm_analysis_port                 -     @4335            
+          rsp_port           uvm_analysis_port                 -     @4325            
+          seq_item_port      uvm_seq_item_pull_port            -     @4315            
+          m_num_sent         integral                          32    'h0              
+        rsqr                 axi_sequencer                     -     @4345            
+          rsp_export         uvm_analysis_export               -     @4354            
+          seq_item_export    uvm_seq_item_pull_imp             -     @4472            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        wdrv                 uvm_driver #(REQ,RSP)             -     @3778            
+          item_read_imp      uvm_analysis_port                 -     @3807            
+          rsp_port           uvm_analysis_port                 -     @3797            
+          seq_item_port      uvm_seq_item_pull_port            -     @3787            
+          m_num_sent         integral                          32    'h0              
+        wsqr                 axi_sequencer                     -     @3817            
+          rsp_export         uvm_analysis_export               -     @3826            
+          seq_item_export    uvm_seq_item_pull_imp             -     @3944            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+      state                  axi_state                         -     @3354            
+        ar2r_imp             uvm_analysis_imp_ar2r             -     @3423            
+        ar_imp               uvm_analysis_imp_ar               -     @3393            
+        aw2b_imp             uvm_analysis_imp_aw2b             -     @3413            
+        aw_imp               uvm_analysis_imp_aw               -     @3363            
+        b_imp                uvm_analysis_imp_b                -     @3383            
+        item_rtr_port        uvm_analysis_port                 -     @3443            
+        item_wtr_port        uvm_analysis_port                 -     @3433            
+        r_imp                uvm_analysis_imp_r                -     @3403            
+        w_imp                uvm_analysis_imp_w                -     @3373            
+        avg_rate             integral                          32    'h0              
+        exp_rate             integral                          32    'h0              
+        win_size             integral                          32    'h0              
+        bqnum_for_slaseq     integral                          32    'h0              
+        rq_from_model_num    integral                          32    'h0              
+      vsqr                   axi_virtual_sequencer             -     @3462            
+        rsp_export           uvm_analysis_export               -     @3471            
+        seq_item_export      uvm_seq_item_pull_imp             -     @3589            
+        arbitration_queue    array                             0     -                
+        lock_queue           array                             0     -                
+        num_last_reqs        integral                          32    'd1              
+        num_last_rsps        integral                          32    'd1              
+      cfg                    axi_cfg                           -     @396             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    SLAVE            
+        write_latency_mode   latency_mode_enum                 32    TRANSACTION_FIRST
+        read_latency_mode    latency_mode_enum                 32    TRANSACTION_FIRST
+        clatency             axi_latency                       -     @432             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+    refm                     top_kernel_reference_model        -     @494             
+      trans_num_idx          integral                          32    'h0              
+    subsys_mon               top_kernel_subsystem_monitor      -     @507             
+      A_rtr_imp              uvm_analysis_imp_axi_rtr_A        -     @526             
+      A_wtr_imp              uvm_analysis_imp_axi_wtr_A        -     @516             
+      C_rtr_imp              uvm_analysis_imp_axi_rtr_C        -     @546             
+      C_wtr_imp              uvm_analysis_imp_axi_wtr_C        -     @536             
+      control_rtr_imp        uvm_analysis_imp_axi_rtr_control  -     @566             
+      control_wtr_imp        uvm_analysis_imp_axi_wtr_control  -     @556             
+      scbd                   top_kernel_scoreboard             -     @4554            
+        refm                 top_kernel_reference_model        -     @494             
+          trans_num_idx      integral                          32    'h0              
+    top_kernel_virtual_sqr   top_kernel_virtual_sequencer      -     @576             
+      rsp_export             uvm_analysis_export               -     @585             
+      seq_item_export        uvm_seq_item_pull_imp             -     @703             
+      arbitration_queue      array                             0     -                
+      lock_queue             array                             0     -                
+      num_last_reqs          integral                          32    'd1              
+      num_last_rsps          integral                          32    'd1              
+    refm                     top_kernel_reference_model        -     @494             
+    top_kernel_virtual_sqr   top_kernel_virtual_sequencer      -     @576             
+    top_kernel_cfg           top_kernel_config                 -     @394             
+      A_cfg                  axi_cfg                           -     @395             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    SLAVE            
+        write_latency_mode   latency_mode_enum                 32    TRANSACTION_FIRST
+        read_latency_mode    latency_mode_enum                 32    TRANSACTION_FIRST
+        clatency             axi_latency                       -     @398             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+      C_cfg                  axi_cfg                           -     @396             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    SLAVE            
+        write_latency_mode   latency_mode_enum                 32    TRANSACTION_FIRST
+        read_latency_mode    latency_mode_enum                 32    TRANSACTION_FIRST
+        clatency             axi_latency                       -     @432             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+      control_cfg            axi_cfg                           -     @397             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    MASTER           
+        write_latency_mode   latency_mode_enum                 32    CHANNEL_FIRST    
+        read_latency_mode    latency_mode_enum                 32    CHANNEL_FIRST    
+        clatency             axi_latency                       -     @463             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+      check_ena              integral                          32    'h0              
+      cover_ena              integral                          32    'h0              
+--------------------------------------------------------------------------------------
+
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "752385000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 752455 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:38 . Memory (MB): peak = 1606.934 ; gain = 0.000 ; free physical = 11915 ; free virtual = 40946
+## quit
+INFO: xsimkernel Simulation Memory Usage: 1440480 KB (Peak: 1506016 KB), Simulation CPU Usage: 40270 ms
+INFO: [Common 17-206] Exiting xsim at Sat Feb  7 22:41:46 2026...
+INFO: [COSIM 212-316] Starting C post checking ...
+TEST PASSED!!
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:02:10; Allocated memory: 21.746 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -flow impl 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls_config.cfg
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2025.1.1 (64-bit)
+  **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
+  **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+  **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+  **** Start of session at: Sat Feb  7 22:42:01 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/hls_data.json outdir=/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/ip srcdir=/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/ip/misc
+INFO: Copied 20 verilog file(s) to /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/ip/hdl/verilog
+INFO: Copied 20 vhdl file(s) to /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/ip/drivers
+INFO: Import ports from HDL: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/ip/hdl/vhdl/top_kernel.vhd (top_kernel)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/software/xilinx/2025.1.1/data/ip'.
+INFO: Add axi4full interface m_axi_A
+INFO: Add axi4full interface m_axi_C
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/ip/component.xml
+INFO: Created IP archive /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/ip/xilinx_com_hls_top_kernel_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Sat Feb  7 22:42:19 2026...
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+
+****** Vivado v2025.1.1 (64-bit)
+  **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
+  **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+  **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+  **** Start of session at: Sat Feb  7 22:42:43 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_vivado.tcl
+# source ./settings.tcl
+## set top_module top_kernel
+## set language verilog
+## set family zynquplus
+## set device xczu3eg
+## set package -sbva484
+## set speed -1-e
+## set clock ap_clk
+## set fsm_ext "off"
+## set add_io_buffers false 
+# source -notrace ./extraction.tcl
+# set vivado_proj_name project
+# set vivado_proj_dir .
+# set target_device "${device}${package}${speed}"
+# set target_clk_period_ns "10.000"
+# set target_clk_freq_hz [expr {floor(1000 / $target_clk_period_ns) * 1000000}]
+# set other_clks_freq_hz {}
+# set ip_vlnv xilinx.com:hls:top_kernel:1.0
+# set ip_repo_path ../ip
+# set bd_design_name bd_0
+# set bd_inst_name hls_inst
+# set bd_props {}
+# set has_synth true
+# set synth_design_args {-directive sdx_optimization_effort_high}
+# set synth_dcp ""
+# set synth_props {}
+# set has_impl 1
+# set impl_props {}
+# set has_subcore 0
+# set report_options [dict create]
+# dict set report_options report_level 2
+# dict set report_options report_max_paths 10
+# dict set report_options stdout_hls_reports 1
+# dict set report_options stdout_vivado_reports 0
+# dict set report_options hls_project project_1
+# dict set report_options hls_solution hls
+# dict set report_options has_synth $has_synth
+# dict set report_options has_impl $has_impl
+# dict set report_options vivado_reportbasename $top_module
+# dict set report_options vivado_reportdir ./report
+# dict set report_options hls_impl_dir ..
+# dict set report_options hls_reportdir ../report/$language
+# dict set report_options target_clk_period $target_clk_period_ns
+# dict set report_options target_device $target_device
+# dict set report_options language $language
+# dict set report_options clock_name $clock
+# dict set report_options error_if_impl_timing_fails false
+# dict set report_options topmodule "top_kernel"
+# dict set report_options funcmodules {top_kernel_top_kernel_Pipeline_VITIS_LOOP_108_1_VITIS_LOOP_109_2 top_kernel_top_kernel_Pipeline_VITIS_LOOP_120_4 top_kernel_top_kernel_Pipeline_VITIS_LOOP_138_7 top_kernel_top_kernel_Pipeline_VITIS_LOOP_149_10 top_kernel_top_kernel_Pipeline_VITIS_LOOP_165_13_VITIS_LOOP_167_14}
+# dict set report_options bindmodules {top_kernel_flow_control_loop_pipe_sequential_init top_kernel_sdiv_38ns_24s_38_42_1 top_kernel_sparsemux_33_4_24_1_1 top_kernel_sparsemux_17_3_24_1_1 top_kernel_mul_24s_17s_41_1_1 top_kernel_A_1_41_RAM_AUTO_1R1W top_kernel_tmp_RAM_AUTO_1R1W top_kernel_col_sums_RAM_AUTO_1R1W top_kernel_A_m_axi top_kernel_C_m_axi top_kernel_control_s_axi}
+# dict set report_options max_module_depth 6
+# create_project $vivado_proj_name $vivado_proj_dir -part $target_device -force
+# set_property target_language $language [current_project]
+# if { ![file exists $ip_repo_path] } {
+#   error "Cannot find packaged HLS IP"
+# }
+# set_property ip_repo_paths [file normalize $ip_repo_path] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/software/xilinx/2025.1.1/data/ip'.
+# create_bd_design bd_0
+Wrote  : </nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.srcs/sources_1/bd/bd_0/bd_0.bd> 
+# set cell_inst [create_bd_cell -type ip -vlnv $ip_vlnv $bd_inst_name]
+# if { [llength $bd_props] } { 
+#   set_property -dict $bd_props $cell_inst 
+# }
+# make_bd_pins_external $cell_inst
+# make_bd_intf_pins_external $cell_inst
+# set bd_clk_ports [get_bd_ports -filter {TYPE==clk}]
+# if { $target_clk_freq_hz ne "" } { 
+#   foreach bd_clk_port $bd_clk_ports {
+#     # Remove "_0" suffix from BD ports & interfaces so they match IP ports 
+#     set clk_name [regsub {_0$} [get_property name $bd_clk_port] {}]
+#     set port_freq_hz $target_clk_freq_hz
+#     if { [dict exists $other_clks_freq_hz $clk_name] } {
+#         set port_freq_hz [dict get $other_clks_freq_hz $clk_name]
+#     }
+#     set_property CONFIG.FREQ_HZ $port_freq_hz $bd_clk_port
+#   }
+# }
+# foreach bd_port [get_bd_intf_ports] {
+#   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
+# }
+# foreach bd_port [get_bd_ports -filter {INTF!=TRUE}] {
+#   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
+# }
+# set s_axi_addr_width_min 32
+# foreach bd_port [get_bd_intf_ports -filter {MODE == "Slave" && VLNV =~ "xilinx.com:interface:aximm_rtl:*"}] {
+#   set bd_port_addr_width [get_property CONFIG.ADDR_WIDTH $bd_port]
+#   if { $bd_port_addr_width < $s_axi_addr_width_min } {
+#     puts "INFO: Updating $bd_port CONFIG.ADDR_WIDTH to $s_axi_addr_width_min"
+#     set_property CONFIG.ADDR_WIDTH $s_axi_addr_width_min $bd_port
+#   }
+# }
+INFO: Updating /s_axi_control CONFIG.ADDR_WIDTH to 32
+# set_msg_config -id {[BD 41-1265]} -severity {CRITICAL WARNING} -new_severity {INFO}
+# assign_bd_address
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/hls_inst/s_axi_control/Reg' is being assigned into address space '/s_axi_control' at <0x0000_0000 [ 64K ]>.
+Slave segment '/m_axi_A/Reg' is being assigned into address space '/hls_inst/Data_m_axi_A' at <0x44A0_0000 [ 64K ]>.
+Slave segment '/m_axi_C/Reg' is being assigned into address space '/hls_inst/Data_m_axi_C' at <0x44A0_0000 [ 64K ]>.
+Wrote  : </nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.srcs/sources_1/bd/bd_0/bd_0.bd> 
+Verilog Output written to : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
+Verilog Output written to : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
+Verilog Output written to : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+# set toprtl [make_wrapper -files [get_files ${bd_design_name}.bd] -top]
+# add_files -norecurse $toprtl
+# set top_inst_name [file root [file tail $toprtl]]
+# puts "Using BD top: $top_inst_name"
+Using BD top: bd_0_wrapper
+# set xdc_files [glob -nocomplain ./*.xdc]
+# if { [llength $xdc_files] } {
+#     add_files -fileset constrs_1 -norecurse $xdc_files
+# }
+# launch_runs synth_1 -scripts_only
+INFO: [BD 41-1662] The design 'bd_0.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
+Verilog Output written to : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
+Verilog Output written to : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hls_inst .
+Exporting to file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hw_handoff/bd_0.hwh
+Generated Hardware Definition File /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.hwdef
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2051.258 ; gain = 40.020 ; free physical = 10683 ; free virtual = 38650
+# foreach run [get_runs -filter {IS_SYNTHESIS == 1}] {
+#   reset_run [get_runs $run]
+# }
+# set_property XPM_LIBRARIES {XPM_MEMORY XPM_FIFO} [current_project]
+# hls_vivado_reports_setup $report_options
+TIMESTAMP: HLS-REPORT: initialize report directories: 2026-02-07 22:43:15 EST
+# if { $has_subcore } { report_ip_status }
+# if { $has_synth || $has_impl } {
+#   # synth properties setting
+#   set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+#   set ip_inst [get_ips -quiet ${bd_design_name}*${bd_inst_name}*]
+#   if { ![llength $ip_inst] } {
+#       error "Cannot find HLS IP instance: ${bd_design_name}*${bd_inst_name}*"
+#   }
+#   set synth_run [get_runs -filter {IS_SYNTHESIS == 1} ${ip_inst}*]
+#   if { ![llength $synth_run] } {
+#       error "Cannot find synth run for HLS IP: ${ip_inst}*"
+#   }
+# 
+#   if { [llength $synth_design_args] } {
+#       set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value $synth_design_args -objects $synth_run
+#   }
+# 
+#   if { [llength $synth_props] } {
+#     set_property -dict $synth_props $synth_run
+#   }
+# 
+#   # launch run synth
+#   launch_runs synth_1
+#   wait_on_run synth_1
+#   # synth reports
+#   hls_vivado_reports_synth synth_1 $report_options
+#   if { $synth_dcp ne "" } {
+#     file mkdir [file dirname $synth_dcp]
+#     set run_dcp [glob -nocomplain [get_property DIRECTORY $synth_run]/*.dcp]
+#     if { [llength $run_dcp] != 1 } { error "Cannot find single dcp file for run $synth_run" }
+#     file copy -force $run_dcp $synth_dcp
+#   }
+# }
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Sat Feb  7 22:43:15 2026] Launched bd_0_hls_inst_0_synth_1...
+Run output will be captured here: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/runme.log
+[Sat Feb  7 22:43:15 2026] Launched synth_1...
+Run output will be captured here: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/synth_1/runme.log
+[Sat Feb  7 22:43:15 2026] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log bd_0_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_wrapper.tcl
+
+
+****** Vivado v2025.1.1 (64-bit)
+  **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
+  **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+  **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+  **** Start of session at: Sat Feb  7 22:49:25 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_0_wrapper.tcl -notrace
+INFO: Dispatch client connection id - 39593
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/software/xilinx/2025.1.1/data/ip'.
+Command: synth_design -top bd_0_wrapper -part xczu3eg-sbva484-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2170826
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2912.402 ; gain = 138.578 ; free physical = 26869 ; free virtual = 57164
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_wrapper' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bd_0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/synth_1/.Xil/Vivado-2165264-ece-linlabsrv01/realtime/bd_0_hls_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/synth_1/.Xil/Vivado-2165264-ece-linlabsrv01/realtime/bd_0_hls_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_wrapper' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2990.340 ; gain = 216.516 ; free physical = 26148 ; free virtual = 56574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2999.246 ; gain = 225.422 ; free physical = 26113 ; free virtual = 56538
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2999.246 ; gain = 225.422 ; free physical = 26113 ; free virtual = 56538
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2999.246 ; gain = 0.000 ; free physical = 26090 ; free virtual = 56515
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0/bd_0_hls_inst_0_in_context.xdc] for cell 'bd_0_i/hls_inst'
+Finished Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0/bd_0_hls_inst_0_in_context.xdc] for cell 'bd_0_i/hls_inst'
+Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/top_kernel.xdc]
+create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3051.289 ; gain = 3.117 ; free physical = 20882 ; free virtual = 51241
+Finished Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/top_kernel.xdc]
+Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3051.289 ; gain = 0.000 ; free physical = 20868 ; free virtual = 51228
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3051.324 ; gain = 0.000 ; free physical = 20832 ; free virtual = 51196
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 3051.324 ; gain = 277.500 ; free physical = 15715 ; free virtual = 46061
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 3059.293 ; gain = 285.469 ; free physical = 15691 ; free virtual = 46039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 3059.293 ; gain = 285.469 ; free physical = 15658 ; free virtual = 46007
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 3059.293 ; gain = 285.469 ; free physical = 15507 ; free virtual = 45865
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 3059.293 ; gain = 285.469 ; free physical = 14642 ; free virtual = 44278
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 3687.133 ; gain = 913.309 ; free physical = 13428 ; free virtual = 40701
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 3687.133 ; gain = 913.309 ; free physical = 13414 ; free virtual = 40687
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 3697.148 ; gain = 923.324 ; free physical = 13364 ; free virtual = 40635
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 3869.961 ; gain = 1096.137 ; free physical = 15457 ; free virtual = 42362
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 3869.961 ; gain = 1096.137 ; free physical = 15455 ; free virtual = 42361
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 3869.961 ; gain = 1096.137 ; free physical = 15472 ; free virtual = 42377
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 3869.961 ; gain = 1096.137 ; free physical = 15543 ; free virtual = 42448
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 3869.961 ; gain = 1096.137 ; free physical = 15595 ; free virtual = 42500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 3869.961 ; gain = 1096.137 ; free physical = 15649 ; free virtual = 42555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |bd_0_hls_inst_0 |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |bd_0_hls_inst |     1|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 3869.961 ; gain = 1096.137 ; free physical = 15653 ; free virtual = 42559
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 3869.961 ; gain = 1044.059 ; free physical = 15709 ; free virtual = 42597
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 3869.961 ; gain = 1096.137 ; free physical = 15716 ; free virtual = 42604
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3869.961 ; gain = 0.000 ; free physical = 15782 ; free virtual = 42671
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3869.961 ; gain = 0.000 ; free physical = 15121 ; free virtual = 42022
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 22013407
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:18 . Memory (MB): peak = 3869.961 ; gain = 1969.277 ; free physical = 14674 ; free virtual = 41578
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2616.499; main = 2445.468; forked = 171.783
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5468.199; main = 3869.965; forked = 1598.234
+INFO: [Common 17-1381] The checkpoint '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/synth_1/bd_0_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_wrapper_utilization_synth.rpt -pb bd_0_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Feb  7 22:50:59 2026...
+[Sat Feb  7 22:51:20 2026] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:07:38 ; elapsed = 00:08:05 . Memory (MB): peak = 2057.398 ; gain = 0.000 ; free physical = 17797 ; free virtual = 43464
+TIMESTAMP: HLS-REPORT: synthesis open_run: 2026-02-07 22:51:20 EST
+INFO: HLS-REPORT: Opening synthesis design database: open_run synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xczu3eg-sbva484-1-e
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0.dcp' for cell 'bd_0_i/hls_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00.93 ; elapsed = 00:00:00.94 . Memory (MB): peak = 2896.379 ; gain = 0.000 ; free physical = 13988 ; free virtual = 38841
+INFO: [Netlist 29-17] Analyzing 8335 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.1.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/top_kernel.xdc]
+create_clock: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2931.359 ; gain = 2.969 ; free physical = 17627 ; free virtual = 42486
+Finished Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/top_kernel.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3329.617 ; gain = 0.000 ; free physical = 16435 ; free virtual = 41645
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3505 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1 instance 
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 3072 instances
+  RAM16X1S => RAM32X1S (RAMS32): 384 instances
+  RAM512X1S => RAM512X1S (MUXF7(x4), MUXF8(x2), MUXF9, RAMS64E1(x8)): 48 instances
+
+open_run: Time (s): cpu = 00:01:05 ; elapsed = 00:01:03 . Memory (MB): peak = 3329.652 ; gain = 1272.254 ; free physical = 16380 ; free virtual = 41591
+TIMESTAMP: HLS-REPORT: synthesis generate_reports_vivado: 2026-02-07 22:52:24 EST
+INFO: HLS-REPORT: Running report: report_utilization -file ./report/top_kernel_utilization_synth.rpt
+INFO: HLS-REPORT: Running report: report_utilization -hierarchical -hierarchical_depth 6 -file ./report/top_kernel_utilization_hierarchical_synth.rpt
+INFO: HLS-REPORT: Running report: report_timing_summary -file ./report/top_kernel_timing_synth.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:01:27 ; elapsed = 00:00:48 . Memory (MB): peak = 4717.309 ; gain = 1387.656 ; free physical = 13527 ; free virtual = 37635
+INFO: HLS-REPORT: Running report: report_power -file ./report/top_kernel_power_synth.rpt -xpe ./top_kernel_power.xpe
+Command: report_power -file ./report/top_kernel_power_synth.rpt -xpe ./top_kernel_power.xpe
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+12 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:40 ; elapsed = 00:00:13 . Memory (MB): peak = 4892.773 ; gain = 175.465 ; free physical = 9927 ; free virtual = 33742
+INFO: HLS-REPORT: Running report: report_timing -max_paths 10 -file ./report/top_kernel_timing_paths_synth.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 10 -nworst 1 -delay_type max -sort_by slack.
+INFO: HLS-REPORT: Running report: report_design_analysis -file ./report/top_kernel_design_analysis_synth.rpt
+INFO: [Implflow 30-839]  
+INFO: HLS-REPORT: Running report: ::tclapp::xilinx::designutils::report_failfast -detailed_report synth -file ./report/top_kernel_failfast_synth.rpt
+ -I- design metrics completed in 6 seconds
+ -I- DONT_TOUCH metric completed in 2 seconds
+ -I- MARK_DEBUG metric completed in 2 seconds
+ -I- utilization metrics completed in 4 seconds
+ -I- control set metrics completed in 1 seconds
+ -I- methodology check metrics completed in 9 seconds
+ -I- average fanout metrics completed in 35 seconds (4 modules)
+ -I- Generated file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/report/synth.AVGFO.rpt
+ -I- non-FD high fanout nets completed in 9 seconds
+ -I- Generated file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/report/synth.HFN.rpt
+ -I- path budgeting metrics completed in 34 seconds
+ -I- Generated file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/report/synth.timing_budget_Net.rpt
+ -I- Generated file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/report/synth.timing_budget_Net.csv
+ -I- Generated interactive report /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/report/synth.timing_budget_Net.rpx
+#  +-----------------------------------------------------------------------------------------+
+#  | Design Summary                                                                          |
+#  | design_1                                                                                |
+#  | xczu3eg-sbva484-1-e                                                                     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | Criteria                                                  | Guideline | Actual | Status |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | LUT                                                       | 70%       | 76.77% | REVIEW |
+#  | FD                                                        | 50%       | 32.64% | OK     |
+#  | LUTRAM+SRL                                                | 25%       | 49.69% | REVIEW |
+#  | CARRY8                                                    | 25%       | 38.00% | REVIEW |
+#  | MUXF7                                                     | 15%       | 21.38% | REVIEW |
+#  | LUT Combining                                             | 20%       | 41.79% | REVIEW |
+#  | DSP                                                       | 80%       | 0.28%  | OK     |
+#  | RAMB/FIFO                                                 | 80%       | 7.18%  | OK     |
+#  | DSP+RAMB+URAM (Avg)                                       | 70%       | 3.73%  | OK     |
+#  | BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+#  | DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+#  | MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+#  | Control Sets                                              | 1323      | 215    | OK     |
+#  | Average Fanout for modules > 100k cells                   | 4         | 2.90   | OK     |
+#  | Max Average Fanout for modules > 100k cells               | 4         | 2.90   | OK     |
+#  | Non-FD high fanout nets > 10k loads                       | 0         | 7      | REVIEW |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+#  | TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+#  | TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+#  | TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+#  | TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | Number of paths above max LUT budgeting (0.350ns)         | 0         | 0      | OK     |
+#  | Number of paths above max Net budgeting (0.239ns)         | 0         | 71     | REVIEW |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+ -I- Generated file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/report/top_kernel_failfast_synth.rpt
+ -I- Number of criteria to review: 7
+ -I- This report should be run before placing the design and uses conservative guidelines beyond which runtime and timing closure will likely be more challenging
+ -I- report_failfast completed in 107 seconds
+TIMESTAMP: HLS-REPORT: synthesis gen_data_dict_vivado: 2026-02-07 22:55:19 EST
+TIMESTAMP: HLS-REPORT: synth extract_util_hier: 2026-02-07 22:55:19 EST
+TIMESTAMP: HLS-REPORT: synth get_cell_hier_data: 2026-02-07 22:55:19 EST
+TIMESTAMP: HLS-REPORT: synth get_timing_paths: 2026-02-07 22:55:19 EST
+TIMESTAMP: HLS-REPORT: synth process timing paths: 2026-02-07 22:55:20 EST
+TIMESTAMP: HLS-REPORT: synth get_all_vv_rpt_files: 2026-02-07 22:55:20 EST
+TIMESTAMP: HLS-REPORT: synthesis write_reports_vivado: 2026-02-07 22:55:20 EST
+HLS EXTRACTION: synth area_totals:  0 70560 141120 360 432 0 0
+HLS EXTRACTION: synth area_current: 0 54169 46057 1 31 0 1254 0 0 0
+HLS EXTRACTION: synth resources_dict: AVAIL_LUT 70560 LUT 54169 AVAIL_FF 141120 FF 46057 AVAIL_DSP 360 DSP 1 AVAIL_BRAM 432 BRAM 31 AVAIL_URAM 0 URAM 0 LATCH 0 SRL 1254 AVAIL_CLB 0 CLB 0
+INFO: HLS-REPORT: generated /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/report/vivado_syn.xml
+INFO: HLS-REPORT: generated /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/report/verilog/top_kernel_export.rpt
+
+
+Implementation tool: Xilinx Vivado v.2025.1.1
+Project:             project_1
+Solution:            hls
+Device target:       xczu3eg-sbva484-1-e
+Report date:         Sat Feb 07 22:55:20 EST 2026
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:          54169
+FF:           46057
+DSP:              1
+BRAM:            31
+URAM:             0
+LATCH:            0
+SRL:           1254
+CLB:              0
+
+#=== Final timing ===
+CP required:                     10.000
+CP achieved post-synthesis:      14.417
+Timing not met
+
+TIMESTAMP: HLS-REPORT: synthesis end: 2026-02-07 22:55:20 EST
+# if { $has_impl } {
+#   # launch run impl
+#   if { [llength $impl_props] } {
+#     set_property -dict $impl_props [get_runs impl_1]
+#   }
+#   launch_runs impl_1
+#   wait_on_run impl_1
+#   # impl reports
+#   hls_vivado_reports_impl impl_1 $report_options
+# }
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.44 . Memory (MB): peak = 5707.789 ; gain = 0.000 ; free physical = 1110 ; free virtual = 11635
+WARNING: [Common 17-210] 'write_hwdef' is deprecated.
+[Sat Feb  7 22:55:30 2026] Launched impl_1...
+Run output will be captured here: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 5707.824 ; gain = 0.035 ; free physical = 1158 ; free virtual = 10452
+[Sat Feb  7 22:55:30 2026] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log bd_0_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source bd_0_wrapper.tcl -notrace
+
+
+****** Vivado v2025.1.1 (64-bit)
+  **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
+  **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+  **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+  **** Start of session at: Sat Feb  7 22:55:35 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_0_wrapper.tcl -notrace
+INFO: Dispatch client connection id - 39593
+Command: open_checkpoint /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper.dcp
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e

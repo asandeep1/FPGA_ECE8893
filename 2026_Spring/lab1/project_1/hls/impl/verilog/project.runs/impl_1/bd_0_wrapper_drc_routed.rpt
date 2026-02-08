@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date         : Thu Feb  5 22:04:51 2026
+| Date         : Sat Feb  7 23:31:22 2026
 | Host         : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command      : report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx
 | Design       : bd_0_wrapper
@@ -38,17 +38,17 @@ Table of Contents
 -----------------
 DPIP-2#1 Warning
 Input pipelining  
-DSP bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product input bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product input bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPOP-3#1 Warning
 PREG Output pipelining  
-DSP bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product output bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product output bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-4#1 Warning
 MREG Output pipelining  
-DSP bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product multiplier stage bd_0_i/hls_inst/inst/mul_24s_17s_41_1_1_U2/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product multiplier stage bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 RTSTAT-10#1 Warning
