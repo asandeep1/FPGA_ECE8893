@@ -78,20 +78,25 @@
 <pragma file="/tools/software/xilinx/2025.1.1/Vitis/common/technology/autopilot/etc/ap_common.h" line="542" pragmaType="inline" parentfunction="_ZN8ssdm_intILi25ELb0EEC2EDq25_j" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<25, 11, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<25, 11, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<24, 10, true, (ap_q_mode)0, (ap_o_mode)0, 0>(ap_fixed_base<24, 10, true, (ap_q_mode)0, (ap_o_mode)0, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<24, 10, true, (ap_q_mode)0, (ap_o_mode)0, 0>& ap_fixed_base<24, 10, true, (ap_q_mode)0, (ap_o_mode)0, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="top.cpp" line="227" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
-<pragma file="top.cpp" line="206" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
-<pragma file="top.cpp" line="217" pragmaType="unroll" parentfunction="top_kernel" factor="64" skip_exit_check="0"/>
-<pragma file="top.cpp" line="216" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
-<pragma file="top.cpp" line="194" pragmaType="unroll" parentfunction="top_kernel" factor="64" skip_exit_check="0"/>
-<pragma file="top.cpp" line="193" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
-<pragma file="top.cpp" line="179" pragmaType="interface" parentfunction="top_kernel" mode="m_axi" port="A_DRAM" bundle="A" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="512" channel=""/>
-<pragma file="top.cpp" line="180" pragmaType="interface" parentfunction="top_kernel" mode="m_axi" port="C_DRAM" bundle="C" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="512" channel=""/>
-<pragma file="top.cpp" line="181" pragmaType="interface" parentfunction="top_kernel" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="top.cpp" line="188" pragmaType="array_partition" parentfunction="top_kernel" dim="2" factor="64" mode="cyclic" dynamic="0" variable="A_internal"/>
-<pragma file="top.cpp" line="189" pragmaType="array_partition" parentfunction="top_kernel" dim="1" factor="32" mode="cyclic" dynamic="0" variable="col_sums"/>
-<pragma file="top.cpp" line="201" pragmaType="array_partition" parentfunction="top_kernel" dim="1" factor="64" mode="cyclic" dynamic="0" variable="row_buffer"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<24, 10, true, (ap_q_mode)0, (ap_o_mode)0, 0>& ap_fixed_base<24, 10, true, (ap_q_mode)0, (ap_o_mode)0, 0>::operator+=<24, 10, true, (ap_q_mode)0, (ap_o_mode)0, 0>(ap_fixed_base<24, 10, true, (ap_q_mode)0, (ap_o_mode)0, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="top.cpp" line="298" pragmaType="unroll" parentfunction="top_kernel" factor="16" skip_exit_check="0"/>
+<pragma file="top.cpp" line="297" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="top.cpp" line="289" pragmaType="unroll" parentfunction="top_kernel" factor="64" skip_exit_check="0"/>
+<pragma file="top.cpp" line="288" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="top.cpp" line="269" pragmaType="unroll" parentfunction="top_kernel" factor="16" skip_exit_check="0"/>
+<pragma file="top.cpp" line="268" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="top.cpp" line="279" pragmaType="unroll" parentfunction="top_kernel" factor="64" skip_exit_check="0"/>
+<pragma file="top.cpp" line="278" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="top.cpp" line="255" pragmaType="unroll" parentfunction="top_kernel" factor="64" skip_exit_check="0"/>
+<pragma file="top.cpp" line="254" pragmaType="pipeline" parentfunction="top_kernel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="top.cpp" line="240" pragmaType="interface" parentfunction="top_kernel" mode="m_axi" port="A_DRAM" bundle="A" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="512" channel=""/>
+<pragma file="top.cpp" line="241" pragmaType="interface" parentfunction="top_kernel" mode="m_axi" port="C_DRAM" bundle="C" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="512" channel=""/>
+<pragma file="top.cpp" line="242" pragmaType="interface" parentfunction="top_kernel" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="top.cpp" line="248" pragmaType="array_partition" parentfunction="top_kernel" dim="2" factor="64" mode="cyclic" dynamic="0" variable="A_internal"/>
+<pragma file="top.cpp" line="249" pragmaType="array_partition" parentfunction="top_kernel" dim="1" factor="64" mode="cyclic" dynamic="0" variable="col_sums"/>
+<pragma file="top.cpp" line="250" pragmaType="array_partition" parentfunction="top_kernel" dim="1" factor="64" mode="cyclic" dynamic="0" variable="scale_factors"/>
+<pragma file="top.cpp" line="262" pragmaType="array_partition" parentfunction="top_kernel" dim="1" factor="64" mode="cyclic" dynamic="0" variable="row_buffer"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<25, 11, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<25, 11, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<24, 10, true, (ap_q_mode)0, (ap_o_mode)0, 0>& ap_fixed_base<24, 10, true, (ap_q_mode)0, (ap_o_mode)0, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="quantization_adjust" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<24, 10, true, (ap_q_mode)0, (ap_o_mode)0, 0>& ap_fixed_base<24, 10, true, (ap_q_mode)0, (ap_o_mode)0, 0>::operator+=<24, 10, true, (ap_q_mode)0, (ap_o_mode)0, 0>(ap_fixed_base<24, 10, true, (ap_q_mode)0, (ap_o_mode)0, 0> const&)" off="0" region="0" recursive="0"/>
 </pragmas>

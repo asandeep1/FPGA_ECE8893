@@ -12,7 +12,7 @@
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp" 2
-# 174 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp"
+# 236 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp"
 # 1 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/dcl.h" 1
 
 
@@ -59261,22 +59261,21 @@ typedef ap_fixed<24, 10, AP_RND, AP_SAT> data_t;
 
 void top_kernel(data_t A[256][64],
                 data_t C[256][64]);
-# 175 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp" 2
+# 237 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp" 2
 
 void top_kernel(data_t A_DRAM[256][64],
                 data_t C_DRAM[256][64]) {
-
 #pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A max_widen_bitwidth=512
 #pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C max_widen_bitwidth=512
 #pragma HLS interface s_axilite port=return
 
-
     data_t A_internal[256][64];
     data_t col_sums[64];
-
+    data_t scale_factors[64];
 
 #pragma HLS array_partition variable=A_internal cyclic factor=64 dim=2
-#pragma HLS array_partition variable=col_sums cyclic factor=32
+#pragma HLS array_partition variable=col_sums cyclic factor=64
+#pragma HLS array_partition variable=scale_factors cyclic factor=64
 
 
     for(int j = 0; j < 64; j++) {
@@ -59292,8 +59291,10 @@ void top_kernel(data_t A_DRAM[256][64],
         data_t row_sum = 0.0;
 
 
-        for (int j = 0; j < 64; j++) {
+
+        Row_Read: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS UNROLL factor=16
             data_t val = A_DRAM[i][j];
             row_buffer[j] = val;
             row_sum += val;
@@ -59301,8 +59302,7 @@ void top_kernel(data_t A_DRAM[256][64],
 
         data_t denom = row_sum + (data_t)1.0;
 
-
-        for (int j = 0; j < 64; j++) {
+        Row_Norm: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
 #pragma HLS UNROLL factor=64
             data_t norm_val = row_buffer[j] / denom;
@@ -59312,13 +59312,19 @@ void top_kernel(data_t A_DRAM[256][64],
     }
 
 
-    for (int i = 0; i < 256; i++) {
-        for (int j = 0; j < 64; j++) {
+    Calc_Scales: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS UNROLL factor=64
+        scale_factors[j] = col_sums[j] / (data_t)256;
+    }
 
 
-            data_t scale = col_sums[j] / (data_t)256;
-            C_DRAM[i][j] = A_internal[i][j] * scale;
+
+    Store_Rows: for (int i = 0; i < 256; i++) {
+        Store_Cols: for (int j = 0; j < 64; j++) {
+#pragma HLS PIPELINE II=1
+#pragma HLS UNROLL factor=16
+            C_DRAM[i][j] = A_internal[i][j] * scale_factors[j];
         }
     }
 }
@@ -59347,5 +59353,5 @@ apatb_top_kernel_ir(A_DRAM, C_DRAM);
 return ;
 }
 #endif
-# 234 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp"
+# 302 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/top.cpp"
 

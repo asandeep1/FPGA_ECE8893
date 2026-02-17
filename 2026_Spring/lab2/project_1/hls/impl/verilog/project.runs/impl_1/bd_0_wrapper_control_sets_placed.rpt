@@ -1,0 +1,91 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
+| Date         : Tue Feb 17 02:33:14 2026
+| Host         : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+| Design       : bd_0_wrapper
+| Device       : xczu3eg
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    13 |
+|    Minimum number of control sets                        |    13 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    21 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    13 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              39 |           15 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              18 |            6 |
+| Yes          | No                    | No                     |             434 |           73 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             108 |           29 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+| Clock Signal |                                                              Enable Signal                                                             |                                                       Set/Reset Signal                                                       | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  ap_clk      |                                                                                                                                        | bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_store_out_VITIS_LOOP_163_3_fu_67/ap_enable_reg_pp0_iter2                        |                1 |              2 |         2.00 |
+|  ap_clk      |                                                                                                                                        | bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_load_in_VITIS_LOOP_88_1_fu_50/ap_enable_reg_pp0_iter2                           |                1 |              2 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_load_in_VITIS_LOOP_88_1_fu_50/mem_A_ce0                                                   |                                                                                                                              |                1 |              2 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_row_loop_col_loop_fu_58/mem_B_U/grp_top_kernel_Pipeline_row_loop_col_loop_fu_58_mem_A_ce0 |                                                                                                                              |                1 |              2 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_row_loop_col_loop_fu_58/flow_control_loop_pipe_sequential_init_U/E[0]                     | bd_0_i/hls_inst/inst/ap_NS_fsm12_out                                                                                         |                3 |              5 |         1.67 |
+|  ap_clk      |                                                                                                                                        | ap_rst                                                                                                                       |                5 |             14 |         2.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_store_out_VITIS_LOOP_163_3_fu_67/i_fu_48                                                  | bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_store_out_VITIS_LOOP_163_3_fu_67/flow_control_loop_pipe_sequential_init_U/SR[0] |                9 |             34 |         3.78 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_load_in_VITIS_LOOP_88_1_fu_50/i_fu_48                                                     | bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_load_in_VITIS_LOOP_88_1_fu_50/flow_control_loop_pipe_sequential_init_U/SR[0]    |                7 |             34 |         4.86 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_row_loop_col_loop_fu_58/i_fu_13200_out                                                    | bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_row_loop_col_loop_fu_58/flow_control_loop_pipe_sequential_init_U/SR[0]          |               10 |             35 |         3.50 |
+|  ap_clk      |                                                                                                                                        |                                                                                                                              |               15 |             39 |         2.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_row_loop_col_loop_fu_58/ap_CS_fsm_pp0_stage0                                              |                                                                                                                              |               18 |             64 |         3.56 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_row_loop_col_loop_fu_58/line_buf_U/WEA[0]                                                 |                                                                                                                              |               29 |            144 |         4.97 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_row_loop_col_loop_fu_58/ap_CS_fsm_pp0_stage1                                              |                                                                                                                              |               52 |            222 |         4.27 |
++--------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

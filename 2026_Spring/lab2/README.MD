@@ -2,6 +2,8 @@
 
 ## Overview
 
+source /tools/software/xilinx/setup_env.sh
+
 In this lab, we will study **memory-centric optimization** using a **2D multi-point stencil kernel** implemented with **fixed-point arithmetic**. Compared to Lab 1, this lab shifts the focus from simple loop-level optimizations to **data reuse, memory bandwidth, and compute pattern restructuring**.
 
 The target kernel performs a **weighted 2D stencil computation** over multiple time steps. This type of computation is widely used in scientific simulations, image processing, and numerical solvers, and is often **memory-bound** rather than compute-bound.

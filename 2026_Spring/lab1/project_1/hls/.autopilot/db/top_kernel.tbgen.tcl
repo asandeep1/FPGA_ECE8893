@@ -260,13 +260,13 @@ set NewPortList {[
 
 set ArgLastReadFirstWriteLatency {
 	top_kernel {
-		A {Type I LastRead 1 FirstWrite -1}
+		A {Type I LastRead 16 FirstWrite -1}
 		C {Type O LastRead 13 FirstWrite 3}
 		A_DRAM {Type I LastRead 0 FirstWrite -1}
 		C_DRAM {Type I LastRead 0 FirstWrite -1}}
-	top_kernel_Pipeline_VITIS_LOOP_205_3 {
-		A {Type I LastRead 1 FirstWrite -1}
-		sext_ln199 {Type I LastRead 0 FirstWrite -1}
+	top_kernel_Pipeline_Row_Read {
+		A {Type I LastRead 16 FirstWrite -1}
+		sext_ln260 {Type I LastRead 0 FirstWrite -1}
 		row_buffer_63_out {Type O LastRead -1 FirstWrite 1}
 		row_buffer_62_out {Type O LastRead -1 FirstWrite 1}
 		row_buffer_61_out {Type O LastRead -1 FirstWrite 1}
@@ -332,104 +332,136 @@ set ArgLastReadFirstWriteLatency {
 		row_buffer_1_out {Type O LastRead -1 FirstWrite 1}
 		row_buffer_out {Type O LastRead -1 FirstWrite 1}
 		p_out {Type O LastRead -1 FirstWrite 1}}
-	top_kernel_Pipeline_VITIS_LOOP_225_5_VITIS_LOOP_226_6 {
+	top_kernel_Pipeline_Store_Rows_Store_Cols {
 		C {Type O LastRead -1 FirstWrite 3}
-		col_sums {Type I LastRead 0 FirstWrite -1}
-		col_sums_1 {Type I LastRead 0 FirstWrite -1}
-		col_sums_2 {Type I LastRead 0 FirstWrite -1}
-		col_sums_3 {Type I LastRead 0 FirstWrite -1}
-		col_sums_4 {Type I LastRead 0 FirstWrite -1}
-		col_sums_5 {Type I LastRead 0 FirstWrite -1}
-		col_sums_6 {Type I LastRead 0 FirstWrite -1}
-		col_sums_7 {Type I LastRead 0 FirstWrite -1}
-		col_sums_8 {Type I LastRead 0 FirstWrite -1}
-		col_sums_9 {Type I LastRead 0 FirstWrite -1}
-		col_sums_10 {Type I LastRead 0 FirstWrite -1}
-		col_sums_11 {Type I LastRead 0 FirstWrite -1}
-		col_sums_12 {Type I LastRead 0 FirstWrite -1}
-		col_sums_13 {Type I LastRead 0 FirstWrite -1}
-		col_sums_14 {Type I LastRead 0 FirstWrite -1}
-		col_sums_15 {Type I LastRead 0 FirstWrite -1}
-		col_sums_16 {Type I LastRead 0 FirstWrite -1}
-		col_sums_17 {Type I LastRead 0 FirstWrite -1}
-		col_sums_18 {Type I LastRead 0 FirstWrite -1}
-		col_sums_19 {Type I LastRead 0 FirstWrite -1}
-		col_sums_20 {Type I LastRead 0 FirstWrite -1}
-		col_sums_21 {Type I LastRead 0 FirstWrite -1}
-		col_sums_22 {Type I LastRead 0 FirstWrite -1}
-		col_sums_23 {Type I LastRead 0 FirstWrite -1}
-		col_sums_24 {Type I LastRead 0 FirstWrite -1}
-		col_sums_25 {Type I LastRead 0 FirstWrite -1}
-		col_sums_26 {Type I LastRead 0 FirstWrite -1}
-		col_sums_27 {Type I LastRead 0 FirstWrite -1}
-		col_sums_28 {Type I LastRead 0 FirstWrite -1}
-		col_sums_29 {Type I LastRead 0 FirstWrite -1}
-		col_sums_30 {Type I LastRead 0 FirstWrite -1}
-		col_sums_31 {Type I LastRead 0 FirstWrite -1}
-		sext_ln225 {Type I LastRead 0 FirstWrite -1}
+		select_ln290 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_16 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_32 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_48 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_1 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_17 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_33 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_49 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_2 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_18 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_34 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_50 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_3 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_19 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_35 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_51 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_4 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_20 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_36 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_52 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_5 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_21 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_37 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_53 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_6 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_22 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_38 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_54 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_7 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_23 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_39 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_55 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_8 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_24 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_40 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_56 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_9 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_25 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_41 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_57 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_10 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_26 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_42 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_58 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_11 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_27 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_43 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_59 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_12 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_28 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_44 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_60 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_13 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_29 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_45 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_61 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_14 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_30 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_46 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_62 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_15 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_31 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_47 {Type I LastRead 0 FirstWrite -1}
+		select_ln290_63 {Type I LastRead 0 FirstWrite -1}
+		sext_ln295 {Type I LastRead 0 FirstWrite -1}
 		A_internal {Type I LastRead 0 FirstWrite -1}
-		A_internal_1 {Type I LastRead 0 FirstWrite -1}
-		A_internal_2 {Type I LastRead 0 FirstWrite -1}
-		A_internal_3 {Type I LastRead 0 FirstWrite -1}
-		A_internal_4 {Type I LastRead 0 FirstWrite -1}
-		A_internal_5 {Type I LastRead 0 FirstWrite -1}
-		A_internal_6 {Type I LastRead 0 FirstWrite -1}
-		A_internal_7 {Type I LastRead 0 FirstWrite -1}
-		A_internal_8 {Type I LastRead 0 FirstWrite -1}
-		A_internal_9 {Type I LastRead 0 FirstWrite -1}
-		A_internal_10 {Type I LastRead 0 FirstWrite -1}
-		A_internal_11 {Type I LastRead 0 FirstWrite -1}
-		A_internal_12 {Type I LastRead 0 FirstWrite -1}
-		A_internal_13 {Type I LastRead 0 FirstWrite -1}
-		A_internal_14 {Type I LastRead 0 FirstWrite -1}
-		A_internal_15 {Type I LastRead 0 FirstWrite -1}
 		A_internal_16 {Type I LastRead 0 FirstWrite -1}
-		A_internal_17 {Type I LastRead 0 FirstWrite -1}
-		A_internal_18 {Type I LastRead 0 FirstWrite -1}
-		A_internal_19 {Type I LastRead 0 FirstWrite -1}
-		A_internal_20 {Type I LastRead 0 FirstWrite -1}
-		A_internal_21 {Type I LastRead 0 FirstWrite -1}
-		A_internal_22 {Type I LastRead 0 FirstWrite -1}
-		A_internal_23 {Type I LastRead 0 FirstWrite -1}
-		A_internal_24 {Type I LastRead 0 FirstWrite -1}
-		A_internal_25 {Type I LastRead 0 FirstWrite -1}
-		A_internal_26 {Type I LastRead 0 FirstWrite -1}
-		A_internal_27 {Type I LastRead 0 FirstWrite -1}
-		A_internal_28 {Type I LastRead 0 FirstWrite -1}
-		A_internal_29 {Type I LastRead 0 FirstWrite -1}
-		A_internal_30 {Type I LastRead 0 FirstWrite -1}
-		A_internal_31 {Type I LastRead 0 FirstWrite -1}
 		A_internal_32 {Type I LastRead 0 FirstWrite -1}
-		A_internal_33 {Type I LastRead 0 FirstWrite -1}
-		A_internal_34 {Type I LastRead 0 FirstWrite -1}
-		A_internal_35 {Type I LastRead 0 FirstWrite -1}
-		A_internal_36 {Type I LastRead 0 FirstWrite -1}
-		A_internal_37 {Type I LastRead 0 FirstWrite -1}
-		A_internal_38 {Type I LastRead 0 FirstWrite -1}
-		A_internal_39 {Type I LastRead 0 FirstWrite -1}
-		A_internal_40 {Type I LastRead 0 FirstWrite -1}
-		A_internal_41 {Type I LastRead 0 FirstWrite -1}
-		A_internal_42 {Type I LastRead 0 FirstWrite -1}
-		A_internal_43 {Type I LastRead 0 FirstWrite -1}
-		A_internal_44 {Type I LastRead 0 FirstWrite -1}
-		A_internal_45 {Type I LastRead 0 FirstWrite -1}
-		A_internal_46 {Type I LastRead 0 FirstWrite -1}
-		A_internal_47 {Type I LastRead 0 FirstWrite -1}
 		A_internal_48 {Type I LastRead 0 FirstWrite -1}
+		A_internal_1 {Type I LastRead 0 FirstWrite -1}
+		A_internal_17 {Type I LastRead 0 FirstWrite -1}
+		A_internal_33 {Type I LastRead 0 FirstWrite -1}
 		A_internal_49 {Type I LastRead 0 FirstWrite -1}
+		A_internal_2 {Type I LastRead 0 FirstWrite -1}
+		A_internal_18 {Type I LastRead 0 FirstWrite -1}
+		A_internal_34 {Type I LastRead 0 FirstWrite -1}
 		A_internal_50 {Type I LastRead 0 FirstWrite -1}
+		A_internal_3 {Type I LastRead 0 FirstWrite -1}
+		A_internal_19 {Type I LastRead 0 FirstWrite -1}
+		A_internal_35 {Type I LastRead 0 FirstWrite -1}
 		A_internal_51 {Type I LastRead 0 FirstWrite -1}
+		A_internal_4 {Type I LastRead 0 FirstWrite -1}
+		A_internal_20 {Type I LastRead 0 FirstWrite -1}
+		A_internal_36 {Type I LastRead 0 FirstWrite -1}
 		A_internal_52 {Type I LastRead 0 FirstWrite -1}
+		A_internal_5 {Type I LastRead 0 FirstWrite -1}
+		A_internal_21 {Type I LastRead 0 FirstWrite -1}
+		A_internal_37 {Type I LastRead 0 FirstWrite -1}
 		A_internal_53 {Type I LastRead 0 FirstWrite -1}
+		A_internal_6 {Type I LastRead 0 FirstWrite -1}
+		A_internal_22 {Type I LastRead 0 FirstWrite -1}
+		A_internal_38 {Type I LastRead 0 FirstWrite -1}
 		A_internal_54 {Type I LastRead 0 FirstWrite -1}
+		A_internal_7 {Type I LastRead 0 FirstWrite -1}
+		A_internal_23 {Type I LastRead 0 FirstWrite -1}
+		A_internal_39 {Type I LastRead 0 FirstWrite -1}
 		A_internal_55 {Type I LastRead 0 FirstWrite -1}
+		A_internal_8 {Type I LastRead 0 FirstWrite -1}
+		A_internal_24 {Type I LastRead 0 FirstWrite -1}
+		A_internal_40 {Type I LastRead 0 FirstWrite -1}
 		A_internal_56 {Type I LastRead 0 FirstWrite -1}
+		A_internal_9 {Type I LastRead 0 FirstWrite -1}
+		A_internal_25 {Type I LastRead 0 FirstWrite -1}
+		A_internal_41 {Type I LastRead 0 FirstWrite -1}
 		A_internal_57 {Type I LastRead 0 FirstWrite -1}
+		A_internal_10 {Type I LastRead 0 FirstWrite -1}
+		A_internal_26 {Type I LastRead 0 FirstWrite -1}
+		A_internal_42 {Type I LastRead 0 FirstWrite -1}
 		A_internal_58 {Type I LastRead 0 FirstWrite -1}
+		A_internal_11 {Type I LastRead 0 FirstWrite -1}
+		A_internal_27 {Type I LastRead 0 FirstWrite -1}
+		A_internal_43 {Type I LastRead 0 FirstWrite -1}
 		A_internal_59 {Type I LastRead 0 FirstWrite -1}
+		A_internal_12 {Type I LastRead 0 FirstWrite -1}
+		A_internal_28 {Type I LastRead 0 FirstWrite -1}
+		A_internal_44 {Type I LastRead 0 FirstWrite -1}
 		A_internal_60 {Type I LastRead 0 FirstWrite -1}
+		A_internal_13 {Type I LastRead 0 FirstWrite -1}
+		A_internal_29 {Type I LastRead 0 FirstWrite -1}
+		A_internal_45 {Type I LastRead 0 FirstWrite -1}
 		A_internal_61 {Type I LastRead 0 FirstWrite -1}
+		A_internal_14 {Type I LastRead 0 FirstWrite -1}
+		A_internal_30 {Type I LastRead 0 FirstWrite -1}
+		A_internal_46 {Type I LastRead 0 FirstWrite -1}
 		A_internal_62 {Type I LastRead 0 FirstWrite -1}
+		A_internal_15 {Type I LastRead 0 FirstWrite -1}
+		A_internal_31 {Type I LastRead 0 FirstWrite -1}
+		A_internal_47 {Type I LastRead 0 FirstWrite -1}
 		A_internal_63 {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0

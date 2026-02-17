@@ -171,39 +171,102 @@
 //     }
 // }
 
+// #include "dcl.h"
+
+// void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
+//                 data_t C_DRAM[N_ROWS][N_COLS]) {
+//     // Maximize burst width (512-bit is standard for high-end FPGA DDR/HBM)
+//     #pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A max_widen_bitwidth=512
+//     #pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C max_widen_bitwidth=512
+//     #pragma HLS interface s_axilite port=return
+
+//     // Internal storage
+//     data_t A_internal[N_ROWS][N_COLS];
+//     data_t col_sums[N_COLS];
+
+//     // Partitioning for parallel access across columns
+//     #pragma HLS array_partition variable=A_internal cyclic factor=64 dim=2
+//     #pragma HLS array_partition variable=col_sums cyclic factor=32
+
+//     // Initialize col_sums
+//     for(int j = 0; j < N_COLS; j++) {
+//         #pragma HLS PIPELINE II=1
+//         #pragma HLS UNROLL factor=64
+//         col_sums[j] = 0.0;
+//     }
+
+//     // PASS 1: Read, Row-Norm, and Partial Col-Sum
+//     for (int i = 0; i < N_ROWS; i++) {
+//         data_t row_buffer[N_COLS];
+//         #pragma HLS ARRAY_PARTITION variable=row_buffer cyclic factor=64
+//         data_t row_sum = 0.0;
+
+//         // Burst read a row and calculate sum
+//         for (int j = 0; j < N_COLS; j++) {
+//             #pragma HLS PIPELINE II=1
+//             data_t val = A_DRAM[i][j];
+//             row_buffer[j] = val;
+//             row_sum += val;
+//         }
+
+//         data_t denom = row_sum + (data_t)1.0;
+
+//         // Normalize and update global column accumulators
+//         for (int j = 0; j < N_COLS; j++) {
+//             #pragma HLS PIPELINE II=1
+//             #pragma HLS UNROLL factor=64
+//             data_t norm_val = row_buffer[j] / denom;
+//             A_internal[i][j] = norm_val;
+//             col_sums[j] += norm_val;
+//         }
+//     }
+
+//     // PASS 2: Column Scaling and Burst Store
+//     for (int i = 0; i < N_ROWS; i++) {
+//         for (int j = 0; j < N_COLS; j++) {
+//             #pragma HLS PIPELINE II=1
+//             // Pre-calculate scale outside the i-loop or keep it here
+//             // Dividing by N_ROWS (constant) is better handled as * (1.0/N_ROWS)
+//             data_t scale = col_sums[j] / (data_t)N_ROWS;
+//             C_DRAM[i][j] = A_internal[i][j] * scale;
+//         }
+//     }
+// }
+
 #include "dcl.h"
 
 void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
                 data_t C_DRAM[N_ROWS][N_COLS]) {
-    // Maximize burst width (512-bit is standard for high-end FPGA DDR/HBM)
     #pragma HLS interface m_axi port=A_DRAM offset=slave bundle=A max_widen_bitwidth=512
     #pragma HLS interface m_axi port=C_DRAM offset=slave bundle=C max_widen_bitwidth=512
     #pragma HLS interface s_axilite port=return
 
-    // Internal storage
     data_t A_internal[N_ROWS][N_COLS];
     data_t col_sums[N_COLS];
+    data_t scale_factors[N_COLS];
 
-    // Partitioning for parallel access across columns
     #pragma HLS array_partition variable=A_internal cyclic factor=64 dim=2
-    #pragma HLS array_partition variable=col_sums cyclic factor=32
+    #pragma HLS array_partition variable=col_sums cyclic factor=64
+    #pragma HLS array_partition variable=scale_factors cyclic factor=64
 
-    // Initialize col_sums
+    // Parallel Init
     for(int j = 0; j < N_COLS; j++) {
         #pragma HLS PIPELINE II=1
         #pragma HLS UNROLL factor=64
         col_sums[j] = 0.0;
     }
 
-    // PASS 1: Read, Row-Norm, and Partial Col-Sum
+    // PASS 1: Saturate the Read Bus
     for (int i = 0; i < N_ROWS; i++) {
         data_t row_buffer[N_COLS];
         #pragma HLS ARRAY_PARTITION variable=row_buffer cyclic factor=64
         data_t row_sum = 0.0;
 
-        // Burst read a row and calculate sum
-        for (int j = 0; j < N_COLS; j++) {
+        // UNROLLING HERE SATURATES THE 512-BIT BUS
+        // If data_t is 32-bit, factor=16 perfectly fills the 512-bit width
+        Row_Read: for (int j = 0; j < N_COLS; j++) {
             #pragma HLS PIPELINE II=1
+            #pragma HLS UNROLL factor=16 
             data_t val = A_DRAM[i][j];
             row_buffer[j] = val;
             row_sum += val;
@@ -211,8 +274,7 @@ void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
 
         data_t denom = row_sum + (data_t)1.0;
 
-        // Normalize and update global column accumulators
-        for (int j = 0; j < N_COLS; j++) {
+        Row_Norm: for (int j = 0; j < N_COLS; j++) {
             #pragma HLS PIPELINE II=1
             #pragma HLS UNROLL factor=64
             data_t norm_val = row_buffer[j] / denom;
@@ -221,14 +283,20 @@ void top_kernel(data_t A_DRAM[N_ROWS][N_COLS],
         }
     }
 
-    // PASS 2: Column Scaling and Burst Store
-    for (int i = 0; i < N_ROWS; i++) {
-        for (int j = 0; j < N_COLS; j++) {
+    // Pre-calculate Scale Factors (removes N_ROWS divisions from the main loop)
+    Calc_Scales: for (int j = 0; j < N_COLS; j++) {
+        #pragma HLS PIPELINE II=1
+        #pragma HLS UNROLL factor=64
+        scale_factors[j] = col_sums[j] / (data_t)N_ROWS;
+    }
+
+    // PASS 2: Saturate the Write Bus
+    // Unrolling here allows the AXI master to write 512 bits per cycle
+    Store_Rows: for (int i = 0; i < N_ROWS; i++) {
+        Store_Cols: for (int j = 0; j < N_COLS; j++) {
             #pragma HLS PIPELINE II=1
-            // Pre-calculate scale outside the i-loop or keep it here
-            // Dividing by N_ROWS (constant) is better handled as * (1.0/N_ROWS)
-            data_t scale = col_sums[j] / (data_t)N_ROWS;
-            C_DRAM[i][j] = A_internal[i][j] * scale;
+            #pragma HLS UNROLL factor=16
+            C_DRAM[i][j] = A_internal[i][j] * scale_factors[j];
         }
     }
 }

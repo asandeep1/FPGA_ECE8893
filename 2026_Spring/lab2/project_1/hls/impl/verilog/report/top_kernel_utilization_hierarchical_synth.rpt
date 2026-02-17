@@ -1,0 +1,39 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
+| Date         : Tue Feb 17 02:30:23 2026
+| Host         : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/top_kernel_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xczu3eg-sbva484-1-e
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+|                               Instance                               |                                         Module                                         | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++----------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+| bd_0_wrapper                                                         |                                                                                  (top) |       1112 |       1112 |       0 |    0 | 599 |     88 |      2 |    0 |          4 |
+|   bd_0_i                                                             |                                                                                   bd_0 |       1112 |       1112 |       0 |    0 | 599 |     88 |      2 |    0 |          4 |
+|     hls_inst                                                         |                                                                        bd_0_hls_inst_0 |       1112 |       1112 |       0 |    0 | 599 |     88 |      2 |    0 |          4 |
+|       inst                                                           |                                                             bd_0_hls_inst_0_top_kernel |       1112 |       1112 |       0 |    0 | 599 |     88 |      2 |    0 |          4 |
+|         grp_top_kernel_Pipeline_store_out_VITIS_LOOP_163_3_fu_67     |              bd_0_hls_inst_0_top_kernel_top_kernel_Pipeline_store_out_VITIS_LOOP_163_3 |         36 |         36 |       0 |    0 |  54 |      0 |      0 |    0 |          0 |
+|           (grp_top_kernel_Pipeline_store_out_VITIS_LOOP_163_3_fu_67) |              bd_0_hls_inst_0_top_kernel_top_kernel_Pipeline_store_out_VITIS_LOOP_163_3 |         26 |         26 |       0 |    0 |  52 |      0 |      0 |    0 |          0 |
+|         grp_top_kernel_Pipeline_load_in_VITIS_LOOP_88_1_fu_50        |                 bd_0_hls_inst_0_top_kernel_top_kernel_Pipeline_load_in_VITIS_LOOP_88_1 |        160 |        160 |       0 |    0 |  54 |      0 |      0 |    0 |          0 |
+|           (grp_top_kernel_Pipeline_load_in_VITIS_LOOP_88_1_fu_50)    |                 bd_0_hls_inst_0_top_kernel_top_kernel_Pipeline_load_in_VITIS_LOOP_88_1 |        151 |        151 |       0 |    0 |  52 |      0 |      0 |    0 |          0 |
+|         grp_top_kernel_Pipeline_row_loop_col_loop_fu_58              |                       bd_0_hls_inst_0_top_kernel_top_kernel_Pipeline_row_loop_col_loop |        892 |        892 |       0 |    0 | 475 |     44 |      2 |    0 |          4 |
+|           (grp_top_kernel_Pipeline_row_loop_col_loop_fu_58)          |                       bd_0_hls_inst_0_top_kernel_top_kernel_Pipeline_row_loop_col_loop |        267 |        267 |       0 |    0 | 471 |      0 |      0 |    0 |          1 |
+|           mem_B_U                                                    | bd_0_hls_inst_0_top_kernel_top_kernel_Pipeline_row_loop_col_loop_mem_B_RAM_AUTO_1R1W_2 |        397 |        397 |       0 |    0 |   2 |     44 |      0 |    0 |          0 |
+|           mul_39s_24ns_63_1_1_U3                                     |                                         bd_0_hls_inst_0_top_kernel_mul_39s_24ns_63_1_1 |        109 |        109 |       0 |    0 |   0 |      0 |      0 |    0 |          2 |
++----------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+
+

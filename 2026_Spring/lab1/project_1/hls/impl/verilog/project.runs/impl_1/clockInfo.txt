@@ -1,10 +1,66 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.1.1
-| Date         : Sat Feb  7 23:29:40 2026
+| Date         : Wed Feb 11 23:23:34 2026
 | Host         : ece-linlabsrv01
 | Design       : checkpoint_bd_0_wrapper
 | Device       : xczu3eg-sbva484-1-E-
 -------------------------------------
 
 For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+
+***********************
+Running Pre-CRP Checker
+***********************
+Number of global clocks: 1
+	Number of BUFGCE: 1
+	Number of BUFGCE_HDIO: 0
+	Number of BUFG_CTRL: 0
+	Number of BUFGCE_DIV: 0
+	Number of BUFG_GT: 0
+	Number of BUFG_PS: 0
+	Number of BUFG_FABRIC: 0
+********************************
+Clock Net Route Info (CRP Input)
+********************************
+Clock 1: bd_0_i/hls_inst/inst/sdiv_38ns_24s_38_42_seq_1_U284/start0_bufg_place
+	Clock source type: BUFGCE
+	Clock source region: X1Y1
+	Clock regions with locked loads: X0Y0 X0Y1 X0Y2 X1Y0 X1Y1 X1Y2 
+	initial rect ((0, 0), (1, 2))
+
+
+
+*****************
+User Constraints:
+*****************
+No user constraints found
+
+
+***********************
+Running Pre-CRP Checker
+***********************
+Number of global clocks: 1
+	Number of BUFGCE: 1
+	Number of BUFGCE_HDIO: 0
+	Number of BUFG_CTRL: 0
+	Number of BUFGCE_DIV: 0
+	Number of BUFG_GT: 0
+	Number of BUFG_PS: 0
+	Number of BUFG_FABRIC: 0
+********************************
+Clock Net Route Info (CRP Input)
+********************************
+Clock 1: bd_0_i/hls_inst/inst/sdiv_38ns_24s_38_42_seq_1_U284/start0
+	Clock source type: BUFGCE
+	Clock source region: X1Y1
+	Clock regions with locked loads: X0Y0 X0Y1 X0Y2 X1Y0 X1Y1 X1Y2 
+	initial rect ((0, 0), (1, 2))
+
+
+
+*****************
+User Constraints:
+*****************
+No user constraints found
+
 

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date              : Sat Feb  7 23:27:29 2026
+| Date              : Wed Feb 11 23:21:08 2026
 | Host              : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command           : report_timing_summary -file ./report/top_kernel_timing_synth.rpt
 | Design            : bd_0_wrapper
@@ -55,7 +55,7 @@ Table of Contents
 3. checking pulse_width_clock (0)
 4. checking unconstrained_internal_endpoints (0)
 5. checking no_input_delay (90)
-6. checking no_output_delay (204)
+6. checking no_output_delay (212)
 7. checking multiple_clock (0)
 8. checking generated_clocks (0)
 9. checking loops (0)
@@ -92,9 +92,9 @@ Table of Contents
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
-6. checking no_output_delay (204)
+6. checking no_output_delay (212)
 ---------------------------------
- There are 204 ports with no output delay specified. (HIGH)
+ There are 212 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
@@ -139,7 +139,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      6.136        0.000                      0                15656        0.039        0.000                      0                15656        4.427        0.000                       0                  6954  
+      5.518        0.000                      0                38789        0.047        0.000                      0                38789        4.427        0.000                       0                 20359  
 
 
 All user specified timing constraints are met.
@@ -162,7 +162,7 @@ ap_clk  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-ap_clk              6.136        0.000                      0                15656        0.039        0.000                      0                15656        4.427        0.000                       0                  6954  
+ap_clk              5.518        0.000                      0                38789        0.047        0.000                      0                38789        4.427        0.000                       0                 20359  
 
 
 ------------------------------------------------------------------------------------------------
@@ -193,27 +193,27 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  ap_clk
   To Clock:  ap_clk
 
-Setup :            0  Failing Endpoints,  Worst Slack        6.136ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.039ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        5.518ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.047ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        4.427ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             6.136ns  (required time - arrival time)
-  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/scale_reg_2287_reg[7]/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/select_ln230_3_reg_2297_reg[0]/CE
+Slack (MET) :             5.518ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/A_internal_50_U/ram_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/select_ln299_11_reg_7921_reg[0]/CE
                             (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        3.775ns  (logic 2.605ns (69.007%)  route 1.170ns (30.993%))
-  Logic Levels:           12  (CARRY8=3 DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=1 DSP_PREADD_DATA=1 LUT2=1 LUT3=1 LUT6=1)
-  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+  Data Path Delay:        4.349ns  (logic 2.878ns (66.176%)  route 1.471ns (33.824%))
+  Logic Levels:           13  (CARRY8=3 DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=1 DSP_PREADD_DATA=1 LUT2=1 LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.055ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
-    Source Clock Delay      (SCD):    0.037ns
+    Source Clock Delay      (SCD):    0.081ns
     Clock Pessimism Removal (CPR):    0.000ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -225,59 +225,62 @@ Slack (MET) :             6.136ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=6959, unset)         0.037     0.037    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/ap_clk
-                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/scale_reg_2287_reg[7]/C
+                         net (fo=20453, unset)        0.081     0.081    bd_0_i/hls_inst/inst/A_internal_50_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/A_internal_50_U/ram_reg/CLKARDCLK
   -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/scale_reg_2287_reg[7]/Q
-                         net (fo=1, unplaced)         0.199     0.329    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/B[7]
-                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_B[7]_B2_DATA[7])
-                                                      0.195     0.524 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_A_B_DATA_INST/B2_DATA[7]
-                         net (fo=1, unplaced)         0.000     0.524    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_A_B_DATA.B2_DATA<7>
-                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_B2_DATA[7]_B2B1[7])
-                                                      0.092     0.616 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_PREADD_DATA_INST/B2B1[7]
-                         net (fo=1, unplaced)         0.000     0.616    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_PREADD_DATA.B2B1<7>
-                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_B2B1[7]_U[13])
-                                                      0.737     1.353 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_MULTIPLIER_INST/U[13]
-                         net (fo=1, unplaced)         0.000     1.353    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_MULTIPLIER.U<13>
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[8])
+                                                      0.225     0.306 f  bd_0_i/hls_inst/inst/A_internal_50_U/ram_reg/DOUTADOUT[8]
+                         net (fo=1, unplaced)         0.238     0.544    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/A_internal_50_load105_fu_592[8]
+                         LUT6 (Prop_LUT6_I0_O)        0.179     0.723 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/tmp_product_i_33__1/O
+                         net (fo=1, unplaced)         0.262     0.985    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/tmp_product/A[8]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[8]_A2_DATA[8])
+                                                      0.241     1.226 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/tmp_product/DSP_A_B_DATA_INST/A2_DATA[8]
+                         net (fo=1, unplaced)         0.000     1.226    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/tmp_product/DSP_A_B_DATA.A2_DATA<8>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_A2_DATA[8]_A2A1[8])
+                                                      0.098     1.324 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/tmp_product/DSP_PREADD_DATA_INST/A2A1[8]
+                         net (fo=1, unplaced)         0.000     1.324    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/tmp_product/DSP_PREADD_DATA.A2A1<8>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_A2A1[8]_U[13])
+                                                      0.647     1.971 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/tmp_product/DSP_MULTIPLIER_INST/U[13]
+                         net (fo=1, unplaced)         0.000     1.971    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/tmp_product/DSP_MULTIPLIER.U<13>
                          DSP_M_DATA (Prop_DSP_M_DATA_U[13]_U_DATA[13])
-                                                      0.059     1.412 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_M_DATA_INST/U_DATA[13]
-                         net (fo=1, unplaced)         0.000     1.412    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_M_DATA.U_DATA<13>
+                                                      0.059     2.030 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/tmp_product/DSP_M_DATA_INST/U_DATA[13]
+                         net (fo=1, unplaced)         0.000     2.030    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/tmp_product/DSP_M_DATA.U_DATA<13>
                          DSP_ALU (Prop_DSP_ALU_U_DATA[13]_ALU_OUT[13])
-                                                      0.699     2.111 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_ALU_INST/ALU_OUT[13]
-                         net (fo=1, unplaced)         0.000     2.111    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_ALU.ALU_OUT<13>
+                                                      0.699     2.729 f  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/tmp_product/DSP_ALU_INST/ALU_OUT[13]
+                         net (fo=1, unplaced)         0.000     2.729    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/tmp_product/DSP_ALU.ALU_OUT<13>
                          DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[13]_P[13])
-                                                      0.141     2.252 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_product/DSP_OUTPUT_INST/P[13]
-                         net (fo=1, unplaced)         0.292     2.544    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/zext_ln230_fu_1741_p1
-                         LUT2 (Prop_LUT2_I1_O)        0.040     2.584 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[7]_i_3/O
-                         net (fo=1, unplaced)         0.021     2.605    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[7]_i_3_n_0
+                                                      0.141     2.870 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/tmp_product/DSP_OUTPUT_INST/P[13]
+                         net (fo=1, unplaced)         0.292     3.162    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/zext_ln299_4_fu_3379_p1
+                         LUT2 (Prop_LUT2_I1_O)        0.040     3.202 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/select_ln299_11_reg_7921[7]_i_3/O
+                         net (fo=1, unplaced)         0.021     3.223    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/select_ln299_11_reg_7921[7]_i_3_n_2
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     2.853 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[7]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     2.860    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[7]_i_2_n_0
+                                                      0.248     3.471 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/select_ln299_11_reg_7921_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     3.478    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/select_ln299_11_reg_7921_reg[7]_i_2_n_2
                          CARRY8 (Prop_CARRY8_CI_CO[7])
-                                                      0.030     2.890 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[15]_i_2/CO[7]
-                         net (fo=1, unplaced)         0.007     2.897    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[15]_i_2_n_0
+                                                      0.030     3.508 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/select_ln299_11_reg_7921_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.007     3.515    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/select_ln299_11_reg_7921_reg[15]_i_2_n_2
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     3.043 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297_reg[23]_i_4/O[7]
-                         net (fo=3, unplaced)         0.163     3.206    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/tmp_10_fu_1751_p3
-                         LUT6 (Prop_LUT6_I1_O)        0.040     3.246 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[23]_i_6/O
-                         net (fo=25, unplaced)        0.268     3.514    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[23]_i_6_n_0
-                         LUT3 (Prop_LUT3_I0_O)        0.085     3.599 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173/select_ln230_3_reg_2297[23]_i_2/O
-                         net (fo=24, unplaced)        0.213     3.812    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/mul_24s_17s_41_1_1_U173_n_0
-                         FDSE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/select_ln230_3_reg_2297_reg[0]/CE
+                                                      0.146     3.661 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/select_ln299_11_reg_7921_reg[23]_i_5/O[7]
+                         net (fo=3, unplaced)         0.163     3.824    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/tmp_23_fu_3389_p3
+                         LUT6 (Prop_LUT6_I2_O)        0.040     3.864 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/select_ln299_11_reg_7921[23]_i_6/O
+                         net (fo=25, unplaced)        0.268     4.132    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/select_ln299_11_reg_7921[23]_i_6_n_2
+                         LUT3 (Prop_LUT3_I2_O)        0.085     4.217 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89/select_ln299_11_reg_7921[23]_i_2/O
+                         net (fo=24, unplaced)        0.213     4.430    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/mul_17s_24s_41_1_1_U89_n_26
+                         FDSE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/select_ln299_11_reg_7921_reg[0]/CE
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=6959, unset)         0.026    10.026    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/ap_clk
-                         FDSE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/select_ln230_3_reg_2297_reg[0]/C
+                         net (fo=20453, unset)        0.026    10.026    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/ap_clk
+                         FDSE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/select_ln299_11_reg_7921_reg[0]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
-                         FDSE (Setup_FDSE_C_CE)      -0.043     9.948    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_224_5_VITIS_LOOP_225_6_fu_733/select_ln230_3_reg_2297_reg[0]
+                         FDSE (Setup_FDSE_C_CE)      -0.043     9.948    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_Store_Rows_Store_Cols_fu_1773/select_ln299_11_reg_7921_reg[0]
   -------------------------------------------------------------------
                          required time                          9.948    
-                         arrival time                          -3.812    
+                         arrival time                          -4.430    
   -------------------------------------------------------------------
-                         slack                                  6.136    
+                         slack                                  5.518    
 
 
 
@@ -285,18 +288,18 @@ Slack (MET) :             6.136ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.039ns  (arrival time - required time)
-  Source:                 bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631/sdiv_38ns_24s_38_42_1_U69/top_kernel_sdiv_38ns_24s_38_42_1_divider_u/loop[19].dividend_tmp_reg[20][0]__0/C
+Slack (MET) :             0.047ns  (arrival time - required time)
+  Source:                 bd_0_i/hls_inst/inst/A_m_axi_U/bus_read/rs_rdata/data_p1_reg[31]/C
                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631/sdiv_38ns_24s_38_42_1_U69/top_kernel_sdiv_38ns_24s_38_42_1_divider_u/loop[36].dividend_tmp_reg[37][17]_srl17/D
-                            (rising edge-triggered cell SRLC32E clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/A_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg/DINBDIN[15]
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (ap_clk rise@0.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        0.111ns  (logic 0.037ns (33.333%)  route 0.074ns (66.667%))
+  Data Path Delay:        0.083ns  (logic 0.038ns (45.783%)  route 0.045ns (54.217%))
   Logic Levels:           0  
-  Clock Path Skew:        0.026ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    0.039ns
+  Clock Path Skew:        0.041ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.054ns
     Source Clock Delay      (SCD):    0.013ns
     Clock Pessimism Removal (CPR):    -0.000ns
 
@@ -304,26 +307,26 @@ Slack (MET) :             0.039ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=6959, unset)         0.013     0.013    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631/sdiv_38ns_24s_38_42_1_U69/top_kernel_sdiv_38ns_24s_38_42_1_divider_u/ap_clk
-                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631/sdiv_38ns_24s_38_42_1_U69/top_kernel_sdiv_38ns_24s_38_42_1_divider_u/loop[19].dividend_tmp_reg[20][0]__0/C
+                         net (fo=20453, unset)        0.013     0.013    bd_0_i/hls_inst/inst/A_m_axi_U/bus_read/rs_rdata/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/A_m_axi_U/bus_read/rs_rdata/data_p1_reg[31]/C
   -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_FDRE_C_Q)         0.037     0.050 r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631/sdiv_38ns_24s_38_42_1_U69/top_kernel_sdiv_38ns_24s_38_42_1_divider_u/loop[19].dividend_tmp_reg[20][0]__0/Q
-                         net (fo=1, unplaced)         0.074     0.124    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631/sdiv_38ns_24s_38_42_1_U69/top_kernel_sdiv_38ns_24s_38_42_1_divider_u/loop[19].dividend_tmp_reg[20][0]__0_n_0
-                         SRLC32E                                      r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631/sdiv_38ns_24s_38_42_1_U69/top_kernel_sdiv_38ns_24s_38_42_1_divider_u/loop[36].dividend_tmp_reg[37][17]_srl17/D
+                         FDRE (Prop_FDRE_C_Q)         0.038     0.051 r  bd_0_i/hls_inst/inst/A_m_axi_U/bus_read/rs_rdata/data_p1_reg[31]/Q
+                         net (fo=1, unplaced)         0.045     0.096    bd_0_i/hls_inst/inst/A_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_1[31]
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/A_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg/DINBDIN[15]
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=6959, unset)         0.039     0.039    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631/sdiv_38ns_24s_38_42_1_U69/top_kernel_sdiv_38ns_24s_38_42_1_divider_u/ap_clk
-                         SRLC32E                                      r  bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631/sdiv_38ns_24s_38_42_1_U69/top_kernel_sdiv_38ns_24s_38_42_1_divider_u/loop[36].dividend_tmp_reg[37][17]_srl17/CLK
-                         clock pessimism              0.000     0.039    
-                         SRLC32E (Hold_SRLC32E_CLK_D)
-                                                      0.046     0.085    bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_215_4_fu_631/sdiv_38ns_24s_38_42_1_U69/top_kernel_sdiv_38ns_24s_38_42_1_divider_u/loop[36].dividend_tmp_reg[37][17]_srl17
+                         net (fo=20453, unset)        0.054     0.054    bd_0_i/hls_inst/inst/A_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/A_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg/CLKBWRCLK
+                         clock pessimism              0.000     0.054    
+                         RAMB18E2 (Hold_RAMB18E2_CLKBWRCLK_DINBDIN[15])
+                                                     -0.005     0.049    bd_0_i/hls_inst/inst/A_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg
   -------------------------------------------------------------------
-                         required time                         -0.085    
-                         arrival time                           0.124    
+                         required time                         -0.049    
+                         arrival time                           0.096    
   -------------------------------------------------------------------
-                         slack                                  0.039    
+                         slack                                  0.047    
 
 
 

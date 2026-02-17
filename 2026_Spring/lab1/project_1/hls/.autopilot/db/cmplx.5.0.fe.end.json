@@ -1,20 +1,20 @@
 {
     "1": {
-        "name": "top_kernel_Pipeline_VITIS_LOOP_225_5_VITIS_LOOP_226_6",
+        "name": "top_kernel_Pipeline_Row_Read",
         "file": "top.cpp",
-        "fileloc": "225",
-        "instructions": "471",
-        "total_instructions": "471",
+        "fileloc": "260",
+        "instructions": "494",
+        "total_instructions": "494",
         "calls": "",
-        "basicblocks": "6",
-        "memory_accesses": "231",
+        "basicblocks": "9",
+        "memory_accesses": "84",
         "control_depth": "2",
         "def_use_depth": "1",
         "loads": {
-            "L": "163"
+            "L": "67"
         },
         "stores": {
-            "L": "70"
+            "L": "68"
         },
         "loops": {
             "L": "1"
@@ -23,40 +23,40 @@
     "0": {
         "name": "top_kernel",
         "file": "top.cpp",
-        "fileloc": "176",
-        "instructions": "2641",
-        "total_instructions": "3471",
-        "calls": "2 1",
+        "fileloc": "238",
+        "instructions": "3267",
+        "total_instructions": "4806",
+        "calls": "1 2",
         "basicblocks": "4",
         "memory_accesses": "0",
         "control_depth": "0",
-        "def_use_depth": "2",
+        "def_use_depth": "6",
         "loads": {
             "L": "194"
         },
         "stores": {
-            "L": "258"
+            "L": "194"
         },
         "loops": {
             "L": "1"
         }
     },
     "2": {
-        "name": "top_kernel_Pipeline_VITIS_LOOP_205_3",
+        "name": "top_kernel_Pipeline_Store_Rows_Store_Cols",
         "file": "top.cpp",
-        "fileloc": "199",
-        "instructions": "359",
-        "total_instructions": "359",
+        "fileloc": "295",
+        "instructions": "1045",
+        "total_instructions": "1045",
         "calls": "",
-        "basicblocks": "69",
-        "memory_accesses": "69",
+        "basicblocks": "6",
+        "memory_accesses": "214",
         "control_depth": "2",
         "def_use_depth": "1",
         "loads": {
-            "L": "67"
+            "L": "131"
         },
         "stores": {
-            "L": "68"
+            "L": "70"
         },
         "loops": {
             "L": "1"

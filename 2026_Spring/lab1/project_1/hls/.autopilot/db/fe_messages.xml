@@ -2,67 +2,100 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab1/script.tcl:22:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:179:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:240:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=A_DRAM offset=slave bundle=A max_widen_bitwidth=512" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:180:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:241:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=C_DRAM offset=slave bundle=C max_widen_bitwidth=512" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:181:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:242:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:188:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:248:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=A_internal cyclic factor=64 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:189:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=col_sums cyclic factor=32" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:249:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=col_sums cyclic factor=64" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:193:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:250:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=scale_factors cyclic factor=64" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:254:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:194:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:255:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=64" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:201:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:262:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=row_buffer cyclic factor=64" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:206:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:268:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:216:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:269:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=16" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:278:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:217:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:279:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=64" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:227:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:288:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-359" msg_severity="INFO" msg_loc="top.cpp:177:0" msg_body="Unrolling loop 'VITIS_LOOP_215_4' (top.cpp:215:27) in function 'top_kernel': changing partial unrolling into complete unrolling since the unrolling factor (=64) is no less than the loop trip count (=64).">
-        <args Factor="64" LoopLoc="top.cpp:215:27" LoopName="VITIS_LOOP_215_4" TripCount="64"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:289:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=64" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:177:0" msg_body="Unrolling loop 'VITIS_LOOP_215_4' (top.cpp:215:27) in function 'top_kernel' completely with a factor of 64">
-        <args Factor="64" LoopLoc="top.cpp:215:27" LoopName="VITIS_LOOP_215_4"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:297:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="top.cpp:177:0" msg_body="Pipeline directive for loop 'VITIS_LOOP_215_4' (top.cpp:215:27) in function 'top_kernel' has been removed because the loop is unrolled completely">
-        <args LoopLoc="top.cpp:215:27" LoopName="VITIS_LOOP_215_4"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:298:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=16" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-359" msg_severity="INFO" msg_loc="top.cpp:177:0" msg_body="Unrolling loop 'VITIS_LOOP_192_1' (top.cpp:192:20) in function 'top_kernel': changing partial unrolling into complete unrolling since the unrolling factor (=64) is no less than the loop trip count (=64).">
-        <args Factor="64" LoopLoc="top.cpp:192:20" LoopName="VITIS_LOOP_192_1" TripCount="64"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="top.cpp:239:0" msg_body="Unrolling loop 'Store_Cols' (top.cpp:296:21) in function 'top_kernel' partially with a factor of 16">
+        <args Factor="16" LoopLoc="top.cpp:296:21" LoopName="Store_Cols"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:177:0" msg_body="Unrolling loop 'VITIS_LOOP_192_1' (top.cpp:192:20) in function 'top_kernel' completely with a factor of 64">
-        <args Factor="64" LoopLoc="top.cpp:192:20" LoopName="VITIS_LOOP_192_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-359" msg_severity="INFO" msg_loc="top.cpp:239:0" msg_body="Unrolling loop 'Calc_Scales' (top.cpp:287:18) in function 'top_kernel': changing partial unrolling into complete unrolling since the unrolling factor (=64) is no less than the loop trip count (=64).">
+        <args Factor="64" LoopLoc="top.cpp:287:18" LoopName="Calc_Scales" TripCount="64"/>
     </msg>
-    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="top.cpp:177:0" msg_body="Pipeline directive for loop 'VITIS_LOOP_192_1' (top.cpp:192:20) in function 'top_kernel' has been removed because the loop is unrolled completely">
-        <args LoopLoc="top.cpp:192:20" LoopName="VITIS_LOOP_192_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:239:0" msg_body="Unrolling loop 'Calc_Scales' (top.cpp:287:18) in function 'top_kernel' completely with a factor of 64">
+        <args Factor="64" LoopLoc="top.cpp:287:18" LoopName="Calc_Scales"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:184:9" msg_body="Applying array_partition to 'A_internal': Complete partitioning on dimension 2.">
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="top.cpp:239:0" msg_body="Pipeline directive for loop 'Calc_Scales' (top.cpp:287:18) in function 'top_kernel' has been removed because the loop is unrolled completely">
+        <args LoopLoc="top.cpp:287:18" LoopName="Calc_Scales"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="top.cpp:239:0" msg_body="Unrolling loop 'Row_Read' (top.cpp:267:19) in function 'top_kernel' partially with a factor of 16">
+        <args Factor="16" LoopLoc="top.cpp:267:19" LoopName="Row_Read"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-359" msg_severity="INFO" msg_loc="top.cpp:239:0" msg_body="Unrolling loop 'Row_Norm' (top.cpp:277:19) in function 'top_kernel': changing partial unrolling into complete unrolling since the unrolling factor (=64) is no less than the loop trip count (=64).">
+        <args Factor="64" LoopLoc="top.cpp:277:19" LoopName="Row_Norm" TripCount="64"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:239:0" msg_body="Unrolling loop 'Row_Norm' (top.cpp:277:19) in function 'top_kernel' completely with a factor of 64">
+        <args Factor="64" LoopLoc="top.cpp:277:19" LoopName="Row_Norm"/>
+    </msg>
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="top.cpp:239:0" msg_body="Pipeline directive for loop 'Row_Norm' (top.cpp:277:19) in function 'top_kernel' has been removed because the loop is unrolled completely">
+        <args LoopLoc="top.cpp:277:19" LoopName="Row_Norm"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-359" msg_severity="INFO" msg_loc="top.cpp:239:0" msg_body="Unrolling loop 'VITIS_LOOP_253_1' (top.cpp:253:20) in function 'top_kernel': changing partial unrolling into complete unrolling since the unrolling factor (=64) is no less than the loop trip count (=64).">
+        <args Factor="64" LoopLoc="top.cpp:253:20" LoopName="VITIS_LOOP_253_1" TripCount="64"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:239:0" msg_body="Unrolling loop 'VITIS_LOOP_253_1' (top.cpp:253:20) in function 'top_kernel' completely with a factor of 64">
+        <args Factor="64" LoopLoc="top.cpp:253:20" LoopName="VITIS_LOOP_253_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="top.cpp:239:0" msg_body="Pipeline directive for loop 'VITIS_LOOP_253_1' (top.cpp:253:20) in function 'top_kernel' has been removed because the loop is unrolled completely">
+        <args LoopLoc="top.cpp:253:20" LoopName="VITIS_LOOP_253_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:244:9" msg_body="Applying array_partition to 'A_internal': Complete partitioning on dimension 2.">
         <args Dim="2" Mode="Complete" UOName="A_internal"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:185:12" msg_body="Applying array_partition to 'col_sums': Cyclic partitioning with factor 32 on dimension 1.">
-        <args Dim="1" Factor="32" Mode="Cyclic" UOName="col_sums"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:245:12" msg_body="Applying array_partition to 'col_sums': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="col_sums"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:200:16" msg_body="Applying array_partition to 'row_buffer': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:246:12" msg_body="Applying array_partition to 'scale_factors': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="scale_factors"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:261:16" msg_body="Applying array_partition to 'row_buffer': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="row_buffer"/>
     </msg>
 </xilinx:hls_fe_msgs>
