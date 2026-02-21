@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'top_kernel'
 ================================================================
 + General Information: 
-    * Date:           Tue Feb 17 02:21:41 2026
+    * Date:           Sat Feb 21 12:05:43 2026
     * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
     * Project:        project_1
     * Solution:       hls (Vivado IP Flow Target)
@@ -15,42 +15,62 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +---------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+-----------+--------+-----------+-----------+-----+
-    |                      Modules                      | Issue|      |       Latency       | Iteration|         |  Trip |          |           |        |           |           |     |
-    |                      & Loops                      | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|   BRAM    |   DSP  |     FF    |    LUT    | URAM|
-    +---------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+-----------+--------+-----------+-----------+-----+
-    |+ top_kernel                                       |     -|  0.80|  4063389|  4.063e+07|         -|  4063390|      -|        no|  178 (41%)|  6 (1%)|  624 (~0%)|  1699 (2%)|    -|
-    | + top_kernel_Pipeline_load_in_VITIS_LOOP_88_1     |     -|  3.55|    65538|  6.554e+05|         -|    65537|      -|    rewind|          -|       -|   55 (~0%)|  193 (~0%)|    -|
-    |  o load_in_VITIS_LOOP_88_1                        |     -|  7.30|    65536|  6.554e+05|         2|        1|  65536|       yes|          -|       -|          -|          -|    -|
-    | + top_kernel_Pipeline_store_out_VITIS_LOOP_163_3  |     -|  3.55|    65538|  6.554e+05|         -|    65537|      -|    rewind|          -|       -|   55 (~0%)|  193 (~0%)|    -|
-    |  o store_out_VITIS_LOOP_163_3                     |     -|  7.30|    65536|  6.554e+05|         2|        1|  65536|       yes|          -|       -|          -|          -|    -|
-    | o time_loop                                       |     -|  7.30|  3932310|  3.932e+07|    131077|        -|     30|        no|          -|       -|          -|          -|    -|
-    |  + top_kernel_Pipeline_row_loop_col_loop          |     -|  0.80|   131075|  1.311e+06|         -|   131074|      -|    rewind|   90 (20%)|  6 (1%)|  500 (~0%)|  1163 (1%)|    -|
-    |   o row_loop_col_loop                             |    II|  7.30|   131073|  1.311e+06|         4|        2|  65536|       yes|          -|       -|          -|          -|    -|
-    +---------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+-----------+--------+-----------+-----------+-----+
+    +---------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+---------+----------+-----------+---------+------------+-------------+-----+
+    |                                  Modules                                  | Issue|      |       Latency       | Iteration|         |   Trip  |          |           |         |            |             |     |
+    |                                  & Loops                                  | Type | Slack| (cycles)|    (ns)   |  Latency | Interval|  Count  | Pipelined|   BRAM    |   DSP   |     FF     |     LUT     | URAM|
+    +---------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+---------+----------+-----------+---------+------------+-------------+-----+
+    |+ top_kernel                                                               |     -|  0.00|  2097216|  2.097e+07|         -|  2097217|        -|        no|  298 (68%)|  26 (7%)|  11721 (8%)|  21276 (30%)|    -|
+    | + top_kernel_Pipeline_VITIS_LOOP_218_1_VITIS_LOOP_219_2                   |     -|  0.00|    65549|  6.555e+05|         -|    65537|        -|    rewind|          -|  1 (~0%)|   527 (~0%)|    432 (~0%)|    -|
+    |  o VITIS_LOOP_218_1_VITIS_LOOP_219_2                                      |     -|  7.30|    65547|  6.555e+05|        13|        1|    65536|       yes|          -|        -|           -|            -|    -|
+    | + top_kernel_Pipeline_VITIS_LOOP_226_3_VITIS_LOOP_230_4_VITIS_LOOP_231_5  |     -|  0.71|  1966098|  1.966e+07|         -|  1966081|        -|    rewind|  144 (33%)|  24 (6%)|   8994 (6%)|  14684 (20%)|    -|
+    |  o VITIS_LOOP_226_3_VITIS_LOOP_230_4_VITIS_LOOP_231_5                     |     -|  7.30|  1966096|  1.966e+07|        18|        1|  1966080|       yes|          -|        -|           -|            -|    -|
+    | + top_kernel_Pipeline_VITIS_LOOP_280_6_VITIS_LOOP_281_7                   |     -|  0.00|    65550|  6.555e+05|         -|    65537|        -|    rewind|          -|  1 (~0%)|   529 (~0%)|    641 (~0%)|    -|
+    |  o VITIS_LOOP_280_6_VITIS_LOOP_281_7                                      |     -|  7.30|    65548|  6.555e+05|        14|        1|    65536|       yes|          -|        -|           -|            -|    -|
+    +---------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+---------+----------+-----------+---------+------------+-------------+-----+
 
 
 ================================================================
 == HW Interfaces
 ================================================================
-* AP_MEMORY
-+----------------+-----------+----------+
-| Port           | Direction | Bitwidth |
-+----------------+-----------+----------+
-| A_in_address0  | out       | 16       |
-| A_in_q0        | in        | 24       |
-| A_out_address0 | out       | 16       |
-| A_out_d0       | out       | 24       |
-+----------------+-----------+----------+
+* M_AXI
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface   | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|             |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem0 | READ_ONLY  | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 256          | 16           | 16          | 16          | BRAM=8            |
+| m_axi_gmem1 | WRITE_ONLY | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 256          | 16          | 16          | BRAM=2            |
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | A_in_1   | 0x10   | 32    | W      | Data signal of A_in              |                                                                      |
+| s_axi_control | A_in_2   | 0x14   | 32    | W      | Data signal of A_in              |                                                                      |
+| s_axi_control | A_out_1  | 0x1c   | 32    | W      | Data signal of A_out             |                                                                      |
+| s_axi_control | A_out_2  | 0x20   | 32    | W      | Data signal of A_out             |                                                                      |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
 
 * TOP LEVEL CONTROL
-+-----------+------------+-----------------------------------+
-| Interface | Type       | Ports                             |
-+-----------+------------+-----------------------------------+
-| ap_clk    | clock      | ap_clk                            |
-| ap_rst    | reset      | ap_rst                            |
-| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
-+-----------+------------+-----------------------------------+
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
 
 
 ================================================================
@@ -65,153 +85,654 @@
 +----------+-----------+--------------------------------------------+
 
 * SW-to-HW Mapping
-+----------+----------------+---------+----------+
-| Argument | HW Interface   | HW Type | HW Usage |
-+----------+----------------+---------+----------+
-| A_in     | A_in_address0  | port    | offset   |
-| A_in     | A_in_ce0       | port    |          |
-| A_in     | A_in_q0        | port    |          |
-| A_out    | A_out_address0 | port    | offset   |
-| A_out    | A_out_ce0      | port    |          |
-| A_out    | A_out_we0      | port    |          |
-| A_out    | A_out_d0       | port    |          |
-+----------+----------------+---------+----------+
++----------+---------------+-----------+----------+-----------------------------------+
+| Argument | HW Interface  | HW Type   | HW Usage | HW Info                           |
++----------+---------------+-----------+----------+-----------------------------------+
+| A_in     | m_axi_gmem0   | interface |          | channel=0                         |
+| A_in     | s_axi_control | register  | offset   | name=A_in_1 offset=0x10 range=32  |
+| A_in     | s_axi_control | register  | offset   | name=A_in_2 offset=0x14 range=32  |
+| A_out    | m_axi_gmem1   | interface |          | channel=0                         |
+| A_out    | s_axi_control | register  | offset   | name=A_out_1 offset=0x1c range=32 |
+| A_out    | s_axi_control | register  | offset   | name=A_out_2 offset=0x20 range=32 |
++----------+---------------+-----------+----------+-----------------------------------+
 
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+--------+-------+------------------+----------------+
+| HW Interface | Direction | Length | Width | Loop             | Loop Location  |
++--------------+-----------+--------+-------+------------------+----------------+
+| m_axi_gmem0  | read      | 65536  | 32    | VITIS_LOOP_218_1 | top.cpp:218:23 |
+| m_axi_gmem1  | write     | 65536  | 32    | VITIS_LOOP_280_6 | top.cpp:280:23 |
++--------------+-----------+--------+-------+------------------+----------------+
+
+* All M_AXI Variable Accesses
++--------------+----------+-----------------+-----------+--------------+--------+------------------+----------------+------------+-------------------------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location | Direction | Burst Status | Length | Loop             | Loop Location  | Resolution | Problem                                                                                               |
++--------------+----------+-----------------+-----------+--------------+--------+------------------+----------------+------------+-------------------------------------------------------------------------------------------------------+
+| m_axi_gmem0  | A_in     | top.cpp:221:14  | read      | Widen Fail   |        | VITIS_LOOP_219_2 | top.cpp:219:27 | 214-353    | Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | A_in     | top.cpp:221:14  | read      | Inferred     | 65536  | VITIS_LOOP_218_1 | top.cpp:218:23 |            |                                                                                                       |
+| m_axi_gmem1  | A_out    | top.cpp:283:14  | write     | Widen Fail   |        | VITIS_LOOP_281_7 | top.cpp:281:27 | 214-353    | Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem1  | A_out    | top.cpp:283:14  | write     | Inferred     | 65536  | VITIS_LOOP_280_6 | top.cpp:280:23 |            |                                                                                                       |
++--------------+----------+-----------------+-----------+--------------+--------+------------------+----------------+------------+-------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
 
 ================================================================
 == Bind Op Report
 ================================================================
-+---------------------------------------------------+-----+--------+----------------+--------+----------+---------+
-| Name                                              | DSP | Pragma | Variable       | Op     | Impl     | Latency |
-+---------------------------------------------------+-----+--------+----------------+--------+----------+---------+
-| + top_kernel                                      | 6   |        |                |        |          |         |
-|   icmp_ln95_fu_83_p2                              |     |        | icmp_ln95      | seteq  | auto     | 0       |
-|   t_2_fu_89_p2                                    |     |        | t_2            | add    | fabric   | 0       |
-|  + top_kernel_Pipeline_load_in_VITIS_LOOP_88_1    | 0   |        |                |        |          |         |
-|    icmp_ln87_fu_101_p2                            |     |        | icmp_ln87      | seteq  | auto     | 0       |
-|    add_ln87_1_fu_107_p2                           |     |        | add_ln87_1     | add    | fabric   | 0       |
-|    add_ln87_fu_119_p2                             |     |        | add_ln87       | add    | fabric   | 0       |
-|    icmp_ln88_fu_125_p2                            |     |        | icmp_ln88      | seteq  | auto     | 0       |
-|    select_ln87_fu_131_p3                          |     |        | select_ln87    | select | auto_sel | 0       |
-|    select_ln87_1_fu_139_p3                        |     |        | select_ln87_1  | select | auto_sel | 0       |
-|    add_ln90_fu_163_p2                             |     |        | add_ln90       | add    | fabric   | 0       |
-|    add_ln88_fu_174_p2                             |     |        | add_ln88       | add    | fabric   | 0       |
-|  + top_kernel_Pipeline_row_loop_col_loop          | 6   |        |                |        |          |         |
-|    icmp_ln110_fu_275_p2                           |     |        | icmp_ln110     | seteq  | auto     | 0       |
-|    add_ln110_1_fu_281_p2                          |     |        | add_ln110_1    | add    | fabric   | 0       |
-|    add_ln110_fu_293_p2                            |     |        | add_ln110      | add    | fabric   | 0       |
-|    icmp_ln111_fu_299_p2                           |     |        | icmp_ln111     | seteq  | auto     | 0       |
-|    select_ln110_fu_305_p3                         |     |        | select_ln110   | select | auto_sel | 0       |
-|    select_ln110_1_fu_313_p3                       |     |        | select_ln110_1 | select | auto_sel | 0       |
-|    icmp_fu_343_p2                                 |     |        | icmp           | setne  | auto     | 0       |
-|    empty_12_fu_349_p2                             |     |        | empty_12       | add    | fabric   | 0       |
-|    add_ln155_fu_373_p2                            |     |        | add_ln155      | add    | fabric   | 0       |
-|    empty_13_fu_501_p3                             |     |        | empty_13       | select | auto_sel | 0       |
-|    icmp_ln133_fu_395_p2                           |     |        | icmp_ln133     | setne  | auto     | 0       |
-|    and_ln133_fu_401_p2                            |     |        | and_ln133      | and    | auto     | 0       |
-|    add_ln135_fu_407_p2                            |     |        | add_ln135      | add    | fabric   | 0       |
-|    add_ln148_fu_417_p2                            |     |        | add_ln148      | add    | fabric   | 0       |
-|    add_ln137_1_fu_431_p2                          |     |        | add_ln137_1    | add    | fabric   | 0       |
-|    add_ln137_fu_527_p2                            |     |        | add_ln137      | add    | fabric   | 0       |
-|    sum_axis_fu_557_p2                             |     |        | sum_axis       | add    | fabric   | 0       |
-|    add_ln140_1_fu_575_p2                          |     |        | add_ln140_1    | add    | fabric   | 0       |
-|    add_ln140_fu_585_p2                            |     |        | add_ln140      | add    | fabric   | 0       |
-|    sum_diag_fu_615_p2                             |     |        | sum_diag       | add    | fabric   | 0       |
-|    mul_39s_26ns_65_1_1_U4                         | 3   |        | mul_ln145      | mul    | auto     | 0       |
-|    mul_39s_24ns_63_1_1_U3                         | 3   |        | mul_ln145_1    | mul    | auto     | 0       |
-|    out_1_fu_725_p2                                |     |        | out_1          | add    | fabric   | 0       |
-|    xor_ln145_fu_743_p2                            |     |        | xor_ln145      | xor    | auto     | 0       |
-|    and_ln145_fu_749_p2                            |     |        | and_ln145      | and    | auto     | 0       |
-|    xor_ln145_1_fu_754_p2                          |     |        | xor_ln145_1    | xor    | auto     | 0       |
-|    or_ln145_2_fu_759_p2                           |     |        | or_ln145_2     | or     | auto     | 0       |
-|    xor_ln145_2_fu_765_p2                          |     |        | xor_ln145_2    | xor    | auto     | 0       |
-|    xor_ln145_4_fu_770_p2                          |     |        | xor_ln145_4    | xor    | auto     | 0       |
-|    xor_ln145_3_fu_775_p2                          |     |        | xor_ln145_3    | xor    | auto     | 0       |
-|    or_ln145_fu_781_p2                             |     |        | or_ln145       | or     | auto     | 0       |
-|    and_ln145_1_fu_787_p2                          |     |        | and_ln145_1    | and    | auto     | 0       |
-|    and_ln145_2_fu_793_p2                          |     |        | and_ln145_2    | and    | auto     | 0       |
-|    or_ln145_3_fu_799_p2                           |     |        | or_ln145_3     | or     | auto     | 0       |
-|    xor_ln145_5_fu_805_p2                          |     |        | xor_ln145_5    | xor    | auto     | 0       |
-|    and_ln145_3_fu_811_p2                          |     |        | and_ln145_3    | and    | auto     | 0       |
-|    select_ln145_fu_816_p3                         |     |        | select_ln145   | select | auto_sel | 0       |
-|    or_ln145_1_fu_824_p2                           |     |        | or_ln145_1     | or     | auto     | 0       |
-|    out_2_fu_830_p3                                |     |        | out_2          | select | auto_sel | 0       |
-|    add_ln147_fu_876_p2                            |     |        | add_ln147      | add    | fabric   | 0       |
-|    xor_ln147_fu_890_p2                            |     |        | xor_ln147      | xor    | auto     | 0       |
-|    and_ln147_fu_896_p2                            |     |        | and_ln147      | and    | auto     | 0       |
-|    xor_ln147_1_fu_902_p2                          |     |        | xor_ln147_1    | xor    | auto     | 0       |
-|    icmp_ln147_fu_932_p2                           |     |        | icmp_ln147     | seteq  | auto     | 0       |
-|    icmp_ln147_1_fu_938_p2                         |     |        | icmp_ln147_1   | seteq  | auto     | 0       |
-|    icmp_ln147_2_fu_944_p2                         |     |        | icmp_ln147_2   | seteq  | auto     | 0       |
-|    select_ln147_fu_950_p3                         |     |        | select_ln147   | select | auto_sel | 0       |
-|    xor_ln147_2_fu_958_p2                          |     |        | xor_ln147_2    | xor    | auto     | 0       |
-|    and_ln147_1_fu_964_p2                          |     |        | and_ln147_1    | and    | auto     | 0       |
-|    select_ln147_1_fu_970_p3                       |     |        | select_ln147_1 | select | auto_sel | 0       |
-|    and_ln147_2_fu_978_p2                          |     |        | and_ln147_2    | and    | auto     | 0       |
-|    xor_ln147_3_fu_984_p2                          |     |        | xor_ln147_3    | xor    | auto     | 0       |
-|    or_ln147_fu_990_p2                             |     |        | or_ln147       | or     | auto     | 0       |
-|    and_ln147_3_fu_996_p2                          |     |        | and_ln147_3    | and    | auto     | 0       |
-|    and_ln147_4_fu_1002_p2                         |     |        | and_ln147_4    | and    | auto     | 0       |
-|    or_ln147_2_fu_1008_p2                          |     |        | or_ln147_2     | or     | auto     | 0       |
-|    xor_ln147_4_fu_1014_p2                         |     |        | xor_ln147_4    | xor    | auto     | 0       |
-|    and_ln147_5_fu_1020_p2                         |     |        | and_ln147_5    | and    | auto     | 0       |
-|    select_ln147_2_fu_1026_p3                      |     |        | select_ln147_2 | select | auto_sel | 0       |
-|    or_ln147_1_fu_1034_p2                          |     |        | or_ln147_1     | or     | auto     | 0       |
-|    select_ln147_3_fu_1040_p3                      |     |        | select_ln147_3 | select | auto_sel | 0       |
-|    icmp_ln75_fu_437_p2                            |     |        | icmp_ln75      | seteq  | auto     | 0       |
-|    icmp_ln75_1_fu_443_p2                          |     |        | icmp_ln75_1    | seteq  | auto     | 0       |
-|    or_ln75_fu_449_p2                              |     |        | or_ln75        | or     | auto     | 0       |
-|    icmp_ln75_2_fu_459_p2                          |     |        | icmp_ln75_2    | seteq  | auto     | 0       |
-|    icmp_ln75_3_fu_465_p2                          |     |        | icmp_ln75_3    | seteq  | auto     | 0       |
-|    or_ln75_1_fu_471_p2                            |     |        | or_ln75_1      | or     | auto     | 0       |
-|    add_ln111_fu_477_p2                            |     |        | add_ln111      | add    | fabric   | 0       |
-|  + top_kernel_Pipeline_store_out_VITIS_LOOP_163_3 | 0   |        |                |        |          |         |
-|    icmp_ln162_fu_101_p2                           |     |        | icmp_ln162     | seteq  | auto     | 0       |
-|    add_ln162_1_fu_107_p2                          |     |        | add_ln162_1    | add    | fabric   | 0       |
-|    add_ln162_fu_119_p2                            |     |        | add_ln162      | add    | fabric   | 0       |
-|    icmp_ln163_fu_125_p2                           |     |        | icmp_ln163     | seteq  | auto     | 0       |
-|    select_ln162_fu_131_p3                         |     |        | select_ln162   | select | auto_sel | 0       |
-|    select_ln162_1_fu_139_p3                       |     |        | select_ln162_1 | select | auto_sel | 0       |
-|    add_ln165_fu_163_p2                            |     |        | add_ln165      | add    | fabric   | 0       |
-|    add_ln163_fu_174_p2                            |     |        | add_ln163      | add    | fabric   | 0       |
-+---------------------------------------------------+-----+--------+----------------+--------+----------+---------+
++---------------------------------------------------------------------------+-----+--------+--------------------------+-----------+--------------------------+---------+
+| Name                                                                      | DSP | Pragma | Variable                 | Op        | Impl                     | Latency |
++---------------------------------------------------------------------------+-----+--------+--------------------------+-----------+--------------------------+---------+
+| + top_kernel                                                              | 26  |        |                          |           |                          |         |
+|  + top_kernel_Pipeline_VITIS_LOOP_218_1_VITIS_LOOP_219_2                  | 1   |        |                          |           |                          |         |
+|    icmp_ln218_fu_878_p2                                                   |     |        | icmp_ln218               | seteq     | auto                     | 0       |
+|    add_ln218_1_fu_884_p2                                                  |     |        | add_ln218_1              | add       | fabric                   | 0       |
+|    add_ln218_fu_896_p2                                                    |     |        | add_ln218                | add       | fabric                   | 0       |
+|    icmp_ln219_fu_902_p2                                                   |     |        | icmp_ln219               | seteq     | auto                     | 0       |
+|    select_ln218_fu_908_p3                                                 |     |        | select_ln218             | select    | auto_sel                 | 0       |
+|    select_ln218_1_fu_916_p3                                               |     |        | select_ln218_1           | select    | auto_sel                 | 0       |
+|    mul_9ns_11ns_19_1_1_U1                                                 | 1   |        | mul_ln218                | mul       | auto                     | 0       |
+|    urem_9ns_3ns_2_13_1_U2                                                 |     |        | urem_ln218               | urem      | auto                     | 12      |
+|    add_ln219_fu_998_p2                                                    |     |        | add_ln219                | add       | fabric                   | 0       |
+|  + top_kernel_Pipeline_VITIS_LOOP_226_3_VITIS_LOOP_230_4_VITIS_LOOP_231_5 | 24  |        |                          |           |                          |         |
+|    icmp_ln226_fu_10268_p2                                                 |     |        | icmp_ln226               | seteq     | auto                     | 0       |
+|    add_ln226_fu_10274_p2                                                  |     |        | add_ln226                | add       | fabric                   | 0       |
+|    t_2_fu_10289_p2                                                        |     |        | t_2                      | add       | fabric                   | 0       |
+|    icmp_ln230_fu_10295_p2                                                 |     |        | icmp_ln230               | seteq     | auto                     | 0       |
+|    select_ln226_fu_10301_p3                                               |     |        | select_ln226             | select    | auto_sel                 | 0       |
+|    indvars_iv_next137449_fu_10309_p2                                      |     |        | indvars_iv_next137449    | add       | fabric                   | 0       |
+|    select_ln226_1_fu_10315_p3                                             |     |        | select_ln226_1           | select    | auto_sel                 | 0       |
+|    xor_ln226_fu_10323_p2                                                  |     |        | xor_ln226                | xor       | auto                     | 0       |
+|    icmp_ln231_fu_10329_p2                                                 |     |        | icmp_ln231               | seteq     | auto                     | 0       |
+|    and_ln226_fu_10335_p2                                                  |     |        | and_ln226                | and       | auto                     | 0       |
+|    select_ln226_2_fu_10341_p3                                             |     |        | select_ln226_2           | select    | auto_sel                 | 0       |
+|    indvars_iv_next1374_dup_fu_10349_p2                                    |     |        | indvars_iv_next1374_dup  | add       | fabric                   | 0       |
+|    empty_fu_10355_p2                                                      |     |        | empty                    | or        | auto                     | 0       |
+|    j_2_mid2_fu_10361_p3                                                   |     |        | j_2_mid2                 | select    | auto_sel                 | 0       |
+|    indvars_iv_next1374_mid1_fu_10369_p2                                   |     |        | indvars_iv_next1374_mid1 | add       | fabric                   | 0       |
+|    indvars_iv_next1374_mid2_fu_10375_p3                                   |     |        | indvars_iv_next1374_mid2 | select    | auto_sel                 | 0       |
+|    select_ln230_fu_10383_p3                                               |     |        | select_ln230             | select    | auto_sel                 | 0       |
+|    mul_9ns_11ns_19_1_1_U158                                               | 1   |        | mul_ln230                | mul       | auto                     | 0       |
+|    urem_9ns_3ns_2_13_1_U156                                               |     |        | urem_ln230               | urem      | auto                     | 12      |
+|    empty_26_fu_10549_p2                                                   |     |        | empty_26                 | add       | fabric                   | 0       |
+|    mul_64ns_66ns_126_1_1_U57                                              | 16  |        | mul34                    | mul       | auto                     | 0       |
+|    mul_9ns_11ns_19_1_1_U157                                               | 1   |        | mul32                    | mul       | auto                     | 0       |
+|    icmp_ln200_fu_10444_p2                                                 |     |        | icmp_ln200               | seteq     | auto                     | 0       |
+|    icmp_ln200_1_fu_10450_p2                                               |     |        | icmp_ln200_1             | seteq     | auto                     | 0       |
+|    or_ln200_fu_10456_p2                                                   |     |        | or_ln200                 | or        | auto                     | 0       |
+|    icmp_ln200_2_fu_10462_p2                                               |     |        | icmp_ln200_2             | seteq     | auto                     | 0       |
+|    icmp_ln200_3_fu_10468_p2                                               |     |        | icmp_ln200_3             | seteq     | auto                     | 0       |
+|    or_ln200_1_fu_10474_p2                                                 |     |        | or_ln200_1               | or        | auto                     | 0       |
+|    add_ln248_fu_10768_p2                                                  |     |        | add_ln248                | add       | fabric                   | 0       |
+|    add_ln248_1_fu_10787_p2                                                |     |        | add_ln248_1              | add       | fabric                   | 0       |
+|    add_ln250_fu_10845_p2                                                  |     |        | add_ln250                | add       | fabric                   | 0       |
+|    add_ln252_fu_10903_p2                                                  |     |        | add_ln252                | add       | fabric                   | 0       |
+|    add_ln249_fu_10961_p2                                                  |     |        | add_ln249                | add       | fabric                   | 0       |
+|    add_ln249_1_fu_10980_p2                                                |     |        | add_ln249_1              | add       | fabric                   | 0       |
+|    add_ln251_fu_11038_p2                                                  |     |        | add_ln251                | add       | fabric                   | 0       |
+|    add_ln253_fu_11096_p2                                                  |     |        | add_ln253                | add       | fabric                   | 0       |
+|    sparsemux_7_2_24_1_1_U58                                               |     |        | tmp_51                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U59                                               |     |        | tmp_52                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U60                                               |     |        | tmp_53                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U61                                               |     |        | tmp_54                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U62                                               |     |        | tmp_55                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U63                                               |     |        | tmp_56                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U64                                               |     |        | tmp_57                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U65                                               |     |        | tmp_58                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U66                                               |     |        | tmp_59                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U67                                               |     |        | tmp_60                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U68                                               |     |        | tmp_61                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U69                                               |     |        | tmp_62                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U70                                               |     |        | tmp_63                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U71                                               |     |        | tmp_64                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U72                                               |     |        | tmp_65                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U73                                               |     |        | tmp_66                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U74                                              |     |        | tmp_67                   | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U75                                               |     |        | tmp_68                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U76                                               |     |        | tmp_69                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U77                                               |     |        | tmp_70                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U78                                               |     |        | tmp_71                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U79                                               |     |        | tmp_72                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U80                                               |     |        | tmp_73                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U81                                               |     |        | tmp_74                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U82                                               |     |        | tmp_75                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U83                                               |     |        | tmp_76                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U84                                               |     |        | tmp_77                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U85                                               |     |        | tmp_78                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U86                                               |     |        | tmp_79                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U87                                               |     |        | tmp_80                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U88                                               |     |        | tmp_81                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U89                                               |     |        | tmp_82                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U90                                               |     |        | tmp_83                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U159                                             |     |        | tmp_84                   | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U91                                               |     |        | tmp_85                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U92                                               |     |        | tmp_86                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U93                                               |     |        | tmp_87                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U94                                               |     |        | tmp_88                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U95                                               |     |        | tmp_89                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U96                                               |     |        | tmp_90                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U97                                               |     |        | tmp_91                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U98                                               |     |        | tmp_92                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U99                                               |     |        | tmp_93                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U100                                              |     |        | tmp_94                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U101                                              |     |        | tmp_95                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U102                                              |     |        | tmp_96                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U103                                              |     |        | tmp_97                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U104                                              |     |        | tmp_98                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U105                                              |     |        | tmp_99                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U106                                              |     |        | tmp_100                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U160                                             |     |        | tmp_101                  | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U58                                               |     |        | tmp_102                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U59                                               |     |        | tmp_103                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U60                                               |     |        | tmp_104                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U61                                               |     |        | tmp_105                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U62                                               |     |        | tmp_106                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U63                                               |     |        | tmp_107                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U64                                               |     |        | tmp_108                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U65                                               |     |        | tmp_109                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U66                                               |     |        | tmp_110                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U67                                               |     |        | tmp_111                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U68                                               |     |        | tmp_112                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U69                                               |     |        | tmp_113                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U70                                               |     |        | tmp_114                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U71                                               |     |        | tmp_115                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U72                                               |     |        | tmp_116                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U73                                               |     |        | tmp_117                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U161                                             |     |        | tmp_118                  | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U58                                               |     |        | tmp_119                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U59                                               |     |        | tmp_120                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U60                                               |     |        | tmp_121                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U61                                               |     |        | tmp_122                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U62                                               |     |        | tmp_123                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U63                                               |     |        | tmp_124                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U64                                               |     |        | tmp_125                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U65                                               |     |        | tmp_126                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U66                                               |     |        | tmp_127                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U67                                               |     |        | tmp_128                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U68                                               |     |        | tmp_129                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U69                                               |     |        | tmp_130                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U70                                               |     |        | tmp_131                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U71                                               |     |        | tmp_132                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U72                                               |     |        | tmp_133                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U73                                               |     |        | tmp_134                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U162                                             |     |        | tmp_135                  | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U75                                               |     |        | tmp_136                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U76                                               |     |        | tmp_137                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U77                                               |     |        | tmp_138                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U78                                               |     |        | tmp_139                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U79                                               |     |        | tmp_140                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U80                                               |     |        | tmp_141                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U81                                               |     |        | tmp_142                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U82                                               |     |        | tmp_143                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U83                                               |     |        | tmp_144                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U84                                               |     |        | tmp_145                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U85                                               |     |        | tmp_146                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U86                                               |     |        | tmp_147                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U87                                               |     |        | tmp_148                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U88                                               |     |        | tmp_149                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U89                                               |     |        | tmp_150                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U90                                               |     |        | tmp_151                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U163                                             |     |        | tmp_152                  | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U75                                               |     |        | tmp_153                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U76                                               |     |        | tmp_154                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U77                                               |     |        | tmp_155                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U78                                               |     |        | tmp_156                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U79                                               |     |        | tmp_157                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U80                                               |     |        | tmp_158                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U81                                               |     |        | tmp_159                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U82                                               |     |        | tmp_160                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U83                                               |     |        | tmp_161                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U84                                               |     |        | tmp_162                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U85                                               |     |        | tmp_163                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U86                                               |     |        | tmp_164                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U87                                               |     |        | tmp_165                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U88                                               |     |        | tmp_166                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U89                                               |     |        | tmp_167                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U90                                               |     |        | tmp_168                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U164                                             |     |        | tmp_169                  | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U91                                               |     |        | tmp_170                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U92                                               |     |        | tmp_171                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U93                                               |     |        | tmp_172                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U94                                               |     |        | tmp_173                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U95                                               |     |        | tmp_174                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U96                                               |     |        | tmp_175                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U97                                               |     |        | tmp_176                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U98                                               |     |        | tmp_177                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U99                                               |     |        | tmp_178                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U100                                              |     |        | tmp_179                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U101                                              |     |        | tmp_180                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U102                                              |     |        | tmp_181                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U103                                              |     |        | tmp_182                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U104                                              |     |        | tmp_183                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U105                                              |     |        | tmp_184                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U106                                              |     |        | tmp_185                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U165                                             |     |        | tmp_186                  | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U91                                               |     |        | tmp_187                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U92                                               |     |        | tmp_188                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U93                                               |     |        | tmp_189                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U94                                               |     |        | tmp_190                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U95                                               |     |        | tmp_191                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U96                                               |     |        | tmp_192                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U97                                               |     |        | tmp_193                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U98                                               |     |        | tmp_194                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U99                                               |     |        | tmp_195                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U100                                              |     |        | tmp_196                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U101                                              |     |        | tmp_197                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U102                                              |     |        | tmp_198                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U103                                              |     |        | tmp_199                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U104                                              |     |        | tmp_200                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U105                                              |     |        | tmp_201                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U106                                              |     |        | tmp_202                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U166                                             |     |        | tmp_203                  | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U107                                              |     |        | tmp_204                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U108                                              |     |        | tmp_205                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U109                                              |     |        | tmp_206                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U110                                              |     |        | tmp_207                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U111                                              |     |        | tmp_208                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U112                                              |     |        | tmp_209                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U113                                              |     |        | tmp_210                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U114                                              |     |        | tmp_211                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U115                                              |     |        | tmp_212                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U116                                              |     |        | tmp_213                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U117                                              |     |        | tmp_214                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U118                                              |     |        | tmp_215                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U119                                              |     |        | tmp_216                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U120                                              |     |        | tmp_217                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U121                                              |     |        | tmp_218                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U122                                              |     |        | tmp_219                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U123                                             |     |        | src_center               | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U124                                              |     |        | tmp_220                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U125                                              |     |        | tmp_221                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U126                                              |     |        | tmp_222                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U127                                              |     |        | tmp_223                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U128                                              |     |        | tmp_224                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U129                                              |     |        | tmp_225                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U130                                              |     |        | tmp_226                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U131                                              |     |        | tmp_227                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U132                                              |     |        | tmp_228                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U133                                              |     |        | tmp_229                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U134                                              |     |        | tmp_230                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U135                                              |     |        | tmp_231                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U136                                              |     |        | tmp_232                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U137                                              |     |        | tmp_233                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U138                                              |     |        | tmp_234                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U139                                              |     |        | tmp_235                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U167                                             |     |        | src_u                    | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U140                                              |     |        | tmp_236                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U141                                              |     |        | tmp_237                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U142                                              |     |        | tmp_238                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U143                                              |     |        | tmp_239                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U144                                              |     |        | tmp_240                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U145                                              |     |        | tmp_241                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U146                                              |     |        | tmp_242                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U147                                              |     |        | tmp_243                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U148                                              |     |        | tmp_244                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U149                                              |     |        | tmp_245                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U150                                              |     |        | tmp_246                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U151                                              |     |        | tmp_247                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U152                                              |     |        | tmp_248                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U153                                              |     |        | tmp_249                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U154                                              |     |        | tmp_250                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U155                                              |     |        | tmp_251                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U168                                             |     |        | src_d                    | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U107                                              |     |        | tmp_252                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U108                                              |     |        | tmp_253                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U109                                              |     |        | tmp_254                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U110                                              |     |        | tmp_255                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U111                                              |     |        | tmp_256                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U112                                              |     |        | tmp_257                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U113                                              |     |        | tmp_258                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U114                                              |     |        | tmp_259                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U115                                              |     |        | tmp_260                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U116                                              |     |        | tmp_261                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U117                                              |     |        | tmp_262                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U118                                              |     |        | tmp_263                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U119                                              |     |        | tmp_264                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U120                                              |     |        | tmp_265                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U121                                              |     |        | tmp_266                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U122                                              |     |        | tmp_267                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U169                                             |     |        | src_l                    | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U107                                              |     |        | tmp_268                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U108                                              |     |        | tmp_269                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U109                                              |     |        | tmp_270                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U110                                              |     |        | tmp_271                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U111                                              |     |        | tmp_272                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U112                                              |     |        | tmp_273                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U113                                              |     |        | tmp_274                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U114                                              |     |        | tmp_275                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U115                                              |     |        | tmp_276                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U116                                              |     |        | tmp_277                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U117                                              |     |        | tmp_278                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U118                                              |     |        | tmp_279                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U119                                              |     |        | tmp_280                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U120                                              |     |        | tmp_281                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U121                                              |     |        | tmp_282                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U122                                              |     |        | tmp_283                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U170                                             |     |        | src_r                    | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U124                                              |     |        | tmp_284                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U125                                              |     |        | tmp_285                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U126                                              |     |        | tmp_286                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U127                                              |     |        | tmp_287                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U128                                              |     |        | tmp_288                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U129                                              |     |        | tmp_289                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U130                                              |     |        | tmp_290                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U131                                              |     |        | tmp_291                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U132                                              |     |        | tmp_292                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U133                                              |     |        | tmp_293                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U134                                              |     |        | tmp_294                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U135                                              |     |        | tmp_295                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U136                                              |     |        | tmp_296                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U137                                              |     |        | tmp_297                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U138                                              |     |        | tmp_298                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U139                                              |     |        | tmp_299                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U171                                             |     |        | src_ul                   | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U124                                              |     |        | tmp_300                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U125                                              |     |        | tmp_301                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U126                                              |     |        | tmp_302                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U127                                              |     |        | tmp_303                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U128                                              |     |        | tmp_304                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U129                                              |     |        | tmp_305                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U130                                              |     |        | tmp_306                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U131                                              |     |        | tmp_307                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U132                                              |     |        | tmp_308                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U133                                              |     |        | tmp_309                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U134                                              |     |        | tmp_310                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U135                                              |     |        | tmp_311                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U136                                              |     |        | tmp_312                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U137                                              |     |        | tmp_313                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U138                                              |     |        | tmp_314                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U139                                              |     |        | tmp_315                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U172                                             |     |        | src_ur                   | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U140                                              |     |        | tmp_316                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U141                                              |     |        | tmp_317                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U142                                              |     |        | tmp_318                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U143                                              |     |        | tmp_319                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U144                                              |     |        | tmp_320                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U145                                              |     |        | tmp_321                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U146                                              |     |        | tmp_322                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U147                                              |     |        | tmp_323                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U148                                              |     |        | tmp_324                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U149                                              |     |        | tmp_325                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U150                                              |     |        | tmp_326                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U151                                              |     |        | tmp_327                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U152                                              |     |        | tmp_328                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U153                                              |     |        | tmp_329                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U154                                              |     |        | tmp_330                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U155                                              |     |        | tmp_331                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U173                                             |     |        | src_dl                   | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U140                                              |     |        | tmp_332                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U141                                              |     |        | tmp_333                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U142                                              |     |        | tmp_334                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U143                                              |     |        | tmp_335                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U144                                              |     |        | tmp_336                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U145                                              |     |        | tmp_337                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U146                                              |     |        | tmp_338                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U147                                              |     |        | tmp_339                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U148                                              |     |        | tmp_340                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U149                                              |     |        | tmp_341                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U150                                              |     |        | tmp_342                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U151                                              |     |        | tmp_343                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U152                                              |     |        | tmp_344                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U153                                              |     |        | tmp_345                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U154                                              |     |        | tmp_346                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U155                                              |     |        | tmp_347                  | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U174                                             |     |        | tmp_348                  | sparsemux | compactencoding_dontcare | 0       |
+|    empty_29_fu_12356_p3                                                   |     |        | empty_29                 | select    | auto_sel                 | 0       |
+|    empty_30_fu_12362_p3                                                   |     |        | empty_30                 | select    | auto_sel                 | 0       |
+|    empty_31_fu_12368_p3                                                   |     |        | empty_31                 | select    | auto_sel                 | 0       |
+|    empty_32_fu_12374_p3                                                   |     |        | empty_32                 | select    | auto_sel                 | 0       |
+|    empty_33_fu_12380_p3                                                   |     |        | empty_33                 | select    | auto_sel                 | 0       |
+|    empty_34_fu_12386_p3                                                   |     |        | empty_34                 | select    | auto_sel                 | 0       |
+|    add_ln255_1_fu_12404_p2                                                |     |        | add_ln255_1              | add       | fabric                   | 0       |
+|    add_ln255_fu_12414_p2                                                  |     |        | add_ln255                | add       | fabric                   | 0       |
+|    empty_35_fu_12432_p3                                                   |     |        | empty_35                 | select    | auto_sel                 | 0       |
+|    sum_axis_fu_12450_p2                                                   |     |        | sum_axis                 | add       | fabric                   | 0       |
+|    add_ln258_1_fu_12468_p2                                                |     |        | add_ln258_1              | add       | fabric                   | 0       |
+|    add_ln258_fu_12478_p2                                                  |     |        | add_ln258                | add       | fabric                   | 0       |
+|    empty_36_fu_12496_p3                                                   |     |        | empty_36                 | select    | auto_sel                 | 0       |
+|    sum_diag_fu_12514_p2                                                   |     |        | sum_diag                 | add       | fabric                   | 0       |
+|    empty_37_fu_12520_p3                                                   |     |        | empty_37                 | select    | auto_sel                 | 0       |
+|    mul_39s_26ns_65_1_1_U56                                                | 3   |        | mul_ln264                | mul       | auto                     | 0       |
+|    mul_39s_24ns_63_1_1_U55                                                | 3   |        | mul_ln264_1              | mul       | auto                     | 0       |
+|    out_1_fu_12597_p2                                                      |     |        | out_1                    | add       | fabric                   | 0       |
+|    xor_ln264_fu_12615_p2                                                  |     |        | xor_ln264                | xor       | auto                     | 0       |
+|    and_ln264_fu_12621_p2                                                  |     |        | and_ln264                | and       | auto                     | 0       |
+|    xor_ln264_1_fu_12626_p2                                                |     |        | xor_ln264_1              | xor       | auto                     | 0       |
+|    or_ln264_2_fu_12631_p2                                                 |     |        | or_ln264_2               | or        | auto                     | 0       |
+|    xor_ln264_2_fu_12637_p2                                                |     |        | xor_ln264_2              | xor       | auto                     | 0       |
+|    xor_ln264_4_fu_12642_p2                                                |     |        | xor_ln264_4              | xor       | auto                     | 0       |
+|    xor_ln264_3_fu_12647_p2                                                |     |        | xor_ln264_3              | xor       | auto                     | 0       |
+|    or_ln264_fu_12653_p2                                                   |     |        | or_ln264                 | or        | auto                     | 0       |
+|    and_ln264_1_fu_12659_p2                                                |     |        | and_ln264_1              | and       | auto                     | 0       |
+|    and_ln264_2_fu_12665_p2                                                |     |        | and_ln264_2              | and       | auto                     | 0       |
+|    or_ln264_3_fu_12671_p2                                                 |     |        | or_ln264_3               | or        | auto                     | 0       |
+|    xor_ln264_5_fu_12677_p2                                                |     |        | xor_ln264_5              | xor       | auto                     | 0       |
+|    and_ln264_3_fu_12683_p2                                                |     |        | and_ln264_3              | and       | auto                     | 0       |
+|    select_ln264_fu_12688_p3                                               |     |        | select_ln264             | select    | auto_sel                 | 0       |
+|    or_ln264_1_fu_12696_p2                                                 |     |        | or_ln264_1               | or        | auto                     | 0       |
+|    out_2_fu_12702_p3                                                      |     |        | out_2                    | select    | auto_sel                 | 0       |
+|    result_1_fu_12748_p2                                                   |     |        | result_1                 | add       | fabric                   | 0       |
+|    xor_ln265_fu_12762_p2                                                  |     |        | xor_ln265                | xor       | auto                     | 0       |
+|    and_ln265_fu_12768_p2                                                  |     |        | and_ln265                | and       | auto                     | 0       |
+|    icmp_ln265_fu_12790_p2                                                 |     |        | icmp_ln265               | seteq     | auto                     | 0       |
+|    icmp_ln265_1_fu_12804_p2                                               |     |        | icmp_ln265_1             | seteq     | auto                     | 0       |
+|    icmp_ln265_2_fu_12810_p2                                               |     |        | icmp_ln265_2             | seteq     | auto                     | 0       |
+|    select_ln265_fu_12816_p3                                               |     |        | select_ln265             | select    | auto_sel                 | 0       |
+|    xor_ln265_1_fu_12824_p2                                                |     |        | xor_ln265_1              | xor       | auto                     | 0       |
+|    and_ln265_1_fu_12830_p2                                                |     |        | and_ln265_1              | and       | auto                     | 0       |
+|    select_ln265_1_fu_12836_p3                                             |     |        | select_ln265_1           | select    | auto_sel                 | 0       |
+|    and_ln265_2_fu_12844_p2                                                |     |        | and_ln265_2              | and       | auto                     | 0       |
+|    xor_ln265_2_fu_12850_p2                                                |     |        | xor_ln265_2              | xor       | auto                     | 0       |
+|    or_ln265_fu_12856_p2                                                   |     |        | or_ln265                 | or        | auto                     | 0       |
+|    xor_ln265_3_fu_12862_p2                                                |     |        | xor_ln265_3              | xor       | auto                     | 0       |
+|    and_ln265_3_fu_12868_p2                                                |     |        | and_ln265_3              | and       | auto                     | 0       |
+|    and_ln265_4_fu_12874_p2                                                |     |        | and_ln265_4              | and       | auto                     | 0       |
+|    or_ln265_2_fu_12880_p2                                                 |     |        | or_ln265_2               | or        | auto                     | 0       |
+|    xor_ln265_4_fu_12886_p2                                                |     |        | xor_ln265_4              | xor       | auto                     | 0       |
+|    and_ln265_5_fu_12892_p2                                                |     |        | and_ln265_5              | and       | auto                     | 0       |
+|    select_ln265_2_fu_12898_p3                                             |     |        | select_ln265_2           | select    | auto_sel                 | 0       |
+|    or_ln265_1_fu_12906_p2                                                 |     |        | or_ln265_1               | or        | auto                     | 0       |
+|    result_2_fu_12912_p3                                                   |     |        | result_2                 | select    | auto_sel                 | 0       |
+|    sparsemux_7_2_24_1_1_U58                                               |     |        | tmp_17                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U59                                               |     |        | tmp_18                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U60                                               |     |        | tmp_19                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U61                                               |     |        | tmp_20                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U62                                               |     |        | tmp_21                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U63                                               |     |        | tmp_22                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U64                                               |     |        | tmp_23                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U65                                               |     |        | tmp_24                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U66                                               |     |        | tmp_25                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U67                                               |     |        | tmp_26                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U68                                               |     |        | tmp_27                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U69                                               |     |        | tmp_28                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U70                                               |     |        | tmp_29                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U71                                               |     |        | tmp_30                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U72                                               |     |        | tmp_31                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U73                                               |     |        | tmp_32                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U74                                              |     |        | tmp_33                   | sparsemux | compactencoding_dontcare | 0       |
+|    sparsemux_7_2_24_1_1_U107                                              |     |        | tmp_34                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U108                                              |     |        | tmp_35                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U109                                              |     |        | tmp_36                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U110                                              |     |        | tmp_37                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U111                                              |     |        | tmp_38                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U112                                              |     |        | tmp_39                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U113                                              |     |        | tmp_40                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U114                                              |     |        | tmp_41                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U115                                              |     |        | tmp_42                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U116                                              |     |        | tmp_43                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U117                                              |     |        | tmp_44                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U118                                              |     |        | tmp_45                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U119                                              |     |        | tmp_46                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U120                                              |     |        | tmp_47                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U121                                              |     |        | tmp_48                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U122                                              |     |        | tmp_49                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U123                                             |     |        | tmp_50                   | sparsemux | compactencoding_dontcare | 0       |
+|    add_ln231_fu_10480_p2                                                  |     |        | add_ln231                | add       | fabric                   | 0       |
+|    add_ln230_fu_10486_p2                                                  |     |        | add_ln230                | add       | fabric                   | 0       |
+|    select_ln230_1_fu_10492_p3                                             |     |        | select_ln230_1           | select    | auto_sel                 | 0       |
+|  + top_kernel_Pipeline_VITIS_LOOP_280_6_VITIS_LOOP_281_7                  | 1   |        |                          |           |                          |         |
+|    icmp_ln280_fu_884_p2                                                   |     |        | icmp_ln280               | seteq     | auto                     | 0       |
+|    add_ln280_1_fu_890_p2                                                  |     |        | add_ln280_1              | add       | fabric                   | 0       |
+|    add_ln280_fu_902_p2                                                    |     |        | add_ln280                | add       | fabric                   | 0       |
+|    icmp_ln281_fu_908_p2                                                   |     |        | icmp_ln281               | seteq     | auto                     | 0       |
+|    select_ln280_fu_914_p3                                                 |     |        | select_ln280             | select    | auto_sel                 | 0       |
+|    select_ln280_1_fu_922_p3                                               |     |        | select_ln280_1           | select    | auto_sel                 | 0       |
+|    mul_9ns_11ns_19_1_1_U233                                               | 1   |        | mul_ln280                | mul       | auto                     | 0       |
+|    urem_9ns_3ns_2_13_1_U234                                               |     |        | urem_ln280               | urem      | auto                     | 12      |
+|    sparsemux_7_2_24_1_1_U235                                              |     |        | tmp_1                    | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U236                                              |     |        | tmp_2                    | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U237                                              |     |        | tmp_3                    | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U238                                              |     |        | tmp_4                    | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U239                                              |     |        | tmp_5                    | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U240                                              |     |        | tmp_6                    | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U241                                              |     |        | tmp_7                    | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U242                                              |     |        | tmp_8                    | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U243                                              |     |        | tmp_9                    | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U244                                              |     |        | tmp_s                    | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U245                                              |     |        | tmp_10                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U246                                              |     |        | tmp_11                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U247                                              |     |        | tmp_12                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U248                                              |     |        | tmp_13                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U249                                              |     |        | tmp_14                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_24_1_1_U250                                              |     |        | tmp_15                   | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_33_4_24_1_1_U251                                             |     |        | tmp_16                   | sparsemux | compactencoding_dontcare | 0       |
+|    add_ln281_fu_970_p2                                                    |     |        | add_ln281                | add       | fabric                   | 0       |
++---------------------------------------------------------------------------+-----+--------+--------------------------+-----------+--------------------------+---------+
 
 
 ================================================================
 == Storage Report
 ================================================================
-+------------------------------------------+--------------+------+------+------+--------+------------+------+---------+------------------+
-| Name                                     | Usage        | Type | BRAM | URAM | Pragma | Variable   | Impl | Latency | Bitwidth, Depth, |
-|                                          |              |      |      |      |        |            |      |         | Banks            |
-+------------------------------------------+--------------+------+------+------+--------+------------+------+---------+------------------+
-| + top_kernel                             |              |      | 178  | 0    |        |            |      |         |                  |
-|   mem_A_U                                | ram_t2p      |      | 88   |      |        | mem_A      | auto | 1       | 24, 65536, 1     |
-|  + top_kernel_Pipeline_row_loop_col_loop |              |      | 90   | 0    |        |            |      |         |                  |
-|    line_buf_1_U                          | ram_1p array |      | 1    |      |        | line_buf_1 | auto | 1       | 24, 256, 1       |
-|    line_buf_U                            | ram_1p array |      | 1    |      |        | line_buf   | auto | 1       | 24, 256, 1       |
-|    mem_B_U                               | ram_t2p      |      | 88   |      |        | mem_B      | auto | 1       | 24, 65536, 1     |
-+------------------------------------------+--------------+------+------+------+--------+------------+------+---------+------------------+
++-------------------------------------------------------------------------------------------+-----------+-----------+------+------+--------+--------------------------------------------------------------------------------------+------+---------+------------------+
+| Name                                                                                      | Usage     | Type      | BRAM | URAM | Pragma | Variable                                                                             | Impl | Latency | Bitwidth, Depth, |
+|                                                                                           |           |           |      |      |        |                                                                                      |      |         | Banks            |
++-------------------------------------------------------------------------------------------+-----------+-----------+------+------+--------+--------------------------------------------------------------------------------------+------+---------+------------------+
+| + top_kernel                                                                              |           |           | 298  | 0    |        |                                                                                      |      |         |                  |
+|   control_s_axi_U                                                                         | interface | s_axilite |      |      |        |                                                                                      |      |         |                  |
+|   gmem0_m_axi_U                                                                           | interface | m_axi     | 8    |      |        |                                                                                      |      |         |                  |
+|   gmem1_m_axi_U                                                                           | interface | m_axi     | 2    |      |        |                                                                                      |      |         |                  |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_89_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_89 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_88_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_88 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_87_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_87 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_71_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_71 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_70_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_70 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_69_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_69 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_68_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_68 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_67_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_67 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_66_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_66 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_65_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_65 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_64_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_64 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_63_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_63 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_62_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_62 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_61_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_61 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_60_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_60 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_59_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_59 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_58_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_58 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_57_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_57 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_56_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_56 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_55_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_55 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_54_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_54 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_53_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_53 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_52_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_52 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_51_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_51 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_50_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_50 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_49_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_49 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_48_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_48 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_47_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_47 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_46_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_46 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_45_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_45 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_86_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_86 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_85_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_85 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_84_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_84 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_83_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_83 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_82_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_82 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_81_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_81 | auto | 1       | 24, 1376, 1      |
+|   top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_A_2_U                         | ram_2p    |           | 3    |      |        | top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_A_2                        | auto | 1       | 24, 1376, 1      |
+|   top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_A_1_U                         | ram_2p    |           | 3    |      |        | top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_A_1                        | auto | 1       | 24, 1376, 1      |
+|   top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_A_U                           | ram_2p    |           | 3    |      |        | top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_A                          | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_80_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_80 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_79_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_79 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_78_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_78 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_77_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_77 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_76_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_76 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_75_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_75 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_74_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_74 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_73_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_73 | auto | 1       | 24, 1376, 1      |
+|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_72_U  | ram_2p    |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_72 | auto | 1       | 24, 1376, 1      |
+|  + top_kernel_Pipeline_VITIS_LOOP_226_3_VITIS_LOOP_230_4_VITIS_LOOP_231_5                 |           |           | 144  | 0    |        |                                                                                      |      |         |                  |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_44_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_44 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_43_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_43 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_42_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_42 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_26_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_26 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_25_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_25 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_24_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_24 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_23_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_23 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_22_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_22 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_21_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_21 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_20_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_20 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_19_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_19 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_18_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_18 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_17_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_17 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_16_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_16 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_15_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_15 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_14_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_14 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_13_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_13 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_12_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_12 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_11_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_11 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_10_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_10 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_9_U  | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_9  | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_8_U  | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_8  | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_7_U  | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_7  | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_6_U  | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_6  | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_5_U  | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_5  | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_4_U  | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_4  | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_3_U  | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_3  | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_2_U  | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_2  | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_1_U  | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_1  | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_U    | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2    | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_41_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_41 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_40_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_40 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_39_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_39 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_38_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_38 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_37_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_37 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_36_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_36 | auto | 1       | 24, 1376, 1      |
+|    top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_B_2_U                        | ram_t2p   |           | 3    |      |        | top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_B_2                        | auto | 1       | 24, 1376, 1      |
+|    top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_B_1_U                        | ram_t2p   |           | 3    |      |        | top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_B_1                        | auto | 1       | 24, 1376, 1      |
+|    top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_B_U                          | ram_t2p   |           | 3    |      |        | top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_B                          | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_35_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_35 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_34_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_34 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_33_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_33 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_32_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_32 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_31_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_31 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_30_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_30 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_29_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_29 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_28_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_28 | auto | 1       | 24, 1376, 1      |
+|    p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U | ram_t2p   |           | 3    |      |        | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27 | auto | 1       | 24, 1376, 1      |
++-------------------------------------------------------------------------------------------+-----------+-----------+------+------+--------+--------------------------------------------------------------------------------------+------+---------+------------------+
 
 
 ================================================================
 == Pragma Report
 ================================================================
-* Inferred Pragmas
-+--------------+---------+---------------------------------------------------------+------------------------+
-| Type         | Options | Location                                                | Inferred From          |
-+--------------+---------+---------------------------------------------------------+------------------------+
-| LOOP_FLATTEN | 0       | loop time_loop (top.cpp:95:16) in top_kernel top.cpp:95 | performance top.cpp:95 |
-+--------------+---------+---------------------------------------------------------+------------------------+
-
 * Valid Pragma Syntax
-+-----------------+----------------------------------+-------------------------------------+
-| Type            | Options                          | Location                            |
-+-----------------+----------------------------------+-------------------------------------+
-| PIPELINE        | ii=1                             | top.cpp:89 in top_kernel            |
-| ARRAY_PARTITION | variable=line_buf complete dim=1 | top.cpp:102 in top_kernel, line_buf |
-| ARRAY_PARTITION | variable=win complete dim=0      | top.cpp:106 in top_kernel, win      |
-| PIPELINE        | ii=1                             | top.cpp:112 in top_kernel           |
-| PIPELINE        | ii=1                             | top.cpp:164 in top_kernel           |
-+-----------------+----------------------------------+-------------------------------------+
++-----------------+-----------------------------------------------------------------------+-----------------------------------+
+| Type            | Options                                                               | Location                          |
++-----------------+-----------------------------------------------------------------------+-----------------------------------+
+| INTERFACE       | m_axi port=A_in offset=slave bundle=gmem0 max_read_burst_length=256   | top.cpp:202 in top_kernel, A_in   |
+| INTERFACE       | m_axi port=A_out offset=slave bundle=gmem1 max_write_burst_length=256 | top.cpp:203 in top_kernel, A_out  |
+| INTERFACE       | s_axilite port=return                                                 | top.cpp:204 in top_kernel, return |
+| ARRAY_PARTITION | variable=mem_A cyclic factor=16 dim=2                                 | top.cpp:207 in top_kernel, mem_A  |
+| ARRAY_PARTITION | variable=mem_B cyclic factor=16 dim=2                                 | top.cpp:210 in top_kernel, mem_B  |
+| PIPELINE        | ii=1                                                                  | top.cpp:220 in top_kernel         |
+| PIPELINE        | ii=1                                                                  | top.cpp:232 in top_kernel         |
+| DEPENDENCE      | variable=mem_A inter false                                            | top.cpp:233 in top_kernel, mem_A  |
+| DEPENDENCE      | variable=mem_B inter false                                            | top.cpp:234 in top_kernel, mem_B  |
+| PIPELINE        | ii=1                                                                  | top.cpp:282 in top_kernel         |
++-----------------+-----------------------------------------------------------------------+-----------------------------------+
 
 

@@ -70,99 +70,92 @@
 //     }
 // }
 
-// #include "dcl.h"
+#include "dcl.h"
 
-void top_kernel(const data_t A_in[NX][NY], data_t A_out[NX][NY]) {
-    // Local buffers to hold the grid state
-    // Using static to ensure they are mapped to BRAM/URAM appropriately
+void top_kernel(const data_t A_in[NX][NY],
+                data_t A_out[NX][NY]) {
+    #pragma HLS INTERFACE m_axi port=A_in offset=slave bundle=gmem0 max_read_burst_length=256
+    #pragma HLS INTERFACE m_axi port=A_out offset=slave bundle=gmem1 max_write_burst_length=256
+    #pragma HLS INTERFACE s_axilite port=return
+
     static data_t mem_A[NX][NY];
+    #pragma HLS ARRAY_PARTITION variable=mem_A cyclic factor=16 dim=2
+    
     static data_t mem_B[NX][NY];
+    #pragma HLS ARRAY_PARTITION variable=mem_B cyclic factor=16 dim=2
 
-    // Weights
+    // Use floating-point weights (same as reference)
     const data_t wc = (data_t)0.50;
     const data_t wa = (data_t)0.10;
     const data_t wd = (data_t)0.025;
 
-    // 1. Initial Load (Burst read from memory)
-    load_in: for (int i = 0; i < NX; i++) {
+    // 1. Initial Load
+    for (int i = 0; i < NX; i++) {
         for (int j = 0; j < NY; j++) {
             #pragma HLS PIPELINE II=1
             mem_A[i][j] = A_in[i][j];
         }
     }
 
-    // 2. Time Stepping
-    time_loop: for (int t = 0; t < TSTEPS; t++) {
-        
-        // Determine source and destination for this timestep (ping-pong)
+    // 2. Time Stepping with ping-pong buffers
+    for (int t = 0; t < TSTEPS; t++) {
         bool ping = (t % 2 == 0);
 
-        // Line Buffer to store 2 rows of the image
-        data_t line_buf[2][NY];
-        #pragma HLS ARRAY_PARTITION variable=line_buf complete dim=1
-
-        // Sliding Window Buffer (3x3)
-        data_t win[3][3];
-        #pragma HLS ARRAY_PARTITION variable=win complete dim=0
-
-        // Process the grid
-        // We use a flattened loop to maximize hardware efficiency
-        row_loop: for (int i = 0; i < NX; i++) {
-            col_loop: for (int j = 0; j < NY; j++) {
+        // Process all pixels
+        for (int i = 0; i < NX; i++) {
+            for (int j = 0; j < NY; j++) {
                 #pragma HLS PIPELINE II=1
+                #pragma HLS DEPENDENCE variable=mem_A inter false
+                #pragma HLS DEPENDENCE variable=mem_B inter false
                 
-                data_t curr_val = ping ? mem_A[i][j] : mem_B[i][j];
-
-                // Shift Window horizontally
-                for (int r = 0; r < 3; r++) {
-                    win[r][0] = win[r][1];
-                    win[r][1] = win[r][2];
-                }
-
-                // Get values from Line Buffer and current input
-                win[0][2] = line_buf[0][j]; // Top row
-                win[1][2] = line_buf[1][j]; // Middle row
-                win[2][2] = curr_val;       // Bottom row
-
-                // Update Line Buffer for next row
-                line_buf[0][j] = line_buf[1][j];
-                line_buf[1][j] = curr_val;
-
-                // Stencil Calculation (Only for interior pixels)
-                // We are at index i,j in the loop, but win[1][1] represents (i-1, j-1)
-                if (i >= 2 && j >= 2) {
-                    int res_i = i - 1;
-                    int res_j = j - 1;
-
-                    acc_t sum_axis = (acc_t)win[0][1] + (acc_t)win[2][1] + 
-                                     (acc_t)win[1][0] + (acc_t)win[1][2];
-
-                    acc_t sum_diag = (acc_t)win[0][0] + (acc_t)win[0][2] + 
-                                     (acc_t)win[2][0] + (acc_t)win[2][2];
-
-                    acc_t center   = (acc_t)win[1][1];
-
-                    acc_t out = (acc_t)wc * center + (acc_t)wa * sum_axis + (acc_t)wd * sum_diag;
-                    
-                    if (ping) mem_B[res_i][res_j] = (data_t)out;
-                    else      mem_A[res_i][res_j] = (data_t)out;
-                }
-                
-                // Boundary Handling: If we are at the edges, the "nxt" value is just "cur"
-                // This logic ensures boundaries are preserved as per requirements
+                // Boundary pixels: copy unchanged
                 if (i == 0 || i == NX-1 || j == 0 || j == NY-1) {
-                    if (ping) mem_B[i][j] = curr_val;
-                    else      mem_A[i][j] = curr_val;
+                    if (ping) {
+                        mem_B[i][j] = mem_A[i][j];
+                    } else {
+                        mem_A[i][j] = mem_B[i][j];
+                    }
+                } else {
+                    // Interior pixels: apply stencil
+                    data_t src_center = ping ? mem_A[i][j] : mem_B[i][j];
+                    data_t src_u = ping ? mem_A[i-1][j] : mem_B[i-1][j];
+                    data_t src_d = ping ? mem_A[i+1][j] : mem_B[i+1][j];
+                    data_t src_l = ping ? mem_A[i][j-1] : mem_B[i][j-1];
+                    data_t src_r = ping ? mem_A[i][j+1] : mem_B[i][j+1];
+                    data_t src_ul = ping ? mem_A[i-1][j-1] : mem_B[i-1][j-1];
+                    data_t src_ur = ping ? mem_A[i-1][j+1] : mem_B[i-1][j+1];
+                    data_t src_dl = ping ? mem_A[i+1][j-1] : mem_B[i+1][j-1];
+                    data_t src_dr = ping ? mem_A[i+1][j+1] : mem_B[i+1][j+1];
+
+                    acc_t sum_axis = (acc_t)src_u + (acc_t)src_d + 
+                                     (acc_t)src_l + (acc_t)src_r;
+
+                    acc_t sum_diag = (acc_t)src_ul + (acc_t)src_ur + 
+                                     (acc_t)src_dl + (acc_t)src_dr;
+
+                    acc_t center = (acc_t)src_center;
+
+                    // Floating-point computation (matches reference)
+                    acc_t out = (acc_t)wc * center + (acc_t)wa * sum_axis + (acc_t)wd * sum_diag;
+                    data_t result = (data_t)out;
+                    
+                    if (ping) {
+                        mem_B[i][j] = result;
+                    } else {
+                        mem_A[i][j] = result;
+                    }
                 }
             }
         }
     }
 
-    // 3. Final Store (Burst write to memory)
-    store_out: for (int i = 0; i < NX; i++) {
+    // 3. Final Store
+    bool final_ping = (TSTEPS % 2 == 0);
+    
+    for (int i = 0; i < NX; i++) {
         for (int j = 0; j < NY; j++) {
             #pragma HLS PIPELINE II=1
-            A_out[i][j] = (TSTEPS % 2 == 0) ? mem_A[i][j] : mem_B[i][j];
+            A_out[i][j] = final_ping ? mem_A[i][j] : mem_B[i][j];
         }
     }
 }

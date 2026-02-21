@@ -243,7 +243,7 @@ class AESL_RUNTIME_BC {
     string mName;
 };
 using hls::sim::Byte;
-extern "C" void top_kernel(Byte<4>*, Byte<4>*);
+extern "C" void top_kernel(Byte<4>*, Byte<4>*, int, int);
 extern "C" void apatb_top_kernel_hw(volatile void * __xlx_apatb_param_A_in, volatile void * __xlx_apatb_param_A_out) {
 using hls::sim::createStream;
   // Collect __xlx_A_in__tmp_vec
@@ -263,7 +263,7 @@ __xlx_A_out__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_A_out)[i]);
   int __xlx_offset_param_A_out = 0;
   int __xlx_offset_byte_param_A_out = 0*4;
   // DUT call
-  top_kernel(__xlx_A_in__tmp_vec.data(), __xlx_A_out__tmp_vec.data());
+  top_kernel(__xlx_A_in__tmp_vec.data(), __xlx_A_out__tmp_vec.data(), __xlx_offset_byte_param_A_in, __xlx_offset_byte_param_A_out);
 // print __xlx_apatb_param_A_in
 for (size_t i = 0; i < __xlx_size_param_A_in; ++i) {
 ((Byte<4>*)__xlx_apatb_param_A_in)[i] = __xlx_A_in__tmp_vec[__xlx_offset_param_A_in+i];

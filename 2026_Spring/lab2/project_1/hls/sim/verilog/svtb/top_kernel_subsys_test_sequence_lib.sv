@@ -26,6 +26,10 @@
             virtual interface misc_interface misc_if;                                               
             top_kernel_reference_model refm;                                                       
                                                                                                     
+            axi_pkg::axi_slave_sequence#(64,4,8,3,1) axi_slave_gmem0_seq;
+            axi_pkg::axi_slave_sequence#(64,4,8,3,1) axi_slave_gmem1_seq;
+            axi_pkg::axi_busdatas_master_sequence#(6, 32) axi_master_wr_control_seq;
+            axi_pkg::axi_busdatas_master_sequence#(6, 32) axi_master_poll_control_seq;
 
             if (!uvm_config_db#(top_kernel_reference_model)::get(p_sequencer,"", "refm", refm))
                 `uvm_fatal(this.get_full_name(), "No reference model")
@@ -44,35 +48,102 @@
 
 
             //phase_done.set_drain_time(this, 0ns);
-            wait(refm.misc_if.reset === 0);
+            wait(refm.misc_if.reset === 1);
             ->refm.misc_if.initialed_evt;
 
             fork
                 begin
                     fork
+                        begin //axi slave sequence. loop delays
+                            `uvm_create_on(axi_slave_gmem0_seq, p_sequencer.gmem0_sqr);
+                            axi_slave_gmem0_seq.misc_if = refm.misc_if;
+                            axi_slave_gmem0_seq.ap_done    = refm.ap_done_for_nexttrans   ;
+                            axi_slave_gmem0_seq.ap_ready   = refm.ap_ready_for_nexttrans  ;
+                            axi_slave_gmem0_seq.finish     = refm.finish ;
+                            axi_slave_gmem0_seq.isusr_delay = axi_pkg::NO_DELAY;
+                            `uvm_send(axi_slave_gmem0_seq);
+                        end
+                        begin //axi slave sequence. loop delays
+                            `uvm_create_on(axi_slave_gmem1_seq, p_sequencer.gmem1_sqr);
+                            axi_slave_gmem1_seq.misc_if = refm.misc_if;
+                            axi_slave_gmem1_seq.ap_done    = refm.ap_done_for_nexttrans   ;
+                            axi_slave_gmem1_seq.ap_ready   = refm.ap_ready_for_nexttrans  ;
+                            axi_slave_gmem1_seq.finish     = refm.finish ;
+                            axi_slave_gmem1_seq.isusr_delay = axi_pkg::NO_DELAY;
+                            `uvm_send(axi_slave_gmem1_seq);
+                        end
                         begin
-                            int delay;
-                            repeat(3) @(posedge refm.misc_if.clock);
-                            for(int j=0; j<1; j++) begin
-                                #0; refm.misc_if.tb2dut_ap_start = 1;
+                            int control_page_idx_bak;
+                            `uvm_create_on(axi_master_wr_control_seq, p_sequencer.control_sqr);
+                            axi_master_wr_control_seq.misc_if = refm.misc_if;
+                            axi_master_wr_control_seq.ap_done    = refm.ap_done_for_nexttrans   ;
+                            axi_master_wr_control_seq.ap_ready   = refm.ap_ready_for_nexttrans  ;
+                            axi_master_wr_control_seq.finish     = refm.finish ;
+                            axi_master_wr_control_seq.isusr_delay = axi_pkg::NO_DELAY;
+                            for(int i=0; i<1; i++) begin
+                                logic[63:0] data64bit_A_in[$];
+                                logic[32-1:0] databusbit_A_in[$];
+                                logic[63:0] data64bit_A_out[$];
+                                logic[32-1:0] databusbit_A_out[$];
+                                data64bit_A_in.delete(); databusbit_A_in.delete();
+                                axi_master_wr_control_seq.StableAxiliteNoUpdate=0;
+                                for(int j=0; j < (64+32-1)/32; j++) begin
+                                    data64bit_A_in.push_back( ((refm.mem_blk_pages_gmem0.maxi_bundlevar_offset["A_in"]+refm.mem_blk_pages_gmem0.page_ofst[refm.mem_blk_pages_gmem0.rd_page_idx])>>(j*32)) & (2**32-1) );
+                                end
+                                foreach(data64bit_A_in[s]) databusbit_A_in[s]=data64bit_A_in[s][32-1:0];
+                                axi_master_wr_control_seq.StableAxiliteNoUpdate=1;
+                                axi_master_wr_control_seq.datamerge_inavg(databusbit_A_in, 0, 16, 1);
+                                data64bit_A_out.delete(); databusbit_A_out.delete();
+                                axi_master_wr_control_seq.StableAxiliteNoUpdate=0;
+                                for(int j=0; j < (64+32-1)/32; j++) begin
+                                    data64bit_A_out.push_back( ((refm.mem_blk_pages_gmem1.maxi_bundlevar_offset["A_out"]+refm.mem_blk_pages_gmem1.page_ofst[refm.mem_blk_pages_gmem1.rd_page_idx])>>(j*32)) & (2**32-1) );
+                                end
+                                foreach(data64bit_A_out[s]) databusbit_A_out[s]=data64bit_A_out[s][32-1:0];
+                                axi_master_wr_control_seq.StableAxiliteNoUpdate=1;
+                                axi_master_wr_control_seq.datamerge_inavg(databusbit_A_out, 0, 28, 1);
+                                `uvm_send(axi_master_wr_control_seq);
+                                @(posedge refm.misc_if.clock); //wait address 2 rsp done
+                                @(posedge refm.misc_if.clock);
+                                refm.write_data_finish_control = 1;
+                                `uvm_info("control data writting thread", $sformatf("%0dth(total 1): waiting for all write data finish event",i), UVM_LOW)
+                                wait(refm.allaxilite_write_data_finish.triggered);
+                                refm.write_data_finish_control = 0;
                                 fork
                                     begin
-                                        @(refm.dut2tb_ap_done);
+                                        axi_master_wr_control_seq.wr_addr_data.push_back( (1<<0)+(0<<32) );
+                                        `uvm_info("control start dut by axilite", $sformatf("%0dth(total 1): begin to set start bit",i), UVM_LOW)
+                                        `uvm_send(axi_master_wr_control_seq);
                                     end
                                     begin
-                                        @(refm.dut2tb_ap_ready);
-                                        #0; refm.misc_if.tb2dut_ap_start = 0;
+                                        `uvm_info("control wait for ap_ready for next trans", $sformatf("%0dth(total 1): begin to wait",i), UVM_LOW)
+                                        wait(refm.dut2tb_ap_ready.triggered);
+                                        wait(refm.ap_done_for_nexttrans.triggered);
+                                        #0.01; //make sure mem incr_rd_page_idx is called first
                                     end
                                 join
-                                void'(std::randomize(delay) with { delay == 0; });
-                                repeat(delay) @(posedge refm.misc_if.clock);
                             end
                         end
                         begin
-                            int delay;
                             for(int j=0; j<1; j=j+refm.ap_done_cnt) begin
-                                @refm.dut2tb_ap_done;
-                                #0; refm.misc_if.tb2dut_ap_continue = 0;
+                                wait(misc_if.dut2tb_ap_done_kernel == 1);
+                                `uvm_info("test finish control", $sformatf("ap_done of kernel is triggered"), UVM_LOW)
+                                @(posedge misc_if.clock);
+                                fork
+                                    forever begin
+                                        `uvm_create_on(axi_master_poll_control_seq, p_sequencer.control_sqr);
+                                        axi_master_poll_control_seq.isusr_delay = axi_pkg::NO_DELAY;
+                                        axi_master_poll_control_seq.misc_if = refm.misc_if;
+                                        axi_master_poll_control_seq.rd_addr.push_back(0);
+                                        `uvm_send(axi_master_poll_control_seq)
+                                        repeat(2) @(posedge misc_if.clock);
+                                    end
+                                    begin
+                                        `uvm_info("test finish control", $sformatf("%0dth(total 1) ap_done_for_nexttrans begin to wait",j), UVM_LOW)
+                                        @refm.dut2tb_ap_done;
+                                    end
+                                join_any
+                                disable fork;
+                                wait(refm.ap_ready_for_nexttrans.triggered);
                             end
                         end
                     join
@@ -91,6 +162,9 @@
             join_any
             repeat(5) @(posedge refm.misc_if.clock); //5 cycles delay for finish stuff. 5 is haphazard value
 
+            p_sequencer.gmem0_sqr.stop_sequences();
+            p_sequencer.gmem1_sqr.stop_sequences();
+            p_sequencer.control_sqr.stop_sequences();
             disable fork;
                                                                                                     
             starting_phase.drop_objection(this);                                                    
