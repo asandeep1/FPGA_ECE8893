@@ -47,11 +47,11 @@ class top_kernel_reference_model extends uvm_component;
     top_kernel_config top_kernel_cfg;
     virtual interface misc_interface misc_if;
 
-    mem_model_pages_with_diffofst#(32,8) mem_blk_pages_gmem0;
+    mem_model_pages_with_diffofst#(512,8) mem_blk_pages_gmem0;
     int blk_id_gmem0 = 0;
     memaccess_axi_state_cbs axi_memaccess_cb_gmem0;
 
-    mem_model_pages_with_diffofst#(32,8) mem_blk_pages_gmem1;
+    mem_model_pages_with_diffofst#(512,8) mem_blk_pages_gmem1;
     int blk_id_gmem1 = 0;
     memaccess_axi_state_cbs axi_memaccess_cb_gmem1;
 
@@ -81,19 +81,19 @@ class top_kernel_reference_model extends uvm_component;
         string fpath[$];
 misc_if.dut2tb_ap_done = 0;
         fpath.push_back(`TV_IN_gmem0);
-        mem_blk_pages_gmem0 = mem_model_pages_with_diffofst#(32,8)::type_id::create("mem_blk_pages_gmem0");
-        mem_blk_pages_gmem0.whole_page_size=262208;
+        mem_blk_pages_gmem0 = mem_model_pages_with_diffofst#(512,8)::type_id::create("mem_blk_pages_gmem0");
+        mem_blk_pages_gmem0.whole_page_size=263168;
         mem_blk_pages_gmem0.maxi_bundlevar_fpath["A_in"]=`TV_IN_OFFSET_A_in;
         mem_blk_pages_gmem0.set_binary(1);
-        mem_blk_pages_gmem0.tvinload_pagechk_atinit(fpath, 65536*((32+7)/8), 0, 0, "");
+        mem_blk_pages_gmem0.tvinload_pagechk_atinit(fpath, 4096*((512+7)/8), 0, 0, "");
         fpath.delete();
 
         fpath.push_back(`TV_IN_gmem1);
-        mem_blk_pages_gmem1 = mem_model_pages_with_diffofst#(32,8)::type_id::create("mem_blk_pages_gmem1");
-        mem_blk_pages_gmem1.whole_page_size=262208;
+        mem_blk_pages_gmem1 = mem_model_pages_with_diffofst#(512,8)::type_id::create("mem_blk_pages_gmem1");
+        mem_blk_pages_gmem1.whole_page_size=263168;
         mem_blk_pages_gmem1.maxi_bundlevar_fpath["A_out"]=`TV_IN_OFFSET_A_out;
         mem_blk_pages_gmem1.set_binary(1);
-        mem_blk_pages_gmem1.tvinload_pagechk_atinit(fpath, 65536*((32+7)/8), 0, 0, "");
+        mem_blk_pages_gmem1.tvinload_pagechk_atinit(fpath, 4096*((512+7)/8), 0, 0, "");
         mem_blk_pages_gmem1.tvoutdump_atinit(`TV_OUT_gmem1);
         fpath.delete();
 

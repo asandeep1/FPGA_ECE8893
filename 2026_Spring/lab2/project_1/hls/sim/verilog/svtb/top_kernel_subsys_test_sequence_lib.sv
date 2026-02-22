@@ -26,8 +26,8 @@
             virtual interface misc_interface misc_if;                                               
             top_kernel_reference_model refm;                                                       
                                                                                                     
-            axi_pkg::axi_slave_sequence#(64,4,8,3,1) axi_slave_gmem0_seq;
-            axi_pkg::axi_slave_sequence#(64,4,8,3,1) axi_slave_gmem1_seq;
+            axi_pkg::axi_slave_sequence#(64,64,8,3,1) axi_slave_gmem0_seq;
+            axi_pkg::axi_slave_sequence#(64,64,8,3,1) axi_slave_gmem1_seq;
             axi_pkg::axi_busdatas_master_sequence#(6, 32) axi_master_wr_control_seq;
             axi_pkg::axi_busdatas_master_sequence#(6, 32) axi_master_poll_control_seq;
 

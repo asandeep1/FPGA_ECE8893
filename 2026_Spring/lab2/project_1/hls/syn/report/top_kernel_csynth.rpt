@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'top_kernel'
 ================================================================
-* Date:           Sat Feb 21 12:05:43 2026
+* Date:           Sat Feb 21 19:11:58 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
     |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
     +---------+---------+-----------+-----------+---------+---------+---------+
-    |  2097216|  2097216|  20.972 ms|  20.972 ms|  2097217|  2097217|       no|
+    |  1974334|  1974334|  19.743 ms|  19.743 ms|  1974335|  1974335|       no|
     +---------+---------+-----------+-----------+---------+---------+---------+
 
     + Detail: 
@@ -38,9 +38,9 @@
         |                                                                                   |                                                                        |  Latency (cycles) |   Latency (absolute)  |      Interval     |                    Pipeline                    |
         |                                      Instance                                     |                                 Module                                 |   min   |   max   |    min    |    max    |   min   |   max   |                      Type                      |
         +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+---------+---------+------------------------------------------------+
-        |grp_top_kernel_Pipeline_VITIS_LOOP_218_1_VITIS_LOOP_219_2_fu_291                   |top_kernel_Pipeline_VITIS_LOOP_218_1_VITIS_LOOP_219_2                   |    65549|    65549|   0.655 ms|   0.655 ms|    65537|    65537|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_top_kernel_Pipeline_VITIS_LOOP_226_3_VITIS_LOOP_230_4_VITIS_LOOP_231_5_fu_394  |top_kernel_Pipeline_VITIS_LOOP_226_3_VITIS_LOOP_230_4_VITIS_LOOP_231_5  |  1966098|  1966098|  19.661 ms|  19.661 ms|  1966081|  1966081|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_top_kernel_Pipeline_VITIS_LOOP_280_6_VITIS_LOOP_281_7_fu_590                   |top_kernel_Pipeline_VITIS_LOOP_280_6_VITIS_LOOP_281_7                   |    65550|    65550|   0.655 ms|   0.655 ms|    65537|    65537|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_top_kernel_Pipeline_load_loop_fu_291                                           |top_kernel_Pipeline_load_loop                                           |     4108|     4108|  41.080 us|  41.080 us|     4097|     4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394  |top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4  |  1966098|  1966098|  19.661 ms|  19.661 ms|  1966081|  1966081|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_top_kernel_Pipeline_store_loop_fu_590                                          |top_kernel_Pipeline_store_loop                                          |     4109|     4109|  41.090 us|  41.090 us|     4097|     4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+---------+---------+------------------------------------------------+
 
         * Loop: 
@@ -58,16 +58,16 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       -|      -|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |      154|   26|   11574|  17331|    0|
+|Instance         |      287|   24|   13822|  19056|    0|
 |Memory           |      144|    -|       0|      0|    0|
 |Multiplexer      |        -|    -|       0|   3945|    -|
-|Register         |        -|    -|     147|      -|    -|
+|Register         |        -|    -|     139|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |      298|   26|   11721|  21276|    0|
+|Total            |      431|   24|   13961|  23001|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      432|  360|  141120|  70560|    0|
 +-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |       68|    7|       8|     30|    0|
+|Utilization (%)  |       99|    6|       9|     32|    0|
 +-----------------+---------+-----+--------+-------+-----+
 
 + Detail: 
@@ -76,13 +76,13 @@
     |                                      Instance                                     |                                 Module                                 | BRAM_18K| DSP|  FF  |  LUT  | URAM|
     +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+-------+-----+
     |control_s_axi_U                                                                    |control_s_axi                                                           |        0|   0|   176|    296|    0|
-    |gmem0_m_axi_U                                                                      |gmem0_m_axi                                                             |        8|   0|   675|    643|    0|
-    |gmem1_m_axi_U                                                                      |gmem1_m_axi                                                             |        2|   0|   673|    635|    0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_218_1_VITIS_LOOP_219_2_fu_291                   |top_kernel_Pipeline_VITIS_LOOP_218_1_VITIS_LOOP_219_2                   |        0|   1|   527|    432|    0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_226_3_VITIS_LOOP_230_4_VITIS_LOOP_231_5_fu_394  |top_kernel_Pipeline_VITIS_LOOP_226_3_VITIS_LOOP_230_4_VITIS_LOOP_231_5  |      144|  24|  8994|  14684|    0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_280_6_VITIS_LOOP_281_7_fu_590                   |top_kernel_Pipeline_VITIS_LOOP_280_6_VITIS_LOOP_281_7                   |        0|   1|   529|    641|    0|
+    |gmem0_m_axi_U                                                                      |gmem0_m_axi                                                             |      114|   0|  1578|   1648|    0|
+    |gmem1_m_axi_U                                                                      |gmem1_m_axi                                                             |       29|   0|  1576|   1640|    0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394  |top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4  |      144|  24|  8994|  14684|    0|
+    |grp_top_kernel_Pipeline_load_loop_fu_291                                           |top_kernel_Pipeline_load_loop                                           |        0|   0|   748|    322|    0|
+    |grp_top_kernel_Pipeline_store_loop_fu_590                                          |top_kernel_Pipeline_store_loop                                          |        0|   0|   750|    466|    0|
     +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+-------+-----+
-    |Total                                                                              |                                                                        |      154|  26| 11574|  17331|    0|
+    |Total                                                                              |                                                                        |      287|  24| 13822|  19056|    0|
     +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+-------+-----+
 
     * DSP: 
@@ -93,52 +93,52 @@
     |                                         Memory                                         |                                      Module                                      | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
     +----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_89_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_88_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_87_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_71_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_70_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_69_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_68_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_67_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_66_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_65_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_64_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_63_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_62_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_61_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_60_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_59_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_58_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_57_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_56_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_55_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_54_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_53_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_52_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_51_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_50_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_49_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_48_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_47_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_46_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_45_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_86_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_85_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_84_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_83_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_82_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_81_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_A_2_U                         |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_A_1_U                         |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_A_U                           |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_80_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_79_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_78_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_77_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_76_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
-    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_75_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_74_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_88_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_70_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_67_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_64_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_61_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_58_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_55_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_52_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_49_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_46_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_85_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_82_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_A_1_U                         |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_79_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_76_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_73_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_87_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_69_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_66_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_63_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_60_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_57_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_54_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_51_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_48_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_45_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_84_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_81_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_A_U                           |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_78_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
+    |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_75_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_72_U  |p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4  |        3|  0|   0|    0|  1376|   24|     1|        33024|
     +----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
     |Total                                                                                   |                                                                                  |      144|  0|   0|    0| 66048| 1152|    48|      1585152|
@@ -416,13 +416,13 @@
     |                                              Name                                              | FF | LUT| Bits| Const Bits|
     +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
     |ap_CS_fsm                                                                                       |  20|   0|   20|          0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_218_1_VITIS_LOOP_219_2_fu_291_ap_start_reg                   |   1|   0|    1|          0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_226_3_VITIS_LOOP_230_4_VITIS_LOOP_231_5_fu_394_ap_start_reg  |   1|   0|    1|          0|
-    |grp_top_kernel_Pipeline_VITIS_LOOP_280_6_VITIS_LOOP_281_7_fu_590_ap_start_reg                   |   1|   0|    1|          0|
-    |trunc_ln2_reg_739                                                                               |  62|   0|   62|          0|
-    |trunc_ln_reg_733                                                                                |  62|   0|   62|          0|
+    |grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394_ap_start_reg  |   1|   0|    1|          0|
+    |grp_top_kernel_Pipeline_load_loop_fu_291_ap_start_reg                                           |   1|   0|    1|          0|
+    |grp_top_kernel_Pipeline_store_loop_fu_590_ap_start_reg                                          |   1|   0|    1|          0|
+    |trunc_ln1_reg_739                                                                               |  58|   0|   58|          0|
+    |trunc_ln_reg_733                                                                                |  58|   0|   58|          0|
     +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
-    |Total                                                                                           | 147|   0|  147|          0|
+    |Total                                                                                           | 139|   0|  139|          0|
     +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
 
 
@@ -469,8 +469,8 @@
 |m_axi_gmem0_AWUSER     |  out|    1|       m_axi|         gmem0|       pointer|
 |m_axi_gmem0_WVALID     |  out|    1|       m_axi|         gmem0|       pointer|
 |m_axi_gmem0_WREADY     |   in|    1|       m_axi|         gmem0|       pointer|
-|m_axi_gmem0_WDATA      |  out|   32|       m_axi|         gmem0|       pointer|
-|m_axi_gmem0_WSTRB      |  out|    4|       m_axi|         gmem0|       pointer|
+|m_axi_gmem0_WDATA      |  out|  512|       m_axi|         gmem0|       pointer|
+|m_axi_gmem0_WSTRB      |  out|   64|       m_axi|         gmem0|       pointer|
 |m_axi_gmem0_WLAST      |  out|    1|       m_axi|         gmem0|       pointer|
 |m_axi_gmem0_WID        |  out|    1|       m_axi|         gmem0|       pointer|
 |m_axi_gmem0_WUSER      |  out|    1|       m_axi|         gmem0|       pointer|
@@ -489,7 +489,7 @@
 |m_axi_gmem0_ARUSER     |  out|    1|       m_axi|         gmem0|       pointer|
 |m_axi_gmem0_RVALID     |   in|    1|       m_axi|         gmem0|       pointer|
 |m_axi_gmem0_RREADY     |  out|    1|       m_axi|         gmem0|       pointer|
-|m_axi_gmem0_RDATA      |   in|   32|       m_axi|         gmem0|       pointer|
+|m_axi_gmem0_RDATA      |   in|  512|       m_axi|         gmem0|       pointer|
 |m_axi_gmem0_RLAST      |   in|    1|       m_axi|         gmem0|       pointer|
 |m_axi_gmem0_RID        |   in|    1|       m_axi|         gmem0|       pointer|
 |m_axi_gmem0_RUSER      |   in|    1|       m_axi|         gmem0|       pointer|
@@ -514,8 +514,8 @@
 |m_axi_gmem1_AWUSER     |  out|    1|       m_axi|         gmem1|       pointer|
 |m_axi_gmem1_WVALID     |  out|    1|       m_axi|         gmem1|       pointer|
 |m_axi_gmem1_WREADY     |   in|    1|       m_axi|         gmem1|       pointer|
-|m_axi_gmem1_WDATA      |  out|   32|       m_axi|         gmem1|       pointer|
-|m_axi_gmem1_WSTRB      |  out|    4|       m_axi|         gmem1|       pointer|
+|m_axi_gmem1_WDATA      |  out|  512|       m_axi|         gmem1|       pointer|
+|m_axi_gmem1_WSTRB      |  out|   64|       m_axi|         gmem1|       pointer|
 |m_axi_gmem1_WLAST      |  out|    1|       m_axi|         gmem1|       pointer|
 |m_axi_gmem1_WID        |  out|    1|       m_axi|         gmem1|       pointer|
 |m_axi_gmem1_WUSER      |  out|    1|       m_axi|         gmem1|       pointer|
@@ -534,7 +534,7 @@
 |m_axi_gmem1_ARUSER     |  out|    1|       m_axi|         gmem1|       pointer|
 |m_axi_gmem1_RVALID     |   in|    1|       m_axi|         gmem1|       pointer|
 |m_axi_gmem1_RREADY     |  out|    1|       m_axi|         gmem1|       pointer|
-|m_axi_gmem1_RDATA      |   in|   32|       m_axi|         gmem1|       pointer|
+|m_axi_gmem1_RDATA      |   in|  512|       m_axi|         gmem1|       pointer|
 |m_axi_gmem1_RLAST      |   in|    1|       m_axi|         gmem1|       pointer|
 |m_axi_gmem1_RID        |   in|    1|       m_axi|         gmem1|       pointer|
 |m_axi_gmem1_RUSER      |   in|    1|       m_axi|         gmem1|       pointer|

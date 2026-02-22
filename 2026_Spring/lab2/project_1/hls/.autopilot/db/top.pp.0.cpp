@@ -6506,12 +6506,15 @@ typedef ap_fixed<40, 12, AP_RND, AP_SAT> acc_t;
 __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(const data_t A_in[256][256],
                 data_t A_out[256][256]);
 # 2 "top.cpp" 2
-# 200 "top.cpp"
-__attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(const data_t A_in[256][256],
-                data_t A_out[256][256]) {
+# 75 "top.cpp"
+# 1 "/tools/software/xilinx/2025.1.1/Vitis/common/technology/autopilot/ap_int.h" 1
+# 76 "top.cpp" 2
+
+__attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(const data_t A_in[256][256], data_t A_out[256][256]) {
 #line 22 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/script.tcl"
 #pragma HLSDIRECTIVE TOP name=top_kernel
-# 201 "top.cpp"
+# 77 "top.cpp"
+
 
 #pragma HLS INTERFACE m_axi port=A_in offset=slave bundle=gmem0 max_read_burst_length=256
 #pragma HLS INTERFACE m_axi port=A_out offset=slave bundle=gmem1 max_write_burst_length=256
@@ -6523,39 +6526,48 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(const data_t A_in[2
  static data_t mem_B[256][256];
 #pragma HLS ARRAY_PARTITION variable=mem_B cyclic factor=16 dim=2
 
-
  const data_t wc = (data_t)0.50;
     const data_t wa = (data_t)0.10;
     const data_t wd = (data_t)0.025;
 
 
-    VITIS_LOOP_218_1: for (int i = 0; i < 256; i++) {
-        VITIS_LOOP_219_2: for (int j = 0; j < 256; j++) {
+    const int VEC_SIZE = 512 / (sizeof(data_t) * 8);
+    const int TOTAL_PIXELS = 256 * 256;
+    const int NUM_VECTORS = TOTAL_PIXELS / VEC_SIZE;
+
+
+    const ap_uint<512>* A_WIDE_IN = (const ap_uint<512>*) A_in;
+
+    load_loop:
+    for (int v = 0; v < NUM_VECTORS; v++) {
 #pragma HLS PIPELINE II=1
- mem_A[i][j] = A_in[i][j];
+ ap_uint<512> chunk = A_WIDE_IN[v];
+        VITIS_LOOP_105_1: for (int k = 0; k < VEC_SIZE; k++) {
+#pragma HLS UNROLL
+ int idx = v * VEC_SIZE + k;
+
+
+            uint32_t raw_bits = chunk.range((k+1)*32-1, k*32).to_uint();
+
+
+            mem_A[idx / 256][idx % 256] = *((data_t*)&raw_bits);
         }
     }
 
 
-    VITIS_LOOP_226_3: for (int t = 0; t < 30; t++) {
+    VITIS_LOOP_118_2: for (int t = 0; t < 30; t++) {
         bool ping = (t % 2 == 0);
 
-
-        VITIS_LOOP_230_4: for (int i = 0; i < 256; i++) {
-            VITIS_LOOP_231_5: for (int j = 0; j < 256; j++) {
+        VITIS_LOOP_121_3: for (int i = 0; i < 256; i++) {
+            VITIS_LOOP_122_4: for (int j = 0; j < 256; j++) {
 #pragma HLS PIPELINE II=1
 #pragma HLS DEPENDENCE variable=mem_A inter false
 #pragma HLS DEPENDENCE variable=mem_B inter false
 
-
  if (i == 0 || i == 256 -1 || j == 0 || j == 256 -1) {
-                    if (ping) {
-                        mem_B[i][j] = mem_A[i][j];
-                    } else {
-                        mem_A[i][j] = mem_B[i][j];
-                    }
+                    if (ping) mem_B[i][j] = mem_A[i][j];
+                    else mem_A[i][j] = mem_B[i][j];
                 } else {
-
                     data_t src_center = ping ? mem_A[i][j] : mem_B[i][j];
                     data_t src_u = ping ? mem_A[i-1][j] : mem_B[i-1][j];
                     data_t src_d = ping ? mem_A[i+1][j] : mem_B[i+1][j];
@@ -6566,35 +6578,34 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(const data_t A_in[2
                     data_t src_dl = ping ? mem_A[i+1][j-1] : mem_B[i+1][j-1];
                     data_t src_dr = ping ? mem_A[i+1][j+1] : mem_B[i+1][j+1];
 
-                    acc_t sum_axis = (acc_t)src_u + (acc_t)src_d +
-                                     (acc_t)src_l + (acc_t)src_r;
+                    acc_t sum_axis = (acc_t)src_u + (acc_t)src_d + (acc_t)src_l + (acc_t)src_r;
+                    acc_t sum_diag = (acc_t)src_ul + (acc_t)src_ur + (acc_t)src_dl + (acc_t)src_dr;
+                    acc_t out = (acc_t)wc * (acc_t)src_center + (acc_t)wa * sum_axis + (acc_t)wd * sum_diag;
 
-                    acc_t sum_diag = (acc_t)src_ul + (acc_t)src_ur +
-                                     (acc_t)src_dl + (acc_t)src_dr;
-
-                    acc_t center = (acc_t)src_center;
-
-
-                    acc_t out = (acc_t)wc * center + (acc_t)wa * sum_axis + (acc_t)wd * sum_diag;
-                    data_t result = (data_t)out;
-
-                    if (ping) {
-                        mem_B[i][j] = result;
-                    } else {
-                        mem_A[i][j] = result;
-                    }
+                    if (ping) mem_B[i][j] = (data_t)out;
+                    else mem_A[i][j] = (data_t)out;
                 }
             }
         }
     }
 
 
+    ap_uint<512>* A_WIDE_OUT = (ap_uint<512>*) A_out;
     bool final_ping = (30 % 2 == 0);
 
-    VITIS_LOOP_280_6: for (int i = 0; i < 256; i++) {
-        VITIS_LOOP_281_7: for (int j = 0; j < 256; j++) {
+    store_loop:
+    for (int v = 0; v < NUM_VECTORS; v++) {
 #pragma HLS PIPELINE II=1
- A_out[i][j] = final_ping ? mem_A[i][j] : mem_B[i][j];
+ ap_uint<512> chunk;
+        VITIS_LOOP_160_5: for (int k = 0; k < VEC_SIZE; k++) {
+#pragma HLS UNROLL
+ int idx = v * VEC_SIZE + k;
+            data_t val = final_ping ? mem_A[idx / 256][idx % 256] : mem_B[idx / 256][idx % 256];
+
+
+            uint32_t raw_bits = *((uint32_t*)&val);
+            chunk.range((k+1)*32-1, k*32) = raw_bits;
         }
+        A_WIDE_OUT[v] = chunk;
     }
 }

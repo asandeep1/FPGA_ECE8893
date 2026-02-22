@@ -4,21 +4,21 @@ Implementation tool: Xilinx Vivado v.2025.1.1
 Project:             project_1
 Solution:            hls
 Device target:       xczu3eg-sbva484-1-e
-Report date:         Sat Feb 21 13:13:51 EST 2026
+Report date:         Sat Feb 21 20:25:21 EST 2026
 
 #=== Post-Implementation Resource usage ===
 SLICE:            0
-LUT:          11932
-FF:            3453
+LUT:          12150
+FF:            4939
 DSP:             21
-BRAM:           297
+BRAM:           417
 URAM:             0
 LATCH:            0
-SRL:            208
-CLB:           2399
+SRL:            191
+CLB:           2615
 
 #=== Final timing ===
 CP required:                     10.000
 CP achieved post-synthesis:      5.435
-CP achieved post-implementation: 6.755
+CP achieved post-implementation: 6.917
 Timing met

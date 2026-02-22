@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date         : Sat Feb 21 13:08:12 2026
+| Date         : Sat Feb 21 20:18:23 2026
 | Host         : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command      : report_design_analysis -file ./report/top_kernel_design_analysis_synth.rpt
 | Design       : bd_0_wrapper
@@ -49,7 +49,7 @@ Table of Contents
 | Mark Debug                | 0                                                                                                                                                                                |
 | Start Point Pin Primitive | FDRE/C                                                                                                                                                                           |
 | End Point Pin Primitive   | DSP_OUTPUT/ALU_OUT[0]                                                                                                                                                            |
-| Start Point Pin           | select_ln230_reg_13061_pp0_iter12_reg_reg[4]/C                                                                                                                                   |
+| Start Point Pin           | select_ln121_reg_13061_pp0_iter12_reg_reg[4]/C                                                                                                                                   |
 | End Point Pin             | DSP_OUTPUT_INST/ALU_OUT[0]                                                                                                                                                       |
 +---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 * Bounding box calculated as % of dimensions for the target device (2447, 372)

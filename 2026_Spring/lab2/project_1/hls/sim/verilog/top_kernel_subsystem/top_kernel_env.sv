@@ -14,8 +14,8 @@
         top_kernel_virtual_sequencer top_kernel_virtual_sqr;                                                      
         top_kernel_config top_kernel_cfg;                                                                         
                                                                                                                     
-        axi_pkg::axi_env#(64,4,8,3,1) axi_master_gmem0;
-        axi_pkg::axi_env#(64,4,8,3,1) axi_master_gmem1;
+        axi_pkg::axi_env#(64,64,8,3,1) axi_master_gmem0;
+        axi_pkg::axi_env#(64,64,8,3,1) axi_master_gmem1;
         axi_pkg::axi_env#(6,4,4,3,1) axi_lite_control;
                                                                                                                     
         top_kernel_reference_model   refm;                                                                         
@@ -49,7 +49,7 @@
         top_kernel_cfg.gmem0_cfg.write_latency_mode = TRANSACTION_FIRST;
         top_kernel_cfg.gmem0_cfg.read_latency_mode = TRANSACTION_FIRST;
         uvm_config_db#(axi_pkg::axi_cfg)::set(this, "axi_master_gmem0*", "cfg", top_kernel_cfg.gmem0_cfg);
-        axi_master_gmem0 = axi_pkg::axi_env#(64,4,8,3,1)::type_id::create("axi_master_gmem0", this);
+        axi_master_gmem0 = axi_pkg::axi_env#(64,64,8,3,1)::type_id::create("axi_master_gmem0", this);
 
         top_kernel_cfg.gmem1_cfg.set_default();
         top_kernel_cfg.gmem1_cfg.drv_type = axi_pkg::SLAVE;
@@ -57,7 +57,7 @@
         top_kernel_cfg.gmem1_cfg.write_latency_mode = TRANSACTION_FIRST;
         top_kernel_cfg.gmem1_cfg.read_latency_mode = TRANSACTION_FIRST;
         uvm_config_db#(axi_pkg::axi_cfg)::set(this, "axi_master_gmem1*", "cfg", top_kernel_cfg.gmem1_cfg);
-        axi_master_gmem1 = axi_pkg::axi_env#(64,4,8,3,1)::type_id::create("axi_master_gmem1", this);
+        axi_master_gmem1 = axi_pkg::axi_env#(64,64,8,3,1)::type_id::create("axi_master_gmem1", this);
 
         top_kernel_cfg.control_cfg.set_default();
         top_kernel_cfg.control_cfg.drv_type = axi_pkg::MASTER;

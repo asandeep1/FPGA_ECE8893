@@ -1,10 +1,62 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: top.cpp, Line: 160, Column: 27 }
+Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_160_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: top.cpp, Line: 105, Column: 27 }
+Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_105_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 77, Column: 0 }
+Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_160_5
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:160:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 77, Column: 0 }
+Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_1
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:105:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
 Function:        apatb_top_kernel_ir
 Args:            
   - Callee:          'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])'
-    DebugLoc:        { File: top.cpp, Line: 201, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 77, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          apatb_top_kernel_ir
   - String:          ' because it should never be inlined (cost=never)'
@@ -12,7 +64,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 209, Column: 0 }
+DebugLoc:        { File: top.cpp, Line: 86, Column: 0 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Applying '
@@ -32,7 +84,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 206, Column: 0 }
+DebugLoc:        { File: top.cpp, Line: 83, Column: 0 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Applying '
@@ -50,147 +102,117 @@ Args:
   - String:          .
 ...
 --- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        maxi
-  - String:          ' variable '''
-  - Name:            A_out
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=none'
-  - String:          ' mode in '
-  - Bitwidth:        '32'
-  - String:          '-bits'
-...
---- !Passed
-Pass:            reflow-aggr
-Name:            AggrSucc
-Function:        apatb_top_kernel_ir
-Args:            
-  - String:          'Aggregating '
-  - HwTyName:        maxi
-  - String:          ' variable '''
-  - Name:            A_in
-  - String:          ''' with '
-  - AggregateTypeName: 'compact=none'
-  - String:          ' mode in '
-  - Bitwidth:        '32'
-  - String:          '-bits'
-...
---- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: top.cpp, Line: 218, Column: 23 }
+DebugLoc:        { File: top.cpp, Line: 102, Column: 5 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Sequential '
   - Direction:       read
   - String:          ' of length '
-  - Length:          '65536'
+  - Length:          '4096'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        A_in1seq
+  - AccessID:        A_in371seq
   - ArrayName:       A_in
   - String:          ' '
   - BundleName:      gmem0
   - String:          ' '
-  - LoopName:        VITIS_LOOP_218_1
+  - LoopName:        load_loop
   - String:          ' '
-  - LoopLoc:         'top.cpp:218:23'
+  - LoopLoc:         'top.cpp:102:5'
   - String:          ' '
   - Function:        'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])'
-    DebugLoc:        { File: top.cpp, Line: 201, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 77, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: top.cpp, Line: 221, Column: 14 }
+    DebugLoc:        { File: top.cpp, Line: 104, Column: 23 }
   - OrigDirection:   read
-  - OrigID:          for.inc.load.23
+  - OrigID:          VITIS_LOOP_105_1.load.36
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: top.cpp, Line: 280, Column: 23 }
+DebugLoc:        { File: top.cpp, Line: 157, Column: 5 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Sequential '
   - Direction:       write
   - String:          ' of length '
-  - Length:          '65536'
+  - Length:          '4096'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        A_out2seq
+  - AccessID:        A_out372seq
   - ArrayName:       A_out
   - String:          ' '
   - BundleName:      gmem1
   - String:          ' '
-  - LoopName:        VITIS_LOOP_280_6
+  - LoopName:        store_loop
   - String:          ' '
-  - LoopLoc:         'top.cpp:280:23'
+  - LoopLoc:         'top.cpp:157:5'
   - String:          ' '
   - Function:        'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])'
-    DebugLoc:        { File: top.cpp, Line: 201, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 77, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      store
-    DebugLoc:        { File: top.cpp, Line: 283, Column: 14 }
+    DebugLoc:        { File: top.cpp, Line: 169, Column: 23 }
   - OrigDirection:   write
-  - OrigID:          for.inc246.store.42
+  - OrigID:          VITIS_LOOP_160_5.store.202
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: top.cpp, Line: 280, Column: 23 }
+DebugLoc:        { File: top.cpp, Line: 157, Column: 5 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Could not widen since type '
-  - Type:            i32
+  - Type:            i512
   - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: top.cpp, Line: 280, Column: 23 }
+    DebugLoc:        { File: top.cpp, Line: 157, Column: 5 }
   - OrigDirection:   write
-  - OrigID:          A_out2seq
+  - OrigID:          A_out372seq
   - ArrayName:       A_out
   - String:          ' '
   - BundleName:      gmem1
   - String:          ' '
-  - LoopName:        VITIS_LOOP_281_7
+  - LoopName:        store_loop
   - String:          ' '
-  - LoopLoc:         'top.cpp:281:27'
+  - LoopLoc:         'top.cpp:157:5'
   - String:          ' '
   - Function:        'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])'
-    DebugLoc:        { File: top.cpp, Line: 201, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 77, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: top.cpp, Line: 218, Column: 23 }
+DebugLoc:        { File: top.cpp, Line: 102, Column: 5 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Could not widen since type '
-  - Type:            i32
+  - Type:            i512
   - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: top.cpp, Line: 218, Column: 23 }
+    DebugLoc:        { File: top.cpp, Line: 102, Column: 5 }
   - OrigDirection:   read
-  - OrigID:          A_in1seq
+  - OrigID:          A_in371seq
   - ArrayName:       A_in
   - String:          ' '
   - BundleName:      gmem0
   - String:          ' '
-  - LoopName:        VITIS_LOOP_219_2
+  - LoopName:        load_loop
   - String:          ' '
-  - LoopLoc:         'top.cpp:219:27'
+  - LoopLoc:         'top.cpp:102:5'
   - String:          ' '
   - Function:        'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])'
-    DebugLoc:        { File: top.cpp, Line: 201, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 77, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
@@ -206,15 +228,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_A'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -245,15 +267,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_A'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -284,15 +306,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         _ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_10
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -323,15 +345,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         _ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_11
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -362,15 +384,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         _ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_12
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -401,15 +423,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         _ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_13
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -440,15 +462,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         _ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_14
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -479,15 +501,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         _ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_15
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -518,15 +540,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_A'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -557,15 +579,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_A'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -596,15 +618,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_A'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -635,15 +657,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_A'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -674,15 +696,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_A'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -713,15 +735,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_A'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -752,15 +774,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_A'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -791,15 +813,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_A'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -830,15 +852,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_B'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -869,15 +891,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_B'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -908,15 +930,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         _ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_10
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -947,15 +969,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         _ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_11
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -986,15 +1008,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         _ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_12
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -1025,15 +1047,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         _ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_13
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -1064,15 +1086,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         _ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_14
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -1103,15 +1125,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         _ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_15
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -1142,15 +1164,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_B'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -1181,15 +1203,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_B'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -1220,15 +1242,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_B'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -1259,15 +1281,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_B'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -1298,15 +1320,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_B'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -1337,15 +1359,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_B'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -1376,15 +1398,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_B'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -1415,15 +1437,15 @@ Args:
   - String:          ' '
   - PragmaFunction:  top_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:232:9'
-    DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:123:9'
+    DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
   - VarName:         'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_B'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 232, Column: 9 }
+DebugLoc:        { File: top.cpp, Line: 123, Column: 9 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Inferring pragma '''
@@ -2052,15 +2074,15 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: top.cpp, Line: 218, Column: 23 }
+DebugLoc:        { File: top.cpp, Line: 102, Column: 5 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
   - String:          ' of length '
-  - Length:          '65536'
+  - Length:          '4096'
   - String:          ' and bit width '
-  - Width:           '32'
+  - Width:           '512'
   - String:          ' has been inferred.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
   - String:          ' _XLX_SEP_ '
@@ -2069,30 +2091,30 @@ Args:
   - String:          ' '
   - BundleName:      gmem0
   - String:          ' '
-  - LoopName:        VITIS_LOOP_218_1
+  - LoopName:        load_loop
   - String:          ' '
-  - LoopLoc:         'top.cpp:218:23'
+  - LoopLoc:         'top.cpp:102:5'
   - String:          ' '
   - Function:        'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])'
-    DebugLoc:        { File: top.cpp, Line: 201, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 77, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: top.cpp, Line: 218, Column: 23 }
+DebugLoc:        { File: top.cpp, Line: 102, Column: 5 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
   - String:          ' of length '
-  - Length:          '65536'
+  - Length:          '4096'
   - String:          ' and bit width '
-  - Width:           '32'
+  - Width:           '512'
   - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_218_1
+  - LoopName:        load_loop
   - String:          '''('
-  - LoopLoc:         'top.cpp:218:23'
+  - LoopLoc:         'top.cpp:102:5'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem0
@@ -2102,15 +2124,15 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: top.cpp, Line: 280, Column: 23 }
+DebugLoc:        { File: top.cpp, Line: 157, Column: 5 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Multiple burst '
   - Direction:       writes
   - String:          ' of length '
-  - Length:          '65536'
+  - Length:          '4096'
   - String:          ' and bit width '
-  - Width:           '32'
+  - Width:           '512'
   - String:          ' has been inferred.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
   - String:          ' _XLX_SEP_ '
@@ -2119,30 +2141,30 @@ Args:
   - String:          ' '
   - BundleName:      gmem1
   - String:          ' '
-  - LoopName:        VITIS_LOOP_280_6
+  - LoopName:        store_loop
   - String:          ' '
-  - LoopLoc:         'top.cpp:280:23'
+  - LoopLoc:         'top.cpp:157:5'
   - String:          ' '
   - Function:        'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])'
-    DebugLoc:        { File: top.cpp, Line: 201, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 77, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: top.cpp, Line: 280, Column: 23 }
+DebugLoc:        { File: top.cpp, Line: 157, Column: 5 }
 Function:        _Z10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_
 Args:            
   - String:          'Multiple burst '
   - Direction:       writes
   - String:          ' of length '
-  - Length:          '65536'
+  - Length:          '4096'
   - String:          ' and bit width '
-  - Width:           '32'
+  - Width:           '512'
   - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_280_6
+  - LoopName:        store_loop
   - String:          '''('
-  - LoopLoc:         'top.cpp:280:23'
+  - LoopLoc:         'top.cpp:157:5'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem1

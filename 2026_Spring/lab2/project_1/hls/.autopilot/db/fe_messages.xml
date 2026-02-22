@@ -2,82 +2,100 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/script.tcl:22:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:202:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:79:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=A_in offset=slave bundle=gmem0 max_read_burst_length=256" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:203:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:80:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=A_out offset=slave bundle=gmem1 max_write_burst_length=256" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:204:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:81:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:207:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:84:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mem_A cyclic factor=16 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:210:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:87:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mem_B cyclic factor=16 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:220:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:103:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:232:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:106:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:123:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:233:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:124:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mem_A inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:234:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:125:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mem_B inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:282:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:158:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:209:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B': Cyclic partitioning with factor 16 on dimension 2.">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:161:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:160:27" msg_body="Loop 'VITIS_LOOP_160_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_160_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:105:27" msg_body="Loop 'VITIS_LOOP_105_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_105_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:77:0" msg_body="Unrolling loop 'VITIS_LOOP_160_5' (top.cpp:160:27) in function 'top_kernel' completely with a factor of 16">
+        <args Factor="16" LoopLoc="top.cpp:160:27" LoopName="VITIS_LOOP_160_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:77:0" msg_body="Unrolling loop 'VITIS_LOOP_105_1' (top.cpp:105:27) in function 'top_kernel' completely with a factor of 16">
+        <args Factor="16" LoopLoc="top.cpp:105:27" LoopName="VITIS_LOOP_105_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:86:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B': Cyclic partitioning with factor 16 on dimension 2.">
         <args Dim="2" Factor="16" Mode="Cyclic" UOName="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:206:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A': Cyclic partitioning with factor 16 on dimension 2.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:83:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A': Cyclic partitioning with factor 16 on dimension 2.">
         <args Dim="2" Factor="16" Mode="Cyclic" UOName="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:232:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'top_kernel(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; const (*) [256], ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [256])::mem_A' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'top_kernel(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; const (*) [256], ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [256])::mem_A' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="top_kernel(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; const (*) [256], ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [256])::mem_A" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:232:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_10' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_10' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_10" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:232:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_11' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_11' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_11" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:232:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_12' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_12' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_12" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:232:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_13' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_13' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_13" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:232:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_14' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_14' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_14" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:232:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_15' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_15' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_15" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:232:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'top_kernel(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; const (*) [256], ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [256])::mem_B' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'top_kernel(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; const (*) [256], ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [256])::mem_B' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="top_kernel(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; const (*) [256], ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [256])::mem_B" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:232:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_10' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_10' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_10" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:232:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_11' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_11' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_11" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:232:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_12' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_12' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_12" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:232:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_13' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_13' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_13" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:232:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_14' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_14' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_14" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:232:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_15' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_15' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_15" PragmaType="array_partition"/>
     </msg>
 </xilinx:hls_fe_msgs>
