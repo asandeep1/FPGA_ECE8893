@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x940A1BF0687DBF97",
+      "boundary_crc": "0x4E3D718DDC3043BD",
       "device": "xczu3eg-sbva484-1-e",
       "gen_directory": "../../../../project.gen/sources_1/bd/bd_0",
       "name": "bd_0",
@@ -39,7 +39,7 @@
             "value_src": "default"
           },
           "DATA_WIDTH": {
-            "value": "512"
+            "value": "32"
           },
           "FREQ_HZ": {
             "value": "100000000.0"
@@ -297,7 +297,7 @@
           "RDATA": {
             "physical_name": "m_axi_gmem0_rdata",
             "direction": "I",
-            "left": "511",
+            "left": "31",
             "right": "0"
           },
           "RID": {
@@ -327,7 +327,7 @@
           "WDATA": {
             "physical_name": "m_axi_gmem0_wdata",
             "direction": "O",
-            "left": "511",
+            "left": "31",
             "right": "0"
           },
           "WID": {
@@ -347,7 +347,7 @@
           "WSTRB": {
             "physical_name": "m_axi_gmem0_wstrb",
             "direction": "O",
-            "left": "63",
+            "left": "3",
             "right": "0"
           },
           "WVALID": {
@@ -381,7 +381,7 @@
             "value_src": "default"
           },
           "DATA_WIDTH": {
-            "value": "512"
+            "value": "32"
           },
           "FREQ_HZ": {
             "value": "100000000.0"
@@ -639,7 +639,7 @@
           "RDATA": {
             "physical_name": "m_axi_gmem1_rdata",
             "direction": "I",
-            "left": "511",
+            "left": "31",
             "right": "0"
           },
           "RID": {
@@ -669,7 +669,7 @@
           "WDATA": {
             "physical_name": "m_axi_gmem1_wdata",
             "direction": "O",
-            "left": "511",
+            "left": "31",
             "right": "0"
           },
           "WID": {
@@ -689,7 +689,7 @@
           "WSTRB": {
             "physical_name": "m_axi_gmem1_wstrb",
             "direction": "O",
-            "left": "63",
+            "left": "3",
             "right": "0"
           },
           "WVALID": {
@@ -966,7 +966,7 @@
     "components": {
       "hls_inst": {
         "vlnv": "xilinx.com:hls:top_kernel:1.0",
-        "ip_revision": "2114490848",
+        "ip_revision": "2114492564",
         "xci_name": "bd_0_hls_inst_0",
         "xci_path": "ip/bd_0_hls_inst_0/bd_0_hls_inst_0.xci",
         "inst_hier_path": "hls_inst",

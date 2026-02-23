@@ -1,102 +1,178 @@
 <xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="top.cpp:610:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:532:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_input" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:541:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stencil_stage" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line_buf dim=1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:543:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stencil_stage" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=window complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:549:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stencil_stage" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:595:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_output" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/script.tcl:22:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:79:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=A_in offset=slave bundle=gmem0 max_read_burst_length=256" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:602:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=A_in offset=slave bundle=gmem0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:80:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=A_out offset=slave bundle=gmem1 max_write_burst_length=256" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:603:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=A_out offset=slave bundle=gmem1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:81:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:604:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:84:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mem_A cyclic factor=16 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:608:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=inter_strm depth=512" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:87:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mem_B cyclic factor=16 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:610:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:103:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:106:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:614:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:123:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:557:27" msg_body="Loop 'VITIS_LOOP_557_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_557_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:124:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mem_A inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:601:0" msg_body="Unrolling loop 'VITIS_LOOP_613_1' (top.cpp:613:23) in function 'top_kernel' completely with a factor of 30">
+        <args Factor="30" LoopLoc="top.cpp:613:23" LoopName="VITIS_LOOP_613_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:125:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mem_B inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:538:0" msg_body="Unrolling loop 'VITIS_LOOP_557_2' (top.cpp:557:27) in function 'stencil_stage' completely with a factor of 3">
+        <args Factor="3" LoopLoc="top.cpp:557:27" LoopName="VITIS_LOOP_557_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:158:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:540:12" msg_body="Applying array_partition to 'line_buf': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:161:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:542:9" msg_body="Applying array_partition to 'window': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="window"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:160:27" msg_body="Loop 'VITIS_LOOP_160_5' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_160_5"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:606:22" msg_body="Applying array_partition to 'inter_strm': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="inter_strm"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:105:27" msg_body="Loop 'VITIS_LOOP_105_1' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_105_1"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:77:0" msg_body="Unrolling loop 'VITIS_LOOP_160_5' (top.cpp:160:27) in function 'top_kernel' completely with a factor of 16">
-        <args Factor="16" LoopLoc="top.cpp:160:27" LoopName="VITIS_LOOP_160_5"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.9)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.9)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:77:0" msg_body="Unrolling loop 'VITIS_LOOP_105_1' (top.cpp:105:27) in function 'top_kernel' completely with a factor of 16">
-        <args Factor="16" LoopLoc="top.cpp:105:27" LoopName="VITIS_LOOP_105_1"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.10)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.10)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:86:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B': Cyclic partitioning with factor 16 on dimension 2.">
-        <args Dim="2" Factor="16" Mode="Cyclic" UOName="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.11)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.11)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:83:0" msg_body="Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A': Cyclic partitioning with factor 16 on dimension 2.">
-        <args Dim="2" Factor="16" Mode="Cyclic" UOName="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.12)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.12)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'top_kernel(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; const (*) [256], ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [256])::mem_A' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="top_kernel(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; const (*) [256], ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [256])::mem_A" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.13)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.13)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_10' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_10" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.14)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.14)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_11' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_11" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.15)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.15)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_12' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_12" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.16)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.16)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_13' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_13" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.17)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.17)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_14' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_14" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.18)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.18)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_15' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_15" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.19)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.19)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'top_kernel(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; const (*) [256], ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [256])::mem_B' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="top_kernel(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; const (*) [256], ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [256])::mem_B" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.20)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.20)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_10' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_10" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.21)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.21)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_11' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_11" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.22)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.22)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_12' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_12" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.23)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.23)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_13' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_13" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.24)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.24)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_14' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_14" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.25)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.25)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:123:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_15' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_15" PragmaType="array_partition"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.26)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.26)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.27)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.27)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.28)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.28)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.29)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.29)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.30)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.30)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.31)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.31)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.32)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.32)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.33)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.33)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.34)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.34)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.35)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.35)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.36)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.36)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="top.cpp:586:32" msg_body="Automatically inlining function 'compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])' to improve effectiveness of pipeline pragma in function 'stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.37)'">
+        <args Callee="compute_stencil(ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt; (*) [3])" Callee-DebugLoc="File top.cpp Line 518 Column 0" Caller="stencil_stage(hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;24, 8, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;) (.37)" Caller-DebugLoc="File top.cpp Line 538 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="top.cpp:542:9" msg_body="Automatically partitioning array 'window' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="window"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:542:9" msg_body="array_partition dim=1 type=complete  variable=window_0 1 stencil_stage top.cpp:542:9 window_0">
+        <args PragmaFunction="stencil_stage" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=window_0" PragmaType="array_partition" VarName="window_0" varLoc="top.cpp:542:9"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:542:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'window_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="window_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:542:9" msg_body="array_partition dim=1 type=complete  variable=window_1 1 stencil_stage top.cpp:542:9 window_1">
+        <args PragmaFunction="stencil_stage" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=window_1" PragmaType="array_partition" VarName="window_1" varLoc="top.cpp:542:9"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:542:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'window_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="window_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:542:9" msg_body="array_partition dim=1 type=complete  variable=window_2 1 stencil_stage top.cpp:542:9 window_2">
+        <args PragmaFunction="stencil_stage" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=window_2" PragmaType="array_partition" VarName="window_2" varLoc="top.cpp:542:9"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:542:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'window_2' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="window_2" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:542:9" msg_body="Applying array_partition to 'window_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="window_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:542:9" msg_body="Applying array_partition to 'window_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="window_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:542:9" msg_body="Applying array_partition to 'window_2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="window_2"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

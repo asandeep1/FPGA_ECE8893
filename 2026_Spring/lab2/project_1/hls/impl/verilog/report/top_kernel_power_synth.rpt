@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date             : Sat Feb 21 20:18:21 2026
+| Date             : Mon Feb 23 00:53:40 2026
 | Host             : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command          : report_power -file ./report/top_kernel_power_synth.rpt -xpe ./top_kernel_power.xpe
 | Design           : bd_0_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.505        |
+| Total On-Chip Power (W)  | 0.652        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.282        |
-| Device Static (W)        | 0.223        |
+| Dynamic (W)              | 0.430        |
+| Device Static (W)        | 0.222        |
 | Effective TJA (C/W)      | 2.7          |
-| Max Ambient (C)          | 98.6         |
-| Junction Temperature (C) | 26.4         |
+| Max Ambient (C)          | 98.2         |
+| Junction Temperature (C) | 26.8         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -49,23 +49,23 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+-------------------------+-----------+----------+-----------+-----------------+
-| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
-+-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.019 |        3 |       --- |             --- |
-| CLB Logic               |     0.062 |    19811 |       --- |             --- |
-|   LUT as Logic          |     0.057 |    12134 |     70560 |           17.20 |
-|   LUT as Shift Register |     0.002 |      271 |     28800 |            0.94 |
-|   Register              |     0.002 |     4939 |    141120 |            3.50 |
-|   CARRY8                |    <0.001 |      117 |      8820 |            1.33 |
-|   Others                |     0.000 |      379 |       --- |             --- |
-|   F7/F8 Muxes           |     0.000 |      926 |     70560 |            1.31 |
-| Signals                 |     0.061 |    22374 |       --- |             --- |
-| Block RAM               |     0.135 |    208.5 |       216 |           96.53 |
-| DSPs                    |     0.005 |       21 |       360 |            5.83 |
-| Static Power            |     0.223 |          |           |                 |
-| Total                   |     0.505 |          |           |                 |
-+-------------------------+-----------+----------+-----------+-----------------+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.034 |        3 |       --- |             --- |
+| CLB Logic                |     0.126 |    32681 |       --- |             --- |
+|   LUT as Logic           |     0.107 |    15841 |     70560 |           22.45 |
+|   CARRY8                 |     0.010 |     2070 |      8820 |           23.47 |
+|   Register               |     0.006 |    11898 |    141120 |            8.43 |
+|   LUT as Shift Register  |     0.002 |      315 |     28800 |            1.09 |
+|   LUT as Distributed RAM |    <0.001 |       40 |     28800 |            0.14 |
+|   Others                 |     0.000 |      862 |       --- |             --- |
+| Signals                  |     0.086 |    27807 |       --- |             --- |
+| Block RAM                |     0.127 |       46 |       216 |           21.30 |
+| DSPs                     |     0.057 |      120 |       360 |           33.33 |
+| Static Power             |     0.222 |          |           |                 |
+| Total                    |     0.652 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -74,9 +74,9 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint          |       0.850 |     0.369 |       0.322 |      0.047 |       NA    | Unspecified | NA         |
+| Vccint          |       0.850 |     0.532 |       0.486 |      0.047 |       NA    | Unspecified | NA         |
 | Vccint_io       |       0.850 |     0.027 |       0.000 |      0.027 |       NA    | Unspecified | NA         |
-| Vccbram         |       0.850 |     0.011 |       0.010 |      0.001 |       NA    | Unspecified | NA         |
+| Vccbram         |       0.850 |     0.021 |       0.020 |      0.001 |       NA    | Unspecified | NA         |
 | Vccaux          |       1.800 |     0.048 |       0.000 |      0.048 |       NA    | Unspecified | NA         |
 | Vccaux_io       |       1.800 |     0.025 |       0.000 |      0.025 |       NA    | Unspecified | NA         |
 | Vcco33          |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -158,10 +158,10 @@ Table of Contents
 +--------------+-----------+
 | Name         | Power (W) |
 +--------------+-----------+
-| bd_0_wrapper |     0.282 |
-|   bd_0_i     |     0.282 |
-|     hls_inst |     0.282 |
-|       inst   |     0.282 |
+| bd_0_wrapper |     0.430 |
+|   bd_0_i     |     0.430 |
+|     hls_inst |     0.430 |
+|       inst   |     0.430 |
 +--------------+-----------+
 
 

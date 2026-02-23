@@ -1,0 +1,737 @@
+  **** HLS Build v2025.1.1 6214317
+Sourcing Tcl script '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/script.tcl'
+INFO: [HLS 200-1510] Running: open_component project_1 
+INFO: [HLS 200-10] Creating and opening component '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2176] Writing Vitis IDE component file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/vitis-comp.json
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls_config.cfg
+INFO: [HLS 200-1510] Running: set_top top_kernel 
+INFO: [HLS 200-1510] Running: add_files top.cpp 
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb host.cpp 
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1510] Running: config_unroll -tripcount_threshold 0 
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1510] Running: config_compile -pipeline_loops 0 
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls_config.cfg
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.43 seconds. CPU system time: 0.11 seconds. Elapsed time: 8.11 seconds; current allocated memory: 674.410 MB.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.82 seconds. CPU system time: 1.19 seconds. Elapsed time: 8.17 seconds; current allocated memory: 676.340 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 7,084 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,018 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 676 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 582 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 530 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,383 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,485 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,485 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,485 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,487 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,487 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,487 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 6,111 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,429 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,433 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,388 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_106_1' is marked as complete unroll implied by the pipeline pragma (top.cpp:106:27)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_85_1' is marked as complete unroll implied by the pipeline pragma (top.cpp:85:26)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_106_1' (top.cpp:106:27) in function 'store_data' completely with a factor of 16 (top.cpp:98:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_85_1' (top.cpp:85:26) in function 'load_data' completely with a factor of 16 (top.cpp:78:0)
+INFO: [HLS 214-178] Inlining function 'load_data(ap_uint<512> const*, ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])' into 'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])' (top.cpp:116:0)
+INFO: [HLS 214-178] Inlining function 'store_data(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256], ap_uint<512>*)' into 'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])' (top.cpp:116:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B': Cyclic partitioning with factor 16 on dimension 2. (top.cpp:125:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A': Cyclic partitioning with factor 16 on dimension 2. (top.cpp:123:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_A' due to pipeline pragma (top.cpp:141:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_10' due to pipeline pragma (top.cpp:141:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_11' due to pipeline pragma (top.cpp:141:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_12' due to pipeline pragma (top.cpp:141:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_13' due to pipeline pragma (top.cpp:141:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_14' due to pipeline pragma (top.cpp:141:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_15' due to pipeline pragma (top.cpp:141:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'top_kernel(ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> const (*) [256], ap_fixed<24, 8, (ap_q_mode)0, (ap_o_mode)0, 0> (*) [256])::mem_B' due to pipeline pragma (top.cpp:141:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_10' due to pipeline pragma (top.cpp:141:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_11' due to pipeline pragma (top.cpp:141:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_12' due to pipeline pragma (top.cpp:141:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_13' due to pipeline pragma (top.cpp:141:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_14' due to pipeline pragma (top.cpp:141:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_15' due to pipeline pragma (top.cpp:141:9)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_9': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_8': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_7': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_6': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_5': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_4': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_3': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_2': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_15': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_14': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_13': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_12': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_11': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_10': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_1': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_B_0': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_9': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_8': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_7': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_6': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_5': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_4': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_3': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_2': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_15': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_14': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_13': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_12': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_11': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_10': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_1': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_E5mem_A_0': Cyclic partitioning with factor 3 on dimension 1.
+INFO: [HLS 214-115] Multiple burst reads of length 4096 and bit width 512 in loop 'load_loop'(top.cpp:82:16) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (top.cpp:82:16)
+INFO: [HLS 214-115] Multiple burst writes of length 4096 and bit width 512 in loop 'store_loop'(top.cpp:103:17) has been inferred on bundle 'gmem1'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (top.cpp:103:17)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 11.68 seconds. CPU system time: 1.09 seconds. Elapsed time: 16.57 seconds; current allocated memory: 687.867 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 687.867 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1.57 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.7 seconds; current allocated memory: 696.324 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.09 seconds; current allocated memory: 699.398 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:153:49) to (top.cpp:164:25) in function 'top_kernel'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 9.6 seconds. CPU system time: 0.09 seconds. Elapsed time: 9.81 seconds; current allocated memory: 733.012 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_139_1'(top.cpp:139:27) and 'VITIS_LOOP_140_2'(top.cpp:140:31) in function 'top_kernel' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'compute_loop'(top.cpp:137:19) and 'VITIS_LOOP_139_1'(top.cpp:139:27) in function 'top_kernel' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_139_1' (top.cpp:139:27) in function 'top_kernel'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_139_1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'compute_loop' (top.cpp:137:19) in function 'top_kernel'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:142:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [HLS 200-1946] Dependence pragma (top.cpp:143:9) in loop 'VITIS_LOOP_139_1_VITIS_LOOP_140_2' may become invalid because the loop was flattened with the outer loop 'compute_loop'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.72'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.73'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.74'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.75'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.76'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.77'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.78'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.79'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.80'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'top_kernel(ap_fixed const (*)[256],ap_fixed<24,8,0,0,0>(*)[256])mem_A'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'top_kernel(ap_fixed const (*)[256],ap_fixed<24,8,0,0,0>(*)[256])mem_A.1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'top_kernel(ap_fixed const (*)[256],ap_fixed<24,8,0,0,0>(*)[256])mem_A.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.81'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.82'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.83'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.84'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.85'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.86'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.45'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.46'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.47'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.48'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.49'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.50'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.51'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.52'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.53'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.54'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.55'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.56'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.57'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.58'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.59'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.60'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.61'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.62'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.63'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.64'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.65'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.66'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.67'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.68'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.69'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.70'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.71'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.87'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.88'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.89'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.27'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.28'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.29'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.30'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.31'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.32'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.33'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.34'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.35'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'top_kernel(ap_fixed const (*)[256],ap_fixed<24,8,0,0,0>(*)[256])mem_B'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'top_kernel(ap_fixed const (*)[256],ap_fixed<24,8,0,0,0>(*)[256])mem_B.1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'top_kernel(ap_fixed const (*)[256],ap_fixed<24,8,0,0,0>(*)[256])mem_B.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.36'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.37'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.38'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.39'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.40'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.41'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.3'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.4'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.5'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.6'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.7'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.8'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.9'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.10'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.11'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.12'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.13'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.14'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.15'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.17'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.18'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.19'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.20'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.21'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.22'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.23'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.24'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.25'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.26'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.42'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.43'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.44'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.72'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.73'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.74'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.75'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.76'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.77'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.78'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.79'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.80'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'top_kernel(ap_fixed const (*)[256],ap_fixed<24,8,0,0,0>(*)[256])mem_A'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'top_kernel(ap_fixed const (*)[256],ap_fixed<24,8,0,0,0>(*)[256])mem_A.1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'top_kernel(ap_fixed const (*)[256],ap_fixed<24,8,0,0,0>(*)[256])mem_A.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.81'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.82'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.83'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.84'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.85'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.86'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.45'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.46'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.47'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.48'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.49'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.50'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.51'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.52'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.53'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.54'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.55'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.56'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.57'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.58'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.59'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.60'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.61'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.62'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.63'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.64'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.65'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.66'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.67'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.68'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.69'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.70'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.71'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.87'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.88'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.89'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.27'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.28'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.29'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.30'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.31'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.32'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.33'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.34'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.35'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'top_kernel(ap_fixed const (*)[256],ap_fixed<24,8,0,0,0>(*)[256])mem_B'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'top_kernel(ap_fixed const (*)[256],ap_fixed<24,8,0,0,0>(*)[256])mem_B.1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'top_kernel(ap_fixed const (*)[256],ap_fixed<24,8,0,0,0>(*)[256])mem_B.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.36'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.37'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.38'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.39'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.40'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.41'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.2'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.3'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.4'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.5'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.6'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.7'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.8'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.9'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.10'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.11'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.12'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.13'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.14'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.15'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.16'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.17'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.18'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.19'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.20'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.21'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.22'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.23'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.24'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.25'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.26'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.42'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.43'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable '_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2.44'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 16.29 seconds. CPU system time: 0.07 seconds. Elapsed time: 16.45 seconds; current allocated memory: 756.164 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_kernel' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_load_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'load_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 12, loop 'load_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.66 seconds. CPU system time: 0.08 seconds. Elapsed time: 0.75 seconds; current allocated memory: 756.617 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.11 seconds; current allocated memory: 756.617 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 19, loop 'compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 75.61 seconds. CPU system time: 0.19 seconds. Elapsed time: 76.3 seconds; current allocated memory: 824.184 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3.57 seconds. CPU system time: 0.05 seconds. Elapsed time: 3.93 seconds; current allocated memory: 824.184 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel_Pipeline_store_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'store_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 13, loop 'store_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.54 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.94 seconds; current allocated memory: 824.184 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 824.184 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 824.184 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 824.184 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_load_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_load_loop' pipeline 'load_loop' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_load_loop/m_axi_gmem0_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_load_loop/m_axi_gmem0_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_load_loop/m_axi_gmem0_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_load_loop/m_axi_gmem0_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_load_loop/m_axi_gmem0_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_load_loop/m_axi_gmem0_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_load_loop/m_axi_gmem0_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_load_loop/m_axi_gmem0_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_load_loop/m_axi_gmem0_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_load_loop/m_axi_gmem0_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_load_loop/m_axi_gmem0_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_load_loop/m_axi_gmem0_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_10ns_17_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_8ns_3ns_2_12_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_load_loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 824.184 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_44_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_bkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_43_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_cud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_42_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_dEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_26_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_eOg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_25_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_fYi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_24_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_g8j' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_23_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_hbi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_22_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_ibs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_21_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_jbC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_20_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kbM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_19_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_lbW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_18_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_mb6' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_17_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_ncg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_16_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_ocq' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_15_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_pcA' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_14_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_qcK' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_13_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_rcU' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_12_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_sc4' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_11_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_tde' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_10_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_udo' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_9_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_vdy' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_8_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_wdI' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_7_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_xdS' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_6_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_yd2' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_5_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_zec' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_4_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_Aem' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_3_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_Bew' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_2_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_CeG' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_1_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_DeQ' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_Ee0' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_41_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_Ffa' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_40_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_Gfk' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_39_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_Hfu' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_38_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_IfE' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_37_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_JfO' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_36_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_KfY' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_B_2_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_top_kernelLf8' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_B_1_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_top_kernelMgi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_B_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_top_kernelNgs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_35_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_OgC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_34_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_PgM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_33_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_QgW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_32_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_Rg6' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_31_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_Shg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_30_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_Thq' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_29_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_UhA' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_28_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_VhK' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_RAM_AUTO_1R1W' to 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_WhU' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2' pipeline 'compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2' is 5472 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'mul_39s_24ns_63_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_39s_26ns_65_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_64ns_66ns_126_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_11ns_19_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_24_1_1': 18 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_24_1_1': 96 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_9ns_3ns_2_13_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2'.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_top_kernel_Pipeline_compute_loop_VITIS_LOOP_139_1_VITIS_LOOP_140_2_p_ZZ10top_bkb' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 9.51 seconds. CPU system time: 0.07 seconds. Elapsed time: 9.69 seconds; current allocated memory: 833.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel_Pipeline_store_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'top_kernel_Pipeline_store_loop' pipeline 'store_loop' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_store_loop/m_axi_gmem1_0_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_store_loop/m_axi_gmem1_0_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_store_loop/m_axi_gmem1_0_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_store_loop/m_axi_gmem1_0_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_store_loop/m_axi_gmem1_0_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_store_loop/m_axi_gmem1_0_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_store_loop/m_axi_gmem1_0_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_store_loop/m_axi_gmem1_0_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_store_loop/m_axi_gmem1_0_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_store_loop/m_axi_gmem1_0_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_store_loop/m_axi_gmem1_0_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_store_loop/m_axi_gmem1_0_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top_kernel_Pipeline_store_loop/m_axi_gmem1_0_BREADY' to 0.
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_10ns_17_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_24_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_8ns_3ns_2_12_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel_Pipeline_store_loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2.01 seconds. CPU system time: 0.19 seconds. Elapsed time: 2.7 seconds; current allocated memory: 905.348 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/A_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top_kernel' to 's_axilite & ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_89_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_71_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Yie' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_68_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Zio' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_65_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA250iy' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_62_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA251iI' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_59_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA252iS' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_56_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA253i2' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_53_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA254jc' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_50_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA255jm' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_47_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256jw' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_86_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA257jG' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_83_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA258jQ' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_80_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA259j0' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_77_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bak' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_74_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bbk' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_88_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bck' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_70_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bdk' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_67_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bek' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_64_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bfk' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_61_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bgk' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_58_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bhl' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_55_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bil' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_52_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bjl' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_49_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bkl' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_46_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bll' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_85_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bml' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_82_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bnm' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_79_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bom' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_76_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bpm' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_73_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bqm' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_87_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25brm' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_69_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bsm' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_66_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25btn' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_63_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bun' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_60_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bvn' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_57_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bwn' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_54_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bxn' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_51_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25byn' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_48_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bzo' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_45_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bAo' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_84_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bBo' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_81_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bCo' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_78_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bDo' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_75_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bEo' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_72_RAM_AUTO_1R1W' to 'p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25bFp' due to the length limit 80
+INFO: [RTGEN 206-100] Bundling port 'A_in', 'A_out' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel'.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA25Xh4' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.26 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.33 seconds; current allocated memory: 905.348 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.78 seconds. CPU system time: 0.08 seconds. Elapsed time: 1.19 seconds; current allocated memory: 913.348 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.97 seconds. CPU system time: 0.1 seconds. Elapsed time: 1.23 seconds; current allocated memory: 913.348 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for top_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for top_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:02:39; Allocated memory: 255.938 MB.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls_config.cfg
+ERROR: [COSIM 212-366] Cannot delete directory  'sim/tv': it is being used by another program. Please close the program and try again.
+error deleting "sim/tv/cdatafile/.nfs00000000e3d3be26000065cb": file busy
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:00:08; Allocated memory: 16.000 MB.
+command 'ap_source' returned error code
+    while executing
+"source /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/script.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $tclfile] "
+
+INFO: [HLS 200-112] Total CPU user time: 149.34 seconds. Total CPU system time: 6.42 seconds. Total elapsed time: 179.12 seconds; peak allocated memory: 929.348 MB.
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

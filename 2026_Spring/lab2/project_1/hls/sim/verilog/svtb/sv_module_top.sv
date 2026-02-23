@@ -32,7 +32,7 @@ module sv_module_top;
     end
 
 
-    axi_if #(64,64,8,3,1)  axi_gmem0_if (.clk  (apatb_top_kernel_top.AESL_clock), .rst(apatb_top_kernel_top.AESL_reset));
+    axi_if #(64,4,8,3,1)  axi_gmem0_if (.clk  (apatb_top_kernel_top.AESL_clock), .rst(apatb_top_kernel_top.AESL_reset));
     assign axi_gmem0_if.AWVALID = apatb_top_kernel_top.gmem0_AWVALID;
     assign apatb_top_kernel_top.gmem0_AWREADY = axi_gmem0_if.AWREADY;
     assign axi_gmem0_if.AWADDR = apatb_top_kernel_top.gmem0_AWADDR;
@@ -79,11 +79,11 @@ module sv_module_top;
     assign apatb_top_kernel_top.gmem0_BID = axi_gmem0_if.BID;
     assign apatb_top_kernel_top.gmem0_BUSER = axi_gmem0_if.BUSER;
     initial begin
-        uvm_config_db #( virtual axi_if#(64,64,8,3,1) )::set(null, "uvm_test_top.top_env.axi_master_gmem0.*", "vif", axi_gmem0_if);
+        uvm_config_db #( virtual axi_if#(64,4,8,3,1) )::set(null, "uvm_test_top.top_env.axi_master_gmem0.*", "vif", axi_gmem0_if);
     end
 
 
-    axi_if #(64,64,8,3,1)  axi_gmem1_if (.clk  (apatb_top_kernel_top.AESL_clock), .rst(apatb_top_kernel_top.AESL_reset));
+    axi_if #(64,4,8,3,1)  axi_gmem1_if (.clk  (apatb_top_kernel_top.AESL_clock), .rst(apatb_top_kernel_top.AESL_reset));
     assign axi_gmem1_if.AWVALID = apatb_top_kernel_top.gmem1_AWVALID;
     assign apatb_top_kernel_top.gmem1_AWREADY = axi_gmem1_if.AWREADY;
     assign axi_gmem1_if.AWADDR = apatb_top_kernel_top.gmem1_AWADDR;
@@ -130,7 +130,7 @@ module sv_module_top;
     assign apatb_top_kernel_top.gmem1_BID = axi_gmem1_if.BID;
     assign apatb_top_kernel_top.gmem1_BUSER = axi_gmem1_if.BUSER;
     initial begin
-        uvm_config_db #( virtual axi_if#(64,64,8,3,1) )::set(null, "uvm_test_top.top_env.axi_master_gmem1.*", "vif", axi_gmem1_if);
+        uvm_config_db #( virtual axi_if#(64,4,8,3,1) )::set(null, "uvm_test_top.top_env.axi_master_gmem1.*", "vif", axi_gmem1_if);
     end
 
 

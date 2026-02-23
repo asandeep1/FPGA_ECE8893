@@ -2,7 +2,7 @@
 == Vivado Place & Route Results
 ================================================================
 + General Information:
-    * Date:            Sat Feb 21 20:25:42 EST 2026
+    * Date:            Mon Feb 23 01:07:59 EST 2026
     * Version:         2025.1 (Build 6214317 on Sep 11 2025)
     * Project:         project_1
     * Solution:        hls (Vivado IP Flow Target)
@@ -34,12 +34,12 @@
 ================================================================
 == Place & Route Resource Summary
 ================================================================
-LUT:              12150
-FF:               4939
-DSP:              21
-BRAM:             417
+LUT:              15921
+FF:               11898
+DSP:              120
+BRAM:             92
 URAM:             0
-SRL:              191
+SRL:              225
 
 
 ================================================================
@@ -50,132 +50,300 @@ SRL:              191
 | Timing         | Period (ns) |
 +----------------+-------------+
 | Target         | 10.000      |
-| Post-Synthesis | 5.435       |
-| Post-Route     | 6.917       |
+| Post-Synthesis | 4.780       |
+| Post-Route     | 5.769       |
 +----------------+-------------+
 
 
 ================================================================
 == Place & Route Resources
 ================================================================
-+--------------------------------------------------------------------------------------------+-------+------+-----+------+------+-----+--------+------+---------+----------+--------+
-| Name                                                                                       | LUT   | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
-+--------------------------------------------------------------------------------------------+-------+------+-----+------+------+-----+--------+------+---------+----------+--------+
-| inst                                                                                       | 12150 | 4939 | 21  | 417  |      |     |        |      |         |          |        |
-|   (inst)                                                                                   |       | 150  |     |      |      |     |        |      |         |          |        |
-|   control_s_axi_U                                                                          | 158   | 181  |     |      |      |     |        |      |         |          |        |
-|   gmem0_m_axi_U                                                                            | 942   | 1619 |     | 113  |      |     |        |      |         |          |        |
-|   gmem1_m_axi_U                                                                            | 555   | 854  |     | 16   |      |     |        |      |         |          |        |
-|   grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394        | 9927  | 1564 | 19  | 144  |      |     |        |      |         |          |        |
-|     (grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394)    | 3537  | 1516 | 5   |      |      |     |        |      |         |          |        |
-|     mul_39s_24ns_63_1_1_U55                                                                | 66    |      | 2   |      |      |     |        |      |         |          |        |
-|     mul_39s_26ns_65_1_1_U56                                                                | 82    |      | 2   |      |      |     |        |      |         |          |        |
-|     mul_64ns_66ns_126_1_1_U57                                                              | 1127  |      | 10  |      |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_10_U | 99    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_11_U | 94    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_12_U | 74    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_13_U | 74    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_14_U | 94    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_15_U | 98    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_16_U | 95    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_17_U | 95    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_18_U | 108   |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_19_U | 101   |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_1_U  | 73    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_20_U | 95    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_21_U | 134   |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_22_U | 99    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_23_U | 135   |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_24_U | 74    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_25_U | 71    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_26_U | 70    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U | 626   |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_28_U | 92    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_29_U | 95    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_2_U  | 68    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_30_U | 99    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_31_U | 93    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_32_U | 101   |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_33_U | 74    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_34_U | 68    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_35_U | 75    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_36_U | 93    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_37_U | 87    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_38_U | 89    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_39_U | 152   |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_3_U  | 94    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_40_U | 110   |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_41_U | 154   |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_42_U | 97    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_43_U | 99    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_44_U | 93    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_4_U  | 98    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_5_U  | 94    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_6_U  | 99    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_7_U  | 97    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_8_U  | 94    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_9_U  | 92    |      |     | 3    |      |     |        |      |         |          |        |
-|     p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_U    | 75    |      |     | 3    |      |     |        |      |         |          |        |
-|     top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_B_1_U                        | 88    |      |     | 3    |      |     |        |      |         |          |        |
-|     top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_B_2_U                        | 92    |      |     | 3    |      |     |        |      |         |          |        |
-|     top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_B_U                          | 88    |      |     | 3    |      |     |        |      |         |          |        |
-|     urem_9ns_3ns_2_13_1_U156                                                               |       |      |     |      |      |     |        |      |         |          |        |
-|   grp_top_kernel_Pipeline_load_loop_fu_291                                                 | 119   | 91   | 1   |      |      |     |        |      |         |          |        |
-|     flow_control_loop_pipe_sequential_init_U                                               |       |      |     |      |      |     |        |      |         |          |        |
-|     urem_8ns_3ns_2_12_1_U2                                                                 |       |      |     |      |      |     |        |      |         |          |        |
-|   grp_top_kernel_Pipeline_store_loop_fu_590                                                | 451   | 480  | 1   |      |      |     |        |      |         |          |        |
-|     (grp_top_kernel_Pipeline_store_loop_fu_590)                                            | 15    | 425  | 1   |      |      |     |        |      |         |          |        |
-|     flow_control_loop_pipe_sequential_init_U                                               |       |      |     |      |      |     |        |      |         |          |        |
-|     urem_8ns_3ns_2_12_1_U236                                                               | 413   | 53   |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_45_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_46_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_47_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_48_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_49_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_50_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_51_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_52_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_53_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_54_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_55_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_56_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_57_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_58_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_59_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_60_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_61_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_62_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_63_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_64_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_65_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_66_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_67_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_68_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_69_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_70_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_71_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_72_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_73_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_74_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_75_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_76_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_77_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_78_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_79_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_80_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_81_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_82_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_83_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_84_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_85_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_86_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_87_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_88_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_89_U   |       |      |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_A_1_U                          |       |      |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_A_2_U                          |       |      |     |      |      |     |        |      |         |          |        |
-|   top_kernel_ap_fixed_const_256_ap_fixed_24_8_0_0_0_256_mem_A_U                            |       |      |     |      |      |     |        |      |         |          |        |
-+--------------------------------------------------------------------------------------------+-------+------+-----+------+------+-----+--------+------+---------+----------+--------+
++-----------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                              | LUT   | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-----------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                              | 15921 | 11898 | 120 | 92   |      |     |        |      |         |          |        |
+|   A_out_c_U                       | 67    | 88    |     |      |      |     |        |      |         |          |        |
+|   control_s_axi_U                 | 158   | 181   |     |      |      |     |        |      |         |          |        |
+|   entry_proc_U0                   |       |       |     |      |      |     |        |      |         |          |        |
+|   gmem0_m_axi_U                   | 466   | 741   |     | 1    |      |     |        |      |         |          |        |
+|   gmem1_m_axi_U                   | 638   | 998   |     |      |      |     |        |      |         |          |        |
+|   inter_strm_10_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_11_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_12_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_13_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_14_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_15_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_16_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_17_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_18_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_19_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_20_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_21_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_22_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_23_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_24_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_25_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_26_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_27_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_28_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_29_U                 |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_2_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_30_U                 | 50    | 41    |     | 1    |      |     |        |      |         |          |        |
+|   inter_strm_3_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_4_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_5_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_6_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_7_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_8_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_9_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|   inter_strm_U                    |       |       |     |      |      |     |        |      |         |          |        |
+|   read_input_U0                   | 39    | 116   |     |      |      |     |        |      |         |          |        |
+|     (read_input_U0)               | 8     | 115   |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_10_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_11_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_12_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_13_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_14_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_15_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_16_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_17_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_18_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_19_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_1_U0_U  |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_20_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_21_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_22_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_23_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_24_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_25_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_26_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_27_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_28_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_29_U0_U |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_2_U0_U  |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_3_U0_U  |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_4_U0_U  |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_5_U0_U  |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_6_U0_U  |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_7_U0_U  |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_8_U0_U  |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_9_U0_U  |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stencil_stage_U0_U    |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_write_output_U0_U     |       |       |     |      |      |     |        |      |         |          |        |
+|   stencil_stage_10_U0             | 428   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_10_U0)         | 81    | 275   |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U45       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U46       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_11_U0             | 428   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_11_U0)         | 81    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U49       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U50       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_12_U0             | 429   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_12_U0)         | 82    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U53       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U54       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_13_U0             | 429   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_13_U0)         | 81    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U57       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U58       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_14_U0             | 428   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_14_U0)         | 81    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U61       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U62       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_15_U0             | 428   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_15_U0)         | 81    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U65       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U66       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_16_U0             | 428   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_16_U0)         | 81    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U69       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U70       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_17_U0             | 425   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_17_U0)         | 78    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U73       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U74       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_18_U0             | 440   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_18_U0)         | 177   | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    |       |       |     |      |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U77       | 103   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U78       | 66    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_19_U0             | 433   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_19_U0)         | 172   | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    |       |       |     |      |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U81       | 103   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U82       | 68    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_1_U0              | 428   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_1_U0)          | 81    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U6        | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U7        | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_20_U0             | 432   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_20_U0)         | 170   | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    |       |       |     |      |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U85       | 103   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U86       | 68    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_21_U0             | 423   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_21_U0)         | 76    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U89       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U90       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_22_U0             | 431   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_22_U0)         | 80    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U93       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U94       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_23_U0             | 431   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_23_U0)         | 80    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U97       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U98       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_24_U0             | 428   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_24_U0)         | 79    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U101      | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U102      | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_25_U0             | 428   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_25_U0)         | 79    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U105      | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U106      | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_26_U0             | 426   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_26_U0)         | 77    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U109      | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U110      | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_27_U0             | 425   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_27_U0)         | 78    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U113      | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U114      | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_28_U0             | 428   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_28_U0)         | 81    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U117      | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U118      | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_29_U0             | 430   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_29_U0)         | 83    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U121      | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U122      | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_2_U0              | 428   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_2_U0)          | 81    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U13       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U14       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_3_U0              | 428   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_3_U0)          | 81    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U17       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U18       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_4_U0              | 425   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_4_U0)          | 78    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U21       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U22       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_5_U0              | 438   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_5_U0)          | 174   | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    |       |       |     |      |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U25       | 103   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U26       | 66    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_6_U0              | 435   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_6_U0)          | 174   | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    |       |       |     |      |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U29       | 103   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U30       | 66    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_7_U0              | 434   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_7_U0)          | 172   | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    |       |       |     |      |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U33       | 103   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U34       | 68    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_8_U0              | 427   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_8_U0)          | 168   | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    |       |       |     |      |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U37       | 103   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U38       | 68    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_9_U0              | 431   | 276   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_9_U0)          | 83    | 275   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U41       | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U42       | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   stencil_stage_U0                | 423   | 275   | 4   | 2    |      |     |        |      |         |          |        |
+|     (stencil_stage_U0)            | 79    | 274   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_1_U                  |       |       |     |      |      |     |        |      |         |          |        |
+|     line_buf_U                    | 51    |       |     | 1    |      |     |        |      |         |          |        |
+|     mul_39s_24ns_63_1_1_U125      | 151   |       | 2   |      |      |     |        |      |         |          |        |
+|     mul_39s_26ns_65_1_1_U126      | 91    |       | 2   |      |      |     |        |      |         |          |        |
+|   write_output_U0                 | 46    | 93    |     |      |      |     |        |      |         |          |        |
+|     (write_output_U0)             | 24    | 92    |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U      |       |       |     |      |      |     |        |      |         |          |        |
++-----------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
 
 
 ================================================================
@@ -184,19 +352,19 @@ SRL:              191
 +-----------------------------------------------------------+-----------+--------+--------+
 | Criteria                                                  | Guideline | Actual | Status |
 +-----------------------------------------------------------+-----------+--------+--------+
-| LUT                                                       | 70%       | 17.22% | OK     |
-| FD                                                        | 50%       | 3.50%  | OK     |
-| LUTRAM+SRL                                                | 25%       | 0.66%  | OK     |
-| CARRY8                                                    | 25%       | 1.33%  | OK     |
-| MUXF7                                                     | 15%       | 2.08%  | OK     |
-| DSP                                                       | 80%       | 5.83%  | OK     |
-| RAMB/FIFO                                                 | 80%       | 96.53% | REVIEW |
-| DSP+RAMB+URAM (Avg)                                       | 70%       | 51.18% | OK     |
+| LUT                                                       | 70%       | 22.56% | OK     |
+| FD                                                        | 50%       | 8.43%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.92%  | OK     |
+| CARRY8                                                    | 25%       | 23.47% | OK     |
+| MUXF7                                                     | 15%       | 0.00%  | OK     |
+| DSP                                                       | 80%       | 33.33% | OK     |
+| RAMB/FIFO                                                 | 80%       | 21.30% | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 27.31% | OK     |
 | BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
 | DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
 | MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
-| Control Sets                                              | 1323      | 122    | OK     |
-| Average Fanout for modules > 100k cells                   | 4         | 2.36   | OK     |
+| Control Sets                                              | 1323      | 455    | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 1.17   | OK     |
 | Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
 | Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
 +-----------------------------------------------------------+-----------+--------+--------+
@@ -215,296 +383,461 @@ SRL:              191
 == Place & Route Timing Paths
 ================================================================
 * Timing was met
-+-------+-------+----------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
-| Path  | SLACK | STARTPOINT PIN                                                                                                                         | ENDPOINT PIN                                                                                                                                                                                        | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
-|       |       |                                                                                                                                        |                                                                                                                                                                                                     |              |            |                |          DELAY |        DELAY |
-+-------+-------+----------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
-| Path1 | 3.083 | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]/C                               | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_88_U/ram_reg_bram_0/DINADIN[9]                                                                                    |           11 |         87 |          6.596 |          1.302 |        5.294 |
-| Path2 | 3.272 | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/trunc_ln121_reg_13132_pp0_iter14_reg_reg[0]_rep__7/C | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_24_U/ram_reg_bram_0/DINADIN[11] |            4 |         96 |          6.417 |          0.419 |        5.998 |
-| Path3 | 3.311 | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]/C                               | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_89_U/ram_reg_bram_0/DINADIN[9]                                                                                    |           11 |         87 |          6.368 |          1.250 |        5.118 |
-| Path4 | 3.383 | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]/C                               | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_87_U/ram_reg_bram_0/DINADIN[9]                                                                                    |           11 |         87 |          6.296 |          1.250 |        5.046 |
-| Path5 | 3.471 | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_54_U/ram_reg_bram_1/CLKBWRCLK                        | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_25_U/ram_reg_bram_1/DINADIN[4]  |            4 |         49 |          6.158 |          1.401 |        4.757 |
-+-------+-------+----------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
++-------+-------+--------------------------------------------------------------------------------+---------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                                                 | ENDPOINT PIN                                | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                                                |                                             |              |            |                |          DELAY |        DELAY |
++-------+-------+--------------------------------------------------------------------------------+---------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 4.231 | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST/CLK   | stencil_stage_4_U0/tmp_47_reg_943_reg[0]/D  |           15 |          2 |          5.711 |          4.155 |        1.556 |
+| Path2 | 4.257 | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST/CLK   | stencil_stage_4_U0/out_reg_949_reg[36]/D    |           15 |          2 |          5.685 |          4.130 |        1.555 |
+| Path3 | 4.338 | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST/CLK   | stencil_stage_4_U0/out_reg_949_reg[35]/D    |           14 |          2 |          5.605 |          4.159 |        1.446 |
+| Path4 | 4.339 | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_A_B_DATA_INST/CLK | stencil_stage_29_U0/tmp_65_reg_943_reg[0]/D |           16 |          2 |          5.604 |          4.116 |        1.488 |
+| Path5 | 4.339 | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST/CLK   | stencil_stage_4_U0/out_reg_949_reg[33]/D    |           14 |          2 |          5.604 |          4.158 |        1.446 |
++-------+-------+--------------------------------------------------------------------------------+---------------------------------------------+--------------+------------+----------------+----------------+--------------+
 
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path1 Cells                                                                                                                                                                                      | Primitive Type         |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_20__78                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_88_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/trunc_ln121_reg_13132_pp0_iter14_reg_reg[0]_rep__7                                                             | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_296    | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_147    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_94     | CLB.MUXF.MUXF7         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_18__40 | CLB.MUXF.MUXF8         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_24_U/ram_reg_bram_0          | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_31__60                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_89_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_20__79                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_87_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_54_U/ram_reg_bram_1                                                                                            | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_72     | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_31     | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_15     | CLB.MUXF.MUXF7         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_2__0   | CLB.MUXF.MUXF8         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_25_U/ram_reg_bram_1          | BLOCKRAM.BRAM.RAMB18E2 |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    +----------------------------------------------------------------------------------+------------------------+
+    | Path1 Cells                                                                      | Primitive Type         |
+    +----------------------------------------------------------------------------------+------------------------+
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry__0   | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_18__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_3__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[35]_i_6__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_26ns_65_1_1_U22/tmp_47_reg_943_reg[0]_i_2             | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/tmp_47_reg_943_reg[0]                                         | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry__0   | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_18__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_3__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[35]_i_6__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_26ns_65_1_1_U22/tmp_47_reg_943_reg[0]_i_2             | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[36]                                           | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[19]_i_16__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[19]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_7__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[35]                                           | REGISTER.SDR.FDRE      |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_A_B_DATA_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_PREADD_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_MULTIPLIER_INST     | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_M_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_ALU_INST            | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_OUTPUT_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product__0/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product__0/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product_inferred__1/i__carry    | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product_inferred__1/i__carry__0 | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949[19]_i_11__16            | CLB.LUT.LUT2           |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[19]_i_2__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[27]_i_2__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949[27]_i_10__16            | CLB.LUT.LUT2           |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[27]_i_1__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[35]_i_1__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_26ns_65_1_1_U122/tmp_65_reg_943_reg[0]_i_2           | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/tmp_65_reg_943_reg[0]                                        | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[19]_i_16__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[19]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_7__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[33]                                           | REGISTER.SDR.FDRE      |
+    +----------------------------------------------------------------------------------+------------------------+
 
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path2 Cells                                                                                                                                                                                      | Primitive Type         |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_20__78                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_88_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/trunc_ln121_reg_13132_pp0_iter14_reg_reg[0]_rep__7                                                             | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_296    | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_147    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_94     | CLB.MUXF.MUXF7         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_18__40 | CLB.MUXF.MUXF8         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_24_U/ram_reg_bram_0          | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_31__60                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_89_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_20__79                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_87_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_54_U/ram_reg_bram_1                                                                                            | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_72     | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_31     | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_15     | CLB.MUXF.MUXF7         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_2__0   | CLB.MUXF.MUXF8         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_25_U/ram_reg_bram_1          | BLOCKRAM.BRAM.RAMB18E2 |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    +----------------------------------------------------------------------------------+------------------------+
+    | Path2 Cells                                                                      | Primitive Type         |
+    +----------------------------------------------------------------------------------+------------------------+
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry__0   | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_18__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_3__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[35]_i_6__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_26ns_65_1_1_U22/tmp_47_reg_943_reg[0]_i_2             | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/tmp_47_reg_943_reg[0]                                         | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry__0   | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_18__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_3__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[35]_i_6__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_26ns_65_1_1_U22/tmp_47_reg_943_reg[0]_i_2             | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[36]                                           | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[19]_i_16__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[19]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_7__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[35]                                           | REGISTER.SDR.FDRE      |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_A_B_DATA_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_PREADD_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_MULTIPLIER_INST     | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_M_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_ALU_INST            | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_OUTPUT_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product__0/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product__0/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product_inferred__1/i__carry    | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product_inferred__1/i__carry__0 | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949[19]_i_11__16            | CLB.LUT.LUT2           |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[19]_i_2__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[27]_i_2__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949[27]_i_10__16            | CLB.LUT.LUT2           |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[27]_i_1__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[35]_i_1__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_26ns_65_1_1_U122/tmp_65_reg_943_reg[0]_i_2           | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/tmp_65_reg_943_reg[0]                                        | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[19]_i_16__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[19]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_7__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[33]                                           | REGISTER.SDR.FDRE      |
+    +----------------------------------------------------------------------------------+------------------------+
 
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path3 Cells                                                                                                                                                                                      | Primitive Type         |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_20__78                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_88_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/trunc_ln121_reg_13132_pp0_iter14_reg_reg[0]_rep__7                                                             | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_296    | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_147    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_94     | CLB.MUXF.MUXF7         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_18__40 | CLB.MUXF.MUXF8         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_24_U/ram_reg_bram_0          | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_31__60                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_89_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_20__79                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_87_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_54_U/ram_reg_bram_1                                                                                            | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_72     | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_31     | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_15     | CLB.MUXF.MUXF7         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_2__0   | CLB.MUXF.MUXF8         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_25_U/ram_reg_bram_1          | BLOCKRAM.BRAM.RAMB18E2 |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    +----------------------------------------------------------------------------------+------------------------+
+    | Path3 Cells                                                                      | Primitive Type         |
+    +----------------------------------------------------------------------------------+------------------------+
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry__0   | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_18__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_3__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[35]_i_6__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_26ns_65_1_1_U22/tmp_47_reg_943_reg[0]_i_2             | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/tmp_47_reg_943_reg[0]                                         | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry__0   | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_18__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_3__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[35]_i_6__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_26ns_65_1_1_U22/tmp_47_reg_943_reg[0]_i_2             | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[36]                                           | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[19]_i_16__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[19]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_7__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[35]                                           | REGISTER.SDR.FDRE      |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_A_B_DATA_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_PREADD_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_MULTIPLIER_INST     | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_M_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_ALU_INST            | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_OUTPUT_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product__0/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product__0/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product_inferred__1/i__carry    | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product_inferred__1/i__carry__0 | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949[19]_i_11__16            | CLB.LUT.LUT2           |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[19]_i_2__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[27]_i_2__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949[27]_i_10__16            | CLB.LUT.LUT2           |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[27]_i_1__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[35]_i_1__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_26ns_65_1_1_U122/tmp_65_reg_943_reg[0]_i_2           | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/tmp_65_reg_943_reg[0]                                        | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[19]_i_16__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[19]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_7__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[33]                                           | REGISTER.SDR.FDRE      |
+    +----------------------------------------------------------------------------------+------------------------+
 
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path4 Cells                                                                                                                                                                                      | Primitive Type         |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_20__78                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_88_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/trunc_ln121_reg_13132_pp0_iter14_reg_reg[0]_rep__7                                                             | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_296    | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_147    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_94     | CLB.MUXF.MUXF7         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_18__40 | CLB.MUXF.MUXF8         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_24_U/ram_reg_bram_0          | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_31__60                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_89_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_20__79                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_87_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_54_U/ram_reg_bram_1                                                                                            | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_72     | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_31     | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_15     | CLB.MUXF.MUXF7         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_2__0   | CLB.MUXF.MUXF8         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_25_U/ram_reg_bram_1          | BLOCKRAM.BRAM.RAMB18E2 |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    +----------------------------------------------------------------------------------+------------------------+
+    | Path4 Cells                                                                      | Primitive Type         |
+    +----------------------------------------------------------------------------------+------------------------+
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry__0   | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_18__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_3__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[35]_i_6__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_26ns_65_1_1_U22/tmp_47_reg_943_reg[0]_i_2             | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/tmp_47_reg_943_reg[0]                                         | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry__0   | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_18__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_3__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[35]_i_6__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_26ns_65_1_1_U22/tmp_47_reg_943_reg[0]_i_2             | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[36]                                           | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[19]_i_16__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[19]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_7__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[35]                                           | REGISTER.SDR.FDRE      |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_A_B_DATA_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_PREADD_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_MULTIPLIER_INST     | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_M_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_ALU_INST            | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_OUTPUT_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product__0/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product__0/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product_inferred__1/i__carry    | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product_inferred__1/i__carry__0 | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949[19]_i_11__16            | CLB.LUT.LUT2           |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[19]_i_2__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[27]_i_2__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949[27]_i_10__16            | CLB.LUT.LUT2           |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[27]_i_1__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[35]_i_1__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_26ns_65_1_1_U122/tmp_65_reg_943_reg[0]_i_2           | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/tmp_65_reg_943_reg[0]                                        | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[19]_i_16__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[19]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_7__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[33]                                           | REGISTER.SDR.FDRE      |
+    +----------------------------------------------------------------------------------+------------------------+
 
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | Path5 Cells                                                                                                                                                                                      | Primitive Type         |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_20__78                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_88_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/trunc_ln121_reg_13132_pp0_iter14_reg_reg[0]_rep__7                                                             | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_296    | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_147    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_94     | CLB.MUXF.MUXF7         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_18__40 | CLB.MUXF.MUXF8         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_24_U/ram_reg_bram_0          | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_31__60                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_89_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/out_reg_18243_reg[1]                                                                                           | REGISTER.SDR.FDRE      |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_517    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_484    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_483    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_50     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_25     | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_201    | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_119    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_126    | CLB.CARRY.CARRY8       |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_0_i_118    | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_78                                                                                            | CLB.LUT.LUT3           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/ram_reg_bram_0_i_20__79                                                                                        | CLB.LUT.LUT5           |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_87_U/ram_reg_bram_0                                                                                            | BLOCKRAM.BRAM.RAMB36E2 |
-    | p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_54_U/ram_reg_bram_1                                                                                            | BLOCKRAM.BRAM.RAMB18E2 |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_72     | CLB.LUT.LUT5           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_31     | CLB.LUT.LUT6           |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_15     | CLB.MUXF.MUXF7         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_27_U/ram_reg_bram_1_i_2__0   | CLB.MUXF.MUXF8         |
-    | grp_top_kernel_Pipeline_VITIS_LOOP_118_2_VITIS_LOOP_121_3_VITIS_LOOP_122_4_fu_394/p_ZZ10top_kernelPA256_K8ap_fixedILi24ELi8EL9ap_q_mode0EL9ap_o_mode0ELi0EEPA256_S2_25_U/ram_reg_bram_1          | BLOCKRAM.BRAM.RAMB18E2 |
-    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    +----------------------------------------------------------------------------------+------------------------+
+    | Path5 Cells                                                                      | Primitive Type         |
+    +----------------------------------------------------------------------------------+------------------------+
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry__0   | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_18__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_3__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[35]_i_6__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_26ns_65_1_1_U22/tmp_47_reg_943_reg[0]_i_2             | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/tmp_47_reg_943_reg[0]                                         | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry__0   | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_18__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_3__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[35]_i_6__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_26ns_65_1_1_U22/tmp_47_reg_943_reg[0]_i_2             | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[36]                                           | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[19]_i_16__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[19]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_7__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[35]                                           | REGISTER.SDR.FDRE      |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_A_B_DATA_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_PREADD_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_MULTIPLIER_INST     | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_M_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_ALU_INST            | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product/DSP_OUTPUT_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product__0/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product__0/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product_inferred__1/i__carry    | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/tmp_product_inferred__1/i__carry__0 | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949[19]_i_11__16            | CLB.LUT.LUT2           |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[19]_i_2__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[27]_i_2__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949[27]_i_10__16            | CLB.LUT.LUT2           |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[27]_i_1__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_24ns_63_1_1_U121/out_reg_949_reg[35]_i_1__16         | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/mul_39s_26ns_65_1_1_U122/tmp_65_reg_943_reg[0]_i_2           | CLB.CARRY.CARRY8       |
+    | stencil_stage_29_U0/tmp_65_reg_943_reg[0]                                        | REGISTER.SDR.FDRE      |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_A_B_DATA_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_PREADD_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_MULTIPLIER_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_M_DATA_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_ALU_INST              | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product/DSP_OUTPUT_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_ALU_INST           | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product__0/DSP_OUTPUT_INST        | ARITHMETIC.DSP.DSP48E2 |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/tmp_product_inferred__1/i__carry      | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[19]_i_16__9               | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[19]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_2__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949[27]_i_7__9                | CLB.LUT.LUT2           |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[27]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/mul_39s_24ns_63_1_1_U21/out_reg_949_reg[35]_i_1__9            | CLB.CARRY.CARRY8       |
+    | stencil_stage_4_U0/out_reg_949_reg[33]                                           | REGISTER.SDR.FDRE      |
+    +----------------------------------------------------------------------------------+------------------------+
 
 
 ================================================================

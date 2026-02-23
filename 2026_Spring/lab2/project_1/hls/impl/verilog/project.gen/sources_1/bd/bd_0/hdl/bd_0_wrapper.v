@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-//Date        : Sat Feb 21 20:09:26 2026
+//Date        : Mon Feb 23 00:45:33 2026
 //Host        : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 //Command     : generate_target bd_0_wrapper.bd
 //Design      : bd_0_wrapper
@@ -142,17 +142,17 @@ module bd_0_wrapper
   output m_axi_gmem0_bready;
   input [1:0]m_axi_gmem0_bresp;
   input m_axi_gmem0_bvalid;
-  input [511:0]m_axi_gmem0_rdata;
+  input [31:0]m_axi_gmem0_rdata;
   input [0:0]m_axi_gmem0_rid;
   input m_axi_gmem0_rlast;
   output m_axi_gmem0_rready;
   input [1:0]m_axi_gmem0_rresp;
   input m_axi_gmem0_rvalid;
-  output [511:0]m_axi_gmem0_wdata;
+  output [31:0]m_axi_gmem0_wdata;
   output [0:0]m_axi_gmem0_wid;
   output m_axi_gmem0_wlast;
   input m_axi_gmem0_wready;
-  output [63:0]m_axi_gmem0_wstrb;
+  output [3:0]m_axi_gmem0_wstrb;
   output m_axi_gmem0_wvalid;
   output [63:0]m_axi_gmem1_araddr;
   output [1:0]m_axi_gmem1_arburst;
@@ -182,17 +182,17 @@ module bd_0_wrapper
   output m_axi_gmem1_bready;
   input [1:0]m_axi_gmem1_bresp;
   input m_axi_gmem1_bvalid;
-  input [511:0]m_axi_gmem1_rdata;
+  input [31:0]m_axi_gmem1_rdata;
   input [0:0]m_axi_gmem1_rid;
   input m_axi_gmem1_rlast;
   output m_axi_gmem1_rready;
   input [1:0]m_axi_gmem1_rresp;
   input m_axi_gmem1_rvalid;
-  output [511:0]m_axi_gmem1_wdata;
+  output [31:0]m_axi_gmem1_wdata;
   output [0:0]m_axi_gmem1_wid;
   output m_axi_gmem1_wlast;
   input m_axi_gmem1_wready;
-  output [63:0]m_axi_gmem1_wstrb;
+  output [3:0]m_axi_gmem1_wstrb;
   output m_axi_gmem1_wvalid;
   input [5:0]s_axi_control_araddr;
   output s_axi_control_arready;
@@ -243,17 +243,17 @@ module bd_0_wrapper
   wire m_axi_gmem0_bready;
   wire [1:0]m_axi_gmem0_bresp;
   wire m_axi_gmem0_bvalid;
-  wire [511:0]m_axi_gmem0_rdata;
+  wire [31:0]m_axi_gmem0_rdata;
   wire [0:0]m_axi_gmem0_rid;
   wire m_axi_gmem0_rlast;
   wire m_axi_gmem0_rready;
   wire [1:0]m_axi_gmem0_rresp;
   wire m_axi_gmem0_rvalid;
-  wire [511:0]m_axi_gmem0_wdata;
+  wire [31:0]m_axi_gmem0_wdata;
   wire [0:0]m_axi_gmem0_wid;
   wire m_axi_gmem0_wlast;
   wire m_axi_gmem0_wready;
-  wire [63:0]m_axi_gmem0_wstrb;
+  wire [3:0]m_axi_gmem0_wstrb;
   wire m_axi_gmem0_wvalid;
   wire [63:0]m_axi_gmem1_araddr;
   wire [1:0]m_axi_gmem1_arburst;
@@ -283,17 +283,17 @@ module bd_0_wrapper
   wire m_axi_gmem1_bready;
   wire [1:0]m_axi_gmem1_bresp;
   wire m_axi_gmem1_bvalid;
-  wire [511:0]m_axi_gmem1_rdata;
+  wire [31:0]m_axi_gmem1_rdata;
   wire [0:0]m_axi_gmem1_rid;
   wire m_axi_gmem1_rlast;
   wire m_axi_gmem1_rready;
   wire [1:0]m_axi_gmem1_rresp;
   wire m_axi_gmem1_rvalid;
-  wire [511:0]m_axi_gmem1_wdata;
+  wire [31:0]m_axi_gmem1_wdata;
   wire [0:0]m_axi_gmem1_wid;
   wire m_axi_gmem1_wlast;
   wire m_axi_gmem1_wready;
-  wire [63:0]m_axi_gmem1_wstrb;
+  wire [3:0]m_axi_gmem1_wstrb;
   wire m_axi_gmem1_wvalid;
   wire [5:0]s_axi_control_araddr;
   wire s_axi_control_arready;

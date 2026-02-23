@@ -1,22 +1,578 @@
 {
   "0": {
-    "basicblocks": 412,
-    "calls": "",
-    "control_depth": 5,
-    "def_use_depth": 44,
+    "basicblocks": 1,
+    "calls": "13 29 15 24 31 5 11 10 2 7 3 18 28 4 21 14 9 8 12 30 17 20 23 26 22 16 32 19 1 6 25 27",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "top.cpp",
-    "fileloc": 77,
-    "instructions": 6146,
-    "loads": {
-      "G": 1008,
-      "L": 16
-    },
-    "memory_accesses": 1366,
+    "fileloc": 601,
+    "instructions": 133,
+    "memory_accesses": 0,
     "name": "top_kernel",
-    "stores": {
-      "G": 240,
-      "L": 16
+    "total_instructions": 6729
+  },
+  "1": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
     },
-    "total_instructions": 6146
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "10": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "11": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "12": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "13": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "top.cpp",
+    "fileloc": 530,
+    "instructions": 12,
+    "memory_accesses": 2,
+    "name": "read_input",
+    "total_instructions": 14
+  },
+  "14": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "15": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "16": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "17": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "18": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "19": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "2": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "20": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "21": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "22": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "23": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "24": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "25": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "26": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "27": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "top.cpp",
+    "fileloc": 593,
+    "instructions": 12,
+    "memory_accesses": 2,
+    "name": "write_output",
+    "total_instructions": 12
+  },
+  "28": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "29": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "3": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "30": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "31": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "32": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "4": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "5": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "6": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "7": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "8": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
+  },
+  "9": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 38,
+    "file": "top.cpp",
+    "fileloc": 538,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
   }
 }
