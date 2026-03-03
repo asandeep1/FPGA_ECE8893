@@ -1,0 +1,7 @@
+top.cpp:196:9: warning: the pragma is not supported and will be ignored [-Winvalid-hls-pragmas]
+#pragma HLS data_pack variable=A_in
+        ^
+top.cpp:197:9: warning: the pragma is not supported and will be ignored [-Winvalid-hls-pragmas]
+#pragma HLS data_pack variable=A_out
+        ^
+2 warnings generated.

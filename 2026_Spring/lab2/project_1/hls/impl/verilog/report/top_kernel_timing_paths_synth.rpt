@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date              : Mon Feb 23 00:53:42 2026
+| Date              : Mon Feb 23 22:03:50 2026
 | Host              : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command           : report_timing -max_paths 10 -file ./report/top_kernel_timing_paths_synth.rpt
 | Design            : bd_0_wrapper
@@ -37,7 +37,7 @@ Slack (MET) :             5.220ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/tmp_product/CLK
+                         net (fo=13157, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/tmp_product/CLK
                          DSP_A_B_DATA                                 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_B2_DATA[17])
@@ -70,28 +70,28 @@ Slack (MET) :             5.220ns  (required time - arrival time)
                          CARRY8 (Prop_CARRY8_CI_O[2])
                                                       0.086     3.506 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/tmp_product_inferred__1/i__carry__0/O[2]
                          net (fo=1, unplaced)         0.214     3.720    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/tmp_product__1[43]
-                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[19]_i_13__13/O
-                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[19]_i_13__13_n_0
+                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[19]_i_13__20/O
+                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[19]_i_13__20_n_0
                          CARRY8 (Prop_CARRY8_S[5]_CO[7])
-                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[19]_i_2__13/CO[7]
-                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[19]_i_2__13_n_0
+                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[19]_i_2__20/CO[7]
+                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[19]_i_2__20_n_0
                          CARRY8 (Prop_CARRY8_CI_O[2])
-                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[27]_i_2__13/O[2]
-                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/sext_ln525_168_fu_539_p1[48]
-                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[27]_i_10__13/O
-                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[27]_i_10__13_n_0
+                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[27]_i_2__20/O[2]
+                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/sext_ln119_168_fu_539_p1[48]
+                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[27]_i_10__20/O
+                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[27]_i_10__20_n_0
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[27]_i_1__13/CO[7]
-                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[27]_i_1__13_n_0
+                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[27]_i_1__20/CO[7]
+                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[27]_i_1__20_n_0
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[35]_i_1__13/O[7]
+                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[35]_i_1__20/O[7]
                          net (fo=1, unplaced)         0.031     4.798    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45_n_26
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/out_reg_949_reg[35]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_10_U0/ap_clk
+                         net (fo=13157, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_10_U0/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/out_reg_949_reg[35]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
@@ -126,7 +126,7 @@ Slack (MET) :             5.220ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/tmp_product/CLK
+                         net (fo=13157, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/tmp_product/CLK
                          DSP_A_B_DATA                                 r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_B2_DATA[17])
@@ -159,28 +159,28 @@ Slack (MET) :             5.220ns  (required time - arrival time)
                          CARRY8 (Prop_CARRY8_CI_O[2])
                                                       0.086     3.506 r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/tmp_product_inferred__1/i__carry__0/O[2]
                          net (fo=1, unplaced)         0.214     3.720    bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/tmp_product__1[43]
-                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949[19]_i_13__12/O
-                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949[19]_i_13__12_n_0
+                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949[19]_i_13__19/O
+                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949[19]_i_13__19_n_0
                          CARRY8 (Prop_CARRY8_S[5]_CO[7])
-                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949_reg[19]_i_2__12/CO[7]
-                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949_reg[19]_i_2__12_n_0
+                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949_reg[19]_i_2__19/CO[7]
+                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949_reg[19]_i_2__19_n_0
                          CARRY8 (Prop_CARRY8_CI_O[2])
-                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949_reg[27]_i_2__12/O[2]
-                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/sext_ln525_162_fu_539_p1[48]
-                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949[27]_i_10__12/O
-                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949[27]_i_10__12_n_0
+                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949_reg[27]_i_2__19/O[2]
+                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/sext_ln119_162_fu_539_p1[48]
+                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949[27]_i_10__19/O
+                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949[27]_i_10__19_n_0
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949_reg[27]_i_1__12/CO[7]
-                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949_reg[27]_i_1__12_n_0
+                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949_reg[27]_i_1__19/CO[7]
+                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949_reg[27]_i_1__19_n_0
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949_reg[35]_i_1__12/O[7]
+                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49/out_reg_949_reg[35]_i_1__19/O[7]
                          net (fo=1, unplaced)         0.031     4.798    bd_0_i/hls_inst/inst/stencil_stage_11_U0/mul_39s_24ns_63_1_1_U49_n_26
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/out_reg_949_reg[35]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_11_U0/ap_clk
+                         net (fo=13157, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_11_U0/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_11_U0/out_reg_949_reg[35]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
@@ -215,7 +215,7 @@ Slack (MET) :             5.220ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/tmp_product/CLK
+                         net (fo=13157, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/tmp_product/CLK
                          DSP_A_B_DATA                                 r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_B2_DATA[17])
@@ -248,28 +248,28 @@ Slack (MET) :             5.220ns  (required time - arrival time)
                          CARRY8 (Prop_CARRY8_CI_O[2])
                                                       0.086     3.506 r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/tmp_product_inferred__1/i__carry__0/O[2]
                          net (fo=1, unplaced)         0.214     3.720    bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/tmp_product__1[43]
-                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949[19]_i_13__11/O
-                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949[19]_i_13__11_n_0
+                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949[19]_i_13__18/O
+                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949[19]_i_13__18_n_0
                          CARRY8 (Prop_CARRY8_S[5]_CO[7])
-                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949_reg[19]_i_2__11/CO[7]
-                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949_reg[19]_i_2__11_n_0
+                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949_reg[19]_i_2__18/CO[7]
+                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949_reg[19]_i_2__18_n_0
                          CARRY8 (Prop_CARRY8_CI_O[2])
-                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949_reg[27]_i_2__11/O[2]
-                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/sext_ln525_156_fu_539_p1[48]
-                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949[27]_i_10__11/O
-                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949[27]_i_10__11_n_0
+                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949_reg[27]_i_2__18/O[2]
+                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/sext_ln119_156_fu_539_p1[48]
+                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949[27]_i_10__18/O
+                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949[27]_i_10__18_n_0
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949_reg[27]_i_1__11/CO[7]
-                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949_reg[27]_i_1__11_n_0
+                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949_reg[27]_i_1__18/CO[7]
+                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949_reg[27]_i_1__18_n_0
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949_reg[35]_i_1__11/O[7]
+                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53/out_reg_949_reg[35]_i_1__18/O[7]
                          net (fo=1, unplaced)         0.031     4.798    bd_0_i/hls_inst/inst/stencil_stage_12_U0/mul_39s_24ns_63_1_1_U53_n_26
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/out_reg_949_reg[35]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_12_U0/ap_clk
+                         net (fo=13157, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_12_U0/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_12_U0/out_reg_949_reg[35]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
@@ -304,7 +304,7 @@ Slack (MET) :             5.220ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/tmp_product/CLK
+                         net (fo=13157, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/tmp_product/CLK
                          DSP_A_B_DATA                                 r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_B2_DATA[17])
@@ -337,28 +337,28 @@ Slack (MET) :             5.220ns  (required time - arrival time)
                          CARRY8 (Prop_CARRY8_CI_O[2])
                                                       0.086     3.506 r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/tmp_product_inferred__1/i__carry__0/O[2]
                          net (fo=1, unplaced)         0.214     3.720    bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/tmp_product__1[43]
-                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949[19]_i_13__10/O
-                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949[19]_i_13__10_n_0
+                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949[19]_i_13__17/O
+                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949[19]_i_13__17_n_0
                          CARRY8 (Prop_CARRY8_S[5]_CO[7])
-                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949_reg[19]_i_2__10/CO[7]
-                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949_reg[19]_i_2__10_n_0
+                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949_reg[19]_i_2__17/CO[7]
+                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949_reg[19]_i_2__17_n_0
                          CARRY8 (Prop_CARRY8_CI_O[2])
-                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949_reg[27]_i_2__10/O[2]
-                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/sext_ln525_150_fu_539_p1[48]
-                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949[27]_i_10__10/O
-                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949[27]_i_10__10_n_0
+                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949_reg[27]_i_2__17/O[2]
+                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/sext_ln119_150_fu_539_p1[48]
+                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949[27]_i_10__17/O
+                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949[27]_i_10__17_n_0
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949_reg[27]_i_1__10/CO[7]
-                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949_reg[27]_i_1__10_n_0
+                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949_reg[27]_i_1__17/CO[7]
+                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949_reg[27]_i_1__17_n_0
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949_reg[35]_i_1__10/O[7]
+                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57/out_reg_949_reg[35]_i_1__17/O[7]
                          net (fo=1, unplaced)         0.031     4.798    bd_0_i/hls_inst/inst/stencil_stage_13_U0/mul_39s_24ns_63_1_1_U57_n_26
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/out_reg_949_reg[35]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_13_U0/ap_clk
+                         net (fo=13157, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_13_U0/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_13_U0/out_reg_949_reg[35]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
@@ -393,7 +393,7 @@ Slack (MET) :             5.220ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/tmp_product/CLK
+                         net (fo=13157, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/tmp_product/CLK
                          DSP_A_B_DATA                                 r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_B2_DATA[17])
@@ -426,28 +426,28 @@ Slack (MET) :             5.220ns  (required time - arrival time)
                          CARRY8 (Prop_CARRY8_CI_O[2])
                                                       0.086     3.506 r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/tmp_product_inferred__1/i__carry__0/O[2]
                          net (fo=1, unplaced)         0.214     3.720    bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/tmp_product__1[43]
-                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949[19]_i_13__8/O
-                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949[19]_i_13__8_n_0
+                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949[19]_i_13__13/O
+                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949[19]_i_13__13_n_0
                          CARRY8 (Prop_CARRY8_S[5]_CO[7])
-                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949_reg[19]_i_2__8/CO[7]
-                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949_reg[19]_i_2__8_n_0
+                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949_reg[19]_i_2__13/CO[7]
+                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949_reg[19]_i_2__13_n_0
                          CARRY8 (Prop_CARRY8_CI_O[2])
-                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949_reg[27]_i_2__8/O[2]
-                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/sext_ln525_144_fu_539_p1[48]
-                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949[27]_i_10__8/O
-                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949[27]_i_10__8_n_0
+                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949_reg[27]_i_2__13/O[2]
+                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/sext_ln119_144_fu_539_p1[48]
+                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949[27]_i_10__13/O
+                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949[27]_i_10__13_n_0
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949_reg[27]_i_1__8/CO[7]
-                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949_reg[27]_i_1__8_n_0
+                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949_reg[27]_i_1__13/CO[7]
+                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949_reg[27]_i_1__13_n_0
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949_reg[35]_i_1__8/O[7]
+                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61/out_reg_949_reg[35]_i_1__13/O[7]
                          net (fo=1, unplaced)         0.031     4.798    bd_0_i/hls_inst/inst/stencil_stage_14_U0/mul_39s_24ns_63_1_1_U61_n_26
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/out_reg_949_reg[35]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_14_U0/ap_clk
+                         net (fo=13157, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_14_U0/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_14_U0/out_reg_949_reg[35]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
@@ -482,7 +482,7 @@ Slack (MET) :             5.220ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/tmp_product/CLK
+                         net (fo=13157, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/tmp_product/CLK
                          DSP_A_B_DATA                                 r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_B2_DATA[17])
@@ -515,28 +515,28 @@ Slack (MET) :             5.220ns  (required time - arrival time)
                          CARRY8 (Prop_CARRY8_CI_O[2])
                                                       0.086     3.506 r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/tmp_product_inferred__1/i__carry__0/O[2]
                          net (fo=1, unplaced)         0.214     3.720    bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/tmp_product__1[43]
-                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949[19]_i_13__7/O
-                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949[19]_i_13__7_n_0
+                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949[19]_i_13__14/O
+                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949[19]_i_13__14_n_0
                          CARRY8 (Prop_CARRY8_S[5]_CO[7])
-                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949_reg[19]_i_2__7/CO[7]
-                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949_reg[19]_i_2__7_n_0
+                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949_reg[19]_i_2__14/CO[7]
+                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949_reg[19]_i_2__14_n_0
                          CARRY8 (Prop_CARRY8_CI_O[2])
-                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949_reg[27]_i_2__7/O[2]
-                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/sext_ln525_138_fu_539_p1[48]
-                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949[27]_i_10__7/O
-                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949[27]_i_10__7_n_0
+                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949_reg[27]_i_2__14/O[2]
+                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/sext_ln119_138_fu_539_p1[48]
+                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949[27]_i_10__14/O
+                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949[27]_i_10__14_n_0
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949_reg[27]_i_1__7/CO[7]
-                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949_reg[27]_i_1__7_n_0
+                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949_reg[27]_i_1__14/CO[7]
+                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949_reg[27]_i_1__14_n_0
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949_reg[35]_i_1__7/O[7]
+                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65/out_reg_949_reg[35]_i_1__14/O[7]
                          net (fo=1, unplaced)         0.031     4.798    bd_0_i/hls_inst/inst/stencil_stage_15_U0/mul_39s_24ns_63_1_1_U65_n_26
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/out_reg_949_reg[35]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_15_U0/ap_clk
+                         net (fo=13157, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_15_U0/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_15_U0/out_reg_949_reg[35]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
@@ -571,7 +571,7 @@ Slack (MET) :             5.220ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/tmp_product/CLK
+                         net (fo=13157, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/tmp_product/CLK
                          DSP_A_B_DATA                                 r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_B2_DATA[17])
@@ -604,28 +604,28 @@ Slack (MET) :             5.220ns  (required time - arrival time)
                          CARRY8 (Prop_CARRY8_CI_O[2])
                                                       0.086     3.506 r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/tmp_product_inferred__1/i__carry__0/O[2]
                          net (fo=1, unplaced)         0.214     3.720    bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/tmp_product__1[43]
-                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949[19]_i_13__6/O
-                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949[19]_i_13__6_n_0
+                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949[19]_i_13__15/O
+                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949[19]_i_13__15_n_0
                          CARRY8 (Prop_CARRY8_S[5]_CO[7])
-                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949_reg[19]_i_2__6/CO[7]
-                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949_reg[19]_i_2__6_n_0
+                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949_reg[19]_i_2__15/CO[7]
+                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949_reg[19]_i_2__15_n_0
                          CARRY8 (Prop_CARRY8_CI_O[2])
-                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949_reg[27]_i_2__6/O[2]
-                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/sext_ln525_132_fu_539_p1[48]
-                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949[27]_i_10__6/O
-                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949[27]_i_10__6_n_0
+                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949_reg[27]_i_2__15/O[2]
+                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/sext_ln119_132_fu_539_p1[48]
+                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949[27]_i_10__15/O
+                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949[27]_i_10__15_n_0
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949_reg[27]_i_1__6/CO[7]
-                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949_reg[27]_i_1__6_n_0
+                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949_reg[27]_i_1__15/CO[7]
+                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949_reg[27]_i_1__15_n_0
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949_reg[35]_i_1__6/O[7]
+                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69/out_reg_949_reg[35]_i_1__15/O[7]
                          net (fo=1, unplaced)         0.031     4.798    bd_0_i/hls_inst/inst/stencil_stage_16_U0/mul_39s_24ns_63_1_1_U69_n_26
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/out_reg_949_reg[35]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_16_U0/ap_clk
+                         net (fo=13157, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_16_U0/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_16_U0/out_reg_949_reg[35]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
@@ -660,7 +660,7 @@ Slack (MET) :             5.220ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/tmp_product/CLK
+                         net (fo=13157, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/tmp_product/CLK
                          DSP_A_B_DATA                                 r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_B2_DATA[17])
@@ -692,29 +692,29 @@ Slack (MET) :             5.220ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.007     3.420    bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/tmp_product_inferred__1/i__carry_n_0
                          CARRY8 (Prop_CARRY8_CI_O[2])
                                                       0.086     3.506 r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/tmp_product_inferred__1/i__carry__0/O[2]
-                         net (fo=1, unplaced)         0.214     3.720    bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/tmp_product__1[43]
-                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/out_reg_949[19]_i_13__5/O
-                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/out_reg_949[19]_i_13__5_n_0
+                         net (fo=1, unplaced)         0.214     3.720    bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/tmp_product__1_0[43]
+                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/add_ln119_41_fu_543_p2_carry_i_3/O
+                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73_n_35
                          CARRY8 (Prop_CARRY8_S[5]_CO[7])
-                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/out_reg_949_reg[19]_i_2__5/CO[7]
-                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/out_reg_949_reg[19]_i_2__5_n_0
+                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/add_ln119_41_fu_543_p2_carry/CO[7]
+                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_17_U0/add_ln119_41_fu_543_p2_carry_n_0
                          CARRY8 (Prop_CARRY8_CI_O[2])
-                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/out_reg_949_reg[27]_i_2__5/O[2]
-                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/sext_ln525_126_fu_539_p1[48]
-                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/out_reg_949[27]_i_10__5/O
-                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/out_reg_949[27]_i_10__5_n_0
+                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/add_ln119_41_fu_543_p2_carry__0/O[2]
+                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_26ns_65_1_1_U74/sext_ln119_126_fu_539_p1[10]
+                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_26ns_65_1_1_U74/add_ln119_41_fu_543_p2__73_carry__5_i_8/O
+                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_26ns_65_1_1_U74_n_66
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/out_reg_949_reg[27]_i_1__5/CO[7]
-                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/out_reg_949_reg[27]_i_1__5_n_0
+                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/add_ln119_41_fu_543_p2__73_carry__5/CO[7]
+                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_17_U0/add_ln119_41_fu_543_p2__73_carry__5_n_0
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73/out_reg_949_reg[35]_i_1__5/O[7]
-                         net (fo=1, unplaced)         0.031     4.798    bd_0_i/hls_inst/inst/stencil_stage_17_U0/mul_39s_24ns_63_1_1_U73_n_26
+                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/add_ln119_41_fu_543_p2__73_carry__6/O[7]
+                         net (fo=1, unplaced)         0.031     4.798    bd_0_i/hls_inst/inst/stencil_stage_17_U0/add_ln119_41_fu_543_p2__73_carry__6_n_8
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/out_reg_949_reg[35]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_17_U0/ap_clk
+                         net (fo=13157, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_17_U0/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_17_U0/out_reg_949_reg[35]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
@@ -749,7 +749,7 @@ Slack (MET) :             5.220ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_18_U0/mul_39s_24ns_63_1_1_U77/tmp_product/CLK
+                         net (fo=13157, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_18_U0/mul_39s_24ns_63_1_1_U77/tmp_product/CLK
                          DSP_A_B_DATA                                 r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/mul_39s_24ns_63_1_1_U77/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_B2_DATA[17])
@@ -782,28 +782,28 @@ Slack (MET) :             5.220ns  (required time - arrival time)
                          CARRY8 (Prop_CARRY8_CI_O[2])
                                                       0.086     3.506 r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/mul_39s_24ns_63_1_1_U77/tmp_product_inferred__1/i__carry__0/O[2]
                          net (fo=1, unplaced)         0.214     3.720    bd_0_i/hls_inst/inst/stencil_stage_18_U0/mul_39s_24ns_63_1_1_U77/tmp_product__1_0[43]
-                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/mul_39s_24ns_63_1_1_U77/add_ln525_39_fu_543_p2_carry_i_3/O
+                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/mul_39s_24ns_63_1_1_U77/add_ln119_39_fu_543_p2_carry_i_3/O
                          net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_18_U0/mul_39s_24ns_63_1_1_U77_n_35
                          CARRY8 (Prop_CARRY8_S[5]_CO[7])
-                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/add_ln525_39_fu_543_p2_carry/CO[7]
-                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_18_U0/add_ln525_39_fu_543_p2_carry_n_0
+                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/add_ln119_39_fu_543_p2_carry/CO[7]
+                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_18_U0/add_ln119_39_fu_543_p2_carry_n_0
                          CARRY8 (Prop_CARRY8_CI_O[2])
-                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/add_ln525_39_fu_543_p2_carry__0/O[2]
-                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_18_U0/mul_39s_26ns_65_1_1_U78/sext_ln525_120_fu_539_p1[10]
-                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/mul_39s_26ns_65_1_1_U78/add_ln525_39_fu_543_p2__73_carry__5_i_8/O
-                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_18_U0/mul_39s_26ns_65_1_1_U78_n_66
+                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/add_ln119_39_fu_543_p2_carry__0/O[2]
+                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_18_U0/mul_39s_26ns_65_1_1_U78/sext_ln119_120_fu_539_p1[10]
+                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/mul_39s_26ns_65_1_1_U78/add_ln119_39_fu_543_p2__73_carry__5_i_8/O
+                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_18_U0/mul_39s_26ns_65_1_1_U78_n_67
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/add_ln525_39_fu_543_p2__73_carry__5/CO[7]
-                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_18_U0/add_ln525_39_fu_543_p2__73_carry__5_n_0
+                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/add_ln119_39_fu_543_p2__73_carry__5/CO[7]
+                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_18_U0/add_ln119_39_fu_543_p2__73_carry__5_n_0
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/add_ln525_39_fu_543_p2__73_carry__6/O[7]
-                         net (fo=1, unplaced)         0.031     4.798    bd_0_i/hls_inst/inst/stencil_stage_18_U0/add_ln525_39_fu_543_p2__73_carry__6_n_8
+                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/add_ln119_39_fu_543_p2__73_carry__6/O[7]
+                         net (fo=1, unplaced)         0.031     4.798    bd_0_i/hls_inst/inst/stencil_stage_18_U0/add_ln119_39_fu_543_p2__73_carry__6_n_8
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/out_reg_949_reg[35]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_18_U0/ap_clk
+                         net (fo=13157, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_18_U0/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_18_U0/out_reg_949_reg[35]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
@@ -838,7 +838,7 @@ Slack (MET) :             5.220ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_19_U0/mul_39s_24ns_63_1_1_U81/tmp_product/CLK
+                         net (fo=13157, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_19_U0/mul_39s_24ns_63_1_1_U81/tmp_product/CLK
                          DSP_A_B_DATA                                 r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/mul_39s_24ns_63_1_1_U81/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_B2_DATA[17])
@@ -871,28 +871,28 @@ Slack (MET) :             5.220ns  (required time - arrival time)
                          CARRY8 (Prop_CARRY8_CI_O[2])
                                                       0.086     3.506 r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/mul_39s_24ns_63_1_1_U81/tmp_product_inferred__1/i__carry__0/O[2]
                          net (fo=1, unplaced)         0.214     3.720    bd_0_i/hls_inst/inst/stencil_stage_19_U0/mul_39s_24ns_63_1_1_U81/tmp_product__1_0[43]
-                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/mul_39s_24ns_63_1_1_U81/add_ln525_37_fu_543_p2_carry_i_3/O
+                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/mul_39s_24ns_63_1_1_U81/add_ln119_37_fu_543_p2_carry_i_3/O
                          net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_19_U0/mul_39s_24ns_63_1_1_U81_n_35
                          CARRY8 (Prop_CARRY8_S[5]_CO[7])
-                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/add_ln525_37_fu_543_p2_carry/CO[7]
-                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_19_U0/add_ln525_37_fu_543_p2_carry_n_0
+                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/add_ln119_37_fu_543_p2_carry/CO[7]
+                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_19_U0/add_ln119_37_fu_543_p2_carry_n_0
                          CARRY8 (Prop_CARRY8_CI_O[2])
-                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/add_ln525_37_fu_543_p2_carry__0/O[2]
-                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_19_U0/mul_39s_26ns_65_1_1_U82/sext_ln525_114_fu_539_p1[10]
-                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/mul_39s_26ns_65_1_1_U82/add_ln525_37_fu_543_p2__73_carry__5_i_8/O
-                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_19_U0/mul_39s_26ns_65_1_1_U82_n_67
+                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/add_ln119_37_fu_543_p2_carry__0/O[2]
+                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_19_U0/mul_39s_26ns_65_1_1_U82/sext_ln119_114_fu_539_p1[10]
+                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/mul_39s_26ns_65_1_1_U82/add_ln119_37_fu_543_p2__73_carry__5_i_8/O
+                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_19_U0/mul_39s_26ns_65_1_1_U82_n_66
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/add_ln525_37_fu_543_p2__73_carry__5/CO[7]
-                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_19_U0/add_ln525_37_fu_543_p2__73_carry__5_n_0
+                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/add_ln119_37_fu_543_p2__73_carry__5/CO[7]
+                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_19_U0/add_ln119_37_fu_543_p2__73_carry__5_n_0
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/add_ln525_37_fu_543_p2__73_carry__6/O[7]
-                         net (fo=1, unplaced)         0.031     4.798    bd_0_i/hls_inst/inst/stencil_stage_19_U0/add_ln525_37_fu_543_p2__73_carry__6_n_8
+                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/add_ln119_37_fu_543_p2__73_carry__6/O[7]
+                         net (fo=1, unplaced)         0.031     4.798    bd_0_i/hls_inst/inst/stencil_stage_19_U0/add_ln119_37_fu_543_p2__73_carry__6_n_8
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/out_reg_949_reg[35]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_19_U0/ap_clk
+                         net (fo=13157, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_19_U0/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_19_U0/out_reg_949_reg[35]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    

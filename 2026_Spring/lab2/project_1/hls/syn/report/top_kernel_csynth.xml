@@ -36,16 +36,16 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:610</SourceLocation>
+<SourceLocation>top.cpp:202</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>128</BRAM_18K>
+<BRAM_18K>130</BRAM_18K>
 <DSP>180</DSP>
-<FF>23392</FF>
-<LUT>34637</LUT>
+<FF>23454</FF>
+<LUT>34609</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

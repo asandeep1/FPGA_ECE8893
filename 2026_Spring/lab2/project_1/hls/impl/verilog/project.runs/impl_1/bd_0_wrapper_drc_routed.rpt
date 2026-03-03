@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date         : Mon Feb 23 01:05:19 2026
+| Date         : Mon Feb 23 22:08:58 2026
 | Host         : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command      : report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx
 | Design       : bd_0_wrapper
@@ -1237,11 +1237,11 @@ Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-130 net(s) have no routable loads. The problem bus(es) and/or net(s) are bd_0_i/hls_inst/inst/control_s_axi_U/s_axi_control_RDATA[31:0],
-bd_0_i/hls_inst/inst/gmem0_m_axi_U/bus_read/rreq_burst_conv/burst_sequential/m_axi_gmem0_ARLEN[3:0],
-bd_0_i/hls_inst/inst/gmem1_m_axi_U/bus_write/wreq_throttle/m_axi_gmem1_WDATA[23:0],
-bd_0_i/hls_inst/inst/gmem1_m_axi_U/bus_write/wreq_throttle/m_axi_gmem1_WSTRB[3:0]
-bd_0_i/hls_inst/inst/gmem1_m_axi_U/bus_write/wreq_throttle/rs_req/data_p1_reg[67]_0[65:0].
+142 net(s) have no routable loads. The problem bus(es) and/or net(s) are bd_0_i/hls_inst/inst/control_s_axi_U/s_axi_control_RDATA[31:0],
+bd_0_i/hls_inst/inst/gmem0_m_axi_U/bus_read/rreq_burst_conv/burst_sequential/m_axi_gmem0_ARLEN[5:0],
+bd_0_i/hls_inst/inst/gmem1_m_axi_U/bus_write/wreq_throttle/rs_req/data_p1_reg[69]_0[67:0],
+bd_0_i/hls_inst/inst/gmem1_m_axi_U/store_unit_0/buff_wdata/U_fifo_mem/m_axi_gmem1_WDATA[31:0]
+bd_0_i/hls_inst/inst/gmem1_m_axi_U/store_unit_0/buff_wdata/U_fifo_mem/m_axi_gmem1_WSTRB[3:0].
 Related violations: <none>
 
 

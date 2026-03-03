@@ -1,0 +1,78 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:124:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_input" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:131:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="k0_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:139:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="k_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="k1_transform" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:163:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="k2_stats" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:177:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="k3_join_norm" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:186:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="k4_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:194:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="store_output" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/script.tcl:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:202:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=in offset=slave bundle=gmem0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:203:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=out offset=slave bundle=gmem1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:204:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:213:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s0_a depth=160" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:214:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s1 depth=160" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:217:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s_in depth=2" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:218:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s0 depth=2" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:219:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s0_b depth=2" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:220:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s_stats depth=2" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:221:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s3 depth=2" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:222:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s_out depth=2" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:224:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="top.cpp:146:0" msg_body="Inlining function 'abs_fp(ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'k1_transform(hls::stream&lt;ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)'">
+        <args Callee="abs_fp(ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File top.cpp Line 110 Column 0" Caller="k1_transform(hls::stream&lt;ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File top.cpp Line 146 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="top.cpp:146:0" msg_body="Inlining function 'clamp_fp(ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'k1_transform(hls::stream&lt;ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)'">
+        <args Callee="clamp_fp(ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File top.cpp Line 114 Column 0" Caller="k1_transform(hls::stream&lt;ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File top.cpp Line 146 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="top.cpp:159:0" msg_body="Inlining function 'abs_fp(ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'k2_stats(hls::stream&lt;ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;28, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)'">
+        <args Callee="abs_fp(ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File top.cpp Line 110 Column 0" Caller="k2_stats(hls::stream&lt;ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;28, 10, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File top.cpp Line 159 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="top.cpp:184:0" msg_body="Inlining function 'clamp_fp(ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'k4_postprocess(hls::stream&lt;ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)'">
+        <args Callee="clamp_fp(ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File top.cpp Line 114 Column 0" Caller="k4_postprocess(hls::stream&lt;ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;20, 6, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File top.cpp Line 184 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

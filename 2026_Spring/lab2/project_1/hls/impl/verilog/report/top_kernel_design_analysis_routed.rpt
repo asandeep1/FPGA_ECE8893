@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date         : Mon Feb 23 01:07:11 2026
+| Date         : Mon Feb 23 22:10:46 2026
 | Host         : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command      : report_design_analysis -file ./report/top_kernel_design_analysis_routed.rpt
 | Design       : bd_0_wrapper
@@ -26,11 +26,11 @@ Table of Contents
 |      Characteristics      |                                                                                   Path #1                                                                                   |
 +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Requirement               | 10.000                                                                                                                                                                      |
-| Path Delay                | 5.711                                                                                                                                                                       |
-| Logic Delay               | 4.155(73%)                                                                                                                                                                  |
-| Net Delay                 | 1.556(27%)                                                                                                                                                                  |
+| Path Delay                | 5.508                                                                                                                                                                       |
+| Logic Delay               | 4.106(75%)                                                                                                                                                                  |
+| Net Delay                 | 1.402(25%)                                                                                                                                                                  |
 | Clock Skew                | -0.049                                                                                                                                                                      |
-| Slack                     | 4.231                                                                                                                                                                       |
+| Slack                     | 4.434                                                                                                                                                                       |
 | Clock Uncertainty         | 0.035                                                                                                                                                                       |
 | Clock Pair Classification | Timed                                                                                                                                                                       |
 | Clock Delay Group         | Same Clock                                                                                                                                                                  |
@@ -51,7 +51,7 @@ Table of Contents
 | Start Point Pin Primitive | DSP_A_B_DATA/CLK                                                                                                                                                            |
 | End Point Pin Primitive   | FDRE/D                                                                                                                                                                      |
 | Start Point Pin           | DSP_A_B_DATA_INST/CLK                                                                                                                                                       |
-| End Point Pin             | tmp_47_reg_943_reg[0]/D                                                                                                                                                     |
+| End Point Pin             | tmp_65_reg_943_reg[0]/D                                                                                                                                                     |
 +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 * Bounding box calculated as % of dimensions for the target device (2447, 372)
 
@@ -59,11 +59,11 @@ Table of Contents
 2. Logic Level Distribution
 ---------------------------
 
-+-----------------+-------------+---+----+---+----+----+----+-----+-----+-----+-----+-----+----+
-| End Point Clock | Requirement | 2 |  4 | 5 |  6 |  9 | 10 |  11 |  12 |  13 |  14 |  15 | 16 |
-+-----------------+-------------+---+----+---+----+----+----+-----+-----+-----+-----+-----+----+
-| ap_clk          | 10.000ns    | 7 | 29 | 5 | 11 | 14 | 89 | 142 | 125 | 151 | 178 | 215 | 34 |
-+-----------------+-------------+---+----+---+----+----+----+-----+-----+-----+-----+-----+----+
++-----------------+-------------+----+---+---+----+----+----+-----+-----+-----+-----+-----+----+
+| End Point Clock | Requirement |  3 | 4 | 5 |  6 |  9 | 10 |  11 |  12 |  13 |  14 |  15 | 16 |
++-----------------+-------------+----+---+---+----+----+----+-----+-----+-----+-----+-----+----+
+| ap_clk          | 10.000ns    | 20 | 6 | 2 | 11 | 26 | 82 | 129 | 152 | 135 | 164 | 237 | 36 |
++-----------------+-------------+----+---+---+----+----+----+-----+-----+-----+-----+-----+----+
 * Columns represent the logic levels per end point clock
 ** Distribution is for top worst 1000 paths
 

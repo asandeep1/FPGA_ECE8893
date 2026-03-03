@@ -389,7 +389,7 @@
 						<name>line_buf</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>540</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -405,7 +405,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>540</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -445,7 +445,7 @@
 						<name>line_buf_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>540</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -461,7 +461,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>540</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -541,10 +541,10 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>br_ln548</name>
+						<name>br_ln141</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>548</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -560,7 +560,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>548</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -600,7 +600,7 @@
 						<name>k_0215_load</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>548</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -616,7 +616,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>548</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -699,7 +699,7 @@
 						<name>p_0_0_0261211_load</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>584</lineNumber>
+						<lineNumber>170</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -715,7 +715,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>584</second>
+										<second>170</second>
 									</item>
 								</second>
 							</item>
@@ -794,10 +794,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>trunc_ln548</name>
+						<name>trunc_ln141</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>548</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -813,7 +813,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>548</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -853,7 +853,7 @@
 						<name>j</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>548</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -869,7 +869,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>548</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -909,7 +909,7 @@
 						<name>tmp_208</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>552</lineNumber>
+						<lineNumber>145</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -925,7 +925,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>552</second>
+										<second>145</second>
 									</item>
 								</second>
 							</item>
@@ -964,10 +964,10 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>zext_ln566</name>
+						<name>zext_ln155</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>566</lineNumber>
+						<lineNumber>155</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -983,7 +983,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>566</second>
+										<second>155</second>
 									</item>
 								</second>
 							</item>
@@ -1023,7 +1023,7 @@
 						<name>line_buf_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>566</lineNumber>
+						<lineNumber>155</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1039,7 +1039,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>566</second>
+										<second>155</second>
 									</item>
 								</second>
 							</item>
@@ -1081,7 +1081,7 @@
 						<name>line_buf_1_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>567</lineNumber>
+						<lineNumber>156</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1097,7 +1097,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>567</second>
+										<second>156</second>
 									</item>
 								</second>
 							</item>
@@ -1139,7 +1139,7 @@
 						<name>line_buf_load</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>566</lineNumber>
+						<lineNumber>155</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1155,7 +1155,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>566</second>
+										<second>155</second>
 									</item>
 								</second>
 							</item>
@@ -1195,7 +1195,7 @@
 						<name>line_buf_1_load</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>567</lineNumber>
+						<lineNumber>156</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1211,7 +1211,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>567</second>
+										<second>156</second>
 									</item>
 								</second>
 							</item>
@@ -1251,7 +1251,7 @@
 						<name>k</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>548</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1267,7 +1267,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>548</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -1305,10 +1305,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>br_ln552</name>
+						<name>br_ln145</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>552</lineNumber>
+						<lineNumber>145</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1324,7 +1324,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>552</second>
+										<second>145</second>
 									</item>
 								</second>
 							</item>
@@ -1366,7 +1366,7 @@
 						<name>curr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>553</lineNumber>
+						<lineNumber>146</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1382,7 +1382,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>553</second>
+										<second>146</second>
 									</item>
 								</second>
 							</item>
@@ -1420,10 +1420,10 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>line_buf_addr_write_ln572</name>
+						<name>line_buf_addr_write_ln160</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>572</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1439,7 +1439,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>572</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -1478,10 +1478,10 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>line_buf_1_addr_write_ln573</name>
+						<name>line_buf_1_addr_write_ln161</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>573</lineNumber>
+						<lineNumber>161</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1497,7 +1497,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>573</second>
+										<second>161</second>
 									</item>
 								</second>
 							</item>
@@ -1536,10 +1536,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>br_ln574</name>
+						<name>br_ln162</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>574</lineNumber>
+						<lineNumber>162</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1555,7 +1555,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>574</second>
+										<second>162</second>
 									</item>
 								</second>
 							</item>
@@ -1637,10 +1637,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>icmp_ln577</name>
+						<name>icmp_ln164</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>577</lineNumber>
+						<lineNumber>164</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1656,7 +1656,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>577</second>
+										<second>164</second>
 									</item>
 								</second>
 							</item>
@@ -1694,10 +1694,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>br_ln577</name>
+						<name>br_ln164</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>577</lineNumber>
+						<lineNumber>164</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1713,7 +1713,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>577</second>
+										<second>164</second>
 									</item>
 								</second>
 							</item>
@@ -1755,7 +1755,7 @@
 						<name>out_idx</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>578</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1771,7 +1771,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>578</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -1812,7 +1812,7 @@
 						<name>c</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>578</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1828,7 +1828,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>578</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -1868,7 +1868,7 @@
 						<name>trunc_ln</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>579</lineNumber>
+						<lineNumber>166</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1884,7 +1884,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>579</second>
+										<second>166</second>
 									</item>
 								</second>
 							</item>
@@ -1927,7 +1927,7 @@
 						<name>empty</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>579</lineNumber>
+						<lineNumber>166</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -1943,7 +1943,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>579</second>
+										<second>166</second>
 									</item>
 								</second>
 							</item>
@@ -1984,7 +1984,7 @@
 						<name>empty_221</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>579</lineNumber>
+						<lineNumber>166</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -2000,7 +2000,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>579</second>
+										<second>166</second>
 									</item>
 								</second>
 							</item>
@@ -2041,7 +2041,7 @@
 						<name>empty_222</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>579</lineNumber>
+						<lineNumber>166</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -2057,7 +2057,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>579</second>
+										<second>166</second>
 									</item>
 								</second>
 							</item>
@@ -2095,10 +2095,10 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>br_ln579</name>
+						<name>br_ln166</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>579</lineNumber>
+						<lineNumber>166</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -2114,7 +2114,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>579</second>
+										<second>166</second>
 									</item>
 								</second>
 							</item>
@@ -2156,7 +2156,7 @@
 						<name>empty_223</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>578</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -2172,7 +2172,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>578</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -2213,7 +2213,7 @@
 						<name>empty_224</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>578</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -2229,7 +2229,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>578</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -2270,7 +2270,7 @@
 						<name>empty_225</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>578</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -2286,7 +2286,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>578</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -2324,10 +2324,10 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>br_ln578</name>
+						<name>br_ln165</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>578</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -2343,7 +2343,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>578</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -2677,10 +2677,10 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>sext_ln523</name>
+						<name>sext_ln117</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>523</lineNumber>
+						<lineNumber>117</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -2696,14 +2696,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>523</second>
+										<second>117</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -2740,10 +2740,10 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>add_ln523</name>
+						<name>add_ln117</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>523</lineNumber>
+						<lineNumber>117</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -2759,14 +2759,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>523</second>
+										<second>117</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -2807,7 +2807,7 @@
 						<name>tmp</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>523</lineNumber>
+						<lineNumber>117</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -2823,14 +2823,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>523</second>
+										<second>117</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -2869,10 +2869,10 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>sext_ln523_47</name>
+						<name>sext_ln117_47</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>523</lineNumber>
+						<lineNumber>117</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -2888,14 +2888,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>523</second>
+										<second>117</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -2932,10 +2932,10 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>shl_ln523_s</name>
+						<name>shl_ln117_s</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>523</lineNumber>
+						<lineNumber>117</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -2951,14 +2951,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>523</second>
+										<second>117</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -2997,10 +2997,10 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>sext_ln523_48</name>
+						<name>sext_ln117_48</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>523</lineNumber>
+						<lineNumber>117</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -3016,14 +3016,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>523</second>
+										<second>117</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -3063,7 +3063,7 @@
 						<name>sum_axis</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>523</lineNumber>
+						<lineNumber>117</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -3079,14 +3079,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>523</second>
+										<second>117</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -3211,7 +3211,7 @@
 						<name>line_buf_load_cast</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>566</lineNumber>
+						<lineNumber>155</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -3227,7 +3227,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>566</second>
+										<second>155</second>
 									</item>
 								</second>
 							</item>
@@ -3307,10 +3307,10 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>sext_ln524</name>
+						<name>sext_ln118</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>524</lineNumber>
+						<lineNumber>118</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -3326,14 +3326,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>524</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -3370,10 +3370,10 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>add_ln524</name>
+						<name>add_ln118</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>524</lineNumber>
+						<lineNumber>118</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -3389,14 +3389,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>524</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -3437,7 +3437,7 @@
 						<name>tmp_s</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>524</lineNumber>
+						<lineNumber>118</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -3453,14 +3453,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>524</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -3499,10 +3499,10 @@
 					<Obj>
 						<type>0</type>
 						<id>78</id>
-						<name>sext_ln524_47</name>
+						<name>sext_ln118_47</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>524</lineNumber>
+						<lineNumber>118</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -3518,14 +3518,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>524</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -3562,10 +3562,10 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>shl_ln524_s</name>
+						<name>shl_ln118_s</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>524</lineNumber>
+						<lineNumber>118</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -3581,14 +3581,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>524</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -3627,10 +3627,10 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>sext_ln524_48</name>
+						<name>sext_ln118_48</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>524</lineNumber>
+						<lineNumber>118</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -3646,14 +3646,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>524</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -3693,7 +3693,7 @@
 						<name>sum_diag</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>524</lineNumber>
+						<lineNumber>118</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -3709,14 +3709,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>524</second>
+										<second>118</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -3754,10 +3754,10 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>shl_ln525_s</name>
+						<name>shl_ln119_s</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -3773,14 +3773,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -3819,10 +3819,10 @@
 					<Obj>
 						<type>0</type>
 						<id>83</id>
-						<name>sext_ln525</name>
+						<name>sext_ln119</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -3838,14 +3838,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -3882,10 +3882,10 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>mul_ln525</name>
+						<name>mul_ln119</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -3901,14 +3901,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -3946,10 +3946,10 @@
 					<Obj>
 						<type>0</type>
 						<id>85</id>
-						<name>sext_ln525_142</name>
+						<name>sext_ln119_142</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -3965,14 +3965,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4009,10 +4009,10 @@
 					<Obj>
 						<type>0</type>
 						<id>86</id>
-						<name>sext_ln525_140</name>
+						<name>sext_ln119_140</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4028,14 +4028,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4072,10 +4072,10 @@
 					<Obj>
 						<type>0</type>
 						<id>87</id>
-						<name>sext_ln525_141</name>
+						<name>sext_ln119_141</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4091,14 +4091,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4135,10 +4135,10 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>mul_ln525_24</name>
+						<name>mul_ln119_24</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4154,14 +4154,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4199,10 +4199,10 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>sext_ln525_143</name>
+						<name>sext_ln119_143</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4218,14 +4218,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4262,10 +4262,10 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>add_ln525</name>
+						<name>add_ln119</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4281,14 +4281,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4326,10 +4326,10 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>sext_ln525_144</name>
+						<name>sext_ln119_144</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4345,14 +4345,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4389,10 +4389,10 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>add_ln525_47</name>
+						<name>add_ln119_47</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4408,14 +4408,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4456,7 +4456,7 @@
 						<name>tmp_209</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4472,14 +4472,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4521,7 +4521,7 @@
 						<name>out</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4537,14 +4537,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4584,10 +4584,10 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>sext_ln525_145</name>
+						<name>sext_ln119_145</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4603,14 +4603,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4650,7 +4650,7 @@
 						<name>tmp_210</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4666,14 +4666,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4712,10 +4712,10 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>zext_ln525</name>
+						<name>zext_ln119</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4731,14 +4731,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4778,7 +4778,7 @@
 						<name>out_47</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4794,14 +4794,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4839,10 +4839,10 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>sext_ln525_146</name>
+						<name>sext_ln119_146</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4858,14 +4858,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4905,7 +4905,7 @@
 						<name>tmp_211</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4921,14 +4921,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -4967,10 +4967,10 @@
 					<Obj>
 						<type>0</type>
 						<id>101</id>
-						<name>xor_ln525</name>
+						<name>xor_ln119</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -4986,14 +4986,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5031,10 +5031,10 @@
 					<Obj>
 						<type>0</type>
 						<id>102</id>
-						<name>or_ln525_24</name>
+						<name>or_ln119_24</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5050,14 +5050,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5095,10 +5095,10 @@
 					<Obj>
 						<type>0</type>
 						<id>103</id>
-						<name>xor_ln525_47</name>
+						<name>xor_ln119_47</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5114,14 +5114,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5159,10 +5159,10 @@
 					<Obj>
 						<type>0</type>
 						<id>104</id>
-						<name>xor_ln525_48</name>
+						<name>xor_ln119_48</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5178,14 +5178,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5223,10 +5223,10 @@
 					<Obj>
 						<type>0</type>
 						<id>105</id>
-						<name>or_ln525</name>
+						<name>or_ln119</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5242,14 +5242,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5287,10 +5287,10 @@
 					<Obj>
 						<type>0</type>
 						<id>106</id>
-						<name>and_ln525</name>
+						<name>and_ln119</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5306,14 +5306,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5354,7 +5354,7 @@
 						<name>out_48</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>525</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5370,14 +5370,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>525</second>
+										<second>119</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5419,7 +5419,7 @@
 						<name>tmp_212</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5435,14 +5435,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5484,7 +5484,7 @@
 						<name>trunc_ln19</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5500,14 +5500,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5550,7 +5550,7 @@
 						<name>tmp_213</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5566,14 +5566,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5615,7 +5615,7 @@
 						<name>tmp_214</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5631,14 +5631,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5677,10 +5677,10 @@
 					<Obj>
 						<type>0</type>
 						<id>112</id>
-						<name>zext_ln526</name>
+						<name>zext_ln120</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5696,14 +5696,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5740,10 +5740,10 @@
 					<Obj>
 						<type>0</type>
 						<id>113</id>
-						<name>add_ln526</name>
+						<name>add_ln120</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5759,14 +5759,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5807,7 +5807,7 @@
 						<name>tmp_215</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5823,14 +5823,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5869,10 +5869,10 @@
 					<Obj>
 						<type>0</type>
 						<id>115</id>
-						<name>xor_ln526</name>
+						<name>xor_ln120</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5888,14 +5888,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -5933,10 +5933,10 @@
 					<Obj>
 						<type>0</type>
 						<id>116</id>
-						<name>and_ln526</name>
+						<name>and_ln120</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -5952,14 +5952,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6000,7 +6000,7 @@
 						<name>tmp_216</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6016,14 +6016,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6065,7 +6065,7 @@
 						<name>tmp_217</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6081,14 +6081,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6127,10 +6127,10 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>icmp_ln526</name>
+						<name>icmp_ln120</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6146,14 +6146,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6194,7 +6194,7 @@
 						<name>tmp_218</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6210,14 +6210,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6256,10 +6256,10 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>icmp_ln526_47</name>
+						<name>icmp_ln120_47</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6275,14 +6275,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6320,10 +6320,10 @@
 					<Obj>
 						<type>0</type>
 						<id>122</id>
-						<name>icmp_ln526_48</name>
+						<name>icmp_ln120_48</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6339,14 +6339,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6384,10 +6384,10 @@
 					<Obj>
 						<type>0</type>
 						<id>123</id>
-						<name>select_ln526</name>
+						<name>select_ln120</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6403,14 +6403,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6449,10 +6449,10 @@
 					<Obj>
 						<type>0</type>
 						<id>124</id>
-						<name>xor_ln526_93</name>
+						<name>xor_ln120_93</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6468,14 +6468,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6513,10 +6513,10 @@
 					<Obj>
 						<type>0</type>
 						<id>125</id>
-						<name>and_ln526_116</name>
+						<name>and_ln120_116</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6532,14 +6532,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6577,10 +6577,10 @@
 					<Obj>
 						<type>0</type>
 						<id>126</id>
-						<name>select_ln526_70</name>
+						<name>select_ln120_70</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6596,14 +6596,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6642,10 +6642,10 @@
 					<Obj>
 						<type>0</type>
 						<id>127</id>
-						<name>and_ln526_117</name>
+						<name>and_ln120_117</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6661,14 +6661,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6706,10 +6706,10 @@
 					<Obj>
 						<type>0</type>
 						<id>128</id>
-						<name>xor_ln526_94</name>
+						<name>xor_ln120_94</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6725,14 +6725,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6770,10 +6770,10 @@
 					<Obj>
 						<type>0</type>
 						<id>129</id>
-						<name>or_ln526</name>
+						<name>or_ln120</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6789,14 +6789,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6834,10 +6834,10 @@
 					<Obj>
 						<type>0</type>
 						<id>130</id>
-						<name>xor_ln526_95</name>
+						<name>xor_ln120_95</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6853,14 +6853,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6898,10 +6898,10 @@
 					<Obj>
 						<type>0</type>
 						<id>131</id>
-						<name>and_ln526_118</name>
+						<name>and_ln120_118</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6917,14 +6917,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -6962,10 +6962,10 @@
 					<Obj>
 						<type>0</type>
 						<id>132</id>
-						<name>and_ln526_119</name>
+						<name>and_ln120_119</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -6981,14 +6981,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -7026,10 +7026,10 @@
 					<Obj>
 						<type>0</type>
 						<id>133</id>
-						<name>or_ln526_25</name>
+						<name>or_ln120_25</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -7045,14 +7045,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -7090,10 +7090,10 @@
 					<Obj>
 						<type>0</type>
 						<id>134</id>
-						<name>xor_ln526_96</name>
+						<name>xor_ln120_96</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -7109,14 +7109,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -7154,10 +7154,10 @@
 					<Obj>
 						<type>0</type>
 						<id>135</id>
-						<name>and_ln526_120</name>
+						<name>and_ln120_120</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -7173,14 +7173,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -7218,10 +7218,10 @@
 					<Obj>
 						<type>0</type>
 						<id>136</id>
-						<name>select_ln526_71</name>
+						<name>select_ln120_71</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -7237,14 +7237,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -7283,10 +7283,10 @@
 					<Obj>
 						<type>0</type>
 						<id>137</id>
-						<name>or_ln526_24</name>
+						<name>or_ln120_24</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -7302,14 +7302,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -7347,10 +7347,10 @@
 					<Obj>
 						<type>0</type>
 						<id>138</id>
-						<name>select_ln526_72</name>
+						<name>select_ln120_72</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>526</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>compute_stencil</contextFuncName>
 						<contextNormFuncName>compute_stencil</contextNormFuncName>
 						<inlineStackInfo>
@@ -7366,14 +7366,14 @@
 											<first>top.cpp</first>
 											<second>compute_stencil</second>
 										</first>
-										<second>526</second>
+										<second>120</second>
 									</item>
 									<item>
 										<first>
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -7412,10 +7412,10 @@
 					<Obj>
 						<type>0</type>
 						<id>139</id>
-						<name>inter_strm_14_write_ln586</name>
+						<name>inter_strm_14_write_ln172</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>586</lineNumber>
+						<lineNumber>172</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -7431,7 +7431,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>586</second>
+										<second>172</second>
 									</item>
 								</second>
 							</item>
@@ -7512,10 +7512,10 @@
 					<Obj>
 						<type>0</type>
 						<id>142</id>
-						<name>inter_strm_14_write_ln584</name>
+						<name>inter_strm_14_write_ln170</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>584</lineNumber>
+						<lineNumber>170</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -7531,7 +7531,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>584</second>
+										<second>170</second>
 									</item>
 								</second>
 							</item>
@@ -7570,10 +7570,10 @@
 					<Obj>
 						<type>0</type>
 						<id>143</id>
-						<name>br_ln585</name>
+						<name>br_ln171</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>585</lineNumber>
+						<lineNumber>171</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -7589,7 +7589,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>585</second>
+										<second>171</second>
 									</item>
 								</second>
 							</item>
@@ -7626,10 +7626,10 @@
 					<Obj>
 						<type>0</type>
 						<id>145</id>
-						<name>br_ln588</name>
+						<name>br_ln174</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>588</lineNumber>
+						<lineNumber>174</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -7645,7 +7645,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>588</second>
+										<second>174</second>
 									</item>
 								</second>
 							</item>
@@ -7682,10 +7682,10 @@
 					<Obj>
 						<type>0</type>
 						<id>147</id>
-						<name>icmp_ln548</name>
+						<name>icmp_ln141</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>548</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -7701,7 +7701,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>548</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -7739,10 +7739,10 @@
 					<Obj>
 						<type>0</type>
 						<id>148</id>
-						<name>p_0_0_0271013_write_ln566</name>
+						<name>p_0_0_0271013_write_ln155</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>566</lineNumber>
+						<lineNumber>155</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -7758,7 +7758,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>566</second>
+										<second>155</second>
 									</item>
 								</second>
 							</item>
@@ -7797,10 +7797,10 @@
 					<Obj>
 						<type>0</type>
 						<id>149</id>
-						<name>p_0_0_0261211_write_ln567</name>
+						<name>p_0_0_0261211_write_ln156</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>567</lineNumber>
+						<lineNumber>156</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -7816,7 +7816,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>567</second>
+										<second>156</second>
 									</item>
 								</second>
 							</item>
@@ -7855,10 +7855,10 @@
 					<Obj>
 						<type>0</type>
 						<id>150</id>
-						<name>curr_11149_write_ln553</name>
+						<name>curr_11149_write_ln146</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>553</lineNumber>
+						<lineNumber>146</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -7874,7 +7874,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>553</second>
+										<second>146</second>
 									</item>
 								</second>
 							</item>
@@ -7913,10 +7913,10 @@
 					<Obj>
 						<type>0</type>
 						<id>151</id>
-						<name>k_0215_write_ln548</name>
+						<name>k_0215_write_ln141</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>548</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -7932,7 +7932,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>548</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -8016,10 +8016,10 @@
 					<Obj>
 						<type>0</type>
 						<id>153</id>
-						<name>p_0_0_028_11112_write_ln584</name>
+						<name>p_0_0_028_11112_write_ln170</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>584</lineNumber>
+						<lineNumber>170</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -8035,7 +8035,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>584</second>
+										<second>170</second>
 									</item>
 								</second>
 							</item>
@@ -8118,10 +8118,10 @@
 					<Obj>
 						<type>0</type>
 						<id>155</id>
-						<name>br_ln548</name>
+						<name>br_ln141</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>548</lineNumber>
+						<lineNumber>141</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -8137,7 +8137,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>548</second>
+										<second>141</second>
 									</item>
 								</second>
 							</item>
@@ -8176,10 +8176,10 @@
 					<Obj>
 						<type>0</type>
 						<id>157</id>
-						<name>_ln590</name>
+						<name>_ln176</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2</fileDirectory>
-						<lineNumber>590</lineNumber>
+						<lineNumber>176</lineNumber>
 						<contextFuncName>stencil_stage</contextFuncName>
 						<contextNormFuncName>stencil_stage</contextNormFuncName>
 						<inlineStackInfo>
@@ -8195,7 +8195,7 @@
 											<first>top.cpp</first>
 											<second>stencil_stage</second>
 										</first>
-										<second>590</second>
+										<second>176</second>
 									</item>
 								</second>
 							</item>
@@ -11776,8 +11776,8 @@
 		</item>
 		<item class_id_reference="22" object_id="_463">
 			<mId>3</mId>
-			<mTag>VITIS_LOOP_548_1</mTag>
-			<mNormTag>VITIS_LOOP_548_1</mNormTag>
+			<mTag>VITIS_LOOP_141_1</mTag>
+			<mNormTag>VITIS_LOOP_141_1</mNormTag>
 			<mType>1</mType>
 			<sub_regions>
 				<count>0</count>
@@ -12900,7 +12900,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="33" tracking_level="1" version="0" object_id="_465">
-			<region_name>VITIS_LOOP_548_1</region_name>
+			<region_name>VITIS_LOOP_141_1</region_name>
 			<basic_blocks>
 				<count>9</count>
 				<item_version>0</item_version>

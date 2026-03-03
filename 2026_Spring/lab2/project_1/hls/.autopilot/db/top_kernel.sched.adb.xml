@@ -907,10 +907,10 @@ entry:106 %inter_strm_30 = alloca i64 1
 
 <Node id="114" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:109 %call_ln610 = call void @entry_proc, i64 %A_out_read, i64 %A_out_c
+entry:109 %call_ln202 = call void @entry_proc, i64 %A_out_read, i64 %A_out_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln610"/></StgValue>
+<StgValue><ssdm name="call_ln202"/></StgValue>
 </operation>
 
 <operation id="100" st_id="1" stage="2" lat="2">
@@ -922,10 +922,10 @@ entry:109 %call_ln610 = call void @entry_proc, i64 %A_out_read, i64 %A_out_c
 
 <Node id="115" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="24">
 <![CDATA[
-entry:110 %call_ln611 = call void @read_input, i32 %gmem0, i64 %A_in_read, i24 %inter_strm
+entry:110 %call_ln203 = call void @read_input, i32 %gmem0, i64 %A_in_read, i24 %inter_strm
 
 ]]></Node>
-<StgValue><ssdm name="call_ln611"/></StgValue>
+<StgValue><ssdm name="call_ln203"/></StgValue>
 </operation>
 </state>
 
@@ -940,10 +940,10 @@ entry:110 %call_ln611 = call void @read_input, i32 %gmem0, i64 %A_in_read, i24 %
 
 <Node id="115" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="24">
 <![CDATA[
-entry:110 %call_ln611 = call void @read_input, i32 %gmem0, i64 %A_in_read, i24 %inter_strm
+entry:110 %call_ln203 = call void @read_input, i32 %gmem0, i64 %A_in_read, i24 %inter_strm
 
 ]]></Node>
-<StgValue><ssdm name="call_ln611"/></StgValue>
+<StgValue><ssdm name="call_ln203"/></StgValue>
 </operation>
 </state>
 
@@ -958,10 +958,10 @@ entry:110 %call_ln611 = call void @read_input, i32 %gmem0, i64 %A_in_read, i24 %
 
 <Node id="116" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:111 %call_ln615 = call void @stencil_stage.1, i24 %inter_strm, i24 %inter_strm_1
+entry:111 %call_ln207 = call void @stencil_stage.1, i24 %inter_strm, i24 %inter_strm_1
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -976,10 +976,10 @@ entry:111 %call_ln615 = call void @stencil_stage.1, i24 %inter_strm, i24 %inter_
 
 <Node id="116" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:111 %call_ln615 = call void @stencil_stage.1, i24 %inter_strm, i24 %inter_strm_1
+entry:111 %call_ln207 = call void @stencil_stage.1, i24 %inter_strm, i24 %inter_strm_1
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -994,10 +994,10 @@ entry:111 %call_ln615 = call void @stencil_stage.1, i24 %inter_strm, i24 %inter_
 
 <Node id="117" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:112 %call_ln615 = call void @stencil_stage.2, i24 %inter_strm_1, i24 %inter_strm_2
+entry:112 %call_ln207 = call void @stencil_stage.2, i24 %inter_strm_1, i24 %inter_strm_2
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1012,10 +1012,10 @@ entry:112 %call_ln615 = call void @stencil_stage.2, i24 %inter_strm_1, i24 %inte
 
 <Node id="117" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:112 %call_ln615 = call void @stencil_stage.2, i24 %inter_strm_1, i24 %inter_strm_2
+entry:112 %call_ln207 = call void @stencil_stage.2, i24 %inter_strm_1, i24 %inter_strm_2
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1030,10 +1030,10 @@ entry:112 %call_ln615 = call void @stencil_stage.2, i24 %inter_strm_1, i24 %inte
 
 <Node id="118" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:113 %call_ln615 = call void @stencil_stage.3, i24 %inter_strm_2, i24 %inter_strm_3
+entry:113 %call_ln207 = call void @stencil_stage.3, i24 %inter_strm_2, i24 %inter_strm_3
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1048,10 +1048,10 @@ entry:113 %call_ln615 = call void @stencil_stage.3, i24 %inter_strm_2, i24 %inte
 
 <Node id="118" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:113 %call_ln615 = call void @stencil_stage.3, i24 %inter_strm_2, i24 %inter_strm_3
+entry:113 %call_ln207 = call void @stencil_stage.3, i24 %inter_strm_2, i24 %inter_strm_3
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1066,10 +1066,10 @@ entry:113 %call_ln615 = call void @stencil_stage.3, i24 %inter_strm_2, i24 %inte
 
 <Node id="119" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:114 %call_ln615 = call void @stencil_stage.4, i24 %inter_strm_3, i24 %inter_strm_4
+entry:114 %call_ln207 = call void @stencil_stage.4, i24 %inter_strm_3, i24 %inter_strm_4
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1084,10 +1084,10 @@ entry:114 %call_ln615 = call void @stencil_stage.4, i24 %inter_strm_3, i24 %inte
 
 <Node id="119" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:114 %call_ln615 = call void @stencil_stage.4, i24 %inter_strm_3, i24 %inter_strm_4
+entry:114 %call_ln207 = call void @stencil_stage.4, i24 %inter_strm_3, i24 %inter_strm_4
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1102,10 +1102,10 @@ entry:114 %call_ln615 = call void @stencil_stage.4, i24 %inter_strm_3, i24 %inte
 
 <Node id="120" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:115 %call_ln615 = call void @stencil_stage.5, i24 %inter_strm_4, i24 %inter_strm_5
+entry:115 %call_ln207 = call void @stencil_stage.5, i24 %inter_strm_4, i24 %inter_strm_5
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1120,10 +1120,10 @@ entry:115 %call_ln615 = call void @stencil_stage.5, i24 %inter_strm_4, i24 %inte
 
 <Node id="120" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:115 %call_ln615 = call void @stencil_stage.5, i24 %inter_strm_4, i24 %inter_strm_5
+entry:115 %call_ln207 = call void @stencil_stage.5, i24 %inter_strm_4, i24 %inter_strm_5
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1138,10 +1138,10 @@ entry:115 %call_ln615 = call void @stencil_stage.5, i24 %inter_strm_4, i24 %inte
 
 <Node id="121" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:116 %call_ln615 = call void @stencil_stage.6, i24 %inter_strm_5, i24 %inter_strm_6
+entry:116 %call_ln207 = call void @stencil_stage.6, i24 %inter_strm_5, i24 %inter_strm_6
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1156,10 +1156,10 @@ entry:116 %call_ln615 = call void @stencil_stage.6, i24 %inter_strm_5, i24 %inte
 
 <Node id="121" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:116 %call_ln615 = call void @stencil_stage.6, i24 %inter_strm_5, i24 %inter_strm_6
+entry:116 %call_ln207 = call void @stencil_stage.6, i24 %inter_strm_5, i24 %inter_strm_6
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1174,10 +1174,10 @@ entry:116 %call_ln615 = call void @stencil_stage.6, i24 %inter_strm_5, i24 %inte
 
 <Node id="122" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:117 %call_ln615 = call void @stencil_stage.7, i24 %inter_strm_6, i24 %inter_strm_7
+entry:117 %call_ln207 = call void @stencil_stage.7, i24 %inter_strm_6, i24 %inter_strm_7
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1192,10 +1192,10 @@ entry:117 %call_ln615 = call void @stencil_stage.7, i24 %inter_strm_6, i24 %inte
 
 <Node id="122" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:117 %call_ln615 = call void @stencil_stage.7, i24 %inter_strm_6, i24 %inter_strm_7
+entry:117 %call_ln207 = call void @stencil_stage.7, i24 %inter_strm_6, i24 %inter_strm_7
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1210,10 +1210,10 @@ entry:117 %call_ln615 = call void @stencil_stage.7, i24 %inter_strm_6, i24 %inte
 
 <Node id="123" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:118 %call_ln615 = call void @stencil_stage.8, i24 %inter_strm_7, i24 %inter_strm_8
+entry:118 %call_ln207 = call void @stencil_stage.8, i24 %inter_strm_7, i24 %inter_strm_8
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1228,10 +1228,10 @@ entry:118 %call_ln615 = call void @stencil_stage.8, i24 %inter_strm_7, i24 %inte
 
 <Node id="123" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:118 %call_ln615 = call void @stencil_stage.8, i24 %inter_strm_7, i24 %inter_strm_8
+entry:118 %call_ln207 = call void @stencil_stage.8, i24 %inter_strm_7, i24 %inter_strm_8
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1246,10 +1246,10 @@ entry:118 %call_ln615 = call void @stencil_stage.8, i24 %inter_strm_7, i24 %inte
 
 <Node id="124" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:119 %call_ln615 = call void @stencil_stage.9, i24 %inter_strm_8, i24 %inter_strm_9
+entry:119 %call_ln207 = call void @stencil_stage.9, i24 %inter_strm_8, i24 %inter_strm_9
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1264,10 +1264,10 @@ entry:119 %call_ln615 = call void @stencil_stage.9, i24 %inter_strm_8, i24 %inte
 
 <Node id="124" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:119 %call_ln615 = call void @stencil_stage.9, i24 %inter_strm_8, i24 %inter_strm_9
+entry:119 %call_ln207 = call void @stencil_stage.9, i24 %inter_strm_8, i24 %inter_strm_9
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1282,10 +1282,10 @@ entry:119 %call_ln615 = call void @stencil_stage.9, i24 %inter_strm_8, i24 %inte
 
 <Node id="125" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:120 %call_ln615 = call void @stencil_stage.10, i24 %inter_strm_9, i24 %inter_strm_10
+entry:120 %call_ln207 = call void @stencil_stage.10, i24 %inter_strm_9, i24 %inter_strm_10
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1300,10 +1300,10 @@ entry:120 %call_ln615 = call void @stencil_stage.10, i24 %inter_strm_9, i24 %int
 
 <Node id="125" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:120 %call_ln615 = call void @stencil_stage.10, i24 %inter_strm_9, i24 %inter_strm_10
+entry:120 %call_ln207 = call void @stencil_stage.10, i24 %inter_strm_9, i24 %inter_strm_10
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1318,10 +1318,10 @@ entry:120 %call_ln615 = call void @stencil_stage.10, i24 %inter_strm_9, i24 %int
 
 <Node id="126" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:121 %call_ln615 = call void @stencil_stage.11, i24 %inter_strm_10, i24 %inter_strm_11
+entry:121 %call_ln207 = call void @stencil_stage.11, i24 %inter_strm_10, i24 %inter_strm_11
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1336,10 +1336,10 @@ entry:121 %call_ln615 = call void @stencil_stage.11, i24 %inter_strm_10, i24 %in
 
 <Node id="126" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:121 %call_ln615 = call void @stencil_stage.11, i24 %inter_strm_10, i24 %inter_strm_11
+entry:121 %call_ln207 = call void @stencil_stage.11, i24 %inter_strm_10, i24 %inter_strm_11
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1354,10 +1354,10 @@ entry:121 %call_ln615 = call void @stencil_stage.11, i24 %inter_strm_10, i24 %in
 
 <Node id="127" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:122 %call_ln615 = call void @stencil_stage.12, i24 %inter_strm_11, i24 %inter_strm_12
+entry:122 %call_ln207 = call void @stencil_stage.12, i24 %inter_strm_11, i24 %inter_strm_12
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1372,10 +1372,10 @@ entry:122 %call_ln615 = call void @stencil_stage.12, i24 %inter_strm_11, i24 %in
 
 <Node id="127" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:122 %call_ln615 = call void @stencil_stage.12, i24 %inter_strm_11, i24 %inter_strm_12
+entry:122 %call_ln207 = call void @stencil_stage.12, i24 %inter_strm_11, i24 %inter_strm_12
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1390,10 +1390,10 @@ entry:122 %call_ln615 = call void @stencil_stage.12, i24 %inter_strm_11, i24 %in
 
 <Node id="128" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:123 %call_ln615 = call void @stencil_stage.13, i24 %inter_strm_12, i24 %inter_strm_13
+entry:123 %call_ln207 = call void @stencil_stage.13, i24 %inter_strm_12, i24 %inter_strm_13
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1408,10 +1408,10 @@ entry:123 %call_ln615 = call void @stencil_stage.13, i24 %inter_strm_12, i24 %in
 
 <Node id="128" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:123 %call_ln615 = call void @stencil_stage.13, i24 %inter_strm_12, i24 %inter_strm_13
+entry:123 %call_ln207 = call void @stencil_stage.13, i24 %inter_strm_12, i24 %inter_strm_13
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1426,10 +1426,10 @@ entry:123 %call_ln615 = call void @stencil_stage.13, i24 %inter_strm_12, i24 %in
 
 <Node id="129" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:124 %call_ln615 = call void @stencil_stage.14, i24 %inter_strm_13, i24 %inter_strm_14
+entry:124 %call_ln207 = call void @stencil_stage.14, i24 %inter_strm_13, i24 %inter_strm_14
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1444,10 +1444,10 @@ entry:124 %call_ln615 = call void @stencil_stage.14, i24 %inter_strm_13, i24 %in
 
 <Node id="129" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:124 %call_ln615 = call void @stencil_stage.14, i24 %inter_strm_13, i24 %inter_strm_14
+entry:124 %call_ln207 = call void @stencil_stage.14, i24 %inter_strm_13, i24 %inter_strm_14
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1462,10 +1462,10 @@ entry:124 %call_ln615 = call void @stencil_stage.14, i24 %inter_strm_13, i24 %in
 
 <Node id="130" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:125 %call_ln615 = call void @stencil_stage.15, i24 %inter_strm_14, i24 %inter_strm_15
+entry:125 %call_ln207 = call void @stencil_stage.15, i24 %inter_strm_14, i24 %inter_strm_15
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1480,10 +1480,10 @@ entry:125 %call_ln615 = call void @stencil_stage.15, i24 %inter_strm_14, i24 %in
 
 <Node id="130" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:125 %call_ln615 = call void @stencil_stage.15, i24 %inter_strm_14, i24 %inter_strm_15
+entry:125 %call_ln207 = call void @stencil_stage.15, i24 %inter_strm_14, i24 %inter_strm_15
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1498,10 +1498,10 @@ entry:125 %call_ln615 = call void @stencil_stage.15, i24 %inter_strm_14, i24 %in
 
 <Node id="131" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:126 %call_ln615 = call void @stencil_stage.16, i24 %inter_strm_15, i24 %inter_strm_16
+entry:126 %call_ln207 = call void @stencil_stage.16, i24 %inter_strm_15, i24 %inter_strm_16
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1516,10 +1516,10 @@ entry:126 %call_ln615 = call void @stencil_stage.16, i24 %inter_strm_15, i24 %in
 
 <Node id="131" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:126 %call_ln615 = call void @stencil_stage.16, i24 %inter_strm_15, i24 %inter_strm_16
+entry:126 %call_ln207 = call void @stencil_stage.16, i24 %inter_strm_15, i24 %inter_strm_16
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1534,10 +1534,10 @@ entry:126 %call_ln615 = call void @stencil_stage.16, i24 %inter_strm_15, i24 %in
 
 <Node id="132" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:127 %call_ln615 = call void @stencil_stage.17, i24 %inter_strm_16, i24 %inter_strm_17
+entry:127 %call_ln207 = call void @stencil_stage.17, i24 %inter_strm_16, i24 %inter_strm_17
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1552,10 +1552,10 @@ entry:127 %call_ln615 = call void @stencil_stage.17, i24 %inter_strm_16, i24 %in
 
 <Node id="132" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:127 %call_ln615 = call void @stencil_stage.17, i24 %inter_strm_16, i24 %inter_strm_17
+entry:127 %call_ln207 = call void @stencil_stage.17, i24 %inter_strm_16, i24 %inter_strm_17
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1570,10 +1570,10 @@ entry:127 %call_ln615 = call void @stencil_stage.17, i24 %inter_strm_16, i24 %in
 
 <Node id="133" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:128 %call_ln615 = call void @stencil_stage.18, i24 %inter_strm_17, i24 %inter_strm_18
+entry:128 %call_ln207 = call void @stencil_stage.18, i24 %inter_strm_17, i24 %inter_strm_18
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1588,10 +1588,10 @@ entry:128 %call_ln615 = call void @stencil_stage.18, i24 %inter_strm_17, i24 %in
 
 <Node id="133" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:128 %call_ln615 = call void @stencil_stage.18, i24 %inter_strm_17, i24 %inter_strm_18
+entry:128 %call_ln207 = call void @stencil_stage.18, i24 %inter_strm_17, i24 %inter_strm_18
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1606,10 +1606,10 @@ entry:128 %call_ln615 = call void @stencil_stage.18, i24 %inter_strm_17, i24 %in
 
 <Node id="134" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:129 %call_ln615 = call void @stencil_stage.19, i24 %inter_strm_18, i24 %inter_strm_19
+entry:129 %call_ln207 = call void @stencil_stage.19, i24 %inter_strm_18, i24 %inter_strm_19
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1624,10 +1624,10 @@ entry:129 %call_ln615 = call void @stencil_stage.19, i24 %inter_strm_18, i24 %in
 
 <Node id="134" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:129 %call_ln615 = call void @stencil_stage.19, i24 %inter_strm_18, i24 %inter_strm_19
+entry:129 %call_ln207 = call void @stencil_stage.19, i24 %inter_strm_18, i24 %inter_strm_19
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1642,10 +1642,10 @@ entry:129 %call_ln615 = call void @stencil_stage.19, i24 %inter_strm_18, i24 %in
 
 <Node id="135" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:130 %call_ln615 = call void @stencil_stage.20, i24 %inter_strm_19, i24 %inter_strm_20
+entry:130 %call_ln207 = call void @stencil_stage.20, i24 %inter_strm_19, i24 %inter_strm_20
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1660,10 +1660,10 @@ entry:130 %call_ln615 = call void @stencil_stage.20, i24 %inter_strm_19, i24 %in
 
 <Node id="135" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:130 %call_ln615 = call void @stencil_stage.20, i24 %inter_strm_19, i24 %inter_strm_20
+entry:130 %call_ln207 = call void @stencil_stage.20, i24 %inter_strm_19, i24 %inter_strm_20
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1678,10 +1678,10 @@ entry:130 %call_ln615 = call void @stencil_stage.20, i24 %inter_strm_19, i24 %in
 
 <Node id="136" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:131 %call_ln615 = call void @stencil_stage.21, i24 %inter_strm_20, i24 %inter_strm_21
+entry:131 %call_ln207 = call void @stencil_stage.21, i24 %inter_strm_20, i24 %inter_strm_21
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1696,10 +1696,10 @@ entry:131 %call_ln615 = call void @stencil_stage.21, i24 %inter_strm_20, i24 %in
 
 <Node id="136" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:131 %call_ln615 = call void @stencil_stage.21, i24 %inter_strm_20, i24 %inter_strm_21
+entry:131 %call_ln207 = call void @stencil_stage.21, i24 %inter_strm_20, i24 %inter_strm_21
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1714,10 +1714,10 @@ entry:131 %call_ln615 = call void @stencil_stage.21, i24 %inter_strm_20, i24 %in
 
 <Node id="137" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:132 %call_ln615 = call void @stencil_stage.22, i24 %inter_strm_21, i24 %inter_strm_22
+entry:132 %call_ln207 = call void @stencil_stage.22, i24 %inter_strm_21, i24 %inter_strm_22
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1732,10 +1732,10 @@ entry:132 %call_ln615 = call void @stencil_stage.22, i24 %inter_strm_21, i24 %in
 
 <Node id="137" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:132 %call_ln615 = call void @stencil_stage.22, i24 %inter_strm_21, i24 %inter_strm_22
+entry:132 %call_ln207 = call void @stencil_stage.22, i24 %inter_strm_21, i24 %inter_strm_22
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1750,10 +1750,10 @@ entry:132 %call_ln615 = call void @stencil_stage.22, i24 %inter_strm_21, i24 %in
 
 <Node id="138" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:133 %call_ln615 = call void @stencil_stage.23, i24 %inter_strm_22, i24 %inter_strm_23
+entry:133 %call_ln207 = call void @stencil_stage.23, i24 %inter_strm_22, i24 %inter_strm_23
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1768,10 +1768,10 @@ entry:133 %call_ln615 = call void @stencil_stage.23, i24 %inter_strm_22, i24 %in
 
 <Node id="138" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:133 %call_ln615 = call void @stencil_stage.23, i24 %inter_strm_22, i24 %inter_strm_23
+entry:133 %call_ln207 = call void @stencil_stage.23, i24 %inter_strm_22, i24 %inter_strm_23
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1786,10 +1786,10 @@ entry:133 %call_ln615 = call void @stencil_stage.23, i24 %inter_strm_22, i24 %in
 
 <Node id="139" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:134 %call_ln615 = call void @stencil_stage.24, i24 %inter_strm_23, i24 %inter_strm_24
+entry:134 %call_ln207 = call void @stencil_stage.24, i24 %inter_strm_23, i24 %inter_strm_24
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1804,10 +1804,10 @@ entry:134 %call_ln615 = call void @stencil_stage.24, i24 %inter_strm_23, i24 %in
 
 <Node id="139" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:134 %call_ln615 = call void @stencil_stage.24, i24 %inter_strm_23, i24 %inter_strm_24
+entry:134 %call_ln207 = call void @stencil_stage.24, i24 %inter_strm_23, i24 %inter_strm_24
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1822,10 +1822,10 @@ entry:134 %call_ln615 = call void @stencil_stage.24, i24 %inter_strm_23, i24 %in
 
 <Node id="140" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:135 %call_ln615 = call void @stencil_stage.25, i24 %inter_strm_24, i24 %inter_strm_25
+entry:135 %call_ln207 = call void @stencil_stage.25, i24 %inter_strm_24, i24 %inter_strm_25
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1840,10 +1840,10 @@ entry:135 %call_ln615 = call void @stencil_stage.25, i24 %inter_strm_24, i24 %in
 
 <Node id="140" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:135 %call_ln615 = call void @stencil_stage.25, i24 %inter_strm_24, i24 %inter_strm_25
+entry:135 %call_ln207 = call void @stencil_stage.25, i24 %inter_strm_24, i24 %inter_strm_25
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1858,10 +1858,10 @@ entry:135 %call_ln615 = call void @stencil_stage.25, i24 %inter_strm_24, i24 %in
 
 <Node id="141" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:136 %call_ln615 = call void @stencil_stage.26, i24 %inter_strm_25, i24 %inter_strm_26
+entry:136 %call_ln207 = call void @stencil_stage.26, i24 %inter_strm_25, i24 %inter_strm_26
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1876,10 +1876,10 @@ entry:136 %call_ln615 = call void @stencil_stage.26, i24 %inter_strm_25, i24 %in
 
 <Node id="141" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:136 %call_ln615 = call void @stencil_stage.26, i24 %inter_strm_25, i24 %inter_strm_26
+entry:136 %call_ln207 = call void @stencil_stage.26, i24 %inter_strm_25, i24 %inter_strm_26
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1894,10 +1894,10 @@ entry:136 %call_ln615 = call void @stencil_stage.26, i24 %inter_strm_25, i24 %in
 
 <Node id="142" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:137 %call_ln615 = call void @stencil_stage.27, i24 %inter_strm_26, i24 %inter_strm_27
+entry:137 %call_ln207 = call void @stencil_stage.27, i24 %inter_strm_26, i24 %inter_strm_27
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1912,10 +1912,10 @@ entry:137 %call_ln615 = call void @stencil_stage.27, i24 %inter_strm_26, i24 %in
 
 <Node id="142" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:137 %call_ln615 = call void @stencil_stage.27, i24 %inter_strm_26, i24 %inter_strm_27
+entry:137 %call_ln207 = call void @stencil_stage.27, i24 %inter_strm_26, i24 %inter_strm_27
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1930,10 +1930,10 @@ entry:137 %call_ln615 = call void @stencil_stage.27, i24 %inter_strm_26, i24 %in
 
 <Node id="143" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:138 %call_ln615 = call void @stencil_stage.28, i24 %inter_strm_27, i24 %inter_strm_28
+entry:138 %call_ln207 = call void @stencil_stage.28, i24 %inter_strm_27, i24 %inter_strm_28
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1948,10 +1948,10 @@ entry:138 %call_ln615 = call void @stencil_stage.28, i24 %inter_strm_27, i24 %in
 
 <Node id="143" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:138 %call_ln615 = call void @stencil_stage.28, i24 %inter_strm_27, i24 %inter_strm_28
+entry:138 %call_ln207 = call void @stencil_stage.28, i24 %inter_strm_27, i24 %inter_strm_28
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1966,10 +1966,10 @@ entry:138 %call_ln615 = call void @stencil_stage.28, i24 %inter_strm_27, i24 %in
 
 <Node id="144" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:139 %call_ln615 = call void @stencil_stage.29, i24 %inter_strm_28, i24 %inter_strm_29
+entry:139 %call_ln207 = call void @stencil_stage.29, i24 %inter_strm_28, i24 %inter_strm_29
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -1984,10 +1984,10 @@ entry:139 %call_ln615 = call void @stencil_stage.29, i24 %inter_strm_28, i24 %in
 
 <Node id="144" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:139 %call_ln615 = call void @stencil_stage.29, i24 %inter_strm_28, i24 %inter_strm_29
+entry:139 %call_ln207 = call void @stencil_stage.29, i24 %inter_strm_28, i24 %inter_strm_29
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -2002,10 +2002,10 @@ entry:139 %call_ln615 = call void @stencil_stage.29, i24 %inter_strm_28, i24 %in
 
 <Node id="145" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:140 %call_ln615 = call void @stencil_stage, i24 %inter_strm_29, i24 %inter_strm_30
+entry:140 %call_ln207 = call void @stencil_stage, i24 %inter_strm_29, i24 %inter_strm_30
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -2020,10 +2020,10 @@ entry:140 %call_ln615 = call void @stencil_stage, i24 %inter_strm_29, i24 %inter
 
 <Node id="145" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="24" op_3_bw="0">
 <![CDATA[
-entry:140 %call_ln615 = call void @stencil_stage, i24 %inter_strm_29, i24 %inter_strm_30
+entry:140 %call_ln207 = call void @stencil_stage, i24 %inter_strm_29, i24 %inter_strm_30
 
 ]]></Node>
-<StgValue><ssdm name="call_ln615"/></StgValue>
+<StgValue><ssdm name="call_ln207"/></StgValue>
 </operation>
 </state>
 
@@ -2038,10 +2038,10 @@ entry:140 %call_ln615 = call void @stencil_stage, i24 %inter_strm_29, i24 %inter
 
 <Node id="146" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="32" op_3_bw="64" op_4_bw="0" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:141 %call_ln618 = call void @write_output, i24 %inter_strm_30, i32 %gmem1, i64 %A_out_c
+entry:141 %call_ln210 = call void @write_output, i24 %inter_strm_30, i32 %gmem1, i64 %A_out_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln618"/></StgValue>
+<StgValue><ssdm name="call_ln210"/></StgValue>
 </operation>
 </state>
 
@@ -2071,10 +2071,10 @@ entry:3 %empty = specchannel i32 @_ssdm_op_SpecChannel, void @A_out_c_str, i32 1
 
 <Node id="9" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:4 %specinterface_ln610 = specinterface void @_ssdm_op_SpecInterface, i64 %A_out_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
+entry:4 %specinterface_ln202 = specinterface void @_ssdm_op_SpecInterface, i64 %A_out_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln610"/></StgValue>
+<StgValue><ssdm name="specinterface_ln202"/></StgValue>
 </operation>
 
 <operation id="165" st_id="64" stage="1" lat="1">
@@ -2086,10 +2086,10 @@ entry:4 %specinterface_ln610 = specinterface void @_ssdm_op_SpecInterface, i64 %
 
 <Node id="10" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
 <![CDATA[
-entry:5 %specdataflowpipeline_ln610 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_7
+entry:5 %specdataflowpipeline_ln202 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_7
 
 ]]></Node>
-<StgValue><ssdm name="specdataflowpipeline_ln610"/></StgValue>
+<StgValue><ssdm name="specdataflowpipeline_ln202"/></StgValue>
 </operation>
 
 <operation id="166" st_id="64" stage="1" lat="1">
@@ -2101,10 +2101,10 @@ entry:5 %specdataflowpipeline_ln610 = specdataflowpipeline void @_ssdm_op_SpecDa
 
 <Node id="11" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-entry:6 %spectopmodule_ln601 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_6
+entry:6 %spectopmodule_ln187 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_6
 
 ]]></Node>
-<StgValue><ssdm name="spectopmodule_ln601"/></StgValue>
+<StgValue><ssdm name="spectopmodule_ln187"/></StgValue>
 </operation>
 
 <operation id="167" st_id="64" stage="1" lat="1">
@@ -2116,7 +2116,7 @@ entry:6 %spectopmodule_ln601 = spectopmodule void @_ssdm_op_SpecTopModule, void 
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:7 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem0, void @empty_8, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_13, void @empty_12, void @empty_7, i32 16, i32 16, i32 16, i32 16, void @empty_7, void @empty_7, i32 4294967295, i32 0, i32 0
+entry:7 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem0, void @empty_8, i32 0, i32 0, void @empty_7, i32 0, i32 65536, void @empty_13, void @empty_12, void @empty_7, i32 16, i32 16, i32 64, i32 16, void @empty_7, void @empty_7, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -2146,7 +2146,7 @@ entry:8 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %gmem0
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:9 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem1, void @empty_8, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_3, void @empty_12, void @empty_7, i32 16, i32 16, i32 16, i32 16, void @empty_7, void @empty_7, i32 4294967295, i32 0, i32 0
+entry:9 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem1, void @empty_8, i32 0, i32 0, void @empty_7, i32 0, i32 65536, void @empty_3, void @empty_12, void @empty_7, i32 16, i32 16, i32 16, i32 64, void @empty_7, void @empty_7, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -3181,10 +3181,10 @@ entry:108 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %
 
 <Node id="146" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="32" op_3_bw="64" op_4_bw="0" op_5_bw="0" op_6_bw="0">
 <![CDATA[
-entry:141 %call_ln618 = call void @write_output, i24 %inter_strm_30, i32 %gmem1, i64 %A_out_c
+entry:141 %call_ln210 = call void @write_output, i24 %inter_strm_30, i32 %gmem1, i64 %A_out_c
 
 ]]></Node>
-<StgValue><ssdm name="call_ln618"/></StgValue>
+<StgValue><ssdm name="call_ln210"/></StgValue>
 </operation>
 
 <operation id="239" st_id="64" stage="1" lat="1">
@@ -3196,10 +3196,10 @@ entry:141 %call_ln618 = call void @write_output, i24 %inter_strm_30, i32 %gmem1,
 
 <Node id="147" bw="0">
 <![CDATA[
-entry:142 %ret_ln619 = ret
+entry:142 %ret_ln211 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln619"/></StgValue>
+<StgValue><ssdm name="ret_ln211"/></StgValue>
 </operation>
 </state>
 </state_list>

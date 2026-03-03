@@ -1,11 +1,11 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "13 29 15 24 31 5 11 10 2 7 3 18 28 4 21 14 9 8 12 30 17 20 23 26 22 16 32 19 1 6 25 27",
+    "calls": "9 10 32 24 2 21 27 28 7 29 16 15 17 30 22 6 5 12 31 1 25 18 3 26 13 4 20 14 23 11 8 19",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "top.cpp",
-    "fileloc": 601,
+    "fileloc": 187,
     "instructions": 133,
     "memory_accesses": 0,
     "name": "top_kernel",
@@ -17,7 +17,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -35,7 +35,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -53,7 +53,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -71,7 +71,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -84,16 +84,22 @@
     "total_instructions": 219
   },
   "13": {
-    "basicblocks": 3,
+    "basicblocks": 17,
     "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
+    "control_depth": 8,
+    "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 530,
-    "instructions": 12,
-    "memory_accesses": 2,
-    "name": "read_input",
-    "total_instructions": 14
+    "fileloc": 133,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
   },
   "14": {
     "basicblocks": 17,
@@ -101,7 +107,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -119,7 +125,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -137,7 +143,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -155,7 +161,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -173,7 +179,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -186,22 +192,16 @@
     "total_instructions": 219
   },
   "19": {
-    "basicblocks": 17,
+    "basicblocks": 3,
     "calls": "",
-    "control_depth": 8,
-    "def_use_depth": 38,
+    "control_depth": 0,
+    "def_use_depth": 3,
     "file": "top.cpp",
-    "fileloc": 538,
-    "instructions": 219,
-    "loads": {
-      "L": 3
-    },
-    "memory_accesses": 11,
-    "name": "stencil_stage",
-    "stores": {
-      "L": 5
-    },
-    "total_instructions": 219
+    "fileloc": 179,
+    "instructions": 12,
+    "memory_accesses": 2,
+    "name": "write_output",
+    "total_instructions": 12
   },
   "2": {
     "basicblocks": 17,
@@ -209,7 +209,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -227,7 +227,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -245,7 +245,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -263,7 +263,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -281,7 +281,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -299,7 +299,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -317,7 +317,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -335,7 +335,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -348,16 +348,22 @@
     "total_instructions": 219
   },
   "27": {
-    "basicblocks": 3,
+    "basicblocks": 17,
     "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
+    "control_depth": 8,
+    "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 593,
-    "instructions": 12,
-    "memory_accesses": 2,
-    "name": "write_output",
-    "total_instructions": 12
+    "fileloc": 133,
+    "instructions": 219,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 11,
+    "name": "stencil_stage",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 219
   },
   "28": {
     "basicblocks": 17,
@@ -365,7 +371,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -383,7 +389,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -401,7 +407,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -419,7 +425,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -437,7 +443,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -455,7 +461,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -473,7 +479,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -491,7 +497,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -509,7 +515,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -527,7 +533,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -545,7 +551,7 @@
     "control_depth": 8,
     "def_use_depth": 38,
     "file": "top.cpp",
-    "fileloc": 538,
+    "fileloc": 133,
     "instructions": 219,
     "loads": {
       "L": 3
@@ -558,21 +564,15 @@
     "total_instructions": 219
   },
   "9": {
-    "basicblocks": 17,
+    "basicblocks": 3,
     "calls": "",
-    "control_depth": 8,
-    "def_use_depth": 38,
+    "control_depth": 0,
+    "def_use_depth": 3,
     "file": "top.cpp",
-    "fileloc": 538,
-    "instructions": 219,
-    "loads": {
-      "L": 3
-    },
-    "memory_accesses": 11,
-    "name": "stencil_stage",
-    "stores": {
-      "L": 5
-    },
-    "total_instructions": 219
+    "fileloc": 124,
+    "instructions": 12,
+    "memory_accesses": 2,
+    "name": "read_input",
+    "total_instructions": 14
   }
 }

@@ -2,7 +2,7 @@
     "1": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -23,7 +23,7 @@
     "2": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -42,21 +42,30 @@
         }
     },
     "3": {
-        "name": "entry_proc",
+        "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "0",
-        "instructions": "4",
-        "total_instructions": "4",
+        "fileloc": "133",
+        "instructions": "145",
+        "total_instructions": "145",
         "calls": "",
-        "basicblocks": "1",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "1"
+        "basicblocks": "11",
+        "memory_accesses": "21",
+        "control_depth": "5",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
     },
     "4": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -75,21 +84,21 @@
         }
     },
     "5": {
-        "name": "read_input",
+        "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "530",
-        "instructions": "25",
-        "total_instructions": "25",
+        "fileloc": "133",
+        "instructions": "145",
+        "total_instructions": "145",
         "calls": "",
-        "basicblocks": "5",
-        "memory_accesses": "5",
-        "control_depth": "2",
-        "def_use_depth": "1",
+        "basicblocks": "11",
+        "memory_accesses": "21",
+        "control_depth": "5",
+        "def_use_depth": "2",
         "loads": {
-            "L": "1"
+            "L": "9"
         },
         "stores": {
-            "L": "2"
+            "L": "10"
         },
         "loops": {
             "L": "1"
@@ -98,7 +107,7 @@
     "6": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -119,7 +128,7 @@
     "7": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -140,154 +149,7 @@
     "8": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
-        "instructions": "145",
-        "total_instructions": "145",
-        "calls": "",
-        "basicblocks": "11",
-        "memory_accesses": "21",
-        "control_depth": "5",
-        "def_use_depth": "2",
-        "loads": {
-            "L": "9"
-        },
-        "stores": {
-            "L": "10"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "9": {
-        "name": "stencil_stage",
-        "file": "top.cpp",
-        "fileloc": "538",
-        "instructions": "145",
-        "total_instructions": "145",
-        "calls": "",
-        "basicblocks": "11",
-        "memory_accesses": "21",
-        "control_depth": "5",
-        "def_use_depth": "2",
-        "loads": {
-            "L": "9"
-        },
-        "stores": {
-            "L": "10"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "10": {
-        "name": "stencil_stage",
-        "file": "top.cpp",
-        "fileloc": "538",
-        "instructions": "145",
-        "total_instructions": "145",
-        "calls": "",
-        "basicblocks": "11",
-        "memory_accesses": "21",
-        "control_depth": "5",
-        "def_use_depth": "2",
-        "loads": {
-            "L": "9"
-        },
-        "stores": {
-            "L": "10"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "11": {
-        "name": "stencil_stage",
-        "file": "top.cpp",
-        "fileloc": "538",
-        "instructions": "145",
-        "total_instructions": "145",
-        "calls": "",
-        "basicblocks": "11",
-        "memory_accesses": "21",
-        "control_depth": "5",
-        "def_use_depth": "2",
-        "loads": {
-            "L": "9"
-        },
-        "stores": {
-            "L": "10"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "12": {
-        "name": "stencil_stage",
-        "file": "top.cpp",
-        "fileloc": "538",
-        "instructions": "145",
-        "total_instructions": "145",
-        "calls": "",
-        "basicblocks": "11",
-        "memory_accesses": "21",
-        "control_depth": "5",
-        "def_use_depth": "2",
-        "loads": {
-            "L": "9"
-        },
-        "stores": {
-            "L": "10"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "13": {
-        "name": "stencil_stage",
-        "file": "top.cpp",
-        "fileloc": "538",
-        "instructions": "145",
-        "total_instructions": "145",
-        "calls": "",
-        "basicblocks": "11",
-        "memory_accesses": "21",
-        "control_depth": "5",
-        "def_use_depth": "2",
-        "loads": {
-            "L": "9"
-        },
-        "stores": {
-            "L": "10"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "14": {
-        "name": "stencil_stage",
-        "file": "top.cpp",
-        "fileloc": "538",
-        "instructions": "145",
-        "total_instructions": "145",
-        "calls": "",
-        "basicblocks": "11",
-        "memory_accesses": "21",
-        "control_depth": "5",
-        "def_use_depth": "2",
-        "loads": {
-            "L": "9"
-        },
-        "stores": {
-            "L": "10"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "15": {
-        "name": "stencil_stage",
-        "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -308,19 +170,157 @@
     "0": {
         "name": "top_kernel",
         "file": "top.cpp",
-        "fileloc": "601",
+        "fileloc": "187",
         "instructions": "143",
         "total_instructions": "4555",
-        "calls": "3 5 10 12 17 32 24 14 4 27 20 19 16 1 22 11 28 9 2 29 31 7 33 13 18 30 15 6 8 25 21 26 23",
+        "calls": "14 20 31 27 32 17 30 12 23 8 29 9 4 24 3 15 33 16 25 6 11 26 1 5 10 7 2 19 13 21 28 18 22",
         "basicblocks": "1",
         "memory_accesses": "0",
         "control_depth": "0",
         "def_use_depth": "1"
     },
+    "9": {
+        "name": "stencil_stage",
+        "file": "top.cpp",
+        "fileloc": "133",
+        "instructions": "145",
+        "total_instructions": "145",
+        "calls": "",
+        "basicblocks": "11",
+        "memory_accesses": "21",
+        "control_depth": "5",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "stencil_stage",
+        "file": "top.cpp",
+        "fileloc": "133",
+        "instructions": "145",
+        "total_instructions": "145",
+        "calls": "",
+        "basicblocks": "11",
+        "memory_accesses": "21",
+        "control_depth": "5",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "stencil_stage",
+        "file": "top.cpp",
+        "fileloc": "133",
+        "instructions": "145",
+        "total_instructions": "145",
+        "calls": "",
+        "basicblocks": "11",
+        "memory_accesses": "21",
+        "control_depth": "5",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "stencil_stage",
+        "file": "top.cpp",
+        "fileloc": "133",
+        "instructions": "145",
+        "total_instructions": "145",
+        "calls": "",
+        "basicblocks": "11",
+        "memory_accesses": "21",
+        "control_depth": "5",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "stencil_stage",
+        "file": "top.cpp",
+        "fileloc": "133",
+        "instructions": "145",
+        "total_instructions": "145",
+        "calls": "",
+        "basicblocks": "11",
+        "memory_accesses": "21",
+        "control_depth": "5",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "entry_proc",
+        "file": "top.cpp",
+        "fileloc": "0",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "15": {
+        "name": "stencil_stage",
+        "file": "top.cpp",
+        "fileloc": "133",
+        "instructions": "145",
+        "total_instructions": "145",
+        "calls": "",
+        "basicblocks": "11",
+        "memory_accesses": "21",
+        "control_depth": "5",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
     "16": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -341,7 +341,7 @@
     "17": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -362,7 +362,7 @@
     "18": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -383,7 +383,7 @@
     "19": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -402,21 +402,21 @@
         }
     },
     "20": {
-        "name": "stencil_stage",
+        "name": "read_input",
         "file": "top.cpp",
-        "fileloc": "538",
-        "instructions": "145",
-        "total_instructions": "145",
+        "fileloc": "124",
+        "instructions": "25",
+        "total_instructions": "25",
         "calls": "",
-        "basicblocks": "11",
-        "memory_accesses": "21",
-        "control_depth": "5",
-        "def_use_depth": "2",
+        "basicblocks": "5",
+        "memory_accesses": "5",
+        "control_depth": "2",
+        "def_use_depth": "1",
         "loads": {
-            "L": "9"
+            "L": "1"
         },
         "stores": {
-            "L": "10"
+            "L": "2"
         },
         "loops": {
             "L": "1"
@@ -425,7 +425,7 @@
     "21": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -444,30 +444,9 @@
         }
     },
     "22": {
-        "name": "stencil_stage",
-        "file": "top.cpp",
-        "fileloc": "538",
-        "instructions": "145",
-        "total_instructions": "145",
-        "calls": "",
-        "basicblocks": "11",
-        "memory_accesses": "21",
-        "control_depth": "5",
-        "def_use_depth": "2",
-        "loads": {
-            "L": "9"
-        },
-        "stores": {
-            "L": "10"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "23": {
         "name": "write_output",
         "file": "top.cpp",
-        "fileloc": "593",
+        "fileloc": "179",
         "instructions": "33",
         "total_instructions": "33",
         "calls": "",
@@ -485,10 +464,31 @@
             "L": "1"
         }
     },
+    "23": {
+        "name": "stencil_stage",
+        "file": "top.cpp",
+        "fileloc": "133",
+        "instructions": "145",
+        "total_instructions": "145",
+        "calls": "",
+        "basicblocks": "11",
+        "memory_accesses": "21",
+        "control_depth": "5",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
     "24": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -509,7 +509,7 @@
     "25": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -530,7 +530,7 @@
     "26": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -551,7 +551,7 @@
     "27": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -572,7 +572,7 @@
     "28": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -593,7 +593,7 @@
     "29": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -614,7 +614,7 @@
     "30": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -635,7 +635,7 @@
     "31": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -656,7 +656,7 @@
     "32": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",
@@ -677,7 +677,7 @@
     "33": {
         "name": "stencil_stage",
         "file": "top.cpp",
-        "fileloc": "538",
+        "fileloc": "133",
         "instructions": "145",
         "total_instructions": "145",
         "calls": "",

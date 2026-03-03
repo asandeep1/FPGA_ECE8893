@@ -32,12 +32,12 @@
         <hiertable>
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
-                <row id="0" col0="top_kernel" col1="top.cpp:601" col2="6673" col3="7560" col4="7781" col5="6129" col6="6445">
-                    <row id="1" col0="read_input" col1="top.cpp:530" col2="18" col3="9" col4="14" col5="14" col6="18"/>
-                    <row id="2" col0="stencil_stage" col1="top.cpp:538" col2="6589" col3="7470" col3_disp="7,470 (30 calls)" col4="7620" col4_disp="7,620 (30 calls)" col5="5970" col5_disp="5,970 (30 calls)" col6="6270" col6_disp="6,270 (30 calls)">
-                        <row id="3" col0="compute_stencil" col1="top.cpp:518" col2="6146" col3="5430" col3_disp="5,430 (30 calls)" col4="5430" col4_disp="5,430 (30 calls)" col5="" col6=""/>
+                <row id="0" col0="top_kernel" col1="top.cpp:187" col2="6673" col3="7560" col4="7781" col5="6129" col6="6445">
+                    <row id="1" col0="read_input" col1="top.cpp:124" col2="18" col3="9" col4="14" col5="14" col6="18"/>
+                    <row id="2" col0="stencil_stage" col1="top.cpp:133" col2="6589" col3="7470" col3_disp="7,470 (30 calls)" col4="7620" col4_disp="7,620 (30 calls)" col5="5970" col5_disp="5,970 (30 calls)" col6="6270" col6_disp="6,270 (30 calls)">
+                        <row id="3" col0="compute_stencil" col1="top.cpp:112" col2="6146" col3="5430" col3_disp="5,430 (30 calls)" col4="5430" col4_disp="5,430 (30 calls)" col5="" col6=""/>
                     </row>
-                    <row id="4" col0="write_output" col1="top.cpp:593" col2="27" col3="9" col4="14" col5="12" col6="19"/>
+                    <row id="4" col0="write_output" col1="top.cpp:179" col2="27" col3="9" col4="14" col5="12" col6="19"/>
                 </row>
             </rows>
             <notes/>

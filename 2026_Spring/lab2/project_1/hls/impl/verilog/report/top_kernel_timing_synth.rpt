@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date              : Mon Feb 23 00:53:33 2026
+| Date              : Mon Feb 23 22:03:39 2026
 | Host              : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command           : report_timing_summary -file ./report/top_kernel_timing_synth.rpt
 | Design            : bd_0_wrapper
@@ -55,7 +55,7 @@ Table of Contents
 3. checking pulse_width_clock (0)
 4. checking unconstrained_internal_endpoints (0)
 5. checking no_input_delay (90)
-6. checking no_output_delay (204)
+6. checking no_output_delay (216)
 7. checking multiple_clock (0)
 8. checking generated_clocks (0)
 9. checking loops (0)
@@ -92,9 +92,9 @@ Table of Contents
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
-6. checking no_output_delay (204)
+6. checking no_output_delay (216)
 ---------------------------------
- There are 204 ports with no output delay specified. (HIGH)
+ There are 216 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
@@ -139,7 +139,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      5.220        0.000                      0                31263        0.032        0.000                      0                31263        4.427        0.000                       0                 12477  
+      5.220        0.000                      0                31216        0.032        0.000                      0                31216        4.427        0.000                       0                 12438  
 
 
 All user specified timing constraints are met.
@@ -162,7 +162,7 @@ ap_clk  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-ap_clk              5.220        0.000                      0                31263        0.032        0.000                      0                31263        4.427        0.000                       0                 12477  
+ap_clk              5.220        0.000                      0                31216        0.032        0.000                      0                31216        4.427        0.000                       0                 12438  
 
 
 ------------------------------------------------------------------------------------------------
@@ -225,7 +225,7 @@ Slack (MET) :             5.220ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/tmp_product/CLK
+                         net (fo=13157, unset)        0.075     0.075    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/tmp_product/CLK
                          DSP_A_B_DATA                                 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/tmp_product/DSP_A_B_DATA_INST/CLK
   -------------------------------------------------------------------    -------------------
                          DSP_A_B_DATA (Prop_DSP_A_B_DATA_CLK_B2_DATA[17])
@@ -258,28 +258,28 @@ Slack (MET) :             5.220ns  (required time - arrival time)
                          CARRY8 (Prop_CARRY8_CI_O[2])
                                                       0.086     3.506 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/tmp_product_inferred__1/i__carry__0/O[2]
                          net (fo=1, unplaced)         0.214     3.720    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/tmp_product__1[43]
-                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[19]_i_13__13/O
-                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[19]_i_13__13_n_0
+                         LUT2 (Prop_LUT2_I1_O)        0.038     3.758 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[19]_i_13__20/O
+                         net (fo=1, unplaced)         0.031     3.789    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[19]_i_13__20_n_0
                          CARRY8 (Prop_CARRY8_S[5]_CO[7])
-                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[19]_i_2__13/CO[7]
-                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[19]_i_2__13_n_0
+                                                      0.209     3.998 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[19]_i_2__20/CO[7]
+                         net (fo=1, unplaced)         0.007     4.005    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[19]_i_2__20_n_0
                          CARRY8 (Prop_CARRY8_CI_O[2])
-                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[27]_i_2__13/O[2]
-                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/sext_ln525_168_fu_539_p1[48]
-                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[27]_i_10__13/O
-                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[27]_i_10__13_n_0
+                                                      0.086     4.091 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[27]_i_2__20/O[2]
+                         net (fo=2, unplaced)         0.214     4.305    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/sext_ln119_168_fu_539_p1[48]
+                         LUT2 (Prop_LUT2_I0_O)        0.040     4.345 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[27]_i_10__20/O
+                         net (fo=1, unplaced)         0.021     4.366    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949[27]_i_10__20_n_0
                          CARRY8 (Prop_CARRY8_S[0]_CO[7])
-                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[27]_i_1__13/CO[7]
-                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[27]_i_1__13_n_0
+                                                      0.248     4.614 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[27]_i_1__20/CO[7]
+                         net (fo=1, unplaced)         0.007     4.621    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[27]_i_1__20_n_0
                          CARRY8 (Prop_CARRY8_CI_O[7])
-                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[35]_i_1__13/O[7]
+                                                      0.146     4.767 r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45/out_reg_949_reg[35]_i_1__20/O[7]
                          net (fo=1, unplaced)         0.031     4.798    bd_0_i/hls_inst/inst/stencil_stage_10_U0/mul_39s_24ns_63_1_1_U45_n_26
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/out_reg_949_reg[35]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_10_U0/ap_clk
+                         net (fo=13157, unset)        0.026    10.026    bd_0_i/hls_inst/inst/stencil_stage_10_U0/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/stencil_stage_10_U0/out_reg_949_reg[35]/C
                          clock pessimism              0.000    10.026    
                          clock uncertainty           -0.035     9.991    
@@ -315,7 +315,7 @@ Slack (MET) :             0.032ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.013     0.013    bd_0_i/hls_inst/inst/A_out_c_U/ap_clk
+                         net (fo=13157, unset)        0.013     0.013    bd_0_i/hls_inst/inst/A_out_c_U/ap_clk
                          FDRE                                         r  bd_0_i/hls_inst/inst/A_out_c_U/waddr_reg[3]/C
   -------------------------------------------------------------------    -------------------
                          FDRE (Prop_FDRE_C_Q)         0.038     0.051 r  bd_0_i/hls_inst/inst/A_out_c_U/waddr_reg[3]/Q
@@ -325,7 +325,7 @@ Slack (MET) :             0.032ns  (arrival time - required time)
 
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=13196, unset)        0.039     0.039    bd_0_i/hls_inst/inst/A_out_c_U/U_top_kernel_fifo_w64_d33_A_ram/mem_reg_0_31_0_13/WCLK
+                         net (fo=13157, unset)        0.039     0.039    bd_0_i/hls_inst/inst/A_out_c_U/U_top_kernel_fifo_w64_d33_A_ram/mem_reg_0_31_0_13/WCLK
                          RAMD32                                       r  bd_0_i/hls_inst/inst/A_out_c_U/U_top_kernel_fifo_w64_d33_A_ram/mem_reg_0_31_0_13/RAMA/CLK
                          clock pessimism              0.000     0.039    
                          RAMD32 (Hold_RAMD32_CLK_WADR3)
@@ -348,7 +348,7 @@ Period(ns):         10.000
 Sources:            { ap_clk }
 
 Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
-Min Period        n/a     RAMB18E2/CLKARDCLK  n/a            1.739         10.000      8.261                bd_0_i/hls_inst/inst/gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.739         10.000      8.261                bd_0_i/hls_inst/inst/gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_bram_0/CLKARDCLK
 Low Pulse Width   Slow    SRL16E/CLK          n/a            0.573         5.000       4.427                bd_0_i/hls_inst/inst/bus_read/ost_ctrl_gen[0].fifo_burst/U_fifo_srl/mem_reg[14][0]_srl15/CLK
 High Pulse Width  Slow    SRL16E/CLK          n/a            0.573         5.000       4.427                bd_0_i/hls_inst/inst/bus_read/ost_ctrl_gen[0].fifo_burst/U_fifo_srl/mem_reg[14][0]_srl15/CLK
 

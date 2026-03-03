@@ -119,7 +119,7 @@ output   m_axi_gmem0_0_RREADY;
 input  [31:0] m_axi_gmem0_0_RDATA;
 input   m_axi_gmem0_0_RLAST;
 input  [0:0] m_axi_gmem0_0_RID;
-input  [8:0] m_axi_gmem0_0_RFIFONUM;
+input  [10:0] m_axi_gmem0_0_RFIFONUM;
 input  [0:0] m_axi_gmem0_0_RUSER;
 input  [1:0] m_axi_gmem0_0_RRESP;
 input   m_axi_gmem0_0_BVALID;
@@ -161,10 +161,10 @@ reg    ap_idle_pp0;
 wire    internal_ap_ready;
 reg    ap_done_reg;
 reg    ap_block_state1_pp0_stage0_iter0;
-reg   [0:0] first_iter_0_reg_89;
+reg   [0:0] first_iter_0_reg_93;
 reg    ap_block_state2_io_grp1;
 reg    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln531_fu_115_p2;
+wire   [0:0] icmp_ln125_fu_119_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
@@ -173,19 +173,19 @@ wire    ap_block_pp0_stage0_grp1;
 reg    gmem0_blk_n_R;
 reg    inter_strm_0_blk_n;
 reg    ap_block_pp0_stage0_11001_grp1;
-reg   [63:0] in_read_reg_157;
-reg   [0:0] icmp_ln531_reg_162;
+reg   [63:0] in_read_reg_161;
+reg   [0:0] icmp_ln125_reg_166;
 reg    ap_block_pp0_stage0_11001;
-wire   [23:0] trunc_ln533_fu_146_p1;
-reg   [23:0] trunc_ln533_reg_172;
+wire   [23:0] trunc_ln128_fu_150_p1;
+reg   [23:0] trunc_ln128_reg_176;
 wire    ap_loop_init;
 wire    ap_block_pp0_stage0;
-wire  signed [63:0] sext_ln531_fu_135_p1;
-reg   [15:0] i1_fu_60;
-wire   [15:0] i_fu_109_p2;
+wire  signed [63:0] sext_ln125_fu_139_p1;
+reg   [15:0] i1_fu_64;
+wire   [15:0] i_fu_113_p2;
 reg   [15:0] ap_sig_allocacmp_i1_load;
 reg    ap_block_pp0_stage0_01001_grp1;
-wire   [61:0] trunc_ln_fu_126_p4;
+wire   [61:0] trunc_ln_fu_130_p4;
 wire    ap_continue_int;
 reg    ap_done_int;
 reg    ap_loop_exit_ready_pp0_iter1_reg;
@@ -221,7 +221,7 @@ initial begin
 #0 ap_enable_reg_pp0_iter9 = 1'b0;
 #0 ap_enable_reg_pp0_iter10 = 1'b0;
 #0 ap_done_reg = 1'b0;
-#0 i1_fu_60 = 16'd0;
+#0 i1_fu_64 = 16'd0;
 end
 
 top_kernel_flow_control_loop_pipe flow_control_loop_pipe_U(
@@ -383,16 +383,16 @@ end
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_pp0_stage0)) begin
         if ((1'b1 == ap_condition_333)) begin
-            first_iter_0_reg_89 <= 1'd0;
+            first_iter_0_reg_93 <= 1'd0;
         end else if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
-            first_iter_0_reg_89 <= 1'd1;
+            first_iter_0_reg_93 <= 1'd1;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_condition_248)) begin
-        i1_fu_60 <= i_fu_109_p2;
+        i1_fu_64 <= i_fu_113_p2;
     end
 end
 
@@ -400,7 +400,7 @@ always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
         ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
         ap_loop_exit_ready_pp0_iter2_reg <= ap_loop_exit_ready_pp0_iter1_reg;
-        icmp_ln531_reg_162 <= icmp_ln531_fu_115_p2;
+        icmp_ln125_reg_166 <= icmp_ln125_fu_119_p2;
     end
 end
 
@@ -418,18 +418,18 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001_grp1))) begin
-        in_read_reg_157 <= in_r;
+        in_read_reg_161 <= in_r;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b0 == ap_block_pp0_stage0_11001_grp1)) begin
-        trunc_ln533_reg_172 <= trunc_ln533_fu_146_p1;
+        trunc_ln128_reg_176 <= trunc_ln128_fu_150_p1;
     end
 end
 
 always @ (*) begin
-    if (((ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (icmp_ln531_fu_115_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
+    if (((ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (icmp_ln125_fu_119_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -472,12 +472,12 @@ always @ (*) begin
     if (((ap_start_int == 1'b1) & (ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
         ap_sig_allocacmp_i1_load = 16'd0;
     end else begin
-        ap_sig_allocacmp_i1_load = i1_fu_60;
+        ap_sig_allocacmp_i1_load = i1_fu_64;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_grp1) & (first_iter_0_reg_89 == 1'd1))) begin
+    if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_grp1) & (first_iter_0_reg_93 == 1'd1))) begin
         gmem0_blk_n_AR = m_axi_gmem0_0_ARREADY;
     end else begin
         gmem0_blk_n_AR = 1'b1;
@@ -509,7 +509,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (first_iter_0_reg_89 == 1'd1))) begin
+    if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (first_iter_0_reg_93 == 1'd1))) begin
         m_axi_gmem0_0_ARVALID = 1'b1;
     end else begin
         m_axi_gmem0_0_ARVALID = 1'b0;
@@ -578,7 +578,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_block_state2_io_grp1 = ((m_axi_gmem0_0_ARREADY == 1'b0) & (first_iter_0_reg_89 == 1'd1));
+    ap_block_state2_io_grp1 = ((m_axi_gmem0_0_ARREADY == 1'b0) & (first_iter_0_reg_93 == 1'd1));
 end
 
 always @ (*) begin
@@ -586,7 +586,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_condition_333 = ((ap_enable_reg_pp0_iter1 == 1'b1) & (icmp_ln531_reg_162 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001));
+    ap_condition_333 = ((ap_enable_reg_pp0_iter1 == 1'b1) & (icmp_ln125_reg_166 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001));
 end
 
 assign ap_done = ap_done_sig;
@@ -599,13 +599,13 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = internal_ap_ready;
 
-assign i_fu_109_p2 = (ap_sig_allocacmp_i1_load + 16'd1);
+assign i_fu_113_p2 = (ap_sig_allocacmp_i1_load + 16'd1);
 
-assign icmp_ln531_fu_115_p2 = ((ap_sig_allocacmp_i1_load == 16'd65535) ? 1'b1 : 1'b0);
+assign icmp_ln125_fu_119_p2 = ((ap_sig_allocacmp_i1_load == 16'd65535) ? 1'b1 : 1'b0);
 
-assign inter_strm_0_din = trunc_ln533_reg_172;
+assign inter_strm_0_din = trunc_ln128_reg_176;
 
-assign m_axi_gmem0_0_ARADDR = sext_ln531_fu_135_p1;
+assign m_axi_gmem0_0_ARADDR = sext_ln125_fu_139_p1;
 
 assign m_axi_gmem0_0_ARBURST = 2'd0;
 
@@ -665,12 +665,12 @@ assign m_axi_gmem0_0_WUSER = 1'd0;
 
 assign m_axi_gmem0_0_WVALID = 1'b0;
 
-assign sext_ln531_fu_135_p1 = $signed(trunc_ln_fu_126_p4);
+assign sext_ln125_fu_139_p1 = $signed(trunc_ln_fu_130_p4);
 
 assign start_out = real_start;
 
-assign trunc_ln533_fu_146_p1 = m_axi_gmem0_0_RDATA[23:0];
+assign trunc_ln128_fu_150_p1 = m_axi_gmem0_0_RDATA[23:0];
 
-assign trunc_ln_fu_126_p4 = {{in_read_reg_157[63:2]}};
+assign trunc_ln_fu_130_p4 = {{in_read_reg_161[63:2]}};
 
 endmodule //top_kernel_read_input

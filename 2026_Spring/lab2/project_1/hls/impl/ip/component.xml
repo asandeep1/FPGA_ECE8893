@@ -619,7 +619,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>MAX_READ_BURST_LENGTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXI_GMEM0.MAX_READ_BURST_LENGTH">16</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXI_GMEM0.MAX_READ_BURST_LENGTH">64</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>MAX_WRITE_BURST_LENGTH</spirit:name>
@@ -1035,7 +1035,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>MAX_WRITE_BURST_LENGTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXI_GMEM1.MAX_WRITE_BURST_LENGTH">16</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXI_GMEM1.MAX_WRITE_BURST_LENGTH">64</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>MAX_BURST_LENGTH</spirit:name>
@@ -1492,7 +1492,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>be81f483</spirit:value>
+            <spirit:value>bac0da68</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1508,7 +1508,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>999614f5</spirit:value>
+            <spirit:value>3711b886</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1524,7 +1524,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c393060a</spirit:value>
+            <spirit:value>2dca63f2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1540,7 +1540,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f67cf2d7</spirit:value>
+            <spirit:value>55240cc1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -4700,7 +4700,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/top_kernel.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_db2e7e3f</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_28788ccb</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -5406,8 +5406,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Top_kernel</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114492564</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-02-23T05:44:46Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114493795</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-02-24T02:16:06Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -5415,10 +5415,10 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.1.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="c3ea8e64"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="c6e98eab"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="9a83c657"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="af399982"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b4f95446"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="059f3886"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="213a480b"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="b133635b"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="f1bb87a4"/>

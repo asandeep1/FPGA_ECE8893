@@ -151,7 +151,7 @@ end;
 architecture behav of top_kernel is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "top_kernel_top_kernel,hls_ip_2025_1_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=65901,HLS_SYN_TPT=65793,HLS_SYN_MEM=128,HLS_SYN_DSP=0,HLS_SYN_FF=23392,HLS_SYN_LUT=34637,HLS_VERSION=2025_1_1}";
+    "top_kernel_top_kernel,hls_ip_2025_1_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=65901,HLS_SYN_TPT=65793,HLS_SYN_MEM=130,HLS_SYN_DSP=0,HLS_SYN_FF=23454,HLS_SYN_LUT=34609,HLS_VERSION=2025_1_1}";
     constant C_S_AXI_DATA_WIDTH : INTEGER := 32;
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant C_M_AXI_DATA_WIDTH : INTEGER := 32;
@@ -178,7 +178,7 @@ architecture behav of top_kernel is
     signal gmem0_0_RDATA : STD_LOGIC_VECTOR (31 downto 0);
     signal gmem0_0_RLAST : STD_LOGIC;
     signal gmem0_0_RID : STD_LOGIC_VECTOR (0 downto 0);
-    signal gmem0_0_RFIFONUM : STD_LOGIC_VECTOR (8 downto 0);
+    signal gmem0_0_RFIFONUM : STD_LOGIC_VECTOR (10 downto 0);
     signal gmem0_0_RUSER : STD_LOGIC_VECTOR (0 downto 0);
     signal gmem0_0_RRESP : STD_LOGIC_VECTOR (1 downto 0);
     signal gmem0_0_BVALID : STD_LOGIC;
@@ -999,7 +999,7 @@ architecture behav of top_kernel is
         m_axi_gmem0_0_RDATA : IN STD_LOGIC_VECTOR (31 downto 0);
         m_axi_gmem0_0_RLAST : IN STD_LOGIC;
         m_axi_gmem0_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_gmem0_0_RFIFONUM : IN STD_LOGIC_VECTOR (8 downto 0);
+        m_axi_gmem0_0_RFIFONUM : IN STD_LOGIC_VECTOR (10 downto 0);
         m_axi_gmem0_0_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem0_0_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
         m_axi_gmem0_0_BVALID : IN STD_LOGIC;
@@ -2447,7 +2447,7 @@ architecture behav of top_kernel is
         I_CH0_RVALID : OUT STD_LOGIC;
         I_CH0_RREADY : IN STD_LOGIC;
         I_CH0_RDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
-        I_CH0_RFIFONUM : OUT STD_LOGIC_VECTOR (8 downto 0);
+        I_CH0_RFIFONUM : OUT STD_LOGIC_VECTOR (10 downto 0);
         I_CH0_AWVALID : IN STD_LOGIC;
         I_CH0_AWREADY : OUT STD_LOGIC;
         I_CH0_AWADDR : IN STD_LOGIC_VECTOR (63 downto 0);
@@ -2594,7 +2594,7 @@ begin
     generic map (
         CONSERVATIVE => 1,
         USER_MAXREQS => 7,
-        MAX_READ_BURST_LENGTH => 16,
+        MAX_READ_BURST_LENGTH => 64,
         MAX_WRITE_BURST_LENGTH => 16,
         C_M_AXI_ID_WIDTH => C_M_AXI_GMEM0_ID_WIDTH,
         C_M_AXI_ADDR_WIDTH => C_M_AXI_GMEM0_ADDR_WIDTH,
@@ -2609,7 +2609,7 @@ begin
         C_CACHE_VALUE => C_M_AXI_GMEM0_CACHE_VALUE,
         CH0_NUM_READ_OUTSTANDING => 16,
         CH0_NUM_WRITE_OUTSTANDING => 16,
-        CH0_USER_RFIFONUM_WIDTH => 9,
+        CH0_USER_RFIFONUM_WIDTH => 11,
         CH0_USER_DW => 32,
         CH0_USER_AW => 64,
         NUM_READ_OUTSTANDING => 16,
@@ -2687,7 +2687,7 @@ begin
         CONSERVATIVE => 1,
         USER_MAXREQS => 4,
         MAX_READ_BURST_LENGTH => 16,
-        MAX_WRITE_BURST_LENGTH => 16,
+        MAX_WRITE_BURST_LENGTH => 64,
         C_M_AXI_ID_WIDTH => C_M_AXI_GMEM1_ID_WIDTH,
         C_M_AXI_ADDR_WIDTH => C_M_AXI_GMEM1_ADDR_WIDTH,
         C_M_AXI_DATA_WIDTH => C_M_AXI_GMEM1_DATA_WIDTH,

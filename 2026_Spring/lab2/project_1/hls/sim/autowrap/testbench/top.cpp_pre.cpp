@@ -5,6 +5,7 @@
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/top.cpp" 2
+# 108 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/top.cpp"
 # 1 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/dcl.h" 1
 
 
@@ -59252,8 +59253,7 @@ typedef ap_fixed<40, 12, AP_RND, AP_SAT> acc_t;
 
 void top_kernel(const data_t A_in[256][256],
                 data_t A_out[256][256]);
-# 2 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/top.cpp" 2
-# 515 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/top.cpp"
+# 109 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/top.cpp" 2
 # 1 "/tools/software/xilinx/2025.1.1/Vitis/include/hls_stream.h" 1
 # 22 "/tools/software/xilinx/2025.1.1/Vitis/include/hls_stream.h"
 # 1 "/tools/software/xilinx/2025.1.1/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/queue" 1 3
@@ -81343,7 +81343,7 @@ public:
 };
 
 }
-# 516 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/top.cpp" 2
+# 110 "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/top.cpp" 2
 
 
 data_t compute_stencil(data_t win[3][3]) {
@@ -81361,18 +81361,17 @@ data_t compute_stencil(data_t win[3][3]) {
 void read_input(const data_t in[256][256], hls::stream<data_t>& strm) {
     for (int i = 0; i < 256 * 256; i++) {
 #pragma HLS PIPELINE II=1
+
         strm.write(((data_t*)in)[i]);
     }
 }
 
 
 void stencil_stage(hls::stream<data_t>& in_strm, hls::stream<data_t>& out_strm) {
-
     data_t line_buf[2][256];
 #pragma HLS ARRAY_PARTITION variable=line_buf dim=1 complete
     data_t window[3][3];
 #pragma HLS ARRAY_PARTITION variable=window complete
-
 
     const int total_iterations = 256 * 256 + 256 + 1;
 
@@ -81384,32 +81383,25 @@ void stencil_stage(hls::stream<data_t>& in_strm, hls::stream<data_t>& out_strm) 
             curr = in_strm.read();
         }
 
-
         for(int r = 0; r < 3; r++) {
             window[r][0] = window[r][1];
             window[r][1] = window[r][2];
         }
 
-
         int j = k % 256;
-
-
         window[0][2] = line_buf[0][j];
         window[1][2] = line_buf[1][j];
         window[2][2] = curr;
-
 
         if (k < 256 * 256) {
             line_buf[0][j] = line_buf[1][j];
             line_buf[1][j] = curr;
         }
 
-
         if (k >= 256 + 1) {
             int out_idx = k - (256 + 1);
             int r = out_idx / 256;
             int c = out_idx % 256;
-
 
             if (r == 0 || r == 256 -1 || c == 0 || c == 256 -1) {
                 out_strm.write(window[1][1]);
@@ -81430,12 +81422,18 @@ void write_output(hls::stream<data_t>& strm, data_t out[256][256]) {
 
 
 void top_kernel(const data_t A_in[256][256], data_t A_out[256][256]) {
-#pragma HLS INTERFACE m_axi port=A_in offset=slave bundle=gmem0
-#pragma HLS INTERFACE m_axi port=A_out offset=slave bundle=gmem1
-#pragma HLS INTERFACE s_axilite port=return
+
+#pragma HLS INTERFACE m_axi port=A_in offset=slave bundle=gmem0 depth=65536 max_read_burst_length=64 num_read_outstanding=16
+#pragma HLS INTERFACE m_axi port=A_out offset=slave bundle=gmem1 depth=65536 max_write_burst_length=64 num_write_outstanding=16
+
+
+#pragma HLS interface s_axilite port=return
+
+
+#pragma HLS data_pack variable=A_in
+#pragma HLS data_pack variable=A_out
 
     hls::stream<data_t> inter_strm[30 + 1];
-
 #pragma HLS STREAM variable=inter_strm depth=512
 
 #pragma HLS DATAFLOW

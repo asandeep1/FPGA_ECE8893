@@ -1,0 +1,110 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "4 2 7 1 5 3 6 8",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "top.cpp",
+    "fileloc": 201,
+    "instructions": 42,
+    "memory_accesses": 0,
+    "name": "top_kernel",
+    "total_instructions": 513
+  },
+  "1": {
+    "basicblocks": 6,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 40,
+    "file": "top.cpp",
+    "fileloc": 146,
+    "instructions": 127,
+    "memory_accesses": 2,
+    "name": "k1_transform",
+    "total_instructions": 127
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 16,
+    "file": "top.cpp",
+    "fileloc": 129,
+    "instructions": 51,
+    "memory_accesses": 2,
+    "name": "k0_preprocess",
+    "total_instructions": 51
+  },
+  "3": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 15,
+    "file": "top.cpp",
+    "fileloc": 172,
+    "instructions": 58,
+    "memory_accesses": 2,
+    "name": "k3_join_norm",
+    "total_instructions": 58
+  },
+  "4": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "top.cpp",
+    "fileloc": 122,
+    "instructions": 13,
+    "memory_accesses": 2,
+    "name": "load_input",
+    "total_instructions": 13
+  },
+  "5": {
+    "basicblocks": 8,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 30,
+    "file": "top.cpp",
+    "fileloc": 159,
+    "instructions": 144,
+    "memory_accesses": 1,
+    "name": "k2_stats",
+    "total_instructions": 144
+  },
+  "6": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 19,
+    "file": "top.cpp",
+    "fileloc": 184,
+    "instructions": 55,
+    "memory_accesses": 2,
+    "name": "k4_postprocess",
+    "total_instructions": 55
+  },
+  "7": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "top.cpp",
+    "fileloc": 137,
+    "instructions": 9,
+    "memory_accesses": 3,
+    "name": "k_split",
+    "total_instructions": 9
+  },
+  "8": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "top.cpp",
+    "fileloc": 192,
+    "instructions": 14,
+    "memory_accesses": 2,
+    "name": "store_output",
+    "total_instructions": 14
+  }
+}

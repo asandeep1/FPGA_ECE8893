@@ -1,0 +1,366 @@
+
+
+================================================================
+== Synthesis Summary Report of 'top_kernel'
+================================================================
++ General Information: 
+    * Date:           Mon Mar  2 19:53:38 2026
+    * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
+    * Project:        project_1
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu3eg-sbva484-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+--------+--------+-----------+------------+-----+
+    |                Modules                | Issue|      |       Latency       | Iteration|         |  Trip |          |        |        |           |            |     |
+    |                & Loops                | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|  BRAM  |   DSP  |     FF    |     LUT    | URAM|
+    +---------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+--------+--------+-----------+------------+-----+
+    |+ top_kernel*                          |     -|  0.00|    65616|  6.562e+05|         -|    65536|      -|  dataflow|  6 (1%)|  4 (1%)|  8704 (6%)|  9323 (13%)|    -|
+    | + entry_proc                          |     -|  5.17|        0|      0.000|         -|        0|      -|        no|       -|       -|    3 (~0%)|    29 (~0%)|    -|
+    | + load_input                          |     -|  0.00|    65547|  6.555e+05|         -|    65536|      -|    rewind|       -|       -|  125 (~0%)|   132 (~0%)|    -|
+    |  o VITIS_LOOP_123_1                   |     -|  7.30|    65545|  6.554e+05|        11|        1|  65536|       yes|       -|       -|          -|           -|    -|
+    | + k0_preprocess                       |     -|  0.50|    65537|  6.554e+05|         -|    65536|      -|    rewind|       -|       -|   19 (~0%)|   269 (~0%)|    -|
+    |  o VITIS_LOOP_130_1                   |     -|  7.30|    65535|  6.554e+05|         1|        1|  65536|       yes|       -|       -|          -|           -|    -|
+    | + k_split                             |     -|  2.97|    65537|  6.554e+05|         -|    65536|      -|    rewind|       -|       -|   19 (~0%)|   111 (~0%)|    -|
+    |  o VITIS_LOOP_138_1                   |     -|  7.30|    65535|  6.554e+05|         1|        1|  65536|       yes|       -|       -|          -|           -|    -|
+    | + k1_transform                        |     -|  0.30|    65538|  6.554e+05|         -|    65536|      -|    rewind|       -|       -|   83 (~0%)|   626 (~0%)|    -|
+    |  o VITIS_LOOP_148_1                   |     -|  7.30|    65536|  6.554e+05|         2|        1|  65536|       yes|       -|       -|          -|           -|    -|
+    | + k2_stats                            |     -|  0.06|    65591|  6.559e+05|         -|    65536|      -|    rewind|       -|       -|  5655 (4%)|   5018 (7%)|    -|
+    |  o VITIS_LOOP_160_1_VITIS_LOOP_162_2  |     -|  7.30|    65589|  6.559e+05|        55|        1|  65536|       yes|       -|       -|          -|           -|    -|
+    | + k3_join_norm                        |     -|  0.88|    65540|  6.554e+05|         -|    65536|      -|    rewind|       -|  4 (1%)|  105 (~0%)|   372 (~0%)|    -|
+    |  o VITIS_LOOP_173_1_VITIS_LOOP_176_2  |     -|  7.30|    65538|  6.554e+05|         4|        1|  65536|       yes|       -|       -|          -|           -|    -|
+    | + k4_postprocess                      |     -|  0.84|    65538|  6.554e+05|         -|    65536|      -|    rewind|       -|       -|   37 (~0%)|   370 (~0%)|    -|
+    |  o VITIS_LOOP_185_1                   |     -|  7.30|    65536|  6.554e+05|         2|        1|  65536|       yes|       -|       -|          -|           -|    -|
+    | + store_output                        |     -|  0.00|    65545|  6.554e+05|         -|    65536|      -|    rewind|       -|       -|  183 (~0%)|   179 (~0%)|    -|
+    |  o VITIS_LOOP_193_1                   |     -|  7.30|    65543|  6.554e+05|         9|        1|  65536|       yes|       -|       -|          -|           -|    -|
+    +---------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+--------+--------+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface   | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|             |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem0 | READ_ONLY  | 20 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem1 | WRITE_ONLY | 20 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |                   |
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | in_r_1   | 0x10   | 32    | W      | Data signal of in_r              |                                                                      |
+| s_axi_control | in_r_2   | 0x14   | 32    | W      | Data signal of in_r              |                                                                      |
+| s_axi_control | out_r_1  | 0x1c   | 32    | W      | Data signal of out_r             |                                                                      |
+| s_axi_control | out_r_2  | 0x20   | 32    | W      | Data signal of out_r             |                                                                      |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------------------------------------+
+| Argument | Direction | Datatype                                   |
++----------+-----------+--------------------------------------------+
+| in       | in        | ap_fixed<20, 6, AP_RND, AP_SAT, 0> const * |
+| out      | out       | ap_fixed<20, 6, AP_RND, AP_SAT, 0>*        |
++----------+-----------+--------------------------------------------+
+
+* SW-to-HW Mapping
++----------+---------------+-----------+----------+-----------------------------------+
+| Argument | HW Interface  | HW Type   | HW Usage | HW Info                           |
++----------+---------------+-----------+----------+-----------------------------------+
+| in       | m_axi_gmem0   | interface |          | channel=0                         |
+| in       | s_axi_control | register  | offset   | name=in_r_1 offset=0x10 range=32  |
+| in       | s_axi_control | register  | offset   | name=in_r_2 offset=0x14 range=32  |
+| out      | m_axi_gmem1   | interface |          | channel=0                         |
+| out      | s_axi_control | register  | offset   | name=out_r_1 offset=0x1c range=32 |
+| out      | s_axi_control | register  | offset   | name=out_r_2 offset=0x20 range=32 |
++----------+---------------+-----------+----------+-----------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+--------+-------+------------------+----------------+
+| HW Interface | Direction | Length | Width | Loop             | Loop Location  |
++--------------+-----------+--------+-------+------------------+----------------+
+| m_axi_gmem0  | read      | 65536  | 32    | VITIS_LOOP_123_1 | top.cpp:123:23 |
+| m_axi_gmem1  | write     | 65536  | 32    | VITIS_LOOP_193_1 | top.cpp:193:23 |
++--------------+-----------+--------+-------+------------------+----------------+
+
+* All M_AXI Variable Accesses
++--------------+----------+-----------------+-----------+--------------+--------+------------------+----------------+-----------------------------------------------------------+
+| HW Interface | Variable | Access Location | Direction | Burst Status | Length | Loop             | Loop Location  | Problem                                                   |
++--------------+----------+-----------------+-----------+--------------+--------+------------------+----------------+-----------------------------------------------------------+
+| m_axi_gmem0  | in       | top.cpp:125:6   | read      | Widen Fail   |        |                  |                | i24 allocated space contains padding. This is unsupported |
+| m_axi_gmem0  | in       | top.cpp:125:6   | read      | Inferred     | 65536  | VITIS_LOOP_123_1 | top.cpp:123:23 |                                                           |
+| m_axi_gmem1  | out      | top.cpp:195:9   | write     | Widen Fail   |        |                  |                | i24 allocated space contains padding. This is unsupported |
+| m_axi_gmem1  | out      | top.cpp:195:9   | write     | Inferred     | 65536  | VITIS_LOOP_193_1 | top.cpp:193:23 |                                                           |
++--------------+----------+-----------------+-----------+--------------+--------+------------------+----------------+-----------------------------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------+-----+--------+----------------+-----------+------------------------+---------+
+| Name                         | DSP | Pragma | Variable       | Op        | Impl                   | Latency |
++------------------------------+-----+--------+----------------+-----------+------------------------+---------+
+| + top_kernel                 | 4   |        |                |           |                        |         |
+|  + load_input                | 0   |        |                |           |                        |         |
+|    i_fu_109_p2               |     |        | i              | add       | fabric                 | 0       |
+|    icmp_ln123_fu_115_p2      |     |        | icmp_ln123     | seteq     | auto                   | 0       |
+|  + k0_preprocess             | 0   |        |                |           |                        |         |
+|    add_ln133_1_fu_151_p2     |     |        | add_ln133_1    | add       | fabric                 | 0       |
+|    xor_ln133_fu_165_p2       |     |        | xor_ln133      | xor       | auto                   | 0       |
+|    or_ln133_1_fu_171_p2      |     |        | or_ln133_1     | or        | auto                   | 0       |
+|    xor_ln133_1_fu_177_p2     |     |        | xor_ln133_1    | xor       | auto                   | 0       |
+|    xor_ln133_2_fu_183_p2     |     |        | xor_ln133_2    | xor       | auto                   | 0       |
+|    or_ln133_fu_189_p2        |     |        | or_ln133       | or        | auto                   | 0       |
+|    and_ln133_fu_195_p2       |     |        | and_ln133      | and       | auto                   | 0       |
+|    s0_din                    |     |        | select_ln133   | select    | auto_sel               | 0       |
+|    k_fu_210_p2               |     |        | k              | add       | fabric                 | 0       |
+|    icmp_ln130_fu_216_p2      |     |        | icmp_ln130     | seteq     | auto                   | 0       |
+|  + k_split                   | 0   |        |                |           |                        |         |
+|    k_fu_72_p2                |     |        | k              | add       | fabric                 | 0       |
+|    icmp_ln138_fu_78_p2       |     |        | icmp_ln138     | seteq     | auto                   | 0       |
+|  + k1_transform              | 0   |        |                |           |                        |         |
+|    sub_ln151_fu_199_p2       |     |        | sub_ln151      | sub       | fabric                 | 0       |
+|    add_ln151_fu_209_p2       |     |        | add_ln151      | add       | fabric                 | 0       |
+|    acc_1_fu_237_p2           |     |        | acc_1          | add       | fabric                 | 0       |
+|    xor_ln151_fu_255_p2       |     |        | xor_ln151      | xor       | auto                   | 0       |
+|    or_ln151_1_fu_261_p2      |     |        | or_ln151_1     | or        | auto                   | 0       |
+|    xor_ln151_1_fu_267_p2     |     |        | xor_ln151_1    | xor       | auto                   | 0       |
+|    xor_ln151_2_fu_273_p2     |     |        | xor_ln151_2    | xor       | auto                   | 0       |
+|    or_ln151_fu_279_p2        |     |        | or_ln151       | or        | auto                   | 0       |
+|    and_ln151_fu_285_p2       |     |        | and_ln151      | and       | auto                   | 0       |
+|    acc_2_fu_291_p3           |     |        | acc_2          | select    | auto_sel               | 0       |
+|    add_ln152_fu_337_p2       |     |        | add_ln152      | add       | fabric                 | 0       |
+|    xor_ln152_fu_351_p2       |     |        | xor_ln152      | xor       | auto                   | 0       |
+|    and_ln152_fu_357_p2       |     |        | and_ln152      | and       | auto                   | 0       |
+|    icmp_ln152_fu_379_p2      |     |        | icmp_ln152     | seteq     | auto                   | 0       |
+|    icmp_ln152_1_fu_393_p2    |     |        | icmp_ln152_1   | seteq     | auto                   | 0       |
+|    icmp_ln152_2_fu_399_p2    |     |        | icmp_ln152_2   | seteq     | auto                   | 0       |
+|    select_ln152_fu_405_p3    |     |        | select_ln152   | select    | auto_sel               | 0       |
+|    xor_ln152_1_fu_413_p2     |     |        | xor_ln152_1    | xor       | auto                   | 0       |
+|    and_ln152_1_fu_419_p2     |     |        | and_ln152_1    | and       | auto                   | 0       |
+|    select_ln152_1_fu_425_p3  |     |        | select_ln152_1 | select    | auto_sel               | 0       |
+|    and_ln152_2_fu_433_p2     |     |        | and_ln152_2    | and       | auto                   | 0       |
+|    xor_ln152_2_fu_439_p2     |     |        | xor_ln152_2    | xor       | auto                   | 0       |
+|    or_ln152_fu_445_p2        |     |        | or_ln152       | or        | auto                   | 0       |
+|    xor_ln152_3_fu_451_p2     |     |        | xor_ln152_3    | xor       | auto                   | 0       |
+|    and_ln152_3_fu_457_p2     |     |        | and_ln152_3    | and       | auto                   | 0       |
+|    and_ln152_4_fu_463_p2     |     |        | and_ln152_4    | and       | auto                   | 0       |
+|    or_ln152_2_fu_469_p2      |     |        | or_ln152_2     | or        | auto                   | 0       |
+|    xor_ln152_4_fu_475_p2     |     |        | xor_ln152_4    | xor       | auto                   | 0       |
+|    and_ln152_5_fu_481_p2     |     |        | and_ln152_5    | and       | auto                   | 0       |
+|    select_ln152_2_fu_520_p3  |     |        | select_ln152_2 | select    | auto_sel               | 0       |
+|    or_ln152_1_fu_487_p2      |     |        | or_ln152_1     | or        | auto                   | 0       |
+|    x_fu_527_p3               |     |        | x              | select    | auto_sel               | 0       |
+|    sub_ln111_fu_541_p2       |     |        | sub_ln111      | sub       | fabric                 | 0       |
+|    x_1_fu_583_p2             |     |        | select_ln111   | select    | auto_sel               | 0       |
+|    and_ln111_fu_563_p2       |     |        | and_ln111      | and       | auto                   | 0       |
+|    xor_ln111_fu_569_p2       |     |        | xor_ln111      | xor       | auto                   | 0       |
+|    sparsemux_7_2_20_1_1_U11  |     |        | x_1            | sparsemux | onehotencoding_realdef | 0       |
+|    icmp_ln116_fu_615_p2      |     |        | icmp_ln116     | setgt     | auto                   | 0       |
+|    select_ln115_fu_621_p3    |     |        | select_ln115   | select    | auto_sel               | 0       |
+|    or_ln115_fu_629_p2        |     |        | or_ln115       | or        | auto                   | 0       |
+|    y_fu_635_p3               |     |        | y              | select    | auto_sel               | 0       |
+|    k_fu_493_p2               |     |        | k              | add       | fabric                 | 0       |
+|    icmp_ln148_fu_499_p2      |     |        | icmp_ln148     | seteq     | auto                   | 0       |
+|  + k2_stats                  | 0   |        |                |           |                        |         |
+|    select_ln160_fu_209_p3    |     |        | select_ln160   | select    | auto_sel               | 0       |
+|    sub_ln111_fu_225_p2       |     |        | sub_ln111      | sub       | fabric                 | 0       |
+|    ref_tmp5_2_i_fu_267_p2    |     |        | select_ln111   | select    | auto_sel               | 0       |
+|    and_ln111_fu_247_p2       |     |        | and_ln111      | and       | auto                   | 0       |
+|    xor_ln111_fu_253_p2       |     |        | xor_ln111      | xor       | auto                   | 0       |
+|    sparsemux_7_2_20_1_1_U15  |     |        | ref_tmp5_2_i   | sparsemux | onehotencoding_realdef | 0       |
+|    add_ln164_fu_307_p2       |     |        | add_ln164      | add       | fabric                 | 0       |
+|    add_ln164_1_fu_313_p2     |     |        | add_ln164_1    | add       | fabric                 | 0       |
+|    xor_ln164_fu_339_p2       |     |        | xor_ln164      | xor       | auto                   | 0       |
+|    and_ln164_fu_345_p2       |     |        | and_ln164      | and       | auto                   | 0       |
+|    xor_ln164_1_fu_351_p2     |     |        | xor_ln164_1    | xor       | auto                   | 0       |
+|    select_ln164_fu_357_p3    |     |        | select_ln164   | select    | auto_sel               | 0       |
+|    sum_abs_fu_365_p3         |     |        | sum_abs        | select    | auto_sel               | 0       |
+|    add_ln162_fu_373_p2       |     |        | add_ln162      | add       | fabric                 | 0       |
+|    i_fu_379_p3               |     |        | i              | select    | auto_sel               | 0       |
+|    icmp_ln162_fu_387_p2      |     |        | icmp_ln162     | seteq     | auto                   | 0       |
+|    sub_ln166_fu_409_p2       |     |        | sub_ln166      | sub       | fabric                 | 0       |
+|    sub_ln166_1_fu_465_p2     |     |        | sub_ln166_1    | sub       | fabric                 | 0       |
+|    select_ln166_fu_474_p3    |     |        | select_ln166   | select    | auto_sel               | 0       |
+|    avg_abs_1_fu_515_p2       |     |        | avg_abs_1      | add       | fabric                 | 0       |
+|    xor_ln166_fu_533_p2       |     |        | xor_ln166      | xor       | auto                   | 0       |
+|    or_ln166_1_fu_539_p2      |     |        | or_ln166_1     | or        | auto                   | 0       |
+|    xor_ln166_1_fu_545_p2     |     |        | xor_ln166_1    | xor       | auto                   | 0       |
+|    xor_ln166_2_fu_551_p2     |     |        | xor_ln166_2    | xor       | auto                   | 0       |
+|    or_ln166_fu_557_p2        |     |        | or_ln166       | or        | auto                   | 0       |
+|    and_ln166_fu_563_p2       |     |        | and_ln166      | and       | auto                   | 0       |
+|    avg_abs_2_fu_569_p3       |     |        | avg_abs_2      | select    | auto_sel               | 0       |
+|    add_ln167_fu_581_p2       |     |        | add_ln167      | add       | fabric                 | 0       |
+|    sdiv_50ns_35s_50_54_1_U16 |     |        | sdiv_ln167     | sdiv      | auto                   | 53      |
+|    inv_st_1_fu_643_p2        |     |        | inv_st_1       | add       | fabric                 | 0       |
+|    xor_ln167_fu_657_p2       |     |        | xor_ln167      | xor       | auto                   | 0       |
+|    and_ln167_fu_663_p2       |     |        | and_ln167      | and       | auto                   | 0       |
+|    icmp_ln167_fu_687_p2      |     |        | icmp_ln167     | seteq     | auto                   | 0       |
+|    icmp_ln167_1_fu_703_p2    |     |        | icmp_ln167_1   | seteq     | auto                   | 0       |
+|    icmp_ln167_2_fu_709_p2    |     |        | icmp_ln167_2   | seteq     | auto                   | 0       |
+|    select_ln167_fu_715_p3    |     |        | select_ln167   | select    | auto_sel               | 0       |
+|    xor_ln167_1_fu_723_p2     |     |        | xor_ln167_1    | xor       | auto                   | 0       |
+|    and_ln167_1_fu_729_p2     |     |        | and_ln167_1    | and       | auto                   | 0       |
+|    select_ln167_1_fu_735_p3  |     |        | select_ln167_1 | select    | auto_sel               | 0       |
+|    and_ln167_2_fu_743_p2     |     |        | and_ln167_2    | and       | auto                   | 0       |
+|    xor_ln167_2_fu_749_p2     |     |        | xor_ln167_2    | xor       | auto                   | 0       |
+|    or_ln167_fu_755_p2        |     |        | or_ln167       | or        | auto                   | 0       |
+|    xor_ln167_3_fu_761_p2     |     |        | xor_ln167_3    | xor       | auto                   | 0       |
+|    and_ln167_3_fu_767_p2     |     |        | and_ln167_3    | and       | auto                   | 0       |
+|    and_ln167_4_fu_773_p2     |     |        | and_ln167_4    | and       | auto                   | 0       |
+|    or_ln167_2_fu_779_p2      |     |        | or_ln167_2     | or        | auto                   | 0       |
+|    xor_ln167_4_fu_785_p2     |     |        | xor_ln167_4    | xor       | auto                   | 0       |
+|    and_ln167_5_fu_791_p2     |     |        | and_ln167_5    | and       | auto                   | 0       |
+|    select_ln167_2_fu_797_p3  |     |        | select_ln167_2 | select    | auto_sel               | 0       |
+|    or_ln167_1_fu_805_p2      |     |        | or_ln167_1     | or        | auto                   | 0       |
+|    s_stats_din               |     |        | inv_st_2       | select    | auto_sel               | 0       |
+|    add_ln160_fu_435_p2       |     |        | add_ln160      | add       | fabric                 | 0       |
+|    icmp_ln160_fu_441_p2      |     |        | icmp_ln160     | seteq     | auto                   | 0       |
+|  + k3_join_norm              | 4   |        |                |           |                        |         |
+|    or_ln173_fu_162_p2        |     |        | or_ln173       | or        | auto                   | 0       |
+|    add_ln173_fu_168_p2       |     |        | add_ln173      | add       | fabric                 | 0       |
+|    mul_34s_30s_64_1_1_U20    | 4   |        | mul_ln179      | mul       | auto                   | 0       |
+|    add_ln179_fu_281_p2       |     |        | add_ln179      | add       | fabric                 | 0       |
+|    xor_ln179_fu_295_p2       |     |        | xor_ln179      | xor       | auto                   | 0       |
+|    and_ln179_fu_301_p2       |     |        | and_ln179      | and       | auto                   | 0       |
+|    icmp_ln179_fu_325_p2      |     |        | icmp_ln179     | seteq     | auto                   | 0       |
+|    icmp_ln179_1_fu_341_p2    |     |        | icmp_ln179_1   | seteq     | auto                   | 0       |
+|    icmp_ln179_2_fu_347_p2    |     |        | icmp_ln179_2   | seteq     | auto                   | 0       |
+|    select_ln179_fu_353_p3    |     |        | select_ln179   | select    | auto_sel               | 0       |
+|    xor_ln179_1_fu_361_p2     |     |        | xor_ln179_1    | xor       | auto                   | 0       |
+|    and_ln179_1_fu_367_p2     |     |        | and_ln179_1    | and       | auto                   | 0       |
+|    select_ln179_1_fu_373_p3  |     |        | select_ln179_1 | select    | auto_sel               | 0       |
+|    and_ln179_2_fu_381_p2     |     |        | and_ln179_2    | and       | auto                   | 0       |
+|    xor_ln179_2_fu_387_p2     |     |        | xor_ln179_2    | xor       | auto                   | 0       |
+|    or_ln179_fu_393_p2        |     |        | or_ln179       | or        | auto                   | 0       |
+|    xor_ln179_3_fu_399_p2     |     |        | xor_ln179_3    | xor       | auto                   | 0       |
+|    and_ln179_3_fu_405_p2     |     |        | and_ln179_3    | and       | auto                   | 0       |
+|    and_ln179_4_fu_411_p2     |     |        | and_ln179_4    | and       | auto                   | 0       |
+|    or_ln179_2_fu_417_p2      |     |        | or_ln179_2     | or        | auto                   | 0       |
+|    xor_ln179_4_fu_423_p2     |     |        | xor_ln179_4    | xor       | auto                   | 0       |
+|    and_ln179_5_fu_429_p2     |     |        | and_ln179_5    | and       | auto                   | 0       |
+|    select_ln179_2_fu_435_p3  |     |        | select_ln179_2 | select    | auto_sel               | 0       |
+|    or_ln179_1_fu_443_p2      |     |        | or_ln179_1     | or        | auto                   | 0       |
+|    select_ln179_3_fu_449_p3  |     |        | select_ln179_3 | select    | auto_sel               | 0       |
+|    add_ln176_fu_174_p2       |     |        | add_ln176      | add       | fabric                 | 0       |
+|    i_fu_180_p3               |     |        | i              | select    | auto_sel               | 0       |
+|    icmp_ln176_fu_188_p2      |     |        | icmp_ln176     | seteq     | auto                   | 0       |
+|    icmp_ln173_fu_194_p2      |     |        | icmp_ln173     | seteq     | auto                   | 0       |
+|  + k4_postprocess            | 0   |        |                |           |                        |         |
+|    z_1_fu_171_p2             |     |        | z_1            | add       | fabric                 | 0       |
+|    xor_ln187_fu_185_p2       |     |        | xor_ln187      | xor       | auto                   | 0       |
+|    or_ln187_2_fu_191_p2      |     |        | or_ln187_2     | or        | auto                   | 0       |
+|    xor_ln187_1_fu_197_p2     |     |        | xor_ln187_1    | xor       | auto                   | 0       |
+|    xor_ln187_2_fu_203_p2     |     |        | xor_ln187_2    | xor       | auto                   | 0       |
+|    xor_ln187_3_fu_209_p2     |     |        | xor_ln187_3    | xor       | auto                   | 0       |
+|    or_ln187_fu_215_p2        |     |        | or_ln187       | or        | auto                   | 0       |
+|    and_ln187_fu_221_p2       |     |        | and_ln187      | and       | auto                   | 0       |
+|    or_ln187_3_fu_227_p2      |     |        | or_ln187_3     | or        | auto                   | 0       |
+|    xor_ln187_4_fu_233_p2     |     |        | xor_ln187_4    | xor       | auto                   | 0       |
+|    and_ln187_1_fu_239_p2     |     |        | and_ln187_1    | and       | auto                   | 0       |
+|    select_ln187_fu_245_p3    |     |        | select_ln187   | select    | auto_sel               | 0       |
+|    or_ln187_1_fu_253_p2      |     |        | or_ln187_1     | or        | auto                   | 0       |
+|    z_3_fu_259_p3             |     |        | z_3            | select    | auto_sel               | 0       |
+|    icmp_ln116_fu_279_p2      |     |        | icmp_ln116     | setgt     | auto                   | 0       |
+|    select_ln115_fu_285_p3    |     |        | select_ln115   | select    | auto_sel               | 0       |
+|    or_ln115_fu_293_p2        |     |        | or_ln115       | or        | auto                   | 0       |
+|    select_ln115_1_fu_299_p3  |     |        | select_ln115_1 | select    | auto_sel               | 0       |
+|    k_fu_307_p2               |     |        | k              | add       | fabric                 | 0       |
+|    icmp_ln185_fu_313_p2      |     |        | icmp_ln185     | seteq     | auto                   | 0       |
+|  + store_output              | 0   |        |                |           |                        |         |
+|    i_fu_130_p2               |     |        | i              | add       | fabric                 | 0       |
+|    icmp_ln193_fu_136_p2      |     |        | icmp_ln193     | seteq     | auto                   | 0       |
++------------------------------+-----+--------+----------------+-----------+------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------+--------------+-------------+------+------+--------+----------+--------+---------+------------------+
+| Name              | Usage        | Type        | BRAM | URAM | Pragma | Variable | Impl   | Latency | Bitwidth, Depth, |
+|                   |              |             |      |      |        |          |        |         | Banks            |
++-------------------+--------------+-------------+------+------+--------+----------+--------+---------+------------------+
+| + top_kernel      |              |             | 6    | 0    |        |          |        |         |                  |
+|   control_s_axi_U | interface    | s_axilite   |      |      |        |          |        |         |                  |
+|   gmem0_m_axi_U   | interface    | m_axi       | 2    |      |        |          |        |         |                  |
+|   gmem1_m_axi_U   | interface    | m_axi       |      |      |        |          |        |         |                  |
+|   out_r_c_U       | fifo channel | scalar prop |      |      |        | out_r_c  | srl    | 0       | 64, 8, 1         |
+|   s_in_U          | fifo channel | stream      |      |      |        | s_in     | srl    | 0       | 20, 2, 1         |
+|   s0_U            | fifo channel | stream      |      |      |        | s0       | srl    | 0       | 20, 2, 1         |
+|   s0_a_U          | fifo channel | stream      | 2    |      |        | s0_a     | memory | 0       | 20, 160, 1       |
+|   s0_b_U          | fifo channel | stream      |      |      |        | s0_b     | srl    | 0       | 20, 2, 1         |
+|   s1_U            | fifo channel | stream      | 2    |      |        | s1       | memory | 0       | 20, 160, 1       |
+|   s_stats_U       | fifo channel | stream      |      |      |        | s_stats  | srl    | 0       | 28, 2, 1         |
+|   s3_U            | fifo channel | stream      |      |      |        | s3       | srl    | 0       | 20, 2, 1         |
+|   s_out_U         | fifo channel | stream      |      |      |        | s_out    | srl    | 0       | 20, 2, 1         |
++-------------------+--------------+-------------+------+------+--------+----------+--------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------------------------+------------------------------------+
+| Type      | Options                                  | Location                           |
++-----------+------------------------------------------+------------------------------------+
+| PIPELINE  | ii=1                                     | top.cpp:124 in load_input          |
+| PIPELINE  | ii=1                                     | top.cpp:131 in k0_preprocess       |
+| PIPELINE  | ii=1                                     | top.cpp:139 in k_split             |
+| PIPELINE  | ii=1                                     | top.cpp:149 in k1_transform        |
+| PIPELINE  | ii=1                                     | top.cpp:163 in k2_stats            |
+| PIPELINE  | ii=1                                     | top.cpp:177 in k3_join_norm        |
+| PIPELINE  | ii=1                                     | top.cpp:186 in k4_postprocess      |
+| PIPELINE  | ii=1                                     | top.cpp:194 in store_output        |
+| INTERFACE | m_axi port=in offset=slave bundle=gmem0  | top.cpp:202 in top_kernel, in      |
+| INTERFACE | m_axi port=out offset=slave bundle=gmem1 | top.cpp:203 in top_kernel, out     |
+| INTERFACE | s_axilite port=return                    | top.cpp:204 in top_kernel, return  |
+| STREAM    | variable=s0_a depth=160                  | top.cpp:213 in top_kernel, s0_a    |
+| STREAM    | variable=s1 depth=160                    | top.cpp:214 in top_kernel, s1      |
+| STREAM    | variable=s_in depth=2                    | top.cpp:217 in top_kernel, s_in    |
+| STREAM    | variable=s0 depth=2                      | top.cpp:218 in top_kernel, s0      |
+| STREAM    | variable=s0_b depth=2                    | top.cpp:219 in top_kernel, s0_b    |
+| STREAM    | variable=s_stats depth=2                 | top.cpp:220 in top_kernel, s_stats |
+| STREAM    | variable=s3 depth=2                      | top.cpp:221 in top_kernel, s3      |
+| STREAM    | variable=s_out depth=2                   | top.cpp:222 in top_kernel, s_out   |
+| DATAFLOW  |                                          | top.cpp:224 in top_kernel          |
++-----------+------------------------------------------+------------------------------------+
+
+

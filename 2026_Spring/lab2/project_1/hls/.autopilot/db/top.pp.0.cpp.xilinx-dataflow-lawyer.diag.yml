@@ -3,6 +3,6 @@ MainSourceFile:  /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab2/project_1/hls/
 Diagnostics:     
   - DiagnosticName:  clang-diagnostic-warning
     Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
-    FileOffset:      '610:9'
+    FileOffset:      '202:9'
     FilePath:        top.cpp
 ...

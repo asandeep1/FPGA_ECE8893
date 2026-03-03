@@ -1,0 +1,54 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'top_kernel'" level="0">
+<item name = "Date">Mon Mar  2 19:53:36 2026
+</item>
+<item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
+<item name = "Project">project_1</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">65616, 65616, 0.656 ms, 0.656 ms, 65536, 65536, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="call_ln224_entry_proc_fu_134">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_load_input_fu_141">load_input, 65547, 65547, 0.655 ms, 0.655 ms, 65536, 65536, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_k0_preprocess_fu_151">k0_preprocess, 65537, 65537, 0.655 ms, 0.655 ms, 65536, 65536, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_k_split_fu_159">k_split, 65537, 65537, 0.655 ms, 0.655 ms, 65536, 65536, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_k1_transform_fu_169">k1_transform, 65538, 65538, 0.655 ms, 0.655 ms, 65536, 65536, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_k2_stats_fu_177">k2_stats, 65591, 65591, 0.656 ms, 0.656 ms, 65536, 65536, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_k3_join_norm_fu_185">k3_join_norm, 65540, 65540, 0.655 ms, 0.655 ms, 65536, 65536, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_k4_postprocess_fu_195">k4_postprocess, 65538, 65538, 0.655 ms, 0.655 ms, 65536, 65536, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_store_output_fu_203">store_output, 65545, 65545, 0.655 ms, 0.655 ms, 65536, 65536, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
