@@ -44,17 +44,17 @@ output   ap_done;
 input   ap_continue;
 output   ap_idle;
 output   ap_ready;
-input  [19:0] s0_dout;
+input  [511:0] s0_dout;
 input   s0_empty_n;
 output   s0_read;
 input  [2:0] s0_num_data_valid;
 input  [2:0] s0_fifo_cap;
-output  [19:0] s0_a_din;
+output  [511:0] s0_a_din;
 input   s0_a_full_n;
 output   s0_a_write;
-input  [8:0] s0_a_num_data_valid;
-input  [8:0] s0_a_fifo_cap;
-output  [19:0] s0_b_din;
+input  [6:0] s0_a_num_data_valid;
+input  [6:0] s0_a_fifo_cap;
+output  [511:0] s0_b_din;
 input   s0_b_full_n;
 output   s0_b_write;
 input  [2:0] s0_b_num_data_valid;
@@ -75,17 +75,17 @@ wire    ap_CS_fsm_state1;
 wire    internal_ap_ready;
 reg    ap_done_reg;
 reg    ap_block_state1_pp0_stage0_iter0;
-wire   [0:0] icmp_ln138_fu_78_p2;
+wire   [0:0] icmp_ln384_fu_86_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
 reg    s0_blk_n;
 reg    s0_a_blk_n;
 reg    s0_b_blk_n;
-reg   [15:0] k1_fu_38;
-wire   [15:0] k_fu_72_p2;
+reg   [11:0] k1_fu_46;
+wire   [11:0] k_fu_80_p2;
 wire    ap_loop_init;
-reg   [15:0] ap_sig_allocacmp_k1_load;
+reg   [11:0] ap_sig_allocacmp_k1_load;
 wire    ap_continue_int;
 reg    ap_done_int;
 reg   [0:0] ap_NS_fsm;
@@ -99,7 +99,7 @@ initial begin
 #0 start_once_reg = 1'b0;
 #0 ap_CS_fsm = 1'd1;
 #0 ap_done_reg = 1'b0;
-#0 k1_fu_38 = 16'd0;
+#0 k1_fu_46 = 12'd0;
 end
 
 top_kernel_flow_control_loop_pipe flow_control_loop_pipe_U(
@@ -152,7 +152,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        k1_fu_38 <= k_fu_72_p2;
+        k1_fu_46 <= k_fu_80_p2;
     end
 end
 
@@ -165,7 +165,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln138_fu_78_p2 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((icmp_ln384_fu_86_p2 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -198,9 +198,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_sig_allocacmp_k1_load = 16'd0;
+        ap_sig_allocacmp_k1_load = 12'd0;
     end else begin
-        ap_sig_allocacmp_k1_load = k1_fu_38;
+        ap_sig_allocacmp_k1_load = k1_fu_46;
     end
 end
 
@@ -291,9 +291,9 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = internal_ap_ready;
 
-assign icmp_ln138_fu_78_p2 = ((ap_sig_allocacmp_k1_load == 16'd65535) ? 1'b1 : 1'b0);
+assign icmp_ln384_fu_86_p2 = ((ap_sig_allocacmp_k1_load == 12'd4095) ? 1'b1 : 1'b0);
 
-assign k_fu_72_p2 = (ap_sig_allocacmp_k1_load + 16'd1);
+assign k_fu_80_p2 = (ap_sig_allocacmp_k1_load + 12'd1);
 
 assign s0_a_din = s0_dout;
 

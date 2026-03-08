@@ -18,53 +18,53 @@
 <PipelineType>loop auto-rewind stp (delay=0 cycles)</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.464</EstimatedClockPeriod>
+<EstimatedClockPeriod>6.880</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>65538</Best-caseLatency>
-<Average-caseLatency>65538</Average-caseLatency>
-<Worst-caseLatency>65538</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.655 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.655 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.655 ms</Worst-caseRealTimeLatency>
-<Interval-min>65536</Interval-min>
-<Interval-max>65536</Interval-max>
+<Best-caseLatency>4098</Best-caseLatency>
+<Average-caseLatency>4098</Average-caseLatency>
+<Worst-caseLatency>4098</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.980 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.980 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.980 us</Worst-caseRealTimeLatency>
+<Interval-min>4096</Interval-min>
+<Interval-max>4096</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_185_1>
+<VITIS_LOOP_450_1>
 <Slack>7.30</Slack>
-<TripCount>65536</TripCount>
+<TripCount>4096</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>65536</Latency>
-<AbsoluteTimeLatency>655360</AbsoluteTimeLatency>
+<Latency>4096</Latency>
+<AbsoluteTimeLatency>40960</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>2</PipelineDepth>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_185_1>
+</VITIS_LOOP_450_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:185</SourceLocation>
+<SourceLocation>top.cpp:450</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_185_1>
-<Name>VITIS_LOOP_185_1</Name>
+<VITIS_LOOP_450_1>
+<Name>VITIS_LOOP_450_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:185</SourceLocation>
-</VITIS_LOOP_185_1>
+<SourceLocation>top.cpp:450</SourceLocation>
+</VITIS_LOOP_450_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>37</FF>
-<LUT>368</LUT>
+<FF>288</FF>
+<LUT>4294</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -164,7 +164,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -219,7 +219,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>

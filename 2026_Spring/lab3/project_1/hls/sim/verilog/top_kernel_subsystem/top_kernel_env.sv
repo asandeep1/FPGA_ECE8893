@@ -8,14 +8,60 @@
 `ifndef TOP_KERNEL_ENV__SV                                                                                   
     `define TOP_KERNEL_ENV__SV                                                                               
                                                                                                                     
+    class axi_latency_gmem0 extends axi_latency;
+        rand int    wr_latency;
+        rand int    rd_latency;
+        `uvm_object_utils_begin(axi_latency_gmem0)
+        `uvm_object_utils_end
+        function new ( string name = "axi_latency_gmem0" );
+            super.new(name);
+        endfunction
+        virtual function int get_wr_lat();
+            int delay;
+            void'(std::randomize(delay) with { delay == 3;});
+            wr_latency = delay;
+            return wr_latency;
+        endfunction
+        virtual function int get_rd_lat();
+            int delay;
+            void'(std::randomize(delay) with { delay == 3;});
+            rd_latency = delay;
+            return rd_latency;
+        endfunction
+    endclass
+
+    class axi_latency_gmem1 extends axi_latency;
+        rand int    wr_latency;
+        rand int    rd_latency;
+        `uvm_object_utils_begin(axi_latency_gmem1)
+        `uvm_object_utils_end
+        function new ( string name = "axi_latency_gmem1" );
+            super.new(name);
+        endfunction
+        virtual function int get_wr_lat();
+            int delay;
+            void'(std::randomize(delay) with { delay == 3;});
+            wr_latency = delay;
+            return wr_latency;
+        endfunction
+        virtual function int get_rd_lat();
+            int delay;
+            void'(std::randomize(delay) with { delay == 3;});
+            rd_latency = delay;
+            return rd_latency;
+        endfunction
+    endclass
+
                                                                                                                     
     class top_kernel_env extends uvm_env;                                                                          
                                                                                                                     
+        axi_latency_gmem0    lat_gmem0;
+        axi_latency_gmem1    lat_gmem1;
         top_kernel_virtual_sequencer top_kernel_virtual_sqr;                                                      
         top_kernel_config top_kernel_cfg;                                                                         
                                                                                                                     
-        axi_pkg::axi_env#(64,4,8,3,1) axi_master_gmem0;
-        axi_pkg::axi_env#(64,4,8,3,1) axi_master_gmem1;
+        axi_pkg::axi_env#(64,64,8,3,1) axi_master_gmem0;
+        axi_pkg::axi_env#(64,64,8,3,1) axi_master_gmem1;
         axi_pkg::axi_env#(6,4,4,3,1) axi_lite_control;
                                                                                                                     
         top_kernel_reference_model   refm;                                                                         
@@ -46,18 +92,22 @@
         top_kernel_cfg.gmem0_cfg.set_default();
         top_kernel_cfg.gmem0_cfg.drv_type = axi_pkg::SLAVE;
         top_kernel_cfg.gmem0_cfg.reset_level = axi_pkg::RESET_LEVEL_LOW;
+        lat_gmem0 = axi_latency_gmem0::type_id::create("lat_gmem0", this);
+        top_kernel_cfg.gmem0_cfg.clatency = lat_gmem0;
         top_kernel_cfg.gmem0_cfg.write_latency_mode = TRANSACTION_FIRST;
         top_kernel_cfg.gmem0_cfg.read_latency_mode = TRANSACTION_FIRST;
         uvm_config_db#(axi_pkg::axi_cfg)::set(this, "axi_master_gmem0*", "cfg", top_kernel_cfg.gmem0_cfg);
-        axi_master_gmem0 = axi_pkg::axi_env#(64,4,8,3,1)::type_id::create("axi_master_gmem0", this);
+        axi_master_gmem0 = axi_pkg::axi_env#(64,64,8,3,1)::type_id::create("axi_master_gmem0", this);
 
         top_kernel_cfg.gmem1_cfg.set_default();
         top_kernel_cfg.gmem1_cfg.drv_type = axi_pkg::SLAVE;
         top_kernel_cfg.gmem1_cfg.reset_level = axi_pkg::RESET_LEVEL_LOW;
+        lat_gmem1 = axi_latency_gmem1::type_id::create("lat_gmem1", this);
+        top_kernel_cfg.gmem1_cfg.clatency = lat_gmem1;
         top_kernel_cfg.gmem1_cfg.write_latency_mode = TRANSACTION_FIRST;
         top_kernel_cfg.gmem1_cfg.read_latency_mode = TRANSACTION_FIRST;
         uvm_config_db#(axi_pkg::axi_cfg)::set(this, "axi_master_gmem1*", "cfg", top_kernel_cfg.gmem1_cfg);
-        axi_master_gmem1 = axi_pkg::axi_env#(64,4,8,3,1)::type_id::create("axi_master_gmem1", this);
+        axi_master_gmem1 = axi_pkg::axi_env#(64,64,8,3,1)::type_id::create("axi_master_gmem1", this);
 
         top_kernel_cfg.control_cfg.set_default();
         top_kernel_cfg.control_cfg.drv_type = axi_pkg::MASTER;

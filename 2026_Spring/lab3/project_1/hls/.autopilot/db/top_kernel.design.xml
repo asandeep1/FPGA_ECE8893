@@ -8,55 +8,55 @@
 <InstName>entry_proc_U0</InstName>
 <ModuleName>entry_proc</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>134</ID>
+<ID>148</ID>
 </Instance>
 <Instance>
-<InstName>load_input_U0</InstName>
-<ModuleName>load_input</ModuleName>
+<InstName>load_input_wide_U0</InstName>
+<ModuleName>load_input_wide</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>141</ID>
+<ID>155</ID>
 </Instance>
 <Instance>
 <InstName>k0_preprocess_U0</InstName>
 <ModuleName>k0_preprocess</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>151</ID>
+<ID>165</ID>
 </Instance>
 <Instance>
 <InstName>k_split_U0</InstName>
 <ModuleName>k_split</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>159</ID>
+<ID>173</ID>
 </Instance>
 <Instance>
 <InstName>k1_transform_U0</InstName>
 <ModuleName>k1_transform</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>169</ID>
+<ID>183</ID>
 </Instance>
 <Instance>
 <InstName>k2_stats_U0</InstName>
 <ModuleName>k2_stats</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>177</ID>
+<ID>191</ID>
 </Instance>
 <Instance>
 <InstName>k3_join_norm_U0</InstName>
 <ModuleName>k3_join_norm</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>185</ID>
+<ID>199</ID>
 </Instance>
 <Instance>
 <InstName>k4_postprocess_U0</InstName>
 <ModuleName>k4_postprocess</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>195</ID>
+<ID>209</ID>
 </Instance>
 <Instance>
-<InstName>store_output_U0</InstName>
-<ModuleName>store_output</ModuleName>
+<InstName>store_output_wide_U0</InstName>
+<ModuleName>store_output_wide</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>203</ID>
+<ID>217</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -287,9 +287,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>load_input</Name>
+<Name>load_input_wide</Name>
 <Loops>
-<VITIS_LOOP_123_1></VITIS_LOOP_123_1>
+<LOAD_LOOP></LOAD_LOOP>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -298,52 +298,52 @@
 <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>65547</Best-caseLatency>
-<Average-caseLatency>65547</Average-caseLatency>
-<Worst-caseLatency>65547</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.655 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.655 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.655 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>65536</PipelineInitiationInterval>
+<Best-caseLatency>4109</Best-caseLatency>
+<Average-caseLatency>4109</Average-caseLatency>
+<Worst-caseLatency>4109</Worst-caseLatency>
+<Best-caseRealTimeLatency>41.090 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>41.090 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>41.090 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4096</PipelineInitiationInterval>
 <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_123_1>
-<Name>VITIS_LOOP_123_1</Name>
+<LOAD_LOOP>
+<Name>LOAD_LOOP</Name>
 <Slack>7.30</Slack>
-<TripCount>65536</TripCount>
+<TripCount>4096</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>65545</Latency>
-<AbsoluteTimeLatency>0.655 ms</AbsoluteTimeLatency>
+<Latency>4107</Latency>
+<AbsoluteTimeLatency>41.070 us</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>11</PipelineDepth>
+<PipelineDepth>13</PipelineDepth>
 <PipelineType>yes</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_123_1>
+</LOAD_LOOP>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:122</SourceLocation>
+<SourceLocation>top.cpp:317</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_123_1>
-<Name>VITIS_LOOP_123_1</Name>
+<LOAD_LOOP>
+<Name>LOAD_LOOP</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:123</SourceLocation>
-</VITIS_LOOP_123_1>
+<SourceLocation>top.cpp:321</SourceLocation>
+</LOAD_LOOP>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>125</FF>
+<FF>425</FF>
 <AVAIL_FF>141120</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>132</LUT>
+<LUT>124</LUT>
 <AVAIL_LUT>70560</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -360,7 +360,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>load_input</Object>
+<Object>load_input_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -371,7 +371,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>load_input</Object>
+<Object>load_input_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -382,7 +382,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>load_input</Object>
+<Object>load_input_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -393,7 +393,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_full_n</name>
-<Object>load_input</Object>
+<Object>load_input_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -404,7 +404,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>load_input</Object>
+<Object>load_input_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -415,7 +415,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_continue</name>
-<Object>load_input</Object>
+<Object>load_input_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -426,7 +426,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>load_input</Object>
+<Object>load_input_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -437,7 +437,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>load_input</Object>
+<Object>load_input_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -448,7 +448,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_out</name>
-<Object>load_input</Object>
+<Object>load_input_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -459,7 +459,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_write</name>
-<Object>load_input</Object>
+<Object>load_input_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -641,7 +641,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>512</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -652,7 +652,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>4</Bits>
+<Bits>64</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -861,7 +861,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>512</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -982,7 +982,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1045,7 +1045,7 @@
 <Module>
 <Name>k0_preprocess</Name>
 <Loops>
-<VITIS_LOOP_130_1></VITIS_LOOP_130_1>
+<VITIS_LOOP_371_1></VITIS_LOOP_371_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -1054,54 +1054,54 @@
 <EstimatedClockPeriod>6.802</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>65537</Best-caseLatency>
-<Average-caseLatency>65537</Average-caseLatency>
-<Worst-caseLatency>65537</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.655 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.655 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.655 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>65536</PipelineInitiationInterval>
+<Best-caseLatency>4097</Best-caseLatency>
+<Average-caseLatency>4097</Average-caseLatency>
+<Worst-caseLatency>4097</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.970 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.970 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.970 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4096</PipelineInitiationInterval>
 <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_130_1>
-<Name>VITIS_LOOP_130_1</Name>
+<VITIS_LOOP_371_1>
+<Name>VITIS_LOOP_371_1</Name>
 <Slack>7.30</Slack>
-<TripCount>65536</TripCount>
+<TripCount>4096</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>65535</Latency>
-<AbsoluteTimeLatency>0.655 ms</AbsoluteTimeLatency>
+<Latency>4095</Latency>
+<AbsoluteTimeLatency>40.950 us</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>1</PipelineDepth>
 <PipelineType>yes</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_130_1>
+</VITIS_LOOP_371_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:130</SourceLocation>
+<SourceLocation>top.cpp:371</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_130_1>
-<Name>VITIS_LOOP_130_1</Name>
+<VITIS_LOOP_371_1>
+<Name>VITIS_LOOP_371_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:130</SourceLocation>
-</VITIS_LOOP_130_1>
+<SourceLocation>top.cpp:371</SourceLocation>
+</VITIS_LOOP_371_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>19</FF>
+<FF>15</FF>
 <AVAIL_FF>141120</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>269</LUT>
+<LUT>2766</LUT>
 <AVAIL_LUT>70560</AVAIL_LUT>
-<UTIL_LUT>~0</UTIL_LUT>
+<UTIL_LUT>3</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>432</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -1232,7 +1232,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1287,7 +1287,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1339,61 +1339,61 @@
 <Module>
 <Name>k_split</Name>
 <Loops>
-<VITIS_LOOP_138_1></VITIS_LOOP_138_1>
+<VITIS_LOOP_384_1></VITIS_LOOP_384_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
-<EstimatedClockPeriod>4.334</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.492</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>65537</Best-caseLatency>
-<Average-caseLatency>65537</Average-caseLatency>
-<Worst-caseLatency>65537</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.655 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.655 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.655 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>65536</PipelineInitiationInterval>
+<Best-caseLatency>4097</Best-caseLatency>
+<Average-caseLatency>4097</Average-caseLatency>
+<Worst-caseLatency>4097</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.970 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.970 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.970 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4096</PipelineInitiationInterval>
 <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_138_1>
-<Name>VITIS_LOOP_138_1</Name>
+<VITIS_LOOP_384_1>
+<Name>VITIS_LOOP_384_1</Name>
 <Slack>7.30</Slack>
-<TripCount>65536</TripCount>
+<TripCount>4096</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>65535</Latency>
-<AbsoluteTimeLatency>0.655 ms</AbsoluteTimeLatency>
+<Latency>4095</Latency>
+<AbsoluteTimeLatency>40.950 us</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>1</PipelineDepth>
 <PipelineType>yes</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_138_1>
+</VITIS_LOOP_384_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:138</SourceLocation>
+<SourceLocation>top.cpp:384</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_138_1>
-<Name>VITIS_LOOP_138_1</Name>
+<VITIS_LOOP_384_1>
+<Name>VITIS_LOOP_384_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:138</SourceLocation>
-</VITIS_LOOP_138_1>
+<SourceLocation>top.cpp:384</SourceLocation>
+</VITIS_LOOP_384_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>19</FF>
+<FF>15</FF>
 <AVAIL_FF>141120</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>111</LUT>
+<LUT>103</LUT>
 <AVAIL_LUT>70560</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -1526,7 +1526,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1581,7 +1581,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1614,7 +1614,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>9</Bits>
+<Bits>7</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1625,7 +1625,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>9</Bits>
+<Bits>7</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1636,7 +1636,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1688,63 +1688,63 @@
 <Module>
 <Name>k1_transform</Name>
 <Loops>
-<VITIS_LOOP_148_1></VITIS_LOOP_148_1>
+<VITIS_LOOP_396_1></VITIS_LOOP_396_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
-<EstimatedClockPeriod>6.995</EstimatedClockPeriod>
+<EstimatedClockPeriod>6.745</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>65538</Best-caseLatency>
-<Average-caseLatency>65538</Average-caseLatency>
-<Worst-caseLatency>65538</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.655 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.655 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.655 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>65536</PipelineInitiationInterval>
+<Best-caseLatency>4099</Best-caseLatency>
+<Average-caseLatency>4099</Average-caseLatency>
+<Worst-caseLatency>4099</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.990 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.990 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.990 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4096</PipelineInitiationInterval>
 <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_148_1>
-<Name>VITIS_LOOP_148_1</Name>
+<VITIS_LOOP_396_1>
+<Name>VITIS_LOOP_396_1</Name>
 <Slack>7.30</Slack>
-<TripCount>65536</TripCount>
+<TripCount>4096</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>65536</Latency>
-<AbsoluteTimeLatency>0.655 ms</AbsoluteTimeLatency>
+<Latency>4097</Latency>
+<AbsoluteTimeLatency>40.970 us</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>2</PipelineDepth>
+<PipelineDepth>3</PipelineDepth>
 <PipelineType>yes</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_148_1>
+</VITIS_LOOP_396_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:147</SourceLocation>
+<SourceLocation>top.cpp:396</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_148_1>
-<Name>VITIS_LOOP_148_1</Name>
+<VITIS_LOOP_396_1>
+<Name>VITIS_LOOP_396_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:148</SourceLocation>
-</VITIS_LOOP_148_1>
+<SourceLocation>top.cpp:396</SourceLocation>
+</VITIS_LOOP_396_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>83</FF>
+<FF>755</FF>
 <AVAIL_FF>141120</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>626</LUT>
+<LUT>7639</LUT>
 <AVAIL_LUT>70560</AVAIL_LUT>
-<UTIL_LUT>~0</UTIL_LUT>
+<UTIL_LUT>10</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>432</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -1875,7 +1875,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1908,7 +1908,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>9</Bits>
+<Bits>7</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1919,7 +1919,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>9</Bits>
+<Bits>7</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1930,7 +1930,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1982,63 +1982,63 @@
 <Module>
 <Name>k2_stats</Name>
 <Loops>
-<VITIS_LOOP_160_1_VITIS_LOOP_162_2></VITIS_LOOP_160_1_VITIS_LOOP_162_2>
+<VITIS_LOOP_414_1_VITIS_LOOP_416_2></VITIS_LOOP_414_1_VITIS_LOOP_416_2>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
-<EstimatedClockPeriod>7.237</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.098</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>65591</Best-caseLatency>
-<Average-caseLatency>65591</Average-caseLatency>
-<Worst-caseLatency>65591</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.656 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.656 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.656 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>65536</PipelineInitiationInterval>
-<PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
+<Best-caseLatency>4102</Best-caseLatency>
+<Average-caseLatency>4102</Average-caseLatency>
+<Worst-caseLatency>4102</Worst-caseLatency>
+<Best-caseRealTimeLatency>41.020 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>41.020 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>41.020 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4099</PipelineInitiationInterval>
+<PipelineType>loop auto-rewind stp (delay=3 clock cycles(s))</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_160_1_VITIS_LOOP_162_2>
-<Name>VITIS_LOOP_160_1_VITIS_LOOP_162_2</Name>
+<VITIS_LOOP_414_1_VITIS_LOOP_416_2>
+<Name>VITIS_LOOP_414_1_VITIS_LOOP_416_2</Name>
 <Slack>7.30</Slack>
-<TripCount>65536</TripCount>
+<TripCount>4096</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>65589</Latency>
-<AbsoluteTimeLatency>0.656 ms</AbsoluteTimeLatency>
+<Latency>4100</Latency>
+<AbsoluteTimeLatency>41.000 us</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>55</PipelineDepth>
+<PipelineDepth>6</PipelineDepth>
 <PipelineType>yes</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_160_1_VITIS_LOOP_162_2>
+</VITIS_LOOP_414_1_VITIS_LOOP_416_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:162</SourceLocation>
+<SourceLocation>top.cpp:416</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_160_1_VITIS_LOOP_162_2>
-<Name>VITIS_LOOP_160_1_VITIS_LOOP_162_2</Name>
+<VITIS_LOOP_414_1_VITIS_LOOP_416_2>
+<Name>VITIS_LOOP_414_1_VITIS_LOOP_416_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:162</SourceLocation>
-</VITIS_LOOP_160_1_VITIS_LOOP_162_2>
+<SourceLocation>top.cpp:416</SourceLocation>
+</VITIS_LOOP_414_1_VITIS_LOOP_416_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>5655</FF>
+<FF>869</FF>
 <AVAIL_FF>141120</AVAIL_FF>
-<UTIL_FF>4</UTIL_FF>
-<LUT>5018</LUT>
+<UTIL_FF>~0</UTIL_FF>
+<LUT>3972</LUT>
 <AVAIL_LUT>70560</AVAIL_LUT>
-<UTIL_LUT>7</UTIL_LUT>
+<UTIL_LUT>5</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>432</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -2136,7 +2136,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -2243,7 +2243,7 @@
 <Module>
 <Name>k3_join_norm</Name>
 <Loops>
-<VITIS_LOOP_173_1_VITIS_LOOP_176_2></VITIS_LOOP_173_1_VITIS_LOOP_176_2>
+<VITIS_LOOP_433_1_VITIS_LOOP_436_2></VITIS_LOOP_433_1_VITIS_LOOP_436_2>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -2252,57 +2252,57 @@
 <EstimatedClockPeriod>6.425</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>65540</Best-caseLatency>
-<Average-caseLatency>65540</Average-caseLatency>
-<Worst-caseLatency>65540</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.655 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.655 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.655 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>65536</PipelineInitiationInterval>
+<Best-caseLatency>4154</Best-caseLatency>
+<Average-caseLatency>4154</Average-caseLatency>
+<Worst-caseLatency>4154</Worst-caseLatency>
+<Best-caseRealTimeLatency>41.540 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>41.540 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>41.540 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4096</PipelineInitiationInterval>
 <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_173_1_VITIS_LOOP_176_2>
-<Name>VITIS_LOOP_173_1_VITIS_LOOP_176_2</Name>
+<VITIS_LOOP_433_1_VITIS_LOOP_436_2>
+<Name>VITIS_LOOP_433_1_VITIS_LOOP_436_2</Name>
 <Slack>7.30</Slack>
-<TripCount>65536</TripCount>
+<TripCount>4096</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>65538</Latency>
-<AbsoluteTimeLatency>0.655 ms</AbsoluteTimeLatency>
+<Latency>4152</Latency>
+<AbsoluteTimeLatency>41.520 us</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>4</PipelineDepth>
+<PipelineDepth>58</PipelineDepth>
 <PipelineType>yes</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_173_1_VITIS_LOOP_176_2>
+</VITIS_LOOP_433_1_VITIS_LOOP_436_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:176</SourceLocation>
+<SourceLocation>top.cpp:436</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_173_1_VITIS_LOOP_176_2>
-<Name>VITIS_LOOP_173_1_VITIS_LOOP_176_2</Name>
+<VITIS_LOOP_433_1_VITIS_LOOP_436_2>
+<Name>VITIS_LOOP_433_1_VITIS_LOOP_436_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:176</SourceLocation>
-</VITIS_LOOP_173_1_VITIS_LOOP_176_2>
+<SourceLocation>top.cpp:436</SourceLocation>
+</VITIS_LOOP_433_1_VITIS_LOOP_436_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<DSP>4</DSP>
+<DSP>64</DSP>
 <AVAIL_DSP>360</AVAIL_DSP>
-<UTIL_DSP>1</UTIL_DSP>
-<FF>105</FF>
+<UTIL_DSP>17</UTIL_DSP>
+<FF>6194</FF>
 <AVAIL_FF>141120</AVAIL_FF>
-<UTIL_FF>~0</UTIL_FF>
-<LUT>372</LUT>
+<UTIL_FF>4</UTIL_FF>
+<LUT>7221</LUT>
 <AVAIL_LUT>70560</AVAIL_LUT>
-<UTIL_LUT>~0</UTIL_LUT>
+<UTIL_LUT>10</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>432</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -2485,7 +2485,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -2518,7 +2518,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>9</Bits>
+<Bits>7</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -2529,7 +2529,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>9</Bits>
+<Bits>7</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -2540,7 +2540,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -2592,63 +2592,63 @@
 <Module>
 <Name>k4_postprocess</Name>
 <Loops>
-<VITIS_LOOP_185_1></VITIS_LOOP_185_1>
+<VITIS_LOOP_450_1></VITIS_LOOP_450_1>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>2.70</ClockUncertainty>
-<EstimatedClockPeriod>6.464</EstimatedClockPeriod>
+<EstimatedClockPeriod>6.880</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>65538</Best-caseLatency>
-<Average-caseLatency>65538</Average-caseLatency>
-<Worst-caseLatency>65538</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.655 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.655 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.655 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>65536</PipelineInitiationInterval>
+<Best-caseLatency>4098</Best-caseLatency>
+<Average-caseLatency>4098</Average-caseLatency>
+<Worst-caseLatency>4098</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.980 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.980 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.980 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4096</PipelineInitiationInterval>
 <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_185_1>
-<Name>VITIS_LOOP_185_1</Name>
+<VITIS_LOOP_450_1>
+<Name>VITIS_LOOP_450_1</Name>
 <Slack>7.30</Slack>
-<TripCount>65536</TripCount>
+<TripCount>4096</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>65536</Latency>
-<AbsoluteTimeLatency>0.655 ms</AbsoluteTimeLatency>
+<Latency>4096</Latency>
+<AbsoluteTimeLatency>40.960 us</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>2</PipelineDepth>
 <PipelineType>yes</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_185_1>
+</VITIS_LOOP_450_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:185</SourceLocation>
+<SourceLocation>top.cpp:450</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_185_1>
-<Name>VITIS_LOOP_185_1</Name>
+<VITIS_LOOP_450_1>
+<Name>VITIS_LOOP_450_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:185</SourceLocation>
-</VITIS_LOOP_185_1>
+<SourceLocation>top.cpp:450</SourceLocation>
+</VITIS_LOOP_450_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>37</FF>
+<FF>288</FF>
 <AVAIL_FF>141120</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>370</LUT>
+<LUT>4296</LUT>
 <AVAIL_LUT>70560</AVAIL_LUT>
-<UTIL_LUT>~0</UTIL_LUT>
+<UTIL_LUT>6</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>432</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -2746,7 +2746,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -2801,7 +2801,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -2851,9 +2851,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>store_output</Name>
+<Name>store_output_wide</Name>
 <Loops>
-<VITIS_LOOP_193_1></VITIS_LOOP_193_1>
+<STORE_LOOP></STORE_LOOP>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -2862,52 +2862,52 @@
 <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>65545</Best-caseLatency>
-<Average-caseLatency>65545</Average-caseLatency>
-<Worst-caseLatency>65545</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.655 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.655 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.655 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>65536</PipelineInitiationInterval>
+<Best-caseLatency>4107</Best-caseLatency>
+<Average-caseLatency>4107</Average-caseLatency>
+<Worst-caseLatency>4107</Worst-caseLatency>
+<Best-caseRealTimeLatency>41.070 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>41.070 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>41.070 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4096</PipelineInitiationInterval>
 <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_193_1>
-<Name>VITIS_LOOP_193_1</Name>
+<STORE_LOOP>
+<Name>STORE_LOOP</Name>
 <Slack>7.30</Slack>
-<TripCount>65536</TripCount>
+<TripCount>4096</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>65543</Latency>
-<AbsoluteTimeLatency>0.655 ms</AbsoluteTimeLatency>
+<Latency>4105</Latency>
+<AbsoluteTimeLatency>41.050 us</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>9</PipelineDepth>
+<PipelineDepth>11</PipelineDepth>
 <PipelineType>yes</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_193_1>
+</STORE_LOOP>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:193</SourceLocation>
+<SourceLocation>top.cpp:346</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_193_1>
-<Name>VITIS_LOOP_193_1</Name>
+<STORE_LOOP>
+<Name>STORE_LOOP</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:192</SourceLocation>
-</VITIS_LOOP_193_1>
+<SourceLocation>top.cpp:342</SourceLocation>
+</STORE_LOOP>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>183</FF>
+<FF>479</FF>
 <AVAIL_FF>141120</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>179</LUT>
+<LUT>171</LUT>
 <AVAIL_LUT>70560</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -2924,7 +2924,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>store_output</Object>
+<Object>store_output_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2935,7 +2935,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>store_output</Object>
+<Object>store_output_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2946,7 +2946,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>store_output</Object>
+<Object>store_output_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2957,7 +2957,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>store_output</Object>
+<Object>store_output_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2968,7 +2968,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_continue</name>
-<Object>store_output</Object>
+<Object>store_output_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2979,7 +2979,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>store_output</Object>
+<Object>store_output_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2990,7 +2990,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>store_output</Object>
+<Object>store_output_wide</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3227,7 +3227,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>512</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -3238,7 +3238,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>4</Bits>
+<Bits>64</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -3447,7 +3447,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>512</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -3568,7 +3568,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -3626,37 +3626,37 @@
 <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>65616</Best-caseLatency>
-<Average-caseLatency>65616</Average-caseLatency>
-<Worst-caseLatency>65616</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.656 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.656 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.656 ms</Worst-caseRealTimeLatency>
-<DataflowPipelineThroughput>65536</DataflowPipelineThroughput>
-<PipelineInitiationInterval>65536</PipelineInitiationInterval>
+<Best-caseLatency>4185</Best-caseLatency>
+<Average-caseLatency>4185</Average-caseLatency>
+<Worst-caseLatency>4185</Worst-caseLatency>
+<Best-caseRealTimeLatency>41.850 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>41.850 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>41.850 us</Worst-caseRealTimeLatency>
+<DataflowPipelineThroughput>4096</DataflowPipelineThroughput>
+<PipelineInitiationInterval>4096</PipelineInitiationInterval>
 <PipelineType>dataflow</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:224</SourceLocation>
+<SourceLocation>top.cpp:482</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>6</BRAM_18K>
+<BRAM_18K>29</BRAM_18K>
 <AVAIL_BRAM>432</AVAIL_BRAM>
-<UTIL_BRAM>1</UTIL_BRAM>
-<DSP>4</DSP>
+<UTIL_BRAM>6</UTIL_BRAM>
+<DSP>64</DSP>
 <AVAIL_DSP>360</AVAIL_DSP>
-<UTIL_DSP>1</UTIL_DSP>
-<FF>8704</FF>
+<UTIL_DSP>17</UTIL_DSP>
+<FF>13200</FF>
 <AVAIL_FF>141120</AVAIL_FF>
-<UTIL_FF>6</UTIL_FF>
-<LUT>9323</LUT>
+<UTIL_FF>9</UTIL_FF>
+<LUT>30666</LUT>
 <AVAIL_LUT>70560</AVAIL_LUT>
-<UTIL_LUT>13</UTIL_LUT>
+<UTIL_LUT>43</UTIL_LUT>
 <URAM>0</URAM>
 <AVAIL_URAM>0</AVAIL_URAM>
 <UTIL_URAM>0</UTIL_URAM>
@@ -4071,7 +4071,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>512</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -4083,7 +4083,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>4</Bits>
+<Bits>64</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -4311,7 +4311,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>512</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -4611,7 +4611,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>512</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -4623,7 +4623,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>4</Bits>
+<Bits>64</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -4851,7 +4851,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>32</Bits>
+<Bits>512</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -5001,7 +5001,7 @@
 <FIFOInst>
 <Name>s0_a_U</Name>
 <ParentInst></ParentInst>
-<StaticDepth>160</StaticDepth>
+<StaticDepth>64</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>
 <Interface>clk</Interface>
@@ -5031,7 +5031,7 @@
 <FIFOInst>
 <Name>s1_U</Name>
 <ParentInst></ParentInst>
-<StaticDepth>160</StaticDepth>
+<StaticDepth>64</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
 <InterfaceList>
 <Interface>clk</Interface>

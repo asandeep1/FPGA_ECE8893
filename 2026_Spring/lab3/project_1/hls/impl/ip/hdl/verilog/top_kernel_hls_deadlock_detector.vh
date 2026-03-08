@@ -203,12 +203,12 @@
     wire token_clear;
     reg [8:0] origin;
 
-reg [15:0] trans_in_cnt_0;// for process load_input_U0
+reg [15:0] trans_in_cnt_0;// for process load_input_wide_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_in_cnt_0 <= 16'h0;
     end
-    else if (load_input_U0.start_write == 1'b1) begin
+    else if (load_input_wide_U0.start_write == 1'b1) begin
         trans_in_cnt_0 <= trans_in_cnt_0 + 16'h1;
     end
     else begin
@@ -216,12 +216,12 @@ always @(negedge dl_reset or posedge dl_clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_0;// for process load_input_U0
+reg [15:0] trans_out_cnt_0;// for process load_input_wide_U0
 always @(negedge dl_reset or posedge dl_clock) begin
     if (~dl_reset) begin
          trans_out_cnt_0 <= 16'h0;
     end
-    else if (load_input_U0.ap_done == 1'b1 && load_input_U0.ap_continue == 1'b1) begin
+    else if (load_input_wide_U0.ap_done == 1'b1 && load_input_wide_U0.ap_continue == 1'b1) begin
         trans_out_cnt_0 <= trans_out_cnt_0 + 16'h1;
     end
     else begin
@@ -377,7 +377,7 @@ end
 
     assign proc_0_data_FIFO_blk[0] = 1'b0 | (~entry_proc_U0.out_r_c_blk_n);
     assign proc_0_data_PIPO_blk[0] = 1'b0;
-    assign proc_0_start_FIFO_blk[0] = 1'b0 | (~start_for_store_output_U0_U.if_full_n & entry_proc_U0.ap_start & ~entry_proc_U0.real_start & (trans_in_cnt_5 == trans_out_cnt_5) & ~start_for_store_output_U0_U.if_read);
+    assign proc_0_start_FIFO_blk[0] = 1'b0 | (~start_for_store_output_wide_U0_U.if_full_n & entry_proc_U0.ap_start & ~entry_proc_U0.real_start & (trans_in_cnt_5 == trans_out_cnt_5) & ~start_for_store_output_wide_U0_U.if_read);
     assign proc_0_TLF_FIFO_blk[0] = 1'b0;
     assign proc_0_input_sync_blk[0] = 1'b0;
     assign proc_0_output_sync_blk[0] = 1'b0;
@@ -386,7 +386,7 @@ end
     assign proc_0_data_PIPO_blk[1] = 1'b0;
     assign proc_0_start_FIFO_blk[1] = 1'b0;
     assign proc_0_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_0_input_sync_blk[1] = 1'b0 | (ap_sync_entry_proc_U0_ap_ready & entry_proc_U0.ap_idle & ~ap_sync_load_input_U0_ap_ready);
+    assign proc_0_input_sync_blk[1] = 1'b0 | (ap_sync_entry_proc_U0_ap_ready & entry_proc_U0.ap_idle & ~ap_sync_load_input_wide_U0_ap_ready);
     assign proc_0_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_0[1] = dl_detect_out ? proc_dep_vld_vec_0_reg[1] : (proc_0_data_FIFO_blk[1] | proc_0_data_PIPO_blk[1] | proc_0_start_FIFO_blk[1] | proc_0_TLF_FIFO_blk[1] | proc_0_input_sync_blk[1] | proc_0_output_sync_blk[1]);
     always @ (negedge dl_reset or posedge dl_clock) begin
@@ -410,7 +410,7 @@ end
     assign dep_chan_data_0_1 = out_chan_dep_data_0;
     assign token_0_1 = token_out_vec_0[1];
 
-    // Process: load_input_U0
+    // Process: load_input_wide_U0
     top_kernel_hls_deadlock_detect_unit #(9, 1, 2, 2) top_kernel_hls_deadlock_detect_unit_1 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -426,9 +426,9 @@ end
         .token_out_vec(token_out_vec_1),
         .dl_detect_out(dl_in_vec[1]));
 
-    assign proc_1_data_FIFO_blk[0] = 1'b0 | (~load_input_U0.s_in_blk_n);
+    assign proc_1_data_FIFO_blk[0] = 1'b0 | (~load_input_wide_U0.s_in_blk_n);
     assign proc_1_data_PIPO_blk[0] = 1'b0;
-    assign proc_1_start_FIFO_blk[0] = 1'b0 | (~start_for_k0_preprocess_U0_U.if_full_n & load_input_U0.ap_start & ~load_input_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~start_for_k0_preprocess_U0_U.if_read);
+    assign proc_1_start_FIFO_blk[0] = 1'b0 | (~start_for_k0_preprocess_U0_U.if_full_n & load_input_wide_U0.ap_start & ~load_input_wide_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~start_for_k0_preprocess_U0_U.if_read);
     assign proc_1_TLF_FIFO_blk[0] = 1'b0;
     assign proc_1_input_sync_blk[0] = 1'b0;
     assign proc_1_output_sync_blk[0] = 1'b0;
@@ -437,7 +437,7 @@ end
     assign proc_1_data_PIPO_blk[1] = 1'b0;
     assign proc_1_start_FIFO_blk[1] = 1'b0;
     assign proc_1_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_1_input_sync_blk[1] = 1'b0 | (ap_sync_load_input_U0_ap_ready & load_input_U0.ap_idle & ~ap_sync_entry_proc_U0_ap_ready);
+    assign proc_1_input_sync_blk[1] = 1'b0 | (ap_sync_load_input_wide_U0_ap_ready & load_input_wide_U0.ap_idle & ~ap_sync_entry_proc_U0_ap_ready);
     assign proc_1_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_1[1] = dl_detect_out ? proc_dep_vld_vec_1_reg[1] : (proc_1_data_FIFO_blk[1] | proc_1_data_PIPO_blk[1] | proc_1_start_FIFO_blk[1] | proc_1_TLF_FIFO_blk[1] | proc_1_input_sync_blk[1] | proc_1_output_sync_blk[1]);
     always @ (negedge dl_reset or posedge dl_clock) begin
@@ -793,7 +793,7 @@ end
     assign dep_chan_data_7_8 = out_chan_dep_data_7;
     assign token_7_8 = token_out_vec_7[1];
 
-    // Process: store_output_U0
+    // Process: store_output_wide_U0
     top_kernel_hls_deadlock_detect_unit #(9, 8, 2, 2) top_kernel_hls_deadlock_detect_unit_8 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -809,14 +809,14 @@ end
         .token_out_vec(token_out_vec_8),
         .dl_detect_out(dl_in_vec[8]));
 
-    assign proc_8_data_FIFO_blk[0] = 1'b0 | (~store_output_U0.out_r_blk_n);
+    assign proc_8_data_FIFO_blk[0] = 1'b0 | (~store_output_wide_U0.out_r_blk_n);
     assign proc_8_data_PIPO_blk[0] = 1'b0;
-    assign proc_8_start_FIFO_blk[0] = 1'b0 | (~start_for_store_output_U0_U.if_empty_n & store_output_U0.ap_idle & ~start_for_store_output_U0_U.if_write);
+    assign proc_8_start_FIFO_blk[0] = 1'b0 | (~start_for_store_output_wide_U0_U.if_empty_n & store_output_wide_U0.ap_idle & ~start_for_store_output_wide_U0_U.if_write);
     assign proc_8_TLF_FIFO_blk[0] = 1'b0;
     assign proc_8_input_sync_blk[0] = 1'b0;
     assign proc_8_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_8[0] = dl_detect_out ? proc_dep_vld_vec_8_reg[0] : (proc_8_data_FIFO_blk[0] | proc_8_data_PIPO_blk[0] | proc_8_start_FIFO_blk[0] | proc_8_TLF_FIFO_blk[0] | proc_8_input_sync_blk[0] | proc_8_output_sync_blk[0]);
-    assign proc_8_data_FIFO_blk[1] = 1'b0 | (~store_output_U0.s_out_blk_n);
+    assign proc_8_data_FIFO_blk[1] = 1'b0 | (~store_output_wide_U0.s_out_blk_n);
     assign proc_8_data_PIPO_blk[1] = 1'b0;
     assign proc_8_start_FIFO_blk[1] = 1'b0;
     assign proc_8_TLF_FIFO_blk[1] = 1'b0;

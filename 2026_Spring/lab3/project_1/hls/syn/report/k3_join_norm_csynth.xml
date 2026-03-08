@@ -22,50 +22,50 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>65540</Best-caseLatency>
-<Average-caseLatency>65540</Average-caseLatency>
-<Worst-caseLatency>65540</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.655 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.655 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.655 ms</Worst-caseRealTimeLatency>
-<Interval-min>65536</Interval-min>
-<Interval-max>65536</Interval-max>
+<Best-caseLatency>4154</Best-caseLatency>
+<Average-caseLatency>4154</Average-caseLatency>
+<Worst-caseLatency>4154</Worst-caseLatency>
+<Best-caseRealTimeLatency>41.540 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>41.540 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>41.540 us</Worst-caseRealTimeLatency>
+<Interval-min>4096</Interval-min>
+<Interval-max>4096</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_173_1_VITIS_LOOP_176_2>
+<VITIS_LOOP_433_1_VITIS_LOOP_436_2>
 <Slack>7.30</Slack>
-<TripCount>65536</TripCount>
+<TripCount>4096</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>65538</Latency>
-<AbsoluteTimeLatency>655380</AbsoluteTimeLatency>
+<Latency>4152</Latency>
+<AbsoluteTimeLatency>41520</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>4</PipelineDepth>
+<PipelineDepth>58</PipelineDepth>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_173_1_VITIS_LOOP_176_2>
+</VITIS_LOOP_433_1_VITIS_LOOP_436_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:176</SourceLocation>
+<SourceLocation>top.cpp:436</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_173_1_VITIS_LOOP_176_2>
-<Name>VITIS_LOOP_173_1_VITIS_LOOP_176_2</Name>
+<VITIS_LOOP_433_1_VITIS_LOOP_436_2>
+<Name>VITIS_LOOP_433_1_VITIS_LOOP_436_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:176</SourceLocation>
-</VITIS_LOOP_173_1_VITIS_LOOP_176_2>
+<SourceLocation>top.cpp:436</SourceLocation>
+</VITIS_LOOP_433_1_VITIS_LOOP_436_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<DSP>4</DSP>
-<FF>105</FF>
-<LUT>372</LUT>
+<DSP>64</DSP>
+<FF>6194</FF>
+<LUT>7221</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -252,7 +252,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -285,7 +285,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>9</Bits>
+<Bits>7</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -296,7 +296,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>9</Bits>
+<Bits>7</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -307,7 +307,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>

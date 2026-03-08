@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.1.1
-| Date         : Mon Mar  2 20:05:04 2026
+| Date         : Sun Mar  8 16:01:45 2026
 | Host         : ece-linlabsrv01
 | Design       : checkpoint_bd_0_wrapper
 | Device       : xczu3eg-sbva484-1-E-
@@ -22,11 +22,11 @@ Number of global clocks: 1
 ********************************
 Clock Net Route Info (CRP Input)
 ********************************
-Clock 1: bd_0_i/hls_inst/inst/k2_stats_U0/sdiv_50ns_35s_50_54_1_U16/top_kernel_sdiv_50ns_35s_50_54_1_divider_u/E[0]_bufg_place
+Clock 1: bd_0_i/hls_inst/inst/k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/E[0]_bufg_place
 	Clock source type: BUFGCE
-	Clock source region: X1Y1
-	Clock regions with locked loads: X0Y0 X0Y1 X1Y0 X1Y1 
-	initial rect ((0, 0), (1, 1))
+	Clock source region: X1Y2
+	Clock regions with locked loads: X0Y0 X0Y1 X0Y2 X1Y0 X1Y1 X1Y2 
+	initial rect ((0, 0), (1, 2))
 
 
 
@@ -50,11 +50,11 @@ Number of global clocks: 1
 ********************************
 Clock Net Route Info (CRP Input)
 ********************************
-Clock 1: bd_0_i/hls_inst/inst/k2_stats_U0/sdiv_50ns_35s_50_54_1_U16/top_kernel_sdiv_50ns_35s_50_54_1_divider_u/E[0]
+Clock 1: bd_0_i/hls_inst/inst/k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/E[0]
 	Clock source type: BUFGCE
-	Clock source region: X1Y1
-	Clock regions with locked loads: X0Y0 X0Y1 X1Y0 X1Y1 
-	initial rect ((0, 0), (1, 1))
+	Clock source region: X1Y2
+	Clock regions with locked loads: X0Y0 X0Y1 X0Y2 X1Y0 X1Y1 X1Y2 
+	initial rect ((0, 0), (1, 2))
 
 
 

@@ -22,49 +22,49 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>65537</Best-caseLatency>
-<Average-caseLatency>65537</Average-caseLatency>
-<Worst-caseLatency>65537</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.655 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.655 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.655 ms</Worst-caseRealTimeLatency>
-<Interval-min>65536</Interval-min>
-<Interval-max>65536</Interval-max>
+<Best-caseLatency>4097</Best-caseLatency>
+<Average-caseLatency>4097</Average-caseLatency>
+<Worst-caseLatency>4097</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.970 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.970 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.970 us</Worst-caseRealTimeLatency>
+<Interval-min>4096</Interval-min>
+<Interval-max>4096</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_130_1>
+<VITIS_LOOP_371_1>
 <Slack>7.30</Slack>
-<TripCount>65536</TripCount>
+<TripCount>4096</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>65535</Latency>
-<AbsoluteTimeLatency>655350</AbsoluteTimeLatency>
+<Latency>4095</Latency>
+<AbsoluteTimeLatency>40950</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>1</PipelineDepth>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_130_1>
+</VITIS_LOOP_371_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:130</SourceLocation>
+<SourceLocation>top.cpp:371</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_130_1>
-<Name>VITIS_LOOP_130_1</Name>
+<VITIS_LOOP_371_1>
+<Name>VITIS_LOOP_371_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:130</SourceLocation>
-</VITIS_LOOP_130_1>
+<SourceLocation>top.cpp:371</SourceLocation>
+</VITIS_LOOP_371_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>19</FF>
-<LUT>269</LUT>
+<FF>15</FF>
+<LUT>2766</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -197,7 +197,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -252,7 +252,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>20</Bits>
+<Bits>512</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>

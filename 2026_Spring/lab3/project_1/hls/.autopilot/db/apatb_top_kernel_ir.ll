@@ -8,27 +8,29 @@ target triple = "fpga64-xilinx-none"
 %"struct.ssdm_int<20, true>" = type { i20 }
 
 ; Function Attrs: noinline
-define void @apatb_top_kernel_ir(%"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="65536" "maxi" %in, %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"* noalias nocapture nonnull "fpga.decayed.dim.hint"="65536" "maxi" %out) local_unnamed_addr #0 {
+define void @apatb_top_kernel_ir(%"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"* noalias nocapture nonnull readonly "maxi" %in, %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"* noalias nocapture nonnull "maxi" %out) local_unnamed_addr #0 {
 entry:
   %0 = bitcast %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"* %in to [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]*
   %1 = call i8* @malloc(i64 262144)
   %in_copy = bitcast i8* %1 to [65536 x i20]*
-  %2 = bitcast %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"* %out to [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]*
-  %3 = call i8* @malloc(i64 262144)
-  %out_copy = bitcast i8* %3 to [65536 x i20]*
-  call fastcc void @copy_in([65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* nonnull %0, [65536 x i20]* %in_copy, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* nonnull %2, [65536 x i20]* %out_copy)
-  call void @apatb_top_kernel_hw([65536 x i20]* %in_copy, [65536 x i20]* %out_copy)
-  call void @copy_back([65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %0, [65536 x i20]* %in_copy, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %2, [65536 x i20]* %out_copy)
+  %2 = getelementptr [65536 x i20], [65536 x i20]* %in_copy, i64 0, i64 0
+  %3 = bitcast %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"* %out to [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]*
+  %4 = call i8* @malloc(i64 262144)
+  %out_copy = bitcast i8* %4 to [65536 x i20]*
+  %5 = getelementptr [65536 x i20], [65536 x i20]* %out_copy, i64 0, i64 0
+  call fastcc void @copy_in([65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* nonnull %0, [65536 x i20]* %in_copy, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* nonnull %3, [65536 x i20]* %out_copy)
+  call void @apatb_top_kernel_hw(i20* %2, i20* %5)
+  call void @copy_back([65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %0, [65536 x i20]* %in_copy, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %3, [65536 x i20]* %out_copy)
   call void @free(i8* %1)
-  call void @free(i8* %3)
+  call void @free(i8* %4)
   ret void
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
 define internal fastcc void @copy_in([65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* readonly "unpacked"="0", [65536 x i20]* nocapture "unpacked"="1.0", [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* readonly "unpacked"="2", [65536 x i20]* nocapture "unpacked"="3.0") unnamed_addr #1 {
 entry:
-  call fastcc void @"onebyonecpy_hls.p0a65536struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>.88"([65536 x i20]* %1, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %0)
-  call fastcc void @"onebyonecpy_hls.p0a65536struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>.88"([65536 x i20]* %3, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %2)
+  call fastcc void @"onebyonecpy_hls.p0a65536struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>.35"([65536 x i20]* %1, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %0)
+  call fastcc void @"onebyonecpy_hls.p0a65536struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>.35"([65536 x i20]* %3, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %2)
   ret void
 }
 
@@ -85,7 +87,7 @@ entry:
   br i1 %0, label %ret, label %copy
 
 copy:                                             ; preds = %entry
-  call void @"arraycpy_hls.p0a65536struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>.84"([65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* nonnull %dst, [65536 x i20]* %src, i64 65536)
+  call void @"arraycpy_hls.p0a65536struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>.31"([65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* nonnull %dst, [65536 x i20]* %src, i64 65536)
   br label %ret
 
 ret:                                              ; preds = %copy, %entry
@@ -93,7 +95,7 @@ ret:                                              ; preds = %copy, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define void @"arraycpy_hls.p0a65536struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>.84"([65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* "unpacked"="0" %dst, [65536 x i20]* nocapture readonly "unpacked"="1.0" %src, i64 "unpacked"="2" %num) local_unnamed_addr #2 {
+define void @"arraycpy_hls.p0a65536struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>.31"([65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* "unpacked"="0" %dst, [65536 x i20]* nocapture readonly "unpacked"="1.0" %src, i64 "unpacked"="2" %num) local_unnamed_addr #2 {
 entry:
   %0 = icmp eq [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %dst, null
   br i1 %0, label %ret, label %copy
@@ -125,13 +127,13 @@ ret:                                              ; preds = %copy.split, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define internal fastcc void @"onebyonecpy_hls.p0a65536struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>.88"([65536 x i20]* nocapture "unpacked"="0.0" %dst, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* readonly "unpacked"="1" %src) unnamed_addr #4 {
+define internal fastcc void @"onebyonecpy_hls.p0a65536struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>.35"([65536 x i20]* nocapture "unpacked"="0.0" %dst, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* readonly "unpacked"="1" %src) unnamed_addr #4 {
 entry:
   %0 = icmp eq [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %src, null
   br i1 %0, label %ret, label %copy
 
 copy:                                             ; preds = %entry
-  call void @"arraycpy_hls.p0a65536struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>.91"([65536 x i20]* %dst, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* nonnull %src, i64 65536)
+  call void @"arraycpy_hls.p0a65536struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>.38"([65536 x i20]* %dst, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* nonnull %src, i64 65536)
   br label %ret
 
 ret:                                              ; preds = %copy, %entry
@@ -139,7 +141,7 @@ ret:                                              ; preds = %copy, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define void @"arraycpy_hls.p0a65536struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>.91"([65536 x i20]* nocapture "unpacked"="0.0" %dst, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* readonly "unpacked"="1" %src, i64 "unpacked"="2" %num) local_unnamed_addr #2 {
+define void @"arraycpy_hls.p0a65536struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>.38"([65536 x i20]* nocapture "unpacked"="0.0" %dst, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* readonly "unpacked"="1" %src, i64 "unpacked"="2" %num) local_unnamed_addr #2 {
 entry:
   %0 = icmp eq [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %src, null
   br i1 %0, label %ret, label %copy
@@ -170,7 +172,7 @@ ret:                                              ; preds = %copy.split, %entry
   ret void
 }
 
-declare void @apatb_top_kernel_hw([65536 x i20]*, [65536 x i20]*)
+declare void @apatb_top_kernel_hw(i20*, i20*)
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
 define internal fastcc void @copy_back([65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* "unpacked"="0", [65536 x i20]* nocapture readonly "unpacked"="1.0", [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* "unpacked"="2", [65536 x i20]* nocapture readonly "unpacked"="3.0") unnamed_addr #3 {
@@ -181,19 +183,21 @@ entry:
 
 declare void @top_kernel_hw_stub(%"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"* noalias nocapture nonnull readonly, %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"* noalias nocapture nonnull)
 
-define void @top_kernel_hw_stub_wrapper([65536 x i20]*, [65536 x i20]*) #5 {
+define void @top_kernel_hw_stub_wrapper(i20*, i20*) #5 {
 entry:
   %2 = call i8* @malloc(i64 262144)
   %3 = bitcast i8* %2 to [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]*
-  %4 = call i8* @malloc(i64 262144)
-  %5 = bitcast i8* %4 to [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]*
-  call void @copy_out([65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %3, [65536 x i20]* %0, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %5, [65536 x i20]* %1)
-  %6 = bitcast [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %3 to %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"*
-  %7 = bitcast [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %5 to %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"*
-  call void @top_kernel_hw_stub(%"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"* %6, %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"* %7)
-  call void @copy_in([65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %3, [65536 x i20]* %0, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %5, [65536 x i20]* %1)
+  %4 = bitcast i20* %0 to [65536 x i20]*
+  %5 = call i8* @malloc(i64 262144)
+  %6 = bitcast i8* %5 to [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]*
+  %7 = bitcast i20* %1 to [65536 x i20]*
+  call void @copy_out([65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %3, [65536 x i20]* %4, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %6, [65536 x i20]* %7)
+  %8 = bitcast [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %3 to %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"*
+  %9 = bitcast [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %6 to %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"*
+  call void @top_kernel_hw_stub(%"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"* %8, %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"* %9)
+  call void @copy_in([65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %3, [65536 x i20]* %4, [65536 x %"struct.ap_fixed<20, 6, AP_RND, AP_SAT, 0>"]* %6, [65536 x i20]* %7)
   call void @free(i8* %2)
-  call void @free(i8* %4)
+  call void @free(i8* %5)
   ret void
 }
 

@@ -1,0 +1,1414 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+
+****** Vivado v2025.1.1 (64-bit)
+  **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
+  **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+  **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+  **** Start of session at: Sun Mar  8 03:22:45 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 35123
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/software/xilinx/2025.1.1/data/ip'.
+Command: synth_design -top bd_0_hls_inst_0 -part xczu3eg-sbva484-1-e -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 622572
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2913.652 ; gain = 137.578 ; free physical = 58472 ; free virtual = 186011
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_control_s_axi' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_control_s_axi.v:217]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_control_s_axi' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_load' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_fifo' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_srl' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_srl' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_fifo' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_fifo__parameterized0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_mem' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:2354]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_mem' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:2354]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_fifo__parameterized0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_load' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_read' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:782]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_fifo__parameterized1' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_srl__parameterized0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_srl__parameterized0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_fifo__parameterized1' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_burst_converter' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:1036]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_burst_sequential' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:1642]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_reg_slice' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_reg_slice' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_burst_sequential' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:1642]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_burst_converter' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:1036]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_reg_slice__parameterized0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_reg_slice__parameterized0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_read' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:782]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_store' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_fifo' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_srl' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_srl' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_fifo' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized1' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized1' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized1' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized1' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized2' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized2' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized2' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized2' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized3' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized3' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized3' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized3' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_store' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_write' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:1099]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_burst_converter' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:1394]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_burst_sequential' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2000]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_reg_slice' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_reg_slice' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_burst_sequential' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2000]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_burst_converter' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:1394]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_throttle' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2353]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized4' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized4' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized4' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized4' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_reg_slice__parameterized0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_reg_slice__parameterized0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_reg_slice__parameterized1' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_reg_slice__parameterized1' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_throttle' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2353]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_reg_slice__parameterized2' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_reg_slice__parameterized2' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_write' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:1099]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_gmem1_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_entry_proc' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_entry_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_entry_proc' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_entry_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_load_input_wide' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_load_input_wide.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_flow_control_loop_pipe' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_flow_control_loop_pipe.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_flow_control_loop_pipe' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_flow_control_loop_pipe.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_load_input_wide' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_load_input_wide.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k0_preprocess' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_k0_preprocess.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k0_preprocess' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_k0_preprocess.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k_split' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_k_split.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k_split' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_k_split.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k1_transform' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_k1_transform.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_sparsemux_7_2_20_1_1' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_sparsemux_7_2_20_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_sparsemux_7_2_20_1_1' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_sparsemux_7_2_20_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k1_transform' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_k1_transform.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k2_stats' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_k2_stats.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k2_stats' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_k2_stats.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k3_join_norm' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_k3_join_norm.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_mul_34s_30s_64_1_1' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_mul_34s_30s_64_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_mul_34s_30s_64_1_1' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_mul_34s_30s_64_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_sdiv_50ns_34s_50_54_1' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_sdiv_50ns_34s_50_54_1.v:74]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_sdiv_50ns_34s_50_54_1_divider' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_sdiv_50ns_34s_50_54_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_sdiv_50ns_34s_50_54_1_divider' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_sdiv_50ns_34s_50_54_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_sdiv_50ns_34s_50_54_1' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_sdiv_50ns_34s_50_54_1.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k3_join_norm' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_k3_join_norm.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k4_postprocess' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_k4_postprocess.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k4_postprocess' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_k4_postprocess.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_store_output_wide' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_store_output_wide.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_store_output_wide' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_store_output_wide.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_fifo_w64_d8_S' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w64_d8_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_fifo_w64_d8_S_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w64_d8_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_fifo_w64_d8_S_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w64_d8_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_fifo_w64_d8_S' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w64_d8_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_fifo_w512_d2_S' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w512_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_fifo_w512_d2_S_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w512_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_fifo_w512_d2_S_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w512_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_fifo_w512_d2_S' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w512_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_fifo_w512_d64_S' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w512_d64_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_fifo_w512_d64_S_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w512_d64_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_fifo_w512_d64_S_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w512_d64_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_fifo_w512_d64_S' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w512_d64_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_fifo_w28_d2_S' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w28_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_fifo_w28_d2_S_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w28_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_fifo_w28_d2_S_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w28_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_fifo_w28_d2_S' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_fifo_w28_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_store_output_wide_U0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_store_output_wide_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_store_output_wide_U0_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_store_output_wide_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_store_output_wide_U0_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_store_output_wide_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_store_output_wide_U0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_store_output_wide_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k0_preprocess_U0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k0_preprocess_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k0_preprocess_U0_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k0_preprocess_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k0_preprocess_U0_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k0_preprocess_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k0_preprocess_U0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k0_preprocess_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k_split_U0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k_split_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k_split_U0_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k_split_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k_split_U0_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k_split_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k_split_U0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k_split_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k1_transform_U0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k1_transform_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k1_transform_U0_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k1_transform_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k1_transform_U0_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k1_transform_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k1_transform_U0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k1_transform_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k2_stats_U0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k2_stats_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k2_stats_U0_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k2_stats_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k2_stats_U0_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k2_stats_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k2_stats_U0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k2_stats_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k3_join_norm_U0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k3_join_norm_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k3_join_norm_U0_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k3_join_norm_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k3_join_norm_U0_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k3_join_norm_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k3_join_norm_U0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k3_join_norm_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k4_postprocess_U0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k4_postprocess_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k4_postprocess_U0_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k4_postprocess_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k4_postprocess_U0_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k4_postprocess_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k4_postprocess_U0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_start_for_k4_postprocess_U0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_control_s_axi.v:288]
+WARNING: [Synth 8-6014] Unused sequential element loop[49].divisor_tmp_reg[50] was removed.  [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_sdiv_50ns_34s_50_54_1.v:57]
+WARNING: [Synth 8-6014] Unused sequential element remd_reg was removed.  [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2d64/hdl/verilog/top_kernel_sdiv_50ns_34s_50_54_1.v:146]
+WARNING: [Synth 8-7129] Port addr[1] in module top_kernel_fifo_w512_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module top_kernel_fifo_w28_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_done_int in module top_kernel_flow_control_loop_pipe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_r_dout[5] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_r_dout[4] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_r_dout[3] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_r_dout[2] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_r_dout[1] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_r_dout[0] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_r_num_data_valid[3] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_r_num_data_valid[2] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_r_num_data_valid[1] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_r_num_data_valid[0] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_r_fifo_cap[3] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_r_fifo_cap[2] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_r_fifo_cap[1] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_r_fifo_cap[0] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_ARREADY in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RVALID in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[511] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[510] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[509] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[508] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[507] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[506] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[505] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[504] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[503] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[502] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[501] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[500] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[499] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[498] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[497] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[496] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[495] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[494] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[493] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[492] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[491] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[490] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[489] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[488] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[487] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[486] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[485] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[484] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[483] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[482] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[481] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[480] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[479] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[478] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[477] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[476] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[475] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[474] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[473] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[472] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[471] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[470] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[469] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[468] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[467] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[466] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[465] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[464] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[463] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[462] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[461] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[460] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[459] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[458] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[457] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[456] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[455] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[454] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[453] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[452] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[451] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[450] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[449] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[448] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[447] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[446] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[445] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[444] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[443] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[442] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[441] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[440] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[439] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[438] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[437] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[436] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[435] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[434] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[433] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[432] in module top_kernel_store_output_wide is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[431] in module top_kernel_store_output_wide is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3114.137 ; gain = 338.062 ; free physical = 58279 ; free virtual = 185818
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3114.137 ; gain = 338.062 ; free physical = 58272 ; free virtual = 185818
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3114.137 ; gain = 338.062 ; free physical = 58272 ; free virtual = 185818
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3114.137 ; gain = 0.000 ; free physical = 57950 ; free virtual = 185490
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/top_kernel_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3369.344 ; gain = 29.867 ; free physical = 58300 ; free virtual = 185846
+Finished Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/top_kernel_ooc.xdc] for cell 'inst'
+Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3369.344 ; gain = 0.000 ; free physical = 58115 ; free virtual = 185661
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'top_kernel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'top_kernel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_kernel_gmem0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_kernel_gmem0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_kernel_gmem1_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_kernel_gmem1_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_kernel_gmem1_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_kernel_gmem1_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:55 ; elapsed = 00:00:50 . Memory (MB): peak = 3409.238 ; gain = 633.164 ; free physical = 55111 ; free virtual = 182711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   55 Bit       Adders := 16    
+	   2 Input   54 Bit       Adders := 16    
+	   3 Input   54 Bit       Adders := 32    
+	   3 Input   53 Bit       Adders := 16    
+	   2 Input   52 Bit       Adders := 2     
+	   3 Input   51 Bit       Adders := 50    
+	   2 Input   50 Bit       Adders := 2     
+	   2 Input   37 Bit       Adders := 16    
+	   2 Input   36 Bit       Adders := 16    
+	   2 Input   34 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input   29 Bit       Adders := 2     
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 96    
+	   2 Input   12 Bit       Adders := 12    
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 18    
+	   2 Input    4 Bit       Adders := 10    
+	   2 Input    3 Bit       Adders := 18    
+	   2 Input    2 Bit       Adders := 18    
+	   2 Input    1 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 334   
+	   3 Input      1 Bit         XORs := 49    
++---Registers : 
+	              576 Bit    Registers := 1     
+	              514 Bit    Registers := 3     
+	              512 Bit    Registers := 11    
+	               97 Bit    Registers := 4     
+	               96 Bit    Registers := 2     
+	               73 Bit    Registers := 2     
+	               64 Bit    Registers := 9     
+	               58 Bit    Registers := 1     
+	               52 Bit    Registers := 2     
+	               50 Bit    Registers := 55    
+	               49 Bit    Registers := 49    
+	               36 Bit    Registers := 2     
+	               34 Bit    Registers := 51    
+	               32 Bit    Registers := 7     
+	               28 Bit    Registers := 5     
+	               20 Bit    Registers := 118   
+	               17 Bit    Registers := 16    
+	               12 Bit    Registers := 8     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 13    
+	                5 Bit    Registers := 15    
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 13    
+	                2 Bit    Registers := 74    
+	                1 Bit    Registers := 366   
++---Multipliers : 
+	              30x34  Multipliers := 16    
++---RAMs : 
+	             127K Bit	(255 X 514 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  514 Bit        Muxes := 1     
+	   2 Input  512 Bit        Muxes := 7     
+	   2 Input   97 Bit        Muxes := 2     
+	   2 Input   73 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 8     
+	   2 Input   52 Bit        Muxes := 2     
+	   2 Input   50 Bit        Muxes := 3     
+	   2 Input   49 Bit        Muxes := 49    
+	   2 Input   36 Bit        Muxes := 16    
+	   3 Input   36 Bit        Muxes := 16    
+	   2 Input   34 Bit        Muxes := 1     
+	   2 Input   29 Bit        Muxes := 1     
+	   2 Input   28 Bit        Muxes := 2     
+	   3 Input   28 Bit        Muxes := 1     
+	   3 Input   20 Bit        Muxes := 32    
+	   5 Input   20 Bit        Muxes := 32    
+	   2 Input   20 Bit        Muxes := 18    
+	   3 Input   17 Bit        Muxes := 32    
+	   4 Input   17 Bit        Muxes := 16    
+	   4 Input   12 Bit        Muxes := 2     
+	   4 Input    9 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 11    
+	   2 Input    5 Bit        Muxes := 10    
+	   2 Input    4 Bit        Muxes := 6     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 9     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 121   
+	   3 Input    2 Bit        Muxes := 18    
+	   4 Input    2 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 288   
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U48/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U48/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U48/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U48/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U48/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U48/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U48/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U48/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U48/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U48/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U48/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U48/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U48/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U48/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U48/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U48/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U48/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U48/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U48/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U48/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U48/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U48/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U48/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U48/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U48/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U48/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U48/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U48/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U49/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U49/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U49/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U49/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U49/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U49/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U49/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U49/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U49/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U49/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U49/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U49/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U49/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U49/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U49/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U49/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U49/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U49/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U49/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U49/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U49/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U49/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U49/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U49/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U49/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U49/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U49/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U49/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U50/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U50/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U50/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U50/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U50/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U50/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U50/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U50/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U50/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U50/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U50/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U50/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U50/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U50/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U50/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U50/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U50/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U50/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U50/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U50/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U50/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U50/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U50/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U50/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U50/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U50/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U50/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U50/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U51/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U51/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U51/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U51/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U51/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U51/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U51/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U51/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U51/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U51/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U51/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U51/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U51/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U51/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U51/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U51/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U51/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U51/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U51/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U51/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U51/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U51/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U51/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U51/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U51/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U51/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U51/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U51/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U52/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U52/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U52/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U52/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U52/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U52/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U52/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U52/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U52/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U52/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U52/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U52/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U52/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U52/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U52/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U52/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U52/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U52/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U52/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U52/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U52/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U52/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U52/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U52/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U52/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U52/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U52/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U52/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U53/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U53/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U53/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U53/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U53/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U53/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U53/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U53/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U53/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U53/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U53/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U53/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U53/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U53/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U53/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U53/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U53/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U53/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U53/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U53/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U53/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U53/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U53/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U53/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U53/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U53/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U53/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U53/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U54/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U54/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U54/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U54/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U54/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U54/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U54/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U54/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U54/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U54/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U54/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U54/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U54/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U54/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U54/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U54/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U54/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U54/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U54/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U54/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U54/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U54/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U54/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U54/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U54/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U54/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U54/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U54/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U55/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U55/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U55/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U55/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U55/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U55/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U55/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U55/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U55/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U55/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U55/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U55/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U55/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U55/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U55/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U55/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U55/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U55/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U55/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U55/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U55/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U55/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U55/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U55/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U55/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U55/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U55/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U55/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U56/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U56/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U56/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U56/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U56/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U56/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U56/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U56/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U56/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U56/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U56/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U56/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U56/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U56/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U56/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U56/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U56/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U56/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U56/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U56/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U56/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U56/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U56/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U56/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U56/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U56/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U56/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U56/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U57/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U57/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U57/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U57/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U57/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U57/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U57/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U57/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U57/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U57/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U57/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U57/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U57/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U57/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U57/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U57/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U57/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U57/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U57/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U57/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U57/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U57/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U57/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U57/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U57/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U57/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U57/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U57/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U58/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U58/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U58/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U58/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U58/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U58/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U58/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U58/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U58/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U58/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U58/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U58/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U58/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U58/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U58/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U58/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U58/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U58/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U58/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U58/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U58/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U58/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U58/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U58/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U58/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U58/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U58/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U58/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U59/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U59/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U59/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U59/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U59/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U59/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U59/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U59/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U59/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U59/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U59/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U59/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U59/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U59/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U59/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U59/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U59/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U59/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U59/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U59/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U59/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U59/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U59/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U59/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U59/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U59/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U59/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U59/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U60/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U60/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U60/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U60/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U60/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U60/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U60/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U60/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U60/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U60/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U60/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U60/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U60/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U60/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U60/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U60/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U60/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U60/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U60/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U60/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U60/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U60/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U60/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U60/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U60/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U60/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U60/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U60/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U61/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U61/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U61/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U61/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U61/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U61/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U61/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U61/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U61/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U61/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U61/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U61/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U61/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U61/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U61/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U61/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U61/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U61/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U61/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U61/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U61/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U61/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U61/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U61/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U61/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U61/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U61/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U61/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U62/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U62/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U62/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U62/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U62/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U62/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U62/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U62/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U62/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U62/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U62/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U62/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U62/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U62/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U62/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U62/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U62/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U62/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U62/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U62/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U62/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U62/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U62/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U62/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U62/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U62/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U62/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U62/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U63/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_34s_30s_64_1_1_U63/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U63/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U63/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U63/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U63/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U63/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U63/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U63/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U63/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U63/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U63/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U63/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U63/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U63/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U63/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U63/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U63/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U63/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U63/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U63/tmp_product.
+DSP Report: Generating DSP mul_34s_30s_64_1_1_U63/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_34s_30s_64_1_1_U63/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U63/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U63/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U63/tmp_product.
+DSP Report: operator mul_34s_30s_64_1_1_U63/tmp_product is absorbed into DSP mul_34s_30s_64_1_1_U63/tmp_product.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module top_kernel_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module top_kernel_control_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:03 ; elapsed = 00:02:12 . Memory (MB): peak = 3413.324 ; gain = 637.250 ; free physical = 49782 ; free virtual = 177504
+---------------------------------------------------------------------------------
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U48/tmp_product_0 : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U48/tmp_product_0 : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U49/tmp_product_6 : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U49/tmp_product_6 : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U50/tmp_product_8 : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U50/tmp_product_8 : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U51/tmp_product_a : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U51/tmp_product_a : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U52/tmp_product_c : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U52/tmp_product_c : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U53/tmp_product_e : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U53/tmp_product_e : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U54/tmp_product_10 : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U54/tmp_product_10 : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U55/tmp_product_12 : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U55/tmp_product_12 : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U56/tmp_product_14 : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U56/tmp_product_14 : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U57/tmp_product_16 : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U57/tmp_product_16 : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U58/tmp_product_18 : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U58/tmp_product_18 : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U59/tmp_product_1a : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U59/tmp_product_1a : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U60/tmp_product_1c : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U60/tmp_product_1c : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U61/tmp_product_1e : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U61/tmp_product_1e : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U62/tmp_product_20 : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U62/tmp_product_20 : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U63/tmp_product_22 : 0 0 : 2719 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U63/tmp_product_22 : 0 1 : 1835 4554 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U48/tmp_product_3 : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U48/tmp_product_3 : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U49/tmp_product_7 : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U49/tmp_product_7 : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U50/tmp_product_9 : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U50/tmp_product_9 : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U51/tmp_product_b : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U51/tmp_product_b : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U52/tmp_product_d : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U52/tmp_product_d : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U53/tmp_product_f : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U53/tmp_product_f : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U54/tmp_product_11 : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U54/tmp_product_11 : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U55/tmp_product_13 : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U55/tmp_product_13 : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U56/tmp_product_15 : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U56/tmp_product_15 : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U57/tmp_product_17 : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U57/tmp_product_17 : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U58/tmp_product_19 : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U58/tmp_product_19 : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U59/tmp_product_1b : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U59/tmp_product_1b : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U60/tmp_product_1d : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U60/tmp_product_1d : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U61/tmp_product_1f : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U61/tmp_product_1f : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U62/tmp_product_21 : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U62/tmp_product_21 : 0 1 : 1730 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U63/tmp_product_23 : 0 0 : 2567 4297 : Used 1 time 0
+ Sort Area is top_kernel__GB0 mul_34s_30s_64_1_1_U63/tmp_product_23 : 0 1 : 1730 4297 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-----------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name            | RTL Object                                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-----------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/i_4/gmem0_m_axi_U | load_unit_0/buff_rdata/U_fifo_mem/mem_reg | 255 x 514(READ_FIRST)  | W |   | 255 x 514(WRITE_FIRST) |   | R | Port A and B     | 1      | 7      |                 | 
++-----------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name             | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A2*B            | 18     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 17     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | (PCIN>>17)+A*B2 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
++------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:10 ; elapsed = 00:02:34 . Memory (MB): peak = 3852.875 ; gain = 1076.801 ; free physical = 49059 ; free virtual = 176801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:18 ; elapsed = 00:02:42 . Memory (MB): peak = 3949.906 ; gain = 1173.832 ; free physical = 49489 ; free virtual = 177548
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-----------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name            | RTL Object                                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-----------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/i_4/gmem0_m_axi_U | load_unit_0/buff_rdata/U_fifo_mem/mem_reg | 255 x 514(READ_FIRST)  | W |   | 255 x 514(WRITE_FIRST) |   | R | Port A and B     | 1      | 7      |                 | 
++-----------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:33 ; elapsed = 00:02:57 . Memory (MB): peak = 3980.164 ; gain = 1204.090 ; free physical = 48310 ; free virtual = 179952
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:42 ; elapsed = 00:03:07 . Memory (MB): peak = 4088.977 ; gain = 1312.902 ; free physical = 47801 ; free virtual = 179424
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:42 ; elapsed = 00:03:07 . Memory (MB): peak = 4088.977 ; gain = 1312.902 ; free physical = 47781 ; free virtual = 179404
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:45 ; elapsed = 00:03:10 . Memory (MB): peak = 4088.977 ; gain = 1312.902 ; free physical = 47528 ; free virtual = 179154
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:45 ; elapsed = 00:03:10 . Memory (MB): peak = 4088.977 ; gain = 1312.902 ; free physical = 47519 ; free virtual = 179144
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:46 ; elapsed = 00:03:11 . Memory (MB): peak = 4088.977 ; gain = 1312.902 ; free physical = 47497 ; free virtual = 179120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:46 ; elapsed = 00:03:11 . Memory (MB): peak = 4088.977 ; gain = 1312.902 ; free physical = 47488 ; free virtual = 179111
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].sign_tmp_reg[50][1]      | 51     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][49] | 50     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][48] | 49     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][47] | 48     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][46] | 47     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][45] | 46     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][44] | 45     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][43] | 44     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][42] | 43     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][41] | 42     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][40] | 41     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][39] | 40     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][38] | 39     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][37] | 38     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][36] | 37     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][35] | 36     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][34] | 35     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][33] | 34     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][32] | 33     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][31] | 32     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][30] | 31     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][29] | 30     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][28] | 29     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][27] | 28     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][26] | 27     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][25] | 26     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][24] | 25     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][23] | 24     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][22] | 23     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][21] | 22     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][20] | 21     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][19] | 20     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][18] | 19     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][17] | 18     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][16] | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][15] | 16     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][14] | 15     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][13] | 14     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][12] | 13     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][11] | 12     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][10] | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][9]  | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][8]  | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][7]  | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][6]  | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][5]  | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][4]  | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][3]  | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_join_norm_U0/sdiv_50ns_34s_50_54_1_U64/top_kernel_sdiv_50ns_34s_50_54_1_divider_u/loop[49].dividend_tmp_reg[50][2]  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | store_output_wide_U0/icmp_ln152_reg_442_pp0_iter7_reg_reg[0]                                                           | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | store_output_wide_U0/ap_loop_exit_ready_pp0_iter7_reg_reg                                                              | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+-----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name        | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[5]      | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[14]     | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[14]     | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[2]      | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__4     | mem_reg[30]     | 576    | 576        | 0      | 576     | 0      | 0      | 0      | 
+|dsrl__5     | mem_reg[14]     | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__6     | mem_reg[2]      | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__7     | mem_reg[14]     | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
+|dsrl__8     | SRL_SIG_reg[7]  | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
+|dsrl__9     | SRL_SIG_reg[63] | 512    | 512        | 0      | 1024    | 512    | 0      | 0      | 
+|dsrl__10    | SRL_SIG_reg[6]  | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+-----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name             | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A'*B          | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 30     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | A*B'          | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel_k3_join_norm | PCIN>>17+A*B' | 17     | 10     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
++------------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |  1146|
+|2     |DSP_ALU         |    64|
+|3     |DSP_A_B_DATA    |    64|
+|5     |DSP_C_DATA      |    64|
+|6     |DSP_MULTIPLIER  |    64|
+|7     |DSP_M_DATA      |    64|
+|8     |DSP_OUTPUT      |    64|
+|9     |DSP_PREADD      |    64|
+|10    |DSP_PREADD_DATA |    64|
+|11    |LUT1            |  1255|
+|12    |LUT2            |  3084|
+|13    |LUT3            |  4517|
+|14    |LUT4            |  2511|
+|15    |LUT5            |  1734|
+|16    |LUT6            |  1329|
+|17    |MUXF7           |   592|
+|18    |RAMB18E2        |     1|
+|19    |RAMB36E2        |     7|
+|20    |SRL16E          |   258|
+|21    |SRLC32E         |  1572|
+|22    |FDRE            | 11626|
+|23    |FDSE            |   995|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:46 ; elapsed = 00:03:11 . Memory (MB): peak = 4088.977 ; gain = 1312.902 ; free physical = 47480 ; free virtual = 179103
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:19 ; elapsed = 00:02:50 . Memory (MB): peak = 4088.977 ; gain = 1025.805 ; free physical = 55620 ; free virtual = 187289
+Synthesis Optimization Complete : Time (s): cpu = 00:03:47 ; elapsed = 00:03:13 . Memory (MB): peak = 4088.977 ; gain = 1312.902 ; free physical = 55665 ; free virtual = 187293
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.35 . Memory (MB): peak = 4088.977 ; gain = 0.000 ; free physical = 55434 ; free virtual = 187094
+INFO: [Netlist 29-17] Analyzing 1802 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][0]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][0]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][100]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][100]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][101]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][101]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][102]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][102]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][103]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][103]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][104]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][104]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][105]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][105]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][106]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][106]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][107]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][107]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][108]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][108]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][109]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][109]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][10]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][10]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][110]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][110]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][111]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][111]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][112]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][112]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][113]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][113]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][114]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][114]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][115]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][115]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][11]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][11]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][128]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][128]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][129]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][129]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][12]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][12]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][130]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][130]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][131]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][131]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][132]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][132]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][133]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][133]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][134]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][134]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][135]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][135]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][136]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][136]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][137]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][137]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][138]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][138]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][139]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][139]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][13]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][13]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][140]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][140]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][141]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][141]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][142]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][142]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][143]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][143]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][144]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][144]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][145]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][145]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][146]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][146]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][147]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][147]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][14]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][14]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][15]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][15]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][160]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][160]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][161]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][161]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][162]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][162]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][163]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][163]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][164]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][164]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][165]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][165]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][166]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][166]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][167]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][167]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][168]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][168]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][169]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][169]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][16]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][16]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][170]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][170]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][171]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][171]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][172]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][172]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][173]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][173]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][174]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][174]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][175]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][175]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][176]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][176]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][177]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][177]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][178]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][178]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][179]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][179]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][17]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][17]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][18]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][18]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][192]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][192]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][193]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][193]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][194]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][194]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][195]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][195]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][196]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][196]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][197]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][197]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][198]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][198]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][199]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][199]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][19]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][19]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][1]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][1]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][200]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][200]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][201]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][201]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][202]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][202]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][203]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][203]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][204]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][204]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][205]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][205]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][206]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][206]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][207]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][207]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][208]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][208]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][209]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][209]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][210]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][210]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][211]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][211]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][224]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][224]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][225]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][225]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][226]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][226]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][227]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][227]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][228]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][228]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][229]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][229]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][230]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][230]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][231]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][231]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][232]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][232]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][233]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][233]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][234]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][234]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][235]_mux. inst/s0_a_U/U_top_kernel_fifo_w512_d64_S_ShiftReg/SRL_SIG_reg[63][235]_mux. 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Common 17-14] Message 'Constraints 18-8706' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4088.977 ; gain = 0.000 ; free physical = 53276 ; free virtual = 184956
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 64 instances
+
+Synth Design complete | Checksum: 411581ae
+INFO: [Common 17-83] Releasing license: Synthesis
+287 Infos, 155 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:05 ; elapsed = 00:03:31 . Memory (MB): peak = 4088.977 ; gain = 2186.043 ; free physical = 53284 ; free virtual = 184951
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 8665.454; main = 2961.394; forked = 6519.968
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 22802.457; main = 4063.211; forked = 19389.129
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.26 . Memory (MB): peak = 4088.977 ; gain = 0.000 ; free physical = 53156 ; free virtual = 184850
+INFO: [Common 17-1381] The checkpoint '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = b96a5d79f6ebf240
+INFO: [Coretcl 2-1174] Renamed 99 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.1 . Memory (MB): peak = 4088.977 ; gain = 0.000 ; free physical = 51660 ; free virtual = 183409
+INFO: [Common 17-1381] The checkpoint '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  8 03:26:44 2026...
