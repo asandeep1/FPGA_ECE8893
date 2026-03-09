@@ -470,8 +470,8 @@ rt::set_parameter DefIncludePreRoutes {true}
 rt::set_parameter DefMatchEscapedComponent {false}
 rt::set_parameter DefTreatPlacedUnknownComponentAsBlockage {true}
 rt::set_parameter DefTreatUnknownComponentAsBlockage {true}
-rt::set_parameter SdcFileName {}
-rt::set_parameter SdcLineNum {}
+rt::set_parameter SdcFileName {/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/top_kernel_ooc.xdc}
+rt::set_parameter SdcLineNum {5}
 rt::set_parameter WriteDefGCellGrids {1}
 rt::set_parameter WriteDefGenomeExpansionFactor {3.000000}
 rt::set_parameter WriteDefGenomeRegions {0}
@@ -1142,7 +1142,7 @@ rt::set_parameter checkPullLastSrlRegister {true}
 rt::set_parameter checkRemovableInstInSimplify {true}
 rt::set_parameter checkSignMismatchInCounter {true}
 rt::set_parameter cleanUpNetlistSpeedupFirstCall {true}
-rt::set_parameter cleanupAfterRegenerate {false}
+rt::set_parameter cleanupAfterRegenerate {true}
 rt::set_parameter cleanupDanglingModules {true}
 rt::set_parameter cleanupEquivalentRegRemovalByPrepRam {true}
 rt::set_parameter cleanupInReinfer {false}
@@ -1237,7 +1237,7 @@ rt::set_parameter copyRangeCarrySaveInGrouper {true}
 rt::set_parameter copyUseDspAttrFromReg {true}
 rt::set_parameter createDualPortRomPartition {true}
 rt::set_parameter createGenomesForOutsideGenomeInsts {true}
-rt::set_parameter createUndoSyncControlPartition {true}
+rt::set_parameter createUndoSyncControlPartition {false}
 rt::set_parameter criticalSigOpt {true}
 rt::set_parameter criticalSigOptAttrInReinfer {true}
 rt::set_parameter criticalSigOptInDFG {true}
@@ -1575,7 +1575,7 @@ rt::set_parameter hoptPostCollapseMuxChain {2}
 rt::set_parameter ignoreMaxFanoutGlobally {false}
 rt::set_parameter ignoreMaxFanoutOnTimingAssertInsts {false}
 rt::set_parameter implementLGUsingLut4 {true}
-rt::set_parameter inTimingModeInAreaOpt {0}
+rt::set_parameter inTimingModeInAreaOpt {1}
 rt::set_parameter inactiveRamWriteEnableOpt {true}
 rt::set_parameter incrSynthPrintChangedModulesThreshold {10}
 rt::set_parameter incrTruthTable {false}
@@ -1726,7 +1726,7 @@ rt::set_parameter maxBramCascChainLengthTD {4}
 rt::set_parameter maxBufgInsertForClockGating {4}
 rt::set_parameter maxClockBufferCount {12}
 rt::set_parameter maxDRamPrimAddrWidth {-1}
-rt::set_parameter maxDissolveSize {1000}
+rt::set_parameter maxDissolveSize {5000}
 rt::set_parameter maxDspLimitSeep {0}
 rt::set_parameter maxFanOutForPartitionnedRegisters {100}
 rt::set_parameter maxFanoutReplicateDriverOfLUT1 {true}
@@ -1808,7 +1808,7 @@ rt::set_parameter noRecodeOutsideMuxpart {true}
 rt::set_parameter noRemapForMapBuf31 {true}
 rt::set_parameter noTimingForRemap {false}
 rt::set_parameter nodeListTraversal {true}
-rt::set_parameter numRunAlgo {0}
+rt::set_parameter numRunAlgo {4}
 rt::set_parameter numRunAlgoFix {true}
 rt::set_parameter oasysTimerQuery {0}
 rt::set_parameter olympusDistributedRamSupport {true}
@@ -2077,7 +2077,7 @@ rt::set_parameter synRetimingPattern {0}
 rt::set_parameter syncControlMinFanout {1}
 rt::set_parameter syncRstMinFanout {2147483647}
 rt::set_parameter synthDesignFanoutLimitSwitchIsUsed {false}
-rt::set_parameter synthParallelFlowWithDynamicThreads {true}
+rt::set_parameter synthParallelFlowWithDynamicThreads {false}
 rt::set_parameter tagCounterRegisters {false}
 rt::set_parameter tdRamGenAreaPenaltyThresh {150.000000}
 rt::set_parameter thresholdForAutoCMRom {10}
@@ -2649,9 +2649,9 @@ rt::set_parameter findTimerName {false}
 rt::set_parameter sdcCurrentInstance {true}
 rt::set_parameter trustInstanceAddedInCache {true}
 # Group: optimize
-rt::set_parameter abcOptScript {resyn2;fpga -K %d; sweep;}
+rt::set_parameter abcOptScript {strash; balance;fpga -K %d; sweep;}
 rt::set_parameter abcOptScriptCollapse {resyn2;dch -f;resyn2}
-rt::set_parameter abcOptScriptGates {resyn2;map;}
+rt::set_parameter abcOptScriptGates {strash; balance -d;resyn2;map}
 rt::set_parameter abcOptScriptGatesArea {strash;dch -f;amap}
 rt::set_parameter acceptInternalGMoves {false}
 rt::set_parameter allowHillClimb {false}
@@ -2666,7 +2666,7 @@ rt::set_parameter areaOptIncrementalCritRange {200}
 rt::set_parameter areaOptIncrementalMergePartitions {false}
 rt::set_parameter areaOptMaxDatapathArea {2500}
 rt::set_parameter areaOptMaxLogicArea {-1}
-rt::set_parameter areaOptMaxPasses {2}
+rt::set_parameter areaOptMaxPasses {1}
 rt::set_parameter areaOptMergePartitions {true}
 rt::set_parameter areaOptRepartitionGraph {false}
 rt::set_parameter areaOptSetUndrivenInputTo {0}
@@ -3657,7 +3657,7 @@ rt::set_parameter delayThreshold {0.500000}
 rt::set_parameter deleteNonDrivingEdgeForInOut {true}
 rt::set_parameter depthThresholdForDpCluster {100}
 rt::set_parameter depthUtilDebug {0}
-rt::set_parameter designWorstSlack {-1000000}
+rt::set_parameter designWorstSlack {0}
 rt::set_parameter detectPlusOneAsNonLossy {false}
 rt::set_parameter detectorDebugLevel {0}
 rt::set_parameter detectorOffsetting {true}
@@ -4069,7 +4069,7 @@ rt::set_parameter newMultNodeCheckForFsm {true}
 rt::set_parameter newMuxPartition {true}
 rt::set_parameter newSetAttribute {true}
 rt::set_parameter newUniquifyInstUserNames {false}
-rt::set_parameter nlOptInAreaOpt {0}
+rt::set_parameter nlOptInAreaOpt {2}
 rt::set_parameter noExtramRegenInOasys {true}
 rt::set_parameter noPass2 {false}
 rt::set_parameter noSynRetiming {false}
@@ -4122,8 +4122,8 @@ rt::set_parameter parallelDFGOptPass2 {false}
 rt::set_parameter parallelDebug {false}
 rt::set_parameter parallelGenomeList {}
 rt::set_parameter parallelStuckFFsRemoval {495}
-rt::set_parameter parallelTimingMode {false}
-rt::set_parameter parallelTimingModeRound {0}
+rt::set_parameter parallelTimingMode {true}
+rt::set_parameter parallelTimingModeRound {1}
 rt::set_parameter partSeries {8}
 rt::set_parameter partitionBitArrayAccess {false}
 rt::set_parameter partitionSBlockModule {true}
@@ -4283,7 +4283,7 @@ rt::set_parameter retainUnconnectedPinsForPrimBBox {true}
 rt::set_parameter retimeDfg {false}
 rt::set_parameter retimingAdder {true}
 rt::set_parameter retimingAdderInside {false}
-rt::set_parameter retimingDataPath {2}
+rt::set_parameter retimingDataPath {0}
 rt::set_parameter retimingDataPathMark {true}
 rt::set_parameter retimingDebugLevel {0}
 rt::set_parameter retimingDivider {true}
@@ -4561,7 +4561,7 @@ rt::set_parameter pushClocksToInputsToo {false}
 rt::set_parameter pushConstraintsInsideForSDCFile {false}
 rt::set_parameter repeaterAllowInverter {true}
 rt::set_parameter reportClockNetwork {0}
-rt::set_parameter reportLoop {true}
+rt::set_parameter reportLoop {false}
 rt::set_parameter reportStyle {soce}
 rt::set_parameter reportTricellsLoop {false}
 rt::set_parameter resetCellDelay {false}

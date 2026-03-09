@@ -1566,3 +1566,39 @@ Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:51 ; elapsed = 
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:48 ; elapsed = 00:02:54 . Memory (MB): peak = 4252.637 ; gain = 1477.039 ; free physical = 53499 ; free virtual = 132859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------+-------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name   | RTL Object                                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++--------------+-------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+|gmem0_m_axi_U | load_unit_0/buff_rdata/U_fifo_mem/mem_reg | 255 x 1026(READ_FIRST) | W |   | 255 x 1026(WRITE_FIRST) |   | R | Port A and B     | 1      | 14     |                 | 
+|sb_join_U     | U_top_kernel_fifo_w512_d512_A_ram/mem_reg | 511 x 512(READ_FIRST)  | W |   | 511 x 512(WRITE_FIRST)  |   | R | Port A and B     | 1      | 7      |                 | 
+|sa_join_U     | U_top_kernel_fifo_w512_d512_A_ram/mem_reg | 511 x 512(READ_FIRST)  | W |   | 511 x 512(WRITE_FIRST)  |   | R | Port A and B     | 1      | 7      |                 | 
++--------------+-------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/i_8/sb_join_U/U_top_kernel_fifo_w512_d512_A_ram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_8/sb_join_U/U_top_kernel_fifo_w512_d512_A_ram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_8/sb_join_U/U_top_kernel_fifo_w512_d512_A_ram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_8/sb_join_U/U_top_kernel_fifo_w512_d512_A_ram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_8/sb_join_U/U_top_kernel_fifo_w512_d512_A_ram/mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_8/sb_join_U/U_top_kernel_fifo_w512_d512_A_ram/mem_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_8/sb_join_U/U_top_kernel_fifo_w512_d512_A_ram/mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_8/sa_join_U/U_top_kernel_fifo_w512_d512_A_ram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_8/sa_join_U/U_top_kernel_fifo_w512_d512_A_ram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_8/sa_join_U/U_top_kernel_fifo_w512_d512_A_ram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_8/sa_join_U/U_top_kernel_fifo_w512_d512_A_ram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_8/sa_join_U/U_top_kernel_fifo_w512_d512_A_ram/mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_8/sa_join_U/U_top_kernel_fifo_w512_d512_A_ram/mem_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_8/sa_join_U/U_top_kernel_fifo_w512_d512_A_ram/mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
