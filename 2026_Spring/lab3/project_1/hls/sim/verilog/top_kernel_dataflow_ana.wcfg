@@ -53,133 +53,101 @@
             <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/entry_proc_U0/entry_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
             <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/entry_proc_U0/entry_proc_U0_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_input_wide_U0/load_input_wide_U0_activity">
-            <obj_property name="label">load_input_wide_U0_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/load_dual_U0_activity">
+            <obj_property name="label">load_dual_U0_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">load_input_wide_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">load_input_wide_U0_activity</obj_property>
+            <obj_property name="ElementShortName">load_dual_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">load_dual_U0_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/load_input_wide_U0/load_input_wide_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/load_input_wide_U0/load_input_wide_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/load_input_wide_U0/load_input_wide_U0_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/load_dual_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/load_dual_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/load_dual_U0_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/k0_preprocess_U0_activity">
-            <obj_property name="label">k0_preprocess_U0_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/super_kernel_32_U0_activity">
+            <obj_property name="label">super_kernel_32_U0_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">k0_preprocess_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">k0_preprocess_U0_activity</obj_property>
+            <obj_property name="ElementShortName">super_kernel_32_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">super_kernel_32_U0_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/k0_preprocess_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/k0_preprocess_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/k0_preprocess_U0_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/super_kernel_32_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/super_kernel_32_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/super_kernel_32_U0_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/k_split_U0_activity">
-            <obj_property name="label">k_split_U0_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/k2_stats_dual_U0_activity">
+            <obj_property name="label">k2_stats_dual_U0_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">k_split_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">k_split_U0_activity</obj_property>
+            <obj_property name="ElementShortName">k2_stats_dual_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">k2_stats_dual_U0_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/k_split_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/k_split_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/k_split_U0_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/k2_stats_dual_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/k2_stats_dual_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/k2_stats_dual_U0_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/k1_transform_U0_activity">
-            <obj_property name="label">k1_transform_U0_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/k3_dual_norm_U0_activity">
+            <obj_property name="label">k3_dual_norm_U0_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">k1_transform_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">k1_transform_U0_activity</obj_property>
+            <obj_property name="ElementShortName">k3_dual_norm_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">k3_dual_norm_U0_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/k1_transform_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/k1_transform_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/k1_transform_U0_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/k3_dual_norm_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/k3_dual_norm_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/k3_dual_norm_U0_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/k2_stats_U0_activity">
-            <obj_property name="label">k2_stats_U0_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/k4_dual_post_U0_activity">
+            <obj_property name="label">k4_dual_post_U0_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">k2_stats_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">k2_stats_U0_activity</obj_property>
+            <obj_property name="ElementShortName">k4_dual_post_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">k4_dual_post_U0_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/k2_stats_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/k2_stats_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/k2_stats_U0_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/k4_dual_post_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/k4_dual_post_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/k4_dual_post_U0_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/k3_join_norm_U0_activity">
-            <obj_property name="label">k3_join_norm_U0_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/store_dual_U0_activity">
+            <obj_property name="label">store_dual_U0_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">k3_join_norm_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">k3_join_norm_U0_activity</obj_property>
+            <obj_property name="ElementShortName">store_dual_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">store_dual_U0_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/k3_join_norm_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/k3_join_norm_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/k3_join_norm_U0_activity.dataflowTxTooltipData</obj_property>
-         </wvobject>
-         <wvobject type="group" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/k4_postprocess_U0_activity">
-            <obj_property name="label">k4_postprocess_U0_activity</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">k4_postprocess_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">k4_postprocess_U0_activity</obj_property>
-            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
-            <obj_property name="UseCustomSignalColor">true</obj_property>
-            <obj_property name="CustomSignalColor">turquoise</obj_property>
-            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/k4_postprocess_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/k4_postprocess_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/k4_postprocess_U0_activity.dataflowTxTooltipData</obj_property>
-         </wvobject>
-         <wvobject type="group" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/store_output_wide_U0_activity">
-            <obj_property name="label">store_output_wide_U0_activity</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">store_output_wide_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">store_output_wide_U0_activity</obj_property>
-            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
-            <obj_property name="UseCustomSignalColor">true</obj_property>
-            <obj_property name="CustomSignalColor">turquoise</obj_property>
-            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/store_output_wide_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/store_output_wide_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/store_output_wide_U0_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/store_dual_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/store_dual_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/store_dual_U0_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
       </wvobject>
    </wvobject>
@@ -194,37 +162,29 @@
          <obj_property name="ElementShortName">entry_proc_U0_activity</obj_property>
          <obj_property name="ObjectShortName">entry_proc_U0_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_input_wide_U0/load_input_wide_U0_activity">
-         <obj_property name="ElementShortName">load_input_wide_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">load_input_wide_U0_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/load_dual_U0_activity">
+         <obj_property name="ElementShortName">load_dual_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">load_dual_U0_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/k0_preprocess_U0_activity">
-         <obj_property name="ElementShortName">k0_preprocess_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">k0_preprocess_U0_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/super_kernel_32_U0_activity">
+         <obj_property name="ElementShortName">super_kernel_32_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">super_kernel_32_U0_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/k_split_U0_activity">
-         <obj_property name="ElementShortName">k_split_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">k_split_U0_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/k2_stats_dual_U0_activity">
+         <obj_property name="ElementShortName">k2_stats_dual_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">k2_stats_dual_U0_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/k1_transform_U0_activity">
-         <obj_property name="ElementShortName">k1_transform_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">k1_transform_U0_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/k3_dual_norm_U0_activity">
+         <obj_property name="ElementShortName">k3_dual_norm_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">k3_dual_norm_U0_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/k2_stats_U0_activity">
-         <obj_property name="ElementShortName">k2_stats_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">k2_stats_U0_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/k4_dual_post_U0_activity">
+         <obj_property name="ElementShortName">k4_dual_post_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">k4_dual_post_U0_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/k3_join_norm_U0_activity">
-         <obj_property name="ElementShortName">k3_join_norm_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">k3_join_norm_U0_activity</obj_property>
-      </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/k4_postprocess_U0_activity">
-         <obj_property name="ElementShortName">k4_postprocess_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">k4_postprocess_U0_activity</obj_property>
-      </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/store_output_wide_U0_activity">
-         <obj_property name="ElementShortName">store_output_wide_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">store_output_wide_U0_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/store_dual_U0_activity">
+         <obj_property name="ElementShortName">store_dual_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">store_dual_U0_activity</obj_property>
       </wvobject>
       <wvobject type="group" fp_name="AESL_inst_top_kernel_Handshake_group">
          <obj_property name="label">Block-level handshake</obj_property>
@@ -296,602 +256,644 @@
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="load_input_wide_U0_group">
-         <obj_property name="label">load_input_wide_U0</obj_property>
+      <wvobject type="group" fp_name="load_dual_U0_group">
+         <obj_property name="label">load_dual_U0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="load_input_wide_U0_Input_group">
+         <wvobject type="group" fp_name="load_dual_U0_Input_group">
             <obj_property name="label">Input Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="load_input_wide_U0_Handshake_group">
+         <wvobject type="group" fp_name="load_dual_U0_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_input_wide_U0/ap_start">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_input_wide_U0/real_start">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/real_start">
                <obj_property name="ElementShortName">real_start</obj_property>
                <obj_property name="ObjectShortName">real_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_input_wide_U0/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_input_wide_U0/ap_done">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_input_wide_U0/ap_continue">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/ap_continue">
                <obj_property name="ElementShortName">ap_continue</obj_property>
                <obj_property name="ObjectShortName">ap_continue</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="load_input_wide_U0_Output_group">
+         <wvobject type="group" fp_name="load_dual_U0_Output_group">
             <obj_property name="label">Output Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="s_in_group">
-               <obj_property name="label">s_in(s_in_U, FIFO)</obj_property>
+            <wvobject type="group" fp_name="sa_in_group">
+               <obj_property name="label">sa_in(sa_in_U, FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_input_wide_U0/s_in_blk_n">
-                  <obj_property name="ElementShortName">s_in_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s_in_blk_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/sa_in_blk_n">
+                  <obj_property name="ElementShortName">sa_in_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_in_blk_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_input_wide_U0/s_in_din">
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/sa_in_din">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_input_wide_U0/s_in_full_n">
-                  <obj_property name="ElementShortName">s_in_full_n</obj_property>
-                  <obj_property name="ObjectShortName">s_in_full_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/sa_in_full_n">
+                  <obj_property name="ElementShortName">sa_in_full_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_in_full_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_input_wide_U0/s_in_write">
-                  <obj_property name="ElementShortName">s_in_write</obj_property>
-                  <obj_property name="ObjectShortName">s_in_write</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/sa_in_write">
+                  <obj_property name="ElementShortName">sa_in_write</obj_property>
+                  <obj_property name="ObjectShortName">sa_in_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sb_in_group">
+               <obj_property name="label">sb_in(sb_in_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/sb_in_blk_n">
+                  <obj_property name="ElementShortName">sb_in_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_in_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/sb_in_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/sb_in_full_n">
+                  <obj_property name="ElementShortName">sb_in_full_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_in_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/load_dual_U0/sb_in_write">
+                  <obj_property name="ElementShortName">sb_in_write</obj_property>
+                  <obj_property name="ObjectShortName">sb_in_write</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="k0_preprocess_U0_group">
-         <obj_property name="label">k0_preprocess_U0</obj_property>
+      <wvobject type="group" fp_name="super_kernel_32_U0_group">
+         <obj_property name="label">super_kernel_32_U0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="k0_preprocess_U0_Input_group">
+         <wvobject type="group" fp_name="super_kernel_32_U0_Input_group">
             <obj_property name="label">Input Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="s_in_group">
-               <obj_property name="label">s_in(s_in_U, FIFO)</obj_property>
+            <wvobject type="group" fp_name="sa_in_group">
+               <obj_property name="label">sa_in(sa_in_U, FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/s_in_blk_n">
-                  <obj_property name="ElementShortName">s_in_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s_in_blk_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sa_in_blk_n">
+                  <obj_property name="ElementShortName">sa_in_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_in_blk_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/s_in_dout">
-                  <obj_property name="ElementShortName">s_in_dout[511:0]</obj_property>
-                  <obj_property name="ObjectShortName">s_in_dout[511:0]</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sa_in_dout">
+                  <obj_property name="ElementShortName">sa_in_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">sa_in_dout[511:0]</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/s_in_empty_n">
-                  <obj_property name="ElementShortName">s_in_empty_n</obj_property>
-                  <obj_property name="ObjectShortName">s_in_empty_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sa_in_empty_n">
+                  <obj_property name="ElementShortName">sa_in_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_in_empty_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/s_in_read">
-                  <obj_property name="ElementShortName">s_in_read</obj_property>
-                  <obj_property name="ObjectShortName">s_in_read</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sa_in_read">
+                  <obj_property name="ElementShortName">sa_in_read</obj_property>
+                  <obj_property name="ObjectShortName">sa_in_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sb_in_group">
+               <obj_property name="label">sb_in(sb_in_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sb_in_blk_n">
+                  <obj_property name="ElementShortName">sb_in_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_in_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sb_in_dout">
+                  <obj_property name="ElementShortName">sb_in_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">sb_in_dout[511:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sb_in_empty_n">
+                  <obj_property name="ElementShortName">sb_in_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_in_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sb_in_read">
+                  <obj_property name="ElementShortName">sb_in_read</obj_property>
+                  <obj_property name="ObjectShortName">sb_in_read</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="k0_preprocess_U0_Handshake_group">
+         <wvobject type="group" fp_name="super_kernel_32_U0_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/ap_start">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/real_start">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/real_start">
                <obj_property name="ElementShortName">real_start</obj_property>
                <obj_property name="ObjectShortName">real_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/ap_done">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/ap_continue">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/ap_continue">
                <obj_property name="ElementShortName">ap_continue</obj_property>
                <obj_property name="ObjectShortName">ap_continue</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="k0_preprocess_U0_Output_group">
+         <wvobject type="group" fp_name="super_kernel_32_U0_Output_group">
             <obj_property name="label">Output Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="s0_group">
-               <obj_property name="label">s0(s0_U, FIFO)</obj_property>
+            <wvobject type="group" fp_name="sa_stats_group">
+               <obj_property name="label">sa_stats(sa_stats_U, FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/s0_blk_n">
-                  <obj_property name="ElementShortName">s0_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s0_blk_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sa_stats_blk_n">
+                  <obj_property name="ElementShortName">sa_stats_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_stats_blk_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/s0_din">
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sa_stats_din">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/s0_full_n">
-                  <obj_property name="ElementShortName">s0_full_n</obj_property>
-                  <obj_property name="ObjectShortName">s0_full_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sa_stats_full_n">
+                  <obj_property name="ElementShortName">sa_stats_full_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_stats_full_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k0_preprocess_U0/s0_write">
-                  <obj_property name="ElementShortName">s0_write</obj_property>
-                  <obj_property name="ObjectShortName">s0_write</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sa_stats_write">
+                  <obj_property name="ElementShortName">sa_stats_write</obj_property>
+                  <obj_property name="ObjectShortName">sa_stats_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sa_join_group">
+               <obj_property name="label">sa_join(sa_join_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sa_join_blk_n">
+                  <obj_property name="ElementShortName">sa_join_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_join_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sa_join_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sa_join_full_n">
+                  <obj_property name="ElementShortName">sa_join_full_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_join_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sa_join_write">
+                  <obj_property name="ElementShortName">sa_join_write</obj_property>
+                  <obj_property name="ObjectShortName">sa_join_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sb_stats_group">
+               <obj_property name="label">sb_stats(sb_stats_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sb_stats_blk_n">
+                  <obj_property name="ElementShortName">sb_stats_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_stats_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sb_stats_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sb_stats_full_n">
+                  <obj_property name="ElementShortName">sb_stats_full_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_stats_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sb_stats_write">
+                  <obj_property name="ElementShortName">sb_stats_write</obj_property>
+                  <obj_property name="ObjectShortName">sb_stats_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sb_join_group">
+               <obj_property name="label">sb_join(sb_join_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sb_join_blk_n">
+                  <obj_property name="ElementShortName">sb_join_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_join_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sb_join_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sb_join_full_n">
+                  <obj_property name="ElementShortName">sb_join_full_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_join_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/super_kernel_32_U0/sb_join_write">
+                  <obj_property name="ElementShortName">sb_join_write</obj_property>
+                  <obj_property name="ObjectShortName">sb_join_write</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="k_split_U0_group">
-         <obj_property name="label">k_split_U0</obj_property>
+      <wvobject type="group" fp_name="k2_stats_dual_U0_group">
+         <obj_property name="label">k2_stats_dual_U0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="k_split_U0_Input_group">
+         <wvobject type="group" fp_name="k2_stats_dual_U0_Input_group">
             <obj_property name="label">Input Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="s0_group">
-               <obj_property name="label">s0(s0_U, FIFO)</obj_property>
+            <wvobject type="group" fp_name="sa_stats_group">
+               <obj_property name="label">sa_stats(sa_stats_U, FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/s0_blk_n">
-                  <obj_property name="ElementShortName">s0_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s0_blk_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/sa_stats_blk_n">
+                  <obj_property name="ElementShortName">sa_stats_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_stats_blk_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/s0_dout">
-                  <obj_property name="ElementShortName">s0_dout[511:0]</obj_property>
-                  <obj_property name="ObjectShortName">s0_dout[511:0]</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/sa_stats_dout">
+                  <obj_property name="ElementShortName">sa_stats_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">sa_stats_dout[511:0]</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/s0_empty_n">
-                  <obj_property name="ElementShortName">s0_empty_n</obj_property>
-                  <obj_property name="ObjectShortName">s0_empty_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/sa_stats_empty_n">
+                  <obj_property name="ElementShortName">sa_stats_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_stats_empty_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/s0_read">
-                  <obj_property name="ElementShortName">s0_read</obj_property>
-                  <obj_property name="ObjectShortName">s0_read</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/sa_stats_read">
+                  <obj_property name="ElementShortName">sa_stats_read</obj_property>
+                  <obj_property name="ObjectShortName">sa_stats_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sb_stats_group">
+               <obj_property name="label">sb_stats(sb_stats_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/sb_stats_blk_n">
+                  <obj_property name="ElementShortName">sb_stats_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_stats_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/sb_stats_dout">
+                  <obj_property name="ElementShortName">sb_stats_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">sb_stats_dout[511:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/sb_stats_empty_n">
+                  <obj_property name="ElementShortName">sb_stats_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_stats_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/sb_stats_read">
+                  <obj_property name="ElementShortName">sb_stats_read</obj_property>
+                  <obj_property name="ObjectShortName">sb_stats_read</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="k_split_U0_Handshake_group">
+         <wvobject type="group" fp_name="k2_stats_dual_U0_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/ap_start">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/real_start">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="k2_stats_dual_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="s_st_group">
+               <obj_property name="label">s_st(s_st_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/s_st_blk_n">
+                  <obj_property name="ElementShortName">s_st_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">s_st_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/s_st_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/s_st_full_n">
+                  <obj_property name="ElementShortName">s_st_full_n</obj_property>
+                  <obj_property name="ObjectShortName">s_st_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_dual_U0/s_st_write">
+                  <obj_property name="ElementShortName">s_st_write</obj_property>
+                  <obj_property name="ObjectShortName">s_st_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="k3_dual_norm_U0_group">
+         <obj_property name="label">k3_dual_norm_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="k3_dual_norm_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="s_st_group">
+               <obj_property name="label">s_st(s_st_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/s_st_blk_n">
+                  <obj_property name="ElementShortName">s_st_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">s_st_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/s_st_dout">
+                  <obj_property name="ElementShortName">s_st_dout[27:0]</obj_property>
+                  <obj_property name="ObjectShortName">s_st_dout[27:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/s_st_empty_n">
+                  <obj_property name="ElementShortName">s_st_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">s_st_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/s_st_read">
+                  <obj_property name="ElementShortName">s_st_read</obj_property>
+                  <obj_property name="ObjectShortName">s_st_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sa_join_group">
+               <obj_property name="label">sa_join(sa_join_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sa_join_blk_n">
+                  <obj_property name="ElementShortName">sa_join_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_join_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sa_join_dout">
+                  <obj_property name="ElementShortName">sa_join_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">sa_join_dout[511:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sa_join_empty_n">
+                  <obj_property name="ElementShortName">sa_join_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_join_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sa_join_read">
+                  <obj_property name="ElementShortName">sa_join_read</obj_property>
+                  <obj_property name="ObjectShortName">sa_join_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sb_join_group">
+               <obj_property name="label">sb_join(sb_join_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sb_join_blk_n">
+                  <obj_property name="ElementShortName">sb_join_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_join_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sb_join_dout">
+                  <obj_property name="ElementShortName">sb_join_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">sb_join_dout[511:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sb_join_empty_n">
+                  <obj_property name="ElementShortName">sb_join_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_join_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sb_join_read">
+                  <obj_property name="ElementShortName">sb_join_read</obj_property>
+                  <obj_property name="ObjectShortName">sb_join_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="k3_dual_norm_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/real_start">
                <obj_property name="ElementShortName">real_start</obj_property>
                <obj_property name="ObjectShortName">real_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/ap_done">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/ap_continue">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/ap_continue">
                <obj_property name="ElementShortName">ap_continue</obj_property>
                <obj_property name="ObjectShortName">ap_continue</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="k_split_U0_Output_group">
+         <wvobject type="group" fp_name="k3_dual_norm_U0_Output_group">
             <obj_property name="label">Output Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="s0_a_group">
-               <obj_property name="label">s0_a(s0_a_U, FIFO)</obj_property>
+            <wvobject type="group" fp_name="sa_norm_group">
+               <obj_property name="label">sa_norm(sa_norm_U, FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/s0_a_blk_n">
-                  <obj_property name="ElementShortName">s0_a_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s0_a_blk_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sa_norm_blk_n">
+                  <obj_property name="ElementShortName">sa_norm_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_norm_blk_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/s0_a_din">
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sa_norm_din">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/s0_a_full_n">
-                  <obj_property name="ElementShortName">s0_a_full_n</obj_property>
-                  <obj_property name="ObjectShortName">s0_a_full_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sa_norm_full_n">
+                  <obj_property name="ElementShortName">sa_norm_full_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_norm_full_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/s0_a_write">
-                  <obj_property name="ElementShortName">s0_a_write</obj_property>
-                  <obj_property name="ObjectShortName">s0_a_write</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sa_norm_write">
+                  <obj_property name="ElementShortName">sa_norm_write</obj_property>
+                  <obj_property name="ObjectShortName">sa_norm_write</obj_property>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="s0_b_group">
-               <obj_property name="label">s0_b(s0_b_U, FIFO)</obj_property>
+            <wvobject type="group" fp_name="sb_norm_group">
+               <obj_property name="label">sb_norm(sb_norm_U, FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/s0_b_blk_n">
-                  <obj_property name="ElementShortName">s0_b_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s0_b_blk_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sb_norm_blk_n">
+                  <obj_property name="ElementShortName">sb_norm_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_norm_blk_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/s0_b_din">
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sb_norm_din">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/s0_b_full_n">
-                  <obj_property name="ElementShortName">s0_b_full_n</obj_property>
-                  <obj_property name="ObjectShortName">s0_b_full_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sb_norm_full_n">
+                  <obj_property name="ElementShortName">sb_norm_full_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_norm_full_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k_split_U0/s0_b_write">
-                  <obj_property name="ElementShortName">s0_b_write</obj_property>
-                  <obj_property name="ObjectShortName">s0_b_write</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_dual_norm_U0/sb_norm_write">
+                  <obj_property name="ElementShortName">sb_norm_write</obj_property>
+                  <obj_property name="ObjectShortName">sb_norm_write</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="k1_transform_U0_group">
-         <obj_property name="label">k1_transform_U0</obj_property>
+      <wvobject type="group" fp_name="k4_dual_post_U0_group">
+         <obj_property name="label">k4_dual_post_U0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="k1_transform_U0_Input_group">
+         <wvobject type="group" fp_name="k4_dual_post_U0_Input_group">
             <obj_property name="label">Input Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="s0_a_group">
-               <obj_property name="label">s0_a(s0_a_U, FIFO)</obj_property>
+            <wvobject type="group" fp_name="sa_norm_group">
+               <obj_property name="label">sa_norm(sa_norm_U, FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/s0_a_blk_n">
-                  <obj_property name="ElementShortName">s0_a_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s0_a_blk_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sa_norm_blk_n">
+                  <obj_property name="ElementShortName">sa_norm_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_norm_blk_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/s0_a_dout">
-                  <obj_property name="ElementShortName">s0_a_dout[511:0]</obj_property>
-                  <obj_property name="ObjectShortName">s0_a_dout[511:0]</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sa_norm_dout">
+                  <obj_property name="ElementShortName">sa_norm_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">sa_norm_dout[511:0]</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/s0_a_empty_n">
-                  <obj_property name="ElementShortName">s0_a_empty_n</obj_property>
-                  <obj_property name="ObjectShortName">s0_a_empty_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sa_norm_empty_n">
+                  <obj_property name="ElementShortName">sa_norm_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_norm_empty_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/s0_a_read">
-                  <obj_property name="ElementShortName">s0_a_read</obj_property>
-                  <obj_property name="ObjectShortName">s0_a_read</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sa_norm_read">
+                  <obj_property name="ElementShortName">sa_norm_read</obj_property>
+                  <obj_property name="ObjectShortName">sa_norm_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sb_norm_group">
+               <obj_property name="label">sb_norm(sb_norm_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sb_norm_blk_n">
+                  <obj_property name="ElementShortName">sb_norm_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_norm_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sb_norm_dout">
+                  <obj_property name="ElementShortName">sb_norm_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">sb_norm_dout[511:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sb_norm_empty_n">
+                  <obj_property name="ElementShortName">sb_norm_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_norm_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sb_norm_read">
+                  <obj_property name="ElementShortName">sb_norm_read</obj_property>
+                  <obj_property name="ObjectShortName">sb_norm_read</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="k1_transform_U0_Handshake_group">
+         <wvobject type="group" fp_name="k4_dual_post_U0_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/ap_start">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/real_start">
-               <obj_property name="ElementShortName">real_start</obj_property>
-               <obj_property name="ObjectShortName">real_start</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/ap_done">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/ap_continue">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/ap_continue">
                <obj_property name="ElementShortName">ap_continue</obj_property>
                <obj_property name="ObjectShortName">ap_continue</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="k1_transform_U0_Output_group">
+         <wvobject type="group" fp_name="k4_dual_post_U0_Output_group">
             <obj_property name="label">Output Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="s1_group">
-               <obj_property name="label">s1(s1_U, FIFO)</obj_property>
+            <wvobject type="group" fp_name="sa_post_group">
+               <obj_property name="label">sa_post(sa_post_U, FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/s1_blk_n">
-                  <obj_property name="ElementShortName">s1_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s1_blk_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sa_post_blk_n">
+                  <obj_property name="ElementShortName">sa_post_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_post_blk_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/s1_din">
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sa_post_din">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/s1_full_n">
-                  <obj_property name="ElementShortName">s1_full_n</obj_property>
-                  <obj_property name="ObjectShortName">s1_full_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sa_post_full_n">
+                  <obj_property name="ElementShortName">sa_post_full_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_post_full_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k1_transform_U0/s1_write">
-                  <obj_property name="ElementShortName">s1_write</obj_property>
-                  <obj_property name="ObjectShortName">s1_write</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sa_post_write">
+                  <obj_property name="ElementShortName">sa_post_write</obj_property>
+                  <obj_property name="ObjectShortName">sa_post_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sb_post_group">
+               <obj_property name="label">sb_post(sb_post_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sb_post_blk_n">
+                  <obj_property name="ElementShortName">sb_post_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_post_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sb_post_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sb_post_full_n">
+                  <obj_property name="ElementShortName">sb_post_full_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_post_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_dual_post_U0/sb_post_write">
+                  <obj_property name="ElementShortName">sb_post_write</obj_property>
+                  <obj_property name="ObjectShortName">sb_post_write</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="k2_stats_U0_group">
-         <obj_property name="label">k2_stats_U0</obj_property>
+      <wvobject type="group" fp_name="store_dual_U0_group">
+         <obj_property name="label">store_dual_U0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="k2_stats_U0_Input_group">
-            <obj_property name="label">Input Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="s0_b_group">
-               <obj_property name="label">s0_b(s0_b_U, FIFO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/s0_b_blk_n">
-                  <obj_property name="ElementShortName">s0_b_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s0_b_blk_n</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/s0_b_dout">
-                  <obj_property name="ElementShortName">s0_b_dout[511:0]</obj_property>
-                  <obj_property name="ObjectShortName">s0_b_dout[511:0]</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/s0_b_empty_n">
-                  <obj_property name="ElementShortName">s0_b_empty_n</obj_property>
-                  <obj_property name="ObjectShortName">s0_b_empty_n</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/s0_b_read">
-                  <obj_property name="ElementShortName">s0_b_read</obj_property>
-                  <obj_property name="ObjectShortName">s0_b_read</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="k2_stats_U0_Handshake_group">
-            <obj_property name="label">Block-level handshake</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/ap_start">
-               <obj_property name="ElementShortName">ap_start</obj_property>
-               <obj_property name="ObjectShortName">ap_start</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/ap_ready">
-               <obj_property name="ElementShortName">ap_ready</obj_property>
-               <obj_property name="ObjectShortName">ap_ready</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/ap_done">
-               <obj_property name="ElementShortName">ap_done</obj_property>
-               <obj_property name="ObjectShortName">ap_done</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/ap_continue">
-               <obj_property name="ElementShortName">ap_continue</obj_property>
-               <obj_property name="ObjectShortName">ap_continue</obj_property>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="k2_stats_U0_Output_group">
-            <obj_property name="label">Output Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="s_stats_group">
-               <obj_property name="label">s_stats(s_stats_U, FIFO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/s_stats_blk_n">
-                  <obj_property name="ElementShortName">s_stats_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s_stats_blk_n</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/s_stats_din">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/s_stats_full_n">
-                  <obj_property name="ElementShortName">s_stats_full_n</obj_property>
-                  <obj_property name="ObjectShortName">s_stats_full_n</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k2_stats_U0/s_stats_write">
-                  <obj_property name="ElementShortName">s_stats_write</obj_property>
-                  <obj_property name="ObjectShortName">s_stats_write</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-      </wvobject>
-      <wvobject type="group" fp_name="k3_join_norm_U0_group">
-         <obj_property name="label">k3_join_norm_U0</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="k3_join_norm_U0_Input_group">
-            <obj_property name="label">Input Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="s_stats_group">
-               <obj_property name="label">s_stats(s_stats_U, FIFO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/s_stats_blk_n">
-                  <obj_property name="ElementShortName">s_stats_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s_stats_blk_n</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/s_stats_dout">
-                  <obj_property name="ElementShortName">s_stats_dout[27:0]</obj_property>
-                  <obj_property name="ObjectShortName">s_stats_dout[27:0]</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/s_stats_empty_n">
-                  <obj_property name="ElementShortName">s_stats_empty_n</obj_property>
-                  <obj_property name="ObjectShortName">s_stats_empty_n</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/s_stats_read">
-                  <obj_property name="ElementShortName">s_stats_read</obj_property>
-                  <obj_property name="ObjectShortName">s_stats_read</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="s1_group">
-               <obj_property name="label">s1(s1_U, FIFO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/s1_blk_n">
-                  <obj_property name="ElementShortName">s1_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s1_blk_n</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/s1_dout">
-                  <obj_property name="ElementShortName">s1_dout[511:0]</obj_property>
-                  <obj_property name="ObjectShortName">s1_dout[511:0]</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/s1_empty_n">
-                  <obj_property name="ElementShortName">s1_empty_n</obj_property>
-                  <obj_property name="ObjectShortName">s1_empty_n</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/s1_read">
-                  <obj_property name="ElementShortName">s1_read</obj_property>
-                  <obj_property name="ObjectShortName">s1_read</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="k3_join_norm_U0_Handshake_group">
-            <obj_property name="label">Block-level handshake</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/ap_start">
-               <obj_property name="ElementShortName">ap_start</obj_property>
-               <obj_property name="ObjectShortName">ap_start</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/real_start">
-               <obj_property name="ElementShortName">real_start</obj_property>
-               <obj_property name="ObjectShortName">real_start</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/ap_ready">
-               <obj_property name="ElementShortName">ap_ready</obj_property>
-               <obj_property name="ObjectShortName">ap_ready</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/ap_done">
-               <obj_property name="ElementShortName">ap_done</obj_property>
-               <obj_property name="ObjectShortName">ap_done</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/ap_continue">
-               <obj_property name="ElementShortName">ap_continue</obj_property>
-               <obj_property name="ObjectShortName">ap_continue</obj_property>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="k3_join_norm_U0_Output_group">
-            <obj_property name="label">Output Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="s3_group">
-               <obj_property name="label">s3(s3_U, FIFO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/s3_blk_n">
-                  <obj_property name="ElementShortName">s3_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s3_blk_n</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/s3_din">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/s3_full_n">
-                  <obj_property name="ElementShortName">s3_full_n</obj_property>
-                  <obj_property name="ObjectShortName">s3_full_n</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k3_join_norm_U0/s3_write">
-                  <obj_property name="ElementShortName">s3_write</obj_property>
-                  <obj_property name="ObjectShortName">s3_write</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-      </wvobject>
-      <wvobject type="group" fp_name="k4_postprocess_U0_group">
-         <obj_property name="label">k4_postprocess_U0</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="k4_postprocess_U0_Input_group">
-            <obj_property name="label">Input Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="s3_group">
-               <obj_property name="label">s3(s3_U, FIFO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/s3_blk_n">
-                  <obj_property name="ElementShortName">s3_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s3_blk_n</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/s3_dout">
-                  <obj_property name="ElementShortName">s3_dout[511:0]</obj_property>
-                  <obj_property name="ObjectShortName">s3_dout[511:0]</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/s3_empty_n">
-                  <obj_property name="ElementShortName">s3_empty_n</obj_property>
-                  <obj_property name="ObjectShortName">s3_empty_n</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/s3_read">
-                  <obj_property name="ElementShortName">s3_read</obj_property>
-                  <obj_property name="ObjectShortName">s3_read</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="k4_postprocess_U0_Handshake_group">
-            <obj_property name="label">Block-level handshake</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/ap_start">
-               <obj_property name="ElementShortName">ap_start</obj_property>
-               <obj_property name="ObjectShortName">ap_start</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/ap_ready">
-               <obj_property name="ElementShortName">ap_ready</obj_property>
-               <obj_property name="ObjectShortName">ap_ready</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/ap_done">
-               <obj_property name="ElementShortName">ap_done</obj_property>
-               <obj_property name="ObjectShortName">ap_done</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/ap_continue">
-               <obj_property name="ElementShortName">ap_continue</obj_property>
-               <obj_property name="ObjectShortName">ap_continue</obj_property>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="k4_postprocess_U0_Output_group">
-            <obj_property name="label">Output Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="s_out_group">
-               <obj_property name="label">s_out(s_out_U, FIFO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/s_out_blk_n">
-                  <obj_property name="ElementShortName">s_out_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s_out_blk_n</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/s_out_din">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/s_out_full_n">
-                  <obj_property name="ElementShortName">s_out_full_n</obj_property>
-                  <obj_property name="ObjectShortName">s_out_full_n</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/k4_postprocess_U0/s_out_write">
-                  <obj_property name="ElementShortName">s_out_write</obj_property>
-                  <obj_property name="ObjectShortName">s_out_write</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-      </wvobject>
-      <wvobject type="group" fp_name="store_output_wide_U0_group">
-         <obj_property name="label">store_output_wide_U0</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="store_output_wide_U0_Input_group">
+         <wvobject type="group" fp_name="store_dual_U0_Input_group">
             <obj_property name="label">Input Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <wvobject type="group" fp_name="out_r_group">
                <obj_property name="label">out_r(out_r_c_U, FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/out_r_blk_n">
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/out_r_blk_n">
                   <obj_property name="ElementShortName">out_r_blk_n</obj_property>
                   <obj_property name="ObjectShortName">out_r_blk_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/out_r_dout">
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/out_r_dout">
                   <obj_property name="ElementShortName">out_r_dout[63:0]</obj_property>
                   <obj_property name="ObjectShortName">out_r_dout[63:0]</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/out_r_empty_n">
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/out_r_empty_n">
                   <obj_property name="ElementShortName">out_r_empty_n</obj_property>
                   <obj_property name="ObjectShortName">out_r_empty_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/out_r_read">
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/out_r_read">
                   <obj_property name="ElementShortName">out_r_read</obj_property>
                   <obj_property name="ObjectShortName">out_r_read</obj_property>
                </wvobject>
             </wvobject>
-            <wvobject type="group" fp_name="s_out_group">
-               <obj_property name="label">s_out(s_out_U, FIFO)</obj_property>
+            <wvobject type="group" fp_name="sa_post_group">
+               <obj_property name="label">sa_post(sa_post_U, FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/s_out_blk_n">
-                  <obj_property name="ElementShortName">s_out_blk_n</obj_property>
-                  <obj_property name="ObjectShortName">s_out_blk_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/sa_post_blk_n">
+                  <obj_property name="ElementShortName">sa_post_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_post_blk_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/s_out_dout">
-                  <obj_property name="ElementShortName">s_out_dout[511:0]</obj_property>
-                  <obj_property name="ObjectShortName">s_out_dout[511:0]</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/sa_post_dout">
+                  <obj_property name="ElementShortName">sa_post_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">sa_post_dout[511:0]</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/s_out_empty_n">
-                  <obj_property name="ElementShortName">s_out_empty_n</obj_property>
-                  <obj_property name="ObjectShortName">s_out_empty_n</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/sa_post_empty_n">
+                  <obj_property name="ElementShortName">sa_post_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">sa_post_empty_n</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/s_out_read">
-                  <obj_property name="ElementShortName">s_out_read</obj_property>
-                  <obj_property name="ObjectShortName">s_out_read</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/sa_post_read">
+                  <obj_property name="ElementShortName">sa_post_read</obj_property>
+                  <obj_property name="ObjectShortName">sa_post_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sb_post_group">
+               <obj_property name="label">sb_post(sb_post_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/sb_post_blk_n">
+                  <obj_property name="ElementShortName">sb_post_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_post_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/sb_post_dout">
+                  <obj_property name="ElementShortName">sb_post_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">sb_post_dout[511:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/sb_post_empty_n">
+                  <obj_property name="ElementShortName">sb_post_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">sb_post_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/sb_post_read">
+                  <obj_property name="ElementShortName">sb_post_read</obj_property>
+                  <obj_property name="ObjectShortName">sb_post_read</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="store_output_wide_U0_Handshake_group">
+         <wvobject type="group" fp_name="store_dual_U0_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/ap_start">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/ap_done">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_output_wide_U0/ap_continue">
+            <wvobject type="logic" fp_name="/apatb_top_kernel_top/AESL_inst_top_kernel/store_dual_U0/ap_continue">
                <obj_property name="ElementShortName">ap_continue</obj_property>
                <obj_property name="ObjectShortName">ap_continue</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="store_output_wide_U0_Output_group">
+         <wvobject type="group" fp_name="store_dual_U0_Output_group">
             <obj_property name="label">Output Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
          </wvobject>

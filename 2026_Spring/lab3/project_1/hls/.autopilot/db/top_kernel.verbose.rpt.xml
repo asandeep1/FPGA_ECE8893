@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'top_kernel'" level="0">
-<item name = "Date">Sun Mar  8 15:47:57 2026
+<item name = "Date">Mon Mar  9 02:48:11 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">4185, 4185, 41.850 us, 41.850 us, 4096, 4096, dataflow</column>
+<column name="">2131, 2131, 21.310 us, 21.310 us, 2052, 2052, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
@@ -32,14 +32,12 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="entry_proc_U0">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="load_input_wide_U0">load_input_wide, 4109, 4109, 41.090 us, 41.090 us, 4096, 4096, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="k0_preprocess_U0">k0_preprocess, 4097, 4097, 40.970 us, 40.970 us, 4096, 4096, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="k_split_U0">k_split, 4097, 4097, 40.970 us, 40.970 us, 4096, 4096, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="k1_transform_U0">k1_transform, 4099, 4099, 40.990 us, 40.990 us, 4096, 4096, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="k2_stats_U0">k2_stats, 4102, 4102, 41.020 us, 41.020 us, 4099, 4099, loop auto-rewind stp (delay=3 clock cycles(s))</column>
-<column name="k3_join_norm_U0">k3_join_norm, 4154, 4154, 41.540 us, 41.540 us, 4096, 4096, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="k4_postprocess_U0">k4_postprocess, 4098, 4098, 40.980 us, 40.980 us, 4096, 4096, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="store_output_wide_U0">store_output_wide, 4107, 4107, 41.070 us, 41.070 us, 4096, 4096, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="load_dual_U0">load_dual, 2059, 2059, 20.590 us, 20.590 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="super_kernel_32_U0">super_kernel_32, 2051, 2051, 20.510 us, 20.510 us, 2051, 2051, no</column>
+<column name="k2_stats_dual_U0">k2_stats_dual, 2051, 2051, 20.510 us, 20.510 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="k3_dual_norm_U0">k3_dual_norm, 2106, 2106, 21.060 us, 21.060 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="k4_dual_post_U0">k4_dual_post, 2050, 2050, 20.500 us, 20.500 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="store_dual_U0">store_dual, 2057, 2057, 20.570 us, 20.570 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -57,13 +55,13 @@
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 14, -</column>
-<column name="FIFO">-, -, 891, 704, -</column>
-<column name="Instance">29, 64, 12307, 29922, 0</column>
+<column name="FIFO">58, -, 1312, 779, -</column>
+<column name="Instance">57, 128, 17314, 49004, 0</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 18, -</column>
 <column name="Register">-, -, 2, -, -</column>
 <specialColumn name="Available">432, 360, 141120, 70560, 0</specialColumn>
-<specialColumn name="Utilization (%)">6, 17, 9, 43, 0</specialColumn>
+<specialColumn name="Utilization (%)">26, 35, 13, 70, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -72,16 +70,14 @@
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="control_s_axi_U">control_s_axi, 0, 0, 176, 296, 0</column>
 <column name="entry_proc_U0">entry_proc, 0, 0, 3, 29, 0</column>
-<column name="gmem0_m_axi_U">gmem0_m_axi, 29, 0, 1574, 1642, 0</column>
-<column name="gmem1_m_axi_U">gmem1_m_axi, 0, 0, 1514, 1671, 0</column>
-<column name="k0_preprocess_U0">k0_preprocess, 0, 0, 15, 2766, 0</column>
-<column name="k1_transform_U0">k1_transform, 0, 0, 755, 7637, 0</column>
-<column name="k2_stats_U0">k2_stats, 0, 0, 869, 3972, 0</column>
-<column name="k3_join_norm_U0">k3_join_norm, 0, 64, 6194, 7221, 0</column>
-<column name="k4_postprocess_U0">k4_postprocess, 0, 0, 288, 4294, 0</column>
-<column name="k_split_U0">k_split, 0, 0, 15, 103, 0</column>
-<column name="load_input_wide_U0">load_input_wide, 0, 0, 425, 122, 0</column>
-<column name="store_output_wide_U0">store_output_wide, 0, 0, 479, 169, 0</column>
+<column name="gmem0_m_axi_U">gmem0_m_axi, 57, 0, 2652, 2720, 0</column>
+<column name="gmem1_m_axi_U">gmem1_m_axi, 0, 0, 2592, 2749, 0</column>
+<column name="k2_stats_dual_U0">k2_stats_dual, 0, 0, 176, 3287, 0</column>
+<column name="k3_dual_norm_U0">k3_dual_norm, 0, 128, 6832, 9991, 0</column>
+<column name="k4_dual_post_U0">k4_dual_post, 0, 0, 563, 8506, 0</column>
+<column name="load_dual_U0">load_dual, 0, 0, 740, 131, 0</column>
+<column name="store_dual_U0">store_dual, 0, 0, 793, 178, 0</column>
+<column name="super_kernel_32_U0">super_kernel_32, 0, 0, 2787, 21117, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -94,15 +90,18 @@
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
 <keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
-<column name="out_r_c_U">0, 99, 0, -, 8, 64, 512</column>
-<column name="s0_U">0, 99, 0, -, 2, 512, 1024</column>
-<column name="s0_a_U">0, 99, 0, -, 64, 512, 32768</column>
-<column name="s0_b_U">0, 99, 0, -, 2, 512, 1024</column>
-<column name="s1_U">0, 99, 0, -, 64, 512, 32768</column>
-<column name="s3_U">0, 99, 0, -, 2, 512, 1024</column>
-<column name="s_in_U">0, 99, 0, -, 2, 512, 1024</column>
-<column name="s_out_U">0, 99, 0, -, 2, 512, 1024</column>
-<column name="s_stats_U">0, 99, 0, -, 2, 28, 56</column>
+<column name="out_r_c_U">0, 99, 0, -, 7, 64, 448</column>
+<column name="s_st_U">0, 99, 0, -, 2, 28, 56</column>
+<column name="sa_in_U">0, 99, 0, -, 2, 512, 1024</column>
+<column name="sa_join_U">29, 161, 0, -, 512, 512, 262144</column>
+<column name="sa_norm_U">0, 99, 0, -, 2, 512, 1024</column>
+<column name="sa_post_U">0, 99, 0, -, 2, 512, 1024</column>
+<column name="sa_stats_U">0, 99, 0, -, 2, 512, 1024</column>
+<column name="sb_in_U">0, 99, 0, -, 2, 512, 1024</column>
+<column name="sb_join_U">29, 161, 0, -, 512, 512, 262144</column>
+<column name="sb_norm_U">0, 99, 0, -, 2, 512, 1024</column>
+<column name="sb_post_U">0, 99, 0, -, 2, 512, 1024</column>
+<column name="sb_stats_U">0, 99, 0, -, 2, 512, 1024</column>
 </table>
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
@@ -110,22 +109,22 @@
 <column name="ap_idle">and, 0, 0, 2, 1, 1</column>
 <column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
 <column name="entry_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
-<column name="k_split_U0_start_full_n">and, 0, 0, 2, 1, 1</column>
-<column name="load_input_wide_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="load_dual_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="super_kernel_32_U0_start_full_n">and, 0, 0, 2, 1, 1</column>
 <column name="ap_sync_entry_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
-<column name="ap_sync_load_input_wide_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_load_dual_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_sync_reg_entry_proc_U0_ap_ready">9, 2, 1, 2</column>
-<column name="ap_sync_reg_load_input_wide_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_load_dual_U0_ap_ready">9, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_sync_reg_entry_proc_U0_ap_ready">1, 0, 1, 0</column>
-<column name="ap_sync_reg_load_input_wide_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_load_dual_U0_ap_ready">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
@@ -170,8 +169,8 @@
 <column name="m_axi_gmem0_AWUSER">out, 1, m_axi, gmem0, pointer</column>
 <column name="m_axi_gmem0_WVALID">out, 1, m_axi, gmem0, pointer</column>
 <column name="m_axi_gmem0_WREADY">in, 1, m_axi, gmem0, pointer</column>
-<column name="m_axi_gmem0_WDATA">out, 512, m_axi, gmem0, pointer</column>
-<column name="m_axi_gmem0_WSTRB">out, 64, m_axi, gmem0, pointer</column>
+<column name="m_axi_gmem0_WDATA">out, 1024, m_axi, gmem0, pointer</column>
+<column name="m_axi_gmem0_WSTRB">out, 128, m_axi, gmem0, pointer</column>
 <column name="m_axi_gmem0_WLAST">out, 1, m_axi, gmem0, pointer</column>
 <column name="m_axi_gmem0_WID">out, 1, m_axi, gmem0, pointer</column>
 <column name="m_axi_gmem0_WUSER">out, 1, m_axi, gmem0, pointer</column>
@@ -190,7 +189,7 @@
 <column name="m_axi_gmem0_ARUSER">out, 1, m_axi, gmem0, pointer</column>
 <column name="m_axi_gmem0_RVALID">in, 1, m_axi, gmem0, pointer</column>
 <column name="m_axi_gmem0_RREADY">out, 1, m_axi, gmem0, pointer</column>
-<column name="m_axi_gmem0_RDATA">in, 512, m_axi, gmem0, pointer</column>
+<column name="m_axi_gmem0_RDATA">in, 1024, m_axi, gmem0, pointer</column>
 <column name="m_axi_gmem0_RLAST">in, 1, m_axi, gmem0, pointer</column>
 <column name="m_axi_gmem0_RID">in, 1, m_axi, gmem0, pointer</column>
 <column name="m_axi_gmem0_RUSER">in, 1, m_axi, gmem0, pointer</column>
@@ -215,8 +214,8 @@
 <column name="m_axi_gmem1_AWUSER">out, 1, m_axi, gmem1, pointer</column>
 <column name="m_axi_gmem1_WVALID">out, 1, m_axi, gmem1, pointer</column>
 <column name="m_axi_gmem1_WREADY">in, 1, m_axi, gmem1, pointer</column>
-<column name="m_axi_gmem1_WDATA">out, 512, m_axi, gmem1, pointer</column>
-<column name="m_axi_gmem1_WSTRB">out, 64, m_axi, gmem1, pointer</column>
+<column name="m_axi_gmem1_WDATA">out, 1024, m_axi, gmem1, pointer</column>
+<column name="m_axi_gmem1_WSTRB">out, 128, m_axi, gmem1, pointer</column>
 <column name="m_axi_gmem1_WLAST">out, 1, m_axi, gmem1, pointer</column>
 <column name="m_axi_gmem1_WID">out, 1, m_axi, gmem1, pointer</column>
 <column name="m_axi_gmem1_WUSER">out, 1, m_axi, gmem1, pointer</column>
@@ -235,7 +234,7 @@
 <column name="m_axi_gmem1_ARUSER">out, 1, m_axi, gmem1, pointer</column>
 <column name="m_axi_gmem1_RVALID">in, 1, m_axi, gmem1, pointer</column>
 <column name="m_axi_gmem1_RREADY">out, 1, m_axi, gmem1, pointer</column>
-<column name="m_axi_gmem1_RDATA">in, 512, m_axi, gmem1, pointer</column>
+<column name="m_axi_gmem1_RDATA">in, 1024, m_axi, gmem1, pointer</column>
 <column name="m_axi_gmem1_RLAST">in, 1, m_axi, gmem1, pointer</column>
 <column name="m_axi_gmem1_RID">in, 1, m_axi, gmem1, pointer</column>
 <column name="m_axi_gmem1_RUSER">in, 1, m_axi, gmem1, pointer</column>

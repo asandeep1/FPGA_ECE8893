@@ -1271,8 +1271,8 @@ void apatb_top_kernel_hw(void* __xlx_apatb_param_in_r, void* __xlx_apatb_param_o
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port2 {
 #endif
-    .width = 512,
-    .asize = 64,
+    .width = 1024,
+    .asize = 128,
     .hbm = false,
     .name = { "gmem0" },
 #ifdef POST_CHECK
@@ -1296,8 +1296,8 @@ void apatb_top_kernel_hw(void* __xlx_apatb_param_in_r, void* __xlx_apatb_param_o
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port3 {
 #endif
-    .width = 512,
-    .asize = 64,
+    .width = 1024,
+    .asize = 128,
     .hbm = false,
     .name = { "gmem1" },
 #ifdef POST_CHECK

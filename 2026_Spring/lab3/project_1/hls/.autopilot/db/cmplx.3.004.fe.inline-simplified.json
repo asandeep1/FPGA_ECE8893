@@ -1,131 +1,109 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "1 8 3 2 5 7 4 6",
+    "calls": "5 4 2 3 1 6",
     "control_depth": 0,
-    "def_use_depth": 0,
+    "def_use_depth": 1,
     "file": "top.cpp",
-    "fileloc": 465,
-    "instructions": 26,
+    "fileloc": 491,
+    "instructions": 27,
     "memory_accesses": 0,
     "name": "top_kernel",
-    "total_instructions": 5413
+    "total_instructions": 10921
   },
   "1": {
     "basicblocks": 3,
     "calls": "",
     "control_depth": 0,
-    "def_use_depth": 19,
-    "file": "top.cpp",
-    "fileloc": 317,
-    "instructions": 63,
-    "loads": {
-      "L": 1
-    },
-    "memory_accesses": 2,
-    "name": "load_input_wide",
-    "total_instructions": 63
-  },
-  "2": {
-    "basicblocks": 51,
-    "calls": "",
-    "control_depth": 6,
-    "def_use_depth": 60,
-    "file": "top.cpp",
-    "fileloc": 394,
-    "instructions": 1990,
-    "loads": {
-      "L": 32
-    },
-    "memory_accesses": 66,
-    "name": "k1_transform",
-    "stores": {
-      "L": 32
-    },
-    "total_instructions": 1990
-  },
-  "3": {
-    "basicblocks": 3,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "top.cpp",
-    "fileloc": 383,
-    "instructions": 9,
-    "memory_accesses": 3,
-    "name": "k_split",
-    "total_instructions": 9
-  },
-  "4": {
-    "basicblocks": 3,
-    "calls": "",
-    "control_depth": 0,
     "def_use_depth": 39,
     "file": "top.cpp",
-    "fileloc": 449,
-    "instructions": 958,
+    "fileloc": 453,
+    "instructions": 1920,
     "loads": {
-      "L": 32
+      "L": 64
     },
-    "memory_accesses": 66,
-    "name": "k4_postprocess",
+    "memory_accesses": 132,
+    "name": "k4_dual_post",
     "stores": {
-      "L": 32
+      "L": 64
     },
-    "total_instructions": 958
+    "total_instructions": 1920
   },
-  "5": {
-    "basicblocks": 53,
+  "2": {
+    "basicblocks": 101,
     "calls": "",
-    "control_depth": 6,
-    "def_use_depth": 145,
+    "control_depth": 4,
+    "def_use_depth": 35,
     "file": "top.cpp",
-    "fileloc": 413,
-    "instructions": 793,
-    "memory_accesses": 1,
-    "name": "k2_stats",
-    "total_instructions": 793
-  },
-  "6": {
-    "basicblocks": 3,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "top.cpp",
-    "fileloc": 342,
-    "instructions": 99,
-    "loads": {
-      "L": 16
-    },
-    "memory_accesses": 34,
-    "name": "store_output_wide",
+    "fileloc": 393,
+    "instructions": 1074,
+    "memory_accesses": 33,
+    "name": "k2_stats_dual",
     "stores": {
-      "L": 17
+      "L": 31
     },
-    "total_instructions": 99
+    "total_instructions": 1074
   },
-  "7": {
+  "3": {
     "basicblocks": 5,
     "calls": "",
     "control_depth": 0,
     "def_use_depth": 32,
     "file": "top.cpp",
-    "fileloc": 432,
-    "instructions": 747,
-    "memory_accesses": 2,
-    "name": "k3_join_norm",
-    "total_instructions": 747
+    "fileloc": 429,
+    "instructions": 1447,
+    "memory_accesses": 4,
+    "name": "k3_dual_norm",
+    "total_instructions": 1447
   },
-  "8": {
+  "4": {
+    "basicblocks": 163,
+    "calls": "",
+    "control_depth": 6,
+    "def_use_depth": 68,
+    "file": "top.cpp",
+    "fileloc": 338,
+    "instructions": 6263,
+    "loads": {
+      "G": 2,
+      "L": 64
+    },
+    "memory_accesses": 229,
+    "name": "super_kernel_32",
+    "stores": {
+      "G": 2,
+      "L": 159
+    },
+    "total_instructions": 6263
+  },
+  "5": {
     "basicblocks": 3,
     "calls": "",
     "control_depth": 0,
-    "def_use_depth": 33,
+    "def_use_depth": 19,
     "file": "top.cpp",
-    "fileloc": 370,
-    "instructions": 728,
-    "memory_accesses": 2,
-    "name": "k0_preprocess",
-    "total_instructions": 728
+    "fileloc": 316,
+    "instructions": 84,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 3,
+    "name": "load_dual",
+    "total_instructions": 84
+  },
+  "6": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 35,
+    "file": "top.cpp",
+    "fileloc": 473,
+    "instructions": 106,
+    "memory_accesses": 3,
+    "name": "store_dual",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 106
   }
 }

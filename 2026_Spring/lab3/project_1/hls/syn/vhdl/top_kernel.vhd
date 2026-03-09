@@ -15,7 +15,7 @@ generic (
     C_M_AXI_GMEM0_ADDR_WIDTH : INTEGER := 64;
     C_M_AXI_GMEM0_ID_WIDTH : INTEGER := 1;
     C_M_AXI_GMEM0_AWUSER_WIDTH : INTEGER := 1;
-    C_M_AXI_GMEM0_DATA_WIDTH : INTEGER := 512;
+    C_M_AXI_GMEM0_DATA_WIDTH : INTEGER := 1024;
     C_M_AXI_GMEM0_WUSER_WIDTH : INTEGER := 1;
     C_M_AXI_GMEM0_ARUSER_WIDTH : INTEGER := 1;
     C_M_AXI_GMEM0_RUSER_WIDTH : INTEGER := 1;
@@ -23,7 +23,7 @@ generic (
     C_M_AXI_GMEM1_ADDR_WIDTH : INTEGER := 64;
     C_M_AXI_GMEM1_ID_WIDTH : INTEGER := 1;
     C_M_AXI_GMEM1_AWUSER_WIDTH : INTEGER := 1;
-    C_M_AXI_GMEM1_DATA_WIDTH : INTEGER := 512;
+    C_M_AXI_GMEM1_DATA_WIDTH : INTEGER := 1024;
     C_M_AXI_GMEM1_WUSER_WIDTH : INTEGER := 1;
     C_M_AXI_GMEM1_ARUSER_WIDTH : INTEGER := 1;
     C_M_AXI_GMEM1_RUSER_WIDTH : INTEGER := 1;
@@ -151,7 +151,7 @@ end;
 architecture behav of top_kernel is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "top_kernel_top_kernel,hls_ip_2025_1_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=4185,HLS_SYN_TPT=4096,HLS_SYN_MEM=29,HLS_SYN_DSP=0,HLS_SYN_FF=13200,HLS_SYN_LUT=30658,HLS_VERSION=2025_1_1}";
+    "top_kernel_top_kernel,hls_ip_2025_1_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=2131,HLS_SYN_TPT=2052,HLS_SYN_MEM=115,HLS_SYN_DSP=0,HLS_SYN_FF=18628,HLS_SYN_LUT=49815,HLS_VERSION=2025_1_1}";
     constant C_S_AXI_DATA_WIDTH : INTEGER := 32;
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant C_M_AXI_DATA_WIDTH : INTEGER := 32;
@@ -160,7 +160,8 @@ architecture behav of top_kernel is
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
-    constant ap_const_lv512_lc_1 : STD_LOGIC_VECTOR (511 downto 0) := "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
+    constant ap_const_lv1024_lc_1 : STD_LOGIC_VECTOR (1023 downto 0) := "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
+    constant ap_const_lv128_lc_1 : STD_LOGIC_VECTOR (127 downto 0) := "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
     constant ap_const_lv9_0 : STD_LOGIC_VECTOR (8 downto 0) := "000000000";
     constant ap_const_boolean_1 : BOOLEAN := true;
 
@@ -175,7 +176,7 @@ architecture behav of top_kernel is
     signal gmem0_0_WREADY : STD_LOGIC;
     signal gmem0_0_ARREADY : STD_LOGIC;
     signal gmem0_0_RVALID : STD_LOGIC;
-    signal gmem0_0_RDATA : STD_LOGIC_VECTOR (511 downto 0);
+    signal gmem0_0_RDATA : STD_LOGIC_VECTOR (1023 downto 0);
     signal gmem0_0_RLAST : STD_LOGIC;
     signal gmem0_0_RID : STD_LOGIC_VECTOR (0 downto 0);
     signal gmem0_0_RFIFONUM : STD_LOGIC_VECTOR (8 downto 0);
@@ -186,7 +187,7 @@ architecture behav of top_kernel is
     signal gmem1_0_WREADY : STD_LOGIC;
     signal gmem1_0_ARREADY : STD_LOGIC;
     signal gmem1_0_RVALID : STD_LOGIC;
-    signal gmem1_0_RDATA : STD_LOGIC_VECTOR (511 downto 0);
+    signal gmem1_0_RDATA : STD_LOGIC_VECTOR (1023 downto 0);
     signal gmem1_0_RFIFONUM : STD_LOGIC_VECTOR (8 downto 0);
     signal gmem1_0_BVALID : STD_LOGIC;
     signal gmem1_0_BRESP : STD_LOGIC_VECTOR (1 downto 0);
@@ -201,232 +202,236 @@ architecture behav of top_kernel is
     signal entry_proc_U0_start_write : STD_LOGIC;
     signal entry_proc_U0_out_r_c_din : STD_LOGIC_VECTOR (63 downto 0);
     signal entry_proc_U0_out_r_c_write : STD_LOGIC;
-    signal load_input_wide_U0_ap_start : STD_LOGIC;
-    signal load_input_wide_U0_ap_done : STD_LOGIC;
-    signal load_input_wide_U0_ap_continue : STD_LOGIC;
-    signal load_input_wide_U0_ap_idle : STD_LOGIC;
-    signal load_input_wide_U0_ap_ready : STD_LOGIC;
-    signal load_input_wide_U0_m_axi_gmem0_0_AWVALID : STD_LOGIC;
-    signal load_input_wide_U0_m_axi_gmem0_0_AWADDR : STD_LOGIC_VECTOR (63 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_WVALID : STD_LOGIC;
-    signal load_input_wide_U0_m_axi_gmem0_0_WDATA : STD_LOGIC_VECTOR (511 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_WSTRB : STD_LOGIC_VECTOR (63 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_WLAST : STD_LOGIC;
-    signal load_input_wide_U0_m_axi_gmem0_0_WID : STD_LOGIC_VECTOR (0 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_ARVALID : STD_LOGIC;
-    signal load_input_wide_U0_m_axi_gmem0_0_ARADDR : STD_LOGIC_VECTOR (63 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal load_input_wide_U0_m_axi_gmem0_0_RREADY : STD_LOGIC;
-    signal load_input_wide_U0_m_axi_gmem0_0_BREADY : STD_LOGIC;
-    signal load_input_wide_U0_s_in_din : STD_LOGIC_VECTOR (511 downto 0);
-    signal load_input_wide_U0_s_in_write : STD_LOGIC;
-    signal load_input_wide_U0_start_out : STD_LOGIC;
-    signal load_input_wide_U0_start_write : STD_LOGIC;
-    signal k0_preprocess_U0_ap_start : STD_LOGIC;
-    signal k0_preprocess_U0_ap_done : STD_LOGIC;
-    signal k0_preprocess_U0_ap_continue : STD_LOGIC;
-    signal k0_preprocess_U0_ap_idle : STD_LOGIC;
-    signal k0_preprocess_U0_ap_ready : STD_LOGIC;
-    signal k0_preprocess_U0_s_in_read : STD_LOGIC;
-    signal k0_preprocess_U0_s0_din : STD_LOGIC_VECTOR (511 downto 0);
-    signal k0_preprocess_U0_s0_write : STD_LOGIC;
-    signal k0_preprocess_U0_start_out : STD_LOGIC;
-    signal k0_preprocess_U0_start_write : STD_LOGIC;
-    signal k_split_U0_ap_start : STD_LOGIC;
-    signal k_split_U0_start_full_n : STD_LOGIC;
-    signal k_split_U0_ap_done : STD_LOGIC;
-    signal k_split_U0_ap_continue : STD_LOGIC;
-    signal k_split_U0_ap_idle : STD_LOGIC;
-    signal k_split_U0_ap_ready : STD_LOGIC;
-    signal k_split_U0_s0_read : STD_LOGIC;
-    signal k_split_U0_s0_a_din : STD_LOGIC_VECTOR (511 downto 0);
-    signal k_split_U0_s0_a_write : STD_LOGIC;
-    signal k_split_U0_s0_b_din : STD_LOGIC_VECTOR (511 downto 0);
-    signal k_split_U0_s0_b_write : STD_LOGIC;
-    signal k_split_U0_start_out : STD_LOGIC;
-    signal k_split_U0_start_write : STD_LOGIC;
-    signal k1_transform_U0_ap_start : STD_LOGIC;
-    signal k1_transform_U0_ap_done : STD_LOGIC;
-    signal k1_transform_U0_ap_continue : STD_LOGIC;
-    signal k1_transform_U0_ap_idle : STD_LOGIC;
-    signal k1_transform_U0_ap_ready : STD_LOGIC;
-    signal k1_transform_U0_s0_a_read : STD_LOGIC;
-    signal k1_transform_U0_s1_din : STD_LOGIC_VECTOR (511 downto 0);
-    signal k1_transform_U0_s1_write : STD_LOGIC;
-    signal k1_transform_U0_s1_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
-    signal k1_transform_U0_s1_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
-    signal k1_transform_U0_start_out : STD_LOGIC;
-    signal k1_transform_U0_start_write : STD_LOGIC;
-    signal k2_stats_U0_ap_start : STD_LOGIC;
-    signal k2_stats_U0_ap_done : STD_LOGIC;
-    signal k2_stats_U0_ap_continue : STD_LOGIC;
-    signal k2_stats_U0_ap_idle : STD_LOGIC;
-    signal k2_stats_U0_ap_ready : STD_LOGIC;
-    signal k2_stats_U0_s0_b_read : STD_LOGIC;
-    signal k2_stats_U0_s_stats_din : STD_LOGIC_VECTOR (27 downto 0);
-    signal k2_stats_U0_s_stats_write : STD_LOGIC;
-    signal k2_stats_U0_s_stats_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
-    signal k2_stats_U0_s_stats_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
-    signal k3_join_norm_U0_ap_start : STD_LOGIC;
-    signal k3_join_norm_U0_ap_done : STD_LOGIC;
-    signal k3_join_norm_U0_ap_continue : STD_LOGIC;
-    signal k3_join_norm_U0_ap_idle : STD_LOGIC;
-    signal k3_join_norm_U0_ap_ready : STD_LOGIC;
-    signal k3_join_norm_U0_s_stats_read : STD_LOGIC;
-    signal k3_join_norm_U0_s1_read : STD_LOGIC;
-    signal k3_join_norm_U0_s3_din : STD_LOGIC_VECTOR (511 downto 0);
-    signal k3_join_norm_U0_s3_write : STD_LOGIC;
-    signal k3_join_norm_U0_s3_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
-    signal k3_join_norm_U0_s3_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
-    signal k3_join_norm_U0_start_out : STD_LOGIC;
-    signal k3_join_norm_U0_start_write : STD_LOGIC;
-    signal k4_postprocess_U0_ap_start : STD_LOGIC;
-    signal k4_postprocess_U0_ap_done : STD_LOGIC;
-    signal k4_postprocess_U0_ap_continue : STD_LOGIC;
-    signal k4_postprocess_U0_ap_idle : STD_LOGIC;
-    signal k4_postprocess_U0_ap_ready : STD_LOGIC;
-    signal k4_postprocess_U0_s3_read : STD_LOGIC;
-    signal k4_postprocess_U0_s_out_din : STD_LOGIC_VECTOR (511 downto 0);
-    signal k4_postprocess_U0_s_out_write : STD_LOGIC;
-    signal k4_postprocess_U0_s_out_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
-    signal k4_postprocess_U0_s_out_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
-    signal store_output_wide_U0_ap_start : STD_LOGIC;
-    signal store_output_wide_U0_ap_done : STD_LOGIC;
-    signal store_output_wide_U0_ap_continue : STD_LOGIC;
-    signal store_output_wide_U0_ap_idle : STD_LOGIC;
-    signal store_output_wide_U0_ap_ready : STD_LOGIC;
-    signal store_output_wide_U0_out_r_read : STD_LOGIC;
-    signal store_output_wide_U0_m_axi_gmem1_0_AWVALID : STD_LOGIC;
-    signal store_output_wide_U0_m_axi_gmem1_0_AWADDR : STD_LOGIC_VECTOR (63 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_WVALID : STD_LOGIC;
-    signal store_output_wide_U0_m_axi_gmem1_0_WDATA : STD_LOGIC_VECTOR (511 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_WSTRB : STD_LOGIC_VECTOR (63 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_WLAST : STD_LOGIC;
-    signal store_output_wide_U0_m_axi_gmem1_0_WID : STD_LOGIC_VECTOR (0 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_ARVALID : STD_LOGIC;
-    signal store_output_wide_U0_m_axi_gmem1_0_ARADDR : STD_LOGIC_VECTOR (63 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal store_output_wide_U0_m_axi_gmem1_0_RREADY : STD_LOGIC;
-    signal store_output_wide_U0_m_axi_gmem1_0_BREADY : STD_LOGIC;
-    signal store_output_wide_U0_s_out_read : STD_LOGIC;
+    signal load_dual_U0_ap_start : STD_LOGIC;
+    signal load_dual_U0_ap_done : STD_LOGIC;
+    signal load_dual_U0_ap_continue : STD_LOGIC;
+    signal load_dual_U0_ap_idle : STD_LOGIC;
+    signal load_dual_U0_ap_ready : STD_LOGIC;
+    signal load_dual_U0_m_axi_gmem0_0_AWVALID : STD_LOGIC;
+    signal load_dual_U0_m_axi_gmem0_0_AWADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_WVALID : STD_LOGIC;
+    signal load_dual_U0_m_axi_gmem0_0_WDATA : STD_LOGIC_VECTOR (1023 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_WSTRB : STD_LOGIC_VECTOR (127 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_WLAST : STD_LOGIC;
+    signal load_dual_U0_m_axi_gmem0_0_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_ARVALID : STD_LOGIC;
+    signal load_dual_U0_m_axi_gmem0_0_ARADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal load_dual_U0_m_axi_gmem0_0_RREADY : STD_LOGIC;
+    signal load_dual_U0_m_axi_gmem0_0_BREADY : STD_LOGIC;
+    signal load_dual_U0_sa_in_din : STD_LOGIC_VECTOR (511 downto 0);
+    signal load_dual_U0_sa_in_write : STD_LOGIC;
+    signal load_dual_U0_sb_in_din : STD_LOGIC_VECTOR (511 downto 0);
+    signal load_dual_U0_sb_in_write : STD_LOGIC;
+    signal load_dual_U0_start_out : STD_LOGIC;
+    signal load_dual_U0_start_write : STD_LOGIC;
+    signal super_kernel_32_U0_ap_start : STD_LOGIC;
+    signal super_kernel_32_U0_start_full_n : STD_LOGIC;
+    signal super_kernel_32_U0_ap_done : STD_LOGIC;
+    signal super_kernel_32_U0_ap_continue : STD_LOGIC;
+    signal super_kernel_32_U0_ap_idle : STD_LOGIC;
+    signal super_kernel_32_U0_ap_ready : STD_LOGIC;
+    signal super_kernel_32_U0_start_out : STD_LOGIC;
+    signal super_kernel_32_U0_start_write : STD_LOGIC;
+    signal super_kernel_32_U0_sa_in_read : STD_LOGIC;
+    signal super_kernel_32_U0_sb_in_read : STD_LOGIC;
+    signal super_kernel_32_U0_sa_stats_din : STD_LOGIC_VECTOR (511 downto 0);
+    signal super_kernel_32_U0_sa_stats_write : STD_LOGIC;
+    signal super_kernel_32_U0_sa_join_din : STD_LOGIC_VECTOR (511 downto 0);
+    signal super_kernel_32_U0_sa_join_write : STD_LOGIC;
+    signal super_kernel_32_U0_sb_stats_din : STD_LOGIC_VECTOR (511 downto 0);
+    signal super_kernel_32_U0_sb_stats_write : STD_LOGIC;
+    signal super_kernel_32_U0_sb_join_din : STD_LOGIC_VECTOR (511 downto 0);
+    signal super_kernel_32_U0_sb_join_write : STD_LOGIC;
+    signal k2_stats_dual_U0_ap_start : STD_LOGIC;
+    signal k2_stats_dual_U0_ap_done : STD_LOGIC;
+    signal k2_stats_dual_U0_ap_continue : STD_LOGIC;
+    signal k2_stats_dual_U0_ap_idle : STD_LOGIC;
+    signal k2_stats_dual_U0_ap_ready : STD_LOGIC;
+    signal k2_stats_dual_U0_sa_stats_read : STD_LOGIC;
+    signal k2_stats_dual_U0_sb_stats_read : STD_LOGIC;
+    signal k2_stats_dual_U0_s_st_din : STD_LOGIC_VECTOR (27 downto 0);
+    signal k2_stats_dual_U0_s_st_write : STD_LOGIC;
+    signal k2_stats_dual_U0_s_st_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
+    signal k2_stats_dual_U0_s_st_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
+    signal k3_dual_norm_U0_ap_start : STD_LOGIC;
+    signal k3_dual_norm_U0_ap_done : STD_LOGIC;
+    signal k3_dual_norm_U0_ap_continue : STD_LOGIC;
+    signal k3_dual_norm_U0_ap_idle : STD_LOGIC;
+    signal k3_dual_norm_U0_ap_ready : STD_LOGIC;
+    signal k3_dual_norm_U0_s_st_read : STD_LOGIC;
+    signal k3_dual_norm_U0_sa_join_read : STD_LOGIC;
+    signal k3_dual_norm_U0_sb_join_read : STD_LOGIC;
+    signal k3_dual_norm_U0_sa_norm_din : STD_LOGIC_VECTOR (511 downto 0);
+    signal k3_dual_norm_U0_sa_norm_write : STD_LOGIC;
+    signal k3_dual_norm_U0_sa_norm_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
+    signal k3_dual_norm_U0_sa_norm_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
+    signal k3_dual_norm_U0_sb_norm_din : STD_LOGIC_VECTOR (511 downto 0);
+    signal k3_dual_norm_U0_sb_norm_write : STD_LOGIC;
+    signal k3_dual_norm_U0_sb_norm_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
+    signal k3_dual_norm_U0_sb_norm_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
+    signal k3_dual_norm_U0_start_out : STD_LOGIC;
+    signal k3_dual_norm_U0_start_write : STD_LOGIC;
+    signal k4_dual_post_U0_ap_start : STD_LOGIC;
+    signal k4_dual_post_U0_ap_done : STD_LOGIC;
+    signal k4_dual_post_U0_ap_continue : STD_LOGIC;
+    signal k4_dual_post_U0_ap_idle : STD_LOGIC;
+    signal k4_dual_post_U0_ap_ready : STD_LOGIC;
+    signal k4_dual_post_U0_sa_norm_read : STD_LOGIC;
+    signal k4_dual_post_U0_sb_norm_read : STD_LOGIC;
+    signal k4_dual_post_U0_sa_post_din : STD_LOGIC_VECTOR (511 downto 0);
+    signal k4_dual_post_U0_sa_post_write : STD_LOGIC;
+    signal k4_dual_post_U0_sa_post_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
+    signal k4_dual_post_U0_sa_post_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
+    signal k4_dual_post_U0_sb_post_din : STD_LOGIC_VECTOR (511 downto 0);
+    signal k4_dual_post_U0_sb_post_write : STD_LOGIC;
+    signal k4_dual_post_U0_sb_post_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
+    signal k4_dual_post_U0_sb_post_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
+    signal store_dual_U0_ap_start : STD_LOGIC;
+    signal store_dual_U0_ap_done : STD_LOGIC;
+    signal store_dual_U0_ap_continue : STD_LOGIC;
+    signal store_dual_U0_ap_idle : STD_LOGIC;
+    signal store_dual_U0_ap_ready : STD_LOGIC;
+    signal store_dual_U0_out_r_read : STD_LOGIC;
+    signal store_dual_U0_m_axi_gmem1_0_AWVALID : STD_LOGIC;
+    signal store_dual_U0_m_axi_gmem1_0_AWADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_WVALID : STD_LOGIC;
+    signal store_dual_U0_m_axi_gmem1_0_WDATA : STD_LOGIC_VECTOR (1023 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_WSTRB : STD_LOGIC_VECTOR (127 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_WLAST : STD_LOGIC;
+    signal store_dual_U0_m_axi_gmem1_0_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_ARVALID : STD_LOGIC;
+    signal store_dual_U0_m_axi_gmem1_0_ARADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal store_dual_U0_m_axi_gmem1_0_RREADY : STD_LOGIC;
+    signal store_dual_U0_m_axi_gmem1_0_BREADY : STD_LOGIC;
+    signal store_dual_U0_sa_post_read : STD_LOGIC;
+    signal store_dual_U0_sb_post_read : STD_LOGIC;
     signal out_r_c_full_n : STD_LOGIC;
     signal out_r_c_dout : STD_LOGIC_VECTOR (63 downto 0);
     signal out_r_c_empty_n : STD_LOGIC;
     signal out_r_c_num_data_valid : STD_LOGIC_VECTOR (3 downto 0);
     signal out_r_c_fifo_cap : STD_LOGIC_VECTOR (3 downto 0);
-    signal s_in_full_n : STD_LOGIC;
-    signal s_in_dout : STD_LOGIC_VECTOR (511 downto 0);
-    signal s_in_empty_n : STD_LOGIC;
-    signal s_in_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
-    signal s_in_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
-    signal s0_full_n : STD_LOGIC;
-    signal s0_dout : STD_LOGIC_VECTOR (511 downto 0);
-    signal s0_empty_n : STD_LOGIC;
-    signal s0_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
-    signal s0_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
-    signal s0_a_full_n : STD_LOGIC;
-    signal s0_a_dout : STD_LOGIC_VECTOR (511 downto 0);
-    signal s0_a_empty_n : STD_LOGIC;
-    signal s0_a_num_data_valid : STD_LOGIC_VECTOR (6 downto 0);
-    signal s0_a_fifo_cap : STD_LOGIC_VECTOR (6 downto 0);
-    signal s0_b_full_n : STD_LOGIC;
-    signal s0_b_dout : STD_LOGIC_VECTOR (511 downto 0);
-    signal s0_b_empty_n : STD_LOGIC;
-    signal s0_b_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
-    signal s0_b_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
-    signal s1_full_n : STD_LOGIC;
-    signal s1_dout : STD_LOGIC_VECTOR (511 downto 0);
-    signal s1_empty_n : STD_LOGIC;
-    signal s1_num_data_valid : STD_LOGIC_VECTOR (6 downto 0);
-    signal s1_fifo_cap : STD_LOGIC_VECTOR (6 downto 0);
-    signal s_stats_full_n : STD_LOGIC;
-    signal s_stats_dout : STD_LOGIC_VECTOR (27 downto 0);
-    signal s_stats_empty_n : STD_LOGIC;
-    signal s_stats_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
-    signal s_stats_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
-    signal s3_full_n : STD_LOGIC;
-    signal s3_dout : STD_LOGIC_VECTOR (511 downto 0);
-    signal s3_empty_n : STD_LOGIC;
-    signal s3_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
-    signal s3_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
-    signal s_out_full_n : STD_LOGIC;
-    signal s_out_dout : STD_LOGIC_VECTOR (511 downto 0);
-    signal s_out_empty_n : STD_LOGIC;
-    signal s_out_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
-    signal s_out_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
+    signal sa_in_full_n : STD_LOGIC;
+    signal sa_in_dout : STD_LOGIC_VECTOR (511 downto 0);
+    signal sa_in_empty_n : STD_LOGIC;
+    signal sa_in_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
+    signal sa_in_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
+    signal sb_in_full_n : STD_LOGIC;
+    signal sb_in_dout : STD_LOGIC_VECTOR (511 downto 0);
+    signal sb_in_empty_n : STD_LOGIC;
+    signal sb_in_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
+    signal sb_in_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
+    signal sa_stats_full_n : STD_LOGIC;
+    signal sa_stats_dout : STD_LOGIC_VECTOR (511 downto 0);
+    signal sa_stats_empty_n : STD_LOGIC;
+    signal sa_stats_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
+    signal sa_stats_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
+    signal sa_join_full_n : STD_LOGIC;
+    signal sa_join_dout : STD_LOGIC_VECTOR (511 downto 0);
+    signal sa_join_empty_n : STD_LOGIC;
+    signal sa_join_num_data_valid : STD_LOGIC_VECTOR (9 downto 0);
+    signal sa_join_fifo_cap : STD_LOGIC_VECTOR (9 downto 0);
+    signal sb_stats_full_n : STD_LOGIC;
+    signal sb_stats_dout : STD_LOGIC_VECTOR (511 downto 0);
+    signal sb_stats_empty_n : STD_LOGIC;
+    signal sb_stats_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
+    signal sb_stats_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
+    signal sb_join_full_n : STD_LOGIC;
+    signal sb_join_dout : STD_LOGIC_VECTOR (511 downto 0);
+    signal sb_join_empty_n : STD_LOGIC;
+    signal sb_join_num_data_valid : STD_LOGIC_VECTOR (9 downto 0);
+    signal sb_join_fifo_cap : STD_LOGIC_VECTOR (9 downto 0);
+    signal s_st_full_n : STD_LOGIC;
+    signal s_st_dout : STD_LOGIC_VECTOR (27 downto 0);
+    signal s_st_empty_n : STD_LOGIC;
+    signal s_st_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
+    signal s_st_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
+    signal sa_norm_full_n : STD_LOGIC;
+    signal sa_norm_dout : STD_LOGIC_VECTOR (511 downto 0);
+    signal sa_norm_empty_n : STD_LOGIC;
+    signal sa_norm_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
+    signal sa_norm_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
+    signal sb_norm_full_n : STD_LOGIC;
+    signal sb_norm_dout : STD_LOGIC_VECTOR (511 downto 0);
+    signal sb_norm_empty_n : STD_LOGIC;
+    signal sb_norm_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
+    signal sb_norm_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
+    signal sa_post_full_n : STD_LOGIC;
+    signal sa_post_dout : STD_LOGIC_VECTOR (511 downto 0);
+    signal sa_post_empty_n : STD_LOGIC;
+    signal sa_post_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
+    signal sa_post_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
+    signal sb_post_full_n : STD_LOGIC;
+    signal sb_post_dout : STD_LOGIC_VECTOR (511 downto 0);
+    signal sb_post_empty_n : STD_LOGIC;
+    signal sb_post_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
+    signal sb_post_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
     signal ap_sync_ready : STD_LOGIC;
     signal ap_sync_reg_entry_proc_U0_ap_ready : STD_LOGIC := '0';
     signal ap_sync_entry_proc_U0_ap_ready : STD_LOGIC;
-    signal ap_sync_reg_load_input_wide_U0_ap_ready : STD_LOGIC := '0';
-    signal ap_sync_load_input_wide_U0_ap_ready : STD_LOGIC;
-    signal start_for_store_output_wide_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_store_output_wide_U0_full_n : STD_LOGIC;
-    signal start_for_store_output_wide_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_store_output_wide_U0_empty_n : STD_LOGIC;
-    signal start_for_k0_preprocess_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_k0_preprocess_U0_full_n : STD_LOGIC;
-    signal start_for_k0_preprocess_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_k0_preprocess_U0_empty_n : STD_LOGIC;
-    signal start_for_k_split_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_k_split_U0_full_n : STD_LOGIC;
-    signal start_for_k_split_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_k_split_U0_empty_n : STD_LOGIC;
-    signal start_for_k1_transform_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_k1_transform_U0_full_n : STD_LOGIC;
-    signal start_for_k1_transform_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_k1_transform_U0_empty_n : STD_LOGIC;
-    signal start_for_k2_stats_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_k2_stats_U0_full_n : STD_LOGIC;
-    signal start_for_k2_stats_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_k2_stats_U0_empty_n : STD_LOGIC;
-    signal start_for_k3_join_norm_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_k3_join_norm_U0_full_n : STD_LOGIC;
-    signal start_for_k3_join_norm_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_k3_join_norm_U0_empty_n : STD_LOGIC;
-    signal start_for_k4_postprocess_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_k4_postprocess_U0_full_n : STD_LOGIC;
-    signal start_for_k4_postprocess_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_k4_postprocess_U0_empty_n : STD_LOGIC;
+    signal ap_sync_reg_load_dual_U0_ap_ready : STD_LOGIC := '0';
+    signal ap_sync_load_dual_U0_ap_ready : STD_LOGIC;
+    signal start_for_store_dual_U0_din : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_store_dual_U0_full_n : STD_LOGIC;
+    signal start_for_store_dual_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_store_dual_U0_empty_n : STD_LOGIC;
+    signal start_for_super_kernel_32_U0_din : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_super_kernel_32_U0_full_n : STD_LOGIC;
+    signal start_for_super_kernel_32_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_super_kernel_32_U0_empty_n : STD_LOGIC;
+    signal start_for_k2_stats_dual_U0_din : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_k2_stats_dual_U0_full_n : STD_LOGIC;
+    signal start_for_k2_stats_dual_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_k2_stats_dual_U0_empty_n : STD_LOGIC;
+    signal start_for_k3_dual_norm_U0_din : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_k3_dual_norm_U0_full_n : STD_LOGIC;
+    signal start_for_k3_dual_norm_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_k3_dual_norm_U0_empty_n : STD_LOGIC;
+    signal start_for_k4_dual_post_U0_din : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_k4_dual_post_U0_full_n : STD_LOGIC;
+    signal start_for_k4_dual_post_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_k4_dual_post_U0_empty_n : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
     component top_kernel_entry_proc IS
@@ -450,7 +455,7 @@ architecture behav of top_kernel is
     end component;
 
 
-    component top_kernel_load_input_wide IS
+    component top_kernel_load_dual IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -475,8 +480,8 @@ architecture behav of top_kernel is
         m_axi_gmem0_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem0_0_WVALID : OUT STD_LOGIC;
         m_axi_gmem0_0_WREADY : IN STD_LOGIC;
-        m_axi_gmem0_0_WDATA : OUT STD_LOGIC_VECTOR (511 downto 0);
-        m_axi_gmem0_0_WSTRB : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem0_0_WDATA : OUT STD_LOGIC_VECTOR (1023 downto 0);
+        m_axi_gmem0_0_WSTRB : OUT STD_LOGIC_VECTOR (127 downto 0);
         m_axi_gmem0_0_WLAST : OUT STD_LOGIC;
         m_axi_gmem0_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem0_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
@@ -495,7 +500,7 @@ architecture behav of top_kernel is
         m_axi_gmem0_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem0_0_RVALID : IN STD_LOGIC;
         m_axi_gmem0_0_RREADY : OUT STD_LOGIC;
-        m_axi_gmem0_0_RDATA : IN STD_LOGIC_VECTOR (511 downto 0);
+        m_axi_gmem0_0_RDATA : IN STD_LOGIC_VECTOR (1023 downto 0);
         m_axi_gmem0_0_RLAST : IN STD_LOGIC;
         m_axi_gmem0_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem0_0_RFIFONUM : IN STD_LOGIC_VECTOR (8 downto 0);
@@ -506,18 +511,23 @@ architecture behav of top_kernel is
         m_axi_gmem0_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
         m_axi_gmem0_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem0_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        s_in_din : OUT STD_LOGIC_VECTOR (511 downto 0);
-        s_in_full_n : IN STD_LOGIC;
-        s_in_write : OUT STD_LOGIC;
-        s_in_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
-        s_in_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        sa_in_din : OUT STD_LOGIC_VECTOR (511 downto 0);
+        sa_in_full_n : IN STD_LOGIC;
+        sa_in_write : OUT STD_LOGIC;
+        sa_in_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        sa_in_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        sb_in_din : OUT STD_LOGIC_VECTOR (511 downto 0);
+        sb_in_full_n : IN STD_LOGIC;
+        sb_in_write : OUT STD_LOGIC;
+        sb_in_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        sb_in_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
         start_out : OUT STD_LOGIC;
         start_write : OUT STD_LOGIC;
         in_r : IN STD_LOGIC_VECTOR (63 downto 0) );
     end component;
 
 
-    component top_kernel_k0_preprocess IS
+    component top_kernel_super_kernel_32 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -527,22 +537,69 @@ architecture behav of top_kernel is
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        s_in_dout : IN STD_LOGIC_VECTOR (511 downto 0);
-        s_in_empty_n : IN STD_LOGIC;
-        s_in_read : OUT STD_LOGIC;
-        s_in_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
-        s_in_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
-        s0_din : OUT STD_LOGIC_VECTOR (511 downto 0);
-        s0_full_n : IN STD_LOGIC;
-        s0_write : OUT STD_LOGIC;
-        s0_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
-        s0_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
         start_out : OUT STD_LOGIC;
-        start_write : OUT STD_LOGIC );
+        start_write : OUT STD_LOGIC;
+        sa_in_dout : IN STD_LOGIC_VECTOR (511 downto 0);
+        sa_in_empty_n : IN STD_LOGIC;
+        sa_in_read : OUT STD_LOGIC;
+        sa_in_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        sa_in_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        sb_in_dout : IN STD_LOGIC_VECTOR (511 downto 0);
+        sb_in_empty_n : IN STD_LOGIC;
+        sb_in_read : OUT STD_LOGIC;
+        sb_in_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        sb_in_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        sa_stats_din : OUT STD_LOGIC_VECTOR (511 downto 0);
+        sa_stats_full_n : IN STD_LOGIC;
+        sa_stats_write : OUT STD_LOGIC;
+        sa_stats_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        sa_stats_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        sa_join_din : OUT STD_LOGIC_VECTOR (511 downto 0);
+        sa_join_full_n : IN STD_LOGIC;
+        sa_join_write : OUT STD_LOGIC;
+        sa_join_num_data_valid : IN STD_LOGIC_VECTOR (9 downto 0);
+        sa_join_fifo_cap : IN STD_LOGIC_VECTOR (9 downto 0);
+        sb_stats_din : OUT STD_LOGIC_VECTOR (511 downto 0);
+        sb_stats_full_n : IN STD_LOGIC;
+        sb_stats_write : OUT STD_LOGIC;
+        sb_stats_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        sb_stats_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        sb_join_din : OUT STD_LOGIC_VECTOR (511 downto 0);
+        sb_join_full_n : IN STD_LOGIC;
+        sb_join_write : OUT STD_LOGIC;
+        sb_join_num_data_valid : IN STD_LOGIC_VECTOR (9 downto 0);
+        sb_join_fifo_cap : IN STD_LOGIC_VECTOR (9 downto 0) );
     end component;
 
 
-    component top_kernel_k_split IS
+    component top_kernel_k2_stats_dual IS
+    port (
+        ap_clk : IN STD_LOGIC;
+        ap_rst : IN STD_LOGIC;
+        ap_start : IN STD_LOGIC;
+        ap_done : OUT STD_LOGIC;
+        ap_continue : IN STD_LOGIC;
+        ap_idle : OUT STD_LOGIC;
+        ap_ready : OUT STD_LOGIC;
+        sa_stats_dout : IN STD_LOGIC_VECTOR (511 downto 0);
+        sa_stats_empty_n : IN STD_LOGIC;
+        sa_stats_read : OUT STD_LOGIC;
+        sa_stats_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        sa_stats_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        sb_stats_dout : IN STD_LOGIC_VECTOR (511 downto 0);
+        sb_stats_empty_n : IN STD_LOGIC;
+        sb_stats_read : OUT STD_LOGIC;
+        sb_stats_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        sb_stats_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        s_st_din : OUT STD_LOGIC_VECTOR (27 downto 0);
+        s_st_full_n : IN STD_LOGIC;
+        s_st_write : OUT STD_LOGIC;
+        s_st_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
+        s_st_fifo_cap : IN STD_LOGIC_VECTOR (31 downto 0) );
+    end component;
+
+
+    component top_kernel_k3_dual_norm IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -552,52 +609,37 @@ architecture behav of top_kernel is
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        s0_dout : IN STD_LOGIC_VECTOR (511 downto 0);
-        s0_empty_n : IN STD_LOGIC;
-        s0_read : OUT STD_LOGIC;
-        s0_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
-        s0_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
-        s0_a_din : OUT STD_LOGIC_VECTOR (511 downto 0);
-        s0_a_full_n : IN STD_LOGIC;
-        s0_a_write : OUT STD_LOGIC;
-        s0_a_num_data_valid : IN STD_LOGIC_VECTOR (6 downto 0);
-        s0_a_fifo_cap : IN STD_LOGIC_VECTOR (6 downto 0);
-        s0_b_din : OUT STD_LOGIC_VECTOR (511 downto 0);
-        s0_b_full_n : IN STD_LOGIC;
-        s0_b_write : OUT STD_LOGIC;
-        s0_b_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
-        s0_b_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        s_st_dout : IN STD_LOGIC_VECTOR (27 downto 0);
+        s_st_empty_n : IN STD_LOGIC;
+        s_st_read : OUT STD_LOGIC;
+        s_st_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        s_st_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        sa_join_dout : IN STD_LOGIC_VECTOR (511 downto 0);
+        sa_join_empty_n : IN STD_LOGIC;
+        sa_join_read : OUT STD_LOGIC;
+        sa_join_num_data_valid : IN STD_LOGIC_VECTOR (9 downto 0);
+        sa_join_fifo_cap : IN STD_LOGIC_VECTOR (9 downto 0);
+        sb_join_dout : IN STD_LOGIC_VECTOR (511 downto 0);
+        sb_join_empty_n : IN STD_LOGIC;
+        sb_join_read : OUT STD_LOGIC;
+        sb_join_num_data_valid : IN STD_LOGIC_VECTOR (9 downto 0);
+        sb_join_fifo_cap : IN STD_LOGIC_VECTOR (9 downto 0);
+        sa_norm_din : OUT STD_LOGIC_VECTOR (511 downto 0);
+        sa_norm_full_n : IN STD_LOGIC;
+        sa_norm_write : OUT STD_LOGIC;
+        sa_norm_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
+        sa_norm_fifo_cap : IN STD_LOGIC_VECTOR (31 downto 0);
+        sb_norm_din : OUT STD_LOGIC_VECTOR (511 downto 0);
+        sb_norm_full_n : IN STD_LOGIC;
+        sb_norm_write : OUT STD_LOGIC;
+        sb_norm_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
+        sb_norm_fifo_cap : IN STD_LOGIC_VECTOR (31 downto 0);
         start_out : OUT STD_LOGIC;
         start_write : OUT STD_LOGIC );
     end component;
 
 
-    component top_kernel_k1_transform IS
-    port (
-        ap_clk : IN STD_LOGIC;
-        ap_rst : IN STD_LOGIC;
-        ap_start : IN STD_LOGIC;
-        start_full_n : IN STD_LOGIC;
-        ap_done : OUT STD_LOGIC;
-        ap_continue : IN STD_LOGIC;
-        ap_idle : OUT STD_LOGIC;
-        ap_ready : OUT STD_LOGIC;
-        s0_a_dout : IN STD_LOGIC_VECTOR (511 downto 0);
-        s0_a_empty_n : IN STD_LOGIC;
-        s0_a_read : OUT STD_LOGIC;
-        s0_a_num_data_valid : IN STD_LOGIC_VECTOR (6 downto 0);
-        s0_a_fifo_cap : IN STD_LOGIC_VECTOR (6 downto 0);
-        s1_din : OUT STD_LOGIC_VECTOR (511 downto 0);
-        s1_full_n : IN STD_LOGIC;
-        s1_write : OUT STD_LOGIC;
-        s1_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
-        s1_fifo_cap : IN STD_LOGIC_VECTOR (31 downto 0);
-        start_out : OUT STD_LOGIC;
-        start_write : OUT STD_LOGIC );
-    end component;
-
-
-    component top_kernel_k2_stats IS
+    component top_kernel_k4_dual_post IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -606,72 +648,30 @@ architecture behav of top_kernel is
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        s0_b_dout : IN STD_LOGIC_VECTOR (511 downto 0);
-        s0_b_empty_n : IN STD_LOGIC;
-        s0_b_read : OUT STD_LOGIC;
-        s0_b_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
-        s0_b_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
-        s_stats_din : OUT STD_LOGIC_VECTOR (27 downto 0);
-        s_stats_full_n : IN STD_LOGIC;
-        s_stats_write : OUT STD_LOGIC;
-        s_stats_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
-        s_stats_fifo_cap : IN STD_LOGIC_VECTOR (31 downto 0) );
+        sa_norm_dout : IN STD_LOGIC_VECTOR (511 downto 0);
+        sa_norm_empty_n : IN STD_LOGIC;
+        sa_norm_read : OUT STD_LOGIC;
+        sa_norm_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        sa_norm_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        sb_norm_dout : IN STD_LOGIC_VECTOR (511 downto 0);
+        sb_norm_empty_n : IN STD_LOGIC;
+        sb_norm_read : OUT STD_LOGIC;
+        sb_norm_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        sb_norm_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        sa_post_din : OUT STD_LOGIC_VECTOR (511 downto 0);
+        sa_post_full_n : IN STD_LOGIC;
+        sa_post_write : OUT STD_LOGIC;
+        sa_post_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
+        sa_post_fifo_cap : IN STD_LOGIC_VECTOR (31 downto 0);
+        sb_post_din : OUT STD_LOGIC_VECTOR (511 downto 0);
+        sb_post_full_n : IN STD_LOGIC;
+        sb_post_write : OUT STD_LOGIC;
+        sb_post_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
+        sb_post_fifo_cap : IN STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
 
-    component top_kernel_k3_join_norm IS
-    port (
-        ap_clk : IN STD_LOGIC;
-        ap_rst : IN STD_LOGIC;
-        ap_start : IN STD_LOGIC;
-        start_full_n : IN STD_LOGIC;
-        ap_done : OUT STD_LOGIC;
-        ap_continue : IN STD_LOGIC;
-        ap_idle : OUT STD_LOGIC;
-        ap_ready : OUT STD_LOGIC;
-        s_stats_dout : IN STD_LOGIC_VECTOR (27 downto 0);
-        s_stats_empty_n : IN STD_LOGIC;
-        s_stats_read : OUT STD_LOGIC;
-        s_stats_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
-        s_stats_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
-        s1_dout : IN STD_LOGIC_VECTOR (511 downto 0);
-        s1_empty_n : IN STD_LOGIC;
-        s1_read : OUT STD_LOGIC;
-        s1_num_data_valid : IN STD_LOGIC_VECTOR (6 downto 0);
-        s1_fifo_cap : IN STD_LOGIC_VECTOR (6 downto 0);
-        s3_din : OUT STD_LOGIC_VECTOR (511 downto 0);
-        s3_full_n : IN STD_LOGIC;
-        s3_write : OUT STD_LOGIC;
-        s3_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
-        s3_fifo_cap : IN STD_LOGIC_VECTOR (31 downto 0);
-        start_out : OUT STD_LOGIC;
-        start_write : OUT STD_LOGIC );
-    end component;
-
-
-    component top_kernel_k4_postprocess IS
-    port (
-        ap_clk : IN STD_LOGIC;
-        ap_rst : IN STD_LOGIC;
-        ap_start : IN STD_LOGIC;
-        ap_done : OUT STD_LOGIC;
-        ap_continue : IN STD_LOGIC;
-        ap_idle : OUT STD_LOGIC;
-        ap_ready : OUT STD_LOGIC;
-        s3_dout : IN STD_LOGIC_VECTOR (511 downto 0);
-        s3_empty_n : IN STD_LOGIC;
-        s3_read : OUT STD_LOGIC;
-        s3_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
-        s3_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
-        s_out_din : OUT STD_LOGIC_VECTOR (511 downto 0);
-        s_out_full_n : IN STD_LOGIC;
-        s_out_write : OUT STD_LOGIC;
-        s_out_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
-        s_out_fifo_cap : IN STD_LOGIC_VECTOR (31 downto 0) );
-    end component;
-
-
-    component top_kernel_store_output_wide IS
+    component top_kernel_store_dual IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -700,8 +700,8 @@ architecture behav of top_kernel is
         m_axi_gmem1_0_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem1_0_WVALID : OUT STD_LOGIC;
         m_axi_gmem1_0_WREADY : IN STD_LOGIC;
-        m_axi_gmem1_0_WDATA : OUT STD_LOGIC_VECTOR (511 downto 0);
-        m_axi_gmem1_0_WSTRB : OUT STD_LOGIC_VECTOR (63 downto 0);
+        m_axi_gmem1_0_WDATA : OUT STD_LOGIC_VECTOR (1023 downto 0);
+        m_axi_gmem1_0_WSTRB : OUT STD_LOGIC_VECTOR (127 downto 0);
         m_axi_gmem1_0_WLAST : OUT STD_LOGIC;
         m_axi_gmem1_0_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem1_0_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
@@ -720,7 +720,7 @@ architecture behav of top_kernel is
         m_axi_gmem1_0_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem1_0_RVALID : IN STD_LOGIC;
         m_axi_gmem1_0_RREADY : OUT STD_LOGIC;
-        m_axi_gmem1_0_RDATA : IN STD_LOGIC_VECTOR (511 downto 0);
+        m_axi_gmem1_0_RDATA : IN STD_LOGIC_VECTOR (1023 downto 0);
         m_axi_gmem1_0_RLAST : IN STD_LOGIC;
         m_axi_gmem1_0_RID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem1_0_RFIFONUM : IN STD_LOGIC_VECTOR (8 downto 0);
@@ -731,15 +731,20 @@ architecture behav of top_kernel is
         m_axi_gmem1_0_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
         m_axi_gmem1_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem1_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        s_out_dout : IN STD_LOGIC_VECTOR (511 downto 0);
-        s_out_empty_n : IN STD_LOGIC;
-        s_out_read : OUT STD_LOGIC;
-        s_out_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
-        s_out_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0) );
+        sa_post_dout : IN STD_LOGIC_VECTOR (511 downto 0);
+        sa_post_empty_n : IN STD_LOGIC;
+        sa_post_read : OUT STD_LOGIC;
+        sa_post_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        sa_post_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        sb_post_dout : IN STD_LOGIC_VECTOR (511 downto 0);
+        sb_post_empty_n : IN STD_LOGIC;
+        sb_post_read : OUT STD_LOGIC;
+        sb_post_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        sb_post_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0) );
     end component;
 
 
-    component top_kernel_fifo_w64_d8_S IS
+    component top_kernel_fifo_w64_d7_S IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -773,7 +778,7 @@ architecture behav of top_kernel is
     end component;
 
 
-    component top_kernel_fifo_w512_d64_S IS
+    component top_kernel_fifo_w512_d512_A IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -785,8 +790,8 @@ architecture behav of top_kernel is
         if_dout : OUT STD_LOGIC_VECTOR (511 downto 0);
         if_empty_n : OUT STD_LOGIC;
         if_read : IN STD_LOGIC;
-        if_num_data_valid : OUT STD_LOGIC_VECTOR (6 downto 0);
-        if_fifo_cap : OUT STD_LOGIC_VECTOR (6 downto 0) );
+        if_num_data_valid : OUT STD_LOGIC_VECTOR (9 downto 0);
+        if_fifo_cap : OUT STD_LOGIC_VECTOR (9 downto 0) );
     end component;
 
 
@@ -807,7 +812,7 @@ architecture behav of top_kernel is
     end component;
 
 
-    component top_kernel_start_for_store_output_wide_U0 IS
+    component top_kernel_start_for_store_dual_U0 IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -822,7 +827,7 @@ architecture behav of top_kernel is
     end component;
 
 
-    component top_kernel_start_for_k0_preprocess_U0 IS
+    component top_kernel_start_for_super_kernel_32_U0 IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -837,7 +842,7 @@ architecture behav of top_kernel is
     end component;
 
 
-    component top_kernel_start_for_k_split_U0 IS
+    component top_kernel_start_for_k2_stats_dual_U0 IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -852,7 +857,7 @@ architecture behav of top_kernel is
     end component;
 
 
-    component top_kernel_start_for_k1_transform_U0 IS
+    component top_kernel_start_for_k3_dual_norm_U0 IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -867,37 +872,7 @@ architecture behav of top_kernel is
     end component;
 
 
-    component top_kernel_start_for_k2_stats_U0 IS
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        if_read_ce : IN STD_LOGIC;
-        if_write_ce : IN STD_LOGIC;
-        if_din : IN STD_LOGIC_VECTOR (0 downto 0);
-        if_full_n : OUT STD_LOGIC;
-        if_write : IN STD_LOGIC;
-        if_dout : OUT STD_LOGIC_VECTOR (0 downto 0);
-        if_empty_n : OUT STD_LOGIC;
-        if_read : IN STD_LOGIC );
-    end component;
-
-
-    component top_kernel_start_for_k3_join_norm_U0 IS
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        if_read_ce : IN STD_LOGIC;
-        if_write_ce : IN STD_LOGIC;
-        if_din : IN STD_LOGIC_VECTOR (0 downto 0);
-        if_full_n : OUT STD_LOGIC;
-        if_write : IN STD_LOGIC;
-        if_dout : OUT STD_LOGIC_VECTOR (0 downto 0);
-        if_empty_n : OUT STD_LOGIC;
-        if_read : IN STD_LOGIC );
-    end component;
-
-
-    component top_kernel_start_for_k4_postprocess_U0 IS
+    component top_kernel_start_for_k4_dual_post_U0 IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -1026,7 +1001,7 @@ architecture behav of top_kernel is
         I_CH0_ARLEN : IN STD_LOGIC_VECTOR (31 downto 0);
         I_CH0_RVALID : OUT STD_LOGIC;
         I_CH0_RREADY : IN STD_LOGIC;
-        I_CH0_RDATA : OUT STD_LOGIC_VECTOR (511 downto 0);
+        I_CH0_RDATA : OUT STD_LOGIC_VECTOR (1023 downto 0);
         I_CH0_RFIFONUM : OUT STD_LOGIC_VECTOR (8 downto 0);
         I_CH0_AWVALID : IN STD_LOGIC;
         I_CH0_AWREADY : OUT STD_LOGIC;
@@ -1034,8 +1009,8 @@ architecture behav of top_kernel is
         I_CH0_AWLEN : IN STD_LOGIC_VECTOR (31 downto 0);
         I_CH0_WVALID : IN STD_LOGIC;
         I_CH0_WREADY : OUT STD_LOGIC;
-        I_CH0_WDATA : IN STD_LOGIC_VECTOR (511 downto 0);
-        I_CH0_WSTRB : IN STD_LOGIC_VECTOR (63 downto 0);
+        I_CH0_WDATA : IN STD_LOGIC_VECTOR (1023 downto 0);
+        I_CH0_WSTRB : IN STD_LOGIC_VECTOR (127 downto 0);
         I_CH0_BVALID : OUT STD_LOGIC;
         I_CH0_BREADY : IN STD_LOGIC );
     end component;
@@ -1120,7 +1095,7 @@ architecture behav of top_kernel is
         I_CH0_ARLEN : IN STD_LOGIC_VECTOR (31 downto 0);
         I_CH0_RVALID : OUT STD_LOGIC;
         I_CH0_RREADY : IN STD_LOGIC;
-        I_CH0_RDATA : OUT STD_LOGIC_VECTOR (511 downto 0);
+        I_CH0_RDATA : OUT STD_LOGIC_VECTOR (1023 downto 0);
         I_CH0_RFIFONUM : OUT STD_LOGIC_VECTOR (8 downto 0);
         I_CH0_AWVALID : IN STD_LOGIC;
         I_CH0_AWREADY : OUT STD_LOGIC;
@@ -1128,8 +1103,8 @@ architecture behav of top_kernel is
         I_CH0_AWLEN : IN STD_LOGIC_VECTOR (31 downto 0);
         I_CH0_WVALID : IN STD_LOGIC;
         I_CH0_WREADY : OUT STD_LOGIC;
-        I_CH0_WDATA : IN STD_LOGIC_VECTOR (511 downto 0);
-        I_CH0_WSTRB : IN STD_LOGIC_VECTOR (63 downto 0);
+        I_CH0_WDATA : IN STD_LOGIC_VECTOR (1023 downto 0);
+        I_CH0_WSTRB : IN STD_LOGIC_VECTOR (127 downto 0);
         I_CH0_BVALID : OUT STD_LOGIC;
         I_CH0_BREADY : IN STD_LOGIC );
     end component;
@@ -1173,7 +1148,7 @@ begin
     gmem0_m_axi_U : component top_kernel_gmem0_m_axi
     generic map (
         CONSERVATIVE => 1,
-        USER_MAXREQS => 9,
+        USER_MAXREQS => 7,
         MAX_READ_BURST_LENGTH => 16,
         MAX_WRITE_BURST_LENGTH => 16,
         C_M_AXI_ID_WIDTH => C_M_AXI_GMEM0_ID_WIDTH,
@@ -1190,7 +1165,7 @@ begin
         CH0_NUM_READ_OUTSTANDING => 16,
         CH0_NUM_WRITE_OUTSTANDING => 16,
         CH0_USER_RFIFONUM_WIDTH => 9,
-        CH0_USER_DW => 512,
+        CH0_USER_DW => 1024,
         CH0_USER_AW => 64,
         NUM_READ_OUTSTANDING => 16,
         NUM_WRITE_OUTSTANDING => 0)
@@ -1243,12 +1218,12 @@ begin
         ACLK => ap_clk,
         ARESET => ap_rst_n_inv,
         ACLK_EN => ap_const_logic_1,
-        I_CH0_ARVALID => load_input_wide_U0_m_axi_gmem0_0_ARVALID,
+        I_CH0_ARVALID => load_dual_U0_m_axi_gmem0_0_ARVALID,
         I_CH0_ARREADY => gmem0_0_ARREADY,
-        I_CH0_ARADDR => load_input_wide_U0_m_axi_gmem0_0_ARADDR,
-        I_CH0_ARLEN => load_input_wide_U0_m_axi_gmem0_0_ARLEN,
+        I_CH0_ARADDR => load_dual_U0_m_axi_gmem0_0_ARADDR,
+        I_CH0_ARLEN => load_dual_U0_m_axi_gmem0_0_ARLEN,
         I_CH0_RVALID => gmem0_0_RVALID,
-        I_CH0_RREADY => load_input_wide_U0_m_axi_gmem0_0_RREADY,
+        I_CH0_RREADY => load_dual_U0_m_axi_gmem0_0_RREADY,
         I_CH0_RDATA => gmem0_0_RDATA,
         I_CH0_RFIFONUM => gmem0_0_RFIFONUM,
         I_CH0_AWVALID => ap_const_logic_0,
@@ -1257,15 +1232,15 @@ begin
         I_CH0_AWLEN => ap_const_lv32_0,
         I_CH0_WVALID => ap_const_logic_0,
         I_CH0_WREADY => gmem0_0_WREADY,
-        I_CH0_WDATA => ap_const_lv512_lc_1,
-        I_CH0_WSTRB => ap_const_lv64_0,
+        I_CH0_WDATA => ap_const_lv1024_lc_1,
+        I_CH0_WSTRB => ap_const_lv128_lc_1,
         I_CH0_BVALID => gmem0_0_BVALID,
         I_CH0_BREADY => ap_const_logic_0);
 
     gmem1_m_axi_U : component top_kernel_gmem1_m_axi
     generic map (
         CONSERVATIVE => 1,
-        USER_MAXREQS => 6,
+        USER_MAXREQS => 4,
         MAX_READ_BURST_LENGTH => 16,
         MAX_WRITE_BURST_LENGTH => 16,
         C_M_AXI_ID_WIDTH => C_M_AXI_GMEM1_ID_WIDTH,
@@ -1282,7 +1257,7 @@ begin
         CH0_NUM_READ_OUTSTANDING => 16,
         CH0_NUM_WRITE_OUTSTANDING => 16,
         CH0_USER_RFIFONUM_WIDTH => 9,
-        CH0_USER_DW => 512,
+        CH0_USER_DW => 1024,
         CH0_USER_AW => 64,
         NUM_READ_OUTSTANDING => 0,
         NUM_WRITE_OUTSTANDING => 16)
@@ -1343,23 +1318,23 @@ begin
         I_CH0_RREADY => ap_const_logic_0,
         I_CH0_RDATA => gmem1_0_RDATA,
         I_CH0_RFIFONUM => gmem1_0_RFIFONUM,
-        I_CH0_AWVALID => store_output_wide_U0_m_axi_gmem1_0_AWVALID,
+        I_CH0_AWVALID => store_dual_U0_m_axi_gmem1_0_AWVALID,
         I_CH0_AWREADY => gmem1_0_AWREADY,
-        I_CH0_AWADDR => store_output_wide_U0_m_axi_gmem1_0_AWADDR,
-        I_CH0_AWLEN => store_output_wide_U0_m_axi_gmem1_0_AWLEN,
-        I_CH0_WVALID => store_output_wide_U0_m_axi_gmem1_0_WVALID,
+        I_CH0_AWADDR => store_dual_U0_m_axi_gmem1_0_AWADDR,
+        I_CH0_AWLEN => store_dual_U0_m_axi_gmem1_0_AWLEN,
+        I_CH0_WVALID => store_dual_U0_m_axi_gmem1_0_WVALID,
         I_CH0_WREADY => gmem1_0_WREADY,
-        I_CH0_WDATA => store_output_wide_U0_m_axi_gmem1_0_WDATA,
-        I_CH0_WSTRB => store_output_wide_U0_m_axi_gmem1_0_WSTRB,
+        I_CH0_WDATA => store_dual_U0_m_axi_gmem1_0_WDATA,
+        I_CH0_WSTRB => store_dual_U0_m_axi_gmem1_0_WSTRB,
         I_CH0_BVALID => gmem1_0_BVALID,
-        I_CH0_BREADY => store_output_wide_U0_m_axi_gmem1_0_BREADY);
+        I_CH0_BREADY => store_dual_U0_m_axi_gmem1_0_BREADY);
 
     entry_proc_U0 : component top_kernel_entry_proc
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         ap_start => entry_proc_U0_ap_start,
-        start_full_n => start_for_store_output_wide_U0_full_n,
+        start_full_n => start_for_store_dual_U0_full_n,
         ap_done => entry_proc_U0_ap_done,
         ap_continue => entry_proc_U0_ap_continue,
         ap_idle => entry_proc_U0_ap_idle,
@@ -1373,51 +1348,51 @@ begin
         out_r_c_num_data_valid => out_r_c_num_data_valid,
         out_r_c_fifo_cap => out_r_c_fifo_cap);
 
-    load_input_wide_U0 : component top_kernel_load_input_wide
+    load_dual_U0 : component top_kernel_load_dual
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => load_input_wide_U0_ap_start,
-        start_full_n => start_for_k0_preprocess_U0_full_n,
-        ap_done => load_input_wide_U0_ap_done,
-        ap_continue => load_input_wide_U0_ap_continue,
-        ap_idle => load_input_wide_U0_ap_idle,
-        ap_ready => load_input_wide_U0_ap_ready,
-        m_axi_gmem0_0_AWVALID => load_input_wide_U0_m_axi_gmem0_0_AWVALID,
+        ap_start => load_dual_U0_ap_start,
+        start_full_n => start_for_super_kernel_32_U0_full_n,
+        ap_done => load_dual_U0_ap_done,
+        ap_continue => load_dual_U0_ap_continue,
+        ap_idle => load_dual_U0_ap_idle,
+        ap_ready => load_dual_U0_ap_ready,
+        m_axi_gmem0_0_AWVALID => load_dual_U0_m_axi_gmem0_0_AWVALID,
         m_axi_gmem0_0_AWREADY => ap_const_logic_0,
-        m_axi_gmem0_0_AWADDR => load_input_wide_U0_m_axi_gmem0_0_AWADDR,
-        m_axi_gmem0_0_AWID => load_input_wide_U0_m_axi_gmem0_0_AWID,
-        m_axi_gmem0_0_AWLEN => load_input_wide_U0_m_axi_gmem0_0_AWLEN,
-        m_axi_gmem0_0_AWSIZE => load_input_wide_U0_m_axi_gmem0_0_AWSIZE,
-        m_axi_gmem0_0_AWBURST => load_input_wide_U0_m_axi_gmem0_0_AWBURST,
-        m_axi_gmem0_0_AWLOCK => load_input_wide_U0_m_axi_gmem0_0_AWLOCK,
-        m_axi_gmem0_0_AWCACHE => load_input_wide_U0_m_axi_gmem0_0_AWCACHE,
-        m_axi_gmem0_0_AWPROT => load_input_wide_U0_m_axi_gmem0_0_AWPROT,
-        m_axi_gmem0_0_AWQOS => load_input_wide_U0_m_axi_gmem0_0_AWQOS,
-        m_axi_gmem0_0_AWREGION => load_input_wide_U0_m_axi_gmem0_0_AWREGION,
-        m_axi_gmem0_0_AWUSER => load_input_wide_U0_m_axi_gmem0_0_AWUSER,
-        m_axi_gmem0_0_WVALID => load_input_wide_U0_m_axi_gmem0_0_WVALID,
+        m_axi_gmem0_0_AWADDR => load_dual_U0_m_axi_gmem0_0_AWADDR,
+        m_axi_gmem0_0_AWID => load_dual_U0_m_axi_gmem0_0_AWID,
+        m_axi_gmem0_0_AWLEN => load_dual_U0_m_axi_gmem0_0_AWLEN,
+        m_axi_gmem0_0_AWSIZE => load_dual_U0_m_axi_gmem0_0_AWSIZE,
+        m_axi_gmem0_0_AWBURST => load_dual_U0_m_axi_gmem0_0_AWBURST,
+        m_axi_gmem0_0_AWLOCK => load_dual_U0_m_axi_gmem0_0_AWLOCK,
+        m_axi_gmem0_0_AWCACHE => load_dual_U0_m_axi_gmem0_0_AWCACHE,
+        m_axi_gmem0_0_AWPROT => load_dual_U0_m_axi_gmem0_0_AWPROT,
+        m_axi_gmem0_0_AWQOS => load_dual_U0_m_axi_gmem0_0_AWQOS,
+        m_axi_gmem0_0_AWREGION => load_dual_U0_m_axi_gmem0_0_AWREGION,
+        m_axi_gmem0_0_AWUSER => load_dual_U0_m_axi_gmem0_0_AWUSER,
+        m_axi_gmem0_0_WVALID => load_dual_U0_m_axi_gmem0_0_WVALID,
         m_axi_gmem0_0_WREADY => ap_const_logic_0,
-        m_axi_gmem0_0_WDATA => load_input_wide_U0_m_axi_gmem0_0_WDATA,
-        m_axi_gmem0_0_WSTRB => load_input_wide_U0_m_axi_gmem0_0_WSTRB,
-        m_axi_gmem0_0_WLAST => load_input_wide_U0_m_axi_gmem0_0_WLAST,
-        m_axi_gmem0_0_WID => load_input_wide_U0_m_axi_gmem0_0_WID,
-        m_axi_gmem0_0_WUSER => load_input_wide_U0_m_axi_gmem0_0_WUSER,
-        m_axi_gmem0_0_ARVALID => load_input_wide_U0_m_axi_gmem0_0_ARVALID,
+        m_axi_gmem0_0_WDATA => load_dual_U0_m_axi_gmem0_0_WDATA,
+        m_axi_gmem0_0_WSTRB => load_dual_U0_m_axi_gmem0_0_WSTRB,
+        m_axi_gmem0_0_WLAST => load_dual_U0_m_axi_gmem0_0_WLAST,
+        m_axi_gmem0_0_WID => load_dual_U0_m_axi_gmem0_0_WID,
+        m_axi_gmem0_0_WUSER => load_dual_U0_m_axi_gmem0_0_WUSER,
+        m_axi_gmem0_0_ARVALID => load_dual_U0_m_axi_gmem0_0_ARVALID,
         m_axi_gmem0_0_ARREADY => gmem0_0_ARREADY,
-        m_axi_gmem0_0_ARADDR => load_input_wide_U0_m_axi_gmem0_0_ARADDR,
-        m_axi_gmem0_0_ARID => load_input_wide_U0_m_axi_gmem0_0_ARID,
-        m_axi_gmem0_0_ARLEN => load_input_wide_U0_m_axi_gmem0_0_ARLEN,
-        m_axi_gmem0_0_ARSIZE => load_input_wide_U0_m_axi_gmem0_0_ARSIZE,
-        m_axi_gmem0_0_ARBURST => load_input_wide_U0_m_axi_gmem0_0_ARBURST,
-        m_axi_gmem0_0_ARLOCK => load_input_wide_U0_m_axi_gmem0_0_ARLOCK,
-        m_axi_gmem0_0_ARCACHE => load_input_wide_U0_m_axi_gmem0_0_ARCACHE,
-        m_axi_gmem0_0_ARPROT => load_input_wide_U0_m_axi_gmem0_0_ARPROT,
-        m_axi_gmem0_0_ARQOS => load_input_wide_U0_m_axi_gmem0_0_ARQOS,
-        m_axi_gmem0_0_ARREGION => load_input_wide_U0_m_axi_gmem0_0_ARREGION,
-        m_axi_gmem0_0_ARUSER => load_input_wide_U0_m_axi_gmem0_0_ARUSER,
+        m_axi_gmem0_0_ARADDR => load_dual_U0_m_axi_gmem0_0_ARADDR,
+        m_axi_gmem0_0_ARID => load_dual_U0_m_axi_gmem0_0_ARID,
+        m_axi_gmem0_0_ARLEN => load_dual_U0_m_axi_gmem0_0_ARLEN,
+        m_axi_gmem0_0_ARSIZE => load_dual_U0_m_axi_gmem0_0_ARSIZE,
+        m_axi_gmem0_0_ARBURST => load_dual_U0_m_axi_gmem0_0_ARBURST,
+        m_axi_gmem0_0_ARLOCK => load_dual_U0_m_axi_gmem0_0_ARLOCK,
+        m_axi_gmem0_0_ARCACHE => load_dual_U0_m_axi_gmem0_0_ARCACHE,
+        m_axi_gmem0_0_ARPROT => load_dual_U0_m_axi_gmem0_0_ARPROT,
+        m_axi_gmem0_0_ARQOS => load_dual_U0_m_axi_gmem0_0_ARQOS,
+        m_axi_gmem0_0_ARREGION => load_dual_U0_m_axi_gmem0_0_ARREGION,
+        m_axi_gmem0_0_ARUSER => load_dual_U0_m_axi_gmem0_0_ARUSER,
         m_axi_gmem0_0_RVALID => gmem0_0_RVALID,
-        m_axi_gmem0_0_RREADY => load_input_wide_U0_m_axi_gmem0_0_RREADY,
+        m_axi_gmem0_0_RREADY => load_dual_U0_m_axi_gmem0_0_RREADY,
         m_axi_gmem0_0_RDATA => gmem0_0_RDATA,
         m_axi_gmem0_0_RLAST => gmem0_0_RLAST,
         m_axi_gmem0_0_RID => gmem0_0_RID,
@@ -1425,228 +1400,232 @@ begin
         m_axi_gmem0_0_RUSER => gmem0_0_RUSER,
         m_axi_gmem0_0_RRESP => gmem0_0_RRESP,
         m_axi_gmem0_0_BVALID => ap_const_logic_0,
-        m_axi_gmem0_0_BREADY => load_input_wide_U0_m_axi_gmem0_0_BREADY,
+        m_axi_gmem0_0_BREADY => load_dual_U0_m_axi_gmem0_0_BREADY,
         m_axi_gmem0_0_BRESP => ap_const_lv2_0,
         m_axi_gmem0_0_BID => ap_const_lv1_0,
         m_axi_gmem0_0_BUSER => ap_const_lv1_0,
-        s_in_din => load_input_wide_U0_s_in_din,
-        s_in_full_n => s_in_full_n,
-        s_in_write => load_input_wide_U0_s_in_write,
-        s_in_num_data_valid => s_in_num_data_valid,
-        s_in_fifo_cap => s_in_fifo_cap,
-        start_out => load_input_wide_U0_start_out,
-        start_write => load_input_wide_U0_start_write,
+        sa_in_din => load_dual_U0_sa_in_din,
+        sa_in_full_n => sa_in_full_n,
+        sa_in_write => load_dual_U0_sa_in_write,
+        sa_in_num_data_valid => sa_in_num_data_valid,
+        sa_in_fifo_cap => sa_in_fifo_cap,
+        sb_in_din => load_dual_U0_sb_in_din,
+        sb_in_full_n => sb_in_full_n,
+        sb_in_write => load_dual_U0_sb_in_write,
+        sb_in_num_data_valid => sb_in_num_data_valid,
+        sb_in_fifo_cap => sb_in_fifo_cap,
+        start_out => load_dual_U0_start_out,
+        start_write => load_dual_U0_start_write,
         in_r => in_r);
 
-    k0_preprocess_U0 : component top_kernel_k0_preprocess
+    super_kernel_32_U0 : component top_kernel_super_kernel_32
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => k0_preprocess_U0_ap_start,
-        start_full_n => start_for_k_split_U0_full_n,
-        ap_done => k0_preprocess_U0_ap_done,
-        ap_continue => k0_preprocess_U0_ap_continue,
-        ap_idle => k0_preprocess_U0_ap_idle,
-        ap_ready => k0_preprocess_U0_ap_ready,
-        s_in_dout => s_in_dout,
-        s_in_empty_n => s_in_empty_n,
-        s_in_read => k0_preprocess_U0_s_in_read,
-        s_in_num_data_valid => s_in_num_data_valid,
-        s_in_fifo_cap => s_in_fifo_cap,
-        s0_din => k0_preprocess_U0_s0_din,
-        s0_full_n => s0_full_n,
-        s0_write => k0_preprocess_U0_s0_write,
-        s0_num_data_valid => s0_num_data_valid,
-        s0_fifo_cap => s0_fifo_cap,
-        start_out => k0_preprocess_U0_start_out,
-        start_write => k0_preprocess_U0_start_write);
+        ap_start => super_kernel_32_U0_ap_start,
+        start_full_n => super_kernel_32_U0_start_full_n,
+        ap_done => super_kernel_32_U0_ap_done,
+        ap_continue => super_kernel_32_U0_ap_continue,
+        ap_idle => super_kernel_32_U0_ap_idle,
+        ap_ready => super_kernel_32_U0_ap_ready,
+        start_out => super_kernel_32_U0_start_out,
+        start_write => super_kernel_32_U0_start_write,
+        sa_in_dout => sa_in_dout,
+        sa_in_empty_n => sa_in_empty_n,
+        sa_in_read => super_kernel_32_U0_sa_in_read,
+        sa_in_num_data_valid => sa_in_num_data_valid,
+        sa_in_fifo_cap => sa_in_fifo_cap,
+        sb_in_dout => sb_in_dout,
+        sb_in_empty_n => sb_in_empty_n,
+        sb_in_read => super_kernel_32_U0_sb_in_read,
+        sb_in_num_data_valid => sb_in_num_data_valid,
+        sb_in_fifo_cap => sb_in_fifo_cap,
+        sa_stats_din => super_kernel_32_U0_sa_stats_din,
+        sa_stats_full_n => sa_stats_full_n,
+        sa_stats_write => super_kernel_32_U0_sa_stats_write,
+        sa_stats_num_data_valid => sa_stats_num_data_valid,
+        sa_stats_fifo_cap => sa_stats_fifo_cap,
+        sa_join_din => super_kernel_32_U0_sa_join_din,
+        sa_join_full_n => sa_join_full_n,
+        sa_join_write => super_kernel_32_U0_sa_join_write,
+        sa_join_num_data_valid => sa_join_num_data_valid,
+        sa_join_fifo_cap => sa_join_fifo_cap,
+        sb_stats_din => super_kernel_32_U0_sb_stats_din,
+        sb_stats_full_n => sb_stats_full_n,
+        sb_stats_write => super_kernel_32_U0_sb_stats_write,
+        sb_stats_num_data_valid => sb_stats_num_data_valid,
+        sb_stats_fifo_cap => sb_stats_fifo_cap,
+        sb_join_din => super_kernel_32_U0_sb_join_din,
+        sb_join_full_n => sb_join_full_n,
+        sb_join_write => super_kernel_32_U0_sb_join_write,
+        sb_join_num_data_valid => sb_join_num_data_valid,
+        sb_join_fifo_cap => sb_join_fifo_cap);
 
-    k_split_U0 : component top_kernel_k_split
+    k2_stats_dual_U0 : component top_kernel_k2_stats_dual
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => k_split_U0_ap_start,
-        start_full_n => k_split_U0_start_full_n,
-        ap_done => k_split_U0_ap_done,
-        ap_continue => k_split_U0_ap_continue,
-        ap_idle => k_split_U0_ap_idle,
-        ap_ready => k_split_U0_ap_ready,
-        s0_dout => s0_dout,
-        s0_empty_n => s0_empty_n,
-        s0_read => k_split_U0_s0_read,
-        s0_num_data_valid => s0_num_data_valid,
-        s0_fifo_cap => s0_fifo_cap,
-        s0_a_din => k_split_U0_s0_a_din,
-        s0_a_full_n => s0_a_full_n,
-        s0_a_write => k_split_U0_s0_a_write,
-        s0_a_num_data_valid => s0_a_num_data_valid,
-        s0_a_fifo_cap => s0_a_fifo_cap,
-        s0_b_din => k_split_U0_s0_b_din,
-        s0_b_full_n => s0_b_full_n,
-        s0_b_write => k_split_U0_s0_b_write,
-        s0_b_num_data_valid => s0_b_num_data_valid,
-        s0_b_fifo_cap => s0_b_fifo_cap,
-        start_out => k_split_U0_start_out,
-        start_write => k_split_U0_start_write);
+        ap_start => k2_stats_dual_U0_ap_start,
+        ap_done => k2_stats_dual_U0_ap_done,
+        ap_continue => k2_stats_dual_U0_ap_continue,
+        ap_idle => k2_stats_dual_U0_ap_idle,
+        ap_ready => k2_stats_dual_U0_ap_ready,
+        sa_stats_dout => sa_stats_dout,
+        sa_stats_empty_n => sa_stats_empty_n,
+        sa_stats_read => k2_stats_dual_U0_sa_stats_read,
+        sa_stats_num_data_valid => sa_stats_num_data_valid,
+        sa_stats_fifo_cap => sa_stats_fifo_cap,
+        sb_stats_dout => sb_stats_dout,
+        sb_stats_empty_n => sb_stats_empty_n,
+        sb_stats_read => k2_stats_dual_U0_sb_stats_read,
+        sb_stats_num_data_valid => sb_stats_num_data_valid,
+        sb_stats_fifo_cap => sb_stats_fifo_cap,
+        s_st_din => k2_stats_dual_U0_s_st_din,
+        s_st_full_n => s_st_full_n,
+        s_st_write => k2_stats_dual_U0_s_st_write,
+        s_st_num_data_valid => k2_stats_dual_U0_s_st_num_data_valid,
+        s_st_fifo_cap => k2_stats_dual_U0_s_st_fifo_cap);
 
-    k1_transform_U0 : component top_kernel_k1_transform
+    k3_dual_norm_U0 : component top_kernel_k3_dual_norm
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => k1_transform_U0_ap_start,
-        start_full_n => start_for_k3_join_norm_U0_full_n,
-        ap_done => k1_transform_U0_ap_done,
-        ap_continue => k1_transform_U0_ap_continue,
-        ap_idle => k1_transform_U0_ap_idle,
-        ap_ready => k1_transform_U0_ap_ready,
-        s0_a_dout => s0_a_dout,
-        s0_a_empty_n => s0_a_empty_n,
-        s0_a_read => k1_transform_U0_s0_a_read,
-        s0_a_num_data_valid => s0_a_num_data_valid,
-        s0_a_fifo_cap => s0_a_fifo_cap,
-        s1_din => k1_transform_U0_s1_din,
-        s1_full_n => s1_full_n,
-        s1_write => k1_transform_U0_s1_write,
-        s1_num_data_valid => k1_transform_U0_s1_num_data_valid,
-        s1_fifo_cap => k1_transform_U0_s1_fifo_cap,
-        start_out => k1_transform_U0_start_out,
-        start_write => k1_transform_U0_start_write);
+        ap_start => k3_dual_norm_U0_ap_start,
+        start_full_n => start_for_k4_dual_post_U0_full_n,
+        ap_done => k3_dual_norm_U0_ap_done,
+        ap_continue => k3_dual_norm_U0_ap_continue,
+        ap_idle => k3_dual_norm_U0_ap_idle,
+        ap_ready => k3_dual_norm_U0_ap_ready,
+        s_st_dout => s_st_dout,
+        s_st_empty_n => s_st_empty_n,
+        s_st_read => k3_dual_norm_U0_s_st_read,
+        s_st_num_data_valid => s_st_num_data_valid,
+        s_st_fifo_cap => s_st_fifo_cap,
+        sa_join_dout => sa_join_dout,
+        sa_join_empty_n => sa_join_empty_n,
+        sa_join_read => k3_dual_norm_U0_sa_join_read,
+        sa_join_num_data_valid => sa_join_num_data_valid,
+        sa_join_fifo_cap => sa_join_fifo_cap,
+        sb_join_dout => sb_join_dout,
+        sb_join_empty_n => sb_join_empty_n,
+        sb_join_read => k3_dual_norm_U0_sb_join_read,
+        sb_join_num_data_valid => sb_join_num_data_valid,
+        sb_join_fifo_cap => sb_join_fifo_cap,
+        sa_norm_din => k3_dual_norm_U0_sa_norm_din,
+        sa_norm_full_n => sa_norm_full_n,
+        sa_norm_write => k3_dual_norm_U0_sa_norm_write,
+        sa_norm_num_data_valid => k3_dual_norm_U0_sa_norm_num_data_valid,
+        sa_norm_fifo_cap => k3_dual_norm_U0_sa_norm_fifo_cap,
+        sb_norm_din => k3_dual_norm_U0_sb_norm_din,
+        sb_norm_full_n => sb_norm_full_n,
+        sb_norm_write => k3_dual_norm_U0_sb_norm_write,
+        sb_norm_num_data_valid => k3_dual_norm_U0_sb_norm_num_data_valid,
+        sb_norm_fifo_cap => k3_dual_norm_U0_sb_norm_fifo_cap,
+        start_out => k3_dual_norm_U0_start_out,
+        start_write => k3_dual_norm_U0_start_write);
 
-    k2_stats_U0 : component top_kernel_k2_stats
+    k4_dual_post_U0 : component top_kernel_k4_dual_post
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => k2_stats_U0_ap_start,
-        ap_done => k2_stats_U0_ap_done,
-        ap_continue => k2_stats_U0_ap_continue,
-        ap_idle => k2_stats_U0_ap_idle,
-        ap_ready => k2_stats_U0_ap_ready,
-        s0_b_dout => s0_b_dout,
-        s0_b_empty_n => s0_b_empty_n,
-        s0_b_read => k2_stats_U0_s0_b_read,
-        s0_b_num_data_valid => s0_b_num_data_valid,
-        s0_b_fifo_cap => s0_b_fifo_cap,
-        s_stats_din => k2_stats_U0_s_stats_din,
-        s_stats_full_n => s_stats_full_n,
-        s_stats_write => k2_stats_U0_s_stats_write,
-        s_stats_num_data_valid => k2_stats_U0_s_stats_num_data_valid,
-        s_stats_fifo_cap => k2_stats_U0_s_stats_fifo_cap);
+        ap_start => k4_dual_post_U0_ap_start,
+        ap_done => k4_dual_post_U0_ap_done,
+        ap_continue => k4_dual_post_U0_ap_continue,
+        ap_idle => k4_dual_post_U0_ap_idle,
+        ap_ready => k4_dual_post_U0_ap_ready,
+        sa_norm_dout => sa_norm_dout,
+        sa_norm_empty_n => sa_norm_empty_n,
+        sa_norm_read => k4_dual_post_U0_sa_norm_read,
+        sa_norm_num_data_valid => sa_norm_num_data_valid,
+        sa_norm_fifo_cap => sa_norm_fifo_cap,
+        sb_norm_dout => sb_norm_dout,
+        sb_norm_empty_n => sb_norm_empty_n,
+        sb_norm_read => k4_dual_post_U0_sb_norm_read,
+        sb_norm_num_data_valid => sb_norm_num_data_valid,
+        sb_norm_fifo_cap => sb_norm_fifo_cap,
+        sa_post_din => k4_dual_post_U0_sa_post_din,
+        sa_post_full_n => sa_post_full_n,
+        sa_post_write => k4_dual_post_U0_sa_post_write,
+        sa_post_num_data_valid => k4_dual_post_U0_sa_post_num_data_valid,
+        sa_post_fifo_cap => k4_dual_post_U0_sa_post_fifo_cap,
+        sb_post_din => k4_dual_post_U0_sb_post_din,
+        sb_post_full_n => sb_post_full_n,
+        sb_post_write => k4_dual_post_U0_sb_post_write,
+        sb_post_num_data_valid => k4_dual_post_U0_sb_post_num_data_valid,
+        sb_post_fifo_cap => k4_dual_post_U0_sb_post_fifo_cap);
 
-    k3_join_norm_U0 : component top_kernel_k3_join_norm
+    store_dual_U0 : component top_kernel_store_dual
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => k3_join_norm_U0_ap_start,
-        start_full_n => start_for_k4_postprocess_U0_full_n,
-        ap_done => k3_join_norm_U0_ap_done,
-        ap_continue => k3_join_norm_U0_ap_continue,
-        ap_idle => k3_join_norm_U0_ap_idle,
-        ap_ready => k3_join_norm_U0_ap_ready,
-        s_stats_dout => s_stats_dout,
-        s_stats_empty_n => s_stats_empty_n,
-        s_stats_read => k3_join_norm_U0_s_stats_read,
-        s_stats_num_data_valid => s_stats_num_data_valid,
-        s_stats_fifo_cap => s_stats_fifo_cap,
-        s1_dout => s1_dout,
-        s1_empty_n => s1_empty_n,
-        s1_read => k3_join_norm_U0_s1_read,
-        s1_num_data_valid => s1_num_data_valid,
-        s1_fifo_cap => s1_fifo_cap,
-        s3_din => k3_join_norm_U0_s3_din,
-        s3_full_n => s3_full_n,
-        s3_write => k3_join_norm_U0_s3_write,
-        s3_num_data_valid => k3_join_norm_U0_s3_num_data_valid,
-        s3_fifo_cap => k3_join_norm_U0_s3_fifo_cap,
-        start_out => k3_join_norm_U0_start_out,
-        start_write => k3_join_norm_U0_start_write);
-
-    k4_postprocess_U0 : component top_kernel_k4_postprocess
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        ap_start => k4_postprocess_U0_ap_start,
-        ap_done => k4_postprocess_U0_ap_done,
-        ap_continue => k4_postprocess_U0_ap_continue,
-        ap_idle => k4_postprocess_U0_ap_idle,
-        ap_ready => k4_postprocess_U0_ap_ready,
-        s3_dout => s3_dout,
-        s3_empty_n => s3_empty_n,
-        s3_read => k4_postprocess_U0_s3_read,
-        s3_num_data_valid => s3_num_data_valid,
-        s3_fifo_cap => s3_fifo_cap,
-        s_out_din => k4_postprocess_U0_s_out_din,
-        s_out_full_n => s_out_full_n,
-        s_out_write => k4_postprocess_U0_s_out_write,
-        s_out_num_data_valid => k4_postprocess_U0_s_out_num_data_valid,
-        s_out_fifo_cap => k4_postprocess_U0_s_out_fifo_cap);
-
-    store_output_wide_U0 : component top_kernel_store_output_wide
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst_n_inv,
-        ap_start => store_output_wide_U0_ap_start,
-        ap_done => store_output_wide_U0_ap_done,
-        ap_continue => store_output_wide_U0_ap_continue,
-        ap_idle => store_output_wide_U0_ap_idle,
-        ap_ready => store_output_wide_U0_ap_ready,
+        ap_start => store_dual_U0_ap_start,
+        ap_done => store_dual_U0_ap_done,
+        ap_continue => store_dual_U0_ap_continue,
+        ap_idle => store_dual_U0_ap_idle,
+        ap_ready => store_dual_U0_ap_ready,
         out_r_dout => out_r_c_dout,
         out_r_empty_n => out_r_c_empty_n,
-        out_r_read => store_output_wide_U0_out_r_read,
+        out_r_read => store_dual_U0_out_r_read,
         out_r_num_data_valid => out_r_c_num_data_valid,
         out_r_fifo_cap => out_r_c_fifo_cap,
-        m_axi_gmem1_0_AWVALID => store_output_wide_U0_m_axi_gmem1_0_AWVALID,
+        m_axi_gmem1_0_AWVALID => store_dual_U0_m_axi_gmem1_0_AWVALID,
         m_axi_gmem1_0_AWREADY => gmem1_0_AWREADY,
-        m_axi_gmem1_0_AWADDR => store_output_wide_U0_m_axi_gmem1_0_AWADDR,
-        m_axi_gmem1_0_AWID => store_output_wide_U0_m_axi_gmem1_0_AWID,
-        m_axi_gmem1_0_AWLEN => store_output_wide_U0_m_axi_gmem1_0_AWLEN,
-        m_axi_gmem1_0_AWSIZE => store_output_wide_U0_m_axi_gmem1_0_AWSIZE,
-        m_axi_gmem1_0_AWBURST => store_output_wide_U0_m_axi_gmem1_0_AWBURST,
-        m_axi_gmem1_0_AWLOCK => store_output_wide_U0_m_axi_gmem1_0_AWLOCK,
-        m_axi_gmem1_0_AWCACHE => store_output_wide_U0_m_axi_gmem1_0_AWCACHE,
-        m_axi_gmem1_0_AWPROT => store_output_wide_U0_m_axi_gmem1_0_AWPROT,
-        m_axi_gmem1_0_AWQOS => store_output_wide_U0_m_axi_gmem1_0_AWQOS,
-        m_axi_gmem1_0_AWREGION => store_output_wide_U0_m_axi_gmem1_0_AWREGION,
-        m_axi_gmem1_0_AWUSER => store_output_wide_U0_m_axi_gmem1_0_AWUSER,
-        m_axi_gmem1_0_WVALID => store_output_wide_U0_m_axi_gmem1_0_WVALID,
+        m_axi_gmem1_0_AWADDR => store_dual_U0_m_axi_gmem1_0_AWADDR,
+        m_axi_gmem1_0_AWID => store_dual_U0_m_axi_gmem1_0_AWID,
+        m_axi_gmem1_0_AWLEN => store_dual_U0_m_axi_gmem1_0_AWLEN,
+        m_axi_gmem1_0_AWSIZE => store_dual_U0_m_axi_gmem1_0_AWSIZE,
+        m_axi_gmem1_0_AWBURST => store_dual_U0_m_axi_gmem1_0_AWBURST,
+        m_axi_gmem1_0_AWLOCK => store_dual_U0_m_axi_gmem1_0_AWLOCK,
+        m_axi_gmem1_0_AWCACHE => store_dual_U0_m_axi_gmem1_0_AWCACHE,
+        m_axi_gmem1_0_AWPROT => store_dual_U0_m_axi_gmem1_0_AWPROT,
+        m_axi_gmem1_0_AWQOS => store_dual_U0_m_axi_gmem1_0_AWQOS,
+        m_axi_gmem1_0_AWREGION => store_dual_U0_m_axi_gmem1_0_AWREGION,
+        m_axi_gmem1_0_AWUSER => store_dual_U0_m_axi_gmem1_0_AWUSER,
+        m_axi_gmem1_0_WVALID => store_dual_U0_m_axi_gmem1_0_WVALID,
         m_axi_gmem1_0_WREADY => gmem1_0_WREADY,
-        m_axi_gmem1_0_WDATA => store_output_wide_U0_m_axi_gmem1_0_WDATA,
-        m_axi_gmem1_0_WSTRB => store_output_wide_U0_m_axi_gmem1_0_WSTRB,
-        m_axi_gmem1_0_WLAST => store_output_wide_U0_m_axi_gmem1_0_WLAST,
-        m_axi_gmem1_0_WID => store_output_wide_U0_m_axi_gmem1_0_WID,
-        m_axi_gmem1_0_WUSER => store_output_wide_U0_m_axi_gmem1_0_WUSER,
-        m_axi_gmem1_0_ARVALID => store_output_wide_U0_m_axi_gmem1_0_ARVALID,
+        m_axi_gmem1_0_WDATA => store_dual_U0_m_axi_gmem1_0_WDATA,
+        m_axi_gmem1_0_WSTRB => store_dual_U0_m_axi_gmem1_0_WSTRB,
+        m_axi_gmem1_0_WLAST => store_dual_U0_m_axi_gmem1_0_WLAST,
+        m_axi_gmem1_0_WID => store_dual_U0_m_axi_gmem1_0_WID,
+        m_axi_gmem1_0_WUSER => store_dual_U0_m_axi_gmem1_0_WUSER,
+        m_axi_gmem1_0_ARVALID => store_dual_U0_m_axi_gmem1_0_ARVALID,
         m_axi_gmem1_0_ARREADY => ap_const_logic_0,
-        m_axi_gmem1_0_ARADDR => store_output_wide_U0_m_axi_gmem1_0_ARADDR,
-        m_axi_gmem1_0_ARID => store_output_wide_U0_m_axi_gmem1_0_ARID,
-        m_axi_gmem1_0_ARLEN => store_output_wide_U0_m_axi_gmem1_0_ARLEN,
-        m_axi_gmem1_0_ARSIZE => store_output_wide_U0_m_axi_gmem1_0_ARSIZE,
-        m_axi_gmem1_0_ARBURST => store_output_wide_U0_m_axi_gmem1_0_ARBURST,
-        m_axi_gmem1_0_ARLOCK => store_output_wide_U0_m_axi_gmem1_0_ARLOCK,
-        m_axi_gmem1_0_ARCACHE => store_output_wide_U0_m_axi_gmem1_0_ARCACHE,
-        m_axi_gmem1_0_ARPROT => store_output_wide_U0_m_axi_gmem1_0_ARPROT,
-        m_axi_gmem1_0_ARQOS => store_output_wide_U0_m_axi_gmem1_0_ARQOS,
-        m_axi_gmem1_0_ARREGION => store_output_wide_U0_m_axi_gmem1_0_ARREGION,
-        m_axi_gmem1_0_ARUSER => store_output_wide_U0_m_axi_gmem1_0_ARUSER,
+        m_axi_gmem1_0_ARADDR => store_dual_U0_m_axi_gmem1_0_ARADDR,
+        m_axi_gmem1_0_ARID => store_dual_U0_m_axi_gmem1_0_ARID,
+        m_axi_gmem1_0_ARLEN => store_dual_U0_m_axi_gmem1_0_ARLEN,
+        m_axi_gmem1_0_ARSIZE => store_dual_U0_m_axi_gmem1_0_ARSIZE,
+        m_axi_gmem1_0_ARBURST => store_dual_U0_m_axi_gmem1_0_ARBURST,
+        m_axi_gmem1_0_ARLOCK => store_dual_U0_m_axi_gmem1_0_ARLOCK,
+        m_axi_gmem1_0_ARCACHE => store_dual_U0_m_axi_gmem1_0_ARCACHE,
+        m_axi_gmem1_0_ARPROT => store_dual_U0_m_axi_gmem1_0_ARPROT,
+        m_axi_gmem1_0_ARQOS => store_dual_U0_m_axi_gmem1_0_ARQOS,
+        m_axi_gmem1_0_ARREGION => store_dual_U0_m_axi_gmem1_0_ARREGION,
+        m_axi_gmem1_0_ARUSER => store_dual_U0_m_axi_gmem1_0_ARUSER,
         m_axi_gmem1_0_RVALID => ap_const_logic_0,
-        m_axi_gmem1_0_RREADY => store_output_wide_U0_m_axi_gmem1_0_RREADY,
-        m_axi_gmem1_0_RDATA => ap_const_lv512_lc_1,
+        m_axi_gmem1_0_RREADY => store_dual_U0_m_axi_gmem1_0_RREADY,
+        m_axi_gmem1_0_RDATA => ap_const_lv1024_lc_1,
         m_axi_gmem1_0_RLAST => ap_const_logic_0,
         m_axi_gmem1_0_RID => ap_const_lv1_0,
         m_axi_gmem1_0_RFIFONUM => ap_const_lv9_0,
         m_axi_gmem1_0_RUSER => ap_const_lv1_0,
         m_axi_gmem1_0_RRESP => ap_const_lv2_0,
         m_axi_gmem1_0_BVALID => gmem1_0_BVALID,
-        m_axi_gmem1_0_BREADY => store_output_wide_U0_m_axi_gmem1_0_BREADY,
+        m_axi_gmem1_0_BREADY => store_dual_U0_m_axi_gmem1_0_BREADY,
         m_axi_gmem1_0_BRESP => gmem1_0_BRESP,
         m_axi_gmem1_0_BID => gmem1_0_BID,
         m_axi_gmem1_0_BUSER => gmem1_0_BUSER,
-        s_out_dout => s_out_dout,
-        s_out_empty_n => s_out_empty_n,
-        s_out_read => store_output_wide_U0_s_out_read,
-        s_out_num_data_valid => s_out_num_data_valid,
-        s_out_fifo_cap => s_out_fifo_cap);
+        sa_post_dout => sa_post_dout,
+        sa_post_empty_n => sa_post_empty_n,
+        sa_post_read => store_dual_U0_sa_post_read,
+        sa_post_num_data_valid => sa_post_num_data_valid,
+        sa_post_fifo_cap => sa_post_fifo_cap,
+        sb_post_dout => sb_post_dout,
+        sb_post_empty_n => sb_post_empty_n,
+        sb_post_read => store_dual_U0_sb_post_read,
+        sb_post_num_data_valid => sb_post_num_data_valid,
+        sb_post_fifo_cap => sb_post_fifo_cap);
 
-    out_r_c_U : component top_kernel_fifo_w64_d8_S
+    out_r_c_U : component top_kernel_fifo_w64_d7_S
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -1657,220 +1636,239 @@ begin
         if_write => entry_proc_U0_out_r_c_write,
         if_dout => out_r_c_dout,
         if_empty_n => out_r_c_empty_n,
-        if_read => store_output_wide_U0_out_r_read,
+        if_read => store_dual_U0_out_r_read,
         if_num_data_valid => out_r_c_num_data_valid,
         if_fifo_cap => out_r_c_fifo_cap);
 
-    s_in_U : component top_kernel_fifo_w512_d2_S
+    sa_in_U : component top_kernel_fifo_w512_d2_S
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => load_input_wide_U0_s_in_din,
-        if_full_n => s_in_full_n,
-        if_write => load_input_wide_U0_s_in_write,
-        if_dout => s_in_dout,
-        if_empty_n => s_in_empty_n,
-        if_read => k0_preprocess_U0_s_in_read,
-        if_num_data_valid => s_in_num_data_valid,
-        if_fifo_cap => s_in_fifo_cap);
+        if_din => load_dual_U0_sa_in_din,
+        if_full_n => sa_in_full_n,
+        if_write => load_dual_U0_sa_in_write,
+        if_dout => sa_in_dout,
+        if_empty_n => sa_in_empty_n,
+        if_read => super_kernel_32_U0_sa_in_read,
+        if_num_data_valid => sa_in_num_data_valid,
+        if_fifo_cap => sa_in_fifo_cap);
 
-    s0_U : component top_kernel_fifo_w512_d2_S
+    sb_in_U : component top_kernel_fifo_w512_d2_S
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => k0_preprocess_U0_s0_din,
-        if_full_n => s0_full_n,
-        if_write => k0_preprocess_U0_s0_write,
-        if_dout => s0_dout,
-        if_empty_n => s0_empty_n,
-        if_read => k_split_U0_s0_read,
-        if_num_data_valid => s0_num_data_valid,
-        if_fifo_cap => s0_fifo_cap);
+        if_din => load_dual_U0_sb_in_din,
+        if_full_n => sb_in_full_n,
+        if_write => load_dual_U0_sb_in_write,
+        if_dout => sb_in_dout,
+        if_empty_n => sb_in_empty_n,
+        if_read => super_kernel_32_U0_sb_in_read,
+        if_num_data_valid => sb_in_num_data_valid,
+        if_fifo_cap => sb_in_fifo_cap);
 
-    s0_a_U : component top_kernel_fifo_w512_d64_S
+    sa_stats_U : component top_kernel_fifo_w512_d2_S
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => k_split_U0_s0_a_din,
-        if_full_n => s0_a_full_n,
-        if_write => k_split_U0_s0_a_write,
-        if_dout => s0_a_dout,
-        if_empty_n => s0_a_empty_n,
-        if_read => k1_transform_U0_s0_a_read,
-        if_num_data_valid => s0_a_num_data_valid,
-        if_fifo_cap => s0_a_fifo_cap);
+        if_din => super_kernel_32_U0_sa_stats_din,
+        if_full_n => sa_stats_full_n,
+        if_write => super_kernel_32_U0_sa_stats_write,
+        if_dout => sa_stats_dout,
+        if_empty_n => sa_stats_empty_n,
+        if_read => k2_stats_dual_U0_sa_stats_read,
+        if_num_data_valid => sa_stats_num_data_valid,
+        if_fifo_cap => sa_stats_fifo_cap);
 
-    s0_b_U : component top_kernel_fifo_w512_d2_S
+    sa_join_U : component top_kernel_fifo_w512_d512_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => k_split_U0_s0_b_din,
-        if_full_n => s0_b_full_n,
-        if_write => k_split_U0_s0_b_write,
-        if_dout => s0_b_dout,
-        if_empty_n => s0_b_empty_n,
-        if_read => k2_stats_U0_s0_b_read,
-        if_num_data_valid => s0_b_num_data_valid,
-        if_fifo_cap => s0_b_fifo_cap);
+        if_din => super_kernel_32_U0_sa_join_din,
+        if_full_n => sa_join_full_n,
+        if_write => super_kernel_32_U0_sa_join_write,
+        if_dout => sa_join_dout,
+        if_empty_n => sa_join_empty_n,
+        if_read => k3_dual_norm_U0_sa_join_read,
+        if_num_data_valid => sa_join_num_data_valid,
+        if_fifo_cap => sa_join_fifo_cap);
 
-    s1_U : component top_kernel_fifo_w512_d64_S
+    sb_stats_U : component top_kernel_fifo_w512_d2_S
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => k1_transform_U0_s1_din,
-        if_full_n => s1_full_n,
-        if_write => k1_transform_U0_s1_write,
-        if_dout => s1_dout,
-        if_empty_n => s1_empty_n,
-        if_read => k3_join_norm_U0_s1_read,
-        if_num_data_valid => s1_num_data_valid,
-        if_fifo_cap => s1_fifo_cap);
+        if_din => super_kernel_32_U0_sb_stats_din,
+        if_full_n => sb_stats_full_n,
+        if_write => super_kernel_32_U0_sb_stats_write,
+        if_dout => sb_stats_dout,
+        if_empty_n => sb_stats_empty_n,
+        if_read => k2_stats_dual_U0_sb_stats_read,
+        if_num_data_valid => sb_stats_num_data_valid,
+        if_fifo_cap => sb_stats_fifo_cap);
 
-    s_stats_U : component top_kernel_fifo_w28_d2_S
+    sb_join_U : component top_kernel_fifo_w512_d512_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => k2_stats_U0_s_stats_din,
-        if_full_n => s_stats_full_n,
-        if_write => k2_stats_U0_s_stats_write,
-        if_dout => s_stats_dout,
-        if_empty_n => s_stats_empty_n,
-        if_read => k3_join_norm_U0_s_stats_read,
-        if_num_data_valid => s_stats_num_data_valid,
-        if_fifo_cap => s_stats_fifo_cap);
+        if_din => super_kernel_32_U0_sb_join_din,
+        if_full_n => sb_join_full_n,
+        if_write => super_kernel_32_U0_sb_join_write,
+        if_dout => sb_join_dout,
+        if_empty_n => sb_join_empty_n,
+        if_read => k3_dual_norm_U0_sb_join_read,
+        if_num_data_valid => sb_join_num_data_valid,
+        if_fifo_cap => sb_join_fifo_cap);
 
-    s3_U : component top_kernel_fifo_w512_d2_S
+    s_st_U : component top_kernel_fifo_w28_d2_S
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => k3_join_norm_U0_s3_din,
-        if_full_n => s3_full_n,
-        if_write => k3_join_norm_U0_s3_write,
-        if_dout => s3_dout,
-        if_empty_n => s3_empty_n,
-        if_read => k4_postprocess_U0_s3_read,
-        if_num_data_valid => s3_num_data_valid,
-        if_fifo_cap => s3_fifo_cap);
+        if_din => k2_stats_dual_U0_s_st_din,
+        if_full_n => s_st_full_n,
+        if_write => k2_stats_dual_U0_s_st_write,
+        if_dout => s_st_dout,
+        if_empty_n => s_st_empty_n,
+        if_read => k3_dual_norm_U0_s_st_read,
+        if_num_data_valid => s_st_num_data_valid,
+        if_fifo_cap => s_st_fifo_cap);
 
-    s_out_U : component top_kernel_fifo_w512_d2_S
+    sa_norm_U : component top_kernel_fifo_w512_d2_S
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => k4_postprocess_U0_s_out_din,
-        if_full_n => s_out_full_n,
-        if_write => k4_postprocess_U0_s_out_write,
-        if_dout => s_out_dout,
-        if_empty_n => s_out_empty_n,
-        if_read => store_output_wide_U0_s_out_read,
-        if_num_data_valid => s_out_num_data_valid,
-        if_fifo_cap => s_out_fifo_cap);
+        if_din => k3_dual_norm_U0_sa_norm_din,
+        if_full_n => sa_norm_full_n,
+        if_write => k3_dual_norm_U0_sa_norm_write,
+        if_dout => sa_norm_dout,
+        if_empty_n => sa_norm_empty_n,
+        if_read => k4_dual_post_U0_sa_norm_read,
+        if_num_data_valid => sa_norm_num_data_valid,
+        if_fifo_cap => sa_norm_fifo_cap);
 
-    start_for_store_output_wide_U0_U : component top_kernel_start_for_store_output_wide_U0
+    sb_norm_U : component top_kernel_fifo_w512_d2_S
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => start_for_store_output_wide_U0_din,
-        if_full_n => start_for_store_output_wide_U0_full_n,
+        if_din => k3_dual_norm_U0_sb_norm_din,
+        if_full_n => sb_norm_full_n,
+        if_write => k3_dual_norm_U0_sb_norm_write,
+        if_dout => sb_norm_dout,
+        if_empty_n => sb_norm_empty_n,
+        if_read => k4_dual_post_U0_sb_norm_read,
+        if_num_data_valid => sb_norm_num_data_valid,
+        if_fifo_cap => sb_norm_fifo_cap);
+
+    sa_post_U : component top_kernel_fifo_w512_d2_S
+    port map (
+        clk => ap_clk,
+        reset => ap_rst_n_inv,
+        if_read_ce => ap_const_logic_1,
+        if_write_ce => ap_const_logic_1,
+        if_din => k4_dual_post_U0_sa_post_din,
+        if_full_n => sa_post_full_n,
+        if_write => k4_dual_post_U0_sa_post_write,
+        if_dout => sa_post_dout,
+        if_empty_n => sa_post_empty_n,
+        if_read => store_dual_U0_sa_post_read,
+        if_num_data_valid => sa_post_num_data_valid,
+        if_fifo_cap => sa_post_fifo_cap);
+
+    sb_post_U : component top_kernel_fifo_w512_d2_S
+    port map (
+        clk => ap_clk,
+        reset => ap_rst_n_inv,
+        if_read_ce => ap_const_logic_1,
+        if_write_ce => ap_const_logic_1,
+        if_din => k4_dual_post_U0_sb_post_din,
+        if_full_n => sb_post_full_n,
+        if_write => k4_dual_post_U0_sb_post_write,
+        if_dout => sb_post_dout,
+        if_empty_n => sb_post_empty_n,
+        if_read => store_dual_U0_sb_post_read,
+        if_num_data_valid => sb_post_num_data_valid,
+        if_fifo_cap => sb_post_fifo_cap);
+
+    start_for_store_dual_U0_U : component top_kernel_start_for_store_dual_U0
+    port map (
+        clk => ap_clk,
+        reset => ap_rst_n_inv,
+        if_read_ce => ap_const_logic_1,
+        if_write_ce => ap_const_logic_1,
+        if_din => start_for_store_dual_U0_din,
+        if_full_n => start_for_store_dual_U0_full_n,
         if_write => entry_proc_U0_start_write,
-        if_dout => start_for_store_output_wide_U0_dout,
-        if_empty_n => start_for_store_output_wide_U0_empty_n,
-        if_read => store_output_wide_U0_ap_ready);
+        if_dout => start_for_store_dual_U0_dout,
+        if_empty_n => start_for_store_dual_U0_empty_n,
+        if_read => store_dual_U0_ap_ready);
 
-    start_for_k0_preprocess_U0_U : component top_kernel_start_for_k0_preprocess_U0
+    start_for_super_kernel_32_U0_U : component top_kernel_start_for_super_kernel_32_U0
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => start_for_k0_preprocess_U0_din,
-        if_full_n => start_for_k0_preprocess_U0_full_n,
-        if_write => load_input_wide_U0_start_write,
-        if_dout => start_for_k0_preprocess_U0_dout,
-        if_empty_n => start_for_k0_preprocess_U0_empty_n,
-        if_read => k0_preprocess_U0_ap_ready);
+        if_din => start_for_super_kernel_32_U0_din,
+        if_full_n => start_for_super_kernel_32_U0_full_n,
+        if_write => load_dual_U0_start_write,
+        if_dout => start_for_super_kernel_32_U0_dout,
+        if_empty_n => start_for_super_kernel_32_U0_empty_n,
+        if_read => super_kernel_32_U0_ap_ready);
 
-    start_for_k_split_U0_U : component top_kernel_start_for_k_split_U0
+    start_for_k2_stats_dual_U0_U : component top_kernel_start_for_k2_stats_dual_U0
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => start_for_k_split_U0_din,
-        if_full_n => start_for_k_split_U0_full_n,
-        if_write => k0_preprocess_U0_start_write,
-        if_dout => start_for_k_split_U0_dout,
-        if_empty_n => start_for_k_split_U0_empty_n,
-        if_read => k_split_U0_ap_ready);
+        if_din => start_for_k2_stats_dual_U0_din,
+        if_full_n => start_for_k2_stats_dual_U0_full_n,
+        if_write => super_kernel_32_U0_start_write,
+        if_dout => start_for_k2_stats_dual_U0_dout,
+        if_empty_n => start_for_k2_stats_dual_U0_empty_n,
+        if_read => k2_stats_dual_U0_ap_ready);
 
-    start_for_k1_transform_U0_U : component top_kernel_start_for_k1_transform_U0
+    start_for_k3_dual_norm_U0_U : component top_kernel_start_for_k3_dual_norm_U0
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => start_for_k1_transform_U0_din,
-        if_full_n => start_for_k1_transform_U0_full_n,
-        if_write => k_split_U0_start_write,
-        if_dout => start_for_k1_transform_U0_dout,
-        if_empty_n => start_for_k1_transform_U0_empty_n,
-        if_read => k1_transform_U0_ap_ready);
+        if_din => start_for_k3_dual_norm_U0_din,
+        if_full_n => start_for_k3_dual_norm_U0_full_n,
+        if_write => super_kernel_32_U0_start_write,
+        if_dout => start_for_k3_dual_norm_U0_dout,
+        if_empty_n => start_for_k3_dual_norm_U0_empty_n,
+        if_read => k3_dual_norm_U0_ap_ready);
 
-    start_for_k2_stats_U0_U : component top_kernel_start_for_k2_stats_U0
+    start_for_k4_dual_post_U0_U : component top_kernel_start_for_k4_dual_post_U0
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => start_for_k2_stats_U0_din,
-        if_full_n => start_for_k2_stats_U0_full_n,
-        if_write => k_split_U0_start_write,
-        if_dout => start_for_k2_stats_U0_dout,
-        if_empty_n => start_for_k2_stats_U0_empty_n,
-        if_read => k2_stats_U0_ap_ready);
-
-    start_for_k3_join_norm_U0_U : component top_kernel_start_for_k3_join_norm_U0
-    port map (
-        clk => ap_clk,
-        reset => ap_rst_n_inv,
-        if_read_ce => ap_const_logic_1,
-        if_write_ce => ap_const_logic_1,
-        if_din => start_for_k3_join_norm_U0_din,
-        if_full_n => start_for_k3_join_norm_U0_full_n,
-        if_write => k1_transform_U0_start_write,
-        if_dout => start_for_k3_join_norm_U0_dout,
-        if_empty_n => start_for_k3_join_norm_U0_empty_n,
-        if_read => k3_join_norm_U0_ap_ready);
-
-    start_for_k4_postprocess_U0_U : component top_kernel_start_for_k4_postprocess_U0
-    port map (
-        clk => ap_clk,
-        reset => ap_rst_n_inv,
-        if_read_ce => ap_const_logic_1,
-        if_write_ce => ap_const_logic_1,
-        if_din => start_for_k4_postprocess_U0_din,
-        if_full_n => start_for_k4_postprocess_U0_full_n,
-        if_write => k3_join_norm_U0_start_write,
-        if_dout => start_for_k4_postprocess_U0_dout,
-        if_empty_n => start_for_k4_postprocess_U0_empty_n,
-        if_read => k4_postprocess_U0_ap_ready);
+        if_din => start_for_k4_dual_post_U0_din,
+        if_full_n => start_for_k4_dual_post_U0_full_n,
+        if_write => k3_dual_norm_U0_start_write,
+        if_dout => start_for_k4_dual_post_U0_dout,
+        if_empty_n => start_for_k4_dual_post_U0_empty_n,
+        if_read => k4_dual_post_U0_ap_ready);
 
 
 
@@ -1892,23 +1890,23 @@ begin
     end process;
 
 
-    ap_sync_reg_load_input_wide_U0_ap_ready_assign_proc : process(ap_clk)
+    ap_sync_reg_load_dual_U0_ap_ready_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                ap_sync_reg_load_input_wide_U0_ap_ready <= ap_const_logic_0;
+                ap_sync_reg_load_dual_U0_ap_ready <= ap_const_logic_0;
             else
                 if (((ap_sync_ready and ap_start) = ap_const_logic_1)) then 
-                    ap_sync_reg_load_input_wide_U0_ap_ready <= ap_const_logic_0;
+                    ap_sync_reg_load_dual_U0_ap_ready <= ap_const_logic_0;
                 else 
-                    ap_sync_reg_load_input_wide_U0_ap_ready <= ap_sync_load_input_wide_U0_ap_ready;
+                    ap_sync_reg_load_dual_U0_ap_ready <= ap_sync_load_dual_U0_ap_ready;
                 end if; 
             end if;
         end if;
     end process;
 
-    ap_done <= store_output_wide_U0_ap_done;
-    ap_idle <= (store_output_wide_U0_ap_idle and load_input_wide_U0_ap_idle and k_split_U0_ap_idle and k4_postprocess_U0_ap_idle and k3_join_norm_U0_ap_idle and k2_stats_U0_ap_idle and k1_transform_U0_ap_idle and k0_preprocess_U0_ap_idle and entry_proc_U0_ap_idle);
+    ap_done <= store_dual_U0_ap_done;
+    ap_idle <= (super_kernel_32_U0_ap_idle and store_dual_U0_ap_idle and load_dual_U0_ap_idle and k4_dual_post_U0_ap_idle and k3_dual_norm_U0_ap_idle and k2_stats_dual_U0_ap_idle and entry_proc_U0_ap_idle);
     ap_ready <= ap_sync_ready;
 
     ap_rst_n_inv_assign_proc : process(ap_rst_n)
@@ -1917,8 +1915,8 @@ begin
     end process;
 
     ap_sync_entry_proc_U0_ap_ready <= (entry_proc_U0_ap_ready or ap_sync_reg_entry_proc_U0_ap_ready);
-    ap_sync_load_input_wide_U0_ap_ready <= (load_input_wide_U0_ap_ready or ap_sync_reg_load_input_wide_U0_ap_ready);
-    ap_sync_ready <= (ap_sync_load_input_wide_U0_ap_ready and ap_sync_entry_proc_U0_ap_ready);
+    ap_sync_load_dual_U0_ap_ready <= (load_dual_U0_ap_ready or ap_sync_reg_load_dual_U0_ap_ready);
+    ap_sync_ready <= (ap_sync_load_dual_U0_ap_ready and ap_sync_entry_proc_U0_ap_ready);
     entry_proc_U0_ap_continue <= ap_const_logic_1;
     entry_proc_U0_ap_start <= ((ap_sync_reg_entry_proc_U0_ap_ready xor ap_const_logic_1) and ap_start and ap_const_logic_1);
     gmem0_0_RID <= ap_const_lv1_0;
@@ -1928,36 +1926,32 @@ begin
     gmem1_0_BID <= ap_const_lv1_0;
     gmem1_0_BRESP <= ap_const_lv2_0;
     gmem1_0_BUSER <= ap_const_lv1_0;
-    k0_preprocess_U0_ap_continue <= ap_const_logic_1;
-    k0_preprocess_U0_ap_start <= start_for_k0_preprocess_U0_empty_n;
-    k1_transform_U0_ap_continue <= ap_const_logic_1;
-    k1_transform_U0_ap_start <= start_for_k1_transform_U0_empty_n;
-    k1_transform_U0_s1_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(s1_fifo_cap),7))),32));
-    k1_transform_U0_s1_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(s1_num_data_valid),7))),32));
-    k2_stats_U0_ap_continue <= ap_const_logic_1;
-    k2_stats_U0_ap_start <= start_for_k2_stats_U0_empty_n;
-    k2_stats_U0_s_stats_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(s_stats_fifo_cap),3))),32));
-    k2_stats_U0_s_stats_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(s_stats_num_data_valid),3))),32));
-    k3_join_norm_U0_ap_continue <= ap_const_logic_1;
-    k3_join_norm_U0_ap_start <= start_for_k3_join_norm_U0_empty_n;
-    k3_join_norm_U0_s3_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(s3_fifo_cap),3))),32));
-    k3_join_norm_U0_s3_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(s3_num_data_valid),3))),32));
-    k4_postprocess_U0_ap_continue <= ap_const_logic_1;
-    k4_postprocess_U0_ap_start <= start_for_k4_postprocess_U0_empty_n;
-    k4_postprocess_U0_s_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(s_out_fifo_cap),3))),32));
-    k4_postprocess_U0_s_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(s_out_num_data_valid),3))),32));
-    k_split_U0_ap_continue <= ap_const_logic_1;
-    k_split_U0_ap_start <= start_for_k_split_U0_empty_n;
-    k_split_U0_start_full_n <= (start_for_k2_stats_U0_full_n and start_for_k1_transform_U0_full_n);
-    load_input_wide_U0_ap_continue <= ap_const_logic_1;
-    load_input_wide_U0_ap_start <= ((ap_sync_reg_load_input_wide_U0_ap_ready xor ap_const_logic_1) and ap_start and ap_const_logic_1);
-    start_for_k0_preprocess_U0_din <= (0=>ap_const_logic_1, others=>'-');
-    start_for_k1_transform_U0_din <= (0=>ap_const_logic_1, others=>'-');
-    start_for_k2_stats_U0_din <= (0=>ap_const_logic_1, others=>'-');
-    start_for_k3_join_norm_U0_din <= (0=>ap_const_logic_1, others=>'-');
-    start_for_k4_postprocess_U0_din <= (0=>ap_const_logic_1, others=>'-');
-    start_for_k_split_U0_din <= (0=>ap_const_logic_1, others=>'-');
-    start_for_store_output_wide_U0_din <= (0=>ap_const_logic_1, others=>'-');
-    store_output_wide_U0_ap_continue <= ap_const_logic_1;
-    store_output_wide_U0_ap_start <= start_for_store_output_wide_U0_empty_n;
+    k2_stats_dual_U0_ap_continue <= ap_const_logic_1;
+    k2_stats_dual_U0_ap_start <= start_for_k2_stats_dual_U0_empty_n;
+    k2_stats_dual_U0_s_st_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(s_st_fifo_cap),3))),32));
+    k2_stats_dual_U0_s_st_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(s_st_num_data_valid),3))),32));
+    k3_dual_norm_U0_ap_continue <= ap_const_logic_1;
+    k3_dual_norm_U0_ap_start <= start_for_k3_dual_norm_U0_empty_n;
+    k3_dual_norm_U0_sa_norm_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sa_norm_fifo_cap),3))),32));
+    k3_dual_norm_U0_sa_norm_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sa_norm_num_data_valid),3))),32));
+    k3_dual_norm_U0_sb_norm_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sb_norm_fifo_cap),3))),32));
+    k3_dual_norm_U0_sb_norm_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sb_norm_num_data_valid),3))),32));
+    k4_dual_post_U0_ap_continue <= ap_const_logic_1;
+    k4_dual_post_U0_ap_start <= start_for_k4_dual_post_U0_empty_n;
+    k4_dual_post_U0_sa_post_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sa_post_fifo_cap),3))),32));
+    k4_dual_post_U0_sa_post_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sa_post_num_data_valid),3))),32));
+    k4_dual_post_U0_sb_post_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sb_post_fifo_cap),3))),32));
+    k4_dual_post_U0_sb_post_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sb_post_num_data_valid),3))),32));
+    load_dual_U0_ap_continue <= ap_const_logic_1;
+    load_dual_U0_ap_start <= ((ap_sync_reg_load_dual_U0_ap_ready xor ap_const_logic_1) and ap_start and ap_const_logic_1);
+    start_for_k2_stats_dual_U0_din <= (0=>ap_const_logic_1, others=>'-');
+    start_for_k3_dual_norm_U0_din <= (0=>ap_const_logic_1, others=>'-');
+    start_for_k4_dual_post_U0_din <= (0=>ap_const_logic_1, others=>'-');
+    start_for_store_dual_U0_din <= (0=>ap_const_logic_1, others=>'-');
+    start_for_super_kernel_32_U0_din <= (0=>ap_const_logic_1, others=>'-');
+    store_dual_U0_ap_continue <= ap_const_logic_1;
+    store_dual_U0_ap_start <= start_for_store_dual_U0_empty_n;
+    super_kernel_32_U0_ap_continue <= ap_const_logic_1;
+    super_kernel_32_U0_ap_start <= start_for_super_kernel_32_U0_empty_n;
+    super_kernel_32_U0_start_full_n <= (start_for_k3_dual_norm_U0_full_n and start_for_k2_stats_dual_U0_full_n);
 end behav;

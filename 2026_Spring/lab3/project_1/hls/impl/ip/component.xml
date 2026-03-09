@@ -1492,7 +1492,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a053d964</spirit:value>
+            <spirit:value>57faa907</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1508,7 +1508,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>00c601f5</spirit:value>
+            <spirit:value>73fa883b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1524,7 +1524,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a40063f9</spirit:value>
+            <spirit:value>4dc2d4b5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1540,7 +1540,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>3944349e</spirit:value>
+            <spirit:value>e38a9e40</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2451,7 +2451,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM0_DATA_WIDTH&apos;)) - 1)">511</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM0_DATA_WIDTH&apos;)) - 1)">1023</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -2575,7 +2575,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM0_DATA_WIDTH&apos;)) - 1)">511</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM0_DATA_WIDTH&apos;)) - 1)">1023</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -2642,7 +2642,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM0_DATA_WIDTH&apos;)) div 8) - 1)">63</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM0_DATA_WIDTH&apos;)) div 8) - 1)">127</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -3244,7 +3244,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM1_DATA_WIDTH&apos;)) - 1)">511</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM1_DATA_WIDTH&apos;)) - 1)">1023</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -3368,7 +3368,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM1_DATA_WIDTH&apos;)) - 1)">511</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM1_DATA_WIDTH&apos;)) - 1)">1023</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -3435,7 +3435,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM1_DATA_WIDTH&apos;)) div 8) - 1)">63</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM1_DATA_WIDTH&apos;)) div 8) - 1)">127</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -3511,7 +3511,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_M_AXI_GMEM0_DATA_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_GMEM0_DATA_WIDTH">512</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_GMEM0_DATA_WIDTH">1024</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_M_AXI_GMEM0_AWUSER_WIDTH</spirit:name>
@@ -3604,7 +3604,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_M_AXI_GMEM1_DATA_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_GMEM1_DATA_WIDTH">512</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_GMEM1_DATA_WIDTH">1024</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_M_AXI_GMEM1_AWUSER_WIDTH</spirit:name>
@@ -3714,7 +3714,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_fifo_w64_d8_S.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_fifo_w64_d7_S.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3722,11 +3722,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_fifo_w512_d64_S.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_flow_control_loop_delay_pipe.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_fifo_w512_d512_A.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3754,31 +3750,19 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_k0_preprocess.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_k2_stats_dual.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_k1_transform.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_k3_dual_norm.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_k2_stats.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_k4_dual_post.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_k3_join_norm.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_k4_postprocess.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_k_split.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_load_input_wide.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_load_dual.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3790,39 +3774,35 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_sparsemux_7_2_20_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_sparsemux_9_3_20_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_start_for_k0_preprocess_U0.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_start_for_k2_stats_dual_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_start_for_k1_transform_U0.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_start_for_k3_dual_norm_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_start_for_k2_stats_U0.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_start_for_k4_dual_post_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_start_for_k3_join_norm_U0.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_start_for_store_dual_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_start_for_k4_postprocess_U0.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_start_for_super_kernel_32_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_start_for_k_split_U0.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_store_dual.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_start_for_store_output_wide_U0.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_store_output_wide.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_super_kernel_32.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3848,7 +3828,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_fifo_w64_d8_S.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_fifo_w64_d7_S.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3858,12 +3838,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_fifo_w512_d64_S.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_flow_control_loop_delay_pipe.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_fifo_w512_d512_A.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3898,37 +3873,22 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_k0_preprocess.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_k2_stats_dual.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_k1_transform.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_k3_dual_norm.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_k2_stats.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_k4_dual_post.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_k3_join_norm.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_k4_postprocess.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_k_split.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_load_input_wide.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_load_dual.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3943,47 +3903,42 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_sparsemux_7_2_20_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_sparsemux_9_3_20_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_start_for_k0_preprocess_U0.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_start_for_k2_stats_dual_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_start_for_k1_transform_U0.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_start_for_k3_dual_norm_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_start_for_k2_stats_U0.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_start_for_k4_dual_post_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_start_for_k3_join_norm_U0.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_start_for_store_dual_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_start_for_k4_postprocess_U0.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_start_for_super_kernel_32_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_start_for_k_split_U0.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_store_dual.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_start_for_store_output_wide_U0.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/top_kernel_store_output_wide.v</spirit:name>
+        <spirit:name>hdl/verilog/top_kernel_super_kernel_32.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4013,7 +3968,7 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_fifo_w64_d8_S.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_fifo_w64_d7_S.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -4021,11 +3976,7 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_fifo_w512_d64_S.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_flow_control_loop_delay_pipe.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_fifo_w512_d512_A.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -4041,31 +3992,19 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_k0_preprocess.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_k2_stats_dual.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_k1_transform.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_k3_dual_norm.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_k2_stats.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_k4_dual_post.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_k3_join_norm.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_k4_postprocess.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_k_split.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_load_input_wide.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_load_dual.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -4077,45 +4016,41 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_sparsemux_7_2_20_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_sparsemux_9_3_20_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_start_for_k0_preprocess_U0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_start_for_k2_stats_dual_U0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_start_for_k1_transform_U0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_start_for_k3_dual_norm_U0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_start_for_k2_stats_U0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_start_for_k4_dual_post_U0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_start_for_k3_join_norm_U0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_start_for_store_dual_U0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_start_for_k4_postprocess_U0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_start_for_super_kernel_32_U0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_start_for_k_split_U0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_store_dual.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_start_for_store_output_wide_U0.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_store_output_wide.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_super_kernel_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/top_kernel.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_38e1f4d9</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_f1d452cb</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -4136,7 +4071,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_fifo_w64_d8_S.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_fifo_w64_d7_S.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4146,12 +4081,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_fifo_w512_d64_S.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_flow_control_loop_delay_pipe.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_fifo_w512_d512_A.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4171,37 +4101,22 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_k0_preprocess.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_k2_stats_dual.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_k1_transform.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_k3_dual_norm.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_k2_stats.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_k4_dual_post.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_k3_join_norm.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_k4_postprocess.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_k_split.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_load_input_wide.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_load_dual.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4216,47 +4131,42 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_sparsemux_7_2_20_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_sparsemux_9_3_20_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_start_for_k0_preprocess_U0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_start_for_k2_stats_dual_U0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_start_for_k1_transform_U0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_start_for_k3_dual_norm_U0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_start_for_k2_stats_U0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_start_for_k4_dual_post_U0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_start_for_k3_join_norm_U0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_start_for_store_dual_U0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_start_for_k4_postprocess_U0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_start_for_super_kernel_32_U0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_start_for_k_split_U0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_store_dual.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_start_for_store_output_wide_U0.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/top_kernel_store_output_wide.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/top_kernel_super_kernel_32.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4363,7 +4273,7 @@
     <spirit:parameter>
       <spirit:name>C_M_AXI_GMEM0_DATA_WIDTH</spirit:name>
       <spirit:displayName>Data width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_GMEM0_DATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="3">512</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_GMEM0_DATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="3">1024</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_M_AXI_GMEM0_ENABLE_USER_PORTS</spirit:name>
@@ -4472,7 +4382,7 @@
     <spirit:parameter>
       <spirit:name>C_M_AXI_GMEM1_DATA_WIDTH</spirit:name>
       <spirit:displayName>Data width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_GMEM1_DATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="15">512</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_GMEM1_DATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="15">1024</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_M_AXI_GMEM1_ENABLE_USER_PORTS</spirit:name>
@@ -4579,11 +4489,11 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="28">4185</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="28">2131</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="29">4096</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="29">2052</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -4596,8 +4506,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Top_kernel</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114512129</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-03-08T19:50:12Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114512790</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-03-09T06:50:22Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -4608,10 +4518,10 @@
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="c3ea8e64"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="9a83c657"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="d8aabcfd"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="da581bdd"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="6cd725a5"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="0c510605"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="f9258780"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7d6f1d25"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="0f159b2e"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="056d81f5"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="bb235741"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="top_kernel_top_kernel,hls_ip_2025_1_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=4185,HLS_SYN_TPT=4096,HLS_SYN_MEM=29,HLS_SYN_DSP=0,HLS_SYN_FF=13200,HLS_SYN_LUT=30658,HLS_VERSION=2025_1_1}" *)
+(* CORE_GENERATION_INFO="top_kernel_top_kernel,hls_ip_2025_1_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=2131,HLS_SYN_TPT=2052,HLS_SYN_MEM=115,HLS_SYN_DSP=0,HLS_SYN_FF=18628,HLS_SYN_LUT=49815,HLS_VERSION=2025_1_1}" *)
 
 module top_kernel (
         s_axi_control_AWVALID,
@@ -126,7 +126,7 @@ parameter    C_S_AXI_CONTROL_ADDR_WIDTH = 6;
 parameter    C_S_AXI_DATA_WIDTH = 32;
 parameter    C_M_AXI_GMEM0_ID_WIDTH = 1;
 parameter    C_M_AXI_GMEM0_ADDR_WIDTH = 64;
-parameter    C_M_AXI_GMEM0_DATA_WIDTH = 512;
+parameter    C_M_AXI_GMEM0_DATA_WIDTH = 1024;
 parameter    C_M_AXI_GMEM0_AWUSER_WIDTH = 1;
 parameter    C_M_AXI_GMEM0_ARUSER_WIDTH = 1;
 parameter    C_M_AXI_GMEM0_WUSER_WIDTH = 1;
@@ -138,7 +138,7 @@ parameter    C_M_AXI_GMEM0_CACHE_VALUE = 3;
 parameter    C_M_AXI_DATA_WIDTH = 32;
 parameter    C_M_AXI_GMEM1_ID_WIDTH = 1;
 parameter    C_M_AXI_GMEM1_ADDR_WIDTH = 64;
-parameter    C_M_AXI_GMEM1_DATA_WIDTH = 512;
+parameter    C_M_AXI_GMEM1_DATA_WIDTH = 1024;
 parameter    C_M_AXI_GMEM1_AWUSER_WIDTH = 1;
 parameter    C_M_AXI_GMEM1_ARUSER_WIDTH = 1;
 parameter    C_M_AXI_GMEM1_WUSER_WIDTH = 1;
@@ -150,9 +150,9 @@ parameter    C_M_AXI_GMEM1_CACHE_VALUE = 3;
 
 parameter C_S_AXI_CONTROL_WSTRB_WIDTH = (32 / 8);
 parameter C_S_AXI_WSTRB_WIDTH = (32 / 8);
-parameter C_M_AXI_GMEM0_WSTRB_WIDTH = (512 / 8);
+parameter C_M_AXI_GMEM0_WSTRB_WIDTH = (1024 / 8);
 parameter C_M_AXI_WSTRB_WIDTH = (32 / 8);
-parameter C_M_AXI_GMEM1_WSTRB_WIDTH = (512 / 8);
+parameter C_M_AXI_GMEM1_WSTRB_WIDTH = (1024 / 8);
 
 input   s_axi_control_AWVALID;
 output   s_axi_control_AWREADY;
@@ -276,7 +276,7 @@ wire    gmem0_0_AWREADY;
 wire    gmem0_0_WREADY;
 wire    gmem0_0_ARREADY;
 wire    gmem0_0_RVALID;
-wire   [511:0] gmem0_0_RDATA;
+wire   [1023:0] gmem0_0_RDATA;
 wire    gmem0_0_RLAST;
 wire   [0:0] gmem0_0_RID;
 wire   [8:0] gmem0_0_RFIFONUM;
@@ -287,7 +287,7 @@ wire    gmem1_0_AWREADY;
 wire    gmem1_0_WREADY;
 wire    gmem1_0_ARREADY;
 wire    gmem1_0_RVALID;
-wire   [511:0] gmem1_0_RDATA;
+wire   [1023:0] gmem1_0_RDATA;
 wire   [8:0] gmem1_0_RFIFONUM;
 wire    gmem1_0_BVALID;
 wire   [1:0] gmem1_0_BRESP;
@@ -302,238 +302,242 @@ wire    entry_proc_U0_start_out;
 wire    entry_proc_U0_start_write;
 wire   [63:0] entry_proc_U0_out_r_c_din;
 wire    entry_proc_U0_out_r_c_write;
-wire    load_input_wide_U0_ap_start;
-wire    load_input_wide_U0_ap_done;
-wire    load_input_wide_U0_ap_continue;
-wire    load_input_wide_U0_ap_idle;
-wire    load_input_wide_U0_ap_ready;
-wire    load_input_wide_U0_m_axi_gmem0_0_AWVALID;
-wire   [63:0] load_input_wide_U0_m_axi_gmem0_0_AWADDR;
-wire   [0:0] load_input_wide_U0_m_axi_gmem0_0_AWID;
-wire   [31:0] load_input_wide_U0_m_axi_gmem0_0_AWLEN;
-wire   [2:0] load_input_wide_U0_m_axi_gmem0_0_AWSIZE;
-wire   [1:0] load_input_wide_U0_m_axi_gmem0_0_AWBURST;
-wire   [1:0] load_input_wide_U0_m_axi_gmem0_0_AWLOCK;
-wire   [3:0] load_input_wide_U0_m_axi_gmem0_0_AWCACHE;
-wire   [2:0] load_input_wide_U0_m_axi_gmem0_0_AWPROT;
-wire   [3:0] load_input_wide_U0_m_axi_gmem0_0_AWQOS;
-wire   [3:0] load_input_wide_U0_m_axi_gmem0_0_AWREGION;
-wire   [0:0] load_input_wide_U0_m_axi_gmem0_0_AWUSER;
-wire    load_input_wide_U0_m_axi_gmem0_0_WVALID;
-wire   [511:0] load_input_wide_U0_m_axi_gmem0_0_WDATA;
-wire   [63:0] load_input_wide_U0_m_axi_gmem0_0_WSTRB;
-wire    load_input_wide_U0_m_axi_gmem0_0_WLAST;
-wire   [0:0] load_input_wide_U0_m_axi_gmem0_0_WID;
-wire   [0:0] load_input_wide_U0_m_axi_gmem0_0_WUSER;
-wire    load_input_wide_U0_m_axi_gmem0_0_ARVALID;
-wire   [63:0] load_input_wide_U0_m_axi_gmem0_0_ARADDR;
-wire   [0:0] load_input_wide_U0_m_axi_gmem0_0_ARID;
-wire   [31:0] load_input_wide_U0_m_axi_gmem0_0_ARLEN;
-wire   [2:0] load_input_wide_U0_m_axi_gmem0_0_ARSIZE;
-wire   [1:0] load_input_wide_U0_m_axi_gmem0_0_ARBURST;
-wire   [1:0] load_input_wide_U0_m_axi_gmem0_0_ARLOCK;
-wire   [3:0] load_input_wide_U0_m_axi_gmem0_0_ARCACHE;
-wire   [2:0] load_input_wide_U0_m_axi_gmem0_0_ARPROT;
-wire   [3:0] load_input_wide_U0_m_axi_gmem0_0_ARQOS;
-wire   [3:0] load_input_wide_U0_m_axi_gmem0_0_ARREGION;
-wire   [0:0] load_input_wide_U0_m_axi_gmem0_0_ARUSER;
-wire    load_input_wide_U0_m_axi_gmem0_0_RREADY;
-wire    load_input_wide_U0_m_axi_gmem0_0_BREADY;
-wire   [511:0] load_input_wide_U0_s_in_din;
-wire    load_input_wide_U0_s_in_write;
-wire    load_input_wide_U0_start_out;
-wire    load_input_wide_U0_start_write;
-wire    k0_preprocess_U0_ap_start;
-wire    k0_preprocess_U0_ap_done;
-wire    k0_preprocess_U0_ap_continue;
-wire    k0_preprocess_U0_ap_idle;
-wire    k0_preprocess_U0_ap_ready;
-wire    k0_preprocess_U0_s_in_read;
-wire   [511:0] k0_preprocess_U0_s0_din;
-wire    k0_preprocess_U0_s0_write;
-wire    k0_preprocess_U0_start_out;
-wire    k0_preprocess_U0_start_write;
-wire    k_split_U0_ap_start;
-wire    k_split_U0_start_full_n;
-wire    k_split_U0_ap_done;
-wire    k_split_U0_ap_continue;
-wire    k_split_U0_ap_idle;
-wire    k_split_U0_ap_ready;
-wire    k_split_U0_s0_read;
-wire   [511:0] k_split_U0_s0_a_din;
-wire    k_split_U0_s0_a_write;
-wire   [511:0] k_split_U0_s0_b_din;
-wire    k_split_U0_s0_b_write;
-wire    k_split_U0_start_out;
-wire    k_split_U0_start_write;
-wire    k1_transform_U0_ap_start;
-wire    k1_transform_U0_ap_done;
-wire    k1_transform_U0_ap_continue;
-wire    k1_transform_U0_ap_idle;
-wire    k1_transform_U0_ap_ready;
-wire    k1_transform_U0_s0_a_read;
-wire   [511:0] k1_transform_U0_s1_din;
-wire    k1_transform_U0_s1_write;
-wire   [31:0] k1_transform_U0_s1_num_data_valid;
-wire   [31:0] k1_transform_U0_s1_fifo_cap;
-wire    k1_transform_U0_start_out;
-wire    k1_transform_U0_start_write;
-wire    k2_stats_U0_ap_start;
-wire    k2_stats_U0_ap_done;
-wire    k2_stats_U0_ap_continue;
-wire    k2_stats_U0_ap_idle;
-wire    k2_stats_U0_ap_ready;
-wire    k2_stats_U0_s0_b_read;
-wire   [27:0] k2_stats_U0_s_stats_din;
-wire    k2_stats_U0_s_stats_write;
-wire   [31:0] k2_stats_U0_s_stats_num_data_valid;
-wire   [31:0] k2_stats_U0_s_stats_fifo_cap;
-wire    k3_join_norm_U0_ap_start;
-wire    k3_join_norm_U0_ap_done;
-wire    k3_join_norm_U0_ap_continue;
-wire    k3_join_norm_U0_ap_idle;
-wire    k3_join_norm_U0_ap_ready;
-wire    k3_join_norm_U0_s_stats_read;
-wire    k3_join_norm_U0_s1_read;
-wire   [511:0] k3_join_norm_U0_s3_din;
-wire    k3_join_norm_U0_s3_write;
-wire   [31:0] k3_join_norm_U0_s3_num_data_valid;
-wire   [31:0] k3_join_norm_U0_s3_fifo_cap;
-wire    k3_join_norm_U0_start_out;
-wire    k3_join_norm_U0_start_write;
-wire    k4_postprocess_U0_ap_start;
-wire    k4_postprocess_U0_ap_done;
-wire    k4_postprocess_U0_ap_continue;
-wire    k4_postprocess_U0_ap_idle;
-wire    k4_postprocess_U0_ap_ready;
-wire    k4_postprocess_U0_s3_read;
-wire   [511:0] k4_postprocess_U0_s_out_din;
-wire    k4_postprocess_U0_s_out_write;
-wire   [31:0] k4_postprocess_U0_s_out_num_data_valid;
-wire   [31:0] k4_postprocess_U0_s_out_fifo_cap;
-wire    store_output_wide_U0_ap_start;
-wire    store_output_wide_U0_ap_done;
-wire    store_output_wide_U0_ap_continue;
-wire    store_output_wide_U0_ap_idle;
-wire    store_output_wide_U0_ap_ready;
-wire    store_output_wide_U0_out_r_read;
-wire    store_output_wide_U0_m_axi_gmem1_0_AWVALID;
-wire   [63:0] store_output_wide_U0_m_axi_gmem1_0_AWADDR;
-wire   [0:0] store_output_wide_U0_m_axi_gmem1_0_AWID;
-wire   [31:0] store_output_wide_U0_m_axi_gmem1_0_AWLEN;
-wire   [2:0] store_output_wide_U0_m_axi_gmem1_0_AWSIZE;
-wire   [1:0] store_output_wide_U0_m_axi_gmem1_0_AWBURST;
-wire   [1:0] store_output_wide_U0_m_axi_gmem1_0_AWLOCK;
-wire   [3:0] store_output_wide_U0_m_axi_gmem1_0_AWCACHE;
-wire   [2:0] store_output_wide_U0_m_axi_gmem1_0_AWPROT;
-wire   [3:0] store_output_wide_U0_m_axi_gmem1_0_AWQOS;
-wire   [3:0] store_output_wide_U0_m_axi_gmem1_0_AWREGION;
-wire   [0:0] store_output_wide_U0_m_axi_gmem1_0_AWUSER;
-wire    store_output_wide_U0_m_axi_gmem1_0_WVALID;
-wire   [511:0] store_output_wide_U0_m_axi_gmem1_0_WDATA;
-wire   [63:0] store_output_wide_U0_m_axi_gmem1_0_WSTRB;
-wire    store_output_wide_U0_m_axi_gmem1_0_WLAST;
-wire   [0:0] store_output_wide_U0_m_axi_gmem1_0_WID;
-wire   [0:0] store_output_wide_U0_m_axi_gmem1_0_WUSER;
-wire    store_output_wide_U0_m_axi_gmem1_0_ARVALID;
-wire   [63:0] store_output_wide_U0_m_axi_gmem1_0_ARADDR;
-wire   [0:0] store_output_wide_U0_m_axi_gmem1_0_ARID;
-wire   [31:0] store_output_wide_U0_m_axi_gmem1_0_ARLEN;
-wire   [2:0] store_output_wide_U0_m_axi_gmem1_0_ARSIZE;
-wire   [1:0] store_output_wide_U0_m_axi_gmem1_0_ARBURST;
-wire   [1:0] store_output_wide_U0_m_axi_gmem1_0_ARLOCK;
-wire   [3:0] store_output_wide_U0_m_axi_gmem1_0_ARCACHE;
-wire   [2:0] store_output_wide_U0_m_axi_gmem1_0_ARPROT;
-wire   [3:0] store_output_wide_U0_m_axi_gmem1_0_ARQOS;
-wire   [3:0] store_output_wide_U0_m_axi_gmem1_0_ARREGION;
-wire   [0:0] store_output_wide_U0_m_axi_gmem1_0_ARUSER;
-wire    store_output_wide_U0_m_axi_gmem1_0_RREADY;
-wire    store_output_wide_U0_m_axi_gmem1_0_BREADY;
-wire    store_output_wide_U0_s_out_read;
+wire    load_dual_U0_ap_start;
+wire    load_dual_U0_ap_done;
+wire    load_dual_U0_ap_continue;
+wire    load_dual_U0_ap_idle;
+wire    load_dual_U0_ap_ready;
+wire    load_dual_U0_m_axi_gmem0_0_AWVALID;
+wire   [63:0] load_dual_U0_m_axi_gmem0_0_AWADDR;
+wire   [0:0] load_dual_U0_m_axi_gmem0_0_AWID;
+wire   [31:0] load_dual_U0_m_axi_gmem0_0_AWLEN;
+wire   [2:0] load_dual_U0_m_axi_gmem0_0_AWSIZE;
+wire   [1:0] load_dual_U0_m_axi_gmem0_0_AWBURST;
+wire   [1:0] load_dual_U0_m_axi_gmem0_0_AWLOCK;
+wire   [3:0] load_dual_U0_m_axi_gmem0_0_AWCACHE;
+wire   [2:0] load_dual_U0_m_axi_gmem0_0_AWPROT;
+wire   [3:0] load_dual_U0_m_axi_gmem0_0_AWQOS;
+wire   [3:0] load_dual_U0_m_axi_gmem0_0_AWREGION;
+wire   [0:0] load_dual_U0_m_axi_gmem0_0_AWUSER;
+wire    load_dual_U0_m_axi_gmem0_0_WVALID;
+wire   [1023:0] load_dual_U0_m_axi_gmem0_0_WDATA;
+wire   [127:0] load_dual_U0_m_axi_gmem0_0_WSTRB;
+wire    load_dual_U0_m_axi_gmem0_0_WLAST;
+wire   [0:0] load_dual_U0_m_axi_gmem0_0_WID;
+wire   [0:0] load_dual_U0_m_axi_gmem0_0_WUSER;
+wire    load_dual_U0_m_axi_gmem0_0_ARVALID;
+wire   [63:0] load_dual_U0_m_axi_gmem0_0_ARADDR;
+wire   [0:0] load_dual_U0_m_axi_gmem0_0_ARID;
+wire   [31:0] load_dual_U0_m_axi_gmem0_0_ARLEN;
+wire   [2:0] load_dual_U0_m_axi_gmem0_0_ARSIZE;
+wire   [1:0] load_dual_U0_m_axi_gmem0_0_ARBURST;
+wire   [1:0] load_dual_U0_m_axi_gmem0_0_ARLOCK;
+wire   [3:0] load_dual_U0_m_axi_gmem0_0_ARCACHE;
+wire   [2:0] load_dual_U0_m_axi_gmem0_0_ARPROT;
+wire   [3:0] load_dual_U0_m_axi_gmem0_0_ARQOS;
+wire   [3:0] load_dual_U0_m_axi_gmem0_0_ARREGION;
+wire   [0:0] load_dual_U0_m_axi_gmem0_0_ARUSER;
+wire    load_dual_U0_m_axi_gmem0_0_RREADY;
+wire    load_dual_U0_m_axi_gmem0_0_BREADY;
+wire   [511:0] load_dual_U0_sa_in_din;
+wire    load_dual_U0_sa_in_write;
+wire   [511:0] load_dual_U0_sb_in_din;
+wire    load_dual_U0_sb_in_write;
+wire    load_dual_U0_start_out;
+wire    load_dual_U0_start_write;
+wire    super_kernel_32_U0_ap_start;
+wire    super_kernel_32_U0_start_full_n;
+wire    super_kernel_32_U0_ap_done;
+wire    super_kernel_32_U0_ap_continue;
+wire    super_kernel_32_U0_ap_idle;
+wire    super_kernel_32_U0_ap_ready;
+wire    super_kernel_32_U0_start_out;
+wire    super_kernel_32_U0_start_write;
+wire    super_kernel_32_U0_sa_in_read;
+wire    super_kernel_32_U0_sb_in_read;
+wire   [511:0] super_kernel_32_U0_sa_stats_din;
+wire    super_kernel_32_U0_sa_stats_write;
+wire   [511:0] super_kernel_32_U0_sa_join_din;
+wire    super_kernel_32_U0_sa_join_write;
+wire   [511:0] super_kernel_32_U0_sb_stats_din;
+wire    super_kernel_32_U0_sb_stats_write;
+wire   [511:0] super_kernel_32_U0_sb_join_din;
+wire    super_kernel_32_U0_sb_join_write;
+wire    k2_stats_dual_U0_ap_start;
+wire    k2_stats_dual_U0_ap_done;
+wire    k2_stats_dual_U0_ap_continue;
+wire    k2_stats_dual_U0_ap_idle;
+wire    k2_stats_dual_U0_ap_ready;
+wire    k2_stats_dual_U0_sa_stats_read;
+wire    k2_stats_dual_U0_sb_stats_read;
+wire   [27:0] k2_stats_dual_U0_s_st_din;
+wire    k2_stats_dual_U0_s_st_write;
+wire   [31:0] k2_stats_dual_U0_s_st_num_data_valid;
+wire   [31:0] k2_stats_dual_U0_s_st_fifo_cap;
+wire    k3_dual_norm_U0_ap_start;
+wire    k3_dual_norm_U0_ap_done;
+wire    k3_dual_norm_U0_ap_continue;
+wire    k3_dual_norm_U0_ap_idle;
+wire    k3_dual_norm_U0_ap_ready;
+wire    k3_dual_norm_U0_s_st_read;
+wire    k3_dual_norm_U0_sa_join_read;
+wire    k3_dual_norm_U0_sb_join_read;
+wire   [511:0] k3_dual_norm_U0_sa_norm_din;
+wire    k3_dual_norm_U0_sa_norm_write;
+wire   [31:0] k3_dual_norm_U0_sa_norm_num_data_valid;
+wire   [31:0] k3_dual_norm_U0_sa_norm_fifo_cap;
+wire   [511:0] k3_dual_norm_U0_sb_norm_din;
+wire    k3_dual_norm_U0_sb_norm_write;
+wire   [31:0] k3_dual_norm_U0_sb_norm_num_data_valid;
+wire   [31:0] k3_dual_norm_U0_sb_norm_fifo_cap;
+wire    k3_dual_norm_U0_start_out;
+wire    k3_dual_norm_U0_start_write;
+wire    k4_dual_post_U0_ap_start;
+wire    k4_dual_post_U0_ap_done;
+wire    k4_dual_post_U0_ap_continue;
+wire    k4_dual_post_U0_ap_idle;
+wire    k4_dual_post_U0_ap_ready;
+wire    k4_dual_post_U0_sa_norm_read;
+wire    k4_dual_post_U0_sb_norm_read;
+wire   [511:0] k4_dual_post_U0_sa_post_din;
+wire    k4_dual_post_U0_sa_post_write;
+wire   [31:0] k4_dual_post_U0_sa_post_num_data_valid;
+wire   [31:0] k4_dual_post_U0_sa_post_fifo_cap;
+wire   [511:0] k4_dual_post_U0_sb_post_din;
+wire    k4_dual_post_U0_sb_post_write;
+wire   [31:0] k4_dual_post_U0_sb_post_num_data_valid;
+wire   [31:0] k4_dual_post_U0_sb_post_fifo_cap;
+wire    store_dual_U0_ap_start;
+wire    store_dual_U0_ap_done;
+wire    store_dual_U0_ap_continue;
+wire    store_dual_U0_ap_idle;
+wire    store_dual_U0_ap_ready;
+wire    store_dual_U0_out_r_read;
+wire    store_dual_U0_m_axi_gmem1_0_AWVALID;
+wire   [63:0] store_dual_U0_m_axi_gmem1_0_AWADDR;
+wire   [0:0] store_dual_U0_m_axi_gmem1_0_AWID;
+wire   [31:0] store_dual_U0_m_axi_gmem1_0_AWLEN;
+wire   [2:0] store_dual_U0_m_axi_gmem1_0_AWSIZE;
+wire   [1:0] store_dual_U0_m_axi_gmem1_0_AWBURST;
+wire   [1:0] store_dual_U0_m_axi_gmem1_0_AWLOCK;
+wire   [3:0] store_dual_U0_m_axi_gmem1_0_AWCACHE;
+wire   [2:0] store_dual_U0_m_axi_gmem1_0_AWPROT;
+wire   [3:0] store_dual_U0_m_axi_gmem1_0_AWQOS;
+wire   [3:0] store_dual_U0_m_axi_gmem1_0_AWREGION;
+wire   [0:0] store_dual_U0_m_axi_gmem1_0_AWUSER;
+wire    store_dual_U0_m_axi_gmem1_0_WVALID;
+wire   [1023:0] store_dual_U0_m_axi_gmem1_0_WDATA;
+wire   [127:0] store_dual_U0_m_axi_gmem1_0_WSTRB;
+wire    store_dual_U0_m_axi_gmem1_0_WLAST;
+wire   [0:0] store_dual_U0_m_axi_gmem1_0_WID;
+wire   [0:0] store_dual_U0_m_axi_gmem1_0_WUSER;
+wire    store_dual_U0_m_axi_gmem1_0_ARVALID;
+wire   [63:0] store_dual_U0_m_axi_gmem1_0_ARADDR;
+wire   [0:0] store_dual_U0_m_axi_gmem1_0_ARID;
+wire   [31:0] store_dual_U0_m_axi_gmem1_0_ARLEN;
+wire   [2:0] store_dual_U0_m_axi_gmem1_0_ARSIZE;
+wire   [1:0] store_dual_U0_m_axi_gmem1_0_ARBURST;
+wire   [1:0] store_dual_U0_m_axi_gmem1_0_ARLOCK;
+wire   [3:0] store_dual_U0_m_axi_gmem1_0_ARCACHE;
+wire   [2:0] store_dual_U0_m_axi_gmem1_0_ARPROT;
+wire   [3:0] store_dual_U0_m_axi_gmem1_0_ARQOS;
+wire   [3:0] store_dual_U0_m_axi_gmem1_0_ARREGION;
+wire   [0:0] store_dual_U0_m_axi_gmem1_0_ARUSER;
+wire    store_dual_U0_m_axi_gmem1_0_RREADY;
+wire    store_dual_U0_m_axi_gmem1_0_BREADY;
+wire    store_dual_U0_sa_post_read;
+wire    store_dual_U0_sb_post_read;
 wire    out_r_c_full_n;
 wire   [63:0] out_r_c_dout;
 wire    out_r_c_empty_n;
 wire   [3:0] out_r_c_num_data_valid;
 wire   [3:0] out_r_c_fifo_cap;
-wire    s_in_full_n;
-wire   [511:0] s_in_dout;
-wire    s_in_empty_n;
-wire   [2:0] s_in_num_data_valid;
-wire   [2:0] s_in_fifo_cap;
-wire    s0_full_n;
-wire   [511:0] s0_dout;
-wire    s0_empty_n;
-wire   [2:0] s0_num_data_valid;
-wire   [2:0] s0_fifo_cap;
-wire    s0_a_full_n;
-wire   [511:0] s0_a_dout;
-wire    s0_a_empty_n;
-wire   [6:0] s0_a_num_data_valid;
-wire   [6:0] s0_a_fifo_cap;
-wire    s0_b_full_n;
-wire   [511:0] s0_b_dout;
-wire    s0_b_empty_n;
-wire   [2:0] s0_b_num_data_valid;
-wire   [2:0] s0_b_fifo_cap;
-wire    s1_full_n;
-wire   [511:0] s1_dout;
-wire    s1_empty_n;
-wire   [6:0] s1_num_data_valid;
-wire   [6:0] s1_fifo_cap;
-wire    s_stats_full_n;
-wire   [27:0] s_stats_dout;
-wire    s_stats_empty_n;
-wire   [2:0] s_stats_num_data_valid;
-wire   [2:0] s_stats_fifo_cap;
-wire    s3_full_n;
-wire   [511:0] s3_dout;
-wire    s3_empty_n;
-wire   [2:0] s3_num_data_valid;
-wire   [2:0] s3_fifo_cap;
-wire    s_out_full_n;
-wire   [511:0] s_out_dout;
-wire    s_out_empty_n;
-wire   [2:0] s_out_num_data_valid;
-wire   [2:0] s_out_fifo_cap;
+wire    sa_in_full_n;
+wire   [511:0] sa_in_dout;
+wire    sa_in_empty_n;
+wire   [2:0] sa_in_num_data_valid;
+wire   [2:0] sa_in_fifo_cap;
+wire    sb_in_full_n;
+wire   [511:0] sb_in_dout;
+wire    sb_in_empty_n;
+wire   [2:0] sb_in_num_data_valid;
+wire   [2:0] sb_in_fifo_cap;
+wire    sa_stats_full_n;
+wire   [511:0] sa_stats_dout;
+wire    sa_stats_empty_n;
+wire   [2:0] sa_stats_num_data_valid;
+wire   [2:0] sa_stats_fifo_cap;
+wire    sa_join_full_n;
+wire   [511:0] sa_join_dout;
+wire    sa_join_empty_n;
+wire   [9:0] sa_join_num_data_valid;
+wire   [9:0] sa_join_fifo_cap;
+wire    sb_stats_full_n;
+wire   [511:0] sb_stats_dout;
+wire    sb_stats_empty_n;
+wire   [2:0] sb_stats_num_data_valid;
+wire   [2:0] sb_stats_fifo_cap;
+wire    sb_join_full_n;
+wire   [511:0] sb_join_dout;
+wire    sb_join_empty_n;
+wire   [9:0] sb_join_num_data_valid;
+wire   [9:0] sb_join_fifo_cap;
+wire    s_st_full_n;
+wire   [27:0] s_st_dout;
+wire    s_st_empty_n;
+wire   [2:0] s_st_num_data_valid;
+wire   [2:0] s_st_fifo_cap;
+wire    sa_norm_full_n;
+wire   [511:0] sa_norm_dout;
+wire    sa_norm_empty_n;
+wire   [2:0] sa_norm_num_data_valid;
+wire   [2:0] sa_norm_fifo_cap;
+wire    sb_norm_full_n;
+wire   [511:0] sb_norm_dout;
+wire    sb_norm_empty_n;
+wire   [2:0] sb_norm_num_data_valid;
+wire   [2:0] sb_norm_fifo_cap;
+wire    sa_post_full_n;
+wire   [511:0] sa_post_dout;
+wire    sa_post_empty_n;
+wire   [2:0] sa_post_num_data_valid;
+wire   [2:0] sa_post_fifo_cap;
+wire    sb_post_full_n;
+wire   [511:0] sb_post_dout;
+wire    sb_post_empty_n;
+wire   [2:0] sb_post_num_data_valid;
+wire   [2:0] sb_post_fifo_cap;
 wire    ap_sync_ready;
 reg    ap_sync_reg_entry_proc_U0_ap_ready;
 wire    ap_sync_entry_proc_U0_ap_ready;
-reg    ap_sync_reg_load_input_wide_U0_ap_ready;
-wire    ap_sync_load_input_wide_U0_ap_ready;
-wire   [0:0] start_for_store_output_wide_U0_din;
-wire    start_for_store_output_wide_U0_full_n;
-wire   [0:0] start_for_store_output_wide_U0_dout;
-wire    start_for_store_output_wide_U0_empty_n;
-wire   [0:0] start_for_k0_preprocess_U0_din;
-wire    start_for_k0_preprocess_U0_full_n;
-wire   [0:0] start_for_k0_preprocess_U0_dout;
-wire    start_for_k0_preprocess_U0_empty_n;
-wire   [0:0] start_for_k_split_U0_din;
-wire    start_for_k_split_U0_full_n;
-wire   [0:0] start_for_k_split_U0_dout;
-wire    start_for_k_split_U0_empty_n;
-wire   [0:0] start_for_k1_transform_U0_din;
-wire    start_for_k1_transform_U0_full_n;
-wire   [0:0] start_for_k1_transform_U0_dout;
-wire    start_for_k1_transform_U0_empty_n;
-wire   [0:0] start_for_k2_stats_U0_din;
-wire    start_for_k2_stats_U0_full_n;
-wire   [0:0] start_for_k2_stats_U0_dout;
-wire    start_for_k2_stats_U0_empty_n;
-wire   [0:0] start_for_k3_join_norm_U0_din;
-wire    start_for_k3_join_norm_U0_full_n;
-wire   [0:0] start_for_k3_join_norm_U0_dout;
-wire    start_for_k3_join_norm_U0_empty_n;
-wire   [0:0] start_for_k4_postprocess_U0_din;
-wire    start_for_k4_postprocess_U0_full_n;
-wire   [0:0] start_for_k4_postprocess_U0_dout;
-wire    start_for_k4_postprocess_U0_empty_n;
+reg    ap_sync_reg_load_dual_U0_ap_ready;
+wire    ap_sync_load_dual_U0_ap_ready;
+wire   [0:0] start_for_store_dual_U0_din;
+wire    start_for_store_dual_U0_full_n;
+wire   [0:0] start_for_store_dual_U0_dout;
+wire    start_for_store_dual_U0_empty_n;
+wire   [0:0] start_for_super_kernel_32_U0_din;
+wire    start_for_super_kernel_32_U0_full_n;
+wire   [0:0] start_for_super_kernel_32_U0_dout;
+wire    start_for_super_kernel_32_U0_empty_n;
+wire   [0:0] start_for_k2_stats_dual_U0_din;
+wire    start_for_k2_stats_dual_U0_full_n;
+wire   [0:0] start_for_k2_stats_dual_U0_dout;
+wire    start_for_k2_stats_dual_U0_empty_n;
+wire   [0:0] start_for_k3_dual_norm_U0_din;
+wire    start_for_k3_dual_norm_U0_full_n;
+wire   [0:0] start_for_k3_dual_norm_U0_dout;
+wire    start_for_k3_dual_norm_U0_empty_n;
+wire   [0:0] start_for_k4_dual_post_U0_din;
+wire    start_for_k4_dual_post_U0_full_n;
+wire   [0:0] start_for_k4_dual_post_U0_dout;
+wire    start_for_k4_dual_post_U0_empty_n;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
 #0 ap_sync_reg_entry_proc_U0_ap_ready = 1'b0;
-#0 ap_sync_reg_load_input_wide_U0_ap_ready = 1'b0;
+#0 ap_sync_reg_load_dual_U0_ap_ready = 1'b0;
 end
 
 top_kernel_control_s_axi #(
@@ -571,7 +575,7 @@ control_s_axi_U(
 
 top_kernel_gmem0_m_axi #(
     .CONSERVATIVE( 1 ),
-    .USER_MAXREQS( 9 ),
+    .USER_MAXREQS( 7 ),
     .MAX_READ_BURST_LENGTH( 16 ),
     .MAX_WRITE_BURST_LENGTH( 16 ),
     .C_M_AXI_ID_WIDTH( C_M_AXI_GMEM0_ID_WIDTH ),
@@ -588,7 +592,7 @@ top_kernel_gmem0_m_axi #(
     .CH0_NUM_READ_OUTSTANDING( 16 ),
     .CH0_NUM_WRITE_OUTSTANDING( 16 ),
     .CH0_USER_RFIFONUM_WIDTH( 9 ),
-    .CH0_USER_DW( 512 ),
+    .CH0_USER_DW( 1024 ),
     .CH0_USER_AW( 64 ),
     .NUM_READ_OUTSTANDING( 16 ),
     .NUM_WRITE_OUTSTANDING( 0 ))
@@ -641,12 +645,12 @@ gmem0_m_axi_U(
     .ACLK(ap_clk),
     .ARESET(ap_rst_n_inv),
     .ACLK_EN(1'b1),
-    .I_CH0_ARVALID(load_input_wide_U0_m_axi_gmem0_0_ARVALID),
+    .I_CH0_ARVALID(load_dual_U0_m_axi_gmem0_0_ARVALID),
     .I_CH0_ARREADY(gmem0_0_ARREADY),
-    .I_CH0_ARADDR(load_input_wide_U0_m_axi_gmem0_0_ARADDR),
-    .I_CH0_ARLEN(load_input_wide_U0_m_axi_gmem0_0_ARLEN),
+    .I_CH0_ARADDR(load_dual_U0_m_axi_gmem0_0_ARADDR),
+    .I_CH0_ARLEN(load_dual_U0_m_axi_gmem0_0_ARLEN),
     .I_CH0_RVALID(gmem0_0_RVALID),
-    .I_CH0_RREADY(load_input_wide_U0_m_axi_gmem0_0_RREADY),
+    .I_CH0_RREADY(load_dual_U0_m_axi_gmem0_0_RREADY),
     .I_CH0_RDATA(gmem0_0_RDATA),
     .I_CH0_RFIFONUM(gmem0_0_RFIFONUM),
     .I_CH0_AWVALID(1'b0),
@@ -655,15 +659,15 @@ gmem0_m_axi_U(
     .I_CH0_AWLEN(32'd0),
     .I_CH0_WVALID(1'b0),
     .I_CH0_WREADY(gmem0_0_WREADY),
-    .I_CH0_WDATA(512'd0),
-    .I_CH0_WSTRB(64'd0),
+    .I_CH0_WDATA(1024'd0),
+    .I_CH0_WSTRB(128'd0),
     .I_CH0_BVALID(gmem0_0_BVALID),
     .I_CH0_BREADY(1'b0)
 );
 
 top_kernel_gmem1_m_axi #(
     .CONSERVATIVE( 1 ),
-    .USER_MAXREQS( 6 ),
+    .USER_MAXREQS( 4 ),
     .MAX_READ_BURST_LENGTH( 16 ),
     .MAX_WRITE_BURST_LENGTH( 16 ),
     .C_M_AXI_ID_WIDTH( C_M_AXI_GMEM1_ID_WIDTH ),
@@ -680,7 +684,7 @@ top_kernel_gmem1_m_axi #(
     .CH0_NUM_READ_OUTSTANDING( 16 ),
     .CH0_NUM_WRITE_OUTSTANDING( 16 ),
     .CH0_USER_RFIFONUM_WIDTH( 9 ),
-    .CH0_USER_DW( 512 ),
+    .CH0_USER_DW( 1024 ),
     .CH0_USER_AW( 64 ),
     .NUM_READ_OUTSTANDING( 0 ),
     .NUM_WRITE_OUTSTANDING( 16 ))
@@ -741,23 +745,23 @@ gmem1_m_axi_U(
     .I_CH0_RREADY(1'b0),
     .I_CH0_RDATA(gmem1_0_RDATA),
     .I_CH0_RFIFONUM(gmem1_0_RFIFONUM),
-    .I_CH0_AWVALID(store_output_wide_U0_m_axi_gmem1_0_AWVALID),
+    .I_CH0_AWVALID(store_dual_U0_m_axi_gmem1_0_AWVALID),
     .I_CH0_AWREADY(gmem1_0_AWREADY),
-    .I_CH0_AWADDR(store_output_wide_U0_m_axi_gmem1_0_AWADDR),
-    .I_CH0_AWLEN(store_output_wide_U0_m_axi_gmem1_0_AWLEN),
-    .I_CH0_WVALID(store_output_wide_U0_m_axi_gmem1_0_WVALID),
+    .I_CH0_AWADDR(store_dual_U0_m_axi_gmem1_0_AWADDR),
+    .I_CH0_AWLEN(store_dual_U0_m_axi_gmem1_0_AWLEN),
+    .I_CH0_WVALID(store_dual_U0_m_axi_gmem1_0_WVALID),
     .I_CH0_WREADY(gmem1_0_WREADY),
-    .I_CH0_WDATA(store_output_wide_U0_m_axi_gmem1_0_WDATA),
-    .I_CH0_WSTRB(store_output_wide_U0_m_axi_gmem1_0_WSTRB),
+    .I_CH0_WDATA(store_dual_U0_m_axi_gmem1_0_WDATA),
+    .I_CH0_WSTRB(store_dual_U0_m_axi_gmem1_0_WSTRB),
     .I_CH0_BVALID(gmem1_0_BVALID),
-    .I_CH0_BREADY(store_output_wide_U0_m_axi_gmem1_0_BREADY)
+    .I_CH0_BREADY(store_dual_U0_m_axi_gmem1_0_BREADY)
 );
 
 top_kernel_entry_proc entry_proc_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .ap_start(entry_proc_U0_ap_start),
-    .start_full_n(start_for_store_output_wide_U0_full_n),
+    .start_full_n(start_for_store_dual_U0_full_n),
     .ap_done(entry_proc_U0_ap_done),
     .ap_continue(entry_proc_U0_ap_continue),
     .ap_idle(entry_proc_U0_ap_idle),
@@ -772,50 +776,50 @@ top_kernel_entry_proc entry_proc_U0(
     .out_r_c_fifo_cap(out_r_c_fifo_cap)
 );
 
-top_kernel_load_input_wide load_input_wide_U0(
+top_kernel_load_dual load_dual_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(load_input_wide_U0_ap_start),
-    .start_full_n(start_for_k0_preprocess_U0_full_n),
-    .ap_done(load_input_wide_U0_ap_done),
-    .ap_continue(load_input_wide_U0_ap_continue),
-    .ap_idle(load_input_wide_U0_ap_idle),
-    .ap_ready(load_input_wide_U0_ap_ready),
-    .m_axi_gmem0_0_AWVALID(load_input_wide_U0_m_axi_gmem0_0_AWVALID),
+    .ap_start(load_dual_U0_ap_start),
+    .start_full_n(start_for_super_kernel_32_U0_full_n),
+    .ap_done(load_dual_U0_ap_done),
+    .ap_continue(load_dual_U0_ap_continue),
+    .ap_idle(load_dual_U0_ap_idle),
+    .ap_ready(load_dual_U0_ap_ready),
+    .m_axi_gmem0_0_AWVALID(load_dual_U0_m_axi_gmem0_0_AWVALID),
     .m_axi_gmem0_0_AWREADY(1'b0),
-    .m_axi_gmem0_0_AWADDR(load_input_wide_U0_m_axi_gmem0_0_AWADDR),
-    .m_axi_gmem0_0_AWID(load_input_wide_U0_m_axi_gmem0_0_AWID),
-    .m_axi_gmem0_0_AWLEN(load_input_wide_U0_m_axi_gmem0_0_AWLEN),
-    .m_axi_gmem0_0_AWSIZE(load_input_wide_U0_m_axi_gmem0_0_AWSIZE),
-    .m_axi_gmem0_0_AWBURST(load_input_wide_U0_m_axi_gmem0_0_AWBURST),
-    .m_axi_gmem0_0_AWLOCK(load_input_wide_U0_m_axi_gmem0_0_AWLOCK),
-    .m_axi_gmem0_0_AWCACHE(load_input_wide_U0_m_axi_gmem0_0_AWCACHE),
-    .m_axi_gmem0_0_AWPROT(load_input_wide_U0_m_axi_gmem0_0_AWPROT),
-    .m_axi_gmem0_0_AWQOS(load_input_wide_U0_m_axi_gmem0_0_AWQOS),
-    .m_axi_gmem0_0_AWREGION(load_input_wide_U0_m_axi_gmem0_0_AWREGION),
-    .m_axi_gmem0_0_AWUSER(load_input_wide_U0_m_axi_gmem0_0_AWUSER),
-    .m_axi_gmem0_0_WVALID(load_input_wide_U0_m_axi_gmem0_0_WVALID),
+    .m_axi_gmem0_0_AWADDR(load_dual_U0_m_axi_gmem0_0_AWADDR),
+    .m_axi_gmem0_0_AWID(load_dual_U0_m_axi_gmem0_0_AWID),
+    .m_axi_gmem0_0_AWLEN(load_dual_U0_m_axi_gmem0_0_AWLEN),
+    .m_axi_gmem0_0_AWSIZE(load_dual_U0_m_axi_gmem0_0_AWSIZE),
+    .m_axi_gmem0_0_AWBURST(load_dual_U0_m_axi_gmem0_0_AWBURST),
+    .m_axi_gmem0_0_AWLOCK(load_dual_U0_m_axi_gmem0_0_AWLOCK),
+    .m_axi_gmem0_0_AWCACHE(load_dual_U0_m_axi_gmem0_0_AWCACHE),
+    .m_axi_gmem0_0_AWPROT(load_dual_U0_m_axi_gmem0_0_AWPROT),
+    .m_axi_gmem0_0_AWQOS(load_dual_U0_m_axi_gmem0_0_AWQOS),
+    .m_axi_gmem0_0_AWREGION(load_dual_U0_m_axi_gmem0_0_AWREGION),
+    .m_axi_gmem0_0_AWUSER(load_dual_U0_m_axi_gmem0_0_AWUSER),
+    .m_axi_gmem0_0_WVALID(load_dual_U0_m_axi_gmem0_0_WVALID),
     .m_axi_gmem0_0_WREADY(1'b0),
-    .m_axi_gmem0_0_WDATA(load_input_wide_U0_m_axi_gmem0_0_WDATA),
-    .m_axi_gmem0_0_WSTRB(load_input_wide_U0_m_axi_gmem0_0_WSTRB),
-    .m_axi_gmem0_0_WLAST(load_input_wide_U0_m_axi_gmem0_0_WLAST),
-    .m_axi_gmem0_0_WID(load_input_wide_U0_m_axi_gmem0_0_WID),
-    .m_axi_gmem0_0_WUSER(load_input_wide_U0_m_axi_gmem0_0_WUSER),
-    .m_axi_gmem0_0_ARVALID(load_input_wide_U0_m_axi_gmem0_0_ARVALID),
+    .m_axi_gmem0_0_WDATA(load_dual_U0_m_axi_gmem0_0_WDATA),
+    .m_axi_gmem0_0_WSTRB(load_dual_U0_m_axi_gmem0_0_WSTRB),
+    .m_axi_gmem0_0_WLAST(load_dual_U0_m_axi_gmem0_0_WLAST),
+    .m_axi_gmem0_0_WID(load_dual_U0_m_axi_gmem0_0_WID),
+    .m_axi_gmem0_0_WUSER(load_dual_U0_m_axi_gmem0_0_WUSER),
+    .m_axi_gmem0_0_ARVALID(load_dual_U0_m_axi_gmem0_0_ARVALID),
     .m_axi_gmem0_0_ARREADY(gmem0_0_ARREADY),
-    .m_axi_gmem0_0_ARADDR(load_input_wide_U0_m_axi_gmem0_0_ARADDR),
-    .m_axi_gmem0_0_ARID(load_input_wide_U0_m_axi_gmem0_0_ARID),
-    .m_axi_gmem0_0_ARLEN(load_input_wide_U0_m_axi_gmem0_0_ARLEN),
-    .m_axi_gmem0_0_ARSIZE(load_input_wide_U0_m_axi_gmem0_0_ARSIZE),
-    .m_axi_gmem0_0_ARBURST(load_input_wide_U0_m_axi_gmem0_0_ARBURST),
-    .m_axi_gmem0_0_ARLOCK(load_input_wide_U0_m_axi_gmem0_0_ARLOCK),
-    .m_axi_gmem0_0_ARCACHE(load_input_wide_U0_m_axi_gmem0_0_ARCACHE),
-    .m_axi_gmem0_0_ARPROT(load_input_wide_U0_m_axi_gmem0_0_ARPROT),
-    .m_axi_gmem0_0_ARQOS(load_input_wide_U0_m_axi_gmem0_0_ARQOS),
-    .m_axi_gmem0_0_ARREGION(load_input_wide_U0_m_axi_gmem0_0_ARREGION),
-    .m_axi_gmem0_0_ARUSER(load_input_wide_U0_m_axi_gmem0_0_ARUSER),
+    .m_axi_gmem0_0_ARADDR(load_dual_U0_m_axi_gmem0_0_ARADDR),
+    .m_axi_gmem0_0_ARID(load_dual_U0_m_axi_gmem0_0_ARID),
+    .m_axi_gmem0_0_ARLEN(load_dual_U0_m_axi_gmem0_0_ARLEN),
+    .m_axi_gmem0_0_ARSIZE(load_dual_U0_m_axi_gmem0_0_ARSIZE),
+    .m_axi_gmem0_0_ARBURST(load_dual_U0_m_axi_gmem0_0_ARBURST),
+    .m_axi_gmem0_0_ARLOCK(load_dual_U0_m_axi_gmem0_0_ARLOCK),
+    .m_axi_gmem0_0_ARCACHE(load_dual_U0_m_axi_gmem0_0_ARCACHE),
+    .m_axi_gmem0_0_ARPROT(load_dual_U0_m_axi_gmem0_0_ARPROT),
+    .m_axi_gmem0_0_ARQOS(load_dual_U0_m_axi_gmem0_0_ARQOS),
+    .m_axi_gmem0_0_ARREGION(load_dual_U0_m_axi_gmem0_0_ARREGION),
+    .m_axi_gmem0_0_ARUSER(load_dual_U0_m_axi_gmem0_0_ARUSER),
     .m_axi_gmem0_0_RVALID(gmem0_0_RVALID),
-    .m_axi_gmem0_0_RREADY(load_input_wide_U0_m_axi_gmem0_0_RREADY),
+    .m_axi_gmem0_0_RREADY(load_dual_U0_m_axi_gmem0_0_RREADY),
     .m_axi_gmem0_0_RDATA(gmem0_0_RDATA),
     .m_axi_gmem0_0_RLAST(gmem0_0_RLAST),
     .m_axi_gmem0_0_RID(gmem0_0_RID),
@@ -823,229 +827,233 @@ top_kernel_load_input_wide load_input_wide_U0(
     .m_axi_gmem0_0_RUSER(gmem0_0_RUSER),
     .m_axi_gmem0_0_RRESP(gmem0_0_RRESP),
     .m_axi_gmem0_0_BVALID(1'b0),
-    .m_axi_gmem0_0_BREADY(load_input_wide_U0_m_axi_gmem0_0_BREADY),
+    .m_axi_gmem0_0_BREADY(load_dual_U0_m_axi_gmem0_0_BREADY),
     .m_axi_gmem0_0_BRESP(2'd0),
     .m_axi_gmem0_0_BID(1'd0),
     .m_axi_gmem0_0_BUSER(1'd0),
-    .s_in_din(load_input_wide_U0_s_in_din),
-    .s_in_full_n(s_in_full_n),
-    .s_in_write(load_input_wide_U0_s_in_write),
-    .s_in_num_data_valid(s_in_num_data_valid),
-    .s_in_fifo_cap(s_in_fifo_cap),
-    .start_out(load_input_wide_U0_start_out),
-    .start_write(load_input_wide_U0_start_write),
+    .sa_in_din(load_dual_U0_sa_in_din),
+    .sa_in_full_n(sa_in_full_n),
+    .sa_in_write(load_dual_U0_sa_in_write),
+    .sa_in_num_data_valid(sa_in_num_data_valid),
+    .sa_in_fifo_cap(sa_in_fifo_cap),
+    .sb_in_din(load_dual_U0_sb_in_din),
+    .sb_in_full_n(sb_in_full_n),
+    .sb_in_write(load_dual_U0_sb_in_write),
+    .sb_in_num_data_valid(sb_in_num_data_valid),
+    .sb_in_fifo_cap(sb_in_fifo_cap),
+    .start_out(load_dual_U0_start_out),
+    .start_write(load_dual_U0_start_write),
     .in_r(in_r)
 );
 
-top_kernel_k0_preprocess k0_preprocess_U0(
+top_kernel_super_kernel_32 super_kernel_32_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(k0_preprocess_U0_ap_start),
-    .start_full_n(start_for_k_split_U0_full_n),
-    .ap_done(k0_preprocess_U0_ap_done),
-    .ap_continue(k0_preprocess_U0_ap_continue),
-    .ap_idle(k0_preprocess_U0_ap_idle),
-    .ap_ready(k0_preprocess_U0_ap_ready),
-    .s_in_dout(s_in_dout),
-    .s_in_empty_n(s_in_empty_n),
-    .s_in_read(k0_preprocess_U0_s_in_read),
-    .s_in_num_data_valid(s_in_num_data_valid),
-    .s_in_fifo_cap(s_in_fifo_cap),
-    .s0_din(k0_preprocess_U0_s0_din),
-    .s0_full_n(s0_full_n),
-    .s0_write(k0_preprocess_U0_s0_write),
-    .s0_num_data_valid(s0_num_data_valid),
-    .s0_fifo_cap(s0_fifo_cap),
-    .start_out(k0_preprocess_U0_start_out),
-    .start_write(k0_preprocess_U0_start_write)
+    .ap_start(super_kernel_32_U0_ap_start),
+    .start_full_n(super_kernel_32_U0_start_full_n),
+    .ap_done(super_kernel_32_U0_ap_done),
+    .ap_continue(super_kernel_32_U0_ap_continue),
+    .ap_idle(super_kernel_32_U0_ap_idle),
+    .ap_ready(super_kernel_32_U0_ap_ready),
+    .start_out(super_kernel_32_U0_start_out),
+    .start_write(super_kernel_32_U0_start_write),
+    .sa_in_dout(sa_in_dout),
+    .sa_in_empty_n(sa_in_empty_n),
+    .sa_in_read(super_kernel_32_U0_sa_in_read),
+    .sa_in_num_data_valid(sa_in_num_data_valid),
+    .sa_in_fifo_cap(sa_in_fifo_cap),
+    .sb_in_dout(sb_in_dout),
+    .sb_in_empty_n(sb_in_empty_n),
+    .sb_in_read(super_kernel_32_U0_sb_in_read),
+    .sb_in_num_data_valid(sb_in_num_data_valid),
+    .sb_in_fifo_cap(sb_in_fifo_cap),
+    .sa_stats_din(super_kernel_32_U0_sa_stats_din),
+    .sa_stats_full_n(sa_stats_full_n),
+    .sa_stats_write(super_kernel_32_U0_sa_stats_write),
+    .sa_stats_num_data_valid(sa_stats_num_data_valid),
+    .sa_stats_fifo_cap(sa_stats_fifo_cap),
+    .sa_join_din(super_kernel_32_U0_sa_join_din),
+    .sa_join_full_n(sa_join_full_n),
+    .sa_join_write(super_kernel_32_U0_sa_join_write),
+    .sa_join_num_data_valid(sa_join_num_data_valid),
+    .sa_join_fifo_cap(sa_join_fifo_cap),
+    .sb_stats_din(super_kernel_32_U0_sb_stats_din),
+    .sb_stats_full_n(sb_stats_full_n),
+    .sb_stats_write(super_kernel_32_U0_sb_stats_write),
+    .sb_stats_num_data_valid(sb_stats_num_data_valid),
+    .sb_stats_fifo_cap(sb_stats_fifo_cap),
+    .sb_join_din(super_kernel_32_U0_sb_join_din),
+    .sb_join_full_n(sb_join_full_n),
+    .sb_join_write(super_kernel_32_U0_sb_join_write),
+    .sb_join_num_data_valid(sb_join_num_data_valid),
+    .sb_join_fifo_cap(sb_join_fifo_cap)
 );
 
-top_kernel_k_split k_split_U0(
+top_kernel_k2_stats_dual k2_stats_dual_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(k_split_U0_ap_start),
-    .start_full_n(k_split_U0_start_full_n),
-    .ap_done(k_split_U0_ap_done),
-    .ap_continue(k_split_U0_ap_continue),
-    .ap_idle(k_split_U0_ap_idle),
-    .ap_ready(k_split_U0_ap_ready),
-    .s0_dout(s0_dout),
-    .s0_empty_n(s0_empty_n),
-    .s0_read(k_split_U0_s0_read),
-    .s0_num_data_valid(s0_num_data_valid),
-    .s0_fifo_cap(s0_fifo_cap),
-    .s0_a_din(k_split_U0_s0_a_din),
-    .s0_a_full_n(s0_a_full_n),
-    .s0_a_write(k_split_U0_s0_a_write),
-    .s0_a_num_data_valid(s0_a_num_data_valid),
-    .s0_a_fifo_cap(s0_a_fifo_cap),
-    .s0_b_din(k_split_U0_s0_b_din),
-    .s0_b_full_n(s0_b_full_n),
-    .s0_b_write(k_split_U0_s0_b_write),
-    .s0_b_num_data_valid(s0_b_num_data_valid),
-    .s0_b_fifo_cap(s0_b_fifo_cap),
-    .start_out(k_split_U0_start_out),
-    .start_write(k_split_U0_start_write)
+    .ap_start(k2_stats_dual_U0_ap_start),
+    .ap_done(k2_stats_dual_U0_ap_done),
+    .ap_continue(k2_stats_dual_U0_ap_continue),
+    .ap_idle(k2_stats_dual_U0_ap_idle),
+    .ap_ready(k2_stats_dual_U0_ap_ready),
+    .sa_stats_dout(sa_stats_dout),
+    .sa_stats_empty_n(sa_stats_empty_n),
+    .sa_stats_read(k2_stats_dual_U0_sa_stats_read),
+    .sa_stats_num_data_valid(sa_stats_num_data_valid),
+    .sa_stats_fifo_cap(sa_stats_fifo_cap),
+    .sb_stats_dout(sb_stats_dout),
+    .sb_stats_empty_n(sb_stats_empty_n),
+    .sb_stats_read(k2_stats_dual_U0_sb_stats_read),
+    .sb_stats_num_data_valid(sb_stats_num_data_valid),
+    .sb_stats_fifo_cap(sb_stats_fifo_cap),
+    .s_st_din(k2_stats_dual_U0_s_st_din),
+    .s_st_full_n(s_st_full_n),
+    .s_st_write(k2_stats_dual_U0_s_st_write),
+    .s_st_num_data_valid(k2_stats_dual_U0_s_st_num_data_valid),
+    .s_st_fifo_cap(k2_stats_dual_U0_s_st_fifo_cap)
 );
 
-top_kernel_k1_transform k1_transform_U0(
+top_kernel_k3_dual_norm k3_dual_norm_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(k1_transform_U0_ap_start),
-    .start_full_n(start_for_k3_join_norm_U0_full_n),
-    .ap_done(k1_transform_U0_ap_done),
-    .ap_continue(k1_transform_U0_ap_continue),
-    .ap_idle(k1_transform_U0_ap_idle),
-    .ap_ready(k1_transform_U0_ap_ready),
-    .s0_a_dout(s0_a_dout),
-    .s0_a_empty_n(s0_a_empty_n),
-    .s0_a_read(k1_transform_U0_s0_a_read),
-    .s0_a_num_data_valid(s0_a_num_data_valid),
-    .s0_a_fifo_cap(s0_a_fifo_cap),
-    .s1_din(k1_transform_U0_s1_din),
-    .s1_full_n(s1_full_n),
-    .s1_write(k1_transform_U0_s1_write),
-    .s1_num_data_valid(k1_transform_U0_s1_num_data_valid),
-    .s1_fifo_cap(k1_transform_U0_s1_fifo_cap),
-    .start_out(k1_transform_U0_start_out),
-    .start_write(k1_transform_U0_start_write)
+    .ap_start(k3_dual_norm_U0_ap_start),
+    .start_full_n(start_for_k4_dual_post_U0_full_n),
+    .ap_done(k3_dual_norm_U0_ap_done),
+    .ap_continue(k3_dual_norm_U0_ap_continue),
+    .ap_idle(k3_dual_norm_U0_ap_idle),
+    .ap_ready(k3_dual_norm_U0_ap_ready),
+    .s_st_dout(s_st_dout),
+    .s_st_empty_n(s_st_empty_n),
+    .s_st_read(k3_dual_norm_U0_s_st_read),
+    .s_st_num_data_valid(s_st_num_data_valid),
+    .s_st_fifo_cap(s_st_fifo_cap),
+    .sa_join_dout(sa_join_dout),
+    .sa_join_empty_n(sa_join_empty_n),
+    .sa_join_read(k3_dual_norm_U0_sa_join_read),
+    .sa_join_num_data_valid(sa_join_num_data_valid),
+    .sa_join_fifo_cap(sa_join_fifo_cap),
+    .sb_join_dout(sb_join_dout),
+    .sb_join_empty_n(sb_join_empty_n),
+    .sb_join_read(k3_dual_norm_U0_sb_join_read),
+    .sb_join_num_data_valid(sb_join_num_data_valid),
+    .sb_join_fifo_cap(sb_join_fifo_cap),
+    .sa_norm_din(k3_dual_norm_U0_sa_norm_din),
+    .sa_norm_full_n(sa_norm_full_n),
+    .sa_norm_write(k3_dual_norm_U0_sa_norm_write),
+    .sa_norm_num_data_valid(k3_dual_norm_U0_sa_norm_num_data_valid),
+    .sa_norm_fifo_cap(k3_dual_norm_U0_sa_norm_fifo_cap),
+    .sb_norm_din(k3_dual_norm_U0_sb_norm_din),
+    .sb_norm_full_n(sb_norm_full_n),
+    .sb_norm_write(k3_dual_norm_U0_sb_norm_write),
+    .sb_norm_num_data_valid(k3_dual_norm_U0_sb_norm_num_data_valid),
+    .sb_norm_fifo_cap(k3_dual_norm_U0_sb_norm_fifo_cap),
+    .start_out(k3_dual_norm_U0_start_out),
+    .start_write(k3_dual_norm_U0_start_write)
 );
 
-top_kernel_k2_stats k2_stats_U0(
+top_kernel_k4_dual_post k4_dual_post_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(k2_stats_U0_ap_start),
-    .ap_done(k2_stats_U0_ap_done),
-    .ap_continue(k2_stats_U0_ap_continue),
-    .ap_idle(k2_stats_U0_ap_idle),
-    .ap_ready(k2_stats_U0_ap_ready),
-    .s0_b_dout(s0_b_dout),
-    .s0_b_empty_n(s0_b_empty_n),
-    .s0_b_read(k2_stats_U0_s0_b_read),
-    .s0_b_num_data_valid(s0_b_num_data_valid),
-    .s0_b_fifo_cap(s0_b_fifo_cap),
-    .s_stats_din(k2_stats_U0_s_stats_din),
-    .s_stats_full_n(s_stats_full_n),
-    .s_stats_write(k2_stats_U0_s_stats_write),
-    .s_stats_num_data_valid(k2_stats_U0_s_stats_num_data_valid),
-    .s_stats_fifo_cap(k2_stats_U0_s_stats_fifo_cap)
+    .ap_start(k4_dual_post_U0_ap_start),
+    .ap_done(k4_dual_post_U0_ap_done),
+    .ap_continue(k4_dual_post_U0_ap_continue),
+    .ap_idle(k4_dual_post_U0_ap_idle),
+    .ap_ready(k4_dual_post_U0_ap_ready),
+    .sa_norm_dout(sa_norm_dout),
+    .sa_norm_empty_n(sa_norm_empty_n),
+    .sa_norm_read(k4_dual_post_U0_sa_norm_read),
+    .sa_norm_num_data_valid(sa_norm_num_data_valid),
+    .sa_norm_fifo_cap(sa_norm_fifo_cap),
+    .sb_norm_dout(sb_norm_dout),
+    .sb_norm_empty_n(sb_norm_empty_n),
+    .sb_norm_read(k4_dual_post_U0_sb_norm_read),
+    .sb_norm_num_data_valid(sb_norm_num_data_valid),
+    .sb_norm_fifo_cap(sb_norm_fifo_cap),
+    .sa_post_din(k4_dual_post_U0_sa_post_din),
+    .sa_post_full_n(sa_post_full_n),
+    .sa_post_write(k4_dual_post_U0_sa_post_write),
+    .sa_post_num_data_valid(k4_dual_post_U0_sa_post_num_data_valid),
+    .sa_post_fifo_cap(k4_dual_post_U0_sa_post_fifo_cap),
+    .sb_post_din(k4_dual_post_U0_sb_post_din),
+    .sb_post_full_n(sb_post_full_n),
+    .sb_post_write(k4_dual_post_U0_sb_post_write),
+    .sb_post_num_data_valid(k4_dual_post_U0_sb_post_num_data_valid),
+    .sb_post_fifo_cap(k4_dual_post_U0_sb_post_fifo_cap)
 );
 
-top_kernel_k3_join_norm k3_join_norm_U0(
+top_kernel_store_dual store_dual_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(k3_join_norm_U0_ap_start),
-    .start_full_n(start_for_k4_postprocess_U0_full_n),
-    .ap_done(k3_join_norm_U0_ap_done),
-    .ap_continue(k3_join_norm_U0_ap_continue),
-    .ap_idle(k3_join_norm_U0_ap_idle),
-    .ap_ready(k3_join_norm_U0_ap_ready),
-    .s_stats_dout(s_stats_dout),
-    .s_stats_empty_n(s_stats_empty_n),
-    .s_stats_read(k3_join_norm_U0_s_stats_read),
-    .s_stats_num_data_valid(s_stats_num_data_valid),
-    .s_stats_fifo_cap(s_stats_fifo_cap),
-    .s1_dout(s1_dout),
-    .s1_empty_n(s1_empty_n),
-    .s1_read(k3_join_norm_U0_s1_read),
-    .s1_num_data_valid(s1_num_data_valid),
-    .s1_fifo_cap(s1_fifo_cap),
-    .s3_din(k3_join_norm_U0_s3_din),
-    .s3_full_n(s3_full_n),
-    .s3_write(k3_join_norm_U0_s3_write),
-    .s3_num_data_valid(k3_join_norm_U0_s3_num_data_valid),
-    .s3_fifo_cap(k3_join_norm_U0_s3_fifo_cap),
-    .start_out(k3_join_norm_U0_start_out),
-    .start_write(k3_join_norm_U0_start_write)
-);
-
-top_kernel_k4_postprocess k4_postprocess_U0(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst_n_inv),
-    .ap_start(k4_postprocess_U0_ap_start),
-    .ap_done(k4_postprocess_U0_ap_done),
-    .ap_continue(k4_postprocess_U0_ap_continue),
-    .ap_idle(k4_postprocess_U0_ap_idle),
-    .ap_ready(k4_postprocess_U0_ap_ready),
-    .s3_dout(s3_dout),
-    .s3_empty_n(s3_empty_n),
-    .s3_read(k4_postprocess_U0_s3_read),
-    .s3_num_data_valid(s3_num_data_valid),
-    .s3_fifo_cap(s3_fifo_cap),
-    .s_out_din(k4_postprocess_U0_s_out_din),
-    .s_out_full_n(s_out_full_n),
-    .s_out_write(k4_postprocess_U0_s_out_write),
-    .s_out_num_data_valid(k4_postprocess_U0_s_out_num_data_valid),
-    .s_out_fifo_cap(k4_postprocess_U0_s_out_fifo_cap)
-);
-
-top_kernel_store_output_wide store_output_wide_U0(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst_n_inv),
-    .ap_start(store_output_wide_U0_ap_start),
-    .ap_done(store_output_wide_U0_ap_done),
-    .ap_continue(store_output_wide_U0_ap_continue),
-    .ap_idle(store_output_wide_U0_ap_idle),
-    .ap_ready(store_output_wide_U0_ap_ready),
+    .ap_start(store_dual_U0_ap_start),
+    .ap_done(store_dual_U0_ap_done),
+    .ap_continue(store_dual_U0_ap_continue),
+    .ap_idle(store_dual_U0_ap_idle),
+    .ap_ready(store_dual_U0_ap_ready),
     .out_r_dout(out_r_c_dout),
     .out_r_empty_n(out_r_c_empty_n),
-    .out_r_read(store_output_wide_U0_out_r_read),
+    .out_r_read(store_dual_U0_out_r_read),
     .out_r_num_data_valid(out_r_c_num_data_valid),
     .out_r_fifo_cap(out_r_c_fifo_cap),
-    .m_axi_gmem1_0_AWVALID(store_output_wide_U0_m_axi_gmem1_0_AWVALID),
+    .m_axi_gmem1_0_AWVALID(store_dual_U0_m_axi_gmem1_0_AWVALID),
     .m_axi_gmem1_0_AWREADY(gmem1_0_AWREADY),
-    .m_axi_gmem1_0_AWADDR(store_output_wide_U0_m_axi_gmem1_0_AWADDR),
-    .m_axi_gmem1_0_AWID(store_output_wide_U0_m_axi_gmem1_0_AWID),
-    .m_axi_gmem1_0_AWLEN(store_output_wide_U0_m_axi_gmem1_0_AWLEN),
-    .m_axi_gmem1_0_AWSIZE(store_output_wide_U0_m_axi_gmem1_0_AWSIZE),
-    .m_axi_gmem1_0_AWBURST(store_output_wide_U0_m_axi_gmem1_0_AWBURST),
-    .m_axi_gmem1_0_AWLOCK(store_output_wide_U0_m_axi_gmem1_0_AWLOCK),
-    .m_axi_gmem1_0_AWCACHE(store_output_wide_U0_m_axi_gmem1_0_AWCACHE),
-    .m_axi_gmem1_0_AWPROT(store_output_wide_U0_m_axi_gmem1_0_AWPROT),
-    .m_axi_gmem1_0_AWQOS(store_output_wide_U0_m_axi_gmem1_0_AWQOS),
-    .m_axi_gmem1_0_AWREGION(store_output_wide_U0_m_axi_gmem1_0_AWREGION),
-    .m_axi_gmem1_0_AWUSER(store_output_wide_U0_m_axi_gmem1_0_AWUSER),
-    .m_axi_gmem1_0_WVALID(store_output_wide_U0_m_axi_gmem1_0_WVALID),
+    .m_axi_gmem1_0_AWADDR(store_dual_U0_m_axi_gmem1_0_AWADDR),
+    .m_axi_gmem1_0_AWID(store_dual_U0_m_axi_gmem1_0_AWID),
+    .m_axi_gmem1_0_AWLEN(store_dual_U0_m_axi_gmem1_0_AWLEN),
+    .m_axi_gmem1_0_AWSIZE(store_dual_U0_m_axi_gmem1_0_AWSIZE),
+    .m_axi_gmem1_0_AWBURST(store_dual_U0_m_axi_gmem1_0_AWBURST),
+    .m_axi_gmem1_0_AWLOCK(store_dual_U0_m_axi_gmem1_0_AWLOCK),
+    .m_axi_gmem1_0_AWCACHE(store_dual_U0_m_axi_gmem1_0_AWCACHE),
+    .m_axi_gmem1_0_AWPROT(store_dual_U0_m_axi_gmem1_0_AWPROT),
+    .m_axi_gmem1_0_AWQOS(store_dual_U0_m_axi_gmem1_0_AWQOS),
+    .m_axi_gmem1_0_AWREGION(store_dual_U0_m_axi_gmem1_0_AWREGION),
+    .m_axi_gmem1_0_AWUSER(store_dual_U0_m_axi_gmem1_0_AWUSER),
+    .m_axi_gmem1_0_WVALID(store_dual_U0_m_axi_gmem1_0_WVALID),
     .m_axi_gmem1_0_WREADY(gmem1_0_WREADY),
-    .m_axi_gmem1_0_WDATA(store_output_wide_U0_m_axi_gmem1_0_WDATA),
-    .m_axi_gmem1_0_WSTRB(store_output_wide_U0_m_axi_gmem1_0_WSTRB),
-    .m_axi_gmem1_0_WLAST(store_output_wide_U0_m_axi_gmem1_0_WLAST),
-    .m_axi_gmem1_0_WID(store_output_wide_U0_m_axi_gmem1_0_WID),
-    .m_axi_gmem1_0_WUSER(store_output_wide_U0_m_axi_gmem1_0_WUSER),
-    .m_axi_gmem1_0_ARVALID(store_output_wide_U0_m_axi_gmem1_0_ARVALID),
+    .m_axi_gmem1_0_WDATA(store_dual_U0_m_axi_gmem1_0_WDATA),
+    .m_axi_gmem1_0_WSTRB(store_dual_U0_m_axi_gmem1_0_WSTRB),
+    .m_axi_gmem1_0_WLAST(store_dual_U0_m_axi_gmem1_0_WLAST),
+    .m_axi_gmem1_0_WID(store_dual_U0_m_axi_gmem1_0_WID),
+    .m_axi_gmem1_0_WUSER(store_dual_U0_m_axi_gmem1_0_WUSER),
+    .m_axi_gmem1_0_ARVALID(store_dual_U0_m_axi_gmem1_0_ARVALID),
     .m_axi_gmem1_0_ARREADY(1'b0),
-    .m_axi_gmem1_0_ARADDR(store_output_wide_U0_m_axi_gmem1_0_ARADDR),
-    .m_axi_gmem1_0_ARID(store_output_wide_U0_m_axi_gmem1_0_ARID),
-    .m_axi_gmem1_0_ARLEN(store_output_wide_U0_m_axi_gmem1_0_ARLEN),
-    .m_axi_gmem1_0_ARSIZE(store_output_wide_U0_m_axi_gmem1_0_ARSIZE),
-    .m_axi_gmem1_0_ARBURST(store_output_wide_U0_m_axi_gmem1_0_ARBURST),
-    .m_axi_gmem1_0_ARLOCK(store_output_wide_U0_m_axi_gmem1_0_ARLOCK),
-    .m_axi_gmem1_0_ARCACHE(store_output_wide_U0_m_axi_gmem1_0_ARCACHE),
-    .m_axi_gmem1_0_ARPROT(store_output_wide_U0_m_axi_gmem1_0_ARPROT),
-    .m_axi_gmem1_0_ARQOS(store_output_wide_U0_m_axi_gmem1_0_ARQOS),
-    .m_axi_gmem1_0_ARREGION(store_output_wide_U0_m_axi_gmem1_0_ARREGION),
-    .m_axi_gmem1_0_ARUSER(store_output_wide_U0_m_axi_gmem1_0_ARUSER),
+    .m_axi_gmem1_0_ARADDR(store_dual_U0_m_axi_gmem1_0_ARADDR),
+    .m_axi_gmem1_0_ARID(store_dual_U0_m_axi_gmem1_0_ARID),
+    .m_axi_gmem1_0_ARLEN(store_dual_U0_m_axi_gmem1_0_ARLEN),
+    .m_axi_gmem1_0_ARSIZE(store_dual_U0_m_axi_gmem1_0_ARSIZE),
+    .m_axi_gmem1_0_ARBURST(store_dual_U0_m_axi_gmem1_0_ARBURST),
+    .m_axi_gmem1_0_ARLOCK(store_dual_U0_m_axi_gmem1_0_ARLOCK),
+    .m_axi_gmem1_0_ARCACHE(store_dual_U0_m_axi_gmem1_0_ARCACHE),
+    .m_axi_gmem1_0_ARPROT(store_dual_U0_m_axi_gmem1_0_ARPROT),
+    .m_axi_gmem1_0_ARQOS(store_dual_U0_m_axi_gmem1_0_ARQOS),
+    .m_axi_gmem1_0_ARREGION(store_dual_U0_m_axi_gmem1_0_ARREGION),
+    .m_axi_gmem1_0_ARUSER(store_dual_U0_m_axi_gmem1_0_ARUSER),
     .m_axi_gmem1_0_RVALID(1'b0),
-    .m_axi_gmem1_0_RREADY(store_output_wide_U0_m_axi_gmem1_0_RREADY),
-    .m_axi_gmem1_0_RDATA(512'd0),
+    .m_axi_gmem1_0_RREADY(store_dual_U0_m_axi_gmem1_0_RREADY),
+    .m_axi_gmem1_0_RDATA(1024'd0),
     .m_axi_gmem1_0_RLAST(1'b0),
     .m_axi_gmem1_0_RID(1'd0),
     .m_axi_gmem1_0_RFIFONUM(9'd0),
     .m_axi_gmem1_0_RUSER(1'd0),
     .m_axi_gmem1_0_RRESP(2'd0),
     .m_axi_gmem1_0_BVALID(gmem1_0_BVALID),
-    .m_axi_gmem1_0_BREADY(store_output_wide_U0_m_axi_gmem1_0_BREADY),
+    .m_axi_gmem1_0_BREADY(store_dual_U0_m_axi_gmem1_0_BREADY),
     .m_axi_gmem1_0_BRESP(gmem1_0_BRESP),
     .m_axi_gmem1_0_BID(gmem1_0_BID),
     .m_axi_gmem1_0_BUSER(gmem1_0_BUSER),
-    .s_out_dout(s_out_dout),
-    .s_out_empty_n(s_out_empty_n),
-    .s_out_read(store_output_wide_U0_s_out_read),
-    .s_out_num_data_valid(s_out_num_data_valid),
-    .s_out_fifo_cap(s_out_fifo_cap)
+    .sa_post_dout(sa_post_dout),
+    .sa_post_empty_n(sa_post_empty_n),
+    .sa_post_read(store_dual_U0_sa_post_read),
+    .sa_post_num_data_valid(sa_post_num_data_valid),
+    .sa_post_fifo_cap(sa_post_fifo_cap),
+    .sb_post_dout(sb_post_dout),
+    .sb_post_empty_n(sb_post_empty_n),
+    .sb_post_read(store_dual_U0_sb_post_read),
+    .sb_post_num_data_valid(sb_post_num_data_valid),
+    .sb_post_fifo_cap(sb_post_fifo_cap)
 );
 
-top_kernel_fifo_w64_d8_S out_r_c_U(
+top_kernel_fifo_w64_d7_S out_r_c_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
@@ -1055,220 +1063,239 @@ top_kernel_fifo_w64_d8_S out_r_c_U(
     .if_write(entry_proc_U0_out_r_c_write),
     .if_dout(out_r_c_dout),
     .if_empty_n(out_r_c_empty_n),
-    .if_read(store_output_wide_U0_out_r_read),
+    .if_read(store_dual_U0_out_r_read),
     .if_num_data_valid(out_r_c_num_data_valid),
     .if_fifo_cap(out_r_c_fifo_cap)
 );
 
-top_kernel_fifo_w512_d2_S s_in_U(
+top_kernel_fifo_w512_d2_S sa_in_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(load_input_wide_U0_s_in_din),
-    .if_full_n(s_in_full_n),
-    .if_write(load_input_wide_U0_s_in_write),
-    .if_dout(s_in_dout),
-    .if_empty_n(s_in_empty_n),
-    .if_read(k0_preprocess_U0_s_in_read),
-    .if_num_data_valid(s_in_num_data_valid),
-    .if_fifo_cap(s_in_fifo_cap)
+    .if_din(load_dual_U0_sa_in_din),
+    .if_full_n(sa_in_full_n),
+    .if_write(load_dual_U0_sa_in_write),
+    .if_dout(sa_in_dout),
+    .if_empty_n(sa_in_empty_n),
+    .if_read(super_kernel_32_U0_sa_in_read),
+    .if_num_data_valid(sa_in_num_data_valid),
+    .if_fifo_cap(sa_in_fifo_cap)
 );
 
-top_kernel_fifo_w512_d2_S s0_U(
+top_kernel_fifo_w512_d2_S sb_in_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(k0_preprocess_U0_s0_din),
-    .if_full_n(s0_full_n),
-    .if_write(k0_preprocess_U0_s0_write),
-    .if_dout(s0_dout),
-    .if_empty_n(s0_empty_n),
-    .if_read(k_split_U0_s0_read),
-    .if_num_data_valid(s0_num_data_valid),
-    .if_fifo_cap(s0_fifo_cap)
+    .if_din(load_dual_U0_sb_in_din),
+    .if_full_n(sb_in_full_n),
+    .if_write(load_dual_U0_sb_in_write),
+    .if_dout(sb_in_dout),
+    .if_empty_n(sb_in_empty_n),
+    .if_read(super_kernel_32_U0_sb_in_read),
+    .if_num_data_valid(sb_in_num_data_valid),
+    .if_fifo_cap(sb_in_fifo_cap)
 );
 
-top_kernel_fifo_w512_d64_S s0_a_U(
+top_kernel_fifo_w512_d2_S sa_stats_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(k_split_U0_s0_a_din),
-    .if_full_n(s0_a_full_n),
-    .if_write(k_split_U0_s0_a_write),
-    .if_dout(s0_a_dout),
-    .if_empty_n(s0_a_empty_n),
-    .if_read(k1_transform_U0_s0_a_read),
-    .if_num_data_valid(s0_a_num_data_valid),
-    .if_fifo_cap(s0_a_fifo_cap)
+    .if_din(super_kernel_32_U0_sa_stats_din),
+    .if_full_n(sa_stats_full_n),
+    .if_write(super_kernel_32_U0_sa_stats_write),
+    .if_dout(sa_stats_dout),
+    .if_empty_n(sa_stats_empty_n),
+    .if_read(k2_stats_dual_U0_sa_stats_read),
+    .if_num_data_valid(sa_stats_num_data_valid),
+    .if_fifo_cap(sa_stats_fifo_cap)
 );
 
-top_kernel_fifo_w512_d2_S s0_b_U(
+top_kernel_fifo_w512_d512_A sa_join_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(k_split_U0_s0_b_din),
-    .if_full_n(s0_b_full_n),
-    .if_write(k_split_U0_s0_b_write),
-    .if_dout(s0_b_dout),
-    .if_empty_n(s0_b_empty_n),
-    .if_read(k2_stats_U0_s0_b_read),
-    .if_num_data_valid(s0_b_num_data_valid),
-    .if_fifo_cap(s0_b_fifo_cap)
+    .if_din(super_kernel_32_U0_sa_join_din),
+    .if_full_n(sa_join_full_n),
+    .if_write(super_kernel_32_U0_sa_join_write),
+    .if_dout(sa_join_dout),
+    .if_empty_n(sa_join_empty_n),
+    .if_read(k3_dual_norm_U0_sa_join_read),
+    .if_num_data_valid(sa_join_num_data_valid),
+    .if_fifo_cap(sa_join_fifo_cap)
 );
 
-top_kernel_fifo_w512_d64_S s1_U(
+top_kernel_fifo_w512_d2_S sb_stats_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(k1_transform_U0_s1_din),
-    .if_full_n(s1_full_n),
-    .if_write(k1_transform_U0_s1_write),
-    .if_dout(s1_dout),
-    .if_empty_n(s1_empty_n),
-    .if_read(k3_join_norm_U0_s1_read),
-    .if_num_data_valid(s1_num_data_valid),
-    .if_fifo_cap(s1_fifo_cap)
+    .if_din(super_kernel_32_U0_sb_stats_din),
+    .if_full_n(sb_stats_full_n),
+    .if_write(super_kernel_32_U0_sb_stats_write),
+    .if_dout(sb_stats_dout),
+    .if_empty_n(sb_stats_empty_n),
+    .if_read(k2_stats_dual_U0_sb_stats_read),
+    .if_num_data_valid(sb_stats_num_data_valid),
+    .if_fifo_cap(sb_stats_fifo_cap)
 );
 
-top_kernel_fifo_w28_d2_S s_stats_U(
+top_kernel_fifo_w512_d512_A sb_join_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(k2_stats_U0_s_stats_din),
-    .if_full_n(s_stats_full_n),
-    .if_write(k2_stats_U0_s_stats_write),
-    .if_dout(s_stats_dout),
-    .if_empty_n(s_stats_empty_n),
-    .if_read(k3_join_norm_U0_s_stats_read),
-    .if_num_data_valid(s_stats_num_data_valid),
-    .if_fifo_cap(s_stats_fifo_cap)
+    .if_din(super_kernel_32_U0_sb_join_din),
+    .if_full_n(sb_join_full_n),
+    .if_write(super_kernel_32_U0_sb_join_write),
+    .if_dout(sb_join_dout),
+    .if_empty_n(sb_join_empty_n),
+    .if_read(k3_dual_norm_U0_sb_join_read),
+    .if_num_data_valid(sb_join_num_data_valid),
+    .if_fifo_cap(sb_join_fifo_cap)
 );
 
-top_kernel_fifo_w512_d2_S s3_U(
+top_kernel_fifo_w28_d2_S s_st_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(k3_join_norm_U0_s3_din),
-    .if_full_n(s3_full_n),
-    .if_write(k3_join_norm_U0_s3_write),
-    .if_dout(s3_dout),
-    .if_empty_n(s3_empty_n),
-    .if_read(k4_postprocess_U0_s3_read),
-    .if_num_data_valid(s3_num_data_valid),
-    .if_fifo_cap(s3_fifo_cap)
+    .if_din(k2_stats_dual_U0_s_st_din),
+    .if_full_n(s_st_full_n),
+    .if_write(k2_stats_dual_U0_s_st_write),
+    .if_dout(s_st_dout),
+    .if_empty_n(s_st_empty_n),
+    .if_read(k3_dual_norm_U0_s_st_read),
+    .if_num_data_valid(s_st_num_data_valid),
+    .if_fifo_cap(s_st_fifo_cap)
 );
 
-top_kernel_fifo_w512_d2_S s_out_U(
+top_kernel_fifo_w512_d2_S sa_norm_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(k4_postprocess_U0_s_out_din),
-    .if_full_n(s_out_full_n),
-    .if_write(k4_postprocess_U0_s_out_write),
-    .if_dout(s_out_dout),
-    .if_empty_n(s_out_empty_n),
-    .if_read(store_output_wide_U0_s_out_read),
-    .if_num_data_valid(s_out_num_data_valid),
-    .if_fifo_cap(s_out_fifo_cap)
+    .if_din(k3_dual_norm_U0_sa_norm_din),
+    .if_full_n(sa_norm_full_n),
+    .if_write(k3_dual_norm_U0_sa_norm_write),
+    .if_dout(sa_norm_dout),
+    .if_empty_n(sa_norm_empty_n),
+    .if_read(k4_dual_post_U0_sa_norm_read),
+    .if_num_data_valid(sa_norm_num_data_valid),
+    .if_fifo_cap(sa_norm_fifo_cap)
 );
 
-top_kernel_start_for_store_output_wide_U0 start_for_store_output_wide_U0_U(
+top_kernel_fifo_w512_d2_S sb_norm_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(start_for_store_output_wide_U0_din),
-    .if_full_n(start_for_store_output_wide_U0_full_n),
+    .if_din(k3_dual_norm_U0_sb_norm_din),
+    .if_full_n(sb_norm_full_n),
+    .if_write(k3_dual_norm_U0_sb_norm_write),
+    .if_dout(sb_norm_dout),
+    .if_empty_n(sb_norm_empty_n),
+    .if_read(k4_dual_post_U0_sb_norm_read),
+    .if_num_data_valid(sb_norm_num_data_valid),
+    .if_fifo_cap(sb_norm_fifo_cap)
+);
+
+top_kernel_fifo_w512_d2_S sa_post_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(k4_dual_post_U0_sa_post_din),
+    .if_full_n(sa_post_full_n),
+    .if_write(k4_dual_post_U0_sa_post_write),
+    .if_dout(sa_post_dout),
+    .if_empty_n(sa_post_empty_n),
+    .if_read(store_dual_U0_sa_post_read),
+    .if_num_data_valid(sa_post_num_data_valid),
+    .if_fifo_cap(sa_post_fifo_cap)
+);
+
+top_kernel_fifo_w512_d2_S sb_post_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(k4_dual_post_U0_sb_post_din),
+    .if_full_n(sb_post_full_n),
+    .if_write(k4_dual_post_U0_sb_post_write),
+    .if_dout(sb_post_dout),
+    .if_empty_n(sb_post_empty_n),
+    .if_read(store_dual_U0_sb_post_read),
+    .if_num_data_valid(sb_post_num_data_valid),
+    .if_fifo_cap(sb_post_fifo_cap)
+);
+
+top_kernel_start_for_store_dual_U0 start_for_store_dual_U0_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(start_for_store_dual_U0_din),
+    .if_full_n(start_for_store_dual_U0_full_n),
     .if_write(entry_proc_U0_start_write),
-    .if_dout(start_for_store_output_wide_U0_dout),
-    .if_empty_n(start_for_store_output_wide_U0_empty_n),
-    .if_read(store_output_wide_U0_ap_ready)
+    .if_dout(start_for_store_dual_U0_dout),
+    .if_empty_n(start_for_store_dual_U0_empty_n),
+    .if_read(store_dual_U0_ap_ready)
 );
 
-top_kernel_start_for_k0_preprocess_U0 start_for_k0_preprocess_U0_U(
+top_kernel_start_for_super_kernel_32_U0 start_for_super_kernel_32_U0_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(start_for_k0_preprocess_U0_din),
-    .if_full_n(start_for_k0_preprocess_U0_full_n),
-    .if_write(load_input_wide_U0_start_write),
-    .if_dout(start_for_k0_preprocess_U0_dout),
-    .if_empty_n(start_for_k0_preprocess_U0_empty_n),
-    .if_read(k0_preprocess_U0_ap_ready)
+    .if_din(start_for_super_kernel_32_U0_din),
+    .if_full_n(start_for_super_kernel_32_U0_full_n),
+    .if_write(load_dual_U0_start_write),
+    .if_dout(start_for_super_kernel_32_U0_dout),
+    .if_empty_n(start_for_super_kernel_32_U0_empty_n),
+    .if_read(super_kernel_32_U0_ap_ready)
 );
 
-top_kernel_start_for_k_split_U0 start_for_k_split_U0_U(
+top_kernel_start_for_k2_stats_dual_U0 start_for_k2_stats_dual_U0_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(start_for_k_split_U0_din),
-    .if_full_n(start_for_k_split_U0_full_n),
-    .if_write(k0_preprocess_U0_start_write),
-    .if_dout(start_for_k_split_U0_dout),
-    .if_empty_n(start_for_k_split_U0_empty_n),
-    .if_read(k_split_U0_ap_ready)
+    .if_din(start_for_k2_stats_dual_U0_din),
+    .if_full_n(start_for_k2_stats_dual_U0_full_n),
+    .if_write(super_kernel_32_U0_start_write),
+    .if_dout(start_for_k2_stats_dual_U0_dout),
+    .if_empty_n(start_for_k2_stats_dual_U0_empty_n),
+    .if_read(k2_stats_dual_U0_ap_ready)
 );
 
-top_kernel_start_for_k1_transform_U0 start_for_k1_transform_U0_U(
+top_kernel_start_for_k3_dual_norm_U0 start_for_k3_dual_norm_U0_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(start_for_k1_transform_U0_din),
-    .if_full_n(start_for_k1_transform_U0_full_n),
-    .if_write(k_split_U0_start_write),
-    .if_dout(start_for_k1_transform_U0_dout),
-    .if_empty_n(start_for_k1_transform_U0_empty_n),
-    .if_read(k1_transform_U0_ap_ready)
+    .if_din(start_for_k3_dual_norm_U0_din),
+    .if_full_n(start_for_k3_dual_norm_U0_full_n),
+    .if_write(super_kernel_32_U0_start_write),
+    .if_dout(start_for_k3_dual_norm_U0_dout),
+    .if_empty_n(start_for_k3_dual_norm_U0_empty_n),
+    .if_read(k3_dual_norm_U0_ap_ready)
 );
 
-top_kernel_start_for_k2_stats_U0 start_for_k2_stats_U0_U(
+top_kernel_start_for_k4_dual_post_U0 start_for_k4_dual_post_U0_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(start_for_k2_stats_U0_din),
-    .if_full_n(start_for_k2_stats_U0_full_n),
-    .if_write(k_split_U0_start_write),
-    .if_dout(start_for_k2_stats_U0_dout),
-    .if_empty_n(start_for_k2_stats_U0_empty_n),
-    .if_read(k2_stats_U0_ap_ready)
-);
-
-top_kernel_start_for_k3_join_norm_U0 start_for_k3_join_norm_U0_U(
-    .clk(ap_clk),
-    .reset(ap_rst_n_inv),
-    .if_read_ce(1'b1),
-    .if_write_ce(1'b1),
-    .if_din(start_for_k3_join_norm_U0_din),
-    .if_full_n(start_for_k3_join_norm_U0_full_n),
-    .if_write(k1_transform_U0_start_write),
-    .if_dout(start_for_k3_join_norm_U0_dout),
-    .if_empty_n(start_for_k3_join_norm_U0_empty_n),
-    .if_read(k3_join_norm_U0_ap_ready)
-);
-
-top_kernel_start_for_k4_postprocess_U0 start_for_k4_postprocess_U0_U(
-    .clk(ap_clk),
-    .reset(ap_rst_n_inv),
-    .if_read_ce(1'b1),
-    .if_write_ce(1'b1),
-    .if_din(start_for_k4_postprocess_U0_din),
-    .if_full_n(start_for_k4_postprocess_U0_full_n),
-    .if_write(k3_join_norm_U0_start_write),
-    .if_dout(start_for_k4_postprocess_U0_dout),
-    .if_empty_n(start_for_k4_postprocess_U0_empty_n),
-    .if_read(k4_postprocess_U0_ap_ready)
+    .if_din(start_for_k4_dual_post_U0_din),
+    .if_full_n(start_for_k4_dual_post_U0_full_n),
+    .if_write(k3_dual_norm_U0_start_write),
+    .if_dout(start_for_k4_dual_post_U0_dout),
+    .if_empty_n(start_for_k4_dual_post_U0_empty_n),
+    .if_read(k4_dual_post_U0_ap_ready)
 );
 
 always @ (posedge ap_clk) begin
@@ -1285,19 +1312,19 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        ap_sync_reg_load_input_wide_U0_ap_ready <= 1'b0;
+        ap_sync_reg_load_dual_U0_ap_ready <= 1'b0;
     end else begin
         if (((ap_sync_ready & ap_start) == 1'b1)) begin
-            ap_sync_reg_load_input_wide_U0_ap_ready <= 1'b0;
+            ap_sync_reg_load_dual_U0_ap_ready <= 1'b0;
         end else begin
-            ap_sync_reg_load_input_wide_U0_ap_ready <= ap_sync_load_input_wide_U0_ap_ready;
+            ap_sync_reg_load_dual_U0_ap_ready <= ap_sync_load_dual_U0_ap_ready;
         end
     end
 end
 
-assign ap_done = store_output_wide_U0_ap_done;
+assign ap_done = store_dual_U0_ap_done;
 
-assign ap_idle = (store_output_wide_U0_ap_idle & load_input_wide_U0_ap_idle & k_split_U0_ap_idle & k4_postprocess_U0_ap_idle & k3_join_norm_U0_ap_idle & k2_stats_U0_ap_idle & k1_transform_U0_ap_idle & k0_preprocess_U0_ap_idle & entry_proc_U0_ap_idle);
+assign ap_idle = (super_kernel_32_U0_ap_idle & store_dual_U0_ap_idle & load_dual_U0_ap_idle & k4_dual_post_U0_ap_idle & k3_dual_norm_U0_ap_idle & k2_stats_dual_U0_ap_idle & entry_proc_U0_ap_idle);
 
 assign ap_ready = ap_sync_ready;
 
@@ -1307,9 +1334,9 @@ end
 
 assign ap_sync_entry_proc_U0_ap_ready = (entry_proc_U0_ap_ready | ap_sync_reg_entry_proc_U0_ap_ready);
 
-assign ap_sync_load_input_wide_U0_ap_ready = (load_input_wide_U0_ap_ready | ap_sync_reg_load_input_wide_U0_ap_ready);
+assign ap_sync_load_dual_U0_ap_ready = (load_dual_U0_ap_ready | ap_sync_reg_load_dual_U0_ap_ready);
 
-assign ap_sync_ready = (ap_sync_load_input_wide_U0_ap_ready & ap_sync_entry_proc_U0_ap_ready);
+assign ap_sync_ready = (ap_sync_load_dual_U0_ap_ready & ap_sync_entry_proc_U0_ap_ready);
 
 assign entry_proc_U0_ap_continue = 1'b1;
 
@@ -1329,68 +1356,60 @@ assign gmem1_0_BRESP = 2'd0;
 
 assign gmem1_0_BUSER = 1'd0;
 
-assign k0_preprocess_U0_ap_continue = 1'b1;
+assign k2_stats_dual_U0_ap_continue = 1'b1;
 
-assign k0_preprocess_U0_ap_start = start_for_k0_preprocess_U0_empty_n;
+assign k2_stats_dual_U0_ap_start = start_for_k2_stats_dual_U0_empty_n;
 
-assign k1_transform_U0_ap_continue = 1'b1;
+assign k2_stats_dual_U0_s_st_fifo_cap = s_st_fifo_cap;
 
-assign k1_transform_U0_ap_start = start_for_k1_transform_U0_empty_n;
+assign k2_stats_dual_U0_s_st_num_data_valid = s_st_num_data_valid;
 
-assign k1_transform_U0_s1_fifo_cap = s1_fifo_cap;
+assign k3_dual_norm_U0_ap_continue = 1'b1;
 
-assign k1_transform_U0_s1_num_data_valid = s1_num_data_valid;
+assign k3_dual_norm_U0_ap_start = start_for_k3_dual_norm_U0_empty_n;
 
-assign k2_stats_U0_ap_continue = 1'b1;
+assign k3_dual_norm_U0_sa_norm_fifo_cap = sa_norm_fifo_cap;
 
-assign k2_stats_U0_ap_start = start_for_k2_stats_U0_empty_n;
+assign k3_dual_norm_U0_sa_norm_num_data_valid = sa_norm_num_data_valid;
 
-assign k2_stats_U0_s_stats_fifo_cap = s_stats_fifo_cap;
+assign k3_dual_norm_U0_sb_norm_fifo_cap = sb_norm_fifo_cap;
 
-assign k2_stats_U0_s_stats_num_data_valid = s_stats_num_data_valid;
+assign k3_dual_norm_U0_sb_norm_num_data_valid = sb_norm_num_data_valid;
 
-assign k3_join_norm_U0_ap_continue = 1'b1;
+assign k4_dual_post_U0_ap_continue = 1'b1;
 
-assign k3_join_norm_U0_ap_start = start_for_k3_join_norm_U0_empty_n;
+assign k4_dual_post_U0_ap_start = start_for_k4_dual_post_U0_empty_n;
 
-assign k3_join_norm_U0_s3_fifo_cap = s3_fifo_cap;
+assign k4_dual_post_U0_sa_post_fifo_cap = sa_post_fifo_cap;
 
-assign k3_join_norm_U0_s3_num_data_valid = s3_num_data_valid;
+assign k4_dual_post_U0_sa_post_num_data_valid = sa_post_num_data_valid;
 
-assign k4_postprocess_U0_ap_continue = 1'b1;
+assign k4_dual_post_U0_sb_post_fifo_cap = sb_post_fifo_cap;
 
-assign k4_postprocess_U0_ap_start = start_for_k4_postprocess_U0_empty_n;
+assign k4_dual_post_U0_sb_post_num_data_valid = sb_post_num_data_valid;
 
-assign k4_postprocess_U0_s_out_fifo_cap = s_out_fifo_cap;
+assign load_dual_U0_ap_continue = 1'b1;
 
-assign k4_postprocess_U0_s_out_num_data_valid = s_out_num_data_valid;
+assign load_dual_U0_ap_start = ((ap_sync_reg_load_dual_U0_ap_ready ^ 1'b1) & ap_start & 1'b1);
 
-assign k_split_U0_ap_continue = 1'b1;
+assign start_for_k2_stats_dual_U0_din = 1'b1;
 
-assign k_split_U0_ap_start = start_for_k_split_U0_empty_n;
+assign start_for_k3_dual_norm_U0_din = 1'b1;
 
-assign k_split_U0_start_full_n = (start_for_k2_stats_U0_full_n & start_for_k1_transform_U0_full_n);
+assign start_for_k4_dual_post_U0_din = 1'b1;
 
-assign load_input_wide_U0_ap_continue = 1'b1;
+assign start_for_store_dual_U0_din = 1'b1;
 
-assign load_input_wide_U0_ap_start = ((ap_sync_reg_load_input_wide_U0_ap_ready ^ 1'b1) & ap_start & 1'b1);
+assign start_for_super_kernel_32_U0_din = 1'b1;
 
-assign start_for_k0_preprocess_U0_din = 1'b1;
+assign store_dual_U0_ap_continue = 1'b1;
 
-assign start_for_k1_transform_U0_din = 1'b1;
+assign store_dual_U0_ap_start = start_for_store_dual_U0_empty_n;
 
-assign start_for_k2_stats_U0_din = 1'b1;
+assign super_kernel_32_U0_ap_continue = 1'b1;
 
-assign start_for_k3_join_norm_U0_din = 1'b1;
+assign super_kernel_32_U0_ap_start = start_for_super_kernel_32_U0_empty_n;
 
-assign start_for_k4_postprocess_U0_din = 1'b1;
-
-assign start_for_k_split_U0_din = 1'b1;
-
-assign start_for_store_output_wide_U0_din = 1'b1;
-
-assign store_output_wide_U0_ap_continue = 1'b1;
-
-assign store_output_wide_U0_ap_start = start_for_store_output_wide_U0_empty_n;
+assign super_kernel_32_U0_start_full_n = (start_for_k3_dual_norm_U0_full_n & start_for_k2_stats_dual_U0_full_n);
 
 endmodule //top_kernel

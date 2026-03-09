@@ -22,30 +22,30 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>4185</Best-caseLatency>
-<Average-caseLatency>4185</Average-caseLatency>
-<Worst-caseLatency>4185</Worst-caseLatency>
-<Best-caseRealTimeLatency>41.850 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>41.850 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>41.850 us</Worst-caseRealTimeLatency>
-<DataflowPipelineThroughput>4096</DataflowPipelineThroughput>
-<Interval-min>4096</Interval-min>
-<Interval-max>4096</Interval-max>
+<Best-caseLatency>2131</Best-caseLatency>
+<Average-caseLatency>2131</Average-caseLatency>
+<Worst-caseLatency>2131</Worst-caseLatency>
+<Best-caseRealTimeLatency>21.310 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>21.310 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>21.310 us</Worst-caseRealTimeLatency>
+<DataflowPipelineThroughput>2052</DataflowPipelineThroughput>
+<Interval-min>2052</Interval-min>
+<Interval-max>2052</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:482</SourceLocation>
+<SourceLocation>top.cpp:507</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>29</BRAM_18K>
-<DSP>64</DSP>
-<FF>13200</FF>
-<LUT>30658</LUT>
+<BRAM_18K>115</BRAM_18K>
+<DSP>128</DSP>
+<FF>18628</FF>
+<LUT>49815</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -466,7 +466,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>512</Bits>
+<Bits>1024</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -478,7 +478,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>64</Bits>
+<Bits>128</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -706,7 +706,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>512</Bits>
+<Bits>1024</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -1006,7 +1006,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>512</Bits>
+<Bits>1024</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -1018,7 +1018,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>64</Bits>
+<Bits>128</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -1246,7 +1246,7 @@
 <IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>512</Bits>
+<Bits>1024</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
 </RtlPorts>

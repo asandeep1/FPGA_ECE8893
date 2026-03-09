@@ -243,34 +243,34 @@ class AESL_RUNTIME_BC {
     string mName;
 };
 using hls::sim::Byte;
-struct __cosim_s64__ { char data[64]; };
-extern "C" void top_kernel(Byte<64>*, Byte<64>*, int, int);
+struct __cosim_s128__ { char data[128]; };
+extern "C" void top_kernel(Byte<128>*, Byte<128>*, int, int);
 extern "C" void apatb_top_kernel_hw(volatile void * __xlx_apatb_param_in_r, volatile void * __xlx_apatb_param_out_r) {
 using hls::sim::createStream;
   // Collect __xlx_in_r__tmp_vec
-std::vector<Byte<64>> __xlx_in_r__tmp_vec;
-for (size_t i = 0; i < 4096; ++i){
-__xlx_in_r__tmp_vec.push_back(((Byte<64>*)__xlx_apatb_param_in_r)[i]);
+std::vector<Byte<128>> __xlx_in_r__tmp_vec;
+for (size_t i = 0; i < 2048; ++i){
+__xlx_in_r__tmp_vec.push_back(((Byte<128>*)__xlx_apatb_param_in_r)[i]);
 }
-  int __xlx_size_param_in_r = 4096;
+  int __xlx_size_param_in_r = 2048;
   int __xlx_offset_param_in_r = 0;
-  int __xlx_offset_byte_param_in_r = 0*64;
+  int __xlx_offset_byte_param_in_r = 0*128;
   // Collect __xlx_out_r__tmp_vec
-std::vector<Byte<64>> __xlx_out_r__tmp_vec;
-for (size_t i = 0; i < 4096; ++i){
-__xlx_out_r__tmp_vec.push_back(((Byte<64>*)__xlx_apatb_param_out_r)[i]);
+std::vector<Byte<128>> __xlx_out_r__tmp_vec;
+for (size_t i = 0; i < 2048; ++i){
+__xlx_out_r__tmp_vec.push_back(((Byte<128>*)__xlx_apatb_param_out_r)[i]);
 }
-  int __xlx_size_param_out_r = 4096;
+  int __xlx_size_param_out_r = 2048;
   int __xlx_offset_param_out_r = 0;
-  int __xlx_offset_byte_param_out_r = 0*64;
+  int __xlx_offset_byte_param_out_r = 0*128;
   // DUT call
   top_kernel(__xlx_in_r__tmp_vec.data(), __xlx_out_r__tmp_vec.data(), __xlx_offset_byte_param_in_r, __xlx_offset_byte_param_out_r);
 // print __xlx_apatb_param_in_r
 for (size_t i = 0; i < __xlx_size_param_in_r; ++i) {
-((Byte<64>*)__xlx_apatb_param_in_r)[i] = __xlx_in_r__tmp_vec[__xlx_offset_param_in_r+i];
+((Byte<128>*)__xlx_apatb_param_in_r)[i] = __xlx_in_r__tmp_vec[__xlx_offset_param_in_r+i];
 }
 // print __xlx_apatb_param_out_r
 for (size_t i = 0; i < __xlx_size_param_out_r; ++i) {
-((Byte<64>*)__xlx_apatb_param_out_r)[i] = __xlx_out_r__tmp_vec[__xlx_offset_param_out_r+i];
+((Byte<128>*)__xlx_apatb_param_out_r)[i] = __xlx_out_r__tmp_vec[__xlx_offset_param_out_r+i];
 }
 }

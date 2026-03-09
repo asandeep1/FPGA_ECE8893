@@ -1,5 +1,5 @@
    
-    parameter PROC_NUM = 9;
+    parameter PROC_NUM = 7;
     parameter ST_IDLE = 3'b000;
     parameter ST_FILTER_FAKE = 3'b001;
     parameter ST_DL_DETECTED = 3'b010;
@@ -216,7 +216,7 @@
     endfunction
 
     // get the proc path based on dl vector
-    function [376:0] proc_path(input [PROC_NUM - 1:0] dl_vec);
+    function [360:0] proc_path(input [PROC_NUM - 1:0] dl_vec);
         integer index;
         begin
             index = proc_index(dl_vec);
@@ -225,28 +225,22 @@
                     proc_path = "top_kernel_top_kernel.entry_proc_U0";
                 end
                 1 : begin
-                    proc_path = "top_kernel_top_kernel.load_input_wide_U0";
+                    proc_path = "top_kernel_top_kernel.load_dual_U0";
                 end
                 2 : begin
-                    proc_path = "top_kernel_top_kernel.k0_preprocess_U0";
+                    proc_path = "top_kernel_top_kernel.super_kernel_32_U0";
                 end
                 3 : begin
-                    proc_path = "top_kernel_top_kernel.k_split_U0";
+                    proc_path = "top_kernel_top_kernel.k2_stats_dual_U0";
                 end
                 4 : begin
-                    proc_path = "top_kernel_top_kernel.k1_transform_U0";
+                    proc_path = "top_kernel_top_kernel.k3_dual_norm_U0";
                 end
                 5 : begin
-                    proc_path = "top_kernel_top_kernel.k2_stats_U0";
+                    proc_path = "top_kernel_top_kernel.k4_dual_post_U0";
                 end
                 6 : begin
-                    proc_path = "top_kernel_top_kernel.k3_join_norm_U0";
-                end
-                7 : begin
-                    proc_path = "top_kernel_top_kernel.k4_postprocess_U0";
-                end
-                8 : begin
-                    proc_path = "top_kernel_top_kernel.store_output_wide_U0";
+                    proc_path = "top_kernel_top_kernel.store_dual_U0";
                 end
                 default : begin
                     proc_path = "unknown";
@@ -266,7 +260,7 @@
     endtask
 
     // print the start of a cycle
-    task print_cycle_start(input reg [376:0] proc_path, input integer cycle_id);
+    task print_cycle_start(input reg [360:0] proc_path, input integer cycle_id);
         begin
             $display("/////////////////////////");
             $display("// Dependence cycle %0d:", cycle_id);
@@ -291,7 +285,7 @@
     endtask
 
     // print one proc component in the cycle
-    task print_cycle_proc_comp(input reg [376:0] proc_path, input integer cycle_comp_id);
+    task print_cycle_proc_comp(input reg [360:0] proc_path, input integer cycle_comp_id);
         begin
             $display("// (%0d): Process: %0s", cycle_comp_id, proc_path);
             $fdisplay(fp, "Dependence_Process_ID %0d", cycle_comp_id);
@@ -301,7 +295,7 @@
 
     // print one channel component in the cycle
     task print_cycle_chan_comp(input [PROC_NUM - 1:0] dl_vec1, input [PROC_NUM - 1:0] dl_vec2);
-        reg [472:0] chan_path;
+        reg [456:0] chan_path;
         integer index1;
         integer index2;
         begin
@@ -310,377 +304,411 @@
             case (index1)
                 0 : begin // for proc 'top_kernel_top_kernel.entry_proc_U0'
                     case(index2)
-                    8: begin //  for dep proc 'top_kernel_top_kernel.store_output_wide_U0'
+                    6: begin //  for dep proc 'top_kernel_top_kernel.store_dual_U0'
 // for dep channel 'top_kernel_top_kernel.out_r_c_U' info is :
 // blk sig is {~top_kernel_top_kernel_inst.entry_proc_U0.out_r_c_blk_n data_FIFO}
                         if ((~entry_proc_U0.out_r_c_blk_n)) begin
                             if (~out_r_c_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.out_r_c_U' written by process 'top_kernel_top_kernel.store_output_wide_U0'");
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.out_r_c_U' written by process 'top_kernel_top_kernel.store_dual_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.out_r_c_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
                             else if (~out_r_c_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.out_r_c_U' read by process 'top_kernel_top_kernel.store_output_wide_U0'");
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.out_r_c_U' read by process 'top_kernel_top_kernel.store_dual_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.out_r_c_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'top_kernel_top_kernel.start_for_store_output_wide_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_store_output_wide_U0_U.if_full_n & top_kernel_top_kernel_inst.entry_proc_U0.ap_start & ~top_kernel_top_kernel_inst.entry_proc_U0.real_start & (trans_in_cnt_5 == trans_out_cnt_5) & ~top_kernel_top_kernel_inst.start_for_store_output_wide_U0_U.if_read} start_FIFO}
-                        if ((~start_for_store_output_wide_U0_U.if_full_n & entry_proc_U0.ap_start & ~entry_proc_U0.real_start & (trans_in_cnt_5 == trans_out_cnt_5) & ~start_for_store_output_wide_U0_U.if_read)) begin
-                            $display("//      Blocked by full output start propagation FIFO 'top_kernel_top_kernel.start_for_store_output_wide_U0_U' read by process 'top_kernel_top_kernel.store_output_wide_U0',");
+// for dep channel 'top_kernel_top_kernel.start_for_store_dual_U0_U' info is :
+// blk sig is {{~top_kernel_top_kernel_inst.start_for_store_dual_U0_U.if_full_n & top_kernel_top_kernel_inst.entry_proc_U0.ap_start & ~top_kernel_top_kernel_inst.entry_proc_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~top_kernel_top_kernel_inst.start_for_store_dual_U0_U.if_read} start_FIFO}
+                        if ((~start_for_store_dual_U0_U.if_full_n & entry_proc_U0.ap_start & ~entry_proc_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~start_for_store_dual_U0_U.if_read)) begin
+                            $display("//      Blocked by full output start propagation FIFO 'top_kernel_top_kernel.start_for_store_dual_U0_U' read by process 'top_kernel_top_kernel.store_dual_U0',");
                         end
                     end
-                    1: begin //  for dep proc 'top_kernel_top_kernel.load_input_wide_U0'
+                    1: begin //  for dep proc 'top_kernel_top_kernel.load_dual_U0'
 // for dep channel '' info is :
-// blk sig is {{top_kernel_top_kernel_inst.ap_sync_entry_proc_U0_ap_ready & top_kernel_top_kernel_inst.entry_proc_U0.ap_idle & ~top_kernel_top_kernel_inst.ap_sync_load_input_wide_U0_ap_ready} input_sync}
-                        if ((ap_sync_entry_proc_U0_ap_ready & entry_proc_U0.ap_idle & ~ap_sync_load_input_wide_U0_ap_ready)) begin
-                            $display("//      Blocked by input sync logic with process : 'top_kernel_top_kernel.load_input_wide_U0'");
+// blk sig is {{top_kernel_top_kernel_inst.ap_sync_entry_proc_U0_ap_ready & top_kernel_top_kernel_inst.entry_proc_U0.ap_idle & ~top_kernel_top_kernel_inst.ap_sync_load_dual_U0_ap_ready} input_sync}
+                        if ((ap_sync_entry_proc_U0_ap_ready & entry_proc_U0.ap_idle & ~ap_sync_load_dual_U0_ap_ready)) begin
+                            $display("//      Blocked by input sync logic with process : 'top_kernel_top_kernel.load_dual_U0'");
                         end
                     end
                     endcase
                 end
-                1 : begin // for proc 'top_kernel_top_kernel.load_input_wide_U0'
+                1 : begin // for proc 'top_kernel_top_kernel.load_dual_U0'
                     case(index2)
-                    2: begin //  for dep proc 'top_kernel_top_kernel.k0_preprocess_U0'
-// for dep channel 'top_kernel_top_kernel.s_in_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.load_input_wide_U0.s_in_blk_n data_FIFO}
-                        if ((~load_input_wide_U0.s_in_blk_n)) begin
-                            if (~s_in_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s_in_U' written by process 'top_kernel_top_kernel.k0_preprocess_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_in_U");
+                    2: begin //  for dep proc 'top_kernel_top_kernel.super_kernel_32_U0'
+// for dep channel 'top_kernel_top_kernel.sa_in_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.load_dual_U0.sa_in_blk_n data_FIFO}
+                        if ((~load_dual_U0.sa_in_blk_n)) begin
+                            if (~sa_in_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sa_in_U' written by process 'top_kernel_top_kernel.super_kernel_32_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_in_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~s_in_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s_in_U' read by process 'top_kernel_top_kernel.k0_preprocess_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_in_U");
+                            else if (~sa_in_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sa_in_U' read by process 'top_kernel_top_kernel.super_kernel_32_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_in_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'top_kernel_top_kernel.start_for_k0_preprocess_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_k0_preprocess_U0_U.if_full_n & top_kernel_top_kernel_inst.load_input_wide_U0.ap_start & ~top_kernel_top_kernel_inst.load_input_wide_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~top_kernel_top_kernel_inst.start_for_k0_preprocess_U0_U.if_read} start_FIFO}
-                        if ((~start_for_k0_preprocess_U0_U.if_full_n & load_input_wide_U0.ap_start & ~load_input_wide_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~start_for_k0_preprocess_U0_U.if_read)) begin
-                            $display("//      Blocked by full output start propagation FIFO 'top_kernel_top_kernel.start_for_k0_preprocess_U0_U' read by process 'top_kernel_top_kernel.k0_preprocess_U0',");
+// for dep channel 'top_kernel_top_kernel.sb_in_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.load_dual_U0.sb_in_blk_n data_FIFO}
+                        if ((~load_dual_U0.sb_in_blk_n)) begin
+                            if (~sb_in_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sb_in_U' written by process 'top_kernel_top_kernel.super_kernel_32_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_in_U");
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~sb_in_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sb_in_U' read by process 'top_kernel_top_kernel.super_kernel_32_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_in_U");
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                        end
+// for dep channel 'top_kernel_top_kernel.start_for_super_kernel_32_U0_U' info is :
+// blk sig is {{~top_kernel_top_kernel_inst.start_for_super_kernel_32_U0_U.if_full_n & top_kernel_top_kernel_inst.load_dual_U0.ap_start & ~top_kernel_top_kernel_inst.load_dual_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~top_kernel_top_kernel_inst.start_for_super_kernel_32_U0_U.if_read} start_FIFO}
+                        if ((~start_for_super_kernel_32_U0_U.if_full_n & load_dual_U0.ap_start & ~load_dual_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~start_for_super_kernel_32_U0_U.if_read)) begin
+                            $display("//      Blocked by full output start propagation FIFO 'top_kernel_top_kernel.start_for_super_kernel_32_U0_U' read by process 'top_kernel_top_kernel.super_kernel_32_U0',");
                         end
                     end
                     0: begin //  for dep proc 'top_kernel_top_kernel.entry_proc_U0'
 // for dep channel '' info is :
-// blk sig is {{top_kernel_top_kernel_inst.ap_sync_load_input_wide_U0_ap_ready & top_kernel_top_kernel_inst.load_input_wide_U0.ap_idle & ~top_kernel_top_kernel_inst.ap_sync_entry_proc_U0_ap_ready} input_sync}
-                        if ((ap_sync_load_input_wide_U0_ap_ready & load_input_wide_U0.ap_idle & ~ap_sync_entry_proc_U0_ap_ready)) begin
+// blk sig is {{top_kernel_top_kernel_inst.ap_sync_load_dual_U0_ap_ready & top_kernel_top_kernel_inst.load_dual_U0.ap_idle & ~top_kernel_top_kernel_inst.ap_sync_entry_proc_U0_ap_ready} input_sync}
+                        if ((ap_sync_load_dual_U0_ap_ready & load_dual_U0.ap_idle & ~ap_sync_entry_proc_U0_ap_ready)) begin
                             $display("//      Blocked by input sync logic with process : 'top_kernel_top_kernel.entry_proc_U0'");
                         end
                     end
                     endcase
                 end
-                2 : begin // for proc 'top_kernel_top_kernel.k0_preprocess_U0'
+                2 : begin // for proc 'top_kernel_top_kernel.super_kernel_32_U0'
                     case(index2)
-                    1: begin //  for dep proc 'top_kernel_top_kernel.load_input_wide_U0'
-// for dep channel 'top_kernel_top_kernel.s_in_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.k0_preprocess_U0.s_in_blk_n data_FIFO}
-                        if ((~k0_preprocess_U0.s_in_blk_n)) begin
-                            if (~s_in_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s_in_U' written by process 'top_kernel_top_kernel.load_input_wide_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_in_U");
+                    1: begin //  for dep proc 'top_kernel_top_kernel.load_dual_U0'
+// for dep channel 'top_kernel_top_kernel.sa_in_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.super_kernel_32_U0.sa_in_blk_n data_FIFO}
+                        if ((~super_kernel_32_U0.sa_in_blk_n)) begin
+                            if (~sa_in_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sa_in_U' written by process 'top_kernel_top_kernel.load_dual_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_in_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~s_in_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s_in_U' read by process 'top_kernel_top_kernel.load_input_wide_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_in_U");
+                            else if (~sa_in_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sa_in_U' read by process 'top_kernel_top_kernel.load_dual_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_in_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'top_kernel_top_kernel.start_for_k0_preprocess_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_k0_preprocess_U0_U.if_empty_n & top_kernel_top_kernel_inst.k0_preprocess_U0.ap_idle & ~top_kernel_top_kernel_inst.start_for_k0_preprocess_U0_U.if_write} start_FIFO}
-                        if ((~start_for_k0_preprocess_U0_U.if_empty_n & k0_preprocess_U0.ap_idle & ~start_for_k0_preprocess_U0_U.if_write)) begin
-                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_k0_preprocess_U0_U' written by process 'top_kernel_top_kernel.load_input_wide_U0',");
+// for dep channel 'top_kernel_top_kernel.sb_in_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.super_kernel_32_U0.sb_in_blk_n data_FIFO}
+                        if ((~super_kernel_32_U0.sb_in_blk_n)) begin
+                            if (~sb_in_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sb_in_U' written by process 'top_kernel_top_kernel.load_dual_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_in_U");
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~sb_in_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sb_in_U' read by process 'top_kernel_top_kernel.load_dual_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_in_U");
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                        end
+// for dep channel 'top_kernel_top_kernel.start_for_super_kernel_32_U0_U' info is :
+// blk sig is {{~top_kernel_top_kernel_inst.start_for_super_kernel_32_U0_U.if_empty_n & top_kernel_top_kernel_inst.super_kernel_32_U0.ap_idle & ~top_kernel_top_kernel_inst.start_for_super_kernel_32_U0_U.if_write} start_FIFO}
+                        if ((~start_for_super_kernel_32_U0_U.if_empty_n & super_kernel_32_U0.ap_idle & ~start_for_super_kernel_32_U0_U.if_write)) begin
+                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_super_kernel_32_U0_U' written by process 'top_kernel_top_kernel.load_dual_U0',");
                         end
                     end
-                    3: begin //  for dep proc 'top_kernel_top_kernel.k_split_U0'
-// for dep channel 'top_kernel_top_kernel.s0_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.k0_preprocess_U0.s0_blk_n data_FIFO}
-                        if ((~k0_preprocess_U0.s0_blk_n)) begin
-                            if (~s0_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s0_U' written by process 'top_kernel_top_kernel.k_split_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s0_U");
+                    3: begin //  for dep proc 'top_kernel_top_kernel.k2_stats_dual_U0'
+// for dep channel 'top_kernel_top_kernel.sa_stats_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.super_kernel_32_U0.sa_stats_blk_n data_FIFO}
+                        if ((~super_kernel_32_U0.sa_stats_blk_n)) begin
+                            if (~sa_stats_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sa_stats_U' written by process 'top_kernel_top_kernel.k2_stats_dual_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_stats_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~s0_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s0_U' read by process 'top_kernel_top_kernel.k_split_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s0_U");
+                            else if (~sa_stats_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sa_stats_U' read by process 'top_kernel_top_kernel.k2_stats_dual_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_stats_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'top_kernel_top_kernel.start_for_k_split_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_k_split_U0_U.if_full_n & top_kernel_top_kernel_inst.k0_preprocess_U0.ap_start & ~top_kernel_top_kernel_inst.k0_preprocess_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~top_kernel_top_kernel_inst.start_for_k_split_U0_U.if_read} start_FIFO}
-                        if ((~start_for_k_split_U0_U.if_full_n & k0_preprocess_U0.ap_start & ~k0_preprocess_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~start_for_k_split_U0_U.if_read)) begin
-                            $display("//      Blocked by full output start propagation FIFO 'top_kernel_top_kernel.start_for_k_split_U0_U' read by process 'top_kernel_top_kernel.k_split_U0',");
+// for dep channel 'top_kernel_top_kernel.sb_stats_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.super_kernel_32_U0.sb_stats_blk_n data_FIFO}
+                        if ((~super_kernel_32_U0.sb_stats_blk_n)) begin
+                            if (~sb_stats_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sb_stats_U' written by process 'top_kernel_top_kernel.k2_stats_dual_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_stats_U");
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~sb_stats_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sb_stats_U' read by process 'top_kernel_top_kernel.k2_stats_dual_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_stats_U");
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                        end
+// for dep channel 'top_kernel_top_kernel.start_for_k2_stats_dual_U0_U' info is :
+// blk sig is {{~top_kernel_top_kernel_inst.start_for_k2_stats_dual_U0_U.if_full_n & top_kernel_top_kernel_inst.super_kernel_32_U0.ap_start & ~top_kernel_top_kernel_inst.super_kernel_32_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~top_kernel_top_kernel_inst.start_for_k2_stats_dual_U0_U.if_read} start_FIFO}
+                        if ((~start_for_k2_stats_dual_U0_U.if_full_n & super_kernel_32_U0.ap_start & ~super_kernel_32_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~start_for_k2_stats_dual_U0_U.if_read)) begin
+                            $display("//      Blocked by full output start propagation FIFO 'top_kernel_top_kernel.start_for_k2_stats_dual_U0_U' read by process 'top_kernel_top_kernel.k2_stats_dual_U0',");
+                        end
+                    end
+                    4: begin //  for dep proc 'top_kernel_top_kernel.k3_dual_norm_U0'
+// for dep channel 'top_kernel_top_kernel.sa_join_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.super_kernel_32_U0.sa_join_blk_n data_FIFO}
+                        if ((~super_kernel_32_U0.sa_join_blk_n)) begin
+                            if (~sa_join_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sa_join_U' written by process 'top_kernel_top_kernel.k3_dual_norm_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_join_U");
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~sa_join_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sa_join_U' read by process 'top_kernel_top_kernel.k3_dual_norm_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_join_U");
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                        end
+// for dep channel 'top_kernel_top_kernel.sb_join_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.super_kernel_32_U0.sb_join_blk_n data_FIFO}
+                        if ((~super_kernel_32_U0.sb_join_blk_n)) begin
+                            if (~sb_join_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sb_join_U' written by process 'top_kernel_top_kernel.k3_dual_norm_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_join_U");
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~sb_join_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sb_join_U' read by process 'top_kernel_top_kernel.k3_dual_norm_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_join_U");
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                        end
+// for dep channel 'top_kernel_top_kernel.start_for_k3_dual_norm_U0_U' info is :
+// blk sig is {{~top_kernel_top_kernel_inst.start_for_k3_dual_norm_U0_U.if_full_n & top_kernel_top_kernel_inst.super_kernel_32_U0.ap_start & ~top_kernel_top_kernel_inst.super_kernel_32_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~top_kernel_top_kernel_inst.start_for_k3_dual_norm_U0_U.if_read} start_FIFO}
+                        if ((~start_for_k3_dual_norm_U0_U.if_full_n & super_kernel_32_U0.ap_start & ~super_kernel_32_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~start_for_k3_dual_norm_U0_U.if_read)) begin
+                            $display("//      Blocked by full output start propagation FIFO 'top_kernel_top_kernel.start_for_k3_dual_norm_U0_U' read by process 'top_kernel_top_kernel.k3_dual_norm_U0',");
                         end
                     end
                     endcase
                 end
-                3 : begin // for proc 'top_kernel_top_kernel.k_split_U0'
+                3 : begin // for proc 'top_kernel_top_kernel.k2_stats_dual_U0'
                     case(index2)
-                    2: begin //  for dep proc 'top_kernel_top_kernel.k0_preprocess_U0'
-// for dep channel 'top_kernel_top_kernel.s0_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.k_split_U0.s0_blk_n data_FIFO}
-                        if ((~k_split_U0.s0_blk_n)) begin
-                            if (~s0_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s0_U' written by process 'top_kernel_top_kernel.k0_preprocess_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s0_U");
+                    4: begin //  for dep proc 'top_kernel_top_kernel.k3_dual_norm_U0'
+// for dep channel 'top_kernel_top_kernel.s_st_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.k2_stats_dual_U0.s_st_blk_n data_FIFO}
+                        if ((~k2_stats_dual_U0.s_st_blk_n)) begin
+                            if (~s_st_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s_st_U' written by process 'top_kernel_top_kernel.k3_dual_norm_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_st_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~s0_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s0_U' read by process 'top_kernel_top_kernel.k0_preprocess_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s0_U");
+                            else if (~s_st_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s_st_U' read by process 'top_kernel_top_kernel.k3_dual_norm_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_st_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
-                        end
-// for dep channel 'top_kernel_top_kernel.start_for_k_split_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_k_split_U0_U.if_empty_n & top_kernel_top_kernel_inst.k_split_U0.ap_idle & ~top_kernel_top_kernel_inst.start_for_k_split_U0_U.if_write} start_FIFO}
-                        if ((~start_for_k_split_U0_U.if_empty_n & k_split_U0.ap_idle & ~start_for_k_split_U0_U.if_write)) begin
-                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_k_split_U0_U' written by process 'top_kernel_top_kernel.k0_preprocess_U0',");
                         end
                     end
-                    4: begin //  for dep proc 'top_kernel_top_kernel.k1_transform_U0'
-// for dep channel 'top_kernel_top_kernel.s0_a_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.k_split_U0.s0_a_blk_n data_FIFO}
-                        if ((~k_split_U0.s0_a_blk_n)) begin
-                            if (~s0_a_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s0_a_U' written by process 'top_kernel_top_kernel.k1_transform_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s0_a_U");
+                    2: begin //  for dep proc 'top_kernel_top_kernel.super_kernel_32_U0'
+// for dep channel 'top_kernel_top_kernel.sa_stats_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.k2_stats_dual_U0.sa_stats_blk_n data_FIFO}
+                        if ((~k2_stats_dual_U0.sa_stats_blk_n)) begin
+                            if (~sa_stats_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sa_stats_U' written by process 'top_kernel_top_kernel.super_kernel_32_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_stats_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~s0_a_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s0_a_U' read by process 'top_kernel_top_kernel.k1_transform_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s0_a_U");
+                            else if (~sa_stats_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sa_stats_U' read by process 'top_kernel_top_kernel.super_kernel_32_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_stats_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'top_kernel_top_kernel.start_for_k1_transform_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_k1_transform_U0_U.if_full_n & top_kernel_top_kernel_inst.k_split_U0.ap_start & ~top_kernel_top_kernel_inst.k_split_U0.real_start & (trans_in_cnt_2 == trans_out_cnt_2) & ~top_kernel_top_kernel_inst.start_for_k1_transform_U0_U.if_read} start_FIFO}
-                        if ((~start_for_k1_transform_U0_U.if_full_n & k_split_U0.ap_start & ~k_split_U0.real_start & (trans_in_cnt_2 == trans_out_cnt_2) & ~start_for_k1_transform_U0_U.if_read)) begin
-                            $display("//      Blocked by full output start propagation FIFO 'top_kernel_top_kernel.start_for_k1_transform_U0_U' read by process 'top_kernel_top_kernel.k1_transform_U0',");
-                        end
-                    end
-                    5: begin //  for dep proc 'top_kernel_top_kernel.k2_stats_U0'
-// for dep channel 'top_kernel_top_kernel.s0_b_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.k_split_U0.s0_b_blk_n data_FIFO}
-                        if ((~k_split_U0.s0_b_blk_n)) begin
-                            if (~s0_b_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s0_b_U' written by process 'top_kernel_top_kernel.k2_stats_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s0_b_U");
+// for dep channel 'top_kernel_top_kernel.sb_stats_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.k2_stats_dual_U0.sb_stats_blk_n data_FIFO}
+                        if ((~k2_stats_dual_U0.sb_stats_blk_n)) begin
+                            if (~sb_stats_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sb_stats_U' written by process 'top_kernel_top_kernel.super_kernel_32_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_stats_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~s0_b_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s0_b_U' read by process 'top_kernel_top_kernel.k2_stats_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s0_b_U");
+                            else if (~sb_stats_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sb_stats_U' read by process 'top_kernel_top_kernel.super_kernel_32_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_stats_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'top_kernel_top_kernel.start_for_k2_stats_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_k2_stats_U0_U.if_full_n & top_kernel_top_kernel_inst.k_split_U0.ap_start & ~top_kernel_top_kernel_inst.k_split_U0.real_start & (trans_in_cnt_2 == trans_out_cnt_2) & ~top_kernel_top_kernel_inst.start_for_k2_stats_U0_U.if_read} start_FIFO}
-                        if ((~start_for_k2_stats_U0_U.if_full_n & k_split_U0.ap_start & ~k_split_U0.real_start & (trans_in_cnt_2 == trans_out_cnt_2) & ~start_for_k2_stats_U0_U.if_read)) begin
-                            $display("//      Blocked by full output start propagation FIFO 'top_kernel_top_kernel.start_for_k2_stats_U0_U' read by process 'top_kernel_top_kernel.k2_stats_U0',");
+// for dep channel 'top_kernel_top_kernel.start_for_k2_stats_dual_U0_U' info is :
+// blk sig is {{~top_kernel_top_kernel_inst.start_for_k2_stats_dual_U0_U.if_empty_n & top_kernel_top_kernel_inst.k2_stats_dual_U0.ap_idle & ~top_kernel_top_kernel_inst.start_for_k2_stats_dual_U0_U.if_write} start_FIFO}
+                        if ((~start_for_k2_stats_dual_U0_U.if_empty_n & k2_stats_dual_U0.ap_idle & ~start_for_k2_stats_dual_U0_U.if_write)) begin
+                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_k2_stats_dual_U0_U' written by process 'top_kernel_top_kernel.super_kernel_32_U0',");
                         end
                     end
                     endcase
                 end
-                4 : begin // for proc 'top_kernel_top_kernel.k1_transform_U0'
+                4 : begin // for proc 'top_kernel_top_kernel.k3_dual_norm_U0'
                     case(index2)
-                    3: begin //  for dep proc 'top_kernel_top_kernel.k_split_U0'
-// for dep channel 'top_kernel_top_kernel.s0_a_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.k1_transform_U0.s0_a_blk_n data_FIFO}
-                        if ((~k1_transform_U0.s0_a_blk_n)) begin
-                            if (~s0_a_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s0_a_U' written by process 'top_kernel_top_kernel.k_split_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s0_a_U");
+                    3: begin //  for dep proc 'top_kernel_top_kernel.k2_stats_dual_U0'
+// for dep channel 'top_kernel_top_kernel.s_st_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.k3_dual_norm_U0.s_st_blk_n data_FIFO}
+                        if ((~k3_dual_norm_U0.s_st_blk_n)) begin
+                            if (~s_st_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s_st_U' written by process 'top_kernel_top_kernel.k2_stats_dual_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_st_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~s0_a_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s0_a_U' read by process 'top_kernel_top_kernel.k_split_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s0_a_U");
+                            else if (~s_st_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s_st_U' read by process 'top_kernel_top_kernel.k2_stats_dual_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_st_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
-                        end
-// for dep channel 'top_kernel_top_kernel.start_for_k1_transform_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_k1_transform_U0_U.if_empty_n & top_kernel_top_kernel_inst.k1_transform_U0.ap_idle & ~top_kernel_top_kernel_inst.start_for_k1_transform_U0_U.if_write} start_FIFO}
-                        if ((~start_for_k1_transform_U0_U.if_empty_n & k1_transform_U0.ap_idle & ~start_for_k1_transform_U0_U.if_write)) begin
-                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_k1_transform_U0_U' written by process 'top_kernel_top_kernel.k_split_U0',");
                         end
                     end
-                    6: begin //  for dep proc 'top_kernel_top_kernel.k3_join_norm_U0'
-// for dep channel 'top_kernel_top_kernel.s1_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.k1_transform_U0.s1_blk_n data_FIFO}
-                        if ((~k1_transform_U0.s1_blk_n)) begin
-                            if (~s1_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s1_U' written by process 'top_kernel_top_kernel.k3_join_norm_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s1_U");
+                    2: begin //  for dep proc 'top_kernel_top_kernel.super_kernel_32_U0'
+// for dep channel 'top_kernel_top_kernel.sa_join_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.k3_dual_norm_U0.sa_join_blk_n data_FIFO}
+                        if ((~k3_dual_norm_U0.sa_join_blk_n)) begin
+                            if (~sa_join_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sa_join_U' written by process 'top_kernel_top_kernel.super_kernel_32_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_join_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~s1_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s1_U' read by process 'top_kernel_top_kernel.k3_join_norm_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s1_U");
+                            else if (~sa_join_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sa_join_U' read by process 'top_kernel_top_kernel.super_kernel_32_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_join_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'top_kernel_top_kernel.start_for_k3_join_norm_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_k3_join_norm_U0_U.if_full_n & top_kernel_top_kernel_inst.k1_transform_U0.ap_start & ~top_kernel_top_kernel_inst.k1_transform_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~top_kernel_top_kernel_inst.start_for_k3_join_norm_U0_U.if_read} start_FIFO}
-                        if ((~start_for_k3_join_norm_U0_U.if_full_n & k1_transform_U0.ap_start & ~k1_transform_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~start_for_k3_join_norm_U0_U.if_read)) begin
-                            $display("//      Blocked by full output start propagation FIFO 'top_kernel_top_kernel.start_for_k3_join_norm_U0_U' read by process 'top_kernel_top_kernel.k3_join_norm_U0',");
+// for dep channel 'top_kernel_top_kernel.sb_join_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.k3_dual_norm_U0.sb_join_blk_n data_FIFO}
+                        if ((~k3_dual_norm_U0.sb_join_blk_n)) begin
+                            if (~sb_join_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sb_join_U' written by process 'top_kernel_top_kernel.super_kernel_32_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_join_U");
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~sb_join_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sb_join_U' read by process 'top_kernel_top_kernel.super_kernel_32_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_join_U");
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                        end
+// for dep channel 'top_kernel_top_kernel.start_for_k3_dual_norm_U0_U' info is :
+// blk sig is {{~top_kernel_top_kernel_inst.start_for_k3_dual_norm_U0_U.if_empty_n & top_kernel_top_kernel_inst.k3_dual_norm_U0.ap_idle & ~top_kernel_top_kernel_inst.start_for_k3_dual_norm_U0_U.if_write} start_FIFO}
+                        if ((~start_for_k3_dual_norm_U0_U.if_empty_n & k3_dual_norm_U0.ap_idle & ~start_for_k3_dual_norm_U0_U.if_write)) begin
+                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_k3_dual_norm_U0_U' written by process 'top_kernel_top_kernel.super_kernel_32_U0',");
+                        end
+                    end
+                    5: begin //  for dep proc 'top_kernel_top_kernel.k4_dual_post_U0'
+// for dep channel 'top_kernel_top_kernel.sa_norm_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.k3_dual_norm_U0.sa_norm_blk_n data_FIFO}
+                        if ((~k3_dual_norm_U0.sa_norm_blk_n)) begin
+                            if (~sa_norm_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sa_norm_U' written by process 'top_kernel_top_kernel.k4_dual_post_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_norm_U");
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~sa_norm_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sa_norm_U' read by process 'top_kernel_top_kernel.k4_dual_post_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_norm_U");
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                        end
+// for dep channel 'top_kernel_top_kernel.sb_norm_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.k3_dual_norm_U0.sb_norm_blk_n data_FIFO}
+                        if ((~k3_dual_norm_U0.sb_norm_blk_n)) begin
+                            if (~sb_norm_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sb_norm_U' written by process 'top_kernel_top_kernel.k4_dual_post_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_norm_U");
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~sb_norm_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sb_norm_U' read by process 'top_kernel_top_kernel.k4_dual_post_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_norm_U");
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                        end
+// for dep channel 'top_kernel_top_kernel.start_for_k4_dual_post_U0_U' info is :
+// blk sig is {{~top_kernel_top_kernel_inst.start_for_k4_dual_post_U0_U.if_full_n & top_kernel_top_kernel_inst.k3_dual_norm_U0.ap_start & ~top_kernel_top_kernel_inst.k3_dual_norm_U0.real_start & (trans_in_cnt_2 == trans_out_cnt_2) & ~top_kernel_top_kernel_inst.start_for_k4_dual_post_U0_U.if_read} start_FIFO}
+                        if ((~start_for_k4_dual_post_U0_U.if_full_n & k3_dual_norm_U0.ap_start & ~k3_dual_norm_U0.real_start & (trans_in_cnt_2 == trans_out_cnt_2) & ~start_for_k4_dual_post_U0_U.if_read)) begin
+                            $display("//      Blocked by full output start propagation FIFO 'top_kernel_top_kernel.start_for_k4_dual_post_U0_U' read by process 'top_kernel_top_kernel.k4_dual_post_U0',");
                         end
                     end
                     endcase
                 end
-                5 : begin // for proc 'top_kernel_top_kernel.k2_stats_U0'
+                5 : begin // for proc 'top_kernel_top_kernel.k4_dual_post_U0'
                     case(index2)
-                    6: begin //  for dep proc 'top_kernel_top_kernel.k3_join_norm_U0'
-// for dep channel 'top_kernel_top_kernel.s_stats_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.k2_stats_U0.s_stats_blk_n data_FIFO}
-                        if ((~k2_stats_U0.s_stats_blk_n)) begin
-                            if (~s_stats_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s_stats_U' written by process 'top_kernel_top_kernel.k3_join_norm_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_stats_U");
+                    4: begin //  for dep proc 'top_kernel_top_kernel.k3_dual_norm_U0'
+// for dep channel 'top_kernel_top_kernel.sa_norm_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.k4_dual_post_U0.sa_norm_blk_n data_FIFO}
+                        if ((~k4_dual_post_U0.sa_norm_blk_n)) begin
+                            if (~sa_norm_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sa_norm_U' written by process 'top_kernel_top_kernel.k3_dual_norm_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_norm_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~s_stats_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s_stats_U' read by process 'top_kernel_top_kernel.k3_join_norm_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_stats_U");
+                            else if (~sa_norm_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sa_norm_U' read by process 'top_kernel_top_kernel.k3_dual_norm_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_norm_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-                    end
-                    3: begin //  for dep proc 'top_kernel_top_kernel.k_split_U0'
-// for dep channel 'top_kernel_top_kernel.s0_b_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.k2_stats_U0.s0_b_blk_n data_FIFO}
-                        if ((~k2_stats_U0.s0_b_blk_n)) begin
-                            if (~s0_b_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s0_b_U' written by process 'top_kernel_top_kernel.k_split_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s0_b_U");
+// for dep channel 'top_kernel_top_kernel.sb_norm_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.k4_dual_post_U0.sb_norm_blk_n data_FIFO}
+                        if ((~k4_dual_post_U0.sb_norm_blk_n)) begin
+                            if (~sb_norm_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sb_norm_U' written by process 'top_kernel_top_kernel.k3_dual_norm_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_norm_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~s0_b_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s0_b_U' read by process 'top_kernel_top_kernel.k_split_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s0_b_U");
+                            else if (~sb_norm_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sb_norm_U' read by process 'top_kernel_top_kernel.k3_dual_norm_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_norm_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'top_kernel_top_kernel.start_for_k2_stats_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_k2_stats_U0_U.if_empty_n & top_kernel_top_kernel_inst.k2_stats_U0.ap_idle & ~top_kernel_top_kernel_inst.start_for_k2_stats_U0_U.if_write} start_FIFO}
-                        if ((~start_for_k2_stats_U0_U.if_empty_n & k2_stats_U0.ap_idle & ~start_for_k2_stats_U0_U.if_write)) begin
-                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_k2_stats_U0_U' written by process 'top_kernel_top_kernel.k_split_U0',");
+// for dep channel 'top_kernel_top_kernel.start_for_k4_dual_post_U0_U' info is :
+// blk sig is {{~top_kernel_top_kernel_inst.start_for_k4_dual_post_U0_U.if_empty_n & top_kernel_top_kernel_inst.k4_dual_post_U0.ap_idle & ~top_kernel_top_kernel_inst.start_for_k4_dual_post_U0_U.if_write} start_FIFO}
+                        if ((~start_for_k4_dual_post_U0_U.if_empty_n & k4_dual_post_U0.ap_idle & ~start_for_k4_dual_post_U0_U.if_write)) begin
+                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_k4_dual_post_U0_U' written by process 'top_kernel_top_kernel.k3_dual_norm_U0',");
                         end
                     end
-                    endcase
-                end
-                6 : begin // for proc 'top_kernel_top_kernel.k3_join_norm_U0'
-                    case(index2)
-                    5: begin //  for dep proc 'top_kernel_top_kernel.k2_stats_U0'
-// for dep channel 'top_kernel_top_kernel.s_stats_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.k3_join_norm_U0.s_stats_blk_n data_FIFO}
-                        if ((~k3_join_norm_U0.s_stats_blk_n)) begin
-                            if (~s_stats_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s_stats_U' written by process 'top_kernel_top_kernel.k2_stats_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_stats_U");
+                    6: begin //  for dep proc 'top_kernel_top_kernel.store_dual_U0'
+// for dep channel 'top_kernel_top_kernel.sa_post_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.k4_dual_post_U0.sa_post_blk_n data_FIFO}
+                        if ((~k4_dual_post_U0.sa_post_blk_n)) begin
+                            if (~sa_post_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sa_post_U' written by process 'top_kernel_top_kernel.store_dual_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_post_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~s_stats_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s_stats_U' read by process 'top_kernel_top_kernel.k2_stats_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_stats_U");
+                            else if (~sa_post_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sa_post_U' read by process 'top_kernel_top_kernel.store_dual_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_post_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-                    end
-                    4: begin //  for dep proc 'top_kernel_top_kernel.k1_transform_U0'
-// for dep channel 'top_kernel_top_kernel.s1_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.k3_join_norm_U0.s1_blk_n data_FIFO}
-                        if ((~k3_join_norm_U0.s1_blk_n)) begin
-                            if (~s1_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s1_U' written by process 'top_kernel_top_kernel.k1_transform_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s1_U");
+// for dep channel 'top_kernel_top_kernel.sb_post_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.k4_dual_post_U0.sb_post_blk_n data_FIFO}
+                        if ((~k4_dual_post_U0.sb_post_blk_n)) begin
+                            if (~sb_post_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sb_post_U' written by process 'top_kernel_top_kernel.store_dual_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_post_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~s1_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s1_U' read by process 'top_kernel_top_kernel.k1_transform_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s1_U");
-                                $fdisplay(fp, "Dependence_Channel_status FULL");
-                            end
-                        end
-// for dep channel 'top_kernel_top_kernel.start_for_k3_join_norm_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_k3_join_norm_U0_U.if_empty_n & top_kernel_top_kernel_inst.k3_join_norm_U0.ap_idle & ~top_kernel_top_kernel_inst.start_for_k3_join_norm_U0_U.if_write} start_FIFO}
-                        if ((~start_for_k3_join_norm_U0_U.if_empty_n & k3_join_norm_U0.ap_idle & ~start_for_k3_join_norm_U0_U.if_write)) begin
-                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_k3_join_norm_U0_U' written by process 'top_kernel_top_kernel.k1_transform_U0',");
-                        end
-                    end
-                    7: begin //  for dep proc 'top_kernel_top_kernel.k4_postprocess_U0'
-// for dep channel 'top_kernel_top_kernel.s3_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.k3_join_norm_U0.s3_blk_n data_FIFO}
-                        if ((~k3_join_norm_U0.s3_blk_n)) begin
-                            if (~s3_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s3_U' written by process 'top_kernel_top_kernel.k4_postprocess_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s3_U");
-                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
-                            end
-                            else if (~s3_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s3_U' read by process 'top_kernel_top_kernel.k4_postprocess_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s3_U");
-                                $fdisplay(fp, "Dependence_Channel_status FULL");
-                            end
-                        end
-// for dep channel 'top_kernel_top_kernel.start_for_k4_postprocess_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_k4_postprocess_U0_U.if_full_n & top_kernel_top_kernel_inst.k3_join_norm_U0.ap_start & ~top_kernel_top_kernel_inst.k3_join_norm_U0.real_start & (trans_in_cnt_4 == trans_out_cnt_4) & ~top_kernel_top_kernel_inst.start_for_k4_postprocess_U0_U.if_read} start_FIFO}
-                        if ((~start_for_k4_postprocess_U0_U.if_full_n & k3_join_norm_U0.ap_start & ~k3_join_norm_U0.real_start & (trans_in_cnt_4 == trans_out_cnt_4) & ~start_for_k4_postprocess_U0_U.if_read)) begin
-                            $display("//      Blocked by full output start propagation FIFO 'top_kernel_top_kernel.start_for_k4_postprocess_U0_U' read by process 'top_kernel_top_kernel.k4_postprocess_U0',");
-                        end
-                    end
-                    endcase
-                end
-                7 : begin // for proc 'top_kernel_top_kernel.k4_postprocess_U0'
-                    case(index2)
-                    6: begin //  for dep proc 'top_kernel_top_kernel.k3_join_norm_U0'
-// for dep channel 'top_kernel_top_kernel.s3_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.k4_postprocess_U0.s3_blk_n data_FIFO}
-                        if ((~k4_postprocess_U0.s3_blk_n)) begin
-                            if (~s3_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s3_U' written by process 'top_kernel_top_kernel.k3_join_norm_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s3_U");
-                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
-                            end
-                            else if (~s3_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s3_U' read by process 'top_kernel_top_kernel.k3_join_norm_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s3_U");
-                                $fdisplay(fp, "Dependence_Channel_status FULL");
-                            end
-                        end
-// for dep channel 'top_kernel_top_kernel.start_for_k4_postprocess_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_k4_postprocess_U0_U.if_empty_n & top_kernel_top_kernel_inst.k4_postprocess_U0.ap_idle & ~top_kernel_top_kernel_inst.start_for_k4_postprocess_U0_U.if_write} start_FIFO}
-                        if ((~start_for_k4_postprocess_U0_U.if_empty_n & k4_postprocess_U0.ap_idle & ~start_for_k4_postprocess_U0_U.if_write)) begin
-                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_k4_postprocess_U0_U' written by process 'top_kernel_top_kernel.k3_join_norm_U0',");
-                        end
-                    end
-                    8: begin //  for dep proc 'top_kernel_top_kernel.store_output_wide_U0'
-// for dep channel 'top_kernel_top_kernel.s_out_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.k4_postprocess_U0.s_out_blk_n data_FIFO}
-                        if ((~k4_postprocess_U0.s_out_blk_n)) begin
-                            if (~s_out_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s_out_U' written by process 'top_kernel_top_kernel.store_output_wide_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_out_U");
-                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
-                            end
-                            else if (~s_out_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s_out_U' read by process 'top_kernel_top_kernel.store_output_wide_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_out_U");
+                            else if (~sb_post_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sb_post_U' read by process 'top_kernel_top_kernel.store_dual_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_post_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
                     end
                     endcase
                 end
-                8 : begin // for proc 'top_kernel_top_kernel.store_output_wide_U0'
+                6 : begin // for proc 'top_kernel_top_kernel.store_dual_U0'
                     case(index2)
                     0: begin //  for dep proc 'top_kernel_top_kernel.entry_proc_U0'
 // for dep channel 'top_kernel_top_kernel.out_r_c_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.store_output_wide_U0.out_r_blk_n data_FIFO}
-                        if ((~store_output_wide_U0.out_r_blk_n)) begin
+// blk sig is {~top_kernel_top_kernel_inst.store_dual_U0.out_r_blk_n data_FIFO}
+                        if ((~store_dual_U0.out_r_blk_n)) begin
                             if (~out_r_c_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.out_r_c_U' written by process 'top_kernel_top_kernel.entry_proc_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.out_r_c_U");
@@ -692,24 +720,38 @@
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'top_kernel_top_kernel.start_for_store_output_wide_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_store_output_wide_U0_U.if_empty_n & top_kernel_top_kernel_inst.store_output_wide_U0.ap_idle & ~top_kernel_top_kernel_inst.start_for_store_output_wide_U0_U.if_write} start_FIFO}
-                        if ((~start_for_store_output_wide_U0_U.if_empty_n & store_output_wide_U0.ap_idle & ~start_for_store_output_wide_U0_U.if_write)) begin
-                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_store_output_wide_U0_U' written by process 'top_kernel_top_kernel.entry_proc_U0',");
+// for dep channel 'top_kernel_top_kernel.start_for_store_dual_U0_U' info is :
+// blk sig is {{~top_kernel_top_kernel_inst.start_for_store_dual_U0_U.if_empty_n & top_kernel_top_kernel_inst.store_dual_U0.ap_idle & ~top_kernel_top_kernel_inst.start_for_store_dual_U0_U.if_write} start_FIFO}
+                        if ((~start_for_store_dual_U0_U.if_empty_n & store_dual_U0.ap_idle & ~start_for_store_dual_U0_U.if_write)) begin
+                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_store_dual_U0_U' written by process 'top_kernel_top_kernel.entry_proc_U0',");
                         end
                     end
-                    7: begin //  for dep proc 'top_kernel_top_kernel.k4_postprocess_U0'
-// for dep channel 'top_kernel_top_kernel.s_out_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.store_output_wide_U0.s_out_blk_n data_FIFO}
-                        if ((~store_output_wide_U0.s_out_blk_n)) begin
-                            if (~s_out_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.s_out_U' written by process 'top_kernel_top_kernel.k4_postprocess_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_out_U");
+                    5: begin //  for dep proc 'top_kernel_top_kernel.k4_dual_post_U0'
+// for dep channel 'top_kernel_top_kernel.sa_post_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.store_dual_U0.sa_post_blk_n data_FIFO}
+                        if ((~store_dual_U0.sa_post_blk_n)) begin
+                            if (~sa_post_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sa_post_U' written by process 'top_kernel_top_kernel.k4_dual_post_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_post_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~s_out_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.s_out_U' read by process 'top_kernel_top_kernel.k4_postprocess_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.s_out_U");
+                            else if (~sa_post_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sa_post_U' read by process 'top_kernel_top_kernel.k4_dual_post_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sa_post_U");
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                        end
+// for dep channel 'top_kernel_top_kernel.sb_post_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.store_dual_U0.sb_post_blk_n data_FIFO}
+                        if ((~store_dual_U0.sb_post_blk_n)) begin
+                            if (~sb_post_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.sb_post_U' written by process 'top_kernel_top_kernel.k4_dual_post_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_post_U");
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~sb_post_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.sb_post_U' read by process 'top_kernel_top_kernel.k4_dual_post_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.sb_post_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end

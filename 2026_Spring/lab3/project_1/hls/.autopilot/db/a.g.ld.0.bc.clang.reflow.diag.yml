@@ -1,483 +1,739 @@
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: top.cpp, Line: 406, Column: 26 }
-Function:        _Z12k1_transformRN3hls6streamI10data_vec_tLi0EEES3_
+DebugLoc:        { File: top.cpp, Line: 379, Column: 30 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'hls_clamp(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>)'
     DebugLoc:        { File: top.cpp, Line: 309, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'k1_transform(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 394, Column: 0 }
+  - Caller:          'super_kernel_32(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 340, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: top.cpp, Line: 457, Column: 26 }
-Function:        _Z14k4_postprocessRN3hls6streamI10data_vec_tLi0EEES3_
+DebugLoc:        { File: top.cpp, Line: 465, Column: 23 }
+Function:        _Z12k4_dual_postRN3hls6streamI10data_vec_tLi0EEES3_S3_S3_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'hls_clamp(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>)'
     DebugLoc:        { File: top.cpp, Line: 309, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'k4_postprocess(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 449, Column: 0 }
+  - Caller:          'k4_dual_post(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 453, Column: 0 }
   - String:          ''''
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 484, Column: 2 }
+DebugLoc:        { File: top.cpp, Line: 508, Column: 2 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'load_input_wide(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 317, Column: 0 }
+  - Callee:          'load_dual(ap_uint<1024> const*, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 316, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 485, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 509, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k0_preprocess(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 370, Column: 0 }
+  - Callee:          'super_kernel_32(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 340, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 486, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 510, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k_split(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 383, Column: 0 }
+  - Callee:          'k2_stats_dual(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<ap_fixed<28, 10, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 393, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 487, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 511, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k1_transform(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 394, Column: 0 }
+  - Callee:          'k3_dual_norm(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<ap_fixed<28, 10, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 429, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 488, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 512, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k2_stats(hls::stream<data_vec_t, 0>&, hls::stream<ap_fixed<28, 10, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 413, Column: 0 }
+  - Callee:          'k4_dual_post(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 453, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 489, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 513, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k3_join_norm(hls::stream<data_vec_t, 0>&, hls::stream<ap_fixed<28, 10, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 432, Column: 0 }
+  - Callee:          'store_dual(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, ap_uint<1024>*)'
+    DebugLoc:        { File: top.cpp, Line: 473, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 490, Column: 5 }
-Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
-Args:            
-  - Callee:          'k4_postprocess(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 449, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 491, Column: 5 }
-Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
-Args:            
-  - Callee:          'store_output_wide(hls::stream<data_vec_t, 0>&, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 342, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
 Pass:            reflow-reg2mem-ssa
 Name:            DisaggrReason
-DebugLoc:        { File: top.cpp, Line: 352, Column: 9 }
-Function:        _Z17store_output_wideRN3hls6streamI10data_vec_tLi0EEEP8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EE
+DebugLoc:        { File: top.cpp, Line: 461, Column: 9 }
+Function:        _Z12k4_dual_postRN3hls6streamI10data_vec_tLi0EEES3_S3_S3_
 Args:            
   - String:          'Adding '''
-  - Name:            vec_reg
+  - Name:            rb
   - String:          ''' into disaggregation list because there''s '
   - String:          array-partition pragma applied on the struct field
 ...
 --- !Passed
 Pass:            reflow-reg2mem-ssa
 Name:            DisaggrReason
-DebugLoc:        { File: top.cpp, Line: 331, Column: 9 }
-Function:        _Z15load_input_widePK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EERN3hls6streamI10data_vec_tLi0EEE
+DebugLoc:        { File: top.cpp, Line: 460, Column: 9 }
+Function:        _Z12k4_dual_postRN3hls6streamI10data_vec_tLi0EEES3_S3_S3_
 Args:            
   - String:          'Adding '''
-  - Name:            vec
+  - Name:            ra
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 440, Column: 9 }
+Function:        _Z12k3_dual_normRN3hls6streamI10data_vec_tLi0EEES3_RNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES3_S3_
+Args:            
+  - String:          'Adding '''
+  - Name:            rb
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 439, Column: 9 }
+Function:        _Z12k3_dual_normRN3hls6streamI10data_vec_tLi0EEES3_RNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES3_S3_
+Args:            
+  - String:          'Adding '''
+  - Name:            ra
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 357, Column: 9 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
+Args:            
+  - String:          'Adding '''
+  - Name:            vjb
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 356, Column: 9 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
+Args:            
+  - String:          'Adding '''
+  - Name:            vja
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 355, Column: 9 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
+Args:            
+  - String:          'Adding '''
+  - Name:            vsb
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 354, Column: 9 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
+Args:            
+  - String:          'Adding '''
+  - Name:            vsa
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 324, Column: 9 }
+Function:        _Z9load_dualPK7ap_uintILi1024EERN3hls6streamI10data_vec_tLi0EEES7_
+Args:            
+  - String:          'Adding '''
+  - Name:            vec_b
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 323, Column: 9 }
+Function:        _Z9load_dualPK7ap_uintILi1024EERN3hls6streamI10data_vec_tLi0EEES7_
+Args:            
+  - String:          'Adding '''
+  - Name:            vec_a
   - String:          ''' into disaggregation list because there''s '
   - String:          array-partition pragma applied on the struct field
 ...
 --- !Passed
 Pass:            reflow-disaggr
 Name:            DisaggrReason
-DebugLoc:        { File: top.cpp, Line: 352, Column: 9 }
-Function:        _Z17store_output_wideRN3hls6streamI10data_vec_tLi0EEEP8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EE
+DebugLoc:        { File: top.cpp, Line: 461, Column: 9 }
+Function:        _Z12k4_dual_postRN3hls6streamI10data_vec_tLi0EEES3_S3_S3_
 Args:            
   - String:          'Adding '''
-  - Name:            vec_reg
+  - Name:            rb
   - String:          ''' into disaggregation list because there''s '
   - String:          array-partition pragma applied on the struct field
 ...
 --- !Passed
 Pass:            reflow-disaggr
 Name:            DisaggrReason
-DebugLoc:        { File: top.cpp, Line: 331, Column: 9 }
-Function:        _Z15load_input_widePK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EERN3hls6streamI10data_vec_tLi0EEE
+DebugLoc:        { File: top.cpp, Line: 460, Column: 9 }
+Function:        _Z12k4_dual_postRN3hls6streamI10data_vec_tLi0EEES3_S3_S3_
 Args:            
   - String:          'Adding '''
-  - Name:            vec
+  - Name:            ra
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 440, Column: 9 }
+Function:        _Z12k3_dual_normRN3hls6streamI10data_vec_tLi0EEES3_RNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES3_S3_
+Args:            
+  - String:          'Adding '''
+  - Name:            rb
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 439, Column: 9 }
+Function:        _Z12k3_dual_normRN3hls6streamI10data_vec_tLi0EEES3_RNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES3_S3_
+Args:            
+  - String:          'Adding '''
+  - Name:            ra
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 357, Column: 9 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
+Args:            
+  - String:          'Adding '''
+  - Name:            vjb
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 356, Column: 9 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
+Args:            
+  - String:          'Adding '''
+  - Name:            vja
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 355, Column: 9 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
+Args:            
+  - String:          'Adding '''
+  - Name:            vsb
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 354, Column: 9 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
+Args:            
+  - String:          'Adding '''
+  - Name:            vsa
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 324, Column: 9 }
+Function:        _Z9load_dualPK7ap_uintILi1024EERN3hls6streamI10data_vec_tLi0EEES7_
+Args:            
+  - String:          'Adding '''
+  - Name:            vec_b
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: top.cpp, Line: 323, Column: 9 }
+Function:        _Z9load_dualPK7ap_uintILi1024EERN3hls6streamI10data_vec_tLi0EEES7_
+Args:            
+  - String:          'Adding '''
+  - Name:            vec_a
   - String:          ''' into disaggregation list because there''s '
   - String:          array-partition pragma applied on the struct field
 ...
 --- !Passed
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
-DebugLoc:        { File: top.cpp, Line: 330, Column: 20 }
-Function:        _Z15load_input_widePK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EERN3hls6streamI10data_vec_tLi0EEE
+DebugLoc:        { File: top.cpp, Line: 322, Column: 27 }
+Function:        _Z9load_dualPK7ap_uintILi1024EERN3hls6streamI10data_vec_tLi0EEES7_
 Args:            
   - String:          'Disaggregating variable '''
-  - Name:            vec
+  - Name:            vec_b
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
-DebugLoc:        { File: top.cpp, Line: 351, Column: 20 }
-Function:        _Z17store_output_wideRN3hls6streamI10data_vec_tLi0EEEP8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EE
+DebugLoc:        { File: top.cpp, Line: 322, Column: 20 }
+Function:        _Z9load_dualPK7ap_uintILi1024EERN3hls6streamI10data_vec_tLi0EEES7_
 Args:            
   - String:          'Disaggregating variable '''
-  - Name:            vec_reg
+  - Name:            vec_a
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: top.cpp, Line: 353, Column: 35 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            vjb
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: top.cpp, Line: 353, Column: 30 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            vsb
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: top.cpp, Line: 353, Column: 25 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            vja
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: top.cpp, Line: 353, Column: 20 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            vsa
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: top.cpp, Line: 438, Column: 28 }
+Function:        _Z12k3_dual_normRN3hls6streamI10data_vec_tLi0EEES3_RNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES3_S3_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            rb
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: top.cpp, Line: 438, Column: 24 }
+Function:        _Z12k3_dual_normRN3hls6streamI10data_vec_tLi0EEES3_RNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES3_S3_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ra
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: top.cpp, Line: 459, Column: 24 }
+Function:        _Z12k4_dual_postRN3hls6streamI10data_vec_tLi0EEES3_S3_S3_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            rb
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: top.cpp, Line: 459, Column: 20 }
+Function:        _Z12k4_dual_postRN3hls6streamI10data_vec_tLi0EEES3_S3_S3_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ra
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 355, Column: 27 }
-Function:        _Z17store_output_wideRN3hls6streamI10data_vec_tLi0EEEP8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EE
+DebugLoc:        { File: top.cpp, Line: 481, Column: 27 }
+Function:        _Z10store_dualRN3hls6streamI10data_vec_tLi0EEES3_P7ap_uintILi1024EE
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_355_1
+  - LoopName:        VITIS_LOOP_481_1
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 454, Column: 27 }
-Function:        _Z14k4_postprocessRN3hls6streamI10data_vec_tLi0EEES3_
+DebugLoc:        { File: top.cpp, Line: 462, Column: 20 }
+Function:        _Z12k4_dual_postRN3hls6streamI10data_vec_tLi0EEES3_S3_S3_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_454_2
+  - LoopName:        VITIS_LOOP_462_2
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 440, Column: 31 }
-Function:        _Z12k3_join_normRN3hls6streamI10data_vec_tLi0EEERNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES3_
+DebugLoc:        { File: top.cpp, Line: 441, Column: 20 }
+Function:        _Z12k3_dual_normRN3hls6streamI10data_vec_tLi0EEES3_RNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES3_S3_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_440_3
+  - LoopName:        VITIS_LOOP_441_3
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 420, Column: 31 }
-Function:        _Z8k2_statsRN3hls6streamI10data_vec_tLi0EEERNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+DebugLoc:        { File: top.cpp, Line: 403, Column: 20 }
+Function:        _Z13k2_stats_dualRN3hls6streamI10data_vec_tLi0EEES3_RNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_420_3
+  - LoopName:        VITIS_LOOP_403_3
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 400, Column: 27 }
-Function:        _Z12k1_transformRN3hls6streamI10data_vec_tLi0EEES3_
+DebugLoc:        { File: top.cpp, Line: 410, Column: 20 }
+Function:        _Z13k2_stats_dualRN3hls6streamI10data_vec_tLi0EEES3_RNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_400_2
+  - LoopName:        VITIS_LOOP_410_4
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 375, Column: 27 }
-Function:        _Z13k0_preprocessRN3hls6streamI10data_vec_tLi0EEES3_
+DebugLoc:        { File: top.cpp, Line: 417, Column: 20 }
+Function:        _Z13k2_stats_dualRN3hls6streamI10data_vec_tLi0EEES3_RNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_375_2
+  - LoopName:        VITIS_LOOP_417_5
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 333, Column: 20 }
-Function:        _Z15load_input_widePK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EERN3hls6streamI10data_vec_tLi0EEE
+DebugLoc:        { File: top.cpp, Line: 363, Column: 20 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_333_1
+  - LoopName:        VITIS_LOOP_363_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: top.cpp, Line: 372, Column: 27 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_372_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: top.cpp, Line: 326, Column: 20 }
+Function:        _Z9load_dualPK7ap_uintILi1024EERN3hls6streamI10data_vec_tLi0EEES7_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_326_1
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 342, Column: 0 }
-Function:        _Z17store_output_wideRN3hls6streamI10data_vec_tLi0EEEP8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EE
+DebugLoc:        { File: top.cpp, Line: 473, Column: 0 }
+Function:        _Z10store_dualRN3hls6streamI10data_vec_tLi0EEES3_P7ap_uintILi1024EE
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_355_1
+  - LoopName:        VITIS_LOOP_481_1
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:355:27'
+  - LoopLoc:         'top.cpp:481:27'
   - String:          ') '
   - String:          'in function '''
-  - String:          store_output_wide
+  - String:          store_dual
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 449, Column: 0 }
-Function:        _Z14k4_postprocessRN3hls6streamI10data_vec_tLi0EEES3_
+DebugLoc:        { File: top.cpp, Line: 453, Column: 0 }
+Function:        _Z12k4_dual_postRN3hls6streamI10data_vec_tLi0EEES3_S3_S3_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_454_2
+  - LoopName:        VITIS_LOOP_462_2
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:454:27'
+  - LoopLoc:         'top.cpp:462:20'
   - String:          ') '
   - String:          'in function '''
-  - String:          k4_postprocess
+  - String:          k4_dual_post
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 432, Column: 0 }
-Function:        _Z12k3_join_normRN3hls6streamI10data_vec_tLi0EEERNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES3_
+DebugLoc:        { File: top.cpp, Line: 429, Column: 0 }
+Function:        _Z12k3_dual_normRN3hls6streamI10data_vec_tLi0EEES3_RNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES3_S3_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_440_3
+  - LoopName:        VITIS_LOOP_441_3
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:440:31'
+  - LoopLoc:         'top.cpp:441:20'
   - String:          ') '
   - String:          'in function '''
-  - String:          k3_join_norm
+  - String:          k3_dual_norm
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 413, Column: 0 }
-Function:        _Z8k2_statsRN3hls6streamI10data_vec_tLi0EEERNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+DebugLoc:        { File: top.cpp, Line: 393, Column: 0 }
+Function:        _Z13k2_stats_dualRN3hls6streamI10data_vec_tLi0EEES3_RNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_420_3
+  - LoopName:        VITIS_LOOP_403_3
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:420:31'
+  - LoopLoc:         'top.cpp:403:20'
   - String:          ') '
   - String:          'in function '''
-  - String:          k2_stats
+  - String:          k2_stats_dual
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 394, Column: 0 }
-Function:        _Z12k1_transformRN3hls6streamI10data_vec_tLi0EEES3_
+DebugLoc:        { File: top.cpp, Line: 393, Column: 0 }
+Function:        _Z13k2_stats_dualRN3hls6streamI10data_vec_tLi0EEES3_RNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_400_2
+  - LoopName:        VITIS_LOOP_410_4
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:400:27'
+  - LoopLoc:         'top.cpp:410:20'
   - String:          ') '
   - String:          'in function '''
-  - String:          k1_transform
+  - String:          k2_stats_dual
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 370, Column: 0 }
-Function:        _Z13k0_preprocessRN3hls6streamI10data_vec_tLi0EEES3_
+DebugLoc:        { File: top.cpp, Line: 393, Column: 0 }
+Function:        _Z13k2_stats_dualRN3hls6streamI10data_vec_tLi0EEES3_RNS0_I8ap_fixedILi28ELi10EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_375_2
+  - LoopName:        VITIS_LOOP_417_5
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:375:27'
+  - LoopLoc:         'top.cpp:417:20'
   - String:          ') '
   - String:          'in function '''
-  - String:          k0_preprocess
+  - String:          k2_stats_dual
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 340, Column: 0 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_363_1
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:363:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          super_kernel_32
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 317, Column: 0 }
-Function:        _Z15load_input_widePK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EERN3hls6streamI10data_vec_tLi0EEE
+DebugLoc:        { File: top.cpp, Line: 340, Column: 0 }
+Function:        _Z15super_kernel_32RN3hls6streamI10data_vec_tLi0EEES3_S3_S3_S3_S3_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_333_1
+  - LoopName:        VITIS_LOOP_372_2
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:333:20'
+  - LoopLoc:         'top.cpp:372:27'
   - String:          ') '
   - String:          'in function '''
-  - String:          load_input_wide
+  - String:          super_kernel_32
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 316, Column: 0 }
+Function:        _Z9load_dualPK7ap_uintILi1024EERN3hls6streamI10data_vec_tLi0EEES7_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_326_1
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:326:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          load_dual
   - String:          ''' completely with a factor of '
   - Factor:          '16'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 484, Column: 2 }
+DebugLoc:        { File: top.cpp, Line: 508, Column: 2 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'load_input_wide(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 317, Column: 0 }
+  - Callee:          'load_dual(ap_uint<1024> const*, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 316, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 485, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 509, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k0_preprocess(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 370, Column: 0 }
+  - Callee:          'super_kernel_32(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 340, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 486, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 510, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k_split(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 383, Column: 0 }
+  - Callee:          'k2_stats_dual(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<ap_fixed<28, 10, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 393, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 487, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 511, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k1_transform(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 394, Column: 0 }
+  - Callee:          'k3_dual_norm(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<ap_fixed<28, 10, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 429, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 488, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 512, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k2_stats(hls::stream<data_vec_t, 0>&, hls::stream<ap_fixed<28, 10, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 413, Column: 0 }
+  - Callee:          'k4_dual_post(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 453, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 489, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 513, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k3_join_norm(hls::stream<data_vec_t, 0>&, hls::stream<ap_fixed<28, 10, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 432, Column: 0 }
+  - Callee:          'store_dual(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, ap_uint<1024>*)'
+    DebugLoc:        { File: top.cpp, Line: 473, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 490, Column: 5 }
-Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
-Args:            
-  - Callee:          'k4_postprocess(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 449, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 491, Column: 5 }
-Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
-Args:            
-  - Callee:          'store_output_wide(hls::stream<data_vec_t, 0>&, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 342, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -486,159 +742,137 @@ Name:            NeverInline
 Function:        apatb_top_kernel_ir
 Args:            
   - Callee:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          apatb_top_kernel_ir
   - String:          ' because it should never be inlined (cost=never)'
 ...
---- !Failure
-Pass:            reflow-syncheck
-Name:            WarningOutOfBoundArrayAccess
-DebugLoc:        { File: top.cpp, Line: 328, Column: 38 }
-Function:        _Z15load_input_widePK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EERN3hls6streamI10data_vec_tLi0EEE
-Args:            
-  - String:          The program may have out of bound array access
-  - String:          ' on variable '''
-  - String:          in
-  - String:          ''''
-...
---- !Failure
-Pass:            reflow-syncheck
-Name:            WarningOutOfBoundArrayAccess
-DebugLoc:        { File: top.cpp, Line: 364, Column: 18 }
-Function:        _Z17store_output_wideRN3hls6streamI10data_vec_tLi0EEEP8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EE
-Args:            
-  - String:          The program may have out of bound array access
-  - String:          ' on variable '''
-  - String:          out
-  - String:          ''''
-...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: top.cpp, Line: 321, Column: 16 }
-Function:        _Z15load_input_widePK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EERN3hls6streamI10data_vec_tLi0EEE
+DebugLoc:        { File: top.cpp, Line: 318, Column: 13 }
+Function:        _Z9load_dualPK7ap_uintILi1024EERN3hls6streamI10data_vec_tLi0EEES7_
 Args:            
   - String:          'Sequential '
   - Direction:       read
   - String:          ' of length '
-  - Length:          '4096'
+  - Length:          '2048'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        seq
+  - AccessID:        inseq
   - ArrayName:       in
   - String:          ' '
   - BundleName:      gmem0
   - String:          ' '
   - LoopName:        LOAD_LOOP
   - String:          ' '
-  - LoopLoc:         'top.cpp:321:16'
+  - LoopLoc:         'top.cpp:318:13'
   - String:          ' '
-  - Function:        'load_input_wide(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 317, Column: 0 }
+  - Function:        'load_dual(ap_uint<1024> const*, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 316, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: top.cpp, Line: 328, Column: 38 }
+    DebugLoc:        { File: top.cpp, Line: 321, Column: 21 }
   - OrigDirection:   read
-  - OrigID:          VITIS_LOOP_333_1.load.4
+  - OrigID:          VITIS_LOOP_326_1.load.4
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: top.cpp, Line: 346, Column: 17 }
-Function:        _Z17store_output_wideRN3hls6streamI10data_vec_tLi0EEEP8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EE
+DebugLoc:        { File: top.cpp, Line: 475, Column: 14 }
+Function:        _Z10store_dualRN3hls6streamI10data_vec_tLi0EEES3_P7ap_uintILi1024EE
 Args:            
   - String:          'Sequential '
   - Direction:       write
   - String:          ' of length '
-  - Length:          '4096'
+  - Length:          '2048'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        seq
+  - AccessID:        outseq
   - ArrayName:       out
   - String:          ' '
   - BundleName:      gmem1
   - String:          ' '
   - LoopName:        STORE_LOOP
   - String:          ' '
-  - LoopLoc:         'top.cpp:346:17'
+  - LoopLoc:         'top.cpp:475:14'
   - String:          ' '
-  - Function:        'store_output_wide(hls::stream<data_vec_t, 0>&, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 342, Column: 0 }
+  - Function:        'store_dual(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, ap_uint<1024>*)'
+    DebugLoc:        { File: top.cpp, Line: 473, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      store
-    DebugLoc:        { File: top.cpp, Line: 364, Column: 18 }
+    DebugLoc:        { File: top.cpp, Line: 486, Column: 16 }
   - OrigDirection:   write
-  - OrigID:          VITIS_LOOP_355_1.store.120
+  - OrigID:          VITIS_LOOP_481_1.store.149
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: top.cpp, Line: 321, Column: 16 }
-Function:        _Z15load_input_widePK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EERN3hls6streamI10data_vec_tLi0EEE
+DebugLoc:        { File: top.cpp, Line: 318, Column: 13 }
+Function:        _Z9load_dualPK7ap_uintILi1024EERN3hls6streamI10data_vec_tLi0EEES7_
 Args:            
   - String:          'Could not widen since type '
-  - Type:            i512
+  - Type:            i1024
   - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
   - Threshold:       '512'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: top.cpp, Line: 321, Column: 16 }
+    DebugLoc:        { File: top.cpp, Line: 318, Column: 13 }
   - OrigDirection:   read
-  - OrigID:          seq
+  - OrigID:          inseq
   - ArrayName:       in
   - String:          ' '
   - BundleName:      gmem0
   - String:          ' '
   - LoopName:        LOAD_LOOP
   - String:          ' '
-  - LoopLoc:         'top.cpp:321:16'
+  - LoopLoc:         'top.cpp:318:13'
   - String:          ' '
-  - Function:        'load_input_wide(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, hls::stream<data_vec_t, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 317, Column: 0 }
+  - Function:        'load_dual(ap_uint<1024> const*, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 316, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: top.cpp, Line: 346, Column: 17 }
-Function:        _Z17store_output_wideRN3hls6streamI10data_vec_tLi0EEEP8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EE
+DebugLoc:        { File: top.cpp, Line: 475, Column: 14 }
+Function:        _Z10store_dualRN3hls6streamI10data_vec_tLi0EEES3_P7ap_uintILi1024EE
 Args:            
   - String:          'Could not widen since type '
-  - Type:            i512
+  - Type:            i1024
   - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
   - Threshold:       '512'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: top.cpp, Line: 346, Column: 17 }
+    DebugLoc:        { File: top.cpp, Line: 475, Column: 14 }
   - OrigDirection:   write
-  - OrigID:          seq
+  - OrigID:          outseq
   - ArrayName:       out
   - String:          ' '
   - BundleName:      gmem1
   - String:          ' '
   - LoopName:        STORE_LOOP
   - String:          ' '
-  - LoopLoc:         'top.cpp:346:17'
+  - LoopLoc:         'top.cpp:475:14'
   - String:          ' '
-  - Function:        'store_output_wide(hls::stream<data_vec_t, 0>&, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 342, Column: 0 }
+  - Function:        'store_dual(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, ap_uint<1024>*)'
+    DebugLoc:        { File: top.cpp, Line: 473, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: top.cpp, Line: 321, Column: 16 }
-Function:        _Z15load_input_widePK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EERN3hls6streamI10data_vec_tLi0EEE.1
+DebugLoc:        { File: top.cpp, Line: 318, Column: 13 }
+Function:        _Z9load_dualPK7ap_uintILi1024EERN3hls6streamI10data_vec_tLi0EEES7_.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
   - String:          ' of length '
-  - Length:          '4096'
+  - Length:          '2048'
   - String:          ' and bit width '
-  - Width:           '512'
+  - Width:           '1024'
   - String:          ' has been inferred.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
   - String:          ' _XLX_SEP_ '
@@ -649,28 +883,28 @@ Args:
   - String:          ' '
   - LoopName:        LOAD_LOOP
   - String:          ' '
-  - LoopLoc:         'top.cpp:321:16'
+  - LoopLoc:         'top.cpp:318:13'
   - String:          ' '
-  - Function:        'load_input_wide(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, hls::stream<data_vec_t, 0>&) (.1)'
-    DebugLoc:        { File: top.cpp, Line: 317, Column: 0 }
+  - Function:        'load_dual(ap_uint<1024> const*, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&) (.1)'
+    DebugLoc:        { File: top.cpp, Line: 316, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: top.cpp, Line: 321, Column: 16 }
-Function:        _Z15load_input_widePK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EERN3hls6streamI10data_vec_tLi0EEE.1
+DebugLoc:        { File: top.cpp, Line: 318, Column: 13 }
+Function:        _Z9load_dualPK7ap_uintILi1024EERN3hls6streamI10data_vec_tLi0EEES7_.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
   - String:          ' of length '
-  - Length:          '4096'
+  - Length:          '2048'
   - String:          ' and bit width '
-  - Width:           '512'
+  - Width:           '1024'
   - String:          ' in loop '''
   - LoopName:        LOAD_LOOP
   - String:          '''('
-  - LoopLoc:         'top.cpp:321:16'
+  - LoopLoc:         'top.cpp:318:13'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem0
@@ -680,15 +914,15 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: top.cpp, Line: 346, Column: 17 }
-Function:        _Z17store_output_wideRN3hls6streamI10data_vec_tLi0EEEP8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EE.1
+DebugLoc:        { File: top.cpp, Line: 475, Column: 14 }
+Function:        _Z10store_dualRN3hls6streamI10data_vec_tLi0EEES3_P7ap_uintILi1024EE.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       writes
   - String:          ' of length '
-  - Length:          '4096'
+  - Length:          '2048'
   - String:          ' and bit width '
-  - Width:           '512'
+  - Width:           '1024'
   - String:          ' has been inferred.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
   - String:          ' _XLX_SEP_ '
@@ -699,28 +933,28 @@ Args:
   - String:          ' '
   - LoopName:        STORE_LOOP
   - String:          ' '
-  - LoopLoc:         'top.cpp:346:17'
+  - LoopLoc:         'top.cpp:475:14'
   - String:          ' '
-  - Function:        'store_output_wide(hls::stream<data_vec_t, 0>&, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*) (.1)'
-    DebugLoc:        { File: top.cpp, Line: 342, Column: 0 }
+  - Function:        'store_dual(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, ap_uint<1024>*) (.1)'
+    DebugLoc:        { File: top.cpp, Line: 473, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: top.cpp, Line: 346, Column: 17 }
-Function:        _Z17store_output_wideRN3hls6streamI10data_vec_tLi0EEEP8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EE.1
+DebugLoc:        { File: top.cpp, Line: 475, Column: 14 }
+Function:        _Z10store_dualRN3hls6streamI10data_vec_tLi0EEES3_P7ap_uintILi1024EE.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       writes
   - String:          ' of length '
-  - Length:          '4096'
+  - Length:          '2048'
   - String:          ' and bit width '
-  - Width:           '512'
+  - Width:           '1024'
   - String:          ' in loop '''
   - LoopName:        STORE_LOOP
   - String:          '''('
-  - LoopLoc:         'top.cpp:346:17'
+  - LoopLoc:         'top.cpp:475:14'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem1
@@ -730,104 +964,78 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 484, Column: 2 }
+DebugLoc:        { File: top.cpp, Line: 508, Column: 2 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'load_input_wide(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, hls::stream<data_vec_t, 0>&) (.1)'
-    DebugLoc:        { File: top.cpp, Line: 317, Column: 0 }
+  - Callee:          'load_dual(ap_uint<1024> const*, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&) (.1)'
+    DebugLoc:        { File: top.cpp, Line: 316, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 485, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 509, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k0_preprocess(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&) (.1)'
-    DebugLoc:        { File: top.cpp, Line: 370, Column: 0 }
+  - Callee:          'super_kernel_32(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&) (.1)'
+    DebugLoc:        { File: top.cpp, Line: 340, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 486, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 510, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k_split(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&) (.1)'
-    DebugLoc:        { File: top.cpp, Line: 383, Column: 0 }
+  - Callee:          'k2_stats_dual(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<ap_fixed<28, 10, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&) (.1)'
+    DebugLoc:        { File: top.cpp, Line: 393, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 487, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 511, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k1_transform(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&) (.1)'
-    DebugLoc:        { File: top.cpp, Line: 394, Column: 0 }
+  - Callee:          'k3_dual_norm(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<ap_fixed<28, 10, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&) (.1)'
+    DebugLoc:        { File: top.cpp, Line: 429, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 488, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 512, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k2_stats(hls::stream<data_vec_t, 0>&, hls::stream<ap_fixed<28, 10, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&) (.1)'
-    DebugLoc:        { File: top.cpp, Line: 413, Column: 0 }
+  - Callee:          'k4_dual_post(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&) (.1)'
+    DebugLoc:        { File: top.cpp, Line: 453, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 489, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 513, Column: 5 }
 Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
 Args:            
-  - Callee:          'k3_join_norm(hls::stream<data_vec_t, 0>&, hls::stream<ap_fixed<28, 10, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<data_vec_t, 0>&) (.1)'
-    DebugLoc:        { File: top.cpp, Line: 432, Column: 0 }
+  - Callee:          'store_dual(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, ap_uint<1024>*) (.1)'
+    DebugLoc:        { File: top.cpp, Line: 473, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 490, Column: 5 }
-Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
-Args:            
-  - Callee:          'k4_postprocess(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&) (.1)'
-    DebugLoc:        { File: top.cpp, Line: 449, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 491, Column: 5 }
-Function:        _Z10top_kernelPK8ap_fixedILi20ELi6EL9ap_q_mode0EL9ap_o_mode0ELi0EEPS2_
-Args:            
-  - Callee:          'store_output_wide(hls::stream<data_vec_t, 0>&, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*) (.1)'
-    DebugLoc:        { File: top.cpp, Line: 342, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)'
-    DebugLoc:        { File: top.cpp, Line: 465, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 491, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
