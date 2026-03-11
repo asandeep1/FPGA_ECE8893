@@ -1,0 +1,236 @@
+xilinx rtfpga
+rt::do_reinfer_area_combined 1
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port if_fifo_cap[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port if_fifo_cap[1] driven by constant 1
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port if_fifo_cap[0] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port O49[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port O49[1] driven by constant 1
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port O49[0] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port O51[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port O51[1] driven by constant 1
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port O51[0] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port O53[3] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port O53[2] driven by constant 1
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port O53[1] driven by constant 1
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port O53[0] driven by constant 1
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port s_axi_control_BRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port s_axi_control_BRESP[0] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port s_axi_control_RRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB3 has port s_axi_control_RRESP[0] driven by constant 0
+WARNING: [Synth 8-7129] Port sa_stats_dout[511] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[510] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[509] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[508] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[507] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[506] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[505] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[504] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[503] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[502] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[501] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[500] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[479] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[478] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[477] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[476] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[475] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[474] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[473] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[472] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[471] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[470] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[469] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[468] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[447] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[446] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[445] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[444] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[443] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[442] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[441] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[440] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[439] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[438] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[437] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_dout[436] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_num_data_valid[2] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_num_data_valid[1] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_num_data_valid[0] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_fifo_cap[2] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_fifo_cap[1] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_stats_fifo_cap[0] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_dout[511] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_dout[510] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_dout[509] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_dout[508] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_dout[507] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_dout[506] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_dout[505] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_dout[504] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_dout[503] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_dout[502] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_dout[501] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_dout[500] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_num_data_valid[2] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_num_data_valid[1] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_num_data_valid[0] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_fifo_cap[2] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_fifo_cap[1] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sb_stats_fifo_cap[0] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[31] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[30] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[29] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[28] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[27] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[26] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[25] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[24] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[23] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[22] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[21] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[20] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[19] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[18] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[17] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[16] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[15] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[14] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[13] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[12] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[11] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[10] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[9] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[8] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[7] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[6] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[5] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[4] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[3] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[2] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[1] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_num_data_valid[0] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_fifo_cap[31] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_fifo_cap[30] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_fifo_cap[29] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_fifo_cap[28] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_fifo_cap[27] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_fifo_cap[26] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_fifo_cap[25] in module top_kernel_k2_stats_dual is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_st_fifo_cap[24] in module top_kernel_k2_stats_dual is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[484]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[4]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[484]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[484]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[485]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[5]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[485]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[485]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[486]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[6]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[486]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[486]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[487]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[7]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[487]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[487]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[488]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[8]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[488]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[488]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[489]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[9]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[489]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[489]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[490]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[10]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[490]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[490]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[491]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[11]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[491]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[491]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[492]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[12]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[492]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[492]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[493]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[13]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[493]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[493]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[494]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[14]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[494]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[494]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[495]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[15]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[495]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[495]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[496]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[16]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[496]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[16]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[496]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[16]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[497]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[497]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[497]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[498]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter1_reg_reg[498]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter1_reg_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_pp0_iter2_reg_reg[498]' (FDE) to 'k2_stats_dual_U0/vb_15_reg_2518_pp0_iter2_reg_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/tmp_338_reg_2593_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_1061_reg_2583_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[83]' (FDE) to 'k2_stats_dual_U0/tmp_1061_reg_2583_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/tmp_337_reg_2578_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_1060_reg_2568_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[83]' (FDE) to 'k2_stats_dual_U0/tmp_1060_reg_2568_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/tmp_339_reg_2608_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_1062_reg_2598_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[115]' (FDE) to 'k2_stats_dual_U0/tmp_1062_reg_2598_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/va_reg_2469_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_reg_2523_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_reg_2523_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/vb_reg_2498_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_1057_reg_2533_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_1057_reg_2533_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/tmp_s_reg_2553_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_1058_reg_2543_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[51]' (FDE) to 'k2_stats_dual_U0/tmp_1058_reg_2543_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[51]' (FDE) to 'k2_stats_dual_U0/tmp_336_reg_2563_reg[19]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/tmp_336_reg_2563_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_1059_reg_2558_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/vb_3_reg_2508_reg[19]' (FDE) to 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[115]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/tmp_346_reg_2658_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_1069_reg_2648_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[211]' (FDE) to 'k2_stats_dual_U0/tmp_1069_reg_2648_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/tmp_345_reg_2643_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_1068_reg_2633_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[211]' (FDE) to 'k2_stats_dual_U0/tmp_1068_reg_2633_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/tmp_347_reg_2673_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_1070_reg_2663_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[243]' (FDE) to 'k2_stats_dual_U0/tmp_1070_reg_2663_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[243]' (FDE) to 'k2_stats_dual_U0/tmp_348_reg_2683_reg[19]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/tmp_348_reg_2683_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_1071_reg_2678_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/tmp_362_reg_2773_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_1085_reg_2763_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[467]' (FDE) to 'k2_stats_dual_U0/tmp_1085_reg_2763_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/tmp_361_reg_2758_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_1084_reg_2748_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/tmp_363_reg_2788_reg[19]' (FDE) to 'k2_stats_dual_U0/tmp_1086_reg_2778_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[82]' (FDE) to 'k2_stats_dual_U0/tmp_338_reg_2593_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[82]' (FDE) to 'k2_stats_dual_U0/tmp_337_reg_2578_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[114]' (FDE) to 'k2_stats_dual_U0/tmp_339_reg_2608_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[18]' (FDE) to 'k2_stats_dual_U0/va_reg_2469_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[18]' (FDE) to 'k2_stats_dual_U0/vb_reg_2498_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[50]' (FDE) to 'k2_stats_dual_U0/tmp_s_reg_2553_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[50]' (FDE) to 'k2_stats_dual_U0/tmp_336_reg_2563_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/vb_3_reg_2508_reg[18]' (FDE) to 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[114]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[210]' (FDE) to 'k2_stats_dual_U0/tmp_346_reg_2658_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[210]' (FDE) to 'k2_stats_dual_U0/tmp_345_reg_2643_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[242]' (FDE) to 'k2_stats_dual_U0/tmp_347_reg_2673_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[242]' (FDE) to 'k2_stats_dual_U0/tmp_348_reg_2683_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[81]' (FDE) to 'k2_stats_dual_U0/tmp_338_reg_2593_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[81]' (FDE) to 'k2_stats_dual_U0/tmp_337_reg_2578_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[113]' (FDE) to 'k2_stats_dual_U0/tmp_339_reg_2608_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[17]' (FDE) to 'k2_stats_dual_U0/va_reg_2469_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[17]' (FDE) to 'k2_stats_dual_U0/vb_reg_2498_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[49]' (FDE) to 'k2_stats_dual_U0/tmp_s_reg_2553_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[49]' (FDE) to 'k2_stats_dual_U0/tmp_336_reg_2563_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/vb_3_reg_2508_reg[17]' (FDE) to 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[113]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[209]' (FDE) to 'k2_stats_dual_U0/tmp_346_reg_2658_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[209]' (FDE) to 'k2_stats_dual_U0/tmp_345_reg_2643_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[241]' (FDE) to 'k2_stats_dual_U0/tmp_347_reg_2673_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[80]' (FDE) to 'k2_stats_dual_U0/tmp_338_reg_2593_reg[16]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[80]' (FDE) to 'k2_stats_dual_U0/tmp_337_reg_2578_reg[16]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[112]' (FDE) to 'k2_stats_dual_U0/tmp_339_reg_2608_reg[16]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sa_stats_read_reg_2449_reg[16]' (FDE) to 'k2_stats_dual_U0/va_reg_2469_reg[16]'
+INFO: [Synth 8-3886] merging instance 'k2_stats_dual_U0/sb_stats_read_reg_2474_reg[16]' (FDE) to 'k2_stats_dual_U0/vb_reg_2498_reg[16]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (k2_stats_dual_U0/\lane_sum_1_reg_2797_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (k2_stats_dual_U0/\lane_sum_1_reg_2797_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (k2_stats_dual_U0/\lane_sum_1_reg_2797_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (k2_stats_dual_U0/\lane_sum_1_reg_2797_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (k2_stats_dual_U0/\lane_sum_1_reg_2797_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (k2_stats_dual_U0/\lane_sum_1_reg_2797_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (k2_stats_dual_U0/\lane_sum_1_reg_2797_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (k2_stats_dual_U0/\lane_sum_1_reg_2797_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (k2_stats_dual_U0/\lane_sum_1_reg_2797_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (k2_stats_dual_U0/\lane_sum_1_reg_2797_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\control_s_axi_U/waddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\entry_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\entry_proc_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (k2_stats_dual_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (k2_stats_dual_U0/\ap_CS_fsm_reg[0] )

@@ -1,0 +1,250 @@
+xilinx rtfpga
+rt::do_reinfer_area_combined 1
+INFO: [Synth 8-4471] merging register 'load_dual_U0/ap_CS_fsm_reg[0:0]' into 'store_dual_U0/ap_CS_fsm_reg[0:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_load_dual.v:291]
+INFO: [Synth 8-6904] The RAM "top_kernel__GCB2/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg" of size (depth=2 x width=512) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[31] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[30] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[29] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[28] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[27] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[26] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[25] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[24] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[23] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[22] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[21] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[20] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[19] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[18] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[17] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[16] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[15] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[14] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[13] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[12] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[11] driven by constant 1
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[10] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[9] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[8] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[7] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[6] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[5] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[4] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[3] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[1] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port m_axi_gmem0_0_ARLEN[0] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[511] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[510] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[509] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[508] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[507] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[506] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[505] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[504] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[503] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[502] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[501] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[500] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[479] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[478] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[477] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[476] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[475] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[474] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[473] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[472] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[471] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[470] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[469] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[468] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[447] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[446] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[445] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[444] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[443] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[442] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[441] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[440] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[439] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[438] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[437] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[436] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[415] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[414] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[413] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[412] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[411] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[410] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[409] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[408] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[407] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[406] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[405] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[404] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[383] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[382] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[381] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[380] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[379] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[378] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[377] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[376] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[375] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[374] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[373] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[372] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[351] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[350] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[349] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[348] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[347] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[346] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[345] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB2 has port sb_in_din[344] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[7] in module top_kernel_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[6] in module top_kernel_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[5] in module top_kernel_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[4] in module top_kernel_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[3] in module top_kernel_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[2] in module top_kernel_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[1] in module top_kernel_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[0] in module top_kernel_gmem1_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-6904] The RAM "top_kernel__GCB2/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg" of size (depth=2 x width=512) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-7067] Removed DRAM instance i_18/i_0/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_0_1_504_511 from module extram__8 due to constant propagation
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[96] )
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/start_addr_reg[6]' (FDRE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/start_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/start_addr_reg[5]' (FDRE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/start_addr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/start_addr_reg[4]' (FDRE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/start_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/start_addr_reg[3]' (FDRE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/start_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/start_addr_reg[2]' (FDRE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/start_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/start_addr_reg[1]' (FDRE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/start_addr_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/start_addr_reg[0] )
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_reg[4]' (FDRE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_plus1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_reg[5]' (FDRE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_reg[6]' (FDRE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_plus1_reg[5] )
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_plus1_reg[6]' (FDRE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_plus1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_plus1_reg[7]' (FDRE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_plus1_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_plus1_reg[8] )
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/store_unit_0/tmp_len_reg[0]' (FDRE) to 'gmem1_m_axi_U/store_unit_0/tmp_len_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[64]' (FDE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[70]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/store_unit_0/tmp_addr_reg[0]' (FDRE) to 'gmem1_m_axi_U/store_unit_0/tmp_addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[0]' (FDE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/store_unit_0/tmp_len_reg[1]' (FDRE) to 'gmem1_m_axi_U/store_unit_0/tmp_len_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[65]' (FDE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[70]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/store_unit_0/tmp_addr_reg[1]' (FDRE) to 'gmem1_m_axi_U/store_unit_0/tmp_addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[1]' (FDE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/store_unit_0/tmp_len_reg[2]' (FDRE) to 'gmem1_m_axi_U/store_unit_0/tmp_len_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[66]' (FDE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[70]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/store_unit_0/tmp_addr_reg[2]' (FDRE) to 'gmem1_m_axi_U/store_unit_0/tmp_addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[2]' (FDE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/store_unit_0/tmp_len_reg[3]' (FDRE) to 'gmem1_m_axi_U/store_unit_0/tmp_len_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[67]' (FDE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[70]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/store_unit_0/tmp_addr_reg[3]' (FDRE) to 'gmem1_m_axi_U/store_unit_0/tmp_addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[3]' (FDE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/store_unit_0/tmp_len_reg[4]' (FDRE) to 'gmem1_m_axi_U/store_unit_0/tmp_len_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[68]' (FDE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[70]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/store_unit_0/tmp_addr_reg[4]' (FDRE) to 'gmem1_m_axi_U/store_unit_0/tmp_addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[4]' (FDE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/store_unit_0/tmp_len_reg[5]' (FDRE) to 'gmem1_m_axi_U/store_unit_0/tmp_len_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[69]' (FDE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[70]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/store_unit_0/tmp_addr_reg[5]' (FDRE) to 'gmem1_m_axi_U/store_unit_0/tmp_addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[5]' (FDE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/store_unit_0/tmp_addr_reg[6] )
+INFO: [Synth 8-3886] merging instance 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[6]' (FDE) to 'gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[96]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_throttle /\rs_burst/data_p2_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/rs_resp/data_p2_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[20]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[21]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[22]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[23]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[24]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[25]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[26]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[27]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[28]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[29]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[30]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[31]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[52]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[53]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[54]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[55]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[56]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[57]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[58]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[59]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[60]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[61]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[62]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[63]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[84]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[85]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[86]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[87]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[88]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[89]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[90]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[91]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[92]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[93]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[94]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[95]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[116]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[117]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[118]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[119]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[120]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[121]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[122]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[123]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[124]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[125]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[126]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[127]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[148]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[149]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[150]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[151]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[152]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[153]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[154]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[155]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[156]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[157]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[158]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[159]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[180]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[181]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[182]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Synth 8-3886] merging instance 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[183]' (FDRE) to 'i_18/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_18/\sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_reg[511] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\load_dual_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\store_dual_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\store_dual_U0/ap_done_reg_reg )
+INFO: [Synth 8-7067] Removed DRAM instance i_18/i_0/sa_in_U/U_top_kernel_fifo_w512_d3_A_ram/mem_reg_0_1_504_511 from module extram__8 due to constant propagation
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p1_reg[96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/sect_addr_buf_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_throttle /\rs_burst/data_p1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/store_unit_0/fifo_wreq/U_fifo_srl/dout_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/rs_resp/data_p1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/store_unit_0/buff_wdata/U_fifo_srl/dout_reg[1023] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/req_id_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/store_unit_0/conservative_gen.fifo_burst/U_fifo_srl/dout_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_throttle /\local_BUS_WDATA_reg[1023] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/req_id_buf_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/store_unit_0/conservative_gen.local_BURST_WLEN_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_id_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_throttle /\rs_burst/data_p2_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_throttle /\rs_burst/data_p1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_throttle /\rs_req/data_p2_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_throttle /\rs_req/data_p1_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_throttle /\fifo_burst_gen[0].fifo_req/U_fifo_srl/dout_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_throttle /\rs_req/data_p2_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gmem1_m_axi_U/bus_write/wreq_throttle /\rs_req/data_p1_reg[6] )

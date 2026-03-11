@@ -1,0 +1,438 @@
+xilinx rtfpga
+rt::do_reinfer_area_combined 1
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_30s_25ns_54_4_1__1 is either unconnected or has no load
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_1_reg_16930_reg[19]' (FDE) to 'tmp_285_reg_16906_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln_reg_16920_reg[19]' (FDE) to 'tmp_286_reg_16914_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_3_reg_16964_reg[19]' (FDE) to 'tmp_292_reg_16940_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_2_reg_16954_reg[19]' (FDE) to 'tmp_293_reg_16948_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_5_reg_16998_reg[19]' (FDE) to 'tmp_299_reg_16974_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_4_reg_16988_reg[19]' (FDE) to 'tmp_300_reg_16982_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_7_reg_17032_reg[19]' (FDE) to 'tmp_306_reg_17008_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_6_reg_17022_reg[19]' (FDE) to 'tmp_307_reg_17016_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_24_reg_17338_reg[19]' (FDE) to 'tmp_369_reg_17314_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_23_reg_17328_reg[19]' (FDE) to 'tmp_370_reg_17322_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_26_reg_17372_reg[19]' (FDE) to 'tmp_376_reg_17348_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_25_reg_17362_reg[19]' (FDE) to 'tmp_377_reg_17356_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_28_reg_17406_reg[19]' (FDE) to 'tmp_383_reg_17382_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_27_reg_17396_reg[19]' (FDE) to 'tmp_384_reg_17390_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_30_reg_17440_reg[19]' (FDE) to 'tmp_390_reg_17416_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_29_reg_17430_reg[19]' (FDE) to 'tmp_391_reg_17424_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_32_reg_17474_reg[19]' (FDE) to 'tmp_397_reg_17450_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_31_reg_17464_reg[19]' (FDE) to 'tmp_398_reg_17458_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_34_reg_17508_reg[19]' (FDE) to 'tmp_404_reg_17484_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_33_reg_17498_reg[19]' (FDE) to 'tmp_405_reg_17492_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_36_reg_17542_reg[19]' (FDE) to 'tmp_411_reg_17518_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_35_reg_17532_reg[19]' (FDE) to 'tmp_412_reg_17526_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_38_reg_17576_reg[19]' (FDE) to 'tmp_418_reg_17552_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_37_reg_17566_reg[19]' (FDE) to 'tmp_419_reg_17560_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_40_reg_17610_reg[19]' (FDE) to 'tmp_425_reg_17586_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_39_reg_17600_reg[19]' (FDE) to 'tmp_426_reg_17594_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_62_reg_17984_reg[19]' (FDE) to 'tmp_502_reg_17960_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln98_61_reg_17974_reg[19]' (FDE) to 'tmp_503_reg_17968_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln87_2_reg_16219_reg[19]' (FDE) to 'tmp_175_reg_16229_reg[0]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[0]' (FDSE) to 'select_ln98_reg_18009_reg[1]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[0]' (FDSE) to 'select_ln98_1_reg_18014_reg[1]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[1]' (FDSE) to 'select_ln98_reg_18009_reg[2]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[1]' (FDSE) to 'select_ln98_1_reg_18014_reg[2]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[2]' (FDSE) to 'select_ln98_reg_18009_reg[3]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[2]' (FDSE) to 'select_ln98_1_reg_18014_reg[3]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[3]' (FDSE) to 'select_ln98_reg_18009_reg[4]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[3]' (FDSE) to 'select_ln98_1_reg_18014_reg[4]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[4]' (FDSE) to 'select_ln98_reg_18009_reg[5]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[4]' (FDSE) to 'select_ln98_1_reg_18014_reg[5]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[5]' (FDSE) to 'select_ln98_reg_18009_reg[6]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[5]' (FDSE) to 'select_ln98_1_reg_18014_reg[6]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[6]' (FDSE) to 'select_ln98_reg_18009_reg[7]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[6]' (FDSE) to 'select_ln98_1_reg_18014_reg[7]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[7]' (FDSE) to 'select_ln98_reg_18009_reg[8]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[7]' (FDSE) to 'select_ln98_1_reg_18014_reg[8]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[8]' (FDSE) to 'select_ln98_reg_18009_reg[9]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[8]' (FDSE) to 'select_ln98_1_reg_18014_reg[9]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[9]' (FDSE) to 'select_ln98_reg_18009_reg[10]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[9]' (FDSE) to 'select_ln98_1_reg_18014_reg[10]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[10]' (FDSE) to 'select_ln98_reg_18009_reg[11]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[10]' (FDSE) to 'select_ln98_1_reg_18014_reg[11]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[11]' (FDSE) to 'select_ln98_reg_18009_reg[12]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[11]' (FDSE) to 'select_ln98_1_reg_18014_reg[12]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[12]' (FDSE) to 'select_ln98_reg_18009_reg[13]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[12]' (FDSE) to 'select_ln98_1_reg_18014_reg[13]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[13]' (FDSE) to 'select_ln98_reg_18009_reg[14]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[13]' (FDSE) to 'select_ln98_1_reg_18014_reg[14]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[14]' (FDSE) to 'select_ln98_reg_18009_reg[15]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[14]' (FDSE) to 'select_ln98_1_reg_18014_reg[15]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[15]' (FDSE) to 'select_ln98_reg_18009_reg[16]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[15]' (FDSE) to 'select_ln98_1_reg_18014_reg[16]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[16]' (FDSE) to 'select_ln98_reg_18009_reg[17]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[16]' (FDSE) to 'select_ln98_1_reg_18014_reg[17]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_reg_18009_reg[17]' (FDSE) to 'select_ln98_reg_18009_reg[18]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_1_reg_18014_reg[17]' (FDSE) to 'select_ln98_1_reg_18014_reg[18]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[0]' (FDSE) to 'select_ln98_2_reg_18044_reg[1]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[0]' (FDSE) to 'select_ln98_3_reg_18049_reg[1]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[1]' (FDSE) to 'select_ln98_2_reg_18044_reg[2]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[1]' (FDSE) to 'select_ln98_3_reg_18049_reg[2]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[2]' (FDSE) to 'select_ln98_2_reg_18044_reg[3]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[2]' (FDSE) to 'select_ln98_3_reg_18049_reg[3]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[3]' (FDSE) to 'select_ln98_2_reg_18044_reg[4]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[3]' (FDSE) to 'select_ln98_3_reg_18049_reg[4]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[4]' (FDSE) to 'select_ln98_2_reg_18044_reg[5]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[4]' (FDSE) to 'select_ln98_3_reg_18049_reg[5]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[5]' (FDSE) to 'select_ln98_2_reg_18044_reg[6]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[5]' (FDSE) to 'select_ln98_3_reg_18049_reg[6]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[6]' (FDSE) to 'select_ln98_2_reg_18044_reg[7]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[6]' (FDSE) to 'select_ln98_3_reg_18049_reg[7]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[7]' (FDSE) to 'select_ln98_2_reg_18044_reg[8]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[7]' (FDSE) to 'select_ln98_3_reg_18049_reg[8]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[8]' (FDSE) to 'select_ln98_2_reg_18044_reg[9]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[8]' (FDSE) to 'select_ln98_3_reg_18049_reg[9]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[9]' (FDSE) to 'select_ln98_2_reg_18044_reg[10]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[9]' (FDSE) to 'select_ln98_3_reg_18049_reg[10]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[10]' (FDSE) to 'select_ln98_2_reg_18044_reg[11]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[10]' (FDSE) to 'select_ln98_3_reg_18049_reg[11]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[11]' (FDSE) to 'select_ln98_2_reg_18044_reg[12]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[11]' (FDSE) to 'select_ln98_3_reg_18049_reg[12]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[12]' (FDSE) to 'select_ln98_2_reg_18044_reg[13]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[12]' (FDSE) to 'select_ln98_3_reg_18049_reg[13]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[13]' (FDSE) to 'select_ln98_2_reg_18044_reg[14]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[13]' (FDSE) to 'select_ln98_3_reg_18049_reg[14]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[14]' (FDSE) to 'select_ln98_2_reg_18044_reg[15]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[14]' (FDSE) to 'select_ln98_3_reg_18049_reg[15]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[15]' (FDSE) to 'select_ln98_2_reg_18044_reg[16]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[15]' (FDSE) to 'select_ln98_3_reg_18049_reg[16]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[16]' (FDSE) to 'select_ln98_2_reg_18044_reg[17]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_3_reg_18049_reg[16]' (FDSE) to 'select_ln98_3_reg_18049_reg[17]'
+INFO: [Synth 8-3886] merging instance 'select_ln98_2_reg_18044_reg[17]' (FDSE) to 'select_ln98_2_reg_18044_reg[18]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[47]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[46]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[45]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[44]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[43]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[42]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[41]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[40]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[39]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[38]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[37]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[36]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[35]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[34]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[33]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[32]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[31]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[30]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[29]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[28]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[27]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[26]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[25]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[24]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[23]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[22]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[21]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[20]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[19]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[18]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[17]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[16]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[15]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[14]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[13]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[12]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[11]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[10]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[9]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[8]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[7]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[6]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[5]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[4]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[3]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[2]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[1]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[0]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[47]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[46]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[45]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[44]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[43]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[42]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[41]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[40]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[39]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[38]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[37]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[36]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[35]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[34]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[33]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[32]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[31]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[30]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[29]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[28]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[27]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[26]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[25]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[24]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[23]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[22]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[21]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[20]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[19]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[18]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[17]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[16]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[15]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[14]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[13]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[12]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[11]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[10]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[9]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[8]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[7]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[6]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[5]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[4]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[3]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[2]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[1]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[0]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[47]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__3.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[46]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__3.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[45]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__3.
+WARNING: [Synth 8-3332] Sequential element (buff1_reg[44]) is unused and will be removed from module top_kernel_mul_30s_25ns_54_4_1__3.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.

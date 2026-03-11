@@ -342,7 +342,7 @@ rt::set_parameter retWriteGraph {false}
 rt::set_parameter retimingFixLogicBug {1}
 rt::set_parameter retimingHighFrequency {1}
 rt::set_parameter retimingHintLevel {0}
-rt::set_parameter retimingIOFlops {false}
+rt::set_parameter retimingIOFlops {true}
 rt::set_parameter retimingIgnoreFixed {false}
 rt::set_parameter retimingLOOKAHEAD8 {2}
 rt::set_parameter retimingSlackDebug {0}
@@ -470,8 +470,8 @@ rt::set_parameter DefIncludePreRoutes {true}
 rt::set_parameter DefMatchEscapedComponent {false}
 rt::set_parameter DefTreatPlacedUnknownComponentAsBlockage {true}
 rt::set_parameter DefTreatUnknownComponentAsBlockage {true}
-rt::set_parameter SdcFileName {}
-rt::set_parameter SdcLineNum {}
+rt::set_parameter SdcFileName {/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/top_kernel_ooc.xdc}
+rt::set_parameter SdcLineNum {5}
 rt::set_parameter WriteDefGCellGrids {1}
 rt::set_parameter WriteDefGenomeExpansionFactor {3.000000}
 rt::set_parameter WriteDefGenomeRegions {0}
@@ -772,11 +772,11 @@ rt::set_parameter postponeXorCyConversion {false}
 rt::set_parameter removeDuplicateMultiDrivesForLatch {true}
 rt::set_parameter replicateRegister {false}
 rt::set_parameter retimeCtrlForSrl {true}
-rt::set_parameter retimeDeltaThreshold {1200}
-rt::set_parameter retimeHighFanoutThreshold {100}
+rt::set_parameter retimeDeltaThreshold {2000}
+rt::set_parameter retimeHighFanoutThreshold {300}
 rt::set_parameter retimeHighFanoutVerbose {0}
 rt::set_parameter retimeInputThreshold {1200}
-rt::set_parameter retimeWorstThreshold {1000}
+rt::set_parameter retimeWorstThreshold {500}
 rt::set_parameter searchImmediateRegLoadLevel {3}
 rt::set_parameter slackThreshold {1}
 rt::set_parameter stopDemoteNonCriticalMuxF8DrivingF9 {true}
@@ -907,7 +907,7 @@ rt::set_parameter generateCnfForTopGraph {false}
 rt::set_parameter inferMultiRatio {0.700000}
 rt::set_parameter iterativeAOAndCPDebug {false}
 rt::set_parameter iterativeAOAndCPInit {true}
-rt::set_parameter lutPairNewThreshold {true}
+rt::set_parameter lutPairNewThreshold {false}
 rt::set_parameter lutPairNewThreshold2 {false}
 rt::set_parameter markGenomePinsConnectedToTopModule {true}
 rt::set_parameter nlOptFastFlowInIterativeAOAndCP {false}
@@ -1006,7 +1006,7 @@ rt::set_parameter nlOptUseCoverinEstimate {0}
 rt::set_parameter nlOptUseReadFileML {0}
 rt::set_parameter nlOptUseSeparateBdd {0}
 rt::set_parameter nlOptUseSeparateBddForStandalone {0}
-rt::set_parameter nlOptUseSmartML {2}
+rt::set_parameter nlOptUseSmartML {0}
 rt::set_parameter nlOptVerilogNetlist {0}
 rt::set_parameter nlOptVersalCascadeExtract {0}
 rt::set_parameter nlOptWriteROM {0}
@@ -1095,7 +1095,7 @@ rt::set_parameter areaPenaltyOnlyForMAPBUF3_1 {true}
 rt::set_parameter areaStrategy {0}
 rt::set_parameter areaTieThresholdInWireMap {20}
 rt::set_parameter asymCascadeHeight {4}
-rt::set_parameter asyncLoadPart {false}
+rt::set_parameter asyncLoadPart {true}
 rt::set_parameter autoSleepPipeLineAllowed {true}
 rt::set_parameter autoSrlExtract {true}
 rt::set_parameter balanceSelectOrder {false}
@@ -1142,7 +1142,7 @@ rt::set_parameter checkPullLastSrlRegister {true}
 rt::set_parameter checkRemovableInstInSimplify {true}
 rt::set_parameter checkSignMismatchInCounter {true}
 rt::set_parameter cleanUpNetlistSpeedupFirstCall {true}
-rt::set_parameter cleanupAfterRegenerate {false}
+rt::set_parameter cleanupAfterRegenerate {true}
 rt::set_parameter cleanupDanglingModules {true}
 rt::set_parameter cleanupEquivalentRegRemovalByPrepRam {true}
 rt::set_parameter cleanupInReinfer {false}
@@ -1221,7 +1221,7 @@ rt::set_parameter constPropUram {true}
 rt::set_parameter constPropV10Debug {0}
 rt::set_parameter constantPropRamData {true}
 rt::set_parameter controlSetOptPostMapReduceCtrlSets {false}
-rt::set_parameter controlSetsOptSkipIOconnectedFlops {true}
+rt::set_parameter controlSetsOptSkipIOconnectedFlops {false}
 rt::set_parameter convCmpToEq {false}
 rt::set_parameter convGndToVcc {false}
 rt::set_parameter convGndToVccBram {false}
@@ -1237,7 +1237,7 @@ rt::set_parameter copyRangeCarrySaveInGrouper {true}
 rt::set_parameter copyUseDspAttrFromReg {true}
 rt::set_parameter createDualPortRomPartition {true}
 rt::set_parameter createGenomesForOutsideGenomeInsts {true}
-rt::set_parameter createUndoSyncControlPartition {true}
+rt::set_parameter createUndoSyncControlPartition {false}
 rt::set_parameter criticalSigOpt {true}
 rt::set_parameter criticalSigOptAttrInReinfer {true}
 rt::set_parameter criticalSigOptInDFG {true}
@@ -1417,7 +1417,7 @@ rt::set_parameter dspReduceRegSize {true}
 rt::set_parameter dspReduceUminusInputReg {true}
 rt::set_parameter dspReinferTimingDriven {false}
 rt::set_parameter dspRelocateABReg {true}
-rt::set_parameter dspRelocateMRegToPReg {false}
+rt::set_parameter dspRelocateMRegToPReg {true}
 rt::set_parameter dspRelocatePReg {true}
 rt::set_parameter dspRelocateRegisters {true}
 rt::set_parameter dspRelocateRegisters4Olympus {false}
@@ -1452,7 +1452,7 @@ rt::set_parameter dynNegForDotPrVHDL {false}
 rt::set_parameter earlyMapForLUTCascBitslice {true}
 rt::set_parameter edifCaseInsensitive {true}
 rt::set_parameter edifCopyModule {false}
-rt::set_parameter elaborateOnly {true}
+rt::set_parameter elaborateOnly {false}
 rt::set_parameter elaborateRtlOnlyFlow {false}
 rt::set_parameter enableBalancedMemoryInference {false}
 rt::set_parameter enableBramPowerOpt {false}
@@ -1558,7 +1558,7 @@ rt::set_parameter getOperatorReport {false}
 rt::set_parameter globalStrapsFilename {global_name.straps.rtd}
 rt::set_parameter goAcrossFlopsInFoptToposort {false}
 rt::set_parameter groupBigMux {true}
-rt::set_parameter groupLargeShiftRegisters {true}
+rt::set_parameter groupLargeShiftRegisters {false}
 rt::set_parameter handleHangingOutputNetsCrossMod {1}
 rt::set_parameter handleMaxFanoutChange {true}
 rt::set_parameter handleRetimingChangeInIncrementalSynthesis {true}
@@ -1575,7 +1575,7 @@ rt::set_parameter hoptPostCollapseMuxChain {2}
 rt::set_parameter ignoreMaxFanoutGlobally {false}
 rt::set_parameter ignoreMaxFanoutOnTimingAssertInsts {false}
 rt::set_parameter implementLGUsingLut4 {true}
-rt::set_parameter inTimingModeInAreaOpt {0}
+rt::set_parameter inTimingModeInAreaOpt {1}
 rt::set_parameter inactiveRamWriteEnableOpt {true}
 rt::set_parameter incrSynthPrintChangedModulesThreshold {10}
 rt::set_parameter incrTruthTable {false}
@@ -1716,7 +1716,7 @@ rt::set_parameter mapUseEstimatedTimeForSrl {false}
 rt::set_parameter mapUseEstimatedTimeForSrlLevel {1}
 rt::set_parameter mapperRunTimeFix {true}
 rt::set_parameter markDebugPreservationLevel {enable}
-rt::set_parameter markHighFanoutNetForRetime {false}
+rt::set_parameter markHighFanoutNetForRetime {true}
 rt::set_parameter markInstKeepForMarkDebug {true}
 rt::set_parameter markKeepHierarchyOnInsts {true}
 rt::set_parameter maxAdaptFFPercent {-1}
@@ -1726,7 +1726,7 @@ rt::set_parameter maxBramCascChainLengthTD {4}
 rt::set_parameter maxBufgInsertForClockGating {4}
 rt::set_parameter maxClockBufferCount {12}
 rt::set_parameter maxDRamPrimAddrWidth {-1}
-rt::set_parameter maxDissolveSize {1000}
+rt::set_parameter maxDissolveSize {5000}
 rt::set_parameter maxDspLimitSeep {0}
 rt::set_parameter maxFanOutForPartitionnedRegisters {100}
 rt::set_parameter maxFanoutReplicateDriverOfLUT1 {true}
@@ -1766,7 +1766,7 @@ rt::set_parameter mergeTernaryAdderInSingleDsp {true}
 rt::set_parameter minClockBufferFanout {5}
 rt::set_parameter minInstsInControlSet {2}
 rt::set_parameter minInstsInControlSetPostMap {8}
-rt::set_parameter minRomAddrWidth {5}
+rt::set_parameter minRomAddrWidth {8}
 rt::set_parameter minURamAddrSize {11}
 rt::set_parameter minURamTotalSize {147456}
 rt::set_parameter minURamWidth {36}
@@ -1808,7 +1808,7 @@ rt::set_parameter noRecodeOutsideMuxpart {true}
 rt::set_parameter noRemapForMapBuf31 {true}
 rt::set_parameter noTimingForRemap {false}
 rt::set_parameter nodeListTraversal {true}
-rt::set_parameter numRunAlgo {0}
+rt::set_parameter numRunAlgo {4}
 rt::set_parameter numRunAlgoFix {true}
 rt::set_parameter oasysTimerQuery {0}
 rt::set_parameter olympusDistributedRamSupport {true}
@@ -1873,7 +1873,7 @@ rt::set_parameter pipeLineBram {true}
 rt::set_parameter pipeLineDram {true}
 rt::set_parameter pipeLineUram {true}
 rt::set_parameter pipeLineUramWarningRatio {4}
-rt::set_parameter populateRomReportData {false}
+rt::set_parameter populateRomReportData {true}
 rt::set_parameter powerStrategy {0}
 rt::set_parameter preRegisterKeepLikeAttributes {true}
 rt::set_parameter precomputeCuddLimit {200}
@@ -1976,7 +1976,7 @@ rt::set_parameter removeRedundantWireAtRamWritePath {true}
 rt::set_parameter removeUnconnectedKeepHiers {true}
 rt::set_parameter repFanoutThreshold {10000000}
 rt::set_parameter replicateControlSignal {false}
-rt::set_parameter replicateDriverRegWithLut {false}
+rt::set_parameter replicateDriverRegWithLut {true}
 rt::set_parameter replicateFaninLutInFopt {true}
 rt::set_parameter replicateMuxSel {false}
 rt::set_parameter reportDRamStats {false}
@@ -2077,7 +2077,7 @@ rt::set_parameter synRetimingPattern {0}
 rt::set_parameter syncControlMinFanout {1}
 rt::set_parameter syncRstMinFanout {2147483647}
 rt::set_parameter synthDesignFanoutLimitSwitchIsUsed {false}
-rt::set_parameter synthParallelFlowWithDynamicThreads {true}
+rt::set_parameter synthParallelFlowWithDynamicThreads {false}
 rt::set_parameter tagCounterRegisters {false}
 rt::set_parameter tdRamGenAreaPenaltyThresh {150.000000}
 rt::set_parameter thresholdForAutoCMRom {10}
@@ -2346,7 +2346,7 @@ rt::set_parameter minClusterSize {true}
 rt::set_parameter skipNonMacros {false}
 # Group: hoptConstruct
 rt::set_parameter debugOptMuxSel {0}
-rt::set_parameter doBasicConstructInputOpt {true}
+rt::set_parameter doBasicConstructInputOpt {false}
 rt::set_parameter doConstPropBasedConstructInputOpt {true}
 rt::set_parameter maxBitWidthOfSelForConstPropBasedConstructInputOpt {16}
 rt::set_parameter maxChangeInConstructSize {2}
@@ -2356,7 +2356,7 @@ rt::set_parameter maxWideningAllowedFactor {2}
 rt::set_parameter onlyOptimizeDataOperators {false}
 rt::set_parameter optimizeOnlyIfDataOperatorFound {true}
 rt::set_parameter stopAtNodesWithOtherFanouts {false}
-rt::set_parameter thresholdForAddSub {8}
+rt::set_parameter thresholdForAddSub {11}
 rt::set_parameter thresholdForMult {8}
 # Group: hoptDataflow
 rt::set_parameter DFVdontDissolveEmptyGraphs {false}
@@ -2388,10 +2388,10 @@ rt::set_parameter collapseMuxPattern2 {true}
 rt::set_parameter collapseMuxesHavingOverlappingSels {false}
 rt::set_parameter collapseMuxesHavingOverlappingSelsEarly {false}
 rt::set_parameter collapseMuxesHavingOverlappingSelsLate {false}
-rt::set_parameter collapseNonExclusiveChains {false}
+rt::set_parameter collapseNonExclusiveChains {true}
 rt::set_parameter collapseNonExclusiveChainsEarly {false}
 rt::set_parameter collapseNonExclusiveChainsLate {true}
-rt::set_parameter collapseVariedSizeChains {false}
+rt::set_parameter collapseVariedSizeChains {true}
 rt::set_parameter collapseVariedSizeChainsEarly {false}
 rt::set_parameter collapseVariedSizeChainsLate {true}
 rt::set_parameter considerWidthForSelectingChain {true}
@@ -2552,7 +2552,7 @@ rt::set_parameter useLongGenericSignature {false}
 rt::set_parameter applyCommandsOnAllInstances {true}
 rt::set_parameter areaBasedSortingWithinBucket {false}
 rt::set_parameter areaUnit {0.000100}
-rt::set_parameter avoidAssigns {0}
+rt::set_parameter avoidAssigns {2}
 rt::set_parameter bfsDepthForRenamingGeneratedPorts {3}
 rt::set_parameter bucketAwareResizeSequential {true}
 rt::set_parameter cellBindingBasedCostBucket {false}
@@ -2637,7 +2637,7 @@ rt::set_parameter skipRemoveRedundantMuxSelForSmallAndWideMux {false}
 rt::set_parameter tieUndrivenGenomePins {true}
 rt::set_parameter ungroupVirtualToo {true}
 rt::set_parameter uniquifyGenomeForUserDirectives {false}
-rt::set_parameter usePostFindUniquification {false}
+rt::set_parameter usePostFindUniquification {true}
 rt::set_parameter warnOnDissolveGraph {false}
 # Group: nlcnf
 rt::set_parameter setPinConstants {true}
@@ -2649,9 +2649,9 @@ rt::set_parameter findTimerName {false}
 rt::set_parameter sdcCurrentInstance {true}
 rt::set_parameter trustInstanceAddedInCache {true}
 # Group: optimize
-rt::set_parameter abcOptScript {resyn2;fpga -K %d; sweep;}
+rt::set_parameter abcOptScript {strash; balance;fpga -K %d; sweep;}
 rt::set_parameter abcOptScriptCollapse {resyn2;dch -f;resyn2}
-rt::set_parameter abcOptScriptGates {resyn2;map;}
+rt::set_parameter abcOptScriptGates {strash; balance -d;resyn2;map}
 rt::set_parameter abcOptScriptGatesArea {strash;dch -f;amap}
 rt::set_parameter acceptInternalGMoves {false}
 rt::set_parameter allowHillClimb {false}
@@ -2666,7 +2666,7 @@ rt::set_parameter areaOptIncrementalCritRange {200}
 rt::set_parameter areaOptIncrementalMergePartitions {false}
 rt::set_parameter areaOptMaxDatapathArea {2500}
 rt::set_parameter areaOptMaxLogicArea {-1}
-rt::set_parameter areaOptMaxPasses {2}
+rt::set_parameter areaOptMaxPasses {1}
 rt::set_parameter areaOptMergePartitions {true}
 rt::set_parameter areaOptRepartitionGraph {false}
 rt::set_parameter areaOptSetUndrivenInputTo {0}
@@ -2680,7 +2680,7 @@ rt::set_parameter coarseResizeConsiderInternalEndpoints {true}
 rt::set_parameter costMultiple {2}
 rt::set_parameter critInstanceCount {1073741824}
 rt::set_parameter critPercentageLvt {0.000000}
-rt::set_parameter disableAbc {false}
+rt::set_parameter disableAbc {true}
 rt::set_parameter dynamicResize {false}
 rt::set_parameter dynamicResizeAreaLevels {0}
 rt::set_parameter dynamicResizeArrivalTimePruneMargin {4}
@@ -3365,7 +3365,7 @@ rt::set_parameter UPFLevelShiftPrefix {UPF_LS}
 rt::set_parameter UPFRetentionSupplyHandle {retention_supply}
 rt::set_parameter UPFSwitchSupplyHandle {supply}
 rt::set_parameter __deliberateBadLogic {false}
-rt::set_parameter absoluteTmpDirPath {}
+rt::set_parameter absoluteTmpDirPath {/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/.Xil/Vivado-460852-ece-linlabsrv01}
 rt::set_parameter absorbDspPatternDetect {true}
 rt::set_parameter addAttributesToRamGraph {true}
 rt::set_parameter addGenomesPostCleanup {true}
@@ -3657,7 +3657,7 @@ rt::set_parameter delayThreshold {0.500000}
 rt::set_parameter deleteNonDrivingEdgeForInOut {true}
 rt::set_parameter depthThresholdForDpCluster {100}
 rt::set_parameter depthUtilDebug {0}
-rt::set_parameter designWorstSlack {-1000000}
+rt::set_parameter designWorstSlack {-18470}
 rt::set_parameter detectPlusOneAsNonLossy {false}
 rt::set_parameter detectorDebugLevel {0}
 rt::set_parameter detectorOffsetting {true}
@@ -3729,10 +3729,10 @@ rt::set_parameter earlyMuxRestructuring {true}
 rt::set_parameter elabSvlgCreateHierarchyForGenStmt {false}
 rt::set_parameter elabVhdlCreateHierarchyForGenStmt {false}
 rt::set_parameter elaboratePrototype {false}
-rt::set_parameter elaborateRtl {true}
+rt::set_parameter elaborateRtl {false}
 rt::set_parameter eliminateConstRegWithMultLoad {false}
 rt::set_parameter eliminateConstantReg {true}
-rt::set_parameter eliminateRedundantBitOperator {false}
+rt::set_parameter eliminateRedundantBitOperator {true}
 rt::set_parameter eliminateRedundantBitSelect {true}
 rt::set_parameter eliminateRedundantConcatOperator {3}
 rt::set_parameter eliminateRedundantMux {true}
@@ -3765,7 +3765,7 @@ rt::set_parameter enableShareBMergeCache {true}
 rt::set_parameter enableShareBMergeCacheThreshold {65536}
 rt::set_parameter enableSplitFlow {true}
 rt::set_parameter enableSplitFlowPath {./.Xil/Vivado-460852-ece-linlabsrv01/}
-rt::set_parameter enableSplitFlowStep {0}
+rt::set_parameter enableSplitFlowStep {2}
 rt::set_parameter enableSplitFlowXDC {true}
 rt::set_parameter encodeFsm {auto}
 rt::set_parameter enhancepruneDeadBits {true}
@@ -3847,7 +3847,7 @@ rt::set_parameter handleVariableByteWidth {true}
 rt::set_parameter hdlAdvisor {true}
 rt::set_parameter heuristicMarkBitSelected {false}
 rt::set_parameter heuristicMarkUnbalanced {false}
-rt::set_parameter hlsPerformanceOpt {false}
+rt::set_parameter hlsPerformanceOpt {true}
 rt::set_parameter hlsPerformanceOpt2 {false}
 rt::set_parameter hypersource_dollarroot_debug_messaging_threshold {0}
 rt::set_parameter ignoreChecksumAttribPrint {}
@@ -3858,7 +3858,7 @@ rt::set_parameter ignoreLogicalOnlyCellsForSynthesis {false}
 rt::set_parameter ignorePropagateSettingsInElaborate {false}
 rt::set_parameter ignoreSetResetInConstantRegisters {false}
 rt::set_parameter improveMuxBasedCondRangeOpt {false}
-rt::set_parameter inParallelGenomes {false}
+rt::set_parameter inParallelGenomes {true}
 rt::set_parameter inProcessGenomesSequentially {false}
 rt::set_parameter includeBmergeInLogicPartitionWithFanoutToReg {false}
 rt::set_parameter includeLogicConeThreshold {9}
@@ -4037,7 +4037,7 @@ rt::set_parameter moveIndexOpToConstructNormalize {true}
 rt::set_parameter moveOpsAcross2x1Mux {true}
 rt::set_parameter moveOpsAcrossMux {false}
 rt::set_parameter multToLogicThreshold {5}
-rt::set_parameter multToLogicThreshold2 {10}
+rt::set_parameter multToLogicThreshold2 {8}
 rt::set_parameter multToLogicThresholdMax {30}
 rt::set_parameter multToLogicThresholdMin {4}
 rt::set_parameter multiDriveConstAssgnCheck {true}
@@ -4069,7 +4069,7 @@ rt::set_parameter newMultNodeCheckForFsm {true}
 rt::set_parameter newMuxPartition {true}
 rt::set_parameter newSetAttribute {true}
 rt::set_parameter newUniquifyInstUserNames {false}
-rt::set_parameter nlOptInAreaOpt {0}
+rt::set_parameter nlOptInAreaOpt {2}
 rt::set_parameter noExtramRegenInOasys {true}
 rt::set_parameter noPass2 {false}
 rt::set_parameter noSynRetiming {false}
@@ -4122,8 +4122,8 @@ rt::set_parameter parallelDFGOptPass2 {false}
 rt::set_parameter parallelDebug {false}
 rt::set_parameter parallelGenomeList {}
 rt::set_parameter parallelStuckFFsRemoval {495}
-rt::set_parameter parallelTimingMode {false}
-rt::set_parameter parallelTimingModeRound {0}
+rt::set_parameter parallelTimingMode {true}
+rt::set_parameter parallelTimingModeRound {1}
 rt::set_parameter partSeries {8}
 rt::set_parameter partitionBitArrayAccess {false}
 rt::set_parameter partitionSBlockModule {true}
@@ -4283,7 +4283,7 @@ rt::set_parameter retainUnconnectedPinsForPrimBBox {true}
 rt::set_parameter retimeDfg {false}
 rt::set_parameter retimingAdder {true}
 rt::set_parameter retimingAdderInside {false}
-rt::set_parameter retimingDataPath {2}
+rt::set_parameter retimingDataPath {0}
 rt::set_parameter retimingDataPathMark {true}
 rt::set_parameter retimingDebugLevel {0}
 rt::set_parameter retimingDivider {true}
@@ -4561,7 +4561,7 @@ rt::set_parameter pushClocksToInputsToo {false}
 rt::set_parameter pushConstraintsInsideForSDCFile {false}
 rt::set_parameter repeaterAllowInverter {true}
 rt::set_parameter reportClockNetwork {0}
-rt::set_parameter reportLoop {true}
+rt::set_parameter reportLoop {false}
 rt::set_parameter reportStyle {soce}
 rt::set_parameter reportTricellsLoop {false}
 rt::set_parameter resetCellDelay {false}
@@ -4674,9 +4674,5 @@ set rt::combineLutsInTechmap {0}
 set rt::skipReinfer {false}
 set rt::new_mux_part {false}
 set rt::doXdc {1}
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
-set_msg_config  -id {[BD 41-1265]}  -severity {CRITICAL WARNING}  -new_severity {INFO} 
-set_msg_config  -id {IP_Flow 19-2162}  -severity {WARNING}  -new_severity {INFO} 
-set rt::tclVerbose false
-set rt::tclQuiet false
+set rt::afterMapTimingCallRunTimeFix {false}
+set rt::timingOptRunTimeFix {false}

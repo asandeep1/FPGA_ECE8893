@@ -1,0 +1,545 @@
+xilinx rtfpga
+rt::do_reinfer_area_combined 1
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+INFO: [Synth 8-12192] Not enough pipeline registers after wide multiplier. Pipeline registers present is 2. Recommended levels of pipeline registers is 4. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_34s_30s_64_4_1.v:57]
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: A2*B2.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_kernel_mul_34s_30s_64_4_1__1 is either unconnected or has no load
+INFO: [Synth 8-3886] merging instance 'tmp_238_reg_18456_reg[1]' (FDE) to 'tmp_239_reg_18461_reg[2]'
+INFO: [Synth 8-3886] merging instance 'tmp_238_reg_18456_reg[2]' (FDE) to 'tmp_239_reg_18461_reg[3]'
+INFO: [Synth 8-3886] merging instance 'tmp_238_reg_18456_reg[0]' (FDE) to 'tmp_239_reg_18461_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[60]' (FDE) to 'tmp_239_reg_18461_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tmp_239_reg_18461_reg[3]' (FDE) to 'tmp_822_reg_18440_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[59]' (FDE) to 'pb_12_reg_18446_reg[35]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[58]' (FDE) to 'pb_12_reg_18446_reg[34]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[57]' (FDE) to 'pb_12_reg_18446_reg[33]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[56]' (FDE) to 'pb_12_reg_18446_reg[32]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[55]' (FDE) to 'pb_12_reg_18446_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[54]' (FDE) to 'pb_12_reg_18446_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[53]' (FDE) to 'pb_12_reg_18446_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[52]' (FDE) to 'pb_12_reg_18446_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[51]' (FDE) to 'pb_12_reg_18446_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[50]' (FDE) to 'pb_12_reg_18446_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[49]' (FDE) to 'pb_12_reg_18446_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[48]' (FDE) to 'pb_12_reg_18446_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[47]' (FDE) to 'pb_12_reg_18446_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[46]' (FDE) to 'pb_12_reg_18446_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[45]' (FDE) to 'pb_12_reg_18446_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[44]' (FDE) to 'pb_12_reg_18446_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[43]' (FDE) to 'pb_12_reg_18446_reg[19]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[42]' (FDE) to 'pb_12_reg_18446_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[41]' (FDE) to 'pb_12_reg_18446_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[40]' (FDE) to 'pb_12_reg_18446_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[39]' (FDE) to 'pb_12_reg_18446_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[38]' (FDE) to 'pb_12_reg_18446_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[37]' (FDE) to 'pb_12_reg_18446_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[36]' (FDE) to 'pb_12_reg_18446_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[35]' (FDE) to 'pb_12_reg_18446_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[34]' (FDE) to 'pb_12_reg_18446_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[33]' (FDE) to 'pb_12_reg_18446_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[32]' (FDE) to 'pb_12_reg_18446_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[31]' (FDE) to 'pb_12_reg_18446_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[30]' (FDE) to 'pb_12_reg_18446_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[29]' (FDE) to 'pb_12_reg_18446_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[28]' (FDE) to 'pb_12_reg_18446_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[27]' (FDE) to 'pb_12_reg_18446_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[26]' (FDE) to 'pb_12_reg_18446_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[25]' (FDE) to 'pb_12_reg_18446_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[24]' (FDE) to 'pb_12_reg_18446_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_4_reg_18434_reg[23]' (FDE) to 'tmp_823_reg_18451_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tmp_250_reg_18654_reg[1]' (FDE) to 'tmp_251_reg_18659_reg[2]'
+INFO: [Synth 8-3886] merging instance 'tmp_250_reg_18654_reg[2]' (FDE) to 'tmp_251_reg_18659_reg[3]'
+INFO: [Synth 8-3886] merging instance 'tmp_250_reg_18654_reg[0]' (FDE) to 'tmp_251_reg_18659_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[60]' (FDE) to 'tmp_251_reg_18659_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tmp_251_reg_18659_reg[3]' (FDE) to 'tmp_882_reg_18638_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[59]' (FDE) to 'pb_21_reg_18644_reg[35]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[58]' (FDE) to 'pb_21_reg_18644_reg[34]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[57]' (FDE) to 'pb_21_reg_18644_reg[33]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[56]' (FDE) to 'pb_21_reg_18644_reg[32]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[55]' (FDE) to 'pb_21_reg_18644_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[54]' (FDE) to 'pb_21_reg_18644_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[53]' (FDE) to 'pb_21_reg_18644_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[52]' (FDE) to 'pb_21_reg_18644_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[51]' (FDE) to 'pb_21_reg_18644_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[50]' (FDE) to 'pb_21_reg_18644_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[49]' (FDE) to 'pb_21_reg_18644_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[48]' (FDE) to 'pb_21_reg_18644_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[47]' (FDE) to 'pb_21_reg_18644_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[46]' (FDE) to 'pb_21_reg_18644_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[45]' (FDE) to 'pb_21_reg_18644_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[44]' (FDE) to 'pb_21_reg_18644_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[43]' (FDE) to 'pb_21_reg_18644_reg[19]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[42]' (FDE) to 'pb_21_reg_18644_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[41]' (FDE) to 'pb_21_reg_18644_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[40]' (FDE) to 'pb_21_reg_18644_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[39]' (FDE) to 'pb_21_reg_18644_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[38]' (FDE) to 'pb_21_reg_18644_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[37]' (FDE) to 'pb_21_reg_18644_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[36]' (FDE) to 'pb_21_reg_18644_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[35]' (FDE) to 'pb_21_reg_18644_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[34]' (FDE) to 'pb_21_reg_18644_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[33]' (FDE) to 'pb_21_reg_18644_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[32]' (FDE) to 'pb_21_reg_18644_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[31]' (FDE) to 'pb_21_reg_18644_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[30]' (FDE) to 'pb_21_reg_18644_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[29]' (FDE) to 'pb_21_reg_18644_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[28]' (FDE) to 'pb_21_reg_18644_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[27]' (FDE) to 'pb_21_reg_18644_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[26]' (FDE) to 'pb_21_reg_18644_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[25]' (FDE) to 'pb_21_reg_18644_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[24]' (FDE) to 'pb_21_reg_18644_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_7_reg_18632_reg[23]' (FDE) to 'tmp_883_reg_18649_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tmp_258_reg_18786_reg[1]' (FDE) to 'tmp_259_reg_18791_reg[2]'
+INFO: [Synth 8-3886] merging instance 'tmp_258_reg_18786_reg[2]' (FDE) to 'tmp_259_reg_18791_reg[3]'
+INFO: [Synth 8-3886] merging instance 'tmp_258_reg_18786_reg[0]' (FDE) to 'tmp_259_reg_18791_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_9_reg_18764_reg[60]' (FDE) to 'tmp_259_reg_18791_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tmp_259_reg_18791_reg[3]' (FDE) to 'tmp_922_reg_18770_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_9_reg_18764_reg[59]' (FDE) to 'pb_27_reg_18776_reg[35]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_9_reg_18764_reg[58]' (FDE) to 'pb_27_reg_18776_reg[34]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_9_reg_18764_reg[57]' (FDE) to 'pb_27_reg_18776_reg[33]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_9_reg_18764_reg[56]' (FDE) to 'pb_27_reg_18776_reg[32]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_9_reg_18764_reg[55]' (FDE) to 'pb_27_reg_18776_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_9_reg_18764_reg[54]' (FDE) to 'pb_27_reg_18776_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_9_reg_18764_reg[53]' (FDE) to 'pb_27_reg_18776_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_9_reg_18764_reg[52]' (FDE) to 'pb_27_reg_18776_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_9_reg_18764_reg[51]' (FDE) to 'pb_27_reg_18776_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_9_reg_18764_reg[50]' (FDE) to 'pb_27_reg_18776_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mul_ln147_9_reg_18764_reg[49]' (FDE) to 'pb_27_reg_18776_reg[25]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ap_CS_fsm_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[47]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[46]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[45]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[44]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[43]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[42]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[41]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[40]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[39]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[38]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[37]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[36]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[35]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[34]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[33]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[32]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[31]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[30]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[29]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[28]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[27]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[26]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[25]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[24]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[23]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[22]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[21]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[20]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[19]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[18]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[17]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[47]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[46]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[45]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[44]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[43]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[42]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[41]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[40]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[39]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[38]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[37]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[36]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[35]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[34]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[33]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[32]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[31]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[30]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[29]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[28]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[27]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[26]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[25]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[24]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[23]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[22]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[21]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[20]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[19]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[18]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[17]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[15]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[14]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[13]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[12]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[11]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[10]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[9]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[8]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[7]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[6]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[5]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[4]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[3]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[2]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[1]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[0]__0) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__1.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[47]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[46]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[45]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[44]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[43]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[42]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[41]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[40]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[39]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[38]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[37]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[36]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[35]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[34]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[33]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[32]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[31]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[30]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[29]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[28]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[27]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+WARNING: [Synth 8-3332] Sequential element (buff0_reg[26]) is unused and will be removed from module top_kernel_mul_34s_30s_64_4_1__2.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.

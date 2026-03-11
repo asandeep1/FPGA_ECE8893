@@ -1,0 +1,796 @@
+xilinx rtfpga
+rt::do_reinfer_area_combined 1
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U124/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U125/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U126/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U127/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U128/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U129/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U130/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U131/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U132/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U133/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U134/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U135/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U136/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U137/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U138/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U139/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U140/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U141/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U142/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U143/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U144/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U145/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U146/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U147/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U148/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U149/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U150/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U151/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U152/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U122/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+INFO: [Synth 8-4471] merging register 'mul_30s_26ns_55_4_1_U153/din1_reg_reg[25:0]' into 'mul_30s_26ns_55_4_1_U123/din1_reg_reg[25:0]' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/e442/hdl/verilog/top_kernel_mul_30s_26ns_55_4_1.v:56]
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U122/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U122/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U122/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U122/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U122/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U122/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U122/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U122/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U122/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U122/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U122/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U122/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U122/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U122/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U122/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U122/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U122/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U122/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U122/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U122/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U122/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U122/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U122/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U122/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U122/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U122/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U124/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U124/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U124/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U124/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U124/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U124/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U124/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U124/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U124/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U124/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U124/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U124/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U124/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U124/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U124/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U124/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U124/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U124/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U124/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U124/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U124/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U124/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U124/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U124/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U124/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U124/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U126/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U126/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U126/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U126/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U126/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U126/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U126/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U126/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U126/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U126/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U126/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U126/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U126/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U126/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U126/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U126/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U126/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U126/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U126/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U126/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U126/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U126/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U126/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U126/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U126/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U126/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U128/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U128/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U128/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U128/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U128/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U128/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U128/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U128/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U128/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U128/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U128/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U128/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U128/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U128/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U128/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U128/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U128/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U128/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U128/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U128/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U128/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U128/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U128/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U128/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U128/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U128/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U130/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U130/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U130/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U130/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U130/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U130/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U130/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U130/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U130/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U130/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U130/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U130/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U130/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U130/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U130/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U130/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U130/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U130/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U130/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U130/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U130/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U130/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U130/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U130/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U130/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U130/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U132/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U132/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U132/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U132/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U132/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U132/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U132/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U132/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U132/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U132/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U132/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U132/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U132/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U132/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U132/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U132/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U132/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U132/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U132/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U132/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U132/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U132/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U132/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U132/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U132/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U132/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U134/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U134/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U134/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U134/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U134/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U134/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U134/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U134/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U134/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U134/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U134/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U134/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U134/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U134/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U134/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U134/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U134/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U134/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U134/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U134/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U134/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U134/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U134/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U134/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U134/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U134/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U136/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U136/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U136/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U136/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U136/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U136/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U136/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U136/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U136/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U136/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U136/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U136/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U136/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U136/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U136/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U136/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U136/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U136/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U136/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U136/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U136/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U136/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U136/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U136/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U136/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U136/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U138/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U138/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U138/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U138/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U138/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U138/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U138/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U138/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U138/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U138/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U138/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U138/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U138/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U138/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U138/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U138/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U138/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U138/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U138/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U138/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U138/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U138/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U138/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U138/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U138/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U138/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U140/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U140/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U140/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U140/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U140/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U140/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U140/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U140/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U140/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U140/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U140/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U140/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U140/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U140/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U140/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U140/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U140/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U140/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U140/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U140/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U140/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U140/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U140/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U140/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U140/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U140/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U142/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U142/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U142/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U142/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U142/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U142/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U142/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U142/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U142/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U142/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U142/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U142/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U142/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U142/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U142/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U142/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U142/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U142/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U142/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U142/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U142/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U142/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U142/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U142/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U142/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U142/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U144/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U144/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U144/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U144/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U144/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U144/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U144/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U144/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U144/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U144/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U144/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U144/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U144/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U144/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U144/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U144/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U144/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U144/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U144/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U144/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U144/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U144/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U144/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U144/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U144/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U144/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U146/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U146/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U146/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U146/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U146/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U146/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U146/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U146/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U146/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U146/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U146/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U146/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U146/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U146/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U146/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U146/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U146/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U146/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U146/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U146/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U146/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U146/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U146/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U146/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U146/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U146/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U148/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U148/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U148/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U148/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U148/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U148/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U148/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U148/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U148/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U148/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U148/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U148/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U148/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U148/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U148/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U148/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U148/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U148/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U148/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U148/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U148/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U148/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U148/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U148/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U148/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U148/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U150/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U150/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U150/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U150/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U150/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U150/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U150/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U150/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U150/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U150/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U150/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U150/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U150/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U150/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U150/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U150/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U150/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U150/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U150/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U150/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U150/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U150/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U150/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U150/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U150/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U150/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U152/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U152/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U152/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U152/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U152/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U152/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U152/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U152/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U152/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U152/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U152/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U152/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U152/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U152/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U152/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U152/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U152/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U152/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U152/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U152/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U152/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U152/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U152/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U152/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U152/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U152/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U123/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U123/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U123/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U123/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U123/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U123/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U123/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U123/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U123/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U123/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U123/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U123/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U123/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U123/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U123/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U123/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U123/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U123/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U123/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U123/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U123/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U123/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U123/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U123/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U123/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U123/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U125/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U125/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U125/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U125/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U125/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U125/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U125/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U125/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U125/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U125/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U125/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U125/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U125/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U125/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U125/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U125/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U125/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U125/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U125/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U125/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U125/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U125/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U125/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U125/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U125/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U125/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U127/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U127/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U127/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U127/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U127/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U127/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U127/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U127/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U127/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U127/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U127/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U127/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U127/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U127/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U127/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U127/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U127/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U127/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U127/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U127/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U127/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U127/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U127/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U127/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U127/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U127/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U129/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U129/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U129/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U129/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U129/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U129/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U129/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U129/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U129/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U129/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U129/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U129/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U129/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U129/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U129/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U129/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U129/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U129/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U129/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U129/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U129/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U129/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U129/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U129/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U129/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U129/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U131/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U131/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U131/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U131/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U131/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U131/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U131/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U131/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U131/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U131/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U131/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U131/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U131/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U131/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U131/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U131/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U131/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U131/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U131/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U131/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U131/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U131/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U131/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U131/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U131/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U131/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U133/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U133/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U133/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U133/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U133/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U133/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U133/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U133/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U133/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U133/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U133/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U133/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U133/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U133/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U133/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U133/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U133/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U133/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U133/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U133/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U133/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U133/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U133/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U133/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U133/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U133/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U135/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U135/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U135/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U135/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U135/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U135/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U135/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U135/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U135/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U135/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U135/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U135/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U135/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U135/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U135/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U135/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U135/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U135/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U135/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U135/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U135/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U135/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U135/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U135/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U135/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U135/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U137/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U137/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U137/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U137/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U137/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U137/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U137/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U137/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U137/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U137/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U137/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U137/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U137/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U137/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U137/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U137/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U137/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U137/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U137/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U137/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U137/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U137/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U137/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U137/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U137/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U137/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U139/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U139/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U139/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U139/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U139/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U139/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U139/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U139/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U139/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U139/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U139/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U139/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U139/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U139/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U139/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U139/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U139/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U139/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U139/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U139/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U139/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U139/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U139/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U139/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U139/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U139/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U141/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U141/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U141/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U141/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U141/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U141/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U141/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U141/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U141/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U141/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U141/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U141/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U141/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U141/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U141/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U141/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U141/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U141/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U141/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U141/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U141/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U141/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U141/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U141/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U141/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U141/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U143/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U143/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U143/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U143/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U143/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U143/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U143/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U143/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U143/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U143/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U143/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U143/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U143/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U143/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U143/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U143/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U143/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U143/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U143/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U143/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U143/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U143/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U143/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U143/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U143/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U143/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U145/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U145/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U145/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U145/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U145/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U145/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U145/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U145/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U145/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U145/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U145/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U145/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U145/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U145/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U145/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U145/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U145/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U145/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U145/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U145/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U145/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U145/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U145/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U145/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U145/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U145/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U147/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U147/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U147/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U147/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U147/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U147/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U147/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U147/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U147/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U147/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U147/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U147/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U147/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U147/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U147/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U147/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U147/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U147/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U147/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U147/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U147/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U147/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U147/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U147/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U147/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U147/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U149/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U149/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U149/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U149/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U149/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U149/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U149/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U149/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U149/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U149/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U149/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U149/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U149/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U149/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U149/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U149/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U149/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U149/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U149/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U149/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U149/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U149/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U149/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U149/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U149/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U149/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U151/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U151/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U151/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U151/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U151/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U151/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U151/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U151/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U151/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U151/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U151/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U151/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U151/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U151/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U151/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U151/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U151/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U151/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U151/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U151/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U151/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U151/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U151/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U151/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U151/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U151/buff1_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U153/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_30s_26ns_55_4_1_U153/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U153/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U153/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U153/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U153/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U153/buff0_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U153/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U153/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U153/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U153/buff0_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U153/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U153/buff0_reg.
+DSP Report: Generating DSP mul_30s_26ns_55_4_1_U153/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mul_30s_26ns_55_4_1_U153/din0_reg_reg is absorbed into DSP mul_30s_26ns_55_4_1_U153/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U153/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U153/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U153/buff1_reg is absorbed into DSP mul_30s_26ns_55_4_1_U153/buff1_reg.
+DSP Report: register mul_30s_26ns_55_4_1_U153/buff0_reg is absorbed into DSP mul_30s_26ns_55_4_1_U153/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U153/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U153/buff1_reg.
+DSP Report: operator mul_30s_26ns_55_4_1_U153/tmp_product is absorbed into DSP mul_30s_26ns_55_4_1_U153/buff1_reg.
+WARNING: [Synth 8-3917] design top_kernel__GCB0 has port if_fifo_cap[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB0 has port if_fifo_cap[1] driven by constant 1
+WARNING: [Synth 8-3917] design top_kernel__GCB0 has port if_fifo_cap[0] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB0 has port O31[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB0 has port O31[1] driven by constant 1
+WARNING: [Synth 8-3917] design top_kernel__GCB0 has port O31[0] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB0 has port O33[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_kernel__GCB0 has port O33[1] driven by constant 1
+WARNING: [Synth 8-3917] design top_kernel__GCB0 has port O33[0] driven by constant 0
+WARNING: [Synth 8-7129] Port sa_norm_dout[511] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[510] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[509] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[508] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[507] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[506] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[505] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[504] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[503] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[502] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[501] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[500] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[479] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[478] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[477] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[476] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[475] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[474] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[473] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[472] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[471] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[470] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[469] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[468] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[447] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[446] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[445] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[444] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[443] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[442] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[441] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[440] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[439] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[438] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[437] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[436] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[415] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[414] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[413] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[412] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[411] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[410] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[409] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[408] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[407] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[406] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[405] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[404] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[383] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[382] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[381] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[380] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[379] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[378] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[377] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[376] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[375] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[374] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[373] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[372] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[351] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[350] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[349] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[348] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[347] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[346] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[345] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[344] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[343] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[342] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[341] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[340] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[319] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[318] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[317] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[316] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[315] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[314] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[313] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[312] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[311] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[310] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[309] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[308] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[287] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[286] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[285] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[284] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[283] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[282] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[281] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[280] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[279] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[278] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[277] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[276] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[255] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[254] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[253] in module top_kernel_k4_dual_post is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sa_norm_dout[252] in module top_kernel_k4_dual_post is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[30]' (FDE) to 'k4_dual_post_U0/tmp_130_reg_10367_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/tmp_130_reg_10367_reg[1]' (FDE) to 'k4_dual_post_U0/tmp_510_reg_10350_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[29]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[19]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[28]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[27]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[26]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[16]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[25]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[15]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[24]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[14]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[23]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[13]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[22]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[12]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[21]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[11]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[20]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[10]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[19]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[9]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[18]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[8]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[17]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[7]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[16]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[6]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[15]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[5]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[14]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[4]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[13]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[3]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[12]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[2]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[11]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[10]' (FDE) to 'k4_dual_post_U0/trunc_ln172_1_reg_10357_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_reg_10344_reg[9]' (FDE) to 'k4_dual_post_U0/tmp_511_reg_10362_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/tmp_524_reg_10408_reg[0]' (FDE) to 'k4_dual_post_U0/tmp_136_reg_10425_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[30]' (FDE) to 'k4_dual_post_U0/tmp_136_reg_10425_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[29]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[19]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[28]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[27]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[26]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[16]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[25]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[15]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[24]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[14]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[23]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[13]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[22]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[12]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[21]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[11]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[20]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[10]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[19]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[9]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[18]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[8]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[17]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[7]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[16]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[6]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[15]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[5]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[14]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[4]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[13]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[3]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[12]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[2]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[11]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[10]' (FDE) to 'k4_dual_post_U0/trunc_ln172_4_reg_10415_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_2_reg_10402_reg[9]' (FDE) to 'k4_dual_post_U0/tmp_525_reg_10420_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[30]' (FDE) to 'k4_dual_post_U0/tmp_142_reg_10483_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/tmp_142_reg_10483_reg[1]' (FDE) to 'k4_dual_post_U0/tmp_538_reg_10466_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[29]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[19]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[28]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[27]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[26]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[16]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[25]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[15]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[24]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[14]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[23]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[13]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[22]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[12]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[21]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[11]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[20]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[10]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[19]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[9]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[18]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[8]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[17]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[7]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[16]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[6]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[15]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[5]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[14]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[4]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[13]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[3]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[12]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[2]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[11]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[10]' (FDE) to 'k4_dual_post_U0/trunc_ln172_7_reg_10473_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_4_reg_10460_reg[9]' (FDE) to 'k4_dual_post_U0/tmp_539_reg_10478_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[30]' (FDE) to 'k4_dual_post_U0/tmp_148_reg_10541_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/tmp_148_reg_10541_reg[1]' (FDE) to 'k4_dual_post_U0/tmp_552_reg_10524_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[29]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[19]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[28]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[27]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[26]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[16]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[25]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[15]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[24]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[14]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[23]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[13]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[22]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[12]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[21]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[11]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[20]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[10]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[19]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[9]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[18]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[8]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[17]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[7]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[16]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[6]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[15]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[5]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[14]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[4]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[13]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[3]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[12]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[2]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[11]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[10]' (FDE) to 'k4_dual_post_U0/trunc_ln172_s_reg_10531_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_6_reg_10518_reg[9]' (FDE) to 'k4_dual_post_U0/tmp_553_reg_10536_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_8_reg_10576_reg[30]' (FDE) to 'k4_dual_post_U0/tmp_154_reg_10599_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/tmp_154_reg_10599_reg[1]' (FDE) to 'k4_dual_post_U0/tmp_566_reg_10582_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_8_reg_10576_reg[29]' (FDE) to 'k4_dual_post_U0/trunc_ln172_6_reg_10589_reg[19]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_8_reg_10576_reg[28]' (FDE) to 'k4_dual_post_U0/trunc_ln172_6_reg_10589_reg[18]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_8_reg_10576_reg[27]' (FDE) to 'k4_dual_post_U0/trunc_ln172_6_reg_10589_reg[17]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_8_reg_10576_reg[26]' (FDE) to 'k4_dual_post_U0/trunc_ln172_6_reg_10589_reg[16]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_8_reg_10576_reg[25]' (FDE) to 'k4_dual_post_U0/trunc_ln172_6_reg_10589_reg[15]'
+INFO: [Synth 8-3886] merging instance 'k4_dual_post_U0/add_ln172_8_reg_10576_reg[24]' (FDE) to 'k4_dual_post_U0/trunc_ln172_6_reg_10589_reg[14]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sa_post_U/U_top_kernel_fifo_w512_d2_S_ShiftReg/SRL_SIG_reg[0][511] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (k4_dual_post_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (k4_dual_post_U0/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sa_post_U/U_top_kernel_fifo_w512_d2_S_ShiftReg/SRL_SIG_reg[0][511] )
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[47]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[46]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[45]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[44]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[43]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[42]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[41]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[40]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[39]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[38]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[37]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[36]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[35]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[34]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[33]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[32]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[31]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[30]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[29]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[28]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[27]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[26]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[25]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[24]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[23]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[22]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[21]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[20]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[19]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[18]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[17]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[16]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[15]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[14]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[13]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[12]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[11]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[10]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[9]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[8]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[7]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[6]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[5]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[4]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[3]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[2]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[1]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U122/buff1_reg[0]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[47]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[46]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[45]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[44]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[43]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[42]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[41]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[40]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[39]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[38]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[37]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[36]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[35]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[34]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[33]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[32]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[31]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[30]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[29]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[28]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[27]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[26]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[25]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[24]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[23]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[22]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[21]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[20]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[19]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[18]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[17]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[16]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[15]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[14]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[13]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[12]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[11]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[10]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[9]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[8]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[7]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[6]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[5]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[4]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[3]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[2]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[1]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U124/buff1_reg[0]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U126/buff1_reg[47]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U126/buff1_reg[46]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U126/buff1_reg[45]) is unused and will be removed from module top_kernel_k4_dual_post.
+WARNING: [Synth 8-3332] Sequential element (mul_30s_26ns_55_4_1_U126/buff1_reg[44]) is unused and will be removed from module top_kernel_k4_dual_post.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
