@@ -270,13 +270,13 @@ end
     pp_loop_intf #(3) pp_loop_intf_1(clock,reset);
     assign pp_loop_intf_1.pre_loop_state0 = AESL_inst_top_kernel.super_kernel_32_U0.ap_ST_fsm_state1;
     assign pp_loop_intf_1.pre_states_valid = 1'b1;
-    assign pp_loop_intf_1.post_loop_state0 = AESL_inst_top_kernel.super_kernel_32_U0.ap_ST_fsm_state5;
+    assign pp_loop_intf_1.post_loop_state0 = AESL_inst_top_kernel.super_kernel_32_U0.ap_ST_fsm_state13;
     assign pp_loop_intf_1.post_states_valid = 1'b1;
     assign pp_loop_intf_1.iter_start_state = AESL_inst_top_kernel.super_kernel_32_U0.ap_ST_fsm_pp0_stage0;
     assign pp_loop_intf_1.iter_start_enable = AESL_inst_top_kernel.super_kernel_32_U0.ap_enable_reg_pp0_iter0;
     assign pp_loop_intf_1.iter_start_block = AESL_inst_top_kernel.super_kernel_32_U0.ap_block_pp0_stage0_subdone;
     assign pp_loop_intf_1.iter_end_state = AESL_inst_top_kernel.super_kernel_32_U0.ap_ST_fsm_pp0_stage0;
-    assign pp_loop_intf_1.iter_end_enable = AESL_inst_top_kernel.super_kernel_32_U0.ap_enable_reg_pp0_iter2;
+    assign pp_loop_intf_1.iter_end_enable = AESL_inst_top_kernel.super_kernel_32_U0.ap_enable_reg_pp0_iter10;
     assign pp_loop_intf_1.iter_end_block = AESL_inst_top_kernel.super_kernel_32_U0.ap_block_pp0_stage0_subdone;
     assign pp_loop_intf_1.loop_quit_state = AESL_inst_top_kernel.super_kernel_32_U0.ap_ST_fsm_pp0_stage0;
     assign pp_loop_intf_1.quit_at_end = 1'b1;
@@ -312,8 +312,8 @@ end
     assign upc_loop_intf_2.iter_end_block = AESL_inst_top_kernel.k2_stats_dual_U0.ap_block_pp0_stage0_subdone;
     assign upc_loop_intf_2.quit_block = AESL_inst_top_kernel.k2_stats_dual_U0.ap_block_pp0_stage0_subdone;
     assign upc_loop_intf_2.iter_start_enable = AESL_inst_top_kernel.k2_stats_dual_U0.ap_enable_reg_pp0_iter0;
-    assign upc_loop_intf_2.iter_end_enable = AESL_inst_top_kernel.k2_stats_dual_U0.ap_enable_reg_pp0_iter2;
-    assign upc_loop_intf_2.quit_enable = AESL_inst_top_kernel.k2_stats_dual_U0.ap_enable_reg_pp0_iter2;
+    assign upc_loop_intf_2.iter_end_enable = AESL_inst_top_kernel.k2_stats_dual_U0.ap_enable_reg_pp0_iter9;
+    assign upc_loop_intf_2.quit_enable = AESL_inst_top_kernel.k2_stats_dual_U0.ap_enable_reg_pp0_iter9;
     assign upc_loop_intf_2.loop_start = AESL_inst_top_kernel.k2_stats_dual_U0.ap_start;
     assign upc_loop_intf_2.loop_ready = AESL_inst_top_kernel.k2_stats_dual_U0.ap_ready;
     assign upc_loop_intf_2.loop_done = AESL_inst_top_kernel.k2_stats_dual_U0.ap_done;
@@ -331,8 +331,8 @@ end
     assign upc_loop_intf_3.iter_end_block = AESL_inst_top_kernel.k3_dual_norm_U0.ap_block_pp0_stage0_subdone;
     assign upc_loop_intf_3.quit_block = AESL_inst_top_kernel.k3_dual_norm_U0.ap_block_pp0_stage0_subdone;
     assign upc_loop_intf_3.iter_start_enable = AESL_inst_top_kernel.k3_dual_norm_U0.ap_enable_reg_pp0_iter0;
-    assign upc_loop_intf_3.iter_end_enable = AESL_inst_top_kernel.k3_dual_norm_U0.ap_enable_reg_pp0_iter57;
-    assign upc_loop_intf_3.quit_enable = AESL_inst_top_kernel.k3_dual_norm_U0.ap_enable_reg_pp0_iter57;
+    assign upc_loop_intf_3.iter_end_enable = AESL_inst_top_kernel.k3_dual_norm_U0.ap_enable_reg_pp0_iter67;
+    assign upc_loop_intf_3.quit_enable = AESL_inst_top_kernel.k3_dual_norm_U0.ap_enable_reg_pp0_iter67;
     assign upc_loop_intf_3.loop_start = AESL_inst_top_kernel.k3_dual_norm_U0.ap_start;
     assign upc_loop_intf_3.loop_ready = AESL_inst_top_kernel.k3_dual_norm_U0.ap_ready;
     assign upc_loop_intf_3.loop_done = AESL_inst_top_kernel.k3_dual_norm_U0.ap_done;
@@ -350,8 +350,8 @@ end
     assign upc_loop_intf_4.iter_end_block = AESL_inst_top_kernel.k4_dual_post_U0.ap_block_pp0_stage0_subdone;
     assign upc_loop_intf_4.quit_block = AESL_inst_top_kernel.k4_dual_post_U0.ap_block_pp0_stage0_subdone;
     assign upc_loop_intf_4.iter_start_enable = AESL_inst_top_kernel.k4_dual_post_U0.ap_enable_reg_pp0_iter0;
-    assign upc_loop_intf_4.iter_end_enable = AESL_inst_top_kernel.k4_dual_post_U0.ap_enable_reg_pp0_iter1;
-    assign upc_loop_intf_4.quit_enable = AESL_inst_top_kernel.k4_dual_post_U0.ap_enable_reg_pp0_iter1;
+    assign upc_loop_intf_4.iter_end_enable = AESL_inst_top_kernel.k4_dual_post_U0.ap_enable_reg_pp0_iter8;
+    assign upc_loop_intf_4.quit_enable = AESL_inst_top_kernel.k4_dual_post_U0.ap_enable_reg_pp0_iter8;
     assign upc_loop_intf_4.loop_start = AESL_inst_top_kernel.k4_dual_post_U0.ap_start;
     assign upc_loop_intf_4.loop_ready = AESL_inst_top_kernel.k4_dual_post_U0.ap_ready;
     assign upc_loop_intf_4.loop_done = AESL_inst_top_kernel.k4_dual_post_U0.ap_done;

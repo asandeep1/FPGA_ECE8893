@@ -9,62 +9,62 @@
 <ProductFamily>zynquplus</ProductFamily>
 <Part>xczu3eg-sbva484-1-e</Part>
 <TopModelName>k2_stats_dual</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.70</ClockUncertainty>
+<TargetClockPeriod>3.00</TargetClockPeriod>
+<ClockUncertainty>0.81</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
 <PerformanceEstimates>
-<PipelineType>loop auto-rewind stp (delay=0 cycles)</PipelineType>
+<PipelineType>loop auto-rewind stp (delay=4 cycles)</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.778</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.597</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>2051</Best-caseLatency>
-<Average-caseLatency>2051</Average-caseLatency>
-<Worst-caseLatency>2051</Worst-caseLatency>
-<Best-caseRealTimeLatency>20.510 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>20.510 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>20.510 us</Worst-caseRealTimeLatency>
-<Interval-min>2048</Interval-min>
-<Interval-max>2048</Interval-max>
+<Best-caseLatency>2058</Best-caseLatency>
+<Average-caseLatency>2058</Average-caseLatency>
+<Worst-caseLatency>2058</Worst-caseLatency>
+<Best-caseRealTimeLatency>6.174 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>6.174 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>6.174 us</Worst-caseRealTimeLatency>
+<Interval-min>2052</Interval-min>
+<Interval-max>2052</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_395_1_VITIS_LOOP_397_2>
-<Slack>7.30</Slack>
+<VITIS_LOOP_113_1_VITIS_LOOP_115_2>
+<Slack>2.19</Slack>
 <TripCount>2048</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>2049</Latency>
-<AbsoluteTimeLatency>20490</AbsoluteTimeLatency>
+<Latency>2056</Latency>
+<AbsoluteTimeLatency>6168</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>3</PipelineDepth>
+<PipelineDepth>10</PipelineDepth>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_395_1_VITIS_LOOP_397_2>
+</VITIS_LOOP_113_1_VITIS_LOOP_115_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
-<IssueType>-</IssueType>
+<IssueType>Timing Violation</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:397</SourceLocation>
+<SourceLocation>top.cpp:115</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_395_1_VITIS_LOOP_397_2>
-<Name>VITIS_LOOP_395_1_VITIS_LOOP_397_2</Name>
+<VITIS_LOOP_113_1_VITIS_LOOP_115_2>
+<Name>VITIS_LOOP_113_1_VITIS_LOOP_115_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:397</SourceLocation>
-</VITIS_LOOP_395_1_VITIS_LOOP_397_2>
+<SourceLocation>top.cpp:115</SourceLocation>
+</VITIS_LOOP_113_1_VITIS_LOOP_115_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>176</FF>
-<LUT>3287</LUT>
+<FF>3073</FF>
+<LUT>3396</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>

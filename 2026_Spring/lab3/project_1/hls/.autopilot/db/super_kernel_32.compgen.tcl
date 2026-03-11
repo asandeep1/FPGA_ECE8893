@@ -1,5 +1,11 @@
 # This script segment is generated automatically by AutoPilot
 
+set name top_kernel_mul_30s_25ns_54_4_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {dsp} LATENCY 3 ALLOW_PRAGMA 1
+}
+
+
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler top_kernel_sparsemux_9_3_20_1_1 BINDTYPE {op} TYPE {sparsemux} IMPL {onehotencoding_realdef}
 }
@@ -15,7 +21,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 40 \
+    id 73 \
     name sa_in \
     type fifo \
     dir I \
@@ -30,7 +36,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 41 \
+    id 74 \
     name sb_in \
     type fifo \
     dir I \
@@ -45,7 +51,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 42 \
+    id 75 \
     name sa_stats \
     type fifo \
     dir O \
@@ -60,7 +66,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 43 \
+    id 76 \
     name sa_join \
     type fifo \
     dir O \
@@ -68,14 +74,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_sa_join \
     op interface \
-    ports { sa_join_din { O 512 vector } sa_join_full_n { I 1 bit } sa_join_write { O 1 bit } sa_join_num_data_valid { I 10 vector } sa_join_fifo_cap { I 10 vector } } \
+    ports { sa_join_din { O 512 vector } sa_join_full_n { I 1 bit } sa_join_write { O 1 bit } sa_join_num_data_valid { I 11 vector } sa_join_fifo_cap { I 11 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 44 \
+    id 77 \
     name sb_stats \
     type fifo \
     dir O \
@@ -90,7 +96,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 45 \
+    id 78 \
     name sb_join \
     type fifo \
     dir O \
@@ -98,7 +104,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_sb_join \
     op interface \
-    ports { sb_join_din { O 512 vector } sb_join_full_n { I 1 bit } sb_join_write { O 1 bit } sb_join_num_data_valid { I 10 vector } sb_join_fifo_cap { I 10 vector } } \
+    ports { sb_join_din { O 512 vector } sb_join_full_n { I 1 bit } sb_join_write { O 1 bit } sb_join_num_data_valid { I 11 vector } sb_join_fifo_cap { I 11 vector } } \
 } "
 }
 

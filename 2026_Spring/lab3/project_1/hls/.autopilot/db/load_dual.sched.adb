@@ -209,7 +209,7 @@
 						<name>in_read</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>316</lineNumber>
+						<lineNumber>21</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -225,7 +225,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>316</second>
+										<second>21</second>
 									</item>
 								</second>
 							</item>
@@ -306,10 +306,10 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>br_ln318</name>
+						<name>br_ln23</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -325,7 +325,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -410,7 +410,7 @@
 						<name>trunc_ln</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -426,7 +426,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -466,10 +466,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>sext_ln318</name>
+						<name>sext_ln23</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -485,7 +485,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -525,7 +525,7 @@
 						<name>gmem0_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -541,7 +541,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -626,7 +626,7 @@
 						<name>empty</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -642,7 +642,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -672,7 +672,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>7.30</m_delay>
+				<m_delay>2.19</m_delay>
 				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -726,7 +726,7 @@
 						<name>i1_load</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -742,7 +742,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -783,7 +783,7 @@
 						<name>raw</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>321</lineNumber>
+						<lineNumber>25</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -799,7 +799,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>321</second>
+										<second>25</second>
 									</item>
 								</second>
 							</item>
@@ -829,7 +829,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>7.30</m_delay>
+				<m_delay>2.19</m_delay>
 				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -838,10 +838,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>trunc_ln329</name>
+						<name>trunc_ln33</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>329</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -857,7 +857,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>329</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -897,7 +897,7 @@
 						<name>tmp_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>330</lineNumber>
+						<lineNumber>34</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -913,7 +913,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>330</second>
+										<second>34</second>
 									</item>
 								</second>
 							</item>
@@ -952,10 +952,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>tmp_771_i</name>
+						<name>tmp_803_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -971,7 +971,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1011,10 +1011,10 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>tmp_772_i</name>
+						<name>tmp_804_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1030,7 +1030,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1070,10 +1070,10 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>tmp_773_i</name>
+						<name>tmp_805_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1089,7 +1089,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1129,10 +1129,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>tmp_774_i</name>
+						<name>tmp_806_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1148,7 +1148,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1188,10 +1188,10 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>tmp_775_i</name>
+						<name>tmp_807_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1207,7 +1207,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1247,10 +1247,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>tmp_776_i</name>
+						<name>tmp_808_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1266,7 +1266,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1306,10 +1306,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>tmp_777_i</name>
+						<name>tmp_809_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1325,7 +1325,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1365,10 +1365,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>tmp_778_i</name>
+						<name>tmp_810_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1384,7 +1384,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1424,10 +1424,10 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>tmp_779_i</name>
+						<name>tmp_811_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1443,7 +1443,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1483,10 +1483,10 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>tmp_780_i</name>
+						<name>tmp_812_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1502,7 +1502,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1542,10 +1542,10 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>tmp_781_i</name>
+						<name>tmp_813_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1561,7 +1561,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1601,10 +1601,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>tmp_782_i</name>
+						<name>tmp_814_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1620,7 +1620,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1660,10 +1660,10 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>tmp_783_i</name>
+						<name>tmp_815_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1679,7 +1679,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1719,10 +1719,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>tmp_784_i</name>
+						<name>tmp_816_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1738,7 +1738,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1778,10 +1778,10 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>tmp_785_i</name>
+						<name>tmp_817_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1797,7 +1797,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1837,10 +1837,10 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>tmp_786_i</name>
+						<name>tmp_818_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1856,7 +1856,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1924,10 +1924,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>zext_ln332</name>
+						<name>zext_ln36</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1943,7 +1943,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1980,10 +1980,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>sa_in_write_ln332</name>
+						<name>sa_in_write_ln36</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1999,7 +1999,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -2029,7 +2029,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.16</m_delay>
+				<m_delay>1.09</m_delay>
 				<m_topoIndex>52</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2038,10 +2038,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>tmp_787_i</name>
+						<name>tmp_819_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2057,7 +2057,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2097,10 +2097,10 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>tmp_788_i</name>
+						<name>tmp_820_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2116,7 +2116,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2156,10 +2156,10 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>tmp_789_i</name>
+						<name>tmp_821_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2175,7 +2175,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2215,10 +2215,10 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>tmp_790_i</name>
+						<name>tmp_822_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2234,7 +2234,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2274,10 +2274,10 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>tmp_791_i</name>
+						<name>tmp_823_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2293,7 +2293,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2333,10 +2333,10 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>tmp_792_i</name>
+						<name>tmp_824_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2352,7 +2352,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2392,10 +2392,10 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>tmp_793_i</name>
+						<name>tmp_825_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2411,7 +2411,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2451,10 +2451,10 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>tmp_794_i</name>
+						<name>tmp_826_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2470,7 +2470,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2510,10 +2510,10 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>tmp_795_i</name>
+						<name>tmp_827_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2529,7 +2529,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2569,10 +2569,10 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>tmp_796_i</name>
+						<name>tmp_828_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2588,7 +2588,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2628,10 +2628,10 @@
 					<Obj>
 						<type>0</type>
 						<id>63</id>
-						<name>tmp_797_i</name>
+						<name>tmp_829_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2647,7 +2647,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2687,10 +2687,10 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>tmp_798_i</name>
+						<name>tmp_830_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2706,7 +2706,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2746,10 +2746,10 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>tmp_799_i</name>
+						<name>tmp_831_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2765,7 +2765,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2805,10 +2805,10 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>tmp_800_i</name>
+						<name>tmp_832_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2824,7 +2824,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2864,10 +2864,10 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>tmp_801_i</name>
+						<name>tmp_833_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2883,7 +2883,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2923,10 +2923,10 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>tmp_802_i</name>
+						<name>tmp_834_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2942,7 +2942,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -3010,10 +3010,10 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>zext_ln333</name>
+						<name>zext_ln37</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -3029,7 +3029,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -3066,10 +3066,10 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>sb_in_write_ln333</name>
+						<name>sb_in_write_ln37</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -3085,7 +3085,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -3115,7 +3115,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.16</m_delay>
+				<m_delay>1.09</m_delay>
 				<m_topoIndex>55</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3127,7 +3127,7 @@
 						<name>i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -3143,7 +3143,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3181,10 +3181,10 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>icmp_ln318</name>
+						<name>icmp_ln23</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -3200,7 +3200,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3238,10 +3238,10 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>i1_write_ln318</name>
+						<name>i1_write_ln23</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -3257,7 +3257,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3297,10 +3297,10 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>br_ln318</name>
+						<name>br_ln23</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -3316,7 +3316,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -5673,7 +5673,7 @@
 				<Obj>
 					<type>3</type>
 					<id>27</id>
-					<name>for.first.iter.VITIS_LOOP_326_1.split.i</name>
+					<name>for.first.iter.VITIS_LOOP_30_1.split.i</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -5705,7 +5705,7 @@
 				<Obj>
 					<type>3</type>
 					<id>75</id>
-					<name>VITIS_LOOP_326_1.split.i</name>
+					<name>VITIS_LOOP_30_1.split.i</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>

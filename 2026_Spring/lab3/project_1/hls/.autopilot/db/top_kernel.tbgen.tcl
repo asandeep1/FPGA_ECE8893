@@ -290,25 +290,25 @@ set ArgLastReadFirstWriteLatency {
 		x_prev_1 {Type IO LastRead -1 FirstWrite -1}
 		sa_in {Type I LastRead 1 FirstWrite -1}
 		sb_in {Type I LastRead 1 FirstWrite -1}
-		sa_stats {Type O LastRead -1 FirstWrite 3}
-		sa_join {Type O LastRead -1 FirstWrite 3}
-		sb_stats {Type O LastRead -1 FirstWrite 3}
-		sb_join {Type O LastRead -1 FirstWrite 3}}
+		sa_stats {Type O LastRead -1 FirstWrite 11}
+		sa_join {Type O LastRead -1 FirstWrite 11}
+		sb_stats {Type O LastRead -1 FirstWrite 11}
+		sb_join {Type O LastRead -1 FirstWrite 11}}
 	k2_stats_dual {
-		s_st {Type O LastRead -1 FirstWrite 2}
+		s_st {Type O LastRead -1 FirstWrite 9}
 		sa_stats {Type I LastRead 0 FirstWrite -1}
 		sb_stats {Type I LastRead 0 FirstWrite -1}}
 	k3_dual_norm {
-		s_st {Type I LastRead 1 FirstWrite -1}
-		sa_join {Type I LastRead 55 FirstWrite -1}
-		sb_join {Type I LastRead 55 FirstWrite -1}
-		sa_norm {Type O LastRead -1 FirstWrite 57}
-		sb_norm {Type O LastRead -1 FirstWrite 57}}
+		s_st {Type I LastRead 2 FirstWrite -1}
+		sa_join {Type I LastRead 59 FirstWrite -1}
+		sb_join {Type I LastRead 59 FirstWrite -1}
+		sa_norm {Type O LastRead -1 FirstWrite 67}
+		sb_norm {Type O LastRead -1 FirstWrite 67}}
 	k4_dual_post {
 		sa_norm {Type I LastRead 0 FirstWrite -1}
 		sb_norm {Type I LastRead 0 FirstWrite -1}
-		sa_post {Type O LastRead -1 FirstWrite 1}
-		sb_post {Type O LastRead -1 FirstWrite 1}}
+		sa_post {Type O LastRead -1 FirstWrite 8}
+		sb_post {Type O LastRead -1 FirstWrite 8}}
 	store_dual {
 		gmem1 {Type O LastRead 4 FirstWrite 3}
 		out_r {Type I LastRead 1 FirstWrite -1}
@@ -318,8 +318,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "2131", "Max" : "2131"}
-	, {"Name" : "Interval", "Min" : "2052", "Max" : "2052"}
+	{"Name" : "Latency", "Min" : "2162", "Max" : "2162"}
+	, {"Name" : "Interval", "Min" : "2060", "Max" : "2060"}
 ]}
 
 set PipelineEnableSignalInfo {[

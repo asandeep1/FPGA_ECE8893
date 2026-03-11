@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'k3_dual_norm'" level="0">
-<item name = "Date">Mon Mar  9 02:48:02 2026
+<item name = "Date">Tue Mar 10 23:28:45 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.425 ns, 2.70 ns</column>
+<column name="ap_clk">3.00 ns, 3.229 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2106, 2106, 21.060 us, 21.060 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="">2116, 2116, 6.833 us, 6.833 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_431_1_VITIS_LOOP_434_2">2104, 2104, 58, 1, 1, 2048, yes</column>
+<column name="- VITIS_LOOP_137_1_VITIS_LOOP_140_2">2114, 2114, 68, 1, 1, 2048, yes</column>
 </table>
 </item>
 </section>

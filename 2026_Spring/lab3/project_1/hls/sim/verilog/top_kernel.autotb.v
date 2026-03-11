@@ -15,7 +15,7 @@
 `define AUTOTB_PER_RESULT_TRANS_FILE "top_kernel.performance.result.transaction.xml"
 `define AUTOTB_TOP_INST AESL_inst_apatb_top_kernel_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
-`define AUTOTB_CLOCK_PERIOD_DIV2 5.00
+`define AUTOTB_CLOCK_PERIOD_DIV2 1.50
 
 `define AESL_DEPTH_gmem0 1
 `define AESL_DEPTH_gmem1 1
@@ -33,7 +33,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 2131;
+parameter LATENCY_ESTIMATION = 2162;
 parameter LENGTH_gmem0 = 2048;
 parameter LENGTH_gmem1 = 2048;
 parameter LENGTH_in_r = 1;

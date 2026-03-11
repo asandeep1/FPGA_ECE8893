@@ -33,22 +33,31 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE88
 INFO: [VRFC 10-311] analyzing module top_kernel
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_flow_control_loop_pipe.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_flow_control_loop_delay_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_flow_control_loop_delay_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_mul_30s_25ns_54_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_30s_25ns_54_4_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_sparsemux_9_3_20_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_9_3_20_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_mul_34s_30s_64_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_mul_34s_30s_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_mul_34s_30s_64_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_34s_30s_64_4_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_sdiv_50ns_34s_50_54_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_50ns_34s_50_54_1_divider
 INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_50ns_34s_50_54_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_mul_30s_26ns_55_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_30s_26ns_55_4_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w64_d7_S.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w64_d7_S
 INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w64_d7_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w512_d3_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w512_d3_A
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w512_d3_A_ram
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w512_d2_S.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w512_d2_S
 INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w512_d2_S_ShiftReg
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w512_d512_A.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w512_d512_A
-INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w512_d512_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w512_d1024_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w512_d1024_A
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w512_d1024_A_ram
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w28_d2_S.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w28_d2_S
 INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w28_d2_S_ShiftReg
@@ -154,21 +163,26 @@ Compiling module xil_defaultlib.top_kernel_gmem1_m_axi(C_M_AXI_A...
 Compiling module xil_defaultlib.top_kernel_entry_proc
 Compiling module xil_defaultlib.top_kernel_flow_control_loop_pip...
 Compiling module xil_defaultlib.top_kernel_load_dual
+Compiling module xil_defaultlib.top_kernel_mul_30s_25ns_54_4_1(N...
 Compiling module xil_defaultlib.top_kernel_sparsemux_9_3_20_1_1(...
 Compiling module xil_defaultlib.top_kernel_super_kernel_32
+Compiling module xil_defaultlib.top_kernel_flow_control_loop_del...
 Compiling module xil_defaultlib.top_kernel_k2_stats_dual
-Compiling module xil_defaultlib.top_kernel_mul_34s_30s_64_1_1(NU...
+Compiling module xil_defaultlib.top_kernel_mul_34s_30s_64_4_1(NU...
 Compiling module xil_defaultlib.top_kernel_sdiv_50ns_34s_50_54_1...
 Compiling module xil_defaultlib.top_kernel_sdiv_50ns_34s_50_54_1...
 Compiling module xil_defaultlib.top_kernel_k3_dual_norm
+Compiling module xil_defaultlib.top_kernel_mul_30s_26ns_55_4_1(N...
 Compiling module xil_defaultlib.top_kernel_k4_dual_post
 Compiling module xil_defaultlib.top_kernel_store_dual
 Compiling module xil_defaultlib.top_kernel_fifo_w64_d7_S_ShiftRe...
 Compiling module xil_defaultlib.top_kernel_fifo_w64_d7_S_default
+Compiling module xil_defaultlib.top_kernel_fifo_w512_d3_A_ram(AD...
+Compiling module xil_defaultlib.top_kernel_fifo_w512_d3_A_defaul...
 Compiling module xil_defaultlib.top_kernel_fifo_w512_d2_S_ShiftR...
 Compiling module xil_defaultlib.top_kernel_fifo_w512_d2_S_defaul...
-Compiling module xil_defaultlib.top_kernel_fifo_w512_d512_A_ram(...
-Compiling module xil_defaultlib.top_kernel_fifo_w512_d512_A_defa...
+Compiling module xil_defaultlib.top_kernel_fifo_w512_d1024_A_ram...
+Compiling module xil_defaultlib.top_kernel_fifo_w512_d1024_A_def...
 Compiling module xil_defaultlib.top_kernel_fifo_w28_d2_S_ShiftRe...
 Compiling module xil_defaultlib.top_kernel_fifo_w28_d2_S_default
 Compiling module xil_defaultlib.top_kernel_start_for_store_dual_...
@@ -209,7 +223,7 @@ Built simulation snapshot top_kernel
   **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
   **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
   **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-  **** Start of session at: Mon Mar  9 02:49:44 2026
+  **** Start of session at: Tue Mar 10 23:30:27 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -632,12 +646,12 @@ UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xln
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "21935000"
+// RTL Simulation : 0 / 1 [0.00%] @ "107000"
+// RTL Simulation : 1 / 1 [100.00%] @ "6746000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 22005 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
-run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:07 . Memory (MB): peak = 1608.957 ; gain = 0.000 ; free physical = 66399 ; free virtual = 144472
+$finish called at time : 6766500 ps : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:07 . Memory (MB): peak = 1608.957 ; gain = 0.000 ; free physical = 93228 ; free virtual = 180869
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 582036 KB (Peak: 582036 KB), Simulation CPU Usage: 8640 ms
-INFO: [Common 17-206] Exiting xsim at Mon Mar  9 02:49:55 2026...
+INFO: xsimkernel Simulation Memory Usage: 582948 KB (Peak: 582948 KB), Simulation CPU Usage: 8410 ms
+INFO: [Common 17-206] Exiting xsim at Tue Mar 10 23:30:38 2026...
 TEST PASSED

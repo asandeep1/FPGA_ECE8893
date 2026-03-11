@@ -151,7 +151,7 @@ end;
 architecture behav of top_kernel is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "top_kernel_top_kernel,hls_ip_2025_1_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=2131,HLS_SYN_TPT=2052,HLS_SYN_MEM=115,HLS_SYN_DSP=0,HLS_SYN_FF=18628,HLS_SYN_LUT=49815,HLS_VERSION=2025_1_1}";
+    "top_kernel_top_kernel,hls_ip_2025_1_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=3.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.229000,HLS_SYN_LAT=2162,HLS_SYN_TPT=2060,HLS_SYN_MEM=173,HLS_SYN_DSP=0,HLS_SYN_FF=43597,HLS_SYN_LUT=46530,HLS_VERSION=2025_1_1}";
     constant C_S_AXI_DATA_WIDTH : INTEGER := 32;
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant C_M_AXI_DATA_WIDTH : INTEGER := 32;
@@ -284,12 +284,8 @@ architecture behav of top_kernel is
     signal k3_dual_norm_U0_sb_join_read : STD_LOGIC;
     signal k3_dual_norm_U0_sa_norm_din : STD_LOGIC_VECTOR (511 downto 0);
     signal k3_dual_norm_U0_sa_norm_write : STD_LOGIC;
-    signal k3_dual_norm_U0_sa_norm_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
-    signal k3_dual_norm_U0_sa_norm_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
     signal k3_dual_norm_U0_sb_norm_din : STD_LOGIC_VECTOR (511 downto 0);
     signal k3_dual_norm_U0_sb_norm_write : STD_LOGIC;
-    signal k3_dual_norm_U0_sb_norm_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
-    signal k3_dual_norm_U0_sb_norm_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
     signal k3_dual_norm_U0_start_out : STD_LOGIC;
     signal k3_dual_norm_U0_start_write : STD_LOGIC;
     signal k4_dual_post_U0_ap_start : STD_LOGIC;
@@ -370,8 +366,8 @@ architecture behav of top_kernel is
     signal sa_join_full_n : STD_LOGIC;
     signal sa_join_dout : STD_LOGIC_VECTOR (511 downto 0);
     signal sa_join_empty_n : STD_LOGIC;
-    signal sa_join_num_data_valid : STD_LOGIC_VECTOR (9 downto 0);
-    signal sa_join_fifo_cap : STD_LOGIC_VECTOR (9 downto 0);
+    signal sa_join_num_data_valid : STD_LOGIC_VECTOR (10 downto 0);
+    signal sa_join_fifo_cap : STD_LOGIC_VECTOR (10 downto 0);
     signal sb_stats_full_n : STD_LOGIC;
     signal sb_stats_dout : STD_LOGIC_VECTOR (511 downto 0);
     signal sb_stats_empty_n : STD_LOGIC;
@@ -380,8 +376,8 @@ architecture behav of top_kernel is
     signal sb_join_full_n : STD_LOGIC;
     signal sb_join_dout : STD_LOGIC_VECTOR (511 downto 0);
     signal sb_join_empty_n : STD_LOGIC;
-    signal sb_join_num_data_valid : STD_LOGIC_VECTOR (9 downto 0);
-    signal sb_join_fifo_cap : STD_LOGIC_VECTOR (9 downto 0);
+    signal sb_join_num_data_valid : STD_LOGIC_VECTOR (10 downto 0);
+    signal sb_join_fifo_cap : STD_LOGIC_VECTOR (10 downto 0);
     signal s_st_full_n : STD_LOGIC;
     signal s_st_dout : STD_LOGIC_VECTOR (27 downto 0);
     signal s_st_empty_n : STD_LOGIC;
@@ -557,8 +553,8 @@ architecture behav of top_kernel is
         sa_join_din : OUT STD_LOGIC_VECTOR (511 downto 0);
         sa_join_full_n : IN STD_LOGIC;
         sa_join_write : OUT STD_LOGIC;
-        sa_join_num_data_valid : IN STD_LOGIC_VECTOR (9 downto 0);
-        sa_join_fifo_cap : IN STD_LOGIC_VECTOR (9 downto 0);
+        sa_join_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
+        sa_join_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
         sb_stats_din : OUT STD_LOGIC_VECTOR (511 downto 0);
         sb_stats_full_n : IN STD_LOGIC;
         sb_stats_write : OUT STD_LOGIC;
@@ -567,8 +563,8 @@ architecture behav of top_kernel is
         sb_join_din : OUT STD_LOGIC_VECTOR (511 downto 0);
         sb_join_full_n : IN STD_LOGIC;
         sb_join_write : OUT STD_LOGIC;
-        sb_join_num_data_valid : IN STD_LOGIC_VECTOR (9 downto 0);
-        sb_join_fifo_cap : IN STD_LOGIC_VECTOR (9 downto 0) );
+        sb_join_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
+        sb_join_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0) );
     end component;
 
 
@@ -617,23 +613,23 @@ architecture behav of top_kernel is
         sa_join_dout : IN STD_LOGIC_VECTOR (511 downto 0);
         sa_join_empty_n : IN STD_LOGIC;
         sa_join_read : OUT STD_LOGIC;
-        sa_join_num_data_valid : IN STD_LOGIC_VECTOR (9 downto 0);
-        sa_join_fifo_cap : IN STD_LOGIC_VECTOR (9 downto 0);
+        sa_join_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
+        sa_join_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
         sb_join_dout : IN STD_LOGIC_VECTOR (511 downto 0);
         sb_join_empty_n : IN STD_LOGIC;
         sb_join_read : OUT STD_LOGIC;
-        sb_join_num_data_valid : IN STD_LOGIC_VECTOR (9 downto 0);
-        sb_join_fifo_cap : IN STD_LOGIC_VECTOR (9 downto 0);
+        sb_join_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
+        sb_join_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
         sa_norm_din : OUT STD_LOGIC_VECTOR (511 downto 0);
         sa_norm_full_n : IN STD_LOGIC;
         sa_norm_write : OUT STD_LOGIC;
-        sa_norm_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
-        sa_norm_fifo_cap : IN STD_LOGIC_VECTOR (31 downto 0);
+        sa_norm_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        sa_norm_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
         sb_norm_din : OUT STD_LOGIC_VECTOR (511 downto 0);
         sb_norm_full_n : IN STD_LOGIC;
         sb_norm_write : OUT STD_LOGIC;
-        sb_norm_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
-        sb_norm_fifo_cap : IN STD_LOGIC_VECTOR (31 downto 0);
+        sb_norm_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        sb_norm_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
         start_out : OUT STD_LOGIC;
         start_write : OUT STD_LOGIC );
     end component;
@@ -761,6 +757,23 @@ architecture behav of top_kernel is
     end component;
 
 
+    component top_kernel_fifo_w512_d3_A IS
+    port (
+        clk : IN STD_LOGIC;
+        reset : IN STD_LOGIC;
+        if_read_ce : IN STD_LOGIC;
+        if_write_ce : IN STD_LOGIC;
+        if_din : IN STD_LOGIC_VECTOR (511 downto 0);
+        if_full_n : OUT STD_LOGIC;
+        if_write : IN STD_LOGIC;
+        if_dout : OUT STD_LOGIC_VECTOR (511 downto 0);
+        if_empty_n : OUT STD_LOGIC;
+        if_read : IN STD_LOGIC;
+        if_num_data_valid : OUT STD_LOGIC_VECTOR (2 downto 0);
+        if_fifo_cap : OUT STD_LOGIC_VECTOR (2 downto 0) );
+    end component;
+
+
     component top_kernel_fifo_w512_d2_S IS
     port (
         clk : IN STD_LOGIC;
@@ -778,7 +791,7 @@ architecture behav of top_kernel is
     end component;
 
 
-    component top_kernel_fifo_w512_d512_A IS
+    component top_kernel_fifo_w512_d1024_A IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -790,8 +803,8 @@ architecture behav of top_kernel is
         if_dout : OUT STD_LOGIC_VECTOR (511 downto 0);
         if_empty_n : OUT STD_LOGIC;
         if_read : IN STD_LOGIC;
-        if_num_data_valid : OUT STD_LOGIC_VECTOR (9 downto 0);
-        if_fifo_cap : OUT STD_LOGIC_VECTOR (9 downto 0) );
+        if_num_data_valid : OUT STD_LOGIC_VECTOR (10 downto 0);
+        if_fifo_cap : OUT STD_LOGIC_VECTOR (10 downto 0) );
     end component;
 
 
@@ -1514,13 +1527,13 @@ begin
         sa_norm_din => k3_dual_norm_U0_sa_norm_din,
         sa_norm_full_n => sa_norm_full_n,
         sa_norm_write => k3_dual_norm_U0_sa_norm_write,
-        sa_norm_num_data_valid => k3_dual_norm_U0_sa_norm_num_data_valid,
-        sa_norm_fifo_cap => k3_dual_norm_U0_sa_norm_fifo_cap,
+        sa_norm_num_data_valid => sa_norm_num_data_valid,
+        sa_norm_fifo_cap => sa_norm_fifo_cap,
         sb_norm_din => k3_dual_norm_U0_sb_norm_din,
         sb_norm_full_n => sb_norm_full_n,
         sb_norm_write => k3_dual_norm_U0_sb_norm_write,
-        sb_norm_num_data_valid => k3_dual_norm_U0_sb_norm_num_data_valid,
-        sb_norm_fifo_cap => k3_dual_norm_U0_sb_norm_fifo_cap,
+        sb_norm_num_data_valid => sb_norm_num_data_valid,
+        sb_norm_fifo_cap => sb_norm_fifo_cap,
         start_out => k3_dual_norm_U0_start_out,
         start_write => k3_dual_norm_U0_start_write);
 
@@ -1640,7 +1653,7 @@ begin
         if_num_data_valid => out_r_c_num_data_valid,
         if_fifo_cap => out_r_c_fifo_cap);
 
-    sa_in_U : component top_kernel_fifo_w512_d2_S
+    sa_in_U : component top_kernel_fifo_w512_d3_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -1655,7 +1668,7 @@ begin
         if_num_data_valid => sa_in_num_data_valid,
         if_fifo_cap => sa_in_fifo_cap);
 
-    sb_in_U : component top_kernel_fifo_w512_d2_S
+    sb_in_U : component top_kernel_fifo_w512_d3_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -1685,7 +1698,7 @@ begin
         if_num_data_valid => sa_stats_num_data_valid,
         if_fifo_cap => sa_stats_fifo_cap);
 
-    sa_join_U : component top_kernel_fifo_w512_d512_A
+    sa_join_U : component top_kernel_fifo_w512_d1024_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -1715,7 +1728,7 @@ begin
         if_num_data_valid => sb_stats_num_data_valid,
         if_fifo_cap => sb_stats_fifo_cap);
 
-    sb_join_U : component top_kernel_fifo_w512_d512_A
+    sb_join_U : component top_kernel_fifo_w512_d1024_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -1932,10 +1945,6 @@ begin
     k2_stats_dual_U0_s_st_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(s_st_num_data_valid),3))),32));
     k3_dual_norm_U0_ap_continue <= ap_const_logic_1;
     k3_dual_norm_U0_ap_start <= start_for_k3_dual_norm_U0_empty_n;
-    k3_dual_norm_U0_sa_norm_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sa_norm_fifo_cap),3))),32));
-    k3_dual_norm_U0_sa_norm_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sa_norm_num_data_valid),3))),32));
-    k3_dual_norm_U0_sb_norm_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sb_norm_fifo_cap),3))),32));
-    k3_dual_norm_U0_sb_norm_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sb_norm_num_data_valid),3))),32));
     k4_dual_post_U0_ap_continue <= ap_const_logic_1;
     k4_dual_post_U0_ap_start <= start_for_k4_dual_post_U0_empty_n;
     k4_dual_post_U0_sa_post_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sa_post_fifo_cap),3))),32));

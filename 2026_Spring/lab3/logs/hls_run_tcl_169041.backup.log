@@ -1,0 +1,401 @@
+  **** HLS Build v2025.1.1 6214317
+Sourcing Tcl script '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/script.tcl'
+INFO: [HLS 200-1510] Running: open_component project_1 
+INFO: [HLS 200-10] Creating and opening component '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_alignment_byte_size=1
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_max_widen_bitwidth=0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_unroll -tripcount_threshold=0
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1464] Running solution command: config_compile -pipeline_loops=0
+INFO: [HLS 200-2174] Applying component config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../top.cpp' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(6)
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../host.cpp' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=top_kernel' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(5)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_alignment_byte_size=1
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_max_widen_bitwidth=0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_unroll -tripcount_threshold=0
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1464] Running solution command: config_compile -pipeline_loops=0
+INFO: [HLS 200-1464] Running solution command: config_compile -complex-mul-dsp=0
+INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sbva484-1-e' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(4)
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying config ini 'syn.interface.m_axi_alignment_byte_size=64' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'syn.interface.m_axi_max_widen_bitwidth=512' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'syn.unroll.tripcount_threshold=0' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(12)
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-2176] Writing Vitis IDE component file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/vitis-comp.json
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg
+INFO: [HLS 200-1510] Running: set_top top_kernel 
+INFO: [HLS 200-1510] Running: add_files top.cpp 
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb host.cpp 
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1510] Running: config_interface -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 
+INFO: [HLS 200-1510] Running: config_unroll -tripcount_threshold 0 
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1510] Running: config_compile -pipeline_loops 0 
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.76 seconds. CPU system time: 0.14 seconds. Elapsed time: 8.61 seconds; current allocated memory: 806.691 MB.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+WARNING: [HLS 207-5570] unexpected pragma parameter 'register_mode' (top.cpp:244:113)
+WARNING: [HLS 207-5570] unexpected pragma parameter 'register_mode' (top.cpp:245:114)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 7.34 seconds. CPU system time: 1.14 seconds. Elapsed time: 9 seconds; current allocated memory: 809.102 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 28,645 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 30,876 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 14,801 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 14,042 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 13,259 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 12,865 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 12,865 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 12,865 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 12,865 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 12,868 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 12,868 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 12,865 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 12,865 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 12,865 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 12,888 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 13,292 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'hls_clamp(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>)' into 'super_kernel_32(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)' (top.cpp:99:30)
+INFO: [HLS 214-131] Inlining function 'hls_clamp(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>)' into 'k4_dual_post(hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&, hls::stream<data_vec_t, 0>&)' (top.cpp:214:23)
+INFO: [HLS 214-377] Adding 'rb' into disaggregation list because there's array-partition pragma applied on the struct field (top.cpp:206:9)
+INFO: [HLS 214-377] Adding 'ra' into disaggregation list because there's array-partition pragma applied on the struct field (top.cpp:205:9)
+INFO: [HLS 214-377] Adding 'rb' into disaggregation list because there's array-partition pragma applied on the struct field (top.cpp:179:9)
+INFO: [HLS 214-377] Adding 'ra' into disaggregation list because there's array-partition pragma applied on the struct field (top.cpp:178:9)
+INFO: [HLS 214-377] Adding 'vjb' into disaggregation list because there's array-partition pragma applied on the struct field (top.cpp:64:9)
+INFO: [HLS 214-377] Adding 'vja' into disaggregation list because there's array-partition pragma applied on the struct field (top.cpp:63:9)
+INFO: [HLS 214-377] Adding 'vsb' into disaggregation list because there's array-partition pragma applied on the struct field (top.cpp:62:9)
+INFO: [HLS 214-377] Adding 'vsa' into disaggregation list because there's array-partition pragma applied on the struct field (top.cpp:61:9)
+INFO: [HLS 214-377] Adding 'vec_b' into disaggregation list because there's array-partition pragma applied on the struct field (top.cpp:31:9)
+INFO: [HLS 214-377] Adding 'vec_a' into disaggregation list because there's array-partition pragma applied on the struct field (top.cpp:30:9)
+INFO: [HLS 214-210] Disaggregating variable 'vec_b' (top.cpp:29:27)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'vec_a' (top.cpp:29:20)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'vjb' (top.cpp:60:35)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'vsb' (top.cpp:60:30)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'vja' (top.cpp:60:25)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'vsa' (top.cpp:60:20)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'rb' (top.cpp:177:28)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ra' (top.cpp:177:24)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'rb' (top.cpp:204:24)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ra' (top.cpp:204:20)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_231_2' is marked as complete unroll implied by the pipeline pragma (top.cpp:231:27)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_207_2' is marked as complete unroll implied by the pipeline pragma (top.cpp:207:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_180_3' is marked as complete unroll implied by the pipeline pragma (top.cpp:180:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_130_1' is marked as complete unroll implied by the pipeline pragma (top.cpp:130:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_136_2' is marked as complete unroll implied by the pipeline pragma (top.cpp:136:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_141_3' is marked as complete unroll implied by the pipeline pragma (top.cpp:141:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_146_4' is marked as complete unroll implied by the pipeline pragma (top.cpp:146:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_151_5' is marked as complete unroll implied by the pipeline pragma (top.cpp:151:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_70_1' is marked as complete unroll implied by the pipeline pragma (top.cpp:70:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_84_2' is marked as complete unroll implied by the pipeline pragma (top.cpp:84:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_33_1' is marked as complete unroll implied by the pipeline pragma (top.cpp:33:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_231_2' (top.cpp:231:27) in function 'store_dual' completely with a factor of 16 (top.cpp:224:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_207_2' (top.cpp:207:20) in function 'k4_dual_post' completely with a factor of 16 (top.cpp:198:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_180_3' (top.cpp:180:20) in function 'k3_dual_norm' completely with a factor of 16 (top.cpp:166:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_130_1' (top.cpp:130:20) in function 'k2_stats_dual' completely with a factor of 16 (top.cpp:115:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_136_2' (top.cpp:136:31) in function 'k2_stats_dual' completely with a factor of 16 (top.cpp:115:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_141_3' (top.cpp:141:31) in function 'k2_stats_dual' completely with a factor of 8 (top.cpp:115:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_146_4' (top.cpp:146:31) in function 'k2_stats_dual' completely with a factor of 4 (top.cpp:115:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_151_5' (top.cpp:151:31) in function 'k2_stats_dual' completely with a factor of 2 (top.cpp:115:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_70_1' (top.cpp:70:19) in function 'super_kernel_32' completely with a factor of 16 (top.cpp:48:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_84_2' (top.cpp:84:26) in function 'super_kernel_32' completely with a factor of 32 (top.cpp:48:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_33_1' (top.cpp:33:19) in function 'load_dual' completely with a factor of 16 (top.cpp:24:0)
+WARNING: [HLS 214-450] Ignore address on register port 'in' (top.cpp:28:21)
+WARNING: [HLS 214-450] Ignore address on register port 'out' (top.cpp:236:16)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 8.88 seconds. CPU system time: 1.18 seconds. Elapsed time: 14.34 seconds; current allocated memory: 819.582 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 819.582 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.59 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.61 seconds; current allocated memory: 825.090 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.23 seconds; current allocated memory: 833.418 MB.
+WARNING: [HLS 200-805] An internal stream 'sb_stats' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sb_post' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sb_norm' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sb_in' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sa_stats' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sa_post' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sa_norm' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sa_in' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 's_st' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-712] Applying dataflow to function 'top_kernel' (top.cpp:243:1), detected/extracted 6 process function(s): 
+	 'load_dual'
+	 'super_kernel_32'
+	 'k2_stats_dual'
+	 'k3_dual_norm'
+	 'k4_dual_post'
+	 'store_dual'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:54:9) to (top.cpp:53:17) in function 'super_kernel_32'... converting 161 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:201:9) to (top.cpp:200:20) in function 'k4_dual_post'... converting 65 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 4.23 seconds. CPU system time: 0.04 seconds. Elapsed time: 4.34 seconds; current allocated memory: 864.379 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_168_1'(top.cpp:168:20) and 'VITIS_LOOP_173_2'(top.cpp:173:27) in function 'k3_dual_norm' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'STATS_OUTER'(top.cpp:117:15) and 'STATS_INNER'(top.cpp:119:22) in function 'k2_stats_dual' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_168_1' (top.cpp:168:20) in function 'k3_dual_norm'.
+INFO: [XFORM 203-541] Flattening a loop nest 'STATS_OUTER' (top.cpp:117:15) in function 'k2_stats_dual'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'x_prev_0'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'x_prev_1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'x_prev_0'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'x_prev_1'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 3.12 seconds. CPU system time: 0.04 seconds. Elapsed time: 3.19 seconds; current allocated memory: 931.480 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_kernel' ...
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:139): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:144): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:144): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:144): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:144): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:144): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:144): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:144): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:144): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:149): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:149): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:149): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:149): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:154): '' does not exist or is optimized away.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' (top.cpp:154): '' does not exist or is optimized away.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_dual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOAD_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'LOAD_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.26 seconds. CPU system time: 0.08 seconds. Elapsed time: 0.42 seconds; current allocated memory: 932.562 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.06 seconds; current allocated memory: 932.566 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'super_kernel_32' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FRONT_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'FRONT_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.5 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.55 seconds; current allocated memory: 954.566 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.75 seconds. CPU system time: 0.06 seconds. Elapsed time: 1.29 seconds; current allocated memory: 971.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'k2_stats_dual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'STATS_OUTER_STATS_INNER'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'STATS_OUTER_STATS_INNER'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.78 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.43 seconds; current allocated memory: 971.695 MB.
+INFO: [#UNDEF] Rewind delay = 5 for the pipelined loop 'STATS_OUTER_STATS_INNER' due to a write-after-read dependence on variable 'i3'.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 971.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'k3_dual_norm' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_168_1_VITIS_LOOP_173_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 61, loop 'VITIS_LOOP_168_1_VITIS_LOOP_173_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.2 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.43 seconds; current allocated memory: 990.387 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.59 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.21 seconds; current allocated memory: 1007.387 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'k4_dual_post' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_200_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_200_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.21 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.72 seconds; current allocated memory: 1013.562 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.3 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.37 seconds; current allocated memory: 1015.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'store_dual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_226_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_226_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.56 seconds; current allocated memory: 1016.309 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1017.301 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_k3_dual_norm_U0 (from super_kernel_32_U0 to k3_dual_norm_U0) to 3 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1017.301 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1017.301 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_dual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_dual'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.16 seconds; current allocated memory: 1017.301 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'super_kernel_32' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'x_prev_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'x_prev_1' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'add_30ns_30s_30_3_1': 32 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_30s_25ns_54_4_1': 32 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_20_1_1': 32 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'super_kernel_32'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.75 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.82 seconds; current allocated memory: 1.016 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'k2_stats_dual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'k2_stats_dual' pipeline 'STATS_OUTER_STATS_INNER' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'add_31ns_31ns_31_3_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'add_32ns_32ns_32_3_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'add_33ns_33ns_33_2_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'add_34ns_34ns_34_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'k2_stats_dual'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.65 seconds. CPU system time: 0.18 seconds. Elapsed time: 2.92 seconds; current allocated memory: 1.063 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'k3_dual_norm' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'k3_dual_norm' pipeline 'VITIS_LOOP_168_1_VITIS_LOOP_173_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_34s_30s_64_5_1': 32 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_50ns_34s_50_54_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'k3_dual_norm'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.85 seconds. CPU system time: 0.07 seconds. Elapsed time: 1.09 seconds; current allocated memory: 1.079 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'k4_dual_post' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'k4_dual_post' pipeline 'VITIS_LOOP_200_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_30s_26ns_55_4_1': 32 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'k4_dual_post'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.81 seconds. CPU system time: 0.16 seconds. Elapsed time: 2.43 seconds; current allocated memory: 1.129 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'store_dual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'store_dual'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.91 seconds. CPU system time: 0.13 seconds. Elapsed time: 1.29 seconds; current allocated memory: 1.167 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/out_r' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top_kernel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel'.
+INFO: [RTMG 210-285] Implementing FIFO 'sa_in_U(top_kernel_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'sb_in_U(top_kernel_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'sa_stats_U(top_kernel_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'sa_join_U(top_kernel_fifo_w512_d512_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'sb_stats_U(top_kernel_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'sb_join_U(top_kernel_fifo_w512_d512_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 's_st_U(top_kernel_fifo_w28_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'sa_norm_U(top_kernel_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'sb_norm_U(top_kernel_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'sa_post_U(top_kernel_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'sb_post_U(top_kernel_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_super_kernel_32_U0_U(top_kernel_start_for_super_kernel_32_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_k2_stats_dual_U0_U(top_kernel_start_for_k2_stats_dual_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_k3_dual_norm_U0_U(top_kernel_start_for_k3_dual_norm_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_k4_dual_post_U0_U(top_kernel_start_for_k4_dual_post_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_store_dual_U0_U(top_kernel_start_for_store_dual_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.33 seconds; current allocated memory: 1.174 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.73 seconds. CPU system time: 0.08 seconds. Elapsed time: 1.18 seconds; current allocated memory: 1.175 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2 seconds. CPU system time: 0.2 seconds. Elapsed time: 2.32 seconds; current allocated memory: 1.224 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for top_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for top_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 142.73 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:01:04; Allocated memory: 462.285 MB.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/tools/software/xilinx/2025.1.1/Vitis/lnx64/tools/vcxx/libexec/clang++"
+   Compiling host.cpp_pre.cpp.tb.cpp
+   Compiling apatb_top_kernel.cpp
+   Compiling top.cpp_pre.cpp.tb.cpp
+   Compiling apatb_top_kernel_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+terminate called after throwing an instance of 'std::system_error'
+  what():  Invalid argument
+ERROR: [COSIM 212-360] Aborting co-simulation: C TB simulation failed.
+ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:00:42; Allocated memory: 22.016 MB.
+command 'ap_source' returned error code
+    while executing
+"source /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/script.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $tclfile] "
+
+INFO: [HLS 200-112] Total CPU user time: 76.16 seconds. Total CPU system time: 9.89 seconds. Total elapsed time: 117.07 seconds; peak allocated memory: 1.245 GB.
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

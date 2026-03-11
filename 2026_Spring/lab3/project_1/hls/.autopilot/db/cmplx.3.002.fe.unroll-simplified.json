@@ -1,100 +1,115 @@
 {
   "0": {
-    "basicblocks": 5,
-    "calls": "5 4 2 3 1 6",
+    "basicblocks": 9,
+    "calls": "6 3 2 5 1 4",
     "control_depth": 0,
     "def_use_depth": 2,
     "file": "top.cpp",
-    "fileloc": 491,
-    "instructions": 37,
+    "fileloc": 182,
+    "instructions": 47,
     "loads": {
-      "G": 2
+      "G": 4
     },
     "memory_accesses": 0,
     "name": "top_kernel",
     "stores": {
-      "G": 2
+      "G": 4
     },
-    "total_instructions": 12284
+    "total_instructions": 15305
   },
   "1": {
-    "basicblocks": 67,
+    "basicblocks": 131,
     "calls": "",
     "control_depth": 4,
-    "def_use_depth": 39,
+    "def_use_depth": 49,
     "file": "top.cpp",
-    "fileloc": 453,
-    "instructions": 2182,
+    "fileloc": 160,
+    "instructions": 3358,
     "loads": {
-      "L": 64
+      "L": 32
     },
     "memory_accesses": 195,
     "name": "k4_dual_post",
     "stores": {
-      "L": 127
+      "L": 95
     },
-    "total_instructions": 2182
+    "total_instructions": 3358
   },
   "2": {
     "basicblocks": 103,
     "calls": "",
     "control_depth": 4,
-    "def_use_depth": 33,
+    "def_use_depth": 267,
     "file": "top.cpp",
-    "fileloc": 393,
-    "instructions": 1275,
-    "loads": {
-      "L": 32
-    },
-    "memory_accesses": 130,
+    "fileloc": 111,
+    "instructions": 1224,
+    "memory_accesses": 34,
     "name": "k2_stats_dual",
     "stores": {
-      "L": 96
+      "L": 32
     },
-    "total_instructions": 1275
+    "total_instructions": 1224
   },
   "3": {
-    "basicblocks": 71,
-    "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 32,
-    "file": "top.cpp",
-    "fileloc": 429,
-    "instructions": 1713,
-    "memory_accesses": 67,
-    "name": "k3_dual_norm",
-    "stores": {
-      "L": 63
-    },
-    "total_instructions": 1713
-  },
-  "4": {
     "basicblocks": 419,
     "calls": "",
     "control_depth": 5,
-    "def_use_depth": 68,
+    "def_use_depth": 73,
     "file": "top.cpp",
-    "fileloc": 338,
-    "instructions": 6845,
+    "fileloc": 64,
+    "instructions": 7344,
     "loads": {
       "G": 2,
-      "L": 64
+      "L": 32
     },
     "memory_accesses": 265,
     "name": "super_kernel_32",
     "stores": {
       "G": 2,
-      "L": 191
+      "L": 159
     },
-    "total_instructions": 6845
+    "total_instructions": 7344
+  },
+  "4": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 66,
+    "file": "top.cpp",
+    "fileloc": 41,
+    "instructions": 162,
+    "memory_accesses": 3,
+    "name": "store_dual",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 162
   },
   "5": {
+    "basicblocks": 138,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 44,
+    "file": "top.cpp",
+    "fileloc": 134,
+    "instructions": 3067,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 131,
+    "name": "k3_dual_norm",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 3069
+  },
+  "6": {
     "basicblocks": 3,
     "calls": "",
     "control_depth": 0,
     "def_use_depth": 19,
     "file": "top.cpp",
-    "fileloc": 316,
+    "fileloc": 21,
     "instructions": 101,
     "loads": {
       "L": 1
@@ -102,20 +117,5 @@
     "memory_accesses": 3,
     "name": "load_dual",
     "total_instructions": 101
-  },
-  "6": {
-    "basicblocks": 3,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 35,
-    "file": "top.cpp",
-    "fileloc": 473,
-    "instructions": 131,
-    "memory_accesses": 3,
-    "name": "store_dual",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 131
   }
 }

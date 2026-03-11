@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'top_kernel'" level="0">
-<item name = "Date">Mon Mar  9 02:48:03 2026
+<item name = "Date">Tue Mar 10 23:28:48 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">3.00 ns, 3.229 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,20 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2131, 2131, 21.310 us, 21.310 us, 2052, 2052, dataflow</column>
+<column name="">2162, 2162, 6.981 us, 6.981 us, 2060, 2060, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="call_ln507_entry_proc_fu_150">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="grp_load_dual_fu_157">load_dual, 2059, 2059, 20.590 us, 20.590 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_super_kernel_32_fu_169">super_kernel_32, 2051, 2051, 20.510 us, 20.510 us, 2051, 2051, no</column>
-<column name="grp_k2_stats_dual_fu_189">k2_stats_dual, 2051, 2051, 20.510 us, 20.510 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_k3_dual_norm_fu_199">k3_dual_norm, 2106, 2106, 21.060 us, 21.060 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_k4_dual_post_fu_213">k4_dual_post, 2050, 2050, 20.500 us, 20.500 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_store_dual_fu_225">store_dual, 2057, 2057, 20.570 us, 20.570 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="call_ln199_entry_proc_fu_150">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_load_dual_fu_157">load_dual, 2059, 2059, 6.177 us, 6.177 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_super_kernel_32_fu_169">super_kernel_32, 2059, 2059, 6.177 us, 6.177 us, 2059, 2059, no</column>
+<column name="grp_k2_stats_dual_fu_189">k2_stats_dual, 2058, 2058, 6.174 us, 6.174 us, 2052, 2052, loop auto-rewind stp (delay=4 clock cycles(s))</column>
+<column name="grp_k3_dual_norm_fu_199">k3_dual_norm, 2116, 2116, 6.833 us, 6.833 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_k4_dual_post_fu_213">k4_dual_post, 2057, 2057, 6.171 us, 6.171 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_store_dual_fu_225">store_dual, 2057, 2057, 6.171 us, 6.171 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

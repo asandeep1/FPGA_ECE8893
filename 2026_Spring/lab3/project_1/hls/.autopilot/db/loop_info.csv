@@ -1,6 +1,6 @@
 load_dual_U0,LOAD_LOOP,upc_loop_status1.csv
-super_kernel_32_U0,FRONT_32_LOOP,pp_loop_status1.csv
-k2_stats_dual_U0,VITIS_LOOP_395_1_VITIS_LOOP_397_2,upc_loop_status2.csv
-k3_dual_norm_U0,VITIS_LOOP_431_1_VITIS_LOOP_434_2,upc_loop_status3.csv
-k4_dual_post_U0,VITIS_LOOP_455_1,upc_loop_status4.csv
+super_kernel_32_U0,FRONT_LOOP,pp_loop_status1.csv
+k2_stats_dual_U0,VITIS_LOOP_113_1_VITIS_LOOP_115_2,upc_loop_status2.csv
+k3_dual_norm_U0,VITIS_LOOP_137_1_VITIS_LOOP_140_2,upc_loop_status3.csv
+k4_dual_post_U0,VITIS_LOOP_162_1,upc_loop_status4.csv
 store_dual_U0,STORE_LOOP,upc_loop_status5.csv

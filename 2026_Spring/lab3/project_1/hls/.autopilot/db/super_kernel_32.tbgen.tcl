@@ -67,8 +67,8 @@ set portList {
 	{ sa_join_din sc_out sc_lv 512 signal 3 } 
 	{ sa_join_full_n sc_in sc_logic 1 signal 3 } 
 	{ sa_join_write sc_out sc_logic 1 signal 3 } 
-	{ sa_join_num_data_valid sc_in sc_lv 10 signal 3 } 
-	{ sa_join_fifo_cap sc_in sc_lv 10 signal 3 } 
+	{ sa_join_num_data_valid sc_in sc_lv 11 signal 3 } 
+	{ sa_join_fifo_cap sc_in sc_lv 11 signal 3 } 
 	{ sb_stats_din sc_out sc_lv 512 signal 4 } 
 	{ sb_stats_full_n sc_in sc_logic 1 signal 4 } 
 	{ sb_stats_write sc_out sc_logic 1 signal 4 } 
@@ -77,8 +77,8 @@ set portList {
 	{ sb_join_din sc_out sc_lv 512 signal 5 } 
 	{ sb_join_full_n sc_in sc_logic 1 signal 5 } 
 	{ sb_join_write sc_out sc_logic 1 signal 5 } 
-	{ sb_join_num_data_valid sc_in sc_lv 10 signal 5 } 
-	{ sb_join_fifo_cap sc_in sc_lv 10 signal 5 } 
+	{ sb_join_num_data_valid sc_in sc_lv 11 signal 5 } 
+	{ sb_join_fifo_cap sc_in sc_lv 11 signal 5 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -109,8 +109,8 @@ set NewPortList {[
  	{ "name": "sa_join_din", "direction": "out", "datatype": "sc_lv", "bitwidth":512, "type": "signal", "bundle":{"name": "sa_join", "role": "din" }} , 
  	{ "name": "sa_join_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "sa_join", "role": "full_n" }} , 
  	{ "name": "sa_join_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "sa_join", "role": "write" }} , 
- 	{ "name": "sa_join_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "sa_join", "role": "num_data_valid" }} , 
- 	{ "name": "sa_join_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "sa_join", "role": "fifo_cap" }} , 
+ 	{ "name": "sa_join_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "sa_join", "role": "num_data_valid" }} , 
+ 	{ "name": "sa_join_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "sa_join", "role": "fifo_cap" }} , 
  	{ "name": "sb_stats_din", "direction": "out", "datatype": "sc_lv", "bitwidth":512, "type": "signal", "bundle":{"name": "sb_stats", "role": "din" }} , 
  	{ "name": "sb_stats_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "sb_stats", "role": "full_n" }} , 
  	{ "name": "sb_stats_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "sb_stats", "role": "write" }} , 
@@ -119,8 +119,8 @@ set NewPortList {[
  	{ "name": "sb_join_din", "direction": "out", "datatype": "sc_lv", "bitwidth":512, "type": "signal", "bundle":{"name": "sb_join", "role": "din" }} , 
  	{ "name": "sb_join_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "sb_join", "role": "full_n" }} , 
  	{ "name": "sb_join_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "sb_join", "role": "write" }} , 
- 	{ "name": "sb_join_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "sb_join", "role": "num_data_valid" }} , 
- 	{ "name": "sb_join_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "sb_join", "role": "fifo_cap" }}  ]}
+ 	{ "name": "sb_join_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "sb_join", "role": "num_data_valid" }} , 
+ 	{ "name": "sb_join_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "sb_join", "role": "fifo_cap" }}  ]}
 
 set ArgLastReadFirstWriteLatency {
 	super_kernel_32 {
@@ -128,16 +128,16 @@ set ArgLastReadFirstWriteLatency {
 		x_prev_1 {Type IO LastRead -1 FirstWrite -1}
 		sa_in {Type I LastRead 1 FirstWrite -1}
 		sb_in {Type I LastRead 1 FirstWrite -1}
-		sa_stats {Type O LastRead -1 FirstWrite 3}
-		sa_join {Type O LastRead -1 FirstWrite 3}
-		sb_stats {Type O LastRead -1 FirstWrite 3}
-		sb_join {Type O LastRead -1 FirstWrite 3}}}
+		sa_stats {Type O LastRead -1 FirstWrite 11}
+		sa_join {Type O LastRead -1 FirstWrite 11}
+		sb_stats {Type O LastRead -1 FirstWrite 11}
+		sb_join {Type O LastRead -1 FirstWrite 11}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "2051", "Max" : "2051"}
-	, {"Name" : "Interval", "Min" : "2051", "Max" : "2051"}
+	{"Name" : "Latency", "Min" : "2059", "Max" : "2059"}
+	, {"Name" : "Interval", "Min" : "2059", "Max" : "2059"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -148,7 +148,7 @@ set Spec2ImplPortList {
 	sa_in { ap_fifo {  { sa_in_dout fifo_data_in 0 512 }  { sa_in_empty_n fifo_status 0 1 }  { sa_in_read fifo_port_we 1 1 }  { sa_in_num_data_valid fifo_status_num_data_valid 0 3 }  { sa_in_fifo_cap fifo_update 0 3 } } }
 	sb_in { ap_fifo {  { sb_in_dout fifo_data_in 0 512 }  { sb_in_empty_n fifo_status 0 1 }  { sb_in_read fifo_port_we 1 1 }  { sb_in_num_data_valid fifo_status_num_data_valid 0 3 }  { sb_in_fifo_cap fifo_update 0 3 } } }
 	sa_stats { ap_fifo {  { sa_stats_din fifo_data_in 1 512 }  { sa_stats_full_n fifo_status 0 1 }  { sa_stats_write fifo_port_we 1 1 }  { sa_stats_num_data_valid fifo_status_num_data_valid 0 3 }  { sa_stats_fifo_cap fifo_update 0 3 } } }
-	sa_join { ap_fifo {  { sa_join_din fifo_data_in 1 512 }  { sa_join_full_n fifo_status 0 1 }  { sa_join_write fifo_port_we 1 1 }  { sa_join_num_data_valid fifo_status_num_data_valid 0 10 }  { sa_join_fifo_cap fifo_update 0 10 } } }
+	sa_join { ap_fifo {  { sa_join_din fifo_data_in 1 512 }  { sa_join_full_n fifo_status 0 1 }  { sa_join_write fifo_port_we 1 1 }  { sa_join_num_data_valid fifo_status_num_data_valid 0 11 }  { sa_join_fifo_cap fifo_update 0 11 } } }
 	sb_stats { ap_fifo {  { sb_stats_din fifo_data_in 1 512 }  { sb_stats_full_n fifo_status 0 1 }  { sb_stats_write fifo_port_we 1 1 }  { sb_stats_num_data_valid fifo_status_num_data_valid 0 3 }  { sb_stats_fifo_cap fifo_update 0 3 } } }
-	sb_join { ap_fifo {  { sb_join_din fifo_data_in 1 512 }  { sb_join_full_n fifo_status 0 1 }  { sb_join_write fifo_port_we 1 1 }  { sb_join_num_data_valid fifo_status_num_data_valid 0 10 }  { sb_join_fifo_cap fifo_update 0 10 } } }
+	sb_join { ap_fifo {  { sb_join_din fifo_data_in 1 512 }  { sb_join_full_n fifo_status 0 1 }  { sb_join_write fifo_port_we 1 1 }  { sb_join_num_data_valid fifo_status_num_data_valid 0 11 }  { sb_join_fifo_cap fifo_update 0 11 } } }
 }

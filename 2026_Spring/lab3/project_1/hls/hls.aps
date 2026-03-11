@@ -9,7 +9,7 @@
     <writeConfigIni value="1"/>
     <isComponent value="1"/>
     <config>
-        <config_interface m_axi_max_widen_bitwidth="512" m_axi_alignment_byte_size="64"/>
+        <config_interface m_axi_max_widen_bitwidth="1024" m_axi_alignment_byte_size="128"/>
         <config_unroll tripcount_threshold="0"/>
         <config_compile pipeline_loops="0"/>
         <config_export flow="impl" format="ip_catalog"/>
@@ -21,7 +21,7 @@
         <library value="xilinx/zynquplus/zynquplus" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock name="default" period="10ns" default="false"/>
+        <clock name="default" period="3" default="false"/>
     </clockList>
     <Simulation argv="">
         <SimFlow name="cosim" setup="false" dumpTrace="none" optimizeCompile="false" ldflags="" mflags="" compiledLibrary="" toolName="xsim">

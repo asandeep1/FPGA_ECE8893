@@ -9,8 +9,8 @@
 <ProductFamily>zynquplus</ProductFamily>
 <Part>xczu3eg-sbva484-1-e</Part>
 <TopModelName>store_dual</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.70</ClockUncertainty>
+<TargetClockPeriod>3.00</TargetClockPeriod>
+<ClockUncertainty>0.81</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -18,27 +18,27 @@
 <PipelineType>loop auto-rewind stp (delay=0 cycles)</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.190</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>2057</Best-caseLatency>
 <Average-caseLatency>2057</Average-caseLatency>
 <Worst-caseLatency>2057</Worst-caseLatency>
-<Best-caseRealTimeLatency>20.570 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>20.570 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>20.570 us</Worst-caseRealTimeLatency>
+<Best-caseRealTimeLatency>6.171 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>6.171 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>6.171 us</Worst-caseRealTimeLatency>
 <Interval-min>2048</Interval-min>
 <Interval-max>2048</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <STORE_LOOP>
-<Slack>7.30</Slack>
+<Slack>2.19</Slack>
 <TripCount>2048</TripCount>
 <isPerfectNested>0</isPerfectNested>
 <Latency>2055</Latency>
-<AbsoluteTimeLatency>20550</AbsoluteTimeLatency>
+<AbsoluteTimeLatency>6165</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>9</PipelineDepth>
 <PerformancePragma>-</PerformancePragma>
@@ -49,13 +49,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:475</SourceLocation>
+<SourceLocation>top.cpp:43</SourceLocation>
 <SummaryOfLoopViolations>
 <STORE_LOOP>
 <Name>STORE_LOOP</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:473</SourceLocation>
+<SourceLocation>top.cpp:41</SourceLocation>
 </STORE_LOOP>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

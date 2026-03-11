@@ -3,4 +3,4 @@ Family       : zynquplus
 Device       : xczu3eg
 Package      : -sbva484
 Speed Grade  : -1-e
-Clock Period : 10
+Clock Period : 3

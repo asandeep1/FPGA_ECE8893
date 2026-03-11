@@ -1,0 +1,1071 @@
+  **** HLS Build v2025.1.1 6214317
+Sourcing Tcl script '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/script.tcl'
+INFO: [HLS 200-1510] Running: open_component project_1 
+INFO: [HLS 200-10] Creating and opening component '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_alignment_byte_size=1
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_max_widen_bitwidth=0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=1024
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=128
+INFO: [HLS 200-1464] Running solution command: config_unroll -tripcount_threshold=0
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1464] Running solution command: config_compile -pipeline_loops=0
+INFO: [HLS 200-1464] Running solution command: config_compile -complex-mul-dsp=0
+INFO: [HLS 200-1464] Running solution command: config_export -flow=impl
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-2174] Applying component config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'param.hls.enable_hidden_option_error=false' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(4)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../top.cpp' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../host.cpp' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=top_kernel' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_alignment_byte_size=1
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_max_widen_bitwidth=0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=1024
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=128
+INFO: [HLS 200-1464] Running solution command: config_unroll -tripcount_threshold=0
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1464] Running solution command: config_compile -pipeline_loops=0
+INFO: [HLS 200-1464] Running solution command: config_compile -complex-mul-dsp=0
+INFO: [HLS 200-1464] Running solution command: config_export -flow=impl
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1465] Applying config ini 'part=xczu3eg-sbva484-1-e' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'syn.interface.m_axi_alignment_byte_size=128' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'syn.interface.m_axi_max_widen_bitwidth=1024' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying config ini 'syn.unroll.tripcount_threshold=0' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(14)
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1465] Applying config ini 'vivado.flow=impl' from /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg(15)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/vitis-comp.json
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg
+INFO: [HLS 200-1510] Running: set_top top_kernel 
+INFO: [HLS 200-1510] Running: add_files top.cpp 
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb host.cpp 
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1510] Running: config_interface -m_axi_max_widen_bitwidth 1024 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 128 
+INFO: [HLS 200-1510] Running: config_unroll -tripcount_threshold 0 
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1510] Running: config_compile -pipeline_loops 0 
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.9 seconds. CPU system time: 0.24 seconds. Elapsed time: 8.78 seconds; current allocated memory: 806.855 MB.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (top.cpp:282:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file top.cpp
+Resolution: For help on HLS 200-471 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 7.17 seconds. CPU system time: 1.26 seconds. Elapsed time: 8.61 seconds; current allocated memory: 808.570 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 18,336 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 25,091 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11,364 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,999 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,513 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,446 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,446 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,446 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,446 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,451 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,451 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,448 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,448 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,448 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,455 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,363 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'clamp_fp(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>)' into 'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)' (top.cpp:377:6)
+INFO: [HLS 214-131] Inlining function 'abs_fp(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>)' into 'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)' (top.cpp:345:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_365_6' is marked as complete unroll implied by the pipeline pragma (top.cpp:365:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_340_4' is marked as complete unroll implied by the pipeline pragma (top.cpp:340:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_297_1' is marked as complete unroll implied by the pipeline pragma (top.cpp:297:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_311_2' is marked as complete unroll implied by the pipeline pragma (top.cpp:311:27)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_365_6' (top.cpp:365:31) in function 'top_kernel' completely with a factor of 32 (top.cpp:260:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_340_4' (top.cpp:340:31) in function 'top_kernel' completely with a factor of 32 (top.cpp:260:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_297_1' (top.cpp:297:20) in function 'top_kernel' completely with a factor of 32 (top.cpp:260:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_311_2' (top.cpp:311:27) in function 'top_kernel' completely with a factor of 32 (top.cpp:260:0)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable 'in' (top.cpp:287:24)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable 'out' (top.cpp:380:50)
+INFO: [HLS 214-115] Multiple burst reads of length 2048 and bit width 1024 in loop 'K0_K1_VEC'(top.cpp:285:13) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (top.cpp:285:13)
+INFO: [HLS 214-115] Multiple burst writes of length 2048 and bit width 1024 in loop 'K3_K4_VEC'(top.cpp:358:16) has been inferred on bundle 'gmem1'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (top.cpp:358:16)
+INFO: [HLS 214-455] Changing loop 'Loop_K0_K1_VEC_proc' (top.cpp:285:13) to a process function for dataflow in function 'top_kernel' (top.cpp:285:13)
+INFO: [HLS 214-455] Changing loop 'Loop_K2_STAT_proc' (top.cpp:334:14) to a process function for dataflow in function 'top_kernel' (top.cpp:334:14)
+INFO: [HLS 214-455] Changing loop 'Loop_K3_K4_VEC_proc' (top.cpp:358:16) to a process function for dataflow in function 'top_kernel' (top.cpp:358:16)
+WARNING: [HLS 214-475] Merging processes 'Loop_K0_K1_VEC_proc' in function 'top_kernel' due to feedback on 'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)::prev_last' (top.cpp:260:0)
+WARNING: [HLS 214-475] Merging processes 'Loop_K0_K1_VEC_proc' in function 'top_kernel' due to feedback on 'top_kernel(ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0> const*, ap_fixed<20, 6, (ap_q_mode)0, (ap_o_mode)0, 0>*)::prev_prev_last' (top.cpp:260:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 10.65 seconds. CPU system time: 1.2 seconds. Elapsed time: 14.95 seconds; current allocated memory: 818.695 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 818.695 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.5 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.52 seconds; current allocated memory: 826.926 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.69 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.71 seconds; current allocated memory: 829.301 MB.
+INFO: [XFORM 203-712] Applying dataflow to function 'top_kernel' (top.cpp:260:1), detected/extracted 4 process function(s): 
+	 'entry_proc'
+	 'Block_entry_prev_last_fb_prev_prev_last_fb_proc'
+	 'Loop_K2_STAT_proc'
+	 'Loop_K3_K4_VEC_proc'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:361:9) to (top.cpp:360:27) in function 'Loop_K3_K4_VEC_proc'... converting 65 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:337:9) to (top.cpp:336:27) in function 'Loop_K2_STAT_proc'... converting 97 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:286:9) to (top.cpp:285:13) in function 'Block_entry_prev_last_fb_prev_prev_last_fb_proc'... converting 161 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 3.02 seconds. CPU system time: 0.04 seconds. Elapsed time: 3.08 seconds; current allocated memory: 866.785 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'K3_K4_VEC'(top.cpp:358:16) and 'VITIS_LOOP_360_5'(top.cpp:360:27) in function 'Loop_K3_K4_VEC_proc' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'K2_STAT'(top.cpp:334:14) and 'VITIS_LOOP_336_3'(top.cpp:336:27) in function 'Loop_K2_STAT_proc' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'K3_K4_VEC' (top.cpp:358:16) in function 'Loop_K3_K4_VEC_proc'.
+INFO: [XFORM 203-541] Flattening a loop nest 'K2_STAT' (top.cpp:334:14) in function 'Loop_K2_STAT_proc'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 3.3 seconds. CPU system time: 0.04 seconds. Elapsed time: 3.37 seconds; current allocated memory: 904.902 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.29 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.41 seconds; current allocated memory: 904.902 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.07 seconds; current allocated memory: 905.777 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_prev_last_fb_prev_prev_last_fb_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'K0_K1_VEC'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 22, loop 'K0_K1_VEC'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.95 seconds. CPU system time: 0.04 seconds. Elapsed time: 2.01 seconds; current allocated memory: 932.832 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.16 seconds. CPU system time: 0.12 seconds. Elapsed time: 1.77 seconds; current allocated memory: 949.832 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_K2_STAT_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'K2_STAT_VITIS_LOOP_336_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 63, loop 'K2_STAT_VITIS_LOOP_336_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.46 seconds. CPU system time: 0.06 seconds. Elapsed time: 1.8 seconds; current allocated memory: 956.441 MB.
+INFO: [#UNDEF] Rewind delay = 7 for the pipelined loop 'K2_STAT_VITIS_LOOP_336_3' due to a write-after-read dependence on variable 'i3'.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.33 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.43 seconds; current allocated memory: 956.441 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_K3_K4_VEC_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'K3_K4_VEC_VITIS_LOOP_360_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 17, loop 'K3_K4_VEC_VITIS_LOOP_360_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2.48 seconds. CPU system time: 0.04 seconds. Elapsed time: 2.66 seconds; current allocated memory: 971.426 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.97 seconds. CPU system time: 0.08 seconds. Elapsed time: 1.22 seconds; current allocated memory: 988.426 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_Loop_K3_K4_VEC_proc_U0 (from entry_proc_U0 to Loop_K3_K4_VEC_proc_U0) to 3 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.81 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.09 seconds; current allocated memory: 988.426 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.16 seconds; current allocated memory: 988.426 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 988.426 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_entry_prev_last_fb_prev_prev_last_fb_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'prev_prev_last' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'prev_last' is power-on initialization.
+INFO: [RTGEN 206-104] Estimated max fanout for 'Block_entry_prev_last_fb_prev_prev_last_fb_proc' is 6624 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001_grp1)
+INFO: [RTGEN 206-100] Generating core module 'add_31s_31ns_31_3_1': 32 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'add_54ns_54s_54_3_1': 32 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'add_54s_54s_54_3_1': 32 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_30s_25ns_54_4_1': 32 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_20_1_1': 32 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_entry_prev_last_fb_prev_prev_last_fb_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2.11 seconds. CPU system time: 0.08 seconds. Elapsed time: 2.3 seconds; current allocated memory: 1011.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_K2_STAT_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Loop_K2_STAT_proc' pipeline 'K2_STAT_VITIS_LOOP_336_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sdiv_50ns_35s_50_54_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_20_1_1': 32 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_K2_STAT_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3.64 seconds. CPU system time: 0.34 seconds. Elapsed time: 4.51 seconds; current allocated memory: 1.046 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_K3_K4_VEC_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Loop_K3_K4_VEC_proc' pipeline 'K3_K4_VEC_VITIS_LOOP_360_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_30s_26ns_55_4_1': 32 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_34s_30s_64_4_1': 32 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_K3_K4_VEC_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.27 seconds. CPU system time: 0.13 seconds. Elapsed time: 1.57 seconds; current allocated memory: 1.074 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/in_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/out_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top_kernel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'in_r', 'out_r' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel'.
+INFO: [RTMG 210-285] Implementing FIFO 'out_r_c_U(top_kernel_fifo_w64_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 's0_copy_stream_U(top_kernel_fifo_w1024_d3_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 's1_stream_U(top_kernel_fifo_w1024_d3_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'inv_stat_stream_U(top_kernel_fifo_w28_d16_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Loop_K3_K4_VEC_proc_U0_U(top_kernel_start_for_Loop_K3_K4_VEC_proc_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Loop_K2_STAT_proc_U0_U(top_kernel_start_for_Loop_K2_STAT_proc_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.56 seconds. CPU system time: 0.2 seconds. Elapsed time: 2.18 seconds; current allocated memory: 1.128 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.94 seconds. CPU system time: 0.15 seconds. Elapsed time: 1.63 seconds; current allocated memory: 1.133 GB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2.18 seconds. CPU system time: 0.24 seconds. Elapsed time: 2.62 seconds; current allocated memory: 1.181 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for top_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for top_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:01:06; Allocated memory: 418.297 MB.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg
+WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/tools/software/xilinx/2025.1.1/Vitis/lnx64/tools/vcxx/libexec/clang++"
+   Compiling host.cpp_pre.cpp.tb.cpp
+   Compiling apatb_top_kernel.cpp
+   Compiling top.cpp_pre.cpp.tb.cpp
+   Compiling apatb_top_kernel_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+TEST PASSED
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 2048
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+
+****** Vivado v2025.1.1 (64-bit)
+  **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
+  **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+  **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+  **** Start of session at: Tue Mar 10 22:56:43 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_vivado_gen_ip.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/software/xilinx/2025.1.1/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_kernel_ddiv_64ns_64ns_64_22_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_kernel_ddiv_64ns_64ns_64_22_no_dsp_1_ip'...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 10 22:56:57 2026...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Vivado Simulator v2025.1.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/software/xilinx/2025.1.1/Vivado/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_top_kernel_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj top_kernel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_20 -L floating_point_v7_0_25 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./svtb -i ./file_agent -i ./top_kernel_subsystem -s top_kernel 
+Multi-threading is on. Using 110 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_top_kernel_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_mul_34s_30s_64_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_34s_30s_64_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_entry_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_entry_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_Block_entry_prev_last_fb_prev_prev_last_fb_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_Block_entry_prev_last_fb_prev_prev_last_fb_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_Loop_K2_STAT_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_Loop_K2_STAT_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_Loop_K3_K4_VEC_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_Loop_K3_K4_VEC_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_flow_control_loop_delay_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_flow_control_loop_delay_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_mul_30s_25ns_54_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_30s_25ns_54_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_sparsemux_9_3_20_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_9_3_20_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_mul_34s_30s_64_3_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_34s_30s_64_3_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_sdiv_50ns_34s_50_54_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_50ns_34s_50_54_1_divider
+INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_50ns_34s_50_54_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_mul_30s_26ns_55_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_30s_26ns_55_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w64_d7_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w64_d7_S
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w64_d7_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w512_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w512_d2_S
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w512_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w512_d1024_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w512_d1024_A
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w512_d1024_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w28_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w28_d2_S
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w28_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_store_dual_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_store_dual_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_store_dual_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_super_kernel_32_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_super_kernel_32_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_super_kernel_32_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_k2_stats_dual_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k2_stats_dual_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k2_stats_dual_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_k3_dual_norm_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k3_dual_norm_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k3_dual_norm_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_k4_dual_post_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k4_dual_post_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k4_dual_post_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_gmem0_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem0_m_axi
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem0_m_axi_load
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem0_m_axi_read
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem0_m_axi_burst_converter
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem0_m_axi_burst_interleave
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem0_m_axi_burst_sequential
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem0_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem0_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem0_m_axi_srl
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem0_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_gmem1_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem1_m_axi
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem1_m_axi_store
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem1_m_axi_write
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem1_m_axi_burst_converter
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem1_m_axi_burst_interleave
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem1_m_axi_burst_sequential
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem1_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem1_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem1_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem1_m_axi_srl
+INFO: [VRFC 10-311] analyzing module top_kernel_gmem1_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_sparsemux_7_2_20_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_7_2_20_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_add_31ns_31ns_31_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_add_31ns_31ns_31_2_1
+INFO: [VRFC 10-311] analyzing module top_kernel_add_31ns_31ns_31_2_1_comb_adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_add_32ns_32ns_32_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_add_32ns_32ns_32_2_1
+INFO: [VRFC 10-311] analyzing module top_kernel_add_32ns_32ns_32_2_1_comb_adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_add_33ns_33ns_33_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_add_33ns_33ns_33_2_1
+INFO: [VRFC 10-311] analyzing module top_kernel_add_33ns_33ns_33_2_1_comb_adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_add_34ns_34ns_34_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_add_34ns_34ns_34_2_1
+INFO: [VRFC 10-311] analyzing module top_kernel_add_34ns_34ns_34_2_1_comb_adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_mul_34s_30s_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_34s_30s_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_ctlz_28_28_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_ctlz_28_28_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_bitselect_1ns_54ns_6ns_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_bitselect_1ns_54ns_6ns_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_sparsemux_7_2_28_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_7_2_28_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_sparsemux_7_2_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_7_2_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_ddiv_64ns_64ns_64_22_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_ddiv_64ns_64ns_64_22_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w64_d8_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w64_d8_S
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w64_d8_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w320_d64_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w320_d64_A
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w320_d64_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w320_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w320_d2_S
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w320_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w28_d4_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w28_d4_S
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w28_d4_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_k0_gain_stage_1_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k0_gain_stage_1_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k0_gain_stage_1_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_k0_gain_stage_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k0_gain_stage_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k0_gain_stage_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_k1_iir_stage_0_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k1_iir_stage_0_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k1_iir_stage_0_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_k1_iir_stage_1_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k1_iir_stage_1_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k1_iir_stage_1_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_stream_splitter_2_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_stream_splitter_2_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_stream_splitter_2_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_stream_splitter_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_stream_splitter_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_stream_splitter_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_k2_adder_tree_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k2_adder_tree_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_k2_adder_tree_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_Block_entry_s_stats_rd_proc_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_Block_entry_s_stats_rd_proc_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_Block_entry_s_stats_rd_proc_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_mul_30s_25ns_54_3_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_30s_25ns_54_3_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_add_30ns_30s_30_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_add_30ns_30s_30_2_1
+INFO: [VRFC 10-311] analyzing module top_kernel_add_30ns_30s_30_2_1_comb_adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w28_d8_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w28_d8_S
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w28_d8_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w64_d4_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w64_d4_S
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w64_d4_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w20_d256_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w20_d256_A
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w20_d256_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_Loop_K3_K4_OUT_proc_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_Loop_K3_K4_OUT_proc_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_Loop_K3_K4_OUT_proc_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_Loop_K2_STAT_proc_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_Loop_K2_STAT_proc_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_Loop_K2_STAT_proc_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_mul_30s_25ns_54_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_30s_25ns_54_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_add_54s_54s_54_3_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_add_54s_54s_54_3_1
+INFO: [VRFC 10-311] analyzing module top_kernel_add_54s_54s_54_3_1_comb_adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_add_54ns_54s_54_3_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_add_54ns_54s_54_3_1
+INFO: [VRFC 10-311] analyzing module top_kernel_add_54ns_54s_54_3_1_comb_adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_add_31s_31ns_31_3_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_add_31s_31ns_31_3_1
+INFO: [VRFC 10-311] analyzing module top_kernel_add_31s_31ns_31_3_1_comb_adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_sdiv_50ns_35s_50_54_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_50ns_35s_50_54_1_divider
+INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_50ns_35s_50_54_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_mul_30s_26ns_55_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_30s_26ns_55_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w1024_d2048_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w1024_d2048_A
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w1024_d2048_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w28_d256_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w28_d256_A
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w28_d256_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w1024_d3_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w1024_d3_A
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w1024_d3_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_start_for_Loop_K3_K4_VEC_proc_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_Loop_K3_K4_VEC_proc_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_Loop_K3_K4_VEC_proc_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_fifo_w28_d16_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w28_d16_S
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w28_d16_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/axivip/axi_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/axivip/axi_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/top_kernel_subsystem/top_kernel_subsystem_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/svtb/misc_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/svtb/sv_module_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sv_module_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/ip/xil_defaultlib/top_kernel_ddiv_64ns_64ns_64_22_no_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_kernel_ddiv_64ns_64ns_64_22_no_dsp_1_ip'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4468] File : /proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv, Line : 25994, RANDC variable size more than 8 bits. This will be treated as a RAND variable instead.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_sv_module_top_sv
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.axi_pkg
+Compiling package xil_defaultlib.top_kernel_subsystem_pkg
+Compiling package xil_defaultlib.file_agent_pkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.top_kernel_control_s_axi
+Compiling module xil_defaultlib.top_kernel_gmem0_m_axi_srl(DATA_...
+Compiling module xil_defaultlib.top_kernel_gmem0_m_axi_fifo(DATA...
+Compiling module xil_defaultlib.top_kernel_gmem0_m_axi_mem(MEM_S...
+Compiling module xil_defaultlib.top_kernel_gmem0_m_axi_fifo(MEM_...
+Compiling module xil_defaultlib.top_kernel_gmem0_m_axi_load(NUM_...
+Compiling module xil_defaultlib.top_kernel_gmem0_m_axi_reg_slice...
+Compiling module xil_defaultlib.top_kernel_gmem0_m_axi_burst_seq...
+Compiling module xil_defaultlib.top_kernel_gmem0_m_axi_reg_slice...
+Compiling module xil_defaultlib.top_kernel_gmem0_m_axi_srl(DATA_...
+Compiling module xil_defaultlib.top_kernel_gmem0_m_axi_fifo(DATA...
+Compiling module xil_defaultlib.top_kernel_gmem0_m_axi_read(C_US...
+Compiling module xil_defaultlib.top_kernel_gmem0_m_axi(C_M_AXI_A...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_srl(DATA_...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_fifo(DATA...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_srl(DATA_...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_fifo(DATA...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_mem(MEM_S...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_fifo(MEM_...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_srl(DATA_...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_fifo(DATA...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_srl(DATA_...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_fifo(DATA...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_store(CON...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_reg_slice...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_burst_seq...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_reg_slice...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_srl(DATA_...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_fifo(DATA...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_reg_slice...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_throttle(...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_reg_slice...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi_write(CON...
+Compiling module xil_defaultlib.top_kernel_gmem1_m_axi(C_M_AXI_A...
+Compiling module xil_defaultlib.top_kernel_entry_proc
+Compiling module xil_defaultlib.top_kernel_mul_30s_25ns_54_4_1(N...
+Compiling module xil_defaultlib.top_kernel_add_54s_54s_54_3_1_co...
+Compiling module xil_defaultlib.top_kernel_add_54s_54s_54_3_1
+Compiling module xil_defaultlib.top_kernel_add_54ns_54s_54_3_1_c...
+Compiling module xil_defaultlib.top_kernel_add_54ns_54s_54_3_1
+Compiling module xil_defaultlib.top_kernel_add_31s_31ns_31_3_1_c...
+Compiling module xil_defaultlib.top_kernel_add_31s_31ns_31_3_1_c...
+Compiling module xil_defaultlib.top_kernel_add_31s_31ns_31_3_1
+Compiling module xil_defaultlib.top_kernel_sparsemux_7_2_20_1_1(...
+Compiling module xil_defaultlib.top_kernel_Block_entry_prev_last...
+Compiling module xil_defaultlib.top_kernel_sdiv_50ns_35s_50_54_1...
+Compiling module xil_defaultlib.top_kernel_sdiv_50ns_35s_50_54_1...
+Compiling module xil_defaultlib.top_kernel_flow_control_loop_del...
+Compiling module xil_defaultlib.top_kernel_Loop_K2_STAT_proc
+Compiling module xil_defaultlib.top_kernel_mul_30s_26ns_55_4_1(N...
+Compiling module xil_defaultlib.top_kernel_mul_34s_30s_64_4_1(NU...
+Compiling module xil_defaultlib.top_kernel_flow_control_loop_pip...
+Compiling module xil_defaultlib.top_kernel_Loop_K3_K4_VEC_proc
+Compiling module xil_defaultlib.top_kernel_fifo_w64_d4_S_ShiftRe...
+Compiling module xil_defaultlib.top_kernel_fifo_w64_d4_S_default
+Compiling module xil_defaultlib.top_kernel_fifo_w1024_d3_A_ram(A...
+Compiling module xil_defaultlib.top_kernel_fifo_w1024_d3_A_defau...
+Compiling module xil_defaultlib.top_kernel_fifo_w28_d16_S_ShiftR...
+Compiling module xil_defaultlib.top_kernel_fifo_w28_d16_S_defaul...
+Compiling module xil_defaultlib.top_kernel_start_for_Loop_K3_K4_...
+Compiling module xil_defaultlib.top_kernel_start_for_Loop_K3_K4_...
+Compiling module xil_defaultlib.top_kernel_start_for_Loop_K2_STA...
+Compiling module xil_defaultlib.top_kernel_start_for_Loop_K2_STA...
+Compiling module xil_defaultlib.top_kernel
+Compiling module xil_defaultlib.misc_interface_default
+Compiling module xil_defaultlib.axi_if(ADDR_WIDTH=64,STRB_WIDTH=...
+Compiling module xil_defaultlib.axi_if(ADDR_WIDTH=6,STRB_WIDTH=4...
+Compiling module xil_defaultlib.sv_module_top
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(OUT_CH...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit_defaul...
+Compiling module xil_defaultlib.AESL_deadlock_detector_2
+Compiling module xil_defaultlib.df_fifo_intf_default
+Compiling module xil_defaultlib.df_process_intf_default
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.pp_loop_intf(FSM_WIDTH=3)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_top_kernel_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_kernel
+
+****** xsim v2025.1.1 (64-bit)
+  **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
+  **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+  **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+  **** Start of session at: Tue Mar 10 22:58:03 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/top_kernel/xsim_script.tcl
+# xsim {top_kernel} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=top_kernel_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {top_kernel.tcl}
+Time resolution is 1 ps
+source top_kernel.tcl
+## run all
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------------------------------
+Name                         Type                              Size  Value            
+--------------------------------------------------------------------------------------
+uvm_test_top                 top_kernel_test_lib               -     @369             
+  top_env                    top_kernel_env                    -     @380             
+    axi_lite_control         uvm_env                           -     @465             
+      item_rtr_port          uvm_analysis_port                 -     @484             
+      item_wtr_port          uvm_analysis_port                 -     @474             
+      master                 uvm_agent                         -     @897             
+        ardrv                uvm_driver #(REQ,RSP)             -     @1572            
+          item_read_imp      uvm_analysis_port                 -     @1601            
+          rsp_port           uvm_analysis_port                 -     @1591            
+          seq_item_port      uvm_seq_item_pull_port            -     @1581            
+          m_num_sent         integral                          32    'h0              
+        arsqr                axi_sequencer                     -     @1611            
+          rsp_export         uvm_analysis_export               -     @1620            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1738            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        awdrv                uvm_driver #(REQ,RSP)             -     @1044            
+          item_read_imp      uvm_analysis_port                 -     @1073            
+          rsp_port           uvm_analysis_port                 -     @1063            
+          seq_item_port      uvm_seq_item_pull_port            -     @1053            
+          m_num_sent         integral                          32    'h0              
+        awsqr                axi_sequencer                     -     @1083            
+          rsp_export         uvm_analysis_export               -     @1092            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1210            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        bdrv                 uvm_driver #(REQ,RSP)             -     @1396            
+          item_read_imp      uvm_analysis_port                 -     @1425            
+          rsp_port           uvm_analysis_port                 -     @1415            
+          seq_item_port      uvm_seq_item_pull_port            -     @1405            
+          m_num_sent         integral                          32    'h0              
+        bsqr                 axi_sequencer                     -     @1435            
+          rsp_export         uvm_analysis_export               -     @1444            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1562            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        rdrv                 uvm_driver #(REQ,RSP)             -     @1748            
+          item_read_imp      uvm_analysis_port                 -     @1777            
+          rsp_port           uvm_analysis_port                 -     @1767            
+          seq_item_port      uvm_seq_item_pull_port            -     @1757            
+          m_num_sent         integral                          32    'h0              
+        rsqr                 axi_sequencer                     -     @1787            
+          rsp_export         uvm_analysis_export               -     @1796            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1914            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        wdrv                 uvm_driver #(REQ,RSP)             -     @1220            
+          item_read_imp      uvm_analysis_port                 -     @1249            
+          rsp_port           uvm_analysis_port                 -     @1239            
+          seq_item_port      uvm_seq_item_pull_port            -     @1229            
+          m_num_sent         integral                          32    'h0              
+        wsqr                 axi_sequencer                     -     @1259            
+          rsp_export         uvm_analysis_export               -     @1268            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1386            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+      monitor                uvm_monitor                       -     @719             
+        item_ar2r_port       uvm_analysis_port                 -     @788             
+        item_ar_port         uvm_analysis_port                 -     @758             
+        item_aw2b_port       uvm_analysis_port                 -     @778             
+        item_aw_port         uvm_analysis_port                 -     @728             
+        item_b_port          uvm_analysis_port                 -     @748             
+        item_r_port          uvm_analysis_port                 -     @768             
+        item_w_port          uvm_analysis_port                 -     @738             
+        checks_enable        integral                          1     'h1              
+        coverage_enable      integral                          1     'h1              
+      state                  axi_state                         -     @798             
+        ar2r_imp             uvm_analysis_imp_ar2r             -     @867             
+        ar_imp               uvm_analysis_imp_ar               -     @837             
+        aw2b_imp             uvm_analysis_imp_aw2b             -     @857             
+        aw_imp               uvm_analysis_imp_aw               -     @807             
+        b_imp                uvm_analysis_imp_b                -     @827             
+        item_rtr_port        uvm_analysis_port                 -     @887             
+        item_wtr_port        uvm_analysis_port                 -     @877             
+        r_imp                uvm_analysis_imp_r                -     @847             
+        w_imp                uvm_analysis_imp_w                -     @817             
+        avg_rate             integral                          32    'h0              
+        exp_rate             integral                          32    'h0              
+        win_size             integral                          32    'h0              
+        bqnum_for_slaseq     integral                          32    'h0              
+        rq_from_model_num    integral                          32    'h0              
+      vsqr                   axi_virtual_sequencer             -     @906             
+        rsp_export           uvm_analysis_export               -     @915             
+        seq_item_export      uvm_seq_item_pull_imp             -     @1033            
+        arbitration_queue    array                             0     -                
+        lock_queue           array                             0     -                
+        num_last_reqs        integral                          32    'd1              
+        num_last_rsps        integral                          32    'd1              
+      cfg                    axi_cfg                           -     @397             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    MASTER           
+        write_latency_mode   latency_mode_enum                 32    CHANNEL_FIRST    
+        read_latency_mode    latency_mode_enum                 32    CHANNEL_FIRST    
+        clatency             axi_latency                       -     @463             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+    axi_master_gmem0         uvm_env                           -     @403             
+      item_rtr_port          uvm_analysis_port                 -     @422             
+      item_wtr_port          uvm_analysis_port                 -     @412             
+      monitor                uvm_monitor                       -     @1997            
+        item_ar2r_port       uvm_analysis_port                 -     @2066            
+        item_ar_port         uvm_analysis_port                 -     @2036            
+        item_aw2b_port       uvm_analysis_port                 -     @2056            
+        item_aw_port         uvm_analysis_port                 -     @2006            
+        item_b_port          uvm_analysis_port                 -     @2026            
+        item_r_port          uvm_analysis_port                 -     @2046            
+        item_w_port          uvm_analysis_port                 -     @2016            
+        checks_enable        integral                          1     'h1              
+        coverage_enable      integral                          1     'h1              
+      slave                  uvm_agent                         -     @2175            
+        ardrv                uvm_driver #(REQ,RSP)             -     @2852            
+          item_read_imp      uvm_analysis_port                 -     @2881            
+          rsp_port           uvm_analysis_port                 -     @2871            
+          seq_item_port      uvm_seq_item_pull_port            -     @2861            
+          m_num_sent         integral                          32    'h0              
+        arsqr                axi_sequencer                     -     @2891            
+          rsp_export         uvm_analysis_export               -     @2900            
+          seq_item_export    uvm_seq_item_pull_imp             -     @3018            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        awdrv                uvm_driver #(REQ,RSP)             -     @2324            
+          item_read_imp      uvm_analysis_port                 -     @2353            
+          rsp_port           uvm_analysis_port                 -     @2343            
+          seq_item_port      uvm_seq_item_pull_port            -     @2333            
+          m_num_sent         integral                          32    'h0              
+        awsqr                axi_sequencer                     -     @2363            
+          rsp_export         uvm_analysis_export               -     @2372            
+          seq_item_export    uvm_seq_item_pull_imp             -     @2490            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        bdrv                 uvm_driver #(REQ,RSP)             -     @2676            
+          item_read_imp      uvm_analysis_port                 -     @2705            
+          rsp_port           uvm_analysis_port                 -     @2695            
+          seq_item_port      uvm_seq_item_pull_port            -     @2685            
+          m_num_sent         integral                          32    'h0              
+        bsqr                 axi_sequencer                     -     @2715            
+          rsp_export         uvm_analysis_export               -     @2724            
+          seq_item_export    uvm_seq_item_pull_imp             -     @2842            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        rdrv                 uvm_driver #(REQ,RSP)             -     @3028            
+          item_read_imp      uvm_analysis_port                 -     @3057            
+          rsp_port           uvm_analysis_port                 -     @3047            
+          seq_item_port      uvm_seq_item_pull_port            -     @3037            
+          m_num_sent         integral                          32    'h0              
+        rsqr                 axi_sequencer                     -     @3067            
+          rsp_export         uvm_analysis_export               -     @3076            
+          seq_item_export    uvm_seq_item_pull_imp             -     @3194            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        wdrv                 uvm_driver #(REQ,RSP)             -     @2500            
+          item_read_imp      uvm_analysis_port                 -     @2529            
+          rsp_port           uvm_analysis_port                 -     @2519            
+          seq_item_port      uvm_seq_item_pull_port            -     @2509            
+          m_num_sent         integral                          32    'h0              
+        wsqr                 axi_sequencer                     -     @2539            
+          rsp_export         uvm_analysis_export               -     @2548            
+          seq_item_export    uvm_seq_item_pull_imp             -     @2666            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+      state                  axi_state                         -     @2076            
+        ar2r_imp             uvm_analysis_imp_ar2r             -     @2145            
+        ar_imp               uvm_analysis_imp_ar               -     @2115            
+        aw2b_imp             uvm_analysis_imp_aw2b             -     @2135            
+        aw_imp               uvm_analysis_imp_aw               -     @2085            
+        b_imp                uvm_analysis_imp_b                -     @2105            
+        item_rtr_port        uvm_analysis_port                 -     @2165            
+        item_wtr_port        uvm_analysis_port                 -     @2155            
+        r_imp                uvm_analysis_imp_r                -     @2125            
+        w_imp                uvm_analysis_imp_w                -     @2095            
+        avg_rate             integral                          32    'h0              
+        exp_rate             integral                          32    'h0              
+        win_size             integral                          32    'h0              
+        bqnum_for_slaseq     integral                          32    'h0              
+        rq_from_model_num    integral                          32    'h0              
+      vsqr                   axi_virtual_sequencer             -     @2184            
+        rsp_export           uvm_analysis_export               -     @2193            
+        seq_item_export      uvm_seq_item_pull_imp             -     @2311            
+        arbitration_queue    array                             0     -                
+        lock_queue           array                             0     -                
+        num_last_reqs        integral                          32    'd1              
+        num_last_rsps        integral                          32    'd1              
+      cfg                    axi_cfg                           -     @395             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    SLAVE            
+        write_latency_mode   latency_mode_enum                 32    TRANSACTION_FIRST
+        read_latency_mode    latency_mode_enum                 32    TRANSACTION_FIRST
+        clatency             axi_latency                       -     @398             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+    axi_master_gmem1         uvm_env                           -     @434             
+      item_rtr_port          uvm_analysis_port                 -     @453             
+      item_wtr_port          uvm_analysis_port                 -     @443             
+      monitor                uvm_monitor                       -     @3275            
+        item_ar2r_port       uvm_analysis_port                 -     @3344            
+        item_ar_port         uvm_analysis_port                 -     @3314            
+        item_aw2b_port       uvm_analysis_port                 -     @3334            
+        item_aw_port         uvm_analysis_port                 -     @3284            
+        item_b_port          uvm_analysis_port                 -     @3304            
+        item_r_port          uvm_analysis_port                 -     @3324            
+        item_w_port          uvm_analysis_port                 -     @3294            
+        checks_enable        integral                          1     'h1              
+        coverage_enable      integral                          1     'h1              
+      slave                  uvm_agent                         -     @3453            
+        ardrv                uvm_driver #(REQ,RSP)             -     @4130            
+          item_read_imp      uvm_analysis_port                 -     @4159            
+          rsp_port           uvm_analysis_port                 -     @4149            
+          seq_item_port      uvm_seq_item_pull_port            -     @4139            
+          m_num_sent         integral                          32    'h0              
+        arsqr                axi_sequencer                     -     @4169            
+          rsp_export         uvm_analysis_export               -     @4178            
+          seq_item_export    uvm_seq_item_pull_imp             -     @4296            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        awdrv                uvm_driver #(REQ,RSP)             -     @3602            
+          item_read_imp      uvm_analysis_port                 -     @3631            
+          rsp_port           uvm_analysis_port                 -     @3621            
+          seq_item_port      uvm_seq_item_pull_port            -     @3611            
+          m_num_sent         integral                          32    'h0              
+        awsqr                axi_sequencer                     -     @3641            
+          rsp_export         uvm_analysis_export               -     @3650            
+          seq_item_export    uvm_seq_item_pull_imp             -     @3768            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        bdrv                 uvm_driver #(REQ,RSP)             -     @3954            
+          item_read_imp      uvm_analysis_port                 -     @3983            
+          rsp_port           uvm_analysis_port                 -     @3973            
+          seq_item_port      uvm_seq_item_pull_port            -     @3963            
+          m_num_sent         integral                          32    'h0              
+        bsqr                 axi_sequencer                     -     @3993            
+          rsp_export         uvm_analysis_export               -     @4002            
+          seq_item_export    uvm_seq_item_pull_imp             -     @4120            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        rdrv                 uvm_driver #(REQ,RSP)             -     @4306            
+          item_read_imp      uvm_analysis_port                 -     @4335            
+          rsp_port           uvm_analysis_port                 -     @4325            
+          seq_item_port      uvm_seq_item_pull_port            -     @4315            
+          m_num_sent         integral                          32    'h0              
+        rsqr                 axi_sequencer                     -     @4345            
+          rsp_export         uvm_analysis_export               -     @4354            
+          seq_item_export    uvm_seq_item_pull_imp             -     @4472            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        wdrv                 uvm_driver #(REQ,RSP)             -     @3778            
+          item_read_imp      uvm_analysis_port                 -     @3807            
+          rsp_port           uvm_analysis_port                 -     @3797            
+          seq_item_port      uvm_seq_item_pull_port            -     @3787            
+          m_num_sent         integral                          32    'h0              
+        wsqr                 axi_sequencer                     -     @3817            
+          rsp_export         uvm_analysis_export               -     @3826            
+          seq_item_export    uvm_seq_item_pull_imp             -     @3944            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+      state                  axi_state                         -     @3354            
+        ar2r_imp             uvm_analysis_imp_ar2r             -     @3423            
+        ar_imp               uvm_analysis_imp_ar               -     @3393            
+        aw2b_imp             uvm_analysis_imp_aw2b             -     @3413            
+        aw_imp               uvm_analysis_imp_aw               -     @3363            
+        b_imp                uvm_analysis_imp_b                -     @3383            
+        item_rtr_port        uvm_analysis_port                 -     @3443            
+        item_wtr_port        uvm_analysis_port                 -     @3433            
+        r_imp                uvm_analysis_imp_r                -     @3403            
+        w_imp                uvm_analysis_imp_w                -     @3373            
+        avg_rate             integral                          32    'h0              
+        exp_rate             integral                          32    'h0              
+        win_size             integral                          32    'h0              
+        bqnum_for_slaseq     integral                          32    'h0              
+        rq_from_model_num    integral                          32    'h0              
+      vsqr                   axi_virtual_sequencer             -     @3462            
+        rsp_export           uvm_analysis_export               -     @3471            
+        seq_item_export      uvm_seq_item_pull_imp             -     @3589            
+        arbitration_queue    array                             0     -                
+        lock_queue           array                             0     -                
+        num_last_reqs        integral                          32    'd1              
+        num_last_rsps        integral                          32    'd1              
+      cfg                    axi_cfg                           -     @396             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    SLAVE            
+        write_latency_mode   latency_mode_enum                 32    TRANSACTION_FIRST
+        read_latency_mode    latency_mode_enum                 32    TRANSACTION_FIRST
+        clatency             axi_latency                       -     @432             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+    refm                     top_kernel_reference_model        -     @494             
+      trans_num_idx          integral                          32    'h0              
+    subsys_mon               top_kernel_subsystem_monitor      -     @507             
+      control_rtr_imp        uvm_analysis_imp_axi_rtr_control  -     @566             
+      control_wtr_imp        uvm_analysis_imp_axi_wtr_control  -     @556             
+      gmem0_rtr_imp          uvm_analysis_imp_axi_rtr_gmem0    -     @526             
+      gmem0_wtr_imp          uvm_analysis_imp_axi_wtr_gmem0    -     @516             
+      gmem1_rtr_imp          uvm_analysis_imp_axi_rtr_gmem1    -     @546             
+      gmem1_wtr_imp          uvm_analysis_imp_axi_wtr_gmem1    -     @536             
+      scbd                   top_kernel_scoreboard             -     @4554            
+        refm                 top_kernel_reference_model        -     @494             
+          trans_num_idx      integral                          32    'h0              
+    top_kernel_virtual_sqr   top_kernel_virtual_sequencer      -     @576             
+      rsp_export             uvm_analysis_export               -     @585             
+      seq_item_export        uvm_seq_item_pull_imp             -     @703             
+      arbitration_queue      array                             0     -                
+      lock_queue             array                             0     -                
+      num_last_reqs          integral                          32    'd1              
+      num_last_rsps          integral                          32    'd1              
+    refm                     top_kernel_reference_model        -     @494             
+    top_kernel_virtual_sqr   top_kernel_virtual_sequencer      -     @576             
+    top_kernel_cfg           top_kernel_config                 -     @394             
+      gmem0_cfg              axi_cfg                           -     @395             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    SLAVE            
+        write_latency_mode   latency_mode_enum                 32    TRANSACTION_FIRST
+        read_latency_mode    latency_mode_enum                 32    TRANSACTION_FIRST
+        clatency             axi_latency                       -     @398             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+      gmem1_cfg              axi_cfg                           -     @396             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    SLAVE            
+        write_latency_mode   latency_mode_enum                 32    TRANSACTION_FIRST
+        read_latency_mode    latency_mode_enum                 32    TRANSACTION_FIRST
+        clatency             axi_latency                       -     @432             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+      control_cfg            axi_cfg                           -     @397             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    MASTER           
+        write_latency_mode   latency_mode_enum                 32    CHANNEL_FIRST    
+        read_latency_mode    latency_mode_enum                 32    CHANNEL_FIRST    
+        clatency             axi_latency                       -     @463             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+      check_ena              integral                          32    'h0              
+      cover_ena              integral                          32    'h0              
+--------------------------------------------------------------------------------------
+
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+
+//////////////////////////////////////////////////////////////////////////////
+// ERROR!!! DEADLOCK DETECTED at 10630000 ns! SIMULATION WILL BE STOPPED! //
+//////////////////////////////////////////////////////////////////////////////
+/////////////////////////
+// Dependence cycle 1:
+// (1): Process: top_kernel.Block_entry_prev_last_fb_prev_prev_last_fb_proc_U0
+//      Blocked by full output FIFO 'top_kernel.s1_stream_U' read by process 'top_kernel.Loop_K3_K4_VEC_proc_U0'
+// (2): Process: top_kernel.Loop_K3_K4_VEC_proc_U0
+//      Blocked by empty input FIFO 'top_kernel.inv_stat_stream_U' written by process 'top_kernel.Loop_K2_STAT_proc_U0'
+// (3): Process: top_kernel.Loop_K2_STAT_proc_U0
+//      Blocked by empty input FIFO 'top_kernel.s0_copy_stream_U' written by process 'top_kernel.Block_entry_prev_last_fb_prev_prev_last_fb_proc_U0'
+////////////////////////////////////////////////////////////////////////
+// Totally 1 cycles detected!
+////////////////////////////////////////////////////////////////////////
+$finish called at time : 10690 ns : File "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/sim/verilog/AESL_deadlock_report_unit.v" Line 514
+## quit
+INFO: xsimkernel Simulation Memory Usage: 526808 KB (Peak: 569744 KB), Simulation CPU Usage: 4380 ms
+INFO: [Common 17-206] Exiting xsim at Tue Mar 10 22:58:11 2026...
+INFO: [COSIM 212-316] Starting C post checking ...
+ERROR: Bad TV file
+ERROR: Bad TV file
+ERROR: [COSIM 212-361] C TB post check failed, nonzero return value '1'.
+ERROR: [HLS 200-742] Deadlock detected in co-simulation, please check co-simulation log or dataflow viewer for details
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:02:20; Allocated memory: 24.051 MB.
+Deadlock detected in co-simulation
+    while executing
+"source /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/script.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $tclfile] "
+
+INFO: [HLS 200-112] Total CPU user time: 417.94 seconds. Total CPU system time: 45.32 seconds. Total elapsed time: 216.4 seconds; peak allocated memory: 1.204 GB.
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

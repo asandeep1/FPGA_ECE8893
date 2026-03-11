@@ -82,15 +82,15 @@ set NewPortList {[
 
 set ArgLastReadFirstWriteLatency {
 	k2_stats_dual {
-		s_st {Type O LastRead -1 FirstWrite 2}
+		s_st {Type O LastRead -1 FirstWrite 9}
 		sa_stats {Type I LastRead 0 FirstWrite -1}
 		sb_stats {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "2051", "Max" : "2051"}
-	, {"Name" : "Interval", "Min" : "2051", "Max" : "2051"}
+	{"Name" : "Latency", "Min" : "2058", "Max" : "2058"}
+	, {"Name" : "Interval", "Min" : "2058", "Max" : "2058"}
 ]}
 
 set PipelineEnableSignalInfo {[

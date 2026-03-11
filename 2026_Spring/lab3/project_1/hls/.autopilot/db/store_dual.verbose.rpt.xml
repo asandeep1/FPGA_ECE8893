@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'store_dual'" level="0">
-<item name = "Date">Mon Mar  9 02:48:10 2026
+<item name = "Date">Tue Mar 10 23:28:57 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">3.00 ns, 2.190 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2057, 2057, 20.570 us, 20.570 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="">2057, 2057, 6.171 us, 6.171 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Detail">
@@ -84,7 +84,7 @@
 <column name="ap_block_state9_pp0_stage0_iter8_grp1">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_346">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_709">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln475_fu_214_p2">icmp, 0, 0, 18, 11, 2</column>
+<column name="icmp_ln43_fu_214_p2">icmp, 0, 0, 18, 11, 2</column>
 <column name="ap_block_pp0_stage0_01001_grp1">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage0_11001_grp0">or, 0, 0, 2, 1, 1</column>
@@ -129,41 +129,41 @@
 <column name="first_iter_0_reg_188">1, 0, 1, 0</column>
 <column name="first_iter_0_reg_188_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="i1_fu_142">11, 0, 11, 0</column>
-<column name="icmp_ln475_reg_684">1, 0, 1, 0</column>
-<column name="tmp_767_i3_reg_708">20, 0, 20, 0</column>
-<column name="tmp_768_i4_reg_713">20, 0, 20, 0</column>
-<column name="tmp_769_i5_reg_718">20, 0, 20, 0</column>
-<column name="tmp_770_i6_reg_723">20, 0, 20, 0</column>
-<column name="tmp_771_i7_reg_728">20, 0, 20, 0</column>
-<column name="tmp_772_i8_reg_733">20, 0, 20, 0</column>
-<column name="tmp_773_i9_reg_738">20, 0, 20, 0</column>
-<column name="tmp_774_i_reg_743">20, 0, 20, 0</column>
-<column name="tmp_775_i_reg_748">20, 0, 20, 0</column>
-<column name="tmp_776_i_reg_753">20, 0, 20, 0</column>
-<column name="tmp_777_i_reg_758">20, 0, 20, 0</column>
-<column name="tmp_778_i_reg_763">20, 0, 20, 0</column>
-<column name="tmp_779_i_reg_768">20, 0, 20, 0</column>
-<column name="tmp_780_i_reg_773">20, 0, 20, 0</column>
-<column name="tmp_781_i_reg_778">20, 0, 20, 0</column>
-<column name="tmp_782_i_reg_783">20, 0, 20, 0</column>
-<column name="tmp_783_i_reg_788">20, 0, 20, 0</column>
-<column name="tmp_784_i_reg_793">20, 0, 20, 0</column>
-<column name="tmp_785_i_reg_798">20, 0, 20, 0</column>
-<column name="tmp_786_i_reg_803">20, 0, 20, 0</column>
-<column name="tmp_787_i_reg_808">20, 0, 20, 0</column>
-<column name="tmp_788_i_reg_813">20, 0, 20, 0</column>
-<column name="tmp_789_i_reg_818">20, 0, 20, 0</column>
-<column name="tmp_790_i_reg_823">20, 0, 20, 0</column>
-<column name="tmp_791_i_reg_828">20, 0, 20, 0</column>
-<column name="tmp_792_i_reg_833">20, 0, 20, 0</column>
-<column name="tmp_793_i_reg_838">20, 0, 20, 0</column>
-<column name="tmp_794_i_reg_843">20, 0, 20, 0</column>
-<column name="tmp_795_i_reg_848">20, 0, 20, 0</column>
+<column name="icmp_ln43_reg_684">1, 0, 1, 0</column>
+<column name="tmp_799_i3_reg_708">20, 0, 20, 0</column>
+<column name="tmp_800_i4_reg_713">20, 0, 20, 0</column>
+<column name="tmp_801_i5_reg_718">20, 0, 20, 0</column>
+<column name="tmp_802_i6_reg_723">20, 0, 20, 0</column>
+<column name="tmp_803_i7_reg_728">20, 0, 20, 0</column>
+<column name="tmp_804_i8_reg_733">20, 0, 20, 0</column>
+<column name="tmp_805_i9_reg_738">20, 0, 20, 0</column>
+<column name="tmp_806_i_reg_743">20, 0, 20, 0</column>
+<column name="tmp_807_i_reg_748">20, 0, 20, 0</column>
+<column name="tmp_808_i_reg_753">20, 0, 20, 0</column>
+<column name="tmp_809_i_reg_758">20, 0, 20, 0</column>
+<column name="tmp_810_i_reg_763">20, 0, 20, 0</column>
+<column name="tmp_811_i_reg_768">20, 0, 20, 0</column>
+<column name="tmp_812_i_reg_773">20, 0, 20, 0</column>
+<column name="tmp_813_i_reg_778">20, 0, 20, 0</column>
+<column name="tmp_814_i_reg_783">20, 0, 20, 0</column>
+<column name="tmp_815_i_reg_788">20, 0, 20, 0</column>
+<column name="tmp_816_i_reg_793">20, 0, 20, 0</column>
+<column name="tmp_817_i_reg_798">20, 0, 20, 0</column>
+<column name="tmp_818_i_reg_803">20, 0, 20, 0</column>
+<column name="tmp_819_i_reg_808">20, 0, 20, 0</column>
+<column name="tmp_820_i_reg_813">20, 0, 20, 0</column>
+<column name="tmp_821_i_reg_818">20, 0, 20, 0</column>
+<column name="tmp_822_i_reg_823">20, 0, 20, 0</column>
+<column name="tmp_823_i_reg_828">20, 0, 20, 0</column>
+<column name="tmp_824_i_reg_833">20, 0, 20, 0</column>
+<column name="tmp_825_i_reg_838">20, 0, 20, 0</column>
+<column name="tmp_826_i_reg_843">20, 0, 20, 0</column>
+<column name="tmp_827_i_reg_848">20, 0, 20, 0</column>
 <column name="tmp_i2_reg_703">20, 0, 20, 0</column>
-<column name="trunc_ln477_reg_693">20, 0, 20, 0</column>
-<column name="trunc_ln478_reg_698">20, 0, 20, 0</column>
+<column name="trunc_ln45_reg_693">20, 0, 20, 0</column>
+<column name="trunc_ln46_reg_698">20, 0, 20, 0</column>
 <column name="trunc_ln_reg_688">57, 0, 57, 0</column>
-<column name="icmp_ln475_reg_684">64, 32, 1, 0</column>
+<column name="icmp_ln43_reg_684">64, 32, 1, 0</column>
 </table>
 </item>
 </section>

@@ -1,0 +1,50 @@
+  **** HLS Build v2025.1.1 6214317
+Sourcing Tcl script '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/script.tcl'
+INFO: [HLS 200-1510] Running: open_component project_1 
+INFO: [HLS 200-10] Creating and opening component '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2176] Writing Vitis IDE component file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/vitis-comp.json
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg
+INFO: [HLS 200-1510] Running: set_top top_kernel 
+INFO: [HLS 200-1510] Running: add_files top.cpp 
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb host.cpp 
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1510] Running: config_interface -m_axi_max_widen_bitwidth 1024 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 128 
+INFO: [HLS 200-1510] Running: config_unroll -tripcount_threshold 0 
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1510] Running: config_compile -pipeline_loops 0 
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1510] Running: create_clock -period 2.0 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls_config.cfg
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.68 seconds. CPU system time: 0.14 seconds. Elapsed time: 8.38 seconds; current allocated memory: 674.395 MB.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+ERROR: [HLS 207-3777] use of undeclared identifier 'inv_st'; did you mean 'in_st'? (top.cpp:675:30)
+INFO: [HLS 207-4436] 'in_st' declared here (top.cpp:670:87)
+ERROR: [HLS 207-5508] Invalid Directive: for current device, fdiv + medlat is invalid combination for bind_op (top.cpp:675:9)
+WARNING: [HLS 207-5570] unexpected pragma parameter 'register' (top.cpp:746:35)
+WARNING: [HLS 207-5570] unexpected pragma parameter 'register' (top.cpp:747:35)
+WARNING: [HLS 207-5570] unexpected pragma parameter 'register' (top.cpp:748:38)
+WARNING: [HLS 207-5570] unexpected pragma parameter 'register' (top.cpp:749:38)
+WARNING: [HLS 207-5570] unexpected pragma parameter 'register' (top.cpp:750:37)
+WARNING: [HLS 207-5570] unexpected pragma parameter 'register' (top.cpp:751:37)
+WARNING: [HLS 207-5570] unexpected pragma parameter 'register' (top.cpp:752:37)
+WARNING: [HLS 207-5570] unexpected pragma parameter 'register' (top.cpp:753:37)
+WARNING: [HLS 207-5570] unexpected pragma parameter 'register' (top.cpp:754:37)
+WARNING: [HLS 207-5570] unexpected pragma parameter 'register' (top.cpp:755:37)
+WARNING: [HLS 207-5570] unexpected pragma parameter 'register' (top.cpp:758:34)
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:10; Allocated memory: 17.578 MB.
+ 
+    while executing
+"source /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/script.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $tclfile] "
+
+INFO: [HLS 200-112] Total CPU user time: 6.36 seconds. Total CPU system time: 2.32 seconds. Total elapsed time: 20.17 seconds; peak allocated memory: 674.973 MB.
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

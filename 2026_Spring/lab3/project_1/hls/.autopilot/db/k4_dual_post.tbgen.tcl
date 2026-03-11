@@ -96,14 +96,14 @@ set ArgLastReadFirstWriteLatency {
 	k4_dual_post {
 		sa_norm {Type I LastRead 0 FirstWrite -1}
 		sb_norm {Type I LastRead 0 FirstWrite -1}
-		sa_post {Type O LastRead -1 FirstWrite 1}
-		sb_post {Type O LastRead -1 FirstWrite 1}}}
+		sa_post {Type O LastRead -1 FirstWrite 8}
+		sb_post {Type O LastRead -1 FirstWrite 8}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "2050", "Max" : "2050"}
-	, {"Name" : "Interval", "Min" : "2050", "Max" : "2050"}
+	{"Name" : "Latency", "Min" : "2057", "Max" : "2057"}
+	, {"Name" : "Interval", "Min" : "2057", "Max" : "2057"}
 ]}
 
 set PipelineEnableSignalInfo {[

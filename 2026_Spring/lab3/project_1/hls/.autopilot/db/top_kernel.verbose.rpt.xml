@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'top_kernel'" level="0">
-<item name = "Date">Mon Mar  9 02:48:11 2026
+<item name = "Date">Tue Mar 10 23:28:57 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">3.00 ns, 3.229 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2131, 2131, 21.310 us, 21.310 us, 2052, 2052, dataflow</column>
+<column name="">2162, 2162, 6.981 us, 6.981 us, 2060, 2060, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
@@ -32,12 +32,12 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="entry_proc_U0">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="load_dual_U0">load_dual, 2059, 2059, 20.590 us, 20.590 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="super_kernel_32_U0">super_kernel_32, 2051, 2051, 20.510 us, 20.510 us, 2051, 2051, no</column>
-<column name="k2_stats_dual_U0">k2_stats_dual, 2051, 2051, 20.510 us, 20.510 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="k3_dual_norm_U0">k3_dual_norm, 2106, 2106, 21.060 us, 21.060 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="k4_dual_post_U0">k4_dual_post, 2050, 2050, 20.500 us, 20.500 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="store_dual_U0">store_dual, 2057, 2057, 20.570 us, 20.570 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="load_dual_U0">load_dual, 2059, 2059, 6.177 us, 6.177 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="super_kernel_32_U0">super_kernel_32, 2059, 2059, 6.177 us, 6.177 us, 2059, 2059, no</column>
+<column name="k2_stats_dual_U0">k2_stats_dual, 2058, 2058, 6.174 us, 6.174 us, 2052, 2052, loop auto-rewind stp (delay=4 clock cycles(s))</column>
+<column name="k3_dual_norm_U0">k3_dual_norm, 2116, 2116, 6.833 us, 6.833 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="k4_dual_post_U0">k4_dual_post, 2057, 2057, 6.171 us, 6.171 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="store_dual_U0">store_dual, 2057, 2057, 6.171 us, 6.171 us, 2048, 2048, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -55,13 +55,13 @@
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 14, -</column>
-<column name="FIFO">58, -, 1312, 779, -</column>
-<column name="Instance">57, 128, 17314, 49004, 0</column>
+<column name="FIFO">116, -, 1412, 741, -</column>
+<column name="Instance">57, 256, 42183, 45757, 0</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 18, -</column>
 <column name="Register">-, -, 2, -, -</column>
 <specialColumn name="Available">432, 360, 141120, 70560, 0</specialColumn>
-<specialColumn name="Utilization (%)">26, 35, 13, 70, 0</specialColumn>
+<specialColumn name="Utilization (%)">40, 71, 30, 65, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -72,12 +72,12 @@
 <column name="entry_proc_U0">entry_proc, 0, 0, 3, 29, 0</column>
 <column name="gmem0_m_axi_U">gmem0_m_axi, 57, 0, 2652, 2720, 0</column>
 <column name="gmem1_m_axi_U">gmem1_m_axi, 0, 0, 2592, 2749, 0</column>
-<column name="k2_stats_dual_U0">k2_stats_dual, 0, 0, 176, 3287, 0</column>
-<column name="k3_dual_norm_U0">k3_dual_norm, 0, 128, 6832, 9991, 0</column>
-<column name="k4_dual_post_U0">k4_dual_post, 0, 0, 563, 8506, 0</column>
+<column name="k2_stats_dual_U0">k2_stats_dual, 0, 0, 3073, 3396, 0</column>
+<column name="k3_dual_norm_U0">k3_dual_norm, 0, 128, 14894, 14810, 0</column>
+<column name="k4_dual_post_U0">k4_dual_post, 0, 64, 6113, 7002, 0</column>
 <column name="load_dual_U0">load_dual, 0, 0, 740, 131, 0</column>
 <column name="store_dual_U0">store_dual, 0, 0, 793, 178, 0</column>
-<column name="super_kernel_32_U0">super_kernel_32, 0, 0, 2787, 21117, 0</column>
+<column name="super_kernel_32_U0">super_kernel_32, 0, 64, 11147, 14446, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -92,13 +92,13 @@
 <keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
 <column name="out_r_c_U">0, 99, 0, -, 7, 64, 448</column>
 <column name="s_st_U">0, 99, 0, -, 2, 28, 56</column>
-<column name="sa_in_U">0, 99, 0, -, 2, 512, 1024</column>
-<column name="sa_join_U">29, 161, 0, -, 512, 512, 262144</column>
+<column name="sa_in_U">29, 147, 0, -, 3, 512, 1536</column>
+<column name="sa_join_U">29, 163, 0, -, 1024, 512, 524288</column>
 <column name="sa_norm_U">0, 99, 0, -, 2, 512, 1024</column>
 <column name="sa_post_U">0, 99, 0, -, 2, 512, 1024</column>
 <column name="sa_stats_U">0, 99, 0, -, 2, 512, 1024</column>
-<column name="sb_in_U">0, 99, 0, -, 2, 512, 1024</column>
-<column name="sb_join_U">29, 161, 0, -, 512, 512, 262144</column>
+<column name="sb_in_U">29, 147, 0, -, 3, 512, 1536</column>
+<column name="sb_join_U">29, 163, 0, -, 1024, 512, 524288</column>
 <column name="sb_norm_U">0, 99, 0, -, 2, 512, 1024</column>
 <column name="sb_post_U">0, 99, 0, -, 2, 512, 1024</column>
 <column name="sb_stats_U">0, 99, 0, -, 2, 512, 1024</column>

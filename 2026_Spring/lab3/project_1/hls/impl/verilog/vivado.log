@@ -3,8 +3,8 @@
 # SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
 # IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
 # SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-# Start of session at: Mon Mar  9 02:50:46 2026
-# Process ID         : 976648
+# Start of session at: Tue Mar 10 23:31:28 2026
+# Process ID         : 455065
 # Current directory  : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog
 # Command line       : vivado -mode batch -source run_vivado.tcl
 # Log file           : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/vivado.log
@@ -13,13 +13,13 @@
 # Platform           : RedHatEnterprise
 # Operating System   : Red Hat Enterprise Linux release 8.10 (Ootpa)
 # Processor Detail   : Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz
-# CPU Frequency      : 2400.000 MHz
+# CPU Frequency      : 2800.000 MHz
 # CPU Physical cores : 56
 # CPU Logical cores  : 112
 # Host memory        : 201166 MB
 # Swap memory        : 68719 MB
 # Total Virtual      : 269885 MB
-# Available Virtual  : 149564 MB
+# Available Virtual  : 195857 MB
 #-----------------------------------------------------------
 source run_vivado.tcl
 # source ./settings.tcl
@@ -36,7 +36,7 @@ source run_vivado.tcl
 # set vivado_proj_name project
 # set vivado_proj_dir .
 # set target_device "${device}${package}${speed}"
-# set target_clk_period_ns "10.000"
+# set target_clk_period_ns "3.000"
 # set target_clk_freq_hz [expr {floor(1000 / $target_clk_period_ns) * 1000000}]
 # set other_clks_freq_hz {}
 # set ip_vlnv xilinx.com:hls:top_kernel:1.0
@@ -71,7 +71,7 @@ source run_vivado.tcl
 # dict set report_options error_if_impl_timing_fails false
 # dict set report_options topmodule "top_kernel"
 # dict set report_options funcmodules {top_kernel_entry_proc top_kernel_load_dual top_kernel_super_kernel_32 top_kernel_k2_stats_dual top_kernel_k3_dual_norm top_kernel_k4_dual_post top_kernel_store_dual}
-# dict set report_options bindmodules {top_kernel_flow_control_loop_pipe top_kernel_sparsemux_9_3_20_1_1 top_kernel_mul_34s_30s_64_1_1 top_kernel_sdiv_50ns_34s_50_54_1 top_kernel_fifo_w64_d7_S top_kernel_fifo_w512_d2_S top_kernel_fifo_w512_d512_A top_kernel_fifo_w28_d2_S top_kernel_start_for_store_dual_U0 top_kernel_start_for_super_kernel_32_U0 top_kernel_start_for_k2_stats_dual_U0 top_kernel_start_for_k3_dual_norm_U0 top_kernel_start_for_k4_dual_post_U0 top_kernel_gmem0_m_axi top_kernel_gmem1_m_axi top_kernel_control_s_axi}
+# dict set report_options bindmodules {top_kernel_flow_control_loop_pipe top_kernel_mul_30s_25ns_54_4_1 top_kernel_sparsemux_9_3_20_1_1 top_kernel_flow_control_loop_delay_pipe top_kernel_mul_34s_30s_64_4_1 top_kernel_sdiv_50ns_34s_50_54_1 top_kernel_mul_30s_26ns_55_4_1 top_kernel_fifo_w64_d7_S top_kernel_fifo_w512_d3_A top_kernel_fifo_w512_d2_S top_kernel_fifo_w512_d1024_A top_kernel_fifo_w28_d2_S top_kernel_start_for_store_dual_U0 top_kernel_start_for_super_kernel_32_U0 top_kernel_start_for_k2_stats_dual_U0 top_kernel_start_for_k3_dual_norm_U0 top_kernel_start_for_k4_dual_post_U0 top_kernel_gmem0_m_axi top_kernel_gmem1_m_axi top_kernel_control_s_axi}
 # dict set report_options max_module_depth 6
 # create_project $vivado_proj_name $vivado_proj_dir -part $target_device -force
 # set_property target_language $language [current_project]
@@ -146,13 +146,13 @@ INFO: [BD 41-1029] Generation completed for the IP Integrator block hls_inst .
 Exporting to file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hw_handoff/bd_0.hwh
 Generated Hardware Definition File /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.hwdef
 WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
-launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2049.613 ; gain = 40.020 ; free physical = 64810 ; free virtual = 143156
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2051.914 ; gain = 40.020 ; free physical = 95117 ; free virtual = 183223
 # foreach run [get_runs -filter {IS_SYNTHESIS == 1}] {
 #   reset_run [get_runs $run]
 # }
 # set_property XPM_LIBRARIES {XPM_MEMORY XPM_FIFO} [current_project]
 # hls_vivado_reports_setup $report_options
-TIMESTAMP: HLS-REPORT: initialize report directories: 2026-03-09 02:51:12 EDT
+TIMESTAMP: HLS-REPORT: initialize report directories: 2026-03-10 23:31:53 EDT
 # if { $has_subcore } { report_ip_status }
 # if { $has_synth || $has_impl } {
 #   # synth properties setting
@@ -187,8 +187,8 @@ TIMESTAMP: HLS-REPORT: initialize report directories: 2026-03-09 02:51:12 EDT
 #   }
 # }
 WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
-[Mon Mar  9 02:51:12 2026] Launched bd_0_hls_inst_0_synth_1...
+[Tue Mar 10 23:31:54 2026] Launched bd_0_hls_inst_0_synth_1...
 Run output will be captured here: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/runme.log
-[Mon Mar  9 02:51:12 2026] Launched synth_1...
+[Tue Mar 10 23:31:54 2026] Launched synth_1...
 Run output will be captured here: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3/project_1/hls/impl/verilog/project.runs/synth_1/runme.log
-[Mon Mar  9 02:51:12 2026] Waiting for synth_1 to finish...
+[Tue Mar 10 23:31:54 2026] Waiting for synth_1 to finish...

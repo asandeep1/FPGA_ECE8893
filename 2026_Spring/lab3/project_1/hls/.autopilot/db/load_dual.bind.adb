@@ -103,7 +103,7 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName>FIFO_SRL</coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
 						<coreId>4294967295</coreId>
@@ -139,7 +139,7 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName>FIFO_SRL</coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
 						<coreId>4294967295</coreId>
@@ -209,7 +209,7 @@
 						<name>in_read</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>316</lineNumber>
+						<lineNumber>21</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -225,7 +225,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>316</second>
+										<second>21</second>
 									</item>
 								</second>
 							</item>
@@ -306,10 +306,10 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>br_ln318</name>
+						<name>br_ln23</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -325,7 +325,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -410,7 +410,7 @@
 						<name>trunc_ln</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -426,7 +426,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -466,10 +466,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>sext_ln318</name>
+						<name>sext_ln23</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -485,7 +485,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -525,7 +525,7 @@
 						<name>gmem0_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -541,7 +541,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -626,7 +626,7 @@
 						<name>empty</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -642,7 +642,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -672,7 +672,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>7.30</m_delay>
+				<m_delay>2.19</m_delay>
 				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -726,7 +726,7 @@
 						<name>i1_load</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -742,7 +742,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -783,7 +783,7 @@
 						<name>raw</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>321</lineNumber>
+						<lineNumber>25</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -799,7 +799,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>321</second>
+										<second>25</second>
 									</item>
 								</second>
 							</item>
@@ -829,7 +829,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>7.30</m_delay>
+				<m_delay>2.19</m_delay>
 				<m_topoIndex>17</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -838,10 +838,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>trunc_ln329</name>
+						<name>trunc_ln33</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>329</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -857,7 +857,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>329</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -897,7 +897,7 @@
 						<name>tmp_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>330</lineNumber>
+						<lineNumber>34</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -913,7 +913,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>330</second>
+										<second>34</second>
 									</item>
 								</second>
 							</item>
@@ -952,10 +952,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>tmp_771_i</name>
+						<name>tmp_803_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -971,7 +971,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1011,10 +1011,10 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>tmp_772_i</name>
+						<name>tmp_804_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1030,7 +1030,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1070,10 +1070,10 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>tmp_773_i</name>
+						<name>tmp_805_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1089,7 +1089,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1129,10 +1129,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>tmp_774_i</name>
+						<name>tmp_806_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1148,7 +1148,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1188,10 +1188,10 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>tmp_775_i</name>
+						<name>tmp_807_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1207,7 +1207,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1247,10 +1247,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>tmp_776_i</name>
+						<name>tmp_808_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1266,7 +1266,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1306,10 +1306,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>tmp_777_i</name>
+						<name>tmp_809_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1325,7 +1325,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1365,10 +1365,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>tmp_778_i</name>
+						<name>tmp_810_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1384,7 +1384,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1424,10 +1424,10 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>tmp_779_i</name>
+						<name>tmp_811_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1443,7 +1443,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1483,10 +1483,10 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>tmp_780_i</name>
+						<name>tmp_812_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1502,7 +1502,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1542,10 +1542,10 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>tmp_781_i</name>
+						<name>tmp_813_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1561,7 +1561,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1601,10 +1601,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>tmp_782_i</name>
+						<name>tmp_814_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1620,7 +1620,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1660,10 +1660,10 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>tmp_783_i</name>
+						<name>tmp_815_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1679,7 +1679,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1719,10 +1719,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>tmp_784_i</name>
+						<name>tmp_816_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1738,7 +1738,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1778,10 +1778,10 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>tmp_785_i</name>
+						<name>tmp_817_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1797,7 +1797,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1837,10 +1837,10 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>tmp_786_i</name>
+						<name>tmp_818_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1856,7 +1856,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1924,10 +1924,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>zext_ln332</name>
+						<name>zext_ln36</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1943,7 +1943,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -1980,10 +1980,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>sa_in_write_ln332</name>
+						<name>sa_in_write_ln36</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>332</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -1999,7 +1999,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>332</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -2008,11 +2008,11 @@
 						<rtlName></rtlName>
 						<control>auto</control>
 						<opType>fifo</opType>
-						<implIndex>srl</implIndex>
-						<coreName>FIFO_SRL</coreName>
+						<implIndex>memory</implIndex>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>80</coreId>
+						<coreId>77</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2029,7 +2029,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.16</m_delay>
+				<m_delay>1.09</m_delay>
 				<m_topoIndex>52</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2038,10 +2038,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>tmp_787_i</name>
+						<name>tmp_819_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2057,7 +2057,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2097,10 +2097,10 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>tmp_788_i</name>
+						<name>tmp_820_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2116,7 +2116,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2156,10 +2156,10 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>tmp_789_i</name>
+						<name>tmp_821_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2175,7 +2175,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2215,10 +2215,10 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>tmp_790_i</name>
+						<name>tmp_822_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2234,7 +2234,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2274,10 +2274,10 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>tmp_791_i</name>
+						<name>tmp_823_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2293,7 +2293,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2333,10 +2333,10 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>tmp_792_i</name>
+						<name>tmp_824_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2352,7 +2352,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2392,10 +2392,10 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>tmp_793_i</name>
+						<name>tmp_825_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2411,7 +2411,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2451,10 +2451,10 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>tmp_794_i</name>
+						<name>tmp_826_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2470,7 +2470,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2510,10 +2510,10 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>tmp_795_i</name>
+						<name>tmp_827_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2529,7 +2529,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2569,10 +2569,10 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>tmp_796_i</name>
+						<name>tmp_828_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2588,7 +2588,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2628,10 +2628,10 @@
 					<Obj>
 						<type>0</type>
 						<id>63</id>
-						<name>tmp_797_i</name>
+						<name>tmp_829_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2647,7 +2647,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2687,10 +2687,10 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>tmp_798_i</name>
+						<name>tmp_830_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2706,7 +2706,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2746,10 +2746,10 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>tmp_799_i</name>
+						<name>tmp_831_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2765,7 +2765,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2805,10 +2805,10 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>tmp_800_i</name>
+						<name>tmp_832_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2824,7 +2824,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2864,10 +2864,10 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>tmp_801_i</name>
+						<name>tmp_833_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2883,7 +2883,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -2923,10 +2923,10 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>tmp_802_i</name>
+						<name>tmp_834_i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -2942,7 +2942,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -3010,10 +3010,10 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>zext_ln333</name>
+						<name>zext_ln37</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -3029,7 +3029,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -3066,10 +3066,10 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>sb_in_write_ln333</name>
+						<name>sb_in_write_ln37</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>333</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -3085,7 +3085,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>333</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -3094,11 +3094,11 @@
 						<rtlName></rtlName>
 						<control>auto</control>
 						<opType>fifo</opType>
-						<implIndex>srl</implIndex>
-						<coreName>FIFO_SRL</coreName>
+						<implIndex>memory</implIndex>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>80</coreId>
+						<coreId>77</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3115,7 +3115,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.16</m_delay>
+				<m_delay>1.09</m_delay>
 				<m_topoIndex>55</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3127,7 +3127,7 @@
 						<name>i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -3143,7 +3143,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3181,10 +3181,10 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>icmp_ln318</name>
+						<name>icmp_ln23</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -3200,7 +3200,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3238,10 +3238,10 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>i1_write_ln318</name>
+						<name>i1_write_ln23</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -3257,7 +3257,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3297,10 +3297,10 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>br_ln318</name>
+						<name>br_ln23</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab3</fileDirectory>
-						<lineNumber>318</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>load_dual</contextFuncName>
 						<contextNormFuncName>load_dual</contextNormFuncName>
 						<inlineStackInfo>
@@ -3316,7 +3316,7 @@
 											<first>top.cpp</first>
 											<second>load_dual</second>
 										</first>
-										<second>318</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -5673,7 +5673,7 @@
 				<Obj>
 					<type>3</type>
 					<id>27</id>
-					<name>for.first.iter.VITIS_LOOP_326_1.split.i</name>
+					<name>for.first.iter.VITIS_LOOP_30_1.split.i</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -5705,7 +5705,7 @@
 				<Obj>
 					<type>3</type>
 					<id>75</id>
-					<name>VITIS_LOOP_326_1.split.i</name>
+					<name>VITIS_LOOP_30_1.split.i</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -8862,7 +8862,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln318_fu_256</first>
+			<first>icmp_ln23_fu_256</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8870,7 +8870,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln318_fu_276</first>
+			<first>sext_ln23_fu_276</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8878,7 +8878,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_771_i_fu_299</first>
+			<first>tmp_803_i_fu_299</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8886,7 +8886,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_772_i_fu_309</first>
+			<first>tmp_804_i_fu_309</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8894,7 +8894,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_773_i_fu_319</first>
+			<first>tmp_805_i_fu_319</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8902,7 +8902,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_774_i_fu_329</first>
+			<first>tmp_806_i_fu_329</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8910,7 +8910,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_775_i_fu_339</first>
+			<first>tmp_807_i_fu_339</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8918,7 +8918,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_776_i_fu_349</first>
+			<first>tmp_808_i_fu_349</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8926,7 +8926,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_777_i_fu_359</first>
+			<first>tmp_809_i_fu_359</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8934,7 +8934,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_778_i_fu_369</first>
+			<first>tmp_810_i_fu_369</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8942,7 +8942,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_779_i_fu_379</first>
+			<first>tmp_811_i_fu_379</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8950,7 +8950,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_780_i_fu_389</first>
+			<first>tmp_812_i_fu_389</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8958,7 +8958,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_781_i_fu_399</first>
+			<first>tmp_813_i_fu_399</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8966,7 +8966,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_782_i_fu_409</first>
+			<first>tmp_814_i_fu_409</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8974,7 +8974,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_783_i_fu_419</first>
+			<first>tmp_815_i_fu_419</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8982,7 +8982,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_784_i_fu_429</first>
+			<first>tmp_816_i_fu_429</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8990,7 +8990,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_785_i_fu_439</first>
+			<first>tmp_817_i_fu_439</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8998,7 +8998,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_786_i_fu_599</first>
+			<first>tmp_818_i_fu_599</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9006,7 +9006,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_787_i_fu_449</first>
+			<first>tmp_819_i_fu_449</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9014,7 +9014,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_788_i_fu_459</first>
+			<first>tmp_820_i_fu_459</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9022,7 +9022,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_789_i_fu_469</first>
+			<first>tmp_821_i_fu_469</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9030,7 +9030,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_790_i_fu_479</first>
+			<first>tmp_822_i_fu_479</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9038,7 +9038,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_791_i_fu_489</first>
+			<first>tmp_823_i_fu_489</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9046,7 +9046,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_792_i_fu_499</first>
+			<first>tmp_824_i_fu_499</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9054,7 +9054,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_793_i_fu_509</first>
+			<first>tmp_825_i_fu_509</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9062,7 +9062,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_794_i_fu_519</first>
+			<first>tmp_826_i_fu_519</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9070,7 +9070,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_795_i_fu_529</first>
+			<first>tmp_827_i_fu_529</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9078,7 +9078,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_796_i_fu_539</first>
+			<first>tmp_828_i_fu_539</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9086,7 +9086,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_797_i_fu_549</first>
+			<first>tmp_829_i_fu_549</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9094,7 +9094,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_798_i_fu_559</first>
+			<first>tmp_830_i_fu_559</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9102,7 +9102,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_799_i_fu_569</first>
+			<first>tmp_831_i_fu_569</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9110,7 +9110,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_800_i_fu_579</first>
+			<first>tmp_832_i_fu_579</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9118,7 +9118,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_801_i_fu_589</first>
+			<first>tmp_833_i_fu_589</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9126,7 +9126,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_802_i_fu_654</first>
+			<first>tmp_834_i_fu_654</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9142,7 +9142,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln329_fu_287</first>
+			<first>trunc_ln33_fu_287</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9158,7 +9158,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln332_fu_649</first>
+			<first>zext_ln36_fu_649</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9166,7 +9166,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln333_fu_704</first>
+			<first>zext_ln37_fu_704</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9229,7 +9229,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln318_store_fu_262</first>
+			<first>store_ln23_store_fu_262</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9237,7 +9237,7 @@
 			</second>
 		</item>
 		<item>
-			<first>write_ln332_write_fu_204</first>
+			<first>write_ln36_write_fu_204</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9245,7 +9245,7 @@
 			</second>
 		</item>
 		<item>
-			<first>write_ln333_write_fu_211</first>
+			<first>write_ln37_write_fu_211</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9589,7 +9589,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln318_reg_721</first>
+			<first>icmp_ln23_reg_721</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9605,7 +9605,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_771_i_reg_741</first>
+			<first>tmp_803_i_reg_741</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9613,7 +9613,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_772_i_reg_746</first>
+			<first>tmp_804_i_reg_746</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9621,7 +9621,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_773_i_reg_751</first>
+			<first>tmp_805_i_reg_751</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9629,7 +9629,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_774_i_reg_756</first>
+			<first>tmp_806_i_reg_756</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9637,7 +9637,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_775_i_reg_761</first>
+			<first>tmp_807_i_reg_761</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9645,7 +9645,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_776_i_reg_766</first>
+			<first>tmp_808_i_reg_766</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9653,7 +9653,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_777_i_reg_771</first>
+			<first>tmp_809_i_reg_771</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9661,7 +9661,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_778_i_reg_776</first>
+			<first>tmp_810_i_reg_776</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9669,7 +9669,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_779_i_reg_781</first>
+			<first>tmp_811_i_reg_781</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9677,7 +9677,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_780_i_reg_786</first>
+			<first>tmp_812_i_reg_786</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9685,7 +9685,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_781_i_reg_791</first>
+			<first>tmp_813_i_reg_791</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9693,7 +9693,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_782_i_reg_796</first>
+			<first>tmp_814_i_reg_796</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9701,7 +9701,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_783_i_reg_801</first>
+			<first>tmp_815_i_reg_801</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9709,7 +9709,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_784_i_reg_806</first>
+			<first>tmp_816_i_reg_806</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9717,7 +9717,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_785_i_reg_811</first>
+			<first>tmp_817_i_reg_811</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9725,7 +9725,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_787_i_reg_816</first>
+			<first>tmp_819_i_reg_816</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9733,7 +9733,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_788_i_reg_821</first>
+			<first>tmp_820_i_reg_821</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9741,7 +9741,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_789_i_reg_826</first>
+			<first>tmp_821_i_reg_826</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9749,7 +9749,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_790_i_reg_831</first>
+			<first>tmp_822_i_reg_831</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9757,7 +9757,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_791_i_reg_836</first>
+			<first>tmp_823_i_reg_836</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9765,7 +9765,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_792_i_reg_841</first>
+			<first>tmp_824_i_reg_841</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9773,7 +9773,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_793_i_reg_846</first>
+			<first>tmp_825_i_reg_846</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9781,7 +9781,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_794_i_reg_851</first>
+			<first>tmp_826_i_reg_851</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9789,7 +9789,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_795_i_reg_856</first>
+			<first>tmp_827_i_reg_856</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9797,7 +9797,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_796_i_reg_861</first>
+			<first>tmp_828_i_reg_861</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9805,7 +9805,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_797_i_reg_866</first>
+			<first>tmp_829_i_reg_866</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9813,7 +9813,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_798_i_reg_871</first>
+			<first>tmp_830_i_reg_871</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9821,7 +9821,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_799_i_reg_876</first>
+			<first>tmp_831_i_reg_876</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9829,7 +9829,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_800_i_reg_881</first>
+			<first>tmp_832_i_reg_881</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9837,7 +9837,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_801_i_reg_886</first>
+			<first>tmp_833_i_reg_886</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9853,7 +9853,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln329_reg_731</first>
+			<first>trunc_ln33_reg_731</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9964,14 +9964,14 @@
 			<first>3</first>
 			<second>
 				<first>666</first>
-				<second>10</second>
+				<second>7</second>
 			</second>
 		</item>
 		<item>
 			<first>4</first>
 			<second>
 				<first>666</first>
-				<second>10</second>
+				<second>7</second>
 			</second>
 		</item>
 	</port2core>
@@ -9996,14 +9996,14 @@
 			<first>52</first>
 			<second>
 				<first>666</first>
-				<second>10</second>
+				<second>7</second>
 			</second>
 		</item>
 		<item>
 			<first>70</first>
 			<second>
 				<first>666</first>
-				<second>10</second>
+				<second>7</second>
 			</second>
 		</item>
 		<item>

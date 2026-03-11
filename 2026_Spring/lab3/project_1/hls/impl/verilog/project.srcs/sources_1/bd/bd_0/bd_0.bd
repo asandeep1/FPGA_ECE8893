@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xD8AFFDB3A31280F1",
+      "boundary_crc": "0xD8AFFDB3C9BCB4F5",
       "device": "xczu3eg-sbva484-1-e",
       "gen_directory": "../../../../project.gen/sources_1/bd/bd_0",
       "name": "bd_0",
@@ -42,7 +42,7 @@
             "value": "1024"
           },
           "FREQ_HZ": {
-            "value": "100000000.0"
+            "value": "333000000.0"
           },
           "HAS_BRESP": {
             "value": "1",
@@ -384,7 +384,7 @@
             "value": "1024"
           },
           "FREQ_HZ": {
-            "value": "100000000.0"
+            "value": "333000000.0"
           },
           "HAS_BRESP": {
             "value": "1",
@@ -723,7 +723,7 @@
             "value": "32"
           },
           "FREQ_HZ": {
-            "value": "100000000.0"
+            "value": "333000000.0"
           },
           "HAS_BRESP": {
             "value": "1"
@@ -918,7 +918,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000.0"
+            "value": "333000000.0"
           },
           "FREQ_TOLERANCE_HZ": {
             "value": "0",
@@ -966,7 +966,7 @@
     "components": {
       "hls_inst": {
         "vlnv": "xilinx.com:hls:top_kernel:1.0",
-        "ip_revision": "2114512790",
+        "ip_revision": "2114515470",
         "xci_name": "bd_0_hls_inst_0",
         "xci_path": "ip/bd_0_hls_inst_0/bd_0_hls_inst_0.xci",
         "inst_hier_path": "hls_inst",

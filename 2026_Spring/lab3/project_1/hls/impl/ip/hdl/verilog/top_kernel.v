@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="top_kernel_top_kernel,hls_ip_2025_1_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=2131,HLS_SYN_TPT=2052,HLS_SYN_MEM=115,HLS_SYN_DSP=0,HLS_SYN_FF=18628,HLS_SYN_LUT=49815,HLS_VERSION=2025_1_1}" *)
+(* CORE_GENERATION_INFO="top_kernel_top_kernel,hls_ip_2025_1_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=3.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.229000,HLS_SYN_LAT=2162,HLS_SYN_TPT=2060,HLS_SYN_MEM=173,HLS_SYN_DSP=0,HLS_SYN_FF=43597,HLS_SYN_LUT=46530,HLS_VERSION=2025_1_1}" *)
 
 module top_kernel (
         s_axi_control_AWVALID,
@@ -384,12 +384,8 @@ wire    k3_dual_norm_U0_sa_join_read;
 wire    k3_dual_norm_U0_sb_join_read;
 wire   [511:0] k3_dual_norm_U0_sa_norm_din;
 wire    k3_dual_norm_U0_sa_norm_write;
-wire   [31:0] k3_dual_norm_U0_sa_norm_num_data_valid;
-wire   [31:0] k3_dual_norm_U0_sa_norm_fifo_cap;
 wire   [511:0] k3_dual_norm_U0_sb_norm_din;
 wire    k3_dual_norm_U0_sb_norm_write;
-wire   [31:0] k3_dual_norm_U0_sb_norm_num_data_valid;
-wire   [31:0] k3_dual_norm_U0_sb_norm_fifo_cap;
 wire    k3_dual_norm_U0_start_out;
 wire    k3_dual_norm_U0_start_write;
 wire    k4_dual_post_U0_ap_start;
@@ -470,8 +466,8 @@ wire   [2:0] sa_stats_fifo_cap;
 wire    sa_join_full_n;
 wire   [511:0] sa_join_dout;
 wire    sa_join_empty_n;
-wire   [9:0] sa_join_num_data_valid;
-wire   [9:0] sa_join_fifo_cap;
+wire   [10:0] sa_join_num_data_valid;
+wire   [10:0] sa_join_fifo_cap;
 wire    sb_stats_full_n;
 wire   [511:0] sb_stats_dout;
 wire    sb_stats_empty_n;
@@ -480,8 +476,8 @@ wire   [2:0] sb_stats_fifo_cap;
 wire    sb_join_full_n;
 wire   [511:0] sb_join_dout;
 wire    sb_join_empty_n;
-wire   [9:0] sb_join_num_data_valid;
-wire   [9:0] sb_join_fifo_cap;
+wire   [10:0] sb_join_num_data_valid;
+wire   [10:0] sb_join_fifo_cap;
 wire    s_st_full_n;
 wire   [27:0] s_st_dout;
 wire    s_st_empty_n;
@@ -941,13 +937,13 @@ top_kernel_k3_dual_norm k3_dual_norm_U0(
     .sa_norm_din(k3_dual_norm_U0_sa_norm_din),
     .sa_norm_full_n(sa_norm_full_n),
     .sa_norm_write(k3_dual_norm_U0_sa_norm_write),
-    .sa_norm_num_data_valid(k3_dual_norm_U0_sa_norm_num_data_valid),
-    .sa_norm_fifo_cap(k3_dual_norm_U0_sa_norm_fifo_cap),
+    .sa_norm_num_data_valid(sa_norm_num_data_valid),
+    .sa_norm_fifo_cap(sa_norm_fifo_cap),
     .sb_norm_din(k3_dual_norm_U0_sb_norm_din),
     .sb_norm_full_n(sb_norm_full_n),
     .sb_norm_write(k3_dual_norm_U0_sb_norm_write),
-    .sb_norm_num_data_valid(k3_dual_norm_U0_sb_norm_num_data_valid),
-    .sb_norm_fifo_cap(k3_dual_norm_U0_sb_norm_fifo_cap),
+    .sb_norm_num_data_valid(sb_norm_num_data_valid),
+    .sb_norm_fifo_cap(sb_norm_fifo_cap),
     .start_out(k3_dual_norm_U0_start_out),
     .start_write(k3_dual_norm_U0_start_write)
 );
@@ -1068,7 +1064,7 @@ top_kernel_fifo_w64_d7_S out_r_c_U(
     .if_fifo_cap(out_r_c_fifo_cap)
 );
 
-top_kernel_fifo_w512_d2_S sa_in_U(
+top_kernel_fifo_w512_d3_A sa_in_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
@@ -1083,7 +1079,7 @@ top_kernel_fifo_w512_d2_S sa_in_U(
     .if_fifo_cap(sa_in_fifo_cap)
 );
 
-top_kernel_fifo_w512_d2_S sb_in_U(
+top_kernel_fifo_w512_d3_A sb_in_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
@@ -1113,7 +1109,7 @@ top_kernel_fifo_w512_d2_S sa_stats_U(
     .if_fifo_cap(sa_stats_fifo_cap)
 );
 
-top_kernel_fifo_w512_d512_A sa_join_U(
+top_kernel_fifo_w512_d1024_A sa_join_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
@@ -1143,7 +1139,7 @@ top_kernel_fifo_w512_d2_S sb_stats_U(
     .if_fifo_cap(sb_stats_fifo_cap)
 );
 
-top_kernel_fifo_w512_d512_A sb_join_U(
+top_kernel_fifo_w512_d1024_A sb_join_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
@@ -1367,14 +1363,6 @@ assign k2_stats_dual_U0_s_st_num_data_valid = s_st_num_data_valid;
 assign k3_dual_norm_U0_ap_continue = 1'b1;
 
 assign k3_dual_norm_U0_ap_start = start_for_k3_dual_norm_U0_empty_n;
-
-assign k3_dual_norm_U0_sa_norm_fifo_cap = sa_norm_fifo_cap;
-
-assign k3_dual_norm_U0_sa_norm_num_data_valid = sa_norm_num_data_valid;
-
-assign k3_dual_norm_U0_sb_norm_fifo_cap = sb_norm_fifo_cap;
-
-assign k3_dual_norm_U0_sb_norm_num_data_valid = sb_norm_num_data_valid;
 
 assign k4_dual_post_U0_ap_continue = 1'b1;
 
