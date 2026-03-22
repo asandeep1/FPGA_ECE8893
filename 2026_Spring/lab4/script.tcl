@@ -1,19 +1,10 @@
 open_component project_1
 
-# set top function of the HLS design
 set_top top_kernel
 
-# add source file
 add_files top.cpp
 
-# add testbench
 add_files -tb host.cpp
-
-# --- AXI BUS WIDENING CONFIGURATION ---
-# This forces the M_AXI interfaces to widen to 1024 bits
-config_interface -m_axi_max_widen_bitwidth 1024
-config_interface -m_axi_alignment_byte_size 128
-# ---------------------------------------
 
 # stop automatic unrolling and pipelining by Vitis so baseline design fits on FPGA
 config_unroll -tripcount_threshold 0
@@ -22,7 +13,7 @@ config_compile -pipeline_loops 0
 # FPGA part and clock configuration
 # default frequency is 100 MHz
 set_part {xczu3eg-sbva484-1-e}
-create_clock -period 1 -name default
+#create_clock -period 4 -name default
 
 # C synthesis for HLS design, generating RTL
 csynth_design
