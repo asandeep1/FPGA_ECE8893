@@ -1,0 +1,35 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
+| Date         : Sat Mar 28 00:23:07 2026
+| Host         : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/ag_pipeline_baseline_utilization_hierarchical_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xczu3eg-sbva484-1-e
+| Speed File   : -1
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------+----------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+|     Instance    |                          Module                          | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++-----------------+----------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+| bd_0_wrapper    |                                                    (top) |        337 |        321 |      16 |    0 | 279 |     21 |      3 |    0 |          1 |
+|   bd_0_i        |                                                     bd_0 |        337 |        321 |      16 |    0 | 279 |     21 |      3 |    0 |          1 |
+|     hls_inst    |                                          bd_0_hls_inst_0 |        337 |        321 |      16 |    0 | 279 |     21 |      3 |    0 |          1 |
+|       inst      |                     bd_0_hls_inst_0_ag_pipeline_baseline |        337 |        321 |      16 |    0 | 279 |     21 |      3 |    0 |          1 |
+|         (inst)  |                     bd_0_hls_inst_0_ag_pipeline_baseline |         60 |         60 |       0 |    0 | 263 |      0 |      0 |    0 |          0 |
+|         s3_U    |  bd_0_hls_inst_0_ag_pipeline_baseline_s2_RAM_AUTO_1R1W_0 |        108 |        108 |       0 |    0 |   0 |      7 |      1 |    0 |          0 |
+|         stats_U | bd_0_hls_inst_0_ag_pipeline_baseline_stats_RAM_AUTO_1R1W |         68 |         52 |      16 |    0 |  16 |      0 |      0 |    0 |          0 |
++-----------------+----------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

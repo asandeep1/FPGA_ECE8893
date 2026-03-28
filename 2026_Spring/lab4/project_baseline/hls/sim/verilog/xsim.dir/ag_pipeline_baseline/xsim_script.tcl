@@ -1,0 +1,1 @@
+xsim {ag_pipeline_baseline} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=ag_pipeline_baseline_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {ag_pipeline_baseline.tcl}

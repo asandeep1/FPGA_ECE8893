@@ -1,0 +1,15 @@
+>> Initializing Input Data (Simulating Vegetation)...
+>> Executing ag_pipeline_baseline...
+>> Baseline Row Profile (First 10 Columns):
+------------------------------------------
+Column [0]: 0.0000
+Column [1]: 126.0000
+Column [2]: 126.0000
+Column [3]: 126.0000
+Column [4]: 6.0000
+Column [5]: 6.0000
+Column [6]: 6.0000
+Column [7]: 6.0000
+Column [8]: 6.0000
+Column [9]: 6.0000
+>> SUCCESS: Baseline generated non-zero data.

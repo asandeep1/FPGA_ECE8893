@@ -1,8 +1,10 @@
 open_component project_1
 
 set_top top_kernel
-
 add_files top.cpp
+
+#set_top ag_pipeline_baseline
+#add_files baseline.cpp
 
 add_files -tb host.cpp
 

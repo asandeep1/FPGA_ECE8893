@@ -1,0 +1,292 @@
+>> Initializing Input Data (Simulating Vegetation)...
+>> Executing ag_pipeline_baseline...
+>> Baseline Row Profile (First 10 Columns):
+------------------------------------------
+Column [0]: 127.9961
+Column [1]: 127.9961
+Column [2]: 127.9961
+Column [3]: 127.9961
+Column [4]: 127.9961
+Column [5]: 127.9961
+Column [6]: 127.9961
+Column [7]: 127.9961
+Column [8]: 127.9961
+Column [9]: 127.9961
+>> SUCCESS: Baseline generated non-zero data.
+>> Initializing Input Data (Simulating Vegetation)...
+>> Executing ag_pipeline_baseline...
+>> Baseline Row Profile (First 10 Columns):
+------------------------------------------
+Column [0]: 0.0000
+Column [1]: 126.0000
+Column [2]: 126.0000
+Column [3]: 126.0000
+Column [4]: 6.0000
+Column [5]: 6.0000
+Column [6]: 6.0000
+Column [7]: 6.0000
+Column [8]: 6.0000
+Column [9]: 6.0000
+>> SUCCESS: Baseline generated non-zero data.
+Vivado Simulator v2025.1.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/software/xilinx/2025.1.1/Vivado/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_ag_pipeline_baseline_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj ag_pipeline_baseline.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_20 -L floating_point_v7_0_25 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./svtb -i ./file_agent -i ./ag_pipeline_baseline_subsystem -s ag_pipeline_baseline 
+Multi-threading is on. Using 110 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/AESL_automem_red_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_red_in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/AESL_automem_nir_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_nir_in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/AESL_automem_profile_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_profile_out
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_ag_pipeline_baseline_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_noise_reduction.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_noise_reduction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_calibrate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_calibrate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_extract_edges_and_profile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_extract_edges_and_profile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_mul_16s_16s_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_mul_16s_16s_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_s2_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_s2_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_stats_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_stats_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_mul_16s_18ns_34_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_mul_16s_18ns_34_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_mul_16s_9ns_25_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_mul_16s_9ns_25_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_sdiv_24ns_16ns_24_28_seq_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_sdiv_24ns_16ns_24_28_seq_1_divseq
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_sdiv_24ns_16ns_24_28_seq_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_red_blurred_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_red_blurred_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_red_cal_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_red_cal_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_clean_map_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_clean_map_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_dadddsub_64ns_64ns_64_5_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_dadddsub_64ns_64ns_64_5_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_ddiv_64ns_64ns_64_22_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_ddiv_64ns_64ns_64_22_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_ctlz_16_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_ctlz_16_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_bitselect_1ns_54ns_6ns_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_bitselect_1ns_54ns_6ns_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_sparsemux_7_2_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_sparsemux_7_2_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_sparsemux_7_2_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_sparsemux_7_2_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_dcmp_64ns_64ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_dcmp_64ns_64ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_mul_24s_26ns_50_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_mul_24s_26ns_50_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_fpext_32ns_64_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_fpext_32ns_64_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_sdiv_18ns_11ns_18_22_seq_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_sdiv_18ns_11ns_18_22_seq_1_divseq
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_sdiv_18ns_11ns_18_22_seq_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_buf1_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_buf1_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_buf2_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_buf2_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_buf3_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ag_pipeline_baseline_buf3_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ag_pipeline_baseline_subsystem/ag_pipeline_baseline_subsystem_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/svtb/misc_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/svtb/sv_module_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sv_module_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/ag_pipeline_baseline_dadddsub_64ns_64ns_64_5_full_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ag_pipeline_baseline_dadddsub_64ns_64ns_64_5_full_dsp_1_ip'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/ag_pipeline_baseline_ddiv_64ns_64ns_64_22_no_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ag_pipeline_baseline_ddiv_64ns_64ns_64_22_no_dsp_1_ip'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/ag_pipeline_baseline_dcmp_64ns_64ns_1_2_no_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ag_pipeline_baseline_dcmp_64ns_64ns_1_2_no_dsp_1_ip'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/ag_pipeline_baseline_fpext_32ns_64_2_no_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ag_pipeline_baseline_fpext_32ns_64_2_no_dsp_1_ip'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4468] File : /proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv, Line : 25994, RANDC variable size more than 8 bits. This will be treated as a RAND variable instead.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package floating_point_v7_1_20.floating_point_v7_1_20_viv_comp
+Compiling package xbip_utils_v3_0_14.xbip_utils_v3_0_14_pkg
+Compiling package axi_utils_v2_0_10.axi_utils_v2_0_10_pkg
+Compiling package floating_point_v7_1_20.floating_point_v7_1_20_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_20.floating_point_v7_1_20_exp_table...
+Compiling package mult_gen_v12_0_23.mult_gen_v12_0_23_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_20.floating_point_v7_1_20_pkg
+Compiling package floating_point_v7_1_20.flt_utils
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv_comp
+Compiling package xil_defaultlib.$unit_sv_module_top_sv
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.ag_pipeline_baseline_subsystem_p...
+Compiling package xil_defaultlib.file_agent_pkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.ag_pipeline_baseline_buf1_RAM_AU...
+Compiling module xil_defaultlib.ag_pipeline_baseline_buf2_RAM_AU...
+Compiling module xil_defaultlib.ag_pipeline_baseline_buf3_RAM_AU...
+Compiling module xil_defaultlib.ag_pipeline_baseline_mul_24s_26n...
+Compiling module xil_defaultlib.ag_pipeline_baseline_noise_reduc...
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=23,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=8,length=0)\]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_20.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_20.special_detect [\special_detect(a_fw=24,op_delay...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_20.flt_to_flt_conv_exp [\flt_to_flt_conv_exp(r_w=64,r_ew...]
+Compiling architecture synth of entity floating_point_v7_1_20.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_20.flt_to_flt_conv [\flt_to_flt_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20_viv [\floating_point_v7_1_20_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20 [\floating_point_v7_1_20(c_xdevic...]
+Compiling architecture ag_pipeline_baseline_fpext_32ns_64_2_no_dsp_1_ip_arch of entity xil_defaultlib.ag_pipeline_baseline_fpext_32ns_64_2_no_dsp_1_ip [ag_pipeline_baseline_fpext_32ns_...]
+Compiling module xil_defaultlib.ag_pipeline_baseline_fpext_32ns_...
+Compiling module xil_defaultlib.ag_pipeline_baseline_bitselect_1...
+Compiling module xil_defaultlib.ag_pipeline_baseline_sparsemux_7...
+Compiling module xil_defaultlib.ag_pipeline_baseline_sparsemux_7...
+Compiling module xil_defaultlib.ag_pipeline_baseline_mul_16s_16s...
+Compiling module xil_defaultlib.ag_pipeline_baseline_calibrate
+Compiling module xil_defaultlib.ag_pipeline_baseline_extract_edg...
+Compiling module xil_defaultlib.ag_pipeline_baseline_sdiv_18ns_1...
+Compiling module xil_defaultlib.ag_pipeline_baseline_sdiv_18ns_1...
+Compiling module xil_defaultlib.ag_pipeline_baseline
+Compiling module xil_defaultlib.misc_interface_default
+Compiling module xil_defaultlib.sv_module_top
+Compiling module xil_defaultlib.AESL_automem_red_in
+Compiling module xil_defaultlib.AESL_automem_nir_in
+Compiling module xil_defaultlib.AESL_automem_profile_out
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=37)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=7)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=8)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_ag_pipeline_baseline_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ag_pipeline_baseline
+
+****** xsim v2025.1.1 (64-bit)
+  **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
+  **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+  **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+  **** Start of session at: Sat Mar 28 00:13:14 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/ag_pipeline_baseline/xsim_script.tcl
+# xsim {ag_pipeline_baseline} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=ag_pipeline_baseline_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {ag_pipeline_baseline.tcl}
+Time resolution is 1 ps
+source ag_pipeline_baseline.tcl
+## run all
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+-----------------------------------------------------------------------------------------
+Name                                  Type                                    Size  Value
+-----------------------------------------------------------------------------------------
+uvm_test_top                          ag_pipeline_baseline_test_lib           -     @342 
+  top_env                             ag_pipeline_baseline_env                -     @353 
+    ag_pipeline_baseline_virtual_sqr  ag_pipeline_baseline_virtual_sequencer  -     @390 
+      rsp_export                      uvm_analysis_export                     -     @399 
+      seq_item_export                 uvm_seq_item_pull_imp                   -     @517 
+      arbitration_queue               array                                   0     -    
+      lock_queue                      array                                   0     -    
+      num_last_reqs                   integral                                32    'd1  
+      num_last_rsps                   integral                                32    'd1  
+    refm                              ag_pipeline_baseline_reference_model    -     @368 
+      trans_num_idx                   integral                                32    'h0  
+    subsys_mon                        ag_pipeline_baseline_subsystem_monitor  -     @381 
+      scbd                            ag_pipeline_baseline_scoreboard         -     @537 
+        refm                          ag_pipeline_baseline_reference_model    -     @368 
+          trans_num_idx               integral                                32    'h0  
+    refm                              ag_pipeline_baseline_reference_model    -     @368 
+    ag_pipeline_baseline_virtual_sqr  ag_pipeline_baseline_virtual_sequencer  -     @390 
+    ag_pipeline_baseline_cfg          ag_pipeline_baseline_config             -     @367 
+      check_ena                       integral                                32    'h0  
+      cover_ena                       integral                                32    'h0  
+-----------------------------------------------------------------------------------------
+
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "23487785000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 23487835 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:40 . Memory (MB): peak = 1608.961 ; gain = 0.000 ; free physical = 305549 ; free virtual = 414060
+## quit
+INFO: xsimkernel Simulation Memory Usage: 559364 KB (Peak: 559364 KB), Simulation CPU Usage: 41360 ms
+INFO: [Common 17-206] Exiting xsim at Sat Mar 28 00:13:58 2026...
+>> Initializing Input Data (Simulating Vegetation)...
+>> Executing ag_pipeline_baseline...
+>> Baseline Row Profile (First 10 Columns):
+------------------------------------------
+Column [0]: 0.0000
+Column [1]: 0.0000
+Column [2]: 0.0000
+Column [3]: 0.0000
+Column [4]: 0.0000
+Column [5]: 0.0000
+Column [6]: 0.0000
+Column [7]: 0.0000
+Column [8]: 0.0000
+Column [9]: 0.0000
+>> WARNING: Baseline output is still zero!

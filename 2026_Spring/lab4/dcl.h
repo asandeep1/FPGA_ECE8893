@@ -2,20 +2,24 @@
 #define DCL_H
 
 #include <ap_fixed.h>
+#include <hls_stream.h>
 #include <cstdint>
+#include <cmath>
 
-// Total number of elements (must be divisible by BLOCK)
-#define N (1 << 16)      // 65536
-#define BLOCK 256        // block size for stats (rate mismatch)
+// Dimensions
+#define ROWS 128
+#define COLS 128
+#define N (ROWS * COLS) // 16384
+#define BLOCK 256 
 
-// Fixed-point types
-typedef ap_fixed<32, 6, AP_RND, AP_SAT> data_t;   // main signal
-typedef ap_fixed<36, 12, AP_RND, AP_SAT> acc_t;   // accumulator for reductions
-typedef ap_fixed<32, 10, AP_RND, AP_SAT> stat_t;  // per-block statistic
-typedef ap_fixed<32, 10, AP_RND, AP_SAT> coef_t;  // coefficients
+// Type Definitions
+typedef ap_fixed<16, 8, AP_RND, AP_SAT> data_t;
+typedef ap_fixed<16, 2, AP_RND, AP_SAT> coef_t;
+typedef ap_fixed<24, 16, AP_RND, AP_SAT> acc_t;
+typedef ap_fixed<16, 8, AP_RND, AP_SAT> stat_t;
 
-// Top-level kernel prototype
-void top_kernel(const data_t in[N],
-                data_t out[N]);
+// Prototypes
+void top_kernel(const data_t red[N], const data_t nir[N], data_t profile[COLS]);
+void ag_pipeline_baseline(data_t red_in[ROWS][COLS], data_t nir_in[ROWS][COLS], data_t profile_out[COLS]);
 
-#endif // DCL_H
+#endif
