@@ -1,0 +1,11 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_top_kernel_ir
+Args:            
+  - Callee:          'top_kernel(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: top.cpp, Line: 156, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_top_kernel_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...

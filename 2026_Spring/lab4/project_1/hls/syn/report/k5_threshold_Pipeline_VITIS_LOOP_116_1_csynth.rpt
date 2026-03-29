@@ -1,0 +1,152 @@
+
+
+================================================================
+== Vitis HLS Report for 'k5_threshold_Pipeline_VITIS_LOOP_116_1'
+================================================================
+* Date:           Sat Mar 28 22:53:01 2026
+
+* Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
+* Project:        project_1
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.556 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   |  min  |  max  |                      Type                      |
+    +---------+---------+----------+----------+-------+-------+------------------------------------------------+
+    |    16386|    16386|  0.164 ms|  0.164 ms|  16385|  16385|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-------+-------+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- VITIS_LOOP_116_1  |    16384|    16384|         2|          1|          1|  16384|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     88|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     54|    -|
+|Register         |        -|    -|      65|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      65|    142|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      432|  360|  141120|  70560|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |          Variable Name         | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |add_ln116_fu_98_p2              |         +|   0|  0|  22|          15|           1|
+    |total_sum_1_fu_128_p2           |         +|   0|  0|  39|          32|          32|
+    |ap_block_pp0_stage0_01001_grp1  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln116_fu_92_p2             |      icmp|   0|  0|  23|          15|          16|
+    |ap_enable_pp0                   |       xor|   0|  0|   2|           1|           2|
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |Total                           |          |   0|  0|  88|          64|          52|
+    +--------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_2     |   9|          2|   15|         30|
+    |i_fu_48                  |   9|          2|   15|         30|
+    |s4_blk_n                 |   9|          2|    1|          2|
+    |total_sum_fu_44          |   9|          2|   32|         64|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  54|         12|   65|        130|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |i_2_reg_158              |  15|   0|   15|          0|
+    |i_fu_48                  |  15|   0|   15|          0|
+    |total_sum_fu_44          |  32|   0|   32|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  65|   0|   65|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+----------------------------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |              Source Object             |    C Type    |
++------------------------+-----+-----+------------+----------------------------------------+--------------+
+|ap_clk                  |   in|    1|  ap_ctrl_hs|  k5_threshold_Pipeline_VITIS_LOOP_116_1|  return value|
+|ap_rst                  |   in|    1|  ap_ctrl_hs|  k5_threshold_Pipeline_VITIS_LOOP_116_1|  return value|
+|ap_start                |   in|    1|  ap_ctrl_hs|  k5_threshold_Pipeline_VITIS_LOOP_116_1|  return value|
+|ap_done                 |  out|    1|  ap_ctrl_hs|  k5_threshold_Pipeline_VITIS_LOOP_116_1|  return value|
+|ap_idle                 |  out|    1|  ap_ctrl_hs|  k5_threshold_Pipeline_VITIS_LOOP_116_1|  return value|
+|ap_ready                |  out|    1|  ap_ctrl_hs|  k5_threshold_Pipeline_VITIS_LOOP_116_1|  return value|
+|s4_dout                 |   in|   16|     ap_fifo|                                      s4|       pointer|
+|s4_empty_n              |   in|    1|     ap_fifo|                                      s4|       pointer|
+|s4_read                 |  out|    1|     ap_fifo|                                      s4|       pointer|
+|s4_num_data_valid       |   in|    9|     ap_fifo|                                      s4|       pointer|
+|s4_fifo_cap             |   in|    9|     ap_fifo|                                      s4|       pointer|
+|total_sum_out           |  out|   32|      ap_vld|                           total_sum_out|       pointer|
+|total_sum_out_ap_vld    |  out|    1|      ap_vld|                           total_sum_out|       pointer|
+|local_storage_address0  |  out|   14|   ap_memory|                           local_storage|         array|
+|local_storage_ce0       |  out|    1|   ap_memory|                           local_storage|         array|
+|local_storage_we0       |  out|    1|   ap_memory|                           local_storage|         array|
+|local_storage_d0        |  out|   16|   ap_memory|                           local_storage|         array|
++------------------------+-----+-----+------------+----------------------------------------+--------------+
+

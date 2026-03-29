@@ -1,0 +1,28 @@
+{
+    "0": {
+        "name": "top_kernel",
+        "file": "top.cpp",
+        "fileloc": "156",
+        "instructions": "316",
+        "total_instructions": "316",
+        "calls": "",
+        "basicblocks": "58",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "6",
+        "loads": {
+            "G": "6",
+            "L": "8",
+            "T": "2"
+        },
+        "stores": {
+            "G": "4",
+            "L": "14",
+            "T": "1"
+        },
+        "loops": {
+            "L": "6",
+            "N": "11"
+        }
+    }
+}

@@ -1,0 +1,196 @@
+{
+    "1": {
+        "name": "k3_dilation",
+        "file": "top.cpp",
+        "fileloc": "76",
+        "instructions": "178",
+        "total_instructions": "178",
+        "calls": "",
+        "basicblocks": "7",
+        "memory_accesses": "58",
+        "control_depth": "4",
+        "def_use_depth": "2",
+        "loads": {
+            "G": "4",
+            "L": "26"
+        },
+        "stores": {
+            "G": "4",
+            "L": "22"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "k2_erosion",
+        "file": "top.cpp",
+        "fileloc": "43",
+        "instructions": "173",
+        "total_instructions": "173",
+        "calls": "",
+        "basicblocks": "7",
+        "memory_accesses": "57",
+        "control_depth": "4",
+        "def_use_depth": "2",
+        "loads": {
+            "G": "4",
+            "L": "26"
+        },
+        "stores": {
+            "G": "4",
+            "L": "22"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "top_kernel",
+        "file": "top.cpp",
+        "fileloc": "131",
+        "instructions": "37",
+        "total_instructions": "600",
+        "calls": "5 9 8 2 1 3 7",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "3": {
+        "name": "k4_gradient",
+        "file": "top.cpp",
+        "fileloc": "105",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "3",
+        "memory_accesses": "5",
+        "control_depth": "0",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "k5_threshold_Pipeline_VITIS_LOOP_116_1",
+        "file": "top.cpp",
+        "fileloc": "114",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "6",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "G": "1",
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "entry_proc",
+        "file": "top.cpp",
+        "fileloc": "0",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "6": {
+        "name": "k5_threshold_Pipeline_VITIS_LOOP_125_2",
+        "file": "top.cpp",
+        "fileloc": "123",
+        "instructions": "25",
+        "total_instructions": "25",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "1",
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "k5_threshold",
+        "file": "top.cpp",
+        "fileloc": "112",
+        "instructions": "27",
+        "total_instructions": "79",
+        "calls": "4 6",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "8",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "k1_contrast",
+        "file": "top.cpp",
+        "fileloc": "4",
+        "instructions": "80",
+        "total_instructions": "80",
+        "calls": "",
+        "basicblocks": "7",
+        "memory_accesses": "20",
+        "control_depth": "4",
+        "def_use_depth": "2",
+        "loads": {
+            "G": "2",
+            "L": "7"
+        },
+        "stores": {
+            "G": "2",
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "_Z10top_kernelPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2__",
+        "file": "top.cpp",
+        "fileloc": "0",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

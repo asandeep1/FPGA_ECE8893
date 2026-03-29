@@ -1,0 +1,2 @@
+top_kernel_stage1_out_RAM_AUTO_1R1W
+top_kernel

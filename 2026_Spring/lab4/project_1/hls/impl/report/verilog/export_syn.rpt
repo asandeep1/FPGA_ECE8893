@@ -1,0 +1,622 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Sat Mar 28 23:05:24 EDT 2026
+    * Version:         2025.1 (Build 6214317 on Sep 11 2025)
+    * Project:         project_1
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynquplus
+    * Target device:   xczu3eg-sbva484-1-e
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  10 ns
+    * C-Synthesis target clock:    10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              4576
+FF:               4183
+DSP:              0
+BRAM:             16
+URAM:             0
+SRL:              355
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 4.807       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++-----------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                  | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-----------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                  | 4576 | 4183 |     | 16   |      |     |        |      |         |          |        |
+|   Loop_VITIS_LOOP_145_1_proc_U0                                       |      |      |     |      |      |     |        |      |         |          |        |
+|   control_s_axi_U                                                     | 161  | 181  |     |      |      |     |        |      |         |          |        |
+|   entry_proc_U0                                                       |      |      |     |      |      |     |        |      |         |          |        |
+|   gmem0_m_axi_U                                                       | 599  | 871  |     | 1    |      |     |        |      |         |          |        |
+|   gmem1_m_axi_U                                                       | 850  | 1102 |     |      |      |     |        |      |         |          |        |
+|   in_stream_U                                                         |      |      |     |      |      |     |        |      |         |          |        |
+|   k1_contrast_U0                                                      | 294  | 178  |     |      |      |     |        |      |         |          |        |
+|     (k1_contrast_U0)                                                  | 71   | 145  |     |      |      |     |        |      |         |          |        |
+|     k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U | 121  | 16   |     |      |      |     |        |      |         |          |        |
+|     k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U   | 74   | 16   |     |      |      |     |        |      |         |          |        |
+|   k2_erosion_U0                                                       | 754  | 627  |     |      |      |     |        |      |         |          |        |
+|     (k2_erosion_U0)                                                   | 497  | 562  |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|     k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U  |      |      |     |      |      |     |        |      |         |          |        |
+|     k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_2_U  |      |      |     |      |      |     |        |      |         |          |        |
+|     k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_3_U  | 92   | 16   |     |      |      |     |        |      |         |          |        |
+|     k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U    | 54   | 16   |     |      |      |     |        |      |         |          |        |
+|   k3_dilation_U0                                                      | 773  | 643  |     |      |      |     |        |      |         |          |        |
+|     (k3_dilation_U0)                                                  | 517  | 578  |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|     k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_1_U     |      |      |     |      |      |     |        |      |         |          |        |
+|     k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_2_U     |      |      |     |      |      |     |        |      |         |          |        |
+|     k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_3_U     | 92   | 16   |     |      |      |     |        |      |         |          |        |
+|     k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_U       | 53   | 16   |     |      |      |     |        |      |         |          |        |
+|   k4_gradient_U0                                                      |      |      |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   k5_threshold_U0                                                     | 184  | 186  |     | 15   |      |     |        |      |         |          |        |
+|     (k5_threshold_U0)                                                 | 35   | 90   |     |      |      |     |        |      |         |          |        |
+|     grp_k5_threshold_Pipeline_VITIS_LOOP_116_1_fu_102                 | 86   | 60   |     |      |      |     |        |      |         |          |        |
+|       (grp_k5_threshold_Pipeline_VITIS_LOOP_116_1_fu_102)             | 58   | 58   |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                        |      |      |     |      |      |     |        |      |         |          |        |
+|     grp_k5_threshold_Pipeline_VITIS_LOOP_125_2_fu_111                 | 62   | 36   |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                        |      |      |     |      |      |     |        |      |         |          |        |
+|     local_storage_U                                                   |      |      |     |      |      |     |        |      |         |          |        |
+|   out_r_c_U                                                           | 77   | 9    |     |      |      |     |        |      |         |          |        |
+|   s1_U                                                                | 149  | 53   |     |      |      |     |        |      |         |          |        |
+|   s2_U                                                                | 148  | 53   |     |      |      |     |        |      |         |          |        |
+|   s3_dil_U                                                            | 162  | 53   |     |      |      |     |        |      |         |          |        |
+|   s3_ero_U                                                            | 145  | 53   |     |      |      |     |        |      |         |          |        |
+|   s4_U                                                                | 174  | 53   |     |      |      |     |        |      |         |          |        |
+|   start_for_k1_contrast_U0_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   start_for_k2_erosion_U0_U                                           |      |      |     |      |      |     |        |      |         |          |        |
+|   start_for_k3_dilation_U0_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   start_for_k4_gradient_U0_U                                          |      |      |     |      |      |     |        |      |         |          |        |
+|   start_for_k5_threshold_U0_U                                         |      |      |     |      |      |     |        |      |         |          |        |
++-----------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 6.49%  | OK     |
+| FD                                                        | 50%       | 2.96%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 3.95%  | OK     |
+| CARRY8                                                    | 25%       | 1.84%  | OK     |
+| MUXF7                                                     | 15%       | 0.00%  | OK     |
+| DSP                                                       | 80%       | 0.00%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 3.70%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 3.70%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 1323      | 206    | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 3.66   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.350ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.239ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+-------+------------------------------------------+-------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                           | ENDPOINT PIN                              | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                          |                                           |              |            |                |          DELAY |        DELAY |
++-------+-------+------------------------------------------+-------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 5.193 | k2_erosion_U0/min_v_75_reg_1118_reg[0]/C | k2_erosion_U0/min_v_50_reg_1124_reg[11]/D |           15 |         40 |          4.788 |          1.734 |        3.054 |
+| Path2 | 5.193 | k2_erosion_U0/min_v_75_reg_1118_reg[0]/C | k2_erosion_U0/min_v_50_reg_1124_reg[13]/D |           15 |         40 |          4.788 |          1.734 |        3.054 |
+| Path3 | 5.193 | k2_erosion_U0/min_v_75_reg_1118_reg[0]/C | k2_erosion_U0/min_v_50_reg_1124_reg[15]/D |           15 |         40 |          4.788 |          1.734 |        3.054 |
+| Path4 | 5.193 | k2_erosion_U0/min_v_75_reg_1118_reg[0]/C | k2_erosion_U0/min_v_50_reg_1124_reg[1]/D  |           15 |         40 |          4.788 |          1.734 |        3.054 |
+| Path5 | 5.193 | k2_erosion_U0/min_v_75_reg_1118_reg[0]/C | k2_erosion_U0/min_v_50_reg_1124_reg[3]/D  |           15 |         40 |          4.788 |          1.734 |        3.054 |
++-------+-------+------------------------------------------+-------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +----------------------------------------------+-------------------+
+    | Path1 Cells                                  | Primitive Type    |
+    +----------------------------------------------+-------------------+
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[11]_i_1      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[11]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[13]_i_1      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[13]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_2      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_1       | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[1]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[3]_i_1       | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[3]       | REGISTER.SDR.FDRE |
+    +----------------------------------------------+-------------------+
+
+    +----------------------------------------------+-------------------+
+    | Path2 Cells                                  | Primitive Type    |
+    +----------------------------------------------+-------------------+
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[11]_i_1      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[11]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[13]_i_1      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[13]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_2      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_1       | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[1]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[3]_i_1       | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[3]       | REGISTER.SDR.FDRE |
+    +----------------------------------------------+-------------------+
+
+    +----------------------------------------------+-------------------+
+    | Path3 Cells                                  | Primitive Type    |
+    +----------------------------------------------+-------------------+
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[11]_i_1      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[11]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[13]_i_1      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[13]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_2      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_1       | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[1]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[3]_i_1       | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[3]       | REGISTER.SDR.FDRE |
+    +----------------------------------------------+-------------------+
+
+    +----------------------------------------------+-------------------+
+    | Path4 Cells                                  | Primitive Type    |
+    +----------------------------------------------+-------------------+
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[11]_i_1      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[11]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[13]_i_1      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[13]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_2      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_1       | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[1]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[3]_i_1       | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[3]       | REGISTER.SDR.FDRE |
+    +----------------------------------------------+-------------------+
+
+    +----------------------------------------------+-------------------+
+    | Path5 Cells                                  | Primitive Type    |
+    +----------------------------------------------+-------------------+
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[11]_i_1      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[11]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[13]_i_1      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[13]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_2      | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]      | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_1       | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[1]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_75_reg_1118_reg[0]       | REGISTER.SDR.FDRE |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_65     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_105    | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_81     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25 | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_3       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_33     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_97     | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_49     | CLB.LUT.LUT6      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[1]_i_2       | CLB.LUT.LUT5      |
+    | k2_erosion_U0/min_v_50_reg_1124[15]_i_15     | CLB.LUT.LUT4      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4  | CLB.CARRY.CARRY8  |
+    | k2_erosion_U0/min_v_50_reg_1124[3]_i_1       | CLB.LUT.LUT3      |
+    | k2_erosion_U0/min_v_50_reg_1124_reg[3]       | REGISTER.SDR.FDRE |
+    +----------------------------------------------+-------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+-------------------------------------------------------------------+
+| Report Type              | Report Location                                                   |
++--------------------------+-------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/top_kernel_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/top_kernel_failfast_synth.rpt                 |
+| power                    | impl/verilog/report/top_kernel_power_synth.rpt                    |
+| timing                   | impl/verilog/report/top_kernel_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/top_kernel_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/top_kernel_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/top_kernel_utilization_hierarchical_synth.rpt |
++--------------------------+-------------------------------------------------------------------+
+
+

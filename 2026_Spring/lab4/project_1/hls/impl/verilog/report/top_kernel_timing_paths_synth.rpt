@@ -1,0 +1,818 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
+| Date              : Sat Mar 28 23:00:44 2026
+| Host              : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command           : report_timing -max_paths 10 -file ./report/top_kernel_timing_paths_synth.rpt
+| Design            : bd_0_wrapper
+| Device            : xczu3eg-sbva484
+| Speed File        : -1  PRODUCTION 1.30 05-15-2022
+| Design State      : Synthesized
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             5.193ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.788ns  (logic 1.734ns (36.216%)  route 3.054ns (63.784%))
+  Logic Levels:           15  (CARRY8=5 LUT3=3 LUT4=3 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.037     0.037    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/Q
+                         net (fo=5, unplaced)         0.126     0.256    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118[0]
+                         LUT4 (Prop_LUT4_I0_O)        0.171     0.427 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65/O
+                         net (fo=1, unplaced)         0.287     0.714    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     0.891 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24/CO[7]
+                         net (fo=40, unplaced)        0.136     1.027    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.067 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_105/O
+                         net (fo=2, unplaced)         0.214     1.281    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_77_fu_813_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.321 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81/O
+                         net (fo=1, unplaced)         0.259     1.580    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     1.757 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25/CO[7]
+                         net (fo=16, unplaced)        0.115     1.872    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     1.957 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_3/O
+                         net (fo=4, unplaced)         0.226     2.183    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_78_fu_826_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     2.268 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33/O
+                         net (fo=1, unplaced)         0.287     2.555    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     2.732 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6/CO[7]
+                         net (fo=40, unplaced)        0.136     2.868    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     2.908 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     3.122    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_80_fu_840_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     3.162 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49/O
+                         net (fo=1, unplaced)         0.259     3.421    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     3.598 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7/CO[7]
+                         net (fo=16, unplaced)        0.115     3.713    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     3.798 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_2/O
+                         net (fo=3, unplaced)         0.220     4.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_82_fu_854_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     4.103 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15/O
+                         net (fo=1, unplaced)         0.287     4.390    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     4.567 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4/CO[7]
+                         net (fo=16, unplaced)        0.115     4.682    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.085     4.767 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[11]_i_1/O
+                         net (fo=1, unplaced)         0.058     4.825    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_83_fu_868_p3[11]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.026    10.026    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[11]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[11]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.825    
+  -------------------------------------------------------------------
+                         slack                                  5.193    
+
+Slack (MET) :             5.193ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.788ns  (logic 1.734ns (36.216%)  route 3.054ns (63.784%))
+  Logic Levels:           15  (CARRY8=5 LUT3=3 LUT4=3 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.037     0.037    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/Q
+                         net (fo=5, unplaced)         0.126     0.256    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118[0]
+                         LUT4 (Prop_LUT4_I0_O)        0.171     0.427 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65/O
+                         net (fo=1, unplaced)         0.287     0.714    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     0.891 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24/CO[7]
+                         net (fo=40, unplaced)        0.136     1.027    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.067 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_105/O
+                         net (fo=2, unplaced)         0.214     1.281    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_77_fu_813_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.321 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81/O
+                         net (fo=1, unplaced)         0.259     1.580    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     1.757 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25/CO[7]
+                         net (fo=16, unplaced)        0.115     1.872    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     1.957 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_3/O
+                         net (fo=4, unplaced)         0.226     2.183    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_78_fu_826_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     2.268 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33/O
+                         net (fo=1, unplaced)         0.287     2.555    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     2.732 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6/CO[7]
+                         net (fo=40, unplaced)        0.136     2.868    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     2.908 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     3.122    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_80_fu_840_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     3.162 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49/O
+                         net (fo=1, unplaced)         0.259     3.421    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     3.598 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7/CO[7]
+                         net (fo=16, unplaced)        0.115     3.713    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     3.798 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_2/O
+                         net (fo=3, unplaced)         0.220     4.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_82_fu_854_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     4.103 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15/O
+                         net (fo=1, unplaced)         0.287     4.390    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     4.567 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4/CO[7]
+                         net (fo=16, unplaced)        0.115     4.682    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.085     4.767 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[13]_i_1/O
+                         net (fo=1, unplaced)         0.058     4.825    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_83_fu_868_p3[13]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.026    10.026    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[13]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[13]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.825    
+  -------------------------------------------------------------------
+                         slack                                  5.193    
+
+Slack (MET) :             5.193ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.788ns  (logic 1.734ns (36.216%)  route 3.054ns (63.784%))
+  Logic Levels:           15  (CARRY8=5 LUT3=3 LUT4=3 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.037     0.037    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/Q
+                         net (fo=5, unplaced)         0.126     0.256    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118[0]
+                         LUT4 (Prop_LUT4_I0_O)        0.171     0.427 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65/O
+                         net (fo=1, unplaced)         0.287     0.714    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     0.891 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24/CO[7]
+                         net (fo=40, unplaced)        0.136     1.027    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.067 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_105/O
+                         net (fo=2, unplaced)         0.214     1.281    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_77_fu_813_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.321 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81/O
+                         net (fo=1, unplaced)         0.259     1.580    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     1.757 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25/CO[7]
+                         net (fo=16, unplaced)        0.115     1.872    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     1.957 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_3/O
+                         net (fo=4, unplaced)         0.226     2.183    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_78_fu_826_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     2.268 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33/O
+                         net (fo=1, unplaced)         0.287     2.555    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     2.732 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6/CO[7]
+                         net (fo=40, unplaced)        0.136     2.868    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     2.908 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     3.122    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_80_fu_840_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     3.162 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49/O
+                         net (fo=1, unplaced)         0.259     3.421    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     3.598 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7/CO[7]
+                         net (fo=16, unplaced)        0.115     3.713    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     3.798 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_2/O
+                         net (fo=3, unplaced)         0.220     4.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_82_fu_854_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     4.103 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15/O
+                         net (fo=1, unplaced)         0.287     4.390    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     4.567 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4/CO[7]
+                         net (fo=16, unplaced)        0.115     4.682    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.085     4.767 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_2/O
+                         net (fo=1, unplaced)         0.058     4.825    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_83_fu_868_p3[15]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.026    10.026    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.825    
+  -------------------------------------------------------------------
+                         slack                                  5.193    
+
+Slack (MET) :             5.193ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.788ns  (logic 1.734ns (36.216%)  route 3.054ns (63.784%))
+  Logic Levels:           15  (CARRY8=5 LUT3=3 LUT4=3 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.037     0.037    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/Q
+                         net (fo=5, unplaced)         0.126     0.256    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118[0]
+                         LUT4 (Prop_LUT4_I0_O)        0.171     0.427 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65/O
+                         net (fo=1, unplaced)         0.287     0.714    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     0.891 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24/CO[7]
+                         net (fo=40, unplaced)        0.136     1.027    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.067 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_105/O
+                         net (fo=2, unplaced)         0.214     1.281    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_77_fu_813_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.321 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81/O
+                         net (fo=1, unplaced)         0.259     1.580    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     1.757 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25/CO[7]
+                         net (fo=16, unplaced)        0.115     1.872    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     1.957 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_3/O
+                         net (fo=4, unplaced)         0.226     2.183    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_78_fu_826_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     2.268 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33/O
+                         net (fo=1, unplaced)         0.287     2.555    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     2.732 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6/CO[7]
+                         net (fo=40, unplaced)        0.136     2.868    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     2.908 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     3.122    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_80_fu_840_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     3.162 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49/O
+                         net (fo=1, unplaced)         0.259     3.421    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     3.598 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7/CO[7]
+                         net (fo=16, unplaced)        0.115     3.713    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     3.798 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_2/O
+                         net (fo=3, unplaced)         0.220     4.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_82_fu_854_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     4.103 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15/O
+                         net (fo=1, unplaced)         0.287     4.390    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     4.567 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4/CO[7]
+                         net (fo=16, unplaced)        0.115     4.682    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.085     4.767 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_1/O
+                         net (fo=1, unplaced)         0.058     4.825    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_83_fu_868_p3[1]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.026    10.026    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[1]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[1]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.825    
+  -------------------------------------------------------------------
+                         slack                                  5.193    
+
+Slack (MET) :             5.193ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.788ns  (logic 1.734ns (36.216%)  route 3.054ns (63.784%))
+  Logic Levels:           15  (CARRY8=5 LUT3=3 LUT4=3 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.037     0.037    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/Q
+                         net (fo=5, unplaced)         0.126     0.256    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118[0]
+                         LUT4 (Prop_LUT4_I0_O)        0.171     0.427 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65/O
+                         net (fo=1, unplaced)         0.287     0.714    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     0.891 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24/CO[7]
+                         net (fo=40, unplaced)        0.136     1.027    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.067 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_105/O
+                         net (fo=2, unplaced)         0.214     1.281    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_77_fu_813_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.321 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81/O
+                         net (fo=1, unplaced)         0.259     1.580    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     1.757 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25/CO[7]
+                         net (fo=16, unplaced)        0.115     1.872    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     1.957 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_3/O
+                         net (fo=4, unplaced)         0.226     2.183    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_78_fu_826_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     2.268 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33/O
+                         net (fo=1, unplaced)         0.287     2.555    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     2.732 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6/CO[7]
+                         net (fo=40, unplaced)        0.136     2.868    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     2.908 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     3.122    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_80_fu_840_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     3.162 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49/O
+                         net (fo=1, unplaced)         0.259     3.421    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     3.598 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7/CO[7]
+                         net (fo=16, unplaced)        0.115     3.713    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     3.798 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_2/O
+                         net (fo=3, unplaced)         0.220     4.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_82_fu_854_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     4.103 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15/O
+                         net (fo=1, unplaced)         0.287     4.390    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     4.567 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4/CO[7]
+                         net (fo=16, unplaced)        0.115     4.682    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.085     4.767 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[3]_i_1/O
+                         net (fo=1, unplaced)         0.058     4.825    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_83_fu_868_p3[3]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.026    10.026    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[3]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[3]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.825    
+  -------------------------------------------------------------------
+                         slack                                  5.193    
+
+Slack (MET) :             5.193ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.788ns  (logic 1.734ns (36.216%)  route 3.054ns (63.784%))
+  Logic Levels:           15  (CARRY8=5 LUT3=3 LUT4=3 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.037     0.037    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/Q
+                         net (fo=5, unplaced)         0.126     0.256    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118[0]
+                         LUT4 (Prop_LUT4_I0_O)        0.171     0.427 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65/O
+                         net (fo=1, unplaced)         0.287     0.714    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     0.891 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24/CO[7]
+                         net (fo=40, unplaced)        0.136     1.027    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.067 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_105/O
+                         net (fo=2, unplaced)         0.214     1.281    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_77_fu_813_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.321 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81/O
+                         net (fo=1, unplaced)         0.259     1.580    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     1.757 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25/CO[7]
+                         net (fo=16, unplaced)        0.115     1.872    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     1.957 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_3/O
+                         net (fo=4, unplaced)         0.226     2.183    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_78_fu_826_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     2.268 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33/O
+                         net (fo=1, unplaced)         0.287     2.555    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     2.732 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6/CO[7]
+                         net (fo=40, unplaced)        0.136     2.868    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     2.908 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     3.122    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_80_fu_840_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     3.162 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49/O
+                         net (fo=1, unplaced)         0.259     3.421    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     3.598 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7/CO[7]
+                         net (fo=16, unplaced)        0.115     3.713    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     3.798 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_2/O
+                         net (fo=3, unplaced)         0.220     4.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_82_fu_854_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     4.103 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15/O
+                         net (fo=1, unplaced)         0.287     4.390    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     4.567 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4/CO[7]
+                         net (fo=16, unplaced)        0.115     4.682    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.085     4.767 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[5]_i_1/O
+                         net (fo=1, unplaced)         0.058     4.825    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_83_fu_868_p3[5]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.026    10.026    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[5]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[5]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.825    
+  -------------------------------------------------------------------
+                         slack                                  5.193    
+
+Slack (MET) :             5.193ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.788ns  (logic 1.734ns (36.216%)  route 3.054ns (63.784%))
+  Logic Levels:           15  (CARRY8=5 LUT3=3 LUT4=3 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.037     0.037    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/Q
+                         net (fo=5, unplaced)         0.126     0.256    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118[0]
+                         LUT4 (Prop_LUT4_I0_O)        0.171     0.427 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65/O
+                         net (fo=1, unplaced)         0.287     0.714    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     0.891 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24/CO[7]
+                         net (fo=40, unplaced)        0.136     1.027    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.067 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_105/O
+                         net (fo=2, unplaced)         0.214     1.281    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_77_fu_813_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.321 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81/O
+                         net (fo=1, unplaced)         0.259     1.580    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     1.757 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25/CO[7]
+                         net (fo=16, unplaced)        0.115     1.872    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     1.957 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_3/O
+                         net (fo=4, unplaced)         0.226     2.183    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_78_fu_826_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     2.268 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33/O
+                         net (fo=1, unplaced)         0.287     2.555    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     2.732 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6/CO[7]
+                         net (fo=40, unplaced)        0.136     2.868    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     2.908 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     3.122    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_80_fu_840_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     3.162 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49/O
+                         net (fo=1, unplaced)         0.259     3.421    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     3.598 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7/CO[7]
+                         net (fo=16, unplaced)        0.115     3.713    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     3.798 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_2/O
+                         net (fo=3, unplaced)         0.220     4.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_82_fu_854_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     4.103 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15/O
+                         net (fo=1, unplaced)         0.287     4.390    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     4.567 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4/CO[7]
+                         net (fo=16, unplaced)        0.115     4.682    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.085     4.767 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[7]_i_1/O
+                         net (fo=1, unplaced)         0.058     4.825    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_83_fu_868_p3[7]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.026    10.026    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[7]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[7]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.825    
+  -------------------------------------------------------------------
+                         slack                                  5.193    
+
+Slack (MET) :             5.193ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.788ns  (logic 1.734ns (36.216%)  route 3.054ns (63.784%))
+  Logic Levels:           15  (CARRY8=5 LUT3=3 LUT4=3 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.037     0.037    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118_reg[0]/Q
+                         net (fo=5, unplaced)         0.126     0.256    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_75_reg_1118[0]
+                         LUT4 (Prop_LUT4_I0_O)        0.171     0.427 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65/O
+                         net (fo=1, unplaced)         0.287     0.714    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_65_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     0.891 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24/CO[7]
+                         net (fo=40, unplaced)        0.136     1.027    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.067 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_105/O
+                         net (fo=2, unplaced)         0.214     1.281    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_77_fu_813_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.321 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81/O
+                         net (fo=1, unplaced)         0.259     1.580    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_81_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     1.757 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25/CO[7]
+                         net (fo=16, unplaced)        0.115     1.872    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     1.957 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_3/O
+                         net (fo=4, unplaced)         0.226     2.183    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_78_fu_826_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     2.268 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33/O
+                         net (fo=1, unplaced)         0.287     2.555    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_33_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     2.732 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6/CO[7]
+                         net (fo=40, unplaced)        0.136     2.868    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     2.908 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     3.122    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_80_fu_840_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     3.162 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49/O
+                         net (fo=1, unplaced)         0.259     3.421    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_49_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     3.598 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7/CO[7]
+                         net (fo=16, unplaced)        0.115     3.713    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     3.798 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[1]_i_2/O
+                         net (fo=3, unplaced)         0.220     4.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_82_fu_854_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     4.103 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15/O
+                         net (fo=1, unplaced)         0.287     4.390    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[15]_i_15_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     4.567 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4/CO[7]
+                         net (fo=16, unplaced)        0.115     4.682    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.085     4.767 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124[9]_i_1/O
+                         net (fo=1, unplaced)         0.058     4.825    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_83_fu_868_p3[9]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.026    10.026    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[9]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_50_reg_1124_reg[9]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.825    
+  -------------------------------------------------------------------
+                         slack                                  5.193    
+
+Slack (MET) :             5.193ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_51_reg_1100_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.788ns  (logic 1.734ns (36.216%)  route 3.054ns (63.784%))
+  Logic Levels:           15  (CARRY8=5 LUT3=3 LUT4=3 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.037     0.037    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_51_reg_1100_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_51_reg_1100_reg[0]/Q
+                         net (fo=5, unplaced)         0.126     0.256    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_51_reg_1100[0]
+                         LUT4 (Prop_LUT4_I0_O)        0.171     0.427 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_65/O
+                         net (fo=1, unplaced)         0.287     0.714    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_65_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     0.891 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_24/CO[7]
+                         net (fo=40, unplaced)        0.136     1.027    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_24_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.067 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_105/O
+                         net (fo=2, unplaced)         0.214     1.281    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_53_fu_513_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.321 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_81/O
+                         net (fo=1, unplaced)         0.259     1.580    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_81_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     1.757 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_25/CO[7]
+                         net (fo=16, unplaced)        0.115     1.872    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_25_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     1.957 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[1]_i_3/O
+                         net (fo=4, unplaced)         0.226     2.183    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_54_fu_526_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     2.268 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_33/O
+                         net (fo=1, unplaced)         0.287     2.555    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_33_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     2.732 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_6/CO[7]
+                         net (fo=40, unplaced)        0.136     2.868    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_6_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     2.908 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     3.122    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_56_fu_540_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     3.162 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_49/O
+                         net (fo=1, unplaced)         0.259     3.421    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_49_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     3.598 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_7/CO[7]
+                         net (fo=16, unplaced)        0.115     3.713    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_7_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     3.798 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[1]_i_2/O
+                         net (fo=3, unplaced)         0.220     4.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_58_fu_554_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     4.103 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_15/O
+                         net (fo=1, unplaced)         0.287     4.390    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_15_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     4.567 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_4/CO[7]
+                         net (fo=16, unplaced)        0.115     4.682    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_4_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.085     4.767 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[11]_i_1/O
+                         net (fo=1, unplaced)         0.058     4.825    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_fu_567_p3[11]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.026    10.026    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[11]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[11]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.825    
+  -------------------------------------------------------------------
+                         slack                                  5.193    
+
+Slack (MET) :             5.193ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_51_reg_1100_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.788ns  (logic 1.734ns (36.216%)  route 3.054ns (63.784%))
+  Logic Levels:           15  (CARRY8=5 LUT3=3 LUT4=3 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 10.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.037     0.037    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_51_reg_1100_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.093     0.130 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_51_reg_1100_reg[0]/Q
+                         net (fo=5, unplaced)         0.126     0.256    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_51_reg_1100[0]
+                         LUT4 (Prop_LUT4_I0_O)        0.171     0.427 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_65/O
+                         net (fo=1, unplaced)         0.287     0.714    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_65_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     0.891 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_24/CO[7]
+                         net (fo=40, unplaced)        0.136     1.027    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_24_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     1.067 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_105/O
+                         net (fo=2, unplaced)         0.214     1.281    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_53_fu_513_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     1.321 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_81/O
+                         net (fo=1, unplaced)         0.259     1.580    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_81_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     1.757 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_25/CO[7]
+                         net (fo=16, unplaced)        0.115     1.872    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_25_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     1.957 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[1]_i_3/O
+                         net (fo=4, unplaced)         0.226     2.183    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_54_fu_526_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     2.268 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_33/O
+                         net (fo=1, unplaced)         0.287     2.555    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_33_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     2.732 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_6/CO[7]
+                         net (fo=40, unplaced)        0.136     2.868    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_6_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.040     2.908 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_97/O
+                         net (fo=2, unplaced)         0.214     3.122    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_56_fu_540_p3[1]
+                         LUT6 (Prop_LUT6_I5_O)        0.040     3.162 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_49/O
+                         net (fo=1, unplaced)         0.259     3.421    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_49_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     3.598 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_7/CO[7]
+                         net (fo=16, unplaced)        0.115     3.713    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_7_n_3
+                         LUT5 (Prop_LUT5_I4_O)        0.085     3.798 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[1]_i_2/O
+                         net (fo=3, unplaced)         0.220     4.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_58_fu_554_p3[1]
+                         LUT4 (Prop_LUT4_I3_O)        0.085     4.103 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_15/O
+                         net (fo=1, unplaced)         0.287     4.390    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[15]_i_15_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.177     4.567 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_4/CO[7]
+                         net (fo=16, unplaced)        0.115     4.682    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[15]_i_4_n_3
+                         LUT3 (Prop_LUT3_I2_O)        0.085     4.767 r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106[13]_i_1/O
+                         net (fo=1, unplaced)         0.058     4.825    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_fu_567_p3[13]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=5331, unset)         0.026    10.026    bd_0_i/hls_inst/inst/k2_erosion_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[13]/C
+                         clock pessimism              0.000    10.026    
+                         clock uncertainty           -0.035     9.991    
+                         FDRE (Setup_FDRE_C_D)        0.027    10.018    bd_0_i/hls_inst/inst/k2_erosion_U0/min_v_59_reg_1106_reg[13]
+  -------------------------------------------------------------------
+                         required time                         10.018    
+                         arrival time                          -4.825    
+  -------------------------------------------------------------------
+                         slack                                  5.193    
+
+
+
+

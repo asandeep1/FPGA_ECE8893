@@ -1,0 +1,312 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2025.1.1</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>4.807</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>4.807</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>4.807</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>5.193</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>5.193</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>5.193</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>5.193</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>16</BRAM>
+      <CLB>0</CLB>
+      <DSP>0</DSP>
+      <FF>4183</FF>
+      <LATCH>0</LATCH>
+      <LUT>4576</LUT>
+      <SRL>355</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>432</BRAM>
+      <CLB>0</CLB>
+      <DSP>360</DSP>
+      <FF>141120</FF>
+      <LUT>70560</LUT>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="top_kernel" DISPNAME="inst" RTLNAME="top_kernel">
+      <SubModules count="22">Loop_VITIS_LOOP_145_1_proc_U0 control_s_axi_U entry_proc_U0 gmem0_m_axi_U gmem1_m_axi_U in_stream_U k1_contrast_U0 k2_erosion_U0 k3_dilation_U0 k4_gradient_U0 k5_threshold_U0 out_r_c_U s1_U s2_U s3_dil_U s3_ero_U s4_U start_for_k1_contrast_U0_U start_for_k2_erosion_U0_U start_for_k3_dilation_U0_U start_for_k4_gradient_U0_U start_for_k5_threshold_U0_U</SubModules>
+      <Resources BRAM="16" FF="4183" LUT="4576"/>
+    </RtlModule>
+    <RtlModule CELL="inst/Loop_VITIS_LOOP_145_1_proc_U0" DEPTH="1" TYPE="function" MODULENAME="Loop_VITIS_LOOP_145_1_proc" DISPNAME="Loop_VITIS_LOOP_145_1_proc_U0" RTLNAME="top_kernel_Loop_VITIS_LOOP_145_1_proc"/>
+    <RtlModule CELL="inst/control_s_axi_U" DEPTH="1" TYPE="resource" MODULENAME="control_s_axi" DISPNAME="control_s_axi_U" RTLNAME="top_kernel_control_s_axi">
+      <Resources FF="181" LUT="161"/>
+      <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="control" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="control_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+    <RtlModule CELL="inst/entry_proc_U0" DEPTH="1" TYPE="function" MODULENAME="entry_proc" DISPNAME="entry_proc_U0" RTLNAME="top_kernel_entry_proc"/>
+    <RtlModule CELL="inst/gmem0_m_axi_U" DEPTH="1" TYPE="resource" MODULENAME="gmem0_m_axi" DISPNAME="gmem0_m_axi_U" RTLNAME="top_kernel_gmem0_m_axi">
+      <Resources BRAM="1" FF="871" LUT="599"/>
+      <BindNode BINDTYPE="adapter" BRAM="2" BUNDLEDNAME="gmem0" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="gmem0_m_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="m_axi" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+    <RtlModule CELL="inst/gmem1_m_axi_U" DEPTH="1" TYPE="resource" MODULENAME="gmem1_m_axi" DISPNAME="gmem1_m_axi_U" RTLNAME="top_kernel_gmem1_m_axi">
+      <Resources FF="1102" LUT="850"/>
+      <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="gmem1" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="gmem1_m_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="m_axi" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+    <RtlModule CELL="inst/in_stream_U" DEPTH="1" TYPE="resource" MODULENAME="fifo_w16_d2_S" DISPNAME="in_stream_U" RTLNAME="top_kernel_fifo_w16_d2_S">
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="in_stream_U" SOURCE="top.cpp:144" STORAGESIZE="16 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="in_stream" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k1_contrast_U0" DEPTH="1" TYPE="function" MODULENAME="k1_contrast" DISPNAME="k1_contrast_U0" RTLNAME="top_kernel_k1_contrast">
+      <SubModules count="3">flow_control_loop_pipe_U k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U</SubModules>
+      <Resources FF="178" LUT="294"/>
+      <LocalResources FF="145" LUT="71"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k1_contrast_U0/flow_control_loop_pipe_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe" DISPNAME="flow_control_loop_pipe_U" RTLNAME="top_kernel_flow_control_loop_pipe"/>
+    <RtlModule CELL="inst/k1_contrast_U0/k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U" DEPTH="2" TYPE="resource" MODULENAME="k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb" DISPNAME="k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U" RTLNAME="top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb">
+      <Resources FF="16" LUT="121"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U" SOURCE="" STORAGESIZE="16 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k1_contrast_U0/k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U" DEPTH="2" TYPE="resource" MODULENAME="k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb" DISPNAME="k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U" RTLNAME="top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb">
+      <Resources FF="16" LUT="74"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U" SOURCE="" STORAGESIZE="16 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k2_erosion_U0" DEPTH="1" TYPE="function" MODULENAME="k2_erosion" DISPNAME="k2_erosion_U0" RTLNAME="top_kernel_k2_erosion">
+      <SubModules count="5">flow_control_loop_pipe_U k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_2_U k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_3_U k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U</SubModules>
+      <Resources FF="627" LUT="754"/>
+      <LocalResources FF="562" LUT="497"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k2_erosion_U0/flow_control_loop_pipe_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe" DISPNAME="flow_control_loop_pipe_U" RTLNAME="top_kernel_flow_control_loop_pipe"/>
+    <RtlModule CELL="inst/k2_erosion_U0/k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U" DEPTH="2" TYPE="resource" MODULENAME="k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb" DISPNAME="k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U" RTLNAME="top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U" SOURCE="" STORAGESIZE="16 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k2_erosion_U0/k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_2_U" DEPTH="2" TYPE="resource" MODULENAME="k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb" DISPNAME="k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_2_U" RTLNAME="top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_2_U" SOURCE="" STORAGESIZE="16 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_2" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k2_erosion_U0/k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_3_U" DEPTH="2" TYPE="resource" MODULENAME="k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb" DISPNAME="k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_3_U" RTLNAME="top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb">
+      <Resources FF="16" LUT="92"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_3_U" SOURCE="" STORAGESIZE="16 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_3" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k2_erosion_U0/k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U" DEPTH="2" TYPE="resource" MODULENAME="k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb" DISPNAME="k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U" RTLNAME="top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb">
+      <Resources FF="16" LUT="54"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U" SOURCE="" STORAGESIZE="16 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k3_dilation_U0" DEPTH="1" TYPE="function" MODULENAME="k3_dilation" DISPNAME="k3_dilation_U0" RTLNAME="top_kernel_k3_dilation">
+      <SubModules count="5">flow_control_loop_pipe_U k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_1_U k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_2_U k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_3_U k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_U</SubModules>
+      <Resources FF="643" LUT="773"/>
+      <LocalResources FF="578" LUT="517"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k3_dilation_U0/flow_control_loop_pipe_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe" DISPNAME="flow_control_loop_pipe_U" RTLNAME="top_kernel_flow_control_loop_pipe"/>
+    <RtlModule CELL="inst/k3_dilation_U0/k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_1_U" DEPTH="2" TYPE="resource" MODULENAME="k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb" DISPNAME="k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_1_U" RTLNAME="top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_1_U" SOURCE="" STORAGESIZE="16 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k3_dilation_U0/k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_2_U" DEPTH="2" TYPE="resource" MODULENAME="k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb" DISPNAME="k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_2_U" RTLNAME="top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb">
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_2_U" SOURCE="" STORAGESIZE="16 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_2" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k3_dilation_U0/k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_3_U" DEPTH="2" TYPE="resource" MODULENAME="k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb" DISPNAME="k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_3_U" RTLNAME="top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb">
+      <Resources FF="16" LUT="92"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_3_U" SOURCE="" STORAGESIZE="16 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_3" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k3_dilation_U0/k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_U" DEPTH="2" TYPE="resource" MODULENAME="k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb" DISPNAME="k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_U" RTLNAME="top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb">
+      <Resources FF="16" LUT="53"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_U" SOURCE="" STORAGESIZE="16 128 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k4_gradient_U0" DEPTH="1" TYPE="function" MODULENAME="k4_gradient" DISPNAME="k4_gradient_U0" RTLNAME="top_kernel_k4_gradient">
+      <SubModules count="1">flow_control_loop_pipe_U</SubModules>
+    </RtlModule>
+    <RtlModule CELL="inst/k4_gradient_U0/flow_control_loop_pipe_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe" DISPNAME="flow_control_loop_pipe_U" RTLNAME="top_kernel_flow_control_loop_pipe"/>
+    <RtlModule CELL="inst/k5_threshold_U0" DEPTH="1" TYPE="function" MODULENAME="k5_threshold" DISPNAME="k5_threshold_U0" RTLNAME="top_kernel_k5_threshold">
+      <SubModules count="3">grp_k5_threshold_Pipeline_VITIS_LOOP_116_1_fu_102 grp_k5_threshold_Pipeline_VITIS_LOOP_125_2_fu_111 local_storage_U</SubModules>
+      <Resources BRAM="15" FF="186" LUT="184"/>
+      <LocalResources FF="90" LUT="35"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k5_threshold_U0/grp_k5_threshold_Pipeline_VITIS_LOOP_116_1_fu_102" DEPTH="2" TYPE="function" MODULENAME="k5_threshold_Pipeline_VITIS_LOOP_116_1" DISPNAME="grp_k5_threshold_Pipeline_VITIS_LOOP_116_1_fu_102" RTLNAME="top_kernel_k5_threshold_Pipeline_VITIS_LOOP_116_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="60" LUT="86"/>
+      <LocalResources FF="58" LUT="58"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k5_threshold_U0/grp_k5_threshold_Pipeline_VITIS_LOOP_116_1_fu_102/flow_control_loop_pipe_sequential_init_U" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="top_kernel_flow_control_loop_pipe_sequential_init"/>
+    <RtlModule CELL="inst/k5_threshold_U0/grp_k5_threshold_Pipeline_VITIS_LOOP_125_2_fu_111" DEPTH="2" TYPE="function" MODULENAME="k5_threshold_Pipeline_VITIS_LOOP_125_2" DISPNAME="grp_k5_threshold_Pipeline_VITIS_LOOP_125_2_fu_111" RTLNAME="top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="36" LUT="62"/>
+    </RtlModule>
+    <RtlModule CELL="inst/k5_threshold_U0/grp_k5_threshold_Pipeline_VITIS_LOOP_125_2_fu_111/flow_control_loop_pipe_sequential_init_U" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="top_kernel_flow_control_loop_pipe_sequential_init"/>
+    <RtlModule CELL="inst/k5_threshold_U0/local_storage_U" DEPTH="2" TYPE="resource" MODULENAME="k5_threshold_local_storage_RAM_AUTO_1R1W" DISPNAME="local_storage_U" RTLNAME="top_kernel_k5_threshold_local_storage_RAM_AUTO_1R1W">
+      <BindNode BINDTYPE="storage" BRAM="16" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="local_storage_U" SOURCE="" STORAGESIZE="16 16384 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="local_storage" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/out_r_c_U" DEPTH="1" TYPE="resource" MODULENAME="fifo_w64_d7_S" DISPNAME="out_r_c_U" RTLNAME="top_kernel_fifo_w64_d7_S">
+      <Resources FF="9" LUT="77"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="out_r_c_U" SOURCE="top.cpp:143" STORAGESIZE="64 7 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="out_r_c" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/s1_U" DEPTH="1" TYPE="resource" MODULENAME="fifo_w16_d256_A" DISPNAME="s1_U" RTLNAME="top_kernel_fifo_w16_d256_A">
+      <Resources FF="53" LUT="149"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="s1_U" SOURCE="" STORAGESIZE="16 256 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="s1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/s2_U" DEPTH="1" TYPE="resource" MODULENAME="fifo_w16_d256_A" DISPNAME="s2_U" RTLNAME="top_kernel_fifo_w16_d256_A">
+      <Resources FF="53" LUT="148"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="s2_U" SOURCE="" STORAGESIZE="16 256 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="s2" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/s3_dil_U" DEPTH="1" TYPE="resource" MODULENAME="fifo_w16_d256_A" DISPNAME="s3_dil_U" RTLNAME="top_kernel_fifo_w16_d256_A">
+      <Resources FF="53" LUT="162"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="s3_dil_U" SOURCE="" STORAGESIZE="16 256 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="s3_dil" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/s3_ero_U" DEPTH="1" TYPE="resource" MODULENAME="fifo_w16_d256_A" DISPNAME="s3_ero_U" RTLNAME="top_kernel_fifo_w16_d256_A">
+      <Resources FF="53" LUT="145"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="s3_ero_U" SOURCE="" STORAGESIZE="16 256 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="s3_ero" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/s4_U" DEPTH="1" TYPE="resource" MODULENAME="fifo_w16_d256_A" DISPNAME="s4_U" RTLNAME="top_kernel_fifo_w16_d256_A">
+      <Resources FF="53" LUT="174"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="s4_U" SOURCE="" STORAGESIZE="16 256 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="s4" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/start_for_k1_contrast_U0_U" DEPTH="1" TYPE="rtl" MODULENAME="start_for_k1_contrast_U0" DISPNAME="start_for_k1_contrast_U0_U" RTLNAME="top_kernel_start_for_k1_contrast_U0"/>
+    <RtlModule CELL="inst/start_for_k2_erosion_U0_U" DEPTH="1" TYPE="rtl" MODULENAME="start_for_k2_erosion_U0" DISPNAME="start_for_k2_erosion_U0_U" RTLNAME="top_kernel_start_for_k2_erosion_U0"/>
+    <RtlModule CELL="inst/start_for_k3_dilation_U0_U" DEPTH="1" TYPE="rtl" MODULENAME="start_for_k3_dilation_U0" DISPNAME="start_for_k3_dilation_U0_U" RTLNAME="top_kernel_start_for_k3_dilation_U0"/>
+    <RtlModule CELL="inst/start_for_k4_gradient_U0_U" DEPTH="1" TYPE="rtl" MODULENAME="start_for_k4_gradient_U0" DISPNAME="start_for_k4_gradient_U0_U" RTLNAME="top_kernel_start_for_k4_gradient_U0"/>
+    <RtlModule CELL="inst/start_for_k5_threshold_U0_U" DEPTH="1" TYPE="rtl" MODULENAME="start_for_k5_threshold_U0" DISPNAME="start_for_k5_threshold_U0_U" RTLNAME="top_kernel_start_for_k5_threshold_U0"/>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="4.788" DATAPATH_LOGIC_DELAY="1.734" DATAPATH_NET_DELAY="3.054" ENDPOINT_PIN="k2_erosion_U0/min_v_50_reg_1124_reg[11]/D" LOGIC_LEVELS="15" MAX_FANOUT="40" SLACK="5.193" STARTPOINT_PIN="k2_erosion_U0/min_v_75_reg_1118_reg[0]/C">
+      <CELL NAME="k2_erosion_U0/min_v_75_reg_1118_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="600" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_65" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_105" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1003" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_81" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="927" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[1]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1005" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_33" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="929" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_97" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1007" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_49" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="931" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[1]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1009" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_15" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="933" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[11]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1011" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[11]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="597" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>k2_erosion_U0</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.788" DATAPATH_LOGIC_DELAY="1.734" DATAPATH_NET_DELAY="3.054" ENDPOINT_PIN="k2_erosion_U0/min_v_50_reg_1124_reg[13]/D" LOGIC_LEVELS="15" MAX_FANOUT="40" SLACK="5.193" STARTPOINT_PIN="k2_erosion_U0/min_v_75_reg_1118_reg[0]/C">
+      <CELL NAME="k2_erosion_U0/min_v_75_reg_1118_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="600" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_65" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_105" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1003" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_81" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="927" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[1]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1005" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_33" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="929" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_97" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1007" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_49" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="931" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[1]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1009" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_15" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="933" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[13]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1011" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[13]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="597" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>k2_erosion_U0</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.788" DATAPATH_LOGIC_DELAY="1.734" DATAPATH_NET_DELAY="3.054" ENDPOINT_PIN="k2_erosion_U0/min_v_50_reg_1124_reg[15]/D" LOGIC_LEVELS="15" MAX_FANOUT="40" SLACK="5.193" STARTPOINT_PIN="k2_erosion_U0/min_v_75_reg_1118_reg[0]/C">
+      <CELL NAME="k2_erosion_U0/min_v_75_reg_1118_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="600" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_65" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_105" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1003" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_81" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="927" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[1]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1005" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_33" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="929" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_97" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1007" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_49" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="931" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[1]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1009" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_15" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="933" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1011" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="597" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>k2_erosion_U0</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.788" DATAPATH_LOGIC_DELAY="1.734" DATAPATH_NET_DELAY="3.054" ENDPOINT_PIN="k2_erosion_U0/min_v_50_reg_1124_reg[1]/D" LOGIC_LEVELS="15" MAX_FANOUT="40" SLACK="5.193" STARTPOINT_PIN="k2_erosion_U0/min_v_75_reg_1118_reg[0]/C">
+      <CELL NAME="k2_erosion_U0/min_v_75_reg_1118_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="600" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_65" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_105" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1003" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_81" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="927" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[1]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1005" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_33" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="929" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_97" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1007" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_49" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="931" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[1]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1009" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_15" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="933" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[1]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1011" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="597" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>k2_erosion_U0</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.788" DATAPATH_LOGIC_DELAY="1.734" DATAPATH_NET_DELAY="3.054" ENDPOINT_PIN="k2_erosion_U0/min_v_50_reg_1124_reg[3]/D" LOGIC_LEVELS="15" MAX_FANOUT="40" SLACK="5.193" STARTPOINT_PIN="k2_erosion_U0/min_v_75_reg_1118_reg[0]/C">
+      <CELL NAME="k2_erosion_U0/min_v_75_reg_1118_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="600" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_65" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_24" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_105" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1003" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_81" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="927" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_25" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[1]_i_3" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1005" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_33" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="929" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_6" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_97" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1007" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_49" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="931" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_7" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[1]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1009" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[15]_i_15" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="933" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[15]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="925" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124[3]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="1011" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <CELL NAME="k2_erosion_U0/min_v_50_reg_1124_reg[3]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="top_kernel_k2_erosion.v" LINE_NUMBER="597" MODULE_INSTNAME="k2_erosion_U0" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>k2_erosion_U0</MODULE_INSTANCES>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/top_kernel_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/top_kernel_failfast_synth.rpt"/>
+    <ReportFile TYPE="power" PATH="verilog/report/top_kernel_power_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/top_kernel_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/top_kernel_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/top_kernel_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/top_kernel_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Sat Mar 28 23:05:24 EDT 2026"/>
+    <item NAME="Version" VALUE="2025.1 (Build 6214317 on Sep 11 2025)"/>
+    <item NAME="Project" VALUE="project_1"/>
+    <item NAME="Solution" VALUE="hls (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynquplus"/>
+    <item NAME="Target device" VALUE="xczu3eg-sbva484-1-e"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

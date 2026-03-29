@@ -1,0 +1,826 @@
+#-----------------------------------------------------------
+# Vivado v2025.1.1 (64-bit)
+# SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
+# IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+# SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+# Start of session at: Sat Mar 28 22:55:50 2026
+# Process ID         : 310401
+# Current directory  : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line       : vivado -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file           : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file       : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/vivado.jou
+# Running On         : ece-linlabsrv01
+# Platform           : RedHatEnterprise
+# Operating System   : Red Hat Enterprise Linux release 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz
+# CPU Frequency      : 2351.877 MHz
+# CPU Physical cores : 56
+# CPU Logical cores  : 112
+# Host memory        : 404103 MB
+# Swap memory        : 68719 MB
+# Total Virtual      : 472822 MB
+# Available Virtual  : 449197 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 40591
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/software/xilinx/2025.1.1/data/ip'.
+Command: synth_design -top bd_0_hls_inst_0 -part xczu3eg-sbva484-1-e -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 311838
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2913.734 ; gain = 137.578 ; free physical = 331490 ; free virtual = 425589
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_control_s_axi' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_control_s_axi.v:217]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_control_s_axi' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_load' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_fifo' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_srl' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_srl' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_fifo' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_reg_slice' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_reg_slice' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_fifo__parameterized0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_srl__parameterized0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_srl__parameterized0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_fifo__parameterized0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_fifo__parameterized1' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_mem' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2354]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_mem' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2354]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_fifo__parameterized1' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_load' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_read' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:782]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_fifo__parameterized2' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_srl__parameterized1' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_srl__parameterized1' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_fifo__parameterized2' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_burst_converter' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:1036]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_burst_sequential' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:1642]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_reg_slice__parameterized0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_reg_slice__parameterized0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_burst_sequential' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:1642]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_burst_converter' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:1036]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem0_m_axi_reg_slice__parameterized1' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_reg_slice__parameterized1' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi_read' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:782]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem0_m_axi' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_store' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_fifo' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_srl' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_srl' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_fifo' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized1' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized1' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized1' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized1' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized2' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized2' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized2' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized2' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized3' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized3' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized3' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized3' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized4' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized4' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized4' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized4' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized5' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized5' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized5' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized5' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_store' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_write' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:1099]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_burst_converter' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:1394]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_burst_sequential' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2000]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_reg_slice' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_reg_slice' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_burst_sequential' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2000]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_burst_converter' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:1394]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_throttle' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2353]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized6' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized6' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_srl__parameterized6' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_fifo__parameterized6' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_reg_slice__parameterized0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_reg_slice__parameterized0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_reg_slice__parameterized1' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_reg_slice__parameterized1' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_throttle' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2353]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_gmem1_m_axi_reg_slice__parameterized2' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_reg_slice__parameterized2' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi_write' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:1099]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_gmem1_m_axi' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_entry_proc' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_entry_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_entry_proc' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_entry_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_Loop_VITIS_LOOP_145_1_proc' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_Loop_VITIS_LOOP_145_1_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_Loop_VITIS_LOOP_145_1_proc' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_Loop_VITIS_LOOP_145_1_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k1_contrast' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k1_contrast.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb.v:7]
+INFO: [Synth 8-3876] $readmem data file './top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb.dat' is read successfully [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb.v:7]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_flow_control_loop_pipe' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_flow_control_loop_pipe.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_flow_control_loop_pipe' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_flow_control_loop_pipe.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k1_contrast' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k1_contrast.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k2_erosion' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k2_erosion.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k2_erosion' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k2_erosion.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k3_dilation' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k3_dilation.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k3_dilation' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k3_dilation.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k4_gradient' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k4_gradient.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k4_gradient' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k4_gradient.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k5_threshold' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k5_threshold.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k5_threshold_local_storage_RAM_AUTO_1R1W' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k5_threshold_local_storage_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './top_kernel_k5_threshold_local_storage_RAM_AUTO_1R1W.dat' is read successfully [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k5_threshold_local_storage_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k5_threshold_local_storage_RAM_AUTO_1R1W' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k5_threshold_local_storage_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k5_threshold_Pipeline_VITIS_LOOP_116_1' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k5_threshold_Pipeline_VITIS_LOOP_116_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_flow_control_loop_pipe_sequential_init' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_flow_control_loop_pipe_sequential_init' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k5_threshold_Pipeline_VITIS_LOOP_116_1' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k5_threshold_Pipeline_VITIS_LOOP_116_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_k5_threshold' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k5_threshold.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_fifo_w64_d7_S' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_fifo_w64_d7_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_fifo_w64_d7_S_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_fifo_w64_d7_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_fifo_w64_d7_S_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_fifo_w64_d7_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_fifo_w64_d7_S' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_fifo_w64_d7_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_fifo_w16_d2_S' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_fifo_w16_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_fifo_w16_d2_S_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_fifo_w16_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_fifo_w16_d2_S_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_fifo_w16_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_fifo_w16_d2_S' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_fifo_w16_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_fifo_w16_d256_A' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_fifo_w16_d256_A.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_fifo_w16_d256_A_ram' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_fifo_w16_d256_A.v:201]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_fifo_w16_d256_A_ram' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_fifo_w16_d256_A.v:201]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_fifo_w16_d256_A' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_fifo_w16_d256_A.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k5_threshold_U0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k5_threshold_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k5_threshold_U0_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k5_threshold_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k5_threshold_U0_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k5_threshold_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k5_threshold_U0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k5_threshold_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k1_contrast_U0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k1_contrast_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k1_contrast_U0_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k1_contrast_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k1_contrast_U0_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k1_contrast_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k1_contrast_U0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k1_contrast_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k2_erosion_U0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k2_erosion_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k2_erosion_U0_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k2_erosion_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k2_erosion_U0_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k2_erosion_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k2_erosion_U0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k2_erosion_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k3_dilation_U0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k3_dilation_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k3_dilation_U0_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k3_dilation_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k3_dilation_U0_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k3_dilation_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k3_dilation_U0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k3_dilation_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k4_gradient_U0' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k4_gradient_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_start_for_k4_gradient_U0_ShiftReg' [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k4_gradient_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k4_gradient_U0_ShiftReg' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k4_gradient_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_start_for_k4_gradient_U0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_start_for_k4_gradient_U0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_control_s_axi.v:288]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port addr[1] in module top_kernel_fifo_w16_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_AWREADY in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_ARREADY in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RVALID in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[15] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[14] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[13] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[12] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[11] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[10] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[9] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[8] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[7] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[6] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[5] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[4] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[3] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[2] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[1] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RDATA[0] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RLAST in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RID[0] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RFIFONUM[9] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RFIFONUM[8] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RFIFONUM[7] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RFIFONUM[6] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RFIFONUM[5] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RFIFONUM[4] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RFIFONUM[3] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RFIFONUM[2] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RFIFONUM[1] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RFIFONUM[0] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RUSER[0] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RRESP[1] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_RRESP[0] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_BVALID in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_BRESP[1] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_BRESP[0] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_BID[0] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_0_BUSER[0] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[62] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[61] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[60] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[59] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[58] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[57] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[56] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[55] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[54] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[53] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[52] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[51] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[50] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[49] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[48] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[47] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[46] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[45] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[44] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[43] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[42] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[41] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[40] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[39] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[38] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[37] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[36] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[35] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[34] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[33] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[32] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[31] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[30] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[29] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[28] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[27] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[26] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[25] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[24] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[23] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[22] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[21] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[20] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[19] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[18] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[17] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[16] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[15] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[14] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[13] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[12] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[11] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[10] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[9] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[8] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[7] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[6] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[5] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[4] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sext_ln125[3] in module top_kernel_k5_threshold_Pipeline_VITIS_LOOP_125_2 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3049.672 ; gain = 273.516 ; free physical = 331356 ; free virtual = 425458
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3049.672 ; gain = 273.516 ; free physical = 331347 ; free virtual = 425455
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3049.672 ; gain = 273.516 ; free physical = 331347 ; free virtual = 425454
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3049.672 ; gain = 0.000 ; free physical = 331340 ; free virtual = 425443
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/top_kernel_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3173.738 ; gain = 6.234 ; free physical = 332096 ; free virtual = 426201
+Finished Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/top_kernel_ooc.xdc] for cell 'inst'
+Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3173.738 ; gain = 0.000 ; free physical = 332096 ; free virtual = 426200
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3173.773 ; gain = 0.000 ; free physical = 332081 ; free virtual = 426186
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3173.773 ; gain = 397.617 ; free physical = 330901 ; free virtual = 425007
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3181.742 ; gain = 405.586 ; free physical = 330898 ; free virtual = 425004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3181.742 ; gain = 405.586 ; free physical = 330895 ; free virtual = 425001
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'top_kernel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'top_kernel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_kernel_gmem0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_kernel_gmem0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_kernel_gmem0_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_kernel_gmem1_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_kernel_gmem1_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_kernel_gmem1_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_kernel_gmem1_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_158_reg' and it is trimmed from '15' to '14' bits. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_k5_threshold_Pipeline_VITIS_LOOP_116_1.v:169]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'top_kernel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'top_kernel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_kernel_gmem0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_kernel_gmem0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_kernel_gmem0_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_kernel_gmem1_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_kernel_gmem1_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_kernel_gmem1_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_kernel_gmem1_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-6904] The RAM "top_kernel_k1_contrast_k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_Rbkb:/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "top_kernel_fifo_w16_d256_A_ram:/mem_reg" of size (depth=255 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3181.742 ; gain = 405.586 ; free physical = 330626 ; free virtual = 424734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   52 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 5     
+	   3 Input   22 Bit       Adders := 1     
+	   9 Input   16 Bit       Adders := 1     
+	   3 Input   16 Bit       Adders := 2     
+	   2 Input   15 Bit       Adders := 8     
+	   2 Input   14 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 12    
+	   3 Input    9 Bit       Adders := 6     
+	   2 Input    8 Bit       Adders := 15    
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 21    
+	   2 Input    4 Bit       Adders := 13    
+	   2 Input    3 Bit       Adders := 13    
+	   2 Input    2 Bit       Adders := 14    
+	   3 Input    2 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 5     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               97 Bit    Registers := 4     
+	               96 Bit    Registers := 2     
+	               73 Bit    Registers := 2     
+	               64 Bit    Registers := 7     
+	               63 Bit    Registers := 1     
+	               52 Bit    Registers := 2     
+	               36 Bit    Registers := 1     
+	               34 Bit    Registers := 3     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 11    
+	               20 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 105   
+	               15 Bit    Registers := 7     
+	               14 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 10    
+	                9 Bit    Registers := 21    
+	                8 Bit    Registers := 19    
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 19    
+	                4 Bit    Registers := 14    
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 20    
+	                1 Bit    Registers := 247   
++---RAMs : 
+	             256K Bit	(16384 X 16 bit)          RAMs := 1     
+	               8K Bit	(255 X 34 bit)          RAMs := 1     
+	               3K Bit	(255 X 16 bit)          RAMs := 5     
+	               2K Bit	(128 X 16 bit)          RAMs := 10    
++---Muxes : 
+	   2 Input   97 Bit        Muxes := 2     
+	   2 Input   73 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 7     
+	   2 Input   52 Bit        Muxes := 2     
+	   2 Input   34 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 5     
+	   2 Input   30 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 55    
+	   2 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 9     
+	   2 Input    9 Bit        Muxes := 7     
+	   4 Input    9 Bit        Muxes := 2     
+	   3 Input    9 Bit        Muxes := 5     
+	   4 Input    8 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 9     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 12    
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 12    
+	   2 Input    2 Bit        Muxes := 144   
+	   3 Input    2 Bit        Muxes := 22    
+	   4 Input    2 Bit        Muxes := 8     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 256   
+	   5 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p1_reg' and it is trimmed from '73' to '72' bits. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2655]
+WARNING: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p2_reg' and it is trimmed from '73' to '72' bits. [/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ddf2/hdl/verilog/top_kernel_gmem1_m_axi.v:2676]
+INFO: [Synth 8-6904] The RAM "inst/k1_contrast_U0/k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k1_contrast_U0/k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k2_erosion_U0/k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k2_erosion_U0/k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k2_erosion_U0/k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_2_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k2_erosion_U0/k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_3_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k3_dilation_U0/k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k3_dilation_U0/k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_1_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k3_dilation_U0/k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_2_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k3_dilation_U0/k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_3_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "top_kernel_fifo_w16_d256_A:/U_top_kernel_fifo_w16_d256_A_ram/mem_reg" of size (depth=255 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "top_kernel_fifo_w16_d256_A:/U_top_kernel_fifo_w16_d256_A_ram/mem_reg" of size (depth=255 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "top_kernel_fifo_w16_d256_A:/U_top_kernel_fifo_w16_d256_A_ram/mem_reg" of size (depth=255 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "top_kernel_fifo_w16_d256_A:/U_top_kernel_fifo_w16_d256_A_ram/mem_reg" of size (depth=255 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "top_kernel_fifo_w16_d256_A:/U_top_kernel_fifo_w16_d256_A_ram/mem_reg" of size (depth=255 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k1_contrast_U0/k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k1_contrast_U0/k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k2_erosion_U0/k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k2_erosion_U0/k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k2_erosion_U0/k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_2_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k2_erosion_U0/k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_3_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k3_dilation_U0/k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k3_dilation_U0/k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_1_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k3_dilation_U0/k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_2_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/k3_dilation_U0/k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_3_U/ram_reg" of size (depth=128 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "top_kernel_fifo_w16_d256_A:/U_top_kernel_fifo_w16_d256_A_ram/mem_reg" of size (depth=255 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module top_kernel_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module top_kernel_control_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 3181.742 ; gain = 405.586 ; free physical = 328069 ; free virtual = 422171
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name          | RTL Object                                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++---------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/gmem0_m_axi_U   | load_unit_0/buff_rdata/U_fifo_mem/mem_reg | 255 x 34(READ_FIRST)   | W |   | 255 x 34(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      |                 | 
+|inst/k5_threshold_U0 | local_storage_U/ram_reg                   | 16 K x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 7      | 4,2,1,1         | 
++---------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++----------------------------+---------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name                 | RTL Object                                                                | Inference | Size (Depth x Width) | Primitives    | 
++----------------------------+---------------------------------------------------------------------------+-----------+----------------------+---------------+
+|inst/k1_contrast_U0         | k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U/ram_reg   | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k1_contrast_U0         | k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U/ram_reg | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k2_erosion_U0          | k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U/ram_reg    | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k2_erosion_U0          | k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U/ram_reg  | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k2_erosion_U0          | k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_2_U/ram_reg  | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k2_erosion_U0          | k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_3_U/ram_reg  | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k3_dilation_U0         | k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_U/ram_reg       | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k3_dilation_U0         | k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_1_U/ram_reg     | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k3_dilation_U0         | k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_2_U/ram_reg     | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k3_dilation_U0         | k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_3_U/ram_reg     | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|top_kernel_fifo_w16_d256_A: | U_top_kernel_fifo_w16_d256_A_ram/mem_reg                                  | Implied   | 256 x 16             | RAM64M8 x 12  | 
+|top_kernel_fifo_w16_d256_A: | U_top_kernel_fifo_w16_d256_A_ram/mem_reg                                  | Implied   | 256 x 16             | RAM64M8 x 12  | 
+|top_kernel_fifo_w16_d256_A: | U_top_kernel_fifo_w16_d256_A_ram/mem_reg                                  | Implied   | 256 x 16             | RAM64M8 x 12  | 
+|top_kernel_fifo_w16_d256_A: | U_top_kernel_fifo_w16_d256_A_ram/mem_reg                                  | Implied   | 256 x 16             | RAM64M8 x 12  | 
+|top_kernel_fifo_w16_d256_A: | U_top_kernel_fifo_w16_d256_A_ram/mem_reg                                  | Implied   | 256 x 16             | RAM64M8 x 12  | 
++----------------------------+---------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 3761.895 ; gain = 985.738 ; free physical = 326187 ; free virtual = 420288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:21 . Memory (MB): peak = 3805.926 ; gain = 1029.770 ; free physical = 325951 ; free virtual = 420050
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name          | RTL Object                                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++---------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/gmem0_m_axi_U   | load_unit_0/buff_rdata/U_fifo_mem/mem_reg | 255 x 34(READ_FIRST)   | W |   | 255 x 34(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      |                 | 
+|inst/k5_threshold_U0 | local_storage_U/ram_reg                   | 16 K x 16(READ_FIRST)  | W | R |                        |   |   | Port A           | 1      | 7      | 4,2,1,1         | 
++---------------------+-------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++----------------------------+---------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name                 | RTL Object                                                                | Inference | Size (Depth x Width) | Primitives    | 
++----------------------------+---------------------------------------------------------------------------+-----------+----------------------+---------------+
+|inst/k1_contrast_U0         | k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U/ram_reg   | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k1_contrast_U0         | k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U/ram_reg | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k2_erosion_U0          | k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U/ram_reg    | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k2_erosion_U0          | k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U/ram_reg  | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k2_erosion_U0          | k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_2_U/ram_reg  | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k2_erosion_U0          | k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_3_U/ram_reg  | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k3_dilation_U0         | k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_U/ram_reg       | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k3_dilation_U0         | k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_1_U/ram_reg     | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k3_dilation_U0         | k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_2_U/ram_reg     | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|inst/k3_dilation_U0         | k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_3_U/ram_reg     | Implied   | 128 x 16             | RAM64M8 x 6   | 
+|top_kernel_fifo_w16_d256_A: | U_top_kernel_fifo_w16_d256_A_ram/mem_reg                                  | Implied   | 256 x 16             | RAM64M8 x 12  | 
+|top_kernel_fifo_w16_d256_A: | U_top_kernel_fifo_w16_d256_A_ram/mem_reg                                  | Implied   | 256 x 16             | RAM64M8 x 12  | 
+|top_kernel_fifo_w16_d256_A: | U_top_kernel_fifo_w16_d256_A_ram/mem_reg                                  | Implied   | 256 x 16             | RAM64M8 x 12  | 
+|top_kernel_fifo_w16_d256_A: | U_top_kernel_fifo_w16_d256_A_ram/mem_reg                                  | Implied   | 256 x 16             | RAM64M8 x 12  | 
+|top_kernel_fifo_w16_d256_A: | U_top_kernel_fifo_w16_d256_A_ram/mem_reg                                  | Implied   | 256 x 16             | RAM64M8 x 12  | 
++----------------------------+---------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/k5_threshold_U0/local_storage_U/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/k5_threshold_U0/local_storage_U/ram_reg_bram_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/k5_threshold_U0/local_storage_U/ram_reg_bram_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/k5_threshold_U0/local_storage_U/ram_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 3840.941 ; gain = 1064.785 ; free physical = 324874 ; free virtual = 419096
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 3965.754 ; gain = 1189.598 ; free physical = 322721 ; free virtual = 417231
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 3965.754 ; gain = 1189.598 ; free physical = 322711 ; free virtual = 417223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:29 ; elapsed = 00:01:32 . Memory (MB): peak = 3965.754 ; gain = 1189.598 ; free physical = 322466 ; free virtual = 417010
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:29 ; elapsed = 00:01:32 . Memory (MB): peak = 3965.754 ; gain = 1189.598 ; free physical = 322457 ; free virtual = 417002
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:29 ; elapsed = 00:01:32 . Memory (MB): peak = 3965.754 ; gain = 1189.598 ; free physical = 322436 ; free virtual = 416947
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:29 ; elapsed = 00:01:33 . Memory (MB): peak = 3965.754 ; gain = 1189.598 ; free physical = 322425 ; free virtual = 416940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_kernel  | k2_erosion_U0/icmp_ln54_reg_1066_pp0_iter5_reg_reg[0]      | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k2_erosion_U0/or_ln58_4_reg_1070_pp0_iter4_reg_reg[0]      | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k2_erosion_U0/val_4_reg_240_pp0_iter4_reg_reg[15]          | 3      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|top_kernel  | k3_dilation_U0/icmp_ln87_reg_1075_pp0_iter5_reg_reg[0]     | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_dilation_U0/or_ln91_4_reg_1079_pp0_iter4_reg_reg[0]     | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_kernel  | k3_dilation_U0/val_2_reg_249_pp0_iter4_reg_reg[15]         | 3      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|top_kernel  | k3_dilation_U0/max_v_4_load_reg_1121_pp0_iter5_reg_reg[15] | 3      | 16    | NO           | NO                 | YES               | 16     | 0       | 
++------------+------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[14]    | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[5]     | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[14]    | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[14]    | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | mem_reg[14]    | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__5     | mem_reg[30]    | 18     | 18         | 0      | 18      | 0      | 0      | 0      | 
+|dsrl__6     | mem_reg[2]     | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__7     | mem_reg[14]    | 36     | 36         | 36     | 0       | 0      | 0      | 0      | 
+|dsrl__8     | mem_reg[14]    | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__9     | mem_reg[2]     | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__10    | mem_reg[14]    | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
+|dsrl__11    | SRL_SIG_reg[6] | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
+|dsrl__12    | SRL_SIG_reg[5] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |   162|
+|2     |LUT1     |   143|
+|3     |LUT2     |   361|
+|4     |LUT3     |  1217|
+|5     |LUT4     |  1025|
+|6     |LUT5     |   712|
+|7     |LUT6     |   987|
+|8     |RAM64M   |    24|
+|9     |RAM64M8  |    86|
+|10    |RAMB18E2 |     2|
+|12    |RAMB36E2 |     7|
+|18    |SRL16E   |   352|
+|19    |SRLC32E  |     3|
+|20    |FDRE     |  4141|
+|21    |FDSE     |    42|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:29 ; elapsed = 00:01:33 . Memory (MB): peak = 3965.754 ; gain = 1189.598 ; free physical = 322416 ; free virtual = 416933
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 722 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 3965.754 ; gain = 1065.496 ; free physical = 322101 ; free virtual = 416603
+Synthesis Optimization Complete : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 3965.754 ; gain = 1189.598 ; free physical = 322098 ; free virtual = 416601
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3965.754 ; gain = 0.000 ; free physical = 321528 ; free virtual = 416031
+INFO: [Netlist 29-17] Analyzing 272 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3965.754 ; gain = 0.000 ; free physical = 320035 ; free virtual = 414539
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 110 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 24 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 86 instances
+
+Synth Design complete | Checksum: dac5ac1f
+INFO: [Common 17-83] Releasing license: Synthesis
+228 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:44 ; elapsed = 00:01:45 . Memory (MB): peak = 3965.754 ; gain = 2062.738 ; free physical = 319946 ; free virtual = 414451
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2791.541; main = 2600.978; forked = 248.561
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5527.180; main = 3947.992; forked = 1598.234
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3972.000 ; gain = 0.000 ; free physical = 319892 ; free virtual = 414398
+INFO: [Common 17-1381] The checkpoint '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 1e218cd8c9cb6e25
+INFO: [Coretcl 2-1174] Renamed 91 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3972.000 ; gain = 0.000 ; free physical = 319418 ; free virtual = 413962
+INFO: [Common 17-1381] The checkpoint '/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 28 22:57:55 2026...

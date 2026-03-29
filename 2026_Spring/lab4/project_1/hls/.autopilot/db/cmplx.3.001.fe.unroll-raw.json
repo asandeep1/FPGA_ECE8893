@@ -1,0 +1,113 @@
+{
+  "0": {
+    "basicblocks": 15,
+    "calls": "1 3 5 2 4",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "top.cpp",
+    "fileloc": 131,
+    "instructions": 61,
+    "loads": {
+      "G": 5,
+      "T": 1
+    },
+    "memory_accesses": 2,
+    "name": "top_kernel",
+    "stores": {
+      "G": 5
+    },
+    "total_instructions": 1655
+  },
+  "1": {
+    "basicblocks": 174,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 14,
+    "file": "top.cpp",
+    "fileloc": 4,
+    "instructions": 434,
+    "loads": {
+      "G": 3,
+      "L": 36
+    },
+    "memory_accesses": 52,
+    "name": "k1_contrast",
+    "stores": {
+      "G": 2,
+      "L": 9
+    },
+    "total_instructions": 434
+  },
+  "2": {
+    "basicblocks": 19,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 3,
+    "file": "top.cpp",
+    "fileloc": 104,
+    "instructions": 38,
+    "memory_accesses": 3,
+    "name": "k4_gradient",
+    "total_instructions": 38
+  },
+  "3": {
+    "basicblocks": 80,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 28,
+    "file": "top.cpp",
+    "fileloc": 37,
+    "instructions": 384,
+    "loads": {
+      "G": 7,
+      "L": 72
+    },
+    "memory_accesses": 112,
+    "name": "k2_erosion",
+    "stores": {
+      "G": 4,
+      "L": 26
+    },
+    "total_instructions": 448
+  },
+  "4": {
+    "basicblocks": 43,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 4,
+    "file": "top.cpp",
+    "fileloc": 112,
+    "instructions": 95,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "memory_accesses": 7,
+    "name": "k5_threshold",
+    "stores": {
+      "G": 1,
+      "L": 1
+    },
+    "total_instructions": 223
+  },
+  "5": {
+    "basicblocks": 80,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 28,
+    "file": "top.cpp",
+    "fileloc": 70,
+    "instructions": 387,
+    "loads": {
+      "G": 7,
+      "L": 73
+    },
+    "memory_accesses": 114,
+    "name": "k3_dilation",
+    "stores": {
+      "G": 4,
+      "L": 26
+    },
+    "total_instructions": 451
+  }
+}
