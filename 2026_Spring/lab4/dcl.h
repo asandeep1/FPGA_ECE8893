@@ -1,25 +1,21 @@
-#ifndef DCL_H
-#define DCL_H
+#ifndef _DCL_H_
+#define _DCL_H_
 
 #include <ap_fixed.h>
 #include <hls_stream.h>
-#include <cstdint>
 #include <cmath>
+#include <iostream>
 
-// Dimensions
+// Image dimensions
 #define ROWS 128
 #define COLS 128
-#define N (ROWS * COLS) // 16384
-#define BLOCK 256 
+#define N (ROWS * COLS)
 
-// Type Definitions
-typedef ap_fixed<16, 8, AP_RND, AP_SAT> data_t;
-typedef ap_fixed<16, 2, AP_RND, AP_SAT> coef_t;
-typedef ap_fixed<24, 16, AP_RND, AP_SAT> acc_t;
-typedef ap_fixed<16, 8, AP_RND, AP_SAT> stat_t;
+// Requirement: Fixed-point arithmetic
+typedef ap_fixed<16, 8> data_t;
 
-// Prototypes
-void top_kernel(const data_t red[N], const data_t nir[N], data_t profile[COLS]);
-void ag_pipeline_baseline(data_t red_in[ROWS][COLS], data_t nir_in[ROWS][COLS], data_t profile_out[COLS]);
+// Function Prototypes
+void top_kernel(const data_t in[N], data_t out[N]);
+void baseline(const data_t in[N], data_t out[N]);
 
 #endif

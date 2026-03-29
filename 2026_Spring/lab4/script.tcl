@@ -3,10 +3,13 @@ open_component project_1
 set_top top_kernel
 add_files top.cpp
 
-#set_top ag_pipeline_baseline
+#set_top baseline
 #add_files baseline.cpp
 
+add_files top.cpp
+
 add_files -tb host.cpp
+add_files -tb baseline.cpp
 
 # stop automatic unrolling and pipelining by Vitis so baseline design fits on FPGA
 config_unroll -tripcount_threshold 0
