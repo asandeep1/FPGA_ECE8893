@@ -8,4 +8,6 @@
 
 extern "C" void AESL_WRAP_top_kernel (
 volatile void* in_r,
+volatile void* in_g,
+volatile void* in_b,
 volatile void* out_r);

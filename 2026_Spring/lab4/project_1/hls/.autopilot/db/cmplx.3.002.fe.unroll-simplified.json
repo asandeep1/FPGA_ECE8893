@@ -1,113 +1,124 @@
 {
   "0": {
-    "basicblocks": 13,
-    "calls": "1 3 5 2 4",
+    "basicblocks": 45,
+    "calls": "5 5",
     "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "top.cpp",
-    "fileloc": 131,
-    "instructions": 58,
-    "loads": {
-      "G": 5,
-      "T": 1
-    },
-    "memory_accesses": 2,
-    "name": "top_kernel",
-    "stores": {
-      "G": 5
-    },
-    "total_instructions": 757
-  },
-  "1": {
-    "basicblocks": 9,
-    "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 14,
+    "def_use_depth": 15,
     "file": "top.cpp",
     "fileloc": 4,
-    "instructions": 122,
+    "instructions": 271,
     "loads": {
-      "G": 2,
-      "L": 6
+      "G": 15,
+      "T": 3
     },
-    "memory_accesses": 21,
-    "name": "k1_contrast",
+    "memory_accesses": 19,
+    "name": "top_kernel",
     "stores": {
-      "G": 2,
-      "L": 9
+      "G": 9,
+      "T": 1
     },
-    "total_instructions": 122
+    "total_instructions": 381
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 316,
+    "instructions": 4,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "expv",
+    "total_instructions": 4
   },
   "2": {
-    "basicblocks": 3,
+    "basicblocks": 1,
+    "calls": "7 3 1 6",
+    "control_depth": 0,
+    "def_use_depth": 10,
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 12,
+    "instructions": 30,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "generic_cast_IEEE754<int, AP_TRN_ZERO, float>",
+    "total_instructions": 51
+  },
+  "3": {
+    "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
     "def_use_depth": 3,
-    "file": "top.cpp",
-    "fileloc": 104,
-    "instructions": 15,
-    "memory_accesses": 3,
-    "name": "k4_gradient",
-    "total_instructions": 15
-  },
-  "3": {
-    "basicblocks": 10,
-    "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 53,
-    "file": "top.cpp",
-    "fileloc": 37,
-    "instructions": 172,
+    "file": "x_hls_utils.h",
+    "fileloc": 340,
+    "instructions": 6,
     "loads": {
-      "G": 4,
-      "L": 21
+      "L": 1
     },
-    "memory_accesses": 58,
-    "name": "k2_erosion",
+    "memory_accesses": 0,
+    "name": "mantissa",
     "stores": {
-      "G": 4,
-      "L": 26
+      "L": 1
     },
-    "total_instructions": 216
+    "total_instructions": 6
   },
   "4": {
-    "basicblocks": 8,
-    "calls": "",
-    "control_depth": 2,
-    "def_use_depth": 3,
-    "file": "top.cpp",
-    "fileloc": 112,
-    "instructions": 41,
-    "loads": {
-      "G": 1,
-      "L": 1
-    },
-    "memory_accesses": 7,
-    "name": "k5_threshold",
-    "stores": {
-      "G": 1,
-      "L": 1
-    },
-    "total_instructions": 129
+    "basicblocks": 1,
+    "calls": "2",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 116,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "generic_cast_IEEE754<int, float>",
+    "total_instructions": 53
   },
   "5": {
-    "basicblocks": 10,
+    "basicblocks": 1,
+    "calls": "4",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 51,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "__hls_fptosi_float_i32",
+    "total_instructions": 55
+  },
+  "6": {
+    "basicblocks": 1,
     "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 53,
-    "file": "top.cpp",
-    "fileloc": 70,
-    "instructions": 173,
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "x_hls_utils.h",
+    "fileloc": 349,
+    "instructions": 3,
     "loads": {
-      "G": 4,
-      "L": 21
+      "L": 1
     },
-    "memory_accesses": 59,
-    "name": "k3_dilation",
+    "memory_accesses": 0,
+    "name": "__signbit",
+    "total_instructions": 3
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 283,
+    "instructions": 8,
+    "memory_accesses": 0,
+    "name": "fp_struct",
     "stores": {
-      "G": 4,
-      "L": 26
+      "L": 3
     },
-    "total_instructions": 217
+    "total_instructions": 8
   }
 }

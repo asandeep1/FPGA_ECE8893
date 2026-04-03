@@ -10,13 +10,29 @@ in_r {
 	offset 16
 	offset_end 27
 }
-out_r { 
+in_g { 
 	dir I
 	width 64
 	depth 1
 	mode ap_none
 	offset 28
 	offset_end 39
+}
+in_b { 
+	dir I
+	width 64
+	depth 1
+	mode ap_none
+	offset 40
+	offset_end 51
+}
+out_r { 
+	dir I
+	width 64
+	depth 1
+	mode ap_none
+	offset 52
+	offset_end 63
 }
 ap_start { }
 ap_done { }

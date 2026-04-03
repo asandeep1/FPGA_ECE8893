@@ -101,6 +101,10 @@ void XTop_kernel_DisableAutoRestart(XTop_kernel *InstancePtr);
 
 void XTop_kernel_Set_in_r(XTop_kernel *InstancePtr, u64 Data);
 u64 XTop_kernel_Get_in_r(XTop_kernel *InstancePtr);
+void XTop_kernel_Set_in_g(XTop_kernel *InstancePtr, u64 Data);
+u64 XTop_kernel_Get_in_g(XTop_kernel *InstancePtr);
+void XTop_kernel_Set_in_b(XTop_kernel *InstancePtr, u64 Data);
+u64 XTop_kernel_Get_in_b(XTop_kernel *InstancePtr);
 void XTop_kernel_Set_out_r(XTop_kernel *InstancePtr, u64 Data);
 u64 XTop_kernel_Get_out_r(XTop_kernel *InstancePtr);
 

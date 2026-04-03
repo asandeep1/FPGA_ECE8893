@@ -33,6 +33,8 @@ module top_kernel_control_s_axi
     input  wire                          RREADY,
     output wire                          interrupt,
     output wire [63:0]                   in_r,
+    output wire [63:0]                   in_g,
+    output wire [63:0]                   in_b,
     output wire [63:0]                   out_r,
     output wire                          ap_start,
     input  wire                          ap_done,
@@ -66,11 +68,21 @@ module top_kernel_control_s_axi
 // 0x14 : Data signal of in_r
 //        bit 31~0 - in_r[63:32] (Read/Write)
 // 0x18 : reserved
-// 0x1c : Data signal of out_r
-//        bit 31~0 - out_r[31:0] (Read/Write)
-// 0x20 : Data signal of out_r
-//        bit 31~0 - out_r[63:32] (Read/Write)
+// 0x1c : Data signal of in_g
+//        bit 31~0 - in_g[31:0] (Read/Write)
+// 0x20 : Data signal of in_g
+//        bit 31~0 - in_g[63:32] (Read/Write)
 // 0x24 : reserved
+// 0x28 : Data signal of in_b
+//        bit 31~0 - in_b[31:0] (Read/Write)
+// 0x2c : Data signal of in_b
+//        bit 31~0 - in_b[63:32] (Read/Write)
+// 0x30 : reserved
+// 0x34 : Data signal of out_r
+//        bit 31~0 - out_r[31:0] (Read/Write)
+// 0x38 : Data signal of out_r
+//        bit 31~0 - out_r[63:32] (Read/Write)
+// 0x3c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
@@ -82,9 +94,15 @@ localparam
     ADDR_IN_R_DATA_0  = 6'h10,
     ADDR_IN_R_DATA_1  = 6'h14,
     ADDR_IN_R_CTRL    = 6'h18,
-    ADDR_OUT_R_DATA_0 = 6'h1c,
-    ADDR_OUT_R_DATA_1 = 6'h20,
-    ADDR_OUT_R_CTRL   = 6'h24,
+    ADDR_IN_G_DATA_0  = 6'h1c,
+    ADDR_IN_G_DATA_1  = 6'h20,
+    ADDR_IN_G_CTRL    = 6'h24,
+    ADDR_IN_B_DATA_0  = 6'h28,
+    ADDR_IN_B_DATA_1  = 6'h2c,
+    ADDR_IN_B_CTRL    = 6'h30,
+    ADDR_OUT_R_DATA_0 = 6'h34,
+    ADDR_OUT_R_DATA_1 = 6'h38,
+    ADDR_OUT_R_CTRL   = 6'h3c,
     WRIDLE            = 2'd0,
     WRDATA            = 2'd1,
     WRRESP            = 2'd2,
@@ -122,6 +140,8 @@ localparam
     reg  [1:0]                    int_ier = 2'b0;
     reg  [1:0]                    int_isr = 2'b0;
     reg  [63:0]                   int_in_r = 'b0;
+    reg  [63:0]                   int_in_g = 'b0;
+    reg  [63:0]                   int_in_b = 'b0;
     reg  [63:0]                   int_out_r = 'b0;
 
 //------------------------Instantiation------------------
@@ -238,6 +258,18 @@ always @(posedge ACLK) begin
                 ADDR_IN_R_DATA_1: begin
                     rdata <= int_in_r[63:32];
                 end
+                ADDR_IN_G_DATA_0: begin
+                    rdata <= int_in_g[31:0];
+                end
+                ADDR_IN_G_DATA_1: begin
+                    rdata <= int_in_g[63:32];
+                end
+                ADDR_IN_B_DATA_0: begin
+                    rdata <= int_in_b[31:0];
+                end
+                ADDR_IN_B_DATA_1: begin
+                    rdata <= int_in_b[63:32];
+                end
                 ADDR_OUT_R_DATA_0: begin
                     rdata <= int_out_r[31:0];
                 end
@@ -257,6 +289,8 @@ assign task_ap_done      = (ap_done && !auto_restart_status) || auto_restart_don
 assign task_ap_ready     = ap_ready && !int_auto_restart;
 assign auto_restart_done = auto_restart_status && (ap_idle && !int_ap_idle);
 assign in_r              = int_in_r;
+assign in_g              = int_in_g;
+assign in_b              = int_in_b;
 assign out_r             = int_out_r;
 // int_interrupt
 always @(posedge ACLK) begin
@@ -407,6 +441,46 @@ always @(posedge ACLK) begin
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_IN_R_DATA_1)
             int_in_r[63:32] <= (WDATA[31:0] & wmask) | (int_in_r[63:32] & ~wmask);
+    end
+end
+
+// int_in_g[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_in_g[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_IN_G_DATA_0)
+            int_in_g[31:0] <= (WDATA[31:0] & wmask) | (int_in_g[31:0] & ~wmask);
+    end
+end
+
+// int_in_g[63:32]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_in_g[63:32] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_IN_G_DATA_1)
+            int_in_g[63:32] <= (WDATA[31:0] & wmask) | (int_in_g[63:32] & ~wmask);
+    end
+end
+
+// int_in_b[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_in_b[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_IN_B_DATA_0)
+            int_in_b[31:0] <= (WDATA[31:0] & wmask) | (int_in_b[31:0] & ~wmask);
+    end
+end
+
+// int_in_b[63:32]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_in_b[63:32] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_IN_B_DATA_1)
+            int_in_b[63:32] <= (WDATA[31:0] & wmask) | (int_in_b[63:32] & ~wmask);
     end
 end
 

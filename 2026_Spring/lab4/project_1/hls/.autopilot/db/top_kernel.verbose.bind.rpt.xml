@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'top_kernel'" level="0">
-<item name = "Date">Sat Mar 28 22:53:00 2026
+<item name = "Date">Fri Apr  3 18:52:45 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.506 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,24 +24,39 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">49176, 49176, 0.492 ms, 0.492 ms, 49161, 49161, dataflow</column>
+<column name="">13737643, 13737643, 0.137 sec, 0.137 sec, 13737644, 13737644, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="call_ln143_entry_proc_fu_146">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="grp_Loop_VITIS_LOOP_145_1_proc_fu_153">Loop_VITIS_LOOP_145_1_proc, 49160, 49160, 0.492 ms, 0.492 ms, 49160, 49160, no</column>
-<column name="grp_k1_contrast_fu_161">k1_contrast, 16516, 16516, 0.165 ms, 0.165 ms, 16513, 16513, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_k2_erosion_fu_172">k2_erosion, 16649, 16649, 0.166 ms, 0.166 ms, 16642, 16642, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_k3_dilation_fu_188">k3_dilation, 16649, 16649, 0.166 ms, 0.166 ms, 16642, 16642, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_k4_gradient_fu_206">k4_gradient, 16385, 16385, 0.164 ms, 0.164 ms, 16384, 16384, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_k5_threshold_fu_216">k5_threshold, 32782, 32782, 0.328 ms, 0.328 ms, 32782, 32782, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_30_3">256, 256, 1, -, -, 256, no</column>
+<column name="- VITIS_LOOP_34_4">770304, 770304, 6018, -, -, 128, no</column>
+<column name=" + VITIS_LOOP_35_5">6016, 6016, 47, -, -, 128, no</column>
+<column name="- VITIS_LOOP_55_6">510, 510, 2, -, -, 255, no</column>
+<column name="- VITIS_LOOP_63_7">442624, 442624, 3458, -, -, 128, no</column>
+<column name=" + VITIS_LOOP_64_8">3456, 3456, 27, -, -, 128, no</column>
+<column name="- VITIS_LOOP_83_9">4028760, 4028760, 32490, -, -, 124, no</column>
+<column name=" + VITIS_LOOP_84_10">32488, 32488, 262, -, -, 124, no</column>
+<column name="  ++ VITIS_LOOP_87_11">260, 260, 52, -, -, 5, no</column>
+<column name="   +++ VITIS_LOOP_88_12">50, 50, 10, -, -, 5, no</column>
+<column name="- VITIS_LOOP_101_13">7334964, 7334964, 58214, -, -, 126, no</column>
+<column name=" + VITIS_LOOP_102_14">58212, 58212, 462, -, -, 126, no</column>
+<column name="  ++ VITIS_LOOP_107_15">447, 447, 149, -, -, 3, no</column>
+<column name="   +++ VITIS_LOOP_108_16">147, 147, 49, -, -, 3, no</column>
+<column name="- VITIS_LOOP_129_17">571788, 571788, 4538, -, -, 126, no</column>
+<column name=" + VITIS_LOOP_130_18">4536, 4536, 36, -, -, 126, no</column>
+<column name="  ++ VITIS_LOOP_133_19">33, 33, 11, -, -, 3, no</column>
+<column name="   +++ VITIS_LOOP_134_20">9, 9, 3, -, -, 3, no</column>
+<column name="- VITIS_LOOP_145_21">588420, 588420, 4670, -, -, 126, no</column>
+<column name=" + VITIS_LOOP_146_22">4662, 4662, 37, -, -, 126, no</column>
+<column name="  ++ VITIS_LOOP_149_23">33, 33, 11, -, -, 3, no</column>
+<column name="   +++ VITIS_LOOP_150_24">9, 9, 3, -, -, 3, no</column>
 </table>
 </item>
 </section>

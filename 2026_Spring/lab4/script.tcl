@@ -9,7 +9,6 @@ add_files top.cpp
 add_files top.cpp
 
 add_files -tb host.cpp
-add_files -tb baseline.cpp
 
 # stop automatic unrolling and pipelining by Vitis so baseline design fits on FPGA
 config_unroll -tripcount_threshold 0

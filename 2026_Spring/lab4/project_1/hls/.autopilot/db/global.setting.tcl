@@ -5,11 +5,11 @@ set ClockList ap_clk
 set AxiliteClockList {}
 set HasVivadoClockPeriod 0
 set CombLogicFlag 0
-set PipelineFlag 1
+set PipelineFlag 0
 set DataflowTaskPipelineFlag 1
 set TrivialPipelineFlag 0
 set noPortSwitchingFlag 0
-set FloatingPointFlag 0
+set FloatingPointFlag 1
 set FftOrFirFlag 0
 set NbRWValue 0
 set intNbAccess 0
@@ -46,12 +46,12 @@ set TargetInfo xczu3eg:-sbva484:-1-e
 set SourceFiles {sc {} c ../../top.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile {}
-set TBFiles {verilog {../../baseline.cpp ../../host.cpp} bc {../../baseline.cpp ../../host.cpp} sc {../../baseline.cpp ../../host.cpp} vhdl {../../baseline.cpp ../../host.cpp} c {} cas {../../baseline.cpp ../../host.cpp}}
+set TBFiles {verilog ../../host.cpp bc ../../host.cpp vhdl ../../host.cpp sc ../../host.cpp cas ../../host.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
-set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

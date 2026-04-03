@@ -1,21 +1,23 @@
-#ifndef _DCL_H_
-#define _DCL_H_
+#ifndef DCL_H
+#define DCL_H
 
-#include <ap_fixed.h>
-#include <hls_stream.h>
-#include <cmath>
 #include <iostream>
+#include <cmath>
 
-// Image dimensions
+// Dimensions - adjust based on your image size
 #define ROWS 128
 #define COLS 128
 #define N (ROWS * COLS)
+#define HIST_BINS 256
 
-// Requirement: Fixed-point arithmetic
-typedef ap_fixed<16, 8> data_t;
+// Data type definition
+// For FPGA performance, eventually consider: typedef ap_fixed<32,16> data_t;
+typedef float data_t;
 
-// Function Prototypes
-void top_kernel(const data_t in[N], data_t out[N]);
-void baseline(const data_t in[N], data_t out[N]);
+// Top level function prototype
+void top_kernel(const data_t in_r[N], const data_t in_g[N], const data_t in_b[N], data_t out[N]);
+
+// Baseline function prototype
+void baseline(const data_t in_r[N], const data_t in_g[N], const data_t in_b[N], data_t out[N]);
 
 #endif

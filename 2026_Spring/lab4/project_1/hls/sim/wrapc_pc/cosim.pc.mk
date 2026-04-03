@@ -84,10 +84,6 @@ $(ObjDir)/$(APATB_UTIL).o: $(APATB_UTIL).cpp
 	$(Echo) "   Compiling $<" $(AVE_DIR_DLOG)
 	$(Verb) $(CXX) -fno-builtin-isinf -fno-builtin-isnan -c $(TOOLCHAIN) $(IFLAG) $(WFLAG) $< -o $@
 
-$(ObjDir)/baseline.cpp_pre.cpp.tb.o : baseline.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling baseline.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
-	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN} -std=gnu++14 -fno-builtin-isinf -fno-builtin-isnan -c -Wno-unknown-pragmas -Wno-unknown-pragmas $(IFLAG) $(DFLAG) $< -o $@; \
-
 $(ObjDir)/host.cpp_pre.cpp.tb.o : host.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling host.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN} -std=gnu++14 -fno-builtin-isinf -fno-builtin-isnan -c -Wno-unknown-pragmas -Wno-unknown-pragmas $(IFLAG) $(DFLAG) $< -o $@; \

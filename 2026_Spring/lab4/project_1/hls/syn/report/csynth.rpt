@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'top_kernel'
 ================================================================
 + General Information: 
-    * Date:           Sat Mar 28 22:53:02 2026
+    * Date:           Fri Apr  3 18:52:46 2026
     * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
     * Project:        project_1
     * Solution:       hls (Vivado IP Flow Target)
@@ -15,41 +15,46 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +--------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+---------+----+-----------+-----------+-----+
-    |                   Modules                  | Issue|      |       Latency       | Iteration|         |  Trip |          |         |    |           |           |     |
-    |                   & Loops                  | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|  BRAM   | DSP|     FF    |    LUT    | URAM|
-    +--------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+---------+----+-----------+-----------+-----+
-    |+ top_kernel*                               |     -|  0.00|    49176|  4.918e+05|         -|    49161|      -|  dataflow|  33 (7%)|   -|  4639 (3%)|  6506 (9%)|    -|
-    | + entry_proc                               |     -|  5.16|        0|      0.000|         -|        0|      -|        no|        -|   -|    3 (~0%)|   29 (~0%)|    -|
-    | + Loop_VITIS_LOOP_145_1_proc               |     -|  0.00|    49160|  4.916e+05|         -|    49160|      -|        no|        -|   -|   44 (~0%)|  166 (~0%)|    -|
-    |  o VITIS_LOOP_145_1                        |     -|  7.30|    49152|  4.915e+05|         3|        -|  16384|        no|        -|   -|          -|          -|    -|
-    | + k1_contrast                              |     -|  0.56|    16516|  1.652e+05|         -|    16513|      -|    rewind|  2 (~0%)|   -|  172 (~0%)|  454 (~0%)|    -|
-    |  o VITIS_LOOP_10_1                         |     -|  7.30|    16514|  1.651e+05|         3|        1|  16513|       yes|        -|   -|          -|          -|    -|
-    | + k2_erosion                               |     -|  0.12|    16649|  1.665e+05|         -|    16642|      -|    rewind|  4 (~0%)|   -|  814 (~0%)|  1417 (2%)|    -|
-    |  o VITIS_LOOP_43_1                         |     -|  7.30|    16647|  1.665e+05|         7|        1|  16642|       yes|        -|   -|          -|          -|    -|
-    | + k3_dilation                              |     -|  0.12|    16649|  1.665e+05|         -|    16642|      -|    rewind|  4 (~0%)|   -|  894 (~0%)|  1458 (2%)|    -|
-    |  o VITIS_LOOP_76_1                         |     -|  7.30|    16647|  1.665e+05|         7|        1|  16642|       yes|        -|   -|          -|          -|    -|
-    | + k4_gradient                              |     -|  2.56|    16385|  1.638e+05|         -|    16384|      -|    rewind|        -|   -|   16 (~0%)|  121 (~0%)|    -|
-    |  o VITIS_LOOP_105_1                        |     -|  7.30|    16383|  1.638e+05|         1|        1|  16384|       yes|        -|   -|          -|          -|    -|
-    | + k5_threshold                             |     -|  0.00|    32782|  3.278e+05|         -|    32782|      -|        no|  16 (3%)|   -|  193 (~0%)|  639 (~0%)|    -|
-    |  + k5_threshold_Pipeline_VITIS_LOOP_116_1  |     -|  3.74|    16386|  1.639e+05|         -|    16385|      -|    rewind|        -|   -|   65 (~0%)|  142 (~0%)|    -|
-    |   o VITIS_LOOP_116_1                       |     -|  7.30|    16384|  1.638e+05|         2|        1|  16384|       yes|        -|   -|          -|          -|    -|
-    |  + k5_threshold_Pipeline_VITIS_LOOP_125_2  |     -|  0.00|    16387|  1.639e+05|         -|    16385|      -|    rewind|        -|   -|   37 (~0%)|  125 (~0%)|    -|
-    |   o VITIS_LOOP_125_2                       |     -|  7.30|    16385|  1.638e+05|         3|        1|  16384|       yes|        -|   -|          -|          -|    -|
-    +--------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+---------+----+-----------+-----------+-----+
+    +-------------------------+---------+-------+----------+-----------+----------+----------+------+----------+-----------+----------+-----------+------------+-----+
+    |         Modules         |  Issue  |       |        Latency       | Iteration|          | Trip |          |           |          |           |            |     |
+    |         & Loops         |   Type  | Slack | (cycles) |    (ns)   |  Latency | Interval | Count| Pipelined|   BRAM    |    DSP   |     FF    |     LUT    | URAM|
+    +-------------------------+---------+-------+----------+-----------+----------+----------+------+----------+-----------+----------+-----------+------------+-----+
+    |+ top_kernel             |   Timing|  -0.21|  13737643|  1.374e+08|         -|  13737644|     -|        no|  154 (35%)|  36 (10%)|  5440 (3%)|  9330 (13%)|    -|
+    | o VITIS_LOOP_30_3       |        -|   7.30|       256|  2.560e+03|         1|         -|   256|        no|          -|         -|          -|           -|    -|
+    | o VITIS_LOOP_34_4       |        -|   7.30|    770304|  7.703e+06|      6018|         -|   128|        no|          -|         -|          -|           -|    -|
+    |  o VITIS_LOOP_35_5      |        -|   7.30|      6016|  6.016e+04|        47|         -|   128|        no|          -|         -|          -|           -|    -|
+    | o VITIS_LOOP_55_6       |        -|   7.30|       510|  5.100e+03|         2|         -|   255|        no|          -|         -|          -|           -|    -|
+    | o VITIS_LOOP_63_7       |        -|   7.30|    442624|  4.426e+06|      3458|         -|   128|        no|          -|         -|          -|           -|    -|
+    |  o VITIS_LOOP_64_8      |        -|   7.30|      3456|  3.456e+04|        27|         -|   128|        no|          -|         -|          -|           -|    -|
+    | o VITIS_LOOP_83_9       |        -|   7.30|   4028760|  4.029e+07|     32490|         -|   124|        no|          -|         -|          -|           -|    -|
+    |  o VITIS_LOOP_84_10     |        -|   7.30|     32488|  3.249e+05|       262|         -|   124|        no|          -|         -|          -|           -|    -|
+    |   o VITIS_LOOP_87_11    |        -|   7.30|       260|  2.600e+03|        52|         -|     5|        no|          -|         -|          -|           -|    -|
+    |    o VITIS_LOOP_88_12   |        -|   7.30|        50|    500.000|        10|         -|     5|        no|          -|         -|          -|           -|    -|
+    | o VITIS_LOOP_101_13     |        -|   7.30|   7334964|  7.335e+07|     58214|         -|   126|        no|          -|         -|          -|           -|    -|
+    |  o VITIS_LOOP_102_14    |        -|   7.30|     58212|  5.821e+05|       462|         -|   126|        no|          -|         -|          -|           -|    -|
+    |   o VITIS_LOOP_107_15   |        -|   7.30|       447|  4.470e+03|       149|         -|     3|        no|          -|         -|          -|           -|    -|
+    |    o VITIS_LOOP_108_16  |        -|   7.30|       147|  1.470e+03|        49|         -|     3|        no|          -|         -|          -|           -|    -|
+    | o VITIS_LOOP_129_17     |        -|   7.30|    571788|  5.718e+06|      4538|         -|   126|        no|          -|         -|          -|           -|    -|
+    |  o VITIS_LOOP_130_18    |        -|   7.30|      4536|  4.536e+04|        36|         -|   126|        no|          -|         -|          -|           -|    -|
+    |   o VITIS_LOOP_133_19   |        -|   7.30|        33|    330.000|        11|         -|     3|        no|          -|         -|          -|           -|    -|
+    |    o VITIS_LOOP_134_20  |        -|   7.30|         9|     90.000|         3|         -|     3|        no|          -|         -|          -|           -|    -|
+    | o VITIS_LOOP_145_21     |        -|   7.30|    588420|  5.884e+06|      4670|         -|   126|        no|          -|         -|          -|           -|    -|
+    |  o VITIS_LOOP_146_22    |        -|   7.30|      4662|  4.662e+04|        37|         -|   126|        no|          -|         -|          -|           -|    -|
+    |   o VITIS_LOOP_149_23   |        -|   7.30|        33|    330.000|        11|         -|     3|        no|          -|         -|          -|           -|    -|
+    |    o VITIS_LOOP_150_24  |        -|   7.30|         9|     90.000|         3|         -|     3|        no|          -|         -|          -|           -|    -|
+    +-------------------------+---------+-------+----------+-----------+----------+----------+------+----------+-----------+----------+-----------+------------+-----+
 
 
 ================================================================
 == HW Interfaces
 ================================================================
 * M_AXI
-+-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
-| Interface   | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
-|             |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
-+-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
-| m_axi_gmem0 | READ_ONLY  | 16 -> 16   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
-| m_axi_gmem1 | WRITE_ONLY | 16 -> 16   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |                   |
-+-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface  | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|            |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem | READ_WRITE | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
 
 * S_AXILITE Interfaces
 +---------------+------------+---------------+--------+----------+
@@ -68,8 +73,12 @@
 | s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
 | s_axi_control | in_r_1   | 0x10   | 32    | W      | Data signal of in_r              |                                                                      |
 | s_axi_control | in_r_2   | 0x14   | 32    | W      | Data signal of in_r              |                                                                      |
-| s_axi_control | out_r_1  | 0x1c   | 32    | W      | Data signal of out_r             |                                                                      |
-| s_axi_control | out_r_2  | 0x20   | 32    | W      | Data signal of out_r             |                                                                      |
+| s_axi_control | in_g_1   | 0x1c   | 32    | W      | Data signal of in_g              |                                                                      |
+| s_axi_control | in_g_2   | 0x20   | 32    | W      | Data signal of in_g              |                                                                      |
+| s_axi_control | in_b_1   | 0x28   | 32    | W      | Data signal of in_b              |                                                                      |
+| s_axi_control | in_b_2   | 0x2c   | 32    | W      | Data signal of in_b              |                                                                      |
+| s_axi_control | out_r_1  | 0x34   | 32    | W      | Data signal of out_r             |                                                                      |
+| s_axi_control | out_r_2  | 0x38   | 32    | W      | Data signal of out_r             |                                                                      |
 +---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
 
 * TOP LEVEL CONTROL
@@ -87,23 +96,31 @@
 == SW I/O Information
 ================================================================
 * Top Function Arguments
-+----------+-----------+---------------------------------------------+
-| Argument | Direction | Datatype                                    |
-+----------+-----------+---------------------------------------------+
-| in       | in        | ap_fixed<16, 8, AP_TRN, AP_WRAP, 0> const * |
-| out      | out       | ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>*        |
-+----------+-----------+---------------------------------------------+
++----------+-----------+---------------+
+| Argument | Direction | Datatype      |
++----------+-----------+---------------+
+| in_r     | inout     | float const * |
+| in_g     | inout     | float const * |
+| in_b     | inout     | float const * |
+| out      | inout     | float*        |
++----------+-----------+---------------+
 
 * SW-to-HW Mapping
 +----------+---------------+-----------+----------+-----------------------------------+
 | Argument | HW Interface  | HW Type   | HW Usage | HW Info                           |
 +----------+---------------+-----------+----------+-----------------------------------+
-| in       | m_axi_gmem0   | interface |          | channel=0                         |
-| in       | s_axi_control | register  | offset   | name=in_r_1 offset=0x10 range=32  |
-| in       | s_axi_control | register  | offset   | name=in_r_2 offset=0x14 range=32  |
-| out      | m_axi_gmem1   | interface |          | channel=0                         |
-| out      | s_axi_control | register  | offset   | name=out_r_1 offset=0x1c range=32 |
-| out      | s_axi_control | register  | offset   | name=out_r_2 offset=0x20 range=32 |
+| in_r     | m_axi_gmem    | interface |          | channel=0                         |
+| in_r     | s_axi_control | register  | offset   | name=in_r_1 offset=0x10 range=32  |
+| in_r     | s_axi_control | register  | offset   | name=in_r_2 offset=0x14 range=32  |
+| in_g     | m_axi_gmem    | interface |          | channel=0                         |
+| in_g     | s_axi_control | register  | offset   | name=in_g_1 offset=0x1c range=32  |
+| in_g     | s_axi_control | register  | offset   | name=in_g_2 offset=0x20 range=32  |
+| in_b     | m_axi_gmem    | interface |          | channel=0                         |
+| in_b     | s_axi_control | register  | offset   | name=in_b_1 offset=0x28 range=32  |
+| in_b     | s_axi_control | register  | offset   | name=in_b_2 offset=0x2c range=32  |
+| out      | m_axi_gmem    | interface |          | channel=0                         |
+| out      | s_axi_control | register  | offset   | name=out_r_1 offset=0x34 range=32 |
+| out      | s_axi_control | register  | offset   | name=out_r_2 offset=0x38 range=32 |
 +----------+---------------+-----------+----------+-----------------------------------+
 
 
@@ -113,274 +130,218 @@
  Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
 
 * Inferred Burst Summary
-+--------------+-----------+--------+-------+------------------+----------------+
-| HW Interface | Direction | Length | Width | Loop             | Loop Location  |
-+--------------+-----------+--------+-------+------------------+----------------+
-| m_axi_gmem0  | read      | 16384  | 16    | VITIS_LOOP_145_1 | top.cpp:145:23 |
-| m_axi_gmem1  | write     | 16384  | 16    | VITIS_LOOP_125_2 | top.cpp:125:23 |
-+--------------+-----------+--------+-------+------------------+----------------+
++--------------+-----------+--------+-------+-------------------+----------------+
+| HW Interface | Direction | Length | Width | Loop              | Loop Location  |
++--------------+-----------+--------+-------+-------------------+----------------+
+| m_axi_gmem   | write     | 126    | 32    | VITIS_LOOP_146_22 | top.cpp:146:28 |
++--------------+-----------+--------+-------+-------------------+----------------+
 
 * All M_AXI Variable Accesses
-+--------------+----------+-----------------+-----------+--------------+--------+------------------+----------------+------------+-------------------------------------------------------------------------------------------------------+
-| HW Interface | Variable | Access Location | Direction | Burst Status | Length | Loop             | Loop Location  | Resolution | Problem                                                                                               |
-+--------------+----------+-----------------+-----------+--------------+--------+------------------+----------------+------------+-------------------------------------------------------------------------------------------------------+
-| m_axi_gmem0  | in       | top.cpp:145:70  | read      | Widen Fail   |        | VITIS_LOOP_145_1 | top.cpp:145:23 | 214-353    | Could not widen since type i16 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
-| m_axi_gmem0  | in       | top.cpp:145:70  | read      | Inferred     | 16384  | VITIS_LOOP_145_1 | top.cpp:145:23 |            |                                                                                                       |
-| m_axi_gmem1  | out      | top.cpp:127:9   | write     | Widen Fail   |        | VITIS_LOOP_125_2 | top.cpp:125:23 | 214-353    | Could not widen since type i16 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
-| m_axi_gmem1  | out      | top.cpp:127:9   | write     | Inferred     | 16384  | VITIS_LOOP_125_2 | top.cpp:125:23 |            |                                                                                                       |
-+--------------+----------+-----------------+-----------+--------------+--------+------------------+----------------+------------+-------------------------------------------------------------------------------------------------------+
++--------------+----------+-----------------+-----------+--------------+--------+-------------------+----------------+------------+---------------------------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location | Direction | Burst Status | Length | Loop              | Loop Location  | Resolution | Problem                                                                                                 |
++--------------+----------+-----------------+-----------+--------------+--------+-------------------+----------------+------------+---------------------------------------------------------------------------------------------------------+
+| m_axi_gmem   |          | top.cpp:34:22   | read      | Fail         |        |                   |                | 214-224    | Could not burst due to multiple potential reads to the same bundle in the same region.                  |
+| m_axi_gmem   | in_r     | top.cpp:37:24   | read      | Widen Fail   |        | VITIS_LOOP_35_5   | top.cpp:35:26  | 214-353    | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | in_r     | top.cpp:37:24   | read      | Inferred     | 16384  | VITIS_LOOP_34_4   | top.cpp:34:22  |            |                                                                                                         |
+| m_axi_gmem   | in_g     | top.cpp:38:24   | read      | Widen Fail   |        | VITIS_LOOP_35_5   | top.cpp:35:26  | 214-353    | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | in_g     | top.cpp:38:24   | read      | Inferred     | 16384  | VITIS_LOOP_34_4   | top.cpp:34:22  |            |                                                                                                         |
+| m_axi_gmem   | in_b     | top.cpp:39:24   | read      | Widen Fail   |        | VITIS_LOOP_35_5   | top.cpp:35:26  | 214-353    | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | in_b     | top.cpp:39:24   | read      | Inferred     | 16384  | VITIS_LOOP_34_4   | top.cpp:34:22  |            |                                                                                                         |
+| m_axi_gmem   | out      | top.cpp:156:30  | write     | Widen Fail   |        | VITIS_LOOP_146_22 | top.cpp:146:28 | 214-353    | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | out      | top.cpp:156:30  | write     | Fail         |        | VITIS_LOOP_145_21 | top.cpp:145:24 | 214-230    | Stride is incompatible                                                                                  |
+| m_axi_gmem   | out      | top.cpp:156:30  | write     | Inferred     | 126    | VITIS_LOOP_146_22 | top.cpp:146:28 |            |                                                                                                         |
++--------------+----------+-----------------+-----------+--------------+--------+-------------------+----------------+------------+---------------------------------------------------------------------------------------------------------+
 
     * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
 
 ================================================================
 == Bind Op Report
 ================================================================
-+--------------------------------------------+-----+--------+--------------+--------+----------+---------+
-| Name                                       | DSP | Pragma | Variable     | Op     | Impl     | Latency |
-+--------------------------------------------+-----+--------+--------------+--------+----------+---------+
-| + top_kernel                               | 0   |        |              |        |          |         |
-|  + Loop_VITIS_LOOP_145_1_proc              | 0   |        |              |        |          |         |
-|    icmp_ln145_fu_110_p2                    |     |        | icmp_ln145   | seteq  | auto     | 0       |
-|    add_ln145_fu_116_p2                     |     |        | add_ln145    | add    | fabric   | 0       |
-|  + k1_contrast                             | 0   |        |              |        |          |         |
-|    i_fu_189_p2                             |     |        | i            | add    | fabric   | 0       |
-|    icmp_ln20_fu_201_p2                     |     |        | icmp_ln20    | setgt  | auto     | 0       |
-|    add_ln21_fu_207_p2                      |     |        | add_ln21     | add    | fabric   | 0       |
-|    add_ln25_fu_235_p2                      |     |        | add_ln25     | add    | fabric   | 0       |
-|    icmp_ln25_fu_241_p2                     |     |        | icmp_ln25    | setlt  | auto     | 0       |
-|    add_ln25_1_fu_247_p2                    |     |        | add_ln25_1   | add    | fabric   | 0       |
-|    icmp_ln25_1_fu_253_p2                   |     |        | icmp_ln25_1  | setlt  | auto     | 0       |
-|    and_ln25_fu_416_p2                      |     |        | and_ln25     | and    | auto     | 0       |
-|    add_ln28_fu_288_p2                      |     |        | add_ln28     | add    | fabric   | 0       |
-|    add_ln28_1_fu_294_p2                    |     |        | add_ln28_1   | add    | fabric   | 0       |
-|    sub_ln29_fu_360_p2                      |     |        | sub_ln29     | sub    | fabric   | 0       |
-|    res_fu_380_p2                           |     |        | res          | sub    | fabric   | 0       |
-|    s1_din                                  |     |        | res_1        | select | auto_sel | 0       |
-|    icmp_ln10_fu_259_p2                     |     |        | icmp_ln10    | seteq  | auto     | 0       |
-|  + k2_erosion                              | 0   |        |              |        |          |         |
-|    i_fu_274_p2                             |     |        | i            | add    | fabric   | 0       |
-|    icmp_ln54_fu_288_p2                     |     |        | icmp_ln54    | setgt  | auto     | 0       |
-|    add_ln55_fu_294_p2                      |     |        | add_ln55     | add    | fabric   | 0       |
-|    icmp_ln62_fu_403_p2                     |     |        | icmp_ln62    | setlt  | auto     | 0       |
-|    min_v_38_fu_409_p3                      |     |        | min_v_38     | select | auto_sel | 0       |
-|    icmp_ln62_1_fu_417_p2                   |     |        | icmp_ln62_1  | setlt  | auto     | 0       |
-|    min_v_40_fu_423_p3                      |     |        | min_v_40     | select | auto_sel | 0       |
-|    icmp_ln62_2_fu_431_p2                   |     |        | icmp_ln62_2  | setlt  | auto     | 0       |
-|    min_v_44_fu_437_p3                      |     |        | min_v_44     | select | auto_sel | 0       |
-|    icmp_ln62_3_fu_445_p2                   |     |        | icmp_ln62_3  | setlt  | auto     | 0       |
-|    min_v_48_fu_451_p3                      |     |        | min_v_48     | select | auto_sel | 0       |
-|    icmp_ln62_4_fu_459_p2                   |     |        | icmp_ln62_4  | setlt  | auto     | 0       |
-|    min_v_51_fu_465_p3                      |     |        | min_v_51     | select | auto_sel | 0       |
-|    icmp_ln62_5_fu_508_p2                   |     |        | icmp_ln62_5  | setlt  | auto     | 0       |
-|    min_v_53_fu_513_p3                      |     |        | min_v_53     | select | auto_sel | 0       |
-|    icmp_ln62_6_fu_520_p2                   |     |        | icmp_ln62_6  | setlt  | auto     | 0       |
-|    min_v_54_fu_526_p3                      |     |        | min_v_54     | select | auto_sel | 0       |
-|    icmp_ln62_7_fu_534_p2                   |     |        | icmp_ln62_7  | setlt  | auto     | 0       |
-|    min_v_56_fu_540_p3                      |     |        | min_v_56     | select | auto_sel | 0       |
-|    icmp_ln62_8_fu_548_p2                   |     |        | icmp_ln62_8  | setlt  | auto     | 0       |
-|    min_v_58_fu_554_p3                      |     |        | min_v_58     | select | auto_sel | 0       |
-|    icmp_ln62_9_fu_562_p2                   |     |        | icmp_ln62_9  | setlt  | auto     | 0       |
-|    min_v_59_fu_567_p3                      |     |        | min_v_59     | select | auto_sel | 0       |
-|    icmp_ln62_10_fu_608_p2                  |     |        | icmp_ln62_10 | setlt  | auto     | 0       |
-|    min_v_61_fu_613_p3                      |     |        | min_v_61     | select | auto_sel | 0       |
-|    icmp_ln62_11_fu_620_p2                  |     |        | icmp_ln62_11 | setlt  | auto     | 0       |
-|    min_v_62_fu_626_p3                      |     |        | min_v_62     | select | auto_sel | 0       |
-|    icmp_ln62_12_fu_634_p2                  |     |        | icmp_ln62_12 | setlt  | auto     | 0       |
-|    min_v_64_fu_640_p3                      |     |        | min_v_64     | select | auto_sel | 0       |
-|    icmp_ln62_13_fu_648_p2                  |     |        | icmp_ln62_13 | setlt  | auto     | 0       |
-|    min_v_66_fu_654_p3                      |     |        | min_v_66     | select | auto_sel | 0       |
-|    icmp_ln62_14_fu_662_p2                  |     |        | icmp_ln62_14 | setlt  | auto     | 0       |
-|    min_v_67_fu_667_p3                      |     |        | min_v_67     | select | auto_sel | 0       |
-|    icmp_ln62_15_fu_708_p2                  |     |        | icmp_ln62_15 | setlt  | auto     | 0       |
-|    min_v_69_fu_713_p3                      |     |        | min_v_69     | select | auto_sel | 0       |
-|    icmp_ln62_16_fu_720_p2                  |     |        | icmp_ln62_16 | setlt  | auto     | 0       |
-|    min_v_70_fu_726_p3                      |     |        | min_v_70     | select | auto_sel | 0       |
-|    icmp_ln62_17_fu_734_p2                  |     |        | icmp_ln62_17 | setlt  | auto     | 0       |
-|    min_v_72_fu_740_p3                      |     |        | min_v_72     | select | auto_sel | 0       |
-|    icmp_ln62_18_fu_748_p2                  |     |        | icmp_ln62_18 | setlt  | auto     | 0       |
-|    min_v_74_fu_754_p3                      |     |        | min_v_74     | select | auto_sel | 0       |
-|    icmp_ln62_19_fu_762_p2                  |     |        | icmp_ln62_19 | setlt  | auto     | 0       |
-|    min_v_75_fu_767_p3                      |     |        | min_v_75     | select | auto_sel | 0       |
-|    icmp_ln62_20_fu_808_p2                  |     |        | icmp_ln62_20 | setlt  | auto     | 0       |
-|    min_v_77_fu_813_p3                      |     |        | min_v_77     | select | auto_sel | 0       |
-|    icmp_ln62_21_fu_820_p2                  |     |        | icmp_ln62_21 | setlt  | auto     | 0       |
-|    min_v_78_fu_826_p3                      |     |        | min_v_78     | select | auto_sel | 0       |
-|    icmp_ln62_22_fu_834_p2                  |     |        | icmp_ln62_22 | setlt  | auto     | 0       |
-|    min_v_80_fu_840_p3                      |     |        | min_v_80     | select | auto_sel | 0       |
-|    icmp_ln62_23_fu_848_p2                  |     |        | icmp_ln62_23 | setlt  | auto     | 0       |
-|    min_v_82_fu_854_p3                      |     |        | min_v_82     | select | auto_sel | 0       |
-|    icmp_ln62_24_fu_862_p2                  |     |        | icmp_ln62_24 | setlt  | auto     | 0       |
-|    min_v_83_fu_868_p3                      |     |        | min_v_83     | select | auto_sel | 0       |
-|    icmp_ln58_fu_304_p2                     |     |        | icmp_ln58    | seteq  | auto     | 0       |
-|    icmp_ln58_1_fu_310_p2                   |     |        | icmp_ln58_1  | seteq  | auto     | 0       |
-|    icmp_ln58_2_fu_316_p2                   |     |        | icmp_ln58_2  | seteq  | auto     | 0       |
-|    icmp_ln58_3_fu_322_p2                   |     |        | icmp_ln58_3  | seteq  | auto     | 0       |
-|    icmp_ln58_4_fu_338_p2                   |     |        | icmp_ln58_4  | setlt  | auto     | 0       |
-|    icmp_ln58_5_fu_344_p2                   |     |        | icmp_ln58_5  | setgt  | auto     | 0       |
-|    or_ln58_fu_350_p2                       |     |        | or_ln58      | or     | auto     | 0       |
-|    or_ln58_1_fu_356_p2                     |     |        | or_ln58_1    | or     | auto     | 0       |
-|    or_ln58_2_fu_362_p2                     |     |        | or_ln58_2    | or     | auto     | 0       |
-|    or_ln58_3_fu_368_p2                     |     |        | or_ln58_3    | or     | auto     | 0       |
-|    or_ln58_4_fu_374_p2                     |     |        | or_ln58_4    | or     | auto     | 0       |
-|    min_v_50_fu_876_p3                      |     |        | min_v_50     | select | auto_sel | 0       |
-|    icmp_ln43_fu_380_p2                     |     |        | icmp_ln43    | seteq  | auto     | 0       |
-|  + k3_dilation                             | 0   |        |              |        |          |         |
-|    i_fu_283_p2                             |     |        | i            | add    | fabric   | 0       |
-|    icmp_ln87_fu_297_p2                     |     |        | icmp_ln87    | setgt  | auto     | 0       |
-|    add_ln88_fu_303_p2                      |     |        | add_ln88     | add    | fabric   | 0       |
-|    icmp_ln95_fu_412_p2                     |     |        | icmp_ln95    | setgt  | auto     | 0       |
-|    max_v_38_fu_418_p3                      |     |        | max_v_38     | select | auto_sel | 0       |
-|    icmp_ln95_1_fu_426_p2                   |     |        | icmp_ln95_1  | setgt  | auto     | 0       |
-|    max_v_40_fu_432_p3                      |     |        | max_v_40     | select | auto_sel | 0       |
-|    icmp_ln95_2_fu_440_p2                   |     |        | icmp_ln95_2  | setgt  | auto     | 0       |
-|    max_v_44_fu_446_p3                      |     |        | max_v_44     | select | auto_sel | 0       |
-|    icmp_ln95_3_fu_454_p2                   |     |        | icmp_ln95_3  | setgt  | auto     | 0       |
-|    max_v_48_fu_460_p3                      |     |        | max_v_48     | select | auto_sel | 0       |
-|    icmp_ln95_4_fu_468_p2                   |     |        | icmp_ln95_4  | setgt  | auto     | 0       |
-|    max_v_51_fu_474_p3                      |     |        | max_v_51     | select | auto_sel | 0       |
-|    icmp_ln95_5_fu_517_p2                   |     |        | icmp_ln95_5  | setgt  | auto     | 0       |
-|    max_v_53_fu_522_p3                      |     |        | max_v_53     | select | auto_sel | 0       |
-|    icmp_ln95_6_fu_529_p2                   |     |        | icmp_ln95_6  | setgt  | auto     | 0       |
-|    max_v_54_fu_535_p3                      |     |        | max_v_54     | select | auto_sel | 0       |
-|    icmp_ln95_7_fu_543_p2                   |     |        | icmp_ln95_7  | setgt  | auto     | 0       |
-|    max_v_56_fu_549_p3                      |     |        | max_v_56     | select | auto_sel | 0       |
-|    icmp_ln95_8_fu_557_p2                   |     |        | icmp_ln95_8  | setgt  | auto     | 0       |
-|    max_v_58_fu_563_p3                      |     |        | max_v_58     | select | auto_sel | 0       |
-|    icmp_ln95_9_fu_571_p2                   |     |        | icmp_ln95_9  | setgt  | auto     | 0       |
-|    max_v_59_fu_576_p3                      |     |        | max_v_59     | select | auto_sel | 0       |
-|    icmp_ln95_10_fu_617_p2                  |     |        | icmp_ln95_10 | setgt  | auto     | 0       |
-|    max_v_61_fu_622_p3                      |     |        | max_v_61     | select | auto_sel | 0       |
-|    icmp_ln95_11_fu_629_p2                  |     |        | icmp_ln95_11 | setgt  | auto     | 0       |
-|    max_v_62_fu_635_p3                      |     |        | max_v_62     | select | auto_sel | 0       |
-|    icmp_ln95_12_fu_643_p2                  |     |        | icmp_ln95_12 | setgt  | auto     | 0       |
-|    max_v_64_fu_649_p3                      |     |        | max_v_64     | select | auto_sel | 0       |
-|    icmp_ln95_13_fu_657_p2                  |     |        | icmp_ln95_13 | setgt  | auto     | 0       |
-|    max_v_66_fu_663_p3                      |     |        | max_v_66     | select | auto_sel | 0       |
-|    icmp_ln95_14_fu_671_p2                  |     |        | icmp_ln95_14 | setgt  | auto     | 0       |
-|    max_v_67_fu_676_p3                      |     |        | max_v_67     | select | auto_sel | 0       |
-|    icmp_ln95_15_fu_717_p2                  |     |        | icmp_ln95_15 | setgt  | auto     | 0       |
-|    max_v_69_fu_722_p3                      |     |        | max_v_69     | select | auto_sel | 0       |
-|    icmp_ln95_16_fu_729_p2                  |     |        | icmp_ln95_16 | setgt  | auto     | 0       |
-|    max_v_70_fu_735_p3                      |     |        | max_v_70     | select | auto_sel | 0       |
-|    icmp_ln95_17_fu_743_p2                  |     |        | icmp_ln95_17 | setgt  | auto     | 0       |
-|    max_v_72_fu_749_p3                      |     |        | max_v_72     | select | auto_sel | 0       |
-|    icmp_ln95_18_fu_757_p2                  |     |        | icmp_ln95_18 | setgt  | auto     | 0       |
-|    max_v_74_fu_763_p3                      |     |        | max_v_74     | select | auto_sel | 0       |
-|    icmp_ln95_19_fu_771_p2                  |     |        | icmp_ln95_19 | setgt  | auto     | 0       |
-|    max_v_75_fu_776_p3                      |     |        | max_v_75     | select | auto_sel | 0       |
-|    icmp_ln95_20_fu_817_p2                  |     |        | icmp_ln95_20 | setgt  | auto     | 0       |
-|    max_v_77_fu_822_p3                      |     |        | max_v_77     | select | auto_sel | 0       |
-|    icmp_ln95_21_fu_829_p2                  |     |        | icmp_ln95_21 | setgt  | auto     | 0       |
-|    max_v_78_fu_835_p3                      |     |        | max_v_78     | select | auto_sel | 0       |
-|    icmp_ln95_22_fu_843_p2                  |     |        | icmp_ln95_22 | setgt  | auto     | 0       |
-|    max_v_80_fu_849_p3                      |     |        | max_v_80     | select | auto_sel | 0       |
-|    icmp_ln95_23_fu_857_p2                  |     |        | icmp_ln95_23 | setgt  | auto     | 0       |
-|    max_v_82_fu_863_p3                      |     |        | max_v_82     | select | auto_sel | 0       |
-|    icmp_ln95_24_fu_871_p2                  |     |        | icmp_ln95_24 | setgt  | auto     | 0       |
-|    max_v_83_fu_877_p3                      |     |        | max_v_83     | select | auto_sel | 0       |
-|    icmp_ln91_fu_313_p2                     |     |        | icmp_ln91    | seteq  | auto     | 0       |
-|    icmp_ln91_1_fu_319_p2                   |     |        | icmp_ln91_1  | seteq  | auto     | 0       |
-|    icmp_ln91_2_fu_325_p2                   |     |        | icmp_ln91_2  | seteq  | auto     | 0       |
-|    icmp_ln91_3_fu_331_p2                   |     |        | icmp_ln91_3  | seteq  | auto     | 0       |
-|    icmp_ln91_4_fu_347_p2                   |     |        | icmp_ln91_4  | setlt  | auto     | 0       |
-|    icmp_ln91_5_fu_353_p2                   |     |        | icmp_ln91_5  | setgt  | auto     | 0       |
-|    or_ln91_fu_359_p2                       |     |        | or_ln91      | or     | auto     | 0       |
-|    or_ln91_1_fu_365_p2                     |     |        | or_ln91_1    | or     | auto     | 0       |
-|    or_ln91_2_fu_371_p2                     |     |        | or_ln91_2    | or     | auto     | 0       |
-|    or_ln91_3_fu_377_p2                     |     |        | or_ln91_3    | or     | auto     | 0       |
-|    or_ln91_4_fu_383_p2                     |     |        | or_ln91_4    | or     | auto     | 0       |
-|    max_v_50_fu_885_p3                      |     |        | max_v_50     | select | auto_sel | 0       |
-|    icmp_ln76_fu_389_p2                     |     |        | icmp_ln76    | seteq  | auto     | 0       |
-|  + k4_gradient                             | 0   |        |              |        |          |         |
-|    s4_din                                  |     |        | sub_ln107    | sub    | fabric   | 0       |
-|    i_fu_76_p2                              |     |        | i            | add    | fabric   | 0       |
-|    icmp_ln105_fu_82_p2                     |     |        | icmp_ln105   | seteq  | auto     | 0       |
-|  + k5_threshold                            | 0   |        |              |        |          |         |
-|    sub_ln123_fu_160_p2                     |     |        | sub_ln123    | sub    | fabric   | 0       |
-|    sub_ln123_1_fu_180_p2                   |     |        | sub_ln123_1  | sub    | fabric   | 0       |
-|    global_avg_fu_210_p3                    |     |        | global_avg   | select | auto_sel | 0       |
-|   + k5_threshold_Pipeline_VITIS_LOOP_116_1 | 0   |        |              |        |          |         |
-|     icmp_ln116_fu_92_p2                    |     |        | icmp_ln116   | seteq  | auto     | 0       |
-|     add_ln116_fu_98_p2                     |     |        | add_ln116    | add    | fabric   | 0       |
-|     total_sum_1_fu_128_p2                  |     |        | total_sum_1  | add    | fabric   | 0       |
-|   + k5_threshold_Pipeline_VITIS_LOOP_125_2 | 0   |        |              |        |          |         |
-|     icmp_ln125_fu_109_p2                   |     |        | icmp_ln125   | seteq  | auto     | 0       |
-|     add_ln125_fu_115_p2                    |     |        | add_ln125    | add    | fabric   | 0       |
-|     icmp_ln127_fu_131_p2                   |     |        | icmp_ln127   | setgt  | auto     | 0       |
-|     select_ln127_fu_136_p3                 |     |        | select_ln127 | select | auto_sel | 0       |
-+--------------------------------------------+-----+--------+--------------+--------+----------+---------+
++-----------------------------------------+-----+--------+-------------------+---------+-----------+---------+
+| Name                                    | DSP | Pragma | Variable          | Op      | Impl      | Latency |
++-----------------------------------------+-----+--------+-------------------+---------+-----------+---------+
+| + top_kernel                            | 36  |        |                   |         |           |         |
+|   icmp_ln30_fu_941_p2                   |     |        | icmp_ln30         | seteq   | auto      | 0       |
+|   add_ln30_fu_947_p2                    |     |        | add_ln30          | add     | fabric    | 0       |
+|   icmp_ln34_fu_1010_p2                  |     |        | icmp_ln34         | seteq   | auto      | 0       |
+|   add_ln34_fu_1016_p2                   |     |        | add_ln34          | add     | fabric    | 0       |
+|   icmp_ln35_fu_1039_p2                  |     |        | icmp_ln35         | seteq   | auto      | 0       |
+|   add_ln35_fu_1045_p2                   |     |        | add_ln35          | add     | fabric    | 0       |
+|   add_ln43_fu_1055_p2                   |     |        | add_ln43          | add     | fabric    | 0       |
+|   add_ln37_fu_1064_p2                   |     |        | add_ln37          | add     | fabric    | 0       |
+|   fdiv_32ns_32ns_32_10_no_dsp_1_U5      |     |        | R                 | fdiv    | fabric    | 9       |
+|   add_ln38_fu_1079_p2                   |     |        | add_ln38          | add     | fabric    | 0       |
+|   fdiv_32ns_32ns_32_10_no_dsp_1_U5      |     |        | G                 | fdiv    | fabric    | 9       |
+|   add_ln39_fu_1094_p2                   |     |        | add_ln39          | add     | fabric    | 0       |
+|   fdiv_32ns_32ns_32_10_no_dsp_1_U5      |     |        | B                 | fdiv    | fabric    | 9       |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | add               | fadd    | fulldsp   | 4       |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | add1              | fadd    | fulldsp   | 4       |
+|   fdiv_32ns_32ns_32_10_no_dsp_1_U5      |     |        | I                 | fdiv    | fabric    | 9       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U3      | 3   |        | dc                | fmul    | maxdsp    | 3       |
+|   add_ln317_fu_1160_p2                  |     |        | add_ln317         | add     | fabric    | 0       |
+|   sub_ln18_fu_1174_p2                   |     |        | sub_ln18          | sub     | fabric    | 0       |
+|   select_ln18_fu_1184_p3                |     |        | select_ln18       | select  | auto_sel  | 0       |
+|   lshr_ln18_fu_1212_p2                  |     |        | lshr_ln18         | lshr    | auto_pipe | 0       |
+|   shl_ln18_fu_1218_p2                   |     |        | shl_ln18          | shl     | auto_pipe | 0       |
+|   val_4_fu_1244_p3                      |     |        | val_4             | select  | auto_sel  | 0       |
+|   result_2_fu_1251_p2                   |     |        | result_2          | sub     | fabric    | 0       |
+|   result_fu_1257_p3                     |     |        | result            | select  | auto_sel  | 0       |
+|   bin_1_fu_1276_p3                      |     |        | bin_1             | select  | auto_sel  | 0       |
+|   icmp_ln48_fu_1298_p2                  |     |        | icmp_ln48         | setne   | auto      | 0       |
+|   bin_2_fu_1304_p3                      |     |        | bin_2             | select  | auto_sel  | 0       |
+|   add_ln49_fu_1317_p2                   |     |        | add_ln49          | add     | fabric    | 0       |
+|   icmp_ln55_fu_1332_p2                  |     |        | icmp_ln55         | seteq   | auto      | 0       |
+|   add_ln56_fu_1362_p2                   |     |        | add_ln56          | add     | fabric    | 0       |
+|   add_ln55_fu_1343_p2                   |     |        | add_ln55          | add     | fabric    | 0       |
+|   sitofp_32ns_32_4_no_dsp_1_U6          |     |        | cdf_min           | sitofp  | auto      | 3       |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | sub               | fadd    | fulldsp   | 4       |
+|   icmp_ln63_fu_1377_p2                  |     |        | icmp_ln63         | seteq   | auto      | 0       |
+|   add_ln63_fu_1383_p2                   |     |        | add_ln63          | add     | fabric    | 0       |
+|   icmp_ln64_fu_1406_p2                  |     |        | icmp_ln64         | seteq   | auto      | 0       |
+|   add_ln64_fu_1412_p2                   |     |        | add_ln64          | add     | fabric    | 0       |
+|   add_ln70_fu_1422_p2                   |     |        | add_ln70          | add     | fabric    | 0       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U3      | 3   |        | dc_1              | fmul    | maxdsp    | 3       |
+|   add_ln317_1_fu_1464_p2                |     |        | add_ln317_1       | add     | fabric    | 0       |
+|   sub_ln18_1_fu_1478_p2                 |     |        | sub_ln18_1        | sub     | fabric    | 0       |
+|   select_ln18_2_fu_1488_p3              |     |        | select_ln18_2     | select  | auto_sel  | 0       |
+|   lshr_ln18_1_fu_1516_p2                |     |        | lshr_ln18_1       | lshr    | auto_pipe | 0       |
+|   shl_ln18_1_fu_1522_p2                 |     |        | shl_ln18_1        | shl     | auto_pipe | 0       |
+|   val_5_fu_1548_p3                      |     |        | val_5             | select  | auto_sel  | 0       |
+|   result_6_fu_1555_p2                   |     |        | result_6          | sub     | fabric    | 0       |
+|   result_7_fu_1561_p3                   |     |        | result_7          | select  | auto_sel  | 0       |
+|   bin_4_fu_1580_p3                      |     |        | bin_4             | select  | auto_sel  | 0       |
+|   icmp_ln67_fu_1602_p2                  |     |        | icmp_ln67         | setne   | auto      | 0       |
+|   bin_5_fu_1608_p3                      |     |        | bin_5             | select  | auto_sel  | 0       |
+|   sitofp_32ns_32_4_no_dsp_1_U6          |     |        | conv              | sitofp  | auto      | 3       |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | sub1              | fadd    | fulldsp   | 4       |
+|   fdiv_32ns_32ns_32_10_no_dsp_1_U5      |     |        | cdf_normalized    | fdiv    | fabric    | 9       |
+|   icmp_ln83_fu_1624_p2                  |     |        | icmp_ln83         | seteq   | auto      | 0       |
+|   icmp_ln84_fu_1635_p2                  |     |        | icmp_ln84         | seteq   | auto      | 0       |
+|   icmp_ln87_fu_1663_p2                  |     |        | icmp_ln87         | seteq   | auto      | 0       |
+|   empty_fu_1673_p2                      |     |        | empty             | add     | fabric    | 0       |
+|   empty_45_fu_1678_p2                   |     |        | empty_45          | add     | fabric    | 0       |
+|   add_ln88_1_fu_1696_p2                 |     |        | add_ln88_1        | add     | fabric    | 0       |
+|   icmp_ln88_fu_1708_p2                  |     |        | icmp_ln88         | seteq   | auto      | 0       |
+|   add_ln89_fu_1718_p2                   |     |        | add_ln89          | add     | fabric    | 0       |
+|   add_ln89_1_fu_1736_p2                 |     |        | add_ln89_1        | add     | fabric    | 0       |
+|   add_ln89_2_fu_1746_p2                 |     |        | add_ln89_2        | add     | fabric    | 0       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U3      | 3   |        | mul               | fmul    | maxdsp    | 3       |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | filtered_1        | fadd    | fulldsp   | 4       |
+|   add_ln88_fu_1756_p2                   |     |        | add_ln88          | add     | fabric    | 0       |
+|   add_ln87_fu_1762_p2                   |     |        | add_ln87          | add     | fabric    | 0       |
+|   add_ln84_fu_1702_p2                   |     |        | add_ln84          | add     | fabric    | 0       |
+|   add_ln83_fu_1653_p2                   |     |        | add_ln83          | add     | fabric    | 0       |
+|   icmp_ln101_fu_1771_p2                 |     |        | icmp_ln101        | seteq   | auto      | 0       |
+|   icmp_ln102_fu_1782_p2                 |     |        | icmp_ln102        | seteq   | auto      | 0       |
+|   icmp_ln107_fu_1811_p2                 |     |        | icmp_ln107        | seteq   | auto      | 0       |
+|   empty_46_fu_1821_p2                   |     |        | empty_46          | add     | fabric    | 0       |
+|   indvars_iv_next81_fu_1826_p2          |     |        | indvars_iv_next81 | add     | fabric    | 0       |
+|   sub_ln110_fu_1848_p2                  |     |        | sub_ln110         | sub     | fabric    | 0       |
+|   icmp_ln108_fu_1860_p2                 |     |        | icmp_ln108        | seteq   | auto      | 0       |
+|   add_ln109_fu_1870_p2                  |     |        | add_ln109         | add     | fabric    | 0       |
+|   add_ln110_fu_1888_p2                  |     |        | add_ln110         | add     | fabric    | 0       |
+|   add_ln110_1_fu_1898_p2                |     |        | add_ln110_1       | add     | fabric    | 0       |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | range_dist        | fadd    | fulldsp   | 4       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U3      | 3   |        | range_dist_1      | fmul    | maxdsp    | 3       |
+|   xor_ln113_fu_1915_p2                  |     |        | xor_ln113         | xor     | auto      | 0       |
+|   fdiv_32ns_32ns_32_10_no_dsp_1_U5      |     |        | div1              | fdiv    | fabric    | 9       |
+|   fpext_32ns_64_2_no_dsp_1_U8           |     |        | conv1             | fpext   | auto      | 1       |
+|   dexp_64ns_64ns_64_15_full_dsp_1_U10   | 26  |        | tmp_9             | dexp    | fulldsp   | 14      |
+|   fptrunc_64ns_32_2_no_dsp_1_U7         |     |        | range_weight      | fptrunc | auto      | 1       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U3      | 3   |        | mul2              | fmul    | maxdsp    | 3       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U3      | 3   |        | mul3              | fmul    | maxdsp    | 3       |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | filtered_val_1    | fadd    | fulldsp   | 4       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U4      | 3   |        | mul4              | fmul    | maxdsp    | 3       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U2     | 2   |        | weight_sum_1      | fadd    | fulldsp   | 4       |
+|   icmp_ln120_fu_1960_p2                 |     |        | icmp_ln120        | setne   | auto      | 0       |
+|   icmp_ln120_1_fu_1966_p2               |     |        | icmp_ln120_1      | seteq   | auto      | 0       |
+|   or_ln120_fu_1972_p2                   |     |        | or_ln120          | or      | auto      | 0       |
+|   fcmp_32ns_32ns_1_2_no_dsp_1_U9        |     |        | tmp_2             | fcmp    | auto      | 1       |
+|   and_ln120_fu_1978_p2                  |     |        | and_ln120         | and     | auto      | 0       |
+|   fdiv_32ns_32ns_32_10_no_dsp_1_U5      |     |        | div               | fdiv    | fabric    | 9       |
+|   select_ln120_fu_1984_p3               |     |        | select_ln120      | select  | auto_sel  | 0       |
+|   add_ln102_fu_1854_p2                  |     |        | add_ln102         | add     | fabric    | 0       |
+|   add_ln101_fu_1801_p2                  |     |        | add_ln101         | add     | fabric    | 0       |
+|   icmp_ln129_fu_1993_p2                 |     |        | icmp_ln129        | seteq   | auto      | 0       |
+|   icmp_ln130_fu_2009_p2                 |     |        | icmp_ln130        | seteq   | auto      | 0       |
+|   icmp_ln133_fu_2038_p2                 |     |        | icmp_ln133        | seteq   | auto      | 0       |
+|   empty_47_fu_2048_p2                   |     |        | empty_47          | add     | fabric    | 0       |
+|   icmp_ln134_fu_2059_p2                 |     |        | icmp_ln134        | seteq   | auto      | 0       |
+|   add_ln135_fu_2069_p2                  |     |        | add_ln135         | add     | fabric    | 0       |
+|   icmp_ln136_fu_2134_p2                 |     |        | icmp_ln136        | setne   | auto      | 0       |
+|   icmp_ln136_1_fu_2140_p2               |     |        | icmp_ln136_1      | seteq   | auto      | 0       |
+|   or_ln136_fu_2146_p2                   |     |        | or_ln136          | or      | auto      | 0       |
+|   icmp_ln136_2_fu_2152_p2               |     |        | icmp_ln136_2      | setne   | auto      | 0       |
+|   icmp_ln136_3_fu_2158_p2               |     |        | icmp_ln136_3      | seteq   | auto      | 0       |
+|   or_ln136_1_fu_2164_p2                 |     |        | or_ln136_1        | or      | auto      | 0       |
+|   and_ln136_fu_2170_p2                  |     |        | and_ln136         | and     | auto      | 0       |
+|   fcmp_32ns_32ns_1_2_no_dsp_1_U9        |     |        | tmp_5             | fcmp    | auto      | 1       |
+|   and_ln136_1_fu_2176_p2                |     |        | and_ln136_1       | and     | auto      | 0       |
+|   min_val_4_fu_2182_p3                  |     |        | min_val_4         | select  | auto_sel  | 0       |
+|   add_ln134_fu_2087_p2                  |     |        | add_ln134         | add     | fabric    | 0       |
+|   add_ln133_fu_2093_p2                  |     |        | add_ln133         | add     | fabric    | 0       |
+|   add_ln130_fu_2053_p2                  |     |        | add_ln130         | add     | fabric    | 0       |
+|   add_ln129_fu_2028_p2                  |     |        | add_ln129         | add     | fabric    | 0       |
+|   icmp_ln145_fu_2195_p2                 |     |        | icmp_ln145        | seteq   | auto      | 0       |
+|   add_ln145_1_fu_2201_p2                |     |        | add_ln145_1       | add     | fabric    | 0       |
+|   tmp1_fu_2215_p2                       |     |        | tmp1              | add     | fabric    | 0       |
+|   empty_48_fu_2225_p2                   |     |        | empty_48          | add     | fabric    | 0       |
+|   icmp_ln146_fu_2250_p2                 |     |        | icmp_ln146        | seteq   | auto      | 0       |
+|   icmp_ln149_fu_2272_p2                 |     |        | icmp_ln149        | seteq   | auto      | 0       |
+|   empty_50_fu_2282_p2                   |     |        | empty_50          | add     | fabric    | 0       |
+|   icmp_ln150_fu_2287_p2                 |     |        | icmp_ln150        | seteq   | auto      | 0       |
+|   add_ln151_fu_2297_p2                  |     |        | add_ln151         | add     | fabric    | 0       |
+|   icmp_ln152_fu_2362_p2                 |     |        | icmp_ln152        | setne   | auto      | 0       |
+|   icmp_ln152_1_fu_2368_p2               |     |        | icmp_ln152_1      | seteq   | auto      | 0       |
+|   or_ln152_fu_2374_p2                   |     |        | or_ln152          | or      | auto      | 0       |
+|   icmp_ln152_2_fu_2380_p2               |     |        | icmp_ln152_2      | setne   | auto      | 0       |
+|   icmp_ln152_3_fu_2386_p2               |     |        | icmp_ln152_3      | seteq   | auto      | 0       |
+|   or_ln152_1_fu_2392_p2                 |     |        | or_ln152_1        | or      | auto      | 0       |
+|   and_ln152_fu_2398_p2                  |     |        | and_ln152         | and     | auto      | 0       |
+|   fcmp_32ns_32ns_1_2_no_dsp_1_U9        |     |        | tmp_s             | fcmp    | auto      | 1       |
+|   and_ln152_1_fu_2404_p2                |     |        | and_ln152_1       | and     | auto      | 0       |
+|   max_val_4_fu_2410_p3                  |     |        | max_val_4         | select  | auto_sel  | 0       |
+|   add_ln150_fu_2315_p2                  |     |        | add_ln150         | add     | fabric    | 0       |
+|   add_ln149_fu_2321_p2                  |     |        | add_ln149         | add     | fabric    | 0       |
+|   add_ln146_fu_2422_p2                  |     |        | add_ln146         | add     | fabric    | 0       |
+|   add_ln145_fu_2428_p2                  |     |        | add_ln145         | add     | fabric    | 0       |
++-----------------------------------------+-----+--------+-------------------+---------+-----------+---------+
 
 
 ================================================================
 == Storage Report
 ================================================================
-+----------------------------------------------------------------------+--------------+-------------+------+------+--------+-----------------------------------------------------------------+--------+---------+------------------+
-| Name                                                                 | Usage        | Type        | BRAM | URAM | Pragma | Variable                                                        | Impl   | Latency | Bitwidth, Depth, |
-|                                                                      |              |             |      |      |        |                                                                 |        |         | Banks            |
-+----------------------------------------------------------------------+--------------+-------------+------+------+--------+-----------------------------------------------------------------+--------+---------+------------------+
-| + top_kernel                                                         |              |             | 33   | 0    |        |                                                                 |        |         |                  |
-|   control_s_axi_U                                                    | interface    | s_axilite   |      |      |        |                                                                 |        |         |                  |
-|   gmem0_m_axi_U                                                      | interface    | m_axi       | 2    |      |        |                                                                 |        |         |                  |
-|   gmem1_m_axi_U                                                      | interface    | m_axi       |      |      |        |                                                                 |        |         |                  |
-|   out_r_c_U                                                          | fifo channel | scalar prop |      |      |        | out_r_c                                                         | srl    | 0       | 64, 7, 1         |
-|   in_stream_U                                                        | fifo channel | stream      |      |      |        | in_stream                                                       | srl    | 0       | 16, 2, 1         |
-|   s1_U                                                               | fifo channel | stream      | 1    |      |        | s1                                                              | memory | 0       | 16, 256, 1       |
-|   s2_U                                                               | fifo channel | stream      | 1    |      |        | s2                                                              | memory | 0       | 16, 256, 1       |
-|   s3_dil_U                                                           | fifo channel | stream      | 1    |      |        | s3_dil                                                          | memory | 0       | 16, 256, 1       |
-|   s3_ero_U                                                           | fifo channel | stream      | 1    |      |        | s3_ero                                                          | memory | 0       | 16, 256, 1       |
-|   s4_U                                                               | fifo channel | stream      | 1    |      |        | s4                                                              | memory | 0       | 16, 256, 1       |
-|  + k1_contrast                                                       |              |             | 2    | 0    |        |                                                                 |        |         |                  |
-|    k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U | ram_s2p      |             | 1    |      |        | k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1 | auto   | 1       | 16, 128, 1       |
-|    k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U   | ram_s2p      |             | 1    |      |        | k1_contrast_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb   | auto   | 1       | 16, 128, 1       |
-|  + k2_erosion                                                        |              |             | 4    | 0    |        |                                                                 |        |         |                  |
-|    k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_3_U  | ram_s2p      |             | 1    |      |        | k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_3  | auto   | 1       | 16, 128, 1       |
-|    k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_2_U  | ram_s2p      |             | 1    |      |        | k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_2  | auto   | 1       | 16, 128, 1       |
-|    k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1_U  | ram_s2p      |             | 1    |      |        | k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_1  | auto   | 1       | 16, 128, 1       |
-|    k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb_U    | ram_s2p      |             | 1    |      |        | k2_erosion_stream_ap_fixed_0_stream_ap_fixed_16_8_5_3_0_0_lb    | auto   | 1       | 16, 128, 1       |
-|  + k3_dilation                                                       |              |             | 4    | 0    |        |                                                                 |        |         |                  |
-|    k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_3_U     | ram_s2p      |             | 1    |      |        | k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_3     | auto   | 1       | 16, 128, 1       |
-|    k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_2_U     | ram_s2p      |             | 1    |      |        | k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_2     | auto   | 1       | 16, 128, 1       |
-|    k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_1_U     | ram_s2p      |             | 1    |      |        | k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_1     | auto   | 1       | 16, 128, 1       |
-|    k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb_U       | ram_s2p      |             | 1    |      |        | k3_dilation_stream_stream_stream_ap_fixed_16_8_5_3_0_0_lb       | auto   | 1       | 16, 128, 1       |
-|  + k5_threshold                                                      |              |             | 16   | 0    |        |                                                                 |        |         |                  |
-|    local_storage_U                                                   | ram_1p       |             | 16   |      |        | local_storage                                                   | auto   | 1       | 16, 16384, 1     |
-+----------------------------------------------------------------------+--------------+-------------+------+------+--------+-----------------------------------------------------------------+--------+---------+------------------+
++------------------------+-----------+-----------+------+------+--------+--------------------+------+---------+------------------+
+| Name                   | Usage     | Type      | BRAM | URAM | Pragma | Variable           | Impl | Latency | Bitwidth, Depth, |
+|                        |           |           |      |      |        |                    |      |         | Banks            |
++------------------------+-----------+-----------+------+------+--------+--------------------+------+---------+------------------+
+| + top_kernel           |           |           | 154  | 0    |        |                    |      |         |                  |
+|   control_s_axi_U      | interface | s_axilite |      |      |        |                    |      |         |                  |
+|   gmem_m_axi_U         | interface | m_axi     | 2    |      |        |                    |      |         |                  |
+|   histogram_U          | ram_1p    |           | 1    |      |        | histogram          | auto | 1       | 32, 256, 1       |
+|   intensity_U          | ram_1p    |           | 30   |      |        | intensity          | auto | 1       | 32, 16384, 1     |
+|   cdf_U                | ram_1p    |           | 1    |      |        | cdf                | auto | 1       | 32, 256, 1       |
+|   equalized_U          | ram_1p    |           | 30   |      |        | equalized          | auto | 1       | 32, 16384, 1     |
+|   gaussian_kernel_U    | rom_1p    |           |      |      |        | gaussian_kernel    | auto | 1       | 32, 25, 1        |
+|   gaussian_blurred_U   | ram_1p    |           | 30   |      |        | gaussian_blurred   | auto | 1       | 32, 16384, 1     |
+|   spatial_weights_U    | rom_1p    |           |      |      |        | spatial_weights    | auto | 1       | 32, 9, 1         |
+|   bilateral_filtered_U | ram_1p    |           | 30   |      |        | bilateral_filtered | auto | 1       | 32, 16384, 1     |
+|   eroded_U             | ram_1p    |           | 30   |      |        | eroded             | auto | 1       | 32, 16384, 1     |
++------------------------+-----------+-----------+------+------+--------+--------------------+------+---------+------------------+
 
 
 ================================================================
 == Pragma Report
 ================================================================
-* Pragmas with Warnings
-+----------+---------+---------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Type     | Options | Location                  | Messages                                                                                                                                                                           |
-+----------+---------+---------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| DATAFLOW |         | top.cpp:143 in top_kernel | Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region |
-+----------+---------+---------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
 * Valid Pragma Syntax
-+-----------------+--------------------------------------+-----------------------------------+
-| Type            | Options                              | Location                          |
-+-----------------+--------------------------------------+-----------------------------------+
-| ARRAY_PARTITION | variable=lb complete dim=1           | top.cpp:6 in k1_contrast, lb      |
-| ARRAY_PARTITION | variable=win complete                | top.cpp:8 in k1_contrast, win     |
-| PIPELINE        | ii=1                                 | top.cpp:11 in k1_contrast         |
-| ARRAY_PARTITION | variable=lb complete dim=1           | top.cpp:39 in k2_erosion, lb      |
-| ARRAY_PARTITION | variable=win complete                | top.cpp:41 in k2_erosion, win     |
-| PIPELINE        | ii=1                                 | top.cpp:44 in k2_erosion          |
-| ARRAY_PARTITION | variable=lb complete                 | top.cpp:72 in k3_dilation, lb     |
-| ARRAY_PARTITION | variable=win complete                | top.cpp:74 in k3_dilation, win    |
-| PIPELINE        | ii=1                                 | top.cpp:77 in k3_dilation         |
-| PIPELINE        | ii=1                                 | top.cpp:106 in k4_gradient        |
-| PIPELINE        | ii=1                                 | top.cpp:117 in k5_threshold       |
-| PIPELINE        | ii=1                                 | top.cpp:126 in k5_threshold       |
-| INTERFACE       | m_axi port=in bundle=gmem0           | top.cpp:132 in top_kernel, in     |
-| INTERFACE       | m_axi port=out bundle=gmem1          | top.cpp:133 in top_kernel, out    |
-| INTERFACE       | s_axilite port=return bundle=control | top.cpp:134 in top_kernel, return |
-| STREAM          | variable=s1 depth=256                | top.cpp:137 in top_kernel, s1     |
-| STREAM          | variable=s2 depth=256                | top.cpp:138 in top_kernel, s2     |
-| STREAM          | variable=s3_dil depth=256            | top.cpp:139 in top_kernel, s3_dil |
-| STREAM          | variable=s3_ero depth=256            | top.cpp:140 in top_kernel, s3_ero |
-| STREAM          | variable=s4 depth=256                | top.cpp:141 in top_kernel, s4     |
-+-----------------+--------------------------------------+-----------------------------------+
++-----------+-----------------------------------------------+---------------------------------+
+| Type      | Options                                       | Location                        |
++-----------+-----------------------------------------------+---------------------------------+
+| INTERFACE | mode=m_axi port=in_r offset=slave bundle=gmem | top.cpp:5 in top_kernel, in_r   |
+| INTERFACE | mode=m_axi port=in_g offset=slave bundle=gmem | top.cpp:6 in top_kernel, in_g   |
+| INTERFACE | mode=m_axi port=in_b offset=slave bundle=gmem | top.cpp:7 in top_kernel, in_b   |
+| INTERFACE | mode=m_axi port=out offset=slave bundle=gmem  | top.cpp:8 in top_kernel, out    |
+| INTERFACE | s_axilite port=return                         | top.cpp:9 in top_kernel, return |
++-----------+-----------------------------------------------+---------------------------------+
 
 

@@ -42,12 +42,7 @@
                     `uvm_info(this.get_full_name(), "receive ap_done_for_nexttrans and do axim dump", UVM_LOW)           
                     for(int j=0; j<refm.ap_done_cnt; j++) begin
                         if(j<refm.trans_num_total) begin
-                            refm.mem_blk_pages_gmem0.tvout_dump_frontpage(0);
-                        end
-                    end
-                    for(int j=0; j<refm.ap_done_cnt; j++) begin
-                        if(j<refm.trans_num_total) begin
-                            refm.mem_blk_pages_gmem1.tvout_dump_frontpage(1);
+                            refm.mem_blk_pages_gmem.tvout_dump_frontpage(1);
                         end
                     end
                 end                                                                            
@@ -58,16 +53,10 @@
             join                                                                               
         endtask                                                                                
                                                                                                
-        virtual function void write_axi_wtr_gmem0(axi_pkg::axi_transfer tr);
+        virtual function void write_axi_wtr_gmem(axi_pkg::axi_transfer tr);
         endfunction
 
-        virtual function void write_axi_rtr_gmem0(axi_pkg::axi_transfer tr);
-        endfunction
-
-        virtual function void write_axi_wtr_gmem1(axi_pkg::axi_transfer tr);
-        endfunction
-
-        virtual function void write_axi_rtr_gmem1(axi_pkg::axi_transfer tr);
+        virtual function void write_axi_rtr_gmem(axi_pkg::axi_transfer tr);
         endfunction
 
         virtual function void write_axi_wtr_control(axi_pkg::axi_transfer tr);
