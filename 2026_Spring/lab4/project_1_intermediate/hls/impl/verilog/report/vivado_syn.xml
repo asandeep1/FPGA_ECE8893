@@ -1,0 +1,189 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2025.1.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>4.213</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>4.213</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>4.213</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>5.787</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>5.787</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>5.787</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>5.787</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>43</BRAM>
+    <CLB>0</CLB>
+    <DSP>36</DSP>
+    <FF>6668</FF>
+    <LATCH>0</LATCH>
+    <LUT>6690</LUT>
+    <SRL>348</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>432</BRAM>
+    <CLB>0</CLB>
+    <DSP>360</DSP>
+    <FF>141120</FF>
+    <LUT>70560</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="top_kernel" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="21">bilateral_filtered_U cdf_U control_s_axi_U dexp_64ns_64ns_64_15_full_dsp_1_U10 equalized_U eroded_U fadd_32ns_32ns_32_5_full_dsp_1_U2 faddfsub_32ns_32ns_32_5_full_dsp_1_U1 fcmp_32ns_32ns_1_2_no_dsp_1_U9 fdiv_32ns_32ns_32_10_no_dsp_1_U5 fmul_32ns_32ns_32_4_max_dsp_1_U3 fmul_32ns_32ns_32_4_max_dsp_1_U4 fpext_32ns_64_2_no_dsp_1_U8 fptrunc_64ns_32_2_no_dsp_1_U7 gaussian_blurred_U gaussian_kernel_U gmem_m_axi_U histogram_U intensity_U sitofp_32ns_32_4_no_dsp_1_U6 spatial_weights_U</SubModules>
+    <Resources BRAM="43" DSP="36" FF="6668" LUT="6690" LogicLUT="6342" RAMB18="3" RAMB36="20" SRL="348"/>
+    <LocalResources FF="2237" LUT="279" LogicLUT="271" SRL="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/bilateral_filtered_U" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_intensity_RAM_AUTO_1R1W">
+    <Resources BRAM="8" LUT="52" LogicLUT="52" RAMB36="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/cdf_U" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_histogram_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="186" LogicLUT="186" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_s_axi_U" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_control_s_axi">
+    <Resources FF="309" LUT="274" LogicLUT="274"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dexp_64ns_64ns_64_15_full_dsp_1_U10" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_dexp_64ns_64ns_64_15_full_dsp_1">
+    <Resources DSP="26" FF="1017" LUT="1828" LogicLUT="1755" SRL="73"/>
+    <LocalResources FF="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/equalized_U" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_intensity_RAM_AUTO_1R1W">
+  </RtlModule>
+  <RtlModule CELL="inst/eroded_U" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_intensity_RAM_AUTO_1R1W">
+    <Resources BRAM="8" LUT="87" LogicLUT="87" RAMB36="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/fadd_32ns_32ns_32_5_full_dsp_1_U2" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_fadd_32ns_32ns_32_5_full_dsp_1">
+    <Resources DSP="2" FF="175" LUT="244" LogicLUT="244"/>
+    <LocalResources FF="64" LUT="16" LogicLUT="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/faddfsub_32ns_32ns_32_5_full_dsp_1_U1" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_faddfsub_32ns_32ns_32_5_full_dsp_1">
+    <Resources DSP="2" FF="176" LUT="410" LogicLUT="410"/>
+    <LocalResources FF="65" LUT="181" LogicLUT="181"/>
+  </RtlModule>
+  <RtlModule CELL="inst/fcmp_32ns_32ns_1_2_no_dsp_1_U9" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_fcmp_32ns_32ns_1_2_no_dsp_1">
+    <Resources FF="66" LUT="124" LogicLUT="124"/>
+    <LocalResources FF="66" LUT="78" LogicLUT="78"/>
+  </RtlModule>
+  <RtlModule CELL="inst/fdiv_32ns_32ns_32_10_no_dsp_1_U5" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_fdiv_32ns_32ns_32_10_no_dsp_1">
+    <Resources FF="471" LUT="935" LogicLUT="903" SRL="32"/>
+    <LocalResources FF="97" LUT="145" LogicLUT="145"/>
+  </RtlModule>
+  <RtlModule CELL="inst/fmul_32ns_32ns_32_4_max_dsp_1_U3" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_fmul_32ns_32ns_32_4_max_dsp_1">
+    <Resources DSP="3" FF="113" LUT="115" LogicLUT="115"/>
+    <LocalResources FF="64" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/fmul_32ns_32ns_32_4_max_dsp_1_U4" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_fmul_32ns_32ns_32_4_max_dsp_1">
+    <Resources DSP="3" FF="84" LUT="62" LogicLUT="62"/>
+  </RtlModule>
+  <RtlModule CELL="inst/fpext_32ns_64_2_no_dsp_1_U8" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_fpext_32ns_64_2_no_dsp_1">
+    <Resources FF="32" LUT="67" LogicLUT="67"/>
+  </RtlModule>
+  <RtlModule CELL="inst/fptrunc_64ns_32_2_no_dsp_1_U7" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_fptrunc_64ns_32_2_no_dsp_1">
+    <Resources FF="63" LUT="41" LogicLUT="41"/>
+    <LocalResources FF="63"/>
+  </RtlModule>
+  <RtlModule CELL="inst/gaussian_blurred_U" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_intensity_RAM_AUTO_1R1W">
+  </RtlModule>
+  <RtlModule CELL="inst/gaussian_kernel_U" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_gaussian_kernel_ROM_AUTO_1R">
+  </RtlModule>
+  <RtlModule CELL="inst/gmem_m_axi_U" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_gmem_m_axi">
+    <Resources BRAM="1" FF="1786" LUT="1378" LogicLUT="1143" RAMB18="1" SRL="235"/>
+  </RtlModule>
+  <RtlModule CELL="inst/histogram_U" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_histogram_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="280" LogicLUT="280" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/intensity_U" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_intensity_RAM_AUTO_1R1W">
+  </RtlModule>
+  <RtlModule CELL="inst/sitofp_32ns_32_4_no_dsp_1_U6" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_sitofp_32ns_32_4_no_dsp_1">
+    <Resources FF="113" LUT="152" LogicLUT="152"/>
+  </RtlModule>
+  <RtlModule CELL="inst/spatial_weights_U" DEPTH="1" FILE_NAME="top_kernel.v" ORIG_REF_NAME="top_kernel_spatial_weights_ROM_AUTO_1R">
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="4.15700006484985352" DATAPATH_LOGIC_DELAY="3.18600010871887207" DATAPATH_NET_DELAY="0.97100007534027100" ENDPOINT_PIN="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/ALU_OUT[25]" LOGIC_LEVELS="8" MAX_FANOUT="66" SLACK="5.78664445877075195" STARTPOINT_PIN="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/CLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="floating_point_v7_1_vh_rfs.vhd" LINE_NUMBER="1"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.15700006484985352" DATAPATH_LOGIC_DELAY="3.18600010871887207" DATAPATH_NET_DELAY="0.97100007534027100" ENDPOINT_PIN="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/ALU_OUT[26]" LOGIC_LEVELS="8" MAX_FANOUT="66" SLACK="5.78664445877075195" STARTPOINT_PIN="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/CLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="floating_point_v7_1_vh_rfs.vhd" LINE_NUMBER="1"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.15700006484985352" DATAPATH_LOGIC_DELAY="3.18600010871887207" DATAPATH_NET_DELAY="0.97100007534027100" ENDPOINT_PIN="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/ALU_OUT[27]" LOGIC_LEVELS="8" MAX_FANOUT="66" SLACK="5.78664445877075195" STARTPOINT_PIN="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/CLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="floating_point_v7_1_vh_rfs.vhd" LINE_NUMBER="1"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.15700006484985352" DATAPATH_LOGIC_DELAY="3.18600010871887207" DATAPATH_NET_DELAY="0.97100007534027100" ENDPOINT_PIN="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/ALU_OUT[28]" LOGIC_LEVELS="8" MAX_FANOUT="66" SLACK="5.78664445877075195" STARTPOINT_PIN="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/CLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="floating_point_v7_1_vh_rfs.vhd" LINE_NUMBER="1"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.15700006484985352" DATAPATH_LOGIC_DELAY="3.18600010871887207" DATAPATH_NET_DELAY="0.97100007534027100" ENDPOINT_PIN="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/ALU_OUT[29]" LOGIC_LEVELS="8" MAX_FANOUT="66" SLACK="5.78664445877075195" STARTPOINT_PIN="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/CLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="floating_point_v7_1_vh_rfs.vhd" LINE_NUMBER="1"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/dexp_64ns_64ns_64_15_full_dsp_1_U10/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/top_kernel_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/top_kernel_failfast_synth.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/top_kernel_power_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/top_kernel_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/top_kernel_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/top_kernel_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/top_kernel_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

@@ -1,0 +1,68 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'top_kernel'" level="0">
+<item name = "Date">Fri Apr  3 21:19:08 2026
+</item>
+<item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
+<item name = "Project">project_1</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.233 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3410116, 3410116, 34.101 ms, 34.101 ms, 3410117, 3410117, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_top_kernel_Outline_VITIS_LOOP_17_1_fu_725">top_kernel_Outline_VITIS_LOOP_17_1, 135297, 135297, 1.353 ms, 1.353 ms, 135297, 135297, no</column>
+<column name="grp_top_kernel_Outline_VITIS_LOOP_61_3_fu_737">top_kernel_Outline_VITIS_LOOP_61_3, 257, 257, 2.570 us, 2.570 us, 257, 257, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_66_4">28800, 28800, 450, -, -, 64, no</column>
+<column name=" + VITIS_LOOP_67_5">448, 448, 7, -, -, 64, no</column>
+<column name="- VITIS_LOOP_78_6">510, 510, 2, -, -, 255, no</column>
+<column name="- VITIS_LOOP_86_7">110720, 110720, 1730, -, -, 64, no</column>
+<column name=" + VITIS_LOOP_87_8">1728, 1728, 27, -, -, 64, no</column>
+<column name="- VITIS_LOOP_109_9">943320, 943320, 15722, -, -, 60, no</column>
+<column name=" + VITIS_LOOP_110_10">15720, 15720, 262, -, -, 60, no</column>
+<column name="  ++ VITIS_LOOP_114_11">260, 260, 52, -, -, 5, no</column>
+<column name="   +++ VITIS_LOOP_115_12">50, 50, 10, -, -, 5, no</column>
+<column name="- VITIS_LOOP_143_15">1914436, 1914436, 30878, -, -, 62, no</column>
+<column name=" + VITIS_LOOP_144_16">30876, 30876, 498, -, -, 62, no</column>
+<column name="  ++ VITIS_LOOP_150_17">483, 483, 161, -, -, 3, no</column>
+<column name="   +++ VITIS_LOOP_151_18">159, 159, 53, -, -, 3, no</column>
+<column name="- VITIS_LOOP_182_19">138508, 138508, 2234, -, -, 62, no</column>
+<column name=" + VITIS_LOOP_183_20">2232, 2232, 36, -, -, 62, no</column>
+<column name="  ++ VITIS_LOOP_187_21">33, 33, 11, -, -, 3, no</column>
+<column name="   +++ VITIS_LOOP_188_22">9, 9, 3, -, -, 3, no</column>
+<column name="- VITIS_LOOP_199_23">138508, 138508, 2234, -, -, 62, no</column>
+<column name=" + VITIS_LOOP_200_24">2232, 2232, 36, -, -, 62, no</column>
+<column name="  ++ VITIS_LOOP_204_25">33, 33, 11, -, -, 3, no</column>
+<column name="   +++ VITIS_LOOP_205_26">9, 9, 3, -, -, 3, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,15 +1,0 @@
->> Initializing Input Buffers...
->> Starting Golden Baseline (Software)...
-K1: Intensity        [>                             ] 0 %K1: Intensity        [===========>                  ] 39 %K1: Intensity        [=======================>      ] 78 %K1: Intensity        [==============================] 100 %
-K2: Equalize         [>                             ] 0 %K2: Equalize         [=======================>      ] 78 %K2: Equalize         [==============================] 100 %
-K3: Gaussian         [============>                 ] 40 %K3: Gaussian         [========================>     ] 80 %K3: Gaussian         [==============================] 100 %
-K4: Bilateral        [==>                           ] 7 %K4: Bilateral        [====>                         ] 15 %K4: Bilateral        [=======>                      ] 23 %K4: Bilateral        [=========>                    ] 31 %K4: Bilateral        [============>                 ] 40 %K4: Bilateral        [==============>               ] 47 %K4: Bilateral        [================>             ] 56 %K4: Bilateral        [===================>          ] 63 %K4: Bilateral        [=====================>        ] 72 %K4: Bilateral        [========================>     ] 80 %K4: Bilateral        [==========================>   ] 87 %K4: Bilateral        [============================> ] 95 %K4: Bilateral        [==============================] 100 %
-K5: Morph (Erode)    [=======================>      ] 79 %K5: Morph (Erode)    [==============================] 100 %
-K5: Morph (Dilate)   [=======================>      ] 79 %K5: Morph (Dilate)   [==============================] 100 %
->> Starting Hardware Kernel Execution...
->> Hardware Execution Complete.
->> Verifying Results...
-
-----------------------------------------
-Max Error: 0.00895295
-TEST PASSED

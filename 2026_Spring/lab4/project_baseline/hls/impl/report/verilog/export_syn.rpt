@@ -1,0 +1,424 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Fri Apr 03 22:23:41 EDT 2026
+    * Version:         2025.1 (Build 6214317 on Sep 11 2025)
+    * Project:         project_1
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynquplus
+    * Target device:   xczu3eg-sbva484-1-e
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  10 ns
+    * C-Synthesis target clock:    10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              5494
+FF:               4045
+DSP:              31
+BRAM:             42
+URAM:             0
+SRL:              137
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 4.213       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++-----------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-----------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                | 5494 | 4045 | 31  | 42   |      |     |        |      |         |          |        |
+|   (inst)                                            | 261  | 1443 |     |      |      |     |        |      |         |          |        |
+|   bilateral_filtered_U                              | 54   |      |     | 8    |      |     |        |      |         |          |        |
+|   cdf_U                                             | 194  |      |     | 1    |      |     |        |      |         |          |        |
+|   dexp_64ns_64ns_64_15_full_dsp_1_U17               | 1828 | 1017 | 26  |      |      |     |        |      |         |          |        |
+|   equalized_U                                       | 62   |      |     | 8    |      |     |        |      |         |          |        |
+|   eroded_U                                          | 87   |      |     | 8    |      |     |        |      |         |          |        |
+|   faddfsub_32ns_32ns_32_5_full_dsp_1_U10            | 338  | 176  | 2   |      |      |     |        |      |         |          |        |
+|   fcmp_32ns_32ns_1_2_no_dsp_1_U16                   | 124  | 66   |     |      |      |     |        |      |         |          |        |
+|   fdiv_32ns_32ns_32_10_no_dsp_1_U12                 | 871  | 438  |     |      |      |     |        |      |         |          |        |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U11                 | 94   | 113  | 3   |      |      |     |        |      |         |          |        |
+|   fpext_32ns_64_2_no_dsp_1_U15                      | 67   | 32   |     |      |      |     |        |      |         |          |        |
+|   fptrunc_64ns_32_2_no_dsp_1_U14                    | 41   | 63   |     |      |      |     |        |      |         |          |        |
+|   gaussian_blurred_U                                |      |      |     |      |      |     |        |      |         |          |        |
+|   gaussian_kernel_U                                 | 64   | 22   |     |      |      |     |        |      |         |          |        |
+|   grp_top_kernel_Outline_VITIS_LOOP_17_1_fu_725     | 924  | 547  |     |      |      |     |        |      |         |          |        |
+|     (grp_top_kernel_Outline_VITIS_LOOP_17_1_fu_725) | 197  | 273  |     |      |      |     |        |      |         |          |        |
+|     fdiv_32ns_32ns_32_10_no_dsp_1_U3                | 727  | 274  |     |      |      |     |        |      |         |          |        |
+|   grp_top_kernel_Outline_VITIS_LOOP_61_3_fu_737     |      |      |     |      |      |     |        |      |         |          |        |
+|   histogram_U                                       | 267  |      |     | 1    |      |     |        |      |         |          |        |
+|   intensity_U                                       |      |      |     |      |      |     |        |      |         |          |        |
+|   sitofp_32ns_32_4_no_dsp_1_U13                     | 152  | 113  |     |      |      |     |        |      |         |          |        |
+|   spatial_weights_U                                 |      |      |     |      |      |     |        |      |         |          |        |
++-----------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 7.79%  | OK     |
+| FD                                                        | 50%       | 2.87%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.48%  | OK     |
+| CARRY8                                                    | 25%       | 3.62%  | OK     |
+| MUXF7                                                     | 15%       | 1.30%  | OK     |
+| DSP                                                       | 80%       | 8.61%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 9.72%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 9.16%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 1323      | 93     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 1.54   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.350ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.239ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+---------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+| Path  |               SLACK | STARTPOINT PIN                                                                                                                                                                                                                  | ENDPOINT PIN                                                                                                                                                                                                                         | LOGIC LEVELS | MAX FANOUT |      DATAPATH DELAY |      DATAPATH LOGIC |        DATAPATH NET |
+|       |                     |                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                      |              |            |                     |               DELAY |               DELAY |
++-------+---------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+| Path1 | 5.78664445877075195 | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/CLK | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/ALU_OUT[25] |            8 |         66 | 4.15700006484985352 | 3.18600010871887207 | 0.97100007534027100 |
+| Path2 | 5.78664445877075195 | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/CLK | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/ALU_OUT[26] |            8 |         66 | 4.15700006484985352 | 3.18600010871887207 | 0.97100007534027100 |
+| Path3 | 5.78664445877075195 | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/CLK | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/ALU_OUT[27] |            8 |         66 | 4.15700006484985352 | 3.18600010871887207 | 0.97100007534027100 |
+| Path4 | 5.78664445877075195 | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/CLK | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/ALU_OUT[28] |            8 |         66 | 4.15700006484985352 | 3.18600010871887207 | 0.97100007534027100 |
+| Path5 | 5.78664445877075195 | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/CLK | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST/ALU_OUT[29] |            8 |         66 | 4.15700006484985352 | 3.18600010871887207 | 0.97100007534027100 |
++-------+---------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path1 Cells                                                                                                                                                                                                                 | Primitive Type         |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path2 Cells                                                                                                                                                                                                                 | Primitive Type         |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path3 Cells                                                                                                                                                                                                                 | Primitive Type         |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path4 Cells                                                                                                                                                                                                                 | Primitive Type         |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path5 Cells                                                                                                                                                                                                                 | Primitive Type         |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_no_versal_es1_workaround.DSP_i_40__0                                                                  | CLB.LUT.LUT6           |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_A_B_DATA_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_C_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_ALU_INST       | ARITHMETIC.DSP.DSP48E2 |
+    | dexp_64ns_64ns_64_15_full_dsp_1_U17/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/i_no_versal_es1_workaround.DSP/DSP_OUTPUT_INST    | ARITHMETIC.DSP.DSP48E2 |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+-------------------------------------------------------------------+
+| Report Type              | Report Location                                                   |
++--------------------------+-------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/top_kernel_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/top_kernel_failfast_synth.rpt                 |
+| power                    | impl/verilog/report/top_kernel_power_synth.rpt                    |
+| timing                   | impl/verilog/report/top_kernel_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/top_kernel_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/top_kernel_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/top_kernel_utilization_hierarchical_synth.rpt |
++--------------------------+-------------------------------------------------------------------+
+
+

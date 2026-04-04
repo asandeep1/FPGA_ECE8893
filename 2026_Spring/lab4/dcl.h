@@ -5,8 +5,8 @@
 #include <cmath>
 
 // Dimensions - adjust based on your image size
-#define ROWS 128
-#define COLS 128
+#define ROWS 64
+#define COLS 64
 #define N (ROWS * COLS)
 #define HIST_BINS 256
 

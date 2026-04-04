@@ -1,0 +1,728 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
+| Date              : Fri Apr  3 21:10:53 2026
+| Host              : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command           : report_timing -max_paths 10 -file ./report/top_kernel_timing_paths_routed.rpt
+| Design            : bd_0_wrapper
+| Device            : xczu3eg-sbva484
+| Speed File        : -1  PRODUCTION 1.30 05-15-2022
+| Design State      : Routed
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             4.651ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.292ns  (logic 3.189ns (60.256%)  route 2.103ns (39.744%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.075     0.075    <hidden>
+    DSP48E2_X1Y15        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    DSP48E2_X1Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_CLK_P[5])
+                                                      0.271     0.346 r  <hidden>
+                         net (fo=66, routed)          1.008     1.354    <hidden>
+    SLICE_X27Y38         LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.174     1.528 f  <hidden>
+                         net (fo=1, routed)           0.203     1.731    <hidden>
+    DSP48E2_X2Y14        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[24]_A_ALU[24])
+                                                      0.247     1.978 r  <hidden>
+                         net (fo=1, routed)           0.000     1.978    <hidden>
+    DSP48E2_X2Y14        DSP_ALU (Prop_DSP_ALU_DSP48E2_A_ALU[24]_COUT[3])
+                                                      0.654     2.632 r  <hidden>
+                         net (fo=1, routed)           0.000     2.632    <hidden>
+    DSP48E2_X2Y14        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.851 r  <hidden>
+                         net (fo=1, routed)           0.004     2.855    <hidden>
+    DSP48E2_X2Y15        DSP_ALU (Prop_DSP_ALU_DSP48E2_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     3.463 f  <hidden>
+                         net (fo=1, routed)           0.000     3.463    <hidden>
+    DSP48E2_X2Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[21]_P[21])
+                                                      0.141     3.604 r  <hidden>
+                         net (fo=27, routed)          0.888     4.492    <hidden>
+    DSP48E2_X2Y12        DSP_C_DATA (Prop_DSP_C_DATA_DSP48E2_C[34]_C_DATA[34])
+                                                      0.131     4.623 r  <hidden>
+                         net (fo=2, routed)           0.000     4.623    <hidden>
+    DSP48E2_X2Y12        DSP_ALU (Prop_DSP_ALU_DSP48E2_C_DATA[34]_ALU_OUT[34])
+                                                      0.744     5.367 r  <hidden>
+                         net (fo=1, routed)           0.000     5.367    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.044    10.044    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+    DSP48E2_X2Y12        DSP_OUTPUT (Setup_DSP_OUTPUT_DSP48E2_CLK_ALU_OUT[34])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -5.367    
+  -------------------------------------------------------------------
+                         slack                                  4.651    
+
+Slack (MET) :             4.651ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.292ns  (logic 3.189ns (60.256%)  route 2.103ns (39.744%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.075     0.075    <hidden>
+    DSP48E2_X1Y15        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    DSP48E2_X1Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_CLK_P[5])
+                                                      0.271     0.346 r  <hidden>
+                         net (fo=66, routed)          1.008     1.354    <hidden>
+    SLICE_X27Y38         LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.174     1.528 f  <hidden>
+                         net (fo=1, routed)           0.203     1.731    <hidden>
+    DSP48E2_X2Y14        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[24]_A_ALU[24])
+                                                      0.247     1.978 r  <hidden>
+                         net (fo=1, routed)           0.000     1.978    <hidden>
+    DSP48E2_X2Y14        DSP_ALU (Prop_DSP_ALU_DSP48E2_A_ALU[24]_COUT[3])
+                                                      0.654     2.632 r  <hidden>
+                         net (fo=1, routed)           0.000     2.632    <hidden>
+    DSP48E2_X2Y14        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.851 r  <hidden>
+                         net (fo=1, routed)           0.004     2.855    <hidden>
+    DSP48E2_X2Y15        DSP_ALU (Prop_DSP_ALU_DSP48E2_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     3.463 f  <hidden>
+                         net (fo=1, routed)           0.000     3.463    <hidden>
+    DSP48E2_X2Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[21]_P[21])
+                                                      0.141     3.604 r  <hidden>
+                         net (fo=27, routed)          0.888     4.492    <hidden>
+    DSP48E2_X2Y12        DSP_C_DATA (Prop_DSP_C_DATA_DSP48E2_C[34]_C_DATA[34])
+                                                      0.131     4.623 r  <hidden>
+                         net (fo=2, routed)           0.000     4.623    <hidden>
+    DSP48E2_X2Y12        DSP_ALU (Prop_DSP_ALU_DSP48E2_C_DATA[34]_ALU_OUT[35])
+                                                      0.744     5.367 r  <hidden>
+                         net (fo=1, routed)           0.000     5.367    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.044    10.044    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+    DSP48E2_X2Y12        DSP_OUTPUT (Setup_DSP_OUTPUT_DSP48E2_CLK_ALU_OUT[35])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -5.367    
+  -------------------------------------------------------------------
+                         slack                                  4.651    
+
+Slack (MET) :             4.651ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.292ns  (logic 3.189ns (60.256%)  route 2.103ns (39.744%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.075     0.075    <hidden>
+    DSP48E2_X1Y15        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    DSP48E2_X1Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_CLK_P[5])
+                                                      0.271     0.346 r  <hidden>
+                         net (fo=66, routed)          1.008     1.354    <hidden>
+    SLICE_X27Y38         LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.174     1.528 f  <hidden>
+                         net (fo=1, routed)           0.203     1.731    <hidden>
+    DSP48E2_X2Y14        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[24]_A_ALU[24])
+                                                      0.247     1.978 r  <hidden>
+                         net (fo=1, routed)           0.000     1.978    <hidden>
+    DSP48E2_X2Y14        DSP_ALU (Prop_DSP_ALU_DSP48E2_A_ALU[24]_COUT[3])
+                                                      0.654     2.632 r  <hidden>
+                         net (fo=1, routed)           0.000     2.632    <hidden>
+    DSP48E2_X2Y14        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.851 r  <hidden>
+                         net (fo=1, routed)           0.004     2.855    <hidden>
+    DSP48E2_X2Y15        DSP_ALU (Prop_DSP_ALU_DSP48E2_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     3.463 f  <hidden>
+                         net (fo=1, routed)           0.000     3.463    <hidden>
+    DSP48E2_X2Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[21]_P[21])
+                                                      0.141     3.604 r  <hidden>
+                         net (fo=27, routed)          0.888     4.492    <hidden>
+    DSP48E2_X2Y12        DSP_C_DATA (Prop_DSP_C_DATA_DSP48E2_C[34]_C_DATA[34])
+                                                      0.131     4.623 r  <hidden>
+                         net (fo=2, routed)           0.000     4.623    <hidden>
+    DSP48E2_X2Y12        DSP_ALU (Prop_DSP_ALU_DSP48E2_C_DATA[34]_ALU_OUT[36])
+                                                      0.744     5.367 r  <hidden>
+                         net (fo=1, routed)           0.000     5.367    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.044    10.044    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+    DSP48E2_X2Y12        DSP_OUTPUT (Setup_DSP_OUTPUT_DSP48E2_CLK_ALU_OUT[36])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -5.367    
+  -------------------------------------------------------------------
+                         slack                                  4.651    
+
+Slack (MET) :             4.651ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.292ns  (logic 3.189ns (60.256%)  route 2.103ns (39.744%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.075     0.075    <hidden>
+    DSP48E2_X1Y15        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    DSP48E2_X1Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_CLK_P[5])
+                                                      0.271     0.346 r  <hidden>
+                         net (fo=66, routed)          1.008     1.354    <hidden>
+    SLICE_X27Y38         LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.174     1.528 f  <hidden>
+                         net (fo=1, routed)           0.203     1.731    <hidden>
+    DSP48E2_X2Y14        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[24]_A_ALU[24])
+                                                      0.247     1.978 r  <hidden>
+                         net (fo=1, routed)           0.000     1.978    <hidden>
+    DSP48E2_X2Y14        DSP_ALU (Prop_DSP_ALU_DSP48E2_A_ALU[24]_COUT[3])
+                                                      0.654     2.632 r  <hidden>
+                         net (fo=1, routed)           0.000     2.632    <hidden>
+    DSP48E2_X2Y14        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.851 r  <hidden>
+                         net (fo=1, routed)           0.004     2.855    <hidden>
+    DSP48E2_X2Y15        DSP_ALU (Prop_DSP_ALU_DSP48E2_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     3.463 f  <hidden>
+                         net (fo=1, routed)           0.000     3.463    <hidden>
+    DSP48E2_X2Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[21]_P[21])
+                                                      0.141     3.604 r  <hidden>
+                         net (fo=27, routed)          0.888     4.492    <hidden>
+    DSP48E2_X2Y12        DSP_C_DATA (Prop_DSP_C_DATA_DSP48E2_C[34]_C_DATA[34])
+                                                      0.131     4.623 r  <hidden>
+                         net (fo=2, routed)           0.000     4.623    <hidden>
+    DSP48E2_X2Y12        DSP_ALU (Prop_DSP_ALU_DSP48E2_C_DATA[34]_ALU_OUT[37])
+                                                      0.744     5.367 r  <hidden>
+                         net (fo=1, routed)           0.000     5.367    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.044    10.044    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+    DSP48E2_X2Y12        DSP_OUTPUT (Setup_DSP_OUTPUT_DSP48E2_CLK_ALU_OUT[37])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -5.367    
+  -------------------------------------------------------------------
+                         slack                                  4.651    
+
+Slack (MET) :             4.651ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.292ns  (logic 3.189ns (60.256%)  route 2.103ns (39.744%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.075     0.075    <hidden>
+    DSP48E2_X1Y15        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    DSP48E2_X1Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_CLK_P[5])
+                                                      0.271     0.346 r  <hidden>
+                         net (fo=66, routed)          1.008     1.354    <hidden>
+    SLICE_X27Y38         LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.174     1.528 f  <hidden>
+                         net (fo=1, routed)           0.203     1.731    <hidden>
+    DSP48E2_X2Y14        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[24]_A_ALU[24])
+                                                      0.247     1.978 r  <hidden>
+                         net (fo=1, routed)           0.000     1.978    <hidden>
+    DSP48E2_X2Y14        DSP_ALU (Prop_DSP_ALU_DSP48E2_A_ALU[24]_COUT[3])
+                                                      0.654     2.632 r  <hidden>
+                         net (fo=1, routed)           0.000     2.632    <hidden>
+    DSP48E2_X2Y14        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.851 r  <hidden>
+                         net (fo=1, routed)           0.004     2.855    <hidden>
+    DSP48E2_X2Y15        DSP_ALU (Prop_DSP_ALU_DSP48E2_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     3.463 f  <hidden>
+                         net (fo=1, routed)           0.000     3.463    <hidden>
+    DSP48E2_X2Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[21]_P[21])
+                                                      0.141     3.604 r  <hidden>
+                         net (fo=27, routed)          0.888     4.492    <hidden>
+    DSP48E2_X2Y12        DSP_C_DATA (Prop_DSP_C_DATA_DSP48E2_C[34]_C_DATA[34])
+                                                      0.131     4.623 r  <hidden>
+                         net (fo=2, routed)           0.000     4.623    <hidden>
+    DSP48E2_X2Y12        DSP_ALU (Prop_DSP_ALU_DSP48E2_C_DATA[34]_ALU_OUT[38])
+                                                      0.744     5.367 r  <hidden>
+                         net (fo=1, routed)           0.000     5.367    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.044    10.044    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+    DSP48E2_X2Y12        DSP_OUTPUT (Setup_DSP_OUTPUT_DSP48E2_CLK_ALU_OUT[38])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -5.367    
+  -------------------------------------------------------------------
+                         slack                                  4.651    
+
+Slack (MET) :             4.651ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.292ns  (logic 3.189ns (60.256%)  route 2.103ns (39.744%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.075     0.075    <hidden>
+    DSP48E2_X1Y15        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    DSP48E2_X1Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_CLK_P[5])
+                                                      0.271     0.346 r  <hidden>
+                         net (fo=66, routed)          1.008     1.354    <hidden>
+    SLICE_X27Y38         LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.174     1.528 f  <hidden>
+                         net (fo=1, routed)           0.203     1.731    <hidden>
+    DSP48E2_X2Y14        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[24]_A_ALU[24])
+                                                      0.247     1.978 r  <hidden>
+                         net (fo=1, routed)           0.000     1.978    <hidden>
+    DSP48E2_X2Y14        DSP_ALU (Prop_DSP_ALU_DSP48E2_A_ALU[24]_COUT[3])
+                                                      0.654     2.632 r  <hidden>
+                         net (fo=1, routed)           0.000     2.632    <hidden>
+    DSP48E2_X2Y14        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.851 r  <hidden>
+                         net (fo=1, routed)           0.004     2.855    <hidden>
+    DSP48E2_X2Y15        DSP_ALU (Prop_DSP_ALU_DSP48E2_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     3.463 f  <hidden>
+                         net (fo=1, routed)           0.000     3.463    <hidden>
+    DSP48E2_X2Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[21]_P[21])
+                                                      0.141     3.604 r  <hidden>
+                         net (fo=27, routed)          0.888     4.492    <hidden>
+    DSP48E2_X2Y12        DSP_C_DATA (Prop_DSP_C_DATA_DSP48E2_C[34]_C_DATA[34])
+                                                      0.131     4.623 r  <hidden>
+                         net (fo=2, routed)           0.000     4.623    <hidden>
+    DSP48E2_X2Y12        DSP_ALU (Prop_DSP_ALU_DSP48E2_C_DATA[34]_ALU_OUT[39])
+                                                      0.744     5.367 r  <hidden>
+                         net (fo=1, routed)           0.000     5.367    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.044    10.044    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+    DSP48E2_X2Y12        DSP_OUTPUT (Setup_DSP_OUTPUT_DSP48E2_CLK_ALU_OUT[39])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -5.367    
+  -------------------------------------------------------------------
+                         slack                                  4.651    
+
+Slack (MET) :             4.651ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.292ns  (logic 3.189ns (60.256%)  route 2.103ns (39.744%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.075     0.075    <hidden>
+    DSP48E2_X1Y15        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    DSP48E2_X1Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_CLK_P[5])
+                                                      0.271     0.346 r  <hidden>
+                         net (fo=66, routed)          1.008     1.354    <hidden>
+    SLICE_X27Y38         LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.174     1.528 f  <hidden>
+                         net (fo=1, routed)           0.203     1.731    <hidden>
+    DSP48E2_X2Y14        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[24]_A_ALU[24])
+                                                      0.247     1.978 r  <hidden>
+                         net (fo=1, routed)           0.000     1.978    <hidden>
+    DSP48E2_X2Y14        DSP_ALU (Prop_DSP_ALU_DSP48E2_A_ALU[24]_COUT[3])
+                                                      0.654     2.632 r  <hidden>
+                         net (fo=1, routed)           0.000     2.632    <hidden>
+    DSP48E2_X2Y14        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.851 r  <hidden>
+                         net (fo=1, routed)           0.004     2.855    <hidden>
+    DSP48E2_X2Y15        DSP_ALU (Prop_DSP_ALU_DSP48E2_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     3.463 f  <hidden>
+                         net (fo=1, routed)           0.000     3.463    <hidden>
+    DSP48E2_X2Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[21]_P[21])
+                                                      0.141     3.604 r  <hidden>
+                         net (fo=27, routed)          0.888     4.492    <hidden>
+    DSP48E2_X2Y12        DSP_C_DATA (Prop_DSP_C_DATA_DSP48E2_C[34]_C_DATA[34])
+                                                      0.131     4.623 r  <hidden>
+                         net (fo=2, routed)           0.000     4.623    <hidden>
+    DSP48E2_X2Y12        DSP_ALU (Prop_DSP_ALU_DSP48E2_C_DATA[34]_ALU_OUT[40])
+                                                      0.744     5.367 r  <hidden>
+                         net (fo=1, routed)           0.000     5.367    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.044    10.044    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+    DSP48E2_X2Y12        DSP_OUTPUT (Setup_DSP_OUTPUT_DSP48E2_CLK_ALU_OUT[40])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -5.367    
+  -------------------------------------------------------------------
+                         slack                                  4.651    
+
+Slack (MET) :             4.651ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.292ns  (logic 3.189ns (60.256%)  route 2.103ns (39.744%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.075     0.075    <hidden>
+    DSP48E2_X1Y15        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    DSP48E2_X1Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_CLK_P[5])
+                                                      0.271     0.346 r  <hidden>
+                         net (fo=66, routed)          1.008     1.354    <hidden>
+    SLICE_X27Y38         LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.174     1.528 f  <hidden>
+                         net (fo=1, routed)           0.203     1.731    <hidden>
+    DSP48E2_X2Y14        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[24]_A_ALU[24])
+                                                      0.247     1.978 r  <hidden>
+                         net (fo=1, routed)           0.000     1.978    <hidden>
+    DSP48E2_X2Y14        DSP_ALU (Prop_DSP_ALU_DSP48E2_A_ALU[24]_COUT[3])
+                                                      0.654     2.632 r  <hidden>
+                         net (fo=1, routed)           0.000     2.632    <hidden>
+    DSP48E2_X2Y14        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.851 r  <hidden>
+                         net (fo=1, routed)           0.004     2.855    <hidden>
+    DSP48E2_X2Y15        DSP_ALU (Prop_DSP_ALU_DSP48E2_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     3.463 f  <hidden>
+                         net (fo=1, routed)           0.000     3.463    <hidden>
+    DSP48E2_X2Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[21]_P[21])
+                                                      0.141     3.604 r  <hidden>
+                         net (fo=27, routed)          0.888     4.492    <hidden>
+    DSP48E2_X2Y12        DSP_C_DATA (Prop_DSP_C_DATA_DSP48E2_C[34]_C_DATA[34])
+                                                      0.131     4.623 r  <hidden>
+                         net (fo=2, routed)           0.000     4.623    <hidden>
+    DSP48E2_X2Y12        DSP_ALU (Prop_DSP_ALU_DSP48E2_C_DATA[34]_ALU_OUT[41])
+                                                      0.744     5.367 r  <hidden>
+                         net (fo=1, routed)           0.000     5.367    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.044    10.044    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+    DSP48E2_X2Y12        DSP_OUTPUT (Setup_DSP_OUTPUT_DSP48E2_CLK_ALU_OUT[41])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -5.367    
+  -------------------------------------------------------------------
+                         slack                                  4.651    
+
+Slack (MET) :             4.651ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.292ns  (logic 3.189ns (60.256%)  route 2.103ns (39.744%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.075     0.075    <hidden>
+    DSP48E2_X1Y15        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    DSP48E2_X1Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_CLK_P[5])
+                                                      0.271     0.346 r  <hidden>
+                         net (fo=66, routed)          1.008     1.354    <hidden>
+    SLICE_X27Y38         LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.174     1.528 f  <hidden>
+                         net (fo=1, routed)           0.203     1.731    <hidden>
+    DSP48E2_X2Y14        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[24]_A_ALU[24])
+                                                      0.247     1.978 r  <hidden>
+                         net (fo=1, routed)           0.000     1.978    <hidden>
+    DSP48E2_X2Y14        DSP_ALU (Prop_DSP_ALU_DSP48E2_A_ALU[24]_COUT[3])
+                                                      0.654     2.632 r  <hidden>
+                         net (fo=1, routed)           0.000     2.632    <hidden>
+    DSP48E2_X2Y14        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.851 r  <hidden>
+                         net (fo=1, routed)           0.004     2.855    <hidden>
+    DSP48E2_X2Y15        DSP_ALU (Prop_DSP_ALU_DSP48E2_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     3.463 f  <hidden>
+                         net (fo=1, routed)           0.000     3.463    <hidden>
+    DSP48E2_X2Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[21]_P[21])
+                                                      0.141     3.604 r  <hidden>
+                         net (fo=27, routed)          0.888     4.492    <hidden>
+    DSP48E2_X2Y12        DSP_C_DATA (Prop_DSP_C_DATA_DSP48E2_C[34]_C_DATA[34])
+                                                      0.131     4.623 r  <hidden>
+                         net (fo=2, routed)           0.000     4.623    <hidden>
+    DSP48E2_X2Y12        DSP_ALU (Prop_DSP_ALU_DSP48E2_C_DATA[34]_ALU_OUT[42])
+                                                      0.744     5.367 r  <hidden>
+                         net (fo=1, routed)           0.000     5.367    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.044    10.044    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+    DSP48E2_X2Y12        DSP_OUTPUT (Setup_DSP_OUTPUT_DSP48E2_CLK_ALU_OUT[42])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -5.367    
+  -------------------------------------------------------------------
+                         slack                                  4.651    
+
+Slack (MET) :             4.651ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.292ns  (logic 3.189ns (60.256%)  route 2.103ns (39.744%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.075     0.075    <hidden>
+    DSP48E2_X1Y15        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+    DSP48E2_X1Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_CLK_P[5])
+                                                      0.271     0.346 r  <hidden>
+                         net (fo=66, routed)          1.008     1.354    <hidden>
+    SLICE_X27Y38         LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.174     1.528 f  <hidden>
+                         net (fo=1, routed)           0.203     1.731    <hidden>
+    DSP48E2_X2Y14        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[24]_A_ALU[24])
+                                                      0.247     1.978 r  <hidden>
+                         net (fo=1, routed)           0.000     1.978    <hidden>
+    DSP48E2_X2Y14        DSP_ALU (Prop_DSP_ALU_DSP48E2_A_ALU[24]_COUT[3])
+                                                      0.654     2.632 r  <hidden>
+                         net (fo=1, routed)           0.000     2.632    <hidden>
+    DSP48E2_X2Y14        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.851 r  <hidden>
+                         net (fo=1, routed)           0.004     2.855    <hidden>
+    DSP48E2_X2Y15        DSP_ALU (Prop_DSP_ALU_DSP48E2_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     3.463 f  <hidden>
+                         net (fo=1, routed)           0.000     3.463    <hidden>
+    DSP48E2_X2Y15        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[21]_P[21])
+                                                      0.141     3.604 r  <hidden>
+                         net (fo=27, routed)          0.888     4.492    <hidden>
+    DSP48E2_X2Y12        DSP_C_DATA (Prop_DSP_C_DATA_DSP48E2_C[34]_C_DATA[34])
+                                                      0.131     4.623 r  <hidden>
+                         net (fo=2, routed)           0.000     4.623    <hidden>
+    DSP48E2_X2Y12        DSP_ALU (Prop_DSP_ALU_DSP48E2_C_DATA[34]_ALU_OUT[43])
+                                                      0.744     5.367 r  <hidden>
+                         net (fo=1, routed)           0.000     5.367    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7145, unset)         0.044    10.044    <hidden>
+    DSP48E2_X2Y12        DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+    DSP48E2_X2Y12        DSP_OUTPUT (Setup_DSP_OUTPUT_DSP48E2_CLK_ALU_OUT[43])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -5.367    
+  -------------------------------------------------------------------
+                         slack                                  4.651    
+
+
+
+

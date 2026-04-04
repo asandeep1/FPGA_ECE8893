@@ -1,0 +1,718 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
+| Date              : Fri Apr  3 21:06:22 2026
+| Host              : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command           : report_timing -max_paths 10 -file ./report/top_kernel_timing_paths_synth.rpt
+| Design            : bd_0_wrapper
+| Device            : xczu3eg-sbva484
+| Speed File        : -1  PRODUCTION 1.30 05-15-2022
+| Design State      : Synthesized
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             5.787ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.157ns  (logic 3.186ns (76.642%)  route 0.971ns (23.358%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.075     0.075    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[9])
+                                                      0.263     0.338 r  <hidden>
+                         net (fo=66, unplaced)        0.335     0.673    <hidden>
+                         LUT6 (Prop_LUT6_I0_O)        0.179     0.852 f  <hidden>
+                         net (fo=1, unplaced)         0.262     1.114    <hidden>
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[8]_A_ALU[8])
+                                                      0.247     1.361 r  <hidden>
+                         net (fo=1, unplaced)         0.000     1.361    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_A_ALU[8]_COUT[3])
+                                                      0.654     2.015 r  <hidden>
+                         net (fo=1, unplaced)         0.000     2.015    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.234 r  <hidden>
+                         net (fo=1, unplaced)         0.004     2.238    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     2.846 f  <hidden>
+                         net (fo=1, unplaced)         0.000     2.846    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[21]_P[21])
+                                                      0.141     2.987 r  <hidden>
+                         net (fo=27, unplaced)        0.370     3.357    <hidden>
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[25]_C_DATA[25])
+                                                      0.131     3.488 r  <hidden>
+                         net (fo=2, unplaced)         0.000     3.488    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[25]_ALU_OUT[25])
+                                                      0.744     4.232 r  <hidden>
+                         net (fo=1, unplaced)         0.000     4.232    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.044    10.044    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[25])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -4.232    
+  -------------------------------------------------------------------
+                         slack                                  5.787    
+
+Slack (MET) :             5.787ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.157ns  (logic 3.186ns (76.642%)  route 0.971ns (23.358%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.075     0.075    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[9])
+                                                      0.263     0.338 r  <hidden>
+                         net (fo=66, unplaced)        0.335     0.673    <hidden>
+                         LUT6 (Prop_LUT6_I0_O)        0.179     0.852 f  <hidden>
+                         net (fo=1, unplaced)         0.262     1.114    <hidden>
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[8]_A_ALU[8])
+                                                      0.247     1.361 r  <hidden>
+                         net (fo=1, unplaced)         0.000     1.361    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_A_ALU[8]_COUT[3])
+                                                      0.654     2.015 r  <hidden>
+                         net (fo=1, unplaced)         0.000     2.015    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.234 r  <hidden>
+                         net (fo=1, unplaced)         0.004     2.238    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     2.846 f  <hidden>
+                         net (fo=1, unplaced)         0.000     2.846    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[21]_P[21])
+                                                      0.141     2.987 r  <hidden>
+                         net (fo=27, unplaced)        0.370     3.357    <hidden>
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[25]_C_DATA[25])
+                                                      0.131     3.488 r  <hidden>
+                         net (fo=2, unplaced)         0.000     3.488    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[25]_ALU_OUT[26])
+                                                      0.744     4.232 r  <hidden>
+                         net (fo=1, unplaced)         0.000     4.232    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.044    10.044    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[26])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -4.232    
+  -------------------------------------------------------------------
+                         slack                                  5.787    
+
+Slack (MET) :             5.787ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.157ns  (logic 3.186ns (76.642%)  route 0.971ns (23.358%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.075     0.075    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[9])
+                                                      0.263     0.338 r  <hidden>
+                         net (fo=66, unplaced)        0.335     0.673    <hidden>
+                         LUT6 (Prop_LUT6_I0_O)        0.179     0.852 f  <hidden>
+                         net (fo=1, unplaced)         0.262     1.114    <hidden>
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[8]_A_ALU[8])
+                                                      0.247     1.361 r  <hidden>
+                         net (fo=1, unplaced)         0.000     1.361    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_A_ALU[8]_COUT[3])
+                                                      0.654     2.015 r  <hidden>
+                         net (fo=1, unplaced)         0.000     2.015    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.234 r  <hidden>
+                         net (fo=1, unplaced)         0.004     2.238    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     2.846 f  <hidden>
+                         net (fo=1, unplaced)         0.000     2.846    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[21]_P[21])
+                                                      0.141     2.987 r  <hidden>
+                         net (fo=27, unplaced)        0.370     3.357    <hidden>
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[25]_C_DATA[25])
+                                                      0.131     3.488 r  <hidden>
+                         net (fo=2, unplaced)         0.000     3.488    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[25]_ALU_OUT[27])
+                                                      0.744     4.232 r  <hidden>
+                         net (fo=1, unplaced)         0.000     4.232    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.044    10.044    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[27])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -4.232    
+  -------------------------------------------------------------------
+                         slack                                  5.787    
+
+Slack (MET) :             5.787ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.157ns  (logic 3.186ns (76.642%)  route 0.971ns (23.358%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.075     0.075    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[9])
+                                                      0.263     0.338 r  <hidden>
+                         net (fo=66, unplaced)        0.335     0.673    <hidden>
+                         LUT6 (Prop_LUT6_I0_O)        0.179     0.852 f  <hidden>
+                         net (fo=1, unplaced)         0.262     1.114    <hidden>
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[8]_A_ALU[8])
+                                                      0.247     1.361 r  <hidden>
+                         net (fo=1, unplaced)         0.000     1.361    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_A_ALU[8]_COUT[3])
+                                                      0.654     2.015 r  <hidden>
+                         net (fo=1, unplaced)         0.000     2.015    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.234 r  <hidden>
+                         net (fo=1, unplaced)         0.004     2.238    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     2.846 f  <hidden>
+                         net (fo=1, unplaced)         0.000     2.846    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[21]_P[21])
+                                                      0.141     2.987 r  <hidden>
+                         net (fo=27, unplaced)        0.370     3.357    <hidden>
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[25]_C_DATA[25])
+                                                      0.131     3.488 r  <hidden>
+                         net (fo=2, unplaced)         0.000     3.488    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[25]_ALU_OUT[28])
+                                                      0.744     4.232 r  <hidden>
+                         net (fo=1, unplaced)         0.000     4.232    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.044    10.044    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[28])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -4.232    
+  -------------------------------------------------------------------
+                         slack                                  5.787    
+
+Slack (MET) :             5.787ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.157ns  (logic 3.186ns (76.642%)  route 0.971ns (23.358%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.075     0.075    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[9])
+                                                      0.263     0.338 r  <hidden>
+                         net (fo=66, unplaced)        0.335     0.673    <hidden>
+                         LUT6 (Prop_LUT6_I0_O)        0.179     0.852 f  <hidden>
+                         net (fo=1, unplaced)         0.262     1.114    <hidden>
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[8]_A_ALU[8])
+                                                      0.247     1.361 r  <hidden>
+                         net (fo=1, unplaced)         0.000     1.361    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_A_ALU[8]_COUT[3])
+                                                      0.654     2.015 r  <hidden>
+                         net (fo=1, unplaced)         0.000     2.015    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.234 r  <hidden>
+                         net (fo=1, unplaced)         0.004     2.238    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     2.846 f  <hidden>
+                         net (fo=1, unplaced)         0.000     2.846    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[21]_P[21])
+                                                      0.141     2.987 r  <hidden>
+                         net (fo=27, unplaced)        0.370     3.357    <hidden>
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[25]_C_DATA[25])
+                                                      0.131     3.488 r  <hidden>
+                         net (fo=2, unplaced)         0.000     3.488    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[25]_ALU_OUT[29])
+                                                      0.744     4.232 r  <hidden>
+                         net (fo=1, unplaced)         0.000     4.232    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.044    10.044    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[29])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -4.232    
+  -------------------------------------------------------------------
+                         slack                                  5.787    
+
+Slack (MET) :             5.787ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.157ns  (logic 3.186ns (76.642%)  route 0.971ns (23.358%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.075     0.075    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[9])
+                                                      0.263     0.338 r  <hidden>
+                         net (fo=66, unplaced)        0.335     0.673    <hidden>
+                         LUT6 (Prop_LUT6_I0_O)        0.179     0.852 f  <hidden>
+                         net (fo=1, unplaced)         0.262     1.114    <hidden>
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[8]_A_ALU[8])
+                                                      0.247     1.361 r  <hidden>
+                         net (fo=1, unplaced)         0.000     1.361    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_A_ALU[8]_COUT[3])
+                                                      0.654     2.015 r  <hidden>
+                         net (fo=1, unplaced)         0.000     2.015    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.234 r  <hidden>
+                         net (fo=1, unplaced)         0.004     2.238    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     2.846 f  <hidden>
+                         net (fo=1, unplaced)         0.000     2.846    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[21]_P[21])
+                                                      0.141     2.987 r  <hidden>
+                         net (fo=27, unplaced)        0.370     3.357    <hidden>
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[25]_C_DATA[25])
+                                                      0.131     3.488 r  <hidden>
+                         net (fo=2, unplaced)         0.000     3.488    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[25]_ALU_OUT[30])
+                                                      0.744     4.232 r  <hidden>
+                         net (fo=1, unplaced)         0.000     4.232    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.044    10.044    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[30])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -4.232    
+  -------------------------------------------------------------------
+                         slack                                  5.787    
+
+Slack (MET) :             5.787ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.157ns  (logic 3.186ns (76.642%)  route 0.971ns (23.358%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.075     0.075    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[9])
+                                                      0.263     0.338 r  <hidden>
+                         net (fo=66, unplaced)        0.335     0.673    <hidden>
+                         LUT6 (Prop_LUT6_I0_O)        0.179     0.852 f  <hidden>
+                         net (fo=1, unplaced)         0.262     1.114    <hidden>
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[8]_A_ALU[8])
+                                                      0.247     1.361 r  <hidden>
+                         net (fo=1, unplaced)         0.000     1.361    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_A_ALU[8]_COUT[3])
+                                                      0.654     2.015 r  <hidden>
+                         net (fo=1, unplaced)         0.000     2.015    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.234 r  <hidden>
+                         net (fo=1, unplaced)         0.004     2.238    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     2.846 f  <hidden>
+                         net (fo=1, unplaced)         0.000     2.846    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[21]_P[21])
+                                                      0.141     2.987 r  <hidden>
+                         net (fo=27, unplaced)        0.370     3.357    <hidden>
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[25]_C_DATA[25])
+                                                      0.131     3.488 r  <hidden>
+                         net (fo=2, unplaced)         0.000     3.488    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[25]_ALU_OUT[31])
+                                                      0.744     4.232 r  <hidden>
+                         net (fo=1, unplaced)         0.000     4.232    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.044    10.044    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[31])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -4.232    
+  -------------------------------------------------------------------
+                         slack                                  5.787    
+
+Slack (MET) :             5.787ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.157ns  (logic 3.186ns (76.642%)  route 0.971ns (23.358%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.075     0.075    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[9])
+                                                      0.263     0.338 r  <hidden>
+                         net (fo=66, unplaced)        0.335     0.673    <hidden>
+                         LUT6 (Prop_LUT6_I0_O)        0.179     0.852 f  <hidden>
+                         net (fo=1, unplaced)         0.262     1.114    <hidden>
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[8]_A_ALU[8])
+                                                      0.247     1.361 r  <hidden>
+                         net (fo=1, unplaced)         0.000     1.361    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_A_ALU[8]_COUT[3])
+                                                      0.654     2.015 r  <hidden>
+                         net (fo=1, unplaced)         0.000     2.015    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.234 r  <hidden>
+                         net (fo=1, unplaced)         0.004     2.238    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     2.846 f  <hidden>
+                         net (fo=1, unplaced)         0.000     2.846    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[21]_P[21])
+                                                      0.141     2.987 r  <hidden>
+                         net (fo=27, unplaced)        0.370     3.357    <hidden>
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[25]_C_DATA[25])
+                                                      0.131     3.488 r  <hidden>
+                         net (fo=2, unplaced)         0.000     3.488    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[25]_ALU_OUT[32])
+                                                      0.744     4.232 r  <hidden>
+                         net (fo=1, unplaced)         0.000     4.232    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.044    10.044    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[32])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -4.232    
+  -------------------------------------------------------------------
+                         slack                                  5.787    
+
+Slack (MET) :             5.787ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.157ns  (logic 3.186ns (76.642%)  route 0.971ns (23.358%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.075     0.075    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[9])
+                                                      0.263     0.338 r  <hidden>
+                         net (fo=66, unplaced)        0.335     0.673    <hidden>
+                         LUT6 (Prop_LUT6_I0_O)        0.179     0.852 f  <hidden>
+                         net (fo=1, unplaced)         0.262     1.114    <hidden>
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[8]_A_ALU[8])
+                                                      0.247     1.361 r  <hidden>
+                         net (fo=1, unplaced)         0.000     1.361    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_A_ALU[8]_COUT[3])
+                                                      0.654     2.015 r  <hidden>
+                         net (fo=1, unplaced)         0.000     2.015    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.234 r  <hidden>
+                         net (fo=1, unplaced)         0.004     2.238    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     2.846 f  <hidden>
+                         net (fo=1, unplaced)         0.000     2.846    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[21]_P[21])
+                                                      0.141     2.987 r  <hidden>
+                         net (fo=27, unplaced)        0.370     3.357    <hidden>
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[25]_C_DATA[25])
+                                                      0.131     3.488 r  <hidden>
+                         net (fo=2, unplaced)         0.000     3.488    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[25]_ALU_OUT[33])
+                                                      0.744     4.232 r  <hidden>
+                         net (fo=1, unplaced)         0.000     4.232    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.044    10.044    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[33])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -4.232    
+  -------------------------------------------------------------------
+                         slack                                  5.787    
+
+Slack (MET) :             5.787ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.157ns  (logic 3.186ns (76.642%)  route 0.971ns (23.358%))
+  Logic Levels:           8  (DSP_A_B_DATA=1 DSP_ALU=3 DSP_C_DATA=1 DSP_OUTPUT=2 LUT6=1)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.044ns = ( 10.044 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.075ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.075     0.075    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_CLK_P[9])
+                                                      0.263     0.338 r  <hidden>
+                         net (fo=66, unplaced)        0.335     0.673    <hidden>
+                         LUT6 (Prop_LUT6_I0_O)        0.179     0.852 f  <hidden>
+                         net (fo=1, unplaced)         0.262     1.114    <hidden>
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[8]_A_ALU[8])
+                                                      0.247     1.361 r  <hidden>
+                         net (fo=1, unplaced)         0.000     1.361    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_A_ALU[8]_COUT[3])
+                                                      0.654     2.015 r  <hidden>
+                         net (fo=1, unplaced)         0.000     2.015    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_COUT[3]_CARRYCASCOUT)
+                                                      0.219     2.234 r  <hidden>
+                         net (fo=1, unplaced)         0.004     2.238    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_CARRYCASCIN_ALU_OUT[21])
+                                                      0.608     2.846 f  <hidden>
+                         net (fo=1, unplaced)         0.000     2.846    <hidden>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[21]_P[21])
+                                                      0.141     2.987 r  <hidden>
+                         net (fo=27, unplaced)        0.370     3.357    <hidden>
+                         DSP_C_DATA (Prop_DSP_C_DATA_C[25]_C_DATA[25])
+                                                      0.131     3.488 r  <hidden>
+                         net (fo=2, unplaced)         0.000     3.488    <hidden>
+                         DSP_ALU (Prop_DSP_ALU_C_DATA[25]_ALU_OUT[34])
+                                                      0.744     4.232 r  <hidden>
+                         net (fo=1, unplaced)         0.000     4.232    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7257, unset)         0.044    10.044    <hidden>
+                         DSP_OUTPUT                                   r  <hidden>
+                         clock pessimism              0.000    10.044    
+                         clock uncertainty           -0.035    10.009    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[34])
+                                                      0.010    10.019    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -4.232    
+  -------------------------------------------------------------------
+                         slack                                  5.787    
+
+
+
+
