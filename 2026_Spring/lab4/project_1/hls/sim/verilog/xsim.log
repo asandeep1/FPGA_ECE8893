@@ -1,0 +1,354 @@
+#-----------------------------------------------------------
+# xsim v2025.1.1 (64-bit)
+# SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
+# IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+# SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+# Start of session at: Sat Apr  4 14:27:58 2026
+# Process ID         : 1967034
+# Current directory  : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog
+# Command line       : xsim -mode tcl -source {xsim.dir/top_kernel/xsim_script.tcl}
+# Log file           : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/xsim.log
+# Journal file       : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/xsim.jou
+# Running On         : ece-linlabsrv01
+# Platform           : RedHatEnterprise
+# Operating System   : Red Hat Enterprise Linux release 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz
+# CPU Frequency      : 2425.845 MHz
+# CPU Physical cores : 56
+# CPU Logical cores  : 112
+# Host memory        : 404103 MB
+# Swap memory        : 68719 MB
+# Total Virtual      : 472822 MB
+# Available Virtual  : 397352 MB
+#-----------------------------------------------------------
+source xsim.dir/top_kernel/xsim_script.tcl
+# xsim {top_kernel} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=top_kernel_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {top_kernel.tcl}
+Time resolution is 1 ps
+source top_kernel.tcl
+## run all
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+Warning: DRC warning : CARRYCASCIN can only be used in the current DSP48E1 instance if the previous DSP48E1  is performing a two input ADD or SUBTRACT operation, or the current DSP48E1 is configured in the MAC extend opmode(6:0) equals 1001000. 
+Time: 0 ps  Iteration: 2  Process: /apatb_top_kernel_top/AESL_inst_top_kernel/grp_top_kernel_Pipeline_VITIS_LOOP_153_19_VITIS_LOOP_155_20_fu_5002/dexp_64ns_64ns_64_15_full_dsp_1_U1157/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/exp_op/i_sp_or_dp/OP/i_ccm_ln2/\g_tables(1)\/i_addsub/dsp/two/dsp48e1_add_hi/i_no_versal_es1_workaround/DSP/prcs_carryinsel_drc  File: /tools/software/xilinx//2025.1.1/Vivado/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: DRC warning : DSP48E1 CARRYINSEL is set to 010 with OPMODEREG set to 0. This causes unknown values after reset occurs. It is suggested to use OPMODEREG = 1 when cascading large adders.
+Time: 0 ps  Iteration: 2  Process: /apatb_top_kernel_top/AESL_inst_top_kernel/grp_top_kernel_Pipeline_VITIS_LOOP_153_19_VITIS_LOOP_155_20_fu_5002/dexp_64ns_64ns_64_15_full_dsp_1_U1157/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/exp_op/i_sp_or_dp/OP/i_ccm_ln2/\g_tables(1)\/i_addsub/dsp/two/dsp48e1_add_hi/i_no_versal_es1_workaround/DSP/prcs_carryinsel_drc  File: /tools/software/xilinx//2025.1.1/Vivado/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: DRC warning : CARRYCASCIN can only be used in the current DSP48E1 instance if the previous DSP48E1  is performing a two input ADD or SUBTRACT operation, or the current DSP48E1 is configured in the MAC extend opmode(6:0) equals 1001000. 
+Time: 0 ps  Iteration: 2  Process: /apatb_top_kernel_top/AESL_inst_top_kernel/grp_top_kernel_Pipeline_VITIS_LOOP_153_19_VITIS_LOOP_155_20_fu_5002/dexp_64ns_64ns_64_15_full_dsp_1_U1157/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/exp_op/i_sp_or_dp/OP/i_ccm_ln2/\g_tables(0)\/i_addsub/dsp/two/dsp48e1_add_hi/i_no_versal_es1_workaround/DSP/prcs_carryinsel_drc  File: /tools/software/xilinx//2025.1.1/Vivado/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: DRC warning : DSP48E1 CARRYINSEL is set to 010 with OPMODEREG set to 0. This causes unknown values after reset occurs. It is suggested to use OPMODEREG = 1 when cascading large adders.
+Time: 0 ps  Iteration: 2  Process: /apatb_top_kernel_top/AESL_inst_top_kernel/grp_top_kernel_Pipeline_VITIS_LOOP_153_19_VITIS_LOOP_155_20_fu_5002/dexp_64ns_64ns_64_15_full_dsp_1_U1157/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/exp_op/i_sp_or_dp/OP/i_ccm_ln2/\g_tables(0)\/i_addsub/dsp/two/dsp48e1_add_hi/i_no_versal_es1_workaround/DSP/prcs_carryinsel_drc  File: /tools/software/xilinx//2025.1.1/Vivado/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: DRC warning : CARRYCASCIN can only be used in the current DSP48E1 instance if the previous DSP48E1  is performing a two input ADD or SUBTRACT operation, or the current DSP48E1 is configured in the MAC extend opmode(6:0) equals 1001000. 
+Time: 0 ps  Iteration: 2  Process: /apatb_top_kernel_top/AESL_inst_top_kernel/grp_top_kernel_Pipeline_VITIS_LOOP_153_19_VITIS_LOOP_155_20_fu_5002/dexp_64ns_64ns_64_15_full_dsp_1_U1156/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/exp_op/i_sp_or_dp/OP/i_ccm_ln2/\g_tables(1)\/i_addsub/dsp/two/dsp48e1_add_hi/i_no_versal_es1_workaround/DSP/prcs_carryinsel_drc  File: /tools/software/xilinx//2025.1.1/Vivado/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: DRC warning : DSP48E1 CARRYINSEL is set to 010 with OPMODEREG set to 0. This causes unknown values after reset occurs. It is suggested to use OPMODEREG = 1 when cascading large adders.
+Time: 0 ps  Iteration: 2  Process: /apatb_top_kernel_top/AESL_inst_top_kernel/grp_top_kernel_Pipeline_VITIS_LOOP_153_19_VITIS_LOOP_155_20_fu_5002/dexp_64ns_64ns_64_15_full_dsp_1_U1156/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/exp_op/i_sp_or_dp/OP/i_ccm_ln2/\g_tables(1)\/i_addsub/dsp/two/dsp48e1_add_hi/i_no_versal_es1_workaround/DSP/prcs_carryinsel_drc  File: /tools/software/xilinx//2025.1.1/Vivado/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: DRC warning : CARRYCASCIN can only be used in the current DSP48E1 instance if the previous DSP48E1  is performing a two input ADD or SUBTRACT operation, or the current DSP48E1 is configured in the MAC extend opmode(6:0) equals 1001000. 
+Time: 0 ps  Iteration: 2  Process: /apatb_top_kernel_top/AESL_inst_top_kernel/grp_top_kernel_Pipeline_VITIS_LOOP_153_19_VITIS_LOOP_155_20_fu_5002/dexp_64ns_64ns_64_15_full_dsp_1_U1156/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/exp_op/i_sp_or_dp/OP/i_ccm_ln2/\g_tables(0)\/i_addsub/dsp/two/dsp48e1_add_hi/i_no_versal_es1_workaround/DSP/prcs_carryinsel_drc  File: /tools/software/xilinx//2025.1.1/Vivado/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: DRC warning : DSP48E1 CARRYINSEL is set to 010 with OPMODEREG set to 0. This causes unknown values after reset occurs. It is suggested to use OPMODEREG = 1 when cascading large adders.
+Time: 0 ps  Iteration: 2  Process: /apatb_top_kernel_top/AESL_inst_top_kernel/grp_top_kernel_Pipeline_VITIS_LOOP_153_19_VITIS_LOOP_155_20_fu_5002/dexp_64ns_64ns_64_15_full_dsp_1_U1156/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/exp_op/i_sp_or_dp/OP/i_ccm_ln2/\g_tables(0)\/i_addsub/dsp/two/dsp48e1_add_hi/i_no_versal_es1_workaround/DSP/prcs_carryinsel_drc  File: /tools/software/xilinx//2025.1.1/Vivado/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: DRC warning : CARRYCASCIN can only be used in the current DSP48E1 instance if the previous DSP48E1  is performing a two input ADD or SUBTRACT operation, or the current DSP48E1 is configured in the MAC extend opmode(6:0) equals 1001000. 
+Time: 0 ps  Iteration: 2  Process: /apatb_top_kernel_top/AESL_inst_top_kernel/grp_top_kernel_Pipeline_VITIS_LOOP_153_19_VITIS_LOOP_155_20_fu_5002/dexp_64ns_64ns_64_15_full_dsp_1_U1155/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/exp_op/i_sp_or_dp/OP/i_ccm_ln2/\g_tables(1)\/i_addsub/dsp/two/dsp48e1_add_hi/i_no_versal_es1_workaround/DSP/prcs_carryinsel_drc  File: /tools/software/xilinx//2025.1.1/Vivado/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: DRC warning : DSP48E1 CARRYINSEL is set to 010 with OPMODEREG set to 0. This causes unknown values after reset occurs. It is suggested to use OPMODEREG = 1 when cascading large adders.
+Time: 0 ps  Iteration: 2  Process: /apatb_top_kernel_top/AESL_inst_top_kernel/grp_top_kernel_Pipeline_VITIS_LOOP_153_19_VITIS_LOOP_155_20_fu_5002/dexp_64ns_64ns_64_15_full_dsp_1_U1155/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/exp_op/i_sp_or_dp/OP/i_ccm_ln2/\g_tables(1)\/i_addsub/dsp/two/dsp48e1_add_hi/i_no_versal_es1_workaround/DSP/prcs_carryinsel_drc  File: /tools/software/xilinx//2025.1.1/Vivado/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: DRC warning : CARRYCASCIN can only be used in the current DSP48E1 instance if the previous DSP48E1  is performing a two input ADD or SUBTRACT operation, or the current DSP48E1 is configured in the MAC extend opmode(6:0) equals 1001000. 
+Time: 0 ps  Iteration: 2  Process: /apatb_top_kernel_top/AESL_inst_top_kernel/grp_top_kernel_Pipeline_VITIS_LOOP_153_19_VITIS_LOOP_155_20_fu_5002/dexp_64ns_64ns_64_15_full_dsp_1_U1155/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/exp_op/i_sp_or_dp/OP/i_ccm_ln2/\g_tables(0)\/i_addsub/dsp/two/dsp48e1_add_hi/i_no_versal_es1_workaround/DSP/prcs_carryinsel_drc  File: /tools/software/xilinx//2025.1.1/Vivado/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: DRC warning : DSP48E1 CARRYINSEL is set to 010 with OPMODEREG set to 0. This causes unknown values after reset occurs. It is suggested to use OPMODEREG = 1 when cascading large adders.
+Time: 0 ps  Iteration: 2  Process: /apatb_top_kernel_top/AESL_inst_top_kernel/grp_top_kernel_Pipeline_VITIS_LOOP_153_19_VITIS_LOOP_155_20_fu_5002/dexp_64ns_64ns_64_15_full_dsp_1_U1155/top_kernel_dexp_64ns_64ns_64_15_full_dsp_1_ip_u/U0/i_synth/exp_op/i_sp_or_dp/OP/i_ccm_ln2/\g_tables(0)\/i_addsub/dsp/two/dsp48e1_add_hi/i_no_versal_es1_workaround/DSP/prcs_carryinsel_drc  File: /tools/software/xilinx//2025.1.1/Vivado/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------------------------------
+Name                         Type                              Size  Value            
+--------------------------------------------------------------------------------------
+uvm_test_top                 top_kernel_test_lib               -     @368             
+  top_env                    top_kernel_env                    -     @379             
+    axi_lite_control         uvm_env                           -     @432             
+      item_rtr_port          uvm_analysis_port                 -     @451             
+      item_wtr_port          uvm_analysis_port                 -     @441             
+      master                 uvm_agent                         -     @844             
+        ardrv                uvm_driver #(REQ,RSP)             -     @1519            
+          item_read_imp      uvm_analysis_port                 -     @1548            
+          rsp_port           uvm_analysis_port                 -     @1538            
+          seq_item_port      uvm_seq_item_pull_port            -     @1528            
+          m_num_sent         integral                          32    'h0              
+        arsqr                axi_sequencer                     -     @1558            
+          rsp_export         uvm_analysis_export               -     @1567            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1685            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        awdrv                uvm_driver #(REQ,RSP)             -     @991             
+          item_read_imp      uvm_analysis_port                 -     @1020            
+          rsp_port           uvm_analysis_port                 -     @1010            
+          seq_item_port      uvm_seq_item_pull_port            -     @1000            
+          m_num_sent         integral                          32    'h0              
+        awsqr                axi_sequencer                     -     @1030            
+          rsp_export         uvm_analysis_export               -     @1039            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1157            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        bdrv                 uvm_driver #(REQ,RSP)             -     @1343            
+          item_read_imp      uvm_analysis_port                 -     @1372            
+          rsp_port           uvm_analysis_port                 -     @1362            
+          seq_item_port      uvm_seq_item_pull_port            -     @1352            
+          m_num_sent         integral                          32    'h0              
+        bsqr                 axi_sequencer                     -     @1382            
+          rsp_export         uvm_analysis_export               -     @1391            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1509            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        rdrv                 uvm_driver #(REQ,RSP)             -     @1695            
+          item_read_imp      uvm_analysis_port                 -     @1724            
+          rsp_port           uvm_analysis_port                 -     @1714            
+          seq_item_port      uvm_seq_item_pull_port            -     @1704            
+          m_num_sent         integral                          32    'h0              
+        rsqr                 axi_sequencer                     -     @1734            
+          rsp_export         uvm_analysis_export               -     @1743            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1861            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        wdrv                 uvm_driver #(REQ,RSP)             -     @1167            
+          item_read_imp      uvm_analysis_port                 -     @1196            
+          rsp_port           uvm_analysis_port                 -     @1186            
+          seq_item_port      uvm_seq_item_pull_port            -     @1176            
+          m_num_sent         integral                          32    'h0              
+        wsqr                 axi_sequencer                     -     @1206            
+          rsp_export         uvm_analysis_export               -     @1215            
+          seq_item_export    uvm_seq_item_pull_imp             -     @1333            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+      monitor                uvm_monitor                       -     @666             
+        item_ar2r_port       uvm_analysis_port                 -     @735             
+        item_ar_port         uvm_analysis_port                 -     @705             
+        item_aw2b_port       uvm_analysis_port                 -     @725             
+        item_aw_port         uvm_analysis_port                 -     @675             
+        item_b_port          uvm_analysis_port                 -     @695             
+        item_r_port          uvm_analysis_port                 -     @715             
+        item_w_port          uvm_analysis_port                 -     @685             
+        checks_enable        integral                          1     'h1              
+        coverage_enable      integral                          1     'h1              
+      state                  axi_state                         -     @745             
+        ar2r_imp             uvm_analysis_imp_ar2r             -     @814             
+        ar_imp               uvm_analysis_imp_ar               -     @784             
+        aw2b_imp             uvm_analysis_imp_aw2b             -     @804             
+        aw_imp               uvm_analysis_imp_aw               -     @754             
+        b_imp                uvm_analysis_imp_b                -     @774             
+        item_rtr_port        uvm_analysis_port                 -     @834             
+        item_wtr_port        uvm_analysis_port                 -     @824             
+        r_imp                uvm_analysis_imp_r                -     @794             
+        w_imp                uvm_analysis_imp_w                -     @764             
+        avg_rate             integral                          32    'h0              
+        exp_rate             integral                          32    'h0              
+        win_size             integral                          32    'h0              
+        bqnum_for_slaseq     integral                          32    'h0              
+        rq_from_model_num    integral                          32    'h0              
+      vsqr                   axi_virtual_sequencer             -     @853             
+        rsp_export           uvm_analysis_export               -     @862             
+        seq_item_export      uvm_seq_item_pull_imp             -     @980             
+        arbitration_queue    array                             0     -                
+        lock_queue           array                             0     -                
+        num_last_reqs        integral                          32    'd1              
+        num_last_rsps        integral                          32    'd1              
+      cfg                    axi_cfg                           -     @395             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    MASTER           
+        write_latency_mode   latency_mode_enum                 32    CHANNEL_FIRST    
+        read_latency_mode    latency_mode_enum                 32    CHANNEL_FIRST    
+        clatency             axi_latency                       -     @430             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+    axi_master_gmem          uvm_env                           -     @401             
+      item_rtr_port          uvm_analysis_port                 -     @420             
+      item_wtr_port          uvm_analysis_port                 -     @410             
+      monitor                uvm_monitor                       -     @1944            
+        item_ar2r_port       uvm_analysis_port                 -     @2013            
+        item_ar_port         uvm_analysis_port                 -     @1983            
+        item_aw2b_port       uvm_analysis_port                 -     @2003            
+        item_aw_port         uvm_analysis_port                 -     @1953            
+        item_b_port          uvm_analysis_port                 -     @1973            
+        item_r_port          uvm_analysis_port                 -     @1993            
+        item_w_port          uvm_analysis_port                 -     @1963            
+        checks_enable        integral                          1     'h1              
+        coverage_enable      integral                          1     'h1              
+      slave                  uvm_agent                         -     @2122            
+        ardrv                uvm_driver #(REQ,RSP)             -     @2799            
+          item_read_imp      uvm_analysis_port                 -     @2828            
+          rsp_port           uvm_analysis_port                 -     @2818            
+          seq_item_port      uvm_seq_item_pull_port            -     @2808            
+          m_num_sent         integral                          32    'h0              
+        arsqr                axi_sequencer                     -     @2838            
+          rsp_export         uvm_analysis_export               -     @2847            
+          seq_item_export    uvm_seq_item_pull_imp             -     @2965            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        awdrv                uvm_driver #(REQ,RSP)             -     @2271            
+          item_read_imp      uvm_analysis_port                 -     @2300            
+          rsp_port           uvm_analysis_port                 -     @2290            
+          seq_item_port      uvm_seq_item_pull_port            -     @2280            
+          m_num_sent         integral                          32    'h0              
+        awsqr                axi_sequencer                     -     @2310            
+          rsp_export         uvm_analysis_export               -     @2319            
+          seq_item_export    uvm_seq_item_pull_imp             -     @2437            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        bdrv                 uvm_driver #(REQ,RSP)             -     @2623            
+          item_read_imp      uvm_analysis_port                 -     @2652            
+          rsp_port           uvm_analysis_port                 -     @2642            
+          seq_item_port      uvm_seq_item_pull_port            -     @2632            
+          m_num_sent         integral                          32    'h0              
+        bsqr                 axi_sequencer                     -     @2662            
+          rsp_export         uvm_analysis_export               -     @2671            
+          seq_item_export    uvm_seq_item_pull_imp             -     @2789            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        rdrv                 uvm_driver #(REQ,RSP)             -     @2975            
+          item_read_imp      uvm_analysis_port                 -     @3004            
+          rsp_port           uvm_analysis_port                 -     @2994            
+          seq_item_port      uvm_seq_item_pull_port            -     @2984            
+          m_num_sent         integral                          32    'h0              
+        rsqr                 axi_sequencer                     -     @3014            
+          rsp_export         uvm_analysis_export               -     @3023            
+          seq_item_export    uvm_seq_item_pull_imp             -     @3141            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+        wdrv                 uvm_driver #(REQ,RSP)             -     @2447            
+          item_read_imp      uvm_analysis_port                 -     @2476            
+          rsp_port           uvm_analysis_port                 -     @2466            
+          seq_item_port      uvm_seq_item_pull_port            -     @2456            
+          m_num_sent         integral                          32    'h0              
+        wsqr                 axi_sequencer                     -     @2486            
+          rsp_export         uvm_analysis_export               -     @2495            
+          seq_item_export    uvm_seq_item_pull_imp             -     @2613            
+          arbitration_queue  array                             0     -                
+          lock_queue         array                             0     -                
+          num_last_reqs      integral                          32    'd1              
+          num_last_rsps      integral                          32    'd1              
+      state                  axi_state                         -     @2023            
+        ar2r_imp             uvm_analysis_imp_ar2r             -     @2092            
+        ar_imp               uvm_analysis_imp_ar               -     @2062            
+        aw2b_imp             uvm_analysis_imp_aw2b             -     @2082            
+        aw_imp               uvm_analysis_imp_aw               -     @2032            
+        b_imp                uvm_analysis_imp_b                -     @2052            
+        item_rtr_port        uvm_analysis_port                 -     @2112            
+        item_wtr_port        uvm_analysis_port                 -     @2102            
+        r_imp                uvm_analysis_imp_r                -     @2072            
+        w_imp                uvm_analysis_imp_w                -     @2042            
+        avg_rate             integral                          32    'h0              
+        exp_rate             integral                          32    'h0              
+        win_size             integral                          32    'h0              
+        bqnum_for_slaseq     integral                          32    'h0              
+        rq_from_model_num    integral                          32    'h0              
+      vsqr                   axi_virtual_sequencer             -     @2131            
+        rsp_export           uvm_analysis_export               -     @2140            
+        seq_item_export      uvm_seq_item_pull_imp             -     @2258            
+        arbitration_queue    array                             0     -                
+        lock_queue           array                             0     -                
+        num_last_reqs        integral                          32    'd1              
+        num_last_rsps        integral                          32    'd1              
+      cfg                    axi_cfg                           -     @394             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    SLAVE            
+        write_latency_mode   latency_mode_enum                 32    TRANSACTION_FIRST
+        read_latency_mode    latency_mode_enum                 32    TRANSACTION_FIRST
+        clatency             axi_latency                       -     @396             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+    refm                     top_kernel_reference_model        -     @461             
+      trans_num_idx          integral                          32    'h0              
+    subsys_mon               top_kernel_subsystem_monitor      -     @474             
+      control_rtr_imp        uvm_analysis_imp_axi_rtr_control  -     @513             
+      control_wtr_imp        uvm_analysis_imp_axi_wtr_control  -     @503             
+      gmem_rtr_imp           uvm_analysis_imp_axi_rtr_gmem     -     @493             
+      gmem_wtr_imp           uvm_analysis_imp_axi_wtr_gmem     -     @483             
+      scbd                   top_kernel_scoreboard             -     @3222            
+        refm                 top_kernel_reference_model        -     @461             
+          trans_num_idx      integral                          32    'h0              
+    top_kernel_virtual_sqr   top_kernel_virtual_sequencer      -     @523             
+      rsp_export             uvm_analysis_export               -     @532             
+      seq_item_export        uvm_seq_item_pull_imp             -     @650             
+      arbitration_queue      array                             0     -                
+      lock_queue             array                             0     -                
+      num_last_reqs          integral                          32    'd1              
+      num_last_rsps          integral                          32    'd1              
+    refm                     top_kernel_reference_model        -     @461             
+    top_kernel_virtual_sqr   top_kernel_virtual_sequencer      -     @523             
+    top_kernel_cfg           top_kernel_config                 -     @393             
+      gmem_cfg               axi_cfg                           -     @394             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    SLAVE            
+        write_latency_mode   latency_mode_enum                 32    TRANSACTION_FIRST
+        read_latency_mode    latency_mode_enum                 32    TRANSACTION_FIRST
+        clatency             axi_latency                       -     @396             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+      control_cfg            axi_cfg                           -     @395             
+        has_checker          integral                          1     'h1              
+        has_coverage         integral                          1     'h1              
+        id_num               integral                          32    'h1              
+        reset_level          reset_level_enum                  32    RESET_LEVEL_LOW  
+        drv_type             drv_type_enum                     32    MASTER           
+        write_latency_mode   latency_mode_enum                 32    CHANNEL_FIRST    
+        read_latency_mode    latency_mode_enum                 32    CHANNEL_FIRST    
+        clatency             axi_latency                       -     @430             
+          wr_latency         integral                          32    'h0              
+          rd_latency         integral                          32    'h0              
+      check_ena              integral                          32    'h0              
+      cover_ena              integral                          32    'h0              
+--------------------------------------------------------------------------------------
+
+UVM_INFO /tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "3004655000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 3004725 ns : File "/tools/software/xilinx//2025.1.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+run: Time (s): cpu = 00:00:00.15 ; elapsed = 00:14:04 . Memory (MB): peak = 1606.934 ; gain = 0.000 ; free physical = 231484 ; free virtual = 386714
+## quit
+INFO: xsimkernel Simulation Memory Usage: 1597272 KB (Peak: 1597272 KB), Simulation CPU Usage: 841070 ms
+INFO: [Common 17-206] Exiting xsim at Sat Apr  4 14:42:07 2026...
