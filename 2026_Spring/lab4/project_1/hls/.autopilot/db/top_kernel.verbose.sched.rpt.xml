@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'top_kernel'" level="0">
-<item name = "Date">Sat Apr  4 14:09:50 2026
+<item name = "Date">Thu Apr  9 00:34:58 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.472 ns, 2.70 ns</column>
+<column name="ap_clk">4.00 ns, 3.320 ns, 1.08 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">288127, 288127, 2.881 ms, 2.881 ms, 288128, 288128, no</column>
+<column name="">38983, 38983, 0.156 ms, 0.156 ms, 38984, 38984, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,19 +35,6 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_83_6">2805, 2805, 11, -, -, 255, no</column>
-<column name="- VITIS_LOOP_89_7">3072, 3072, 12, -, -, 256, no</column>
-<column name="- VITIS_LOOP_131_14">260, 260, 130, -, -, 2, no</column>
-<column name=" + VITIS_LOOP_132_15">128, 128, 2, -, -, 64, no</column>
-<column name="- VITIS_LOOP_137_16">180, 180, 3, -, -, 60, no</column>
-<column name="- VITIS_LOOP_181_23">128, 128, 2, -, -, 64, no</column>
-<column name="- VITIS_LOOP_185_24">128, 128, 2, -, -, 64, no</column>
-<column name="- VITIS_LOOP_210_29">128, 128, 2, -, -, 64, no</column>
-<column name="- VITIS_LOOP_214_30">128, 128, 2, -, -, 64, no</column>
-<column name="- VITIS_LOOP_238_35">128, 128, 2, -, -, 64, no</column>
-<column name="- VITIS_LOOP_242_36">128, 128, 2, -, -, 64, no</column>
-<column name="- VITIS_LOOP_248_37">12416, 12416, 194, -, -, 64, no</column>
-<column name=" + VITIS_LOOP_249_38">192, 192, 3, -, -, 64, no</column>
 </table>
 </item>
 </section>

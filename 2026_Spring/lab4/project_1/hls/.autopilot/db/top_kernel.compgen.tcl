@@ -1,72 +1,139 @@
 # This script segment is generated automatically by AutoPilot
 
-set name top_kernel_faddfsub_32ns_32ns_32_5_full_dsp_1
+set name top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 4 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 9 ALLOW_PRAGMA 1
 }
 
 
-set name top_kernel_fdiv_32ns_32ns_32_10_no_dsp_1
+set name top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fdiv} IMPL {fabric} LATENCY 9 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 9 ALLOW_PRAGMA 1
 }
 
 
-set name top_kernel_sitofp_32ns_32_4_no_dsp_1
+set name top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {sitofp} IMPL {auto} LATENCY 3 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fdiv} IMPL {fabric} LATENCY 29 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fdiv} IMPL {fabric} LATENCY 29 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fdiv} IMPL {fabric} LATENCY 29 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fdiv} IMPL {fabric} LATENCY 29 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fmul_32ns_32ns_32_7_max_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fmul} IMPL {maxdsp} LATENCY 6 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fadd_32ns_32ns_32_10_full_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 9 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fadd_32ns_32ns_32_10_full_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 9 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fadd_32ns_32ns_32_10_full_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 9 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fadd_32ns_32ns_32_10_full_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 9 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fadd_32ns_32ns_32_10_full_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 9 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fadd_32ns_32ns_32_10_full_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 9 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fadd_32ns_32ns_32_10_full_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 9 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fcmp} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fcmp} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fcmp} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fcmp} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fcmp} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fcmp} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fcmp} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+}
+
+
+set name top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fcmp} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler top_kernel_sparsemux_511_8_32_1_1 BINDTYPE {op} TYPE {sparsemux} IMPL {compactencoding_dontcare}
-}
-
-
-set name top_kernel_fdiv_32ns_32ns_32_10_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fdiv} IMPL {fabric} LATENCY 9 ALLOW_PRAGMA 1
-}
-
-
-set name top_kernel_fmul_32ns_32ns_32_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name top_kernel_fadd_32ns_32ns_32_5_full_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 4 ALLOW_PRAGMA 1
-}
-
-
-set name top_kernel_fadd_32ns_32ns_32_5_full_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 4 ALLOW_PRAGMA 1
-}
-
-
-set name top_kernel_fadd_32ns_32ns_32_5_full_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 4 ALLOW_PRAGMA 1
-}
-
-
-set name top_kernel_fadd_32ns_32ns_32_5_full_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 4 ALLOW_PRAGMA 1
-}
-
-
-set name top_kernel_fcmp_32ns_32ns_1_2_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fcmp} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler top_kernel_intensity_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler top_kernel_top_kernel_float_const_float_const_float_const_float_intensity_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
@@ -76,17 +143,32 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler top_kernel_gaussian_blurred_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler top_kernel_top_kernel_float_const_float_const_float_const_float_gaussian_blurred_RAM_AUTfYi BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler top_kernel_dilated_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler top_kernel_bilateral_filtered_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler top_kernel_gmem_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
+	::AP::rtl_comp_handler top_kernel_gmem0_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler top_kernel_gmem1_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler top_kernel_gmem2_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler top_kernel_gmem3_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
 }
 
 
@@ -145,7 +227,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 1214 \
+			id 1331 \
 			corename top_kernel_control_axilite \
 			name top_kernel_control_s_axi \
 			ports {$port_control} \

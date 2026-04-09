@@ -1,390 +1,6 @@
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_cordic_tablescirc.pp.cpp, 
-                   Line: 0, Column: 0 }
-Function:        _GLOBAL__sub_I_hls_cordic_tablescirc.pp.cpp
-Args:            
-  - Callee:          __cxx_global_var_init.127.47172
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/src/common/hls_cordic_tablescirc.cpp, 
-                       Line: 166, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          _GLOBAL__sub_I_hls_cordic_tablescirc.pp.cpp
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/build/hls_clib/lnx64/hlsmath_csyn_common/objs/src/common/hls_cordic_tablescirc.pp.cpp, 
-                       Line: 0, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
-                   Line: 17, Column: 21 }
-Function:        _Z13generic_isnanIdEiT_
-Args:            
-  - Callee:          'fp_struct<double>::fp_struct(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 456, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'int generic_isnan<double>(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
-                       Line: 16, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                   Line: 496, Column: 17 }
-Function:        _ZNK9fp_structIdE9to_doubleEv
-Args:            
-  - Callee:          'fp_struct<double>::data() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 475, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'fp_struct<double>::to_double() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 494, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                   Line: 510, Column: 16 }
-Function:        _ZNK9fp_structIdE7to_ieeeEv
-Args:            
-  - Callee:          'fp_struct<double>::to_double() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 494, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'fp_struct<double>::to_ieee() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 509, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
-                   Line: 15, Column: 14 }
-Function:        _Z11generic_nanIdET_PKc
-Args:            
-  - Callee:          'fp_struct<double>::to_ieee() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 509, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double generic_nan<double>(char const*)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
-                       Line: 10, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
-                   Line: 12, Column: 16 }
-Function:        _Z16generic_copysignIdET_S0_S0_
-Args:            
-  - Callee:          'fp_struct<double>::fp_struct(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 456, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double generic_copysign<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
-                       Line: 10, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
-                   Line: 14, Column: 13 }
-Function:        _Z16generic_copysignIdET_S0_S0_
-Args:            
-  - Callee:          'fp_struct<double>::to_ieee() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 509, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double generic_copysign<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
-                       Line: 10, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
-                   Line: 17, Column: 21 }
-Function:        _Z13generic_isinfIdEiT_
-Args:            
-  - Callee:          'fp_struct<double>::fp_struct(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 456, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'int generic_isinf<double>(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
-                       Line: 16, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_abs.h, 
-                   Line: 14, Column: 10 }
-Function:        _Z11generic_absIdET_S0_
-Args:            
-  - Callee:          'double generic_copysign<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
-                       Line: 10, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double generic_abs<double>(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_abs.h, 
-                       Line: 13, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 650, Column: 18 }
-Function:        _ZN7cordic_13atan2_genericIdEET_S1_S1_
-Args:            
-  - Callee:          'fp_struct<double>::fp_struct(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 456, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_generic<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 648, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 692, Column: 13 }
-Function:        _ZN7cordic_13atan2_genericIdEET_S1_S1_
-Args:            
-  - Callee:          'fp_struct<double>::mantissa() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 503, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_generic<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 648, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 713, Column: 18 }
-Function:        _ZN7cordic_L15atan2_cordic_Q1IdEET_S1_S1_
-Args:            
-  - Callee:          'fp_struct<double>::fp_struct(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 456, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_cordic_Q1<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 711, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 715, Column: 14 }
-Function:        _ZN7cordic_L15atan2_cordic_Q1IdEET_S1_S1_
-Args:            
-  - Callee:          'fp_struct<double>::data() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 475, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_cordic_Q1<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 711, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 716, Column: 11 }
-Function:        _ZN7cordic_L15atan2_cordic_Q1IdEET_S1_S1_
-Args:            
-  - Callee:          'fp_struct<double>::fp_struct(unsigned long)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 469, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_cordic_Q1<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 711, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 716, Column: 41 }
-Function:        _ZN7cordic_L15atan2_cordic_Q1IdEET_S1_S1_
-Args:            
-  - Callee:          'fp_struct<double>::to_ieee() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 509, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_cordic_Q1<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 711, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 726, Column: 18 }
-Function:        _ZN7cordic_12atan2_cordicIdEET_S1_S1_
-Args:            
-  - Callee:          'fp_struct<double>::fp_struct(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 456, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_cordic<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 725, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 728, Column: 10 }
-Function:        _ZN7cordic_12atan2_cordicIdEET_S1_S1_
-Args:            
-  - Callee:          'int generic_isnan<double>(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
-                       Line: 16, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_cordic<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 725, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 729, Column: 11 }
-Function:        _ZN7cordic_12atan2_cordicIdEET_S1_S1_
-Args:            
-  - Callee:          'double generic_nan<double>(char const*)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
-                       Line: 10, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_cordic<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 725, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 788, Column: 38 }
-Function:        _ZN7cordic_12atan2_cordicIdEET_S1_S1_
-Args:            
-  - Callee:          'fp_struct<double>::to_ieee() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 509, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_cordic<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 725, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 788, Column: 10 }
-Function:        _ZN7cordic_12atan2_cordicIdEET_S1_S1_
-Args:            
-  - Callee:          'fp_struct<double>::fp_struct(unsigned long)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 469, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_cordic<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 725, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 733, Column: 47 }
-Function:        _ZN7cordic_12atan2_cordicIdEET_S1_S1_
-Args:            
-  - Callee:          'fp_struct<double>::__signbit() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 512, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_cordic<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 725, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 734, Column: 11 }
-Function:        _ZN7cordic_12atan2_cordicIdEET_S1_S1_
-Args:            
-  - Callee:          'double generic_copysign<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
-                       Line: 10, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_cordic<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 725, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 786, Column: 10 }
-Function:        _ZN7cordic_12atan2_cordicIdEET_S1_S1_
-Args:            
-  - Callee:          'double generic_abs<double>(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_abs.h, 
-                       Line: 13, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_cordic<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 725, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                   Line: 779, Column: 17 }
-Function:        _ZN7cordic_12atan2_cordicIdEET_S1_S1_
-Args:            
-  - Callee:          'int generic_isinf<double>(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
-                       Line: 16, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'double cordic_::atan2_cordic<double>(double, double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h, 
-                       Line: 725, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
 DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
                    Line: 13, Column: 17 }
 Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
@@ -481,21 +97,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 48, Column: 30 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - Callee:          atan2
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/src/c/atan2double.cpp, 
-                       Line: 6, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 75, Column: 28 }
+DebugLoc:        { File: top.cpp, Line: 47, Column: 28 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - Callee:          __hls_fptosi_float_i32
@@ -509,81 +111,141 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 226, Column: 32 }
+DebugLoc:        { File: top.cpp, Line: 163, Column: 21 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_226_33
+  - LoopName:        VITIS_LOOP_163_19
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 227, Column: 36 }
+DebugLoc:        { File: top.cpp, Line: 166, Column: 32 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_227_34
+  - LoopName:        VITIS_LOOP_166_20
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 198, Column: 32 }
+DebugLoc:        { File: top.cpp, Line: 167, Column: 36 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_198_27
+  - LoopName:        VITIS_LOOP_167_21
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 199, Column: 36 }
+DebugLoc:        { File: top.cpp, Line: 173, Column: 36 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_199_28
+  - LoopName:        VITIS_LOOP_173_22
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 162, Column: 32 }
+DebugLoc:        { File: top.cpp, Line: 174, Column: 40 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_162_21
+  - LoopName:        VITIS_LOOP_174_23
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 163, Column: 36 }
+DebugLoc:        { File: top.cpp, Line: 134, Column: 21 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_163_22
+  - LoopName:        VITIS_LOOP_134_13
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 119, Column: 32 }
+DebugLoc:        { File: top.cpp, Line: 138, Column: 32 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_119_12
+  - LoopName:        VITIS_LOOP_138_14
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 120, Column: 36 }
+DebugLoc:        { File: top.cpp, Line: 139, Column: 36 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_120_13
+  - LoopName:        VITIS_LOOP_139_15
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: top.cpp, Line: 145, Column: 36 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_145_16
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: top.cpp, Line: 146, Column: 40 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_146_17
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: top.cpp, Line: 105, Column: 32 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_105_10
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: top.cpp, Line: 106, Column: 36 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_106_11
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: top.cpp, Line: 89, Column: 30 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_89_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: top.cpp, Line: 90, Column: 34 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_90_8
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
@@ -593,143 +255,13 @@ DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_226_33
+  - LoopName:        VITIS_LOOP_163_19
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:226:32'
+  - LoopLoc:         'top.cpp:163:21'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
   - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_227_34
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:227:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_227_34
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:227:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_227_34
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:227:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_198_27
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:198:32'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_199_28
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:199:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_199_28
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:199:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_199_28
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:199:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaPartiallyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_155_20
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:155:21'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' partially '
-  - String:          ''
-  - String:          'with a factor of '
   - Factor:          '2'
 ...
 --- !Passed
@@ -739,9 +271,9 @@ DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_162_21
+  - LoopName:        VITIS_LOOP_166_20
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:162:32'
+  - LoopLoc:         'top.cpp:166:32'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
@@ -755,127 +287,13 @@ DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_163_22
+  - LoopName:        VITIS_LOOP_167_21
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:163:36'
+  - LoopLoc:         'top.cpp:167:36'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
   - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_163_22
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:163:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_163_22
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:163:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_162_21
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:162:32'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_163_22
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:163:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_163_22
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:163:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_163_22
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:163:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaPartiallyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_115_11
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:115:21'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' partially '
-  - String:          ''
-  - String:          'with a factor of '
   - Factor:          '2'
 ...
 --- !Passed
@@ -885,9 +303,313 @@ DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_119_12
+  - LoopName:        VITIS_LOOP_167_21
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:119:32'
+  - LoopLoc:         'top.cpp:167:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_167_21
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:167:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_173_22
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:173:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_174_23
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:174:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_174_23
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:174:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_174_23
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:174:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_134_13
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:134:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_138_14
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:138:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_139_15
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:139:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_139_15
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:139:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_139_15
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:139:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_145_16
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:145:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_146_17
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:146:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_146_17
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:146:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_146_17
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:146:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_105_10
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:105:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_106_11
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:106:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_106_11
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:106:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_106_11
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:106:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          top_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_89_7
+  - String:          ''' ('
+  - LoopLoc:         'top.cpp:89:30'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
@@ -901,9 +623,9 @@ DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_120_13
+  - LoopName:        VITIS_LOOP_90_8
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:120:36'
+  - LoopLoc:         'top.cpp:90:34'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
@@ -917,9 +639,9 @@ DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_120_13
+  - LoopName:        VITIS_LOOP_90_8
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:120:36'
+  - LoopLoc:         'top.cpp:90:34'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
@@ -933,9 +655,9 @@ DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_120_13
+  - LoopName:        VITIS_LOOP_90_8
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:120:36'
+  - LoopLoc:         'top.cpp:90:34'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
@@ -949,9 +671,9 @@ DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_120_13
+  - LoopName:        VITIS_LOOP_90_8
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:120:36'
+  - LoopLoc:         'top.cpp:90:34'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
@@ -965,9 +687,9 @@ DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_120_13
+  - LoopName:        VITIS_LOOP_90_8
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:120:36'
+  - LoopLoc:         'top.cpp:90:34'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
@@ -981,94 +703,14 @@ DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_119_12
+  - LoopName:        VITIS_LOOP_38_2
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:119:32'
+  - LoopLoc:         'top.cpp:38:19'
   - String:          ') '
   - String:          'in function '''
   - String:          top_kernel
   - String:          ''' completely with a factor of '
-  - Factor:          '5'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_120_13
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:120:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '5'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_120_13
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:120:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '5'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_120_13
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:120:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '5'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_120_13
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:120:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '5'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_120_13
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:120:36'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          top_kernel
-  - String:          ''' completely with a factor of '
-  - Factor:          '5'
+  - Factor:          '256'
 ...
 --- !Missed
 Pass:            inline
@@ -1169,7 +811,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 75, Column: 28 }
+DebugLoc:        { File: top.cpp, Line: 47, Column: 28 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - Callee:          __hls_fptosi_float_i32
@@ -1311,13 +953,37 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 18, Column: 0 }
+DebugLoc:        { File: top.cpp, Line: 156, Column: 0 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Applying '
   - String:          array_partition
   - String:          ' to '''
-  - UOName:          _ZZ10top_kernelPKfS0_S0_PfE3cdf
+  - UOName:          _ZZ10top_kernelPKfS0_S0_PfE6di_win
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 154, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10top_kernelPKfS0_S0_PfE11di_line_buf
   - String:          ''':'
   - String:          ' '
   - Mode:            Complete
@@ -1329,13 +995,13 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 17, Column: 0 }
+DebugLoc:        { File: top.cpp, Line: 126, Column: 0 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Applying '
   - String:          array_partition
   - String:          ' to '''
-  - UOName:          _ZZ10top_kernelPKfS0_S0_PfE9histogram
+  - UOName:          _ZZ10top_kernelPKfS0_S0_PfE6er_win
   - String:          ''':'
   - String:          ' '
   - Mode:            Complete
@@ -1343,322 +1009,30 @@ Args:
   - String:          ' on dimension '
   - Dim:             '1'
   - String:          .
-...
---- !Passed
-Pass:            reflow-burst-inference
-Name:            BurstInferred
-DebugLoc:        { File: top.cpp, Line: 26, Column: 19 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Sequential '
-  - Direction:       read
-  - String:          ' of length '
-  - Length:          '4096'
-  - String:          ' has been inferred'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        in_r867seq
-  - ArrayName:       in_r
   - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_26_1
-  - String:          ' '
-  - LoopLoc:         'top.cpp:26:19'
-  - String:          ' '
-  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-  - String:          ' '
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      load
-    DebugLoc:        { File: top.cpp, Line: 29, Column: 24 }
-  - OrigDirection:   read
-  - OrigID:          for.body4.load.6
-...
---- !Passed
-Pass:            reflow-burst-inference
-Name:            BurstInferred
-DebugLoc:        { File: top.cpp, Line: 26, Column: 19 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Sequential '
-  - Direction:       read
-  - String:          ' of length '
-  - Length:          '4096'
-  - String:          ' has been inferred'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        in_g868seq
-  - ArrayName:       in_g
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_26_1
-  - String:          ' '
-  - LoopLoc:         'top.cpp:26:19'
-  - String:          ' '
-  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-  - String:          ' '
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      load
-    DebugLoc:        { File: top.cpp, Line: 30, Column: 24 }
-  - OrigDirection:   read
-  - OrigID:          for.body4.load.12
-...
---- !Passed
-Pass:            reflow-burst-inference
-Name:            BurstInferred
-DebugLoc:        { File: top.cpp, Line: 26, Column: 19 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Sequential '
-  - Direction:       read
-  - String:          ' of length '
-  - Length:          '4096'
-  - String:          ' has been inferred'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        in_b869seq
-  - ArrayName:       in_b
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_26_1
-  - String:          ' '
-  - LoopLoc:         'top.cpp:26:19'
-  - String:          ' '
-  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-  - String:          ' '
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      load
-    DebugLoc:        { File: top.cpp, Line: 31, Column: 24 }
-  - OrigDirection:   read
-  - OrigID:          for.body4.load.18
-...
---- !Passed
-Pass:            reflow-burst-inference
-Name:            BurstInferred
-DebugLoc:        { File: top.cpp, Line: 248, Column: 24 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Sequential '
-  - Direction:       write
-  - String:          ' of length '
-  - Length:          '4096'
-  - String:          ' has been inferred'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        out870seq
-  - ArrayName:       out
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_248_37
-  - String:          ' '
-  - LoopLoc:         'top.cpp:248:24'
-  - String:          ' '
-  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-  - String:          ' '
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      store
-    DebugLoc:        { File: top.cpp, Line: 251, Column: 22 }
-  - OrigDirection:   write
-  - OrigID:          for.inc633.store.8
-...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualAlignment
-DebugLoc:        { File: top.cpp, Line: 248, Column: 24 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Could not widen since type '
-  - Type:            float
-  - String:          ' size is greater than or equal to alignment '
-  - Alignment:       '1'
-  - String:          '(bytes)'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: top.cpp, Line: 248, Column: 24 }
-  - OrigDirection:   write
-  - OrigID:          out870seq
-  - ArrayName:       out
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_249_38
-  - String:          ' '
-  - LoopLoc:         'top.cpp:249:28'
-  - String:          ' '
-  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualAlignment
-DebugLoc:        { File: top.cpp, Line: 26, Column: 19 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Could not widen since type '
-  - Type:            float
-  - String:          ' size is greater than or equal to alignment '
-  - Alignment:       '1'
-  - String:          '(bytes)'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: top.cpp, Line: 26, Column: 19 }
-  - OrigDirection:   read
-  - OrigID:          in_r867seq
-  - ArrayName:       in_r
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_27_2
-  - String:          ' '
-  - LoopLoc:         'top.cpp:27:26'
-  - String:          ' '
-  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualAlignment
-DebugLoc:        { File: top.cpp, Line: 26, Column: 19 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Could not widen since type '
-  - Type:            float
-  - String:          ' size is greater than or equal to alignment '
-  - Alignment:       '1'
-  - String:          '(bytes)'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: top.cpp, Line: 26, Column: 19 }
-  - OrigDirection:   read
-  - OrigID:          in_g868seq
-  - ArrayName:       in_g
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_27_2
-  - String:          ' '
-  - LoopLoc:         'top.cpp:27:26'
-  - String:          ' '
-  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualAlignment
-DebugLoc:        { File: top.cpp, Line: 26, Column: 19 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Could not widen since type '
-  - Type:            float
-  - String:          ' size is greater than or equal to alignment '
-  - Alignment:       '1'
-  - String:          '(bytes)'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: top.cpp, Line: 26, Column: 19 }
-  - OrigDirection:   read
-  - OrigID:          in_b869seq
-  - ArrayName:       in_b
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_27_2
-  - String:          ' '
-  - LoopLoc:         'top.cpp:27:26'
-  - String:          ' '
-  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-  - String:          ' '
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: top.cpp, Line: 14, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - PragmaType:      array_partition
-  - String:          ' '
-  - PragmaOptions:   'dim=1 type=cyclic factor=2 variable=_ZZ10top_kernelPKfS0_S0_PfE9equalized'
-  - String:          ' '
-  - PragmaIsAuto:    '1'
-  - String:          ' '
-  - PragmaFunction:  top_kernel
-  - String:          ' '
-  - varLoc:          'top.cpp:14:0'
-  - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:116:9'
-    DebugLoc:        { File: top.cpp, Line: 116, Column: 9 }
-  - VarName:         'top_kernel(float const*, float const*, float const*, float*)::equalized'
-  - String:          ' '
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 116, Column: 9 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Inferring pragma '''
-  - PragmaType:      array_partition
-  - String:          ' type='
-  - Mode:            cyclic
-  - String:          ' factor='
-  - Factor:          '2'
-  - String:          ' dim='
-  - Dim:             '1'
-  - String:          ''' for array '''
-  - Name:            'top_kernel(float const*, float const*, float const*, float*)::equalized'
-  - String:          ''''
-  - String:          ' due to '
-  - String:          pipeline
-  - String:          ' pragma'
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: top.cpp, Line: 14, Column: 0 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - PragmaType:      array_partition
-  - String:          ' '
-  - PragmaOptions:   'dim=2 type=cyclic factor=3 variable=_ZZ10top_kernelPKfS0_S0_PfE9equalized'
-  - String:          ' '
-  - PragmaIsAuto:    '1'
-  - String:          ' '
-  - PragmaFunction:  top_kernel
-  - String:          ' '
-  - varLoc:          'top.cpp:14:0'
-  - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:116:9'
-    DebugLoc:        { File: top.cpp, Line: 116, Column: 9 }
-  - VarName:         'top_kernel(float const*, float const*, float const*, float*)::equalized'
-  - String:          ' '
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 116, Column: 9 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Inferring pragma '''
-  - PragmaType:      array_partition
-  - String:          ' type='
-  - Mode:            cyclic
-  - String:          ' factor='
-  - Factor:          '3'
-  - String:          ' dim='
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
   - Dim:             '2'
-  - String:          ''' for array '''
-  - Name:            'top_kernel(float const*, float const*, float const*, float*)::equalized'
-  - String:          ''''
-  - String:          ' due to '
-  - String:          pipeline
-  - String:          ' pragma'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 124, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10top_kernelPKfS0_S0_PfE11er_line_buf
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
 ...
 --- !Passed
 Pass:            reflow-array-partition
@@ -1677,8 +1051,462 @@ Args:
   - String:          ' with factor '
   - Factor:          '2'
   - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 13, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10top_kernelPKfS0_S0_PfE9intensity
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 36, Column: 9 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          histogram
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
   - Dim:             '1'
   - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 54, Column: 12 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          cdf
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        in_r2807seq
+  - ArrayName:       in_r
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        K1_RGB2HSI
+  - String:          ' '
+  - LoopLoc:         'top.cpp:24:14'
+  - String:          ' '
+  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
+    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: top.cpp, Line: 28, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.10
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        in_g2808seq
+  - ArrayName:       in_g
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        K1_RGB2HSI
+  - String:          ' '
+  - LoopLoc:         'top.cpp:24:14'
+  - String:          ' '
+  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
+    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: top.cpp, Line: 29, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.16
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        in_b2809seq
+  - ArrayName:       in_b
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        K1_RGB2HSI
+  - String:          ' '
+  - LoopLoc:         'top.cpp:24:14'
+  - String:          ' '
+  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
+    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: top.cpp, Line: 30, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.22
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: top.cpp, Line: 160, Column: 28 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '62'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       out
+  - String:          ' '
+  - BundleName:      gmem3
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_160_18
+  - String:          ' '
+  - LoopLoc:         'top.cpp:160:28'
+  - String:          ' '
+  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
+    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: top.cpp, Line: 176, Column: 39 }
+  - OrigDirection:   write
+  - OrigID:          VITIS_LOOP_173_22.store.57
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: top.cpp, Line: 160, Column: 28 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: top.cpp, Line: 160, Column: 28 }
+  - OrigDirection:   write
+  - OrigID:          scevgepseq
+  - ArrayName:       out
+  - String:          ' '
+  - BundleName:      gmem3
+  - String:          ' '
+  - LoopName:        K5_Dilation
+  - String:          ' '
+  - LoopLoc:         'top.cpp:159:15'
+  - String:          ' '
+  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
+    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualAlignment
+DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to alignment '
+  - Alignment:       '1'
+  - String:          '(bytes)'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
+  - OrigDirection:   read
+  - OrigID:          in_r2807seq
+  - ArrayName:       in_r
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_1
+  - String:          ' '
+  - LoopLoc:         'top.cpp:25:26'
+  - String:          ' '
+  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
+    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualAlignment
+DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to alignment '
+  - Alignment:       '1'
+  - String:          '(bytes)'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
+  - OrigDirection:   read
+  - OrigID:          in_g2808seq
+  - ArrayName:       in_g
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_1
+  - String:          ' '
+  - LoopLoc:         'top.cpp:25:26'
+  - String:          ' '
+  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
+    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualAlignment
+DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to alignment '
+  - Alignment:       '1'
+  - String:          '(bytes)'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
+  - OrigDirection:   read
+  - OrigID:          in_b2809seq
+  - ArrayName:       in_b
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_1
+  - String:          ' '
+  - LoopLoc:         'top.cpp:25:26'
+  - String:          ' '
+  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
+    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: top.cpp, Line: 15, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=cyclic factor=3 variable=_ZZ10top_kernelPKfS0_S0_PfE16gaussian_blurred'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - varLoc:          'top.cpp:15:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:101:9'
+    DebugLoc:        { File: top.cpp, Line: 101, Column: 9 }
+  - VarName:         'top_kernel(float const*, float const*, float const*, float*)::gaussian_blurred'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 101, Column: 9 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '3'
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            'top_kernel(float const*, float const*, float const*, float*)::gaussian_blurred'
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=5 variable=_ZZ10top_kernelPKfS0_S0_PfE9equalized_0'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:87:9'
+    DebugLoc:        { File: top.cpp, Line: 87, Column: 9 }
+  - VarName:         'top_kernel(float const*, float const*, float const*, float*)::equalized'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 87, Column: 9 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '5'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            'top_kernel(float const*, float const*, float const*, float*)::equalized'
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=5 variable=_ZZ10top_kernelPKfS0_S0_PfE9equalized_1'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  top_kernel
+  - String:          ' '
+  - PragmaSrcLoc:    'top.cpp:87:9'
+    DebugLoc:        { File: top.cpp, Line: 87, Column: 9 }
+  - VarName:         'top_kernel(float const*, float const*, float const*, float*)::equalized'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: top.cpp, Line: 87, Column: 9 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '5'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            'top_kernel(float const*, float const*, float const*, float*)::equalized'
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10top_kernelPKfS0_S0_PfE9equalized_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '5'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10top_kernelPKfS0_S0_PfE9equalized_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '5'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top.cpp, Line: 15, Column: 0 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10top_kernelPKfS0_S0_PfE16gaussian_blurred
+  - String:          ''':'
   - String:          ' '
   - Mode:            Cyclic
   - String:          ' partitioning'
@@ -1688,58 +1516,14 @@ Args:
   - Dim:             '2'
   - String:          .
 ...
---- !Missed
-Pass:            reflow-burst-inference
-Name:            BurstConflict
-DebugLoc:        { File: top.cpp, Line: 26, Column: 19 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Could not burst due to multiple potential '
-  - Direction:       reads
-  - String:          ' to the same bundle in the same region.'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: top.cpp, Line: 26, Column: 19 }
-  - OrigDirection:   read
-  - OrigID:          seq
-  - ArrayName:       ''
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-inference
-Name:            BurstConflict
-DebugLoc:        { File: top.cpp, Line: 26, Column: 19 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Could not burst due to multiple potential '
-  - Direction:       reads
-  - String:          ' to the same bundle in the same region.'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: top.cpp, Line: 26, Column: 19 }
-  - OrigDirection:   read
-  - OrigID:          seq1
-  - ArrayName:       ''
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
-  - String:          ' '
-...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: top.cpp, Line: 248, Column: 24 }
+DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Multiple burst '
-  - Direction:       writes
+  - Direction:       reads
   - String:          ' of length '
   - Length:          '4096'
   - String:          ' and bit width '
@@ -1747,14 +1531,14 @@ Args:
   - String:          ' has been inferred.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        seq3
+  - AccessID:        seq
   - ArrayName:       ''
   - String:          ' '
-  - BundleName:      gmem
+  - BundleName:      gmem0
   - String:          ' '
-  - LoopName:        VITIS_LOOP_248_37
+  - LoopName:        K1_RGB2HSI
   - String:          ' '
-  - LoopLoc:         'top.cpp:248:24'
+  - LoopLoc:         'top.cpp:24:14'
   - String:          ' '
   - Function:        'top_kernel(float const*, float const*, float const*, float*)'
     DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
@@ -1763,22 +1547,163 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: top.cpp, Line: 248, Column: 24 }
+DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
   - String:          'Multiple burst '
-  - Direction:       writes
+  - Direction:       reads
   - String:          ' of length '
   - Length:          '4096'
   - String:          ' and bit width '
   - Width:           '32'
   - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_248_37
+  - LoopName:        K1_RGB2HSI
   - String:          '''('
-  - LoopLoc:         'top.cpp:248:24'
+  - LoopLoc:         'top.cpp:24:14'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
-  - BundleName:      gmem
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        K1_RGB2HSI
+  - String:          ' '
+  - LoopLoc:         'top.cpp:24:14'
+  - String:          ' '
+  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
+    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        K1_RGB2HSI
+  - String:          '''('
+  - LoopLoc:         'top.cpp:24:14'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem1
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        K1_RGB2HSI
+  - String:          ' '
+  - LoopLoc:         'top.cpp:24:14'
+  - String:          ' '
+  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
+    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: top.cpp, Line: 24, Column: 14 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        K1_RGB2HSI
+  - String:          '''('
+  - LoopLoc:         'top.cpp:24:14'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem2
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: top.cpp, Line: 160, Column: 28 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq3
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem3
+  - String:          ' '
+  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
+    DebugLoc:        { File: top.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: top.cpp, Line: 160, Column: 28 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem3
   - String:          '''.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
 ...

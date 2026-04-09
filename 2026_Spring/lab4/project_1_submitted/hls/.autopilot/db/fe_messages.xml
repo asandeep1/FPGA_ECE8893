@@ -1,0 +1,162 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/script.tcl:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=m_axi port=in_r offset=slave bundle=gmem max_widen_bitwidth=512" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=m_axi port=in_g offset=slave bundle=gmem max_widen_bitwidth=512" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=m_axi port=in_b offset=slave bundle=gmem max_widen_bitwidth=512" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=m_axi port=out offset=slave bundle=gmem max_widen_bitwidth=512" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=histogram complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=cdf complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=spatial_weights complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:96:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:114:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="loop_flatten" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:116:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:117:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:154:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="loop_flatten" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:156:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:157:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:194:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="loop_flatten" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:196:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:222:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="loop_flatten" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:224:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:226:32" msg_body="Loop 'VITIS_LOOP_226_33' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_226_33"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:227:36" msg_body="Loop 'VITIS_LOOP_227_34' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_227_34"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:198:32" msg_body="Loop 'VITIS_LOOP_198_27' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_198_27"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:199:36" msg_body="Loop 'VITIS_LOOP_199_28' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_199_28"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:162:32" msg_body="Loop 'VITIS_LOOP_162_21' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_162_21"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:163:36" msg_body="Loop 'VITIS_LOOP_163_22' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_163_22"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:119:32" msg_body="Loop 'VITIS_LOOP_119_12' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_119_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:120:36" msg_body="Loop 'VITIS_LOOP_120_13' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_120_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_226_33' (top.cpp:226:32) in function 'top_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="top.cpp:226:32" LoopName="VITIS_LOOP_226_33"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_227_34' (top.cpp:227:36) in function 'top_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="top.cpp:227:36" LoopName="VITIS_LOOP_227_34"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_198_27' (top.cpp:198:32) in function 'top_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="top.cpp:198:32" LoopName="VITIS_LOOP_198_27"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_199_28' (top.cpp:199:36) in function 'top_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="top.cpp:199:36" LoopName="VITIS_LOOP_199_28"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="top.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_155_20' (top.cpp:155:21) in function 'top_kernel' partially with a factor of 2">
+        <args Factor="2" LoopLoc="top.cpp:155:21" LoopName="VITIS_LOOP_155_20"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_162_21' (top.cpp:162:32) in function 'top_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="top.cpp:162:32" LoopName="VITIS_LOOP_162_21"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_163_22' (top.cpp:163:36) in function 'top_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="top.cpp:163:36" LoopName="VITIS_LOOP_163_22"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="top.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_115_11' (top.cpp:115:21) in function 'top_kernel' partially with a factor of 2">
+        <args Factor="2" LoopLoc="top.cpp:115:21" LoopName="VITIS_LOOP_115_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_119_12' (top.cpp:119:32) in function 'top_kernel' completely with a factor of 5">
+        <args Factor="5" LoopLoc="top.cpp:119:32" LoopName="VITIS_LOOP_119_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_120_13' (top.cpp:120:36) in function 'top_kernel' completely with a factor of 5">
+        <args Factor="5" LoopLoc="top.cpp:120:36" LoopName="VITIS_LOOP_120_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::fp_struct(float)' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;float&gt;::fp_struct(float)" Callee-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 283 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::mantissa() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;float&gt;::mantissa() const" Callee-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 340 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::expv() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;float&gt;::expv() const" Callee-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 316 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::__signbit() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;float&gt;::__signbit() const" Callee-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 349 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0" msg_body="Inlining function 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)' into 'int generic_cast_IEEE754&lt;int, float&gt;(float, bool)'">
+        <args Callee="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Callee-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0" Caller="int generic_cast_IEEE754&lt;int, float&gt;(float, bool)" Caller-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 116 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0" msg_body="Inlining function 'int generic_cast_IEEE754&lt;int, float&gt;(float, bool)' into '__hls_fptosi_float_i32'">
+        <args Callee="int generic_cast_IEEE754&lt;int, float&gt;(float, bool)" Callee-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 116 Column 0" Caller="__hls_fptosi_float_i32" Caller-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp Line 51 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="top.cpp:5:0" msg_body="Inlining function '__hls_fptosi_float_i32' into 'top_kernel(float const*, float const*, float const*, float*)'">
+        <args Callee="__hls_fptosi_float_i32" Callee-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp Line 51 Column 0" Caller="top_kernel(float const*, float const*, float const*, float*)" Caller-DebugLoc="File top.cpp Line 5 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:18:0" msg_body="Applying array_partition to '_ZZ10top_kernelPKfS0_S0_PfE3cdf': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ10top_kernelPKfS0_S0_PfE3cdf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:17:0" msg_body="Applying array_partition to '_ZZ10top_kernelPKfS0_S0_PfE9histogram': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ10top_kernelPKfS0_S0_PfE9histogram"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:0" msg_body="array_partition dim=1 type=cyclic factor=2 variable=_ZZ10top_kernelPKfS0_S0_PfE9equalized 1 top_kernel top.cpp:14:0 top.cpp:116:9top_kernel(float const*, float const*, float const*, float*)::equalized">
+        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=_ZZ10top_kernelPKfS0_S0_PfE9equalized" PragmaSrcLoc="top.cpp:116:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 116 Column 9" PragmaType="array_partition" VarName="top_kernel(float const*, float const*, float const*, float*)::equalized" varLoc="top.cpp:14:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:116:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'top_kernel(float const*, float const*, float const*, float*)::equalized' due to pipeline pragma">
+        <args Dim="1" Factor="2" Mode="cyclic" Name="top_kernel(float const*, float const*, float const*, float*)::equalized" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:14:0" msg_body="array_partition dim=2 type=cyclic factor=3 variable=_ZZ10top_kernelPKfS0_S0_PfE9equalized 1 top_kernel top.cpp:14:0 top.cpp:116:9top_kernel(float const*, float const*, float const*, float*)::equalized">
+        <args PragmaFunction="top_kernel" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=3 variable=_ZZ10top_kernelPKfS0_S0_PfE9equalized" PragmaSrcLoc="top.cpp:116:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 116 Column 9" PragmaType="array_partition" VarName="top_kernel(float const*, float const*, float const*, float*)::equalized" varLoc="top.cpp:14:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:116:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'top_kernel(float const*, float const*, float const*, float*)::equalized' due to pipeline pragma">
+        <args Dim="2" Factor="3" Mode="cyclic" Name="top_kernel(float const*, float const*, float const*, float*)::equalized" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:14:0" msg_body="Applying array_partition to '_ZZ10top_kernelPKfS0_S0_PfE9equalized': Cyclic partitioning with factor 2 on dimension 1. Cyclic partitioning with factor 3 on dimension 2.">
+        <args Dim="islist 1 2" Factor="islist 2 3" Mode="islist Cyclic Cyclic" UOName="_ZZ10top_kernelPKfS0_S0_PfE9equalized"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

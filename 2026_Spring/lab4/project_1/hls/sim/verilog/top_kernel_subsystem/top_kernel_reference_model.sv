@@ -16,16 +16,25 @@ class memaccess_axi_state_cbs extends axi_pkg::axi_state_cbs;
     //    super.new(name);
     //endfunction
     virtual function void memmodel_read_fromar(ref logic[7:0] data[$], input longint addr, input longint len);
-        if(memid=="gmem") refm.mem_blk_pages_gmem.read_elems_pipepage(data, addr, len);
+        if(memid=="gmem0") refm.mem_blk_pages_gmem0.read_elems_pipepage(data, addr, len);
+        if(memid=="gmem1") refm.mem_blk_pages_gmem1.read_elems_pipepage(data, addr, len);
+        if(memid=="gmem2") refm.mem_blk_pages_gmem2.read_elems_pipepage(data, addr, len);
+        if(memid=="gmem3") refm.mem_blk_pages_gmem3.read_elems_pipepage(data, addr, len);
     endfunction
 endclass
 
 class top_kernel_reference_model extends uvm_component;
-`define TV_IN_gmem "../tv/cdatafile/c.top_kernel.autotvin_gmem.dat"
-`define TV_OUT_gmem "../tv/rtldatafile/rtl.top_kernel.autotvout_gmem.dat"
+`define TV_IN_gmem0 "../tv/cdatafile/c.top_kernel.autotvin_gmem0.dat"
+`define TV_OUT_gmem0 "../tv/rtldatafile/rtl.top_kernel.autotvout_gmem0.dat"
 `define TV_IN_OFFSET_in_r "../tv/cdatafile/c.top_kernel.autotvin_in_r.dat"
+`define TV_IN_gmem1 "../tv/cdatafile/c.top_kernel.autotvin_gmem1.dat"
+`define TV_OUT_gmem1 "../tv/rtldatafile/rtl.top_kernel.autotvout_gmem1.dat"
 `define TV_IN_OFFSET_in_g "../tv/cdatafile/c.top_kernel.autotvin_in_g.dat"
+`define TV_IN_gmem2 "../tv/cdatafile/c.top_kernel.autotvin_gmem2.dat"
+`define TV_OUT_gmem2 "../tv/rtldatafile/rtl.top_kernel.autotvout_gmem2.dat"
 `define TV_IN_OFFSET_in_b "../tv/cdatafile/c.top_kernel.autotvin_in_b.dat"
+`define TV_IN_gmem3 "../tv/cdatafile/c.top_kernel.autotvin_gmem3.dat"
+`define TV_OUT_gmem3 "../tv/rtldatafile/rtl.top_kernel.autotvout_gmem3.dat"
 `define TV_IN_OFFSET_out_r "../tv/cdatafile/c.top_kernel.autotvin_out_r.dat"
 `define TV_IN_in_r "../tv/cdatafile/c.top_kernel.autotvin_in_r.dat"
 `define TV_OUT_in_r ""
@@ -50,9 +59,21 @@ class top_kernel_reference_model extends uvm_component;
     top_kernel_config top_kernel_cfg;
     virtual interface misc_interface misc_if;
 
-    mem_model_pages_with_diffofst#(32,8) mem_blk_pages_gmem;
-    int blk_id_gmem = 0;
-    memaccess_axi_state_cbs axi_memaccess_cb_gmem;
+    mem_model_pages_with_diffofst#(32,8) mem_blk_pages_gmem0;
+    int blk_id_gmem0 = 0;
+    memaccess_axi_state_cbs axi_memaccess_cb_gmem0;
+
+    mem_model_pages_with_diffofst#(32,8) mem_blk_pages_gmem1;
+    int blk_id_gmem1 = 0;
+    memaccess_axi_state_cbs axi_memaccess_cb_gmem1;
+
+    mem_model_pages_with_diffofst#(32,8) mem_blk_pages_gmem2;
+    int blk_id_gmem2 = 0;
+    memaccess_axi_state_cbs axi_memaccess_cb_gmem2;
+
+    mem_model_pages_with_diffofst#(32,8) mem_blk_pages_gmem3;
+    int blk_id_gmem3 = 0;
+    memaccess_axi_state_cbs axi_memaccess_cb_gmem3;
 
     
     `uvm_component_utils_begin(top_kernel_reference_model)
@@ -63,9 +84,18 @@ class top_kernel_reference_model extends uvm_component;
         super.build_phase(phase);
         if(!uvm_config_db#(virtual misc_interface)::get(this, "", "misc_if", misc_if))
             `uvm_fatal(this.get_full_name(), "No misc_if from high level")
-        axi_memaccess_cb_gmem = new;
-        axi_memaccess_cb_gmem.refm = this;
-        axi_memaccess_cb_gmem.memid = "gmem";
+        axi_memaccess_cb_gmem0 = new;
+        axi_memaccess_cb_gmem0.refm = this;
+        axi_memaccess_cb_gmem0.memid = "gmem0";
+        axi_memaccess_cb_gmem1 = new;
+        axi_memaccess_cb_gmem1.refm = this;
+        axi_memaccess_cb_gmem1.memid = "gmem1";
+        axi_memaccess_cb_gmem2 = new;
+        axi_memaccess_cb_gmem2.refm = this;
+        axi_memaccess_cb_gmem2.memid = "gmem2";
+        axi_memaccess_cb_gmem3 = new;
+        axi_memaccess_cb_gmem3.refm = this;
+        axi_memaccess_cb_gmem3.memid = "gmem3";
     endfunction
 
     function new (string name = "", uvm_component parent = null);
@@ -76,16 +106,37 @@ class top_kernel_reference_model extends uvm_component;
     virtual task run_phase(uvm_phase phase);
         string fpath[$];
 misc_if.dut2tb_ap_done = 0;
-        fpath.push_back(`TV_IN_gmem);
-        mem_blk_pages_gmem = mem_model_pages_with_diffofst#(32,8)::type_id::create("mem_blk_pages_gmem");
-        mem_blk_pages_gmem.whole_page_size=65600;
-        mem_blk_pages_gmem.maxi_bundlevar_fpath["in_r"]=`TV_IN_OFFSET_in_r;
-        mem_blk_pages_gmem.maxi_bundlevar_fpath["in_g"]=`TV_IN_OFFSET_in_g;
-        mem_blk_pages_gmem.maxi_bundlevar_fpath["in_b"]=`TV_IN_OFFSET_in_b;
-        mem_blk_pages_gmem.maxi_bundlevar_fpath["out_r"]=`TV_IN_OFFSET_out_r;
-        mem_blk_pages_gmem.set_binary(1);
-        mem_blk_pages_gmem.tvinload_pagechk_atinit(fpath, 16384*((32+7)/8), 0, 0, "");
-        mem_blk_pages_gmem.tvoutdump_atinit(`TV_OUT_gmem);
+        fpath.push_back(`TV_IN_gmem0);
+        mem_blk_pages_gmem0 = mem_model_pages_with_diffofst#(32,8)::type_id::create("mem_blk_pages_gmem0");
+        mem_blk_pages_gmem0.whole_page_size=16448;
+        mem_blk_pages_gmem0.maxi_bundlevar_fpath["in_r"]=`TV_IN_OFFSET_in_r;
+        mem_blk_pages_gmem0.set_binary(1);
+        mem_blk_pages_gmem0.tvinload_pagechk_atinit(fpath, 4096*((32+7)/8), 0, 0, "");
+        fpath.delete();
+
+        fpath.push_back(`TV_IN_gmem1);
+        mem_blk_pages_gmem1 = mem_model_pages_with_diffofst#(32,8)::type_id::create("mem_blk_pages_gmem1");
+        mem_blk_pages_gmem1.whole_page_size=16448;
+        mem_blk_pages_gmem1.maxi_bundlevar_fpath["in_g"]=`TV_IN_OFFSET_in_g;
+        mem_blk_pages_gmem1.set_binary(1);
+        mem_blk_pages_gmem1.tvinload_pagechk_atinit(fpath, 4096*((32+7)/8), 0, 0, "");
+        fpath.delete();
+
+        fpath.push_back(`TV_IN_gmem2);
+        mem_blk_pages_gmem2 = mem_model_pages_with_diffofst#(32,8)::type_id::create("mem_blk_pages_gmem2");
+        mem_blk_pages_gmem2.whole_page_size=16448;
+        mem_blk_pages_gmem2.maxi_bundlevar_fpath["in_b"]=`TV_IN_OFFSET_in_b;
+        mem_blk_pages_gmem2.set_binary(1);
+        mem_blk_pages_gmem2.tvinload_pagechk_atinit(fpath, 4096*((32+7)/8), 0, 0, "");
+        fpath.delete();
+
+        fpath.push_back(`TV_IN_gmem3);
+        mem_blk_pages_gmem3 = mem_model_pages_with_diffofst#(32,8)::type_id::create("mem_blk_pages_gmem3");
+        mem_blk_pages_gmem3.whole_page_size=16448;
+        mem_blk_pages_gmem3.maxi_bundlevar_fpath["out_r"]=`TV_IN_OFFSET_out_r;
+        mem_blk_pages_gmem3.set_binary(1);
+        mem_blk_pages_gmem3.tvinload_pagechk_atinit(fpath, 4096*((32+7)/8), 0, 0, "");
+        mem_blk_pages_gmem3.tvoutdump_atinit(`TV_OUT_gmem3);
         fpath.delete();
 
         fork
@@ -142,7 +193,10 @@ misc_if.dut2tb_ap_done = 0;
 
             for(int i=1; i<1; i++) begin
                 @dut2tb_ap_ready;
-                mem_blk_pages_gmem.incr_rd_page_idx() ;
+                mem_blk_pages_gmem0.incr_rd_page_idx() ;
+                mem_blk_pages_gmem1.incr_rd_page_idx() ;
+                mem_blk_pages_gmem2.incr_rd_page_idx() ;
+                mem_blk_pages_gmem3.incr_rd_page_idx() ;
             end
             forever begin
                 forever begin
@@ -157,11 +211,32 @@ misc_if.dut2tb_ap_done = 0;
         join
     endtask
 
-    virtual function void write_axi_wtr_gmem(axi_pkg::axi_transfer tr);
-        mem_blk_pages_gmem.write_elems_pipepage(tr.data,tr.byte_addr);
+    virtual function void write_axi_wtr_gmem0(axi_pkg::axi_transfer tr);
+        mem_blk_pages_gmem0.write_elems_pipepage(tr.data,tr.byte_addr);
     endfunction
 
-    virtual function void write_axi_rtr_gmem(axi_pkg::axi_transfer tr);
+    virtual function void write_axi_rtr_gmem0(axi_pkg::axi_transfer tr);
+    endfunction
+
+    virtual function void write_axi_wtr_gmem1(axi_pkg::axi_transfer tr);
+        mem_blk_pages_gmem1.write_elems_pipepage(tr.data,tr.byte_addr);
+    endfunction
+
+    virtual function void write_axi_rtr_gmem1(axi_pkg::axi_transfer tr);
+    endfunction
+
+    virtual function void write_axi_wtr_gmem2(axi_pkg::axi_transfer tr);
+        mem_blk_pages_gmem2.write_elems_pipepage(tr.data,tr.byte_addr);
+    endfunction
+
+    virtual function void write_axi_rtr_gmem2(axi_pkg::axi_transfer tr);
+    endfunction
+
+    virtual function void write_axi_wtr_gmem3(axi_pkg::axi_transfer tr);
+        mem_blk_pages_gmem3.write_elems_pipepage(tr.data,tr.byte_addr);
+    endfunction
+
+    virtual function void write_axi_rtr_gmem3(axi_pkg::axi_transfer tr);
     endfunction
 
     virtual function void write_axi_wtr_control(axi_pkg::axi_transfer tr);

@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.1.1
-| Date         : Sat Apr  4 15:31:50 2026
+| Date         : Thu Apr  9 01:46:47 2026
 | Host         : ece-linlabsrv01
 | Design       : checkpoint_bd_0_wrapper
 | Device       : xczu3eg-sbva484-1-E-
@@ -22,11 +22,11 @@ Number of global clocks: 1
 ********************************
 Clock Net Route Info (CRP Input)
 ********************************
-Clock 1: bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_71_4_VITIS_LOOP_72_5_fu_3936/ap_enable_reg_pp0_iter6_bufg_place
+Clock 1: bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_K2_Build_Hist_VITIS_LOOP_44_3_fu_2314/flow_control_loop_pipe_sequential_init_U/ap_loop_init_bufg_place
 	Clock source type: BUFGCE
-	Clock source region: X1Y1
-	Clock regions with locked loads: X0Y0 X0Y1 X1Y0 
-	initial rect ((0, 0), (1, 1))
+	Clock source region: X1Y2
+	Clock regions with locked loads: X0Y0 X0Y1 X1Y0 X1Y1 
+	initial rect ((0, 0), (1, 2))
 
 
 
@@ -50,11 +50,11 @@ Number of global clocks: 1
 ********************************
 Clock Net Route Info (CRP Input)
 ********************************
-Clock 1: bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_VITIS_LOOP_71_4_VITIS_LOOP_72_5_fu_3936/ap_enable_reg_pp0_iter6
+Clock 1: bd_0_i/hls_inst/inst/grp_top_kernel_Pipeline_K2_Build_Hist_VITIS_LOOP_44_3_fu_2314/flow_control_loop_pipe_sequential_init_U/ap_loop_init
 	Clock source type: BUFGCE
-	Clock source region: X1Y1
-	Clock regions with locked loads: X0Y0 X0Y1 X1Y0 
-	initial rect ((0, 0), (1, 1))
+	Clock source region: X1Y2
+	Clock regions with locked loads: X0Y0 X0Y1 X1Y0 X1Y1 
+	initial rect ((0, 0), (1, 2))
 
 
 

@@ -20,7 +20,7 @@
         <library value="xilinx/zynquplus/zynquplus" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock name="default" period="10ns" default="false"/>
+        <clock name="default" period="4" default="false"/>
     </clockList>
     <Simulation argv="">
         <SimFlow name="cosim" setup="false" dumpTrace="none" optimizeCompile="false" ldflags="" mflags="" compiledLibrary="" toolName="xsim">

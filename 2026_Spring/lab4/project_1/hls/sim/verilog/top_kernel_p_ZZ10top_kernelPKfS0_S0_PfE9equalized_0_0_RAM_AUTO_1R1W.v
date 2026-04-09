@@ -17,8 +17,8 @@ module top_kernel_p_ZZ10top_kernelPKfS0_S0_PfE9equalized_0_0_RAM_AUTO_1R1W (
     reset, clk);
 
 parameter DataWidth = 32;
-parameter AddressWidth = 10;
-parameter AddressRange = 704;
+parameter AddressWidth = 9;
+parameter AddressRange = 416;
  
 input[AddressWidth-1:0] address0;
 input ce0;

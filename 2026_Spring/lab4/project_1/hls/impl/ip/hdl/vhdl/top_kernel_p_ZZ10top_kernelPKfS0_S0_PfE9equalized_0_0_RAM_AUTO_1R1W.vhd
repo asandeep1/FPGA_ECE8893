@@ -12,8 +12,8 @@ entity top_kernel_p_ZZ10top_kernelPKfS0_S0_PfE9equalized_0_0_RAM_AUTO_1R1W is
     generic(
         MEM_TYPE        : string    := "auto"; 
         DataWidth       : integer   := 32; 
-        AddressWidth    : integer   := 10;
-        AddressRange    : integer   := 704
+        AddressWidth    : integer   := 9;
+        AddressRange    : integer   := 416
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 
