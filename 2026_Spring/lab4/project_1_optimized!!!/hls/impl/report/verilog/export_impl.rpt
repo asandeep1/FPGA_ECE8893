@@ -1,0 +1,1319 @@
+================================================================
+== Vivado Place & Route Results
+================================================================
++ General Information:
+    * Date:            Fri Apr 10 12:20:16 EDT 2026
+    * Version:         2025.1 (Build 6214317 on Sep 11 2025)
+    * Project:         project_1
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynquplus
+    * Target device:   xczu3eg-sbva484-1-e
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * Place & Route target clock:  4 ns
+    * C-Synthesis target clock:    4 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Place & Route Options:
+    * config_export -vivado_impl_strategy:  default
+    * config_export -vivado_phys_opt:       auto
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== Place & Route Resource Summary
+================================================================
+LUT:              49666
+FF:               61423
+DSP:              280
+BRAM:             81
+URAM:             0
+SRL:              2234
+
+
+================================================================
+== Place & Route Timing Summary
+================================================================
+* Timing was NOT met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 4.000       |
+| Post-Synthesis | 3.085       |
+| Post-Route     | 4.688       |
++----------------+-------------+
+
+
+================================================================
+== Place & Route Resources
+================================================================
++-----------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                        | LUT   | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-----------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                        | 49666 | 61423 | 280 | 81   |      |     |        |      |         |          |        |
+|   Loop_VITIS_LOOP_354_1_proc_U0                                             | 108   | 165   |     |      |      |     |        |      |         |          |        |
+|     (Loop_VITIS_LOOP_354_1_proc_U0)                                         | 91    | 164   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U                                                |       |       |     |      |      |     |        |      |         |          |        |
+|   bilateral_stream_U                                                        | 180   | 49    |     |      |      |     |        |      |         |          |        |
+|   control_s_axi_U                                                           | 459   | 309   |     |      |      |     |        |      |         |          |        |
+|   entry_proc_U0                                                             |       |       |     |      |      |     |        |      |         |          |        |
+|   equalized_stream_U                                                        | 91    | 49    |     |      |      |     |        |      |         |          |        |
+|   gaussian_stream_U                                                         | 94    | 49    |     |      |      |     |        |      |         |          |        |
+|   gmem0_m_axi_U                                                             | 522   | 859   |     | 8    |      |     |        |      |         |          |        |
+|   gmem1_m_axi_U                                                             | 523   | 859   |     | 8    |      |     |        |      |         |          |        |
+|   gmem2_m_axi_U                                                             | 523   | 859   |     | 8    |      |     |        |      |         |          |        |
+|   gmem3_m_axi_U                                                             | 662   | 997   |     | 1    |      |     |        |      |         |          |        |
+|   morphology_stream_U                                                       | 109   | 49    |     |      |      |     |        |      |         |          |        |
+|   out_r_c_U                                                                 |       |       |     |      |      |     |        |      |         |          |        |
+|   stage_bilateral_U0                                                        | 25264 | 30656 | 163 | 9    |      |     |        |      |         |          |        |
+|     grid_25_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_26_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_27_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_28_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_29_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_30_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_31_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_32_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_U                                                                  |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_200_4_fu_90       | 25180 | 30545 | 160 |      |      |     |        |      |         |          |        |
+|       (grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_200_4_fu_90)   | 5710  | 8376  | 4   |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1373                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1374                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1378                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1379                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1394                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1395                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1401                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1402                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1412                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1413                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1426                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1427                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       ctlz_16_16_1_1_U1369                                                  |       |       |     |      |      |     |        |      |         |          |        |
+|       ctlz_16_16_1_1_U1370                                                  |       |       |     |      |      |     |        |      |         |          |        |
+|       ctlz_16_16_1_1_U1371                                                  |       |       |     |      |      |     |        |      |         |          |        |
+|       ctlz_16_16_1_1_U1372                                                  |       |       |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1308                                   | 736   | 1084  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1309                                   | 737   | 1084  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1310                                   | 736   | 1084  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1311                                   | 737   | 1084  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1312                                   | 737   | 1084  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1313                                   | 737   | 1084  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1314                                   | 735   | 1084  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1315                                   | 736   | 1084  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1316                                   | 737   | 1084  |     |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1326                                 | 742   | 458   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1327                                 | 741   | 458   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1328                                 | 741   | 457   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1329                                 | 741   | 457   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1330                                 | 741   | 458   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1331                                 | 741   | 458   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1332                                 | 741   | 469   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1333                                 | 741   | 458   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1334                                 | 741   | 458   | 7   |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1291                                   | 79    | 160   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1292                                   | 79    | 160   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1293                                   | 79    | 170   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1294                                   | 79    | 161   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1295                                   | 79    | 161   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1296                                   | 79    | 161   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1297                                   | 79    | 161   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1298                                   | 79    | 161   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1299                                   | 79    | 160   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1300                                   | 80    | 161   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1301                                   | 78    | 161   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1302                                   | 80    | 160   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1303                                   | 80    | 160   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1304                                   | 79    | 161   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1305                                   | 80    | 161   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1306                                   | 80    | 160   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1307                                   | 80    | 161   | 3   |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1317                                        |       |       |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1318                                        |       |       |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1319                                        |       |       |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1320                                        |       |       |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1321                                        |       |       |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1322                                        |       |       |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1323                                        |       |       |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1324                                        |       |       |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1325                                        |       |       |     |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1282                                 | 175   | 315   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1283                                 | 175   | 346   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1284                                 | 176   | 346   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1285                                 | 177   | 346   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1286                                 | 175   | 316   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1287                                 | 175   | 316   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1288                                 | 175   | 316   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1289                                 | 98    | 230   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1290                                 | 176   | 347   | 2   |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1385                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1390                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1403                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1409                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1417                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1422                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1433                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1438                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1444                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_64ns_66ns_129_5_1_U1335                                           | 104   | 114   | 13  |      |      |     |        |      |         |          |        |
+|       mul_6ns_6ns_9_1_1_U1350                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_6ns_6ns_9_1_1_U1352                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1353                                              | 121   | 5     | 1   |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1354                                              | 262   | 23    | 1   |      |      |     |        |      |         |          |        |
+|       sdiv_35ns_21ns_35_39_1_U1445                                          | 1787  | 1880  |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_3ns_2_11_1_U1345                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_3ns_2_11_1_U1348                                             |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_bilateral_Pipeline_VITIS_LOOP_181_1_fu_66                     | 77    | 104   | 3   |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mac_muladd_5ns_5ns_5ns_9_4_1_U1269                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_6ns_3ns_2_10_1_U1266                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_6ns_3ns_2_10_1_U1268                                             |       |       |     |      |      |     |        |      |         |          |        |
+|   stage_gaussian_U0                                                         | 4110  | 1595  | 78  | 25   |      |     |        |      |         |          |        |
+|     grid_10_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_11_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_12_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_13_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_14_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_15_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_16_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_17_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_18_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_19_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_1_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_20_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_21_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_22_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_23_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_24_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_2_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_3_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_4_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_5_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_6_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_7_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_8_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_9_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_U                                                                  |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_144_1_fu_186        | 3981  | 1484  | 76  |      |      |     |        |      |         |          |        |
+|       (grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_144_1_fu_186)    | 2068  | 1315  | 24  |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1200                                             | 196   | 32    | 1   |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1202                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1203                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1207                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1213                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1217                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1218                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1220                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_11ns_29_1_1_U1201                                             | 197   | 32    | 1   |      |      |     |        |      |         |          |        |
+|       mul_18s_11ns_29_1_1_U1208                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_11ns_29_1_1_U1212                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_11ns_29_1_1_U1219                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_12ns_30_1_1_U1204                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_12ns_30_1_1_U1206                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_12ns_30_1_1_U1214                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_12ns_30_1_1_U1216                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_13ns_31_1_1_U1205                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_13ns_31_1_1_U1209                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_13ns_31_1_1_U1211                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_13ns_31_1_1_U1215                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_14ns_32_1_1_U1210                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_5ns_5ns_8_1_1_U1166                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_5ns_5ns_8_1_1_U1169                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_5ns_5ns_8_1_1_U1170                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_64ns_66ns_129_5_1_U1133                                           | 112   | 25    | 13  |      |      |     |        |      |         |          |        |
+|       mul_64ns_66ns_129_5_1_U1134                                           | 103   | 25    | 13  |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1171                                              | 866   | 5     | 1   |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1172                                              | 125   | 3     | 1   |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1173                                              | 108   | 5     | 1   |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1174                                              | 119   | 3     | 1   |      |      |     |        |      |         |          |        |
+|       mul_7ns_9ns_15_1_1_U1165                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_8s_5ns_8_1_1_U1167                                                |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_8s_5ns_8_1_1_U1168                                                |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_4ns_3_11_1_U1160                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_4ns_3_11_1_U1163                                             |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_gaussian_Pipeline_READ_IN_fu_130                              | 112   | 104   | 2   |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mac_muladd_4ns_4ns_4ns_8_4_1_U1103                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_6ns_4ns_3_10_1_U1100                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_6ns_4ns_3_10_1_U1102                                             |       |       |     |      |      |     |        |      |         |          |        |
+|   stage_morphology_U0                                                       | 2173  | 1188  | 32  | 18   |      |     |        |      |         |          |        |
+|     bilateral_buf_1_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_2_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_3_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_4_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_5_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_6_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_7_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_8_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_U                                                         |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_1_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_2_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_3_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_4_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_5_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_6_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_7_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_8_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_U                                                            |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150     | 987   | 528   | 8   |      |      |     |        |      |         |          |        |
+|       (grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150) | 903   | 480   | 6   |      |      |     |        |      |         |          |        |
+|       mul_6ns_6ns_9_1_1_U1546                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_6ns_6ns_9_1_1_U1548                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1549                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1550                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_3ns_2_11_1_U1541                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_3ns_2_11_1_U1543                                             |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_265_1_fu_128      | 1013  | 530   | 8   |      |      |     |        |      |         |          |        |
+|       (grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_265_1_fu_128)  | 934   | 476   | 8   |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_6ns_6ns_9_1_1_U1501                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_6ns_6ns_9_1_1_U1503                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_3ns_2_11_1_U1494                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_3ns_2_11_1_U1497                                             |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104                     | 76    | 104   | 3   |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mac_muladd_5ns_5ns_5ns_9_4_1_U1473                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_6ns_3ns_2_10_1_U1470                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_6ns_3ns_2_10_1_U1472                                             |       |       |     |      |      |     |        |      |         |          |        |
+|     mul_64ns_66ns_129_5_1_U1570                                             | 88    | 17    | 13  |      |      |     |        |      |         |          |        |
+|   stage_rgb2eq_U0                                                           | 14790 | 23710 | 7   | 4    |      |     |        |      |         |          |        |
+|     (stage_rgb2eq_U0)                                                       | 8     | 101   |     |      |      |     |        |      |         |          |        |
+|     faddfsub_32ns_32ns_32_10_full_dsp_1_U1081                               | 179   | 356   | 2   |      |      |     |        |      |         |          |        |
+|     fdiv_32ns_32ns_32_30_no_dsp_1_U1083                                     | 804   | 1441  |     |      |      |     |        |      |         |          |        |
+|       (fdiv_32ns_32ns_32_30_no_dsp_1_U1083)                                 | 32    | 96    |     |      |      |     |        |      |         |          |        |
+|     fmul_32ns_32ns_32_7_max_dsp_1_U1085                                     | 77    | 159   | 3   |      |      |     |        |      |         |          |        |
+|       (fmul_32ns_32ns_32_7_max_dsp_1_U1085)                                 | 16    | 56    |     |      |      |     |        |      |         |          |        |
+|     fpext_32ns_64_2_no_dsp_1_U1084                                          |       |       |     |      |      |     |        |      |         |          |        |
+|       (fpext_32ns_64_2_no_dsp_1_U1084)                                      | 18    | 69    |     |      |      |     |        |      |         |          |        |
+|     grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163                            | 4926  | 8468  |     |      |      |     |        |      |         |          |        |
+|       (grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163)                        | 4884  | 8466  |     |      |      |     |        |      |         |          |        |
+|       ctlz_16_16_1_1_U30                                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_rgb2eq_Pipeline_PASS1_fu_2149                                 | 2936  | 3786  | 2   |      |      |     |        |      |         |          |        |
+|       (grp_stage_rgb2eq_Pipeline_PASS1_fu_2149)                             | 565   | 611   |     |      |      |     |        |      |         |          |        |
+|       fadd_32ns_32ns_32_10_full_dsp_1_U4                                    | 179   | 355   | 2   |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U6                                      | 719   | 982   |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U7                                      | 719   | 982   |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U8                                      | 727   | 854   |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_rgb2eq_Pipeline_PASS2_fu_2939                                 | 3101  | 824   |     |      |      |     |        |      |         |          |        |
+|       (grp_stage_rgb2eq_Pipeline_PASS2_fu_2939)                             | 2996  | 787   |     |      |      |     |        |      |         |          |        |
+|       ctlz_16_16_1_1_U811                                                   |       |       |     |      |      |     |        |      |         |          |        |
+|       fcmp_32ns_32ns_1_3_no_dsp_1_U810                                      |       |       |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424                       | 2529  | 8261  |     |      |      |     |        |      |         |          |        |
+|       (grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424)                   | 2482  | 8259  |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|     intensity_buf_U                                                         |       |       |     |      |      |     |        |      |         |          |        |
+|     sitofp_32ns_32_7_no_dsp_1_U1082                                         | 174   | 245   |     |      |      |     |        |      |         |          |        |
+|   start_for_Loop_VITIS_LOOP_354_1_proc_U0_U                                 |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stage_bilateral_U0_U                                            |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stage_gaussian_U0_U                                             |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stage_morphology_U0_U                                           |       |       |     |      |      |     |        |      |         |          |        |
++-----------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== Place & Route Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 70.39% | REVIEW |
+| FD                                                        | 50%       | 43.53% | OK     |
+| LUTRAM+SRL                                                | 25%       | 8.31%  | OK     |
+| CARRY8                                                    | 25%       | 27.91% | REVIEW |
+| MUXF7                                                     | 15%       | 17.33% | REVIEW |
+| LUT Combining                                             | 20%       | 12.96% | OK     |
+| DSP                                                       | 80%       | 77.78% | OK     |
+| RAMB/FIFO                                                 | 80%       | 18.75% | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 48.27% | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 1323      | 1175   | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 1.52   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 1.52   | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.350ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.239ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== Place & Route Timing Paths
+================================================================
+* Timing was NOT met
++--------+----------------------+--------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+| Path   |                SLACK | STARTPOINT PIN                                                                                         | ENDPOINT PIN                                                                                | LOGIC LEVELS | MAX FANOUT |      DATAPATH DELAY |      DATAPATH LOGIC |        DATAPATH NET |
+|        |                      |                                                                                                        |                                                                                             |              |            |                     |               DELAY |               DELAY |
++--------+----------------------+--------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+| Path1  | -0.68836849927902222 | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7/C | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_48_fu_1758_reg[21]/D  |            7 |        255 | 4.67001342773437500 | 0.73699998855590820 | 3.93301343917846680 |
+| Path2  | -0.67036867141723633 | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7/C | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_58_fu_1798_reg[21]/D  |            7 |        255 | 4.65101337432861328 | 0.73699998855590820 | 3.91401314735412598 |
+| Path3  | -0.66866201162338257 | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7/C | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_212_fu_2414_reg[21]/D |            7 |        255 | 4.65030670166015625 | 0.73699998855590820 | 3.91330647468566895 |
+| Path4  | -0.64420646429061890 | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3/C | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_121_fu_2050_reg[11]/D |            6 |        255 | 4.62485122680664062 | 0.77199995517730713 | 3.85285139083862305 |
+| Path5  | -0.63890671730041504 | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7/C | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_236_fu_2510_reg[20]/D |            7 |        255 | 4.61955118179321289 | 0.70099997520446777 | 3.91855120658874512 |
+| Path6  | -0.63090646266937256 | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7/C | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_166_fu_2230_reg[20]/D |            7 |        255 | 4.61355113983154297 | 0.70099997520446777 | 3.91255116462707520 |
+| Path7  | -0.61656457185745239 | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7/C | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_217_fu_2434_reg[21]/D |            7 |        255 | 4.59720945358276367 | 0.73699998855590820 | 3.86020898818969727 |
+| Path8  | -0.61137449741363525 | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7/C | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_52_fu_1774_reg[21]/D  |            7 |        255 | 4.59401941299438477 | 0.73699998855590820 | 3.85701918601989746 |
+| Path9  | -0.60520654916763306 | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3/C | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_126_fu_2070_reg[11]/D |            6 |        255 | 4.58585119247436523 | 0.77199995517730713 | 3.81385135650634766 |
+| Path10 | -0.59623551368713379 | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3/C | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_225_fu_2466_reg[11]/D |            6 |        255 | 4.57788038253784180 | 0.77199995517730713 | 3.80588006973266602 |
++--------+----------------------+--------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | Path1 Cells                                                                                          | Primitive Type    |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_48_fu_1758_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_58_fu_1798_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_212_fu_2414_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_121_fu_2050_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_236_fu_2510_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_166_fu_2230_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_217_fu_2434_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_52_fu_1774_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_126_fu_2070_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_225_fu_2466_reg[11]            | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | Path2 Cells                                                                                          | Primitive Type    |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_48_fu_1758_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_58_fu_1798_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_212_fu_2414_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_121_fu_2050_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_236_fu_2510_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_166_fu_2230_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_217_fu_2434_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_52_fu_1774_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_126_fu_2070_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_225_fu_2466_reg[11]            | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | Path3 Cells                                                                                          | Primitive Type    |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_48_fu_1758_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_58_fu_1798_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_212_fu_2414_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_121_fu_2050_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_236_fu_2510_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_166_fu_2230_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_217_fu_2434_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_52_fu_1774_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_126_fu_2070_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_225_fu_2466_reg[11]            | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | Path4 Cells                                                                                          | Primitive Type    |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_48_fu_1758_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_58_fu_1798_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_212_fu_2414_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_121_fu_2050_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_236_fu_2510_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_166_fu_2230_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_217_fu_2434_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_52_fu_1774_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_126_fu_2070_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_225_fu_2466_reg[11]            | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | Path5 Cells                                                                                          | Primitive Type    |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_48_fu_1758_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_58_fu_1798_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_212_fu_2414_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_121_fu_2050_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_236_fu_2510_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_166_fu_2230_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_217_fu_2434_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_52_fu_1774_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_126_fu_2070_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_225_fu_2466_reg[11]            | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | Path6 Cells                                                                                          | Primitive Type    |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_48_fu_1758_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_58_fu_1798_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_212_fu_2414_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_121_fu_2050_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_236_fu_2510_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_166_fu_2230_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_217_fu_2434_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_52_fu_1774_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_126_fu_2070_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_225_fu_2466_reg[11]            | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | Path7 Cells                                                                                          | Primitive Type    |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_48_fu_1758_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_58_fu_1798_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_212_fu_2414_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_121_fu_2050_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_236_fu_2510_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_166_fu_2230_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_217_fu_2434_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_52_fu_1774_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_126_fu_2070_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_225_fu_2466_reg[11]            | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | Path8 Cells                                                                                          | Primitive Type    |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_48_fu_1758_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_58_fu_1798_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_212_fu_2414_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_121_fu_2050_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_236_fu_2510_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_166_fu_2230_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_217_fu_2434_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_52_fu_1774_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_126_fu_2070_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_225_fu_2466_reg[11]            | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | Path9 Cells                                                                                          | Primitive Type    |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_48_fu_1758_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_58_fu_1798_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_212_fu_2414_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_121_fu_2050_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_236_fu_2510_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_166_fu_2230_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_217_fu_2434_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_52_fu_1774_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_126_fu_2070_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_225_fu_2466_reg[11]            | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | Path10 Cells                                                                                         | Primitive Type    |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_48_fu_1758_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_58_fu_1798_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_212_fu_2414_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_121_fu_2050_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_236_fu_2510_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_166_fu_2230_reg[20]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_217_fu_2434_reg[21]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[2]_rep__7 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_414        | CLB.MUXF.MUXF7    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_162        | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_47             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_13             | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[15]_i_3              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_52_fu_1774_reg[21]             | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_126_fu_2070_reg[11]            | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/trunc_ln99_reg_13363_reg[3]_rep__3 | REGISTER.SDR.FDRE |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_158         | CLB.MUXF.MUXF8    |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_46              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_13              | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574[7]_i_3               | CLB.LUT.LUT6      |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[7]_i_1           | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1          | CLB.CARRY.CARRY8  |
+    | stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424/cdf_225_fu_2466_reg[11]            | REGISTER.SDR.FDRE |
+    +------------------------------------------------------------------------------------------------------+-------------------+
+
+
+================================================================
+== Place & Route Vivado Reports
+================================================================
++--------------------------+--------------------------------------------------------------------+
+| Report Type              | Report Location                                                    |
++--------------------------+--------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/top_kernel_design_analysis_routed.rpt          |
+| failfast                 | impl/verilog/report/top_kernel_failfast_routed.rpt                 |
+| power                    | impl/verilog/report/top_kernel_power_routed.rpt                    |
+| status                   | impl/verilog/report/top_kernel_status_routed.rpt                   |
+| timing                   | impl/verilog/report/top_kernel_timing_routed.rpt                   |
+| timing_paths             | impl/verilog/report/top_kernel_timing_paths_routed.rpt             |
+| utilization              | impl/verilog/report/top_kernel_utilization_routed.rpt              |
+| utilization_hierarchical | impl/verilog/report/top_kernel_utilization_hierarchical_routed.rpt |
++--------------------------+--------------------------------------------------------------------+
+
+

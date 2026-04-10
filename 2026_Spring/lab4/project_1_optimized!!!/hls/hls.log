@@ -1,0 +1,692 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.1.1 (64-bit)
+Tool Version Limit: 2025.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-2176] Writing Vitis IDE component file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/vitis-comp.json
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls_config.cfg
+INFO: [HLS 200-1510] Running: set_top top_kernel 
+INFO: [HLS 200-1510] Running: add_files top.cpp 
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files top.cpp 
+INFO: [HLS 200-10] Adding design file 'top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb host.cpp 
+INFO: [HLS 200-10] Adding test bench file 'host.cpp' to the project
+INFO: [HLS 200-1510] Running: config_unroll -tripcount_threshold 0 
+INFO: [XFORM 203-502] Automatic unrolling disabled.
+INFO: [HLS 200-1510] Running: config_compile -pipeline_loops 0 
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [HLS 200-1510] Running: create_clock -period 4 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls_config.cfg
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.38 seconds. CPU system time: 0.11 seconds. Elapsed time: 8.03 seconds; current allocated memory: 674.344 MB.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (top.cpp:339:9)
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file top.cpp
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 7.15 seconds. CPU system time: 1.23 seconds. Elapsed time: 8.58 seconds; current allocated memory: 676.855 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 13,041 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11,980 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,570 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,350 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 6,793 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,366 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,536 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,536 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,536 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,055 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,054 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,543 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,886 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,202 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,217 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,296 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'float_to_inter(float)' into 'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)' (top.cpp:73:30)
+INFO: [HLS 214-131] Inlining function 'inter_to_float(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)0, 0>)' into 'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)' (top.cpp:88:23)
+INFO: [HLS 214-131] Inlining function 'inter_to_float(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)0, 0>)' into 'stage_bilateral(hls::stream<ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)' (top.cpp:219:44)
+INFO: [HLS 214-131] Inlining function 'inter_to_float(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)0, 0>)' into 'top_kernel(float const*, float const*, float const*, float*)' (top.cpp:357:18)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_302_5' is marked as complete unroll implied by the pipeline pragma (top.cpp:302:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_303_6' is marked as complete unroll implied by the pipeline pragma (top.cpp:303:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_274_2' is marked as complete unroll implied by the pipeline pragma (top.cpp:274:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_275_3' is marked as complete unroll implied by the pipeline pragma (top.cpp:275:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_212_5' is marked as complete unroll implied by the pipeline pragma (top.cpp:212:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_213_6' is marked as complete unroll implied by the pipeline pragma (top.cpp:213:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_153_2' is marked as complete unroll implied by the pipeline pragma (top.cpp:153:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_154_3' is marked as complete unroll implied by the pipeline pragma (top.cpp:154:39)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_302_5' (top.cpp:302:35) in function 'stage_morphology' completely with a factor of 3 (top.cpp:245:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_303_6' (top.cpp:303:39) in function 'stage_morphology' completely with a factor of 3 (top.cpp:245:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_274_2' (top.cpp:274:35) in function 'stage_morphology' completely with a factor of 3 (top.cpp:245:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_275_3' (top.cpp:275:39) in function 'stage_morphology' completely with a factor of 3 (top.cpp:245:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_212_5' (top.cpp:212:35) in function 'stage_bilateral' completely with a factor of 3 (top.cpp:174:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_213_6' (top.cpp:213:39) in function 'stage_bilateral' completely with a factor of 3 (top.cpp:174:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_153_2' (top.cpp:153:35) in function 'stage_gaussian' completely with a factor of 5 (top.cpp:126:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_154_3' (top.cpp:154:39) in function 'stage_gaussian' completely with a factor of 5 (top.cpp:126:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_79_1' (top.cpp:79:19) in function 'stage_rgb2eq' completely with a factor of 256 (top.cpp:59:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)' (top.cpp:59:0)
+INFO: [HLS 214-248] Applying array_partition to 'histogram': Complete partitioning on dimension 1. (top.cpp:77:9)
+INFO: [HLS 214-248] Applying array_partition to 'cdf': Complete partitioning on dimension 1. (top.cpp:96:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=5 dim=1' for array 'grid' due to pipeline pragma (top.cpp:145:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=5 dim=2' for array 'grid' due to pipeline pragma (top.cpp:145:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'grid' due to pipeline pragma (top.cpp:201:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'grid' due to pipeline pragma (top.cpp:201:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'bilateral_buf' due to pipeline pragma (top.cpp:266:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'bilateral_buf' due to pipeline pragma (top.cpp:266:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'eroded_buf' due to pipeline pragma (top.cpp:294:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'eroded_buf' due to pipeline pragma (top.cpp:294:9)
+INFO: [HLS 214-248] Applying array_partition to 'grid': Cyclic partitioning with factor 5 on dimension 1. Cyclic partitioning with factor 5 on dimension 2. (top.cpp:129:10)
+INFO: [HLS 214-248] Applying array_partition to 'grid': Cyclic partitioning with factor 3 on dimension 1. Cyclic partitioning with factor 3 on dimension 2. (top.cpp:177:10)
+INFO: [HLS 214-248] Applying array_partition to 'bilateral_buf': Cyclic partitioning with factor 3 on dimension 1. Cyclic partitioning with factor 3 on dimension 2. (top.cpp:248:10)
+INFO: [HLS 214-248] Applying array_partition to 'eroded_buf': Cyclic partitioning with factor 3 on dimension 1. Cyclic partitioning with factor 3 on dimension 2. (top.cpp:249:13)
+INFO: [HLS 214-115] Multiple burst reads of length 4096 and bit width 32 in loop 'PASS1'(top.cpp:67:5) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (top.cpp:67:5)
+INFO: [HLS 214-115] Multiple burst reads of length 4096 and bit width 32 in loop 'PASS1'(top.cpp:67:5) has been inferred on bundle 'gmem1'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (top.cpp:67:5)
+INFO: [HLS 214-115] Multiple burst reads of length 4096 and bit width 32 in loop 'PASS1'(top.cpp:67:5) has been inferred on bundle 'gmem2'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (top.cpp:67:5)
+INFO: [HLS 214-115] Multiple burst writes of length 4096 and bit width 32 in loop 'VITIS_LOOP_354_1'(top.cpp:354:23) has been inferred on bundle 'gmem3'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (top.cpp:354:23)
+INFO: [HLS 214-455] Changing loop 'Loop_VITIS_LOOP_354_1_proc' (top.cpp:354:23) to a process function for dataflow in function 'top_kernel' (top.cpp:354:23)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 31.93 seconds. CPU system time: 1.01 seconds. Elapsed time: 34.49 seconds; current allocated memory: 688.246 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 688.246 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.25 seconds; current allocated memory: 700.766 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] top.cpp:46: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.13 seconds; current allocated memory: 719.668 MB.
+INFO: [XFORM 203-712] Applying dataflow to function 'top_kernel' (top.cpp:321:1), detected/extracted 6 process function(s): 
+	 'entry_proc'
+	 'stage_rgb2eq'
+	 'stage_gaussian'
+	 'stage_bilateral'
+	 'stage_morphology'
+	 'Loop_VITIS_LOOP_354_1_proc'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:68:9) to (top.cpp:67:5) in function 'stage_rgb2eq'... converting 29 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:86:9) to (top.cpp:92:23) in function 'stage_rgb2eq'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:110:9) to (top.cpp:109:5) in function 'stage_rgb2eq'... converting 31 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:265:45) to (top.cpp:285:30) in function 'stage_morphology'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:293:45) to (top.cpp:293:27) in function 'stage_morphology'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:144:45) to (top.cpp:144:27) in function 'stage_gaussian'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (top.cpp:231:26) in function 'stage_bilateral'... converting 530 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (top.cpp:355:9) to (top.cpp:354:23) in function 'Loop_VITIS_LOOP_354_1_proc'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'stage_morphology' (top.cpp:248:27)...6 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'stage_gaussian' (top.cpp:129:5)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'stage_bilateral' (top.cpp:51:26)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 8.48 seconds. CPU system time: 0.04 seconds. Elapsed time: 8.55 seconds; current allocated memory: 760.090 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'EROSION_LOOP'(top.cpp:264:5) and 'VITIS_LOOP_265_1'(top.cpp:265:27) in function 'stage_morphology' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'DILATION_LOOP'(top.cpp:292:5) and 'VITIS_LOOP_293_4'(top.cpp:293:27) in function 'stage_morphology' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'GAUSSIAN_OUT'(top.cpp:143:5) and 'VITIS_LOOP_144_1'(top.cpp:144:27) in function 'stage_gaussian' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'BILATERAL_OUT'(top.cpp:199:5) and 'VITIS_LOOP_200_4'(top.cpp:200:27) in function 'stage_bilateral' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'EROSION_LOOP' (top.cpp:264:5) in function 'stage_morphology'.
+INFO: [XFORM 203-541] Flattening a loop nest 'DILATION_LOOP' (top.cpp:292:5) in function 'stage_morphology'.
+INFO: [XFORM 203-541] Flattening a loop nest 'GAUSSIAN_OUT' (top.cpp:143:5) in function 'stage_gaussian'.
+INFO: [XFORM 203-541] Flattening a loop nest 'BILATERAL_OUT' (top.cpp:199:5) in function 'stage_bilateral'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 9.9 seconds. CPU system time: 0.14 seconds. Elapsed time: 10.09 seconds; current allocated memory: 1.004 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_kernel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.61 seconds. CPU system time: 0.06 seconds. Elapsed time: 1.71 seconds; current allocated memory: 1.005 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.006 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_rgb2eq_Pipeline_PASS1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'PASS1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 88, loop 'PASS1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 1.008 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.008 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_rgb2eq_Pipeline_BUILD_HIST' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'BUILD_HIST'.
+WARNING: [HLS 200-887] Cannot meet target clock period from 'sparsemux' operation 32 bit ('tmp_14', top.cpp:92) to 'store' operation 0 bit ('histogram_149_write_ln77', top.cpp:77) of variable 'histogram', top.cpp:92 on local variable 'histogram', top.cpp:77 (combination delay: 3.196 ns) to honor II or Latency constraint in region 'BUILD_HIST'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 15, loop 'BUILD_HIST'
+WARNING: [HLS 200-871] Estimated clock period (3.196 ns) exceeds the target (target clock period: 4.000 ns, clock uncertainty: 1.080 ns, effective delay budget: 2.920 ns).
+WARNING: [HLS 200-1016] The critical path in module 'stage_rgb2eq_Pipeline_BUILD_HIST' consists of the following:
+	'load' operation 32 bit ('histogram_load_1', top.cpp:92) on local variable 'histogram', top.cpp:77 [779]  (0.000 ns)
+	'sparsemux' operation 32 bit ('tmp_14', top.cpp:92) [1093]  (1.504 ns)
+	'add' operation 32 bit ('histogram', top.cpp:92) [1094]  (1.203 ns)
+	'store' operation 0 bit ('histogram_93_write_ln77', top.cpp:77) of variable 'histogram', top.cpp:92 on local variable 'histogram', top.cpp:77 [1580]  (0.489 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4.24 seconds. CPU system time: 0.08 seconds. Elapsed time: 4.34 seconds; current allocated memory: 1.106 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.33 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.46 seconds; current allocated memory: 1.106 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_rgb2eq_Pipeline_VITIS_LOOP_99_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_99_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_99_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2.29 seconds. CPU system time: 0.01 seconds. Elapsed time: 2.47 seconds; current allocated memory: 1.106 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.3 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.46 seconds; current allocated memory: 1.106 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_rgb2eq_Pipeline_PASS2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'PASS2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 70, loop 'PASS2'
+WARNING: [HLS 200-871] Estimated clock period (3.320 ns) exceeds the target (target clock period: 4.000 ns, clock uncertainty: 1.080 ns, effective delay budget: 2.920 ns).
+WARNING: [HLS 200-1016] The critical path in module 'stage_rgb2eq_Pipeline_PASS2' consists of the following:
+	'sitofp' operation 32 bit ('conv', top.cpp:115) [588]  (3.320 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.54 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.7 seconds; current allocated memory: 1.106 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.106 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_rgb2eq' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (3.320 ns) exceeds the target (target clock period: 4.000 ns, clock uncertainty: 1.080 ns, effective delay budget: 2.920 ns).
+WARNING: [HLS 200-1016] The critical path in module 'stage_rgb2eq' consists of the following:
+	'load' operation 32 bit ('histogram_loc_load') on local variable 'histogram_loc' [796]  (0.000 ns)
+	'sitofp' operation 32 bit ('cdf_min', top.cpp:104) [1053]  (3.320 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.74 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.8 seconds; current allocated memory: 1.106 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.29 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.36 seconds; current allocated memory: 1.106 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_gaussian_Pipeline_READ_IN' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln138) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'READ_IN'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'READ_IN'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.29 seconds; current allocated memory: 1.106 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.106 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_144_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'GAUSSIAN_OUT_VITIS_LOOP_144_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 50, loop 'GAUSSIAN_OUT_VITIS_LOOP_144_1'
+WARNING: [HLS 200-871] Estimated clock period (3.018 ns) exceeds the target (target clock period: 4.000 ns, clock uncertainty: 1.080 ns, effective delay budget: 2.920 ns).
+WARNING: [HLS 200-1016] The critical path in module 'stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_144_1' consists of the following:
+	'mul' operation 129 bit ('mul29', top.cpp:143) [89]  (3.018 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 7.65 seconds. CPU system time: 0.03 seconds. Elapsed time: 7.71 seconds; current allocated memory: 1.106 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2.27 seconds. CPU system time: 0.03 seconds. Elapsed time: 2.44 seconds; current allocated memory: 1.106 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_gaussian' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.42 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.59 seconds; current allocated memory: 1.106 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.106 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_bilateral_Pipeline_VITIS_LOOP_181_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln185) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_181_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'VITIS_LOOP_181_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 1.106 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.106 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_200_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'BILATERAL_OUT_VITIS_LOOP_200_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 156, loop 'BILATERAL_OUT_VITIS_LOOP_200_4'
+WARNING: [HLS 200-871] Estimated clock period (3.018 ns) exceeds the target (target clock period: 4.000 ns, clock uncertainty: 1.080 ns, effective delay budget: 2.920 ns).
+WARNING: [HLS 200-1016] The critical path in module 'stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_200_4' consists of the following:
+	'mul' operation 129 bit ('mul_ln199_1', top.cpp:199) [56]  (3.018 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.75 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.78 seconds; current allocated memory: 1.106 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.94 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.06 seconds; current allocated memory: 1.116 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_bilateral' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.51 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.64 seconds; current allocated memory: 1.116 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.116 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_morphology_Pipeline_READ_BILATERAL' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln259) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'READ_BILATERAL'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'READ_BILATERAL'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 1.116 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.116 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_265_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'EROSION_LOOP_VITIS_LOOP_265_1'.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 20, loop 'EROSION_LOOP_VITIS_LOOP_265_1'
+WARNING: [HLS 200-871] Estimated clock period (3.018 ns) exceeds the target (target clock period: 4.000 ns, clock uncertainty: 1.080 ns, effective delay budget: 2.920 ns).
+WARNING: [HLS 200-1016] The critical path in module 'stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_265_1' consists of the following:
+	'mul' operation 129 bit ('mul_ln264_1', top.cpp:264) [72]  (3.018 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.36 seconds. CPU system time: 0 seconds. Elapsed time: 0.36 seconds; current allocated memory: 1.116 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 1.116 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'DILATION_LOOP_VITIS_LOOP_293_4'.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 20, loop 'DILATION_LOOP_VITIS_LOOP_293_4'
+WARNING: [HLS 200-871] Estimated clock period (3.018 ns) exceeds the target (target clock period: 4.000 ns, clock uncertainty: 1.080 ns, effective delay budget: 2.920 ns).
+WARNING: [HLS 200-1016] The critical path in module 'stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4' consists of the following:
+	'mul' operation 129 bit ('mul_ln292_1', top.cpp:292) [56]  (3.018 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.4 seconds. CPU system time: 0 seconds. Elapsed time: 0.43 seconds; current allocated memory: 1.116 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 1.116 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stage_morphology' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.116 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.116 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_VITIS_LOOP_354_1_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_354_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'VITIS_LOOP_354_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.116 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.116 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_Loop_VITIS_LOOP_354_1_proc_U0 (from entry_proc_U0 to Loop_VITIS_LOOP_354_1_proc_U0) to 5 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.116 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 1.116 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 1.116 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_rgb2eq_Pipeline_PASS1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'stage_rgb2eq_Pipeline_PASS1' pipeline 'PASS1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem0_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem0_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem0_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem0_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem0_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem0_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem0_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem0_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem0_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem0_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem0_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem0_0_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem1_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem1_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem1_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem1_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem1_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem1_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem1_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem1_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem1_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem1_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem1_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem1_0_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem2_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem2_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem2_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem2_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem2_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem2_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem2_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem2_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem2_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem2_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem2_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'stage_rgb2eq_Pipeline_PASS1/m_axi_gmem2_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_54ns_6ns_1_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_10_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_10_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_30_no_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_1_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_rgb2eq_Pipeline_PASS1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 1.116 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_rgb2eq_Pipeline_BUILD_HIST' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'stage_rgb2eq_Pipeline_BUILD_HIST' pipeline 'BUILD_HIST' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'stage_rgb2eq_Pipeline_BUILD_HIST' is 8415 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'ctlz_16_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_7_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_513_8_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_rgb2eq_Pipeline_BUILD_HIST'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.33 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.4 seconds; current allocated memory: 1.131 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_rgb2eq_Pipeline_VITIS_LOOP_99_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'stage_rgb2eq_Pipeline_VITIS_LOOP_99_2' pipeline 'VITIS_LOOP_99_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'stage_rgb2eq_Pipeline_VITIS_LOOP_99_2' is 8160 from HDL expression: ((ap_loop_exit_ready == 1'b1) & (icmp_ln99_fu_5915_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_01001) & (1'b1 == ap_CS_fsm_pp0_stage0))
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_511_8_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_rgb2eq_Pipeline_VITIS_LOOP_99_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.53 seconds. CPU system time: 0.11 seconds. Elapsed time: 1.82 seconds; current allocated memory: 1.172 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_rgb2eq_Pipeline_PASS2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'stage_rgb2eq_Pipeline_PASS2' pipeline 'PASS2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_54ns_6ns_1_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ctlz_16_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_10_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_3_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_30_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_7_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_7_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_513_8_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_1_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_rgb2eq_Pipeline_PASS2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.34 seconds. CPU system time: 0.1 seconds. Elapsed time: 1.61 seconds; current allocated memory: 1.223 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_rgb2eq' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_10_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_30_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_7_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_7_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_rgb2eq'.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_stage_rgb2eq_intensity_buf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.53 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.69 seconds; current allocated memory: 1.238 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_gaussian_Pipeline_READ_IN' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'stage_gaussian_Pipeline_READ_IN' pipeline 'READ_IN' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_4ns_4ns_4ns_8_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_8ns_13_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_6ns_4ns_3_10_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_gaussian_Pipeline_READ_IN'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.4 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.52 seconds; current allocated memory: 1.255 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_144_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_144_1' pipeline 'GAUSSIAN_OUT_VITIS_LOOP_144_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_144_1' is 8610 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001_grp1)
+INFO: [RTGEN 206-100] Generating core module 'mul_18s_10ns_28_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_18s_11ns_29_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_18s_12ns_30_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_18s_13ns_31_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_18s_14ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_5ns_8_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_64ns_66ns_129_5_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_8ns_13_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_5ns_8_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_11_3_16_1_1': 50 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_4ns_3_11_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_144_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.73 seconds. CPU system time: 0.05 seconds. Elapsed time: 1.86 seconds; current allocated memory: 1.289 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_gaussian' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_gaussian'.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W' using block RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.12 seconds. CPU system time: 0.11 seconds. Elapsed time: 1.43 seconds; current allocated memory: 1.334 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_bilateral_Pipeline_VITIS_LOOP_181_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'stage_bilateral_Pipeline_VITIS_LOOP_181_1' pipeline 'VITIS_LOOP_181_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_5ns_5ns_5ns_9_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_8ns_13_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_6ns_3ns_2_10_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_bilateral_Pipeline_VITIS_LOOP_181_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 1.334 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_200_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_200_4' pipeline 'BILATERAL_OUT_VITIS_LOOP_200_4' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_7_2_16_1_1' is changed to 'sparsemux_7_2_16_1_1_x' due to conflict.
+INFO: [RTGEN 206-104] Estimated max fanout for 'stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_200_4' is 22729 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_54ns_6ns_1_1_1': 18 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ctlz_16_16_1_1': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_30_no_dsp_1': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fexp_32ns_32ns_32_22_full_dsp_1': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_7_max_dsp_1': 17 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_10_full_dsp_1': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_20s_18s_38_2_1': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_64ns_66ns_129_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_6ns_9_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_8ns_13_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_6ns_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_35ns_21ns_35_39_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1_x': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_1_1_1': 27 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_20_1_1': 18 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_3ns_2_11_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_200_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.27 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.37 seconds; current allocated memory: 1.360 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_bilateral' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_bilateral'.
+INFO: [RTMG 210-278] Implementing memory 'top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W' using block RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.81 seconds. CPU system time: 0.13 seconds. Elapsed time: 2.17 seconds; current allocated memory: 1.406 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_morphology_Pipeline_READ_BILATERAL' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'stage_morphology_Pipeline_READ_BILATERAL' pipeline 'READ_BILATERAL' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_5ns_5ns_5ns_9_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_8ns_13_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_6ns_3ns_2_10_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_morphology_Pipeline_READ_BILATERAL'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 1.410 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_265_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_265_1' pipeline 'EROSION_LOOP_VITIS_LOOP_265_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_64ns_66ns_129_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_6ns_9_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_8ns_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_6ns_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1_x': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_3ns_2_11_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_265_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.33 seconds; current allocated memory: 1.412 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4' pipeline 'DILATION_LOOP_VITIS_LOOP_293_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_64ns_66ns_129_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_6ns_9_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_8ns_13_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_6ns_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1_x': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_3ns_2_11_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.44 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.56 seconds; current allocated memory: 1.421 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stage_morphology' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_64ns_66ns_129_5_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stage_morphology'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.25 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.33 seconds; current allocated memory: 1.430 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_VITIS_LOOP_354_1_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Loop_VITIS_LOOP_354_1_proc' pipeline 'VITIS_LOOP_354_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'ctlz_16_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_VITIS_LOOP_354_1_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 1.433 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/gmem2' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/gmem3' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/in_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/in_g' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/in_b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top_kernel/out_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top_kernel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'in_r', 'in_g', 'in_b', 'out_r' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top_kernel'.
+INFO: [RTMG 210-285] Implementing FIFO 'out_r_c_U(top_kernel_fifo_w64_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'equalized_stream_U(top_kernel_fifo_w16_d128_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'gaussian_stream_U(top_kernel_fifo_w16_d128_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'bilateral_stream_U(top_kernel_fifo_w16_d128_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'morphology_stream_U(top_kernel_fifo_w16_d128_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Loop_VITIS_LOOP_354_1_proc_U0_U(top_kernel_start_for_Loop_VITIS_LOOP_354_1_proc_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_stage_gaussian_U0_U(top_kernel_start_for_stage_gaussian_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_stage_bilateral_U0_U(top_kernel_start_for_stage_bilateral_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_stage_morphology_U0_U(top_kernel_start_for_stage_morphology_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.29 seconds; current allocated memory: 1.434 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.96 seconds. CPU system time: 0.27 seconds. Elapsed time: 2.35 seconds; current allocated memory: 1.438 GB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2.18 seconds. CPU system time: 0.18 seconds. Elapsed time: 2.49 seconds; current allocated memory: 1.479 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for top_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for top_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 301.20 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:02:00; Allocated memory: 857.375 MB.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls_config.cfg
+WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:28:22; Allocated memory: 26.289 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -flow impl 
+INFO: [HLS 200-1915] Writing HLS config ini file /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls_config.cfg
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO: [HLS 200-802] Generated output file project_1/hls/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 01:14:24; Allocated memory: 27.289 MB.

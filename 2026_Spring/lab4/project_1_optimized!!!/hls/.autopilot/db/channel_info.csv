@@ -1,0 +1,5 @@
+,out_r_c_U,,chan_status1.csv
+,equalized_stream_U,,chan_status2.csv
+,gaussian_stream_U,,chan_status3.csv
+,bilateral_stream_U,,chan_status4.csv
+,morphology_stream_U,,chan_status5.csv

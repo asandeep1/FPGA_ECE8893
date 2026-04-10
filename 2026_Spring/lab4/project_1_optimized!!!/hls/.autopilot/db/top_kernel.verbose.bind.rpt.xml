@@ -1,0 +1,51 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'top_kernel'" level="0">
+<item name = "Date">Fri Apr 10 10:37:22 2026
+</item>
+<item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
+<item name = "Project">project_1</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">4.00 ns, 3.320 ns, 1.08 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">12748, 12748, 50.992 us, 50.992 us, 12749, 12749, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="call_ln339_entry_proc_fu_150">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_stage_rgb2eq_fu_157">stage_rgb2eq, 12748, 12748, 50.992 us, 50.992 us, 12748, 12748, no</column>
+<column name="grp_stage_gaussian_fu_171">stage_gaussian, 8256, 8256, 33.024 us, 33.024 us, 8256, 8256, no</column>
+<column name="grp_stage_bilateral_fu_177">stage_bilateral, 8362, 8362, 33.448 us, 33.448 us, 8362, 8362, no</column>
+<column name="grp_stage_morphology_fu_183">stage_morphology, 12344, 12344, 49.376 us, 49.376 us, 12344, 12344, no</column>
+<column name="grp_Loop_VITIS_LOOP_354_1_proc_fu_189">Loop_VITIS_LOOP_354_1_proc, 4105, 4105, 16.420 us, 16.420 us, 4096, 4096, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,638 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Fri Apr 10 12:20:23 EDT 2026
+    * Version:         2025.1 (Build 6214317 on Sep 11 2025)
+    * Project:         project_1
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynquplus
+    * Target device:   xczu3eg-sbva484-1-e
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  4 ns
+    * C-Synthesis target clock:    4 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              54163
+FF:               64128
+DSP:              280
+BRAM:             81
+URAM:             0
+SRL:              2877
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 4.000       |
+| Post-Synthesis | 3.085       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++-----------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                        | LUT   | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-----------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                        | 54163 | 64128 | 280 | 81   |      |     |        |      |         |          |        |
+|   Loop_VITIS_LOOP_354_1_proc_U0                                             | 109   | 165   |     |      |      |     |        |      |         |          |        |
+|     (Loop_VITIS_LOOP_354_1_proc_U0)                                         | 92    | 164   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U                                                |       |       |     |      |      |     |        |      |         |          |        |
+|   bilateral_stream_U                                                        | 190   | 49    |     |      |      |     |        |      |         |          |        |
+|   control_s_axi_U                                                           | 461   | 309   |     |      |      |     |        |      |         |          |        |
+|   entry_proc_U0                                                             |       |       |     |      |      |     |        |      |         |          |        |
+|   equalized_stream_U                                                        | 94    | 49    |     |      |      |     |        |      |         |          |        |
+|   gaussian_stream_U                                                         | 97    | 49    |     |      |      |     |        |      |         |          |        |
+|   gmem0_m_axi_U                                                             | 627   | 890   |     | 8    |      |     |        |      |         |          |        |
+|   gmem1_m_axi_U                                                             | 626   | 890   |     | 8    |      |     |        |      |         |          |        |
+|   gmem2_m_axi_U                                                             | 626   | 890   |     | 8    |      |     |        |      |         |          |        |
+|   gmem3_m_axi_U                                                             | 729   | 997   |     | 1    |      |     |        |      |         |          |        |
+|   morphology_stream_U                                                       | 112   | 49    |     |      |      |     |        |      |         |          |        |
+|   out_r_c_U                                                                 | 72    | 9     |     |      |      |     |        |      |         |          |        |
+|   stage_bilateral_U0                                                        | 28630 | 33042 | 163 | 9    |      |     |        |      |         |          |        |
+|     grid_25_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_26_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_27_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_28_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_29_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_30_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_31_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_32_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_U                                                                  |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_200_4_fu_90       | 28547 | 32931 | 160 |      |      |     |        |      |         |          |        |
+|       (grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_200_4_fu_90)   | 7566  | 9743  | 4   |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1373                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1374                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1378                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1379                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1394                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1395                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1401                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1402                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1412                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1413                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1426                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       bitselect_1ns_54ns_6ns_1_1_1_U1427                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       ctlz_16_16_1_1_U1369                                                  |       |       |     |      |      |     |        |      |         |          |        |
+|       ctlz_16_16_1_1_U1370                                                  |       |       |     |      |      |     |        |      |         |          |        |
+|       ctlz_16_16_1_1_U1371                                                  |       |       |     |      |      |     |        |      |         |          |        |
+|       ctlz_16_16_1_1_U1372                                                  |       |       |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1308                                   | 747   | 1145  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1309                                   | 747   | 1145  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1310                                   | 747   | 1145  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1311                                   | 747   | 1145  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1312                                   | 747   | 1145  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1313                                   | 747   | 1145  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1314                                   | 747   | 1145  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1315                                   | 747   | 1145  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U1316                                   | 747   | 1145  |     |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1326                                 | 792   | 463   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1327                                 | 792   | 463   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1328                                 | 792   | 462   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1329                                 | 792   | 462   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1330                                 | 792   | 463   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1331                                 | 792   | 463   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1332                                 | 792   | 463   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1333                                 | 793   | 463   | 7   |      |      |     |        |      |         |          |        |
+|       fexp_32ns_32ns_32_22_full_dsp_1_U1334                                 | 792   | 463   | 7   |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1291                                   | 83    | 171   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1292                                   | 83    | 171   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1293                                   | 83    | 172   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1294                                   | 83    | 172   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1295                                   | 83    | 172   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1296                                   | 83    | 172   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1297                                   | 83    | 172   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1298                                   | 83    | 172   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1299                                   | 83    | 171   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1300                                   | 85    | 172   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1301                                   | 85    | 172   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1302                                   | 85    | 171   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1303                                   | 85    | 171   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1304                                   | 85    | 172   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1305                                   | 85    | 172   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1306                                   | 85    | 171   | 3   |      |      |     |        |      |         |          |        |
+|       fmul_32ns_32ns_32_7_max_dsp_1_U1307                                   | 85    | 172   | 3   |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1317                                        | 99    | 97    |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1318                                        | 99    | 97    |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1319                                        | 99    | 97    |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1320                                        | 99    | 97    |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1321                                        | 99    | 95    |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1322                                        | 99    | 97    |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1323                                        | 99    | 97    |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1324                                        | 99    | 97    |     |      |      |     |        |      |         |          |        |
+|       fpext_32ns_64_2_no_dsp_1_U1325                                        | 99    | 97    |     |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1282                                 | 212   | 324   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1283                                 | 212   | 355   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1284                                 | 212   | 355   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1285                                 | 212   | 355   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1286                                 | 212   | 325   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1287                                 | 212   | 325   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1288                                 | 212   | 325   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1289                                 | 156   | 264   | 2   |      |      |     |        |      |         |          |        |
+|       fsub_32ns_32ns_32_10_full_dsp_1_U1290                                 | 212   | 356   | 2   |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1385                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1390                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1403                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1409                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1417                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1422                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1433                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1438                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_20s_18s_38_2_1_U1444                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_64ns_66ns_129_5_1_U1335                                           | 114   | 17    | 13  |      |      |     |        |      |         |          |        |
+|       mul_6ns_6ns_9_1_1_U1350                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_6ns_6ns_9_1_1_U1352                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1353                                              | 118   |       | 1   |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1354                                              | 261   |       | 1   |      |      |     |        |      |         |          |        |
+|       sdiv_35ns_21ns_35_39_1_U1445                                          | 1795  | 1880  |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_3ns_2_11_1_U1345                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_3ns_2_11_1_U1348                                             |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_bilateral_Pipeline_VITIS_LOOP_181_1_fu_66                     | 81    | 104   | 3   |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mac_muladd_5ns_5ns_5ns_9_4_1_U1269                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_6ns_3ns_2_10_1_U1266                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_6ns_3ns_2_10_1_U1268                                             |       |       |     |      |      |     |        |      |         |          |        |
+|   stage_gaussian_U0                                                         | 4006  | 1387  | 78  | 25   |      |     |        |      |         |          |        |
+|     grid_10_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_11_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_12_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_13_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_14_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_15_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_16_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_17_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_18_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_19_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_1_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_20_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_21_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_22_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_23_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_24_U                                                               |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_2_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_3_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_4_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_5_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_6_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_7_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_8_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_9_U                                                                |       |       |     |      |      |     |        |      |         |          |        |
+|     grid_U                                                                  |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_144_1_fu_186        | 3891  | 1276  | 76  |      |      |     |        |      |         |          |        |
+|       (grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_144_1_fu_186)    | 1942  | 1187  | 24  |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1200                                             | 203   |       | 1   |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1202                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1203                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1207                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1213                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1217                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1218                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_10ns_28_1_1_U1220                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_11ns_29_1_1_U1201                                             | 202   |       | 1   |      |      |     |        |      |         |          |        |
+|       mul_18s_11ns_29_1_1_U1208                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_11ns_29_1_1_U1212                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_11ns_29_1_1_U1219                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_12ns_30_1_1_U1204                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_12ns_30_1_1_U1206                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_12ns_30_1_1_U1214                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_12ns_30_1_1_U1216                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_13ns_31_1_1_U1205                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_13ns_31_1_1_U1209                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_13ns_31_1_1_U1211                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_13ns_31_1_1_U1215                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_18s_14ns_32_1_1_U1210                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_5ns_5ns_8_1_1_U1166                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_5ns_5ns_8_1_1_U1169                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_5ns_5ns_8_1_1_U1170                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_64ns_66ns_129_5_1_U1133                                           | 113   | 25    | 13  |      |      |     |        |      |         |          |        |
+|       mul_64ns_66ns_129_5_1_U1134                                           | 114   | 25    | 13  |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1171                                              | 864   |       | 1   |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1172                                              | 125   |       | 1   |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1173                                              | 105   |       | 1   |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1174                                              | 121   |       | 1   |      |      |     |        |      |         |          |        |
+|       mul_7ns_9ns_15_1_1_U1165                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_8s_5ns_8_1_1_U1167                                                |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_8s_5ns_8_1_1_U1168                                                |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_4ns_3_11_1_U1160                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_4ns_3_11_1_U1163                                             |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_gaussian_Pipeline_READ_IN_fu_130                              | 112   | 104   | 2   |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mac_muladd_4ns_4ns_4ns_8_4_1_U1103                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_6ns_4ns_3_10_1_U1100                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_6ns_4ns_3_10_1_U1102                                             |       |       |     |      |      |     |        |      |         |          |        |
+|   stage_morphology_U0                                                       | 2249  | 1183  | 32  | 18   |      |     |        |      |         |          |        |
+|     bilateral_buf_1_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_2_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_3_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_4_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_5_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_6_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_7_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_8_U                                                       |       |       |     |      |      |     |        |      |         |          |        |
+|     bilateral_buf_U                                                         |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_1_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_2_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_3_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_4_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_5_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_6_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_7_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_8_U                                                          |       |       |     |      |      |     |        |      |         |          |        |
+|     eroded_buf_U                                                            |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150     | 1033  | 528   | 8   |      |      |     |        |      |         |          |        |
+|       (grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150) | 949   | 480   | 6   |      |      |     |        |      |         |          |        |
+|       mul_6ns_6ns_9_1_1_U1546                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_6ns_6ns_9_1_1_U1548                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1549                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_6ns_8ns_13_1_1_U1550                                              |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_3ns_2_11_1_U1541                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_3ns_2_11_1_U1543                                             |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_265_1_fu_128      | 1047  | 525   | 8   |      |      |     |        |      |         |          |        |
+|       (grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_265_1_fu_128)  | 966   | 471   | 8   |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_6ns_6ns_9_1_1_U1501                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_6ns_6ns_9_1_1_U1503                                               |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_3ns_2_11_1_U1494                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_7ns_3ns_2_11_1_U1497                                             |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104                     | 80    | 104   | 3   |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|       mac_muladd_5ns_5ns_5ns_9_4_1_U1473                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_6ns_3ns_2_10_1_U1470                                             |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_6ns_3ns_2_10_1_U1472                                             |       |       |     |      |      |     |        |      |         |          |        |
+|     mul_64ns_66ns_129_5_1_U1570                                             | 89    | 17    | 13  |      |      |     |        |      |         |          |        |
+|   stage_rgb2eq_U0                                                           | 15508 | 24149 | 7   | 4    |      |     |        |      |         |          |        |
+|     (stage_rgb2eq_U0)                                                       | 8     | 101   |     |      |      |     |        |      |         |          |        |
+|     faddfsub_32ns_32ns_32_10_full_dsp_1_U1081                               | 212   | 362   | 2   |      |      |     |        |      |         |          |        |
+|     fdiv_32ns_32ns_32_30_no_dsp_1_U1083                                     | 814   | 1476  |     |      |      |     |        |      |         |          |        |
+|       (fdiv_32ns_32ns_32_30_no_dsp_1_U1083)                                 | 32    | 96    |     |      |      |     |        |      |         |          |        |
+|     fmul_32ns_32ns_32_7_max_dsp_1_U1085                                     | 82    | 165   | 3   |      |      |     |        |      |         |          |        |
+|       (fmul_32ns_32ns_32_7_max_dsp_1_U1085)                                 | 16    | 56    |     |      |      |     |        |      |         |          |        |
+|     fpext_32ns_64_2_no_dsp_1_U1084                                          | 99    | 97    |     |      |      |     |        |      |         |          |        |
+|       (fpext_32ns_64_2_no_dsp_1_U1084)                                      | 32    | 97    |     |      |      |     |        |      |         |          |        |
+|     grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163                            | 5052  | 8462  |     |      |      |     |        |      |         |          |        |
+|       (grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163)                        | 5011  | 8460  |     |      |      |     |        |      |         |          |        |
+|       ctlz_16_16_1_1_U30                                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_rgb2eq_Pipeline_PASS1_fu_2149                                 | 3202  | 4072  | 2   |      |      |     |        |      |         |          |        |
+|       (grp_stage_rgb2eq_Pipeline_PASS1_fu_2149)                             | 696   | 726   |     |      |      |     |        |      |         |          |        |
+|       fadd_32ns_32ns_32_10_full_dsp_1_U4                                    | 211   | 361   | 2   |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U6                                      | 753   | 1044  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U7                                      | 753   | 1044  |     |      |      |     |        |      |         |          |        |
+|       fdiv_32ns_32ns_32_30_no_dsp_1_U8                                      | 761   | 895   |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_rgb2eq_Pipeline_PASS2_fu_2939                                 | 3247  | 940   |     |      |      |     |        |      |         |          |        |
+|       (grp_stage_rgb2eq_Pipeline_PASS2_fu_2939)                             | 3140  | 902   |     |      |      |     |        |      |         |          |        |
+|       ctlz_16_16_1_1_U811                                                   |       |       |     |      |      |     |        |      |         |          |        |
+|       fcmp_32ns_32ns_1_3_no_dsp_1_U810                                      |       |       |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              |       |       |     |      |      |     |        |      |         |          |        |
+|     grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424                       | 2617  | 8227  |     |      |      |     |        |      |         |          |        |
+|       (grp_stage_rgb2eq_Pipeline_VITIS_LOOP_99_2_fu_2424)                   | 2557  | 8225  |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                              | 60    | 2     |     |      |      |     |        |      |         |          |        |
+|     intensity_buf_U                                                         |       |       |     |      |      |     |        |      |         |          |        |
+|     sitofp_32ns_32_7_no_dsp_1_U1082                                         | 175   | 247   |     |      |      |     |        |      |         |          |        |
+|   start_for_Loop_VITIS_LOOP_354_1_proc_U0_U                                 |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stage_bilateral_U0_U                                            |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stage_gaussian_U0_U                                             |       |       |     |      |      |     |        |      |         |          |        |
+|   start_for_stage_morphology_U0_U                                           |       |       |     |      |      |     |        |      |         |          |        |
++-----------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 76.76% | REVIEW |
+| FD                                                        | 50%       | 45.44% | OK     |
+| LUTRAM+SRL                                                | 25%       | 10.55% | OK     |
+| CARRY8                                                    | 25%       | 28.78% | REVIEW |
+| MUXF7                                                     | 15%       | 17.48% | REVIEW |
+| LUT Combining                                             | 20%       | 21.99% | REVIEW |
+| DSP                                                       | 80%       | 77.78% | OK     |
+| RAMB/FIFO                                                 | 80%       | 18.75% | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 48.27% | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 1323      | 1078   | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 1.73   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 1.73   | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 1      | REVIEW |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.350ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.239ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+| Path  |               SLACK | STARTPOINT PIN                                                                                                                                     | ENDPOINT PIN                                                                                                                               | LOGIC LEVELS | MAX FANOUT |      DATAPATH DELAY |      DATAPATH LOGIC |        DATAPATH NET |
+|       |                     |                                                                                                                                                    |                                                                                                                                            |              |            |                     |               DELAY |               DELAY |
++-------+---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+| Path1 | 0.91464436054229736 | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST/CLK | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST/ALU_OUT[10] |            7 |          2 | 3.02900004386901855 | 2.82000017166137695 | 0.20899999141693115 |
+| Path2 | 0.91464436054229736 | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST/CLK | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST/ALU_OUT[11] |            7 |          2 | 3.02900004386901855 | 2.82000017166137695 | 0.20899999141693115 |
+| Path3 | 0.91464436054229736 | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST/CLK | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST/ALU_OUT[12] |            7 |          2 | 3.02900004386901855 | 2.82000017166137695 | 0.20899999141693115 |
+| Path4 | 0.91464436054229736 | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST/CLK | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST/ALU_OUT[13] |            7 |          2 | 3.02900004386901855 | 2.82000017166137695 | 0.20899999141693115 |
+| Path5 | 0.91464436054229736 | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST/CLK | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST/ALU_OUT[14] |            7 |          2 | 3.02900004386901855 | 2.82000017166137695 | 0.20899999141693115 |
++-------+---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+---------------------+---------------------+---------------------+
+
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path1 Cells                                                                                                                                       | Primitive Type         |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path2 Cells                                                                                                                                       | Primitive Type         |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path3 Cells                                                                                                                                       | Primitive Type         |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path4 Cells                                                                                                                                       | Primitive Type         |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path5 Cells                                                                                                                                       | Primitive Type         |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/mul_6ns_8ns_13_1_1_U1549/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_C_DATA_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_ALU_INST                       | ARITHMETIC.DSP.DSP48E2 |
+    | stage_morphology_U0/grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_293_4_fu_150/add_ln305_4_fu_1372_p2/DSP_OUTPUT_INST                    | ARITHMETIC.DSP.DSP48E2 |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+-------------------------------------------------------------------+
+| Report Type              | Report Location                                                   |
++--------------------------+-------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/top_kernel_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/top_kernel_failfast_synth.rpt                 |
+| power                    | impl/verilog/report/top_kernel_power_synth.rpt                    |
+| timing                   | impl/verilog/report/top_kernel_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/top_kernel_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/top_kernel_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/top_kernel_utilization_hierarchical_synth.rpt |
++--------------------------+-------------------------------------------------------------------+
+
+

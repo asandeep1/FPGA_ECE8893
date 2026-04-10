@@ -1,0 +1,16 @@
+>> Initializing Input Buffers...
+>> Starting Golden Baseline (Software)...
+K1: Intensity        [>                             ] 0 %K1: Intensity        [=======================>      ] 79 %K1: Intensity        [==============================] 100 %
+K2: Equalize         [>                             ] 0 %K2: Equalize         [==============================] 100 %
+K3: Gaussian         [========================>     ] 81 %K3: Gaussian         [==============================] 100 %
+K4: Bilateral        [====>                         ] 16 %K4: Bilateral        [=========>                    ] 32 %K4: Bilateral        [==============>               ] 49 %K4: Bilateral        [===================>          ] 65 %K4: Bilateral        [========================>     ] 81 %K4: Bilateral        [=============================>] 98 %K4: Bilateral        [==============================] 100 %
+K5: Morph (Erode)    [==============================] 100 %
+K5: Morph (Dilate)   [==============================] 100 %
+>> Starting Hardware Kernel Execution...
+>> Hardware Execution Complete.
+>> Verifying Results...
+
+----------------------------------------
+Max Error: 0.00698498
+TEST PASSED
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4096
