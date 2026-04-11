@@ -1,0 +1,329 @@
+{
+    "1": {
+        "name": "stage_gaussian",
+        "file": "top.cpp",
+        "fileloc": "139",
+        "instructions": "57",
+        "total_instructions": "2475",
+        "calls": "9 4",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "0": {
+        "name": "top_kernel",
+        "file": "top.cpp",
+        "fileloc": "360",
+        "instructions": "45",
+        "total_instructions": "11046",
+        "calls": "13 6 1 16 11 10",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "2": {
+        "name": "stage_bilateral_Pipeline_READ_IN",
+        "file": "top.cpp",
+        "fileloc": "219",
+        "instructions": "75",
+        "total_instructions": "75",
+        "calls": "",
+        "basicblocks": "20",
+        "memory_accesses": "12",
+        "control_depth": "3",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "11"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "stage_morphology_Pipeline_READ_BILATERAL",
+        "file": "top.cpp",
+        "fileloc": "294",
+        "instructions": "75",
+        "total_instructions": "75",
+        "calls": "",
+        "basicblocks": "20",
+        "memory_accesses": "12",
+        "control_depth": "3",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "11"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1",
+        "file": "top.cpp",
+        "fileloc": "157",
+        "instructions": "2275",
+        "total_instructions": "2275",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "632",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "628"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "stage_rgb2eq_Pipeline_PASS1",
+        "file": "top.cpp",
+        "fileloc": "84",
+        "instructions": "152",
+        "total_instructions": "152",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "6",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "stage_rgb2eq",
+        "file": "top.cpp",
+        "fileloc": "75",
+        "instructions": "1049",
+        "total_instructions": "5320",
+        "calls": "5 14 12 15",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "3",
+        "loads": {
+            "L": "511"
+        }
+    },
+    "7": {
+        "name": "stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1",
+        "file": "top.cpp",
+        "fileloc": "303",
+        "instructions": "356",
+        "total_instructions": "356",
+        "calls": "",
+        "basicblocks": "20",
+        "memory_accesses": "96",
+        "control_depth": "3",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "84"
+        },
+        "stores": {
+            "L": "15"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4",
+        "file": "top.cpp",
+        "fileloc": "331",
+        "instructions": "316",
+        "total_instructions": "316",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "88",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "84"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "stage_gaussian_Pipeline_READ_IN",
+        "file": "top.cpp",
+        "fileloc": "148",
+        "instructions": "143",
+        "total_instructions": "143",
+        "calls": "",
+        "basicblocks": "40",
+        "memory_accesses": "28",
+        "control_depth": "3",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "27"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "Loop_VITIS_LOOP_393_1_proc",
+        "file": "top.cpp",
+        "fileloc": "393",
+        "instructions": "53",
+        "total_instructions": "53",
+        "calls": "",
+        "basicblocks": "7",
+        "memory_accesses": "9",
+        "control_depth": "4",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "stage_morphology",
+        "file": "top.cpp",
+        "fileloc": "283",
+        "instructions": "45",
+        "total_instructions": "792",
+        "calls": "3 7 8",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "12": {
+        "name": "stage_rgb2eq_Pipeline_VITIS_LOOP_115_2",
+        "file": "top.cpp",
+        "fileloc": "112",
+        "instructions": "1803",
+        "total_instructions": "1803",
+        "calls": "",
+        "basicblocks": "260",
+        "memory_accesses": "511",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "510"
+        },
+        "stores": {
+            "L": "257"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "entry_proc",
+        "file": "top.cpp",
+        "fileloc": "0",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "14": {
+        "name": "stage_rgb2eq_Pipeline_BUILD_HIST",
+        "file": "top.cpp",
+        "fileloc": "94",
+        "instructions": "1863",
+        "total_instructions": "1863",
+        "calls": "",
+        "basicblocks": "261",
+        "memory_accesses": "515",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "514"
+        },
+        "stores": {
+            "L": "514"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "stage_rgb2eq_Pipeline_PASS2",
+        "file": "top.cpp",
+        "fileloc": "125",
+        "instructions": "453",
+        "total_instructions": "453",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "16": {
+        "name": "stage_bilateral",
+        "file": "top.cpp",
+        "fileloc": "210",
+        "instructions": "25",
+        "total_instructions": "2357",
+        "calls": "2 17",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "17": {
+        "name": "stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3",
+        "file": "top.cpp",
+        "fileloc": "238",
+        "instructions": "2257",
+        "total_instructions": "2257",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "88",
+        "control_depth": "4",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "84"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

@@ -1,0 +1,698 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
+| Date              : Fri Apr 10 22:15:25 2026
+| Host              : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command           : report_timing -max_paths 10 -file ./report/top_kernel_timing_paths_routed.rpt
+| Design            : bd_0_wrapper
+| Device            : xczu3eg-sbva484
+| Speed File        : -1  PRODUCTION 1.30 05-15-2022
+| Design State      : Routed
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (VIOLATED) :        -0.192ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_92_fu_1934_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.175ns  (logic 0.877ns (21.006%)  route 3.298ns (78.994%))
+  Logic Levels:           7  (CARRY8=3 LUT6=3 MUXF8=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 4.026 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.035ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.035     0.035    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X21Y24         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y24         FDRE (Prop_AFF2_SLICEL_C_Q)
+                                                      0.099     0.134 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/Q
+                         net (fo=111, routed)         1.092     1.226    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3_n_8
+    SLICE_X16Y68         MUXF8 (Prop_F8MUX_BOT_SLICEM_S_O)
+                                                      0.095     1.321 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217/O
+                         net (fo=1, routed)           0.419     1.740    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217_n_8
+    SLICE_X17Y55         LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.179     1.919 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70/O
+                         net (fo=1, routed)           0.449     2.368    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70_n_8
+    SLICE_X14Y51         LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.147     2.515 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19/O
+                         net (fo=1, routed)           0.158     2.673    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19_n_8
+    SLICE_X13Y52         LUT6 (Prop_E6LUT_SLICEL_I1_O)
+                                                      0.039     2.712 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5/O
+                         net (fo=1, routed)           0.008     2.720    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5_n_8
+    SLICE_X13Y52         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.195     2.915 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.943    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1_n_8
+    SLICE_X13Y53         CARRY8 (Prop_CARRY8_SLICEL_CI_CO[7])
+                                                      0.023     2.966 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.994    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1_n_8
+    SLICE_X13Y54         CARRY8 (Prop_CARRY8_SLICEL_CI_O[2])
+                                                      0.100     3.094 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[31]_i_2/O[2]
+                         net (fo=255, routed)         1.116     4.210    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_255_fu_9264_p2[26]
+    SLICE_X19Y72         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_92_fu_1934_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.026     4.026    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X19Y72         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_92_fu_1934_reg[26]/C
+                         clock pessimism              0.000     4.026    
+                         clock uncertainty           -0.035     3.991    
+    SLICE_X19Y72         FDRE (Setup_DFF_SLICEM_C_D)
+                                                      0.027     4.018    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_92_fu_1934_reg[26]
+  -------------------------------------------------------------------
+                         required time                          4.018    
+                         arrival time                          -4.210    
+  -------------------------------------------------------------------
+                         slack                                 -0.192    
+
+Slack (VIOLATED) :        -0.153ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_52_fu_1774_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.135ns  (logic 0.877ns (21.208%)  route 3.258ns (78.792%))
+  Logic Levels:           7  (CARRY8=3 LUT6=3 MUXF8=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 4.026 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.035ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.035     0.035    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X21Y24         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y24         FDRE (Prop_AFF2_SLICEL_C_Q)
+                                                      0.099     0.134 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/Q
+                         net (fo=111, routed)         1.092     1.226    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3_n_8
+    SLICE_X16Y68         MUXF8 (Prop_F8MUX_BOT_SLICEM_S_O)
+                                                      0.095     1.321 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217/O
+                         net (fo=1, routed)           0.419     1.740    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217_n_8
+    SLICE_X17Y55         LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.179     1.919 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70/O
+                         net (fo=1, routed)           0.449     2.368    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70_n_8
+    SLICE_X14Y51         LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.147     2.515 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19/O
+                         net (fo=1, routed)           0.158     2.673    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19_n_8
+    SLICE_X13Y52         LUT6 (Prop_E6LUT_SLICEL_I1_O)
+                                                      0.039     2.712 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5/O
+                         net (fo=1, routed)           0.008     2.720    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5_n_8
+    SLICE_X13Y52         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.195     2.915 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.943    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1_n_8
+    SLICE_X13Y53         CARRY8 (Prop_CARRY8_SLICEL_CI_CO[7])
+                                                      0.023     2.966 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.994    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1_n_8
+    SLICE_X13Y54         CARRY8 (Prop_CARRY8_SLICEL_CI_O[2])
+                                                      0.100     3.094 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[31]_i_2/O[2]
+                         net (fo=255, routed)         1.076     4.170    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_255_fu_9264_p2[26]
+    SLICE_X19Y62         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_52_fu_1774_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.026     4.026    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X19Y62         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_52_fu_1774_reg[26]/C
+                         clock pessimism              0.000     4.026    
+                         clock uncertainty           -0.035     3.991    
+    SLICE_X19Y62         FDRE (Setup_DFF_SLICEM_C_D)
+                                                      0.027     4.018    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_52_fu_1774_reg[26]
+  -------------------------------------------------------------------
+                         required time                          4.018    
+                         arrival time                          -4.170    
+  -------------------------------------------------------------------
+                         slack                                 -0.153    
+
+Slack (VIOLATED) :        -0.145ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_61_fu_1810_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.128ns  (logic 0.877ns (21.245%)  route 3.251ns (78.755%))
+  Logic Levels:           7  (CARRY8=3 LUT6=3 MUXF8=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 4.026 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.035ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.035     0.035    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X21Y24         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y24         FDRE (Prop_AFF2_SLICEL_C_Q)
+                                                      0.099     0.134 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/Q
+                         net (fo=111, routed)         1.092     1.226    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3_n_8
+    SLICE_X16Y68         MUXF8 (Prop_F8MUX_BOT_SLICEM_S_O)
+                                                      0.095     1.321 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217/O
+                         net (fo=1, routed)           0.419     1.740    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217_n_8
+    SLICE_X17Y55         LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.179     1.919 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70/O
+                         net (fo=1, routed)           0.449     2.368    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70_n_8
+    SLICE_X14Y51         LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.147     2.515 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19/O
+                         net (fo=1, routed)           0.158     2.673    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19_n_8
+    SLICE_X13Y52         LUT6 (Prop_E6LUT_SLICEL_I1_O)
+                                                      0.039     2.712 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5/O
+                         net (fo=1, routed)           0.008     2.720    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5_n_8
+    SLICE_X13Y52         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.195     2.915 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.943    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1_n_8
+    SLICE_X13Y53         CARRY8 (Prop_CARRY8_SLICEL_CI_CO[7])
+                                                      0.023     2.966 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.994    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1_n_8
+    SLICE_X13Y54         CARRY8 (Prop_CARRY8_SLICEL_CI_O[2])
+                                                      0.100     3.094 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[31]_i_2/O[2]
+                         net (fo=255, routed)         1.069     4.163    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_255_fu_9264_p2[26]
+    SLICE_X19Y63         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_61_fu_1810_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.026     4.026    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X19Y63         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_61_fu_1810_reg[26]/C
+                         clock pessimism              0.000     4.026    
+                         clock uncertainty           -0.035     3.991    
+    SLICE_X19Y63         FDRE (Setup_HFF_SLICEM_C_D)
+                                                      0.027     4.018    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_61_fu_1810_reg[26]
+  -------------------------------------------------------------------
+                         required time                          4.018    
+                         arrival time                          -4.163    
+  -------------------------------------------------------------------
+                         slack                                 -0.145    
+
+Slack (VIOLATED) :        -0.143ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_65_fu_1826_reg[29]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.126ns  (logic 0.936ns (22.685%)  route 3.190ns (77.315%))
+  Logic Levels:           7  (CARRY8=3 LUT6=3 MUXF8=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 4.026 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.035ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.035     0.035    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X21Y24         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y24         FDRE (Prop_AFF2_SLICEL_C_Q)
+                                                      0.099     0.134 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/Q
+                         net (fo=111, routed)         1.092     1.226    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3_n_8
+    SLICE_X16Y68         MUXF8 (Prop_F8MUX_BOT_SLICEM_S_O)
+                                                      0.095     1.321 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217/O
+                         net (fo=1, routed)           0.419     1.740    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217_n_8
+    SLICE_X17Y55         LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.179     1.919 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70/O
+                         net (fo=1, routed)           0.449     2.368    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70_n_8
+    SLICE_X14Y51         LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.147     2.515 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19/O
+                         net (fo=1, routed)           0.158     2.673    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19_n_8
+    SLICE_X13Y52         LUT6 (Prop_E6LUT_SLICEL_I1_O)
+                                                      0.039     2.712 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5/O
+                         net (fo=1, routed)           0.008     2.720    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5_n_8
+    SLICE_X13Y52         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.195     2.915 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.943    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1_n_8
+    SLICE_X13Y53         CARRY8 (Prop_CARRY8_SLICEL_CI_CO[7])
+                                                      0.023     2.966 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.994    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1_n_8
+    SLICE_X13Y54         CARRY8 (Prop_CARRY8_SLICEL_CI_O[5])
+                                                      0.159     3.153 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[31]_i_2/O[5]
+                         net (fo=255, routed)         1.008     4.161    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_255_fu_9264_p2[29]
+    SLICE_X20Y55         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_65_fu_1826_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.026     4.026    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X20Y55         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_65_fu_1826_reg[29]/C
+                         clock pessimism              0.000     4.026    
+                         clock uncertainty           -0.035     3.991    
+    SLICE_X20Y55         FDRE (Setup_DFF_SLICEM_C_D)
+                                                      0.027     4.018    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_65_fu_1826_reg[29]
+  -------------------------------------------------------------------
+                         required time                          4.018    
+                         arrival time                          -4.161    
+  -------------------------------------------------------------------
+                         slack                                 -0.143    
+
+Slack (VIOLATED) :        -0.142ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_72_fu_1854_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.124ns  (logic 0.877ns (21.264%)  route 3.247ns (78.736%))
+  Logic Levels:           7  (CARRY8=3 LUT6=3 MUXF8=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 4.026 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.035ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.035     0.035    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X21Y24         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y24         FDRE (Prop_AFF2_SLICEL_C_Q)
+                                                      0.099     0.134 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/Q
+                         net (fo=111, routed)         1.092     1.226    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3_n_8
+    SLICE_X16Y68         MUXF8 (Prop_F8MUX_BOT_SLICEM_S_O)
+                                                      0.095     1.321 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217/O
+                         net (fo=1, routed)           0.419     1.740    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217_n_8
+    SLICE_X17Y55         LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.179     1.919 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70/O
+                         net (fo=1, routed)           0.449     2.368    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70_n_8
+    SLICE_X14Y51         LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.147     2.515 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19/O
+                         net (fo=1, routed)           0.158     2.673    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19_n_8
+    SLICE_X13Y52         LUT6 (Prop_E6LUT_SLICEL_I1_O)
+                                                      0.039     2.712 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5/O
+                         net (fo=1, routed)           0.008     2.720    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5_n_8
+    SLICE_X13Y52         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.195     2.915 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.943    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1_n_8
+    SLICE_X13Y53         CARRY8 (Prop_CARRY8_SLICEL_CI_CO[7])
+                                                      0.023     2.966 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.994    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1_n_8
+    SLICE_X13Y54         CARRY8 (Prop_CARRY8_SLICEL_CI_O[2])
+                                                      0.100     3.094 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[31]_i_2/O[2]
+                         net (fo=255, routed)         1.066     4.159    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_255_fu_9264_p2[26]
+    SLICE_X20Y69         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_72_fu_1854_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.026     4.026    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X20Y69         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_72_fu_1854_reg[26]/C
+                         clock pessimism              0.000     4.026    
+                         clock uncertainty           -0.035     3.991    
+    SLICE_X20Y69         FDRE (Setup_HFF_SLICEM_C_D)
+                                                      0.027     4.018    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_72_fu_1854_reg[26]
+  -------------------------------------------------------------------
+                         required time                          4.018    
+                         arrival time                          -4.159    
+  -------------------------------------------------------------------
+                         slack                                 -0.142    
+
+Slack (VIOLATED) :        -0.138ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/bin_2_reg_12338_reg[3]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_251_fu_2120_reg[27]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.118ns  (logic 0.723ns (17.556%)  route 3.395ns (82.444%))
+  Logic Levels:           7  (CARRY8=4 LUT6=2 MUXF8=1)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.024ns = ( 4.024 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.035ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.035     0.035    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/ap_clk
+    SLICE_X15Y114        FDSE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/bin_2_reg_12338_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y114        FDSE (Prop_BFF2_SLICEL_C_Q)
+                                                      0.098     0.133 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/bin_2_reg_12338_reg[3]/Q
+                         net (fo=644, routed)         1.016     1.149    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/bin_2_reg_12338[3]
+    SLICE_X8Y124         MUXF8 (Prop_F8MUX_BOT_SLICEL_S_O)
+                                                      0.089     1.238 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_1_fu_1120_reg[8]_i_59/O
+                         net (fo=1, routed)           0.756     1.994    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_1_fu_1120_reg[8]_i_59_n_8
+    SLICE_X15Y126        LUT6 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.176     2.170 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_1_fu_1120[8]_i_15/O
+                         net (fo=1, routed)           0.395     2.565    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_1_fu_1120[8]_i_15_n_8
+    SLICE_X14Y124        LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.064     2.629 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_1_fu_1120[8]_i_4/O
+                         net (fo=1, routed)           0.017     2.646    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/dout_tmp[7]
+    SLICE_X14Y124        CARRY8 (Prop_CARRY8_SLICEM_S[6]_CO[7])
+                                                      0.150     2.796 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_1_fu_1120_reg[8]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.824    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_1_fu_1120_reg[8]_i_1_n_8
+    SLICE_X14Y125        CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.023     2.847 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_1_fu_1120_reg[16]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.875    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_1_fu_1120_reg[16]_i_1_n_8
+    SLICE_X14Y126        CARRY8 (Prop_CARRY8_SLICEM_CI_CO[7])
+                                                      0.023     2.898 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_1_fu_1120_reg[24]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.926    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_1_fu_1120_reg[24]_i_1_n_8
+    SLICE_X14Y127        CARRY8 (Prop_CARRY8_SLICEM_CI_O[2])
+                                                      0.100     3.026 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_1_fu_1120_reg[31]_i_3/O[2]
+                         net (fo=256, routed)         1.127     4.153    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_256_fu_7380_p2[27]
+    SLICE_X17Y149        FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_251_fu_2120_reg[27]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.024     4.024    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/ap_clk
+    SLICE_X17Y149        FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_251_fu_2120_reg[27]/C
+                         clock pessimism              0.000     4.024    
+                         clock uncertainty           -0.035     3.989    
+    SLICE_X17Y149        FDRE (Setup_DFF2_SLICEL_C_D)
+                                                      0.027     4.016    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/histogram_251_fu_2120_reg[27]
+  -------------------------------------------------------------------
+                         required time                          4.016    
+                         arrival time                          -4.153    
+  -------------------------------------------------------------------
+                         slack                                 -0.138    
+
+Slack (VIOLATED) :        -0.128ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_36_fu_1710_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.111ns  (logic 0.877ns (21.333%)  route 3.234ns (78.667%))
+  Logic Levels:           7  (CARRY8=3 LUT6=3 MUXF8=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 4.026 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.035ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.035     0.035    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X21Y24         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y24         FDRE (Prop_AFF2_SLICEL_C_Q)
+                                                      0.099     0.134 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/Q
+                         net (fo=111, routed)         1.092     1.226    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3_n_8
+    SLICE_X16Y68         MUXF8 (Prop_F8MUX_BOT_SLICEM_S_O)
+                                                      0.095     1.321 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217/O
+                         net (fo=1, routed)           0.419     1.740    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217_n_8
+    SLICE_X17Y55         LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.179     1.919 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70/O
+                         net (fo=1, routed)           0.449     2.368    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70_n_8
+    SLICE_X14Y51         LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.147     2.515 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19/O
+                         net (fo=1, routed)           0.158     2.673    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19_n_8
+    SLICE_X13Y52         LUT6 (Prop_E6LUT_SLICEL_I1_O)
+                                                      0.039     2.712 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5/O
+                         net (fo=1, routed)           0.008     2.720    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5_n_8
+    SLICE_X13Y52         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.195     2.915 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.943    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1_n_8
+    SLICE_X13Y53         CARRY8 (Prop_CARRY8_SLICEL_CI_CO[7])
+                                                      0.023     2.966 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.994    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1_n_8
+    SLICE_X13Y54         CARRY8 (Prop_CARRY8_SLICEL_CI_O[2])
+                                                      0.100     3.094 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[31]_i_2/O[2]
+                         net (fo=255, routed)         1.052     4.146    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_255_fu_9264_p2[26]
+    SLICE_X20Y63         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_36_fu_1710_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.026     4.026    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X20Y63         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_36_fu_1710_reg[26]/C
+                         clock pessimism              0.000     4.026    
+                         clock uncertainty           -0.035     3.991    
+    SLICE_X20Y63         FDRE (Setup_HFF_SLICEM_C_D)
+                                                      0.027     4.018    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_36_fu_1710_reg[26]
+  -------------------------------------------------------------------
+                         required time                          4.018    
+                         arrival time                          -4.146    
+  -------------------------------------------------------------------
+                         slack                                 -0.128    
+
+Slack (VIOLATED) :        -0.127ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_49_fu_1762_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.110ns  (logic 0.877ns (21.338%)  route 3.233ns (78.662%))
+  Logic Levels:           7  (CARRY8=3 LUT6=3 MUXF8=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 4.026 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.035ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.035     0.035    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X21Y24         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y24         FDRE (Prop_AFF2_SLICEL_C_Q)
+                                                      0.099     0.134 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/Q
+                         net (fo=111, routed)         1.092     1.226    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3_n_8
+    SLICE_X16Y68         MUXF8 (Prop_F8MUX_BOT_SLICEM_S_O)
+                                                      0.095     1.321 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217/O
+                         net (fo=1, routed)           0.419     1.740    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217_n_8
+    SLICE_X17Y55         LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.179     1.919 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70/O
+                         net (fo=1, routed)           0.449     2.368    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70_n_8
+    SLICE_X14Y51         LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.147     2.515 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19/O
+                         net (fo=1, routed)           0.158     2.673    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19_n_8
+    SLICE_X13Y52         LUT6 (Prop_E6LUT_SLICEL_I1_O)
+                                                      0.039     2.712 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5/O
+                         net (fo=1, routed)           0.008     2.720    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5_n_8
+    SLICE_X13Y52         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.195     2.915 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.943    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1_n_8
+    SLICE_X13Y53         CARRY8 (Prop_CARRY8_SLICEL_CI_CO[7])
+                                                      0.023     2.966 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.994    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1_n_8
+    SLICE_X13Y54         CARRY8 (Prop_CARRY8_SLICEL_CI_O[2])
+                                                      0.100     3.094 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[31]_i_2/O[2]
+                         net (fo=255, routed)         1.051     4.145    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_255_fu_9264_p2[26]
+    SLICE_X20Y63         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_49_fu_1762_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.026     4.026    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X20Y63         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_49_fu_1762_reg[26]/C
+                         clock pessimism              0.000     4.026    
+                         clock uncertainty           -0.035     3.991    
+    SLICE_X20Y63         FDRE (Setup_DFF2_SLICEM_C_D)
+                                                      0.027     4.018    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_49_fu_1762_reg[26]
+  -------------------------------------------------------------------
+                         required time                          4.018    
+                         arrival time                          -4.145    
+  -------------------------------------------------------------------
+                         slack                                 -0.127    
+
+Slack (VIOLATED) :        -0.126ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_90_fu_1926_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.109ns  (logic 0.877ns (21.343%)  route 3.232ns (78.657%))
+  Logic Levels:           7  (CARRY8=3 LUT6=3 MUXF8=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 4.026 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.035ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.035     0.035    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X21Y24         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y24         FDRE (Prop_AFF2_SLICEL_C_Q)
+                                                      0.099     0.134 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/Q
+                         net (fo=111, routed)         1.092     1.226    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3_n_8
+    SLICE_X16Y68         MUXF8 (Prop_F8MUX_BOT_SLICEM_S_O)
+                                                      0.095     1.321 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217/O
+                         net (fo=1, routed)           0.419     1.740    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217_n_8
+    SLICE_X17Y55         LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.179     1.919 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70/O
+                         net (fo=1, routed)           0.449     2.368    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70_n_8
+    SLICE_X14Y51         LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.147     2.515 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19/O
+                         net (fo=1, routed)           0.158     2.673    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19_n_8
+    SLICE_X13Y52         LUT6 (Prop_E6LUT_SLICEL_I1_O)
+                                                      0.039     2.712 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5/O
+                         net (fo=1, routed)           0.008     2.720    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5_n_8
+    SLICE_X13Y52         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.195     2.915 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.943    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1_n_8
+    SLICE_X13Y53         CARRY8 (Prop_CARRY8_SLICEL_CI_CO[7])
+                                                      0.023     2.966 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.994    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1_n_8
+    SLICE_X13Y54         CARRY8 (Prop_CARRY8_SLICEL_CI_O[2])
+                                                      0.100     3.094 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[31]_i_2/O[2]
+                         net (fo=255, routed)         1.050     4.144    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_255_fu_9264_p2[26]
+    SLICE_X20Y72         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_90_fu_1926_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.026     4.026    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X20Y72         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_90_fu_1926_reg[26]/C
+                         clock pessimism              0.000     4.026    
+                         clock uncertainty           -0.035     3.991    
+    SLICE_X20Y72         FDRE (Setup_DFF_SLICEM_C_D)
+                                                      0.027     4.018    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_90_fu_1926_reg[26]
+  -------------------------------------------------------------------
+                         required time                          4.018    
+                         arrival time                          -4.144    
+  -------------------------------------------------------------------
+                         slack                                 -0.126    
+
+Slack (VIOLATED) :        -0.124ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_243_fu_2538_reg[25]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.104ns  (logic 0.888ns (21.636%)  route 3.216ns (78.364%))
+  Logic Levels:           7  (CARRY8=3 LUT6=3 MUXF8=1)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.024ns = ( 4.024 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.035ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.035     0.035    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X21Y24         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y24         FDRE (Prop_AFF2_SLICEL_C_Q)
+                                                      0.099     0.134 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3/Q
+                         net (fo=111, routed)         1.092     1.226    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/trunc_ln115_reg_13363_reg[3]_rep__3_n_8
+    SLICE_X16Y68         MUXF8 (Prop_F8MUX_BOT_SLICEM_S_O)
+                                                      0.095     1.321 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217/O
+                         net (fo=1, routed)           0.419     1.740    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_217_n_8
+    SLICE_X17Y55         LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.179     1.919 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70/O
+                         net (fo=1, routed)           0.449     2.368    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_70_n_8
+    SLICE_X14Y51         LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.147     2.515 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19/O
+                         net (fo=1, routed)           0.158     2.673    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_19_n_8
+    SLICE_X13Y52         LUT6 (Prop_E6LUT_SLICEL_I1_O)
+                                                      0.039     2.712 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5/O
+                         net (fo=1, routed)           0.008     2.720    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574[15]_i_5_n_8
+    SLICE_X13Y52         CARRY8 (Prop_CARRY8_SLICEL_S[4]_CO[7])
+                                                      0.195     2.915 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.943    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[15]_i_1_n_8
+    SLICE_X13Y53         CARRY8 (Prop_CARRY8_SLICEL_CI_CO[7])
+                                                      0.023     2.966 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1/CO[7]
+                         net (fo=1, routed)           0.028     2.994    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[23]_i_1_n_8
+    SLICE_X13Y54         CARRY8 (Prop_CARRY8_SLICEL_CI_O[1])
+                                                      0.111     3.105 r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_2_fu_1574_reg[31]_i_2/O[1]
+                         net (fo=255, routed)         1.035     4.139    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_255_fu_9264_p2[25]
+    SLICE_X15Y76         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_243_fu_2538_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=64980, unset)        0.024     4.024    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/ap_clk
+    SLICE_X15Y76         FDRE                                         r  bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_243_fu_2538_reg[25]/C
+                         clock pessimism              0.000     4.024    
+                         clock uncertainty           -0.035     3.989    
+    SLICE_X15Y76         FDRE (Setup_AFF2_SLICEL_C_D)
+                                                      0.027     4.016    bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424/cdf_243_fu_2538_reg[25]
+  -------------------------------------------------------------------
+                         required time                          4.016    
+                         arrival time                          -4.139    
+  -------------------------------------------------------------------
+                         slack                                 -0.124    
+
+
+
+

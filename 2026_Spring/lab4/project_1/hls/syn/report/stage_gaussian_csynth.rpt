@@ -1,0 +1,260 @@
+
+
+================================================================
+== Vitis HLS Report for 'stage_gaussian'
+================================================================
+* Date:           Fri Apr 10 20:50:50 2026
+
+* Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
+* Project:        project_1
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  4.00 ns|  3.018 ns|     1.08 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     8256|     8256|  33.024 us|  33.024 us|  8256|  8256|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------------------------------------+-------------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
+        |                                                                  |                                                       |  Latency (cycles) |   Latency (absolute)  |   Interval  |                    Pipeline                    |
+        |                             Instance                             |                         Module                        |   min   |   max   |    min    |    max    |  min |  max |                      Type                      |
+        +------------------------------------------------------------------+-------------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
+        |grp_stage_gaussian_Pipeline_READ_IN_fu_130                        |stage_gaussian_Pipeline_READ_IN                        |     4107|     4107|  16.428 us|  16.428 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186  |stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1  |     4146|     4146|  16.584 us|  16.584 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +------------------------------------------------------------------+-------------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|   54|    5513|  11017|    -|
+|Memory           |       25|    -|       0|      0|    -|
+|Multiplexer      |        -|    -|       0|    719|    -|
+|Register         |        -|    -|       8|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |       25|   54|    5521|  11738|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      432|  360|  141120|  70560|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        5|   15|       3|     16|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------------------------------+-------------------------------------------------------+---------+----+------+-------+-----+
+    |                             Instance                             |                         Module                        | BRAM_18K| DSP|  FF  |  LUT  | URAM|
+    +------------------------------------------------------------------+-------------------------------------------------------+---------+----+------+-------+-----+
+    |grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186  |stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1  |        0|  53|  5081|  10647|    0|
+    |grp_stage_gaussian_Pipeline_READ_IN_fu_130                        |stage_gaussian_Pipeline_READ_IN                        |        0|   1|   432|    370|    0|
+    +------------------------------------------------------------------+-------------------------------------------------------+---------+----+------+-------+-----+
+    |Total                                                             |                                                       |        0|  54|  5513|  11017|    0|
+    +------------------------------------------------------------------+-------------------------------------------------------+---------+----+------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-----------+--------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |   Memory  |                Module                | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-----------+--------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |grid_U     |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_1_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_2_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_3_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_4_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_5_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_6_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_7_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_8_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_9_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_10_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_11_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_12_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_13_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_14_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_15_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_16_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_17_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_18_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_19_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_20_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_21_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_22_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_23_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_24_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    +-----------+--------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total      |                                      |       25|  0|   0|    0|  4225|  350|    25|        59150|
+    +-----------+--------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------+----+-----------+-----+-----------+
+    |     Name    | LUT| Input Size| Bits| Total Bits|
+    +-------------+----+-----------+-----+-----------+
+    |ap_NS_fsm    |  26|          5|    1|          5|
+    |ap_done      |   9|          2|    1|          2|
+    |grid_10_ce0  |   9|          2|    1|          2|
+    |grid_10_ce1  |   9|          2|    1|          2|
+    |grid_10_we1  |   9|          2|    1|          2|
+    |grid_11_ce0  |   9|          2|    1|          2|
+    |grid_11_ce1  |   9|          2|    1|          2|
+    |grid_11_we1  |   9|          2|    1|          2|
+    |grid_12_ce0  |   9|          2|    1|          2|
+    |grid_12_ce1  |   9|          2|    1|          2|
+    |grid_12_we1  |   9|          2|    1|          2|
+    |grid_13_ce0  |   9|          2|    1|          2|
+    |grid_13_ce1  |   9|          2|    1|          2|
+    |grid_13_we1  |   9|          2|    1|          2|
+    |grid_14_ce0  |   9|          2|    1|          2|
+    |grid_14_ce1  |   9|          2|    1|          2|
+    |grid_14_we1  |   9|          2|    1|          2|
+    |grid_15_ce0  |   9|          2|    1|          2|
+    |grid_15_ce1  |   9|          2|    1|          2|
+    |grid_15_we1  |   9|          2|    1|          2|
+    |grid_16_ce0  |   9|          2|    1|          2|
+    |grid_16_ce1  |   9|          2|    1|          2|
+    |grid_16_we1  |   9|          2|    1|          2|
+    |grid_17_ce0  |   9|          2|    1|          2|
+    |grid_17_ce1  |   9|          2|    1|          2|
+    |grid_17_we1  |   9|          2|    1|          2|
+    |grid_18_ce0  |   9|          2|    1|          2|
+    |grid_18_ce1  |   9|          2|    1|          2|
+    |grid_18_we1  |   9|          2|    1|          2|
+    |grid_19_ce0  |   9|          2|    1|          2|
+    |grid_19_ce1  |   9|          2|    1|          2|
+    |grid_19_we1  |   9|          2|    1|          2|
+    |grid_1_ce0   |   9|          2|    1|          2|
+    |grid_1_ce1   |   9|          2|    1|          2|
+    |grid_1_we1   |   9|          2|    1|          2|
+    |grid_20_ce0  |   9|          2|    1|          2|
+    |grid_20_ce1  |   9|          2|    1|          2|
+    |grid_20_we1  |   9|          2|    1|          2|
+    |grid_21_ce0  |   9|          2|    1|          2|
+    |grid_21_ce1  |   9|          2|    1|          2|
+    |grid_21_we1  |   9|          2|    1|          2|
+    |grid_22_ce0  |   9|          2|    1|          2|
+    |grid_22_ce1  |   9|          2|    1|          2|
+    |grid_22_we1  |   9|          2|    1|          2|
+    |grid_23_ce0  |   9|          2|    1|          2|
+    |grid_23_ce1  |   9|          2|    1|          2|
+    |grid_23_we1  |   9|          2|    1|          2|
+    |grid_24_ce0  |   9|          2|    1|          2|
+    |grid_24_ce1  |   9|          2|    1|          2|
+    |grid_24_we1  |   9|          2|    1|          2|
+    |grid_2_ce0   |   9|          2|    1|          2|
+    |grid_2_ce1   |   9|          2|    1|          2|
+    |grid_2_we1   |   9|          2|    1|          2|
+    |grid_3_ce0   |   9|          2|    1|          2|
+    |grid_3_ce1   |   9|          2|    1|          2|
+    |grid_3_we1   |   9|          2|    1|          2|
+    |grid_4_ce0   |   9|          2|    1|          2|
+    |grid_4_ce1   |   9|          2|    1|          2|
+    |grid_4_we1   |   9|          2|    1|          2|
+    |grid_5_ce0   |   9|          2|    1|          2|
+    |grid_5_ce1   |   9|          2|    1|          2|
+    |grid_5_we1   |   9|          2|    1|          2|
+    |grid_6_ce0   |   9|          2|    1|          2|
+    |grid_6_ce1   |   9|          2|    1|          2|
+    |grid_6_we1   |   9|          2|    1|          2|
+    |grid_7_ce0   |   9|          2|    1|          2|
+    |grid_7_ce1   |   9|          2|    1|          2|
+    |grid_7_we1   |   9|          2|    1|          2|
+    |grid_8_ce0   |   9|          2|    1|          2|
+    |grid_8_ce1   |   9|          2|    1|          2|
+    |grid_8_we1   |   9|          2|    1|          2|
+    |grid_9_ce0   |   9|          2|    1|          2|
+    |grid_9_ce1   |   9|          2|    1|          2|
+    |grid_9_we1   |   9|          2|    1|          2|
+    |grid_ce0     |   9|          2|    1|          2|
+    |grid_ce1     |   9|          2|    1|          2|
+    |grid_we1     |   9|          2|    1|          2|
+    |real_start   |   9|          2|    1|          2|
+    +-------------+----+-----------+-----+-----------+
+    |Total        | 719|        159|   78|        159|
+    +-------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------------------------------+---+----+-----+-----------+
+    |                                      Name                                     | FF| LUT| Bits| Const Bits|
+    +-------------------------------------------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                                                      |  4|   0|    4|          0|
+    |ap_done_reg                                                                    |  1|   0|    1|          0|
+    |grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_start_reg  |  1|   0|    1|          0|
+    |grp_stage_gaussian_Pipeline_READ_IN_fu_130_ap_start_reg                        |  1|   0|    1|          0|
+    |start_once_reg                                                                 |  1|   0|    1|          0|
+    +-------------------------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                                          |  8|   0|    8|          0|
+    +-------------------------------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------+-----+-----+------------+------------------+--------------+
+|            RTL Ports            | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++---------------------------------+-----+-----+------------+------------------+--------------+
+|ap_clk                           |   in|    1|  ap_ctrl_hs|    stage_gaussian|  return value|
+|ap_rst                           |   in|    1|  ap_ctrl_hs|    stage_gaussian|  return value|
+|ap_start                         |   in|    1|  ap_ctrl_hs|    stage_gaussian|  return value|
+|start_full_n                     |   in|    1|  ap_ctrl_hs|    stage_gaussian|  return value|
+|ap_done                          |  out|    1|  ap_ctrl_hs|    stage_gaussian|  return value|
+|ap_continue                      |   in|    1|  ap_ctrl_hs|    stage_gaussian|  return value|
+|ap_idle                          |  out|    1|  ap_ctrl_hs|    stage_gaussian|  return value|
+|ap_ready                         |  out|    1|  ap_ctrl_hs|    stage_gaussian|  return value|
+|start_out                        |  out|    1|  ap_ctrl_hs|    stage_gaussian|  return value|
+|start_write                      |  out|    1|  ap_ctrl_hs|    stage_gaussian|  return value|
+|equalized_stream_dout            |   in|   14|     ap_fifo|  equalized_stream|       pointer|
+|equalized_stream_empty_n         |   in|    1|     ap_fifo|  equalized_stream|       pointer|
+|equalized_stream_read            |  out|    1|     ap_fifo|  equalized_stream|       pointer|
+|equalized_stream_num_data_valid  |   in|    9|     ap_fifo|  equalized_stream|       pointer|
+|equalized_stream_fifo_cap        |   in|    9|     ap_fifo|  equalized_stream|       pointer|
+|gaussian_stream_din              |  out|   14|     ap_fifo|   gaussian_stream|       pointer|
+|gaussian_stream_full_n           |   in|    1|     ap_fifo|   gaussian_stream|       pointer|
+|gaussian_stream_write            |  out|    1|     ap_fifo|   gaussian_stream|       pointer|
+|gaussian_stream_num_data_valid   |   in|   32|     ap_fifo|   gaussian_stream|       pointer|
+|gaussian_stream_fifo_cap         |   in|   32|     ap_fifo|   gaussian_stream|       pointer|
++---------------------------------+-----+-----+------------+------------------+--------------+
+

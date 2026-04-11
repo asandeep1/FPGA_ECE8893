@@ -6,19 +6,19 @@
 #include <hls_stream.h>
 
 // =========================================================================
-// OPTIMIZED TYPES - Sized for DSP slice efficiency
+// OPTIMIZED TYPES - Balanced for speed and precision
 // =========================================================================
-// 18-bit coefficients fit DSP B port (18 bits)
-typedef ap_fixed<18, 2, AP_RND, AP_SAT> coeff_t;     
+// 16-bit coefficients
+typedef ap_fixed<16, 2, AP_RND, AP_SAT> coeff_t;     
 
-// 16-bit for intermediate storage (memory efficient)
-typedef ap_fixed<16, 3, AP_RND, AP_SAT> inter_t;     
+// 14-bit for intermediate storage (better precision)
+typedef ap_fixed<14, 3, AP_RND, AP_SAT> inter_t;     
 
-// 18-bit for sum operations (fits DSP C port)
-typedef ap_fixed<18, 5, AP_RND, AP_SAT> sum_t;       
+// 16-bit for sum operations
+typedef ap_fixed<16, 5, AP_RND, AP_SAT> sum_t;       
 
-// 20-bit for multiply accumulation
-typedef ap_fixed<20, 5, AP_RND, AP_SAT> acc_t;       
+// 18-bit for multiply accumulation
+typedef ap_fixed<18, 5, AP_RND, AP_SAT> acc_t;       
 
 // AXI data width: 512-bit = 16×32-bit words
 typedef ap_uint<512> wide_t;
@@ -83,7 +83,6 @@ void stage_rgb2eq(const data_t in_r[N], const data_t in_g[N], const data_t in_b[
 PASS1:
     for (int idx = 0; idx < N; idx++) {
 #pragma HLS PIPELINE II=1
-#pragma HLS UNROLL parameter value=2
         data_t R = in_r[idx] * (data_t)0.00392156862;  // / 255.0
         data_t G = in_g[idx] * (data_t)0.00392156862;
         data_t B = in_b[idx] * (data_t)0.00392156862;
@@ -104,7 +103,7 @@ BUILD_HIST:
 #pragma HLS PIPELINE II=1
         inter_t val = intensity_buf[idx];
         data_t fval = inter_to_float(val);
-        int bin = (int)(fval * (data_t)255.0);  // Direct multiply, no division
+        int bin = (int)(fval * (data_t)255.0);
         bin = (bin < 0) ? 0 : (bin >= HIST_BINS) ? (HIST_BINS - 1) : bin;
         histogram[bin]++;
     }
@@ -126,9 +125,8 @@ PASS2:
     for (int idx = 0; idx < N; idx++) {
 #pragma HLS PIPELINE II=1
         data_t fval = inter_to_float(intensity_buf[idx]);
-        int bin = (int)(fval * (data_t)(HIST_BINS - 1));
-        bin = (bin < 0) ? 0 : bin;
-        bin = (bin >= HIST_BINS) ? (HIST_BINS - 1) : bin;
+        int bin = (int)(fval * (data_t)255.0);
+        bin = (bin < 0) ? 0 : (bin >= HIST_BINS) ? (HIST_BINS - 1) : bin;
         data_t cdf_normalized = ((data_t)cdf[bin] - cdf_min) / (total_pixels - cdf_min);
         cdf_normalized = (cdf_normalized > (data_t)1.0) ? (data_t)1.0 : cdf_normalized;
         equalized_out.write(float_to_inter(cdf_normalized));
@@ -137,7 +135,6 @@ PASS2:
 
 // =========================================================================
 // STAGE 3: Gaussian Blur (5x5) with optimized line buffers
-// Outputs full 2D grid with padding
 // =========================================================================
 void stage_gaussian(hls::stream<inter_t>& equalized_in,
                     hls::stream<inter_t>& gaussian_out) {
@@ -160,7 +157,6 @@ GAUSSIAN_OUT:
     for (int r = 0; r < ROWS; r++) {
         for (int c = 0; c < COLS; c++) {
             #pragma HLS PIPELINE II=1
-            #pragma HLS UNROLL parameter value=1
             
             bool valid_row = (r >= 2) && (r < ROWS - 2);
             bool valid_col = (c >= 2) && (c < COLS - 2);
@@ -168,7 +164,6 @@ GAUSSIAN_OUT:
             inter_t result;
             if (valid_row && valid_col) {
                 acc_t sum = (acc_t)0;
-#pragma HLS BIND_OP variable=sum op=add impl=dsp
                 
                 sum += (acc_t)grid[r-2][c-2] * (acc_t)GAUSS_KERNEL[0][0];
                 sum += (acc_t)grid[r-2][c-1] * (acc_t)GAUSS_KERNEL[0][1];
@@ -210,7 +205,7 @@ GAUSSIAN_OUT:
 }
 
 // =========================================================================
-// STAGE 4: Bilateral Filter (3x3) with pre-computed exponential tables
+// STAGE 4: Bilateral Filter (3x3) with fast approximation
 // =========================================================================
 void stage_bilateral(hls::stream<inter_t>& gaussian_in,
                      hls::stream<inter_t>& bilateral_out) {
@@ -219,7 +214,8 @@ void stage_bilateral(hls::stream<inter_t>& gaussian_in,
     inter_t grid[ROWS][COLS];
 #pragma HLS BIND_STORAGE variable=grid type=ram_2p impl=bram
 
-    // Read full gridREAD_IN:
+    // Read full grid
+READ_IN:
     for (int i = 0; i < N; i++) {
 #pragma HLS PIPELINE II=1
         int r = i / COLS;
@@ -227,7 +223,7 @@ void stage_bilateral(hls::stream<inter_t>& gaussian_in,
         grid[r][c] = gaussian_in.read();
     }
 
-    // Pre-compute spatial weights (constant) - use LUT for exp approximation
+    // Pre-compute spatial weights (constant)
     data_t spatial_weights[3][3];
 #pragma HLS ARRAY_PARTITION variable=spatial_weights complete
     for (int kr = -1; kr <= 1; kr++) {
@@ -313,25 +309,14 @@ EROSION_LOOP:
 
             inter_t result;
             if (valid_row && valid_col) {
-                inter_t m0 = bilateral_buf[r-1][c-1];
-                inter_t m1 = bilateral_buf[r-1][c  ];
-                inter_t m2 = bilateral_buf[r-1][c+1];
-                inter_t m3 = bilateral_buf[r  ][c-1];
-                inter_t m4 = bilateral_buf[r  ][c  ];
-                inter_t m5 = bilateral_buf[r  ][c+1];
-                inter_t m6 = bilateral_buf[r+1][c-1];
-                inter_t m7 = bilateral_buf[r+1][c  ];
-                inter_t m8 = bilateral_buf[r+1][c+1];
-                
-                inter_t min_val = (m0 < m1) ? m0 : m1;
-                min_val = (m2 < min_val) ? m2 : min_val;
-                min_val = (m3 < min_val) ? m3 : min_val;
-                min_val = (m4 < min_val) ? m4 : min_val;
-                min_val = (m5 < min_val) ? m5 : min_val;
-                min_val = (m6 < min_val) ? m6 : min_val;
-                min_val = (m7 < min_val) ? m7 : min_val;
-                min_val = (m8 < min_val) ? m8 : min_val;
-                
+                inter_t min_val = bilateral_buf[r][c];
+                for (int kr = -1; kr <= 1; kr++) {
+                    for (int kc = -1; kc <= 1; kc++) {
+#pragma HLS UNROLL
+                        inter_t val = bilateral_buf[r + kr][c + kc];
+                        min_val = (val < min_val) ? val : min_val;
+                    }
+                }
                 result = min_val;
             } else {
                 result = bilateral_buf[r][c];  // Border: copy
@@ -352,25 +337,14 @@ DILATION_LOOP:
 
             inter_t result;
             if (valid_row && valid_col) {
-                inter_t M0 = eroded_buf[r-1][c-1];
-                inter_t M1 = eroded_buf[r-1][c  ];
-                inter_t M2 = eroded_buf[r-1][c+1];
-                inter_t M3 = eroded_buf[r  ][c-1];
-                inter_t M4 = eroded_buf[r  ][c  ];
-                inter_t M5 = eroded_buf[r  ][c+1];
-                inter_t M6 = eroded_buf[r+1][c-1];
-                inter_t M7 = eroded_buf[r+1][c  ];
-                inter_t M8 = eroded_buf[r+1][c+1];
-                
-                inter_t max_val = (M0 > M1) ? M0 : M1;
-                max_val = (M2 > max_val) ? M2 : max_val;
-                max_val = (M3 > max_val) ? M3 : max_val;
-                max_val = (M4 > max_val) ? M4 : max_val;
-                max_val = (M5 > max_val) ? M5 : max_val;
-                max_val = (M6 > max_val) ? M6 : max_val;
-                max_val = (M7 > max_val) ? M7 : max_val;
-                max_val = (M8 > max_val) ? M8 : max_val;
-                
+                inter_t max_val = eroded_buf[r][c];
+                for (int kr = -1; kr <= 1; kr++) {
+                    for (int kc = -1; kc <= 1; kc++) {
+#pragma HLS UNROLL
+                        inter_t val = eroded_buf[r + kr][c + kc];
+                        max_val = (val > max_val) ? val : max_val;
+                    }
+                }
                 result = max_val;
             } else {
                 result = eroded_buf[r][c];  // Border: copy

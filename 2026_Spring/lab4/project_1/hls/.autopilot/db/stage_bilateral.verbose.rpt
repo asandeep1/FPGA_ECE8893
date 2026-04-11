@@ -1,0 +1,767 @@
+
+
+================================================================
+== Vitis HLS Report for 'stage_bilateral'
+================================================================
+* Date:           Fri Apr 10 20:50:54 2026
+
+* Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
+* Project:        project_1
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  4.00 ns|  3.018 ns|     1.08 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     8351|     8351|  33.404 us|  33.404 us|  8351|  8351|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------------------------+---------------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
+        |                                                                   |                                                         |  Latency (cycles) |   Latency (absolute)  |   Interval  |                    Pipeline                    |
+        |                              Instance                             |                          Module                         |   min   |   max   |    min    |    max    |  min |  max |                      Type                      |
+        +-------------------------------------------------------------------+---------------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
+        |grp_stage_bilateral_Pipeline_READ_IN_fu_66                         |stage_bilateral_Pipeline_READ_IN                         |     4107|     4107|  16.428 us|  16.428 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90  |stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3  |     4241|     4241|  16.964 us|  16.964 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +-------------------------------------------------------------------+---------------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|  158|   31509|  34189|    -|
+|Memory           |        9|    -|       0|      0|    -|
+|Multiplexer      |        -|    -|       0|    287|    -|
+|Register         |        -|    -|       8|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        9|  158|   31517|  34478|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      432|  360|  141120|  70560|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        2|   43|      22|     48|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------------------------------------+---------------------------------------------------------+---------+-----+-------+-------+-----+
+    |                              Instance                             |                          Module                         | BRAM_18K| DSP |   FF  |  LUT  | URAM|
+    +-------------------------------------------------------------------+---------------------------------------------------------+---------+-----+-------+-------+-----+
+    |grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90  |stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3  |        0|  157|  31068|  33819|    0|
+    |grp_stage_bilateral_Pipeline_READ_IN_fu_66                         |stage_bilateral_Pipeline_READ_IN                         |        0|    1|    441|    370|    0|
+    +-------------------------------------------------------------------+---------------------------------------------------------+---------+-----+-------+-------+-----+
+    |Total                                                              |                                                         |        0|  158|  31509|  34189|    0|
+    +-------------------------------------------------------------------+---------------------------------------------------------+---------+-----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-----------+---------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |   Memory  |                 Module                | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-----------+---------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |grid_U     |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
+    |grid_25_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
+    |grid_26_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
+    |grid_27_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
+    |grid_28_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
+    |grid_29_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
+    |grid_30_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
+    |grid_31_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
+    |grid_32_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
+    +-----------+---------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total      |                                       |        9|  0|   0|    0|  4356|  126|     9|        60984|
+    +-----------+---------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------+----+-----------+-----+-----------+
+    |     Name    | LUT| Input Size| Bits| Total Bits|
+    +-------------+----+-----------+-----+-----------+
+    |ap_NS_fsm    |  26|          5|    1|          5|
+    |ap_done      |   9|          2|    1|          2|
+    |grid_25_ce0  |   9|          2|    1|          2|
+    |grid_25_ce1  |   9|          2|    1|          2|
+    |grid_25_we1  |   9|          2|    1|          2|
+    |grid_26_ce0  |   9|          2|    1|          2|
+    |grid_26_ce1  |   9|          2|    1|          2|
+    |grid_26_we1  |   9|          2|    1|          2|
+    |grid_27_ce0  |   9|          2|    1|          2|
+    |grid_27_ce1  |   9|          2|    1|          2|
+    |grid_27_we1  |   9|          2|    1|          2|
+    |grid_28_ce0  |   9|          2|    1|          2|
+    |grid_28_ce1  |   9|          2|    1|          2|
+    |grid_28_we1  |   9|          2|    1|          2|
+    |grid_29_ce0  |   9|          2|    1|          2|
+    |grid_29_ce1  |   9|          2|    1|          2|
+    |grid_29_we1  |   9|          2|    1|          2|
+    |grid_30_ce0  |   9|          2|    1|          2|
+    |grid_30_ce1  |   9|          2|    1|          2|
+    |grid_30_we1  |   9|          2|    1|          2|
+    |grid_31_ce0  |   9|          2|    1|          2|
+    |grid_31_ce1  |   9|          2|    1|          2|
+    |grid_31_we1  |   9|          2|    1|          2|
+    |grid_32_ce0  |   9|          2|    1|          2|
+    |grid_32_ce1  |   9|          2|    1|          2|
+    |grid_32_we1  |   9|          2|    1|          2|
+    |grid_ce0     |   9|          2|    1|          2|
+    |grid_ce1     |   9|          2|    1|          2|
+    |grid_we1     |   9|          2|    1|          2|
+    |real_start   |   9|          2|    1|          2|
+    +-------------+----+-----------+-----+-----------+
+    |Total        | 287|         63|   30|         63|
+    +-------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------------------------------------------+---+----+-----+-----------+
+    |                                      Name                                      | FF| LUT| Bits| Const Bits|
+    +--------------------------------------------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                                                       |  4|   0|    4|          0|
+    |ap_done_reg                                                                     |  1|   0|    1|          0|
+    |grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_start_reg  |  1|   0|    1|          0|
+    |grp_stage_bilateral_Pipeline_READ_IN_fu_66_ap_start_reg                         |  1|   0|    1|          0|
+    |start_once_reg                                                                  |  1|   0|    1|          0|
+    +--------------------------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                                           |  8|   0|    8|          0|
+    +--------------------------------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------+-----+-----+------------+------------------+--------------+
+|            RTL Ports            | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++---------------------------------+-----+-----+------------+------------------+--------------+
+|ap_clk                           |   in|    1|  ap_ctrl_hs|   stage_bilateral|  return value|
+|ap_rst                           |   in|    1|  ap_ctrl_hs|   stage_bilateral|  return value|
+|ap_start                         |   in|    1|  ap_ctrl_hs|   stage_bilateral|  return value|
+|start_full_n                     |   in|    1|  ap_ctrl_hs|   stage_bilateral|  return value|
+|ap_done                          |  out|    1|  ap_ctrl_hs|   stage_bilateral|  return value|
+|ap_continue                      |   in|    1|  ap_ctrl_hs|   stage_bilateral|  return value|
+|ap_idle                          |  out|    1|  ap_ctrl_hs|   stage_bilateral|  return value|
+|ap_ready                         |  out|    1|  ap_ctrl_hs|   stage_bilateral|  return value|
+|start_out                        |  out|    1|  ap_ctrl_hs|   stage_bilateral|  return value|
+|start_write                      |  out|    1|  ap_ctrl_hs|   stage_bilateral|  return value|
+|gaussian_stream_dout             |   in|   14|     ap_fifo|   gaussian_stream|       pointer|
+|gaussian_stream_empty_n          |   in|    1|     ap_fifo|   gaussian_stream|       pointer|
+|gaussian_stream_read             |  out|    1|     ap_fifo|   gaussian_stream|       pointer|
+|gaussian_stream_num_data_valid   |   in|    9|     ap_fifo|   gaussian_stream|       pointer|
+|gaussian_stream_fifo_cap         |   in|    9|     ap_fifo|   gaussian_stream|       pointer|
+|bilateral_stream_din             |  out|   14|     ap_fifo|  bilateral_stream|       pointer|
+|bilateral_stream_full_n          |   in|    1|     ap_fifo|  bilateral_stream|       pointer|
+|bilateral_stream_write           |  out|    1|     ap_fifo|  bilateral_stream|       pointer|
+|bilateral_stream_num_data_valid  |   in|   32|     ap_fifo|  bilateral_stream|       pointer|
+|bilateral_stream_fifo_cap        |   in|   32|     ap_fifo|  bilateral_stream|       pointer|
++---------------------------------+-----+-----+------------+------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.35>
+ST_1 : Operation 5 [1/1] (1.35ns)   --->   "%grid = alloca i64 1" [top.cpp:214]   --->   Operation 5 'alloca' 'grid' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
+ST_1 : Operation 6 [1/1] (1.35ns)   --->   "%grid_25 = alloca i64 1" [top.cpp:214]   --->   Operation 6 'alloca' 'grid_25' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
+ST_1 : Operation 7 [1/1] (1.35ns)   --->   "%grid_26 = alloca i64 1" [top.cpp:214]   --->   Operation 7 'alloca' 'grid_26' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
+ST_1 : Operation 8 [1/1] (1.35ns)   --->   "%grid_27 = alloca i64 1" [top.cpp:214]   --->   Operation 8 'alloca' 'grid_27' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
+ST_1 : Operation 9 [1/1] (1.35ns)   --->   "%grid_28 = alloca i64 1" [top.cpp:214]   --->   Operation 9 'alloca' 'grid_28' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
+ST_1 : Operation 10 [1/1] (1.35ns)   --->   "%grid_29 = alloca i64 1" [top.cpp:214]   --->   Operation 10 'alloca' 'grid_29' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
+ST_1 : Operation 11 [1/1] (1.35ns)   --->   "%grid_30 = alloca i64 1" [top.cpp:214]   --->   Operation 11 'alloca' 'grid_30' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
+ST_1 : Operation 12 [1/1] (1.35ns)   --->   "%grid_31 = alloca i64 1" [top.cpp:214]   --->   Operation 12 'alloca' 'grid_31' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
+ST_1 : Operation 13 [1/1] (1.35ns)   --->   "%grid_32 = alloca i64 1" [top.cpp:214]   --->   Operation 13 'alloca' 'grid_32' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
+ST_1 : Operation 14 [2/2] (0.00ns)   --->   "%call_ln0 = call void @stage_bilateral_Pipeline_READ_IN, i14 %grid_32, i14 %grid_31, i14 %grid_30, i14 %grid_29, i14 %grid_28, i14 %grid_27, i14 %grid_26, i14 %grid_25, i14 %grid, i14 %gaussian_stream"   --->   Operation 14 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln0 = call void @stage_bilateral_Pipeline_READ_IN, i14 %grid_32, i14 %grid_31, i14 %grid_30, i14 %grid_29, i14 %grid_28, i14 %grid_27, i14 %grid_26, i14 %grid_25, i14 %grid, i14 %gaussian_stream"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%fence_ln238 = fence void @_ssdm_op_Fence, i14 %gaussian_stream, i32 4294967295, i14 %bilateral_stream, i32 0" [top.cpp:238]   --->   Operation 16 'fence' 'fence_ln238' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%fence_ln238 = fence void @_ssdm_op_Fence, i14 %gaussian_stream, i32 4294967295, i14 %bilateral_stream, i32 0" [top.cpp:238]   --->   Operation 17 'fence' 'fence_ln238' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln0 = call void @stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3, i14 %bilateral_stream, i14 %grid, i14 %grid_25, i14 %grid_26, i14 %grid_27, i14 %grid_28, i14 %grid_29, i14 %grid_30, i14 %grid_31, i14 %grid_32"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %bilateral_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %gaussian_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_32, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 21 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_31, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 22 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_30, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 23 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_29, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 24 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_28, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 25 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_27, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 26 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_26, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 27 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_25, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 28 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 29 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/2] (0.00ns)   --->   "%call_ln0 = call void @stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3, i14 %bilateral_stream, i14 %grid, i14 %grid_25, i14 %grid_26, i14 %grid_27, i14 %grid_28, i14 %grid_29, i14 %grid_30, i14 %grid_31, i14 %grid_32"   --->   Operation 30 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%ret_ln278 = ret" [top.cpp:278]   --->   Operation 31 'ret' 'ret_ln278' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ gaussian_stream]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ bilateral_stream]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+grid              (alloca       ) [ 00111]
+grid_25           (alloca       ) [ 00111]
+grid_26           (alloca       ) [ 00111]
+grid_27           (alloca       ) [ 00111]
+grid_28           (alloca       ) [ 00111]
+grid_29           (alloca       ) [ 00111]
+grid_30           (alloca       ) [ 00111]
+grid_31           (alloca       ) [ 00111]
+grid_32           (alloca       ) [ 00111]
+call_ln0          (call         ) [ 00000]
+fence_ln238       (fence        ) [ 00000]
+fence_ln238       (fence        ) [ 00000]
+specinterface_ln0 (specinterface) [ 00000]
+specinterface_ln0 (specinterface) [ 00000]
+specmemcore_ln215 (specmemcore  ) [ 00000]
+specmemcore_ln215 (specmemcore  ) [ 00000]
+specmemcore_ln215 (specmemcore  ) [ 00000]
+specmemcore_ln215 (specmemcore  ) [ 00000]
+specmemcore_ln215 (specmemcore  ) [ 00000]
+specmemcore_ln215 (specmemcore  ) [ 00000]
+specmemcore_ln215 (specmemcore  ) [ 00000]
+specmemcore_ln215 (specmemcore  ) [ 00000]
+specmemcore_ln215 (specmemcore  ) [ 00000]
+call_ln0          (call         ) [ 00000]
+ret_ln278         (ret          ) [ 00000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="gaussian_stream">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="gaussian_stream"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="bilateral_stream">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="bilateral_stream"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="stage_bilateral_Pipeline_READ_IN"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Fence"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_17"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecMemCore"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1004" name="grid_alloca_fu_30">
+<pin_list>
+<pin id="31" dir="0" index="0" bw="1" slack="0"/>
+<pin id="32" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="grid/1 "/>
+</bind>
+</comp>
+
+<comp id="34" class="1004" name="grid_25_alloca_fu_34">
+<pin_list>
+<pin id="35" dir="0" index="0" bw="1" slack="0"/>
+<pin id="36" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="grid_25/1 "/>
+</bind>
+</comp>
+
+<comp id="38" class="1004" name="grid_26_alloca_fu_38">
+<pin_list>
+<pin id="39" dir="0" index="0" bw="1" slack="0"/>
+<pin id="40" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="grid_26/1 "/>
+</bind>
+</comp>
+
+<comp id="42" class="1004" name="grid_27_alloca_fu_42">
+<pin_list>
+<pin id="43" dir="0" index="0" bw="1" slack="0"/>
+<pin id="44" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="grid_27/1 "/>
+</bind>
+</comp>
+
+<comp id="46" class="1004" name="grid_28_alloca_fu_46">
+<pin_list>
+<pin id="47" dir="0" index="0" bw="1" slack="0"/>
+<pin id="48" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="grid_28/1 "/>
+</bind>
+</comp>
+
+<comp id="50" class="1004" name="grid_29_alloca_fu_50">
+<pin_list>
+<pin id="51" dir="0" index="0" bw="1" slack="0"/>
+<pin id="52" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="grid_29/1 "/>
+</bind>
+</comp>
+
+<comp id="54" class="1004" name="grid_30_alloca_fu_54">
+<pin_list>
+<pin id="55" dir="0" index="0" bw="1" slack="0"/>
+<pin id="56" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="grid_30/1 "/>
+</bind>
+</comp>
+
+<comp id="58" class="1004" name="grid_31_alloca_fu_58">
+<pin_list>
+<pin id="59" dir="0" index="0" bw="1" slack="0"/>
+<pin id="60" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="grid_31/1 "/>
+</bind>
+</comp>
+
+<comp id="62" class="1004" name="grid_32_alloca_fu_62">
+<pin_list>
+<pin id="63" dir="0" index="0" bw="1" slack="0"/>
+<pin id="64" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="grid_32/1 "/>
+</bind>
+</comp>
+
+<comp id="66" class="1004" name="grp_stage_bilateral_Pipeline_READ_IN_fu_66">
+<pin_list>
+<pin id="67" dir="0" index="0" bw="0" slack="0"/>
+<pin id="68" dir="0" index="1" bw="14" slack="0"/>
+<pin id="69" dir="0" index="2" bw="14" slack="0"/>
+<pin id="70" dir="0" index="3" bw="14" slack="0"/>
+<pin id="71" dir="0" index="4" bw="14" slack="0"/>
+<pin id="72" dir="0" index="5" bw="14" slack="0"/>
+<pin id="73" dir="0" index="6" bw="14" slack="0"/>
+<pin id="74" dir="0" index="7" bw="14" slack="0"/>
+<pin id="75" dir="0" index="8" bw="14" slack="0"/>
+<pin id="76" dir="0" index="9" bw="14" slack="0"/>
+<pin id="77" dir="0" index="10" bw="14" slack="0"/>
+<pin id="78" dir="1" index="11" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/1 "/>
+</bind>
+</comp>
+
+<comp id="90" class="1004" name="grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90">
+<pin_list>
+<pin id="91" dir="0" index="0" bw="0" slack="0"/>
+<pin id="92" dir="0" index="1" bw="14" slack="0"/>
+<pin id="93" dir="0" index="2" bw="14" slack="2147483647"/>
+<pin id="94" dir="0" index="3" bw="14" slack="2147483647"/>
+<pin id="95" dir="0" index="4" bw="14" slack="2147483647"/>
+<pin id="96" dir="0" index="5" bw="14" slack="2147483647"/>
+<pin id="97" dir="0" index="6" bw="14" slack="2147483647"/>
+<pin id="98" dir="0" index="7" bw="14" slack="2147483647"/>
+<pin id="99" dir="0" index="8" bw="14" slack="2147483647"/>
+<pin id="100" dir="0" index="9" bw="14" slack="2147483647"/>
+<pin id="101" dir="0" index="10" bw="14" slack="2147483647"/>
+<pin id="102" dir="1" index="11" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/3 "/>
+</bind>
+</comp>
+
+<comp id="105" class="1004" name="fence_ln238_fu_105">
+<pin_list>
+<pin id="106" dir="0" index="0" bw="0" slack="0"/>
+<pin id="107" dir="0" index="1" bw="14" slack="0"/>
+<pin id="108" dir="0" index="2" bw="1" slack="0"/>
+<pin id="109" dir="0" index="3" bw="14" slack="0"/>
+<pin id="110" dir="0" index="4" bw="1" slack="0"/>
+<pin id="111" dir="1" index="5" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="fence(30) " fcode="fence"/>
+<opset="fence_ln238/3 "/>
+</bind>
+</comp>
+
+<comp id="117" class="1004" name="fence_ln238_fu_117">
+<pin_list>
+<pin id="118" dir="0" index="0" bw="0" slack="0"/>
+<pin id="119" dir="0" index="1" bw="14" slack="0"/>
+<pin id="120" dir="0" index="2" bw="1" slack="0"/>
+<pin id="121" dir="0" index="3" bw="14" slack="0"/>
+<pin id="122" dir="0" index="4" bw="1" slack="0"/>
+<pin id="123" dir="1" index="5" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="fence(30) " fcode="fence"/>
+<opset="fence_ln238/3 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="33"><net_src comp="4" pin="0"/><net_sink comp="30" pin=0"/></net>
+
+<net id="37"><net_src comp="4" pin="0"/><net_sink comp="34" pin=0"/></net>
+
+<net id="41"><net_src comp="4" pin="0"/><net_sink comp="38" pin=0"/></net>
+
+<net id="45"><net_src comp="4" pin="0"/><net_sink comp="42" pin=0"/></net>
+
+<net id="49"><net_src comp="4" pin="0"/><net_sink comp="46" pin=0"/></net>
+
+<net id="53"><net_src comp="4" pin="0"/><net_sink comp="50" pin=0"/></net>
+
+<net id="57"><net_src comp="4" pin="0"/><net_sink comp="54" pin=0"/></net>
+
+<net id="61"><net_src comp="4" pin="0"/><net_sink comp="58" pin=0"/></net>
+
+<net id="65"><net_src comp="4" pin="0"/><net_sink comp="62" pin=0"/></net>
+
+<net id="79"><net_src comp="6" pin="0"/><net_sink comp="66" pin=0"/></net>
+
+<net id="80"><net_src comp="62" pin="1"/><net_sink comp="66" pin=1"/></net>
+
+<net id="81"><net_src comp="58" pin="1"/><net_sink comp="66" pin=2"/></net>
+
+<net id="82"><net_src comp="54" pin="1"/><net_sink comp="66" pin=3"/></net>
+
+<net id="83"><net_src comp="50" pin="1"/><net_sink comp="66" pin=4"/></net>
+
+<net id="84"><net_src comp="46" pin="1"/><net_sink comp="66" pin=5"/></net>
+
+<net id="85"><net_src comp="42" pin="1"/><net_sink comp="66" pin=6"/></net>
+
+<net id="86"><net_src comp="38" pin="1"/><net_sink comp="66" pin=7"/></net>
+
+<net id="87"><net_src comp="34" pin="1"/><net_sink comp="66" pin=8"/></net>
+
+<net id="88"><net_src comp="30" pin="1"/><net_sink comp="66" pin=9"/></net>
+
+<net id="89"><net_src comp="0" pin="0"/><net_sink comp="66" pin=10"/></net>
+
+<net id="103"><net_src comp="14" pin="0"/><net_sink comp="90" pin=0"/></net>
+
+<net id="104"><net_src comp="2" pin="0"/><net_sink comp="90" pin=1"/></net>
+
+<net id="112"><net_src comp="8" pin="0"/><net_sink comp="105" pin=0"/></net>
+
+<net id="113"><net_src comp="0" pin="0"/><net_sink comp="105" pin=1"/></net>
+
+<net id="114"><net_src comp="10" pin="0"/><net_sink comp="105" pin=2"/></net>
+
+<net id="115"><net_src comp="2" pin="0"/><net_sink comp="105" pin=3"/></net>
+
+<net id="116"><net_src comp="12" pin="0"/><net_sink comp="105" pin=4"/></net>
+
+<net id="124"><net_src comp="8" pin="0"/><net_sink comp="117" pin=0"/></net>
+
+<net id="125"><net_src comp="0" pin="0"/><net_sink comp="117" pin=1"/></net>
+
+<net id="126"><net_src comp="10" pin="0"/><net_sink comp="117" pin=2"/></net>
+
+<net id="127"><net_src comp="2" pin="0"/><net_sink comp="117" pin=3"/></net>
+
+<net id="128"><net_src comp="12" pin="0"/><net_sink comp="117" pin=4"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: bilateral_stream | {3 4 }
+ - Input state : 
+	Port: stage_bilateral : gaussian_stream | {1 2 }
+  - Chain level:
+	State 1
+		call_ln0 : 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-------------------------------------------------------------------|---------|---------|---------|---------|
+| Operation|                          Functional Unit                          |   DSP   |  Delay  |    FF   |   LUT   |
+|----------|-------------------------------------------------------------------|---------|---------|---------|---------|
+|   call   |             grp_stage_bilateral_Pipeline_READ_IN_fu_66            |    1    |  1.956  |   323   |   292   |
+|          | grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90 |   157   | 19.2582 |  25174  |  29331  |
+|----------|-------------------------------------------------------------------|---------|---------|---------|---------|
+|   fence  |                         fence_ln238_fu_105                        |    0    |    0    |    0    |    0    |
+|          |                         fence_ln238_fu_117                        |    0    |    0    |    0    |    0    |
+|----------|-------------------------------------------------------------------|---------|---------|---------|---------|
+|   Total  |                                                                   |   158   | 21.2142 |  25497  |  29623  |
+|----------|-------------------------------------------------------------------|---------|---------|---------|---------|
+
+Memories:
++-------+--------+--------+--------+
+|       |  BRAM  |   FF   |   LUT  |
++-------+--------+--------+--------+
+|  grid |    1   |    0   |    0   |
+|grid_25|    1   |    0   |    0   |
+|grid_26|    1   |    0   |    0   |
+|grid_27|    1   |    0   |    0   |
+|grid_28|    1   |    0   |    0   |
+|grid_29|    1   |    0   |    0   |
+|grid_30|    1   |    0   |    0   |
+|grid_31|    1   |    0   |    0   |
+|grid_32|    1   |    0   |    0   |
++-------+--------+--------+--------+
+| Total |    9   |    0   |    0   |
++-------+--------+--------+--------+
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+
+|           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+--------+
+|  Function |    -   |   158  |   21   |  25497 |  29623 |
+|   Memory  |    9   |    -   |    -   |    0   |    0   |
+|Multiplexer|    -   |    -   |    -   |    -   |    -   |
+|  Register |    -   |    -   |    -   |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+
+|   Total   |    9   |   158  |   21   |  25497 |  29623 |
++-----------+--------+--------+--------+--------+--------+

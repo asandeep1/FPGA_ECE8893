@@ -1,0 +1,6 @@
+  CREATE_STREAM @0 {NAME:top_kernel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.top_kernel_virtual_sqr STREAM:7289}
+  CREATE_STREAM @110000 {NAME:top_kernel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_master_gmem0.vsqr STREAM:7701}
+  CREATE_STREAM @110000 {NAME:top_kernel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_master_gmem1.vsqr STREAM:7710}
+  CREATE_STREAM @110000 {NAME:top_kernel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_master_gmem2.vsqr STREAM:7719}
+  CREATE_STREAM @110000 {NAME:top_kernel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_master_gmem3.vsqr STREAM:7728}
+  CREATE_STREAM @110000 {NAME:top_kernel_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_lite_control.vsqr STREAM:7737}
