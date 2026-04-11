@@ -1,0 +1,5 @@
+2 warnings and 5 errors generated.
+Error while processing /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp.
+clang-tidy applied 16 of 16 suggested fixes.
+Suppressed 199 warnings (197 in non-user code, 2 with check filters).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

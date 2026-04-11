@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# Vivado v2025.1.1 (64-bit)
+# SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
+# IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+# SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+# Start of session at: Fri Apr 10 19:22:47 2026
+# Process ID         : 3215406
+# Current directory  : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip
+# Command line       : vivado -notrace -mode batch -source run_ippack.tcl
+# Log file           : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/vivado.log
+# Journal file       : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/vivado.jou
+# Running On         : ece-linlabsrv01
+# Platform           : RedHatEnterprise
+# Operating System   : Red Hat Enterprise Linux release 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz
+# CPU Frequency      : 2453.658 MHz
+# CPU Physical cores : 56
+# CPU Logical cores  : 112
+# Host memory        : 404103 MB
+# Swap memory        : 68719 MB
+# Total Virtual      : 472822 MB
+# Available Virtual  : 446125 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/hls_data.json outdir=/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip srcdir=/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/misc
+INFO: Copied 79 verilog file(s) to /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/hdl/verilog
+INFO: Copied 76 vhdl file(s) to /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/drivers
+Generating 8 subcores in /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/subcore_prj:
+impl/misc/top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip.tcl
+impl/misc/top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip.tcl
+impl/misc/top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip.tcl
+impl/misc/top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip.tcl
+impl/misc/top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip.tcl
+impl/misc/top_kernel_fpext_32ns_64_2_no_dsp_1_ip.tcl
+impl/misc/top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip.tcl
+impl/misc/top_kernel_sitofp_32ns_32_7_no_dsp_1_ip.tcl
+INFO: Using COE_DIR=/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/hdl/verilog
+INFO: Generating top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip via file impl/misc/top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/software/xilinx/2025.1.1/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip'...
+INFO: Done generating top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip via file impl/misc/top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip.tcl
+INFO: Generating top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip via file impl/misc/top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip.tcl
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip'...
+INFO: Done generating top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip via file impl/misc/top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip.tcl
+INFO: Generating top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip via file impl/misc/top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip.tcl
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip'...
+INFO: Done generating top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip via file impl/misc/top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip.tcl
+INFO: Generating top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip via file impl/misc/top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip.tcl
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip'...
+INFO: Done generating top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip via file impl/misc/top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip.tcl
+INFO: Generating top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip via file impl/misc/top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip.tcl
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip'...
+INFO: Done generating top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip via file impl/misc/top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip.tcl
+INFO: Generating top_kernel_fpext_32ns_64_2_no_dsp_1_ip via file impl/misc/top_kernel_fpext_32ns_64_2_no_dsp_1_ip.tcl
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_kernel_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_kernel_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: Done generating top_kernel_fpext_32ns_64_2_no_dsp_1_ip via file impl/misc/top_kernel_fpext_32ns_64_2_no_dsp_1_ip.tcl
+INFO: Generating top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip via file impl/misc/top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip.tcl
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip'...
+INFO: Done generating top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip via file impl/misc/top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip.tcl
+INFO: Generating top_kernel_sitofp_32ns_32_7_no_dsp_1_ip via file impl/misc/top_kernel_sitofp_32ns_32_7_no_dsp_1_ip.tcl
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'top_kernel_sitofp_32ns_32_7_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'top_kernel_sitofp_32ns_32_7_no_dsp_1_ip'...
+INFO: Done generating top_kernel_sitofp_32ns_32_7_no_dsp_1_ip via file impl/misc/top_kernel_sitofp_32ns_32_7_no_dsp_1_ip.tcl
+INFO: Found 1 unique subcore IP: xilinx.com:ip:floating_point:7.1
+INFO: Copied 8 subcore files: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/hdl/ip/top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip/top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip.xci /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/hdl/ip/top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip/top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip.xci /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/hdl/ip/top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip/top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip.xci /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/hdl/ip/top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip/top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip.xci /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/hdl/ip/top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip/top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip.xci /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/hdl/ip/top_kernel_fpext_32ns_64_2_no_dsp_1_ip/top_kernel_fpext_32ns_64_2_no_dsp_1_ip.xci /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/hdl/ip/top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip/top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip.xci /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/hdl/ip/top_kernel_sitofp_32ns_32_7_no_dsp_1_ip/top_kernel_sitofp_32ns_32_7_no_dsp_1_ip.xci
+INFO: Import ports from HDL: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/hdl/vhdl/top_kernel.vhd (top_kernel)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/software/xilinx/2025.1.1/data/ip'.
+INFO: Add axi4full interface m_axi_gmem0
+INFO: Add axi4full interface m_axi_gmem1
+INFO: Add axi4full interface m_axi_gmem2
+INFO: Add axi4full interface m_axi_gmem3
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/component.xml
+INFO: Created IP archive /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/ip/xilinx_com_hls_top_kernel_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 10 19:23:11 2026...

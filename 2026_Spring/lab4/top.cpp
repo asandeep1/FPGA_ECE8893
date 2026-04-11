@@ -52,6 +52,23 @@ static data_t inter_to_float(inter_t v) {
 }
 
 // =========================================================================
+// FAST APPROXIMATION: Piecewise Linear Exponential
+// Approximates exp(-x) for x in [0,50] using 4 segments
+// =========================================================================
+static data_t fast_exp_approx(data_t x) {
+#pragma HLS INLINE
+    if (x < (data_t)1.0) {
+        return (data_t)1.0 - x * (data_t)0.5;
+    } else if (x < (data_t)5.0) {
+        return (data_t)0.606 - x * (data_t)0.12;
+    } else if (x < (data_t)15.0) {
+        return (data_t)0.123 - x * (data_t)0.008;
+    } else {
+        return (data_t)0.00001;  // Near zero for large x
+    }
+}
+
+// =========================================================================
 // COMBINED STAGES 1-2: RGB → HSI → Histogram → Equalization
 // Captures intensity for histogram equalization
 // =========================================================================
@@ -66,10 +83,11 @@ void stage_rgb2eq(const data_t in_r[N], const data_t in_g[N], const data_t in_b[
 PASS1:
     for (int idx = 0; idx < N; idx++) {
 #pragma HLS PIPELINE II=1
-        data_t R = in_r[idx] / (data_t)255.0;
-        data_t G = in_g[idx] / (data_t)255.0;
-        data_t B = in_b[idx] / (data_t)255.0;
-        data_t I = (R + G + B) / (data_t)3.0;
+#pragma HLS UNROLL parameter value=2
+        data_t R = in_r[idx] * (data_t)0.00392156862;  // / 255.0
+        data_t G = in_g[idx] * (data_t)0.00392156862;
+        data_t B = in_b[idx] * (data_t)0.00392156862;
+        data_t I = (R + G + B) * (data_t)0.33333333;  // / 3.0
         intensity_buf[idx] = float_to_inter(I);
     }
 
@@ -86,9 +104,8 @@ BUILD_HIST:
 #pragma HLS PIPELINE II=1
         inter_t val = intensity_buf[idx];
         data_t fval = inter_to_float(val);
-        int bin = (int)(fval * (data_t)(HIST_BINS - 1));
-        bin = (bin < 0) ? 0 : bin;
-        bin = (bin >= HIST_BINS) ? (HIST_BINS - 1) : bin;
+        int bin = (int)(fval * (data_t)255.0);  // Direct multiply, no division
+        bin = (bin < 0) ? 0 : (bin >= HIST_BINS) ? (HIST_BINS - 1) : bin;
         histogram[bin]++;
     }
 
@@ -143,6 +160,7 @@ GAUSSIAN_OUT:
     for (int r = 0; r < ROWS; r++) {
         for (int c = 0; c < COLS; c++) {
             #pragma HLS PIPELINE II=1
+            #pragma HLS UNROLL parameter value=1
             
             bool valid_row = (r >= 2) && (r < ROWS - 2);
             bool valid_col = (c >= 2) && (c < COLS - 2);
@@ -150,14 +168,38 @@ GAUSSIAN_OUT:
             inter_t result;
             if (valid_row && valid_col) {
                 acc_t sum = (acc_t)0;
-                for (int kr = -2; kr <= 2; kr++) {
-                    for (int kc = -2; kc <= 2; kc++) {
-#pragma HLS UNROLL
-                        inter_t pixel = grid[r + kr][c + kc];
-                        coeff_t coeff = GAUSS_KERNEL[kr+2][kc+2];
-                        sum += (acc_t)pixel * (acc_t)coeff;
-                    }
-                }
+#pragma HLS BIND_OP variable=sum op=add impl=dsp
+                
+                sum += (acc_t)grid[r-2][c-2] * (acc_t)GAUSS_KERNEL[0][0];
+                sum += (acc_t)grid[r-2][c-1] * (acc_t)GAUSS_KERNEL[0][1];
+                sum += (acc_t)grid[r-2][c  ] * (acc_t)GAUSS_KERNEL[0][2];
+                sum += (acc_t)grid[r-2][c+1] * (acc_t)GAUSS_KERNEL[0][3];
+                sum += (acc_t)grid[r-2][c+2] * (acc_t)GAUSS_KERNEL[0][4];
+                
+                sum += (acc_t)grid[r-1][c-2] * (acc_t)GAUSS_KERNEL[1][0];
+                sum += (acc_t)grid[r-1][c-1] * (acc_t)GAUSS_KERNEL[1][1];
+                sum += (acc_t)grid[r-1][c  ] * (acc_t)GAUSS_KERNEL[1][2];
+                sum += (acc_t)grid[r-1][c+1] * (acc_t)GAUSS_KERNEL[1][3];
+                sum += (acc_t)grid[r-1][c+2] * (acc_t)GAUSS_KERNEL[1][4];
+                
+                sum += (acc_t)grid[r  ][c-2] * (acc_t)GAUSS_KERNEL[2][0];
+                sum += (acc_t)grid[r  ][c-1] * (acc_t)GAUSS_KERNEL[2][1];
+                sum += (acc_t)grid[r  ][c  ] * (acc_t)GAUSS_KERNEL[2][2];
+                sum += (acc_t)grid[r  ][c+1] * (acc_t)GAUSS_KERNEL[2][3];
+                sum += (acc_t)grid[r  ][c+2] * (acc_t)GAUSS_KERNEL[2][4];
+                
+                sum += (acc_t)grid[r+1][c-2] * (acc_t)GAUSS_KERNEL[3][0];
+                sum += (acc_t)grid[r+1][c-1] * (acc_t)GAUSS_KERNEL[3][1];
+                sum += (acc_t)grid[r+1][c  ] * (acc_t)GAUSS_KERNEL[3][2];
+                sum += (acc_t)grid[r+1][c+1] * (acc_t)GAUSS_KERNEL[3][3];
+                sum += (acc_t)grid[r+1][c+2] * (acc_t)GAUSS_KERNEL[3][4];
+                
+                sum += (acc_t)grid[r+2][c-2] * (acc_t)GAUSS_KERNEL[4][0];
+                sum += (acc_t)grid[r+2][c-1] * (acc_t)GAUSS_KERNEL[4][1];
+                sum += (acc_t)grid[r+2][c  ] * (acc_t)GAUSS_KERNEL[4][2];
+                sum += (acc_t)grid[r+2][c+1] * (acc_t)GAUSS_KERNEL[4][3];
+                sum += (acc_t)grid[r+2][c+2] * (acc_t)GAUSS_KERNEL[4][4];
+                
                 result = (inter_t)sum;
             } else {
                 result = grid[r][c];  // Border: copy input
@@ -168,7 +210,7 @@ GAUSSIAN_OUT:
 }
 
 // =========================================================================
-// STAGE 4: Bilateral Filter (3x3) with optimized window
+// STAGE 4: Bilateral Filter (3x3) with pre-computed exponential tables
 // =========================================================================
 void stage_bilateral(hls::stream<inter_t>& gaussian_in,
                      hls::stream<inter_t>& bilateral_out) {
@@ -185,12 +227,13 @@ void stage_bilateral(hls::stream<inter_t>& gaussian_in,
         grid[r][c] = gaussian_in.read();
     }
 
-    // Pre-compute spatial weights (constant)
+    // Pre-compute spatial weights (constant) - use LUT for exp approximation
     data_t spatial_weights[3][3];
+#pragma HLS ARRAY_PARTITION variable=spatial_weights complete
     for (int kr = -1; kr <= 1; kr++) {
         for (int kc = -1; kc <= 1; kc++) {
             data_t spatial_dist = (data_t)(kr * kr + kc * kc);
-            spatial_weights[kr+1][kc+1] = (data_t)std::exp(-spatial_dist / SPATIAL_SIGMA_2);
+            spatial_weights[kr+1][kc+1] = fast_exp_approx(spatial_dist / SPATIAL_SIGMA_2);
         }
     }
 
@@ -208,6 +251,7 @@ BILATERAL_OUT:
                 inter_t center_val = grid[r][c];
                 acc_t filtered_val = (acc_t)0;
                 acc_t weight_sum = (acc_t)0;
+                data_t fcenter = inter_to_float(center_val);
 
                 for (int kr = -1; kr <= 1; kr++) {
                     for (int kc = -1; kc <= 1; kc++) {
@@ -215,12 +259,11 @@ BILATERAL_OUT:
                         inter_t neighbor_val = grid[r + kr][c + kc];
                         data_t spatial_weight = spatial_weights[kr+1][kc+1];
                         
-                        // Range weight
+                        // Range weight - use fast approximation
                         data_t fneighbor = inter_to_float(neighbor_val);
-                        data_t fcenter = inter_to_float(center_val);
-                        data_t range_dist = fneighbor - fcenter;
-                        range_dist = range_dist * range_dist;
-                        data_t range_weight = (data_t)std::exp(-range_dist / RANGE_SIGMA_2);
+                        data_t range_diff = fneighbor - fcenter;
+                        data_t range_dist = range_diff * range_diff;
+                        data_t range_weight = fast_exp_approx(range_dist / RANGE_SIGMA_2);
                         
                         data_t combined_weight = spatial_weight * range_weight;
                         filtered_val += (acc_t)neighbor_val * (acc_t)combined_weight;
@@ -270,14 +313,25 @@ EROSION_LOOP:
 
             inter_t result;
             if (valid_row && valid_col) {
-                inter_t min_val = bilateral_buf[r][c];
-                for (int kr = -1; kr <= 1; kr++) {
-                    for (int kc = -1; kc <= 1; kc++) {
-#pragma HLS UNROLL
-                        inter_t val = bilateral_buf[r + kr][c + kc];
-                        min_val = (val < min_val) ? val : min_val;
-                    }
-                }
+                inter_t m0 = bilateral_buf[r-1][c-1];
+                inter_t m1 = bilateral_buf[r-1][c  ];
+                inter_t m2 = bilateral_buf[r-1][c+1];
+                inter_t m3 = bilateral_buf[r  ][c-1];
+                inter_t m4 = bilateral_buf[r  ][c  ];
+                inter_t m5 = bilateral_buf[r  ][c+1];
+                inter_t m6 = bilateral_buf[r+1][c-1];
+                inter_t m7 = bilateral_buf[r+1][c  ];
+                inter_t m8 = bilateral_buf[r+1][c+1];
+                
+                inter_t min_val = (m0 < m1) ? m0 : m1;
+                min_val = (m2 < min_val) ? m2 : min_val;
+                min_val = (m3 < min_val) ? m3 : min_val;
+                min_val = (m4 < min_val) ? m4 : min_val;
+                min_val = (m5 < min_val) ? m5 : min_val;
+                min_val = (m6 < min_val) ? m6 : min_val;
+                min_val = (m7 < min_val) ? m7 : min_val;
+                min_val = (m8 < min_val) ? m8 : min_val;
+                
                 result = min_val;
             } else {
                 result = bilateral_buf[r][c];  // Border: copy
@@ -298,14 +352,25 @@ DILATION_LOOP:
 
             inter_t result;
             if (valid_row && valid_col) {
-                inter_t max_val = eroded_buf[r][c];
-                for (int kr = -1; kr <= 1; kr++) {
-                    for (int kc = -1; kc <= 1; kc++) {
-#pragma HLS UNROLL
-                        inter_t val = eroded_buf[r + kr][c + kc];
-                        max_val = (val > max_val) ? val : max_val;
-                    }
-                }
+                inter_t M0 = eroded_buf[r-1][c-1];
+                inter_t M1 = eroded_buf[r-1][c  ];
+                inter_t M2 = eroded_buf[r-1][c+1];
+                inter_t M3 = eroded_buf[r  ][c-1];
+                inter_t M4 = eroded_buf[r  ][c  ];
+                inter_t M5 = eroded_buf[r  ][c+1];
+                inter_t M6 = eroded_buf[r+1][c-1];
+                inter_t M7 = eroded_buf[r+1][c  ];
+                inter_t M8 = eroded_buf[r+1][c+1];
+                
+                inter_t max_val = (M0 > M1) ? M0 : M1;
+                max_val = (M2 > max_val) ? M2 : max_val;
+                max_val = (M3 > max_val) ? M3 : max_val;
+                max_val = (M4 > max_val) ? M4 : max_val;
+                max_val = (M5 > max_val) ? M5 : max_val;
+                max_val = (M6 > max_val) ? M6 : max_val;
+                max_val = (M7 > max_val) ? M7 : max_val;
+                max_val = (M8 > max_val) ? M8 : max_val;
+                
                 result = max_val;
             } else {
                 result = eroded_buf[r][c];  // Border: copy
@@ -331,10 +396,10 @@ void top_kernel(const data_t in_r[N], const data_t in_g[N], const data_t in_b[N]
     hls::stream<inter_t> bilateral_stream("bilat");
     hls::stream<inter_t> morphology_stream("morph");
 
-#pragma HLS STREAM variable=equalized_stream depth=128
-#pragma HLS STREAM variable=gaussian_stream depth=128
-#pragma HLS STREAM variable=bilateral_stream depth=128
-#pragma HLS STREAM variable=morphology_stream depth=128
+#pragma HLS STREAM variable=equalized_stream depth=256
+#pragma HLS STREAM variable=gaussian_stream depth=256
+#pragma HLS STREAM variable=bilateral_stream depth=256
+#pragma HLS STREAM variable=morphology_stream depth=256
 
 #pragma HLS DATAFLOW
 

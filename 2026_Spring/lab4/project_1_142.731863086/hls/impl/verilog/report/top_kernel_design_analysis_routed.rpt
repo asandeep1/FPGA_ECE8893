@@ -1,0 +1,99 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
+| Date         : Fri Apr 10 20:21:59 2026
+| Host         : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : report_design_analysis -file ./report/top_kernel_design_analysis_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xczu3eg
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Design Analysis
+
+Table of Contents
+-----------------
+1. Setup Path Characteristics 1-1
+2. Logic Level Distribution
+3. Placer Final Level Congestion Reporting
+4. Router Initial Congestion
+5. SLR Net Crossing Reporting
+
+1. Setup Path Characteristics 1-1
+---------------------------------
+
++---------------------------+--------------------------------------------------------------------------+
+|      Characteristics      |                                  Path #1                                 |
++---------------------------+--------------------------------------------------------------------------+
+| Requirement               | 4.000                                                                    |
+| Path Delay                | 4.249                                                                    |
+| Logic Delay               | 0.749(18%)                                                               |
+| Net Delay                 | 3.500(82%)                                                               |
+| Clock Skew                | -0.013                                                                   |
+| Slack                     | -0.271                                                                   |
+| Clock Uncertainty         | 0.035                                                                    |
+| Clock Pair Classification | Timed                                                                    |
+| Clock Delay Group         | Same Clock                                                               |
+| Logic Levels              | 6                                                                        |
+| Routes                    | 5                                                                        |
+| Logical Path              | FDSE/C-(644)-MUXF8-(1)-LUT6-(1)-LUT6-(1)-CARRY8-(1)-CARRY8-CARRY8-FDRE/D |
+| Start Point Clock         | ap_clk                                                                   |
+| End Point Clock           | ap_clk                                                                   |
+| DSP Block                 | None                                                                     |
+| RAM Registers             | None-None                                                                |
+| IO Crossings              | 0                                                                        |
+| SLR Crossings             | 0                                                                        |
+| PBlocks                   | 0                                                                        |
+| High Fanout               | 644                                                                      |
+| ASYNC REG                 | 0                                                                        |
+| Dont Touch                | 0                                                                        |
+| Mark Debug                | 0                                                                        |
+| Start Point Pin Primitive | FDSE/C                                                                   |
+| End Point Pin Primitive   | FDRE/D                                                                   |
+| Start Point Pin           | bin_3_reg_12342_reg[3]/C                                                 |
+| End Point Pin             | histogram_31_fu_1240_reg[17]/D                                           |
++---------------------------+--------------------------------------------------------------------------+
+* Bounding box calculated as % of dimensions for the target device (2447, 372)
+
+
+2. Logic Level Distribution
+---------------------------
+
++-----------------+-------------+---+-----+-----+-----+-----+
+| End Point Clock | Requirement | 4 |  5  |  6  |  7  |  8  |
++-----------------+-------------+---+-----+-----+-----+-----+
+| ap_clk          | 4.000ns     | 2 | 299 | 148 | 391 | 160 |
++-----------------+-------------+---+-----+-----+-----+-----+
+* Columns represent the logic levels per end point clock
+** Distribution is for top worst 1000 paths
+
+
+3. Placer Final Level Congestion Reporting
+------------------------------------------
+
++-----------+------+-------+--------+---------------+----------------+-----+--------+------+------+------+------+-----+-------+-----+------------+
+| Direction | Type | Level | Window | Combined LUTs | Avg LUT Inputs | LUT | LUTRAM | Flop | MUXF | RAMB | URAM | DSP | CARRY | SRL | Cell Names |
++-----------+------+-------+--------+---------------+----------------+-----+--------+------+------+------+------+-----+-------+-----+------------+
+* No congestion windows are found above level 5
+
+
+4. Router Initial Congestion
+----------------------------
+
++-----------+-------+-------+--------------------------------+---------------+----------------+-----+--------+------+------+------+------+------+-------+-----+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+| Direction |  Type | Level |             Window             | Combined LUTs | Avg LUT Inputs | LUT | LUTRAM | Flop | MUXF | RAMB | URAM |  DSP | CARRY | SRL |                                                                                                                                            Cell Names                                                                                                                                           |                          Sub Windows                          |
++-----------+-------+-------+--------------------------------+---------------+----------------+-----+--------+------+------+------+------+------+-------+-----+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+| North     | Short |     5 | (CLEL_R_X0Y118,CLEL_R_X31Y133) |            1% |          5.778 | 53% |     0% |  50% |  30% |   0% |   NA | 100% |    2% |  2% | bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163(49%),bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_116_2_fu_2424(40%),bd_0_i/hls_inst/inst/stage_gaussian_U0/grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_161_1_fu_186(4%) | (CLEL_R_X0Y118,CLEL_R_X15Y133), (CLEM_X16Y118,CLEL_R_X31Y133) |
+| West      | Short |     5 | (CLEM_X16Y121,CLEL_R_X31Y152)  |            0% |          5.656 | 54% |     0% |  48% |  30% |  16% |   NA |  72% |    1% |  2% | bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_VITIS_LOOP_116_2_fu_2424(85%),bd_0_i/hls_inst/inst/stage_gaussian_U0/grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_161_1_fu_186(11%),bd_0_i/hls_inst/inst(1%)                                                              | (CLEM_X16Y137,CLEL_R_X31Y152), (CLEM_X16Y121,CLEL_R_X31Y136)  |
++-----------+-------+-------+--------------------------------+---------------+----------------+-----+--------+------+------+------+------+------+-------+-----+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+
+
+5. SLR Net Crossing Reporting
+-----------------------------
+
++------------+-----------------------------+
+| Cell Names | Number of Nets crossing SLR |
++------------+-----------------------------+
+* The current part is not an SSI device
+
+

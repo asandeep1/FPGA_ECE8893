@@ -1,0 +1,86 @@
+{
+  "0": {
+    "basicblocks": 12,
+    "calls": "1 4 3 2",
+    "control_depth": 2,
+    "def_use_depth": 18,
+    "file": "top.cpp",
+    "fileloc": 386,
+    "instructions": 93,
+    "memory_accesses": 2,
+    "name": "top_kernel",
+    "total_instructions": 7392
+  },
+  "1": {
+    "basicblocks": 594,
+    "calls": "",
+    "control_depth": 7,
+    "def_use_depth": 58,
+    "file": "top.cpp",
+    "fileloc": 75,
+    "instructions": 2037,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 9,
+    "name": "stage_rgb2eq",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2037
+  },
+  "2": {
+    "basicblocks": 15,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 20,
+    "file": "top.cpp",
+    "fileloc": 287,
+    "instructions": 135,
+    "loads": {
+      "L": 18
+    },
+    "memory_accesses": 22,
+    "name": "stage_morphology",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 135
+  },
+  "3": {
+    "basicblocks": 650,
+    "calls": "",
+    "control_depth": 6,
+    "def_use_depth": 186,
+    "file": "top.cpp",
+    "fileloc": 215,
+    "instructions": 3698,
+    "loads": {
+      "L": 9
+    },
+    "memory_accesses": 12,
+    "name": "stage_bilateral",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3698
+  },
+  "4": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 366,
+    "file": "top.cpp",
+    "fileloc": 142,
+    "instructions": 1429,
+    "loads": {
+      "L": 26
+    },
+    "memory_accesses": 81,
+    "name": "stage_gaussian",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 1429
+  }
+}

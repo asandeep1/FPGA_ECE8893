@@ -1,0 +1,7 @@
+top.cpp:86:20: warning: unexpected pragma parameter 'parameter' [-Winvalid-hls-pragmas]
+#pragma HLS UNROLL parameter value=2
+                   ^
+top.cpp:163:20: warning: unexpected pragma parameter 'parameter' [-Winvalid-hls-pragmas]
+#pragma HLS UNROLL parameter value=1
+                   ^
+2 warnings generated.
