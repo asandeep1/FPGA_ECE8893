@@ -37,7 +37,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -73,7 +73,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -109,7 +109,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -145,7 +145,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -181,7 +181,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -217,7 +217,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -253,7 +253,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -289,7 +289,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -325,7 +325,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -361,7 +361,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -383,7 +383,7 @@
 						<name>i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>294</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -399,7 +399,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>294</second>
+										<second>305</second>
 									</item>
 								</second>
 							</item>
@@ -436,10 +436,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>i_write_ln294</name>
+						<name>i_write_ln305</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>294</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -455,7 +455,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>294</second>
+										<second>305</second>
 									</item>
 								</second>
 							</item>
@@ -493,10 +493,10 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>br_ln294</name>
+						<name>br_ln305</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>294</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -512,7 +512,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>294</second>
+										<second>305</second>
 									</item>
 								</second>
 							</item>
@@ -552,7 +552,7 @@
 						<name>i_2</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>294</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -568,7 +568,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>294</second>
+										<second>305</second>
 									</item>
 								</second>
 							</item>
@@ -606,10 +606,10 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>icmp_ln294</name>
+						<name>icmp_ln305</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>294</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -625,7 +625,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>294</second>
+										<second>305</second>
 									</item>
 								</second>
 							</item>
@@ -666,7 +666,7 @@
 						<name>i_3</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>294</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -682,7 +682,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>294</second>
+										<second>305</second>
 									</item>
 								</second>
 							</item>
@@ -720,10 +720,10 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>br_ln294</name>
+						<name>br_ln305</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>294</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -739,7 +739,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>294</second>
+										<second>305</second>
 									</item>
 								</second>
 							</item>
@@ -781,7 +781,7 @@
 						<name>c</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>294</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -797,7 +797,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>294</second>
+										<second>305</second>
 									</item>
 								</second>
 							</item>
@@ -837,7 +837,7 @@
 						<name>trunc_ln</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>296</lineNumber>
+						<lineNumber>308</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -853,7 +853,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>296</second>
+										<second>308</second>
 									</item>
 								</second>
 							</item>
@@ -893,10 +893,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>zext_ln296</name>
+						<name>zext_ln308</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>296</lineNumber>
+						<lineNumber>308</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -912,7 +912,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>296</second>
+										<second>308</second>
 									</item>
 								</second>
 							</item>
@@ -949,10 +949,10 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>mul_ln296</name>
+						<name>mul_ln308</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>296</lineNumber>
+						<lineNumber>308</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -968,7 +968,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>296</second>
+										<second>308</second>
 									</item>
 								</second>
 							</item>
@@ -1009,7 +1009,7 @@
 						<name>tmp</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>296</lineNumber>
+						<lineNumber>308</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1025,7 +1025,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>296</second>
+										<second>308</second>
 									</item>
 								</second>
 							</item>
@@ -1065,10 +1065,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>zext_ln296_1</name>
+						<name>zext_ln308_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>296</lineNumber>
+						<lineNumber>308</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1084,7 +1084,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>296</second>
+										<second>308</second>
 									</item>
 								</second>
 							</item>
@@ -1121,10 +1121,10 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>mul_ln296_1</name>
+						<name>mul_ln308_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>296</lineNumber>
+						<lineNumber>308</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1140,7 +1140,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>296</second>
+										<second>308</second>
 									</item>
 								</second>
 							</item>
@@ -1178,10 +1178,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>urem_ln296</name>
+						<name>urem_ln308</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>296</lineNumber>
+						<lineNumber>308</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1197,7 +1197,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>296</second>
+										<second>308</second>
 									</item>
 								</second>
 							</item>
@@ -1235,10 +1235,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>trunc_ln296</name>
+						<name>trunc_ln308</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>296</lineNumber>
+						<lineNumber>308</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1254,7 +1254,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>296</second>
+										<second>308</second>
 									</item>
 								</second>
 							</item>
@@ -1291,10 +1291,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>zext_ln297</name>
+						<name>zext_ln309</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>297</lineNumber>
+						<lineNumber>309</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1310,7 +1310,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>297</second>
+										<second>309</second>
 									</item>
 								</second>
 							</item>
@@ -1347,10 +1347,10 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>mul_ln297</name>
+						<name>mul_ln309</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>297</lineNumber>
+						<lineNumber>309</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1366,7 +1366,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>297</second>
+										<second>309</second>
 									</item>
 								</second>
 							</item>
@@ -1404,10 +1404,10 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>tmp_31</name>
+						<name>tmp_40</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>297</lineNumber>
+						<lineNumber>309</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1423,7 +1423,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>297</second>
+										<second>309</second>
 									</item>
 								</second>
 							</item>
@@ -1463,10 +1463,10 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>zext_ln298</name>
+						<name>zext_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1482,7 +1482,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -1519,10 +1519,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>add_ln298</name>
+						<name>add_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1538,7 +1538,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -1576,10 +1576,10 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>zext_ln298_1</name>
+						<name>zext_ln310_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1595,7 +1595,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -1635,7 +1635,7 @@
 						<name>bilateral_buf_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1651,7 +1651,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -1693,7 +1693,7 @@
 						<name>bilateral_buf_1_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1709,7 +1709,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -1751,7 +1751,7 @@
 						<name>bilateral_buf_2_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1767,7 +1767,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -1809,7 +1809,7 @@
 						<name>bilateral_buf_3_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1825,7 +1825,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -1867,7 +1867,7 @@
 						<name>bilateral_buf_4_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1883,7 +1883,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -1925,7 +1925,7 @@
 						<name>bilateral_buf_5_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1941,7 +1941,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -1983,7 +1983,7 @@
 						<name>bilateral_buf_6_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -1999,7 +1999,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2041,7 +2041,7 @@
 						<name>bilateral_buf_7_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2057,7 +2057,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2099,7 +2099,7 @@
 						<name>bilateral_buf_8_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2115,7 +2115,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2154,10 +2154,10 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>urem_ln297</name>
+						<name>urem_ln309</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>297</lineNumber>
+						<lineNumber>309</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2173,7 +2173,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>297</second>
+										<second>309</second>
 									</item>
 								</second>
 							</item>
@@ -2211,10 +2211,10 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>trunc_ln297</name>
+						<name>trunc_ln309</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>297</lineNumber>
+						<lineNumber>309</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2230,7 +2230,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>297</second>
+										<second>309</second>
 									</item>
 								</second>
 							</item>
@@ -2270,7 +2270,7 @@
 						<name>bilateral_stream_read</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2286,7 +2286,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2302,7 +2302,7 @@
 						<coreId>77</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2324,10 +2324,10 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>_ln298</name>
+						<name>_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2343,7 +2343,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2385,10 +2385,10 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>_ln298</name>
+						<name>_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2404,7 +2404,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2446,10 +2446,10 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>bilateral_buf_4_addr_write_ln298</name>
+						<name>bilateral_buf_4_addr_write_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2465,7 +2465,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2503,10 +2503,10 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>br_ln298</name>
+						<name>br_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2522,7 +2522,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2559,10 +2559,10 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>bilateral_buf_3_addr_write_ln298</name>
+						<name>bilateral_buf_3_addr_write_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2578,7 +2578,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2616,10 +2616,10 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>br_ln298</name>
+						<name>br_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2635,7 +2635,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2672,10 +2672,10 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>bilateral_buf_5_addr_write_ln298</name>
+						<name>bilateral_buf_5_addr_write_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2691,7 +2691,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2729,10 +2729,10 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>br_ln298</name>
+						<name>br_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2748,7 +2748,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2785,10 +2785,10 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>br_ln298</name>
+						<name>br_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2804,7 +2804,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2841,10 +2841,10 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>_ln298</name>
+						<name>_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2860,7 +2860,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2902,10 +2902,10 @@
 					<Obj>
 						<type>0</type>
 						<id>77</id>
-						<name>bilateral_buf_1_addr_write_ln298</name>
+						<name>bilateral_buf_1_addr_write_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2921,7 +2921,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -2959,10 +2959,10 @@
 					<Obj>
 						<type>0</type>
 						<id>78</id>
-						<name>br_ln298</name>
+						<name>br_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -2978,7 +2978,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -3015,10 +3015,10 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>bilateral_buf_addr_write_ln298</name>
+						<name>bilateral_buf_addr_write_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3034,7 +3034,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -3072,10 +3072,10 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>br_ln298</name>
+						<name>br_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3091,7 +3091,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -3128,10 +3128,10 @@
 					<Obj>
 						<type>0</type>
 						<id>83</id>
-						<name>bilateral_buf_2_addr_write_ln298</name>
+						<name>bilateral_buf_2_addr_write_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3147,7 +3147,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -3185,10 +3185,10 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>br_ln298</name>
+						<name>br_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3204,7 +3204,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -3241,10 +3241,10 @@
 					<Obj>
 						<type>0</type>
 						<id>86</id>
-						<name>br_ln298</name>
+						<name>br_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3260,7 +3260,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -3297,10 +3297,10 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>_ln298</name>
+						<name>_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3316,7 +3316,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -3358,10 +3358,10 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>bilateral_buf_7_addr_write_ln298</name>
+						<name>bilateral_buf_7_addr_write_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3377,7 +3377,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -3415,10 +3415,10 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>br_ln298</name>
+						<name>br_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3434,7 +3434,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -3471,10 +3471,10 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>bilateral_buf_6_addr_write_ln298</name>
+						<name>bilateral_buf_6_addr_write_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3490,7 +3490,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -3528,10 +3528,10 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>br_ln298</name>
+						<name>br_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3547,7 +3547,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -3584,10 +3584,10 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>bilateral_buf_8_addr_write_ln298</name>
+						<name>bilateral_buf_8_addr_write_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3603,7 +3603,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -3641,10 +3641,10 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>br_ln298</name>
+						<name>br_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3660,7 +3660,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -3697,10 +3697,10 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>br_ln298</name>
+						<name>br_ln310</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>298</lineNumber>
+						<lineNumber>310</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3716,7 +3716,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>298</second>
+										<second>310</second>
 									</item>
 								</second>
 							</item>
@@ -3753,10 +3753,10 @@
 					<Obj>
 						<type>0</type>
 						<id>101</id>
-						<name>i_write_ln294</name>
+						<name>i_write_ln305</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>294</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3772,7 +3772,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>294</second>
+										<second>305</second>
 									</item>
 								</second>
 							</item>
@@ -3812,10 +3812,10 @@
 					<Obj>
 						<type>0</type>
 						<id>102</id>
-						<name>br_ln294</name>
+						<name>br_ln305</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>294</lineNumber>
+						<lineNumber>305</lineNumber>
 						<contextFuncName>stage_morphology</contextFuncName>
 						<contextNormFuncName>stage_morphology</contextNormFuncName>
 						<inlineStackInfo>
@@ -3831,7 +3831,7 @@
 											<first>top.cpp</first>
 											<second>stage_morphology</second>
 										</first>
-										<second>294</second>
+										<second>305</second>
 									</item>
 								</second>
 							</item>
@@ -8051,7 +8051,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln294_fu_269</first>
+			<first>icmp_ln305_fu_269</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8059,7 +8059,7 @@
 			</second>
 		</item>
 		<item>
-			<first>mul_ln296_fu_299</first>
+			<first>mul_ln308_fu_299</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8067,7 +8067,7 @@
 			</second>
 		</item>
 		<item>
-			<first>mul_ln297_fu_325</first>
+			<first>mul_ln309_fu_325</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8075,7 +8075,7 @@
 			</second>
 		</item>
 		<item>
-			<first>switch_ln298_fu_367</first>
+			<first>switch_ln310_fu_367</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8083,7 +8083,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_31_fu_331</first>
+			<first>tmp_40_fu_331</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8099,7 +8099,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln296_fu_358</first>
+			<first>trunc_ln308_fu_358</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8107,7 +8107,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln297_fu_362</first>
+			<first>trunc_ln309_fu_362</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8123,7 +8123,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln296_1_fu_352</first>
+			<first>zext_ln308_1_fu_352</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8131,7 +8131,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln296_fu_295</first>
+			<first>zext_ln308_fu_295</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8139,7 +8139,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln297_fu_321</first>
+			<first>zext_ln309_fu_321</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8147,7 +8147,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln298_1_fu_375</first>
+			<first>zext_ln310_1_fu_375</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8155,7 +8155,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln298_fu_355</first>
+			<first>zext_ln310_fu_355</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8233,7 +8233,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln294_store_fu_261</first>
+			<first>store_ln305_store_fu_261</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8241,7 +8241,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln294_store_fu_347</first>
+			<first>store_ln305_store_fu_347</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8452,7 +8452,7 @@
 		<count>11</count>
 		<item_version>0</item_version>
 		<item>
-			<first>add_ln298_reg_436</first>
+			<first>add_ln310_reg_436</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8476,7 +8476,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln294_reg_402</first>
+			<first>icmp_ln305_reg_402</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8484,7 +8484,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_31_reg_421</first>
+			<first>tmp_40_reg_421</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8500,7 +8500,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln296_reg_441</first>
+			<first>trunc_ln308_reg_441</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8508,7 +8508,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln297_reg_445</first>
+			<first>trunc_ln309_reg_445</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8524,7 +8524,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln296_1_reg_426</first>
+			<first>zext_ln308_1_reg_426</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -8532,7 +8532,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln298_reg_431</first>
+			<first>zext_ln310_reg_431</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'stage_gaussian'" level="0">
-<item name = "Date">Fri Apr 10 20:50:50 2026
+<item name = "Date">Sat Apr 11 20:28:34 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">8256, 8256, 33.024 us, 33.024 us, 8256, 8256, no</column>
+<column name="">8255, 8255, 33.020 us, 33.020 us, 8255, 8255, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -32,7 +32,7 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="grp_stage_gaussian_Pipeline_READ_IN_fu_130">stage_gaussian_Pipeline_READ_IN, 4107, 4107, 16.428 us, 16.428 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186">stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1, 4146, 4146, 16.584 us, 16.584 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186">stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1, 4145, 4145, 16.580 us, 16.580 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -51,19 +51,19 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 2, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 54, 5513, 11017, -</column>
+<column name="Instance">-, 42, 5329, 11048, -</column>
 <column name="Memory">25, -, 0, 0, -</column>
 <column name="Multiplexer">-, -, 0, 719, -</column>
 <column name="Register">-, -, 8, -, -</column>
 <specialColumn name="Available">432, 360, 141120, 70560, 0</specialColumn>
-<specialColumn name="Utilization (%)">5, 15, 3, 16, 0</specialColumn>
+<specialColumn name="Utilization (%)">5, 11, 3, 16, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186">stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1, 0, 53, 5081, 10647, 0</column>
+<column name="grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186">stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1, 0, 41, 4897, 10678, 0</column>
 <column name="grp_stage_gaussian_Pipeline_READ_IN_fu_130">stage_gaussian_Pipeline_READ_IN, 0, 1, 432, 370, 0</column>
 </table>
 </item>
@@ -73,31 +73,31 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="grid_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_1_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_2_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_3_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_4_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_5_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_6_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_7_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_8_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_9_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_10_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_11_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_12_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_13_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_14_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_15_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_16_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_17_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_18_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_19_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_20_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_21_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_22_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_23_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
-<column name="grid_24_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 14, 1, 2366</column>
+<column name="grid_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_1_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_2_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_3_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_4_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_5_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_6_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_7_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_8_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_9_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_10_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_11_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_12_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_13_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_14_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_15_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_16_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_17_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_18_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_19_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_20_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_21_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_22_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_23_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
+<column name="grid_24_U">stage_gaussian_grid_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 169, 12, 1, 2028</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -195,7 +195,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">4, 0, 4, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_stage_gaussian_Pipeline_READ_IN_fu_130_ap_start_reg">1, 0, 1, 0</column>
 <column name="start_once_reg">1, 0, 1, 0</column>
 </table>
@@ -217,12 +217,12 @@
 <column name="ap_ready">out, 1, ap_ctrl_hs, stage_gaussian, return value</column>
 <column name="start_out">out, 1, ap_ctrl_hs, stage_gaussian, return value</column>
 <column name="start_write">out, 1, ap_ctrl_hs, stage_gaussian, return value</column>
-<column name="equalized_stream_dout">in, 14, ap_fifo, equalized_stream, pointer</column>
+<column name="equalized_stream_dout">in, 12, ap_fifo, equalized_stream, pointer</column>
 <column name="equalized_stream_empty_n">in, 1, ap_fifo, equalized_stream, pointer</column>
 <column name="equalized_stream_read">out, 1, ap_fifo, equalized_stream, pointer</column>
 <column name="equalized_stream_num_data_valid">in, 9, ap_fifo, equalized_stream, pointer</column>
 <column name="equalized_stream_fifo_cap">in, 9, ap_fifo, equalized_stream, pointer</column>
-<column name="gaussian_stream_din">out, 14, ap_fifo, gaussian_stream, pointer</column>
+<column name="gaussian_stream_din">out, 12, ap_fifo, gaussian_stream, pointer</column>
 <column name="gaussian_stream_full_n">in, 1, ap_fifo, gaussian_stream, pointer</column>
 <column name="gaussian_stream_write">out, 1, ap_fifo, gaussian_stream, pointer</column>
 <column name="gaussian_stream_num_data_valid">in, 32, ap_fifo, gaussian_stream, pointer</column>

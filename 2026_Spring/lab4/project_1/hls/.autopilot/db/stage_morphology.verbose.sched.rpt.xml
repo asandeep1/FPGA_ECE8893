@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'stage_morphology'" level="0">
-<item name = "Date">Fri Apr 10 20:50:40 2026
+<item name = "Date">Sat Apr 11 20:28:25 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">12348, 12348, 49.392 us, 49.392 us, 12348, 12348, no</column>
+<column name="">12344, 12344, 49.376 us, 49.376 us, 12344, 12344, no</column>
 </table>
 </item>
 <item name = "Detail">

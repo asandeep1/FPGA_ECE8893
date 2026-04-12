@@ -47,7 +47,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="5" bw="14" op_0_bw="64">
+<Node id="5" bw="12" op_0_bw="64">
 <![CDATA[
 entry:2 %bilateral_buf = alloca i64 1
 
@@ -62,7 +62,7 @@ entry:2 %bilateral_buf = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="6" bw="14" op_0_bw="64">
+<Node id="6" bw="12" op_0_bw="64">
 <![CDATA[
 entry:3 %bilateral_buf_1 = alloca i64 1
 
@@ -77,7 +77,7 @@ entry:3 %bilateral_buf_1 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="7" bw="14" op_0_bw="64">
+<Node id="7" bw="12" op_0_bw="64">
 <![CDATA[
 entry:4 %bilateral_buf_2 = alloca i64 1
 
@@ -92,7 +92,7 @@ entry:4 %bilateral_buf_2 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="8" bw="14" op_0_bw="64">
+<Node id="8" bw="12" op_0_bw="64">
 <![CDATA[
 entry:5 %bilateral_buf_3 = alloca i64 1
 
@@ -107,7 +107,7 @@ entry:5 %bilateral_buf_3 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="9" bw="14" op_0_bw="64">
+<Node id="9" bw="12" op_0_bw="64">
 <![CDATA[
 entry:6 %bilateral_buf_4 = alloca i64 1
 
@@ -122,7 +122,7 @@ entry:6 %bilateral_buf_4 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="10" bw="14" op_0_bw="64">
+<Node id="10" bw="12" op_0_bw="64">
 <![CDATA[
 entry:7 %bilateral_buf_5 = alloca i64 1
 
@@ -137,7 +137,7 @@ entry:7 %bilateral_buf_5 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="11" bw="14" op_0_bw="64">
+<Node id="11" bw="12" op_0_bw="64">
 <![CDATA[
 entry:8 %bilateral_buf_6 = alloca i64 1
 
@@ -152,7 +152,7 @@ entry:8 %bilateral_buf_6 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="12" bw="14" op_0_bw="64">
+<Node id="12" bw="12" op_0_bw="64">
 <![CDATA[
 entry:9 %bilateral_buf_7 = alloca i64 1
 
@@ -167,7 +167,7 @@ entry:9 %bilateral_buf_7 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="13" bw="14" op_0_bw="64">
+<Node id="13" bw="12" op_0_bw="64">
 <![CDATA[
 entry:10 %bilateral_buf_8 = alloca i64 1
 
@@ -182,7 +182,7 @@ entry:10 %bilateral_buf_8 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="14" op_0_bw="64">
+<Node id="14" bw="12" op_0_bw="64">
 <![CDATA[
 entry:11 %eroded_buf = alloca i64 1
 
@@ -197,7 +197,7 @@ entry:11 %eroded_buf = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="14" op_0_bw="64">
+<Node id="15" bw="12" op_0_bw="64">
 <![CDATA[
 entry:12 %eroded_buf_1 = alloca i64 1
 
@@ -212,7 +212,7 @@ entry:12 %eroded_buf_1 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="16" bw="14" op_0_bw="64">
+<Node id="16" bw="12" op_0_bw="64">
 <![CDATA[
 entry:13 %eroded_buf_2 = alloca i64 1
 
@@ -227,7 +227,7 @@ entry:13 %eroded_buf_2 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="14" op_0_bw="64">
+<Node id="17" bw="12" op_0_bw="64">
 <![CDATA[
 entry:14 %eroded_buf_3 = alloca i64 1
 
@@ -242,7 +242,7 @@ entry:14 %eroded_buf_3 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="18" bw="14" op_0_bw="64">
+<Node id="18" bw="12" op_0_bw="64">
 <![CDATA[
 entry:15 %eroded_buf_4 = alloca i64 1
 
@@ -257,7 +257,7 @@ entry:15 %eroded_buf_4 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="14" op_0_bw="64">
+<Node id="19" bw="12" op_0_bw="64">
 <![CDATA[
 entry:16 %eroded_buf_5 = alloca i64 1
 
@@ -272,7 +272,7 @@ entry:16 %eroded_buf_5 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="20" bw="14" op_0_bw="64">
+<Node id="20" bw="12" op_0_bw="64">
 <![CDATA[
 entry:17 %eroded_buf_6 = alloca i64 1
 
@@ -287,7 +287,7 @@ entry:17 %eroded_buf_6 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="14" op_0_bw="64">
+<Node id="21" bw="12" op_0_bw="64">
 <![CDATA[
 entry:18 %eroded_buf_7 = alloca i64 1
 
@@ -302,7 +302,7 @@ entry:18 %eroded_buf_7 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="14" op_0_bw="64">
+<Node id="22" bw="12" op_0_bw="64">
 <![CDATA[
 entry:19 %eroded_buf_8 = alloca i64 1
 
@@ -317,9 +317,9 @@ entry:19 %eroded_buf_8 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="14" op_3_bw="14" op_4_bw="14" op_5_bw="14" op_6_bw="14" op_7_bw="14" op_8_bw="14" op_9_bw="14" op_10_bw="14">
+<Node id="41" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="12" op_3_bw="12" op_4_bw="12" op_5_bw="12" op_6_bw="12" op_7_bw="12" op_8_bw="12" op_9_bw="12" op_10_bw="12">
 <![CDATA[
-entry:38 %call_ln0 = call void @stage_morphology_Pipeline_READ_BILATERAL, i14 %bilateral_buf_8, i14 %bilateral_buf_7, i14 %bilateral_buf_6, i14 %bilateral_buf_5, i14 %bilateral_buf_4, i14 %bilateral_buf_3, i14 %bilateral_buf_2, i14 %bilateral_buf_1, i14 %bilateral_buf, i14 %bilateral_stream
+entry:38 %call_ln0 = call void @stage_morphology_Pipeline_READ_BILATERAL, i12 %bilateral_buf_8, i12 %bilateral_buf_7, i12 %bilateral_buf_6, i12 %bilateral_buf_5, i12 %bilateral_buf_4, i12 %bilateral_buf_3, i12 %bilateral_buf_2, i12 %bilateral_buf_1, i12 %bilateral_buf, i12 %bilateral_stream
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -335,9 +335,9 @@ entry:38 %call_ln0 = call void @stage_morphology_Pipeline_READ_BILATERAL, i14 %b
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="14" op_3_bw="14" op_4_bw="14" op_5_bw="14" op_6_bw="14" op_7_bw="14" op_8_bw="14" op_9_bw="14" op_10_bw="14">
+<Node id="41" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="12" op_3_bw="12" op_4_bw="12" op_5_bw="12" op_6_bw="12" op_7_bw="12" op_8_bw="12" op_9_bw="12" op_10_bw="12">
 <![CDATA[
-entry:38 %call_ln0 = call void @stage_morphology_Pipeline_READ_BILATERAL, i14 %bilateral_buf_8, i14 %bilateral_buf_7, i14 %bilateral_buf_6, i14 %bilateral_buf_5, i14 %bilateral_buf_4, i14 %bilateral_buf_3, i14 %bilateral_buf_2, i14 %bilateral_buf_1, i14 %bilateral_buf, i14 %bilateral_stream
+entry:38 %call_ln0 = call void @stage_morphology_Pipeline_READ_BILATERAL, i12 %bilateral_buf_8, i12 %bilateral_buf_7, i12 %bilateral_buf_6, i12 %bilateral_buf_5, i12 %bilateral_buf_4, i12 %bilateral_buf_3, i12 %bilateral_buf_2, i12 %bilateral_buf_1, i12 %bilateral_buf, i12 %bilateral_stream
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -353,9 +353,9 @@ entry:38 %call_ln0 = call void @stage_morphology_Pipeline_READ_BILATERAL, i14 %b
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="44" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="14" op_3_bw="14" op_4_bw="14" op_5_bw="14" op_6_bw="14" op_7_bw="14" op_8_bw="14" op_9_bw="14" op_10_bw="14" op_11_bw="14" op_12_bw="14" op_13_bw="14" op_14_bw="14" op_15_bw="14" op_16_bw="14" op_17_bw="14" op_18_bw="14" op_19_bw="0" op_20_bw="0">
+<Node id="44" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="12" op_3_bw="12" op_4_bw="12" op_5_bw="12" op_6_bw="12" op_7_bw="12" op_8_bw="12" op_9_bw="12" op_10_bw="12" op_11_bw="12" op_12_bw="12" op_13_bw="12" op_14_bw="12" op_15_bw="12" op_16_bw="12" op_17_bw="12" op_18_bw="12" op_19_bw="0" op_20_bw="0">
 <![CDATA[
-entry:41 %call_ln0 = call void @stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1, i14 %bilateral_buf, i14 %bilateral_buf_1, i14 %bilateral_buf_2, i14 %bilateral_buf_3, i14 %bilateral_buf_4, i14 %bilateral_buf_5, i14 %bilateral_buf_6, i14 %bilateral_buf_7, i14 %bilateral_buf_8, i14 %eroded_buf, i14 %eroded_buf_1, i14 %eroded_buf_2, i14 %eroded_buf_3, i14 %eroded_buf_4, i14 %eroded_buf_5, i14 %eroded_buf_6, i14 %eroded_buf_7, i14 %eroded_buf_8
+entry:41 %call_ln0 = call void @stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1, i12 %bilateral_buf, i12 %bilateral_buf_1, i12 %bilateral_buf_2, i12 %bilateral_buf_3, i12 %bilateral_buf_4, i12 %bilateral_buf_5, i12 %bilateral_buf_6, i12 %bilateral_buf_7, i12 %bilateral_buf_8, i12 %eroded_buf, i12 %eroded_buf_1, i12 %eroded_buf_2, i12 %eroded_buf_3, i12 %eroded_buf_4, i12 %eroded_buf_5, i12 %eroded_buf_6, i12 %eroded_buf_7, i12 %eroded_buf_8
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -371,9 +371,9 @@ entry:41 %call_ln0 = call void @stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOO
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="44" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="14" op_3_bw="14" op_4_bw="14" op_5_bw="14" op_6_bw="14" op_7_bw="14" op_8_bw="14" op_9_bw="14" op_10_bw="14" op_11_bw="14" op_12_bw="14" op_13_bw="14" op_14_bw="14" op_15_bw="14" op_16_bw="14" op_17_bw="14" op_18_bw="14" op_19_bw="0" op_20_bw="0">
+<Node id="44" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="12" op_3_bw="12" op_4_bw="12" op_5_bw="12" op_6_bw="12" op_7_bw="12" op_8_bw="12" op_9_bw="12" op_10_bw="12" op_11_bw="12" op_12_bw="12" op_13_bw="12" op_14_bw="12" op_15_bw="12" op_16_bw="12" op_17_bw="12" op_18_bw="12" op_19_bw="0" op_20_bw="0">
 <![CDATA[
-entry:41 %call_ln0 = call void @stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1, i14 %bilateral_buf, i14 %bilateral_buf_1, i14 %bilateral_buf_2, i14 %bilateral_buf_3, i14 %bilateral_buf_4, i14 %bilateral_buf_5, i14 %bilateral_buf_6, i14 %bilateral_buf_7, i14 %bilateral_buf_8, i14 %eroded_buf, i14 %eroded_buf_1, i14 %eroded_buf_2, i14 %eroded_buf_3, i14 %eroded_buf_4, i14 %eroded_buf_5, i14 %eroded_buf_6, i14 %eroded_buf_7, i14 %eroded_buf_8
+entry:41 %call_ln0 = call void @stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1, i12 %bilateral_buf, i12 %bilateral_buf_1, i12 %bilateral_buf_2, i12 %bilateral_buf_3, i12 %bilateral_buf_4, i12 %bilateral_buf_5, i12 %bilateral_buf_6, i12 %bilateral_buf_7, i12 %bilateral_buf_8, i12 %eroded_buf, i12 %eroded_buf_1, i12 %eroded_buf_2, i12 %eroded_buf_3, i12 %eroded_buf_4, i12 %eroded_buf_5, i12 %eroded_buf_6, i12 %eroded_buf_7, i12 %eroded_buf_8
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -389,12 +389,12 @@ entry:41 %call_ln0 = call void @stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOO
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="32" op_3_bw="14" op_4_bw="32" op_5_bw="0">
+<Node id="42" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="32" op_3_bw="12" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-entry:39 %fence_ln303 = fence void @_ssdm_op_Fence, i14 %bilateral_stream, i32 4294967295, i14 %morphology_stream, i32 0
+entry:39 %fence_ln315 = fence void @_ssdm_op_Fence, i12 %bilateral_stream, i32 4294967295, i12 %morphology_stream, i32 0
 
 ]]></Node>
-<StgValue><ssdm name="fence_ln303"/></StgValue>
+<StgValue><ssdm name="fence_ln315"/></StgValue>
 </operation>
 
 <operation id="30" st_id="5" stage="1" lat="1">
@@ -404,12 +404,12 @@ entry:39 %fence_ln303 = fence void @_ssdm_op_Fence, i14 %bilateral_stream, i32 4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="43" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="32" op_3_bw="14" op_4_bw="32" op_5_bw="0">
+<Node id="43" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="32" op_3_bw="12" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-entry:40 %fence_ln303 = fence void @_ssdm_op_Fence, i14 %bilateral_stream, i32 4294967295, i14 %morphology_stream, i32 0
+entry:40 %fence_ln315 = fence void @_ssdm_op_Fence, i12 %bilateral_stream, i32 4294967295, i12 %morphology_stream, i32 0
 
 ]]></Node>
-<StgValue><ssdm name="fence_ln303"/></StgValue>
+<StgValue><ssdm name="fence_ln315"/></StgValue>
 </operation>
 
 <operation id="31" st_id="5" stage="1" lat="1">
@@ -419,12 +419,12 @@ entry:40 %fence_ln303 = fence void @_ssdm_op_Fence, i14 %bilateral_stream, i32 4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="32" op_3_bw="14" op_4_bw="32" op_5_bw="0">
+<Node id="45" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="32" op_3_bw="12" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-entry:42 %fence_ln331 = fence void @_ssdm_op_Fence, i14 %bilateral_stream, i32 4294967295, i14 %morphology_stream, i32 0
+entry:42 %fence_ln344 = fence void @_ssdm_op_Fence, i12 %bilateral_stream, i32 4294967295, i12 %morphology_stream, i32 0
 
 ]]></Node>
-<StgValue><ssdm name="fence_ln331"/></StgValue>
+<StgValue><ssdm name="fence_ln344"/></StgValue>
 </operation>
 
 <operation id="32" st_id="5" stage="2" lat="2">
@@ -434,9 +434,9 @@ entry:42 %fence_ln331 = fence void @_ssdm_op_Fence, i14 %bilateral_stream, i32 4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="46" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="14" op_3_bw="14" op_4_bw="14" op_5_bw="14" op_6_bw="14" op_7_bw="14" op_8_bw="14" op_9_bw="14" op_10_bw="14" op_11_bw="0" op_12_bw="0" op_13_bw="0" op_14_bw="0" op_15_bw="0">
+<Node id="46" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="12" op_3_bw="12" op_4_bw="12" op_5_bw="12" op_6_bw="12" op_7_bw="12" op_8_bw="12" op_9_bw="12" op_10_bw="12" op_11_bw="0" op_12_bw="0" op_13_bw="0" op_14_bw="0" op_15_bw="0">
 <![CDATA[
-entry:43 %call_ln0 = call void @stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4, i14 %eroded_buf, i14 %eroded_buf_1, i14 %eroded_buf_2, i14 %eroded_buf_3, i14 %eroded_buf_4, i14 %eroded_buf_5, i14 %eroded_buf_6, i14 %eroded_buf_7, i14 %eroded_buf_8, i14 %morphology_stream
+entry:43 %call_ln0 = call void @stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4, i12 %eroded_buf, i12 %eroded_buf_1, i12 %eroded_buf_2, i12 %eroded_buf_3, i12 %eroded_buf_4, i12 %eroded_buf_5, i12 %eroded_buf_6, i12 %eroded_buf_7, i12 %eroded_buf_8, i12 %morphology_stream
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -452,9 +452,9 @@ entry:43 %call_ln0 = call void @stage_morphology_Pipeline_DILATION_LOOP_VITIS_LO
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="3" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
+<Node id="3" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %morphology_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0
+entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %morphology_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -467,9 +467,9 @@ entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %mo
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="4" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
+<Node id="4" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %bilateral_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0
+entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %bilateral_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -482,12 +482,12 @@ entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %bi
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="23" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="23" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:20 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_8, i64 666, i64 22, i64 18446744073709551615
+entry:20 %specmemcore_ln300 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_8, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln289"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln300"/></StgValue>
 </operation>
 
 <operation id="36" st_id="6" stage="1" lat="1">
@@ -497,12 +497,12 @@ entry:20 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilat
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="24" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:21 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_7, i64 666, i64 22, i64 18446744073709551615
+entry:21 %specmemcore_ln300 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_7, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln289"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln300"/></StgValue>
 </operation>
 
 <operation id="37" st_id="6" stage="1" lat="1">
@@ -512,12 +512,12 @@ entry:21 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilat
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="25" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:22 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_6, i64 666, i64 22, i64 18446744073709551615
+entry:22 %specmemcore_ln300 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_6, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln289"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln300"/></StgValue>
 </operation>
 
 <operation id="38" st_id="6" stage="1" lat="1">
@@ -527,12 +527,12 @@ entry:22 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilat
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="26" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="26" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:23 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_5, i64 666, i64 22, i64 18446744073709551615
+entry:23 %specmemcore_ln300 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_5, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln289"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln300"/></StgValue>
 </operation>
 
 <operation id="39" st_id="6" stage="1" lat="1">
@@ -542,12 +542,12 @@ entry:23 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilat
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="27" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="27" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:24 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_4, i64 666, i64 22, i64 18446744073709551615
+entry:24 %specmemcore_ln300 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_4, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln289"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln300"/></StgValue>
 </operation>
 
 <operation id="40" st_id="6" stage="1" lat="1">
@@ -557,12 +557,12 @@ entry:24 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilat
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="28" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="28" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:25 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_3, i64 666, i64 22, i64 18446744073709551615
+entry:25 %specmemcore_ln300 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_3, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln289"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln300"/></StgValue>
 </operation>
 
 <operation id="41" st_id="6" stage="1" lat="1">
@@ -572,12 +572,12 @@ entry:25 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilat
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="29" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="29" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:26 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_2, i64 666, i64 22, i64 18446744073709551615
+entry:26 %specmemcore_ln300 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_2, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln289"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln300"/></StgValue>
 </operation>
 
 <operation id="42" st_id="6" stage="1" lat="1">
@@ -587,12 +587,12 @@ entry:26 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilat
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="30" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:27 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_1, i64 666, i64 22, i64 18446744073709551615
+entry:27 %specmemcore_ln300 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_1, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln289"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln300"/></StgValue>
 </operation>
 
 <operation id="43" st_id="6" stage="1" lat="1">
@@ -602,12 +602,12 @@ entry:27 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilat
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="31" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="31" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:28 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf, i64 666, i64 22, i64 18446744073709551615
+entry:28 %specmemcore_ln300 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln289"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln300"/></StgValue>
 </operation>
 
 <operation id="44" st_id="6" stage="1" lat="1">
@@ -617,12 +617,12 @@ entry:28 %specmemcore_ln289 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilat
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="32" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:29 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %eroded_buf_8, i64 666, i64 22, i64 18446744073709551615
+entry:29 %specmemcore_ln301 = specmemcore void @_ssdm_op_SpecMemCore, i12 %eroded_buf_8, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln290"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln301"/></StgValue>
 </operation>
 
 <operation id="45" st_id="6" stage="1" lat="1">
@@ -632,12 +632,12 @@ entry:29 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %erode
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="33" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="33" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:30 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %eroded_buf_7, i64 666, i64 22, i64 18446744073709551615
+entry:30 %specmemcore_ln301 = specmemcore void @_ssdm_op_SpecMemCore, i12 %eroded_buf_7, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln290"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln301"/></StgValue>
 </operation>
 
 <operation id="46" st_id="6" stage="1" lat="1">
@@ -647,12 +647,12 @@ entry:30 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %erode
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="34" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="34" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:31 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %eroded_buf_6, i64 666, i64 22, i64 18446744073709551615
+entry:31 %specmemcore_ln301 = specmemcore void @_ssdm_op_SpecMemCore, i12 %eroded_buf_6, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln290"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln301"/></StgValue>
 </operation>
 
 <operation id="47" st_id="6" stage="1" lat="1">
@@ -662,12 +662,12 @@ entry:31 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %erode
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="35" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="35" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:32 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %eroded_buf_5, i64 666, i64 22, i64 18446744073709551615
+entry:32 %specmemcore_ln301 = specmemcore void @_ssdm_op_SpecMemCore, i12 %eroded_buf_5, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln290"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln301"/></StgValue>
 </operation>
 
 <operation id="48" st_id="6" stage="1" lat="1">
@@ -677,12 +677,12 @@ entry:32 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %erode
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="36" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:33 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %eroded_buf_4, i64 666, i64 22, i64 18446744073709551615
+entry:33 %specmemcore_ln301 = specmemcore void @_ssdm_op_SpecMemCore, i12 %eroded_buf_4, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln290"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln301"/></StgValue>
 </operation>
 
 <operation id="49" st_id="6" stage="1" lat="1">
@@ -692,12 +692,12 @@ entry:33 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %erode
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="37" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:34 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %eroded_buf_3, i64 666, i64 22, i64 18446744073709551615
+entry:34 %specmemcore_ln301 = specmemcore void @_ssdm_op_SpecMemCore, i12 %eroded_buf_3, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln290"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln301"/></StgValue>
 </operation>
 
 <operation id="50" st_id="6" stage="1" lat="1">
@@ -707,12 +707,12 @@ entry:34 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %erode
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="38" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="38" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:35 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %eroded_buf_2, i64 666, i64 22, i64 18446744073709551615
+entry:35 %specmemcore_ln301 = specmemcore void @_ssdm_op_SpecMemCore, i12 %eroded_buf_2, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln290"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln301"/></StgValue>
 </operation>
 
 <operation id="51" st_id="6" stage="1" lat="1">
@@ -722,12 +722,12 @@ entry:35 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %erode
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="39" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:36 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %eroded_buf_1, i64 666, i64 22, i64 18446744073709551615
+entry:36 %specmemcore_ln301 = specmemcore void @_ssdm_op_SpecMemCore, i12 %eroded_buf_1, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln290"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln301"/></StgValue>
 </operation>
 
 <operation id="52" st_id="6" stage="1" lat="1">
@@ -737,12 +737,12 @@ entry:36 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %erode
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<Node id="40" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:37 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %eroded_buf, i64 666, i64 22, i64 18446744073709551615
+entry:37 %specmemcore_ln301 = specmemcore void @_ssdm_op_SpecMemCore, i12 %eroded_buf, i64 666, i64 22, i64 18446744073709551615
 
 ]]></Node>
-<StgValue><ssdm name="specmemcore_ln290"/></StgValue>
+<StgValue><ssdm name="specmemcore_ln301"/></StgValue>
 </operation>
 
 <operation id="53" st_id="6" stage="1" lat="2">
@@ -752,9 +752,9 @@ entry:37 %specmemcore_ln290 = specmemcore void @_ssdm_op_SpecMemCore, i14 %erode
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="46" bw="0" op_0_bw="0" op_1_bw="14" op_2_bw="14" op_3_bw="14" op_4_bw="14" op_5_bw="14" op_6_bw="14" op_7_bw="14" op_8_bw="14" op_9_bw="14" op_10_bw="14" op_11_bw="0" op_12_bw="0" op_13_bw="0" op_14_bw="0" op_15_bw="0">
+<Node id="46" bw="0" op_0_bw="0" op_1_bw="12" op_2_bw="12" op_3_bw="12" op_4_bw="12" op_5_bw="12" op_6_bw="12" op_7_bw="12" op_8_bw="12" op_9_bw="12" op_10_bw="12" op_11_bw="0" op_12_bw="0" op_13_bw="0" op_14_bw="0" op_15_bw="0">
 <![CDATA[
-entry:43 %call_ln0 = call void @stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4, i14 %eroded_buf, i14 %eroded_buf_1, i14 %eroded_buf_2, i14 %eroded_buf_3, i14 %eroded_buf_4, i14 %eroded_buf_5, i14 %eroded_buf_6, i14 %eroded_buf_7, i14 %eroded_buf_8, i14 %morphology_stream
+entry:43 %call_ln0 = call void @stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4, i12 %eroded_buf, i12 %eroded_buf_1, i12 %eroded_buf_2, i12 %eroded_buf_3, i12 %eroded_buf_4, i12 %eroded_buf_5, i12 %eroded_buf_6, i12 %eroded_buf_7, i12 %eroded_buf_8, i12 %morphology_stream
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -769,10 +769,10 @@ entry:43 %call_ln0 = call void @stage_morphology_Pipeline_DILATION_LOOP_VITIS_LO
 
 <Node id="47" bw="0">
 <![CDATA[
-entry:44 %ret_ln355 = ret
+entry:44 %ret_ln369 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln355"/></StgValue>
+<StgValue><ssdm name="ret_ln369"/></StgValue>
 </operation>
 </state>
 </state_list>

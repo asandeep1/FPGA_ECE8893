@@ -1,0 +1,7 @@
+top.cpp:167:9: warning: Assuming false dependence as a "true/false" selection was not specified [-Winvalid-hls-pragmas]
+#pragma HLS DEPENDENCE variable=grid type=inter intra=false
+        ^
+top.cpp:251:9: warning: Assuming false dependence as a "true/false" selection was not specified [-Winvalid-hls-pragmas]
+#pragma HLS DEPENDENCE variable=grid type=inter intra=false
+        ^
+2 warnings generated.

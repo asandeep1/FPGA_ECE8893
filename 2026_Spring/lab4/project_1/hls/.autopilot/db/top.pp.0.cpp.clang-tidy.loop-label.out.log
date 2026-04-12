@@ -18,90 +18,90 @@
       ^~~
       VITIS_LOOP_1248_1: 
 /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:43699:7: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45872:2: warning: Added loop label VITIS_LOOP_96_1:   [xilinx-label-all-loops]
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45875:2: warning: Added loop label VITIS_LOOP_99_1:   [xilinx-label-all-loops]
  for (int i = 0; i < 256; i++) {
  ^~~
- VITIS_LOOP_96_1: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45872:2: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45891:5: warning: Added loop label VITIS_LOOP_115_2:   [xilinx-label-all-loops]
+ VITIS_LOOP_99_1: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45875:2: note: FIX-IT applied suggested code changes
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45895:5: warning: Added loop label VITIS_LOOP_119_2:   [xilinx-label-all-loops]
     for (int i = 1; i < 256; i++) {
     ^~~
-    VITIS_LOOP_115_2: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45891:5: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45920:45: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+    VITIS_LOOP_119_2: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45895:5: note: FIX-IT applied suggested code changes
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45925:45: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=grid type=ram_2p impl=bram
                                             ^
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45934:9: warning: Added loop label VITIS_LOOP_158_1:   [xilinx-label-all-loops]
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45940:9: warning: Added loop label VITIS_LOOP_164_1:   [xilinx-label-all-loops]
         for (int c = 0; c < 64; c++) {
         ^~~
-        VITIS_LOOP_158_1: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45934:9: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45991:45: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+        VITIS_LOOP_164_1: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45940:9: note: FIX-IT applied suggested code changes
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:45999:45: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=grid type=ram_2p impl=bram
                                             ^
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46005:2: warning: Added loop label VITIS_LOOP_229_1:   [xilinx-label-all-loops]
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46014:2: warning: Added loop label VITIS_LOOP_238_1:   [xilinx-label-all-loops]
  for (int kr = -1; kr <= 1; kr++) {
  ^~~
- VITIS_LOOP_229_1: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46005:2: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46006:9: warning: Added loop label VITIS_LOOP_230_2:   [xilinx-label-all-loops]
+ VITIS_LOOP_238_1: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46014:2: note: FIX-IT applied suggested code changes
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46015:9: warning: Added loop label VITIS_LOOP_239_2:   [xilinx-label-all-loops]
         for (int kc = -1; kc <= 1; kc++) {
         ^~~
-        VITIS_LOOP_230_2: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46006:9: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46015:9: warning: Added loop label VITIS_LOOP_239_3:   [xilinx-label-all-loops]
+        VITIS_LOOP_239_2: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46015:9: note: FIX-IT applied suggested code changes
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46024:9: warning: Added loop label VITIS_LOOP_248_3:   [xilinx-label-all-loops]
         for (int c = 0; c < 64; c++) {
         ^~~
-        VITIS_LOOP_239_3: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46015:9: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46028:17: warning: Added loop label VITIS_LOOP_252_4:   [xilinx-label-all-loops]
+        VITIS_LOOP_248_3: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46024:9: note: FIX-IT applied suggested code changes
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46039:17: warning: Added loop label VITIS_LOOP_263_4:   [xilinx-label-all-loops]
                 for (int kr = -1; kr <= 1; kr++) {
                 ^~~
-                VITIS_LOOP_252_4: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46028:17: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46029:21: warning: Added loop label VITIS_LOOP_253_5:   [xilinx-label-all-loops]
+                VITIS_LOOP_263_4: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46039:17: note: FIX-IT applied suggested code changes
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46040:21: warning: Added loop label VITIS_LOOP_264_5:   [xilinx-label-all-loops]
                     for (int kc = -1; kc <= 1; kc++) {
                     ^~~
-                    VITIS_LOOP_253_5: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46029:21: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46065:54: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+                    VITIS_LOOP_264_5: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46040:21: note: FIX-IT applied suggested code changes
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46076:54: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=bilateral_buf type=ram_2p impl=bram
                                                      ^
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46066:51: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46077:51: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=eroded_buf type=ram_2p impl=bram
                                                   ^
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46080:9: warning: Added loop label VITIS_LOOP_304_1:   [xilinx-label-all-loops]
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46092:9: warning: Added loop label VITIS_LOOP_316_1:   [xilinx-label-all-loops]
         for (int c = 0; c < 64; c++) {
         ^~~
-        VITIS_LOOP_304_1: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46080:9: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46089:17: warning: Added loop label VITIS_LOOP_313_2:   [xilinx-label-all-loops]
+        VITIS_LOOP_316_1: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46092:9: note: FIX-IT applied suggested code changes
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46102:17: warning: Added loop label VITIS_LOOP_326_2:   [xilinx-label-all-loops]
                 for (int kr = -1; kr <= 1; kr++) {
                 ^~~
-                VITIS_LOOP_313_2: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46089:17: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46090:21: warning: Added loop label VITIS_LOOP_314_3:   [xilinx-label-all-loops]
+                VITIS_LOOP_326_2: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46102:17: note: FIX-IT applied suggested code changes
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46103:21: warning: Added loop label VITIS_LOOP_327_3:   [xilinx-label-all-loops]
                     for (int kc = -1; kc <= 1; kc++) {
                     ^~~
-                    VITIS_LOOP_314_3: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46090:21: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46108:9: warning: Added loop label VITIS_LOOP_332_4:   [xilinx-label-all-loops]
+                    VITIS_LOOP_327_3: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46103:21: note: FIX-IT applied suggested code changes
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46121:9: warning: Added loop label VITIS_LOOP_345_4:   [xilinx-label-all-loops]
         for (int c = 0; c < 64; c++) {
         ^~~
-        VITIS_LOOP_332_4: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46108:9: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46117:17: warning: Added loop label VITIS_LOOP_341_5:   [xilinx-label-all-loops]
+        VITIS_LOOP_345_4: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46121:9: note: FIX-IT applied suggested code changes
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46131:17: warning: Added loop label VITIS_LOOP_355_5:   [xilinx-label-all-loops]
                 for (int kr = -1; kr <= 1; kr++) {
                 ^~~
-                VITIS_LOOP_341_5: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46117:17: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46118:21: warning: Added loop label VITIS_LOOP_342_6:   [xilinx-label-all-loops]
+                VITIS_LOOP_355_5: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46131:17: note: FIX-IT applied suggested code changes
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46132:21: warning: Added loop label VITIS_LOOP_356_6:   [xilinx-label-all-loops]
                     for (int kc = -1; kc <= 1; kc++) {
                     ^~~
-                    VITIS_LOOP_342_6: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46118:21: note: FIX-IT applied suggested code changes
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46173:5: warning: Added loop label VITIS_LOOP_393_1:   [xilinx-label-all-loops]
-    for (int i = 0; i < (64 * 64); i++) {
-    ^~~
-    VITIS_LOOP_393_1: 
-/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46173:5: note: FIX-IT applied suggested code changes
+                    VITIS_LOOP_356_6: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46132:21: note: FIX-IT applied suggested code changes
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46152:2: warning: Added loop label VITIS_LOOP_376_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < (64 * 64); i++) {
+ ^~~
+ VITIS_LOOP_376_1: 
+/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/.autopilot/db/top.pp.0.cpp:46152:2: note: FIX-IT applied suggested code changes

@@ -37,7 +37,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -73,7 +73,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -109,7 +109,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -145,7 +145,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -181,7 +181,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -217,7 +217,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -253,7 +253,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -289,7 +289,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -325,7 +325,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -361,7 +361,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -397,7 +397,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -433,7 +433,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -469,7 +469,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -505,7 +505,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -541,7 +541,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -577,7 +577,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -613,7 +613,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -649,7 +649,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -685,7 +685,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -721,7 +721,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -757,7 +757,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -793,7 +793,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -829,7 +829,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -865,7 +865,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -901,7 +901,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -937,7 +937,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>3</if_type>
@@ -959,7 +959,7 @@
 						<name>i</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -975,7 +975,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>148</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>
@@ -1012,10 +1012,10 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>i_write_ln148</name>
+						<name>i_write_ln153</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1031,7 +1031,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>148</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>
@@ -1069,10 +1069,10 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>br_ln148</name>
+						<name>br_ln153</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1088,7 +1088,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>148</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>
@@ -1128,7 +1128,7 @@
 						<name>i_4</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1144,7 +1144,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>148</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>
@@ -1182,10 +1182,10 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>icmp_ln148</name>
+						<name>icmp_ln153</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1201,7 +1201,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>148</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>
@@ -1242,7 +1242,7 @@
 						<name>i_5</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1258,7 +1258,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>148</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>
@@ -1296,10 +1296,10 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>br_ln148</name>
+						<name>br_ln153</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1315,7 +1315,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>148</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>
@@ -1357,7 +1357,7 @@
 						<name>c</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1373,7 +1373,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>148</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>
@@ -1413,7 +1413,7 @@
 						<name>trunc_ln</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>150</lineNumber>
+						<lineNumber>156</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1429,7 +1429,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>150</second>
+										<second>156</second>
 									</item>
 								</second>
 							</item>
@@ -1469,10 +1469,10 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>zext_ln150</name>
+						<name>zext_ln156</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>150</lineNumber>
+						<lineNumber>156</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1488,7 +1488,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>150</second>
+										<second>156</second>
 									</item>
 								</second>
 							</item>
@@ -1525,10 +1525,10 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>mul_ln150</name>
+						<name>mul_ln156</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>150</lineNumber>
+						<lineNumber>156</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1544,7 +1544,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>150</second>
+										<second>156</second>
 									</item>
 								</second>
 							</item>
@@ -1585,7 +1585,7 @@
 						<name>tmp</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>150</lineNumber>
+						<lineNumber>156</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1601,7 +1601,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>150</second>
+										<second>156</second>
 									</item>
 								</second>
 							</item>
@@ -1641,10 +1641,10 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>zext_ln152</name>
+						<name>zext_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1660,7 +1660,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -1697,10 +1697,10 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>mul_ln152</name>
+						<name>mul_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1716,7 +1716,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -1754,10 +1754,10 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>urem_ln150</name>
+						<name>urem_ln156</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>150</lineNumber>
+						<lineNumber>156</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1773,7 +1773,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>150</second>
+										<second>156</second>
 									</item>
 								</second>
 							</item>
@@ -1811,10 +1811,10 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>trunc_ln150</name>
+						<name>trunc_ln156</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>150</lineNumber>
+						<lineNumber>156</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1830,7 +1830,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>150</second>
+										<second>156</second>
 									</item>
 								</second>
 							</item>
@@ -1867,10 +1867,10 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>zext_ln151</name>
+						<name>zext_ln157</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>151</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1886,7 +1886,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>151</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -1923,10 +1923,10 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>mul_ln151</name>
+						<name>mul_ln157</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>151</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1942,7 +1942,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>151</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -1980,10 +1980,10 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>tmp_102</name>
+						<name>tmp_100</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>151</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -1999,7 +1999,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>151</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -2039,10 +2039,10 @@
 					<Obj>
 						<type>0</type>
 						<id>77</id>
-						<name>zext_ln152_1</name>
+						<name>zext_ln158_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2058,7 +2058,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2095,10 +2095,10 @@
 					<Obj>
 						<type>0</type>
 						<id>78</id>
-						<name>add_ln152</name>
+						<name>add_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2114,7 +2114,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2152,10 +2152,10 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>zext_ln152_2</name>
+						<name>zext_ln158_2</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2171,7 +2171,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2211,7 +2211,7 @@
 						<name>grid_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2227,7 +2227,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2269,7 +2269,7 @@
 						<name>grid_1_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2285,7 +2285,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2327,7 +2327,7 @@
 						<name>grid_2_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2343,7 +2343,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2385,7 +2385,7 @@
 						<name>grid_3_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2401,7 +2401,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2443,7 +2443,7 @@
 						<name>grid_4_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2459,7 +2459,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2501,7 +2501,7 @@
 						<name>grid_5_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2517,7 +2517,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2559,7 +2559,7 @@
 						<name>grid_6_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2575,7 +2575,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2617,7 +2617,7 @@
 						<name>grid_7_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2633,7 +2633,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2675,7 +2675,7 @@
 						<name>grid_8_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2691,7 +2691,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2733,7 +2733,7 @@
 						<name>grid_9_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2749,7 +2749,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2791,7 +2791,7 @@
 						<name>grid_10_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2807,7 +2807,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2849,7 +2849,7 @@
 						<name>grid_11_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2865,7 +2865,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2907,7 +2907,7 @@
 						<name>grid_12_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2923,7 +2923,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -2965,7 +2965,7 @@
 						<name>grid_13_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -2981,7 +2981,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3023,7 +3023,7 @@
 						<name>grid_14_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3039,7 +3039,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3081,7 +3081,7 @@
 						<name>grid_15_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3097,7 +3097,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3139,7 +3139,7 @@
 						<name>grid_16_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3155,7 +3155,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3197,7 +3197,7 @@
 						<name>grid_17_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3213,7 +3213,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3255,7 +3255,7 @@
 						<name>grid_18_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3271,7 +3271,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3313,7 +3313,7 @@
 						<name>grid_19_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3329,7 +3329,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3371,7 +3371,7 @@
 						<name>grid_20_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3387,7 +3387,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3429,7 +3429,7 @@
 						<name>grid_21_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3445,7 +3445,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3487,7 +3487,7 @@
 						<name>grid_22_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3503,7 +3503,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3545,7 +3545,7 @@
 						<name>grid_23_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3561,7 +3561,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3603,7 +3603,7 @@
 						<name>grid_24_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3619,7 +3619,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3658,10 +3658,10 @@
 					<Obj>
 						<type>0</type>
 						<id>105</id>
-						<name>urem_ln151</name>
+						<name>urem_ln157</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>151</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3677,7 +3677,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>151</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -3715,10 +3715,10 @@
 					<Obj>
 						<type>0</type>
 						<id>106</id>
-						<name>trunc_ln151</name>
+						<name>trunc_ln157</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>151</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3734,7 +3734,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>151</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -3774,7 +3774,7 @@
 						<name>equalized_stream_read</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3790,7 +3790,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3806,7 +3806,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -3828,10 +3828,10 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>_ln152</name>
+						<name>_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3847,7 +3847,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3893,10 +3893,10 @@
 					<Obj>
 						<type>0</type>
 						<id>110</id>
-						<name>_ln152</name>
+						<name>_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3912,7 +3912,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -3958,10 +3958,10 @@
 					<Obj>
 						<type>0</type>
 						<id>112</id>
-						<name>grid_18_addr_write_ln152</name>
+						<name>grid_18_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -3977,7 +3977,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4015,10 +4015,10 @@
 					<Obj>
 						<type>0</type>
 						<id>113</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4034,7 +4034,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4071,10 +4071,10 @@
 					<Obj>
 						<type>0</type>
 						<id>115</id>
-						<name>grid_17_addr_write_ln152</name>
+						<name>grid_17_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4090,7 +4090,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4128,10 +4128,10 @@
 					<Obj>
 						<type>0</type>
 						<id>116</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4147,7 +4147,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4184,10 +4184,10 @@
 					<Obj>
 						<type>0</type>
 						<id>118</id>
-						<name>grid_16_addr_write_ln152</name>
+						<name>grid_16_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4203,7 +4203,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4241,10 +4241,10 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4260,7 +4260,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4297,10 +4297,10 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>grid_15_addr_write_ln152</name>
+						<name>grid_15_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4316,7 +4316,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4354,10 +4354,10 @@
 					<Obj>
 						<type>0</type>
 						<id>122</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4373,7 +4373,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4410,10 +4410,10 @@
 					<Obj>
 						<type>0</type>
 						<id>124</id>
-						<name>grid_19_addr_write_ln152</name>
+						<name>grid_19_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4429,7 +4429,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4467,10 +4467,10 @@
 					<Obj>
 						<type>0</type>
 						<id>125</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4486,7 +4486,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4523,10 +4523,10 @@
 					<Obj>
 						<type>0</type>
 						<id>127</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4542,7 +4542,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4579,10 +4579,10 @@
 					<Obj>
 						<type>0</type>
 						<id>129</id>
-						<name>_ln152</name>
+						<name>_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4598,7 +4598,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4644,10 +4644,10 @@
 					<Obj>
 						<type>0</type>
 						<id>131</id>
-						<name>grid_13_addr_write_ln152</name>
+						<name>grid_13_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4663,7 +4663,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4701,10 +4701,10 @@
 					<Obj>
 						<type>0</type>
 						<id>132</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4720,7 +4720,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4757,10 +4757,10 @@
 					<Obj>
 						<type>0</type>
 						<id>134</id>
-						<name>grid_12_addr_write_ln152</name>
+						<name>grid_12_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4776,7 +4776,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4814,10 +4814,10 @@
 					<Obj>
 						<type>0</type>
 						<id>135</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4833,7 +4833,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4870,10 +4870,10 @@
 					<Obj>
 						<type>0</type>
 						<id>137</id>
-						<name>grid_11_addr_write_ln152</name>
+						<name>grid_11_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4889,7 +4889,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4927,10 +4927,10 @@
 					<Obj>
 						<type>0</type>
 						<id>138</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -4946,7 +4946,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -4983,10 +4983,10 @@
 					<Obj>
 						<type>0</type>
 						<id>140</id>
-						<name>grid_10_addr_write_ln152</name>
+						<name>grid_10_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5002,7 +5002,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5040,10 +5040,10 @@
 					<Obj>
 						<type>0</type>
 						<id>141</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5059,7 +5059,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5096,10 +5096,10 @@
 					<Obj>
 						<type>0</type>
 						<id>143</id>
-						<name>grid_14_addr_write_ln152</name>
+						<name>grid_14_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5115,7 +5115,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5153,10 +5153,10 @@
 					<Obj>
 						<type>0</type>
 						<id>144</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5172,7 +5172,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5209,10 +5209,10 @@
 					<Obj>
 						<type>0</type>
 						<id>146</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5228,7 +5228,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5265,10 +5265,10 @@
 					<Obj>
 						<type>0</type>
 						<id>148</id>
-						<name>_ln152</name>
+						<name>_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5284,7 +5284,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5330,10 +5330,10 @@
 					<Obj>
 						<type>0</type>
 						<id>150</id>
-						<name>grid_8_addr_write_ln152</name>
+						<name>grid_8_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5349,7 +5349,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5387,10 +5387,10 @@
 					<Obj>
 						<type>0</type>
 						<id>151</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5406,7 +5406,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5443,10 +5443,10 @@
 					<Obj>
 						<type>0</type>
 						<id>153</id>
-						<name>grid_7_addr_write_ln152</name>
+						<name>grid_7_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5462,7 +5462,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5500,10 +5500,10 @@
 					<Obj>
 						<type>0</type>
 						<id>154</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5519,7 +5519,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5556,10 +5556,10 @@
 					<Obj>
 						<type>0</type>
 						<id>156</id>
-						<name>grid_6_addr_write_ln152</name>
+						<name>grid_6_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5575,7 +5575,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5613,10 +5613,10 @@
 					<Obj>
 						<type>0</type>
 						<id>157</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5632,7 +5632,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5669,10 +5669,10 @@
 					<Obj>
 						<type>0</type>
 						<id>159</id>
-						<name>grid_5_addr_write_ln152</name>
+						<name>grid_5_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5688,7 +5688,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5726,10 +5726,10 @@
 					<Obj>
 						<type>0</type>
 						<id>160</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5745,7 +5745,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5782,10 +5782,10 @@
 					<Obj>
 						<type>0</type>
 						<id>162</id>
-						<name>grid_9_addr_write_ln152</name>
+						<name>grid_9_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5801,7 +5801,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5839,10 +5839,10 @@
 					<Obj>
 						<type>0</type>
 						<id>163</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5858,7 +5858,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5895,10 +5895,10 @@
 					<Obj>
 						<type>0</type>
 						<id>165</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5914,7 +5914,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -5951,10 +5951,10 @@
 					<Obj>
 						<type>0</type>
 						<id>167</id>
-						<name>_ln152</name>
+						<name>_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -5970,7 +5970,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6016,10 +6016,10 @@
 					<Obj>
 						<type>0</type>
 						<id>169</id>
-						<name>grid_3_addr_write_ln152</name>
+						<name>grid_3_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6035,7 +6035,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6073,10 +6073,10 @@
 					<Obj>
 						<type>0</type>
 						<id>170</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6092,7 +6092,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6129,10 +6129,10 @@
 					<Obj>
 						<type>0</type>
 						<id>172</id>
-						<name>grid_2_addr_write_ln152</name>
+						<name>grid_2_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6148,7 +6148,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6186,10 +6186,10 @@
 					<Obj>
 						<type>0</type>
 						<id>173</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6205,7 +6205,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6242,10 +6242,10 @@
 					<Obj>
 						<type>0</type>
 						<id>175</id>
-						<name>grid_1_addr_write_ln152</name>
+						<name>grid_1_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6261,7 +6261,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6299,10 +6299,10 @@
 					<Obj>
 						<type>0</type>
 						<id>176</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6318,7 +6318,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6355,10 +6355,10 @@
 					<Obj>
 						<type>0</type>
 						<id>178</id>
-						<name>grid_addr_write_ln152</name>
+						<name>grid_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6374,7 +6374,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6412,10 +6412,10 @@
 					<Obj>
 						<type>0</type>
 						<id>179</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6431,7 +6431,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6468,10 +6468,10 @@
 					<Obj>
 						<type>0</type>
 						<id>181</id>
-						<name>grid_4_addr_write_ln152</name>
+						<name>grid_4_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6487,7 +6487,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6525,10 +6525,10 @@
 					<Obj>
 						<type>0</type>
 						<id>182</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6544,7 +6544,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6581,10 +6581,10 @@
 					<Obj>
 						<type>0</type>
 						<id>184</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6600,7 +6600,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6637,10 +6637,10 @@
 					<Obj>
 						<type>0</type>
 						<id>186</id>
-						<name>_ln152</name>
+						<name>_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6656,7 +6656,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6702,10 +6702,10 @@
 					<Obj>
 						<type>0</type>
 						<id>188</id>
-						<name>grid_23_addr_write_ln152</name>
+						<name>grid_23_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6721,7 +6721,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6759,10 +6759,10 @@
 					<Obj>
 						<type>0</type>
 						<id>189</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6778,7 +6778,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6815,10 +6815,10 @@
 					<Obj>
 						<type>0</type>
 						<id>191</id>
-						<name>grid_22_addr_write_ln152</name>
+						<name>grid_22_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6834,7 +6834,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6872,10 +6872,10 @@
 					<Obj>
 						<type>0</type>
 						<id>192</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6891,7 +6891,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6928,10 +6928,10 @@
 					<Obj>
 						<type>0</type>
 						<id>194</id>
-						<name>grid_21_addr_write_ln152</name>
+						<name>grid_21_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -6947,7 +6947,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -6985,10 +6985,10 @@
 					<Obj>
 						<type>0</type>
 						<id>195</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -7004,7 +7004,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -7041,10 +7041,10 @@
 					<Obj>
 						<type>0</type>
 						<id>197</id>
-						<name>grid_20_addr_write_ln152</name>
+						<name>grid_20_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -7060,7 +7060,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -7098,10 +7098,10 @@
 					<Obj>
 						<type>0</type>
 						<id>198</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -7117,7 +7117,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -7154,10 +7154,10 @@
 					<Obj>
 						<type>0</type>
 						<id>200</id>
-						<name>grid_24_addr_write_ln152</name>
+						<name>grid_24_addr_write_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -7173,7 +7173,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -7211,10 +7211,10 @@
 					<Obj>
 						<type>0</type>
 						<id>201</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -7230,7 +7230,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -7267,10 +7267,10 @@
 					<Obj>
 						<type>0</type>
 						<id>203</id>
-						<name>br_ln152</name>
+						<name>br_ln158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>158</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -7286,7 +7286,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>152</second>
+										<second>158</second>
 									</item>
 								</second>
 							</item>
@@ -7323,10 +7323,10 @@
 					<Obj>
 						<type>0</type>
 						<id>205</id>
-						<name>i_write_ln148</name>
+						<name>i_write_ln153</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -7342,7 +7342,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>148</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>
@@ -7382,10 +7382,10 @@
 					<Obj>
 						<type>0</type>
 						<id>206</id>
-						<name>br_ln148</name>
+						<name>br_ln153</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>stage_gaussian</contextFuncName>
 						<contextNormFuncName>stage_gaussian</contextNormFuncName>
 						<inlineStackInfo>
@@ -7401,7 +7401,7 @@
 											<first>top.cpp</first>
 											<second>stage_gaussian</second>
 										</first>
-										<second>148</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>

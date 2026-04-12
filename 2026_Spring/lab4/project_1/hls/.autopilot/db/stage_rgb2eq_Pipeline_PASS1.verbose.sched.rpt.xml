@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'stage_rgb2eq_Pipeline_PASS1'" level="0">
-<item name = "Date">Fri Apr 10 20:50:15 2026
+<item name = "Date">Sat Apr 11 20:27:56 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">4.00 ns, 2.920 ns, 1.08 ns</column>
+<column name="ap_clk">4.00 ns, 3.320 ns, 1.08 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">4138, 4138, 16.552 us, 16.552 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="">4121, 4121, 16.484 us, 16.484 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- PASS1">4136, 4136, 42, 1, 1, 4096, yes</column>
+<column name="- PASS1">4119, 4119, 25, 1, 1, 4096, yes</column>
 </table>
 </item>
 </section>

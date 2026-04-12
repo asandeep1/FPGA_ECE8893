@@ -6,19 +6,19 @@
 #include <hls_stream.h>
 
 // =========================================================================
-// OPTIMIZED TYPES - Balanced for speed and precision
+// OPTIMIZED TYPES - Balanced precision reduction
 // =========================================================================
-// 16-bit coefficients
-typedef ap_fixed<16, 2, AP_RND, AP_SAT> coeff_t;     
+// 12-bit coefficients (Gaussian kernel quantization)
+typedef ap_fixed<12, 2, AP_RND, AP_SAT> coeff_t;     
 
-// 14-bit for intermediate storage (better precision)
-typedef ap_fixed<14, 3, AP_RND, AP_SAT> inter_t;     
+// 12-bit for intermediate storage (values are [0,1])
+typedef ap_fixed<12, 2, AP_RND, AP_SAT> inter_t;     
 
-// 16-bit for sum operations
-typedef ap_fixed<16, 5, AP_RND, AP_SAT> sum_t;       
+// 14-bit for sum operations
+typedef ap_fixed<14, 4, AP_RND, AP_SAT> sum_t;       
 
-// 18-bit for multiply accumulation
-typedef ap_fixed<18, 5, AP_RND, AP_SAT> acc_t;       
+// 16-bit for multiply accumulation
+typedef ap_fixed<16, 4, AP_RND, AP_SAT> acc_t;       
 
 // AXI data width: 512-bit = 16×32-bit words
 typedef ap_uint<512> wide_t;
@@ -79,14 +79,17 @@ void stage_rgb2eq(const data_t in_r[N], const data_t in_g[N], const data_t in_b[
     // Build intensity array for two-pass processing
     inter_t intensity_buf[N];
     
-    // Pass 1: RGB to HSI
+    // Pass 1: RGB to HSI - minimize float ops
 PASS1:
     for (int idx = 0; idx < N; idx++) {
 #pragma HLS PIPELINE II=1
-        data_t R = in_r[idx] * (data_t)0.00392156862;  // / 255.0
-        data_t G = in_g[idx] * (data_t)0.00392156862;
-        data_t B = in_b[idx] * (data_t)0.00392156862;
-        data_t I = (R + G + B) * (data_t)0.33333333;  // / 3.0
+#pragma HLS LOOP_TRIPCOUNT min=4096 max=4096 avg=4096
+        // Use integer arithmetic where possible
+        int r_int = (int)in_r[idx];
+        int g_int = (int)in_g[idx];
+        int b_int = (int)in_b[idx];
+        int sum_rgb = r_int + g_int + b_int;
+        data_t I = (data_t)sum_rgb * (data_t)(1.0/765.0);  // 1/(255*3)
         intensity_buf[idx] = float_to_inter(I);
     }
 
@@ -101,6 +104,7 @@ PASS1:
 BUILD_HIST:
     for (int idx = 0; idx < N; idx++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=4096 max=4096 avg=4096
         inter_t val = intensity_buf[idx];
         data_t fval = inter_to_float(val);
         int bin = (int)(fval * (data_t)255.0);
@@ -124,6 +128,7 @@ BUILD_HIST:
 PASS2:
     for (int idx = 0; idx < N; idx++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=4096 max=4096 avg=4096
         data_t fval = inter_to_float(intensity_buf[idx]);
         int bin = (int)(fval * (data_t)255.0);
         bin = (bin < 0) ? 0 : (bin >= HIST_BINS) ? (HIST_BINS - 1) : bin;
@@ -147,6 +152,7 @@ void stage_gaussian(hls::stream<inter_t>& equalized_in,
 READ_IN:
     for (int i = 0; i < N; i++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=4096 max=4096 avg=4096
         int r = i / COLS;
         int c = i % COLS;
         grid[r][c] = equalized_in.read();
@@ -157,6 +163,8 @@ GAUSSIAN_OUT:
     for (int r = 0; r < ROWS; r++) {
         for (int c = 0; c < COLS; c++) {
             #pragma HLS PIPELINE II=1
+            #pragma HLS LOOP_TRIPCOUNT min=64 max=64 avg=64
+            #pragma HLS DEPENDENCE variable=grid type=inter intra=false
             
             bool valid_row = (r >= 2) && (r < ROWS - 2);
             bool valid_col = (c >= 2) && (c < COLS - 2);
@@ -218,6 +226,7 @@ void stage_bilateral(hls::stream<inter_t>& gaussian_in,
 READ_IN:
     for (int i = 0; i < N; i++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=4096 max=4096 avg=4096
         int r = i / COLS;
         int c = i % COLS;
         grid[r][c] = gaussian_in.read();
@@ -238,6 +247,8 @@ BILATERAL_OUT:
     for (int r = 0; r < ROWS; r++) {
         for (int c = 0; c < COLS; c++) {
             #pragma HLS PIPELINE II=1
+            #pragma HLS LOOP_TRIPCOUNT min=64 max=64 avg=64
+            #pragma HLS DEPENDENCE variable=grid type=inter intra=false
             
             bool valid_row = (r >= 1) && (r < ROWS - 1);
             bool valid_col = (c >= 1) && (c < COLS - 1);
@@ -293,6 +304,7 @@ void stage_morphology(hls::stream<inter_t>& bilateral_in,
 READ_BILATERAL:
     for (int i = 0; i < N; i++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=4096 max=4096 avg=4096
         int r = i / COLS;
         int c = i % COLS;
         bilateral_buf[r][c] = bilateral_in.read();
@@ -303,6 +315,7 @@ EROSION_LOOP:
     for (int r = 0; r < ROWS; r++) {
         for (int c = 0; c < COLS; c++) {
             #pragma HLS PIPELINE II=1
+            #pragma HLS LOOP_TRIPCOUNT min=64 max=64 avg=64
             
             bool valid_row = (r >= 1) && (r < ROWS - 1);
             bool valid_col = (c >= 1) && (c < COLS - 1);
@@ -331,6 +344,7 @@ DILATION_LOOP:
     for (int r = 0; r < ROWS; r++) {
         for (int c = 0; c < COLS; c++) {
             #pragma HLS PIPELINE II=1
+            #pragma HLS LOOP_TRIPCOUNT min=64 max=64 avg=64
             
             bool valid_row = (r >= 1) && (r < ROWS - 1);
             bool valid_col = (c >= 1) && (c < COLS - 1);
@@ -351,6 +365,19 @@ DILATION_LOOP:
             }
             out_stream.write(result);
         }
+    }
+}
+
+// =========================================================================
+// OUTPUT WRITER - Separate from dataflow pipeline
+// =========================================================================
+void write_output(hls::stream<inter_t>& result_stream, data_t out[N]) {
+#pragma HLS INLINE off
+    for (int i = 0; i < N; i++) {
+#pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=4096 max=4096 avg=4096
+        inter_t val = result_stream.read();
+        out[i] = inter_to_float(val);
     }
 }
 
@@ -388,12 +415,8 @@ void top_kernel(const data_t in_r[N], const data_t in_g[N], const data_t in_b[N]
     
     // Stage 5: Morphological Operations
     stage_morphology(bilateral_stream, morphology_stream);
-
-    // Write output
-    for (int i = 0; i < N; i++) {
-#pragma HLS PIPELINE II=1
-        inter_t val = morphology_stream.read();
-        out[i] = inter_to_float(val);
-    }
+    
+    // Write output (outside dataflow)
+    write_output(morphology_stream, out);
 }
 

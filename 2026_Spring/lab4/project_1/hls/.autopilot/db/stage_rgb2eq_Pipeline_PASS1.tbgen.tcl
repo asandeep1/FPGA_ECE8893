@@ -18,7 +18,7 @@ set cdfgNum 20
 set C_modelName {stage_rgb2eq_Pipeline_PASS1}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict intensity_buf { MEM_WIDTH 14 MEM_SIZE 8192 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict intensity_buf { MEM_WIDTH 12 MEM_SIZE 8192 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
 	{ gmem0 int 32 regular {axi_master 0}  }
 	{ sext_ln84 int 62 regular  }
@@ -26,7 +26,7 @@ set C_modelArgList {
 	{ sext_ln84_1 int 62 regular  }
 	{ gmem2 int 32 regular {axi_master 0}  }
 	{ sext_ln84_2 int 62 regular  }
-	{ intensity_buf int 14 regular {array 4096 { 0 3 } 0 1 }  }
+	{ intensity_buf int 12 regular {array 4096 { 0 3 } 0 1 }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
@@ -38,9 +38,9 @@ set C_modelArgMapList {[
  	{ "Name" : "sext_ln84_1", "interface" : "wire", "bitwidth" : 62, "direction" : "READONLY"} , 
  	{ "Name" : "gmem2", "interface" : "axi_master", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[ {"cElement": [{"cName": "in_b","offset": { "type": "dynamic","port_name": "in_b","bundle": "control"},"direction": "READONLY"}]}]} , 
  	{ "Name" : "sext_ln84_2", "interface" : "wire", "bitwidth" : 62, "direction" : "READONLY"} , 
- 	{ "Name" : "intensity_buf", "interface" : "memory", "bitwidth" : 14, "direction" : "WRITEONLY"} ]}
+ 	{ "Name" : "intensity_buf", "interface" : "memory", "bitwidth" : 12, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 163
+set portNum 161
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -192,16 +192,14 @@ set portList {
 	{ intensity_buf_address0 sc_out sc_lv 12 signal 6 } 
 	{ intensity_buf_ce0 sc_out sc_logic 1 signal 6 } 
 	{ intensity_buf_we0 sc_out sc_logic 1 signal 6 } 
-	{ intensity_buf_d0 sc_out sc_lv 14 signal 6 } 
-	{ grp_fu_3204_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_3204_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_3204_p_opcode sc_out sc_lv 1 signal -1 } 
-	{ grp_fu_3204_p_dout0 sc_in sc_lv 32 signal -1 } 
-	{ grp_fu_3204_p_ce sc_out sc_logic 1 signal -1 } 
+	{ intensity_buf_d0 sc_out sc_lv 12 signal 6 } 
 	{ grp_fu_9960_p_din0 sc_out sc_lv 32 signal -1 } 
 	{ grp_fu_9960_p_din1 sc_out sc_lv 32 signal -1 } 
 	{ grp_fu_9960_p_dout0 sc_in sc_lv 32 signal -1 } 
 	{ grp_fu_9960_p_ce sc_out sc_logic 1 signal -1 } 
+	{ grp_fu_3209_p_din0 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_3209_p_dout0 sc_in sc_lv 32 signal -1 } 
+	{ grp_fu_3209_p_ce sc_out sc_logic 1 signal -1 } 
 	{ grp_fu_9964_p_din0 sc_out sc_lv 32 signal -1 } 
 	{ grp_fu_9964_p_dout0 sc_in sc_lv 64 signal -1 } 
 	{ grp_fu_9964_p_ce sc_out sc_logic 1 signal -1 } 
@@ -357,16 +355,14 @@ set NewPortList {[
  	{ "name": "intensity_buf_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "intensity_buf", "role": "address0" }} , 
  	{ "name": "intensity_buf_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "intensity_buf", "role": "ce0" }} , 
  	{ "name": "intensity_buf_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "intensity_buf", "role": "we0" }} , 
- 	{ "name": "intensity_buf_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "intensity_buf", "role": "d0" }} , 
- 	{ "name": "grp_fu_3204_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_3204_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_3204_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_3204_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_3204_p_opcode", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_3204_p_opcode", "role": "default" }} , 
- 	{ "name": "grp_fu_3204_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_3204_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_3204_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_3204_p_ce", "role": "default" }} , 
+ 	{ "name": "intensity_buf_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "intensity_buf", "role": "d0" }} , 
  	{ "name": "grp_fu_9960_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9960_p_din0", "role": "default" }} , 
  	{ "name": "grp_fu_9960_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9960_p_din1", "role": "default" }} , 
  	{ "name": "grp_fu_9960_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9960_p_dout0", "role": "default" }} , 
  	{ "name": "grp_fu_9960_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9960_p_ce", "role": "default" }} , 
+ 	{ "name": "grp_fu_3209_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_3209_p_din0", "role": "default" }} , 
+ 	{ "name": "grp_fu_3209_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_3209_p_dout0", "role": "default" }} , 
+ 	{ "name": "grp_fu_3209_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_3209_p_ce", "role": "default" }} , 
  	{ "name": "grp_fu_9964_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9964_p_din0", "role": "default" }} , 
  	{ "name": "grp_fu_9964_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "grp_fu_9964_p_dout0", "role": "default" }} , 
  	{ "name": "grp_fu_9964_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9964_p_ce", "role": "default" }}  ]}
@@ -377,15 +373,15 @@ set ArgLastReadFirstWriteLatency {
 		sext_ln84 {Type I LastRead 0 FirstWrite -1}
 		gmem1 {Type I LastRead 1 FirstWrite -1}
 		sext_ln84_1 {Type I LastRead 0 FirstWrite -1}
-		gmem2 {Type I LastRead 11 FirstWrite -1}
+		gmem2 {Type I LastRead 1 FirstWrite -1}
 		sext_ln84_2 {Type I LastRead 0 FirstWrite -1}
-		intensity_buf {Type O LastRead -1 FirstWrite 41}}}
+		intensity_buf {Type O LastRead -1 FirstWrite 24}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "4138", "Max" : "4138"}
-	, {"Name" : "Interval", "Min" : "4138", "Max" : "4138"}
+	{"Name" : "Latency", "Min" : "4121", "Max" : "4121"}
+	, {"Name" : "Interval", "Min" : "4121", "Max" : "4121"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -399,5 +395,5 @@ set Spec2ImplPortList {
 	sext_ln84_1 { ap_none {  { sext_ln84_1 in_data 0 62 } } }
 	 { m_axi {  { m_axi_gmem2_0_AWVALID VALID 1 1 }  { m_axi_gmem2_0_AWREADY READY 0 1 }  { m_axi_gmem2_0_AWADDR ADDR 1 64 }  { m_axi_gmem2_0_AWID ID 1 1 }  { m_axi_gmem2_0_AWLEN SIZE 1 32 }  { m_axi_gmem2_0_AWSIZE BURST 1 3 }  { m_axi_gmem2_0_AWBURST LOCK 1 2 }  { m_axi_gmem2_0_AWLOCK CACHE 1 2 }  { m_axi_gmem2_0_AWCACHE PROT 1 4 }  { m_axi_gmem2_0_AWPROT QOS 1 3 }  { m_axi_gmem2_0_AWQOS REGION 1 4 }  { m_axi_gmem2_0_AWREGION USER 1 4 }  { m_axi_gmem2_0_AWUSER DATA 1 1 }  { m_axi_gmem2_0_WVALID VALID 1 1 }  { m_axi_gmem2_0_WREADY READY 0 1 }  { m_axi_gmem2_0_WDATA FIFONUM 1 32 }  { m_axi_gmem2_0_WSTRB STRB 1 4 }  { m_axi_gmem2_0_WLAST LAST 1 1 }  { m_axi_gmem2_0_WID ID 1 1 }  { m_axi_gmem2_0_WUSER DATA 1 1 }  { m_axi_gmem2_0_ARVALID VALID 1 1 }  { m_axi_gmem2_0_ARREADY READY 0 1 }  { m_axi_gmem2_0_ARADDR ADDR 1 64 }  { m_axi_gmem2_0_ARID ID 1 1 }  { m_axi_gmem2_0_ARLEN SIZE 1 32 }  { m_axi_gmem2_0_ARSIZE BURST 1 3 }  { m_axi_gmem2_0_ARBURST LOCK 1 2 }  { m_axi_gmem2_0_ARLOCK CACHE 1 2 }  { m_axi_gmem2_0_ARCACHE PROT 1 4 }  { m_axi_gmem2_0_ARPROT QOS 1 3 }  { m_axi_gmem2_0_ARQOS REGION 1 4 }  { m_axi_gmem2_0_ARREGION USER 1 4 }  { m_axi_gmem2_0_ARUSER DATA 1 1 }  { m_axi_gmem2_0_RVALID VALID 0 1 }  { m_axi_gmem2_0_RREADY READY 1 1 }  { m_axi_gmem2_0_RDATA FIFONUM 0 32 }  { m_axi_gmem2_0_RLAST LAST 0 1 }  { m_axi_gmem2_0_RID ID 0 1 }  { m_axi_gmem2_0_RFIFONUM LEN 0 13 }  { m_axi_gmem2_0_RUSER DATA 0 1 }  { m_axi_gmem2_0_RRESP RESP 0 2 }  { m_axi_gmem2_0_BVALID VALID 0 1 }  { m_axi_gmem2_0_BREADY READY 1 1 }  { m_axi_gmem2_0_BRESP RESP 0 2 }  { m_axi_gmem2_0_BID ID 0 1 }  { m_axi_gmem2_0_BUSER DATA 0 1 } } }
 	sext_ln84_2 { ap_none {  { sext_ln84_2 in_data 0 62 } } }
-	intensity_buf { ap_memory {  { intensity_buf_address0 mem_address 1 12 }  { intensity_buf_ce0 mem_ce 1 1 }  { intensity_buf_we0 mem_we 1 1 }  { intensity_buf_d0 mem_din 1 14 } } }
+	intensity_buf { ap_memory {  { intensity_buf_address0 mem_address 1 12 }  { intensity_buf_ce0 mem_ce 1 1 }  { intensity_buf_we0 mem_we 1 1 }  { intensity_buf_d0 mem_din 1 12 } } }
 }

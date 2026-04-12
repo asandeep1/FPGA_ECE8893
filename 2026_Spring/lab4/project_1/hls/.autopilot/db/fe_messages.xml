@@ -1,5 +1,10 @@
 <xilinx:hls_fe_msgs>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="top.cpp:378:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5581" msg_severity="WARNING" msg_loc="top.cpp:167:9" msg_body="Assuming false dependence as a &quot;true/false&quot; selection was not specified">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5581" msg_severity="WARNING" msg_loc="top.cpp:251:9" msg_body="Assuming false dependence as a &quot;true/false&quot; selection was not specified">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:45:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="float_to_inter" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
@@ -15,167 +20,209 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:85:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_rgb2eq" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:95:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:86:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_rgb2eq" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=4096 max=4096 avg=4096" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:98:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_rgb2eq" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=histogram complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:97:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:100:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_rgb2eq" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:103:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:106:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_rgb2eq" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:113:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:107:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_rgb2eq" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=4096 max=4096 avg=4096" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:117:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_rgb2eq" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=cdf complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:116:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:120:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_rgb2eq" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:126:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:130:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_rgb2eq" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:141:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:131:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_rgb2eq" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=4096 max=4096 avg=4096" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:146:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_gaussian" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:144:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:149:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_gaussian" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=grid type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:149:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:154:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_gaussian" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:159:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:155:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_gaussian" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=4096 max=4096 avg=4096" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:165:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_gaussian" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:212:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="stage_bilateral" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:166:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_gaussian" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=64 max=64 avg=64" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:215:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="stage_bilateral" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=grid type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:167:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_gaussian" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=grid type=inter intra=false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:220:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="stage_bilateral" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="stage_bilateral" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:223:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_bilateral" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=grid type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:228:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="stage_bilateral" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=spatial_weights complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:240:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_bilateral" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:254:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:229:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_bilateral" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=4096 max=4096 avg=4096" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:237:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_bilateral" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=spatial_weights complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:249:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_bilateral" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:250:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_bilateral" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=64 max=64 avg=64" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:251:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_bilateral" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=grid type=inter intra=false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:265:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_bilateral" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:285:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:296:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_morphology" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:289:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:300:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_morphology" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=bilateral_buf type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:290:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:301:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_morphology" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=eroded_buf type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:295:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:306:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_morphology" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:305:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:307:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_morphology" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=4096 max=4096 avg=4096" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:317:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_morphology" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:315:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:318:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_morphology" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=64 max=64 avg=64" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:328:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_morphology" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:333:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:346:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_morphology" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:343:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:347:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stage_morphology" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=64 max=64 avg=64" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:357:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="stage_morphology" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:375:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_output" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:377:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_output" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:378:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_output" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=4096 max=4096 avg=4096" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/script.tcl:23:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:361:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:388:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=in_r offset=slave bundle=gmem0 max_read_burst_length=256" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:362:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:389:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=in_g offset=slave bundle=gmem1 max_read_burst_length=256" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:363:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:390:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=in_b offset=slave bundle=gmem2 max_read_burst_length=256" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:364:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:391:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=out offset=slave bundle=gmem3 max_write_burst_length=256" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:365:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:392:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:373:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:400:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=equalized_stream depth=256" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:374:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:401:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=gaussian_stream depth=256" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:375:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:402:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=bilateral_stream depth=256" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:376:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:403:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=morphology_stream depth=256" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:378:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:405:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top.cpp:394:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="top.cpp:93:30" msg_body="Inlining function 'float_to_inter(float)' into 'stage_rgb2eq(float const*, float const*, float const*, hls::stream&lt;ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)'">
+        <args Callee="float_to_inter(float)" Callee-DebugLoc="File top.cpp Line 44 Column 0" Caller="stage_rgb2eq(float const*, float const*, float const*, hls::stream&lt;ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File top.cpp Line 76 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="top.cpp:90:30" msg_body="Inlining function 'float_to_inter(float)' into 'stage_rgb2eq(float const*, float const*, float const*, hls::stream&lt;ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)'">
-        <args Callee="float_to_inter(float)" Callee-DebugLoc="File top.cpp Line 44 Column 0" Caller="stage_rgb2eq(float const*, float const*, float const*, hls::stream&lt;ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File top.cpp Line 76 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="top.cpp:109:23" msg_body="Inlining function 'inter_to_float(ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'stage_rgb2eq(float const*, float const*, float const*, hls::stream&lt;ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)'">
+        <args Callee="inter_to_float(ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File top.cpp Line 49 Column 0" Caller="stage_rgb2eq(float const*, float const*, float const*, hls::stream&lt;ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File top.cpp Line 76 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="top.cpp:105:23" msg_body="Inlining function 'inter_to_float(ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'stage_rgb2eq(float const*, float const*, float const*, hls::stream&lt;ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)'">
-        <args Callee="inter_to_float(ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File top.cpp Line 49 Column 0" Caller="stage_rgb2eq(float const*, float const*, float const*, hls::stream&lt;ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File top.cpp Line 76 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="top.cpp:241:43" msg_body="Inlining function 'fast_exp_approx(float)' into 'stage_bilateral(hls::stream&lt;ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)'">
+        <args Callee="fast_exp_approx(float)" Callee-DebugLoc="File top.cpp Line 58 Column 0" Caller="stage_bilateral(hls::stream&lt;ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File top.cpp Line 219 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="top.cpp:232:43" msg_body="Inlining function 'fast_exp_approx(float)' into 'stage_bilateral(hls::stream&lt;ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)'">
-        <args Callee="fast_exp_approx(float)" Callee-DebugLoc="File top.cpp Line 58 Column 0" Caller="stage_bilateral(hls::stream&lt;ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File top.cpp Line 211 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="top.cpp:270:44" msg_body="Inlining function 'inter_to_float(ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'stage_bilateral(hls::stream&lt;ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)'">
+        <args Callee="inter_to_float(ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File top.cpp Line 49 Column 0" Caller="stage_bilateral(hls::stream&lt;ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File top.cpp Line 219 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="top.cpp:259:44" msg_body="Inlining function 'inter_to_float(ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'stage_bilateral(hls::stream&lt;ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)'">
-        <args Callee="inter_to_float(ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File top.cpp Line 49 Column 0" Caller="stage_bilateral(hls::stream&lt;ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, hls::stream&lt;ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File top.cpp Line 211 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="top.cpp:380:18" msg_body="Inlining function 'inter_to_float(ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'write_output(hls::stream&lt;ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, float*)'">
+        <args Callee="inter_to_float(ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File top.cpp Line 49 Column 0" Caller="write_output(hls::stream&lt;ap_fixed&lt;12, 2, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;, float*)" Caller-DebugLoc="File top.cpp Line 374 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="top.cpp:396:18" msg_body="Inlining function 'inter_to_float(ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'top_kernel(float const*, float const*, float const*, float*)'">
-        <args Callee="inter_to_float(ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File top.cpp Line 49 Column 0" Caller="top_kernel(float const*, float const*, float const*, float*)" Caller-DebugLoc="File top.cpp Line 360 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:355:35" msg_body="Loop 'VITIS_LOOP_355_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_355_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:341:35" msg_body="Loop 'VITIS_LOOP_341_5' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_341_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:356:39" msg_body="Loop 'VITIS_LOOP_356_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_356_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:342:39" msg_body="Loop 'VITIS_LOOP_342_6' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_342_6"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:326:35" msg_body="Loop 'VITIS_LOOP_326_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_326_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:313:35" msg_body="Loop 'VITIS_LOOP_313_2' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_313_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:327:39" msg_body="Loop 'VITIS_LOOP_327_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_327_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:314:39" msg_body="Loop 'VITIS_LOOP_314_3' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_314_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:263:35" msg_body="Loop 'VITIS_LOOP_263_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_263_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:252:35" msg_body="Loop 'VITIS_LOOP_252_4' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_252_4"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:264:39" msg_body="Loop 'VITIS_LOOP_264_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_264_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="top.cpp:253:39" msg_body="Loop 'VITIS_LOOP_253_5' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_253_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:295:0" msg_body="Unrolling loop 'VITIS_LOOP_355_5' (top.cpp:355:35) in function 'stage_morphology' completely with a factor of 3">
+        <args Factor="3" LoopLoc="top.cpp:355:35" LoopName="VITIS_LOOP_355_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:284:0" msg_body="Unrolling loop 'VITIS_LOOP_341_5' (top.cpp:341:35) in function 'stage_morphology' completely with a factor of 3">
-        <args Factor="3" LoopLoc="top.cpp:341:35" LoopName="VITIS_LOOP_341_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:295:0" msg_body="Unrolling loop 'VITIS_LOOP_356_6' (top.cpp:356:39) in function 'stage_morphology' completely with a factor of 3">
+        <args Factor="3" LoopLoc="top.cpp:356:39" LoopName="VITIS_LOOP_356_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:284:0" msg_body="Unrolling loop 'VITIS_LOOP_342_6' (top.cpp:342:39) in function 'stage_morphology' completely with a factor of 3">
-        <args Factor="3" LoopLoc="top.cpp:342:39" LoopName="VITIS_LOOP_342_6"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:295:0" msg_body="Unrolling loop 'VITIS_LOOP_326_2' (top.cpp:326:35) in function 'stage_morphology' completely with a factor of 3">
+        <args Factor="3" LoopLoc="top.cpp:326:35" LoopName="VITIS_LOOP_326_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:284:0" msg_body="Unrolling loop 'VITIS_LOOP_313_2' (top.cpp:313:35) in function 'stage_morphology' completely with a factor of 3">
-        <args Factor="3" LoopLoc="top.cpp:313:35" LoopName="VITIS_LOOP_313_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:295:0" msg_body="Unrolling loop 'VITIS_LOOP_327_3' (top.cpp:327:39) in function 'stage_morphology' completely with a factor of 3">
+        <args Factor="3" LoopLoc="top.cpp:327:39" LoopName="VITIS_LOOP_327_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:284:0" msg_body="Unrolling loop 'VITIS_LOOP_314_3' (top.cpp:314:39) in function 'stage_morphology' completely with a factor of 3">
-        <args Factor="3" LoopLoc="top.cpp:314:39" LoopName="VITIS_LOOP_314_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:219:0" msg_body="Unrolling loop 'VITIS_LOOP_263_4' (top.cpp:263:35) in function 'stage_bilateral' completely with a factor of 3">
+        <args Factor="3" LoopLoc="top.cpp:263:35" LoopName="VITIS_LOOP_263_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:211:0" msg_body="Unrolling loop 'VITIS_LOOP_252_4' (top.cpp:252:35) in function 'stage_bilateral' completely with a factor of 3">
-        <args Factor="3" LoopLoc="top.cpp:252:35" LoopName="VITIS_LOOP_252_4"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:219:0" msg_body="Unrolling loop 'VITIS_LOOP_264_5' (top.cpp:264:39) in function 'stage_bilateral' completely with a factor of 3">
+        <args Factor="3" LoopLoc="top.cpp:264:39" LoopName="VITIS_LOOP_264_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:211:0" msg_body="Unrolling loop 'VITIS_LOOP_253_5' (top.cpp:253:39) in function 'stage_bilateral' completely with a factor of 3">
-        <args Factor="3" LoopLoc="top.cpp:253:39" LoopName="VITIS_LOOP_253_5"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:76:0" msg_body="Unrolling loop 'VITIS_LOOP_96_1' (top.cpp:96:19) in function 'stage_rgb2eq' completely with a factor of 256">
-        <args Factor="256" LoopLoc="top.cpp:96:19" LoopName="VITIS_LOOP_96_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="top.cpp:76:0" msg_body="Unrolling loop 'VITIS_LOOP_99_1' (top.cpp:99:19) in function 'stage_rgb2eq' completely with a factor of 256">
+        <args Factor="256" LoopLoc="top.cpp:99:19" LoopName="VITIS_LOOP_99_1"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::fp_struct(float)' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
         <args Callee="fp_struct&lt;float&gt;::fp_struct(float)" Callee-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 283 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0"/>
@@ -195,77 +242,71 @@
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0" msg_body="Inlining function 'int generic_cast_IEEE754&lt;int, float&gt;(float, bool)' into '__hls_fptosi_float_i32'">
         <args Callee="int generic_cast_IEEE754&lt;int, float&gt;(float, bool)" Callee-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 116 Column 0" Caller="__hls_fptosi_float_i32" Caller-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp Line 51 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="top.cpp:76:0" msg_body="Inlining function '__hls_fptosi_float_i32' into 'stage_rgb2eq(float const*, float const*, float const*, hls::stream&lt;ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)'">
-        <args Callee="__hls_fptosi_float_i32" Callee-DebugLoc="File /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp Line 51 Column 0" Caller="stage_rgb2eq(float const*, float const*, float const*, hls::stream&lt;ap_fixed&lt;14, 3, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 0&gt;&amp;)" Caller-DebugLoc="File top.cpp Line 76 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:94:9" msg_body="Applying array_partition to 'histogram': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:97:9" msg_body="Applying array_partition to 'histogram': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="histogram"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:112:9" msg_body="Applying array_partition to 'cdf': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:116:9" msg_body="Applying array_partition to 'cdf': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="cdf"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:143:10" msg_body="array_partition dim=1 type=cyclic factor=5 variable=grid 1 stage_gaussian top.cpp:143:10 top.cpp:159:9grid">
-        <args PragmaFunction="stage_gaussian" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=5 variable=grid" PragmaSrcLoc="top.cpp:159:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 159 Column 9" PragmaType="array_partition" VarName="grid" varLoc="top.cpp:143:10"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:148:10" msg_body="array_partition dim=1 type=cyclic factor=5 variable=grid 1 stage_gaussian top.cpp:148:10 top.cpp:165:9grid">
+        <args PragmaFunction="stage_gaussian" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=5 variable=grid" PragmaSrcLoc="top.cpp:165:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 165 Column 9" PragmaType="array_partition" VarName="grid" varLoc="top.cpp:148:10"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:159:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=5 dim=1' for array 'grid' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:165:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=5 dim=1' for array 'grid' due to pipeline pragma">
         <args Dim="1" Factor="5" Mode="cyclic" Name="grid" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:143:10" msg_body="array_partition dim=2 type=cyclic factor=5 variable=grid 1 stage_gaussian top.cpp:143:10 top.cpp:159:9grid">
-        <args PragmaFunction="stage_gaussian" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=5 variable=grid" PragmaSrcLoc="top.cpp:159:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 159 Column 9" PragmaType="array_partition" VarName="grid" varLoc="top.cpp:143:10"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:148:10" msg_body="array_partition dim=2 type=cyclic factor=5 variable=grid 1 stage_gaussian top.cpp:148:10 top.cpp:165:9grid">
+        <args PragmaFunction="stage_gaussian" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=5 variable=grid" PragmaSrcLoc="top.cpp:165:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 165 Column 9" PragmaType="array_partition" VarName="grid" varLoc="top.cpp:148:10"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:159:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=5 dim=2' for array 'grid' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:165:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=5 dim=2' for array 'grid' due to pipeline pragma">
         <args Dim="2" Factor="5" Mode="cyclic" Name="grid" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:214:10" msg_body="array_partition dim=1 type=cyclic factor=3 variable=grid 1 stage_bilateral top.cpp:214:10 top.cpp:240:9grid">
-        <args PragmaFunction="stage_bilateral" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=grid" PragmaSrcLoc="top.cpp:240:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 240 Column 9" PragmaType="array_partition" VarName="grid" varLoc="top.cpp:214:10"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:222:10" msg_body="array_partition dim=1 type=cyclic factor=3 variable=grid 1 stage_bilateral top.cpp:222:10 top.cpp:249:9grid">
+        <args PragmaFunction="stage_bilateral" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=grid" PragmaSrcLoc="top.cpp:249:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 249 Column 9" PragmaType="array_partition" VarName="grid" varLoc="top.cpp:222:10"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:240:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'grid' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:249:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'grid' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="grid" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:214:10" msg_body="array_partition dim=2 type=cyclic factor=3 variable=grid 1 stage_bilateral top.cpp:214:10 top.cpp:240:9grid">
-        <args PragmaFunction="stage_bilateral" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=3 variable=grid" PragmaSrcLoc="top.cpp:240:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 240 Column 9" PragmaType="array_partition" VarName="grid" varLoc="top.cpp:214:10"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:222:10" msg_body="array_partition dim=2 type=cyclic factor=3 variable=grid 1 stage_bilateral top.cpp:222:10 top.cpp:249:9grid">
+        <args PragmaFunction="stage_bilateral" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=3 variable=grid" PragmaSrcLoc="top.cpp:249:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 249 Column 9" PragmaType="array_partition" VarName="grid" varLoc="top.cpp:222:10"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:240:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'grid' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:249:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'grid' due to pipeline pragma">
         <args Dim="2" Factor="3" Mode="cyclic" Name="grid" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:287:10" msg_body="array_partition dim=1 type=cyclic factor=3 variable=bilateral_buf 1 stage_morphology top.cpp:287:10 top.cpp:305:9bilateral_buf">
-        <args PragmaFunction="stage_morphology" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=bilateral_buf" PragmaSrcLoc="top.cpp:305:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 305 Column 9" PragmaType="array_partition" VarName="bilateral_buf" varLoc="top.cpp:287:10"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:298:10" msg_body="array_partition dim=1 type=cyclic factor=3 variable=bilateral_buf 1 stage_morphology top.cpp:298:10 top.cpp:317:9bilateral_buf">
+        <args PragmaFunction="stage_morphology" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=bilateral_buf" PragmaSrcLoc="top.cpp:317:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 317 Column 9" PragmaType="array_partition" VarName="bilateral_buf" varLoc="top.cpp:298:10"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:305:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'bilateral_buf' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:317:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'bilateral_buf' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="bilateral_buf" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:287:10" msg_body="array_partition dim=2 type=cyclic factor=3 variable=bilateral_buf 1 stage_morphology top.cpp:287:10 top.cpp:305:9bilateral_buf">
-        <args PragmaFunction="stage_morphology" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=3 variable=bilateral_buf" PragmaSrcLoc="top.cpp:305:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 305 Column 9" PragmaType="array_partition" VarName="bilateral_buf" varLoc="top.cpp:287:10"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:298:10" msg_body="array_partition dim=2 type=cyclic factor=3 variable=bilateral_buf 1 stage_morphology top.cpp:298:10 top.cpp:317:9bilateral_buf">
+        <args PragmaFunction="stage_morphology" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=3 variable=bilateral_buf" PragmaSrcLoc="top.cpp:317:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 317 Column 9" PragmaType="array_partition" VarName="bilateral_buf" varLoc="top.cpp:298:10"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:305:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'bilateral_buf' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:317:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'bilateral_buf' due to pipeline pragma">
         <args Dim="2" Factor="3" Mode="cyclic" Name="bilateral_buf" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:288:13" msg_body="array_partition dim=1 type=cyclic factor=3 variable=eroded_buf 1 stage_morphology top.cpp:288:13 top.cpp:333:9eroded_buf">
-        <args PragmaFunction="stage_morphology" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=eroded_buf" PragmaSrcLoc="top.cpp:333:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 333 Column 9" PragmaType="array_partition" VarName="eroded_buf" varLoc="top.cpp:288:13"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:299:13" msg_body="array_partition dim=1 type=cyclic factor=3 variable=eroded_buf 1 stage_morphology top.cpp:299:13 top.cpp:346:9eroded_buf">
+        <args PragmaFunction="stage_morphology" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=eroded_buf" PragmaSrcLoc="top.cpp:346:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 346 Column 9" PragmaType="array_partition" VarName="eroded_buf" varLoc="top.cpp:299:13"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:333:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'eroded_buf' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:346:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'eroded_buf' due to pipeline pragma">
         <args Dim="1" Factor="3" Mode="cyclic" Name="eroded_buf" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:288:13" msg_body="array_partition dim=2 type=cyclic factor=3 variable=eroded_buf 1 stage_morphology top.cpp:288:13 top.cpp:333:9eroded_buf">
-        <args PragmaFunction="stage_morphology" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=3 variable=eroded_buf" PragmaSrcLoc="top.cpp:333:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 333 Column 9" PragmaType="array_partition" VarName="eroded_buf" varLoc="top.cpp:288:13"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="top.cpp:299:13" msg_body="array_partition dim=2 type=cyclic factor=3 variable=eroded_buf 1 stage_morphology top.cpp:299:13 top.cpp:346:9eroded_buf">
+        <args PragmaFunction="stage_morphology" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=3 variable=eroded_buf" PragmaSrcLoc="top.cpp:346:9" PragmaSrcLoc-DebugLoc="File top.cpp Line 346 Column 9" PragmaType="array_partition" VarName="eroded_buf" varLoc="top.cpp:299:13"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:333:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'eroded_buf' due to pipeline pragma">
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="top.cpp:346:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'eroded_buf' due to pipeline pragma">
         <args Dim="2" Factor="3" Mode="cyclic" Name="eroded_buf" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:143:10" msg_body="Applying array_partition to 'grid': Cyclic partitioning with factor 5 on dimension 1. Cyclic partitioning with factor 5 on dimension 2.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:148:10" msg_body="Applying array_partition to 'grid': Cyclic partitioning with factor 5 on dimension 1. Cyclic partitioning with factor 5 on dimension 2.">
         <args Dim="islist 1 2" Factor="islist 5 5" Mode="islist Cyclic Cyclic" UOName="grid"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:214:10" msg_body="Applying array_partition to 'grid': Cyclic partitioning with factor 3 on dimension 1. Cyclic partitioning with factor 3 on dimension 2.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:222:10" msg_body="Applying array_partition to 'grid': Cyclic partitioning with factor 3 on dimension 1. Cyclic partitioning with factor 3 on dimension 2.">
         <args Dim="islist 1 2" Factor="islist 3 3" Mode="islist Cyclic Cyclic" UOName="grid"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:287:10" msg_body="Applying array_partition to 'bilateral_buf': Cyclic partitioning with factor 3 on dimension 1. Cyclic partitioning with factor 3 on dimension 2.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:298:10" msg_body="Applying array_partition to 'bilateral_buf': Cyclic partitioning with factor 3 on dimension 1. Cyclic partitioning with factor 3 on dimension 2.">
         <args Dim="islist 1 2" Factor="islist 3 3" Mode="islist Cyclic Cyclic" UOName="bilateral_buf"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:288:13" msg_body="Applying array_partition to 'eroded_buf': Cyclic partitioning with factor 3 on dimension 1. Cyclic partitioning with factor 3 on dimension 2.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top.cpp:299:13" msg_body="Applying array_partition to 'eroded_buf': Cyclic partitioning with factor 3 on dimension 1. Cyclic partitioning with factor 3 on dimension 2.">
         <args Dim="islist 1 2" Factor="islist 3 3" Mode="islist Cyclic Cyclic" UOName="eroded_buf"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-455" msg_severity="INFO" msg_loc="top.cpp:393:23" msg_body="Changing loop 'Loop_VITIS_LOOP_393_1_proc' (top.cpp:393:23) to a process function for dataflow in function 'top_kernel'">
-        <args LoopLoc="top.cpp:393:23" LoopName="Loop_VITIS_LOOP_393_1_proc" Name="top_kernel"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

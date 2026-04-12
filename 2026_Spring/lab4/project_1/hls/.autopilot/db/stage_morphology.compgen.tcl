@@ -10,7 +10,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1621 \
+    id 1600 \
     name bilateral_stream \
     type fifo \
     dir I \
@@ -18,14 +18,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_bilateral_stream \
     op interface \
-    ports { bilateral_stream_dout { I 14 vector } bilateral_stream_empty_n { I 1 bit } bilateral_stream_read { O 1 bit } bilateral_stream_num_data_valid { I 9 vector } bilateral_stream_fifo_cap { I 9 vector } } \
+    ports { bilateral_stream_dout { I 12 vector } bilateral_stream_empty_n { I 1 bit } bilateral_stream_read { O 1 bit } bilateral_stream_num_data_valid { I 9 vector } bilateral_stream_fifo_cap { I 9 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1622 \
+    id 1601 \
     name morphology_stream \
     type fifo \
     dir O \
@@ -33,7 +33,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_morphology_stream \
     op interface \
-    ports { morphology_stream_din { O 14 vector } morphology_stream_full_n { I 1 bit } morphology_stream_write { O 1 bit } morphology_stream_num_data_valid { I 32 vector } morphology_stream_fifo_cap { I 32 vector } } \
+    ports { morphology_stream_din { O 12 vector } morphology_stream_full_n { I 1 bit } morphology_stream_write { O 1 bit } morphology_stream_num_data_valid { I 32 vector } morphology_stream_fifo_cap { I 32 vector } } \
 } "
 }
 

@@ -37,7 +37,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>3</if_type>
@@ -73,7 +73,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <direction>1</direction>
           <if_type>3</if_type>
@@ -95,7 +95,7 @@
               <name>grid</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>214</lineNumber>
+              <lineNumber>222</lineNumber>
               <contextFuncName>stage_bilateral</contextFuncName>
               <contextNormFuncName>stage_bilateral</contextNormFuncName>
               <inlineStackInfo>
@@ -111,7 +111,7 @@
                         <first>top.cpp</first>
                         <second>stage_bilateral</second>
                       </first>
-                      <second>214</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -127,7 +127,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -151,7 +151,7 @@
               <name>grid_25</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>214</lineNumber>
+              <lineNumber>222</lineNumber>
               <contextFuncName>stage_bilateral</contextFuncName>
               <contextNormFuncName>stage_bilateral</contextNormFuncName>
               <inlineStackInfo>
@@ -167,7 +167,7 @@
                         <first>top.cpp</first>
                         <second>stage_bilateral</second>
                       </first>
-                      <second>214</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -183,7 +183,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -207,7 +207,7 @@
               <name>grid_26</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>214</lineNumber>
+              <lineNumber>222</lineNumber>
               <contextFuncName>stage_bilateral</contextFuncName>
               <contextNormFuncName>stage_bilateral</contextNormFuncName>
               <inlineStackInfo>
@@ -223,7 +223,7 @@
                         <first>top.cpp</first>
                         <second>stage_bilateral</second>
                       </first>
-                      <second>214</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -239,7 +239,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -263,7 +263,7 @@
               <name>grid_27</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>214</lineNumber>
+              <lineNumber>222</lineNumber>
               <contextFuncName>stage_bilateral</contextFuncName>
               <contextNormFuncName>stage_bilateral</contextNormFuncName>
               <inlineStackInfo>
@@ -279,7 +279,7 @@
                         <first>top.cpp</first>
                         <second>stage_bilateral</second>
                       </first>
-                      <second>214</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -295,7 +295,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -319,7 +319,7 @@
               <name>grid_28</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>214</lineNumber>
+              <lineNumber>222</lineNumber>
               <contextFuncName>stage_bilateral</contextFuncName>
               <contextNormFuncName>stage_bilateral</contextNormFuncName>
               <inlineStackInfo>
@@ -335,7 +335,7 @@
                         <first>top.cpp</first>
                         <second>stage_bilateral</second>
                       </first>
-                      <second>214</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -351,7 +351,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -375,7 +375,7 @@
               <name>grid_29</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>214</lineNumber>
+              <lineNumber>222</lineNumber>
               <contextFuncName>stage_bilateral</contextFuncName>
               <contextNormFuncName>stage_bilateral</contextNormFuncName>
               <inlineStackInfo>
@@ -391,7 +391,7 @@
                         <first>top.cpp</first>
                         <second>stage_bilateral</second>
                       </first>
-                      <second>214</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -407,7 +407,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -431,7 +431,7 @@
               <name>grid_30</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>214</lineNumber>
+              <lineNumber>222</lineNumber>
               <contextFuncName>stage_bilateral</contextFuncName>
               <contextNormFuncName>stage_bilateral</contextNormFuncName>
               <inlineStackInfo>
@@ -447,7 +447,7 @@
                         <first>top.cpp</first>
                         <second>stage_bilateral</second>
                       </first>
-                      <second>214</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -463,7 +463,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -487,7 +487,7 @@
               <name>grid_31</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>214</lineNumber>
+              <lineNumber>222</lineNumber>
               <contextFuncName>stage_bilateral</contextFuncName>
               <contextNormFuncName>stage_bilateral</contextNormFuncName>
               <inlineStackInfo>
@@ -503,7 +503,7 @@
                         <first>top.cpp</first>
                         <second>stage_bilateral</second>
                       </first>
-                      <second>214</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -519,7 +519,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -543,7 +543,7 @@
               <name>grid_32</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>214</lineNumber>
+              <lineNumber>222</lineNumber>
               <contextFuncName>stage_bilateral</contextFuncName>
               <contextNormFuncName>stage_bilateral</contextNormFuncName>
               <inlineStackInfo>
@@ -559,7 +559,7 @@
                         <first>top.cpp</first>
                         <second>stage_bilateral</second>
                       </first>
-                      <second>214</second>
+                      <second>222</second>
                     </item>
                   </second>
                 </item>
@@ -575,7 +575,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -648,10 +648,10 @@
             <Obj>
               <type>0</type>
               <id>24</id>
-              <name>_ln238</name>
+              <name>_ln247</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>238</lineNumber>
+              <lineNumber>247</lineNumber>
               <contextFuncName>stage_bilateral</contextFuncName>
               <contextNormFuncName>stage_bilateral</contextNormFuncName>
               <inlineStackInfo>
@@ -667,7 +667,7 @@
                         <first>top.cpp</first>
                         <second>stage_bilateral</second>
                       </first>
-                      <second>238</second>
+                      <second>247</second>
                     </item>
                   </second>
                 </item>
@@ -709,10 +709,10 @@
             <Obj>
               <type>0</type>
               <id>25</id>
-              <name>_ln238</name>
+              <name>_ln247</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>238</lineNumber>
+              <lineNumber>247</lineNumber>
               <contextFuncName>stage_bilateral</contextFuncName>
               <contextNormFuncName>stage_bilateral</contextNormFuncName>
               <inlineStackInfo>
@@ -728,7 +728,7 @@
                         <first>top.cpp</first>
                         <second>stage_bilateral</second>
                       </first>
-                      <second>238</second>
+                      <second>247</second>
                     </item>
                   </second>
                 </item>
@@ -781,7 +781,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90</rtlName>
+              <rtlName>grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -826,10 +826,10 @@
             <Obj>
               <type>0</type>
               <id>27</id>
-              <name>_ln278</name>
+              <name>_ln289</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>278</lineNumber>
+              <lineNumber>289</lineNumber>
               <contextFuncName>stage_bilateral</contextFuncName>
               <contextNormFuncName>stage_bilateral</contextNormFuncName>
               <inlineStackInfo>
@@ -845,7 +845,7 @@
                         <first>top.cpp</first>
                         <second>stage_bilateral</second>
                       </first>
-                      <second>278</second>
+                      <second>289</second>
                     </item>
                   </second>
                 </item>
@@ -1009,7 +1009,7 @@
             <Obj>
               <type>2</type>
               <id>64</id>
-              <name>stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3</name>
+              <name>stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -1033,7 +1033,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3&gt;</content>
+          <content>&lt;constant:stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -1425,8 +1425,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>8351</mMinLatency>
-        <mMaxLatency>8351</mMaxLatency>
+        <mMinLatency>8348</mMinLatency>
+        <mMaxLatency>8348</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"></mDfPipe>
       </item>
@@ -1654,7 +1654,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90 (stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3)</first>
+          <first>grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90 (stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -1664,11 +1664,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>31068</second>
+              <second>30212</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>33819</second>
+              <second>32935</second>
             </item>
           </second>
         </item>
@@ -1737,7 +1737,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -1745,7 +1745,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -1772,7 +1772,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -1780,7 +1780,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -1807,7 +1807,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -1815,7 +1815,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -1842,7 +1842,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -1850,7 +1850,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -1877,7 +1877,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -1885,7 +1885,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -1912,7 +1912,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -1920,7 +1920,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -1947,7 +1947,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -1955,7 +1955,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -1982,7 +1982,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -1990,7 +1990,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -2017,7 +2017,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -2025,7 +2025,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -2898,7 +2898,7 @@
           </second>
         </item>
         <item>
-          <first>grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_start_reg</first>
+          <first>grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2959,7 +2959,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90</first>
+          <first>grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -2977,7 +2977,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90 (stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3)</first>
+          <first>grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90 (stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3309,7 +3309,7 @@
       <count>11</count>
       <item_version>0</item_version>
       <item class_id="52" tracking_level="0" version="0">
-        <first>fence_ln238_fu_105</first>
+        <first>fence_ln247_fu_105</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3317,7 +3317,7 @@
         </second>
       </item>
       <item>
-        <first>fence_ln238_fu_117</first>
+        <first>fence_ln247_fu_117</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3401,7 +3401,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90</first>
+        <first>grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

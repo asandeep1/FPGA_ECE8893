@@ -11,6 +11,6 @@
 >> Verifying Results...
 
 ----------------------------------------
-Max Error: 0.00539806
+Max Error: 0.0092181
 TEST PASSED
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4096

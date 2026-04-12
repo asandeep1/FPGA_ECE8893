@@ -253,7 +253,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <direction>1</direction>
           <if_type>3</if_type>
@@ -1420,7 +1420,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>fmul_32ns_32ns_32_7_max_dsp_1_U1084</rtlName>
+              <rtlName></rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1714,7 +1714,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>faddfsub_32ns_32ns_32_10_full_dsp_1_U1082</rtlName>
+              <rtlName></rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1840,7 +1840,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>fpext_32ns_64_2_no_dsp_1_U1085</rtlName>
+              <rtlName></rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -4066,7 +4066,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName></rtlName>
+              <rtlName>sitofp_32ns_32_7_no_dsp_1_U1077</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -4108,7 +4108,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName></rtlName>
+              <rtlName>fmul_32ns_32ns_32_7_max_dsp_1_U1078</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -4150,7 +4150,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName></rtlName>
+              <rtlName>fpext_32ns_64_2_no_dsp_1_U1079</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -21898,7 +21898,7 @@
               <coreId>82</coreId>
               <rtlModuleName>top_kernel_stage_rgb2eq_intensity_buf_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -22321,7 +22321,7 @@
             <Obj>
               <type>0</type>
               <id>534</id>
-              <name>empty_60</name>
+              <name>empty_66</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>84</lineNumber>
@@ -22551,7 +22551,7 @@
             <Obj>
               <type>0</type>
               <id>538</id>
-              <name>empty_61</name>
+              <name>empty_67</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>84</lineNumber>
@@ -23632,7 +23632,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>fmul_32ns_32ns_32_7_max_dsp_1_U1084</rtlName>
+              <rtlName>fmul_32ns_32ns_32_7_max_dsp_1_U1078</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -25008,7 +25008,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sitofp_32ns_32_7_no_dsp_1_U1083</rtlName>
+              <rtlName>sitofp_32ns_32_7_no_dsp_1_U1077</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -25051,7 +25051,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>faddfsub_32ns_32ns_32_10_full_dsp_1_U1082</rtlName>
+              <rtlName>fsub_32ns_32ns_32_10_full_dsp_1_U1076</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -25481,7 +25481,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>fpext_32ns_64_2_no_dsp_1_U1085</rtlName>
+              <rtlName>fpext_32ns_64_2_no_dsp_1_U1079</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -33995,7 +33995,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424</rtlName>
+              <rtlName>grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -45505,7 +45505,7 @@
               <name>cdf_min</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>120</lineNumber>
+              <lineNumber>124</lineNumber>
               <contextFuncName>stage_rgb2eq</contextFuncName>
               <contextNormFuncName>stage_rgb2eq</contextNormFuncName>
               <inlineStackInfo>
@@ -45521,13 +45521,13 @@
                         <first>top.cpp</first>
                         <second>stage_rgb2eq</second>
                       </first>
-                      <second>120</second>
+                      <second>124</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>cdf_min</originalName>
-              <rtlName>sitofp_32ns_32_7_no_dsp_1_U1083</rtlName>
+              <rtlName>sitofp_32ns_32_7_no_dsp_1_U1077</rtlName>
               <control>auto</control>
               <opType>sitofp</opType>
               <implIndex>auto</implIndex>
@@ -45561,7 +45561,7 @@
               <name>sub</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>120</lineNumber>
+              <lineNumber>124</lineNumber>
               <contextFuncName>stage_rgb2eq</contextFuncName>
               <contextNormFuncName>stage_rgb2eq</contextNormFuncName>
               <inlineStackInfo>
@@ -45577,13 +45577,13 @@
                         <first>top.cpp</first>
                         <second>stage_rgb2eq</second>
                       </first>
-                      <second>120</second>
+                      <second>124</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>faddfsub_32ns_32ns_32_10_full_dsp_1_U1082</rtlName>
+              <rtlName>fsub_32ns_32ns_32_10_full_dsp_1_U1076</rtlName>
               <control>auto</control>
               <opType>fsub</opType>
               <implIndex>fulldsp</implIndex>
@@ -45615,10 +45615,10 @@
             <Obj>
               <type>0</type>
               <id>1055</id>
-              <name>_ln120</name>
+              <name>_ln124</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>120</lineNumber>
+              <lineNumber>124</lineNumber>
               <contextFuncName>stage_rgb2eq</contextFuncName>
               <contextNormFuncName>stage_rgb2eq</contextNormFuncName>
               <inlineStackInfo>
@@ -45634,7 +45634,7 @@
                         <first>top.cpp</first>
                         <second>stage_rgb2eq</second>
                       </first>
-                      <second>120</second>
+                      <second>124</second>
                     </item>
                   </second>
                 </item>
@@ -45933,10 +45933,10 @@
             <Obj>
               <type>0</type>
               <id>1056</id>
-              <name>_ln134</name>
+              <name>_ln139</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>134</lineNumber>
+              <lineNumber>139</lineNumber>
               <contextFuncName>stage_rgb2eq</contextFuncName>
               <contextNormFuncName>stage_rgb2eq</contextNormFuncName>
               <inlineStackInfo>
@@ -45952,7 +45952,7 @@
                         <first>top.cpp</first>
                         <second>stage_rgb2eq</second>
                       </first>
-                      <second>134</second>
+                      <second>139</second>
                     </item>
                   </second>
                 </item>
@@ -46178,7 +46178,7 @@
             <Obj>
               <type>2</type>
               <id>2137</id>
-              <name>stage_rgb2eq_Pipeline_VITIS_LOOP_115_2</name>
+              <name>stage_rgb2eq_Pipeline_VITIS_LOOP_119_2</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -46202,7 +46202,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:stage_rgb2eq_Pipeline_VITIS_LOOP_115_2&gt;</content>
+          <content>&lt;constant:stage_rgb2eq_Pipeline_VITIS_LOOP_119_2&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_1060">
           <Value>
@@ -65642,8 +65642,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>12701</mMinLatency>
-        <mMaxLatency>12701</mMaxLatency>
+        <mMinLatency>12684</mMinLatency>
+        <mMaxLatency>12684</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"></mDfPipe>
       </item>
@@ -71775,30 +71775,11 @@
         <count>8</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>faddfsub_32ns_32ns_32_10_full_dsp_1_U1082 (faddfsub_32ns_32ns_32_10_full_dsp_1)</first>
+          <first>fmul_32ns_32ns_32_7_max_dsp_1_U1078 (fmul_32ns_32ns_32_7_max_dsp_1)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
-              <first>DSP</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>365</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>244</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>fmul_32ns_32ns_32_7_max_dsp_1_U1084 (fmul_32ns_32ns_32_7_max_dsp_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
               <first>DSP</first>
               <second>3</second>
             </item>
@@ -71813,10 +71794,29 @@
           </second>
         </item>
         <item>
-          <first>fpext_32ns_64_2_no_dsp_1_U1085 (fpext_32ns_64_2_no_dsp_1)</first>
+          <first>fpext_32ns_64_2_no_dsp_1_U1079 (fpext_32ns_64_2_no_dsp_1)</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>fsub_32ns_32ns_32_10_full_dsp_1_U1076 (fsub_32ns_32ns_32_10_full_dsp_1)</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>DSP</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>365</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>244</second>
+            </item>
           </second>
         </item>
         <item>
@@ -71826,30 +71826,26 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>8575</second>
+              <second>8571</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>4791</second>
+              <second>4774</second>
             </item>
           </second>
         </item>
         <item>
           <first>grp_stage_rgb2eq_Pipeline_PASS1_fu_2149 (stage_rgb2eq_Pipeline_PASS1)</first>
           <second>
-            <count>3</count>
+            <count>2</count>
             <item_version>0</item_version>
             <item>
-              <first>DSP</first>
-              <second>11</second>
-            </item>
-            <item>
               <first>FF</first>
-              <second>2015</second>
+              <second>1310</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>2279</second>
+              <second>3664</second>
             </item>
           </second>
         </item>
@@ -71860,16 +71856,16 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>1160</second>
+              <second>1150</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>4069</second>
+              <second>4039</second>
             </item>
           </second>
         </item>
         <item>
-          <first>grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424 (stage_rgb2eq_Pipeline_VITIS_LOOP_115_2)</first>
+          <first>grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424 (stage_rgb2eq_Pipeline_VITIS_LOOP_119_2)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -71884,7 +71880,7 @@
           </second>
         </item>
         <item>
-          <first>sitofp_32ns_32_7_no_dsp_1_U1083 (sitofp_32ns_32_7_no_dsp_1)</first>
+          <first>sitofp_32ns_32_7_no_dsp_1_U1077 (sitofp_32ns_32_7_no_dsp_1)</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -71959,7 +71955,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -71967,11 +71963,11 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>57344</second>
+              <second>49152</second>
             </item>
             <item>
               <first>BRAM</first>
-              <second>4</second>
+              <second>3</second>
             </item>
             <item>
               <first>FF</first>
@@ -71989,7 +71985,7 @@
         </item>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>59</count>
+        <count>58</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
@@ -72133,7 +72129,7 @@
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
-              <second>3</second>
+              <second>2</second>
             </item>
             <item>
               <first>(1Bits)</first>
@@ -72141,128 +72137,20 @@
             </item>
             <item>
               <first>(2Count)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_3204_opcode</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
               <second>2</second>
             </item>
             <item>
-              <first>(2Count)</first>
-              <second>8</second>
-            </item>
-            <item>
               <first>FF</first>
               <second>0</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>9</second>
             </item>
           </second>
         </item>
         <item>
           <first>grp_fu_3204_p0</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>128</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>20</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_3204_p1</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>128</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>20</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_3209_ce</first>
-          <second>
-            <count>5</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0Size)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(2Count)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>14</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_fu_3209_p0</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -72285,6 +72173,87 @@
             <item>
               <first>LUT</first>
               <second>14</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_fu_3204_p1</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>32</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>96</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>14</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_fu_3209_ce</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>4</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>4</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>20</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_fu_3209_p0</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>4</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>32</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>128</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>20</second>
             </item>
           </second>
         </item>
@@ -73703,7 +73672,7 @@
           </second>
         </item>
         <item>
-          <first>grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_start_reg</first>
+          <first>grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -73821,21 +73790,21 @@
         <count>8</count>
         <item_version>0</item_version>
         <item>
-          <first>faddfsub_32ns_32ns_32_10_full_dsp_1_U1082</first>
+          <first>fmul_32ns_32ns_32_7_max_dsp_1_U1078</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fmul_32ns_32ns_32_7_max_dsp_1_U1084</first>
+          <first>fpext_32ns_64_2_no_dsp_1_U1079</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fpext_32ns_64_2_no_dsp_1_U1085</first>
+          <first>fsub_32ns_32ns_32_10_full_dsp_1_U1076</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -73863,14 +73832,14 @@
           </second>
         </item>
         <item>
-          <first>grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424</first>
+          <first>grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>sitofp_32ns_32_7_no_dsp_1_U1083</first>
+          <first>sitofp_32ns_32_7_no_dsp_1_U1077</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -73881,32 +73850,31 @@
         <count>8</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>faddfsub_32ns_32ns_32_10_full_dsp_1_U1082 (faddfsub_32ns_32ns_32_10_full_dsp_1)</first>
+          <first>fmul_32ns_32ns_32_7_max_dsp_1_U1078 (fmul_32ns_32ns_32_7_max_dsp_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
-            <item>42</item>
-            <item>589</item>
-            <item>1054</item>
-          </second>
-        </item>
-        <item>
-          <first>fmul_32ns_32ns_32_7_max_dsp_1_U1084 (fmul_32ns_32ns_32_7_max_dsp_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>35</item>
+            <item>99</item>
             <item>556</item>
             <item>1062</item>
           </second>
         </item>
         <item>
-          <first>fpext_32ns_64_2_no_dsp_1_U1085 (fpext_32ns_64_2_no_dsp_1)</first>
+          <first>fpext_32ns_64_2_no_dsp_1_U1079 (fpext_32ns_64_2_no_dsp_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
-            <item>45</item>
+            <item>100</item>
             <item>599</item>
+          </second>
+        </item>
+        <item>
+          <first>fsub_32ns_32ns_32_10_full_dsp_1_U1076 (fsub_32ns_32ns_32_10_full_dsp_1)</first>
+          <second>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>589</item>
+            <item>1054</item>
           </second>
         </item>
         <item>
@@ -73934,7 +73902,7 @@
           </second>
         </item>
         <item>
-          <first>grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424 (stage_rgb2eq_Pipeline_VITIS_LOOP_115_2)</first>
+          <first>grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424 (stage_rgb2eq_Pipeline_VITIS_LOOP_119_2)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -73942,10 +73910,11 @@
           </second>
         </item>
         <item>
-          <first>sitofp_32ns_32_7_no_dsp_1_U1083 (sitofp_32ns_32_7_no_dsp_1)</first>
+          <first>sitofp_32ns_32_7_no_dsp_1_U1077 (sitofp_32ns_32_7_no_dsp_1)</first>
           <second>
-            <count>2</count>
+            <count>3</count>
             <item_version>0</item_version>
+            <item>98</item>
             <item>588</item>
             <item>1053</item>
           </second>
@@ -93936,7 +93905,7 @@
         </second>
       </item>
       <item>
-        <first>grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424</first>
+        <first>grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

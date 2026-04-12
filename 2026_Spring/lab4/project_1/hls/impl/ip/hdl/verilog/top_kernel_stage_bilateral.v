@@ -44,12 +44,12 @@ output   ap_idle;
 output   ap_ready;
 output   start_out;
 output   start_write;
-input  [13:0] gaussian_stream_dout;
+input  [11:0] gaussian_stream_dout;
 input   gaussian_stream_empty_n;
 output   gaussian_stream_read;
 input  [8:0] gaussian_stream_num_data_valid;
 input  [8:0] gaussian_stream_fifo_cap;
-output  [13:0] bilateral_stream_din;
+output  [11:0] bilateral_stream_din;
 input   bilateral_stream_full_n;
 output   bilateral_stream_write;
 input  [31:0] bilateral_stream_num_data_valid;
@@ -66,39 +66,39 @@ reg    ap_done_reg;
 wire    ap_CS_fsm_state1;
 reg    internal_ap_ready;
 reg    grid_ce0;
-wire   [13:0] grid_q0;
+wire   [11:0] grid_q0;
 reg    grid_ce1;
 reg    grid_we1;
 reg    grid_25_ce0;
-wire   [13:0] grid_25_q0;
+wire   [11:0] grid_25_q0;
 reg    grid_25_ce1;
 reg    grid_25_we1;
 reg    grid_26_ce0;
-wire   [13:0] grid_26_q0;
+wire   [11:0] grid_26_q0;
 reg    grid_26_ce1;
 reg    grid_26_we1;
 reg    grid_27_ce0;
-wire   [13:0] grid_27_q0;
+wire   [11:0] grid_27_q0;
 reg    grid_27_ce1;
 reg    grid_27_we1;
 reg    grid_28_ce0;
-wire   [13:0] grid_28_q0;
+wire   [11:0] grid_28_q0;
 reg    grid_28_ce1;
 reg    grid_28_we1;
 reg    grid_29_ce0;
-wire   [13:0] grid_29_q0;
+wire   [11:0] grid_29_q0;
 reg    grid_29_ce1;
 reg    grid_29_we1;
 reg    grid_30_ce0;
-wire   [13:0] grid_30_q0;
+wire   [11:0] grid_30_q0;
 reg    grid_30_ce1;
 reg    grid_30_we1;
 reg    grid_31_ce0;
-wire   [13:0] grid_31_q0;
+wire   [11:0] grid_31_q0;
 reg    grid_31_ce1;
 reg    grid_31_we1;
 reg    grid_32_ce0;
-wire   [13:0] grid_32_q0;
+wire   [11:0] grid_32_q0;
 reg    grid_32_ce1;
 reg    grid_32_we1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_ap_start;
@@ -109,67 +109,67 @@ wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_gaussian_stream_read;
 wire   [8:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_32_address1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_32_ce1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_32_we1;
-wire   [13:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_32_d1;
+wire   [11:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_32_d1;
 wire   [8:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_31_address1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_31_ce1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_31_we1;
-wire   [13:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_31_d1;
+wire   [11:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_31_d1;
 wire   [8:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_30_address1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_30_ce1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_30_we1;
-wire   [13:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_30_d1;
+wire   [11:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_30_d1;
 wire   [8:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_29_address1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_29_ce1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_29_we1;
-wire   [13:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_29_d1;
+wire   [11:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_29_d1;
 wire   [8:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_28_address1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_28_ce1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_28_we1;
-wire   [13:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_28_d1;
+wire   [11:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_28_d1;
 wire   [8:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_27_address1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_27_ce1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_27_we1;
-wire   [13:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_27_d1;
+wire   [11:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_27_d1;
 wire   [8:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_26_address1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_26_ce1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_26_we1;
-wire   [13:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_26_d1;
+wire   [11:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_26_d1;
 wire   [8:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_25_address1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_25_ce1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_25_we1;
-wire   [13:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_25_d1;
+wire   [11:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_25_d1;
 wire   [8:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_address1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_ce1;
 wire    grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_we1;
-wire   [13:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_d1;
-wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_start;
-wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_done;
-wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_idle;
-wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_ready;
-wire   [13:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_bilateral_stream_din;
-wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_bilateral_stream_write;
-wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_address0;
-wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_ce0;
-wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_25_address0;
-wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_25_ce0;
-wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_26_address0;
-wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_26_ce0;
-wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_27_address0;
-wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_27_ce0;
-wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_28_address0;
-wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_28_ce0;
-wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_29_address0;
-wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_29_ce0;
-wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_30_address0;
-wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_30_ce0;
-wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_31_address0;
-wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_31_ce0;
-wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_32_address0;
-wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_32_ce0;
+wire   [11:0] grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_d1;
+wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_start;
+wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_done;
+wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_idle;
+wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_ready;
+wire   [11:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_bilateral_stream_din;
+wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_bilateral_stream_write;
+wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_address0;
+wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_ce0;
+wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_25_address0;
+wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_25_ce0;
+wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_26_address0;
+wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_26_ce0;
+wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_27_address0;
+wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_27_ce0;
+wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_28_address0;
+wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_28_ce0;
+wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_29_address0;
+wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_29_ce0;
+wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_30_address0;
+wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_30_ce0;
+wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_31_address0;
+wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_31_ce0;
+wire   [8:0] grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_32_address0;
+wire    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_32_ce0;
 reg    grp_stage_bilateral_Pipeline_READ_IN_fu_66_ap_start_reg;
 reg    ap_block_state1_ignore_call20;
 wire    ap_CS_fsm_state2;
-reg    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_start_reg;
+reg    grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_start_reg;
 wire    ap_CS_fsm_state3;
 wire    ap_CS_fsm_state4;
 reg   [3:0] ap_NS_fsm;
@@ -186,17 +186,17 @@ initial begin
 #0 ap_done_reg = 1'b0;
 #0 ap_CS_fsm = 4'd1;
 #0 grp_stage_bilateral_Pipeline_READ_IN_fu_66_ap_start_reg = 1'b0;
-#0 grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_start_reg = 1'b0;
+#0 grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_start_reg = 1'b0;
 end
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 grid_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_address0),
+    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_address0),
     .ce0(grid_ce0),
     .q0(grid_q0),
     .address1(grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_address1),
@@ -206,13 +206,13 @@ grid_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 grid_25_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_25_address0),
+    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_25_address0),
     .ce0(grid_25_ce0),
     .q0(grid_25_q0),
     .address1(grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_25_address1),
@@ -222,13 +222,13 @@ grid_25_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 grid_26_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_26_address0),
+    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_26_address0),
     .ce0(grid_26_ce0),
     .q0(grid_26_q0),
     .address1(grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_26_address1),
@@ -238,13 +238,13 @@ grid_26_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 grid_27_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_27_address0),
+    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_27_address0),
     .ce0(grid_27_ce0),
     .q0(grid_27_q0),
     .address1(grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_27_address1),
@@ -254,13 +254,13 @@ grid_27_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 grid_28_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_28_address0),
+    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_28_address0),
     .ce0(grid_28_ce0),
     .q0(grid_28_q0),
     .address1(grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_28_address1),
@@ -270,13 +270,13 @@ grid_28_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 grid_29_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_29_address0),
+    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_29_address0),
     .ce0(grid_29_ce0),
     .q0(grid_29_q0),
     .address1(grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_29_address1),
@@ -286,13 +286,13 @@ grid_29_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 grid_30_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_30_address0),
+    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_30_address0),
     .ce0(grid_30_ce0),
     .q0(grid_30_q0),
     .address1(grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_30_address1),
@@ -302,13 +302,13 @@ grid_30_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 grid_31_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_31_address0),
+    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_31_address0),
     .ce0(grid_31_ce0),
     .q0(grid_31_q0),
     .address1(grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_31_address1),
@@ -318,13 +318,13 @@ grid_31_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 grid_32_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_32_address0),
+    .address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_32_address0),
     .ce0(grid_32_ce0),
     .q0(grid_32_q0),
     .address1(grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_32_address1),
@@ -383,44 +383,44 @@ top_kernel_stage_bilateral_Pipeline_READ_IN grp_stage_bilateral_Pipeline_READ_IN
     .grid_d1(grp_stage_bilateral_Pipeline_READ_IN_fu_66_grid_d1)
 );
 
-top_kernel_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3 grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90(
+top_kernel_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3 grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_start),
-    .ap_done(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_done),
-    .ap_idle(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_idle),
-    .ap_ready(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_ready),
-    .bilateral_stream_din(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_bilateral_stream_din),
+    .ap_start(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_start),
+    .ap_done(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_done),
+    .ap_idle(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_idle),
+    .ap_ready(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_ready),
+    .bilateral_stream_din(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_bilateral_stream_din),
     .bilateral_stream_full_n(bilateral_stream_full_n),
-    .bilateral_stream_write(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_bilateral_stream_write),
+    .bilateral_stream_write(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_bilateral_stream_write),
     .bilateral_stream_num_data_valid(bilateral_stream_num_data_valid),
     .bilateral_stream_fifo_cap(bilateral_stream_fifo_cap),
-    .grid_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_address0),
-    .grid_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_ce0),
+    .grid_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_address0),
+    .grid_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_ce0),
     .grid_q0(grid_q0),
-    .grid_25_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_25_address0),
-    .grid_25_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_25_ce0),
+    .grid_25_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_25_address0),
+    .grid_25_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_25_ce0),
     .grid_25_q0(grid_25_q0),
-    .grid_26_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_26_address0),
-    .grid_26_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_26_ce0),
+    .grid_26_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_26_address0),
+    .grid_26_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_26_ce0),
     .grid_26_q0(grid_26_q0),
-    .grid_27_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_27_address0),
-    .grid_27_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_27_ce0),
+    .grid_27_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_27_address0),
+    .grid_27_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_27_ce0),
     .grid_27_q0(grid_27_q0),
-    .grid_28_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_28_address0),
-    .grid_28_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_28_ce0),
+    .grid_28_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_28_address0),
+    .grid_28_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_28_ce0),
     .grid_28_q0(grid_28_q0),
-    .grid_29_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_29_address0),
-    .grid_29_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_29_ce0),
+    .grid_29_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_29_address0),
+    .grid_29_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_29_ce0),
     .grid_29_q0(grid_29_q0),
-    .grid_30_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_30_address0),
-    .grid_30_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_30_ce0),
+    .grid_30_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_30_address0),
+    .grid_30_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_30_ce0),
     .grid_30_q0(grid_30_q0),
-    .grid_31_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_31_address0),
-    .grid_31_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_31_ce0),
+    .grid_31_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_31_address0),
+    .grid_31_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_31_ce0),
     .grid_31_q0(grid_31_q0),
-    .grid_32_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_32_address0),
-    .grid_32_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_32_ce0),
+    .grid_32_address0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_32_address0),
+    .grid_32_ce0(grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_32_ce0),
     .grid_32_q0(grid_32_q0)
 );
 
@@ -438,7 +438,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+        end else if (((grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -446,12 +446,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_start_reg <= 1'b0;
+        grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state3)) begin
-            grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_start_reg <= 1'b1;
-        end else if ((grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_ready == 1'b1)) begin
-            grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_start_reg <= 1'b0;
+            grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_start_reg <= 1'b1;
+        end else if ((grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_ready == 1'b1)) begin
+            grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -499,7 +499,7 @@ end
 assign ap_ST_fsm_state3_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_done == 1'b0)) begin
+    if ((grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_done == 1'b0)) begin
         ap_ST_fsm_state4_blk = 1'b1;
     end else begin
         ap_ST_fsm_state4_blk = 1'b0;
@@ -507,7 +507,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+    if (((grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -524,7 +524,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_25_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_25_ce0;
+        grid_25_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_25_ce0;
     end else begin
         grid_25_ce0 = 1'b0;
     end
@@ -548,7 +548,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_26_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_26_ce0;
+        grid_26_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_26_ce0;
     end else begin
         grid_26_ce0 = 1'b0;
     end
@@ -572,7 +572,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_27_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_27_ce0;
+        grid_27_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_27_ce0;
     end else begin
         grid_27_ce0 = 1'b0;
     end
@@ -596,7 +596,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_28_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_28_ce0;
+        grid_28_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_28_ce0;
     end else begin
         grid_28_ce0 = 1'b0;
     end
@@ -620,7 +620,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_29_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_29_ce0;
+        grid_29_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_29_ce0;
     end else begin
         grid_29_ce0 = 1'b0;
     end
@@ -644,7 +644,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_30_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_30_ce0;
+        grid_30_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_30_ce0;
     end else begin
         grid_30_ce0 = 1'b0;
     end
@@ -668,7 +668,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_31_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_31_ce0;
+        grid_31_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_31_ce0;
     end else begin
         grid_31_ce0 = 1'b0;
     end
@@ -692,7 +692,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_32_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_32_ce0;
+        grid_32_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_32_ce0;
     end else begin
         grid_32_ce0 = 1'b0;
     end
@@ -716,7 +716,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_grid_ce0;
+        grid_ce0 = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_grid_ce0;
     end else begin
         grid_ce0 = 1'b0;
     end
@@ -739,7 +739,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+    if (((grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
         internal_ap_ready = 1'b1;
     end else begin
         internal_ap_ready = 1'b0;
@@ -782,7 +782,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state4;
         end
         ap_ST_fsm_state4 : begin
-            if (((grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+            if (((grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state4;
@@ -812,13 +812,13 @@ end
 
 assign ap_ready = internal_ap_ready;
 
-assign bilateral_stream_din = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_bilateral_stream_din;
+assign bilateral_stream_din = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_bilateral_stream_din;
 
-assign bilateral_stream_write = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_bilateral_stream_write;
+assign bilateral_stream_write = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_bilateral_stream_write;
 
 assign gaussian_stream_read = grp_stage_bilateral_Pipeline_READ_IN_fu_66_gaussian_stream_read;
 
-assign grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_start = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_start_reg;
+assign grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_start = grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_start_reg;
 
 assign grp_stage_bilateral_Pipeline_READ_IN_fu_66_ap_start = grp_stage_bilateral_Pipeline_READ_IN_fu_66_ap_start_reg;
 

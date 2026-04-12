@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set name top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1
+set name top_kernel_fsub_32ns_32ns_32_10_full_dsp_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fsub} IMPL {fulldsp} LATENCY 9 ALLOW_PRAGMA 1
 }
@@ -39,7 +39,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1091 \
+    id 1085 \
     name gmem0 \
     type other \
     dir I \
@@ -54,7 +54,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1092 \
+    id 1086 \
     name in_r \
     type other \
     dir I \
@@ -69,7 +69,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1093 \
+    id 1087 \
     name gmem1 \
     type other \
     dir I \
@@ -84,7 +84,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1094 \
+    id 1088 \
     name in_g \
     type other \
     dir I \
@@ -99,7 +99,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1095 \
+    id 1089 \
     name gmem2 \
     type other \
     dir I \
@@ -114,7 +114,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1096 \
+    id 1090 \
     name in_b \
     type other \
     dir I \
@@ -129,7 +129,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1097 \
+    id 1091 \
     name equalized_stream \
     type fifo \
     dir O \
@@ -137,7 +137,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_equalized_stream \
     op interface \
-    ports { equalized_stream_din { O 14 vector } equalized_stream_full_n { I 1 bit } equalized_stream_write { O 1 bit } equalized_stream_num_data_valid { I 32 vector } equalized_stream_fifo_cap { I 32 vector } } \
+    ports { equalized_stream_din { O 12 vector } equalized_stream_full_n { I 1 bit } equalized_stream_write { O 1 bit } equalized_stream_num_data_valid { I 32 vector } equalized_stream_fifo_cap { I 32 vector } } \
 } "
 }
 

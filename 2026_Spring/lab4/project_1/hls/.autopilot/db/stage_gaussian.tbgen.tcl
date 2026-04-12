@@ -19,15 +19,15 @@ set C_modelName {stage_gaussian}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 set C_modelArgList {
-	{ equalized_stream int 14 regular {fifo 0 volatile }  }
-	{ gaussian_stream int 14 regular {fifo 1 volatile }  }
+	{ equalized_stream int 12 regular {fifo 0 volatile }  }
+	{ gaussian_stream int 12 regular {fifo 1 volatile }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "equalized_stream", "interface" : "fifo", "bitwidth" : 14, "direction" : "READONLY"} , 
- 	{ "Name" : "gaussian_stream", "interface" : "fifo", "bitwidth" : 14, "direction" : "WRITEONLY"} ]}
+	{ "Name" : "equalized_stream", "interface" : "fifo", "bitwidth" : 12, "direction" : "READONLY"} , 
+ 	{ "Name" : "gaussian_stream", "interface" : "fifo", "bitwidth" : 12, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 20
 set portList { 
@@ -41,12 +41,12 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ start_out sc_out sc_logic 1 signal -1 } 
 	{ start_write sc_out sc_logic 1 signal -1 } 
-	{ equalized_stream_dout sc_in sc_lv 14 signal 0 } 
+	{ equalized_stream_dout sc_in sc_lv 12 signal 0 } 
 	{ equalized_stream_empty_n sc_in sc_logic 1 signal 0 } 
 	{ equalized_stream_read sc_out sc_logic 1 signal 0 } 
 	{ equalized_stream_num_data_valid sc_in sc_lv 9 signal 0 } 
 	{ equalized_stream_fifo_cap sc_in sc_lv 9 signal 0 } 
-	{ gaussian_stream_din sc_out sc_lv 14 signal 1 } 
+	{ gaussian_stream_din sc_out sc_lv 12 signal 1 } 
 	{ gaussian_stream_full_n sc_in sc_logic 1 signal 1 } 
 	{ gaussian_stream_write sc_out sc_logic 1 signal 1 } 
 	{ gaussian_stream_num_data_valid sc_in sc_lv 32 signal 1 } 
@@ -63,12 +63,12 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "start_out", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "start_out", "role": "default" }} , 
  	{ "name": "start_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "start_write", "role": "default" }} , 
- 	{ "name": "equalized_stream_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "equalized_stream", "role": "dout" }} , 
+ 	{ "name": "equalized_stream_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "equalized_stream", "role": "dout" }} , 
  	{ "name": "equalized_stream_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "equalized_stream", "role": "empty_n" }} , 
  	{ "name": "equalized_stream_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "equalized_stream", "role": "read" }} , 
  	{ "name": "equalized_stream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "equalized_stream", "role": "num_data_valid" }} , 
  	{ "name": "equalized_stream_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "equalized_stream", "role": "fifo_cap" }} , 
- 	{ "name": "gaussian_stream_din", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "gaussian_stream", "role": "din" }} , 
+ 	{ "name": "gaussian_stream_din", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "gaussian_stream", "role": "din" }} , 
  	{ "name": "gaussian_stream_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gaussian_stream", "role": "full_n" }} , 
  	{ "name": "gaussian_stream_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gaussian_stream", "role": "write" }} , 
  	{ "name": "gaussian_stream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "gaussian_stream", "role": "num_data_valid" }} , 
@@ -77,7 +77,7 @@ set NewPortList {[
 set ArgLastReadFirstWriteLatency {
 	stage_gaussian {
 		equalized_stream {Type I LastRead 10 FirstWrite -1}
-		gaussian_stream {Type O LastRead -1 FirstWrite 49}}
+		gaussian_stream {Type O LastRead -1 FirstWrite 48}}
 	stage_gaussian_Pipeline_READ_IN {
 		grid_24 {Type O LastRead -1 FirstWrite 10}
 		grid_23 {Type O LastRead -1 FirstWrite 10}
@@ -105,7 +105,7 @@ set ArgLastReadFirstWriteLatency {
 		grid_1 {Type O LastRead -1 FirstWrite 10}
 		grid {Type O LastRead -1 FirstWrite 10}
 		equalized_stream {Type I LastRead 10 FirstWrite -1}}
-	stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1 {
+	stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1 {
 		grid {Type I LastRead 14 FirstWrite -1}
 		grid_1 {Type I LastRead 14 FirstWrite -1}
 		grid_2 {Type I LastRead 14 FirstWrite -1}
@@ -131,19 +131,19 @@ set ArgLastReadFirstWriteLatency {
 		grid_22 {Type I LastRead 14 FirstWrite -1}
 		grid_23 {Type I LastRead 14 FirstWrite -1}
 		grid_24 {Type I LastRead 14 FirstWrite -1}
-		gaussian_stream {Type O LastRead -1 FirstWrite 49}}}
+		gaussian_stream {Type O LastRead -1 FirstWrite 48}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "8256", "Max" : "8256"}
-	, {"Name" : "Interval", "Min" : "8256", "Max" : "8256"}
+	{"Name" : "Latency", "Min" : "8255", "Max" : "8255"}
+	, {"Name" : "Interval", "Min" : "8255", "Max" : "8255"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	equalized_stream { ap_fifo {  { equalized_stream_dout fifo_data_in 0 14 }  { equalized_stream_empty_n fifo_status 0 1 }  { equalized_stream_read fifo_port_we 1 1 }  { equalized_stream_num_data_valid fifo_status_num_data_valid 0 9 }  { equalized_stream_fifo_cap fifo_update 0 9 } } }
-	gaussian_stream { ap_fifo {  { gaussian_stream_din fifo_data_in 1 14 }  { gaussian_stream_full_n fifo_status 0 1 }  { gaussian_stream_write fifo_port_we 1 1 }  { gaussian_stream_num_data_valid fifo_status_num_data_valid 0 32 }  { gaussian_stream_fifo_cap fifo_update 0 32 } } }
+	equalized_stream { ap_fifo {  { equalized_stream_dout fifo_data_in 0 12 }  { equalized_stream_empty_n fifo_status 0 1 }  { equalized_stream_read fifo_port_we 1 1 }  { equalized_stream_num_data_valid fifo_status_num_data_valid 0 9 }  { equalized_stream_fifo_cap fifo_update 0 9 } } }
+	gaussian_stream { ap_fifo {  { gaussian_stream_din fifo_data_in 1 12 }  { gaussian_stream_full_n fifo_status 0 1 }  { gaussian_stream_write fifo_port_we 1 1 }  { gaussian_stream_num_data_valid fifo_status_num_data_valid 0 32 }  { gaussian_stream_fifo_cap fifo_update 0 32 } } }
 }

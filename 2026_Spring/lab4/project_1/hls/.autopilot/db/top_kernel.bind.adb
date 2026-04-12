@@ -311,7 +311,7 @@
 						<name>out_r_read</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>378</lineNumber>
+						<lineNumber>405</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -327,7 +327,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>378</second>
+										<second>405</second>
 									</item>
 								</second>
 							</item>
@@ -368,7 +368,7 @@
 						<name>in_b_read</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>378</lineNumber>
+						<lineNumber>405</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -384,7 +384,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>378</second>
+										<second>405</second>
 									</item>
 								</second>
 							</item>
@@ -425,7 +425,7 @@
 						<name>in_g_read</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>378</lineNumber>
+						<lineNumber>405</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -441,7 +441,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>378</second>
+										<second>405</second>
 									</item>
 								</second>
 							</item>
@@ -482,7 +482,7 @@
 						<name>in_r_read</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>378</lineNumber>
+						<lineNumber>405</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -498,7 +498,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>378</second>
+										<second>405</second>
 									</item>
 								</second>
 							</item>
@@ -539,7 +539,7 @@
 						<name>out_r_c</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>378</lineNumber>
+						<lineNumber>405</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -555,7 +555,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>378</second>
+										<second>405</second>
 									</item>
 								</second>
 							</item>
@@ -595,7 +595,7 @@
 						<name>equalized_stream</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>368</lineNumber>
+						<lineNumber>395</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -611,7 +611,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>368</second>
+										<second>395</second>
 									</item>
 								</second>
 							</item>
@@ -627,7 +627,7 @@
 						<coreId>77</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -651,7 +651,7 @@
 						<name>gaussian_stream</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>369</lineNumber>
+						<lineNumber>396</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -667,7 +667,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>369</second>
+										<second>396</second>
 									</item>
 								</second>
 							</item>
@@ -683,7 +683,7 @@
 						<coreId>77</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -707,7 +707,7 @@
 						<name>bilateral_stream</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>370</lineNumber>
+						<lineNumber>397</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -723,7 +723,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>370</second>
+										<second>397</second>
 									</item>
 								</second>
 							</item>
@@ -739,7 +739,7 @@
 						<coreId>77</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -763,7 +763,7 @@
 						<name>morphology_stream</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>371</lineNumber>
+						<lineNumber>398</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -779,7 +779,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>371</second>
+										<second>398</second>
 									</item>
 								</second>
 							</item>
@@ -795,7 +795,7 @@
 						<coreId>77</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -816,10 +816,10 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>_ln378</name>
+						<name>_ln405</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>378</lineNumber>
+						<lineNumber>405</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -835,7 +835,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>378</second>
+										<second>405</second>
 									</item>
 								</second>
 							</item>
@@ -874,10 +874,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>_ln381</name>
+						<name>_ln408</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>381</lineNumber>
+						<lineNumber>408</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -893,7 +893,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>381</second>
+										<second>408</second>
 									</item>
 								</second>
 							</item>
@@ -937,10 +937,10 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>_ln384</name>
+						<name>_ln411</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>384</lineNumber>
+						<lineNumber>411</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -956,7 +956,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>384</second>
+										<second>411</second>
 									</item>
 								</second>
 							</item>
@@ -996,10 +996,10 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>_ln387</name>
+						<name>_ln414</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>387</lineNumber>
+						<lineNumber>414</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -1015,7 +1015,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>387</second>
+										<second>414</second>
 									</item>
 								</second>
 							</item>
@@ -1055,10 +1055,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>_ln390</name>
+						<name>_ln417</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>390</lineNumber>
+						<lineNumber>417</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -1074,7 +1074,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>390</second>
+										<second>417</second>
 									</item>
 								</second>
 							</item>
@@ -1114,10 +1114,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>_ln393</name>
+						<name>_ln420</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>393</lineNumber>
+						<lineNumber>420</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -1133,7 +1133,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>393</second>
+										<second>420</second>
 									</item>
 								</second>
 							</item>
@@ -1176,10 +1176,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>_ln398</name>
+						<name>_ln421</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>398</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>top_kernel</contextFuncName>
 						<contextNormFuncName>top_kernel</contextNormFuncName>
 						<inlineStackInfo>
@@ -1195,7 +1195,7 @@
 											<first>top.cpp</first>
 											<second>top_kernel</second>
 										</first>
-										<second>398</second>
+										<second>421</second>
 									</item>
 								</second>
 							</item>
@@ -1421,7 +1421,7 @@
 					<Obj>
 						<type>2</type>
 						<id>95</id>
-						<name>Loop_VITIS_LOOP_393_1_proc</name>
+						<name>write_output</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1445,7 +1445,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:Loop_VITIS_LOOP_393_1_proc&gt;</content>
+				<content>&lt;constant:write_output&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -1714,7 +1714,7 @@
 			<item class_id_reference="20" object_id="_63">
 				<id>97</id>
 				<edge_type>1</edge_type>
-				<source_obj>13</source_obj>
+				<source_obj>44</source_obj>
 				<sink_obj>52</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -1728,7 +1728,7 @@
 			<item class_id_reference="20" object_id="_65">
 				<id>99</id>
 				<edge_type>1</edge_type>
-				<source_obj>44</source_obj>
+				<source_obj>13</source_obj>
 				<sink_obj>52</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -1797,8 +1797,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>12701</mMinLatency>
-			<mMaxLatency>12701</mMaxLatency>
+			<mMinLatency>12684</mMinLatency>
+			<mMaxLatency>12684</mMaxLatency>
 			<mIsDfPipe>1</mIsDfPipe>
 			<mDfPipe class_id="23" tracking_level="1" version="0" object_id="_73">
 				<port_list class_id="24" tracking_level="0" version="0">
@@ -2019,7 +2019,7 @@
 					</item>
 					<item class_id_reference="28" object_id="_103">
 						<type>0</type>
-						<name>Loop_VITIS_LOOP_393_1_proc_U0</name>
+						<name>write_output_U0</name>
 						<ssdmobj_id>52</ssdmobj_id>
 						<pins>
 							<count>1</count>
@@ -2035,7 +2035,7 @@
 								</port>
 								<inst class_id_reference="31" object_id="_106">
 									<type>0</type>
-									<name>Loop_VITIS_LOOP_393_1_proc_U0</name>
+									<name>write_output_U0</name>
 									<ssdmobj_id>52</ssdmobj_id>
 								</inst>
 							</item>
@@ -2097,7 +2097,7 @@
 						<ssdmobj_id>35</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>256</depth>
-						<bitwidth>14</bitwidth>
+						<bitwidth>12</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>256</suggested_depth>
 						<source_list>
@@ -2136,7 +2136,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>14 256 1</storage_size>
+						<storage_size>12 256 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_118">
 						<type>1</type>
@@ -2144,7 +2144,7 @@
 						<ssdmobj_id>38</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>256</depth>
-						<bitwidth>14</bitwidth>
+						<bitwidth>12</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>256</suggested_depth>
 						<source_list>
@@ -2183,7 +2183,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>14 256 1</storage_size>
+						<storage_size>12 256 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_124">
 						<type>1</type>
@@ -2191,7 +2191,7 @@
 						<ssdmobj_id>41</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>256</depth>
-						<bitwidth>14</bitwidth>
+						<bitwidth>12</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>256</suggested_depth>
 						<source_list>
@@ -2230,7 +2230,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>14 256 1</storage_size>
+						<storage_size>12 256 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_130">
 						<type>1</type>
@@ -2238,7 +2238,7 @@
 						<ssdmobj_id>44</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>256</depth>
-						<bitwidth>14</bitwidth>
+						<bitwidth>12</bitwidth>
 						<suggested_type>0</suggested_type>
 						<suggested_depth>256</suggested_depth>
 						<source_list>
@@ -2273,7 +2273,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>14 256 1</storage_size>
+						<storage_size>12 256 1</storage_size>
 					</item>
 				</channel_list>
 				<net_list class_id="33" tracking_level="0" version="0">
@@ -3144,20 +3144,11 @@
 		<count>6</count>
 		<item_version>0</item_version>
 		<item>
-			<first>call_ln378_entry_proc_fu_148</first>
+			<first>call_ln405_entry_proc_fu_148</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>47</item>
-			</second>
-		</item>
-		<item>
-			<first>grp_Loop_VITIS_LOOP_393_1_proc_fu_187</first>
-			<second>
-				<count>2</count>
-				<item_version>0</item_version>
-				<item>52</item>
-				<item>52</item>
 			</second>
 		</item>
 		<item>
@@ -3194,6 +3185,15 @@
 				<item_version>0</item_version>
 				<item>48</item>
 				<item>48</item>
+			</second>
+		</item>
+		<item>
+			<first>grp_write_output_fu_187</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>52</item>
+				<item>52</item>
 			</second>
 		</item>
 	</dp_fu_nodes_module>

@@ -18,9 +18,9 @@ set cdfgNum 20
 set C_modelName {stage_rgb2eq_Pipeline_BUILD_HIST}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict intensity_buf { MEM_WIDTH 14 MEM_SIZE 8192 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict intensity_buf { MEM_WIDTH 12 MEM_SIZE 8192 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
-	{ intensity_buf int 14 regular {array 4096 { 1 3 } 1 1 }  }
+	{ intensity_buf int 12 regular {array 4096 { 1 3 } 1 1 }  }
 	{ histogram_255_out int 32 regular {pointer 1}  }
 	{ histogram_254_out int 32 regular {pointer 1}  }
 	{ histogram_253_out int 32 regular {pointer 1}  }
@@ -282,7 +282,7 @@ set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "intensity_buf", "interface" : "memory", "bitwidth" : 14, "direction" : "READONLY"} , 
+	{ "Name" : "intensity_buf", "interface" : "memory", "bitwidth" : 12, "direction" : "READONLY"} , 
  	{ "Name" : "histogram_255_out", "interface" : "wire", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "histogram_254_out", "interface" : "wire", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "histogram_253_out", "interface" : "wire", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
@@ -550,7 +550,7 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ intensity_buf_address0 sc_out sc_lv 12 signal 0 } 
 	{ intensity_buf_ce0 sc_out sc_logic 1 signal 0 } 
-	{ intensity_buf_q0 sc_in sc_lv 14 signal 0 } 
+	{ intensity_buf_q0 sc_in sc_lv 12 signal 0 } 
 	{ histogram_255_out sc_out sc_lv 32 signal 1 } 
 	{ histogram_255_out_ap_vld sc_out sc_logic 1 outvld 1 } 
 	{ histogram_254_out sc_out sc_lv 32 signal 2 } 
@@ -1077,7 +1077,7 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "intensity_buf_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "intensity_buf", "role": "address0" }} , 
  	{ "name": "intensity_buf_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "intensity_buf", "role": "ce0" }} , 
- 	{ "name": "intensity_buf_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "intensity_buf", "role": "q0" }} , 
+ 	{ "name": "intensity_buf_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "intensity_buf", "role": "q0" }} , 
  	{ "name": "histogram_255_out", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "histogram_255_out", "role": "default" }} , 
  	{ "name": "histogram_255_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "histogram_255_out", "role": "ap_vld" }} , 
  	{ "name": "histogram_254_out", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "histogram_254_out", "role": "default" }} , 
@@ -1867,7 +1867,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	intensity_buf { ap_memory {  { intensity_buf_address0 mem_address 1 12 }  { intensity_buf_ce0 mem_ce 1 1 }  { intensity_buf_q0 mem_dout 0 14 } } }
+	intensity_buf { ap_memory {  { intensity_buf_address0 mem_address 1 12 }  { intensity_buf_ce0 mem_ce 1 1 }  { intensity_buf_q0 mem_dout 0 12 } } }
 	histogram_255_out { ap_vld {  { histogram_255_out out_data 1 32 }  { histogram_255_out_ap_vld out_vld 1 1 } } }
 	histogram_254_out { ap_vld {  { histogram_254_out out_data 1 32 }  { histogram_254_out_ap_vld out_vld 1 1 } } }
 	histogram_253_out { ap_vld {  { histogram_253_out out_data 1 32 }  { histogram_253_out_ap_vld out_vld 1 1 } } }

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'top_kernel'" level="0">
-<item name = "Date">Fri Apr 10 20:50:41 2026
+<item name = "Date">Sat Apr 11 20:28:25 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -24,19 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">12701, 12701, 50.804 us, 50.804 us, 12702, 12702, dataflow</column>
+<column name="">12684, 12684, 50.736 us, 50.736 us, 12685, 12685, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="call_ln378_entry_proc_fu_148">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="grp_stage_rgb2eq_fu_155">stage_rgb2eq, 12701, 12701, 50.804 us, 50.804 us, 12701, 12701, no</column>
-<column name="grp_stage_gaussian_fu_169">stage_gaussian, 8256, 8256, 33.024 us, 33.024 us, 8256, 8256, no</column>
-<column name="grp_stage_bilateral_fu_175">stage_bilateral, 8351, 8351, 33.404 us, 33.404 us, 8351, 8351, no</column>
-<column name="grp_stage_morphology_fu_181">stage_morphology, 12348, 12348, 49.392 us, 49.392 us, 12348, 12348, no</column>
-<column name="grp_Loop_VITIS_LOOP_393_1_proc_fu_187">Loop_VITIS_LOOP_393_1_proc, 4105, 4105, 16.420 us, 16.420 us, 4096, 4096, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="call_ln405_entry_proc_fu_148">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_stage_rgb2eq_fu_155">stage_rgb2eq, 12684, 12684, 50.736 us, 50.736 us, 12684, 12684, no</column>
+<column name="grp_stage_gaussian_fu_169">stage_gaussian, 8255, 8255, 33.020 us, 33.020 us, 8255, 8255, no</column>
+<column name="grp_stage_bilateral_fu_175">stage_bilateral, 8348, 8348, 33.392 us, 33.392 us, 8348, 8348, no</column>
+<column name="grp_stage_morphology_fu_181">stage_morphology, 12344, 12344, 49.376 us, 49.376 us, 12344, 12344, no</column>
+<column name="grp_write_output_fu_187">write_output, 4105, 4105, 16.420 us, 16.420 us, 4096, 4096, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

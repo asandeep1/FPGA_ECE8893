@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1.1 (lin64) Build 6233196 Thu Sep 11 21:27:11 MDT 2025
-| Date         : Fri Apr 10 21:44:43 2026
+| Date         : Sat Apr 11 21:22:24 2026
 | Host         : ece-linlabsrv01 running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command      : report_design_analysis -file ./report/top_kernel_design_analysis_synth.rpt
 | Design       : bd_0_wrapper
@@ -58,11 +58,11 @@ Table of Contents
 2. Logic Level Distribution
 ---------------------------
 
-+-----------------+-------------+-----+----+-----+-----+----+----+----+
-| End Point Clock | Requirement |  4  |  5 |  6  |  7  |  8 |  9 | 10 |
-+-----------------+-------------+-----+----+-----+-----+----+----+----+
-| ap_clk          | 4.000ns     | 392 | 23 | 307 | 254 | 11 | 11 |  2 |
-+-----------------+-------------+-----+----+-----+-----+----+----+----+
++-----------------+-------------+----+----+-----+-----+-----+
+| End Point Clock | Requirement |  3 |  5 |  6  |  7  |  9  |
++-----------------+-------------+----+----+-----+-----+-----+
+| ap_clk          | 4.000ns     | 78 | 67 | 431 | 268 | 156 |
++-----------------+-------------+----+----+-----+-----+-----+
 * Columns represent the logic levels per end point clock
 ** Distribution is for top worst 1000 paths
 

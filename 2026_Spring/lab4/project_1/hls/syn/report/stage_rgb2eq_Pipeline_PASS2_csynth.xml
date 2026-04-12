@@ -49,13 +49,13 @@
 <SummaryOfViolations>
 <IssueType>Timing Violation</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:125</SourceLocation>
+<SourceLocation>top.cpp:129</SourceLocation>
 <SummaryOfLoopViolations>
 <PASS2>
 <Name>PASS2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>top.cpp:125</SourceLocation>
+<SourceLocation>top.cpp:129</SourceLocation>
 </PASS2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -63,8 +63,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>1160</FF>
-<LUT>4069</LUT>
+<FF>1150</FF>
+<LUT>4039</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -175,7 +175,7 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>1</Bits>
+<Bits>2</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -318,7 +318,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>14</Bits>
+<Bits>12</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -395,7 +395,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>14</Bits>
+<Bits>12</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>

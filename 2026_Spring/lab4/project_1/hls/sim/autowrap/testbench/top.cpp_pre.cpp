@@ -86245,16 +86245,16 @@ public:
 
 
 
-typedef ap_fixed<16, 2, AP_RND, AP_SAT> coeff_t;
+typedef ap_fixed<12, 2, AP_RND, AP_SAT> coeff_t;
 
 
-typedef ap_fixed<14, 3, AP_RND, AP_SAT> inter_t;
+typedef ap_fixed<12, 2, AP_RND, AP_SAT> inter_t;
 
 
-typedef ap_fixed<16, 5, AP_RND, AP_SAT> sum_t;
+typedef ap_fixed<14, 4, AP_RND, AP_SAT> sum_t;
 
 
-typedef ap_fixed<18, 5, AP_RND, AP_SAT> acc_t;
+typedef ap_fixed<16, 4, AP_RND, AP_SAT> acc_t;
 
 
 typedef ap_uint<512> wide_t;
@@ -86319,10 +86319,13 @@ void stage_rgb2eq(const data_t in_r[(64 * 64)], const data_t in_g[(64 * 64)], co
 PASS1:
     for (int idx = 0; idx < (64 * 64); idx++) {
 #pragma HLS PIPELINE II=1
-        data_t R = in_r[idx] * (data_t)0.00392156862;
-        data_t G = in_g[idx] * (data_t)0.00392156862;
-        data_t B = in_b[idx] * (data_t)0.00392156862;
-        data_t I = (R + G + B) * (data_t)0.33333333;
+#pragma HLS LOOP_TRIPCOUNT min=4096 max=4096 avg=4096
+
+        int r_int = (int)in_r[idx];
+        int g_int = (int)in_g[idx];
+        int b_int = (int)in_b[idx];
+        int sum_rgb = r_int + g_int + b_int;
+        data_t I = (data_t)sum_rgb * (data_t)(1.0/765.0);
         intensity_buf[idx] = float_to_inter(I);
     }
 
@@ -86337,6 +86340,7 @@ PASS1:
 BUILD_HIST:
     for (int idx = 0; idx < (64 * 64); idx++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=4096 max=4096 avg=4096
         inter_t val = intensity_buf[idx];
         data_t fval = inter_to_float(val);
         int bin = (int)(fval * (data_t)255.0);
@@ -86360,6 +86364,7 @@ BUILD_HIST:
 PASS2:
     for (int idx = 0; idx < (64 * 64); idx++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=4096 max=4096 avg=4096
         data_t fval = inter_to_float(intensity_buf[idx]);
         int bin = (int)(fval * (data_t)255.0);
         bin = (bin < 0) ? 0 : (bin >= 256) ? (256 - 1) : bin;
@@ -86383,6 +86388,7 @@ void stage_gaussian(hls::stream<inter_t>& equalized_in,
 READ_IN:
     for (int i = 0; i < (64 * 64); i++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=4096 max=4096 avg=4096
         int r = i / 64;
         int c = i % 64;
         grid[r][c] = equalized_in.read();
@@ -86393,6 +86399,8 @@ GAUSSIAN_OUT:
     for (int r = 0; r < 64; r++) {
         for (int c = 0; c < 64; c++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=64 max=64 avg=64
+#pragma HLS DEPENDENCE variable=grid type=inter intra=false
 
             bool valid_row = (r >= 2) && (r < 64 - 2);
             bool valid_col = (c >= 2) && (c < 64 - 2);
@@ -86454,6 +86462,7 @@ void stage_bilateral(hls::stream<inter_t>& gaussian_in,
 READ_IN:
     for (int i = 0; i < (64 * 64); i++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=4096 max=4096 avg=4096
         int r = i / 64;
         int c = i % 64;
         grid[r][c] = gaussian_in.read();
@@ -86474,6 +86483,8 @@ BILATERAL_OUT:
     for (int r = 0; r < 64; r++) {
         for (int c = 0; c < 64; c++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=64 max=64 avg=64
+#pragma HLS DEPENDENCE variable=grid type=inter intra=false
 
             bool valid_row = (r >= 1) && (r < 64 - 1);
             bool valid_col = (c >= 1) && (c < 64 - 1);
@@ -86529,6 +86540,7 @@ void stage_morphology(hls::stream<inter_t>& bilateral_in,
 READ_BILATERAL:
     for (int i = 0; i < (64 * 64); i++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=4096 max=4096 avg=4096
         int r = i / 64;
         int c = i % 64;
         bilateral_buf[r][c] = bilateral_in.read();
@@ -86539,6 +86551,7 @@ EROSION_LOOP:
     for (int r = 0; r < 64; r++) {
         for (int c = 0; c < 64; c++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=64 max=64 avg=64
 
             bool valid_row = (r >= 1) && (r < 64 - 1);
             bool valid_col = (c >= 1) && (c < 64 - 1);
@@ -86567,6 +86580,7 @@ DILATION_LOOP:
     for (int r = 0; r < 64; r++) {
         for (int c = 0; c < 64; c++) {
 #pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=64 max=64 avg=64
 
             bool valid_row = (r >= 1) && (r < 64 - 1);
             bool valid_col = (c >= 1) && (c < 64 - 1);
@@ -86587,6 +86601,19 @@ DILATION_LOOP:
             }
             out_stream.write(result);
         }
+    }
+}
+
+
+
+
+void write_output(hls::stream<inter_t>& result_stream, data_t out[(64 * 64)]) {
+#pragma HLS INLINE off
+    for (int i = 0; i < (64 * 64); i++) {
+#pragma HLS PIPELINE II=1
+#pragma HLS LOOP_TRIPCOUNT min=4096 max=4096 avg=4096
+        inter_t val = result_stream.read();
+        out[i] = inter_to_float(val);
     }
 }
 
@@ -86626,9 +86653,5 @@ void top_kernel(const data_t in_r[(64 * 64)], const data_t in_g[(64 * 64)], cons
     stage_morphology(bilateral_stream, morphology_stream);
 
 
-    for (int i = 0; i < (64 * 64); i++) {
-#pragma HLS PIPELINE II=1
-        inter_t val = morphology_stream.read();
-        out[i] = inter_to_float(val);
-    }
+    write_output(morphology_stream, out);
 }

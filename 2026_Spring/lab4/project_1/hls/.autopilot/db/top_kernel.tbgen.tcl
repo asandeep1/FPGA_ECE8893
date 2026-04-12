@@ -450,7 +450,7 @@ set ArgLastReadFirstWriteLatency {
 	top_kernel {
 		gmem0 {Type I LastRead 1 FirstWrite -1}
 		gmem1 {Type I LastRead 1 FirstWrite -1}
-		gmem2 {Type I LastRead 11 FirstWrite -1}
+		gmem2 {Type I LastRead 1 FirstWrite -1}
 		gmem3 {Type O LastRead 4 FirstWrite 3}
 		in_r {Type I LastRead 0 FirstWrite -1}
 		in_g {Type I LastRead 0 FirstWrite -1}
@@ -464,7 +464,7 @@ set ArgLastReadFirstWriteLatency {
 		in_r {Type I LastRead 0 FirstWrite -1}
 		gmem1 {Type I LastRead 1 FirstWrite -1}
 		in_g {Type I LastRead 0 FirstWrite -1}
-		gmem2 {Type I LastRead 11 FirstWrite -1}
+		gmem2 {Type I LastRead 1 FirstWrite -1}
 		in_b {Type I LastRead 0 FirstWrite -1}
 		equalized_stream {Type O LastRead -1 FirstWrite 68}}
 	stage_rgb2eq_Pipeline_PASS1 {
@@ -472,9 +472,9 @@ set ArgLastReadFirstWriteLatency {
 		sext_ln84 {Type I LastRead 0 FirstWrite -1}
 		gmem1 {Type I LastRead 1 FirstWrite -1}
 		sext_ln84_1 {Type I LastRead 0 FirstWrite -1}
-		gmem2 {Type I LastRead 11 FirstWrite -1}
+		gmem2 {Type I LastRead 1 FirstWrite -1}
 		sext_ln84_2 {Type I LastRead 0 FirstWrite -1}
-		intensity_buf {Type O LastRead -1 FirstWrite 41}}
+		intensity_buf {Type O LastRead -1 FirstWrite 24}}
 	stage_rgb2eq_Pipeline_BUILD_HIST {
 		intensity_buf {Type I LastRead 0 FirstWrite -1}
 		histogram_255_out {Type O LastRead -1 FirstWrite 13}
@@ -733,7 +733,7 @@ set ArgLastReadFirstWriteLatency {
 		histogram_2_out {Type O LastRead -1 FirstWrite 13}
 		histogram_1_out {Type O LastRead -1 FirstWrite 13}
 		histogram_out {Type O LastRead -1 FirstWrite 13}}
-	stage_rgb2eq_Pipeline_VITIS_LOOP_115_2 {
+	stage_rgb2eq_Pipeline_VITIS_LOOP_119_2 {
 		histogram_reload {Type I LastRead 0 FirstWrite -1}
 		histogram_1_reload {Type I LastRead 0 FirstWrite -1}
 		histogram_2_reload {Type I LastRead 0 FirstWrite -1}
@@ -1508,7 +1508,7 @@ set ArgLastReadFirstWriteLatency {
 		equalized_stream {Type O LastRead -1 FirstWrite 68}}
 	stage_gaussian {
 		equalized_stream {Type I LastRead 10 FirstWrite -1}
-		gaussian_stream {Type O LastRead -1 FirstWrite 49}}
+		gaussian_stream {Type O LastRead -1 FirstWrite 48}}
 	stage_gaussian_Pipeline_READ_IN {
 		grid_24 {Type O LastRead -1 FirstWrite 10}
 		grid_23 {Type O LastRead -1 FirstWrite 10}
@@ -1536,7 +1536,7 @@ set ArgLastReadFirstWriteLatency {
 		grid_1 {Type O LastRead -1 FirstWrite 10}
 		grid {Type O LastRead -1 FirstWrite 10}
 		equalized_stream {Type I LastRead 10 FirstWrite -1}}
-	stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1 {
+	stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1 {
 		grid {Type I LastRead 14 FirstWrite -1}
 		grid_1 {Type I LastRead 14 FirstWrite -1}
 		grid_2 {Type I LastRead 14 FirstWrite -1}
@@ -1562,10 +1562,10 @@ set ArgLastReadFirstWriteLatency {
 		grid_22 {Type I LastRead 14 FirstWrite -1}
 		grid_23 {Type I LastRead 14 FirstWrite -1}
 		grid_24 {Type I LastRead 14 FirstWrite -1}
-		gaussian_stream {Type O LastRead -1 FirstWrite 49}}
+		gaussian_stream {Type O LastRead -1 FirstWrite 48}}
 	stage_bilateral {
 		gaussian_stream {Type I LastRead 10 FirstWrite -1}
-		bilateral_stream {Type O LastRead -1 FirstWrite 144}}
+		bilateral_stream {Type O LastRead -1 FirstWrite 141}}
 	stage_bilateral_Pipeline_READ_IN {
 		grid_32 {Type O LastRead -1 FirstWrite 10}
 		grid_31 {Type O LastRead -1 FirstWrite 10}
@@ -1577,8 +1577,8 @@ set ArgLastReadFirstWriteLatency {
 		grid_25 {Type O LastRead -1 FirstWrite 10}
 		grid {Type O LastRead -1 FirstWrite 10}
 		gaussian_stream {Type I LastRead 10 FirstWrite -1}}
-	stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3 {
-		bilateral_stream {Type O LastRead -1 FirstWrite 144}
+	stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3 {
+		bilateral_stream {Type O LastRead -1 FirstWrite 141}
 		grid {Type I LastRead 14 FirstWrite -1}
 		grid_25 {Type I LastRead 14 FirstWrite -1}
 		grid_26 {Type I LastRead 14 FirstWrite -1}
@@ -1590,7 +1590,7 @@ set ArgLastReadFirstWriteLatency {
 		grid_32 {Type I LastRead 14 FirstWrite -1}}
 	stage_morphology {
 		bilateral_stream {Type I LastRead 10 FirstWrite -1}
-		morphology_stream {Type O LastRead -1 FirstWrite 21}}
+		morphology_stream {Type O LastRead -1 FirstWrite 19}}
 	stage_morphology_Pipeline_READ_BILATERAL {
 		bilateral_buf_8 {Type O LastRead -1 FirstWrite 10}
 		bilateral_buf_7 {Type O LastRead -1 FirstWrite 10}
@@ -1602,7 +1602,7 @@ set ArgLastReadFirstWriteLatency {
 		bilateral_buf_1 {Type O LastRead -1 FirstWrite 10}
 		bilateral_buf {Type O LastRead -1 FirstWrite 10}
 		bilateral_stream {Type I LastRead 10 FirstWrite -1}}
-	stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1 {
+	stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1 {
 		bilateral_buf {Type I LastRead 14 FirstWrite -1}
 		bilateral_buf_1 {Type I LastRead 14 FirstWrite -1}
 		bilateral_buf_2 {Type I LastRead 14 FirstWrite -1}
@@ -1612,16 +1612,16 @@ set ArgLastReadFirstWriteLatency {
 		bilateral_buf_6 {Type I LastRead 14 FirstWrite -1}
 		bilateral_buf_7 {Type I LastRead 14 FirstWrite -1}
 		bilateral_buf_8 {Type I LastRead 14 FirstWrite -1}
-		eroded_buf {Type O LastRead -1 FirstWrite 21}
-		eroded_buf_1 {Type O LastRead -1 FirstWrite 21}
-		eroded_buf_2 {Type O LastRead -1 FirstWrite 21}
-		eroded_buf_3 {Type O LastRead -1 FirstWrite 21}
-		eroded_buf_4 {Type O LastRead -1 FirstWrite 21}
-		eroded_buf_5 {Type O LastRead -1 FirstWrite 21}
-		eroded_buf_6 {Type O LastRead -1 FirstWrite 21}
-		eroded_buf_7 {Type O LastRead -1 FirstWrite 21}
-		eroded_buf_8 {Type O LastRead -1 FirstWrite 21}}
-	stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4 {
+		eroded_buf {Type O LastRead -1 FirstWrite 19}
+		eroded_buf_1 {Type O LastRead -1 FirstWrite 19}
+		eroded_buf_2 {Type O LastRead -1 FirstWrite 19}
+		eroded_buf_3 {Type O LastRead -1 FirstWrite 19}
+		eroded_buf_4 {Type O LastRead -1 FirstWrite 19}
+		eroded_buf_5 {Type O LastRead -1 FirstWrite 19}
+		eroded_buf_6 {Type O LastRead -1 FirstWrite 19}
+		eroded_buf_7 {Type O LastRead -1 FirstWrite 19}
+		eroded_buf_8 {Type O LastRead -1 FirstWrite 19}}
+	stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4 {
 		eroded_buf {Type I LastRead 14 FirstWrite -1}
 		eroded_buf_1 {Type I LastRead 14 FirstWrite -1}
 		eroded_buf_2 {Type I LastRead 14 FirstWrite -1}
@@ -1631,17 +1631,17 @@ set ArgLastReadFirstWriteLatency {
 		eroded_buf_6 {Type I LastRead 14 FirstWrite -1}
 		eroded_buf_7 {Type I LastRead 14 FirstWrite -1}
 		eroded_buf_8 {Type I LastRead 14 FirstWrite -1}
-		morphology_stream {Type O LastRead -1 FirstWrite 21}}
-	Loop_VITIS_LOOP_393_1_proc {
-		out_r {Type I LastRead 1 FirstWrite -1}
+		morphology_stream {Type O LastRead -1 FirstWrite 19}}
+	write_output {
+		morphology_stream {Type I LastRead 0 FirstWrite -1}
 		gmem3 {Type O LastRead 4 FirstWrite 3}
-		morphology_stream {Type I LastRead 0 FirstWrite -1}}}
+		out_r {Type I LastRead 1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "12701", "Max" : "12701"}
-	, {"Name" : "Interval", "Min" : "12702", "Max" : "12702"}
+	{"Name" : "Latency", "Min" : "12684", "Max" : "12684"}
+	, {"Name" : "Interval", "Min" : "12685", "Max" : "12685"}
 ]}
 
 set PipelineEnableSignalInfo {[

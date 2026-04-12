@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'stage_morphology_Pipeline_READ_BILATERAL'
 ================================================================
-* Date:           Fri Apr 10 20:50:54 2026
+* Date:           Sat Apr 11 20:28:39 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -73,10 +73,10 @@
     +---------------------------+---------------------+---------+----+-----+----+-----+
     |          Instance         |        Module       | BRAM_18K| DSP|  FF | LUT| URAM|
     +---------------------------+---------------------+---------+----+-----+----+-----+
-    |mul_6ns_8ns_13_1_1_U1519   |mul_6ns_8ns_13_1_1   |        0|   0|    0|  40|    0|
-    |mul_6ns_8ns_13_1_1_U1521   |mul_6ns_8ns_13_1_1   |        0|   0|    0|  40|    0|
-    |urem_6ns_3ns_2_10_1_U1520  |urem_6ns_3ns_2_10_1  |        0|   0|  128|  68|    0|
-    |urem_6ns_3ns_2_10_1_U1522  |urem_6ns_3ns_2_10_1  |        0|   0|  128|  68|    0|
+    |mul_6ns_8ns_13_1_1_U1498   |mul_6ns_8ns_13_1_1   |        0|   0|    0|  40|    0|
+    |mul_6ns_8ns_13_1_1_U1500   |mul_6ns_8ns_13_1_1   |        0|   0|    0|  40|    0|
+    |urem_6ns_3ns_2_10_1_U1499  |urem_6ns_3ns_2_10_1  |        0|   0|  128|  68|    0|
+    |urem_6ns_3ns_2_10_1_U1501  |urem_6ns_3ns_2_10_1  |        0|   0|  128|  68|    0|
     +---------------------------+---------------------+---------+----+-----+----+-----+
     |Total                      |                     |        0|   0|  256| 216|    0|
     +---------------------------+---------------------+---------+----+-----+----+-----+
@@ -85,7 +85,7 @@
     +------------------------------------+------------------------------+--------------+
     |              Instance              |            Module            |  Expression  |
     +------------------------------------+------------------------------+--------------+
-    |mac_muladd_5ns_5ns_5ns_9_4_1_U1523  |mac_muladd_5ns_5ns_5ns_9_4_1  |  i0 * i1 + i2|
+    |mac_muladd_5ns_5ns_5ns_9_4_1_U1502  |mac_muladd_5ns_5ns_5ns_9_4_1  |  i0 * i1 + i2|
     +------------------------------------+------------------------------+--------------+
 
     * Memory: 
@@ -100,7 +100,7 @@
     +---------------------------+----------+----+---+----+------------+------------+
     |i_3_fu_275_p2              |         +|   0|  0|  20|          13|           1|
     |ap_block_pp0_stage0_11001  |       and|   0|  0|   2|           1|           1|
-    |icmp_ln294_fu_269_p2       |      icmp|   0|  0|  21|          13|          14|
+    |icmp_ln305_fu_269_p2       |      icmp|   0|  0|  21|          13|          14|
     |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
     +---------------------------+----------+----+---+----+------------+------------+
     |Total                      |          |   0|  0|  45|          28|          18|
@@ -123,7 +123,7 @@
     +----------------------------------+----+----+-----+-----------+
     |               Name               | FF | LUT| Bits| Const Bits|
     +----------------------------------+----+----+-----+-----------+
-    |add_ln298_reg_436                 |   9|   0|    9|          0|
+    |add_ln310_reg_436                 |   9|   0|    9|          0|
     |ap_CS_fsm                         |   1|   0|    1|          0|
     |ap_done_reg                       |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
@@ -146,12 +146,12 @@
     |ap_loop_exit_ready_pp0_iter8_reg  |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter9_reg  |   1|   0|    1|          0|
     |i_fu_82                           |  13|   0|   13|          0|
-    |tmp_31_reg_421                    |   5|   0|    5|          0|
+    |tmp_40_reg_421                    |   5|   0|    5|          0|
     |tmp_reg_416                       |   5|   0|    5|          0|
-    |trunc_ln296_reg_441               |   2|   0|    2|          0|
-    |trunc_ln297_reg_445               |   2|   0|    2|          0|
-    |add_ln298_reg_436                 |  64|  32|    9|          0|
-    |tmp_31_reg_421                    |  64|  32|    5|          0|
+    |trunc_ln308_reg_441               |   2|   0|    2|          0|
+    |trunc_ln309_reg_445               |   2|   0|    2|          0|
+    |add_ln310_reg_436                 |  64|  32|    9|          0|
+    |tmp_40_reg_421                    |  64|  32|    5|          0|
     +----------------------------------+----+----+-----+-----------+
     |Total                             | 185|  64|   71|          0|
     +----------------------------------+----+----+-----+-----------+
@@ -171,7 +171,7 @@
 |ap_done                          |  out|    1|  ap_ctrl_hs|  stage_morphology_Pipeline_READ_BILATERAL|  return value|
 |ap_idle                          |  out|    1|  ap_ctrl_hs|  stage_morphology_Pipeline_READ_BILATERAL|  return value|
 |ap_ready                         |  out|    1|  ap_ctrl_hs|  stage_morphology_Pipeline_READ_BILATERAL|  return value|
-|bilateral_stream_dout            |   in|   14|     ap_fifo|                          bilateral_stream|       pointer|
+|bilateral_stream_dout            |   in|   12|     ap_fifo|                          bilateral_stream|       pointer|
 |bilateral_stream_empty_n         |   in|    1|     ap_fifo|                          bilateral_stream|       pointer|
 |bilateral_stream_read            |  out|    1|     ap_fifo|                          bilateral_stream|       pointer|
 |bilateral_stream_num_data_valid  |   in|    9|     ap_fifo|                          bilateral_stream|       pointer|
@@ -179,38 +179,38 @@
 |bilateral_buf_8_address1         |  out|    9|   ap_memory|                           bilateral_buf_8|         array|
 |bilateral_buf_8_ce1              |  out|    1|   ap_memory|                           bilateral_buf_8|         array|
 |bilateral_buf_8_we1              |  out|    1|   ap_memory|                           bilateral_buf_8|         array|
-|bilateral_buf_8_d1               |  out|   14|   ap_memory|                           bilateral_buf_8|         array|
+|bilateral_buf_8_d1               |  out|   12|   ap_memory|                           bilateral_buf_8|         array|
 |bilateral_buf_7_address1         |  out|    9|   ap_memory|                           bilateral_buf_7|         array|
 |bilateral_buf_7_ce1              |  out|    1|   ap_memory|                           bilateral_buf_7|         array|
 |bilateral_buf_7_we1              |  out|    1|   ap_memory|                           bilateral_buf_7|         array|
-|bilateral_buf_7_d1               |  out|   14|   ap_memory|                           bilateral_buf_7|         array|
+|bilateral_buf_7_d1               |  out|   12|   ap_memory|                           bilateral_buf_7|         array|
 |bilateral_buf_6_address1         |  out|    9|   ap_memory|                           bilateral_buf_6|         array|
 |bilateral_buf_6_ce1              |  out|    1|   ap_memory|                           bilateral_buf_6|         array|
 |bilateral_buf_6_we1              |  out|    1|   ap_memory|                           bilateral_buf_6|         array|
-|bilateral_buf_6_d1               |  out|   14|   ap_memory|                           bilateral_buf_6|         array|
+|bilateral_buf_6_d1               |  out|   12|   ap_memory|                           bilateral_buf_6|         array|
 |bilateral_buf_5_address1         |  out|    9|   ap_memory|                           bilateral_buf_5|         array|
 |bilateral_buf_5_ce1              |  out|    1|   ap_memory|                           bilateral_buf_5|         array|
 |bilateral_buf_5_we1              |  out|    1|   ap_memory|                           bilateral_buf_5|         array|
-|bilateral_buf_5_d1               |  out|   14|   ap_memory|                           bilateral_buf_5|         array|
+|bilateral_buf_5_d1               |  out|   12|   ap_memory|                           bilateral_buf_5|         array|
 |bilateral_buf_4_address1         |  out|    9|   ap_memory|                           bilateral_buf_4|         array|
 |bilateral_buf_4_ce1              |  out|    1|   ap_memory|                           bilateral_buf_4|         array|
 |bilateral_buf_4_we1              |  out|    1|   ap_memory|                           bilateral_buf_4|         array|
-|bilateral_buf_4_d1               |  out|   14|   ap_memory|                           bilateral_buf_4|         array|
+|bilateral_buf_4_d1               |  out|   12|   ap_memory|                           bilateral_buf_4|         array|
 |bilateral_buf_3_address1         |  out|    9|   ap_memory|                           bilateral_buf_3|         array|
 |bilateral_buf_3_ce1              |  out|    1|   ap_memory|                           bilateral_buf_3|         array|
 |bilateral_buf_3_we1              |  out|    1|   ap_memory|                           bilateral_buf_3|         array|
-|bilateral_buf_3_d1               |  out|   14|   ap_memory|                           bilateral_buf_3|         array|
+|bilateral_buf_3_d1               |  out|   12|   ap_memory|                           bilateral_buf_3|         array|
 |bilateral_buf_2_address1         |  out|    9|   ap_memory|                           bilateral_buf_2|         array|
 |bilateral_buf_2_ce1              |  out|    1|   ap_memory|                           bilateral_buf_2|         array|
 |bilateral_buf_2_we1              |  out|    1|   ap_memory|                           bilateral_buf_2|         array|
-|bilateral_buf_2_d1               |  out|   14|   ap_memory|                           bilateral_buf_2|         array|
+|bilateral_buf_2_d1               |  out|   12|   ap_memory|                           bilateral_buf_2|         array|
 |bilateral_buf_1_address1         |  out|    9|   ap_memory|                           bilateral_buf_1|         array|
 |bilateral_buf_1_ce1              |  out|    1|   ap_memory|                           bilateral_buf_1|         array|
 |bilateral_buf_1_we1              |  out|    1|   ap_memory|                           bilateral_buf_1|         array|
-|bilateral_buf_1_d1               |  out|   14|   ap_memory|                           bilateral_buf_1|         array|
+|bilateral_buf_1_d1               |  out|   12|   ap_memory|                           bilateral_buf_1|         array|
 |bilateral_buf_address1           |  out|    9|   ap_memory|                             bilateral_buf|         array|
 |bilateral_buf_ce1                |  out|    1|   ap_memory|                             bilateral_buf|         array|
 |bilateral_buf_we1                |  out|    1|   ap_memory|                             bilateral_buf|         array|
-|bilateral_buf_d1                 |  out|   14|   ap_memory|                             bilateral_buf|         array|
+|bilateral_buf_d1                 |  out|   12|   ap_memory|                             bilateral_buf|         array|
 +---------------------------------+-----+-----+------------+------------------------------------------+--------------+
 

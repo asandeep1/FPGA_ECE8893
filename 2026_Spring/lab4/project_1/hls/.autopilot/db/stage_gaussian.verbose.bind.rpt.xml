@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'stage_gaussian'" level="0">
-<item name = "Date">Fri Apr 10 20:50:35 2026
+<item name = "Date">Sat Apr 11 20:28:19 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">8256, 8256, 33.024 us, 33.024 us, 8256, 8256, no</column>
+<column name="">8255, 8255, 33.020 us, 33.020 us, 8255, 8255, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -32,7 +32,7 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="grp_stage_gaussian_Pipeline_READ_IN_fu_130">stage_gaussian_Pipeline_READ_IN, 4107, 4107, 16.428 us, 16.428 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186">stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1, 4146, 4146, 16.584 us, 16.584 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186">stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1, 4145, 4145, 16.580 us, 16.580 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

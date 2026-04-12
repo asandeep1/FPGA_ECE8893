@@ -16,7 +16,7 @@ module top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W (
      
     reset, clk);
 
-parameter DataWidth = 14;
+parameter DataWidth = 12;
 parameter AddressWidth = 9;
 parameter AddressRange = 484;
  

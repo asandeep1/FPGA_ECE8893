@@ -11,7 +11,7 @@ use ieee.std_logic_unsigned.all;
 entity top_kernel_stage_rgb2eq_intensity_buf_RAM_AUTO_1R1W is 
     generic(
         MEM_TYPE        : string    := "auto"; 
-        DataWidth       : integer   := 14; 
+        DataWidth       : integer   := 12; 
         AddressWidth    : integer   := 12;
         AddressRange    : integer   := 4096
     ); 

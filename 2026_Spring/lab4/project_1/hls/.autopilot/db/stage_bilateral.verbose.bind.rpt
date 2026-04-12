@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'stage_bilateral'
 ================================================================
-* Date:           Fri Apr 10 20:50:39 2026
+* Date:           Sat Apr 11 20:28:23 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
     |   min   |   max   |    min    |    max    |  min |  max |   Type  |
     +---------+---------+-----------+-----------+------+------+---------+
-    |     8351|     8351|  33.404 us|  33.404 us|  8351|  8351|       no|
+    |     8348|     8348|  33.392 us|  33.392 us|  8348|  8348|       no|
     +---------+---------+-----------+-----------+------+------+---------+
 
     + Detail: 
@@ -39,7 +39,7 @@
         |                              Instance                             |                          Module                         |   min   |   max   |    min    |    max    |  min |  max |                      Type                      |
         +-------------------------------------------------------------------+---------------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
         |grp_stage_bilateral_Pipeline_READ_IN_fu_66                         |stage_bilateral_Pipeline_READ_IN                         |     4107|     4107|  16.428 us|  16.428 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90  |stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3  |     4241|     4241|  16.964 us|  16.964 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90  |stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3  |     4238|     4238|  16.952 us|  16.952 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-------------------------------------------------------------------+---------------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
 
         * Loop: 
@@ -84,39 +84,39 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.35>
-ST_1 : Operation 5 [1/1] (1.35ns)   --->   "%grid = alloca i64 1" [top.cpp:214]   --->   Operation 5 'alloca' 'grid' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_1 : Operation 6 [1/1] (1.35ns)   --->   "%grid_25 = alloca i64 1" [top.cpp:214]   --->   Operation 6 'alloca' 'grid_25' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_1 : Operation 7 [1/1] (1.35ns)   --->   "%grid_26 = alloca i64 1" [top.cpp:214]   --->   Operation 7 'alloca' 'grid_26' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_1 : Operation 8 [1/1] (1.35ns)   --->   "%grid_27 = alloca i64 1" [top.cpp:214]   --->   Operation 8 'alloca' 'grid_27' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_1 : Operation 9 [1/1] (1.35ns)   --->   "%grid_28 = alloca i64 1" [top.cpp:214]   --->   Operation 9 'alloca' 'grid_28' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_1 : Operation 10 [1/1] (1.35ns)   --->   "%grid_29 = alloca i64 1" [top.cpp:214]   --->   Operation 10 'alloca' 'grid_29' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_1 : Operation 11 [1/1] (1.35ns)   --->   "%grid_30 = alloca i64 1" [top.cpp:214]   --->   Operation 11 'alloca' 'grid_30' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_1 : Operation 12 [1/1] (1.35ns)   --->   "%grid_31 = alloca i64 1" [top.cpp:214]   --->   Operation 12 'alloca' 'grid_31' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_1 : Operation 13 [1/1] (1.35ns)   --->   "%grid_32 = alloca i64 1" [top.cpp:214]   --->   Operation 13 'alloca' 'grid_32' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_1 : Operation 14 [2/2] (0.00ns)   --->   "%call_ln0 = call void @stage_bilateral_Pipeline_READ_IN, i14 %grid_32, i14 %grid_31, i14 %grid_30, i14 %grid_29, i14 %grid_28, i14 %grid_27, i14 %grid_26, i14 %grid_25, i14 %grid, i14 %gaussian_stream"   --->   Operation 14 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 5 [1/1] (1.35ns)   --->   "%grid = alloca i64 1" [top.cpp:222]   --->   Operation 5 'alloca' 'grid' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_1 : Operation 6 [1/1] (1.35ns)   --->   "%grid_25 = alloca i64 1" [top.cpp:222]   --->   Operation 6 'alloca' 'grid_25' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_1 : Operation 7 [1/1] (1.35ns)   --->   "%grid_26 = alloca i64 1" [top.cpp:222]   --->   Operation 7 'alloca' 'grid_26' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_1 : Operation 8 [1/1] (1.35ns)   --->   "%grid_27 = alloca i64 1" [top.cpp:222]   --->   Operation 8 'alloca' 'grid_27' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_1 : Operation 9 [1/1] (1.35ns)   --->   "%grid_28 = alloca i64 1" [top.cpp:222]   --->   Operation 9 'alloca' 'grid_28' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_1 : Operation 10 [1/1] (1.35ns)   --->   "%grid_29 = alloca i64 1" [top.cpp:222]   --->   Operation 10 'alloca' 'grid_29' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_1 : Operation 11 [1/1] (1.35ns)   --->   "%grid_30 = alloca i64 1" [top.cpp:222]   --->   Operation 11 'alloca' 'grid_30' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_1 : Operation 12 [1/1] (1.35ns)   --->   "%grid_31 = alloca i64 1" [top.cpp:222]   --->   Operation 12 'alloca' 'grid_31' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_1 : Operation 13 [1/1] (1.35ns)   --->   "%grid_32 = alloca i64 1" [top.cpp:222]   --->   Operation 13 'alloca' 'grid_32' <Predicate = true> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_1 : Operation 14 [2/2] (0.00ns)   --->   "%call_ln0 = call void @stage_bilateral_Pipeline_READ_IN, i12 %grid_32, i12 %grid_31, i12 %grid_30, i12 %grid_29, i12 %grid_28, i12 %grid_27, i12 %grid_26, i12 %grid_25, i12 %grid, i12 %gaussian_stream"   --->   Operation 14 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln0 = call void @stage_bilateral_Pipeline_READ_IN, i14 %grid_32, i14 %grid_31, i14 %grid_30, i14 %grid_29, i14 %grid_28, i14 %grid_27, i14 %grid_26, i14 %grid_25, i14 %grid, i14 %gaussian_stream"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln0 = call void @stage_bilateral_Pipeline_READ_IN, i12 %grid_32, i12 %grid_31, i12 %grid_30, i12 %grid_29, i12 %grid_28, i12 %grid_27, i12 %grid_26, i12 %grid_25, i12 %grid, i12 %gaussian_stream"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%fence_ln238 = fence void @_ssdm_op_Fence, i14 %gaussian_stream, i32 4294967295, i14 %bilateral_stream, i32 0" [top.cpp:238]   --->   Operation 16 'fence' 'fence_ln238' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%fence_ln238 = fence void @_ssdm_op_Fence, i14 %gaussian_stream, i32 4294967295, i14 %bilateral_stream, i32 0" [top.cpp:238]   --->   Operation 17 'fence' 'fence_ln238' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln0 = call void @stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3, i14 %bilateral_stream, i14 %grid, i14 %grid_25, i14 %grid_26, i14 %grid_27, i14 %grid_28, i14 %grid_29, i14 %grid_30, i14 %grid_31, i14 %grid_32"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%fence_ln247 = fence void @_ssdm_op_Fence, i12 %gaussian_stream, i32 4294967295, i12 %bilateral_stream, i32 0" [top.cpp:247]   --->   Operation 16 'fence' 'fence_ln247' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%fence_ln247 = fence void @_ssdm_op_Fence, i12 %gaussian_stream, i32 4294967295, i12 %bilateral_stream, i32 0" [top.cpp:247]   --->   Operation 17 'fence' 'fence_ln247' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln0 = call void @stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3, i12 %bilateral_stream, i12 %grid, i12 %grid_25, i12 %grid_26, i12 %grid_27, i12 %grid_28, i12 %grid_29, i12 %grid_30, i12 %grid_31, i12 %grid_32"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %bilateral_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %gaussian_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_32, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 21 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_31, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 22 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_30, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 23 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_29, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 24 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_28, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 25 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_27, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 26 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_26, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 27 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid_25, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 28 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%specmemcore_ln215 = specmemcore void @_ssdm_op_SpecMemCore, i14 %grid, i64 666, i64 22, i64 18446744073709551615" [top.cpp:215]   --->   Operation 29 'specmemcore' 'specmemcore_ln215' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 30 [1/2] (0.00ns)   --->   "%call_ln0 = call void @stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3, i14 %bilateral_stream, i14 %grid, i14 %grid_25, i14 %grid_26, i14 %grid_27, i14 %grid_28, i14 %grid_29, i14 %grid_30, i14 %grid_31, i14 %grid_32"   --->   Operation 30 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%ret_ln278 = ret" [top.cpp:278]   --->   Operation 31 'ret' 'ret_ln278' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %bilateral_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %gaussian_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln223 = specmemcore void @_ssdm_op_SpecMemCore, i12 %grid_32, i64 666, i64 22, i64 18446744073709551615" [top.cpp:223]   --->   Operation 21 'specmemcore' 'specmemcore_ln223' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln223 = specmemcore void @_ssdm_op_SpecMemCore, i12 %grid_31, i64 666, i64 22, i64 18446744073709551615" [top.cpp:223]   --->   Operation 22 'specmemcore' 'specmemcore_ln223' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln223 = specmemcore void @_ssdm_op_SpecMemCore, i12 %grid_30, i64 666, i64 22, i64 18446744073709551615" [top.cpp:223]   --->   Operation 23 'specmemcore' 'specmemcore_ln223' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specmemcore_ln223 = specmemcore void @_ssdm_op_SpecMemCore, i12 %grid_29, i64 666, i64 22, i64 18446744073709551615" [top.cpp:223]   --->   Operation 24 'specmemcore' 'specmemcore_ln223' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%specmemcore_ln223 = specmemcore void @_ssdm_op_SpecMemCore, i12 %grid_28, i64 666, i64 22, i64 18446744073709551615" [top.cpp:223]   --->   Operation 25 'specmemcore' 'specmemcore_ln223' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%specmemcore_ln223 = specmemcore void @_ssdm_op_SpecMemCore, i12 %grid_27, i64 666, i64 22, i64 18446744073709551615" [top.cpp:223]   --->   Operation 26 'specmemcore' 'specmemcore_ln223' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%specmemcore_ln223 = specmemcore void @_ssdm_op_SpecMemCore, i12 %grid_26, i64 666, i64 22, i64 18446744073709551615" [top.cpp:223]   --->   Operation 27 'specmemcore' 'specmemcore_ln223' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%specmemcore_ln223 = specmemcore void @_ssdm_op_SpecMemCore, i12 %grid_25, i64 666, i64 22, i64 18446744073709551615" [top.cpp:223]   --->   Operation 28 'specmemcore' 'specmemcore_ln223' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%specmemcore_ln223 = specmemcore void @_ssdm_op_SpecMemCore, i12 %grid, i64 666, i64 22, i64 18446744073709551615" [top.cpp:223]   --->   Operation 29 'specmemcore' 'specmemcore_ln223' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/2] (0.00ns)   --->   "%call_ln0 = call void @stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3, i12 %bilateral_stream, i12 %grid, i12 %grid_25, i12 %grid_26, i12 %grid_27, i12 %grid_28, i12 %grid_29, i12 %grid_30, i12 %grid_31, i12 %grid_32"   --->   Operation 30 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%ret_ln289 = ret" [top.cpp:289]   --->   Operation 31 'ret' 'ret_ln289' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -148,21 +148,21 @@ grid_30           (alloca       ) [ 00111]
 grid_31           (alloca       ) [ 00111]
 grid_32           (alloca       ) [ 00111]
 call_ln0          (call         ) [ 00000]
-fence_ln238       (fence        ) [ 00000]
-fence_ln238       (fence        ) [ 00000]
+fence_ln247       (fence        ) [ 00000]
+fence_ln247       (fence        ) [ 00000]
 specinterface_ln0 (specinterface) [ 00000]
 specinterface_ln0 (specinterface) [ 00000]
-specmemcore_ln215 (specmemcore  ) [ 00000]
-specmemcore_ln215 (specmemcore  ) [ 00000]
-specmemcore_ln215 (specmemcore  ) [ 00000]
-specmemcore_ln215 (specmemcore  ) [ 00000]
-specmemcore_ln215 (specmemcore  ) [ 00000]
-specmemcore_ln215 (specmemcore  ) [ 00000]
-specmemcore_ln215 (specmemcore  ) [ 00000]
-specmemcore_ln215 (specmemcore  ) [ 00000]
-specmemcore_ln215 (specmemcore  ) [ 00000]
+specmemcore_ln223 (specmemcore  ) [ 00000]
+specmemcore_ln223 (specmemcore  ) [ 00000]
+specmemcore_ln223 (specmemcore  ) [ 00000]
+specmemcore_ln223 (specmemcore  ) [ 00000]
+specmemcore_ln223 (specmemcore  ) [ 00000]
+specmemcore_ln223 (specmemcore  ) [ 00000]
+specmemcore_ln223 (specmemcore  ) [ 00000]
+specmemcore_ln223 (specmemcore  ) [ 00000]
+specmemcore_ln223 (specmemcore  ) [ 00000]
 call_ln0          (call         ) [ 00000]
-ret_ln278         (ret          ) [ 00000]
+ret_ln289         (ret          ) [ 00000]
 </LifeTime>
 
 <model>
@@ -236,7 +236,7 @@ ret_ln278         (ret          ) [ 00000]
 <pin id="15" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3"/></StgValue>
+<StgValue><ssdm name="stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3"/></StgValue>
 </bind>
 </comp>
 
@@ -306,7 +306,7 @@ ret_ln278         (ret          ) [ 00000]
 <comp id="30" class="1004" name="grid_alloca_fu_30">
 <pin_list>
 <pin id="31" dir="0" index="0" bw="1" slack="0"/>
-<pin id="32" dir="1" index="1" bw="14" slack="0"/>
+<pin id="32" dir="1" index="1" bw="12" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -317,7 +317,7 @@ ret_ln278         (ret          ) [ 00000]
 <comp id="34" class="1004" name="grid_25_alloca_fu_34">
 <pin_list>
 <pin id="35" dir="0" index="0" bw="1" slack="0"/>
-<pin id="36" dir="1" index="1" bw="14" slack="0"/>
+<pin id="36" dir="1" index="1" bw="12" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -328,7 +328,7 @@ ret_ln278         (ret          ) [ 00000]
 <comp id="38" class="1004" name="grid_26_alloca_fu_38">
 <pin_list>
 <pin id="39" dir="0" index="0" bw="1" slack="0"/>
-<pin id="40" dir="1" index="1" bw="14" slack="0"/>
+<pin id="40" dir="1" index="1" bw="12" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -339,7 +339,7 @@ ret_ln278         (ret          ) [ 00000]
 <comp id="42" class="1004" name="grid_27_alloca_fu_42">
 <pin_list>
 <pin id="43" dir="0" index="0" bw="1" slack="0"/>
-<pin id="44" dir="1" index="1" bw="14" slack="0"/>
+<pin id="44" dir="1" index="1" bw="12" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -350,7 +350,7 @@ ret_ln278         (ret          ) [ 00000]
 <comp id="46" class="1004" name="grid_28_alloca_fu_46">
 <pin_list>
 <pin id="47" dir="0" index="0" bw="1" slack="0"/>
-<pin id="48" dir="1" index="1" bw="14" slack="0"/>
+<pin id="48" dir="1" index="1" bw="12" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -361,7 +361,7 @@ ret_ln278         (ret          ) [ 00000]
 <comp id="50" class="1004" name="grid_29_alloca_fu_50">
 <pin_list>
 <pin id="51" dir="0" index="0" bw="1" slack="0"/>
-<pin id="52" dir="1" index="1" bw="14" slack="0"/>
+<pin id="52" dir="1" index="1" bw="12" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -372,7 +372,7 @@ ret_ln278         (ret          ) [ 00000]
 <comp id="54" class="1004" name="grid_30_alloca_fu_54">
 <pin_list>
 <pin id="55" dir="0" index="0" bw="1" slack="0"/>
-<pin id="56" dir="1" index="1" bw="14" slack="0"/>
+<pin id="56" dir="1" index="1" bw="12" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -383,7 +383,7 @@ ret_ln278         (ret          ) [ 00000]
 <comp id="58" class="1004" name="grid_31_alloca_fu_58">
 <pin_list>
 <pin id="59" dir="0" index="0" bw="1" slack="0"/>
-<pin id="60" dir="1" index="1" bw="14" slack="0"/>
+<pin id="60" dir="1" index="1" bw="12" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -394,7 +394,7 @@ ret_ln278         (ret          ) [ 00000]
 <comp id="62" class="1004" name="grid_32_alloca_fu_62">
 <pin_list>
 <pin id="63" dir="0" index="0" bw="1" slack="0"/>
-<pin id="64" dir="1" index="1" bw="14" slack="0"/>
+<pin id="64" dir="1" index="1" bw="12" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -405,16 +405,16 @@ ret_ln278         (ret          ) [ 00000]
 <comp id="66" class="1004" name="grp_stage_bilateral_Pipeline_READ_IN_fu_66">
 <pin_list>
 <pin id="67" dir="0" index="0" bw="0" slack="0"/>
-<pin id="68" dir="0" index="1" bw="14" slack="0"/>
-<pin id="69" dir="0" index="2" bw="14" slack="0"/>
-<pin id="70" dir="0" index="3" bw="14" slack="0"/>
-<pin id="71" dir="0" index="4" bw="14" slack="0"/>
-<pin id="72" dir="0" index="5" bw="14" slack="0"/>
-<pin id="73" dir="0" index="6" bw="14" slack="0"/>
-<pin id="74" dir="0" index="7" bw="14" slack="0"/>
-<pin id="75" dir="0" index="8" bw="14" slack="0"/>
-<pin id="76" dir="0" index="9" bw="14" slack="0"/>
-<pin id="77" dir="0" index="10" bw="14" slack="0"/>
+<pin id="68" dir="0" index="1" bw="12" slack="0"/>
+<pin id="69" dir="0" index="2" bw="12" slack="0"/>
+<pin id="70" dir="0" index="3" bw="12" slack="0"/>
+<pin id="71" dir="0" index="4" bw="12" slack="0"/>
+<pin id="72" dir="0" index="5" bw="12" slack="0"/>
+<pin id="73" dir="0" index="6" bw="12" slack="0"/>
+<pin id="74" dir="0" index="7" bw="12" slack="0"/>
+<pin id="75" dir="0" index="8" bw="12" slack="0"/>
+<pin id="76" dir="0" index="9" bw="12" slack="0"/>
+<pin id="77" dir="0" index="10" bw="12" slack="0"/>
 <pin id="78" dir="1" index="11" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -423,19 +423,19 @@ ret_ln278         (ret          ) [ 00000]
 </bind>
 </comp>
 
-<comp id="90" class="1004" name="grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90">
+<comp id="90" class="1004" name="grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90">
 <pin_list>
 <pin id="91" dir="0" index="0" bw="0" slack="0"/>
-<pin id="92" dir="0" index="1" bw="14" slack="0"/>
-<pin id="93" dir="0" index="2" bw="14" slack="2147483647"/>
-<pin id="94" dir="0" index="3" bw="14" slack="2147483647"/>
-<pin id="95" dir="0" index="4" bw="14" slack="2147483647"/>
-<pin id="96" dir="0" index="5" bw="14" slack="2147483647"/>
-<pin id="97" dir="0" index="6" bw="14" slack="2147483647"/>
-<pin id="98" dir="0" index="7" bw="14" slack="2147483647"/>
-<pin id="99" dir="0" index="8" bw="14" slack="2147483647"/>
-<pin id="100" dir="0" index="9" bw="14" slack="2147483647"/>
-<pin id="101" dir="0" index="10" bw="14" slack="2147483647"/>
+<pin id="92" dir="0" index="1" bw="12" slack="0"/>
+<pin id="93" dir="0" index="2" bw="12" slack="2147483647"/>
+<pin id="94" dir="0" index="3" bw="12" slack="2147483647"/>
+<pin id="95" dir="0" index="4" bw="12" slack="2147483647"/>
+<pin id="96" dir="0" index="5" bw="12" slack="2147483647"/>
+<pin id="97" dir="0" index="6" bw="12" slack="2147483647"/>
+<pin id="98" dir="0" index="7" bw="12" slack="2147483647"/>
+<pin id="99" dir="0" index="8" bw="12" slack="2147483647"/>
+<pin id="100" dir="0" index="9" bw="12" slack="2147483647"/>
+<pin id="101" dir="0" index="10" bw="12" slack="2147483647"/>
 <pin id="102" dir="1" index="11" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -444,33 +444,33 @@ ret_ln278         (ret          ) [ 00000]
 </bind>
 </comp>
 
-<comp id="105" class="1004" name="fence_ln238_fu_105">
+<comp id="105" class="1004" name="fence_ln247_fu_105">
 <pin_list>
 <pin id="106" dir="0" index="0" bw="0" slack="0"/>
-<pin id="107" dir="0" index="1" bw="14" slack="0"/>
+<pin id="107" dir="0" index="1" bw="12" slack="0"/>
 <pin id="108" dir="0" index="2" bw="1" slack="0"/>
-<pin id="109" dir="0" index="3" bw="14" slack="0"/>
+<pin id="109" dir="0" index="3" bw="12" slack="0"/>
 <pin id="110" dir="0" index="4" bw="1" slack="0"/>
 <pin id="111" dir="1" index="5" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="fence(30) " fcode="fence"/>
-<opset="fence_ln238/3 "/>
+<opset="fence_ln247/3 "/>
 </bind>
 </comp>
 
-<comp id="117" class="1004" name="fence_ln238_fu_117">
+<comp id="117" class="1004" name="fence_ln247_fu_117">
 <pin_list>
 <pin id="118" dir="0" index="0" bw="0" slack="0"/>
-<pin id="119" dir="0" index="1" bw="14" slack="0"/>
+<pin id="119" dir="0" index="1" bw="12" slack="0"/>
 <pin id="120" dir="0" index="2" bw="1" slack="0"/>
-<pin id="121" dir="0" index="3" bw="14" slack="0"/>
+<pin id="121" dir="0" index="3" bw="12" slack="0"/>
 <pin id="122" dir="0" index="4" bw="1" slack="0"/>
 <pin id="123" dir="1" index="5" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="fence(30) " fcode="fence"/>
-<opset="fence_ln238/3 "/>
+<opset="fence_ln247/3 "/>
 </bind>
 </comp>
 
@@ -568,12 +568,12 @@ ret_ln278         (ret          ) [ 00000]
 | Operation|                          Functional Unit                          |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|-------------------------------------------------------------------|---------|---------|---------|---------|
 |   call   |             grp_stage_bilateral_Pipeline_READ_IN_fu_66            |    1    |  1.956  |   323   |   292   |
-|          | grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90 |   157   | 19.2582 |  25174  |  29187  |
+|          | grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90 |   157   | 19.2582 |  24649  |  28339  |
 |----------|-------------------------------------------------------------------|---------|---------|---------|---------|
-|   fence  |                         fence_ln238_fu_105                        |    0    |    0    |    0    |    0    |
-|          |                         fence_ln238_fu_117                        |    0    |    0    |    0    |    0    |
+|   fence  |                         fence_ln247_fu_105                        |    0    |    0    |    0    |    0    |
+|          |                         fence_ln247_fu_117                        |    0    |    0    |    0    |    0    |
 |----------|-------------------------------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                                                   |   158   | 21.2142 |  25497  |  29479  |
+|   Total  |                                                                   |   158   | 21.2142 |  24972  |  28631  |
 |----------|-------------------------------------------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -609,10 +609,10 @@ N/A
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    -   |   158  |   21   |  25497 |  29479 |
+|  Function |    -   |   158  |   21   |  24972 |  28631 |
 |   Memory  |    9   |    -   |    -   |    0   |    0   |
 |Multiplexer|    -   |    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |    9   |   158  |   21   |  25497 |  29479 |
+|   Total   |    9   |   158  |   21   |  24972 |  28631 |
 +-----------+--------+--------+--------+--------+--------+

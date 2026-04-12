@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1524 \
+    id 1503 \
     name bilateral_buf_8 \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename bilateral_buf_8 \
     op interface \
-    ports { bilateral_buf_8_address1 { O 9 vector } bilateral_buf_8_ce1 { O 1 bit } bilateral_buf_8_we1 { O 1 bit } bilateral_buf_8_d1 { O 14 vector } } \
+    ports { bilateral_buf_8_address1 { O 9 vector } bilateral_buf_8_ce1 { O 1 bit } bilateral_buf_8_we1 { O 1 bit } bilateral_buf_8_d1 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'bilateral_buf_8'"
@@ -30,14 +30,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1525 \
+    id 1504 \
     name bilateral_buf_7 \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename bilateral_buf_7 \
     op interface \
-    ports { bilateral_buf_7_address1 { O 9 vector } bilateral_buf_7_ce1 { O 1 bit } bilateral_buf_7_we1 { O 1 bit } bilateral_buf_7_d1 { O 14 vector } } \
+    ports { bilateral_buf_7_address1 { O 9 vector } bilateral_buf_7_ce1 { O 1 bit } bilateral_buf_7_we1 { O 1 bit } bilateral_buf_7_d1 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'bilateral_buf_7'"
@@ -49,14 +49,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1526 \
+    id 1505 \
     name bilateral_buf_6 \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename bilateral_buf_6 \
     op interface \
-    ports { bilateral_buf_6_address1 { O 9 vector } bilateral_buf_6_ce1 { O 1 bit } bilateral_buf_6_we1 { O 1 bit } bilateral_buf_6_d1 { O 14 vector } } \
+    ports { bilateral_buf_6_address1 { O 9 vector } bilateral_buf_6_ce1 { O 1 bit } bilateral_buf_6_we1 { O 1 bit } bilateral_buf_6_d1 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'bilateral_buf_6'"
@@ -68,14 +68,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1527 \
+    id 1506 \
     name bilateral_buf_5 \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename bilateral_buf_5 \
     op interface \
-    ports { bilateral_buf_5_address1 { O 9 vector } bilateral_buf_5_ce1 { O 1 bit } bilateral_buf_5_we1 { O 1 bit } bilateral_buf_5_d1 { O 14 vector } } \
+    ports { bilateral_buf_5_address1 { O 9 vector } bilateral_buf_5_ce1 { O 1 bit } bilateral_buf_5_we1 { O 1 bit } bilateral_buf_5_d1 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'bilateral_buf_5'"
@@ -87,14 +87,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1528 \
+    id 1507 \
     name bilateral_buf_4 \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename bilateral_buf_4 \
     op interface \
-    ports { bilateral_buf_4_address1 { O 9 vector } bilateral_buf_4_ce1 { O 1 bit } bilateral_buf_4_we1 { O 1 bit } bilateral_buf_4_d1 { O 14 vector } } \
+    ports { bilateral_buf_4_address1 { O 9 vector } bilateral_buf_4_ce1 { O 1 bit } bilateral_buf_4_we1 { O 1 bit } bilateral_buf_4_d1 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'bilateral_buf_4'"
@@ -106,14 +106,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1529 \
+    id 1508 \
     name bilateral_buf_3 \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename bilateral_buf_3 \
     op interface \
-    ports { bilateral_buf_3_address1 { O 9 vector } bilateral_buf_3_ce1 { O 1 bit } bilateral_buf_3_we1 { O 1 bit } bilateral_buf_3_d1 { O 14 vector } } \
+    ports { bilateral_buf_3_address1 { O 9 vector } bilateral_buf_3_ce1 { O 1 bit } bilateral_buf_3_we1 { O 1 bit } bilateral_buf_3_d1 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'bilateral_buf_3'"
@@ -125,14 +125,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1530 \
+    id 1509 \
     name bilateral_buf_2 \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename bilateral_buf_2 \
     op interface \
-    ports { bilateral_buf_2_address1 { O 9 vector } bilateral_buf_2_ce1 { O 1 bit } bilateral_buf_2_we1 { O 1 bit } bilateral_buf_2_d1 { O 14 vector } } \
+    ports { bilateral_buf_2_address1 { O 9 vector } bilateral_buf_2_ce1 { O 1 bit } bilateral_buf_2_we1 { O 1 bit } bilateral_buf_2_d1 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'bilateral_buf_2'"
@@ -144,14 +144,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1531 \
+    id 1510 \
     name bilateral_buf_1 \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename bilateral_buf_1 \
     op interface \
-    ports { bilateral_buf_1_address1 { O 9 vector } bilateral_buf_1_ce1 { O 1 bit } bilateral_buf_1_we1 { O 1 bit } bilateral_buf_1_d1 { O 14 vector } } \
+    ports { bilateral_buf_1_address1 { O 9 vector } bilateral_buf_1_ce1 { O 1 bit } bilateral_buf_1_we1 { O 1 bit } bilateral_buf_1_d1 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'bilateral_buf_1'"
@@ -163,14 +163,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1532 \
+    id 1511 \
     name bilateral_buf \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename bilateral_buf \
     op interface \
-    ports { bilateral_buf_address1 { O 9 vector } bilateral_buf_ce1 { O 1 bit } bilateral_buf_we1 { O 1 bit } bilateral_buf_d1 { O 14 vector } } \
+    ports { bilateral_buf_address1 { O 9 vector } bilateral_buf_ce1 { O 1 bit } bilateral_buf_we1 { O 1 bit } bilateral_buf_d1 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'bilateral_buf'"
@@ -181,7 +181,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1533 \
+    id 1512 \
     name bilateral_stream \
     type fifo \
     dir I \
@@ -189,7 +189,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_bilateral_stream \
     op interface \
-    ports { bilateral_stream_dout { I 14 vector } bilateral_stream_empty_n { I 1 bit } bilateral_stream_read { O 1 bit } bilateral_stream_num_data_valid { I 9 vector } bilateral_stream_fifo_cap { I 9 vector } } \
+    ports { bilateral_stream_dout { I 12 vector } bilateral_stream_empty_n { I 1 bit } bilateral_stream_read { O 1 bit } bilateral_stream_num_data_valid { I 9 vector } bilateral_stream_fifo_cap { I 9 vector } } \
 } "
 }
 

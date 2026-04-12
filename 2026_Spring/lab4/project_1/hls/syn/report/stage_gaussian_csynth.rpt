@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'stage_gaussian'
 ================================================================
-* Date:           Fri Apr 10 20:50:50 2026
+* Date:           Sat Apr 11 20:28:34 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
     |   min   |   max   |    min    |    max    |  min |  max |   Type  |
     +---------+---------+-----------+-----------+------+------+---------+
-    |     8256|     8256|  33.024 us|  33.024 us|  8256|  8256|       no|
+    |     8255|     8255|  33.020 us|  33.020 us|  8255|  8255|       no|
     +---------+---------+-----------+-----------+------+------+---------+
 
     + Detail: 
@@ -39,7 +39,7 @@
         |                             Instance                             |                         Module                        |   min   |   max   |    min    |    max    |  min |  max |                      Type                      |
         +------------------------------------------------------------------+-------------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
         |grp_stage_gaussian_Pipeline_READ_IN_fu_130                        |stage_gaussian_Pipeline_READ_IN                        |     4107|     4107|  16.428 us|  16.428 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186  |stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1  |     4146|     4146|  16.584 us|  16.584 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186  |stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1  |     4145|     4145|  16.580 us|  16.580 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +------------------------------------------------------------------+-------------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
 
         * Loop: 
@@ -57,16 +57,16 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       0|      2|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        -|   54|    5513|  11017|    -|
+|Instance         |        -|   42|    5329|  11048|    -|
 |Memory           |       25|    -|       0|      0|    -|
 |Multiplexer      |        -|    -|       0|    719|    -|
 |Register         |        -|    -|       8|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |       25|   54|    5521|  11738|    0|
+|Total            |       25|   42|    5337|  11769|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      432|  360|  141120|  70560|    0|
 +-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        5|   15|       3|     16|    0|
+|Utilization (%)  |        5|   11|       3|     16|    0|
 +-----------------+---------+-----+--------+-------+-----+
 
 + Detail: 
@@ -74,10 +74,10 @@
     +------------------------------------------------------------------+-------------------------------------------------------+---------+----+------+-------+-----+
     |                             Instance                             |                         Module                        | BRAM_18K| DSP|  FF  |  LUT  | URAM|
     +------------------------------------------------------------------+-------------------------------------------------------+---------+----+------+-------+-----+
-    |grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186  |stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1  |        0|  53|  5081|  10647|    0|
+    |grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186  |stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1  |        0|  41|  4897|  10678|    0|
     |grp_stage_gaussian_Pipeline_READ_IN_fu_130                        |stage_gaussian_Pipeline_READ_IN                        |        0|   1|   432|    370|    0|
     +------------------------------------------------------------------+-------------------------------------------------------+---------+----+------+-------+-----+
-    |Total                                                             |                                                       |        0|  54|  5513|  11017|    0|
+    |Total                                                             |                                                       |        0|  42|  5329|  11048|    0|
     +------------------------------------------------------------------+-------------------------------------------------------+---------+----+------+-------+-----+
 
     * DSP: 
@@ -87,33 +87,33 @@
     +-----------+--------------------------------------+---------+---+----+-----+------+-----+------+-------------+
     |   Memory  |                Module                | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
     +-----------+--------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |grid_U     |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_1_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_2_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_3_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_4_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_5_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_6_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_7_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_8_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_9_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_10_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_11_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_12_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_13_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_14_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_15_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_16_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_17_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_18_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_19_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_20_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_21_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_22_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_23_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
-    |grid_24_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   14|     1|         2366|
+    |grid_U     |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_1_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_2_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_3_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_4_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_5_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_6_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_7_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_8_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_9_U   |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_10_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_11_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_12_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_13_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_14_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_15_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_16_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_17_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_18_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_19_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_20_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_21_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_22_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_23_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
+    |grid_24_U  |stage_gaussian_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   169|   12|     1|         2028|
     +-----------+--------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |Total      |                                      |       25|  0|   0|    0|  4225|  350|    25|        59150|
+    |Total      |                                      |       25|  0|   0|    0|  4225|  300|    25|        50700|
     +-----------+--------------------------------------+---------+---+----+-----+------+-----+------+-------------+
 
     * FIFO: 
@@ -220,7 +220,7 @@
     +-------------------------------------------------------------------------------+---+----+-----+-----------+
     |ap_CS_fsm                                                                      |  4|   0|    4|          0|
     |ap_done_reg                                                                    |  1|   0|    1|          0|
-    |grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_start_reg  |  1|   0|    1|          0|
+    |grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_start_reg  |  1|   0|    1|          0|
     |grp_stage_gaussian_Pipeline_READ_IN_fu_130_ap_start_reg                        |  1|   0|    1|          0|
     |start_once_reg                                                                 |  1|   0|    1|          0|
     +-------------------------------------------------------------------------------+---+----+-----+-----------+
@@ -246,12 +246,12 @@
 |ap_ready                         |  out|    1|  ap_ctrl_hs|    stage_gaussian|  return value|
 |start_out                        |  out|    1|  ap_ctrl_hs|    stage_gaussian|  return value|
 |start_write                      |  out|    1|  ap_ctrl_hs|    stage_gaussian|  return value|
-|equalized_stream_dout            |   in|   14|     ap_fifo|  equalized_stream|       pointer|
+|equalized_stream_dout            |   in|   12|     ap_fifo|  equalized_stream|       pointer|
 |equalized_stream_empty_n         |   in|    1|     ap_fifo|  equalized_stream|       pointer|
 |equalized_stream_read            |  out|    1|     ap_fifo|  equalized_stream|       pointer|
 |equalized_stream_num_data_valid  |   in|    9|     ap_fifo|  equalized_stream|       pointer|
 |equalized_stream_fifo_cap        |   in|    9|     ap_fifo|  equalized_stream|       pointer|
-|gaussian_stream_din              |  out|   14|     ap_fifo|   gaussian_stream|       pointer|
+|gaussian_stream_din              |  out|   12|     ap_fifo|   gaussian_stream|       pointer|
 |gaussian_stream_full_n           |   in|    1|     ap_fifo|   gaussian_stream|       pointer|
 |gaussian_stream_write            |  out|    1|     ap_fifo|   gaussian_stream|       pointer|
 |gaussian_stream_num_data_valid   |   in|   32|     ap_fifo|   gaussian_stream|       pointer|

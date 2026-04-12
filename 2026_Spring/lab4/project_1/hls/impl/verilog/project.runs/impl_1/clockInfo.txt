@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.1.1
-| Date         : Fri Apr 10 21:50:14 2026
+| Date         : Sat Apr 11 21:27:29 2026
 | Host         : ece-linlabsrv01
 | Design       : checkpoint_bd_0_wrapper
 | Device       : xczu3eg-sbva484-1-E-
@@ -24,9 +24,9 @@ Clock Net Route Info (CRP Input)
 ********************************
 Clock 1: bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/flow_control_loop_pipe_sequential_init_U/ap_loop_init_bufg_place
 	Clock source type: BUFGCE
-	Clock source region: X1Y0
-	Clock regions with locked loads: X0Y1 X0Y2 X1Y1 X1Y2 
-	initial rect ((0, 0), (1, 2))
+	Clock source region: X1Y2
+	Clock regions with locked loads: X0Y1 X0Y2 
+	initial rect ((0, 1), (1, 2))
 
 
 
@@ -52,9 +52,9 @@ Clock Net Route Info (CRP Input)
 ********************************
 Clock 1: bd_0_i/hls_inst/inst/stage_rgb2eq_U0/grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163/flow_control_loop_pipe_sequential_init_U/ap_loop_init
 	Clock source type: BUFGCE
-	Clock source region: X1Y0
-	Clock regions with locked loads: X0Y1 X0Y2 X1Y1 X1Y2 
-	initial rect ((0, 0), (1, 2))
+	Clock source region: X1Y2
+	Clock regions with locked loads: X0Y1 X0Y2 
+	initial rect ((0, 1), (1, 2))
 
 
 

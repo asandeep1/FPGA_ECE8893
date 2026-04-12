@@ -44,12 +44,12 @@ output   ap_idle;
 output   ap_ready;
 output   start_out;
 output   start_write;
-input  [13:0] equalized_stream_dout;
+input  [11:0] equalized_stream_dout;
 input   equalized_stream_empty_n;
 output   equalized_stream_read;
 input  [8:0] equalized_stream_num_data_valid;
 input  [8:0] equalized_stream_fifo_cap;
-output  [13:0] gaussian_stream_din;
+output  [11:0] gaussian_stream_din;
 input   gaussian_stream_full_n;
 output   gaussian_stream_write;
 input  [31:0] gaussian_stream_num_data_valid;
@@ -66,103 +66,103 @@ reg    ap_done_reg;
 wire    ap_CS_fsm_state1;
 reg    internal_ap_ready;
 reg    grid_ce0;
-wire   [13:0] grid_q0;
+wire   [11:0] grid_q0;
 reg    grid_ce1;
 reg    grid_we1;
 reg    grid_1_ce0;
-wire   [13:0] grid_1_q0;
+wire   [11:0] grid_1_q0;
 reg    grid_1_ce1;
 reg    grid_1_we1;
 reg    grid_2_ce0;
-wire   [13:0] grid_2_q0;
+wire   [11:0] grid_2_q0;
 reg    grid_2_ce1;
 reg    grid_2_we1;
 reg    grid_3_ce0;
-wire   [13:0] grid_3_q0;
+wire   [11:0] grid_3_q0;
 reg    grid_3_ce1;
 reg    grid_3_we1;
 reg    grid_4_ce0;
-wire   [13:0] grid_4_q0;
+wire   [11:0] grid_4_q0;
 reg    grid_4_ce1;
 reg    grid_4_we1;
 reg    grid_5_ce0;
-wire   [13:0] grid_5_q0;
+wire   [11:0] grid_5_q0;
 reg    grid_5_ce1;
 reg    grid_5_we1;
 reg    grid_6_ce0;
-wire   [13:0] grid_6_q0;
+wire   [11:0] grid_6_q0;
 reg    grid_6_ce1;
 reg    grid_6_we1;
 reg    grid_7_ce0;
-wire   [13:0] grid_7_q0;
+wire   [11:0] grid_7_q0;
 reg    grid_7_ce1;
 reg    grid_7_we1;
 reg    grid_8_ce0;
-wire   [13:0] grid_8_q0;
+wire   [11:0] grid_8_q0;
 reg    grid_8_ce1;
 reg    grid_8_we1;
 reg    grid_9_ce0;
-wire   [13:0] grid_9_q0;
+wire   [11:0] grid_9_q0;
 reg    grid_9_ce1;
 reg    grid_9_we1;
 reg    grid_10_ce0;
-wire   [13:0] grid_10_q0;
+wire   [11:0] grid_10_q0;
 reg    grid_10_ce1;
 reg    grid_10_we1;
 reg    grid_11_ce0;
-wire   [13:0] grid_11_q0;
+wire   [11:0] grid_11_q0;
 reg    grid_11_ce1;
 reg    grid_11_we1;
 reg    grid_12_ce0;
-wire   [13:0] grid_12_q0;
+wire   [11:0] grid_12_q0;
 reg    grid_12_ce1;
 reg    grid_12_we1;
 reg    grid_13_ce0;
-wire   [13:0] grid_13_q0;
+wire   [11:0] grid_13_q0;
 reg    grid_13_ce1;
 reg    grid_13_we1;
 reg    grid_14_ce0;
-wire   [13:0] grid_14_q0;
+wire   [11:0] grid_14_q0;
 reg    grid_14_ce1;
 reg    grid_14_we1;
 reg    grid_15_ce0;
-wire   [13:0] grid_15_q0;
+wire   [11:0] grid_15_q0;
 reg    grid_15_ce1;
 reg    grid_15_we1;
 reg    grid_16_ce0;
-wire   [13:0] grid_16_q0;
+wire   [11:0] grid_16_q0;
 reg    grid_16_ce1;
 reg    grid_16_we1;
 reg    grid_17_ce0;
-wire   [13:0] grid_17_q0;
+wire   [11:0] grid_17_q0;
 reg    grid_17_ce1;
 reg    grid_17_we1;
 reg    grid_18_ce0;
-wire   [13:0] grid_18_q0;
+wire   [11:0] grid_18_q0;
 reg    grid_18_ce1;
 reg    grid_18_we1;
 reg    grid_19_ce0;
-wire   [13:0] grid_19_q0;
+wire   [11:0] grid_19_q0;
 reg    grid_19_ce1;
 reg    grid_19_we1;
 reg    grid_20_ce0;
-wire   [13:0] grid_20_q0;
+wire   [11:0] grid_20_q0;
 reg    grid_20_ce1;
 reg    grid_20_we1;
 reg    grid_21_ce0;
-wire   [13:0] grid_21_q0;
+wire   [11:0] grid_21_q0;
 reg    grid_21_ce1;
 reg    grid_21_we1;
 reg    grid_22_ce0;
-wire   [13:0] grid_22_q0;
+wire   [11:0] grid_22_q0;
 reg    grid_22_ce1;
 reg    grid_22_we1;
 reg    grid_23_ce0;
-wire   [13:0] grid_23_q0;
+wire   [11:0] grid_23_q0;
 reg    grid_23_ce1;
 reg    grid_23_we1;
 reg    grid_24_ce0;
-wire   [13:0] grid_24_q0;
+wire   [11:0] grid_24_q0;
 reg    grid_24_ce1;
 reg    grid_24_we1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_ap_start;
@@ -173,163 +173,163 @@ wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_equalized_stream_read;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_24_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_24_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_24_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_24_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_24_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_23_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_23_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_23_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_23_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_23_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_22_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_22_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_22_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_22_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_22_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_21_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_21_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_21_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_21_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_21_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_20_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_20_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_20_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_20_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_20_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_19_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_19_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_19_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_19_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_19_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_18_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_18_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_18_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_18_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_18_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_17_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_17_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_17_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_17_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_17_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_16_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_16_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_16_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_16_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_16_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_15_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_15_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_15_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_15_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_15_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_14_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_14_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_14_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_14_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_14_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_13_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_13_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_13_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_13_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_13_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_12_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_12_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_12_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_12_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_12_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_11_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_11_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_11_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_11_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_11_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_10_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_10_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_10_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_10_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_10_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_9_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_9_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_9_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_9_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_9_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_8_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_8_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_8_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_8_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_8_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_7_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_7_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_7_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_7_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_7_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_6_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_6_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_6_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_6_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_6_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_5_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_5_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_5_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_5_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_5_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_4_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_4_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_4_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_4_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_4_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_3_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_3_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_3_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_3_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_3_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_2_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_2_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_2_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_2_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_2_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_1_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_1_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_1_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_1_d1;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_1_d1;
 wire   [7:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_address1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_ce1;
 wire    grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_we1;
-wire   [13:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_d1;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_start;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_done;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_idle;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_ready;
-wire   [13:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_gaussian_stream_din;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_gaussian_stream_write;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_1_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_1_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_2_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_2_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_3_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_3_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_4_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_4_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_5_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_5_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_6_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_6_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_7_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_7_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_8_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_8_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_9_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_9_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_10_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_10_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_11_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_11_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_12_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_12_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_13_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_13_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_14_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_14_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_15_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_15_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_16_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_16_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_17_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_17_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_18_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_18_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_19_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_19_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_20_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_20_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_21_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_21_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_22_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_22_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_23_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_23_ce0;
-wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_24_address0;
-wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_24_ce0;
+wire   [11:0] grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_d1;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_start;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_done;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_idle;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_ready;
+wire   [11:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_gaussian_stream_din;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_gaussian_stream_write;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_1_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_1_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_2_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_2_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_3_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_3_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_4_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_4_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_5_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_5_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_6_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_6_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_7_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_7_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_8_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_8_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_9_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_9_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_10_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_10_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_11_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_11_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_12_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_12_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_13_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_13_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_14_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_14_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_15_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_15_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_16_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_16_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_17_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_17_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_18_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_18_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_19_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_19_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_20_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_20_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_21_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_21_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_22_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_22_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_23_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_23_ce0;
+wire   [7:0] grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_24_address0;
+wire    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_24_ce0;
 reg    grp_stage_gaussian_Pipeline_READ_IN_fu_130_ap_start_reg;
 reg    ap_block_state1_ignore_call52;
 wire    ap_CS_fsm_state2;
-reg    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_start_reg;
+reg    grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_start_reg;
 wire    ap_CS_fsm_state3;
 wire    ap_CS_fsm_state4;
 reg   [3:0] ap_NS_fsm;
@@ -346,17 +346,17 @@ initial begin
 #0 ap_done_reg = 1'b0;
 #0 ap_CS_fsm = 4'd1;
 #0 grp_stage_gaussian_Pipeline_READ_IN_fu_130_ap_start_reg = 1'b0;
-#0 grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_start_reg = 1'b0;
+#0 grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_start_reg = 1'b0;
 end
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_address0),
     .ce0(grid_ce0),
     .q0(grid_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_address1),
@@ -366,13 +366,13 @@ grid_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_1_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_1_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_1_address0),
     .ce0(grid_1_ce0),
     .q0(grid_1_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_1_address1),
@@ -382,13 +382,13 @@ grid_1_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_2_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_2_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_2_address0),
     .ce0(grid_2_ce0),
     .q0(grid_2_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_2_address1),
@@ -398,13 +398,13 @@ grid_2_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_3_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_3_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_3_address0),
     .ce0(grid_3_ce0),
     .q0(grid_3_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_3_address1),
@@ -414,13 +414,13 @@ grid_3_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_4_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_4_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_4_address0),
     .ce0(grid_4_ce0),
     .q0(grid_4_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_4_address1),
@@ -430,13 +430,13 @@ grid_4_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_5_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_5_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_5_address0),
     .ce0(grid_5_ce0),
     .q0(grid_5_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_5_address1),
@@ -446,13 +446,13 @@ grid_5_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_6_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_6_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_6_address0),
     .ce0(grid_6_ce0),
     .q0(grid_6_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_6_address1),
@@ -462,13 +462,13 @@ grid_6_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_7_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_7_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_7_address0),
     .ce0(grid_7_ce0),
     .q0(grid_7_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_7_address1),
@@ -478,13 +478,13 @@ grid_7_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_8_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_8_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_8_address0),
     .ce0(grid_8_ce0),
     .q0(grid_8_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_8_address1),
@@ -494,13 +494,13 @@ grid_8_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_9_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_9_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_9_address0),
     .ce0(grid_9_ce0),
     .q0(grid_9_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_9_address1),
@@ -510,13 +510,13 @@ grid_9_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_10_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_10_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_10_address0),
     .ce0(grid_10_ce0),
     .q0(grid_10_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_10_address1),
@@ -526,13 +526,13 @@ grid_10_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_11_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_11_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_11_address0),
     .ce0(grid_11_ce0),
     .q0(grid_11_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_11_address1),
@@ -542,13 +542,13 @@ grid_11_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_12_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_12_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_12_address0),
     .ce0(grid_12_ce0),
     .q0(grid_12_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_12_address1),
@@ -558,13 +558,13 @@ grid_12_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_13_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_13_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_13_address0),
     .ce0(grid_13_ce0),
     .q0(grid_13_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_13_address1),
@@ -574,13 +574,13 @@ grid_13_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_14_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_14_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_14_address0),
     .ce0(grid_14_ce0),
     .q0(grid_14_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_14_address1),
@@ -590,13 +590,13 @@ grid_14_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_15_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_15_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_15_address0),
     .ce0(grid_15_ce0),
     .q0(grid_15_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_15_address1),
@@ -606,13 +606,13 @@ grid_15_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_16_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_16_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_16_address0),
     .ce0(grid_16_ce0),
     .q0(grid_16_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_16_address1),
@@ -622,13 +622,13 @@ grid_16_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_17_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_17_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_17_address0),
     .ce0(grid_17_ce0),
     .q0(grid_17_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_17_address1),
@@ -638,13 +638,13 @@ grid_17_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_18_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_18_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_18_address0),
     .ce0(grid_18_ce0),
     .q0(grid_18_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_18_address1),
@@ -654,13 +654,13 @@ grid_18_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_19_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_19_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_19_address0),
     .ce0(grid_19_ce0),
     .q0(grid_19_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_19_address1),
@@ -670,13 +670,13 @@ grid_19_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_20_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_20_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_20_address0),
     .ce0(grid_20_ce0),
     .q0(grid_20_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_20_address1),
@@ -686,13 +686,13 @@ grid_20_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_21_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_21_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_21_address0),
     .ce0(grid_21_ce0),
     .q0(grid_21_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_21_address1),
@@ -702,13 +702,13 @@ grid_21_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_22_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_22_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_22_address0),
     .ce0(grid_22_ce0),
     .q0(grid_22_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_22_address1),
@@ -718,13 +718,13 @@ grid_22_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_23_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_23_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_23_address0),
     .ce0(grid_23_ce0),
     .q0(grid_23_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_23_address1),
@@ -734,13 +734,13 @@ grid_23_U(
 );
 
 top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 169 ),
     .AddressWidth( 8 ))
 grid_24_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_24_address0),
+    .address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_24_address0),
     .ce0(grid_24_ce0),
     .q0(grid_24_q0),
     .address1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_24_address1),
@@ -863,92 +863,92 @@ top_kernel_stage_gaussian_Pipeline_READ_IN grp_stage_gaussian_Pipeline_READ_IN_f
     .grid_d1(grp_stage_gaussian_Pipeline_READ_IN_fu_130_grid_d1)
 );
 
-top_kernel_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1 grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186(
+top_kernel_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1 grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_start),
-    .ap_done(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_done),
-    .ap_idle(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_idle),
-    .ap_ready(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_ready),
-    .gaussian_stream_din(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_gaussian_stream_din),
+    .ap_start(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_start),
+    .ap_done(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_done),
+    .ap_idle(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_idle),
+    .ap_ready(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_ready),
+    .gaussian_stream_din(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_gaussian_stream_din),
     .gaussian_stream_full_n(gaussian_stream_full_n),
-    .gaussian_stream_write(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_gaussian_stream_write),
+    .gaussian_stream_write(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_gaussian_stream_write),
     .gaussian_stream_num_data_valid(gaussian_stream_num_data_valid),
     .gaussian_stream_fifo_cap(gaussian_stream_fifo_cap),
-    .grid_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_address0),
-    .grid_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_ce0),
+    .grid_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_address0),
+    .grid_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_ce0),
     .grid_q0(grid_q0),
-    .grid_1_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_1_address0),
-    .grid_1_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_1_ce0),
+    .grid_1_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_1_address0),
+    .grid_1_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_1_ce0),
     .grid_1_q0(grid_1_q0),
-    .grid_2_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_2_address0),
-    .grid_2_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_2_ce0),
+    .grid_2_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_2_address0),
+    .grid_2_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_2_ce0),
     .grid_2_q0(grid_2_q0),
-    .grid_3_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_3_address0),
-    .grid_3_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_3_ce0),
+    .grid_3_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_3_address0),
+    .grid_3_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_3_ce0),
     .grid_3_q0(grid_3_q0),
-    .grid_4_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_4_address0),
-    .grid_4_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_4_ce0),
+    .grid_4_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_4_address0),
+    .grid_4_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_4_ce0),
     .grid_4_q0(grid_4_q0),
-    .grid_5_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_5_address0),
-    .grid_5_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_5_ce0),
+    .grid_5_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_5_address0),
+    .grid_5_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_5_ce0),
     .grid_5_q0(grid_5_q0),
-    .grid_6_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_6_address0),
-    .grid_6_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_6_ce0),
+    .grid_6_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_6_address0),
+    .grid_6_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_6_ce0),
     .grid_6_q0(grid_6_q0),
-    .grid_7_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_7_address0),
-    .grid_7_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_7_ce0),
+    .grid_7_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_7_address0),
+    .grid_7_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_7_ce0),
     .grid_7_q0(grid_7_q0),
-    .grid_8_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_8_address0),
-    .grid_8_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_8_ce0),
+    .grid_8_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_8_address0),
+    .grid_8_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_8_ce0),
     .grid_8_q0(grid_8_q0),
-    .grid_9_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_9_address0),
-    .grid_9_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_9_ce0),
+    .grid_9_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_9_address0),
+    .grid_9_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_9_ce0),
     .grid_9_q0(grid_9_q0),
-    .grid_10_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_10_address0),
-    .grid_10_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_10_ce0),
+    .grid_10_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_10_address0),
+    .grid_10_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_10_ce0),
     .grid_10_q0(grid_10_q0),
-    .grid_11_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_11_address0),
-    .grid_11_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_11_ce0),
+    .grid_11_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_11_address0),
+    .grid_11_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_11_ce0),
     .grid_11_q0(grid_11_q0),
-    .grid_12_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_12_address0),
-    .grid_12_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_12_ce0),
+    .grid_12_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_12_address0),
+    .grid_12_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_12_ce0),
     .grid_12_q0(grid_12_q0),
-    .grid_13_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_13_address0),
-    .grid_13_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_13_ce0),
+    .grid_13_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_13_address0),
+    .grid_13_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_13_ce0),
     .grid_13_q0(grid_13_q0),
-    .grid_14_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_14_address0),
-    .grid_14_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_14_ce0),
+    .grid_14_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_14_address0),
+    .grid_14_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_14_ce0),
     .grid_14_q0(grid_14_q0),
-    .grid_15_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_15_address0),
-    .grid_15_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_15_ce0),
+    .grid_15_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_15_address0),
+    .grid_15_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_15_ce0),
     .grid_15_q0(grid_15_q0),
-    .grid_16_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_16_address0),
-    .grid_16_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_16_ce0),
+    .grid_16_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_16_address0),
+    .grid_16_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_16_ce0),
     .grid_16_q0(grid_16_q0),
-    .grid_17_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_17_address0),
-    .grid_17_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_17_ce0),
+    .grid_17_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_17_address0),
+    .grid_17_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_17_ce0),
     .grid_17_q0(grid_17_q0),
-    .grid_18_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_18_address0),
-    .grid_18_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_18_ce0),
+    .grid_18_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_18_address0),
+    .grid_18_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_18_ce0),
     .grid_18_q0(grid_18_q0),
-    .grid_19_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_19_address0),
-    .grid_19_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_19_ce0),
+    .grid_19_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_19_address0),
+    .grid_19_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_19_ce0),
     .grid_19_q0(grid_19_q0),
-    .grid_20_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_20_address0),
-    .grid_20_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_20_ce0),
+    .grid_20_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_20_address0),
+    .grid_20_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_20_ce0),
     .grid_20_q0(grid_20_q0),
-    .grid_21_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_21_address0),
-    .grid_21_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_21_ce0),
+    .grid_21_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_21_address0),
+    .grid_21_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_21_ce0),
     .grid_21_q0(grid_21_q0),
-    .grid_22_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_22_address0),
-    .grid_22_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_22_ce0),
+    .grid_22_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_22_address0),
+    .grid_22_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_22_ce0),
     .grid_22_q0(grid_22_q0),
-    .grid_23_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_23_address0),
-    .grid_23_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_23_ce0),
+    .grid_23_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_23_address0),
+    .grid_23_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_23_ce0),
     .grid_23_q0(grid_23_q0),
-    .grid_24_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_24_address0),
-    .grid_24_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_24_ce0),
+    .grid_24_address0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_24_address0),
+    .grid_24_ce0(grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_24_ce0),
     .grid_24_q0(grid_24_q0)
 );
 
@@ -966,7 +966,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+        end else if (((grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -974,12 +974,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_start_reg <= 1'b0;
+        grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state3)) begin
-            grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_start_reg <= 1'b1;
-        end else if ((grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_ready == 1'b1)) begin
-            grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_start_reg <= 1'b0;
+            grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_start_reg <= 1'b1;
+        end else if ((grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_ready == 1'b1)) begin
+            grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -1027,7 +1027,7 @@ end
 assign ap_ST_fsm_state3_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_done == 1'b0)) begin
+    if ((grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_done == 1'b0)) begin
         ap_ST_fsm_state4_blk = 1'b1;
     end else begin
         ap_ST_fsm_state4_blk = 1'b0;
@@ -1035,7 +1035,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+    if (((grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -1052,7 +1052,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_10_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_10_ce0;
+        grid_10_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_10_ce0;
     end else begin
         grid_10_ce0 = 1'b0;
     end
@@ -1076,7 +1076,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_11_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_11_ce0;
+        grid_11_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_11_ce0;
     end else begin
         grid_11_ce0 = 1'b0;
     end
@@ -1100,7 +1100,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_12_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_12_ce0;
+        grid_12_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_12_ce0;
     end else begin
         grid_12_ce0 = 1'b0;
     end
@@ -1124,7 +1124,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_13_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_13_ce0;
+        grid_13_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_13_ce0;
     end else begin
         grid_13_ce0 = 1'b0;
     end
@@ -1148,7 +1148,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_14_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_14_ce0;
+        grid_14_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_14_ce0;
     end else begin
         grid_14_ce0 = 1'b0;
     end
@@ -1172,7 +1172,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_15_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_15_ce0;
+        grid_15_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_15_ce0;
     end else begin
         grid_15_ce0 = 1'b0;
     end
@@ -1196,7 +1196,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_16_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_16_ce0;
+        grid_16_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_16_ce0;
     end else begin
         grid_16_ce0 = 1'b0;
     end
@@ -1220,7 +1220,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_17_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_17_ce0;
+        grid_17_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_17_ce0;
     end else begin
         grid_17_ce0 = 1'b0;
     end
@@ -1244,7 +1244,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_18_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_18_ce0;
+        grid_18_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_18_ce0;
     end else begin
         grid_18_ce0 = 1'b0;
     end
@@ -1268,7 +1268,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_19_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_19_ce0;
+        grid_19_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_19_ce0;
     end else begin
         grid_19_ce0 = 1'b0;
     end
@@ -1292,7 +1292,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_1_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_1_ce0;
+        grid_1_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_1_ce0;
     end else begin
         grid_1_ce0 = 1'b0;
     end
@@ -1316,7 +1316,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_20_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_20_ce0;
+        grid_20_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_20_ce0;
     end else begin
         grid_20_ce0 = 1'b0;
     end
@@ -1340,7 +1340,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_21_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_21_ce0;
+        grid_21_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_21_ce0;
     end else begin
         grid_21_ce0 = 1'b0;
     end
@@ -1364,7 +1364,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_22_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_22_ce0;
+        grid_22_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_22_ce0;
     end else begin
         grid_22_ce0 = 1'b0;
     end
@@ -1388,7 +1388,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_23_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_23_ce0;
+        grid_23_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_23_ce0;
     end else begin
         grid_23_ce0 = 1'b0;
     end
@@ -1412,7 +1412,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_24_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_24_ce0;
+        grid_24_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_24_ce0;
     end else begin
         grid_24_ce0 = 1'b0;
     end
@@ -1436,7 +1436,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_2_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_2_ce0;
+        grid_2_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_2_ce0;
     end else begin
         grid_2_ce0 = 1'b0;
     end
@@ -1460,7 +1460,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_3_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_3_ce0;
+        grid_3_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_3_ce0;
     end else begin
         grid_3_ce0 = 1'b0;
     end
@@ -1484,7 +1484,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_4_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_4_ce0;
+        grid_4_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_4_ce0;
     end else begin
         grid_4_ce0 = 1'b0;
     end
@@ -1508,7 +1508,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_5_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_5_ce0;
+        grid_5_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_5_ce0;
     end else begin
         grid_5_ce0 = 1'b0;
     end
@@ -1532,7 +1532,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_6_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_6_ce0;
+        grid_6_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_6_ce0;
     end else begin
         grid_6_ce0 = 1'b0;
     end
@@ -1556,7 +1556,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_7_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_7_ce0;
+        grid_7_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_7_ce0;
     end else begin
         grid_7_ce0 = 1'b0;
     end
@@ -1580,7 +1580,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_8_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_8_ce0;
+        grid_8_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_8_ce0;
     end else begin
         grid_8_ce0 = 1'b0;
     end
@@ -1604,7 +1604,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_9_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_9_ce0;
+        grid_9_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_9_ce0;
     end else begin
         grid_9_ce0 = 1'b0;
     end
@@ -1628,7 +1628,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        grid_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_grid_ce0;
+        grid_ce0 = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_grid_ce0;
     end else begin
         grid_ce0 = 1'b0;
     end
@@ -1651,7 +1651,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+    if (((grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
         internal_ap_ready = 1'b1;
     end else begin
         internal_ap_ready = 1'b0;
@@ -1694,7 +1694,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state4;
         end
         ap_ST_fsm_state4 : begin
-            if (((grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+            if (((grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state4;
@@ -1726,11 +1726,11 @@ assign ap_ready = internal_ap_ready;
 
 assign equalized_stream_read = grp_stage_gaussian_Pipeline_READ_IN_fu_130_equalized_stream_read;
 
-assign gaussian_stream_din = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_gaussian_stream_din;
+assign gaussian_stream_din = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_gaussian_stream_din;
 
-assign gaussian_stream_write = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_gaussian_stream_write;
+assign gaussian_stream_write = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_gaussian_stream_write;
 
-assign grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_start = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186_ap_start_reg;
+assign grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_start = grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186_ap_start_reg;
 
 assign grp_stage_gaussian_Pipeline_READ_IN_fu_130_ap_start = grp_stage_gaussian_Pipeline_READ_IN_fu_130_ap_start_reg;
 

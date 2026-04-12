@@ -3,8 +3,8 @@
 # SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
 # IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
 # SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-# Start of session at: Fri Apr 10 21:19:55 2026
-# Process ID         : 3627954
+# Start of session at: Sat Apr 11 20:57:55 2026
+# Process ID         : 405837
 # Current directory  : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog
 # Command line       : vivado -mode batch -source run_vivado.tcl
 # Log file           : /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/vivado.log
@@ -19,6 +19,6 @@
 # Host memory        : 404103 MB
 # Swap memory        : 68719 MB
 # Total Virtual      : 472822 MB
-# Available Virtual  : 444570 MB
+# Available Virtual  : 448230 MB
 #-----------------------------------------------------------
 source run_vivado.tcl

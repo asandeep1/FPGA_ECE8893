@@ -25,7 +25,7 @@ set C_modelArgList {
 	{ in_g int 64 regular  }
 	{ gmem2 int 32 regular {axi_master 0}  }
 	{ in_b int 64 regular  }
-	{ equalized_stream int 14 regular {fifo 1 volatile }  }
+	{ equalized_stream int 12 regular {fifo 1 volatile }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
@@ -37,7 +37,7 @@ set C_modelArgMapList {[
  	{ "Name" : "in_g", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
  	{ "Name" : "gmem2", "interface" : "axi_master", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[ {"cElement": [{"cName": "in_b","offset": { "type": "dynamic","port_name": "in_b","bundle": "control"},"direction": "READONLY"}]}]} , 
  	{ "Name" : "in_b", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
- 	{ "Name" : "equalized_stream", "interface" : "fifo", "bitwidth" : 14, "direction" : "WRITEONLY"} ]}
+ 	{ "Name" : "equalized_stream", "interface" : "fifo", "bitwidth" : 12, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 156
 set portList { 
@@ -192,7 +192,7 @@ set portList {
 	{ m_axi_gmem2_0_BID sc_in sc_lv 1 signal 4 } 
 	{ m_axi_gmem2_0_BUSER sc_in sc_lv 1 signal 4 } 
 	{ in_b sc_in sc_lv 64 signal 5 } 
-	{ equalized_stream_din sc_out sc_lv 14 signal 6 } 
+	{ equalized_stream_din sc_out sc_lv 12 signal 6 } 
 	{ equalized_stream_full_n sc_in sc_logic 1 signal 6 } 
 	{ equalized_stream_write sc_out sc_logic 1 signal 6 } 
 	{ equalized_stream_num_data_valid sc_in sc_lv 32 signal 6 } 
@@ -350,7 +350,7 @@ set NewPortList {[
  	{ "name": "m_axi_gmem2_0_BID", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem2", "role": "0_BID" }} , 
  	{ "name": "m_axi_gmem2_0_BUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem2", "role": "0_BUSER" }} , 
  	{ "name": "in_b", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "in_b", "role": "default" }} , 
- 	{ "name": "equalized_stream_din", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "equalized_stream", "role": "din" }} , 
+ 	{ "name": "equalized_stream_din", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "equalized_stream", "role": "din" }} , 
  	{ "name": "equalized_stream_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "equalized_stream", "role": "full_n" }} , 
  	{ "name": "equalized_stream_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "equalized_stream", "role": "write" }} , 
  	{ "name": "equalized_stream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "equalized_stream", "role": "num_data_valid" }} , 
@@ -362,7 +362,7 @@ set ArgLastReadFirstWriteLatency {
 		in_r {Type I LastRead 0 FirstWrite -1}
 		gmem1 {Type I LastRead 1 FirstWrite -1}
 		in_g {Type I LastRead 0 FirstWrite -1}
-		gmem2 {Type I LastRead 11 FirstWrite -1}
+		gmem2 {Type I LastRead 1 FirstWrite -1}
 		in_b {Type I LastRead 0 FirstWrite -1}
 		equalized_stream {Type O LastRead -1 FirstWrite 68}}
 	stage_rgb2eq_Pipeline_PASS1 {
@@ -370,9 +370,9 @@ set ArgLastReadFirstWriteLatency {
 		sext_ln84 {Type I LastRead 0 FirstWrite -1}
 		gmem1 {Type I LastRead 1 FirstWrite -1}
 		sext_ln84_1 {Type I LastRead 0 FirstWrite -1}
-		gmem2 {Type I LastRead 11 FirstWrite -1}
+		gmem2 {Type I LastRead 1 FirstWrite -1}
 		sext_ln84_2 {Type I LastRead 0 FirstWrite -1}
-		intensity_buf {Type O LastRead -1 FirstWrite 41}}
+		intensity_buf {Type O LastRead -1 FirstWrite 24}}
 	stage_rgb2eq_Pipeline_BUILD_HIST {
 		intensity_buf {Type I LastRead 0 FirstWrite -1}
 		histogram_255_out {Type O LastRead -1 FirstWrite 13}
@@ -631,7 +631,7 @@ set ArgLastReadFirstWriteLatency {
 		histogram_2_out {Type O LastRead -1 FirstWrite 13}
 		histogram_1_out {Type O LastRead -1 FirstWrite 13}
 		histogram_out {Type O LastRead -1 FirstWrite 13}}
-	stage_rgb2eq_Pipeline_VITIS_LOOP_115_2 {
+	stage_rgb2eq_Pipeline_VITIS_LOOP_119_2 {
 		histogram_reload {Type I LastRead 0 FirstWrite -1}
 		histogram_1_reload {Type I LastRead 0 FirstWrite -1}
 		histogram_2_reload {Type I LastRead 0 FirstWrite -1}
@@ -1408,8 +1408,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "12701", "Max" : "12701"}
-	, {"Name" : "Interval", "Min" : "12701", "Max" : "12701"}
+	{"Name" : "Latency", "Min" : "12684", "Max" : "12684"}
+	, {"Name" : "Interval", "Min" : "12684", "Max" : "12684"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -1422,5 +1422,5 @@ set Spec2ImplPortList {
 	in_g { ap_none {  { in_g in_data 0 64 } } }
 	 { m_axi {  { m_axi_gmem2_0_AWVALID VALID 1 1 }  { m_axi_gmem2_0_AWREADY READY 0 1 }  { m_axi_gmem2_0_AWADDR ADDR 1 64 }  { m_axi_gmem2_0_AWID ID 1 1 }  { m_axi_gmem2_0_AWLEN SIZE 1 32 }  { m_axi_gmem2_0_AWSIZE BURST 1 3 }  { m_axi_gmem2_0_AWBURST LOCK 1 2 }  { m_axi_gmem2_0_AWLOCK CACHE 1 2 }  { m_axi_gmem2_0_AWCACHE PROT 1 4 }  { m_axi_gmem2_0_AWPROT QOS 1 3 }  { m_axi_gmem2_0_AWQOS REGION 1 4 }  { m_axi_gmem2_0_AWREGION USER 1 4 }  { m_axi_gmem2_0_AWUSER DATA 1 1 }  { m_axi_gmem2_0_WVALID VALID 1 1 }  { m_axi_gmem2_0_WREADY READY 0 1 }  { m_axi_gmem2_0_WDATA FIFONUM 1 32 }  { m_axi_gmem2_0_WSTRB STRB 1 4 }  { m_axi_gmem2_0_WLAST LAST 1 1 }  { m_axi_gmem2_0_WID ID 1 1 }  { m_axi_gmem2_0_WUSER DATA 1 1 }  { m_axi_gmem2_0_ARVALID VALID 1 1 }  { m_axi_gmem2_0_ARREADY READY 0 1 }  { m_axi_gmem2_0_ARADDR ADDR 1 64 }  { m_axi_gmem2_0_ARID ID 1 1 }  { m_axi_gmem2_0_ARLEN SIZE 1 32 }  { m_axi_gmem2_0_ARSIZE BURST 1 3 }  { m_axi_gmem2_0_ARBURST LOCK 1 2 }  { m_axi_gmem2_0_ARLOCK CACHE 1 2 }  { m_axi_gmem2_0_ARCACHE PROT 1 4 }  { m_axi_gmem2_0_ARPROT QOS 1 3 }  { m_axi_gmem2_0_ARQOS REGION 1 4 }  { m_axi_gmem2_0_ARREGION USER 1 4 }  { m_axi_gmem2_0_ARUSER DATA 1 1 }  { m_axi_gmem2_0_RVALID VALID 0 1 }  { m_axi_gmem2_0_RREADY READY 1 1 }  { m_axi_gmem2_0_RDATA FIFONUM 0 32 }  { m_axi_gmem2_0_RLAST LAST 0 1 }  { m_axi_gmem2_0_RID ID 0 1 }  { m_axi_gmem2_0_RFIFONUM LEN 0 13 }  { m_axi_gmem2_0_RUSER DATA 0 1 }  { m_axi_gmem2_0_RRESP RESP 0 2 }  { m_axi_gmem2_0_BVALID VALID 0 1 }  { m_axi_gmem2_0_BREADY READY 1 1 }  { m_axi_gmem2_0_BRESP RESP 0 2 }  { m_axi_gmem2_0_BID ID 0 1 }  { m_axi_gmem2_0_BUSER DATA 0 1 } } }
 	in_b { ap_none {  { in_b in_data 0 64 } } }
-	equalized_stream { ap_fifo {  { equalized_stream_din fifo_data_in 1 14 }  { equalized_stream_full_n fifo_status 0 1 }  { equalized_stream_write fifo_port_we 1 1 }  { equalized_stream_num_data_valid fifo_status_num_data_valid 0 32 }  { equalized_stream_fifo_cap fifo_update 0 32 } } }
+	equalized_stream { ap_fifo {  { equalized_stream_din fifo_data_in 1 12 }  { equalized_stream_full_n fifo_status 0 1 }  { equalized_stream_write fifo_port_we 1 1 }  { equalized_stream_num_data_valid fifo_status_num_data_valid 0 32 }  { equalized_stream_fifo_cap fifo_update 0 32 } } }
 }

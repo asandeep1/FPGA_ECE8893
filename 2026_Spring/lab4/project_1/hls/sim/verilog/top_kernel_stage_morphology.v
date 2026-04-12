@@ -40,12 +40,12 @@ output   ap_done;
 input   ap_continue;
 output   ap_idle;
 output   ap_ready;
-input  [13:0] bilateral_stream_dout;
+input  [11:0] bilateral_stream_dout;
 input   bilateral_stream_empty_n;
 output   bilateral_stream_read;
 input  [8:0] bilateral_stream_num_data_valid;
 input  [8:0] bilateral_stream_fifo_cap;
-output  [13:0] morphology_stream_din;
+output  [11:0] morphology_stream_din;
 input   morphology_stream_full_n;
 output   morphology_stream_write;
 input  [31:0] morphology_stream_num_data_valid;
@@ -59,75 +59,75 @@ reg    ap_done_reg;
 (* fsm_encoding = "none" *) reg   [5:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    bilateral_buf_ce0;
-wire   [13:0] bilateral_buf_q0;
+wire   [11:0] bilateral_buf_q0;
 reg    bilateral_buf_ce1;
 reg    bilateral_buf_we1;
 reg    bilateral_buf_1_ce0;
-wire   [13:0] bilateral_buf_1_q0;
+wire   [11:0] bilateral_buf_1_q0;
 reg    bilateral_buf_1_ce1;
 reg    bilateral_buf_1_we1;
 reg    bilateral_buf_2_ce0;
-wire   [13:0] bilateral_buf_2_q0;
+wire   [11:0] bilateral_buf_2_q0;
 reg    bilateral_buf_2_ce1;
 reg    bilateral_buf_2_we1;
 reg    bilateral_buf_3_ce0;
-wire   [13:0] bilateral_buf_3_q0;
+wire   [11:0] bilateral_buf_3_q0;
 reg    bilateral_buf_3_ce1;
 reg    bilateral_buf_3_we1;
 reg    bilateral_buf_4_ce0;
-wire   [13:0] bilateral_buf_4_q0;
+wire   [11:0] bilateral_buf_4_q0;
 reg    bilateral_buf_4_ce1;
 reg    bilateral_buf_4_we1;
 reg    bilateral_buf_5_ce0;
-wire   [13:0] bilateral_buf_5_q0;
+wire   [11:0] bilateral_buf_5_q0;
 reg    bilateral_buf_5_ce1;
 reg    bilateral_buf_5_we1;
 reg    bilateral_buf_6_ce0;
-wire   [13:0] bilateral_buf_6_q0;
+wire   [11:0] bilateral_buf_6_q0;
 reg    bilateral_buf_6_ce1;
 reg    bilateral_buf_6_we1;
 reg    bilateral_buf_7_ce0;
-wire   [13:0] bilateral_buf_7_q0;
+wire   [11:0] bilateral_buf_7_q0;
 reg    bilateral_buf_7_ce1;
 reg    bilateral_buf_7_we1;
 reg    bilateral_buf_8_ce0;
-wire   [13:0] bilateral_buf_8_q0;
+wire   [11:0] bilateral_buf_8_q0;
 reg    bilateral_buf_8_ce1;
 reg    bilateral_buf_8_we1;
 reg    eroded_buf_ce0;
-wire   [13:0] eroded_buf_q0;
+wire   [11:0] eroded_buf_q0;
 reg    eroded_buf_ce1;
 reg    eroded_buf_we1;
 reg    eroded_buf_1_ce0;
-wire   [13:0] eroded_buf_1_q0;
+wire   [11:0] eroded_buf_1_q0;
 reg    eroded_buf_1_ce1;
 reg    eroded_buf_1_we1;
 reg    eroded_buf_2_ce0;
-wire   [13:0] eroded_buf_2_q0;
+wire   [11:0] eroded_buf_2_q0;
 reg    eroded_buf_2_ce1;
 reg    eroded_buf_2_we1;
 reg    eroded_buf_3_ce0;
-wire   [13:0] eroded_buf_3_q0;
+wire   [11:0] eroded_buf_3_q0;
 reg    eroded_buf_3_ce1;
 reg    eroded_buf_3_we1;
 reg    eroded_buf_4_ce0;
-wire   [13:0] eroded_buf_4_q0;
+wire   [11:0] eroded_buf_4_q0;
 reg    eroded_buf_4_ce1;
 reg    eroded_buf_4_we1;
 reg    eroded_buf_5_ce0;
-wire   [13:0] eroded_buf_5_q0;
+wire   [11:0] eroded_buf_5_q0;
 reg    eroded_buf_5_ce1;
 reg    eroded_buf_5_we1;
 reg    eroded_buf_6_ce0;
-wire   [13:0] eroded_buf_6_q0;
+wire   [11:0] eroded_buf_6_q0;
 reg    eroded_buf_6_ce1;
 reg    eroded_buf_6_we1;
 reg    eroded_buf_7_ce0;
-wire   [13:0] eroded_buf_7_q0;
+wire   [11:0] eroded_buf_7_q0;
 reg    eroded_buf_7_ce1;
 reg    eroded_buf_7_we1;
 reg    eroded_buf_8_ce0;
-wire   [13:0] eroded_buf_8_q0;
+wire   [11:0] eroded_buf_8_q0;
 reg    eroded_buf_8_ce1;
 reg    eroded_buf_8_we1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_ap_start;
@@ -138,134 +138,134 @@ wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_stream_rea
 wire   [8:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_8_address1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_8_ce1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_8_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_8_d1;
+wire   [11:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_8_d1;
 wire   [8:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_7_address1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_7_ce1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_7_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_7_d1;
+wire   [11:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_7_d1;
 wire   [8:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_6_address1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_6_ce1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_6_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_6_d1;
+wire   [11:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_6_d1;
 wire   [8:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_5_address1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_5_ce1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_5_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_5_d1;
+wire   [11:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_5_d1;
 wire   [8:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_4_address1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_4_ce1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_4_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_4_d1;
+wire   [11:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_4_d1;
 wire   [8:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_3_address1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_3_ce1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_3_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_3_d1;
+wire   [11:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_3_d1;
 wire   [8:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_2_address1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_2_ce1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_2_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_2_d1;
+wire   [11:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_2_d1;
 wire   [8:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_1_address1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_1_ce1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_1_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_1_d1;
+wire   [11:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_1_d1;
 wire   [8:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_address1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_ce1;
 wire    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_d1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_start;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_done;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_idle;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_ready;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_address0;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_1_address0;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_1_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_2_address0;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_2_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_3_address0;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_3_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_4_address0;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_4_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_5_address0;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_5_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_6_address0;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_6_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_7_address0;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_7_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_8_address0;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_8_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_address1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_ce1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_d1;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_1_address1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_1_ce1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_1_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_1_d1;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_2_address1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_2_ce1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_2_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_2_d1;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_3_address1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_3_ce1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_3_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_3_d1;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_4_address1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_4_ce1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_4_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_4_d1;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_5_address1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_5_ce1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_5_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_5_d1;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_6_address1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_6_ce1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_6_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_6_d1;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_7_address1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_7_ce1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_7_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_7_d1;
-wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_8_address1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_8_ce1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_8_we1;
-wire   [13:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_8_d1;
-wire   [63:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_grp_fu_201_p_din0;
-wire   [65:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_grp_fu_201_p_din1;
-wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_grp_fu_201_p_ce;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_start;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_done;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_idle;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_ready;
-wire   [13:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_morphology_stream_din;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_morphology_stream_write;
-wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_address0;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_1_address0;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_1_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_2_address0;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_2_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_3_address0;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_3_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_4_address0;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_4_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_5_address0;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_5_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_6_address0;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_6_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_7_address0;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_7_ce0;
-wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_8_address0;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_8_ce0;
-wire   [63:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_grp_fu_201_p_din0;
-wire   [65:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_grp_fu_201_p_din1;
-wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_grp_fu_201_p_ce;
+wire   [11:0] grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_d1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_start;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_done;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_idle;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_ready;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_address0;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_1_address0;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_1_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_2_address0;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_2_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_3_address0;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_3_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_4_address0;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_4_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_5_address0;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_5_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_6_address0;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_6_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_7_address0;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_7_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_8_address0;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_8_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_address1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_ce1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_we1;
+wire   [11:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_d1;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_1_address1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_1_ce1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_1_we1;
+wire   [11:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_1_d1;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_2_address1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_2_ce1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_2_we1;
+wire   [11:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_2_d1;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_3_address1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_3_ce1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_3_we1;
+wire   [11:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_3_d1;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_4_address1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_4_ce1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_4_we1;
+wire   [11:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_4_d1;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_5_address1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_5_ce1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_5_we1;
+wire   [11:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_5_d1;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_6_address1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_6_ce1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_6_we1;
+wire   [11:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_6_d1;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_7_address1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_7_ce1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_7_we1;
+wire   [11:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_7_d1;
+wire   [8:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_8_address1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_8_ce1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_8_we1;
+wire   [11:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_8_d1;
+wire   [63:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_grp_fu_201_p_din0;
+wire   [65:0] grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_grp_fu_201_p_din1;
+wire    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_grp_fu_201_p_ce;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_start;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_done;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_idle;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_ready;
+wire   [11:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_morphology_stream_din;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_morphology_stream_write;
+wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_address0;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_1_address0;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_1_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_2_address0;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_2_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_3_address0;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_3_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_4_address0;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_4_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_5_address0;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_5_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_6_address0;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_6_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_7_address0;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_7_ce0;
+wire   [8:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_8_address0;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_8_ce0;
+wire   [63:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_grp_fu_201_p_din0;
+wire   [65:0] grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_grp_fu_201_p_din1;
+wire    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_grp_fu_201_p_ce;
 reg    grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_ap_start_reg;
 reg    ap_block_state1_ignore_call38;
 wire    ap_CS_fsm_state2;
-reg    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_start_reg;
+reg    grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_start_reg;
 wire    ap_CS_fsm_state3;
 wire    ap_CS_fsm_state4;
-reg    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_start_reg;
+reg    grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_start_reg;
 wire    ap_CS_fsm_state5;
 wire    ap_CS_fsm_state6;
 wire   [128:0] grp_fu_201_p2;
@@ -287,18 +287,18 @@ initial begin
 #0 ap_done_reg = 1'b0;
 #0 ap_CS_fsm = 6'd1;
 #0 grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_ap_start_reg = 1'b0;
-#0 grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_start_reg = 1'b0;
-#0 grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_start_reg = 1'b0;
+#0 grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_start_reg = 1'b0;
+#0 grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_start_reg = 1'b0;
 end
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 bilateral_buf_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_address0),
+    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_address0),
     .ce0(bilateral_buf_ce0),
     .q0(bilateral_buf_q0),
     .address1(grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_address1),
@@ -308,13 +308,13 @@ bilateral_buf_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 bilateral_buf_1_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_1_address0),
+    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_1_address0),
     .ce0(bilateral_buf_1_ce0),
     .q0(bilateral_buf_1_q0),
     .address1(grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_1_address1),
@@ -324,13 +324,13 @@ bilateral_buf_1_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 bilateral_buf_2_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_2_address0),
+    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_2_address0),
     .ce0(bilateral_buf_2_ce0),
     .q0(bilateral_buf_2_q0),
     .address1(grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_2_address1),
@@ -340,13 +340,13 @@ bilateral_buf_2_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 bilateral_buf_3_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_3_address0),
+    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_3_address0),
     .ce0(bilateral_buf_3_ce0),
     .q0(bilateral_buf_3_q0),
     .address1(grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_3_address1),
@@ -356,13 +356,13 @@ bilateral_buf_3_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 bilateral_buf_4_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_4_address0),
+    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_4_address0),
     .ce0(bilateral_buf_4_ce0),
     .q0(bilateral_buf_4_q0),
     .address1(grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_4_address1),
@@ -372,13 +372,13 @@ bilateral_buf_4_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 bilateral_buf_5_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_5_address0),
+    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_5_address0),
     .ce0(bilateral_buf_5_ce0),
     .q0(bilateral_buf_5_q0),
     .address1(grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_5_address1),
@@ -388,13 +388,13 @@ bilateral_buf_5_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 bilateral_buf_6_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_6_address0),
+    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_6_address0),
     .ce0(bilateral_buf_6_ce0),
     .q0(bilateral_buf_6_q0),
     .address1(grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_6_address1),
@@ -404,13 +404,13 @@ bilateral_buf_6_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 bilateral_buf_7_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_7_address0),
+    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_7_address0),
     .ce0(bilateral_buf_7_ce0),
     .q0(bilateral_buf_7_q0),
     .address1(grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_7_address1),
@@ -420,13 +420,13 @@ bilateral_buf_7_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 bilateral_buf_8_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_8_address0),
+    .address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_8_address0),
     .ce0(bilateral_buf_8_ce0),
     .q0(bilateral_buf_8_q0),
     .address1(grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_8_address1),
@@ -436,147 +436,147 @@ bilateral_buf_8_U(
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 eroded_buf_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_address0),
+    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_address0),
     .ce0(eroded_buf_ce0),
     .q0(eroded_buf_q0),
-    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_address1),
+    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_address1),
     .ce1(eroded_buf_ce1),
     .we1(eroded_buf_we1),
-    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_d1)
+    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_d1)
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 eroded_buf_1_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_1_address0),
+    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_1_address0),
     .ce0(eroded_buf_1_ce0),
     .q0(eroded_buf_1_q0),
-    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_1_address1),
+    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_1_address1),
     .ce1(eroded_buf_1_ce1),
     .we1(eroded_buf_1_we1),
-    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_1_d1)
+    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_1_d1)
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 eroded_buf_2_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_2_address0),
+    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_2_address0),
     .ce0(eroded_buf_2_ce0),
     .q0(eroded_buf_2_q0),
-    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_2_address1),
+    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_2_address1),
     .ce1(eroded_buf_2_ce1),
     .we1(eroded_buf_2_we1),
-    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_2_d1)
+    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_2_d1)
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 eroded_buf_3_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_3_address0),
+    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_3_address0),
     .ce0(eroded_buf_3_ce0),
     .q0(eroded_buf_3_q0),
-    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_3_address1),
+    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_3_address1),
     .ce1(eroded_buf_3_ce1),
     .we1(eroded_buf_3_we1),
-    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_3_d1)
+    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_3_d1)
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 eroded_buf_4_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_4_address0),
+    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_4_address0),
     .ce0(eroded_buf_4_ce0),
     .q0(eroded_buf_4_q0),
-    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_4_address1),
+    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_4_address1),
     .ce1(eroded_buf_4_ce1),
     .we1(eroded_buf_4_we1),
-    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_4_d1)
+    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_4_d1)
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 eroded_buf_5_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_5_address0),
+    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_5_address0),
     .ce0(eroded_buf_5_ce0),
     .q0(eroded_buf_5_q0),
-    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_5_address1),
+    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_5_address1),
     .ce1(eroded_buf_5_ce1),
     .we1(eroded_buf_5_we1),
-    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_5_d1)
+    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_5_d1)
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 eroded_buf_6_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_6_address0),
+    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_6_address0),
     .ce0(eroded_buf_6_ce0),
     .q0(eroded_buf_6_q0),
-    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_6_address1),
+    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_6_address1),
     .ce1(eroded_buf_6_ce1),
     .we1(eroded_buf_6_we1),
-    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_6_d1)
+    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_6_d1)
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 eroded_buf_7_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_7_address0),
+    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_7_address0),
     .ce0(eroded_buf_7_ce0),
     .q0(eroded_buf_7_q0),
-    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_7_address1),
+    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_7_address1),
     .ce1(eroded_buf_7_ce1),
     .we1(eroded_buf_7_we1),
-    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_7_d1)
+    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_7_d1)
 );
 
 top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W #(
-    .DataWidth( 14 ),
+    .DataWidth( 12 ),
     .AddressRange( 484 ),
     .AddressWidth( 9 ))
 eroded_buf_8_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_8_address0),
+    .address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_8_address0),
     .ce0(eroded_buf_8_ce0),
     .q0(eroded_buf_8_q0),
-    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_8_address1),
+    .address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_8_address1),
     .ce1(eroded_buf_8_ce1),
     .we1(eroded_buf_8_we1),
-    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_8_d1)
+    .d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_8_d1)
 );
 
 top_kernel_stage_morphology_Pipeline_READ_BILATERAL grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104(
@@ -629,125 +629,125 @@ top_kernel_stage_morphology_Pipeline_READ_BILATERAL grp_stage_morphology_Pipelin
     .bilateral_buf_d1(grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_buf_d1)
 );
 
-top_kernel_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1 grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128(
+top_kernel_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1 grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_start),
-    .ap_done(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_done),
-    .ap_idle(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_idle),
-    .ap_ready(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_ready),
-    .bilateral_buf_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_address0),
-    .bilateral_buf_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_ce0),
+    .ap_start(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_start),
+    .ap_done(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_done),
+    .ap_idle(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_idle),
+    .ap_ready(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_ready),
+    .bilateral_buf_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_address0),
+    .bilateral_buf_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_ce0),
     .bilateral_buf_q0(bilateral_buf_q0),
-    .bilateral_buf_1_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_1_address0),
-    .bilateral_buf_1_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_1_ce0),
+    .bilateral_buf_1_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_1_address0),
+    .bilateral_buf_1_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_1_ce0),
     .bilateral_buf_1_q0(bilateral_buf_1_q0),
-    .bilateral_buf_2_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_2_address0),
-    .bilateral_buf_2_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_2_ce0),
+    .bilateral_buf_2_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_2_address0),
+    .bilateral_buf_2_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_2_ce0),
     .bilateral_buf_2_q0(bilateral_buf_2_q0),
-    .bilateral_buf_3_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_3_address0),
-    .bilateral_buf_3_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_3_ce0),
+    .bilateral_buf_3_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_3_address0),
+    .bilateral_buf_3_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_3_ce0),
     .bilateral_buf_3_q0(bilateral_buf_3_q0),
-    .bilateral_buf_4_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_4_address0),
-    .bilateral_buf_4_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_4_ce0),
+    .bilateral_buf_4_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_4_address0),
+    .bilateral_buf_4_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_4_ce0),
     .bilateral_buf_4_q0(bilateral_buf_4_q0),
-    .bilateral_buf_5_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_5_address0),
-    .bilateral_buf_5_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_5_ce0),
+    .bilateral_buf_5_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_5_address0),
+    .bilateral_buf_5_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_5_ce0),
     .bilateral_buf_5_q0(bilateral_buf_5_q0),
-    .bilateral_buf_6_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_6_address0),
-    .bilateral_buf_6_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_6_ce0),
+    .bilateral_buf_6_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_6_address0),
+    .bilateral_buf_6_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_6_ce0),
     .bilateral_buf_6_q0(bilateral_buf_6_q0),
-    .bilateral_buf_7_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_7_address0),
-    .bilateral_buf_7_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_7_ce0),
+    .bilateral_buf_7_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_7_address0),
+    .bilateral_buf_7_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_7_ce0),
     .bilateral_buf_7_q0(bilateral_buf_7_q0),
-    .bilateral_buf_8_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_8_address0),
-    .bilateral_buf_8_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_8_ce0),
+    .bilateral_buf_8_address0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_8_address0),
+    .bilateral_buf_8_ce0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_8_ce0),
     .bilateral_buf_8_q0(bilateral_buf_8_q0),
-    .eroded_buf_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_address1),
-    .eroded_buf_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_ce1),
-    .eroded_buf_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_we1),
-    .eroded_buf_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_d1),
-    .eroded_buf_1_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_1_address1),
-    .eroded_buf_1_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_1_ce1),
-    .eroded_buf_1_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_1_we1),
-    .eroded_buf_1_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_1_d1),
-    .eroded_buf_2_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_2_address1),
-    .eroded_buf_2_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_2_ce1),
-    .eroded_buf_2_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_2_we1),
-    .eroded_buf_2_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_2_d1),
-    .eroded_buf_3_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_3_address1),
-    .eroded_buf_3_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_3_ce1),
-    .eroded_buf_3_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_3_we1),
-    .eroded_buf_3_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_3_d1),
-    .eroded_buf_4_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_4_address1),
-    .eroded_buf_4_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_4_ce1),
-    .eroded_buf_4_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_4_we1),
-    .eroded_buf_4_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_4_d1),
-    .eroded_buf_5_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_5_address1),
-    .eroded_buf_5_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_5_ce1),
-    .eroded_buf_5_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_5_we1),
-    .eroded_buf_5_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_5_d1),
-    .eroded_buf_6_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_6_address1),
-    .eroded_buf_6_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_6_ce1),
-    .eroded_buf_6_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_6_we1),
-    .eroded_buf_6_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_6_d1),
-    .eroded_buf_7_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_7_address1),
-    .eroded_buf_7_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_7_ce1),
-    .eroded_buf_7_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_7_we1),
-    .eroded_buf_7_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_7_d1),
-    .eroded_buf_8_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_8_address1),
-    .eroded_buf_8_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_8_ce1),
-    .eroded_buf_8_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_8_we1),
-    .eroded_buf_8_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_8_d1),
-    .grp_fu_201_p_din0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_grp_fu_201_p_din0),
-    .grp_fu_201_p_din1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_grp_fu_201_p_din1),
+    .eroded_buf_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_address1),
+    .eroded_buf_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_ce1),
+    .eroded_buf_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_we1),
+    .eroded_buf_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_d1),
+    .eroded_buf_1_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_1_address1),
+    .eroded_buf_1_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_1_ce1),
+    .eroded_buf_1_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_1_we1),
+    .eroded_buf_1_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_1_d1),
+    .eroded_buf_2_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_2_address1),
+    .eroded_buf_2_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_2_ce1),
+    .eroded_buf_2_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_2_we1),
+    .eroded_buf_2_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_2_d1),
+    .eroded_buf_3_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_3_address1),
+    .eroded_buf_3_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_3_ce1),
+    .eroded_buf_3_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_3_we1),
+    .eroded_buf_3_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_3_d1),
+    .eroded_buf_4_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_4_address1),
+    .eroded_buf_4_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_4_ce1),
+    .eroded_buf_4_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_4_we1),
+    .eroded_buf_4_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_4_d1),
+    .eroded_buf_5_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_5_address1),
+    .eroded_buf_5_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_5_ce1),
+    .eroded_buf_5_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_5_we1),
+    .eroded_buf_5_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_5_d1),
+    .eroded_buf_6_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_6_address1),
+    .eroded_buf_6_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_6_ce1),
+    .eroded_buf_6_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_6_we1),
+    .eroded_buf_6_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_6_d1),
+    .eroded_buf_7_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_7_address1),
+    .eroded_buf_7_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_7_ce1),
+    .eroded_buf_7_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_7_we1),
+    .eroded_buf_7_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_7_d1),
+    .eroded_buf_8_address1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_8_address1),
+    .eroded_buf_8_ce1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_8_ce1),
+    .eroded_buf_8_we1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_8_we1),
+    .eroded_buf_8_d1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_8_d1),
+    .grp_fu_201_p_din0(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_grp_fu_201_p_din0),
+    .grp_fu_201_p_din1(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_grp_fu_201_p_din1),
     .grp_fu_201_p_dout0(grp_fu_201_p2),
-    .grp_fu_201_p_ce(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_grp_fu_201_p_ce)
+    .grp_fu_201_p_ce(grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_grp_fu_201_p_ce)
 );
 
-top_kernel_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4 grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150(
+top_kernel_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4 grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_start),
-    .ap_done(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_done),
-    .ap_idle(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_idle),
-    .ap_ready(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_ready),
-    .morphology_stream_din(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_morphology_stream_din),
+    .ap_start(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_start),
+    .ap_done(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_done),
+    .ap_idle(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_idle),
+    .ap_ready(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_ready),
+    .morphology_stream_din(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_morphology_stream_din),
     .morphology_stream_full_n(morphology_stream_full_n),
-    .morphology_stream_write(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_morphology_stream_write),
+    .morphology_stream_write(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_morphology_stream_write),
     .morphology_stream_num_data_valid(morphology_stream_num_data_valid),
     .morphology_stream_fifo_cap(morphology_stream_fifo_cap),
-    .eroded_buf_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_address0),
-    .eroded_buf_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_ce0),
+    .eroded_buf_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_address0),
+    .eroded_buf_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_ce0),
     .eroded_buf_q0(eroded_buf_q0),
-    .eroded_buf_1_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_1_address0),
-    .eroded_buf_1_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_1_ce0),
+    .eroded_buf_1_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_1_address0),
+    .eroded_buf_1_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_1_ce0),
     .eroded_buf_1_q0(eroded_buf_1_q0),
-    .eroded_buf_2_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_2_address0),
-    .eroded_buf_2_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_2_ce0),
+    .eroded_buf_2_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_2_address0),
+    .eroded_buf_2_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_2_ce0),
     .eroded_buf_2_q0(eroded_buf_2_q0),
-    .eroded_buf_3_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_3_address0),
-    .eroded_buf_3_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_3_ce0),
+    .eroded_buf_3_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_3_address0),
+    .eroded_buf_3_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_3_ce0),
     .eroded_buf_3_q0(eroded_buf_3_q0),
-    .eroded_buf_4_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_4_address0),
-    .eroded_buf_4_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_4_ce0),
+    .eroded_buf_4_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_4_address0),
+    .eroded_buf_4_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_4_ce0),
     .eroded_buf_4_q0(eroded_buf_4_q0),
-    .eroded_buf_5_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_5_address0),
-    .eroded_buf_5_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_5_ce0),
+    .eroded_buf_5_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_5_address0),
+    .eroded_buf_5_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_5_ce0),
     .eroded_buf_5_q0(eroded_buf_5_q0),
-    .eroded_buf_6_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_6_address0),
-    .eroded_buf_6_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_6_ce0),
+    .eroded_buf_6_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_6_address0),
+    .eroded_buf_6_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_6_ce0),
     .eroded_buf_6_q0(eroded_buf_6_q0),
-    .eroded_buf_7_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_7_address0),
-    .eroded_buf_7_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_7_ce0),
+    .eroded_buf_7_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_7_address0),
+    .eroded_buf_7_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_7_ce0),
     .eroded_buf_7_q0(eroded_buf_7_q0),
-    .eroded_buf_8_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_8_address0),
-    .eroded_buf_8_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_8_ce0),
+    .eroded_buf_8_address0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_8_address0),
+    .eroded_buf_8_ce0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_8_ce0),
     .eroded_buf_8_q0(eroded_buf_8_q0),
-    .grp_fu_201_p_din0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_grp_fu_201_p_din0),
-    .grp_fu_201_p_din1(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_grp_fu_201_p_din1),
+    .grp_fu_201_p_din0(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_grp_fu_201_p_din0),
+    .grp_fu_201_p_din1(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_grp_fu_201_p_din1),
     .grp_fu_201_p_dout0(grp_fu_201_p2),
-    .grp_fu_201_p_ce(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_grp_fu_201_p_ce)
+    .grp_fu_201_p_ce(grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_grp_fu_201_p_ce)
 );
 
 top_kernel_mul_64ns_66ns_129_5_1 #(
@@ -756,7 +756,7 @@ top_kernel_mul_64ns_66ns_129_5_1 #(
     .din0_WIDTH( 64 ),
     .din1_WIDTH( 66 ),
     .dout_WIDTH( 129 ))
-mul_64ns_66ns_129_5_1_U1620(
+mul_64ns_66ns_129_5_1_U1599(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_201_p0),
@@ -779,7 +779,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+        end else if (((grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -787,24 +787,24 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_start_reg <= 1'b0;
+        grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state5)) begin
-            grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_start_reg <= 1'b1;
-        end else if ((grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_ready == 1'b1)) begin
-            grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_start_reg <= 1'b0;
+            grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_start_reg <= 1'b1;
+        end else if ((grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_ready == 1'b1)) begin
+            grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_start_reg <= 1'b0;
+        grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state3)) begin
-            grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_start_reg <= 1'b1;
-        end else if ((grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_ready == 1'b1)) begin
-            grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_start_reg <= 1'b0;
+            grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_start_reg <= 1'b1;
+        end else if ((grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_ready == 1'b1)) begin
+            grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -840,7 +840,7 @@ end
 assign ap_ST_fsm_state3_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_done == 1'b0)) begin
+    if ((grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_done == 1'b0)) begin
         ap_ST_fsm_state4_blk = 1'b1;
     end else begin
         ap_ST_fsm_state4_blk = 1'b0;
@@ -850,7 +850,7 @@ end
 assign ap_ST_fsm_state5_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_done == 1'b0)) begin
+    if ((grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_done == 1'b0)) begin
         ap_ST_fsm_state6_blk = 1'b1;
     end else begin
         ap_ST_fsm_state6_blk = 1'b0;
@@ -858,7 +858,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if (((grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -874,7 +874,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+    if (((grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -883,7 +883,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        bilateral_buf_1_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_1_ce0;
+        bilateral_buf_1_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_1_ce0;
     end else begin
         bilateral_buf_1_ce0 = 1'b0;
     end
@@ -907,7 +907,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        bilateral_buf_2_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_2_ce0;
+        bilateral_buf_2_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_2_ce0;
     end else begin
         bilateral_buf_2_ce0 = 1'b0;
     end
@@ -931,7 +931,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        bilateral_buf_3_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_3_ce0;
+        bilateral_buf_3_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_3_ce0;
     end else begin
         bilateral_buf_3_ce0 = 1'b0;
     end
@@ -955,7 +955,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        bilateral_buf_4_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_4_ce0;
+        bilateral_buf_4_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_4_ce0;
     end else begin
         bilateral_buf_4_ce0 = 1'b0;
     end
@@ -979,7 +979,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        bilateral_buf_5_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_5_ce0;
+        bilateral_buf_5_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_5_ce0;
     end else begin
         bilateral_buf_5_ce0 = 1'b0;
     end
@@ -1003,7 +1003,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        bilateral_buf_6_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_6_ce0;
+        bilateral_buf_6_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_6_ce0;
     end else begin
         bilateral_buf_6_ce0 = 1'b0;
     end
@@ -1027,7 +1027,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        bilateral_buf_7_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_7_ce0;
+        bilateral_buf_7_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_7_ce0;
     end else begin
         bilateral_buf_7_ce0 = 1'b0;
     end
@@ -1051,7 +1051,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        bilateral_buf_8_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_8_ce0;
+        bilateral_buf_8_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_8_ce0;
     end else begin
         bilateral_buf_8_ce0 = 1'b0;
     end
@@ -1075,7 +1075,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        bilateral_buf_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_bilateral_buf_ce0;
+        bilateral_buf_ce0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_bilateral_buf_ce0;
     end else begin
         bilateral_buf_ce0 = 1'b0;
     end
@@ -1099,7 +1099,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        eroded_buf_1_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_1_ce0;
+        eroded_buf_1_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_1_ce0;
     end else begin
         eroded_buf_1_ce0 = 1'b0;
     end
@@ -1107,7 +1107,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_1_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_1_ce1;
+        eroded_buf_1_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_1_ce1;
     end else begin
         eroded_buf_1_ce1 = 1'b0;
     end
@@ -1115,7 +1115,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_1_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_1_we1;
+        eroded_buf_1_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_1_we1;
     end else begin
         eroded_buf_1_we1 = 1'b0;
     end
@@ -1123,7 +1123,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        eroded_buf_2_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_2_ce0;
+        eroded_buf_2_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_2_ce0;
     end else begin
         eroded_buf_2_ce0 = 1'b0;
     end
@@ -1131,7 +1131,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_2_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_2_ce1;
+        eroded_buf_2_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_2_ce1;
     end else begin
         eroded_buf_2_ce1 = 1'b0;
     end
@@ -1139,7 +1139,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_2_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_2_we1;
+        eroded_buf_2_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_2_we1;
     end else begin
         eroded_buf_2_we1 = 1'b0;
     end
@@ -1147,7 +1147,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        eroded_buf_3_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_3_ce0;
+        eroded_buf_3_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_3_ce0;
     end else begin
         eroded_buf_3_ce0 = 1'b0;
     end
@@ -1155,7 +1155,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_3_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_3_ce1;
+        eroded_buf_3_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_3_ce1;
     end else begin
         eroded_buf_3_ce1 = 1'b0;
     end
@@ -1163,7 +1163,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_3_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_3_we1;
+        eroded_buf_3_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_3_we1;
     end else begin
         eroded_buf_3_we1 = 1'b0;
     end
@@ -1171,7 +1171,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        eroded_buf_4_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_4_ce0;
+        eroded_buf_4_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_4_ce0;
     end else begin
         eroded_buf_4_ce0 = 1'b0;
     end
@@ -1179,7 +1179,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_4_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_4_ce1;
+        eroded_buf_4_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_4_ce1;
     end else begin
         eroded_buf_4_ce1 = 1'b0;
     end
@@ -1187,7 +1187,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_4_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_4_we1;
+        eroded_buf_4_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_4_we1;
     end else begin
         eroded_buf_4_we1 = 1'b0;
     end
@@ -1195,7 +1195,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        eroded_buf_5_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_5_ce0;
+        eroded_buf_5_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_5_ce0;
     end else begin
         eroded_buf_5_ce0 = 1'b0;
     end
@@ -1203,7 +1203,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_5_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_5_ce1;
+        eroded_buf_5_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_5_ce1;
     end else begin
         eroded_buf_5_ce1 = 1'b0;
     end
@@ -1211,7 +1211,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_5_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_5_we1;
+        eroded_buf_5_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_5_we1;
     end else begin
         eroded_buf_5_we1 = 1'b0;
     end
@@ -1219,7 +1219,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        eroded_buf_6_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_6_ce0;
+        eroded_buf_6_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_6_ce0;
     end else begin
         eroded_buf_6_ce0 = 1'b0;
     end
@@ -1227,7 +1227,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_6_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_6_ce1;
+        eroded_buf_6_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_6_ce1;
     end else begin
         eroded_buf_6_ce1 = 1'b0;
     end
@@ -1235,7 +1235,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_6_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_6_we1;
+        eroded_buf_6_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_6_we1;
     end else begin
         eroded_buf_6_we1 = 1'b0;
     end
@@ -1243,7 +1243,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        eroded_buf_7_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_7_ce0;
+        eroded_buf_7_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_7_ce0;
     end else begin
         eroded_buf_7_ce0 = 1'b0;
     end
@@ -1251,7 +1251,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_7_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_7_ce1;
+        eroded_buf_7_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_7_ce1;
     end else begin
         eroded_buf_7_ce1 = 1'b0;
     end
@@ -1259,7 +1259,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_7_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_7_we1;
+        eroded_buf_7_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_7_we1;
     end else begin
         eroded_buf_7_we1 = 1'b0;
     end
@@ -1267,7 +1267,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        eroded_buf_8_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_8_ce0;
+        eroded_buf_8_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_8_ce0;
     end else begin
         eroded_buf_8_ce0 = 1'b0;
     end
@@ -1275,7 +1275,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_8_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_8_ce1;
+        eroded_buf_8_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_8_ce1;
     end else begin
         eroded_buf_8_ce1 = 1'b0;
     end
@@ -1283,7 +1283,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_8_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_8_we1;
+        eroded_buf_8_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_8_we1;
     end else begin
         eroded_buf_8_we1 = 1'b0;
     end
@@ -1291,7 +1291,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        eroded_buf_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_eroded_buf_ce0;
+        eroded_buf_ce0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_eroded_buf_ce0;
     end else begin
         eroded_buf_ce0 = 1'b0;
     end
@@ -1299,7 +1299,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_ce1;
+        eroded_buf_ce1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_ce1;
     end else begin
         eroded_buf_ce1 = 1'b0;
     end
@@ -1307,7 +1307,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        eroded_buf_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_eroded_buf_we1;
+        eroded_buf_we1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_eroded_buf_we1;
     end else begin
         eroded_buf_we1 = 1'b0;
     end
@@ -1315,9 +1315,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        grp_fu_201_ce = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_grp_fu_201_p_ce;
+        grp_fu_201_ce = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_grp_fu_201_p_ce;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_fu_201_ce = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_grp_fu_201_p_ce;
+        grp_fu_201_ce = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_grp_fu_201_p_ce;
     end else begin
         grp_fu_201_ce = 1'b1;
     end
@@ -1325,9 +1325,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        grp_fu_201_p0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_grp_fu_201_p_din0;
+        grp_fu_201_p0 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_grp_fu_201_p_din0;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_fu_201_p0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_grp_fu_201_p_din0;
+        grp_fu_201_p0 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_grp_fu_201_p_din0;
     end else begin
         grp_fu_201_p0 = 'bx;
     end
@@ -1335,9 +1335,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        grp_fu_201_p1 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_grp_fu_201_p_din1;
+        grp_fu_201_p1 = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_grp_fu_201_p_din1;
     end else if ((1'b1 == ap_CS_fsm_state4)) begin
-        grp_fu_201_p1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_grp_fu_201_p_din1;
+        grp_fu_201_p1 = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_grp_fu_201_p_din1;
     end else begin
         grp_fu_201_p1 = 'bx;
     end
@@ -1363,7 +1363,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state4;
         end
         ap_ST_fsm_state4 : begin
-            if (((grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+            if (((grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
                 ap_NS_fsm = ap_ST_fsm_state5;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state4;
@@ -1373,7 +1373,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state6;
         end
         ap_ST_fsm_state6 : begin
-            if (((grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
+            if (((grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state6))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state6;
@@ -1407,14 +1407,14 @@ end
 
 assign bilateral_stream_read = grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_bilateral_stream_read;
 
-assign grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_start = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_start_reg;
+assign grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_start = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_start_reg;
 
-assign grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_start = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_start_reg;
+assign grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_start = grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_start_reg;
 
 assign grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_ap_start = grp_stage_morphology_Pipeline_READ_BILATERAL_fu_104_ap_start_reg;
 
-assign morphology_stream_din = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_morphology_stream_din;
+assign morphology_stream_din = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_morphology_stream_din;
 
-assign morphology_stream_write = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_morphology_stream_write;
+assign morphology_stream_write = grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_morphology_stream_write;
 
 endmodule //top_kernel_stage_morphology

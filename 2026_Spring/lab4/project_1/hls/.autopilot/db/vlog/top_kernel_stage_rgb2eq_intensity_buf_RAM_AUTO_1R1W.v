@@ -12,7 +12,7 @@ module top_kernel_stage_rgb2eq_intensity_buf_RAM_AUTO_1R1W (
      
     reset, clk);
 
-parameter DataWidth = 14;
+parameter DataWidth = 12;
 parameter AddressWidth = 12;
 parameter AddressRange = 4096;
  

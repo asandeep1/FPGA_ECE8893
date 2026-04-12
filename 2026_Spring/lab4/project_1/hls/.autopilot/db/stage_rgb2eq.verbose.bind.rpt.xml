@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'stage_rgb2eq'" level="0">
-<item name = "Date">Fri Apr 10 20:50:24 2026
+<item name = "Date">Sat Apr 11 20:28:06 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -24,16 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">12701, 12701, 50.804 us, 50.804 us, 12701, 12701, no</column>
+<column name="">12684, 12684, 50.736 us, 50.736 us, 12684, 12684, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_stage_rgb2eq_Pipeline_PASS1_fu_2149">stage_rgb2eq_Pipeline_PASS1, 4138, 4138, 16.552 us, 16.552 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_stage_rgb2eq_Pipeline_PASS1_fu_2149">stage_rgb2eq_Pipeline_PASS1, 4121, 4121, 16.484 us, 16.484 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163">stage_rgb2eq_Pipeline_BUILD_HIST, 4111, 4111, 16.444 us, 16.444 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424">stage_rgb2eq_Pipeline_VITIS_LOOP_115_2, 257, 257, 1.028 us, 1.028 us, 256, 256, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424">stage_rgb2eq_Pipeline_VITIS_LOOP_119_2, 257, 257, 1.028 us, 1.028 us, 256, 256, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_stage_rgb2eq_Pipeline_PASS2_fu_2939">stage_rgb2eq_Pipeline_PASS2, 4165, 4165, 16.660 us, 16.660 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>

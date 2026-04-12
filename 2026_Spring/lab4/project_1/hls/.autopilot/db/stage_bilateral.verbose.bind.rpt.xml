@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'stage_bilateral'" level="0">
-<item name = "Date">Fri Apr 10 20:50:39 2026
+<item name = "Date">Sat Apr 11 20:28:23 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">8351, 8351, 33.404 us, 33.404 us, 8351, 8351, no</column>
+<column name="">8348, 8348, 33.392 us, 33.392 us, 8348, 8348, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -32,7 +32,7 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="grp_stage_bilateral_Pipeline_READ_IN_fu_66">stage_bilateral_Pipeline_READ_IN, 4107, 4107, 16.428 us, 16.428 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90">stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3, 4241, 4241, 16.964 us, 16.964 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90">stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3, 4238, 4238, 16.952 us, 16.952 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

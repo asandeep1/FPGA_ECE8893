@@ -161,7 +161,7 @@ port (
     m_axi_gmem2_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
     m_axi_gmem2_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
     in_b : IN STD_LOGIC_VECTOR (63 downto 0);
-    equalized_stream_din : OUT STD_LOGIC_VECTOR (13 downto 0);
+    equalized_stream_din : OUT STD_LOGIC_VECTOR (11 downto 0);
     equalized_stream_full_n : IN STD_LOGIC;
     equalized_stream_write : OUT STD_LOGIC;
     equalized_stream_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -225,7 +225,6 @@ architecture behav of top_kernel_stage_rgb2eq is
     constant ap_const_lv32_13 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010011";
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant ap_const_lv32_3F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000111111";
-    constant ap_const_lv2_1 : STD_LOGIC_VECTOR (1 downto 0) := "01";
     constant ap_const_lv32_E : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001110";
     constant ap_const_lv32_F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001111";
     constant ap_const_lv32_10 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010000";
@@ -263,7 +262,7 @@ attribute shreg_extract : string;
     signal intensity_buf_address0 : STD_LOGIC_VECTOR (11 downto 0);
     signal intensity_buf_ce0 : STD_LOGIC;
     signal intensity_buf_we0 : STD_LOGIC;
-    signal intensity_buf_q0 : STD_LOGIC_VECTOR (13 downto 0);
+    signal intensity_buf_q0 : STD_LOGIC_VECTOR (11 downto 0);
     signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_ap_start : STD_LOGIC;
     signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_ap_done : STD_LOGIC;
     signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_ap_idle : STD_LOGIC;
@@ -367,14 +366,12 @@ attribute shreg_extract : string;
     signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_intensity_buf_address0 : STD_LOGIC_VECTOR (11 downto 0);
     signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_intensity_buf_ce0 : STD_LOGIC;
     signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_intensity_buf_we0 : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_intensity_buf_d0 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_din0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_din1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_opcode : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_ce : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_intensity_buf_d0 : STD_LOGIC_VECTOR (11 downto 0);
     signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_9960_p_din0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_9960_p_din1 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_9960_p_ce : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3209_p_din0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3209_p_ce : STD_LOGIC;
     signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_9964_p_din0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_9964_p_ce : STD_LOGIC;
     signal grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_ap_start : STD_LOGIC;
@@ -898,531 +895,531 @@ attribute shreg_extract : string;
     signal grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_grp_fu_9960_p_din0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_grp_fu_9960_p_din1 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_grp_fu_9960_p_ce : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_start : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_done : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_idle : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_ready : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_254_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_254_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_253_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_253_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_252_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_252_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_251_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_251_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_250_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_250_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_249_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_249_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_248_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_248_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_247_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_247_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_246_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_246_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_245_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_245_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_244_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_244_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_243_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_243_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_242_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_242_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_241_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_241_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_240_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_240_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_239_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_239_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_238_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_238_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_237_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_237_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_236_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_236_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_235_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_235_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_234_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_234_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_233_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_233_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_232_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_232_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_231_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_231_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_230_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_230_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_229_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_229_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_228_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_228_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_227_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_227_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_226_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_226_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_225_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_225_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_224_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_224_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_223_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_223_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_222_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_222_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_221_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_221_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_220_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_220_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_219_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_219_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_218_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_218_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_217_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_217_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_216_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_216_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_215_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_215_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_214_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_214_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_213_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_213_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_212_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_212_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_211_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_211_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_210_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_210_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_209_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_209_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_208_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_208_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_207_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_207_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_206_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_206_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_205_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_205_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_204_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_204_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_203_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_203_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_202_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_202_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_201_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_201_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_200_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_200_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_199_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_199_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_198_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_198_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_197_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_197_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_196_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_196_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_195_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_195_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_194_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_194_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_193_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_193_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_192_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_192_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_191_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_191_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_190_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_190_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_189_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_189_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_188_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_188_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_187_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_187_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_186_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_186_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_185_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_185_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_184_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_184_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_183_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_183_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_182_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_182_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_181_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_181_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_180_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_180_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_179_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_179_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_178_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_178_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_177_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_177_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_176_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_176_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_175_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_175_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_174_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_174_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_173_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_173_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_172_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_172_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_171_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_171_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_170_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_170_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_169_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_169_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_168_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_168_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_167_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_167_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_166_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_166_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_165_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_165_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_164_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_164_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_163_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_163_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_162_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_162_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_161_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_161_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_160_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_160_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_159_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_159_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_158_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_158_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_157_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_157_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_156_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_156_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_155_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_155_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_154_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_154_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_153_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_153_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_152_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_152_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_151_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_151_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_150_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_150_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_149_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_149_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_148_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_148_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_147_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_147_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_146_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_146_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_145_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_145_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_144_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_144_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_143_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_143_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_142_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_142_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_141_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_141_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_140_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_140_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_139_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_139_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_138_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_138_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_137_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_137_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_136_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_136_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_135_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_135_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_134_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_134_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_133_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_133_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_132_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_132_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_131_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_131_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_130_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_130_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_129_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_129_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_128_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_128_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_127_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_127_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_126_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_126_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_125_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_125_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_124_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_124_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_123_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_123_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_122_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_122_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_121_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_121_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_120_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_120_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_119_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_119_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_118_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_118_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_117_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_117_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_116_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_116_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_115_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_115_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_114_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_114_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_113_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_113_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_112_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_112_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_111_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_111_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_110_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_110_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_109_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_109_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_108_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_108_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_107_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_107_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_106_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_106_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_105_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_105_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_104_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_104_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_103_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_103_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_102_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_102_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_101_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_101_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_100_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_100_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_99_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_99_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_98_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_98_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_97_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_97_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_96_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_96_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_95_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_95_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_94_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_94_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_93_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_93_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_92_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_92_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_91_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_91_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_90_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_90_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_89_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_89_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_88_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_88_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_87_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_87_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_86_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_86_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_85_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_85_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_84_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_84_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_83_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_83_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_82_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_82_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_81_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_81_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_80_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_80_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_79_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_79_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_78_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_78_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_77_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_77_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_76_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_76_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_75_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_75_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_74_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_74_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_73_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_73_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_72_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_72_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_71_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_71_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_70_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_70_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_69_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_69_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_68_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_68_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_67_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_67_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_66_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_66_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_65_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_65_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_64_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_64_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_63_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_63_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_62_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_62_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_61_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_61_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_60_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_60_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_59_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_59_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_58_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_58_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_57_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_57_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_56_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_56_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_55_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_55_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_54_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_54_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_53_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_53_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_52_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_52_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_51_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_51_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_50_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_50_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_49_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_49_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_48_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_48_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_47_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_47_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_46_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_46_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_45_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_45_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_44_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_44_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_43_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_43_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_42_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_42_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_41_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_41_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_40_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_40_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_39_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_39_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_38_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_38_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_37_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_37_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_36_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_36_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_35_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_35_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_34_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_34_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_33_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_33_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_32_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_32_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_31_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_31_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_30_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_30_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_29_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_29_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_28_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_28_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_27_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_27_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_26_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_26_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_25_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_25_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_24_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_24_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_23_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_23_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_22_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_22_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_21_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_21_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_20_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_20_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_19_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_19_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_18_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_18_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_17_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_17_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_16_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_16_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_15_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_15_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_14_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_14_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_13_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_13_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_12_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_12_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_11_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_11_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_10_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_10_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_9_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_9_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_8_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_8_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_7_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_7_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_6_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_6_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_5_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_5_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_4_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_4_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_3_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_3_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_2_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_2_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_1_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_1_out_ap_vld : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_start : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_done : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_idle : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_ready : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_254_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_254_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_253_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_253_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_252_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_252_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_251_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_251_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_250_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_250_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_249_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_249_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_248_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_248_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_247_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_247_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_246_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_246_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_245_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_245_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_244_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_244_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_243_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_243_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_242_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_242_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_241_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_241_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_240_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_240_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_239_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_239_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_238_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_238_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_237_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_237_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_236_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_236_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_235_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_235_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_234_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_234_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_233_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_233_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_232_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_232_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_231_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_231_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_230_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_230_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_229_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_229_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_228_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_228_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_227_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_227_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_226_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_226_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_225_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_225_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_224_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_224_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_223_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_223_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_222_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_222_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_221_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_221_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_220_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_220_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_219_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_219_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_218_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_218_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_217_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_217_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_216_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_216_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_215_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_215_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_214_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_214_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_213_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_213_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_212_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_212_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_211_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_211_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_210_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_210_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_209_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_209_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_208_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_208_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_207_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_207_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_206_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_206_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_205_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_205_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_204_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_204_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_203_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_203_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_202_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_202_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_201_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_201_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_200_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_200_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_199_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_199_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_198_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_198_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_197_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_197_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_196_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_196_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_195_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_195_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_194_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_194_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_193_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_193_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_192_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_192_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_191_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_191_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_190_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_190_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_189_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_189_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_188_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_188_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_187_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_187_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_186_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_186_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_185_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_185_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_184_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_184_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_183_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_183_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_182_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_182_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_181_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_181_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_180_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_180_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_179_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_179_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_178_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_178_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_177_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_177_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_176_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_176_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_175_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_175_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_174_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_174_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_173_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_173_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_172_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_172_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_171_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_171_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_170_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_170_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_169_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_169_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_168_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_168_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_167_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_167_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_166_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_166_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_165_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_165_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_164_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_164_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_163_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_163_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_162_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_162_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_161_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_161_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_160_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_160_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_159_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_159_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_158_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_158_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_157_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_157_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_156_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_156_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_155_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_155_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_154_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_154_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_153_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_153_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_152_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_152_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_151_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_151_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_150_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_150_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_149_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_149_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_148_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_148_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_147_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_147_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_146_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_146_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_145_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_145_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_144_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_144_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_143_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_143_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_142_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_142_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_141_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_141_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_140_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_140_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_139_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_139_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_138_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_138_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_137_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_137_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_136_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_136_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_135_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_135_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_134_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_134_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_133_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_133_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_132_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_132_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_131_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_131_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_130_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_130_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_129_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_129_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_128_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_128_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_127_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_127_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_126_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_126_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_125_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_125_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_124_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_124_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_123_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_123_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_122_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_122_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_121_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_121_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_120_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_120_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_119_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_119_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_118_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_118_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_117_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_117_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_116_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_116_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_115_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_115_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_114_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_114_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_113_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_113_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_112_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_112_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_111_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_111_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_110_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_110_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_109_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_109_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_108_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_108_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_107_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_107_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_106_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_106_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_105_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_105_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_104_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_104_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_103_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_103_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_102_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_102_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_101_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_101_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_100_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_100_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_99_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_99_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_98_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_98_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_97_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_97_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_96_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_96_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_95_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_95_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_94_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_94_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_93_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_93_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_92_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_92_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_91_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_91_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_90_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_90_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_89_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_89_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_88_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_88_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_87_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_87_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_86_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_86_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_85_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_85_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_84_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_84_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_83_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_83_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_82_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_82_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_81_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_81_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_80_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_80_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_79_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_79_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_78_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_78_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_77_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_77_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_76_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_76_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_75_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_75_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_74_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_74_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_73_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_73_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_72_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_72_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_71_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_71_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_70_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_70_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_69_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_69_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_68_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_68_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_67_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_67_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_66_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_66_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_65_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_65_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_64_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_64_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_63_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_63_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_62_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_62_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_61_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_61_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_60_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_60_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_59_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_59_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_58_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_58_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_57_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_57_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_56_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_56_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_55_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_55_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_54_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_54_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_53_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_53_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_52_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_52_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_51_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_51_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_50_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_50_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_49_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_49_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_48_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_48_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_47_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_47_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_46_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_46_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_45_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_45_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_44_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_44_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_43_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_43_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_42_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_42_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_41_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_41_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_40_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_40_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_39_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_39_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_38_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_38_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_37_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_37_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_36_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_36_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_35_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_35_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_34_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_34_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_33_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_33_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_32_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_32_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_31_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_31_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_30_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_30_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_29_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_29_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_28_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_28_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_27_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_27_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_26_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_26_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_25_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_25_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_24_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_24_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_23_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_23_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_22_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_22_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_21_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_21_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_20_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_20_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_19_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_19_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_18_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_18_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_17_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_17_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_16_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_16_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_15_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_15_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_14_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_14_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_13_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_13_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_12_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_12_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_11_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_11_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_10_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_10_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_9_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_9_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_8_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_8_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_7_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_7_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_6_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_6_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_5_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_5_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_4_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_4_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_3_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_3_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_2_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_2_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_1_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_1_out_ap_vld : STD_LOGIC;
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_out_ap_vld : STD_LOGIC;
     signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_ap_start : STD_LOGIC;
     signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_ap_done : STD_LOGIC;
     signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_ap_idle : STD_LOGIC;
     signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_ap_ready : STD_LOGIC;
-    signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_equalized_stream_din : STD_LOGIC_VECTOR (13 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_equalized_stream_din : STD_LOGIC_VECTOR (11 downto 0);
     signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_equalized_stream_write : STD_LOGIC;
     signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_intensity_buf_address0 : STD_LOGIC_VECTOR (11 downto 0);
     signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_intensity_buf_ce0 : STD_LOGIC;
     signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_din0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_din1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_opcode : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_opcode : STD_LOGIC_VECTOR (1 downto 0);
     signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_ce : STD_LOGIC;
     signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_9960_p_din0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_9960_p_din1 : STD_LOGIC_VECTOR (31 downto 0);
@@ -1441,7 +1438,7 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm_state11 : signal is "none";
     signal ap_CS_fsm_state12 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state12 : signal is "none";
-    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_start_reg : STD_LOGIC := '0';
+    signal grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state13 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state13 : signal is "none";
     signal ap_CS_fsm_state14 : STD_LOGIC;
@@ -1459,7 +1456,6 @@ attribute shreg_extract : string;
     signal ap_CS_fsm_state20 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state20 : signal is "none";
     signal grp_fu_3209_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_3204_opcode : STD_LOGIC_VECTOR (1 downto 0);
     signal grp_fu_3204_ce : STD_LOGIC;
     signal grp_fu_3209_ce : STD_LOGIC;
     signal ap_CS_fsm_state15 : STD_LOGIC;
@@ -1663,16 +1659,14 @@ attribute shreg_extract : string;
         intensity_buf_address0 : OUT STD_LOGIC_VECTOR (11 downto 0);
         intensity_buf_ce0 : OUT STD_LOGIC;
         intensity_buf_we0 : OUT STD_LOGIC;
-        intensity_buf_d0 : OUT STD_LOGIC_VECTOR (13 downto 0);
-        grp_fu_3204_p_din0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        grp_fu_3204_p_din1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        grp_fu_3204_p_opcode : OUT STD_LOGIC_VECTOR (0 downto 0);
-        grp_fu_3204_p_dout0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        grp_fu_3204_p_ce : OUT STD_LOGIC;
+        intensity_buf_d0 : OUT STD_LOGIC_VECTOR (11 downto 0);
         grp_fu_9960_p_din0 : OUT STD_LOGIC_VECTOR (31 downto 0);
         grp_fu_9960_p_din1 : OUT STD_LOGIC_VECTOR (31 downto 0);
         grp_fu_9960_p_dout0 : IN STD_LOGIC_VECTOR (31 downto 0);
         grp_fu_9960_p_ce : OUT STD_LOGIC;
+        grp_fu_3209_p_din0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        grp_fu_3209_p_dout0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        grp_fu_3209_p_ce : OUT STD_LOGIC;
         grp_fu_9964_p_din0 : OUT STD_LOGIC_VECTOR (31 downto 0);
         grp_fu_9964_p_dout0 : IN STD_LOGIC_VECTOR (63 downto 0);
         grp_fu_9964_p_ce : OUT STD_LOGIC );
@@ -1689,7 +1683,7 @@ attribute shreg_extract : string;
         ap_ready : OUT STD_LOGIC;
         intensity_buf_address0 : OUT STD_LOGIC_VECTOR (11 downto 0);
         intensity_buf_ce0 : OUT STD_LOGIC;
-        intensity_buf_q0 : IN STD_LOGIC_VECTOR (13 downto 0);
+        intensity_buf_q0 : IN STD_LOGIC_VECTOR (11 downto 0);
         histogram_255_out : OUT STD_LOGIC_VECTOR (31 downto 0);
         histogram_255_out_ap_vld : OUT STD_LOGIC;
         histogram_254_out : OUT STD_LOGIC_VECTOR (31 downto 0);
@@ -2209,7 +2203,7 @@ attribute shreg_extract : string;
     end component;
 
 
-    component top_kernel_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2 IS
+    component top_kernel_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -2994,14 +2988,14 @@ attribute shreg_extract : string;
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        equalized_stream_din : OUT STD_LOGIC_VECTOR (13 downto 0);
+        equalized_stream_din : OUT STD_LOGIC_VECTOR (11 downto 0);
         equalized_stream_full_n : IN STD_LOGIC;
         equalized_stream_write : OUT STD_LOGIC;
         equalized_stream_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
         equalized_stream_fifo_cap : IN STD_LOGIC_VECTOR (31 downto 0);
         intensity_buf_address0 : OUT STD_LOGIC_VECTOR (11 downto 0);
         intensity_buf_ce0 : OUT STD_LOGIC;
-        intensity_buf_q0 : IN STD_LOGIC_VECTOR (13 downto 0);
+        intensity_buf_q0 : IN STD_LOGIC_VECTOR (11 downto 0);
         histogram_reload : IN STD_LOGIC_VECTOR (31 downto 0);
         cdf_1_reload : IN STD_LOGIC_VECTOR (31 downto 0);
         cdf_2_reload : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -3262,7 +3256,7 @@ attribute shreg_extract : string;
         sub : IN STD_LOGIC_VECTOR (31 downto 0);
         grp_fu_3204_p_din0 : OUT STD_LOGIC_VECTOR (31 downto 0);
         grp_fu_3204_p_din1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        grp_fu_3204_p_opcode : OUT STD_LOGIC_VECTOR (0 downto 0);
+        grp_fu_3204_p_opcode : OUT STD_LOGIC_VECTOR (1 downto 0);
         grp_fu_3204_p_dout0 : IN STD_LOGIC_VECTOR (31 downto 0);
         grp_fu_3204_p_ce : OUT STD_LOGIC;
         grp_fu_9960_p_din0 : OUT STD_LOGIC_VECTOR (31 downto 0);
@@ -3278,7 +3272,7 @@ attribute shreg_extract : string;
     end component;
 
 
-    component top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1 IS
+    component top_kernel_fsub_32ns_32ns_32_10_full_dsp_1 IS
     generic (
         ID : INTEGER;
         NUM_STAGE : INTEGER;
@@ -3290,7 +3284,6 @@ attribute shreg_extract : string;
         reset : IN STD_LOGIC;
         din0 : IN STD_LOGIC_VECTOR (31 downto 0);
         din1 : IN STD_LOGIC_VECTOR (31 downto 0);
-        opcode : IN STD_LOGIC_VECTOR (1 downto 0);
         ce : IN STD_LOGIC;
         dout : OUT STD_LOGIC_VECTOR (31 downto 0) );
     end component;
@@ -3354,8 +3347,8 @@ attribute shreg_extract : string;
         address0 : IN STD_LOGIC_VECTOR (11 downto 0);
         ce0 : IN STD_LOGIC;
         we0 : IN STD_LOGIC;
-        d0 : IN STD_LOGIC_VECTOR (13 downto 0);
-        q0 : OUT STD_LOGIC_VECTOR (13 downto 0) );
+        d0 : IN STD_LOGIC_VECTOR (11 downto 0);
+        q0 : OUT STD_LOGIC_VECTOR (11 downto 0) );
     end component;
 
 
@@ -3363,7 +3356,7 @@ attribute shreg_extract : string;
 begin
     intensity_buf_U : component top_kernel_stage_rgb2eq_intensity_buf_RAM_AUTO_1R1W
     generic map (
-        DataWidth => 14,
+        DataWidth => 12,
         AddressRange => 4096,
         AddressWidth => 12)
     port map (
@@ -3528,15 +3521,13 @@ begin
         intensity_buf_ce0 => grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_intensity_buf_ce0,
         intensity_buf_we0 => grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_intensity_buf_we0,
         intensity_buf_d0 => grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_intensity_buf_d0,
-        grp_fu_3204_p_din0 => grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_din0,
-        grp_fu_3204_p_din1 => grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_din1,
-        grp_fu_3204_p_opcode => grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_opcode,
-        grp_fu_3204_p_dout0 => grp_fu_3204_p2,
-        grp_fu_3204_p_ce => grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_ce,
         grp_fu_9960_p_din0 => grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_9960_p_din0,
         grp_fu_9960_p_din1 => grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_9960_p_din1,
         grp_fu_9960_p_dout0 => grp_fu_9960_p2,
         grp_fu_9960_p_ce => grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_9960_p_ce,
+        grp_fu_3209_p_din0 => grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3209_p_din0,
+        grp_fu_3209_p_dout0 => grp_fu_3209_p1,
+        grp_fu_3209_p_ce => grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3209_p_ce,
         grp_fu_9964_p_din0 => grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_9964_p_din0,
         grp_fu_9964_p_dout0 => grp_fu_9964_p1,
         grp_fu_9964_p_ce => grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_9964_p_ce);
@@ -4069,14 +4060,14 @@ begin
         grp_fu_9960_p_dout0 => grp_fu_9960_p2,
         grp_fu_9960_p_ce => grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_grp_fu_9960_p_ce);
 
-    grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424 : component top_kernel_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2
+    grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424 : component top_kernel_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_start,
-        ap_done => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_done,
-        ap_idle => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_idle,
-        ap_ready => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_ready,
+        ap_start => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_start,
+        ap_done => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_done,
+        ap_idle => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_idle,
+        ap_ready => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_ready,
         histogram_reload => grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_histogram_out,
         histogram_1_reload => grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_histogram_1_out,
         histogram_2_reload => grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_histogram_2_out,
@@ -4333,516 +4324,516 @@ begin
         histogram_253_reload => grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_histogram_253_out,
         histogram_254_reload => grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_histogram_254_out,
         histogram_255_reload => grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_histogram_255_out,
-        cdf_254_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_254_out,
-        cdf_254_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_254_out_ap_vld,
-        cdf_253_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_253_out,
-        cdf_253_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_253_out_ap_vld,
-        cdf_252_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_252_out,
-        cdf_252_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_252_out_ap_vld,
-        cdf_251_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_251_out,
-        cdf_251_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_251_out_ap_vld,
-        cdf_250_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_250_out,
-        cdf_250_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_250_out_ap_vld,
-        cdf_249_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_249_out,
-        cdf_249_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_249_out_ap_vld,
-        cdf_248_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_248_out,
-        cdf_248_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_248_out_ap_vld,
-        cdf_247_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_247_out,
-        cdf_247_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_247_out_ap_vld,
-        cdf_246_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_246_out,
-        cdf_246_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_246_out_ap_vld,
-        cdf_245_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_245_out,
-        cdf_245_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_245_out_ap_vld,
-        cdf_244_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_244_out,
-        cdf_244_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_244_out_ap_vld,
-        cdf_243_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_243_out,
-        cdf_243_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_243_out_ap_vld,
-        cdf_242_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_242_out,
-        cdf_242_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_242_out_ap_vld,
-        cdf_241_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_241_out,
-        cdf_241_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_241_out_ap_vld,
-        cdf_240_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_240_out,
-        cdf_240_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_240_out_ap_vld,
-        cdf_239_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_239_out,
-        cdf_239_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_239_out_ap_vld,
-        cdf_238_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_238_out,
-        cdf_238_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_238_out_ap_vld,
-        cdf_237_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_237_out,
-        cdf_237_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_237_out_ap_vld,
-        cdf_236_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_236_out,
-        cdf_236_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_236_out_ap_vld,
-        cdf_235_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_235_out,
-        cdf_235_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_235_out_ap_vld,
-        cdf_234_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_234_out,
-        cdf_234_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_234_out_ap_vld,
-        cdf_233_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_233_out,
-        cdf_233_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_233_out_ap_vld,
-        cdf_232_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_232_out,
-        cdf_232_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_232_out_ap_vld,
-        cdf_231_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_231_out,
-        cdf_231_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_231_out_ap_vld,
-        cdf_230_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_230_out,
-        cdf_230_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_230_out_ap_vld,
-        cdf_229_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_229_out,
-        cdf_229_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_229_out_ap_vld,
-        cdf_228_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_228_out,
-        cdf_228_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_228_out_ap_vld,
-        cdf_227_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_227_out,
-        cdf_227_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_227_out_ap_vld,
-        cdf_226_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_226_out,
-        cdf_226_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_226_out_ap_vld,
-        cdf_225_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_225_out,
-        cdf_225_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_225_out_ap_vld,
-        cdf_224_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_224_out,
-        cdf_224_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_224_out_ap_vld,
-        cdf_223_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_223_out,
-        cdf_223_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_223_out_ap_vld,
-        cdf_222_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_222_out,
-        cdf_222_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_222_out_ap_vld,
-        cdf_221_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_221_out,
-        cdf_221_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_221_out_ap_vld,
-        cdf_220_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_220_out,
-        cdf_220_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_220_out_ap_vld,
-        cdf_219_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_219_out,
-        cdf_219_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_219_out_ap_vld,
-        cdf_218_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_218_out,
-        cdf_218_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_218_out_ap_vld,
-        cdf_217_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_217_out,
-        cdf_217_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_217_out_ap_vld,
-        cdf_216_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_216_out,
-        cdf_216_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_216_out_ap_vld,
-        cdf_215_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_215_out,
-        cdf_215_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_215_out_ap_vld,
-        cdf_214_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_214_out,
-        cdf_214_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_214_out_ap_vld,
-        cdf_213_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_213_out,
-        cdf_213_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_213_out_ap_vld,
-        cdf_212_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_212_out,
-        cdf_212_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_212_out_ap_vld,
-        cdf_211_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_211_out,
-        cdf_211_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_211_out_ap_vld,
-        cdf_210_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_210_out,
-        cdf_210_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_210_out_ap_vld,
-        cdf_209_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_209_out,
-        cdf_209_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_209_out_ap_vld,
-        cdf_208_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_208_out,
-        cdf_208_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_208_out_ap_vld,
-        cdf_207_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_207_out,
-        cdf_207_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_207_out_ap_vld,
-        cdf_206_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_206_out,
-        cdf_206_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_206_out_ap_vld,
-        cdf_205_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_205_out,
-        cdf_205_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_205_out_ap_vld,
-        cdf_204_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_204_out,
-        cdf_204_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_204_out_ap_vld,
-        cdf_203_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_203_out,
-        cdf_203_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_203_out_ap_vld,
-        cdf_202_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_202_out,
-        cdf_202_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_202_out_ap_vld,
-        cdf_201_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_201_out,
-        cdf_201_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_201_out_ap_vld,
-        cdf_200_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_200_out,
-        cdf_200_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_200_out_ap_vld,
-        cdf_199_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_199_out,
-        cdf_199_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_199_out_ap_vld,
-        cdf_198_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_198_out,
-        cdf_198_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_198_out_ap_vld,
-        cdf_197_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_197_out,
-        cdf_197_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_197_out_ap_vld,
-        cdf_196_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_196_out,
-        cdf_196_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_196_out_ap_vld,
-        cdf_195_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_195_out,
-        cdf_195_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_195_out_ap_vld,
-        cdf_194_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_194_out,
-        cdf_194_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_194_out_ap_vld,
-        cdf_193_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_193_out,
-        cdf_193_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_193_out_ap_vld,
-        cdf_192_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_192_out,
-        cdf_192_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_192_out_ap_vld,
-        cdf_191_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_191_out,
-        cdf_191_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_191_out_ap_vld,
-        cdf_190_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_190_out,
-        cdf_190_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_190_out_ap_vld,
-        cdf_189_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_189_out,
-        cdf_189_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_189_out_ap_vld,
-        cdf_188_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_188_out,
-        cdf_188_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_188_out_ap_vld,
-        cdf_187_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_187_out,
-        cdf_187_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_187_out_ap_vld,
-        cdf_186_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_186_out,
-        cdf_186_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_186_out_ap_vld,
-        cdf_185_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_185_out,
-        cdf_185_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_185_out_ap_vld,
-        cdf_184_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_184_out,
-        cdf_184_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_184_out_ap_vld,
-        cdf_183_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_183_out,
-        cdf_183_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_183_out_ap_vld,
-        cdf_182_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_182_out,
-        cdf_182_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_182_out_ap_vld,
-        cdf_181_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_181_out,
-        cdf_181_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_181_out_ap_vld,
-        cdf_180_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_180_out,
-        cdf_180_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_180_out_ap_vld,
-        cdf_179_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_179_out,
-        cdf_179_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_179_out_ap_vld,
-        cdf_178_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_178_out,
-        cdf_178_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_178_out_ap_vld,
-        cdf_177_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_177_out,
-        cdf_177_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_177_out_ap_vld,
-        cdf_176_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_176_out,
-        cdf_176_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_176_out_ap_vld,
-        cdf_175_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_175_out,
-        cdf_175_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_175_out_ap_vld,
-        cdf_174_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_174_out,
-        cdf_174_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_174_out_ap_vld,
-        cdf_173_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_173_out,
-        cdf_173_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_173_out_ap_vld,
-        cdf_172_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_172_out,
-        cdf_172_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_172_out_ap_vld,
-        cdf_171_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_171_out,
-        cdf_171_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_171_out_ap_vld,
-        cdf_170_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_170_out,
-        cdf_170_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_170_out_ap_vld,
-        cdf_169_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_169_out,
-        cdf_169_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_169_out_ap_vld,
-        cdf_168_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_168_out,
-        cdf_168_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_168_out_ap_vld,
-        cdf_167_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_167_out,
-        cdf_167_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_167_out_ap_vld,
-        cdf_166_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_166_out,
-        cdf_166_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_166_out_ap_vld,
-        cdf_165_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_165_out,
-        cdf_165_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_165_out_ap_vld,
-        cdf_164_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_164_out,
-        cdf_164_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_164_out_ap_vld,
-        cdf_163_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_163_out,
-        cdf_163_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_163_out_ap_vld,
-        cdf_162_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_162_out,
-        cdf_162_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_162_out_ap_vld,
-        cdf_161_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_161_out,
-        cdf_161_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_161_out_ap_vld,
-        cdf_160_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_160_out,
-        cdf_160_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_160_out_ap_vld,
-        cdf_159_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_159_out,
-        cdf_159_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_159_out_ap_vld,
-        cdf_158_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_158_out,
-        cdf_158_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_158_out_ap_vld,
-        cdf_157_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_157_out,
-        cdf_157_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_157_out_ap_vld,
-        cdf_156_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_156_out,
-        cdf_156_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_156_out_ap_vld,
-        cdf_155_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_155_out,
-        cdf_155_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_155_out_ap_vld,
-        cdf_154_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_154_out,
-        cdf_154_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_154_out_ap_vld,
-        cdf_153_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_153_out,
-        cdf_153_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_153_out_ap_vld,
-        cdf_152_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_152_out,
-        cdf_152_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_152_out_ap_vld,
-        cdf_151_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_151_out,
-        cdf_151_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_151_out_ap_vld,
-        cdf_150_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_150_out,
-        cdf_150_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_150_out_ap_vld,
-        cdf_149_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_149_out,
-        cdf_149_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_149_out_ap_vld,
-        cdf_148_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_148_out,
-        cdf_148_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_148_out_ap_vld,
-        cdf_147_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_147_out,
-        cdf_147_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_147_out_ap_vld,
-        cdf_146_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_146_out,
-        cdf_146_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_146_out_ap_vld,
-        cdf_145_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_145_out,
-        cdf_145_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_145_out_ap_vld,
-        cdf_144_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_144_out,
-        cdf_144_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_144_out_ap_vld,
-        cdf_143_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_143_out,
-        cdf_143_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_143_out_ap_vld,
-        cdf_142_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_142_out,
-        cdf_142_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_142_out_ap_vld,
-        cdf_141_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_141_out,
-        cdf_141_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_141_out_ap_vld,
-        cdf_140_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_140_out,
-        cdf_140_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_140_out_ap_vld,
-        cdf_139_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_139_out,
-        cdf_139_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_139_out_ap_vld,
-        cdf_138_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_138_out,
-        cdf_138_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_138_out_ap_vld,
-        cdf_137_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_137_out,
-        cdf_137_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_137_out_ap_vld,
-        cdf_136_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_136_out,
-        cdf_136_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_136_out_ap_vld,
-        cdf_135_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_135_out,
-        cdf_135_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_135_out_ap_vld,
-        cdf_134_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_134_out,
-        cdf_134_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_134_out_ap_vld,
-        cdf_133_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_133_out,
-        cdf_133_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_133_out_ap_vld,
-        cdf_132_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_132_out,
-        cdf_132_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_132_out_ap_vld,
-        cdf_131_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_131_out,
-        cdf_131_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_131_out_ap_vld,
-        cdf_130_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_130_out,
-        cdf_130_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_130_out_ap_vld,
-        cdf_129_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_129_out,
-        cdf_129_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_129_out_ap_vld,
-        cdf_128_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_128_out,
-        cdf_128_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_128_out_ap_vld,
-        cdf_127_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_127_out,
-        cdf_127_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_127_out_ap_vld,
-        cdf_126_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_126_out,
-        cdf_126_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_126_out_ap_vld,
-        cdf_125_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_125_out,
-        cdf_125_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_125_out_ap_vld,
-        cdf_124_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_124_out,
-        cdf_124_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_124_out_ap_vld,
-        cdf_123_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_123_out,
-        cdf_123_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_123_out_ap_vld,
-        cdf_122_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_122_out,
-        cdf_122_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_122_out_ap_vld,
-        cdf_121_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_121_out,
-        cdf_121_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_121_out_ap_vld,
-        cdf_120_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_120_out,
-        cdf_120_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_120_out_ap_vld,
-        cdf_119_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_119_out,
-        cdf_119_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_119_out_ap_vld,
-        cdf_118_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_118_out,
-        cdf_118_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_118_out_ap_vld,
-        cdf_117_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_117_out,
-        cdf_117_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_117_out_ap_vld,
-        cdf_116_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_116_out,
-        cdf_116_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_116_out_ap_vld,
-        cdf_115_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_115_out,
-        cdf_115_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_115_out_ap_vld,
-        cdf_114_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_114_out,
-        cdf_114_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_114_out_ap_vld,
-        cdf_113_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_113_out,
-        cdf_113_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_113_out_ap_vld,
-        cdf_112_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_112_out,
-        cdf_112_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_112_out_ap_vld,
-        cdf_111_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_111_out,
-        cdf_111_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_111_out_ap_vld,
-        cdf_110_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_110_out,
-        cdf_110_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_110_out_ap_vld,
-        cdf_109_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_109_out,
-        cdf_109_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_109_out_ap_vld,
-        cdf_108_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_108_out,
-        cdf_108_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_108_out_ap_vld,
-        cdf_107_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_107_out,
-        cdf_107_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_107_out_ap_vld,
-        cdf_106_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_106_out,
-        cdf_106_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_106_out_ap_vld,
-        cdf_105_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_105_out,
-        cdf_105_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_105_out_ap_vld,
-        cdf_104_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_104_out,
-        cdf_104_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_104_out_ap_vld,
-        cdf_103_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_103_out,
-        cdf_103_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_103_out_ap_vld,
-        cdf_102_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_102_out,
-        cdf_102_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_102_out_ap_vld,
-        cdf_101_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_101_out,
-        cdf_101_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_101_out_ap_vld,
-        cdf_100_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_100_out,
-        cdf_100_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_100_out_ap_vld,
-        cdf_99_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_99_out,
-        cdf_99_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_99_out_ap_vld,
-        cdf_98_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_98_out,
-        cdf_98_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_98_out_ap_vld,
-        cdf_97_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_97_out,
-        cdf_97_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_97_out_ap_vld,
-        cdf_96_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_96_out,
-        cdf_96_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_96_out_ap_vld,
-        cdf_95_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_95_out,
-        cdf_95_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_95_out_ap_vld,
-        cdf_94_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_94_out,
-        cdf_94_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_94_out_ap_vld,
-        cdf_93_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_93_out,
-        cdf_93_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_93_out_ap_vld,
-        cdf_92_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_92_out,
-        cdf_92_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_92_out_ap_vld,
-        cdf_91_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_91_out,
-        cdf_91_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_91_out_ap_vld,
-        cdf_90_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_90_out,
-        cdf_90_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_90_out_ap_vld,
-        cdf_89_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_89_out,
-        cdf_89_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_89_out_ap_vld,
-        cdf_88_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_88_out,
-        cdf_88_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_88_out_ap_vld,
-        cdf_87_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_87_out,
-        cdf_87_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_87_out_ap_vld,
-        cdf_86_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_86_out,
-        cdf_86_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_86_out_ap_vld,
-        cdf_85_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_85_out,
-        cdf_85_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_85_out_ap_vld,
-        cdf_84_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_84_out,
-        cdf_84_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_84_out_ap_vld,
-        cdf_83_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_83_out,
-        cdf_83_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_83_out_ap_vld,
-        cdf_82_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_82_out,
-        cdf_82_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_82_out_ap_vld,
-        cdf_81_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_81_out,
-        cdf_81_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_81_out_ap_vld,
-        cdf_80_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_80_out,
-        cdf_80_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_80_out_ap_vld,
-        cdf_79_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_79_out,
-        cdf_79_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_79_out_ap_vld,
-        cdf_78_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_78_out,
-        cdf_78_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_78_out_ap_vld,
-        cdf_77_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_77_out,
-        cdf_77_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_77_out_ap_vld,
-        cdf_76_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_76_out,
-        cdf_76_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_76_out_ap_vld,
-        cdf_75_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_75_out,
-        cdf_75_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_75_out_ap_vld,
-        cdf_74_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_74_out,
-        cdf_74_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_74_out_ap_vld,
-        cdf_73_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_73_out,
-        cdf_73_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_73_out_ap_vld,
-        cdf_72_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_72_out,
-        cdf_72_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_72_out_ap_vld,
-        cdf_71_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_71_out,
-        cdf_71_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_71_out_ap_vld,
-        cdf_70_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_70_out,
-        cdf_70_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_70_out_ap_vld,
-        cdf_69_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_69_out,
-        cdf_69_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_69_out_ap_vld,
-        cdf_68_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_68_out,
-        cdf_68_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_68_out_ap_vld,
-        cdf_67_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_67_out,
-        cdf_67_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_67_out_ap_vld,
-        cdf_66_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_66_out,
-        cdf_66_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_66_out_ap_vld,
-        cdf_65_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_65_out,
-        cdf_65_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_65_out_ap_vld,
-        cdf_64_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_64_out,
-        cdf_64_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_64_out_ap_vld,
-        cdf_63_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_63_out,
-        cdf_63_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_63_out_ap_vld,
-        cdf_62_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_62_out,
-        cdf_62_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_62_out_ap_vld,
-        cdf_61_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_61_out,
-        cdf_61_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_61_out_ap_vld,
-        cdf_60_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_60_out,
-        cdf_60_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_60_out_ap_vld,
-        cdf_59_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_59_out,
-        cdf_59_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_59_out_ap_vld,
-        cdf_58_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_58_out,
-        cdf_58_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_58_out_ap_vld,
-        cdf_57_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_57_out,
-        cdf_57_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_57_out_ap_vld,
-        cdf_56_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_56_out,
-        cdf_56_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_56_out_ap_vld,
-        cdf_55_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_55_out,
-        cdf_55_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_55_out_ap_vld,
-        cdf_54_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_54_out,
-        cdf_54_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_54_out_ap_vld,
-        cdf_53_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_53_out,
-        cdf_53_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_53_out_ap_vld,
-        cdf_52_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_52_out,
-        cdf_52_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_52_out_ap_vld,
-        cdf_51_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_51_out,
-        cdf_51_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_51_out_ap_vld,
-        cdf_50_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_50_out,
-        cdf_50_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_50_out_ap_vld,
-        cdf_49_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_49_out,
-        cdf_49_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_49_out_ap_vld,
-        cdf_48_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_48_out,
-        cdf_48_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_48_out_ap_vld,
-        cdf_47_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_47_out,
-        cdf_47_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_47_out_ap_vld,
-        cdf_46_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_46_out,
-        cdf_46_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_46_out_ap_vld,
-        cdf_45_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_45_out,
-        cdf_45_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_45_out_ap_vld,
-        cdf_44_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_44_out,
-        cdf_44_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_44_out_ap_vld,
-        cdf_43_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_43_out,
-        cdf_43_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_43_out_ap_vld,
-        cdf_42_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_42_out,
-        cdf_42_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_42_out_ap_vld,
-        cdf_41_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_41_out,
-        cdf_41_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_41_out_ap_vld,
-        cdf_40_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_40_out,
-        cdf_40_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_40_out_ap_vld,
-        cdf_39_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_39_out,
-        cdf_39_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_39_out_ap_vld,
-        cdf_38_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_38_out,
-        cdf_38_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_38_out_ap_vld,
-        cdf_37_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_37_out,
-        cdf_37_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_37_out_ap_vld,
-        cdf_36_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_36_out,
-        cdf_36_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_36_out_ap_vld,
-        cdf_35_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_35_out,
-        cdf_35_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_35_out_ap_vld,
-        cdf_34_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_34_out,
-        cdf_34_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_34_out_ap_vld,
-        cdf_33_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_33_out,
-        cdf_33_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_33_out_ap_vld,
-        cdf_32_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_32_out,
-        cdf_32_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_32_out_ap_vld,
-        cdf_31_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_31_out,
-        cdf_31_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_31_out_ap_vld,
-        cdf_30_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_30_out,
-        cdf_30_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_30_out_ap_vld,
-        cdf_29_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_29_out,
-        cdf_29_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_29_out_ap_vld,
-        cdf_28_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_28_out,
-        cdf_28_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_28_out_ap_vld,
-        cdf_27_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_27_out,
-        cdf_27_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_27_out_ap_vld,
-        cdf_26_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_26_out,
-        cdf_26_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_26_out_ap_vld,
-        cdf_25_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_25_out,
-        cdf_25_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_25_out_ap_vld,
-        cdf_24_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_24_out,
-        cdf_24_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_24_out_ap_vld,
-        cdf_23_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_23_out,
-        cdf_23_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_23_out_ap_vld,
-        cdf_22_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_22_out,
-        cdf_22_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_22_out_ap_vld,
-        cdf_21_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_21_out,
-        cdf_21_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_21_out_ap_vld,
-        cdf_20_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_20_out,
-        cdf_20_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_20_out_ap_vld,
-        cdf_19_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_19_out,
-        cdf_19_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_19_out_ap_vld,
-        cdf_18_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_18_out,
-        cdf_18_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_18_out_ap_vld,
-        cdf_17_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_17_out,
-        cdf_17_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_17_out_ap_vld,
-        cdf_16_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_16_out,
-        cdf_16_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_16_out_ap_vld,
-        cdf_15_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_15_out,
-        cdf_15_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_15_out_ap_vld,
-        cdf_14_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_14_out,
-        cdf_14_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_14_out_ap_vld,
-        cdf_13_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_13_out,
-        cdf_13_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_13_out_ap_vld,
-        cdf_12_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_12_out,
-        cdf_12_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_12_out_ap_vld,
-        cdf_11_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_11_out,
-        cdf_11_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_11_out_ap_vld,
-        cdf_10_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_10_out,
-        cdf_10_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_10_out_ap_vld,
-        cdf_9_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_9_out,
-        cdf_9_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_9_out_ap_vld,
-        cdf_8_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_8_out,
-        cdf_8_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_8_out_ap_vld,
-        cdf_7_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_7_out,
-        cdf_7_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_7_out_ap_vld,
-        cdf_6_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_6_out,
-        cdf_6_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_6_out_ap_vld,
-        cdf_5_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_5_out,
-        cdf_5_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_5_out_ap_vld,
-        cdf_4_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_4_out,
-        cdf_4_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_4_out_ap_vld,
-        cdf_3_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_3_out,
-        cdf_3_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_3_out_ap_vld,
-        cdf_2_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_2_out,
-        cdf_2_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_2_out_ap_vld,
-        cdf_1_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_1_out,
-        cdf_1_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_1_out_ap_vld,
-        cdf_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_out,
-        cdf_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_out_ap_vld);
+        cdf_254_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_254_out,
+        cdf_254_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_254_out_ap_vld,
+        cdf_253_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_253_out,
+        cdf_253_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_253_out_ap_vld,
+        cdf_252_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_252_out,
+        cdf_252_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_252_out_ap_vld,
+        cdf_251_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_251_out,
+        cdf_251_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_251_out_ap_vld,
+        cdf_250_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_250_out,
+        cdf_250_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_250_out_ap_vld,
+        cdf_249_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_249_out,
+        cdf_249_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_249_out_ap_vld,
+        cdf_248_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_248_out,
+        cdf_248_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_248_out_ap_vld,
+        cdf_247_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_247_out,
+        cdf_247_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_247_out_ap_vld,
+        cdf_246_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_246_out,
+        cdf_246_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_246_out_ap_vld,
+        cdf_245_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_245_out,
+        cdf_245_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_245_out_ap_vld,
+        cdf_244_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_244_out,
+        cdf_244_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_244_out_ap_vld,
+        cdf_243_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_243_out,
+        cdf_243_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_243_out_ap_vld,
+        cdf_242_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_242_out,
+        cdf_242_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_242_out_ap_vld,
+        cdf_241_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_241_out,
+        cdf_241_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_241_out_ap_vld,
+        cdf_240_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_240_out,
+        cdf_240_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_240_out_ap_vld,
+        cdf_239_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_239_out,
+        cdf_239_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_239_out_ap_vld,
+        cdf_238_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_238_out,
+        cdf_238_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_238_out_ap_vld,
+        cdf_237_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_237_out,
+        cdf_237_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_237_out_ap_vld,
+        cdf_236_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_236_out,
+        cdf_236_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_236_out_ap_vld,
+        cdf_235_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_235_out,
+        cdf_235_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_235_out_ap_vld,
+        cdf_234_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_234_out,
+        cdf_234_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_234_out_ap_vld,
+        cdf_233_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_233_out,
+        cdf_233_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_233_out_ap_vld,
+        cdf_232_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_232_out,
+        cdf_232_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_232_out_ap_vld,
+        cdf_231_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_231_out,
+        cdf_231_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_231_out_ap_vld,
+        cdf_230_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_230_out,
+        cdf_230_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_230_out_ap_vld,
+        cdf_229_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_229_out,
+        cdf_229_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_229_out_ap_vld,
+        cdf_228_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_228_out,
+        cdf_228_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_228_out_ap_vld,
+        cdf_227_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_227_out,
+        cdf_227_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_227_out_ap_vld,
+        cdf_226_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_226_out,
+        cdf_226_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_226_out_ap_vld,
+        cdf_225_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_225_out,
+        cdf_225_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_225_out_ap_vld,
+        cdf_224_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_224_out,
+        cdf_224_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_224_out_ap_vld,
+        cdf_223_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_223_out,
+        cdf_223_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_223_out_ap_vld,
+        cdf_222_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_222_out,
+        cdf_222_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_222_out_ap_vld,
+        cdf_221_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_221_out,
+        cdf_221_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_221_out_ap_vld,
+        cdf_220_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_220_out,
+        cdf_220_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_220_out_ap_vld,
+        cdf_219_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_219_out,
+        cdf_219_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_219_out_ap_vld,
+        cdf_218_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_218_out,
+        cdf_218_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_218_out_ap_vld,
+        cdf_217_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_217_out,
+        cdf_217_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_217_out_ap_vld,
+        cdf_216_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_216_out,
+        cdf_216_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_216_out_ap_vld,
+        cdf_215_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_215_out,
+        cdf_215_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_215_out_ap_vld,
+        cdf_214_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_214_out,
+        cdf_214_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_214_out_ap_vld,
+        cdf_213_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_213_out,
+        cdf_213_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_213_out_ap_vld,
+        cdf_212_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_212_out,
+        cdf_212_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_212_out_ap_vld,
+        cdf_211_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_211_out,
+        cdf_211_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_211_out_ap_vld,
+        cdf_210_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_210_out,
+        cdf_210_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_210_out_ap_vld,
+        cdf_209_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_209_out,
+        cdf_209_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_209_out_ap_vld,
+        cdf_208_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_208_out,
+        cdf_208_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_208_out_ap_vld,
+        cdf_207_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_207_out,
+        cdf_207_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_207_out_ap_vld,
+        cdf_206_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_206_out,
+        cdf_206_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_206_out_ap_vld,
+        cdf_205_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_205_out,
+        cdf_205_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_205_out_ap_vld,
+        cdf_204_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_204_out,
+        cdf_204_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_204_out_ap_vld,
+        cdf_203_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_203_out,
+        cdf_203_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_203_out_ap_vld,
+        cdf_202_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_202_out,
+        cdf_202_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_202_out_ap_vld,
+        cdf_201_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_201_out,
+        cdf_201_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_201_out_ap_vld,
+        cdf_200_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_200_out,
+        cdf_200_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_200_out_ap_vld,
+        cdf_199_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_199_out,
+        cdf_199_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_199_out_ap_vld,
+        cdf_198_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_198_out,
+        cdf_198_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_198_out_ap_vld,
+        cdf_197_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_197_out,
+        cdf_197_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_197_out_ap_vld,
+        cdf_196_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_196_out,
+        cdf_196_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_196_out_ap_vld,
+        cdf_195_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_195_out,
+        cdf_195_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_195_out_ap_vld,
+        cdf_194_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_194_out,
+        cdf_194_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_194_out_ap_vld,
+        cdf_193_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_193_out,
+        cdf_193_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_193_out_ap_vld,
+        cdf_192_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_192_out,
+        cdf_192_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_192_out_ap_vld,
+        cdf_191_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_191_out,
+        cdf_191_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_191_out_ap_vld,
+        cdf_190_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_190_out,
+        cdf_190_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_190_out_ap_vld,
+        cdf_189_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_189_out,
+        cdf_189_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_189_out_ap_vld,
+        cdf_188_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_188_out,
+        cdf_188_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_188_out_ap_vld,
+        cdf_187_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_187_out,
+        cdf_187_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_187_out_ap_vld,
+        cdf_186_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_186_out,
+        cdf_186_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_186_out_ap_vld,
+        cdf_185_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_185_out,
+        cdf_185_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_185_out_ap_vld,
+        cdf_184_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_184_out,
+        cdf_184_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_184_out_ap_vld,
+        cdf_183_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_183_out,
+        cdf_183_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_183_out_ap_vld,
+        cdf_182_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_182_out,
+        cdf_182_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_182_out_ap_vld,
+        cdf_181_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_181_out,
+        cdf_181_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_181_out_ap_vld,
+        cdf_180_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_180_out,
+        cdf_180_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_180_out_ap_vld,
+        cdf_179_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_179_out,
+        cdf_179_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_179_out_ap_vld,
+        cdf_178_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_178_out,
+        cdf_178_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_178_out_ap_vld,
+        cdf_177_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_177_out,
+        cdf_177_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_177_out_ap_vld,
+        cdf_176_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_176_out,
+        cdf_176_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_176_out_ap_vld,
+        cdf_175_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_175_out,
+        cdf_175_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_175_out_ap_vld,
+        cdf_174_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_174_out,
+        cdf_174_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_174_out_ap_vld,
+        cdf_173_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_173_out,
+        cdf_173_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_173_out_ap_vld,
+        cdf_172_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_172_out,
+        cdf_172_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_172_out_ap_vld,
+        cdf_171_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_171_out,
+        cdf_171_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_171_out_ap_vld,
+        cdf_170_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_170_out,
+        cdf_170_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_170_out_ap_vld,
+        cdf_169_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_169_out,
+        cdf_169_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_169_out_ap_vld,
+        cdf_168_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_168_out,
+        cdf_168_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_168_out_ap_vld,
+        cdf_167_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_167_out,
+        cdf_167_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_167_out_ap_vld,
+        cdf_166_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_166_out,
+        cdf_166_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_166_out_ap_vld,
+        cdf_165_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_165_out,
+        cdf_165_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_165_out_ap_vld,
+        cdf_164_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_164_out,
+        cdf_164_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_164_out_ap_vld,
+        cdf_163_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_163_out,
+        cdf_163_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_163_out_ap_vld,
+        cdf_162_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_162_out,
+        cdf_162_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_162_out_ap_vld,
+        cdf_161_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_161_out,
+        cdf_161_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_161_out_ap_vld,
+        cdf_160_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_160_out,
+        cdf_160_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_160_out_ap_vld,
+        cdf_159_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_159_out,
+        cdf_159_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_159_out_ap_vld,
+        cdf_158_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_158_out,
+        cdf_158_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_158_out_ap_vld,
+        cdf_157_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_157_out,
+        cdf_157_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_157_out_ap_vld,
+        cdf_156_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_156_out,
+        cdf_156_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_156_out_ap_vld,
+        cdf_155_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_155_out,
+        cdf_155_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_155_out_ap_vld,
+        cdf_154_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_154_out,
+        cdf_154_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_154_out_ap_vld,
+        cdf_153_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_153_out,
+        cdf_153_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_153_out_ap_vld,
+        cdf_152_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_152_out,
+        cdf_152_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_152_out_ap_vld,
+        cdf_151_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_151_out,
+        cdf_151_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_151_out_ap_vld,
+        cdf_150_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_150_out,
+        cdf_150_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_150_out_ap_vld,
+        cdf_149_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_149_out,
+        cdf_149_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_149_out_ap_vld,
+        cdf_148_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_148_out,
+        cdf_148_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_148_out_ap_vld,
+        cdf_147_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_147_out,
+        cdf_147_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_147_out_ap_vld,
+        cdf_146_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_146_out,
+        cdf_146_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_146_out_ap_vld,
+        cdf_145_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_145_out,
+        cdf_145_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_145_out_ap_vld,
+        cdf_144_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_144_out,
+        cdf_144_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_144_out_ap_vld,
+        cdf_143_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_143_out,
+        cdf_143_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_143_out_ap_vld,
+        cdf_142_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_142_out,
+        cdf_142_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_142_out_ap_vld,
+        cdf_141_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_141_out,
+        cdf_141_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_141_out_ap_vld,
+        cdf_140_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_140_out,
+        cdf_140_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_140_out_ap_vld,
+        cdf_139_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_139_out,
+        cdf_139_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_139_out_ap_vld,
+        cdf_138_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_138_out,
+        cdf_138_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_138_out_ap_vld,
+        cdf_137_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_137_out,
+        cdf_137_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_137_out_ap_vld,
+        cdf_136_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_136_out,
+        cdf_136_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_136_out_ap_vld,
+        cdf_135_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_135_out,
+        cdf_135_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_135_out_ap_vld,
+        cdf_134_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_134_out,
+        cdf_134_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_134_out_ap_vld,
+        cdf_133_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_133_out,
+        cdf_133_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_133_out_ap_vld,
+        cdf_132_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_132_out,
+        cdf_132_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_132_out_ap_vld,
+        cdf_131_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_131_out,
+        cdf_131_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_131_out_ap_vld,
+        cdf_130_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_130_out,
+        cdf_130_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_130_out_ap_vld,
+        cdf_129_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_129_out,
+        cdf_129_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_129_out_ap_vld,
+        cdf_128_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_128_out,
+        cdf_128_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_128_out_ap_vld,
+        cdf_127_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_127_out,
+        cdf_127_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_127_out_ap_vld,
+        cdf_126_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_126_out,
+        cdf_126_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_126_out_ap_vld,
+        cdf_125_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_125_out,
+        cdf_125_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_125_out_ap_vld,
+        cdf_124_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_124_out,
+        cdf_124_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_124_out_ap_vld,
+        cdf_123_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_123_out,
+        cdf_123_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_123_out_ap_vld,
+        cdf_122_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_122_out,
+        cdf_122_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_122_out_ap_vld,
+        cdf_121_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_121_out,
+        cdf_121_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_121_out_ap_vld,
+        cdf_120_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_120_out,
+        cdf_120_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_120_out_ap_vld,
+        cdf_119_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_119_out,
+        cdf_119_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_119_out_ap_vld,
+        cdf_118_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_118_out,
+        cdf_118_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_118_out_ap_vld,
+        cdf_117_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_117_out,
+        cdf_117_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_117_out_ap_vld,
+        cdf_116_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_116_out,
+        cdf_116_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_116_out_ap_vld,
+        cdf_115_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_115_out,
+        cdf_115_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_115_out_ap_vld,
+        cdf_114_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_114_out,
+        cdf_114_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_114_out_ap_vld,
+        cdf_113_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_113_out,
+        cdf_113_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_113_out_ap_vld,
+        cdf_112_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_112_out,
+        cdf_112_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_112_out_ap_vld,
+        cdf_111_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_111_out,
+        cdf_111_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_111_out_ap_vld,
+        cdf_110_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_110_out,
+        cdf_110_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_110_out_ap_vld,
+        cdf_109_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_109_out,
+        cdf_109_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_109_out_ap_vld,
+        cdf_108_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_108_out,
+        cdf_108_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_108_out_ap_vld,
+        cdf_107_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_107_out,
+        cdf_107_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_107_out_ap_vld,
+        cdf_106_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_106_out,
+        cdf_106_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_106_out_ap_vld,
+        cdf_105_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_105_out,
+        cdf_105_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_105_out_ap_vld,
+        cdf_104_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_104_out,
+        cdf_104_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_104_out_ap_vld,
+        cdf_103_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_103_out,
+        cdf_103_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_103_out_ap_vld,
+        cdf_102_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_102_out,
+        cdf_102_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_102_out_ap_vld,
+        cdf_101_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_101_out,
+        cdf_101_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_101_out_ap_vld,
+        cdf_100_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_100_out,
+        cdf_100_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_100_out_ap_vld,
+        cdf_99_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_99_out,
+        cdf_99_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_99_out_ap_vld,
+        cdf_98_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_98_out,
+        cdf_98_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_98_out_ap_vld,
+        cdf_97_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_97_out,
+        cdf_97_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_97_out_ap_vld,
+        cdf_96_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_96_out,
+        cdf_96_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_96_out_ap_vld,
+        cdf_95_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_95_out,
+        cdf_95_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_95_out_ap_vld,
+        cdf_94_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_94_out,
+        cdf_94_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_94_out_ap_vld,
+        cdf_93_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_93_out,
+        cdf_93_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_93_out_ap_vld,
+        cdf_92_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_92_out,
+        cdf_92_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_92_out_ap_vld,
+        cdf_91_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_91_out,
+        cdf_91_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_91_out_ap_vld,
+        cdf_90_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_90_out,
+        cdf_90_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_90_out_ap_vld,
+        cdf_89_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_89_out,
+        cdf_89_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_89_out_ap_vld,
+        cdf_88_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_88_out,
+        cdf_88_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_88_out_ap_vld,
+        cdf_87_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_87_out,
+        cdf_87_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_87_out_ap_vld,
+        cdf_86_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_86_out,
+        cdf_86_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_86_out_ap_vld,
+        cdf_85_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_85_out,
+        cdf_85_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_85_out_ap_vld,
+        cdf_84_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_84_out,
+        cdf_84_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_84_out_ap_vld,
+        cdf_83_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_83_out,
+        cdf_83_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_83_out_ap_vld,
+        cdf_82_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_82_out,
+        cdf_82_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_82_out_ap_vld,
+        cdf_81_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_81_out,
+        cdf_81_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_81_out_ap_vld,
+        cdf_80_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_80_out,
+        cdf_80_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_80_out_ap_vld,
+        cdf_79_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_79_out,
+        cdf_79_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_79_out_ap_vld,
+        cdf_78_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_78_out,
+        cdf_78_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_78_out_ap_vld,
+        cdf_77_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_77_out,
+        cdf_77_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_77_out_ap_vld,
+        cdf_76_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_76_out,
+        cdf_76_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_76_out_ap_vld,
+        cdf_75_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_75_out,
+        cdf_75_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_75_out_ap_vld,
+        cdf_74_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_74_out,
+        cdf_74_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_74_out_ap_vld,
+        cdf_73_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_73_out,
+        cdf_73_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_73_out_ap_vld,
+        cdf_72_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_72_out,
+        cdf_72_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_72_out_ap_vld,
+        cdf_71_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_71_out,
+        cdf_71_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_71_out_ap_vld,
+        cdf_70_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_70_out,
+        cdf_70_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_70_out_ap_vld,
+        cdf_69_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_69_out,
+        cdf_69_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_69_out_ap_vld,
+        cdf_68_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_68_out,
+        cdf_68_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_68_out_ap_vld,
+        cdf_67_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_67_out,
+        cdf_67_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_67_out_ap_vld,
+        cdf_66_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_66_out,
+        cdf_66_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_66_out_ap_vld,
+        cdf_65_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_65_out,
+        cdf_65_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_65_out_ap_vld,
+        cdf_64_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_64_out,
+        cdf_64_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_64_out_ap_vld,
+        cdf_63_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_63_out,
+        cdf_63_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_63_out_ap_vld,
+        cdf_62_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_62_out,
+        cdf_62_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_62_out_ap_vld,
+        cdf_61_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_61_out,
+        cdf_61_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_61_out_ap_vld,
+        cdf_60_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_60_out,
+        cdf_60_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_60_out_ap_vld,
+        cdf_59_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_59_out,
+        cdf_59_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_59_out_ap_vld,
+        cdf_58_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_58_out,
+        cdf_58_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_58_out_ap_vld,
+        cdf_57_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_57_out,
+        cdf_57_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_57_out_ap_vld,
+        cdf_56_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_56_out,
+        cdf_56_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_56_out_ap_vld,
+        cdf_55_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_55_out,
+        cdf_55_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_55_out_ap_vld,
+        cdf_54_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_54_out,
+        cdf_54_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_54_out_ap_vld,
+        cdf_53_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_53_out,
+        cdf_53_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_53_out_ap_vld,
+        cdf_52_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_52_out,
+        cdf_52_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_52_out_ap_vld,
+        cdf_51_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_51_out,
+        cdf_51_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_51_out_ap_vld,
+        cdf_50_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_50_out,
+        cdf_50_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_50_out_ap_vld,
+        cdf_49_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_49_out,
+        cdf_49_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_49_out_ap_vld,
+        cdf_48_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_48_out,
+        cdf_48_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_48_out_ap_vld,
+        cdf_47_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_47_out,
+        cdf_47_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_47_out_ap_vld,
+        cdf_46_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_46_out,
+        cdf_46_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_46_out_ap_vld,
+        cdf_45_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_45_out,
+        cdf_45_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_45_out_ap_vld,
+        cdf_44_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_44_out,
+        cdf_44_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_44_out_ap_vld,
+        cdf_43_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_43_out,
+        cdf_43_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_43_out_ap_vld,
+        cdf_42_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_42_out,
+        cdf_42_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_42_out_ap_vld,
+        cdf_41_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_41_out,
+        cdf_41_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_41_out_ap_vld,
+        cdf_40_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_40_out,
+        cdf_40_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_40_out_ap_vld,
+        cdf_39_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_39_out,
+        cdf_39_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_39_out_ap_vld,
+        cdf_38_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_38_out,
+        cdf_38_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_38_out_ap_vld,
+        cdf_37_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_37_out,
+        cdf_37_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_37_out_ap_vld,
+        cdf_36_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_36_out,
+        cdf_36_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_36_out_ap_vld,
+        cdf_35_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_35_out,
+        cdf_35_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_35_out_ap_vld,
+        cdf_34_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_34_out,
+        cdf_34_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_34_out_ap_vld,
+        cdf_33_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_33_out,
+        cdf_33_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_33_out_ap_vld,
+        cdf_32_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_32_out,
+        cdf_32_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_32_out_ap_vld,
+        cdf_31_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_31_out,
+        cdf_31_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_31_out_ap_vld,
+        cdf_30_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_30_out,
+        cdf_30_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_30_out_ap_vld,
+        cdf_29_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_29_out,
+        cdf_29_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_29_out_ap_vld,
+        cdf_28_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_28_out,
+        cdf_28_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_28_out_ap_vld,
+        cdf_27_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_27_out,
+        cdf_27_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_27_out_ap_vld,
+        cdf_26_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_26_out,
+        cdf_26_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_26_out_ap_vld,
+        cdf_25_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_25_out,
+        cdf_25_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_25_out_ap_vld,
+        cdf_24_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_24_out,
+        cdf_24_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_24_out_ap_vld,
+        cdf_23_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_23_out,
+        cdf_23_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_23_out_ap_vld,
+        cdf_22_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_22_out,
+        cdf_22_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_22_out_ap_vld,
+        cdf_21_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_21_out,
+        cdf_21_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_21_out_ap_vld,
+        cdf_20_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_20_out,
+        cdf_20_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_20_out_ap_vld,
+        cdf_19_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_19_out,
+        cdf_19_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_19_out_ap_vld,
+        cdf_18_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_18_out,
+        cdf_18_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_18_out_ap_vld,
+        cdf_17_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_17_out,
+        cdf_17_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_17_out_ap_vld,
+        cdf_16_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_16_out,
+        cdf_16_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_16_out_ap_vld,
+        cdf_15_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_15_out,
+        cdf_15_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_15_out_ap_vld,
+        cdf_14_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_14_out,
+        cdf_14_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_14_out_ap_vld,
+        cdf_13_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_13_out,
+        cdf_13_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_13_out_ap_vld,
+        cdf_12_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_12_out,
+        cdf_12_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_12_out_ap_vld,
+        cdf_11_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_11_out,
+        cdf_11_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_11_out_ap_vld,
+        cdf_10_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_10_out,
+        cdf_10_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_10_out_ap_vld,
+        cdf_9_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_9_out,
+        cdf_9_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_9_out_ap_vld,
+        cdf_8_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_8_out,
+        cdf_8_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_8_out_ap_vld,
+        cdf_7_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_7_out,
+        cdf_7_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_7_out_ap_vld,
+        cdf_6_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_6_out,
+        cdf_6_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_6_out_ap_vld,
+        cdf_5_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_5_out,
+        cdf_5_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_5_out_ap_vld,
+        cdf_4_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_4_out,
+        cdf_4_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_4_out_ap_vld,
+        cdf_3_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_3_out,
+        cdf_3_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_3_out_ap_vld,
+        cdf_2_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_2_out,
+        cdf_2_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_2_out_ap_vld,
+        cdf_1_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_1_out,
+        cdf_1_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_1_out_ap_vld,
+        cdf_out => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_out,
+        cdf_out_ap_vld => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_out_ap_vld);
 
     grp_stage_rgb2eq_Pipeline_PASS2_fu_2939 : component top_kernel_stage_rgb2eq_Pipeline_PASS2
     port map (
@@ -4861,261 +4852,261 @@ begin
         intensity_buf_ce0 => grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_intensity_buf_ce0,
         intensity_buf_q0 => intensity_buf_q0,
         histogram_reload => grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_histogram_out,
-        cdf_1_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_1_out,
-        cdf_2_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_2_out,
-        cdf_3_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_3_out,
-        cdf_4_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_4_out,
-        cdf_5_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_5_out,
-        cdf_6_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_6_out,
-        cdf_7_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_7_out,
-        cdf_8_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_8_out,
-        cdf_9_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_9_out,
-        cdf_10_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_10_out,
-        cdf_11_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_11_out,
-        cdf_12_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_12_out,
-        cdf_13_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_13_out,
-        cdf_14_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_14_out,
-        cdf_15_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_15_out,
-        cdf_16_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_16_out,
-        cdf_17_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_17_out,
-        cdf_18_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_18_out,
-        cdf_19_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_19_out,
-        cdf_20_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_20_out,
-        cdf_21_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_21_out,
-        cdf_22_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_22_out,
-        cdf_23_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_23_out,
-        cdf_24_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_24_out,
-        cdf_25_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_25_out,
-        cdf_26_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_26_out,
-        cdf_27_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_27_out,
-        cdf_28_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_28_out,
-        cdf_29_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_29_out,
-        cdf_30_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_30_out,
-        cdf_31_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_31_out,
-        cdf_32_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_32_out,
-        cdf_33_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_33_out,
-        cdf_34_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_34_out,
-        cdf_35_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_35_out,
-        cdf_36_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_36_out,
-        cdf_37_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_37_out,
-        cdf_38_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_38_out,
-        cdf_39_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_39_out,
-        cdf_40_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_40_out,
-        cdf_41_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_41_out,
-        cdf_42_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_42_out,
-        cdf_43_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_43_out,
-        cdf_44_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_44_out,
-        cdf_45_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_45_out,
-        cdf_46_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_46_out,
-        cdf_47_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_47_out,
-        cdf_48_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_48_out,
-        cdf_49_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_49_out,
-        cdf_50_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_50_out,
-        cdf_51_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_51_out,
-        cdf_52_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_52_out,
-        cdf_53_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_53_out,
-        cdf_54_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_54_out,
-        cdf_55_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_55_out,
-        cdf_56_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_56_out,
-        cdf_57_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_57_out,
-        cdf_58_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_58_out,
-        cdf_59_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_59_out,
-        cdf_60_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_60_out,
-        cdf_61_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_61_out,
-        cdf_62_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_62_out,
-        cdf_63_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_63_out,
-        cdf_64_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_64_out,
-        cdf_65_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_65_out,
-        cdf_66_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_66_out,
-        cdf_67_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_67_out,
-        cdf_68_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_68_out,
-        cdf_69_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_69_out,
-        cdf_70_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_70_out,
-        cdf_71_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_71_out,
-        cdf_72_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_72_out,
-        cdf_73_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_73_out,
-        cdf_74_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_74_out,
-        cdf_75_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_75_out,
-        cdf_76_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_76_out,
-        cdf_77_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_77_out,
-        cdf_78_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_78_out,
-        cdf_79_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_79_out,
-        cdf_80_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_80_out,
-        cdf_81_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_81_out,
-        cdf_82_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_82_out,
-        cdf_83_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_83_out,
-        cdf_84_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_84_out,
-        cdf_85_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_85_out,
-        cdf_86_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_86_out,
-        cdf_87_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_87_out,
-        cdf_88_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_88_out,
-        cdf_89_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_89_out,
-        cdf_90_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_90_out,
-        cdf_91_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_91_out,
-        cdf_92_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_92_out,
-        cdf_93_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_93_out,
-        cdf_94_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_94_out,
-        cdf_95_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_95_out,
-        cdf_96_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_96_out,
-        cdf_97_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_97_out,
-        cdf_98_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_98_out,
-        cdf_99_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_99_out,
-        cdf_100_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_100_out,
-        cdf_101_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_101_out,
-        cdf_102_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_102_out,
-        cdf_103_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_103_out,
-        cdf_104_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_104_out,
-        cdf_105_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_105_out,
-        cdf_106_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_106_out,
-        cdf_107_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_107_out,
-        cdf_108_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_108_out,
-        cdf_109_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_109_out,
-        cdf_110_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_110_out,
-        cdf_111_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_111_out,
-        cdf_112_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_112_out,
-        cdf_113_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_113_out,
-        cdf_114_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_114_out,
-        cdf_115_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_115_out,
-        cdf_116_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_116_out,
-        cdf_117_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_117_out,
-        cdf_118_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_118_out,
-        cdf_119_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_119_out,
-        cdf_120_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_120_out,
-        cdf_121_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_121_out,
-        cdf_122_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_122_out,
-        cdf_123_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_123_out,
-        cdf_124_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_124_out,
-        cdf_125_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_125_out,
-        cdf_126_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_126_out,
-        cdf_127_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_127_out,
-        cdf_128_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_128_out,
-        cdf_129_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_129_out,
-        cdf_130_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_130_out,
-        cdf_131_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_131_out,
-        cdf_132_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_132_out,
-        cdf_133_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_133_out,
-        cdf_134_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_134_out,
-        cdf_135_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_135_out,
-        cdf_136_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_136_out,
-        cdf_137_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_137_out,
-        cdf_138_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_138_out,
-        cdf_139_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_139_out,
-        cdf_140_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_140_out,
-        cdf_141_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_141_out,
-        cdf_142_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_142_out,
-        cdf_143_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_143_out,
-        cdf_144_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_144_out,
-        cdf_145_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_145_out,
-        cdf_146_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_146_out,
-        cdf_147_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_147_out,
-        cdf_148_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_148_out,
-        cdf_149_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_149_out,
-        cdf_150_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_150_out,
-        cdf_151_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_151_out,
-        cdf_152_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_152_out,
-        cdf_153_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_153_out,
-        cdf_154_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_154_out,
-        cdf_155_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_155_out,
-        cdf_156_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_156_out,
-        cdf_157_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_157_out,
-        cdf_158_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_158_out,
-        cdf_159_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_159_out,
-        cdf_160_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_160_out,
-        cdf_161_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_161_out,
-        cdf_162_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_162_out,
-        cdf_163_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_163_out,
-        cdf_164_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_164_out,
-        cdf_165_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_165_out,
-        cdf_166_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_166_out,
-        cdf_167_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_167_out,
-        cdf_168_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_168_out,
-        cdf_169_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_169_out,
-        cdf_170_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_170_out,
-        cdf_171_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_171_out,
-        cdf_172_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_172_out,
-        cdf_173_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_173_out,
-        cdf_174_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_174_out,
-        cdf_175_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_175_out,
-        cdf_176_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_176_out,
-        cdf_177_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_177_out,
-        cdf_178_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_178_out,
-        cdf_179_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_179_out,
-        cdf_180_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_180_out,
-        cdf_181_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_181_out,
-        cdf_182_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_182_out,
-        cdf_183_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_183_out,
-        cdf_184_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_184_out,
-        cdf_185_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_185_out,
-        cdf_186_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_186_out,
-        cdf_187_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_187_out,
-        cdf_188_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_188_out,
-        cdf_189_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_189_out,
-        cdf_190_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_190_out,
-        cdf_191_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_191_out,
-        cdf_192_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_192_out,
-        cdf_193_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_193_out,
-        cdf_194_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_194_out,
-        cdf_195_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_195_out,
-        cdf_196_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_196_out,
-        cdf_197_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_197_out,
-        cdf_198_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_198_out,
-        cdf_199_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_199_out,
-        cdf_200_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_200_out,
-        cdf_201_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_201_out,
-        cdf_202_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_202_out,
-        cdf_203_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_203_out,
-        cdf_204_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_204_out,
-        cdf_205_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_205_out,
-        cdf_206_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_206_out,
-        cdf_207_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_207_out,
-        cdf_208_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_208_out,
-        cdf_209_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_209_out,
-        cdf_210_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_210_out,
-        cdf_211_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_211_out,
-        cdf_212_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_212_out,
-        cdf_213_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_213_out,
-        cdf_214_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_214_out,
-        cdf_215_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_215_out,
-        cdf_216_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_216_out,
-        cdf_217_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_217_out,
-        cdf_218_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_218_out,
-        cdf_219_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_219_out,
-        cdf_220_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_220_out,
-        cdf_221_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_221_out,
-        cdf_222_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_222_out,
-        cdf_223_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_223_out,
-        cdf_224_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_224_out,
-        cdf_225_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_225_out,
-        cdf_226_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_226_out,
-        cdf_227_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_227_out,
-        cdf_228_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_228_out,
-        cdf_229_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_229_out,
-        cdf_230_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_230_out,
-        cdf_231_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_231_out,
-        cdf_232_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_232_out,
-        cdf_233_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_233_out,
-        cdf_234_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_234_out,
-        cdf_235_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_235_out,
-        cdf_236_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_236_out,
-        cdf_237_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_237_out,
-        cdf_238_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_238_out,
-        cdf_239_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_239_out,
-        cdf_240_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_240_out,
-        cdf_241_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_241_out,
-        cdf_242_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_242_out,
-        cdf_243_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_243_out,
-        cdf_244_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_244_out,
-        cdf_245_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_245_out,
-        cdf_246_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_246_out,
-        cdf_247_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_247_out,
-        cdf_248_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_248_out,
-        cdf_249_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_249_out,
-        cdf_250_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_250_out,
-        cdf_251_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_251_out,
-        cdf_252_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_252_out,
-        cdf_253_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_253_out,
-        cdf_254_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_254_out,
-        cdf_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_cdf_out,
+        cdf_1_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_1_out,
+        cdf_2_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_2_out,
+        cdf_3_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_3_out,
+        cdf_4_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_4_out,
+        cdf_5_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_5_out,
+        cdf_6_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_6_out,
+        cdf_7_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_7_out,
+        cdf_8_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_8_out,
+        cdf_9_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_9_out,
+        cdf_10_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_10_out,
+        cdf_11_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_11_out,
+        cdf_12_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_12_out,
+        cdf_13_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_13_out,
+        cdf_14_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_14_out,
+        cdf_15_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_15_out,
+        cdf_16_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_16_out,
+        cdf_17_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_17_out,
+        cdf_18_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_18_out,
+        cdf_19_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_19_out,
+        cdf_20_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_20_out,
+        cdf_21_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_21_out,
+        cdf_22_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_22_out,
+        cdf_23_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_23_out,
+        cdf_24_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_24_out,
+        cdf_25_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_25_out,
+        cdf_26_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_26_out,
+        cdf_27_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_27_out,
+        cdf_28_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_28_out,
+        cdf_29_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_29_out,
+        cdf_30_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_30_out,
+        cdf_31_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_31_out,
+        cdf_32_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_32_out,
+        cdf_33_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_33_out,
+        cdf_34_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_34_out,
+        cdf_35_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_35_out,
+        cdf_36_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_36_out,
+        cdf_37_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_37_out,
+        cdf_38_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_38_out,
+        cdf_39_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_39_out,
+        cdf_40_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_40_out,
+        cdf_41_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_41_out,
+        cdf_42_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_42_out,
+        cdf_43_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_43_out,
+        cdf_44_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_44_out,
+        cdf_45_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_45_out,
+        cdf_46_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_46_out,
+        cdf_47_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_47_out,
+        cdf_48_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_48_out,
+        cdf_49_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_49_out,
+        cdf_50_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_50_out,
+        cdf_51_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_51_out,
+        cdf_52_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_52_out,
+        cdf_53_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_53_out,
+        cdf_54_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_54_out,
+        cdf_55_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_55_out,
+        cdf_56_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_56_out,
+        cdf_57_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_57_out,
+        cdf_58_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_58_out,
+        cdf_59_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_59_out,
+        cdf_60_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_60_out,
+        cdf_61_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_61_out,
+        cdf_62_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_62_out,
+        cdf_63_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_63_out,
+        cdf_64_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_64_out,
+        cdf_65_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_65_out,
+        cdf_66_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_66_out,
+        cdf_67_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_67_out,
+        cdf_68_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_68_out,
+        cdf_69_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_69_out,
+        cdf_70_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_70_out,
+        cdf_71_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_71_out,
+        cdf_72_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_72_out,
+        cdf_73_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_73_out,
+        cdf_74_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_74_out,
+        cdf_75_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_75_out,
+        cdf_76_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_76_out,
+        cdf_77_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_77_out,
+        cdf_78_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_78_out,
+        cdf_79_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_79_out,
+        cdf_80_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_80_out,
+        cdf_81_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_81_out,
+        cdf_82_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_82_out,
+        cdf_83_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_83_out,
+        cdf_84_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_84_out,
+        cdf_85_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_85_out,
+        cdf_86_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_86_out,
+        cdf_87_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_87_out,
+        cdf_88_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_88_out,
+        cdf_89_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_89_out,
+        cdf_90_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_90_out,
+        cdf_91_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_91_out,
+        cdf_92_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_92_out,
+        cdf_93_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_93_out,
+        cdf_94_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_94_out,
+        cdf_95_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_95_out,
+        cdf_96_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_96_out,
+        cdf_97_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_97_out,
+        cdf_98_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_98_out,
+        cdf_99_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_99_out,
+        cdf_100_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_100_out,
+        cdf_101_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_101_out,
+        cdf_102_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_102_out,
+        cdf_103_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_103_out,
+        cdf_104_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_104_out,
+        cdf_105_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_105_out,
+        cdf_106_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_106_out,
+        cdf_107_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_107_out,
+        cdf_108_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_108_out,
+        cdf_109_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_109_out,
+        cdf_110_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_110_out,
+        cdf_111_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_111_out,
+        cdf_112_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_112_out,
+        cdf_113_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_113_out,
+        cdf_114_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_114_out,
+        cdf_115_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_115_out,
+        cdf_116_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_116_out,
+        cdf_117_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_117_out,
+        cdf_118_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_118_out,
+        cdf_119_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_119_out,
+        cdf_120_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_120_out,
+        cdf_121_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_121_out,
+        cdf_122_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_122_out,
+        cdf_123_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_123_out,
+        cdf_124_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_124_out,
+        cdf_125_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_125_out,
+        cdf_126_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_126_out,
+        cdf_127_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_127_out,
+        cdf_128_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_128_out,
+        cdf_129_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_129_out,
+        cdf_130_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_130_out,
+        cdf_131_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_131_out,
+        cdf_132_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_132_out,
+        cdf_133_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_133_out,
+        cdf_134_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_134_out,
+        cdf_135_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_135_out,
+        cdf_136_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_136_out,
+        cdf_137_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_137_out,
+        cdf_138_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_138_out,
+        cdf_139_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_139_out,
+        cdf_140_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_140_out,
+        cdf_141_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_141_out,
+        cdf_142_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_142_out,
+        cdf_143_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_143_out,
+        cdf_144_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_144_out,
+        cdf_145_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_145_out,
+        cdf_146_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_146_out,
+        cdf_147_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_147_out,
+        cdf_148_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_148_out,
+        cdf_149_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_149_out,
+        cdf_150_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_150_out,
+        cdf_151_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_151_out,
+        cdf_152_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_152_out,
+        cdf_153_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_153_out,
+        cdf_154_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_154_out,
+        cdf_155_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_155_out,
+        cdf_156_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_156_out,
+        cdf_157_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_157_out,
+        cdf_158_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_158_out,
+        cdf_159_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_159_out,
+        cdf_160_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_160_out,
+        cdf_161_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_161_out,
+        cdf_162_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_162_out,
+        cdf_163_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_163_out,
+        cdf_164_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_164_out,
+        cdf_165_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_165_out,
+        cdf_166_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_166_out,
+        cdf_167_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_167_out,
+        cdf_168_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_168_out,
+        cdf_169_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_169_out,
+        cdf_170_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_170_out,
+        cdf_171_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_171_out,
+        cdf_172_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_172_out,
+        cdf_173_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_173_out,
+        cdf_174_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_174_out,
+        cdf_175_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_175_out,
+        cdf_176_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_176_out,
+        cdf_177_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_177_out,
+        cdf_178_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_178_out,
+        cdf_179_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_179_out,
+        cdf_180_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_180_out,
+        cdf_181_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_181_out,
+        cdf_182_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_182_out,
+        cdf_183_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_183_out,
+        cdf_184_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_184_out,
+        cdf_185_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_185_out,
+        cdf_186_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_186_out,
+        cdf_187_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_187_out,
+        cdf_188_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_188_out,
+        cdf_189_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_189_out,
+        cdf_190_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_190_out,
+        cdf_191_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_191_out,
+        cdf_192_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_192_out,
+        cdf_193_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_193_out,
+        cdf_194_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_194_out,
+        cdf_195_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_195_out,
+        cdf_196_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_196_out,
+        cdf_197_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_197_out,
+        cdf_198_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_198_out,
+        cdf_199_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_199_out,
+        cdf_200_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_200_out,
+        cdf_201_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_201_out,
+        cdf_202_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_202_out,
+        cdf_203_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_203_out,
+        cdf_204_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_204_out,
+        cdf_205_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_205_out,
+        cdf_206_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_206_out,
+        cdf_207_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_207_out,
+        cdf_208_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_208_out,
+        cdf_209_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_209_out,
+        cdf_210_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_210_out,
+        cdf_211_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_211_out,
+        cdf_212_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_212_out,
+        cdf_213_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_213_out,
+        cdf_214_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_214_out,
+        cdf_215_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_215_out,
+        cdf_216_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_216_out,
+        cdf_217_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_217_out,
+        cdf_218_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_218_out,
+        cdf_219_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_219_out,
+        cdf_220_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_220_out,
+        cdf_221_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_221_out,
+        cdf_222_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_222_out,
+        cdf_223_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_223_out,
+        cdf_224_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_224_out,
+        cdf_225_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_225_out,
+        cdf_226_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_226_out,
+        cdf_227_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_227_out,
+        cdf_228_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_228_out,
+        cdf_229_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_229_out,
+        cdf_230_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_230_out,
+        cdf_231_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_231_out,
+        cdf_232_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_232_out,
+        cdf_233_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_233_out,
+        cdf_234_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_234_out,
+        cdf_235_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_235_out,
+        cdf_236_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_236_out,
+        cdf_237_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_237_out,
+        cdf_238_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_238_out,
+        cdf_239_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_239_out,
+        cdf_240_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_240_out,
+        cdf_241_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_241_out,
+        cdf_242_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_242_out,
+        cdf_243_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_243_out,
+        cdf_244_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_244_out,
+        cdf_245_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_245_out,
+        cdf_246_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_246_out,
+        cdf_247_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_247_out,
+        cdf_248_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_248_out,
+        cdf_249_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_249_out,
+        cdf_250_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_250_out,
+        cdf_251_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_251_out,
+        cdf_252_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_252_out,
+        cdf_253_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_253_out,
+        cdf_254_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_254_out,
+        cdf_reload => grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_cdf_out,
         cdf_min => cdf_min_reg_9184,
         sub => sub_reg_9190,
         grp_fu_3204_p_din0 => grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_din0,
@@ -5134,7 +5125,7 @@ begin
         grp_fu_9964_p_dout0 => grp_fu_9964_p1,
         grp_fu_9964_p_ce => grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_9964_p_ce);
 
-    faddfsub_32ns_32ns_32_10_full_dsp_1_U1082 : component top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1
+    fsub_32ns_32ns_32_10_full_dsp_1_U1076 : component top_kernel_fsub_32ns_32ns_32_10_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 10,
@@ -5146,11 +5137,10 @@ begin
         reset => ap_rst,
         din0 => grp_fu_3204_p0,
         din1 => grp_fu_3204_p1,
-        opcode => grp_fu_3204_opcode,
         ce => grp_fu_3204_ce,
         dout => grp_fu_3204_p2);
 
-    sitofp_32ns_32_7_no_dsp_1_U1083 : component top_kernel_sitofp_32ns_32_7_no_dsp_1
+    sitofp_32ns_32_7_no_dsp_1_U1077 : component top_kernel_sitofp_32ns_32_7_no_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 7,
@@ -5163,7 +5153,7 @@ begin
         ce => grp_fu_3209_ce,
         dout => grp_fu_3209_p1);
 
-    fmul_32ns_32ns_32_7_max_dsp_1_U1084 : component top_kernel_fmul_32ns_32ns_32_7_max_dsp_1
+    fmul_32ns_32ns_32_7_max_dsp_1_U1078 : component top_kernel_fmul_32ns_32ns_32_7_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 7,
@@ -5178,7 +5168,7 @@ begin
         ce => grp_fu_9960_ce,
         dout => grp_fu_9960_p2);
 
-    fpext_32ns_64_2_no_dsp_1_U1085 : component top_kernel_fpext_32ns_64_2_no_dsp_1
+    fpext_32ns_64_2_no_dsp_1_U1079 : component top_kernel_fpext_32ns_64_2_no_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -5271,16 +5261,16 @@ begin
     end process;
 
 
-    grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_start_reg_assign_proc : process(ap_clk)
+    grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_start_reg <= ap_const_logic_0;
+                grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-                    grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_ready = ap_const_logic_1)) then 
-                    grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_start_reg <= ap_const_logic_0;
+                    grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_ready = ap_const_logic_1)) then 
+                    grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -5329,7 +5319,7 @@ begin
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, ap_block_state1, ap_block_state1_io, grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_ap_done, grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_ap_done, grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_done, grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_ap_done, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state14, ap_CS_fsm_state31)
+    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, ap_block_state1, ap_block_state1_io, grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_ap_done, grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_ap_done, grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_done, grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_ap_done, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state14, ap_CS_fsm_state31)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -5371,7 +5361,7 @@ begin
             when ap_ST_fsm_state13 => 
                 ap_NS_fsm <= ap_ST_fsm_state14;
             when ap_ST_fsm_state14 => 
-                if (((grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state14))) then
+                if (((grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state14))) then
                     ap_NS_fsm <= ap_ST_fsm_state15;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state14;
@@ -5457,9 +5447,9 @@ begin
 
     ap_ST_fsm_state13_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state14_blk_assign_proc : process(grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_done)
+    ap_ST_fsm_state14_blk_assign_proc : process(grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_done)
     begin
-        if ((grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_done = ap_const_logic_0)) then 
+        if ((grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state14_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state14_blk <= ap_const_logic_0;
@@ -5576,38 +5566,20 @@ begin
     end process;
 
 
-    grp_fu_3204_ce_assign_proc : process(grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_ce, grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_ce, ap_CS_fsm_state10, ap_CS_fsm_state31)
+    grp_fu_3204_ce_assign_proc : process(grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_ce, ap_CS_fsm_state31)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
             grp_fu_3204_ce <= grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_ce;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            grp_fu_3204_ce <= grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_ce;
         else 
             grp_fu_3204_ce <= ap_const_logic_1;
         end if; 
     end process;
 
 
-    grp_fu_3204_opcode_assign_proc : process(grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_opcode, grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_opcode, ap_CS_fsm_state10, ap_CS_fsm_state31, ap_CS_fsm_state20)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            grp_fu_3204_opcode <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_opcode),2));
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            grp_fu_3204_opcode <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_opcode),2));
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state20)) then 
-            grp_fu_3204_opcode <= ap_const_lv2_1;
-        else 
-            grp_fu_3204_opcode <= "XX";
-        end if; 
-    end process;
-
-
-    grp_fu_3204_p0_assign_proc : process(grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_din0, grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_din0, ap_CS_fsm_state10, ap_CS_fsm_state31, ap_CS_fsm_state20)
+    grp_fu_3204_p0_assign_proc : process(grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_din0, ap_CS_fsm_state31, ap_CS_fsm_state20)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
             grp_fu_3204_p0 <= grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_din0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            grp_fu_3204_p0 <= grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_din0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state20)) then 
             grp_fu_3204_p0 <= ap_const_lv32_45800000;
         else 
@@ -5616,12 +5588,10 @@ begin
     end process;
 
 
-    grp_fu_3204_p1_assign_proc : process(cdf_min_reg_9184, grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_din1, grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_din1, ap_CS_fsm_state10, ap_CS_fsm_state31, ap_CS_fsm_state20)
+    grp_fu_3204_p1_assign_proc : process(cdf_min_reg_9184, grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_din1, ap_CS_fsm_state31, ap_CS_fsm_state20)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
             grp_fu_3204_p1 <= grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3204_p_din1;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            grp_fu_3204_p1 <= grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3204_p_din1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state20)) then 
             grp_fu_3204_p1 <= cdf_min_reg_9184;
         else 
@@ -5630,11 +5600,13 @@ begin
     end process;
 
 
-    grp_fu_3209_ce_assign_proc : process(ap_CS_fsm_state19, grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_done, grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3209_p_ce, ap_CS_fsm_state13, ap_CS_fsm_state14, ap_CS_fsm_state31, ap_CS_fsm_state15, ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18)
+    grp_fu_3209_ce_assign_proc : process(ap_CS_fsm_state19, grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3209_p_ce, grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_done, grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3209_p_ce, ap_CS_fsm_state10, ap_CS_fsm_state13, ap_CS_fsm_state14, ap_CS_fsm_state31, ap_CS_fsm_state15, ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
             grp_fu_3209_ce <= grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3209_p_ce;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state16) or (ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state13) or (ap_const_logic_1 = ap_CS_fsm_state19) or ((grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state14)))) then 
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
+            grp_fu_3209_ce <= grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3209_p_ce;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state16) or (ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state13) or (ap_const_logic_1 = ap_CS_fsm_state19) or ((grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state14)))) then 
             grp_fu_3209_ce <= ap_const_logic_1;
         else 
             grp_fu_3209_ce <= ap_const_logic_0;
@@ -5642,10 +5614,12 @@ begin
     end process;
 
 
-    grp_fu_3209_p0_assign_proc : process(grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_histogram_out, grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3209_p_din0, ap_CS_fsm_state13, ap_CS_fsm_state31)
+    grp_fu_3209_p0_assign_proc : process(grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3209_p_din0, grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_histogram_out, grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3209_p_din0, ap_CS_fsm_state10, ap_CS_fsm_state13, ap_CS_fsm_state31)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
             grp_fu_3209_p0 <= grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_grp_fu_3209_p_din0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
+            grp_fu_3209_p0 <= grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_grp_fu_3209_p_din0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
             grp_fu_3209_p0 <= grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_histogram_out;
         else 
@@ -5722,7 +5696,7 @@ begin
     grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_ap_start <= grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_ap_start_reg;
     grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_ap_start <= grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_ap_start_reg;
     grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_ap_start <= grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_ap_start_reg;
-    grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_start <= grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_start_reg;
+    grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_start <= grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_start_reg;
 
     intensity_buf_address0_assign_proc : process(grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_intensity_buf_address0, grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_intensity_buf_address0, grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_intensity_buf_address0, ap_CS_fsm_state10, ap_CS_fsm_state12, ap_CS_fsm_state31)
     begin

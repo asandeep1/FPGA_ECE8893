@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'top_kernel'
 ================================================================
-* Date:           Fri Apr 10 20:50:41 2026
+* Date:           Sat Apr 11 20:28:25 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |    Interval   | Pipeline |
     |   min   |   max   |    min    |    max    |  min  |  max  |   Type   |
     +---------+---------+-----------+-----------+-------+-------+----------+
-    |    12701|    12701|  50.804 us|  50.804 us|  12702|  12702|  dataflow|
+    |    12684|    12684|  50.736 us|  50.736 us|  12685|  12685|  dataflow|
     +---------+---------+-----------+-----------+-------+-------+----------+
 
     + Detail: 
@@ -86,49 +86,49 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 2.46>
-ST_1 : Operation 12 [1/1] (1.00ns)   --->   "%out_r_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %out_r" [top.cpp:378]   --->   Operation 12 'read' 'out_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 13 [1/1] (1.00ns)   --->   "%in_b_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %in_b" [top.cpp:378]   --->   Operation 13 'read' 'in_b_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 14 [1/1] (1.00ns)   --->   "%in_g_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %in_g" [top.cpp:378]   --->   Operation 14 'read' 'in_g_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 15 [1/1] (1.00ns)   --->   "%in_r_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %in_r" [top.cpp:378]   --->   Operation 15 'read' 'in_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%out_r_c = alloca i64 1" [top.cpp:378]   --->   Operation 16 'alloca' 'out_r_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.14> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 6> <FIFO>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%equalized_stream = alloca i64 1" [top.cpp:368]   --->   Operation 17 'alloca' 'equalized_stream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 256> <FIFO>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%gaussian_stream = alloca i64 1" [top.cpp:369]   --->   Operation 18 'alloca' 'gaussian_stream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 256> <FIFO>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%bilateral_stream = alloca i64 1" [top.cpp:370]   --->   Operation 19 'alloca' 'bilateral_stream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 256> <FIFO>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%morphology_stream = alloca i64 1" [top.cpp:371]   --->   Operation 20 'alloca' 'morphology_stream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 256> <FIFO>
-ST_1 : Operation 21 [1/1] (1.46ns)   --->   "%call_ln378 = call void @entry_proc, i64 %out_r_read, i64 %out_r_c" [top.cpp:378]   --->   Operation 21 'call' 'call_ln378' <Predicate = true> <Delay = 1.46> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 12 [1/1] (1.00ns)   --->   "%out_r_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %out_r" [top.cpp:405]   --->   Operation 12 'read' 'out_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 13 [1/1] (1.00ns)   --->   "%in_b_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %in_b" [top.cpp:405]   --->   Operation 13 'read' 'in_b_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 14 [1/1] (1.00ns)   --->   "%in_g_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %in_g" [top.cpp:405]   --->   Operation 14 'read' 'in_g_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 15 [1/1] (1.00ns)   --->   "%in_r_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %in_r" [top.cpp:405]   --->   Operation 15 'read' 'in_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%out_r_c = alloca i64 1" [top.cpp:405]   --->   Operation 16 'alloca' 'out_r_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.14> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 6> <FIFO>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%equalized_stream = alloca i64 1" [top.cpp:395]   --->   Operation 17 'alloca' 'equalized_stream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 256> <FIFO>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%gaussian_stream = alloca i64 1" [top.cpp:396]   --->   Operation 18 'alloca' 'gaussian_stream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 256> <FIFO>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%bilateral_stream = alloca i64 1" [top.cpp:397]   --->   Operation 19 'alloca' 'bilateral_stream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 256> <FIFO>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%morphology_stream = alloca i64 1" [top.cpp:398]   --->   Operation 20 'alloca' 'morphology_stream' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 256> <FIFO>
+ST_1 : Operation 21 [1/1] (1.46ns)   --->   "%call_ln405 = call void @entry_proc, i64 %out_r_read, i64 %out_r_c" [top.cpp:405]   --->   Operation 21 'call' 'call_ln405' <Predicate = true> <Delay = 1.46> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 2.92>
-ST_2 : Operation 22 [2/2] (2.92ns)   --->   "%call_ln381 = call void @stage_rgb2eq, i32 %gmem0, i64 %in_r_read, i32 %gmem1, i64 %in_g_read, i32 %gmem2, i64 %in_b_read, i14 %equalized_stream" [top.cpp:381]   --->   Operation 22 'call' 'call_ln381' <Predicate = true> <Delay = 2.92> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 22 [2/2] (2.92ns)   --->   "%call_ln408 = call void @stage_rgb2eq, i32 %gmem0, i64 %in_r_read, i32 %gmem1, i64 %in_g_read, i32 %gmem2, i64 %in_b_read, i12 %equalized_stream" [top.cpp:408]   --->   Operation 22 'call' 'call_ln408' <Predicate = true> <Delay = 2.92> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 23 [1/2] (0.00ns)   --->   "%call_ln381 = call void @stage_rgb2eq, i32 %gmem0, i64 %in_r_read, i32 %gmem1, i64 %in_g_read, i32 %gmem2, i64 %in_b_read, i14 %equalized_stream" [top.cpp:381]   --->   Operation 23 'call' 'call_ln381' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 23 [1/2] (0.00ns)   --->   "%call_ln408 = call void @stage_rgb2eq, i32 %gmem0, i64 %in_r_read, i32 %gmem1, i64 %in_g_read, i32 %gmem2, i64 %in_b_read, i12 %equalized_stream" [top.cpp:408]   --->   Operation 23 'call' 'call_ln408' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 24 [2/2] (0.00ns)   --->   "%call_ln384 = call void @stage_gaussian, i14 %equalized_stream, i14 %gaussian_stream" [top.cpp:384]   --->   Operation 24 'call' 'call_ln384' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 24 [2/2] (0.00ns)   --->   "%call_ln411 = call void @stage_gaussian, i12 %equalized_stream, i12 %gaussian_stream" [top.cpp:411]   --->   Operation 24 'call' 'call_ln411' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 25 [1/2] (0.00ns)   --->   "%call_ln384 = call void @stage_gaussian, i14 %equalized_stream, i14 %gaussian_stream" [top.cpp:384]   --->   Operation 25 'call' 'call_ln384' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 25 [1/2] (0.00ns)   --->   "%call_ln411 = call void @stage_gaussian, i12 %equalized_stream, i12 %gaussian_stream" [top.cpp:411]   --->   Operation 25 'call' 'call_ln411' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 26 [2/2] (0.00ns)   --->   "%call_ln387 = call void @stage_bilateral, i14 %gaussian_stream, i14 %bilateral_stream" [top.cpp:387]   --->   Operation 26 'call' 'call_ln387' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 26 [2/2] (0.00ns)   --->   "%call_ln414 = call void @stage_bilateral, i12 %gaussian_stream, i12 %bilateral_stream" [top.cpp:414]   --->   Operation 26 'call' 'call_ln414' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 27 [1/2] (0.00ns)   --->   "%call_ln387 = call void @stage_bilateral, i14 %gaussian_stream, i14 %bilateral_stream" [top.cpp:387]   --->   Operation 27 'call' 'call_ln387' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 27 [1/2] (0.00ns)   --->   "%call_ln414 = call void @stage_bilateral, i12 %gaussian_stream, i12 %bilateral_stream" [top.cpp:414]   --->   Operation 27 'call' 'call_ln414' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 28 [2/2] (0.00ns)   --->   "%call_ln390 = call void @stage_morphology, i14 %bilateral_stream, i14 %morphology_stream" [top.cpp:390]   --->   Operation 28 'call' 'call_ln390' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 28 [2/2] (0.00ns)   --->   "%call_ln417 = call void @stage_morphology, i12 %bilateral_stream, i12 %morphology_stream" [top.cpp:417]   --->   Operation 28 'call' 'call_ln417' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 29 [1/2] (0.00ns)   --->   "%call_ln390 = call void @stage_morphology, i14 %bilateral_stream, i14 %morphology_stream" [top.cpp:390]   --->   Operation 29 'call' 'call_ln390' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 29 [1/2] (0.00ns)   --->   "%call_ln417 = call void @stage_morphology, i12 %bilateral_stream, i12 %morphology_stream" [top.cpp:417]   --->   Operation 29 'call' 'call_ln417' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 10 <SV = 9> <Delay = 0.00>
-ST_10 : Operation 30 [2/2] (0.00ns)   --->   "%call_ln393 = call void @Loop_VITIS_LOOP_393_1_proc, i64 %out_r_c, i32 %gmem3, i14 %morphology_stream" [top.cpp:393]   --->   Operation 30 'call' 'call_ln393' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 30 [2/2] (0.00ns)   --->   "%call_ln420 = call void @write_output, i12 %morphology_stream, i32 %gmem3, i64 %out_r_c" [top.cpp:420]   --->   Operation 30 'call' 'call_ln420' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 0.00>
-ST_11 : Operation 31 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @out_r_c_str, i32 1, void @p_str, void @p_str, i32 6, i32 0, i64 %out_r_c, i64 %out_r_c" [top.cpp:378]   --->   Operation 31 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln378 = specinterface void @_ssdm_op_SpecInterface, i64 %out_r_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0" [top.cpp:378]   --->   Operation 32 'specinterface' 'specinterface_ln378' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 33 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln378 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_2" [top.cpp:378]   --->   Operation 33 'specdataflowpipeline' 'specdataflowpipeline_ln378' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 34 [1/1] (0.00ns)   --->   "%spectopmodule_ln360 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_6" [top.cpp:360]   --->   Operation 34 'spectopmodule' 'spectopmodule_ln360' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 31 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @out_r_c_str, i32 1, void @p_str, void @p_str, i32 6, i32 0, i64 %out_r_c, i64 %out_r_c" [top.cpp:405]   --->   Operation 31 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln405 = specinterface void @_ssdm_op_SpecInterface, i64 %out_r_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0" [top.cpp:405]   --->   Operation 32 'specinterface' 'specinterface_ln405' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 33 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln405 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_2" [top.cpp:405]   --->   Operation 33 'specdataflowpipeline' 'specdataflowpipeline_ln405' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 34 [1/1] (0.00ns)   --->   "%spectopmodule_ln387 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_6" [top.cpp:387]   --->   Operation 34 'spectopmodule' 'spectopmodule_ln387' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem0, void @empty_16, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_1, void @empty_12, void @empty_2, i32 16, i32 16, i32 256, i32 16, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 36 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %gmem0"   --->   Operation 36 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem1, void @empty_16, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_0, void @empty_12, void @empty_2, i32 16, i32 16, i32 256, i32 16, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
@@ -146,16 +146,16 @@ ST_11 : Operation 48 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface
 ST_11 : Operation 49 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %out_r, void @empty_13, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_22, void @empty_14, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_5, i32 4294967295, i32 0, i32 0"   --->   Operation 49 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 50 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %out_r, void @empty_20, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_5, i32 4294967295, i32 0, i32 0"   --->   Operation 50 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 51 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_13, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_22, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 51 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 52 [1/1] (0.00ns)   --->   "%empty_56 = specchannel i32 @_ssdm_op_SpecChannel, void @equalized_stream_str, i32 1, void @p_str, void @p_str, i32 256, i32 256, i14 %equalized_stream, i14 %equalized_stream"   --->   Operation 52 'specchannel' 'empty_56' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 53 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %equalized_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 53 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 54 [1/1] (0.00ns)   --->   "%empty_57 = specchannel i32 @_ssdm_op_SpecChannel, void @gaussian_stream_str, i32 1, void @p_str, void @p_str, i32 256, i32 256, i14 %gaussian_stream, i14 %gaussian_stream"   --->   Operation 54 'specchannel' 'empty_57' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 55 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %gaussian_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 55 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 56 [1/1] (0.00ns)   --->   "%empty_58 = specchannel i32 @_ssdm_op_SpecChannel, void @bilateral_stream_str, i32 1, void @p_str, void @p_str, i32 256, i32 256, i14 %bilateral_stream, i14 %bilateral_stream"   --->   Operation 56 'specchannel' 'empty_58' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %bilateral_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 58 [1/1] (0.00ns)   --->   "%empty_59 = specchannel i32 @_ssdm_op_SpecChannel, void @morphology_stream_str, i32 1, void @p_str, void @p_str, i32 256, i32 256, i14 %morphology_stream, i14 %morphology_stream"   --->   Operation 58 'specchannel' 'empty_59' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %morphology_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 60 [1/2] (0.00ns)   --->   "%call_ln393 = call void @Loop_VITIS_LOOP_393_1_proc, i64 %out_r_c, i32 %gmem3, i14 %morphology_stream" [top.cpp:393]   --->   Operation 60 'call' 'call_ln393' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_11 : Operation 61 [1/1] (0.00ns)   --->   "%ret_ln398 = ret" [top.cpp:398]   --->   Operation 61 'ret' 'ret_ln398' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 52 [1/1] (0.00ns)   --->   "%empty_62 = specchannel i32 @_ssdm_op_SpecChannel, void @equalized_stream_str, i32 1, void @p_str, void @p_str, i32 256, i32 256, i12 %equalized_stream, i12 %equalized_stream"   --->   Operation 52 'specchannel' 'empty_62' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 53 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %equalized_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 53 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 54 [1/1] (0.00ns)   --->   "%empty_63 = specchannel i32 @_ssdm_op_SpecChannel, void @gaussian_stream_str, i32 1, void @p_str, void @p_str, i32 256, i32 256, i12 %gaussian_stream, i12 %gaussian_stream"   --->   Operation 54 'specchannel' 'empty_63' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 55 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %gaussian_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 55 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 56 [1/1] (0.00ns)   --->   "%empty_64 = specchannel i32 @_ssdm_op_SpecChannel, void @bilateral_stream_str, i32 1, void @p_str, void @p_str, i32 256, i32 256, i12 %bilateral_stream, i12 %bilateral_stream"   --->   Operation 56 'specchannel' 'empty_64' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %bilateral_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 58 [1/1] (0.00ns)   --->   "%empty_65 = specchannel i32 @_ssdm_op_SpecChannel, void @morphology_stream_str, i32 1, void @p_str, void @p_str, i32 256, i32 256, i12 %morphology_stream, i12 %morphology_stream"   --->   Operation 58 'specchannel' 'empty_65' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %morphology_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 60 [1/2] (0.00ns)   --->   "%call_ln420 = call void @write_output, i12 %morphology_stream, i32 %gmem3, i64 %out_r_c" [top.cpp:420]   --->   Operation 60 'call' 'call_ln420' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 61 [1/1] (0.00ns)   --->   "%ret_ln421 = ret" [top.cpp:421]   --->   Operation 61 'ret' 'ret_ln421' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -165,12 +165,12 @@ Target clock period: 4.000ns, clock uncertainty: 1.080ns.
 
  <State 1>: 2.460ns
 The critical path consists of the following:
-	s_axi read operation ('out_r_read', top.cpp:378) on port 'out_r' (top.cpp:378) [9]  (1.000 ns)
-	'call' operation 0 bit ('call_ln378', top.cpp:378) to 'entry_proc' [47]  (1.460 ns)
+	s_axi read operation ('out_r_read', top.cpp:405) on port 'out_r' (top.cpp:405) [9]  (1.000 ns)
+	'call' operation 0 bit ('call_ln405', top.cpp:405) to 'entry_proc' [47]  (1.460 ns)
 
  <State 2>: 2.920ns
 The critical path consists of the following:
-	'call' operation 0 bit ('call_ln381', top.cpp:381) to 'stage_rgb2eq' [48]  (2.920 ns)
+	'call' operation 0 bit ('call_ln408', top.cpp:408) to 'stage_rgb2eq' [48]  (2.920 ns)
 
  <State 3>: 0.000ns
 The critical path consists of the following:

@@ -263,7 +263,7 @@ end;
 architecture behav of top_kernel is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "top_kernel_top_kernel,hls_ip_2025_1_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=4.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.320000,HLS_SYN_LAT=12701,HLS_SYN_TPT=12702,HLS_SYN_MEM=86,HLS_SYN_DSP=0,HLS_SYN_FF=66546,HLS_SYN_LUT=71486,HLS_VERSION=2025_1_1}";
+    "top_kernel_top_kernel,hls_ip_2025_1_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu3eg-sbva484-1-e,HLS_INPUT_CLOCK=4.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.320000,HLS_SYN_LAT=12684,HLS_SYN_TPT=12685,HLS_SYN_MEM=85,HLS_SYN_DSP=0,HLS_SYN_FF=64519,HLS_SYN_LUT=71789,HLS_VERSION=2025_1_1}";
     constant C_S_AXI_DATA_WIDTH : INTEGER := 32;
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant C_M_AXI_DATA_WIDTH : INTEGER := 32;
@@ -440,7 +440,7 @@ architecture behav of top_kernel is
     signal stage_rgb2eq_U0_m_axi_gmem2_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
     signal stage_rgb2eq_U0_m_axi_gmem2_0_RREADY : STD_LOGIC;
     signal stage_rgb2eq_U0_m_axi_gmem2_0_BREADY : STD_LOGIC;
-    signal stage_rgb2eq_U0_equalized_stream_din : STD_LOGIC_VECTOR (13 downto 0);
+    signal stage_rgb2eq_U0_equalized_stream_din : STD_LOGIC_VECTOR (11 downto 0);
     signal stage_rgb2eq_U0_equalized_stream_write : STD_LOGIC;
     signal stage_rgb2eq_U0_equalized_stream_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
     signal stage_rgb2eq_U0_equalized_stream_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
@@ -452,7 +452,7 @@ architecture behav of top_kernel is
     signal stage_gaussian_U0_start_out : STD_LOGIC;
     signal stage_gaussian_U0_start_write : STD_LOGIC;
     signal stage_gaussian_U0_equalized_stream_read : STD_LOGIC;
-    signal stage_gaussian_U0_gaussian_stream_din : STD_LOGIC_VECTOR (13 downto 0);
+    signal stage_gaussian_U0_gaussian_stream_din : STD_LOGIC_VECTOR (11 downto 0);
     signal stage_gaussian_U0_gaussian_stream_write : STD_LOGIC;
     signal stage_gaussian_U0_gaussian_stream_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
     signal stage_gaussian_U0_gaussian_stream_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
@@ -464,7 +464,7 @@ architecture behav of top_kernel is
     signal stage_bilateral_U0_start_out : STD_LOGIC;
     signal stage_bilateral_U0_start_write : STD_LOGIC;
     signal stage_bilateral_U0_gaussian_stream_read : STD_LOGIC;
-    signal stage_bilateral_U0_bilateral_stream_din : STD_LOGIC_VECTOR (13 downto 0);
+    signal stage_bilateral_U0_bilateral_stream_din : STD_LOGIC_VECTOR (11 downto 0);
     signal stage_bilateral_U0_bilateral_stream_write : STD_LOGIC;
     signal stage_bilateral_U0_bilateral_stream_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
     signal stage_bilateral_U0_bilateral_stream_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
@@ -474,71 +474,71 @@ architecture behav of top_kernel is
     signal stage_morphology_U0_ap_idle : STD_LOGIC;
     signal stage_morphology_U0_ap_ready : STD_LOGIC;
     signal stage_morphology_U0_bilateral_stream_read : STD_LOGIC;
-    signal stage_morphology_U0_morphology_stream_din : STD_LOGIC_VECTOR (13 downto 0);
+    signal stage_morphology_U0_morphology_stream_din : STD_LOGIC_VECTOR (11 downto 0);
     signal stage_morphology_U0_morphology_stream_write : STD_LOGIC;
     signal stage_morphology_U0_morphology_stream_num_data_valid : STD_LOGIC_VECTOR (31 downto 0);
     signal stage_morphology_U0_morphology_stream_fifo_cap : STD_LOGIC_VECTOR (31 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_ap_start : STD_LOGIC;
-    signal Loop_VITIS_LOOP_393_1_proc_U0_ap_done : STD_LOGIC;
-    signal Loop_VITIS_LOOP_393_1_proc_U0_ap_continue : STD_LOGIC;
-    signal Loop_VITIS_LOOP_393_1_proc_U0_ap_idle : STD_LOGIC;
-    signal Loop_VITIS_LOOP_393_1_proc_U0_ap_ready : STD_LOGIC;
-    signal Loop_VITIS_LOOP_393_1_proc_U0_morphology_stream_read : STD_LOGIC;
-    signal Loop_VITIS_LOOP_393_1_proc_U0_out_r_read : STD_LOGIC;
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWVALID : STD_LOGIC;
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWADDR : STD_LOGIC_VECTOR (63 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WVALID : STD_LOGIC;
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WDATA : STD_LOGIC_VECTOR (31 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WLAST : STD_LOGIC;
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WID : STD_LOGIC_VECTOR (0 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARVALID : STD_LOGIC;
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARADDR : STD_LOGIC_VECTOR (63 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_RREADY : STD_LOGIC;
-    signal Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_BREADY : STD_LOGIC;
+    signal write_output_U0_ap_start : STD_LOGIC;
+    signal write_output_U0_ap_done : STD_LOGIC;
+    signal write_output_U0_ap_continue : STD_LOGIC;
+    signal write_output_U0_ap_idle : STD_LOGIC;
+    signal write_output_U0_ap_ready : STD_LOGIC;
+    signal write_output_U0_morphology_stream_read : STD_LOGIC;
+    signal write_output_U0_out_r_read : STD_LOGIC;
+    signal write_output_U0_m_axi_gmem3_0_AWVALID : STD_LOGIC;
+    signal write_output_U0_m_axi_gmem3_0_AWADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_WVALID : STD_LOGIC;
+    signal write_output_U0_m_axi_gmem3_0_WDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_WLAST : STD_LOGIC;
+    signal write_output_U0_m_axi_gmem3_0_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_ARVALID : STD_LOGIC;
+    signal write_output_U0_m_axi_gmem3_0_ARADDR : STD_LOGIC_VECTOR (63 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal write_output_U0_m_axi_gmem3_0_RREADY : STD_LOGIC;
+    signal write_output_U0_m_axi_gmem3_0_BREADY : STD_LOGIC;
     signal out_r_c_full_n : STD_LOGIC;
     signal out_r_c_dout : STD_LOGIC_VECTOR (63 downto 0);
     signal out_r_c_empty_n : STD_LOGIC;
     signal out_r_c_num_data_valid : STD_LOGIC_VECTOR (3 downto 0);
     signal out_r_c_fifo_cap : STD_LOGIC_VECTOR (3 downto 0);
     signal equalized_stream_full_n : STD_LOGIC;
-    signal equalized_stream_dout : STD_LOGIC_VECTOR (13 downto 0);
+    signal equalized_stream_dout : STD_LOGIC_VECTOR (11 downto 0);
     signal equalized_stream_empty_n : STD_LOGIC;
     signal equalized_stream_num_data_valid : STD_LOGIC_VECTOR (8 downto 0);
     signal equalized_stream_fifo_cap : STD_LOGIC_VECTOR (8 downto 0);
     signal gaussian_stream_full_n : STD_LOGIC;
-    signal gaussian_stream_dout : STD_LOGIC_VECTOR (13 downto 0);
+    signal gaussian_stream_dout : STD_LOGIC_VECTOR (11 downto 0);
     signal gaussian_stream_empty_n : STD_LOGIC;
     signal gaussian_stream_num_data_valid : STD_LOGIC_VECTOR (8 downto 0);
     signal gaussian_stream_fifo_cap : STD_LOGIC_VECTOR (8 downto 0);
     signal bilateral_stream_full_n : STD_LOGIC;
-    signal bilateral_stream_dout : STD_LOGIC_VECTOR (13 downto 0);
+    signal bilateral_stream_dout : STD_LOGIC_VECTOR (11 downto 0);
     signal bilateral_stream_empty_n : STD_LOGIC;
     signal bilateral_stream_num_data_valid : STD_LOGIC_VECTOR (8 downto 0);
     signal bilateral_stream_fifo_cap : STD_LOGIC_VECTOR (8 downto 0);
     signal morphology_stream_full_n : STD_LOGIC;
-    signal morphology_stream_dout : STD_LOGIC_VECTOR (13 downto 0);
+    signal morphology_stream_dout : STD_LOGIC_VECTOR (11 downto 0);
     signal morphology_stream_empty_n : STD_LOGIC;
     signal morphology_stream_num_data_valid : STD_LOGIC_VECTOR (8 downto 0);
     signal morphology_stream_fifo_cap : STD_LOGIC_VECTOR (8 downto 0);
@@ -547,10 +547,10 @@ architecture behav of top_kernel is
     signal ap_sync_entry_proc_U0_ap_ready : STD_LOGIC;
     signal ap_sync_reg_stage_rgb2eq_U0_ap_ready : STD_LOGIC := '0';
     signal ap_sync_stage_rgb2eq_U0_ap_ready : STD_LOGIC;
-    signal start_for_Loop_VITIS_LOOP_393_1_proc_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_Loop_VITIS_LOOP_393_1_proc_U0_full_n : STD_LOGIC;
-    signal start_for_Loop_VITIS_LOOP_393_1_proc_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_Loop_VITIS_LOOP_393_1_proc_U0_empty_n : STD_LOGIC;
+    signal start_for_write_output_U0_din : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_write_output_U0_full_n : STD_LOGIC;
+    signal start_for_write_output_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_write_output_U0_empty_n : STD_LOGIC;
     signal start_for_stage_gaussian_U0_din : STD_LOGIC_VECTOR (0 downto 0);
     signal start_for_stage_gaussian_U0_full_n : STD_LOGIC;
     signal start_for_stage_gaussian_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
@@ -739,7 +739,7 @@ architecture behav of top_kernel is
         m_axi_gmem2_0_BID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem2_0_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
         in_b : IN STD_LOGIC_VECTOR (63 downto 0);
-        equalized_stream_din : OUT STD_LOGIC_VECTOR (13 downto 0);
+        equalized_stream_din : OUT STD_LOGIC_VECTOR (11 downto 0);
         equalized_stream_full_n : IN STD_LOGIC;
         equalized_stream_write : OUT STD_LOGIC;
         equalized_stream_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -759,12 +759,12 @@ architecture behav of top_kernel is
         ap_ready : OUT STD_LOGIC;
         start_out : OUT STD_LOGIC;
         start_write : OUT STD_LOGIC;
-        equalized_stream_dout : IN STD_LOGIC_VECTOR (13 downto 0);
+        equalized_stream_dout : IN STD_LOGIC_VECTOR (11 downto 0);
         equalized_stream_empty_n : IN STD_LOGIC;
         equalized_stream_read : OUT STD_LOGIC;
         equalized_stream_num_data_valid : IN STD_LOGIC_VECTOR (8 downto 0);
         equalized_stream_fifo_cap : IN STD_LOGIC_VECTOR (8 downto 0);
-        gaussian_stream_din : OUT STD_LOGIC_VECTOR (13 downto 0);
+        gaussian_stream_din : OUT STD_LOGIC_VECTOR (11 downto 0);
         gaussian_stream_full_n : IN STD_LOGIC;
         gaussian_stream_write : OUT STD_LOGIC;
         gaussian_stream_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -784,12 +784,12 @@ architecture behav of top_kernel is
         ap_ready : OUT STD_LOGIC;
         start_out : OUT STD_LOGIC;
         start_write : OUT STD_LOGIC;
-        gaussian_stream_dout : IN STD_LOGIC_VECTOR (13 downto 0);
+        gaussian_stream_dout : IN STD_LOGIC_VECTOR (11 downto 0);
         gaussian_stream_empty_n : IN STD_LOGIC;
         gaussian_stream_read : OUT STD_LOGIC;
         gaussian_stream_num_data_valid : IN STD_LOGIC_VECTOR (8 downto 0);
         gaussian_stream_fifo_cap : IN STD_LOGIC_VECTOR (8 downto 0);
-        bilateral_stream_din : OUT STD_LOGIC_VECTOR (13 downto 0);
+        bilateral_stream_din : OUT STD_LOGIC_VECTOR (11 downto 0);
         bilateral_stream_full_n : IN STD_LOGIC;
         bilateral_stream_write : OUT STD_LOGIC;
         bilateral_stream_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -806,12 +806,12 @@ architecture behav of top_kernel is
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        bilateral_stream_dout : IN STD_LOGIC_VECTOR (13 downto 0);
+        bilateral_stream_dout : IN STD_LOGIC_VECTOR (11 downto 0);
         bilateral_stream_empty_n : IN STD_LOGIC;
         bilateral_stream_read : OUT STD_LOGIC;
         bilateral_stream_num_data_valid : IN STD_LOGIC_VECTOR (8 downto 0);
         bilateral_stream_fifo_cap : IN STD_LOGIC_VECTOR (8 downto 0);
-        morphology_stream_din : OUT STD_LOGIC_VECTOR (13 downto 0);
+        morphology_stream_din : OUT STD_LOGIC_VECTOR (11 downto 0);
         morphology_stream_full_n : IN STD_LOGIC;
         morphology_stream_write : OUT STD_LOGIC;
         morphology_stream_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -819,7 +819,7 @@ architecture behav of top_kernel is
     end component;
 
 
-    component top_kernel_Loop_VITIS_LOOP_393_1_proc IS
+    component top_kernel_write_output IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -828,7 +828,7 @@ architecture behav of top_kernel is
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        morphology_stream_dout : IN STD_LOGIC_VECTOR (13 downto 0);
+        morphology_stream_dout : IN STD_LOGIC_VECTOR (11 downto 0);
         morphology_stream_empty_n : IN STD_LOGIC;
         morphology_stream_read : OUT STD_LOGIC;
         morphology_stream_num_data_valid : IN STD_LOGIC_VECTOR (8 downto 0);
@@ -904,16 +904,16 @@ architecture behav of top_kernel is
     end component;
 
 
-    component top_kernel_fifo_w14_d256_A IS
+    component top_kernel_fifo_w12_d256_A IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
         if_read_ce : IN STD_LOGIC;
         if_write_ce : IN STD_LOGIC;
-        if_din : IN STD_LOGIC_VECTOR (13 downto 0);
+        if_din : IN STD_LOGIC_VECTOR (11 downto 0);
         if_full_n : OUT STD_LOGIC;
         if_write : IN STD_LOGIC;
-        if_dout : OUT STD_LOGIC_VECTOR (13 downto 0);
+        if_dout : OUT STD_LOGIC_VECTOR (11 downto 0);
         if_empty_n : OUT STD_LOGIC;
         if_read : IN STD_LOGIC;
         if_num_data_valid : OUT STD_LOGIC_VECTOR (8 downto 0);
@@ -921,7 +921,7 @@ architecture behav of top_kernel is
     end component;
 
 
-    component top_kernel_start_for_Loop_VITIS_LOOP_393_1_proc_U0 IS
+    component top_kernel_start_for_write_output_U0 IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -1788,23 +1788,23 @@ begin
         I_CH0_RREADY => ap_const_logic_0,
         I_CH0_RDATA => gmem3_0_RDATA,
         I_CH0_RFIFONUM => gmem3_0_RFIFONUM,
-        I_CH0_AWVALID => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWVALID,
+        I_CH0_AWVALID => write_output_U0_m_axi_gmem3_0_AWVALID,
         I_CH0_AWREADY => gmem3_0_AWREADY,
-        I_CH0_AWADDR => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWADDR,
-        I_CH0_AWLEN => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWLEN,
-        I_CH0_WVALID => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WVALID,
+        I_CH0_AWADDR => write_output_U0_m_axi_gmem3_0_AWADDR,
+        I_CH0_AWLEN => write_output_U0_m_axi_gmem3_0_AWLEN,
+        I_CH0_WVALID => write_output_U0_m_axi_gmem3_0_WVALID,
         I_CH0_WREADY => gmem3_0_WREADY,
-        I_CH0_WDATA => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WDATA,
-        I_CH0_WSTRB => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WSTRB,
+        I_CH0_WDATA => write_output_U0_m_axi_gmem3_0_WDATA,
+        I_CH0_WSTRB => write_output_U0_m_axi_gmem3_0_WSTRB,
         I_CH0_BVALID => gmem3_0_BVALID,
-        I_CH0_BREADY => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_BREADY);
+        I_CH0_BREADY => write_output_U0_m_axi_gmem3_0_BREADY);
 
     entry_proc_U0 : component top_kernel_entry_proc
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         ap_start => entry_proc_U0_ap_start,
-        start_full_n => start_for_Loop_VITIS_LOOP_393_1_proc_U0_full_n,
+        start_full_n => start_for_write_output_U0_full_n,
         ap_done => entry_proc_U0_ap_done,
         ap_continue => entry_proc_U0_ap_continue,
         ap_idle => entry_proc_U0_ap_idle,
@@ -2043,60 +2043,60 @@ begin
         morphology_stream_num_data_valid => stage_morphology_U0_morphology_stream_num_data_valid,
         morphology_stream_fifo_cap => stage_morphology_U0_morphology_stream_fifo_cap);
 
-    Loop_VITIS_LOOP_393_1_proc_U0 : component top_kernel_Loop_VITIS_LOOP_393_1_proc
+    write_output_U0 : component top_kernel_write_output
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => Loop_VITIS_LOOP_393_1_proc_U0_ap_start,
-        ap_done => Loop_VITIS_LOOP_393_1_proc_U0_ap_done,
-        ap_continue => Loop_VITIS_LOOP_393_1_proc_U0_ap_continue,
-        ap_idle => Loop_VITIS_LOOP_393_1_proc_U0_ap_idle,
-        ap_ready => Loop_VITIS_LOOP_393_1_proc_U0_ap_ready,
+        ap_start => write_output_U0_ap_start,
+        ap_done => write_output_U0_ap_done,
+        ap_continue => write_output_U0_ap_continue,
+        ap_idle => write_output_U0_ap_idle,
+        ap_ready => write_output_U0_ap_ready,
         morphology_stream_dout => morphology_stream_dout,
         morphology_stream_empty_n => morphology_stream_empty_n,
-        morphology_stream_read => Loop_VITIS_LOOP_393_1_proc_U0_morphology_stream_read,
+        morphology_stream_read => write_output_U0_morphology_stream_read,
         morphology_stream_num_data_valid => morphology_stream_num_data_valid,
         morphology_stream_fifo_cap => morphology_stream_fifo_cap,
         out_r_dout => out_r_c_dout,
         out_r_empty_n => out_r_c_empty_n,
-        out_r_read => Loop_VITIS_LOOP_393_1_proc_U0_out_r_read,
+        out_r_read => write_output_U0_out_r_read,
         out_r_num_data_valid => out_r_c_num_data_valid,
         out_r_fifo_cap => out_r_c_fifo_cap,
-        m_axi_gmem3_0_AWVALID => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWVALID,
+        m_axi_gmem3_0_AWVALID => write_output_U0_m_axi_gmem3_0_AWVALID,
         m_axi_gmem3_0_AWREADY => gmem3_0_AWREADY,
-        m_axi_gmem3_0_AWADDR => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWADDR,
-        m_axi_gmem3_0_AWID => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWID,
-        m_axi_gmem3_0_AWLEN => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWLEN,
-        m_axi_gmem3_0_AWSIZE => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWSIZE,
-        m_axi_gmem3_0_AWBURST => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWBURST,
-        m_axi_gmem3_0_AWLOCK => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWLOCK,
-        m_axi_gmem3_0_AWCACHE => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWCACHE,
-        m_axi_gmem3_0_AWPROT => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWPROT,
-        m_axi_gmem3_0_AWQOS => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWQOS,
-        m_axi_gmem3_0_AWREGION => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWREGION,
-        m_axi_gmem3_0_AWUSER => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_AWUSER,
-        m_axi_gmem3_0_WVALID => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WVALID,
+        m_axi_gmem3_0_AWADDR => write_output_U0_m_axi_gmem3_0_AWADDR,
+        m_axi_gmem3_0_AWID => write_output_U0_m_axi_gmem3_0_AWID,
+        m_axi_gmem3_0_AWLEN => write_output_U0_m_axi_gmem3_0_AWLEN,
+        m_axi_gmem3_0_AWSIZE => write_output_U0_m_axi_gmem3_0_AWSIZE,
+        m_axi_gmem3_0_AWBURST => write_output_U0_m_axi_gmem3_0_AWBURST,
+        m_axi_gmem3_0_AWLOCK => write_output_U0_m_axi_gmem3_0_AWLOCK,
+        m_axi_gmem3_0_AWCACHE => write_output_U0_m_axi_gmem3_0_AWCACHE,
+        m_axi_gmem3_0_AWPROT => write_output_U0_m_axi_gmem3_0_AWPROT,
+        m_axi_gmem3_0_AWQOS => write_output_U0_m_axi_gmem3_0_AWQOS,
+        m_axi_gmem3_0_AWREGION => write_output_U0_m_axi_gmem3_0_AWREGION,
+        m_axi_gmem3_0_AWUSER => write_output_U0_m_axi_gmem3_0_AWUSER,
+        m_axi_gmem3_0_WVALID => write_output_U0_m_axi_gmem3_0_WVALID,
         m_axi_gmem3_0_WREADY => gmem3_0_WREADY,
-        m_axi_gmem3_0_WDATA => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WDATA,
-        m_axi_gmem3_0_WSTRB => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WSTRB,
-        m_axi_gmem3_0_WLAST => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WLAST,
-        m_axi_gmem3_0_WID => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WID,
-        m_axi_gmem3_0_WUSER => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_WUSER,
-        m_axi_gmem3_0_ARVALID => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARVALID,
+        m_axi_gmem3_0_WDATA => write_output_U0_m_axi_gmem3_0_WDATA,
+        m_axi_gmem3_0_WSTRB => write_output_U0_m_axi_gmem3_0_WSTRB,
+        m_axi_gmem3_0_WLAST => write_output_U0_m_axi_gmem3_0_WLAST,
+        m_axi_gmem3_0_WID => write_output_U0_m_axi_gmem3_0_WID,
+        m_axi_gmem3_0_WUSER => write_output_U0_m_axi_gmem3_0_WUSER,
+        m_axi_gmem3_0_ARVALID => write_output_U0_m_axi_gmem3_0_ARVALID,
         m_axi_gmem3_0_ARREADY => ap_const_logic_0,
-        m_axi_gmem3_0_ARADDR => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARADDR,
-        m_axi_gmem3_0_ARID => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARID,
-        m_axi_gmem3_0_ARLEN => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARLEN,
-        m_axi_gmem3_0_ARSIZE => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARSIZE,
-        m_axi_gmem3_0_ARBURST => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARBURST,
-        m_axi_gmem3_0_ARLOCK => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARLOCK,
-        m_axi_gmem3_0_ARCACHE => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARCACHE,
-        m_axi_gmem3_0_ARPROT => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARPROT,
-        m_axi_gmem3_0_ARQOS => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARQOS,
-        m_axi_gmem3_0_ARREGION => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARREGION,
-        m_axi_gmem3_0_ARUSER => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_ARUSER,
+        m_axi_gmem3_0_ARADDR => write_output_U0_m_axi_gmem3_0_ARADDR,
+        m_axi_gmem3_0_ARID => write_output_U0_m_axi_gmem3_0_ARID,
+        m_axi_gmem3_0_ARLEN => write_output_U0_m_axi_gmem3_0_ARLEN,
+        m_axi_gmem3_0_ARSIZE => write_output_U0_m_axi_gmem3_0_ARSIZE,
+        m_axi_gmem3_0_ARBURST => write_output_U0_m_axi_gmem3_0_ARBURST,
+        m_axi_gmem3_0_ARLOCK => write_output_U0_m_axi_gmem3_0_ARLOCK,
+        m_axi_gmem3_0_ARCACHE => write_output_U0_m_axi_gmem3_0_ARCACHE,
+        m_axi_gmem3_0_ARPROT => write_output_U0_m_axi_gmem3_0_ARPROT,
+        m_axi_gmem3_0_ARQOS => write_output_U0_m_axi_gmem3_0_ARQOS,
+        m_axi_gmem3_0_ARREGION => write_output_U0_m_axi_gmem3_0_ARREGION,
+        m_axi_gmem3_0_ARUSER => write_output_U0_m_axi_gmem3_0_ARUSER,
         m_axi_gmem3_0_RVALID => ap_const_logic_0,
-        m_axi_gmem3_0_RREADY => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_RREADY,
+        m_axi_gmem3_0_RREADY => write_output_U0_m_axi_gmem3_0_RREADY,
         m_axi_gmem3_0_RDATA => ap_const_lv32_0,
         m_axi_gmem3_0_RLAST => ap_const_logic_0,
         m_axi_gmem3_0_RID => ap_const_lv1_0,
@@ -2104,7 +2104,7 @@ begin
         m_axi_gmem3_0_RUSER => ap_const_lv1_0,
         m_axi_gmem3_0_RRESP => ap_const_lv2_0,
         m_axi_gmem3_0_BVALID => gmem3_0_BVALID,
-        m_axi_gmem3_0_BREADY => Loop_VITIS_LOOP_393_1_proc_U0_m_axi_gmem3_0_BREADY,
+        m_axi_gmem3_0_BREADY => write_output_U0_m_axi_gmem3_0_BREADY,
         m_axi_gmem3_0_BRESP => gmem3_0_BRESP,
         m_axi_gmem3_0_BID => gmem3_0_BID,
         m_axi_gmem3_0_BUSER => gmem3_0_BUSER);
@@ -2120,11 +2120,11 @@ begin
         if_write => entry_proc_U0_out_r_c_write,
         if_dout => out_r_c_dout,
         if_empty_n => out_r_c_empty_n,
-        if_read => Loop_VITIS_LOOP_393_1_proc_U0_out_r_read,
+        if_read => write_output_U0_out_r_read,
         if_num_data_valid => out_r_c_num_data_valid,
         if_fifo_cap => out_r_c_fifo_cap);
 
-    equalized_stream_U : component top_kernel_fifo_w14_d256_A
+    equalized_stream_U : component top_kernel_fifo_w12_d256_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -2139,7 +2139,7 @@ begin
         if_num_data_valid => equalized_stream_num_data_valid,
         if_fifo_cap => equalized_stream_fifo_cap);
 
-    gaussian_stream_U : component top_kernel_fifo_w14_d256_A
+    gaussian_stream_U : component top_kernel_fifo_w12_d256_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -2154,7 +2154,7 @@ begin
         if_num_data_valid => gaussian_stream_num_data_valid,
         if_fifo_cap => gaussian_stream_fifo_cap);
 
-    bilateral_stream_U : component top_kernel_fifo_w14_d256_A
+    bilateral_stream_U : component top_kernel_fifo_w12_d256_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -2169,7 +2169,7 @@ begin
         if_num_data_valid => bilateral_stream_num_data_valid,
         if_fifo_cap => bilateral_stream_fifo_cap);
 
-    morphology_stream_U : component top_kernel_fifo_w14_d256_A
+    morphology_stream_U : component top_kernel_fifo_w12_d256_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -2180,22 +2180,22 @@ begin
         if_write => stage_morphology_U0_morphology_stream_write,
         if_dout => morphology_stream_dout,
         if_empty_n => morphology_stream_empty_n,
-        if_read => Loop_VITIS_LOOP_393_1_proc_U0_morphology_stream_read,
+        if_read => write_output_U0_morphology_stream_read,
         if_num_data_valid => morphology_stream_num_data_valid,
         if_fifo_cap => morphology_stream_fifo_cap);
 
-    start_for_Loop_VITIS_LOOP_393_1_proc_U0_U : component top_kernel_start_for_Loop_VITIS_LOOP_393_1_proc_U0
+    start_for_write_output_U0_U : component top_kernel_start_for_write_output_U0
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => start_for_Loop_VITIS_LOOP_393_1_proc_U0_din,
-        if_full_n => start_for_Loop_VITIS_LOOP_393_1_proc_U0_full_n,
+        if_din => start_for_write_output_U0_din,
+        if_full_n => start_for_write_output_U0_full_n,
         if_write => entry_proc_U0_start_write,
-        if_dout => start_for_Loop_VITIS_LOOP_393_1_proc_U0_dout,
-        if_empty_n => start_for_Loop_VITIS_LOOP_393_1_proc_U0_empty_n,
-        if_read => Loop_VITIS_LOOP_393_1_proc_U0_ap_ready);
+        if_dout => start_for_write_output_U0_dout,
+        if_empty_n => start_for_write_output_U0_empty_n,
+        if_read => write_output_U0_ap_ready);
 
     start_for_stage_gaussian_U0_U : component top_kernel_start_for_stage_gaussian_U0
     port map (
@@ -2271,10 +2271,8 @@ begin
         end if;
     end process;
 
-    Loop_VITIS_LOOP_393_1_proc_U0_ap_continue <= ap_const_logic_1;
-    Loop_VITIS_LOOP_393_1_proc_U0_ap_start <= start_for_Loop_VITIS_LOOP_393_1_proc_U0_empty_n;
-    ap_done <= Loop_VITIS_LOOP_393_1_proc_U0_ap_done;
-    ap_idle <= (stage_rgb2eq_U0_ap_idle and stage_morphology_U0_ap_idle and stage_gaussian_U0_ap_idle and stage_bilateral_U0_ap_idle and entry_proc_U0_ap_idle and Loop_VITIS_LOOP_393_1_proc_U0_ap_idle);
+    ap_done <= write_output_U0_ap_done;
+    ap_idle <= (write_output_U0_ap_idle and stage_rgb2eq_U0_ap_idle and stage_morphology_U0_ap_idle and stage_gaussian_U0_ap_idle and stage_bilateral_U0_ap_idle and entry_proc_U0_ap_idle);
     ap_ready <= ap_sync_ready;
 
     ap_rst_n_inv_assign_proc : process(ap_rst_n)
@@ -2318,8 +2316,10 @@ begin
     stage_rgb2eq_U0_ap_start <= ((ap_sync_reg_stage_rgb2eq_U0_ap_ready xor ap_const_logic_1) and ap_start and ap_const_logic_1);
     stage_rgb2eq_U0_equalized_stream_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(equalized_stream_fifo_cap),9))),32));
     stage_rgb2eq_U0_equalized_stream_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(equalized_stream_num_data_valid),9))),32));
-    start_for_Loop_VITIS_LOOP_393_1_proc_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_for_stage_bilateral_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_for_stage_gaussian_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_for_stage_morphology_U0_din <= (0=>ap_const_logic_1, others=>'-');
+    start_for_write_output_U0_din <= (0=>ap_const_logic_1, others=>'-');
+    write_output_U0_ap_continue <= ap_const_logic_1;
+    write_output_U0_ap_start <= start_for_write_output_U0_empty_n;
 end behav;

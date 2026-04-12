@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'stage_rgb2eq'" level="0">
-<item name = "Date">Fri Apr 10 20:50:46 2026
+<item name = "Date">Sat Apr 11 20:28:31 2026
 </item>
 <item name = "Version">2025.1.1 (Build 6214317 on Sep 11 2025)</item>
 <item name = "Project">project_1</item>
@@ -24,16 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">12701, 12701, 50.804 us, 50.804 us, 12701, 12701, no</column>
+<column name="">12684, 12684, 50.736 us, 50.736 us, 12684, 12684, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_stage_rgb2eq_Pipeline_PASS1_fu_2149">stage_rgb2eq_Pipeline_PASS1, 4138, 4138, 16.552 us, 16.552 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_stage_rgb2eq_Pipeline_PASS1_fu_2149">stage_rgb2eq_Pipeline_PASS1, 4121, 4121, 16.484 us, 16.484 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163">stage_rgb2eq_Pipeline_BUILD_HIST, 4111, 4111, 16.444 us, 16.444 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424">stage_rgb2eq_Pipeline_VITIS_LOOP_115_2, 257, 257, 1.028 us, 1.028 us, 256, 256, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424">stage_rgb2eq_Pipeline_VITIS_LOOP_119_2, 257, 257, 1.028 us, 1.028 us, 256, 256, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 <column name="grp_stage_rgb2eq_Pipeline_PASS2_fu_2939">stage_rgb2eq_Pipeline_PASS2, 4165, 4165, 16.660 us, 16.660 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
@@ -53,26 +53,26 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 4, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 16, 20524, 14333, -</column>
-<column name="Memory">4, -, 0, 0, 0</column>
-<column name="Multiplexer">-, -, 0, 828, -</column>
+<column name="Instance">-, 5, 19805, 15671, -</column>
+<column name="Memory">3, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, 0, 803, -</column>
 <column name="Register">-, -, 287, -, -</column>
 <specialColumn name="Available">432, 360, 141120, 70560, 0</specialColumn>
-<specialColumn name="Utilization (%)">~0, 4, 14, 21, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 1, 14, 23, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="faddfsub_32ns_32ns_32_10_full_dsp_1_U1082">faddfsub_32ns_32ns_32_10_full_dsp_1, 0, 2, 365, 244, 0</column>
-<column name="fmul_32ns_32ns_32_7_max_dsp_1_U1084">fmul_32ns_32ns_32_7_max_dsp_1, 0, 3, 197, 128, 0</column>
-<column name="fpext_32ns_64_2_no_dsp_1_U1085">fpext_32ns_64_2_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="sitofp_32ns_32_7_no_dsp_1_U1083">sitofp_32ns_32_7_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163">stage_rgb2eq_Pipeline_BUILD_HIST, 0, 0, 8575, 4791, 0</column>
-<column name="grp_stage_rgb2eq_Pipeline_PASS1_fu_2149">stage_rgb2eq_Pipeline_PASS1, 0, 11, 2015, 2279, 0</column>
-<column name="grp_stage_rgb2eq_Pipeline_PASS2_fu_2939">stage_rgb2eq_Pipeline_PASS2, 0, 0, 1160, 4069, 0</column>
-<column name="grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424">stage_rgb2eq_Pipeline_VITIS_LOOP_115_2, 0, 0, 8212, 2822, 0</column>
+<column name="fmul_32ns_32ns_32_7_max_dsp_1_U1078">fmul_32ns_32ns_32_7_max_dsp_1, 0, 3, 197, 128, 0</column>
+<column name="fpext_32ns_64_2_no_dsp_1_U1079">fpext_32ns_64_2_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="fsub_32ns_32ns_32_10_full_dsp_1_U1076">fsub_32ns_32ns_32_10_full_dsp_1, 0, 2, 365, 244, 0</column>
+<column name="sitofp_32ns_32_7_no_dsp_1_U1077">sitofp_32ns_32_7_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163">stage_rgb2eq_Pipeline_BUILD_HIST, 0, 0, 8571, 4774, 0</column>
+<column name="grp_stage_rgb2eq_Pipeline_PASS1_fu_2149">stage_rgb2eq_Pipeline_PASS1, 0, 0, 1310, 3664, 0</column>
+<column name="grp_stage_rgb2eq_Pipeline_PASS2_fu_2939">stage_rgb2eq_Pipeline_PASS2, 0, 0, 1150, 4039, 0</column>
+<column name="grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424">stage_rgb2eq_Pipeline_VITIS_LOOP_119_2, 0, 0, 8212, 2822, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -81,7 +81,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="intensity_buf_U">stage_rgb2eq_intensity_buf_RAM_AUTO_1R1W, 4, 0, 0, 0, 4096, 14, 1, 57344</column>
+<column name="intensity_buf_U">stage_rgb2eq_intensity_buf_RAM_AUTO_1R1W, 3, 0, 0, 0, 4096, 12, 1, 49152</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -101,12 +101,11 @@
 <column name="gmem0_blk_n_AR">9, 2, 1, 2</column>
 <column name="gmem1_blk_n_AR">9, 2, 1, 2</column>
 <column name="gmem2_blk_n_AR">9, 2, 1, 2</column>
-<column name="grp_fu_3204_ce">14, 3, 1, 3</column>
-<column name="grp_fu_3204_opcode">20, 4, 2, 8</column>
-<column name="grp_fu_3204_p0">20, 4, 32, 128</column>
-<column name="grp_fu_3204_p1">20, 4, 32, 128</column>
-<column name="grp_fu_3209_ce">14, 3, 1, 3</column>
-<column name="grp_fu_3209_p0">14, 3, 32, 96</column>
+<column name="grp_fu_3204_ce">9, 2, 1, 2</column>
+<column name="grp_fu_3204_p0">14, 3, 32, 96</column>
+<column name="grp_fu_3204_p1">14, 3, 32, 96</column>
+<column name="grp_fu_3209_ce">20, 4, 1, 4</column>
+<column name="grp_fu_3209_p0">20, 4, 32, 128</column>
 <column name="grp_fu_9960_ce">20, 4, 1, 4</column>
 <column name="grp_fu_9960_p0">20, 4, 32, 128</column>
 <column name="grp_fu_9960_p1">20, 4, 32, 128</column>
@@ -165,7 +164,7 @@
 <column name="grp_stage_rgb2eq_Pipeline_BUILD_HIST_fu_2163_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_stage_rgb2eq_Pipeline_PASS1_fu_2149_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_stage_rgb2eq_Pipeline_PASS2_fu_2939_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2_fu_2424_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2_fu_2424_ap_start_reg">1, 0, 1, 0</column>
 <column name="start_once_reg">1, 0, 1, 0</column>
 <column name="sub_reg_9190">32, 0, 32, 0</column>
 <column name="trunc_ln84_1_reg_8396">62, 0, 62, 0</column>
@@ -331,7 +330,7 @@
 <column name="m_axi_gmem2_0_BID">in, 1, m_axi, gmem2, pointer</column>
 <column name="m_axi_gmem2_0_BUSER">in, 1, m_axi, gmem2, pointer</column>
 <column name="in_b">in, 64, ap_none, in_b, scalar</column>
-<column name="equalized_stream_din">out, 14, ap_fifo, equalized_stream, pointer</column>
+<column name="equalized_stream_din">out, 12, ap_fifo, equalized_stream, pointer</column>
 <column name="equalized_stream_full_n">in, 1, ap_fifo, equalized_stream, pointer</column>
 <column name="equalized_stream_write">out, 1, ap_fifo, equalized_stream, pointer</column>
 <column name="equalized_stream_num_data_valid">in, 32, ap_fifo, equalized_stream, pointer</column>

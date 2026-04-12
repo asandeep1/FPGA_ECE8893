@@ -2,21 +2,19 @@ set SynModuleInfo {
   {SRCNAME entry_proc MODELNAME entry_proc RTLNAME top_kernel_entry_proc}
   {SRCNAME stage_rgb2eq_Pipeline_PASS1 MODELNAME stage_rgb2eq_Pipeline_PASS1 RTLNAME top_kernel_stage_rgb2eq_Pipeline_PASS1
     SUBMODULES {
-      {MODELNAME top_kernel_fadd_32ns_32ns_32_10_full_dsp_1 RTLNAME top_kernel_fadd_32ns_32ns_32_10_full_dsp_1 BINDTYPE op TYPE fadd IMPL fulldsp LATENCY 9 ALLOW_PRAGMA 1}
-      {MODELNAME top_kernel_fmul_32ns_32ns_32_7_max_dsp_1 RTLNAME top_kernel_fmul_32ns_32ns_32_7_max_dsp_1 BINDTYPE op TYPE fmul IMPL maxdsp LATENCY 6 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_bitselect_1ns_54ns_6ns_1_1_1 RTLNAME top_kernel_bitselect_1ns_54ns_6ns_1_1_1 BINDTYPE op TYPE bitselect IMPL auto}
-      {MODELNAME top_kernel_sparsemux_7_2_14_1_1 RTLNAME top_kernel_sparsemux_7_2_14_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
+      {MODELNAME top_kernel_sparsemux_7_2_12_1_1 RTLNAME top_kernel_sparsemux_7_2_12_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
       {MODELNAME top_kernel_sparsemux_7_2_1_1_1 RTLNAME top_kernel_sparsemux_7_2_1_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
       {MODELNAME top_kernel_flow_control_loop_pipe_sequential_init RTLNAME top_kernel_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME top_kernel_flow_control_loop_pipe_sequential_init_U}
     }
   }
   {SRCNAME stage_rgb2eq_Pipeline_BUILD_HIST MODELNAME stage_rgb2eq_Pipeline_BUILD_HIST RTLNAME top_kernel_stage_rgb2eq_Pipeline_BUILD_HIST
     SUBMODULES {
-      {MODELNAME top_kernel_ctlz_14_14_1_1 RTLNAME top_kernel_ctlz_14_14_1_1 BINDTYPE op TYPE ctlz IMPL auto}
+      {MODELNAME top_kernel_ctlz_12_12_1_1 RTLNAME top_kernel_ctlz_12_12_1_1 BINDTYPE op TYPE ctlz IMPL auto}
       {MODELNAME top_kernel_sparsemux_513_8_32_1_1 RTLNAME top_kernel_sparsemux_513_8_32_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
     }
   }
-  {SRCNAME stage_rgb2eq_Pipeline_VITIS_LOOP_115_2 MODELNAME stage_rgb2eq_Pipeline_VITIS_LOOP_115_2 RTLNAME top_kernel_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2
+  {SRCNAME stage_rgb2eq_Pipeline_VITIS_LOOP_119_2 MODELNAME stage_rgb2eq_Pipeline_VITIS_LOOP_119_2 RTLNAME top_kernel_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2
     SUBMODULES {
       {MODELNAME top_kernel_sparsemux_511_8_32_1_1 RTLNAME top_kernel_sparsemux_511_8_32_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
     }
@@ -29,8 +27,9 @@ set SynModuleInfo {
   }
   {SRCNAME stage_rgb2eq MODELNAME stage_rgb2eq RTLNAME top_kernel_stage_rgb2eq
     SUBMODULES {
-      {MODELNAME top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1 RTLNAME top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1 BINDTYPE op TYPE fsub IMPL fulldsp LATENCY 9 ALLOW_PRAGMA 1}
+      {MODELNAME top_kernel_fsub_32ns_32ns_32_10_full_dsp_1 RTLNAME top_kernel_fsub_32ns_32ns_32_10_full_dsp_1 BINDTYPE op TYPE fsub IMPL fulldsp LATENCY 9 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_sitofp_32ns_32_7_no_dsp_1 RTLNAME top_kernel_sitofp_32ns_32_7_no_dsp_1 BINDTYPE op TYPE sitofp IMPL auto LATENCY 6 ALLOW_PRAGMA 1}
+      {MODELNAME top_kernel_fmul_32ns_32ns_32_7_max_dsp_1 RTLNAME top_kernel_fmul_32ns_32ns_32_7_max_dsp_1 BINDTYPE op TYPE fmul IMPL maxdsp LATENCY 6 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_fpext_32ns_64_2_no_dsp_1 RTLNAME top_kernel_fpext_32ns_64_2_no_dsp_1 BINDTYPE op TYPE fpext IMPL auto LATENCY 1 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_stage_rgb2eq_intensity_buf_RAM_AUTO_1R1W RTLNAME top_kernel_stage_rgb2eq_intensity_buf_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
     }
@@ -42,19 +41,17 @@ set SynModuleInfo {
       {MODELNAME top_kernel_mac_muladd_4ns_4ns_4ns_8_4_1 RTLNAME top_kernel_mac_muladd_4ns_4ns_4ns_8_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
     }
   }
-  {SRCNAME stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1 MODELNAME stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1 RTLNAME top_kernel_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1
+  {SRCNAME stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1 MODELNAME stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1 RTLNAME top_kernel_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1
     SUBMODULES {
       {MODELNAME top_kernel_mul_64ns_66ns_129_5_1 RTLNAME top_kernel_mul_64ns_66ns_129_5_1 BINDTYPE op TYPE mul IMPL auto LATENCY 4 ALLOW_PRAGMA 1}
-      {MODELNAME top_kernel_sparsemux_11_3_14_1_1 RTLNAME top_kernel_sparsemux_11_3_14_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
+      {MODELNAME top_kernel_sparsemux_11_3_12_1_1 RTLNAME top_kernel_sparsemux_11_3_12_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
       {MODELNAME top_kernel_urem_7ns_4ns_3_11_1 RTLNAME top_kernel_urem_7ns_4ns_3_11_1 BINDTYPE op TYPE urem IMPL auto LATENCY 10 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_mul_7ns_9ns_15_1_1 RTLNAME top_kernel_mul_7ns_9ns_15_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_mul_5ns_5ns_8_1_1 RTLNAME top_kernel_mul_5ns_5ns_8_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_mul_8s_5ns_8_1_1 RTLNAME top_kernel_mul_8s_5ns_8_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME top_kernel_mul_16s_8ns_24_1_1 RTLNAME top_kernel_mul_16s_8ns_24_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME top_kernel_mul_16s_9ns_25_1_1 RTLNAME top_kernel_mul_16s_9ns_25_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME top_kernel_mul_16s_10ns_26_1_1 RTLNAME top_kernel_mul_16s_10ns_26_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME top_kernel_mul_16s_11ns_27_1_1 RTLNAME top_kernel_mul_16s_11ns_27_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME top_kernel_mul_16s_12ns_28_1_1 RTLNAME top_kernel_mul_16s_12ns_28_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME top_kernel_mul_14s_9ns_23_1_1 RTLNAME top_kernel_mul_14s_9ns_23_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME top_kernel_mul_14s_10ns_24_1_1 RTLNAME top_kernel_mul_14s_10ns_24_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME top_kernel_mul_14s_11ns_25_1_1 RTLNAME top_kernel_mul_14s_11ns_25_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
     }
   }
   {SRCNAME stage_gaussian MODELNAME stage_gaussian RTLNAME top_kernel_stage_gaussian
@@ -68,17 +65,16 @@ set SynModuleInfo {
       {MODELNAME top_kernel_mac_muladd_5ns_5ns_5ns_9_4_1 RTLNAME top_kernel_mac_muladd_5ns_5ns_5ns_9_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
     }
   }
-  {SRCNAME stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3 MODELNAME stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3 RTLNAME top_kernel_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3
+  {SRCNAME stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3 MODELNAME stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3 RTLNAME top_kernel_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3
     SUBMODULES {
-      {MODELNAME top_kernel_fsub_32ns_32ns_32_10_full_dsp_1 RTLNAME top_kernel_fsub_32ns_32ns_32_10_full_dsp_1 BINDTYPE op TYPE fsub IMPL fulldsp LATENCY 9 ALLOW_PRAGMA 1}
-      {MODELNAME top_kernel_sparsemux_7_2_14_1_1_x RTLNAME top_kernel_sparsemux_7_2_14_1_1_x BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
+      {MODELNAME top_kernel_sparsemux_7_2_12_1_1_x RTLNAME top_kernel_sparsemux_7_2_12_1_1_x BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
       {MODELNAME top_kernel_urem_7ns_3ns_2_11_1 RTLNAME top_kernel_urem_7ns_3ns_2_11_1 BINDTYPE op TYPE urem IMPL auto LATENCY 10 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_mul_6ns_6ns_9_1_1 RTLNAME top_kernel_mul_6ns_6ns_9_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_mul_9s_6ns_9_1_1 RTLNAME top_kernel_mul_9s_6ns_9_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME top_kernel_sparsemux_9_3_32_1_1 RTLNAME top_kernel_sparsemux_9_3_32_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
-      {MODELNAME top_kernel_sparsemux_7_2_18_1_1 RTLNAME top_kernel_sparsemux_7_2_18_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
-      {MODELNAME top_kernel_mul_18s_16s_34_1_1 RTLNAME top_kernel_mul_18s_16s_34_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME top_kernel_sdiv_31ns_19ns_31_35_1 RTLNAME top_kernel_sdiv_31ns_19ns_31_35_1 BINDTYPE op TYPE sdiv IMPL auto LATENCY 34 ALLOW_PRAGMA 1}
+      {MODELNAME top_kernel_sparsemux_7_2_16_1_1 RTLNAME top_kernel_sparsemux_7_2_16_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
+      {MODELNAME top_kernel_mul_16s_14s_30_1_1 RTLNAME top_kernel_mul_16s_14s_30_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME top_kernel_sdiv_28ns_17ns_28_32_1 RTLNAME top_kernel_sdiv_28ns_17ns_28_32_1 BINDTYPE op TYPE sdiv IMPL auto LATENCY 31 ALLOW_PRAGMA 1}
     }
   }
   {SRCNAME stage_bilateral MODELNAME stage_bilateral RTLNAME top_kernel_stage_bilateral
@@ -87,10 +83,10 @@ set SynModuleInfo {
     }
   }
   {SRCNAME stage_morphology_Pipeline_READ_BILATERAL MODELNAME stage_morphology_Pipeline_READ_BILATERAL RTLNAME top_kernel_stage_morphology_Pipeline_READ_BILATERAL}
-  {SRCNAME stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1 MODELNAME stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1 RTLNAME top_kernel_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1}
-  {SRCNAME stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4 MODELNAME stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4 RTLNAME top_kernel_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4}
+  {SRCNAME stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1 MODELNAME stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1 RTLNAME top_kernel_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1}
+  {SRCNAME stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4 MODELNAME stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4 RTLNAME top_kernel_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4}
   {SRCNAME stage_morphology MODELNAME stage_morphology RTLNAME top_kernel_stage_morphology}
-  {SRCNAME Loop_VITIS_LOOP_393_1_proc MODELNAME Loop_VITIS_LOOP_393_1_proc RTLNAME top_kernel_Loop_VITIS_LOOP_393_1_proc
+  {SRCNAME write_output MODELNAME write_output RTLNAME top_kernel_write_output
     SUBMODULES {
       {MODELNAME top_kernel_flow_control_loop_pipe RTLNAME top_kernel_flow_control_loop_pipe BINDTYPE interface TYPE internal_upc_flow_control INSTNAME top_kernel_flow_control_loop_pipe_U}
     }
@@ -98,11 +94,11 @@ set SynModuleInfo {
   {SRCNAME top_kernel MODELNAME top_kernel RTLNAME top_kernel IS_TOP 1
     SUBMODULES {
       {MODELNAME top_kernel_fifo_w64_d6_S RTLNAME top_kernel_fifo_w64_d6_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME out_r_c_U}
-      {MODELNAME top_kernel_fifo_w14_d256_A RTLNAME top_kernel_fifo_w14_d256_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME equalized_stream_U}
-      {MODELNAME top_kernel_fifo_w14_d256_A RTLNAME top_kernel_fifo_w14_d256_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME gaussian_stream_U}
-      {MODELNAME top_kernel_fifo_w14_d256_A RTLNAME top_kernel_fifo_w14_d256_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME bilateral_stream_U}
-      {MODELNAME top_kernel_fifo_w14_d256_A RTLNAME top_kernel_fifo_w14_d256_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME morphology_stream_U}
-      {MODELNAME top_kernel_start_for_Loop_VITIS_LOOP_393_1_proc_U0 RTLNAME top_kernel_start_for_Loop_VITIS_LOOP_393_1_proc_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_Loop_VITIS_LOOP_393_1_proc_U0_U}
+      {MODELNAME top_kernel_fifo_w12_d256_A RTLNAME top_kernel_fifo_w12_d256_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME equalized_stream_U}
+      {MODELNAME top_kernel_fifo_w12_d256_A RTLNAME top_kernel_fifo_w12_d256_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME gaussian_stream_U}
+      {MODELNAME top_kernel_fifo_w12_d256_A RTLNAME top_kernel_fifo_w12_d256_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME bilateral_stream_U}
+      {MODELNAME top_kernel_fifo_w12_d256_A RTLNAME top_kernel_fifo_w12_d256_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME morphology_stream_U}
+      {MODELNAME top_kernel_start_for_write_output_U0 RTLNAME top_kernel_start_for_write_output_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_write_output_U0_U}
       {MODELNAME top_kernel_start_for_stage_gaussian_U0 RTLNAME top_kernel_start_for_stage_gaussian_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_stage_gaussian_U0_U}
       {MODELNAME top_kernel_start_for_stage_bilateral_U0 RTLNAME top_kernel_start_for_stage_bilateral_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_stage_bilateral_U0_U}
       {MODELNAME top_kernel_start_for_stage_morphology_U0 RTLNAME top_kernel_start_for_stage_morphology_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_stage_morphology_U0_U}

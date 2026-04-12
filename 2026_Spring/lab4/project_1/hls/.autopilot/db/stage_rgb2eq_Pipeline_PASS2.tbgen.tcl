@@ -18,9 +18,9 @@ set cdfgNum 20
 set C_modelName {stage_rgb2eq_Pipeline_PASS2}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict intensity_buf { MEM_WIDTH 14 MEM_SIZE 8192 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict intensity_buf { MEM_WIDTH 12 MEM_SIZE 8192 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
-	{ intensity_buf int 14 regular {array 4096 { 1 3 } 1 1 }  }
+	{ intensity_buf int 12 regular {array 4096 { 1 3 } 1 1 }  }
 	{ histogram_reload int 32 regular  }
 	{ cdf_1_reload int 32 regular  }
 	{ cdf_2_reload int 32 regular  }
@@ -279,13 +279,13 @@ set C_modelArgList {
 	{ cdf_reload int 32 regular  }
 	{ cdf_min float 32 regular  }
 	{ sub float 32 regular  }
-	{ equalized_stream int 14 regular {fifo 1 volatile }  }
+	{ equalized_stream int 12 regular {fifo 1 volatile }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "intensity_buf", "interface" : "memory", "bitwidth" : 14, "direction" : "READONLY"} , 
+	{ "Name" : "intensity_buf", "interface" : "memory", "bitwidth" : 12, "direction" : "READONLY"} , 
  	{ "Name" : "histogram_reload", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "cdf_1_reload", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "cdf_2_reload", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
@@ -544,7 +544,7 @@ set C_modelArgMapList {[
  	{ "Name" : "cdf_reload", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "cdf_min", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "sub", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "equalized_stream", "interface" : "fifo", "bitwidth" : 14, "direction" : "WRITEONLY"} ]}
+ 	{ "Name" : "equalized_stream", "interface" : "fifo", "bitwidth" : 12, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 287
 set portList { 
@@ -554,14 +554,14 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ equalized_stream_din sc_out sc_lv 14 signal 259 } 
+	{ equalized_stream_din sc_out sc_lv 12 signal 259 } 
 	{ equalized_stream_full_n sc_in sc_logic 1 signal 259 } 
 	{ equalized_stream_write sc_out sc_logic 1 signal 259 } 
 	{ equalized_stream_num_data_valid sc_in sc_lv 32 signal 259 } 
 	{ equalized_stream_fifo_cap sc_in sc_lv 32 signal 259 } 
 	{ intensity_buf_address0 sc_out sc_lv 12 signal 0 } 
 	{ intensity_buf_ce0 sc_out sc_logic 1 signal 0 } 
-	{ intensity_buf_q0 sc_in sc_lv 14 signal 0 } 
+	{ intensity_buf_q0 sc_in sc_lv 12 signal 0 } 
 	{ histogram_reload sc_in sc_lv 32 signal 1 } 
 	{ cdf_1_reload sc_in sc_lv 32 signal 2 } 
 	{ cdf_2_reload sc_in sc_lv 32 signal 3 } 
@@ -822,7 +822,7 @@ set portList {
 	{ sub sc_in sc_lv 32 signal 258 } 
 	{ grp_fu_3204_p_din0 sc_out sc_lv 32 signal -1 } 
 	{ grp_fu_3204_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_3204_p_opcode sc_out sc_lv 1 signal -1 } 
+	{ grp_fu_3204_p_opcode sc_out sc_lv 2 signal -1 } 
 	{ grp_fu_3204_p_dout0 sc_in sc_lv 32 signal -1 } 
 	{ grp_fu_3204_p_ce sc_out sc_logic 1 signal -1 } 
 	{ grp_fu_9960_p_din0 sc_out sc_lv 32 signal -1 } 
@@ -843,14 +843,14 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "equalized_stream_din", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "equalized_stream", "role": "din" }} , 
+ 	{ "name": "equalized_stream_din", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "equalized_stream", "role": "din" }} , 
  	{ "name": "equalized_stream_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "equalized_stream", "role": "full_n" }} , 
  	{ "name": "equalized_stream_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "equalized_stream", "role": "write" }} , 
  	{ "name": "equalized_stream_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "equalized_stream", "role": "num_data_valid" }} , 
  	{ "name": "equalized_stream_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "equalized_stream", "role": "fifo_cap" }} , 
  	{ "name": "intensity_buf_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "intensity_buf", "role": "address0" }} , 
  	{ "name": "intensity_buf_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "intensity_buf", "role": "ce0" }} , 
- 	{ "name": "intensity_buf_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "intensity_buf", "role": "q0" }} , 
+ 	{ "name": "intensity_buf_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "intensity_buf", "role": "q0" }} , 
  	{ "name": "histogram_reload", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "histogram_reload", "role": "default" }} , 
  	{ "name": "cdf_1_reload", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "cdf_1_reload", "role": "default" }} , 
  	{ "name": "cdf_2_reload", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "cdf_2_reload", "role": "default" }} , 
@@ -1111,7 +1111,7 @@ set NewPortList {[
  	{ "name": "sub", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "sub", "role": "default" }} , 
  	{ "name": "grp_fu_3204_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_3204_p_din0", "role": "default" }} , 
  	{ "name": "grp_fu_3204_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_3204_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_3204_p_opcode", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_3204_p_opcode", "role": "default" }} , 
+ 	{ "name": "grp_fu_3204_p_opcode", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "grp_fu_3204_p_opcode", "role": "default" }} , 
  	{ "name": "grp_fu_3204_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_3204_p_dout0", "role": "default" }} , 
  	{ "name": "grp_fu_3204_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_3204_p_ce", "role": "default" }} , 
  	{ "name": "grp_fu_9960_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9960_p_din0", "role": "default" }} , 
@@ -1400,7 +1400,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	intensity_buf { ap_memory {  { intensity_buf_address0 mem_address 1 12 }  { intensity_buf_ce0 mem_ce 1 1 }  { intensity_buf_q0 mem_dout 0 14 } } }
+	intensity_buf { ap_memory {  { intensity_buf_address0 mem_address 1 12 }  { intensity_buf_ce0 mem_ce 1 1 }  { intensity_buf_q0 mem_dout 0 12 } } }
 	histogram_reload { ap_none {  { histogram_reload in_data 0 32 } } }
 	cdf_1_reload { ap_none {  { cdf_1_reload in_data 0 32 } } }
 	cdf_2_reload { ap_none {  { cdf_2_reload in_data 0 32 } } }
@@ -1659,5 +1659,5 @@ set Spec2ImplPortList {
 	cdf_reload { ap_none {  { cdf_reload in_data 0 32 } } }
 	cdf_min { ap_none {  { cdf_min in_data 0 32 } } }
 	sub { ap_none {  { sub in_data 0 32 } } }
-	equalized_stream { ap_fifo {  { equalized_stream_din fifo_data_in 1 14 }  { equalized_stream_full_n fifo_status 0 1 }  { equalized_stream_write fifo_port_we 1 1 }  { equalized_stream_num_data_valid fifo_status_num_data_valid 0 32 }  { equalized_stream_fifo_cap fifo_update 0 32 } } }
+	equalized_stream { ap_fifo {  { equalized_stream_din fifo_data_in 1 12 }  { equalized_stream_full_n fifo_status 0 1 }  { equalized_stream_write fifo_port_we 1 1 }  { equalized_stream_num_data_valid fifo_status_num_data_valid 0 32 }  { equalized_stream_fifo_cap fifo_update 0 32 } } }
 }

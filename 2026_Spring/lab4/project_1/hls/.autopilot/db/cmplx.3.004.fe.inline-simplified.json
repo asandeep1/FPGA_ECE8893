@@ -1,18 +1,15 @@
 {
   "0": {
-    "basicblocks": 12,
-    "calls": "2 4 3 1",
-    "control_depth": 2,
-    "def_use_depth": 18,
+    "basicblocks": 1,
+    "calls": "6 5 2 1 4",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "top.cpp",
-    "fileloc": 360,
-    "instructions": 90,
-    "memory_accesses": 2,
+    "fileloc": 387,
+    "instructions": 27,
+    "memory_accesses": 0,
     "name": "top_kernel",
-    "stores": {
-      "T": 1
-    },
-    "total_instructions": 6541
+    "total_instructions": 6451
   },
   "1": {
     "basicblocks": 17,
@@ -20,7 +17,7 @@
     "control_depth": 2,
     "def_use_depth": 31,
     "file": "top.cpp",
-    "fileloc": 283,
+    "fileloc": 294,
     "instructions": 270,
     "loads": {
       "L": 38
@@ -33,31 +30,13 @@
     "total_instructions": 270
   },
   "2": {
-    "basicblocks": 83,
-    "calls": "",
-    "control_depth": 7,
-    "def_use_depth": 57,
-    "file": "top.cpp",
-    "fileloc": 75,
-    "instructions": 1037,
-    "loads": {
-      "L": 10
-    },
-    "memory_accesses": 13,
-    "name": "stage_rgb2eq",
-    "stores": {
-      "L": 260
-    },
-    "total_instructions": 1037
-  },
-  "3": {
     "basicblocks": 659,
     "calls": "",
     "control_depth": 6,
     "def_use_depth": 185,
     "file": "top.cpp",
-    "fileloc": 210,
-    "instructions": 3840,
+    "fileloc": 218,
+    "instructions": 3770,
     "loads": {
       "L": 9
     },
@@ -66,16 +45,43 @@
     "stores": {
       "L": 1
     },
-    "total_instructions": 3840
+    "total_instructions": 3770
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 11,
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 51,
+    "instructions": 24,
+    "memory_accesses": 0,
+    "name": "__hls_fptosi_float_i32",
+    "total_instructions": 24
   },
   "4": {
+    "basicblocks": 12,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 18,
+    "file": "top.cpp",
+    "fileloc": 374,
+    "instructions": 65,
+    "memory_accesses": 2,
+    "name": "write_output",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 65
+  },
+  "5": {
     "basicblocks": 10,
     "calls": "",
     "control_depth": 2,
     "def_use_depth": 366,
     "file": "top.cpp",
-    "fileloc": 139,
-    "instructions": 1304,
+    "fileloc": 144,
+    "instructions": 1205,
     "loads": {
       "L": 26
     },
@@ -84,6 +90,24 @@
     "stores": {
       "L": 1
     },
-    "total_instructions": 1304
+    "total_instructions": 1205
+  },
+  "6": {
+    "basicblocks": 83,
+    "calls": "3 3 3 3 3",
+    "control_depth": 7,
+    "def_use_depth": 48,
+    "file": "top.cpp",
+    "fileloc": 75,
+    "instructions": 994,
+    "loads": {
+      "L": 10
+    },
+    "memory_accesses": 13,
+    "name": "stage_rgb2eq",
+    "stores": {
+      "L": 260
+    },
+    "total_instructions": 1114
   }
 }

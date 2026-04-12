@@ -253,7 +253,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>3</if_type>
@@ -21898,7 +21898,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -22321,7 +22321,7 @@
 					<Obj>
 						<type>0</type>
 						<id>534</id>
-						<name>empty_60</name>
+						<name>empty_66</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
 						<lineNumber>84</lineNumber>
@@ -22551,7 +22551,7 @@
 					<Obj>
 						<type>0</type>
 						<id>538</id>
-						<name>empty_61</name>
+						<name>empty_67</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
 						<lineNumber>84</lineNumber>
@@ -45505,7 +45505,7 @@
 						<name>cdf_min</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>120</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45521,7 +45521,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>120</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -45561,7 +45561,7 @@
 						<name>sub</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>120</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45577,7 +45577,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>120</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -45615,10 +45615,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1055</id>
-						<name>_ln120</name>
+						<name>_ln124</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>120</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45634,7 +45634,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>120</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -45933,10 +45933,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1056</id>
-						<name>_ln134</name>
+						<name>_ln139</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>134</lineNumber>
+						<lineNumber>139</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45952,7 +45952,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>134</second>
+										<second>139</second>
 									</item>
 								</second>
 							</item>
@@ -46178,7 +46178,7 @@
 					<Obj>
 						<type>2</type>
 						<id>2137</id>
-						<name>stage_rgb2eq_Pipeline_VITIS_LOOP_115_2</name>
+						<name>stage_rgb2eq_Pipeline_VITIS_LOOP_119_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -46202,7 +46202,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:stage_rgb2eq_Pipeline_VITIS_LOOP_115_2&gt;</content>
+				<content>&lt;constant:stage_rgb2eq_Pipeline_VITIS_LOOP_119_2&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_1060">
 				<Value>
@@ -65642,8 +65642,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>12701</mMinLatency>
-			<mMaxLatency>12701</mMaxLatency>
+			<mMinLatency>12684</mMinLatency>
+			<mMaxLatency>12684</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

@@ -4,12 +4,6 @@
 # IP: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0.xci
 # IP: The module: 'bd_0_hls_inst_0' is the root of the design. Do not add the DONT_TOUCH constraint.
 
-# IP: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/hdl/ip/top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip/top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip || ORIG_REF_NAME==top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip} -quiet] -quiet
-
-# IP: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/hdl/ip/top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip/top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip || ORIG_REF_NAME==top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip} -quiet] -quiet
-
 # IP: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/hdl/ip/top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip/top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip || ORIG_REF_NAME==top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip} -quiet] -quiet
 
@@ -34,12 +28,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet
 
 # IP: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0.xci
 # IP: The module: 'bd_0_hls_inst_0' is the root of the design. Do not add the DONT_TOUCH constraint.
-
-# IP: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/hdl/ip/top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip/top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip || ORIG_REF_NAME==top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip} -quiet] -quiet
-
-# IP: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/hdl/ip/top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip/top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip || ORIG_REF_NAME==top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip} -quiet] -quiet
 
 # IP: /nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/hdl/ip/top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip/top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip || ORIG_REF_NAME==top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip} -quiet] -quiet

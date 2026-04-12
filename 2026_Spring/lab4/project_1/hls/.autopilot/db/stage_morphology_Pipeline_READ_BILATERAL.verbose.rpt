@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'stage_morphology_Pipeline_READ_BILATERAL'
 ================================================================
-* Date:           Fri Apr 10 20:50:54 2026
+* Date:           Sat Apr 11 20:28:39 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -73,10 +73,10 @@
     +---------------------------+---------------------+---------+----+-----+----+-----+
     |          Instance         |        Module       | BRAM_18K| DSP|  FF | LUT| URAM|
     +---------------------------+---------------------+---------+----+-----+----+-----+
-    |mul_6ns_8ns_13_1_1_U1519   |mul_6ns_8ns_13_1_1   |        0|   0|    0|  40|    0|
-    |mul_6ns_8ns_13_1_1_U1521   |mul_6ns_8ns_13_1_1   |        0|   0|    0|  40|    0|
-    |urem_6ns_3ns_2_10_1_U1520  |urem_6ns_3ns_2_10_1  |        0|   0|  128|  68|    0|
-    |urem_6ns_3ns_2_10_1_U1522  |urem_6ns_3ns_2_10_1  |        0|   0|  128|  68|    0|
+    |mul_6ns_8ns_13_1_1_U1498   |mul_6ns_8ns_13_1_1   |        0|   0|    0|  40|    0|
+    |mul_6ns_8ns_13_1_1_U1500   |mul_6ns_8ns_13_1_1   |        0|   0|    0|  40|    0|
+    |urem_6ns_3ns_2_10_1_U1499  |urem_6ns_3ns_2_10_1  |        0|   0|  128|  68|    0|
+    |urem_6ns_3ns_2_10_1_U1501  |urem_6ns_3ns_2_10_1  |        0|   0|  128|  68|    0|
     +---------------------------+---------------------+---------+----+-----+----+-----+
     |Total                      |                     |        0|   0|  256| 216|    0|
     +---------------------------+---------------------+---------+----+-----+----+-----+
@@ -85,7 +85,7 @@
     +------------------------------------+------------------------------+--------------+
     |              Instance              |            Module            |  Expression  |
     +------------------------------------+------------------------------+--------------+
-    |mac_muladd_5ns_5ns_5ns_9_4_1_U1523  |mac_muladd_5ns_5ns_5ns_9_4_1  |  i0 * i1 + i2|
+    |mac_muladd_5ns_5ns_5ns_9_4_1_U1502  |mac_muladd_5ns_5ns_5ns_9_4_1  |  i0 * i1 + i2|
     +------------------------------------+------------------------------+--------------+
 
     * Memory: 
@@ -100,7 +100,7 @@
     +---------------------------+----------+----+---+----+------------+------------+
     |i_3_fu_275_p2              |         +|   0|  0|  20|          13|           1|
     |ap_block_pp0_stage0_11001  |       and|   0|  0|   2|           1|           1|
-    |icmp_ln294_fu_269_p2       |      icmp|   0|  0|  21|          13|          14|
+    |icmp_ln305_fu_269_p2       |      icmp|   0|  0|  21|          13|          14|
     |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
     +---------------------------+----------+----+---+----+------------+------------+
     |Total                      |          |   0|  0|  45|          28|          18|
@@ -123,7 +123,7 @@
     +----------------------------------+----+----+-----+-----------+
     |               Name               | FF | LUT| Bits| Const Bits|
     +----------------------------------+----+----+-----+-----------+
-    |add_ln298_reg_436                 |   9|   0|    9|          0|
+    |add_ln310_reg_436                 |   9|   0|    9|          0|
     |ap_CS_fsm                         |   1|   0|    1|          0|
     |ap_done_reg                       |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
@@ -146,12 +146,12 @@
     |ap_loop_exit_ready_pp0_iter8_reg  |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter9_reg  |   1|   0|    1|          0|
     |i_fu_82                           |  13|   0|   13|          0|
-    |tmp_31_reg_421                    |   5|   0|    5|          0|
+    |tmp_40_reg_421                    |   5|   0|    5|          0|
     |tmp_reg_416                       |   5|   0|    5|          0|
-    |trunc_ln296_reg_441               |   2|   0|    2|          0|
-    |trunc_ln297_reg_445               |   2|   0|    2|          0|
-    |add_ln298_reg_436                 |  64|  32|    9|          0|
-    |tmp_31_reg_421                    |  64|  32|    5|          0|
+    |trunc_ln308_reg_441               |   2|   0|    2|          0|
+    |trunc_ln309_reg_445               |   2|   0|    2|          0|
+    |add_ln310_reg_436                 |  64|  32|    9|          0|
+    |tmp_40_reg_421                    |  64|  32|    5|          0|
     +----------------------------------+----+----+-----+-----------+
     |Total                             | 185|  64|   71|          0|
     +----------------------------------+----+----+-----+-----------+
@@ -171,7 +171,7 @@
 |ap_done                          |  out|    1|  ap_ctrl_hs|  stage_morphology_Pipeline_READ_BILATERAL|  return value|
 |ap_idle                          |  out|    1|  ap_ctrl_hs|  stage_morphology_Pipeline_READ_BILATERAL|  return value|
 |ap_ready                         |  out|    1|  ap_ctrl_hs|  stage_morphology_Pipeline_READ_BILATERAL|  return value|
-|bilateral_stream_dout            |   in|   14|     ap_fifo|                          bilateral_stream|       pointer|
+|bilateral_stream_dout            |   in|   12|     ap_fifo|                          bilateral_stream|       pointer|
 |bilateral_stream_empty_n         |   in|    1|     ap_fifo|                          bilateral_stream|       pointer|
 |bilateral_stream_read            |  out|    1|     ap_fifo|                          bilateral_stream|       pointer|
 |bilateral_stream_num_data_valid  |   in|    9|     ap_fifo|                          bilateral_stream|       pointer|
@@ -179,39 +179,39 @@
 |bilateral_buf_8_address1         |  out|    9|   ap_memory|                           bilateral_buf_8|         array|
 |bilateral_buf_8_ce1              |  out|    1|   ap_memory|                           bilateral_buf_8|         array|
 |bilateral_buf_8_we1              |  out|    1|   ap_memory|                           bilateral_buf_8|         array|
-|bilateral_buf_8_d1               |  out|   14|   ap_memory|                           bilateral_buf_8|         array|
+|bilateral_buf_8_d1               |  out|   12|   ap_memory|                           bilateral_buf_8|         array|
 |bilateral_buf_7_address1         |  out|    9|   ap_memory|                           bilateral_buf_7|         array|
 |bilateral_buf_7_ce1              |  out|    1|   ap_memory|                           bilateral_buf_7|         array|
 |bilateral_buf_7_we1              |  out|    1|   ap_memory|                           bilateral_buf_7|         array|
-|bilateral_buf_7_d1               |  out|   14|   ap_memory|                           bilateral_buf_7|         array|
+|bilateral_buf_7_d1               |  out|   12|   ap_memory|                           bilateral_buf_7|         array|
 |bilateral_buf_6_address1         |  out|    9|   ap_memory|                           bilateral_buf_6|         array|
 |bilateral_buf_6_ce1              |  out|    1|   ap_memory|                           bilateral_buf_6|         array|
 |bilateral_buf_6_we1              |  out|    1|   ap_memory|                           bilateral_buf_6|         array|
-|bilateral_buf_6_d1               |  out|   14|   ap_memory|                           bilateral_buf_6|         array|
+|bilateral_buf_6_d1               |  out|   12|   ap_memory|                           bilateral_buf_6|         array|
 |bilateral_buf_5_address1         |  out|    9|   ap_memory|                           bilateral_buf_5|         array|
 |bilateral_buf_5_ce1              |  out|    1|   ap_memory|                           bilateral_buf_5|         array|
 |bilateral_buf_5_we1              |  out|    1|   ap_memory|                           bilateral_buf_5|         array|
-|bilateral_buf_5_d1               |  out|   14|   ap_memory|                           bilateral_buf_5|         array|
+|bilateral_buf_5_d1               |  out|   12|   ap_memory|                           bilateral_buf_5|         array|
 |bilateral_buf_4_address1         |  out|    9|   ap_memory|                           bilateral_buf_4|         array|
 |bilateral_buf_4_ce1              |  out|    1|   ap_memory|                           bilateral_buf_4|         array|
 |bilateral_buf_4_we1              |  out|    1|   ap_memory|                           bilateral_buf_4|         array|
-|bilateral_buf_4_d1               |  out|   14|   ap_memory|                           bilateral_buf_4|         array|
+|bilateral_buf_4_d1               |  out|   12|   ap_memory|                           bilateral_buf_4|         array|
 |bilateral_buf_3_address1         |  out|    9|   ap_memory|                           bilateral_buf_3|         array|
 |bilateral_buf_3_ce1              |  out|    1|   ap_memory|                           bilateral_buf_3|         array|
 |bilateral_buf_3_we1              |  out|    1|   ap_memory|                           bilateral_buf_3|         array|
-|bilateral_buf_3_d1               |  out|   14|   ap_memory|                           bilateral_buf_3|         array|
+|bilateral_buf_3_d1               |  out|   12|   ap_memory|                           bilateral_buf_3|         array|
 |bilateral_buf_2_address1         |  out|    9|   ap_memory|                           bilateral_buf_2|         array|
 |bilateral_buf_2_ce1              |  out|    1|   ap_memory|                           bilateral_buf_2|         array|
 |bilateral_buf_2_we1              |  out|    1|   ap_memory|                           bilateral_buf_2|         array|
-|bilateral_buf_2_d1               |  out|   14|   ap_memory|                           bilateral_buf_2|         array|
+|bilateral_buf_2_d1               |  out|   12|   ap_memory|                           bilateral_buf_2|         array|
 |bilateral_buf_1_address1         |  out|    9|   ap_memory|                           bilateral_buf_1|         array|
 |bilateral_buf_1_ce1              |  out|    1|   ap_memory|                           bilateral_buf_1|         array|
 |bilateral_buf_1_we1              |  out|    1|   ap_memory|                           bilateral_buf_1|         array|
-|bilateral_buf_1_d1               |  out|   14|   ap_memory|                           bilateral_buf_1|         array|
+|bilateral_buf_1_d1               |  out|   12|   ap_memory|                           bilateral_buf_1|         array|
 |bilateral_buf_address1           |  out|    9|   ap_memory|                             bilateral_buf|         array|
 |bilateral_buf_ce1                |  out|    1|   ap_memory|                             bilateral_buf|         array|
 |bilateral_buf_we1                |  out|    1|   ap_memory|                             bilateral_buf|         array|
-|bilateral_buf_d1                 |  out|   14|   ap_memory|                             bilateral_buf|         array|
+|bilateral_buf_d1                 |  out|   12|   ap_memory|                             bilateral_buf|         array|
 +---------------------------------+-----+-----+------------+------------------------------------------+--------------+
 
 ============================================================
@@ -264,122 +264,122 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 2.65>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [top.cpp:294]   --->   Operation 14 'alloca' 'i' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 15 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_1, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 16 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_2, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 17 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_3, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 18 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_4, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 19 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_5, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 20 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_6, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 21 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_7, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 22 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i14 %bilateral_buf_8, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 23 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i14 %bilateral_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 25 [1/1] (0.48ns)   --->   "%store_ln294 = store i13 0, i13 %i" [top.cpp:294]   --->   Operation 25 'store' 'store_ln294' <Predicate = true> <Delay = 0.48>
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln294 = br void %for.inc" [top.cpp:294]   --->   Operation 26 'br' 'br_ln294' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%i_2 = load i13 %i" [top.cpp:294]   --->   Operation 27 'load' 'i_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 28 [1/1] (0.97ns)   --->   "%icmp_ln294 = icmp_eq  i13 %i_2, i13 4096" [top.cpp:294]   --->   Operation 28 'icmp' 'icmp_ln294' <Predicate = true> <Delay = 0.97> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.98> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 29 [1/1] (0.97ns)   --->   "%i_3 = add i13 %i_2, i13 1" [top.cpp:294]   --->   Operation 29 'add' 'i_3' <Predicate = true> <Delay = 0.97> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%br_ln294 = br i1 %icmp_ln294, void %for.inc.split, void %for.body12.preheader.exitStub" [top.cpp:294]   --->   Operation 30 'br' 'br_ln294' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%c = trunc i13 %i_2" [top.cpp:294]   --->   Operation 31 'trunc' 'c' <Predicate = (!icmp_ln294)> <Delay = 0.00>
-ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i6 @_ssdm_op_PartSelect.i6.i13.i32.i32, i13 %i_2, i32 6, i32 11" [top.cpp:296]   --->   Operation 32 'partselect' 'trunc_ln' <Predicate = (!icmp_ln294)> <Delay = 0.00>
-ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln296 = zext i6 %trunc_ln" [top.cpp:296]   --->   Operation 33 'zext' 'zext_ln296' <Predicate = (!icmp_ln294)> <Delay = 0.00>
-ST_1 : Operation 34 [1/1] (2.17ns)   --->   "%mul_ln296 = mul i13 %zext_ln296, i13 86" [top.cpp:296]   --->   Operation 34 'mul' 'mul_ln296' <Predicate = (!icmp_ln294)> <Delay = 2.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 2.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%tmp = partselect i5 @_ssdm_op_PartSelect.i5.i13.i32.i32, i13 %mul_ln296, i32 8, i32 12" [top.cpp:296]   --->   Operation 35 'partselect' 'tmp' <Predicate = (!icmp_ln294)> <Delay = 0.00>
-ST_1 : Operation 36 [10/10] (1.53ns)   --->   "%urem_ln296 = urem i6 %trunc_ln, i6 3" [top.cpp:296]   --->   Operation 36 'urem' 'urem_ln296' <Predicate = (!icmp_ln294)> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln297 = zext i6 %c" [top.cpp:297]   --->   Operation 37 'zext' 'zext_ln297' <Predicate = (!icmp_ln294)> <Delay = 0.00>
-ST_1 : Operation 38 [1/1] (2.17ns)   --->   "%mul_ln297 = mul i13 %zext_ln297, i13 86" [top.cpp:297]   --->   Operation 38 'mul' 'mul_ln297' <Predicate = (!icmp_ln294)> <Delay = 2.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 2.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_31 = partselect i5 @_ssdm_op_PartSelect.i5.i13.i32.i32, i13 %mul_ln297, i32 8, i32 12" [top.cpp:297]   --->   Operation 39 'partselect' 'tmp_31' <Predicate = (!icmp_ln294)> <Delay = 0.00>
-ST_1 : Operation 40 [10/10] (1.53ns)   --->   "%urem_ln297 = urem i6 %c, i6 3" [top.cpp:297]   --->   Operation 40 'urem' 'urem_ln297' <Predicate = (!icmp_ln294)> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 41 [1/1] (0.48ns)   --->   "%store_ln294 = store i13 %i_3, i13 %i" [top.cpp:294]   --->   Operation 41 'store' 'store_ln294' <Predicate = (!icmp_ln294)> <Delay = 0.48>
-ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%br_ln294 = br void %for.inc" [top.cpp:294]   --->   Operation 42 'br' 'br_ln294' <Predicate = (!icmp_ln294)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [top.cpp:305]   --->   Operation 14 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 15 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_1, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 16 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_2, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 17 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_3, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 18 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_4, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 19 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_5, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 20 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_6, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 21 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_7, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 22 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i12 %bilateral_buf_8, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 23 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %bilateral_stream, void @empty_17, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.48ns)   --->   "%store_ln305 = store i13 0, i13 %i" [top.cpp:305]   --->   Operation 25 'store' 'store_ln305' <Predicate = true> <Delay = 0.48>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln305 = br void %for.inc" [top.cpp:305]   --->   Operation 26 'br' 'br_ln305' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%i_2 = load i13 %i" [top.cpp:305]   --->   Operation 27 'load' 'i_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.97ns)   --->   "%icmp_ln305 = icmp_eq  i13 %i_2, i13 4096" [top.cpp:305]   --->   Operation 28 'icmp' 'icmp_ln305' <Predicate = true> <Delay = 0.97> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.98> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (0.97ns)   --->   "%i_3 = add i13 %i_2, i13 1" [top.cpp:305]   --->   Operation 29 'add' 'i_3' <Predicate = true> <Delay = 0.97> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%br_ln305 = br i1 %icmp_ln305, void %for.inc.split, void %for.body12.preheader.exitStub" [top.cpp:305]   --->   Operation 30 'br' 'br_ln305' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%c = trunc i13 %i_2" [top.cpp:305]   --->   Operation 31 'trunc' 'c' <Predicate = (!icmp_ln305)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i6 @_ssdm_op_PartSelect.i6.i13.i32.i32, i13 %i_2, i32 6, i32 11" [top.cpp:308]   --->   Operation 32 'partselect' 'trunc_ln' <Predicate = (!icmp_ln305)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln308 = zext i6 %trunc_ln" [top.cpp:308]   --->   Operation 33 'zext' 'zext_ln308' <Predicate = (!icmp_ln305)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (2.17ns)   --->   "%mul_ln308 = mul i13 %zext_ln308, i13 86" [top.cpp:308]   --->   Operation 34 'mul' 'mul_ln308' <Predicate = (!icmp_ln305)> <Delay = 2.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 2.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%tmp = partselect i5 @_ssdm_op_PartSelect.i5.i13.i32.i32, i13 %mul_ln308, i32 8, i32 12" [top.cpp:308]   --->   Operation 35 'partselect' 'tmp' <Predicate = (!icmp_ln305)> <Delay = 0.00>
+ST_1 : Operation 36 [10/10] (1.53ns)   --->   "%urem_ln308 = urem i6 %trunc_ln, i6 3" [top.cpp:308]   --->   Operation 36 'urem' 'urem_ln308' <Predicate = (!icmp_ln305)> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln309 = zext i6 %c" [top.cpp:309]   --->   Operation 37 'zext' 'zext_ln309' <Predicate = (!icmp_ln305)> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (2.17ns)   --->   "%mul_ln309 = mul i13 %zext_ln309, i13 86" [top.cpp:309]   --->   Operation 38 'mul' 'mul_ln309' <Predicate = (!icmp_ln305)> <Delay = 2.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 2.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_40 = partselect i5 @_ssdm_op_PartSelect.i5.i13.i32.i32, i13 %mul_ln309, i32 8, i32 12" [top.cpp:309]   --->   Operation 39 'partselect' 'tmp_40' <Predicate = (!icmp_ln305)> <Delay = 0.00>
+ST_1 : Operation 40 [10/10] (1.53ns)   --->   "%urem_ln309 = urem i6 %c, i6 3" [top.cpp:309]   --->   Operation 40 'urem' 'urem_ln309' <Predicate = (!icmp_ln305)> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 41 [1/1] (0.48ns)   --->   "%store_ln305 = store i13 %i_3, i13 %i" [top.cpp:305]   --->   Operation 41 'store' 'store_ln305' <Predicate = (!icmp_ln305)> <Delay = 0.48>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%br_ln305 = br void %for.inc" [top.cpp:305]   --->   Operation 42 'br' 'br_ln305' <Predicate = (!icmp_ln305)> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 1.53>
-ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%zext_ln296_1 = zext i5 %tmp" [top.cpp:296]   --->   Operation 43 'zext' 'zext_ln296_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 44 [3/3] (1.08ns) (grouped into DSP with root node add_ln298)   --->   "%mul_ln296_1 = mul i9 %zext_ln296_1, i9 22" [top.cpp:296]   --->   Operation 44 'mul' 'mul_ln296_1' <Predicate = true> <Delay = 1.08> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_2 : Operation 45 [9/10] (1.53ns)   --->   "%urem_ln296 = urem i6 %trunc_ln, i6 3" [top.cpp:296]   --->   Operation 45 'urem' 'urem_ln296' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 46 [9/10] (1.53ns)   --->   "%urem_ln297 = urem i6 %c, i6 3" [top.cpp:297]   --->   Operation 46 'urem' 'urem_ln297' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%zext_ln308_1 = zext i5 %tmp" [top.cpp:308]   --->   Operation 43 'zext' 'zext_ln308_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [3/3] (1.08ns) (grouped into DSP with root node add_ln310)   --->   "%mul_ln308_1 = mul i9 %zext_ln308_1, i9 22" [top.cpp:308]   --->   Operation 44 'mul' 'mul_ln308_1' <Predicate = true> <Delay = 1.08> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 45 [9/10] (1.53ns)   --->   "%urem_ln308 = urem i6 %trunc_ln, i6 3" [top.cpp:308]   --->   Operation 45 'urem' 'urem_ln308' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 46 [9/10] (1.53ns)   --->   "%urem_ln309 = urem i6 %c, i6 3" [top.cpp:309]   --->   Operation 46 'urem' 'urem_ln309' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 3 <SV = 2> <Delay = 1.53>
-ST_3 : Operation 47 [2/3] (1.08ns) (grouped into DSP with root node add_ln298)   --->   "%mul_ln296_1 = mul i9 %zext_ln296_1, i9 22" [top.cpp:296]   --->   Operation 47 'mul' 'mul_ln296_1' <Predicate = true> <Delay = 1.08> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_3 : Operation 48 [8/10] (1.53ns)   --->   "%urem_ln296 = urem i6 %trunc_ln, i6 3" [top.cpp:296]   --->   Operation 48 'urem' 'urem_ln296' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 49 [8/10] (1.53ns)   --->   "%urem_ln297 = urem i6 %c, i6 3" [top.cpp:297]   --->   Operation 49 'urem' 'urem_ln297' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 47 [2/3] (1.08ns) (grouped into DSP with root node add_ln310)   --->   "%mul_ln308_1 = mul i9 %zext_ln308_1, i9 22" [top.cpp:308]   --->   Operation 47 'mul' 'mul_ln308_1' <Predicate = true> <Delay = 1.08> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 48 [8/10] (1.53ns)   --->   "%urem_ln308 = urem i6 %trunc_ln, i6 3" [top.cpp:308]   --->   Operation 48 'urem' 'urem_ln308' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 49 [8/10] (1.53ns)   --->   "%urem_ln309 = urem i6 %c, i6 3" [top.cpp:309]   --->   Operation 49 'urem' 'urem_ln309' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 4 <SV = 3> <Delay = 1.53>
-ST_4 : Operation 50 [1/3] (0.00ns) (grouped into DSP with root node add_ln298)   --->   "%mul_ln296_1 = mul i9 %zext_ln296_1, i9 22" [top.cpp:296]   --->   Operation 50 'mul' 'mul_ln296_1' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_4 : Operation 51 [7/10] (1.53ns)   --->   "%urem_ln296 = urem i6 %trunc_ln, i6 3" [top.cpp:296]   --->   Operation 51 'urem' 'urem_ln296' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln298 = zext i5 %tmp_31" [top.cpp:298]   --->   Operation 52 'zext' 'zext_ln298' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 53 [2/2] (0.83ns) (root node of the DSP)   --->   "%add_ln298 = add i9 %mul_ln296_1, i9 %zext_ln298" [top.cpp:298]   --->   Operation 53 'add' 'add_ln298' <Predicate = true> <Delay = 0.83> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_4 : Operation 54 [7/10] (1.53ns)   --->   "%urem_ln297 = urem i6 %c, i6 3" [top.cpp:297]   --->   Operation 54 'urem' 'urem_ln297' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 50 [1/3] (0.00ns) (grouped into DSP with root node add_ln310)   --->   "%mul_ln308_1 = mul i9 %zext_ln308_1, i9 22" [top.cpp:308]   --->   Operation 50 'mul' 'mul_ln308_1' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 51 [7/10] (1.53ns)   --->   "%urem_ln308 = urem i6 %trunc_ln, i6 3" [top.cpp:308]   --->   Operation 51 'urem' 'urem_ln308' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln310 = zext i5 %tmp_40" [top.cpp:310]   --->   Operation 52 'zext' 'zext_ln310' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [2/2] (0.83ns) (root node of the DSP)   --->   "%add_ln310 = add i9 %mul_ln308_1, i9 %zext_ln310" [top.cpp:310]   --->   Operation 53 'add' 'add_ln310' <Predicate = true> <Delay = 0.83> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 54 [7/10] (1.53ns)   --->   "%urem_ln309 = urem i6 %c, i6 3" [top.cpp:309]   --->   Operation 54 'urem' 'urem_ln309' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 5 <SV = 4> <Delay = 1.53>
-ST_5 : Operation 55 [6/10] (1.53ns)   --->   "%urem_ln296 = urem i6 %trunc_ln, i6 3" [top.cpp:296]   --->   Operation 55 'urem' 'urem_ln296' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 56 [1/2] (0.83ns) (root node of the DSP)   --->   "%add_ln298 = add i9 %mul_ln296_1, i9 %zext_ln298" [top.cpp:298]   --->   Operation 56 'add' 'add_ln298' <Predicate = true> <Delay = 0.83> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_5 : Operation 57 [6/10] (1.53ns)   --->   "%urem_ln297 = urem i6 %c, i6 3" [top.cpp:297]   --->   Operation 57 'urem' 'urem_ln297' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 55 [6/10] (1.53ns)   --->   "%urem_ln308 = urem i6 %trunc_ln, i6 3" [top.cpp:308]   --->   Operation 55 'urem' 'urem_ln308' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 56 [1/2] (0.83ns) (root node of the DSP)   --->   "%add_ln310 = add i9 %mul_ln308_1, i9 %zext_ln310" [top.cpp:310]   --->   Operation 56 'add' 'add_ln310' <Predicate = true> <Delay = 0.83> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 57 [6/10] (1.53ns)   --->   "%urem_ln309 = urem i6 %c, i6 3" [top.cpp:309]   --->   Operation 57 'urem' 'urem_ln309' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 1.53>
-ST_6 : Operation 58 [5/10] (1.53ns)   --->   "%urem_ln296 = urem i6 %trunc_ln, i6 3" [top.cpp:296]   --->   Operation 58 'urem' 'urem_ln296' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 59 [5/10] (1.53ns)   --->   "%urem_ln297 = urem i6 %c, i6 3" [top.cpp:297]   --->   Operation 59 'urem' 'urem_ln297' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 58 [5/10] (1.53ns)   --->   "%urem_ln308 = urem i6 %trunc_ln, i6 3" [top.cpp:308]   --->   Operation 58 'urem' 'urem_ln308' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 59 [5/10] (1.53ns)   --->   "%urem_ln309 = urem i6 %c, i6 3" [top.cpp:309]   --->   Operation 59 'urem' 'urem_ln309' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 7 <SV = 6> <Delay = 1.53>
-ST_7 : Operation 60 [4/10] (1.53ns)   --->   "%urem_ln296 = urem i6 %trunc_ln, i6 3" [top.cpp:296]   --->   Operation 60 'urem' 'urem_ln296' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 61 [4/10] (1.53ns)   --->   "%urem_ln297 = urem i6 %c, i6 3" [top.cpp:297]   --->   Operation 61 'urem' 'urem_ln297' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 60 [4/10] (1.53ns)   --->   "%urem_ln308 = urem i6 %trunc_ln, i6 3" [top.cpp:308]   --->   Operation 60 'urem' 'urem_ln308' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 61 [4/10] (1.53ns)   --->   "%urem_ln309 = urem i6 %c, i6 3" [top.cpp:309]   --->   Operation 61 'urem' 'urem_ln309' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 8 <SV = 7> <Delay = 1.53>
-ST_8 : Operation 62 [3/10] (1.53ns)   --->   "%urem_ln296 = urem i6 %trunc_ln, i6 3" [top.cpp:296]   --->   Operation 62 'urem' 'urem_ln296' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 63 [3/10] (1.53ns)   --->   "%urem_ln297 = urem i6 %c, i6 3" [top.cpp:297]   --->   Operation 63 'urem' 'urem_ln297' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 62 [3/10] (1.53ns)   --->   "%urem_ln308 = urem i6 %trunc_ln, i6 3" [top.cpp:308]   --->   Operation 62 'urem' 'urem_ln308' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 63 [3/10] (1.53ns)   --->   "%urem_ln309 = urem i6 %c, i6 3" [top.cpp:309]   --->   Operation 63 'urem' 'urem_ln309' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 9 <SV = 8> <Delay = 1.53>
-ST_9 : Operation 64 [2/10] (1.53ns)   --->   "%urem_ln296 = urem i6 %trunc_ln, i6 3" [top.cpp:296]   --->   Operation 64 'urem' 'urem_ln296' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 65 [2/10] (1.53ns)   --->   "%urem_ln297 = urem i6 %c, i6 3" [top.cpp:297]   --->   Operation 65 'urem' 'urem_ln297' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 64 [2/10] (1.53ns)   --->   "%urem_ln308 = urem i6 %trunc_ln, i6 3" [top.cpp:308]   --->   Operation 64 'urem' 'urem_ln308' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 65 [2/10] (1.53ns)   --->   "%urem_ln309 = urem i6 %c, i6 3" [top.cpp:309]   --->   Operation 65 'urem' 'urem_ln309' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 10 <SV = 9> <Delay = 2.15>
-ST_10 : Operation 66 [1/10] (1.53ns)   --->   "%urem_ln296 = urem i6 %trunc_ln, i6 3" [top.cpp:296]   --->   Operation 66 'urem' 'urem_ln296' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_10 : Operation 67 [1/1] (0.00ns)   --->   "%trunc_ln296 = trunc i2 %urem_ln296" [top.cpp:296]   --->   Operation 67 'trunc' 'trunc_ln296' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 68 [1/10] (1.53ns)   --->   "%urem_ln297 = urem i6 %c, i6 3" [top.cpp:297]   --->   Operation 68 'urem' 'urem_ln297' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_10 : Operation 69 [1/1] (0.00ns)   --->   "%trunc_ln297 = trunc i2 %urem_ln297" [top.cpp:297]   --->   Operation 69 'trunc' 'trunc_ln297' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 70 [1/1] (0.62ns)   --->   "%switch_ln298 = switch i2 %trunc_ln296, void %arrayidx28.case.2, i2 0, void %arrayidx28.case.0, i2 1, void %arrayidx28.case.1" [top.cpp:298]   --->   Operation 70 'switch' 'switch_ln298' <Predicate = true> <Delay = 0.62>
-ST_10 : Operation 71 [1/1] (0.62ns)   --->   "%switch_ln298 = switch i2 %trunc_ln297, void %arrayidx28.case.2185, i2 0, void %arrayidx28.case.0183, i2 1, void %arrayidx28.case.1184" [top.cpp:298]   --->   Operation 71 'switch' 'switch_ln298' <Predicate = (trunc_ln296 == 1)> <Delay = 0.62>
-ST_10 : Operation 72 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx28.exit" [top.cpp:298]   --->   Operation 72 'br' 'br_ln298' <Predicate = (trunc_ln296 == 1)> <Delay = 0.00>
-ST_10 : Operation 73 [1/1] (0.62ns)   --->   "%switch_ln298 = switch i2 %trunc_ln297, void %arrayidx28.case.2180, i2 0, void %arrayidx28.case.0178, i2 1, void %arrayidx28.case.1179" [top.cpp:298]   --->   Operation 73 'switch' 'switch_ln298' <Predicate = (trunc_ln296 == 0)> <Delay = 0.62>
-ST_10 : Operation 74 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx28.exit" [top.cpp:298]   --->   Operation 74 'br' 'br_ln298' <Predicate = (trunc_ln296 == 0)> <Delay = 0.00>
-ST_10 : Operation 75 [1/1] (0.62ns)   --->   "%switch_ln298 = switch i2 %trunc_ln297, void %arrayidx28.case.2190, i2 0, void %arrayidx28.case.0188, i2 1, void %arrayidx28.case.1189" [top.cpp:298]   --->   Operation 75 'switch' 'switch_ln298' <Predicate = (trunc_ln296 != 0 & trunc_ln296 != 1)> <Delay = 0.62>
-ST_10 : Operation 76 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx28.exit" [top.cpp:298]   --->   Operation 76 'br' 'br_ln298' <Predicate = (trunc_ln296 != 0 & trunc_ln296 != 1)> <Delay = 0.00>
-ST_10 : Operation 109 [1/1] (0.48ns)   --->   "%ret_ln0 = ret"   --->   Operation 109 'ret' 'ret_ln0' <Predicate = (icmp_ln294)> <Delay = 0.48>
+ST_10 : Operation 66 [1/10] (1.53ns)   --->   "%urem_ln308 = urem i6 %trunc_ln, i6 3" [top.cpp:308]   --->   Operation 66 'urem' 'urem_ln308' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 67 [1/1] (0.00ns)   --->   "%trunc_ln308 = trunc i2 %urem_ln308" [top.cpp:308]   --->   Operation 67 'trunc' 'trunc_ln308' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 68 [1/10] (1.53ns)   --->   "%urem_ln309 = urem i6 %c, i6 3" [top.cpp:309]   --->   Operation 68 'urem' 'urem_ln309' <Predicate = true> <Delay = 1.53> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 9> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 69 [1/1] (0.00ns)   --->   "%trunc_ln309 = trunc i2 %urem_ln309" [top.cpp:309]   --->   Operation 69 'trunc' 'trunc_ln309' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 70 [1/1] (0.62ns)   --->   "%switch_ln310 = switch i2 %trunc_ln308, void %arrayidx28.case.2, i2 0, void %arrayidx28.case.0, i2 1, void %arrayidx28.case.1" [top.cpp:310]   --->   Operation 70 'switch' 'switch_ln310' <Predicate = true> <Delay = 0.62>
+ST_10 : Operation 71 [1/1] (0.62ns)   --->   "%switch_ln310 = switch i2 %trunc_ln309, void %arrayidx28.case.2185, i2 0, void %arrayidx28.case.0183, i2 1, void %arrayidx28.case.1184" [top.cpp:310]   --->   Operation 71 'switch' 'switch_ln310' <Predicate = (trunc_ln308 == 1)> <Delay = 0.62>
+ST_10 : Operation 72 [1/1] (0.00ns)   --->   "%br_ln310 = br void %arrayidx28.exit" [top.cpp:310]   --->   Operation 72 'br' 'br_ln310' <Predicate = (trunc_ln308 == 1)> <Delay = 0.00>
+ST_10 : Operation 73 [1/1] (0.62ns)   --->   "%switch_ln310 = switch i2 %trunc_ln309, void %arrayidx28.case.2180, i2 0, void %arrayidx28.case.0178, i2 1, void %arrayidx28.case.1179" [top.cpp:310]   --->   Operation 73 'switch' 'switch_ln310' <Predicate = (trunc_ln308 == 0)> <Delay = 0.62>
+ST_10 : Operation 74 [1/1] (0.00ns)   --->   "%br_ln310 = br void %arrayidx28.exit" [top.cpp:310]   --->   Operation 74 'br' 'br_ln310' <Predicate = (trunc_ln308 == 0)> <Delay = 0.00>
+ST_10 : Operation 75 [1/1] (0.62ns)   --->   "%switch_ln310 = switch i2 %trunc_ln309, void %arrayidx28.case.2190, i2 0, void %arrayidx28.case.0188, i2 1, void %arrayidx28.case.1189" [top.cpp:310]   --->   Operation 75 'switch' 'switch_ln310' <Predicate = (trunc_ln308 != 0 & trunc_ln308 != 1)> <Delay = 0.62>
+ST_10 : Operation 76 [1/1] (0.00ns)   --->   "%br_ln310 = br void %arrayidx28.exit" [top.cpp:310]   --->   Operation 76 'br' 'br_ln310' <Predicate = (trunc_ln308 != 0 & trunc_ln308 != 1)> <Delay = 0.00>
+ST_10 : Operation 109 [1/1] (0.48ns)   --->   "%ret_ln0 = ret"   --->   Operation 109 'ret' 'ret_ln0' <Predicate = (icmp_ln305)> <Delay = 0.48>
 
 State 11 <SV = 10> <Delay = 2.81>
-ST_11 : Operation 77 [1/1] (0.00ns)   --->   "%specpipeline_ln295 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_2" [top.cpp:295]   --->   Operation 77 'specpipeline' 'specpipeline_ln295' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 78 [1/1] (0.00ns)   --->   "%speclooptripcount_ln294 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 4096, i64 4096, i64 4096" [top.cpp:294]   --->   Operation 78 'speclooptripcount' 'speclooptripcount_ln294' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 79 [1/1] (0.00ns)   --->   "%specloopname_ln294 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [top.cpp:294]   --->   Operation 79 'specloopname' 'specloopname_ln294' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 80 [1/1] (0.00ns)   --->   "%zext_ln298_1 = zext i9 %add_ln298" [top.cpp:298]   --->   Operation 80 'zext' 'zext_ln298_1' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 81 [1/1] (0.00ns)   --->   "%bilateral_buf_addr = getelementptr i14 %bilateral_buf, i64 0, i64 %zext_ln298_1" [top.cpp:298]   --->   Operation 81 'getelementptr' 'bilateral_buf_addr' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 82 [1/1] (0.00ns)   --->   "%bilateral_buf_1_addr = getelementptr i14 %bilateral_buf_1, i64 0, i64 %zext_ln298_1" [top.cpp:298]   --->   Operation 82 'getelementptr' 'bilateral_buf_1_addr' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 83 [1/1] (0.00ns)   --->   "%bilateral_buf_2_addr = getelementptr i14 %bilateral_buf_2, i64 0, i64 %zext_ln298_1" [top.cpp:298]   --->   Operation 83 'getelementptr' 'bilateral_buf_2_addr' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 84 [1/1] (0.00ns)   --->   "%bilateral_buf_3_addr = getelementptr i14 %bilateral_buf_3, i64 0, i64 %zext_ln298_1" [top.cpp:298]   --->   Operation 84 'getelementptr' 'bilateral_buf_3_addr' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 85 [1/1] (0.00ns)   --->   "%bilateral_buf_4_addr = getelementptr i14 %bilateral_buf_4, i64 0, i64 %zext_ln298_1" [top.cpp:298]   --->   Operation 85 'getelementptr' 'bilateral_buf_4_addr' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 86 [1/1] (0.00ns)   --->   "%bilateral_buf_5_addr = getelementptr i14 %bilateral_buf_5, i64 0, i64 %zext_ln298_1" [top.cpp:298]   --->   Operation 86 'getelementptr' 'bilateral_buf_5_addr' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 87 [1/1] (0.00ns)   --->   "%bilateral_buf_6_addr = getelementptr i14 %bilateral_buf_6, i64 0, i64 %zext_ln298_1" [top.cpp:298]   --->   Operation 87 'getelementptr' 'bilateral_buf_6_addr' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 88 [1/1] (0.00ns)   --->   "%bilateral_buf_7_addr = getelementptr i14 %bilateral_buf_7, i64 0, i64 %zext_ln298_1" [top.cpp:298]   --->   Operation 88 'getelementptr' 'bilateral_buf_7_addr' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 89 [1/1] (0.00ns)   --->   "%bilateral_buf_8_addr = getelementptr i14 %bilateral_buf_8, i64 0, i64 %zext_ln298_1" [top.cpp:298]   --->   Operation 89 'getelementptr' 'bilateral_buf_8_addr' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 90 [1/1] ( I:1.46ns O:1.46ns )   --->   "%bilateral_stream_read = read i14 @_ssdm_op_Read.ap_fifo.volatile.i14P0A, i14 %bilateral_stream" [top.cpp:298]   --->   Operation 90 'read' 'bilateral_stream_read' <Predicate = true> <Delay = 1.46> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 256> <FIFO>
-ST_11 : Operation 91 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln298 = store i14 %bilateral_stream_read, i9 %bilateral_buf_4_addr" [top.cpp:298]   --->   Operation 91 'store' 'store_ln298' <Predicate = (trunc_ln296 == 1 & trunc_ln297 == 1)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_11 : Operation 92 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx28.exit182" [top.cpp:298]   --->   Operation 92 'br' 'br_ln298' <Predicate = (trunc_ln296 == 1 & trunc_ln297 == 1)> <Delay = 0.00>
-ST_11 : Operation 93 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln298 = store i14 %bilateral_stream_read, i9 %bilateral_buf_3_addr" [top.cpp:298]   --->   Operation 93 'store' 'store_ln298' <Predicate = (trunc_ln296 == 1 & trunc_ln297 == 0)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_11 : Operation 94 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx28.exit182" [top.cpp:298]   --->   Operation 94 'br' 'br_ln298' <Predicate = (trunc_ln296 == 1 & trunc_ln297 == 0)> <Delay = 0.00>
-ST_11 : Operation 95 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln298 = store i14 %bilateral_stream_read, i9 %bilateral_buf_5_addr" [top.cpp:298]   --->   Operation 95 'store' 'store_ln298' <Predicate = (trunc_ln296 == 1 & trunc_ln297 != 0 & trunc_ln297 != 1)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_11 : Operation 96 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx28.exit182" [top.cpp:298]   --->   Operation 96 'br' 'br_ln298' <Predicate = (trunc_ln296 == 1 & trunc_ln297 != 0 & trunc_ln297 != 1)> <Delay = 0.00>
-ST_11 : Operation 97 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln298 = store i14 %bilateral_stream_read, i9 %bilateral_buf_1_addr" [top.cpp:298]   --->   Operation 97 'store' 'store_ln298' <Predicate = (trunc_ln296 == 0 & trunc_ln297 == 1)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_11 : Operation 98 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx28.exit177" [top.cpp:298]   --->   Operation 98 'br' 'br_ln298' <Predicate = (trunc_ln296 == 0 & trunc_ln297 == 1)> <Delay = 0.00>
-ST_11 : Operation 99 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln298 = store i14 %bilateral_stream_read, i9 %bilateral_buf_addr" [top.cpp:298]   --->   Operation 99 'store' 'store_ln298' <Predicate = (trunc_ln296 == 0 & trunc_ln297 == 0)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_11 : Operation 100 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx28.exit177" [top.cpp:298]   --->   Operation 100 'br' 'br_ln298' <Predicate = (trunc_ln296 == 0 & trunc_ln297 == 0)> <Delay = 0.00>
-ST_11 : Operation 101 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln298 = store i14 %bilateral_stream_read, i9 %bilateral_buf_2_addr" [top.cpp:298]   --->   Operation 101 'store' 'store_ln298' <Predicate = (trunc_ln296 == 0 & trunc_ln297 != 0 & trunc_ln297 != 1)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_11 : Operation 102 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx28.exit177" [top.cpp:298]   --->   Operation 102 'br' 'br_ln298' <Predicate = (trunc_ln296 == 0 & trunc_ln297 != 0 & trunc_ln297 != 1)> <Delay = 0.00>
-ST_11 : Operation 103 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln298 = store i14 %bilateral_stream_read, i9 %bilateral_buf_7_addr" [top.cpp:298]   --->   Operation 103 'store' 'store_ln298' <Predicate = (trunc_ln296 != 0 & trunc_ln296 != 1 & trunc_ln297 == 1)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_11 : Operation 104 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx28.exit187" [top.cpp:298]   --->   Operation 104 'br' 'br_ln298' <Predicate = (trunc_ln296 != 0 & trunc_ln296 != 1 & trunc_ln297 == 1)> <Delay = 0.00>
-ST_11 : Operation 105 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln298 = store i14 %bilateral_stream_read, i9 %bilateral_buf_6_addr" [top.cpp:298]   --->   Operation 105 'store' 'store_ln298' <Predicate = (trunc_ln296 != 0 & trunc_ln296 != 1 & trunc_ln297 == 0)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_11 : Operation 106 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx28.exit187" [top.cpp:298]   --->   Operation 106 'br' 'br_ln298' <Predicate = (trunc_ln296 != 0 & trunc_ln296 != 1 & trunc_ln297 == 0)> <Delay = 0.00>
-ST_11 : Operation 107 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln298 = store i14 %bilateral_stream_read, i9 %bilateral_buf_8_addr" [top.cpp:298]   --->   Operation 107 'store' 'store_ln298' <Predicate = (trunc_ln296 != 0 & trunc_ln296 != 1 & trunc_ln297 != 0 & trunc_ln297 != 1)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 484> <RAM>
-ST_11 : Operation 108 [1/1] (0.00ns)   --->   "%br_ln298 = br void %arrayidx28.exit187" [top.cpp:298]   --->   Operation 108 'br' 'br_ln298' <Predicate = (trunc_ln296 != 0 & trunc_ln296 != 1 & trunc_ln297 != 0 & trunc_ln297 != 1)> <Delay = 0.00>
+ST_11 : Operation 77 [1/1] (0.00ns)   --->   "%specpipeline_ln306 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_2" [top.cpp:306]   --->   Operation 77 'specpipeline' 'specpipeline_ln306' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 78 [1/1] (0.00ns)   --->   "%speclooptripcount_ln307 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 4096, i64 4096, i64 4096" [top.cpp:307]   --->   Operation 78 'speclooptripcount' 'speclooptripcount_ln307' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 79 [1/1] (0.00ns)   --->   "%specloopname_ln305 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [top.cpp:305]   --->   Operation 79 'specloopname' 'specloopname_ln305' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 80 [1/1] (0.00ns)   --->   "%zext_ln310_1 = zext i9 %add_ln310" [top.cpp:310]   --->   Operation 80 'zext' 'zext_ln310_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 81 [1/1] (0.00ns)   --->   "%bilateral_buf_addr = getelementptr i12 %bilateral_buf, i64 0, i64 %zext_ln310_1" [top.cpp:310]   --->   Operation 81 'getelementptr' 'bilateral_buf_addr' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 82 [1/1] (0.00ns)   --->   "%bilateral_buf_1_addr = getelementptr i12 %bilateral_buf_1, i64 0, i64 %zext_ln310_1" [top.cpp:310]   --->   Operation 82 'getelementptr' 'bilateral_buf_1_addr' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 83 [1/1] (0.00ns)   --->   "%bilateral_buf_2_addr = getelementptr i12 %bilateral_buf_2, i64 0, i64 %zext_ln310_1" [top.cpp:310]   --->   Operation 83 'getelementptr' 'bilateral_buf_2_addr' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 84 [1/1] (0.00ns)   --->   "%bilateral_buf_3_addr = getelementptr i12 %bilateral_buf_3, i64 0, i64 %zext_ln310_1" [top.cpp:310]   --->   Operation 84 'getelementptr' 'bilateral_buf_3_addr' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 85 [1/1] (0.00ns)   --->   "%bilateral_buf_4_addr = getelementptr i12 %bilateral_buf_4, i64 0, i64 %zext_ln310_1" [top.cpp:310]   --->   Operation 85 'getelementptr' 'bilateral_buf_4_addr' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 86 [1/1] (0.00ns)   --->   "%bilateral_buf_5_addr = getelementptr i12 %bilateral_buf_5, i64 0, i64 %zext_ln310_1" [top.cpp:310]   --->   Operation 86 'getelementptr' 'bilateral_buf_5_addr' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 87 [1/1] (0.00ns)   --->   "%bilateral_buf_6_addr = getelementptr i12 %bilateral_buf_6, i64 0, i64 %zext_ln310_1" [top.cpp:310]   --->   Operation 87 'getelementptr' 'bilateral_buf_6_addr' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 88 [1/1] (0.00ns)   --->   "%bilateral_buf_7_addr = getelementptr i12 %bilateral_buf_7, i64 0, i64 %zext_ln310_1" [top.cpp:310]   --->   Operation 88 'getelementptr' 'bilateral_buf_7_addr' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 89 [1/1] (0.00ns)   --->   "%bilateral_buf_8_addr = getelementptr i12 %bilateral_buf_8, i64 0, i64 %zext_ln310_1" [top.cpp:310]   --->   Operation 89 'getelementptr' 'bilateral_buf_8_addr' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 90 [1/1] ( I:1.46ns O:1.46ns )   --->   "%bilateral_stream_read = read i12 @_ssdm_op_Read.ap_fifo.volatile.i12P0A, i12 %bilateral_stream" [top.cpp:310]   --->   Operation 90 'read' 'bilateral_stream_read' <Predicate = true> <Delay = 1.46> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 256> <FIFO>
+ST_11 : Operation 91 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln310 = store i12 %bilateral_stream_read, i9 %bilateral_buf_4_addr" [top.cpp:310]   --->   Operation 91 'store' 'store_ln310' <Predicate = (trunc_ln308 == 1 & trunc_ln309 == 1)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_11 : Operation 92 [1/1] (0.00ns)   --->   "%br_ln310 = br void %arrayidx28.exit182" [top.cpp:310]   --->   Operation 92 'br' 'br_ln310' <Predicate = (trunc_ln308 == 1 & trunc_ln309 == 1)> <Delay = 0.00>
+ST_11 : Operation 93 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln310 = store i12 %bilateral_stream_read, i9 %bilateral_buf_3_addr" [top.cpp:310]   --->   Operation 93 'store' 'store_ln310' <Predicate = (trunc_ln308 == 1 & trunc_ln309 == 0)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_11 : Operation 94 [1/1] (0.00ns)   --->   "%br_ln310 = br void %arrayidx28.exit182" [top.cpp:310]   --->   Operation 94 'br' 'br_ln310' <Predicate = (trunc_ln308 == 1 & trunc_ln309 == 0)> <Delay = 0.00>
+ST_11 : Operation 95 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln310 = store i12 %bilateral_stream_read, i9 %bilateral_buf_5_addr" [top.cpp:310]   --->   Operation 95 'store' 'store_ln310' <Predicate = (trunc_ln308 == 1 & trunc_ln309 != 0 & trunc_ln309 != 1)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_11 : Operation 96 [1/1] (0.00ns)   --->   "%br_ln310 = br void %arrayidx28.exit182" [top.cpp:310]   --->   Operation 96 'br' 'br_ln310' <Predicate = (trunc_ln308 == 1 & trunc_ln309 != 0 & trunc_ln309 != 1)> <Delay = 0.00>
+ST_11 : Operation 97 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln310 = store i12 %bilateral_stream_read, i9 %bilateral_buf_1_addr" [top.cpp:310]   --->   Operation 97 'store' 'store_ln310' <Predicate = (trunc_ln308 == 0 & trunc_ln309 == 1)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_11 : Operation 98 [1/1] (0.00ns)   --->   "%br_ln310 = br void %arrayidx28.exit177" [top.cpp:310]   --->   Operation 98 'br' 'br_ln310' <Predicate = (trunc_ln308 == 0 & trunc_ln309 == 1)> <Delay = 0.00>
+ST_11 : Operation 99 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln310 = store i12 %bilateral_stream_read, i9 %bilateral_buf_addr" [top.cpp:310]   --->   Operation 99 'store' 'store_ln310' <Predicate = (trunc_ln308 == 0 & trunc_ln309 == 0)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_11 : Operation 100 [1/1] (0.00ns)   --->   "%br_ln310 = br void %arrayidx28.exit177" [top.cpp:310]   --->   Operation 100 'br' 'br_ln310' <Predicate = (trunc_ln308 == 0 & trunc_ln309 == 0)> <Delay = 0.00>
+ST_11 : Operation 101 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln310 = store i12 %bilateral_stream_read, i9 %bilateral_buf_2_addr" [top.cpp:310]   --->   Operation 101 'store' 'store_ln310' <Predicate = (trunc_ln308 == 0 & trunc_ln309 != 0 & trunc_ln309 != 1)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_11 : Operation 102 [1/1] (0.00ns)   --->   "%br_ln310 = br void %arrayidx28.exit177" [top.cpp:310]   --->   Operation 102 'br' 'br_ln310' <Predicate = (trunc_ln308 == 0 & trunc_ln309 != 0 & trunc_ln309 != 1)> <Delay = 0.00>
+ST_11 : Operation 103 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln310 = store i12 %bilateral_stream_read, i9 %bilateral_buf_7_addr" [top.cpp:310]   --->   Operation 103 'store' 'store_ln310' <Predicate = (trunc_ln308 != 0 & trunc_ln308 != 1 & trunc_ln309 == 1)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_11 : Operation 104 [1/1] (0.00ns)   --->   "%br_ln310 = br void %arrayidx28.exit187" [top.cpp:310]   --->   Operation 104 'br' 'br_ln310' <Predicate = (trunc_ln308 != 0 & trunc_ln308 != 1 & trunc_ln309 == 1)> <Delay = 0.00>
+ST_11 : Operation 105 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln310 = store i12 %bilateral_stream_read, i9 %bilateral_buf_6_addr" [top.cpp:310]   --->   Operation 105 'store' 'store_ln310' <Predicate = (trunc_ln308 != 0 & trunc_ln308 != 1 & trunc_ln309 == 0)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_11 : Operation 106 [1/1] (0.00ns)   --->   "%br_ln310 = br void %arrayidx28.exit187" [top.cpp:310]   --->   Operation 106 'br' 'br_ln310' <Predicate = (trunc_ln308 != 0 & trunc_ln308 != 1 & trunc_ln309 == 0)> <Delay = 0.00>
+ST_11 : Operation 107 [1/1] ( I:1.35ns O:1.35ns )   --->   "%store_ln310 = store i12 %bilateral_stream_read, i9 %bilateral_buf_8_addr" [top.cpp:310]   --->   Operation 107 'store' 'store_ln310' <Predicate = (trunc_ln308 != 0 & trunc_ln308 != 1 & trunc_ln309 != 0 & trunc_ln309 != 1)> <Delay = 1.35> <CoreInst = "RAM_2P_BRAM">   --->   Core 93 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 12> <Depth = 484> <RAM>
+ST_11 : Operation 108 [1/1] (0.00ns)   --->   "%br_ln310 = br void %arrayidx28.exit187" [top.cpp:310]   --->   Operation 108 'br' 'br_ln310' <Predicate = (trunc_ln308 != 0 & trunc_ln308 != 1 & trunc_ln309 != 0 & trunc_ln309 != 1)> <Delay = 0.00>
 
 
 ============================================================
@@ -420,41 +420,41 @@ specmemcore_ln0         (specmemcore      ) [ 000000000000]
 specmemcore_ln0         (specmemcore      ) [ 000000000000]
 specmemcore_ln0         (specmemcore      ) [ 000000000000]
 specinterface_ln0       (specinterface    ) [ 000000000000]
-store_ln294             (store            ) [ 000000000000]
-br_ln294                (br               ) [ 000000000000]
+store_ln305             (store            ) [ 000000000000]
+br_ln305                (br               ) [ 000000000000]
 i_2                     (load             ) [ 000000000000]
-icmp_ln294              (icmp             ) [ 011111111110]
+icmp_ln305              (icmp             ) [ 011111111110]
 i_3                     (add              ) [ 000000000000]
-br_ln294                (br               ) [ 000000000000]
+br_ln305                (br               ) [ 000000000000]
 c                       (trunc            ) [ 011111111110]
 trunc_ln                (partselect       ) [ 011111111110]
-zext_ln296              (zext             ) [ 000000000000]
-mul_ln296               (mul              ) [ 000000000000]
+zext_ln308              (zext             ) [ 000000000000]
+mul_ln308               (mul              ) [ 000000000000]
 tmp                     (partselect       ) [ 011000000000]
-zext_ln297              (zext             ) [ 000000000000]
-mul_ln297               (mul              ) [ 000000000000]
-tmp_31                  (partselect       ) [ 011110000000]
-store_ln294             (store            ) [ 000000000000]
-br_ln294                (br               ) [ 000000000000]
-zext_ln296_1            (zext             ) [ 010110000000]
-mul_ln296_1             (mul              ) [ 010001000000]
-zext_ln298              (zext             ) [ 010001000000]
-add_ln298               (add              ) [ 010000111111]
-urem_ln296              (urem             ) [ 000000000000]
-trunc_ln296             (trunc            ) [ 010000000011]
-urem_ln297              (urem             ) [ 000000000000]
-trunc_ln297             (trunc            ) [ 010000000001]
-switch_ln298            (switch           ) [ 000000000000]
-switch_ln298            (switch           ) [ 000000000000]
-br_ln298                (br               ) [ 000000000000]
-switch_ln298            (switch           ) [ 000000000000]
-br_ln298                (br               ) [ 000000000000]
-switch_ln298            (switch           ) [ 000000000000]
-br_ln298                (br               ) [ 000000000000]
-specpipeline_ln295      (specpipeline     ) [ 000000000000]
-speclooptripcount_ln294 (speclooptripcount) [ 000000000000]
-specloopname_ln294      (specloopname     ) [ 000000000000]
-zext_ln298_1            (zext             ) [ 000000000000]
+zext_ln309              (zext             ) [ 000000000000]
+mul_ln309               (mul              ) [ 000000000000]
+tmp_40                  (partselect       ) [ 011110000000]
+store_ln305             (store            ) [ 000000000000]
+br_ln305                (br               ) [ 000000000000]
+zext_ln308_1            (zext             ) [ 010110000000]
+mul_ln308_1             (mul              ) [ 010001000000]
+zext_ln310              (zext             ) [ 010001000000]
+add_ln310               (add              ) [ 010000111111]
+urem_ln308              (urem             ) [ 000000000000]
+trunc_ln308             (trunc            ) [ 010000000011]
+urem_ln309              (urem             ) [ 000000000000]
+trunc_ln309             (trunc            ) [ 010000000001]
+switch_ln310            (switch           ) [ 000000000000]
+switch_ln310            (switch           ) [ 000000000000]
+br_ln310                (br               ) [ 000000000000]
+switch_ln310            (switch           ) [ 000000000000]
+br_ln310                (br               ) [ 000000000000]
+switch_ln310            (switch           ) [ 000000000000]
+br_ln310                (br               ) [ 000000000000]
+specpipeline_ln306      (specpipeline     ) [ 000000000000]
+speclooptripcount_ln307 (speclooptripcount) [ 000000000000]
+specloopname_ln305      (specloopname     ) [ 000000000000]
+zext_ln310_1            (zext             ) [ 000000000000]
 bilateral_buf_addr      (getelementptr    ) [ 000000000000]
 bilateral_buf_1_addr    (getelementptr    ) [ 000000000000]
 bilateral_buf_2_addr    (getelementptr    ) [ 000000000000]
@@ -465,24 +465,24 @@ bilateral_buf_6_addr    (getelementptr    ) [ 000000000000]
 bilateral_buf_7_addr    (getelementptr    ) [ 000000000000]
 bilateral_buf_8_addr    (getelementptr    ) [ 000000000000]
 bilateral_stream_read   (read             ) [ 000000000000]
-store_ln298             (store            ) [ 000000000000]
-br_ln298                (br               ) [ 000000000000]
-store_ln298             (store            ) [ 000000000000]
-br_ln298                (br               ) [ 000000000000]
-store_ln298             (store            ) [ 000000000000]
-br_ln298                (br               ) [ 000000000000]
-store_ln298             (store            ) [ 000000000000]
-br_ln298                (br               ) [ 000000000000]
-store_ln298             (store            ) [ 000000000000]
-br_ln298                (br               ) [ 000000000000]
-store_ln298             (store            ) [ 000000000000]
-br_ln298                (br               ) [ 000000000000]
-store_ln298             (store            ) [ 000000000000]
-br_ln298                (br               ) [ 000000000000]
-store_ln298             (store            ) [ 000000000000]
-br_ln298                (br               ) [ 000000000000]
-store_ln298             (store            ) [ 000000000000]
-br_ln298                (br               ) [ 000000000000]
+store_ln310             (store            ) [ 000000000000]
+br_ln310                (br               ) [ 000000000000]
+store_ln310             (store            ) [ 000000000000]
+br_ln310                (br               ) [ 000000000000]
+store_ln310             (store            ) [ 000000000000]
+br_ln310                (br               ) [ 000000000000]
+store_ln310             (store            ) [ 000000000000]
+br_ln310                (br               ) [ 000000000000]
+store_ln310             (store            ) [ 000000000000]
+br_ln310                (br               ) [ 000000000000]
+store_ln310             (store            ) [ 000000000000]
+br_ln310                (br               ) [ 000000000000]
+store_ln310             (store            ) [ 000000000000]
+br_ln310                (br               ) [ 000000000000]
+store_ln310             (store            ) [ 000000000000]
+br_ln310                (br               ) [ 000000000000]
+store_ln310             (store            ) [ 000000000000]
+br_ln310                (br               ) [ 000000000000]
 ret_ln0                 (ret              ) [ 000000000000]
 </LifeTime>
 
@@ -863,7 +863,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 <pin id="81" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Read.ap_fifo.volatile.i14P0A"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Read.ap_fifo.volatile.i12P0A"/></StgValue>
 </bind>
 </comp>
 
@@ -880,9 +880,9 @@ ret_ln0                 (ret              ) [ 000000000000]
 
 <comp id="86" class="1004" name="bilateral_stream_read_read_fu_86">
 <pin_list>
-<pin id="87" dir="0" index="0" bw="14" slack="0"/>
-<pin id="88" dir="0" index="1" bw="14" slack="0"/>
-<pin id="89" dir="1" index="2" bw="14" slack="0"/>
+<pin id="87" dir="0" index="0" bw="12" slack="0"/>
+<pin id="88" dir="0" index="1" bw="12" slack="0"/>
+<pin id="89" dir="1" index="2" bw="12" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -892,7 +892,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 
 <comp id="92" class="1004" name="bilateral_buf_addr_gep_fu_92">
 <pin_list>
-<pin id="93" dir="0" index="0" bw="14" slack="0"/>
+<pin id="93" dir="0" index="0" bw="12" slack="0"/>
 <pin id="94" dir="0" index="1" bw="1" slack="0"/>
 <pin id="95" dir="0" index="2" bw="9" slack="0"/>
 <pin id="96" dir="1" index="3" bw="9" slack="0"/>
@@ -905,7 +905,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 
 <comp id="99" class="1004" name="bilateral_buf_1_addr_gep_fu_99">
 <pin_list>
-<pin id="100" dir="0" index="0" bw="14" slack="0"/>
+<pin id="100" dir="0" index="0" bw="12" slack="0"/>
 <pin id="101" dir="0" index="1" bw="1" slack="0"/>
 <pin id="102" dir="0" index="2" bw="9" slack="0"/>
 <pin id="103" dir="1" index="3" bw="9" slack="0"/>
@@ -918,7 +918,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 
 <comp id="106" class="1004" name="bilateral_buf_2_addr_gep_fu_106">
 <pin_list>
-<pin id="107" dir="0" index="0" bw="14" slack="0"/>
+<pin id="107" dir="0" index="0" bw="12" slack="0"/>
 <pin id="108" dir="0" index="1" bw="1" slack="0"/>
 <pin id="109" dir="0" index="2" bw="9" slack="0"/>
 <pin id="110" dir="1" index="3" bw="9" slack="0"/>
@@ -931,7 +931,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 
 <comp id="113" class="1004" name="bilateral_buf_3_addr_gep_fu_113">
 <pin_list>
-<pin id="114" dir="0" index="0" bw="14" slack="0"/>
+<pin id="114" dir="0" index="0" bw="12" slack="0"/>
 <pin id="115" dir="0" index="1" bw="1" slack="0"/>
 <pin id="116" dir="0" index="2" bw="9" slack="0"/>
 <pin id="117" dir="1" index="3" bw="9" slack="0"/>
@@ -944,7 +944,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 
 <comp id="120" class="1004" name="bilateral_buf_4_addr_gep_fu_120">
 <pin_list>
-<pin id="121" dir="0" index="0" bw="14" slack="0"/>
+<pin id="121" dir="0" index="0" bw="12" slack="0"/>
 <pin id="122" dir="0" index="1" bw="1" slack="0"/>
 <pin id="123" dir="0" index="2" bw="9" slack="0"/>
 <pin id="124" dir="1" index="3" bw="9" slack="0"/>
@@ -957,7 +957,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 
 <comp id="127" class="1004" name="bilateral_buf_5_addr_gep_fu_127">
 <pin_list>
-<pin id="128" dir="0" index="0" bw="14" slack="0"/>
+<pin id="128" dir="0" index="0" bw="12" slack="0"/>
 <pin id="129" dir="0" index="1" bw="1" slack="0"/>
 <pin id="130" dir="0" index="2" bw="9" slack="0"/>
 <pin id="131" dir="1" index="3" bw="9" slack="0"/>
@@ -970,7 +970,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 
 <comp id="134" class="1004" name="bilateral_buf_6_addr_gep_fu_134">
 <pin_list>
-<pin id="135" dir="0" index="0" bw="14" slack="0"/>
+<pin id="135" dir="0" index="0" bw="12" slack="0"/>
 <pin id="136" dir="0" index="1" bw="1" slack="0"/>
 <pin id="137" dir="0" index="2" bw="9" slack="0"/>
 <pin id="138" dir="1" index="3" bw="9" slack="0"/>
@@ -983,7 +983,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 
 <comp id="141" class="1004" name="bilateral_buf_7_addr_gep_fu_141">
 <pin_list>
-<pin id="142" dir="0" index="0" bw="14" slack="0"/>
+<pin id="142" dir="0" index="0" bw="12" slack="0"/>
 <pin id="143" dir="0" index="1" bw="1" slack="0"/>
 <pin id="144" dir="0" index="2" bw="9" slack="0"/>
 <pin id="145" dir="1" index="3" bw="9" slack="0"/>
@@ -996,7 +996,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 
 <comp id="148" class="1004" name="bilateral_buf_8_addr_gep_fu_148">
 <pin_list>
-<pin id="149" dir="0" index="0" bw="14" slack="0"/>
+<pin id="149" dir="0" index="0" bw="12" slack="0"/>
 <pin id="150" dir="0" index="1" bw="1" slack="0"/>
 <pin id="151" dir="0" index="2" bw="9" slack="0"/>
 <pin id="152" dir="1" index="3" bw="9" slack="0"/>
@@ -1007,156 +1007,156 @@ ret_ln0                 (ret              ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="155" class="1004" name="store_ln298_access_fu_155">
+<comp id="155" class="1004" name="store_ln310_access_fu_155">
 <pin_list>
 <pin id="156" dir="0" index="0" bw="9" slack="2147483647"/>
-<pin id="157" dir="0" index="1" bw="14" slack="2147483647"/>
+<pin id="157" dir="0" index="1" bw="12" slack="2147483647"/>
 <pin id="158" dir="0" index="2" bw="0" slack="0"/>
 <pin id="160" dir="0" index="4" bw="9" slack="0"/>
-<pin id="161" dir="0" index="5" bw="14" slack="2147483647"/>
+<pin id="161" dir="0" index="5" bw="12" slack="2147483647"/>
 <pin id="162" dir="0" index="6" bw="0" slack="2147483647"/>
-<pin id="159" dir="1" index="3" bw="14" slack="2147483647"/>
-<pin id="163" dir="1" index="7" bw="14" slack="2147483647"/>
+<pin id="159" dir="1" index="3" bw="12" slack="2147483647"/>
+<pin id="163" dir="1" index="7" bw="12" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln298/11 "/>
+<opset="store_ln310/11 "/>
 </bind>
 </comp>
 
-<comp id="166" class="1004" name="store_ln298_access_fu_166">
+<comp id="166" class="1004" name="store_ln310_access_fu_166">
 <pin_list>
 <pin id="167" dir="0" index="0" bw="9" slack="2147483647"/>
-<pin id="168" dir="0" index="1" bw="14" slack="2147483647"/>
+<pin id="168" dir="0" index="1" bw="12" slack="2147483647"/>
 <pin id="169" dir="0" index="2" bw="0" slack="0"/>
 <pin id="171" dir="0" index="4" bw="9" slack="0"/>
-<pin id="172" dir="0" index="5" bw="14" slack="2147483647"/>
+<pin id="172" dir="0" index="5" bw="12" slack="2147483647"/>
 <pin id="173" dir="0" index="6" bw="0" slack="2147483647"/>
-<pin id="170" dir="1" index="3" bw="14" slack="2147483647"/>
-<pin id="174" dir="1" index="7" bw="14" slack="2147483647"/>
+<pin id="170" dir="1" index="3" bw="12" slack="2147483647"/>
+<pin id="174" dir="1" index="7" bw="12" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln298/11 "/>
+<opset="store_ln310/11 "/>
 </bind>
 </comp>
 
-<comp id="177" class="1004" name="store_ln298_access_fu_177">
+<comp id="177" class="1004" name="store_ln310_access_fu_177">
 <pin_list>
 <pin id="178" dir="0" index="0" bw="9" slack="2147483647"/>
-<pin id="179" dir="0" index="1" bw="14" slack="2147483647"/>
+<pin id="179" dir="0" index="1" bw="12" slack="2147483647"/>
 <pin id="180" dir="0" index="2" bw="0" slack="0"/>
 <pin id="182" dir="0" index="4" bw="9" slack="0"/>
-<pin id="183" dir="0" index="5" bw="14" slack="2147483647"/>
+<pin id="183" dir="0" index="5" bw="12" slack="2147483647"/>
 <pin id="184" dir="0" index="6" bw="0" slack="2147483647"/>
-<pin id="181" dir="1" index="3" bw="14" slack="2147483647"/>
-<pin id="185" dir="1" index="7" bw="14" slack="2147483647"/>
+<pin id="181" dir="1" index="3" bw="12" slack="2147483647"/>
+<pin id="185" dir="1" index="7" bw="12" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln298/11 "/>
+<opset="store_ln310/11 "/>
 </bind>
 </comp>
 
-<comp id="188" class="1004" name="store_ln298_access_fu_188">
+<comp id="188" class="1004" name="store_ln310_access_fu_188">
 <pin_list>
 <pin id="189" dir="0" index="0" bw="9" slack="2147483647"/>
-<pin id="190" dir="0" index="1" bw="14" slack="2147483647"/>
+<pin id="190" dir="0" index="1" bw="12" slack="2147483647"/>
 <pin id="191" dir="0" index="2" bw="0" slack="0"/>
 <pin id="193" dir="0" index="4" bw="9" slack="0"/>
-<pin id="194" dir="0" index="5" bw="14" slack="2147483647"/>
+<pin id="194" dir="0" index="5" bw="12" slack="2147483647"/>
 <pin id="195" dir="0" index="6" bw="0" slack="2147483647"/>
-<pin id="192" dir="1" index="3" bw="14" slack="2147483647"/>
-<pin id="196" dir="1" index="7" bw="14" slack="2147483647"/>
+<pin id="192" dir="1" index="3" bw="12" slack="2147483647"/>
+<pin id="196" dir="1" index="7" bw="12" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln298/11 "/>
+<opset="store_ln310/11 "/>
 </bind>
 </comp>
 
-<comp id="199" class="1004" name="store_ln298_access_fu_199">
+<comp id="199" class="1004" name="store_ln310_access_fu_199">
 <pin_list>
 <pin id="200" dir="0" index="0" bw="9" slack="2147483647"/>
-<pin id="201" dir="0" index="1" bw="14" slack="2147483647"/>
+<pin id="201" dir="0" index="1" bw="12" slack="2147483647"/>
 <pin id="202" dir="0" index="2" bw="0" slack="0"/>
 <pin id="204" dir="0" index="4" bw="9" slack="0"/>
-<pin id="205" dir="0" index="5" bw="14" slack="2147483647"/>
+<pin id="205" dir="0" index="5" bw="12" slack="2147483647"/>
 <pin id="206" dir="0" index="6" bw="0" slack="2147483647"/>
-<pin id="203" dir="1" index="3" bw="14" slack="2147483647"/>
-<pin id="207" dir="1" index="7" bw="14" slack="2147483647"/>
+<pin id="203" dir="1" index="3" bw="12" slack="2147483647"/>
+<pin id="207" dir="1" index="7" bw="12" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln298/11 "/>
+<opset="store_ln310/11 "/>
 </bind>
 </comp>
 
-<comp id="210" class="1004" name="store_ln298_access_fu_210">
+<comp id="210" class="1004" name="store_ln310_access_fu_210">
 <pin_list>
 <pin id="211" dir="0" index="0" bw="9" slack="2147483647"/>
-<pin id="212" dir="0" index="1" bw="14" slack="2147483647"/>
+<pin id="212" dir="0" index="1" bw="12" slack="2147483647"/>
 <pin id="213" dir="0" index="2" bw="0" slack="0"/>
 <pin id="215" dir="0" index="4" bw="9" slack="0"/>
-<pin id="216" dir="0" index="5" bw="14" slack="2147483647"/>
+<pin id="216" dir="0" index="5" bw="12" slack="2147483647"/>
 <pin id="217" dir="0" index="6" bw="0" slack="2147483647"/>
-<pin id="214" dir="1" index="3" bw="14" slack="2147483647"/>
-<pin id="218" dir="1" index="7" bw="14" slack="2147483647"/>
+<pin id="214" dir="1" index="3" bw="12" slack="2147483647"/>
+<pin id="218" dir="1" index="7" bw="12" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln298/11 "/>
+<opset="store_ln310/11 "/>
 </bind>
 </comp>
 
-<comp id="221" class="1004" name="store_ln298_access_fu_221">
+<comp id="221" class="1004" name="store_ln310_access_fu_221">
 <pin_list>
 <pin id="222" dir="0" index="0" bw="9" slack="2147483647"/>
-<pin id="223" dir="0" index="1" bw="14" slack="2147483647"/>
+<pin id="223" dir="0" index="1" bw="12" slack="2147483647"/>
 <pin id="224" dir="0" index="2" bw="0" slack="0"/>
 <pin id="226" dir="0" index="4" bw="9" slack="0"/>
-<pin id="227" dir="0" index="5" bw="14" slack="2147483647"/>
+<pin id="227" dir="0" index="5" bw="12" slack="2147483647"/>
 <pin id="228" dir="0" index="6" bw="0" slack="2147483647"/>
-<pin id="225" dir="1" index="3" bw="14" slack="2147483647"/>
-<pin id="229" dir="1" index="7" bw="14" slack="2147483647"/>
+<pin id="225" dir="1" index="3" bw="12" slack="2147483647"/>
+<pin id="229" dir="1" index="7" bw="12" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln298/11 "/>
+<opset="store_ln310/11 "/>
 </bind>
 </comp>
 
-<comp id="232" class="1004" name="store_ln298_access_fu_232">
+<comp id="232" class="1004" name="store_ln310_access_fu_232">
 <pin_list>
 <pin id="233" dir="0" index="0" bw="9" slack="2147483647"/>
-<pin id="234" dir="0" index="1" bw="14" slack="2147483647"/>
+<pin id="234" dir="0" index="1" bw="12" slack="2147483647"/>
 <pin id="235" dir="0" index="2" bw="0" slack="0"/>
 <pin id="237" dir="0" index="4" bw="9" slack="0"/>
-<pin id="238" dir="0" index="5" bw="14" slack="2147483647"/>
+<pin id="238" dir="0" index="5" bw="12" slack="2147483647"/>
 <pin id="239" dir="0" index="6" bw="0" slack="2147483647"/>
-<pin id="236" dir="1" index="3" bw="14" slack="2147483647"/>
-<pin id="240" dir="1" index="7" bw="14" slack="2147483647"/>
+<pin id="236" dir="1" index="3" bw="12" slack="2147483647"/>
+<pin id="240" dir="1" index="7" bw="12" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln298/11 "/>
+<opset="store_ln310/11 "/>
 </bind>
 </comp>
 
-<comp id="243" class="1004" name="store_ln298_access_fu_243">
+<comp id="243" class="1004" name="store_ln310_access_fu_243">
 <pin_list>
 <pin id="244" dir="0" index="0" bw="9" slack="2147483647"/>
-<pin id="245" dir="0" index="1" bw="14" slack="2147483647"/>
+<pin id="245" dir="0" index="1" bw="12" slack="2147483647"/>
 <pin id="246" dir="0" index="2" bw="0" slack="0"/>
 <pin id="248" dir="0" index="4" bw="9" slack="0"/>
-<pin id="249" dir="0" index="5" bw="14" slack="2147483647"/>
+<pin id="249" dir="0" index="5" bw="12" slack="2147483647"/>
 <pin id="250" dir="0" index="6" bw="0" slack="2147483647"/>
-<pin id="247" dir="1" index="3" bw="14" slack="2147483647"/>
-<pin id="251" dir="1" index="7" bw="14" slack="2147483647"/>
+<pin id="247" dir="1" index="3" bw="12" slack="2147483647"/>
+<pin id="251" dir="1" index="7" bw="12" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln298/11 "/>
+<opset="store_ln310/11 "/>
 </bind>
 </comp>
 
@@ -1169,11 +1169,11 @@ ret_ln0                 (ret              ) [ 000000000000]
 </pin_list>
 <bind>
 <opcode="switch(3) " fcode="switch"/>
-<opset="switch_ln298/10 switch_ln298/10 switch_ln298/10 "/>
+<opset="switch_ln310/10 switch_ln310/10 switch_ln310/10 "/>
 </bind>
 </comp>
 
-<comp id="261" class="1004" name="store_ln294_store_fu_261">
+<comp id="261" class="1004" name="store_ln305_store_fu_261">
 <pin_list>
 <pin id="262" dir="0" index="0" bw="1" slack="0"/>
 <pin id="263" dir="0" index="1" bw="13" slack="0"/>
@@ -1181,7 +1181,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln294/1 "/>
+<opset="store_ln305/1 "/>
 </bind>
 </comp>
 
@@ -1196,7 +1196,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="269" class="1004" name="icmp_ln294_fu_269">
+<comp id="269" class="1004" name="icmp_ln305_fu_269">
 <pin_list>
 <pin id="270" dir="0" index="0" bw="13" slack="0"/>
 <pin id="271" dir="0" index="1" bw="13" slack="0"/>
@@ -1204,7 +1204,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln294/1 "/>
+<opset="icmp_ln305/1 "/>
 </bind>
 </comp>
 
@@ -1245,18 +1245,18 @@ ret_ln0                 (ret              ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="295" class="1004" name="zext_ln296_fu_295">
+<comp id="295" class="1004" name="zext_ln308_fu_295">
 <pin_list>
 <pin id="296" dir="0" index="0" bw="6" slack="0"/>
 <pin id="297" dir="1" index="1" bw="13" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln296/1 "/>
+<opset="zext_ln308/1 "/>
 </bind>
 </comp>
 
-<comp id="299" class="1004" name="mul_ln296_fu_299">
+<comp id="299" class="1004" name="mul_ln308_fu_299">
 <pin_list>
 <pin id="300" dir="0" index="0" bw="6" slack="0"/>
 <pin id="301" dir="0" index="1" bw="8" slack="0"/>
@@ -1264,7 +1264,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 </pin_list>
 <bind>
 <opcode="mul(12) " fcode="mul"/>
-<opset="mul_ln296/1 "/>
+<opset="mul_ln308/1 "/>
 </bind>
 </comp>
 
@@ -1290,22 +1290,22 @@ ret_ln0                 (ret              ) [ 000000000000]
 </pin_list>
 <bind>
 <opcode="urem(17) " fcode="urem"/>
-<opset="urem_ln296/1 "/>
+<opset="urem_ln308/1 "/>
 </bind>
 </comp>
 
-<comp id="321" class="1004" name="zext_ln297_fu_321">
+<comp id="321" class="1004" name="zext_ln309_fu_321">
 <pin_list>
 <pin id="322" dir="0" index="0" bw="6" slack="0"/>
 <pin id="323" dir="1" index="1" bw="13" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln297/1 "/>
+<opset="zext_ln309/1 "/>
 </bind>
 </comp>
 
-<comp id="325" class="1004" name="mul_ln297_fu_325">
+<comp id="325" class="1004" name="mul_ln309_fu_325">
 <pin_list>
 <pin id="326" dir="0" index="0" bw="6" slack="0"/>
 <pin id="327" dir="0" index="1" bw="8" slack="0"/>
@@ -1313,11 +1313,11 @@ ret_ln0                 (ret              ) [ 000000000000]
 </pin_list>
 <bind>
 <opcode="mul(12) " fcode="mul"/>
-<opset="mul_ln297/1 "/>
+<opset="mul_ln309/1 "/>
 </bind>
 </comp>
 
-<comp id="331" class="1004" name="tmp_31_fu_331">
+<comp id="331" class="1004" name="tmp_40_fu_331">
 <pin_list>
 <pin id="332" dir="0" index="0" bw="5" slack="0"/>
 <pin id="333" dir="0" index="1" bw="13" slack="0"/>
@@ -1327,7 +1327,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_31/1 "/>
+<opset="tmp_40/1 "/>
 </bind>
 </comp>
 
@@ -1339,11 +1339,11 @@ ret_ln0                 (ret              ) [ 000000000000]
 </pin_list>
 <bind>
 <opcode="urem(17) " fcode="urem"/>
-<opset="urem_ln297/1 "/>
+<opset="urem_ln309/1 "/>
 </bind>
 </comp>
 
-<comp id="347" class="1004" name="store_ln294_store_fu_347">
+<comp id="347" class="1004" name="store_ln305_store_fu_347">
 <pin_list>
 <pin id="348" dir="0" index="0" bw="13" slack="0"/>
 <pin id="349" dir="0" index="1" bw="13" slack="0"/>
@@ -1351,55 +1351,55 @@ ret_ln0                 (ret              ) [ 000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln294/1 "/>
+<opset="store_ln305/1 "/>
 </bind>
 </comp>
 
-<comp id="352" class="1004" name="zext_ln296_1_fu_352">
+<comp id="352" class="1004" name="zext_ln308_1_fu_352">
 <pin_list>
 <pin id="353" dir="0" index="0" bw="5" slack="1"/>
 <pin id="354" dir="1" index="1" bw="9" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln296_1/2 "/>
+<opset="zext_ln308_1/2 "/>
 </bind>
 </comp>
 
-<comp id="355" class="1004" name="zext_ln298_fu_355">
+<comp id="355" class="1004" name="zext_ln310_fu_355">
 <pin_list>
 <pin id="356" dir="0" index="0" bw="5" slack="3"/>
 <pin id="357" dir="1" index="1" bw="9" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln298/4 "/>
+<opset="zext_ln310/4 "/>
 </bind>
 </comp>
 
-<comp id="358" class="1004" name="trunc_ln296_fu_358">
+<comp id="358" class="1004" name="trunc_ln308_fu_358">
 <pin_list>
 <pin id="359" dir="0" index="0" bw="2" slack="0"/>
 <pin id="360" dir="1" index="1" bw="2" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln296/10 "/>
+<opset="trunc_ln308/10 "/>
 </bind>
 </comp>
 
-<comp id="362" class="1004" name="trunc_ln297_fu_362">
+<comp id="362" class="1004" name="trunc_ln309_fu_362">
 <pin_list>
 <pin id="363" dir="0" index="0" bw="2" slack="0"/>
 <pin id="364" dir="1" index="1" bw="2" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln297/10 "/>
+<opset="trunc_ln309/10 "/>
 </bind>
 </comp>
 
-<comp id="367" class="1004" name="switch_ln298_fu_367">
+<comp id="367" class="1004" name="switch_ln310_fu_367">
 <pin_list>
 <pin id="368" dir="0" index="0" bw="2" slack="0"/>
 <pin id="369" dir="0" index="1" bw="1" slack="0"/>
@@ -1408,18 +1408,18 @@ ret_ln0                 (ret              ) [ 000000000000]
 </pin_list>
 <bind>
 <opcode="switch(3) " fcode="switch"/>
-<opset="switch_ln298/10 "/>
+<opset="switch_ln310/10 "/>
 </bind>
 </comp>
 
-<comp id="375" class="1004" name="zext_ln298_1_fu_375">
+<comp id="375" class="1004" name="zext_ln310_1_fu_375">
 <pin_list>
 <pin id="376" dir="0" index="0" bw="9" slack="6"/>
 <pin id="377" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln298_1/11 "/>
+<opset="zext_ln310_1/11 "/>
 </bind>
 </comp>
 
@@ -1432,7 +1432,7 @@ ret_ln0                 (ret              ) [ 000000000000]
 </pin_list>
 <bind>
 <opcode="muladd(1172) " fcode="muladd"/>
-<opset="mul_ln296_1/2 add_ln298/4 "/>
+<opset="mul_ln308_1/2 add_ln310/4 "/>
 </bind>
 </comp>
 
@@ -1446,13 +1446,13 @@ ret_ln0                 (ret              ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="402" class="1005" name="icmp_ln294_reg_402">
+<comp id="402" class="1005" name="icmp_ln305_reg_402">
 <pin_list>
 <pin id="403" dir="0" index="0" bw="1" slack="9"/>
 <pin id="404" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln294 "/>
+<opset="icmp_ln305 "/>
 </bind>
 </comp>
 
@@ -1486,63 +1486,63 @@ ret_ln0                 (ret              ) [ 000000000000]
 </bind>
 </comp>
 
-<comp id="421" class="1005" name="tmp_31_reg_421">
+<comp id="421" class="1005" name="tmp_40_reg_421">
 <pin_list>
 <pin id="422" dir="0" index="0" bw="5" slack="3"/>
 <pin id="423" dir="1" index="1" bw="5" slack="3"/>
 </pin_list>
 <bind>
-<opset="tmp_31 "/>
+<opset="tmp_40 "/>
 </bind>
 </comp>
 
-<comp id="426" class="1005" name="zext_ln296_1_reg_426">
+<comp id="426" class="1005" name="zext_ln308_1_reg_426">
 <pin_list>
 <pin id="427" dir="0" index="0" bw="9" slack="1"/>
 <pin id="428" dir="1" index="1" bw="9" slack="1"/>
 </pin_list>
 <bind>
-<opset="zext_ln296_1 "/>
+<opset="zext_ln308_1 "/>
 </bind>
 </comp>
 
-<comp id="431" class="1005" name="zext_ln298_reg_431">
+<comp id="431" class="1005" name="zext_ln310_reg_431">
 <pin_list>
 <pin id="432" dir="0" index="0" bw="9" slack="1"/>
 <pin id="433" dir="1" index="1" bw="9" slack="1"/>
 </pin_list>
 <bind>
-<opset="zext_ln298 "/>
+<opset="zext_ln310 "/>
 </bind>
 </comp>
 
-<comp id="436" class="1005" name="add_ln298_reg_436">
+<comp id="436" class="1005" name="add_ln310_reg_436">
 <pin_list>
 <pin id="437" dir="0" index="0" bw="9" slack="6"/>
 <pin id="438" dir="1" index="1" bw="9" slack="6"/>
 </pin_list>
 <bind>
-<opset="add_ln298 "/>
+<opset="add_ln310 "/>
 </bind>
 </comp>
 
-<comp id="441" class="1005" name="trunc_ln296_reg_441">
+<comp id="441" class="1005" name="trunc_ln308_reg_441">
 <pin_list>
 <pin id="442" dir="0" index="0" bw="2" slack="1"/>
 <pin id="443" dir="1" index="1" bw="2" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="trunc_ln296 "/>
+<opset="trunc_ln308 "/>
 </bind>
 </comp>
 
-<comp id="445" class="1005" name="trunc_ln297_reg_445">
+<comp id="445" class="1005" name="trunc_ln309_reg_445">
 <pin_list>
 <pin id="446" dir="0" index="0" bw="2" slack="1"/>
 <pin id="447" dir="1" index="1" bw="2" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="trunc_ln297 "/>
+<opset="trunc_ln309 "/>
 </bind>
 </comp>
 
@@ -1788,39 +1788,39 @@ ret_ln0                 (ret              ) [ 000000000000]
 	Port: stage_morphology_Pipeline_READ_BILATERAL : bilateral_stream | {11 }
   - Chain level:
 	State 1
-		store_ln294 : 1
+		store_ln305 : 1
 		i_2 : 1
-		icmp_ln294 : 2
+		icmp_ln305 : 2
 		i_3 : 2
-		br_ln294 : 3
+		br_ln305 : 3
 		c : 2
 		trunc_ln : 2
-		zext_ln296 : 3
-		mul_ln296 : 4
+		zext_ln308 : 3
+		mul_ln308 : 4
 		tmp : 5
-		urem_ln296 : 3
-		zext_ln297 : 3
-		mul_ln297 : 4
-		tmp_31 : 5
-		urem_ln297 : 3
-		store_ln294 : 3
+		urem_ln308 : 3
+		zext_ln309 : 3
+		mul_ln309 : 4
+		tmp_40 : 5
+		urem_ln309 : 3
+		store_ln305 : 3
 	State 2
-		mul_ln296_1 : 1
+		mul_ln308_1 : 1
 	State 3
 	State 4
-		add_ln298 : 1
+		add_ln310 : 1
 	State 5
 	State 6
 	State 7
 	State 8
 	State 9
 	State 10
-		trunc_ln296 : 1
-		trunc_ln297 : 1
-		switch_ln298 : 2
-		switch_ln298 : 2
-		switch_ln298 : 2
-		switch_ln298 : 2
+		trunc_ln308 : 1
+		trunc_ln309 : 1
+		switch_ln310 : 2
+		switch_ln310 : 2
+		switch_ln310 : 2
+		switch_ln310 : 2
 	State 11
 		bilateral_buf_addr : 1
 		bilateral_buf_1_addr : 1
@@ -1831,15 +1831,15 @@ ret_ln0                 (ret              ) [ 000000000000]
 		bilateral_buf_6_addr : 1
 		bilateral_buf_7_addr : 1
 		bilateral_buf_8_addr : 1
-		store_ln298 : 2
-		store_ln298 : 2
-		store_ln298 : 2
-		store_ln298 : 2
-		store_ln298 : 2
-		store_ln298 : 2
-		store_ln298 : 2
-		store_ln298 : 2
-		store_ln298 : 2
+		store_ln310 : 2
+		store_ln310 : 2
+		store_ln310 : 2
+		store_ln310 : 2
+		store_ln310 : 2
+		store_ln310 : 2
+		store_ln310 : 2
+		store_ln310 : 2
+		store_ln310 : 2
 
 
 ============================================================
@@ -1853,10 +1853,10 @@ ret_ln0                 (ret              ) [ 000000000000]
 |   urem   |            grp_fu_315            |    0    |   128   |    68   |
 |          |            grp_fu_341            |    0    |   128   |    68   |
 |----------|----------------------------------|---------|---------|---------|
-|    mul   |         mul_ln296_fu_299         |    0    |    0    |    40   |
-|          |         mul_ln297_fu_325         |    0    |    0    |    40   |
+|    mul   |         mul_ln308_fu_299         |    0    |    0    |    40   |
+|          |         mul_ln309_fu_325         |    0    |    0    |    40   |
 |----------|----------------------------------|---------|---------|---------|
-|   icmp   |         icmp_ln294_fu_269        |    0    |    0    |    20   |
+|   icmp   |         icmp_ln305_fu_269        |    0    |    0    |    20   |
 |----------|----------------------------------|---------|---------|---------|
 |    add   |            i_3_fu_275            |    0    |    0    |    20   |
 |----------|----------------------------------|---------|---------|---------|
@@ -1865,21 +1865,21 @@ ret_ln0                 (ret              ) [ 000000000000]
 |   read   | bilateral_stream_read_read_fu_86 |    0    |    0    |    0    |
 |----------|----------------------------------|---------|---------|---------|
 |  switch  |            grp_fu_254            |    0    |    0    |    0    |
-|          |        switch_ln298_fu_367       |    0    |    0    |    0    |
+|          |        switch_ln310_fu_367       |    0    |    0    |    0    |
 |----------|----------------------------------|---------|---------|---------|
 |          |             c_fu_281             |    0    |    0    |    0    |
-|   trunc  |        trunc_ln296_fu_358        |    0    |    0    |    0    |
-|          |        trunc_ln297_fu_362        |    0    |    0    |    0    |
+|   trunc  |        trunc_ln308_fu_358        |    0    |    0    |    0    |
+|          |        trunc_ln309_fu_362        |    0    |    0    |    0    |
 |----------|----------------------------------|---------|---------|---------|
 |          |          trunc_ln_fu_285         |    0    |    0    |    0    |
 |partselect|            tmp_fu_305            |    0    |    0    |    0    |
-|          |           tmp_31_fu_331          |    0    |    0    |    0    |
+|          |           tmp_40_fu_331          |    0    |    0    |    0    |
 |----------|----------------------------------|---------|---------|---------|
-|          |         zext_ln296_fu_295        |    0    |    0    |    0    |
-|          |         zext_ln297_fu_321        |    0    |    0    |    0    |
-|   zext   |        zext_ln296_1_fu_352       |    0    |    0    |    0    |
-|          |         zext_ln298_fu_355        |    0    |    0    |    0    |
-|          |        zext_ln298_1_fu_375       |    0    |    0    |    0    |
+|          |         zext_ln308_fu_295        |    0    |    0    |    0    |
+|          |         zext_ln309_fu_321        |    0    |    0    |    0    |
+|   zext   |        zext_ln308_1_fu_352       |    0    |    0    |    0    |
+|          |         zext_ln310_fu_355        |    0    |    0    |    0    |
+|          |        zext_ln310_1_fu_375       |    0    |    0    |    0    |
 |----------|----------------------------------|---------|---------|---------|
 |   Total  |                                  |    1    |   256   |   256   |
 |----------|----------------------------------|---------|---------|---------|
@@ -1891,17 +1891,17 @@ N/A
 +--------------------+--------+
 |                    |   FF   |
 +--------------------+--------+
-|  add_ln298_reg_436 |    9   |
+|  add_ln310_reg_436 |    9   |
 |      c_reg_406     |    6   |
 |      i_reg_395     |   13   |
-| icmp_ln294_reg_402 |    1   |
-|   tmp_31_reg_421   |    5   |
+| icmp_ln305_reg_402 |    1   |
+|   tmp_40_reg_421   |    5   |
 |     tmp_reg_416    |    5   |
-| trunc_ln296_reg_441|    2   |
-| trunc_ln297_reg_445|    2   |
+| trunc_ln308_reg_441|    2   |
+| trunc_ln309_reg_445|    2   |
 |  trunc_ln_reg_411  |    6   |
-|zext_ln296_1_reg_426|    9   |
-| zext_ln298_reg_431 |    9   |
+|zext_ln308_1_reg_426|    9   |
+| zext_ln310_reg_431 |    9   |
 +--------------------+--------+
 |        Total       |   67   |
 +--------------------+--------+

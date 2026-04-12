@@ -128,7 +128,7 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-input  [13:0] equalized_stream_dout;
+input  [11:0] equalized_stream_dout;
 input   equalized_stream_empty_n;
 output   equalized_stream_read;
 input  [8:0] equalized_stream_num_data_valid;
@@ -136,103 +136,103 @@ input  [8:0] equalized_stream_fifo_cap;
 output  [7:0] grid_24_address1;
 output   grid_24_ce1;
 output   grid_24_we1;
-output  [13:0] grid_24_d1;
+output  [11:0] grid_24_d1;
 output  [7:0] grid_23_address1;
 output   grid_23_ce1;
 output   grid_23_we1;
-output  [13:0] grid_23_d1;
+output  [11:0] grid_23_d1;
 output  [7:0] grid_22_address1;
 output   grid_22_ce1;
 output   grid_22_we1;
-output  [13:0] grid_22_d1;
+output  [11:0] grid_22_d1;
 output  [7:0] grid_21_address1;
 output   grid_21_ce1;
 output   grid_21_we1;
-output  [13:0] grid_21_d1;
+output  [11:0] grid_21_d1;
 output  [7:0] grid_20_address1;
 output   grid_20_ce1;
 output   grid_20_we1;
-output  [13:0] grid_20_d1;
+output  [11:0] grid_20_d1;
 output  [7:0] grid_19_address1;
 output   grid_19_ce1;
 output   grid_19_we1;
-output  [13:0] grid_19_d1;
+output  [11:0] grid_19_d1;
 output  [7:0] grid_18_address1;
 output   grid_18_ce1;
 output   grid_18_we1;
-output  [13:0] grid_18_d1;
+output  [11:0] grid_18_d1;
 output  [7:0] grid_17_address1;
 output   grid_17_ce1;
 output   grid_17_we1;
-output  [13:0] grid_17_d1;
+output  [11:0] grid_17_d1;
 output  [7:0] grid_16_address1;
 output   grid_16_ce1;
 output   grid_16_we1;
-output  [13:0] grid_16_d1;
+output  [11:0] grid_16_d1;
 output  [7:0] grid_15_address1;
 output   grid_15_ce1;
 output   grid_15_we1;
-output  [13:0] grid_15_d1;
+output  [11:0] grid_15_d1;
 output  [7:0] grid_14_address1;
 output   grid_14_ce1;
 output   grid_14_we1;
-output  [13:0] grid_14_d1;
+output  [11:0] grid_14_d1;
 output  [7:0] grid_13_address1;
 output   grid_13_ce1;
 output   grid_13_we1;
-output  [13:0] grid_13_d1;
+output  [11:0] grid_13_d1;
 output  [7:0] grid_12_address1;
 output   grid_12_ce1;
 output   grid_12_we1;
-output  [13:0] grid_12_d1;
+output  [11:0] grid_12_d1;
 output  [7:0] grid_11_address1;
 output   grid_11_ce1;
 output   grid_11_we1;
-output  [13:0] grid_11_d1;
+output  [11:0] grid_11_d1;
 output  [7:0] grid_10_address1;
 output   grid_10_ce1;
 output   grid_10_we1;
-output  [13:0] grid_10_d1;
+output  [11:0] grid_10_d1;
 output  [7:0] grid_9_address1;
 output   grid_9_ce1;
 output   grid_9_we1;
-output  [13:0] grid_9_d1;
+output  [11:0] grid_9_d1;
 output  [7:0] grid_8_address1;
 output   grid_8_ce1;
 output   grid_8_we1;
-output  [13:0] grid_8_d1;
+output  [11:0] grid_8_d1;
 output  [7:0] grid_7_address1;
 output   grid_7_ce1;
 output   grid_7_we1;
-output  [13:0] grid_7_d1;
+output  [11:0] grid_7_d1;
 output  [7:0] grid_6_address1;
 output   grid_6_ce1;
 output   grid_6_we1;
-output  [13:0] grid_6_d1;
+output  [11:0] grid_6_d1;
 output  [7:0] grid_5_address1;
 output   grid_5_ce1;
 output   grid_5_we1;
-output  [13:0] grid_5_d1;
+output  [11:0] grid_5_d1;
 output  [7:0] grid_4_address1;
 output   grid_4_ce1;
 output   grid_4_we1;
-output  [13:0] grid_4_d1;
+output  [11:0] grid_4_d1;
 output  [7:0] grid_3_address1;
 output   grid_3_ce1;
 output   grid_3_we1;
-output  [13:0] grid_3_d1;
+output  [11:0] grid_3_d1;
 output  [7:0] grid_2_address1;
 output   grid_2_ce1;
 output   grid_2_we1;
-output  [13:0] grid_2_d1;
+output  [11:0] grid_2_d1;
 output  [7:0] grid_1_address1;
 output   grid_1_ce1;
 output   grid_1_we1;
-output  [13:0] grid_1_d1;
+output  [11:0] grid_1_d1;
 output  [7:0] grid_address1;
 output   grid_ce1;
 output   grid_we1;
-output  [13:0] grid_d1;
+output  [11:0] grid_d1;
 
 reg ap_idle;
 reg equalized_stream_read;
@@ -252,7 +252,7 @@ reg    ap_enable_reg_pp0_iter9;
 reg    ap_enable_reg_pp0_iter10;
 reg    ap_idle_pp0;
 reg    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln148_fu_597_p2;
+wire   [0:0] icmp_ln153_fu_597_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
@@ -268,21 +268,21 @@ reg   [3:0] tmp_reg_765_pp0_iter3_reg;
 reg   [3:0] tmp_reg_765_pp0_iter4_reg;
 reg   [3:0] tmp_reg_765_pp0_iter5_reg;
 reg   [3:0] tmp_reg_765_pp0_iter6_reg;
-reg   [3:0] tmp_102_reg_770;
-reg   [3:0] tmp_102_reg_770_pp0_iter1_reg;
-reg   [3:0] tmp_102_reg_770_pp0_iter2_reg;
-reg   [3:0] tmp_102_reg_770_pp0_iter3_reg;
-reg   [3:0] tmp_102_reg_770_pp0_iter4_reg;
-reg   [3:0] tmp_102_reg_770_pp0_iter5_reg;
-reg   [3:0] tmp_102_reg_770_pp0_iter6_reg;
-reg   [3:0] tmp_102_reg_770_pp0_iter7_reg;
-reg   [3:0] tmp_102_reg_770_pp0_iter8_reg;
+reg   [3:0] tmp_100_reg_770;
+reg   [3:0] tmp_100_reg_770_pp0_iter1_reg;
+reg   [3:0] tmp_100_reg_770_pp0_iter2_reg;
+reg   [3:0] tmp_100_reg_770_pp0_iter3_reg;
+reg   [3:0] tmp_100_reg_770_pp0_iter4_reg;
+reg   [3:0] tmp_100_reg_770_pp0_iter5_reg;
+reg   [3:0] tmp_100_reg_770_pp0_iter6_reg;
+reg   [3:0] tmp_100_reg_770_pp0_iter7_reg;
+reg   [3:0] tmp_100_reg_770_pp0_iter8_reg;
 reg    ap_block_pp0_stage0_11001_grp1;
-wire   [2:0] trunc_ln150_fu_683_p1;
-reg   [2:0] trunc_ln150_reg_780;
-wire   [2:0] trunc_ln151_fu_690_p1;
-reg   [2:0] trunc_ln151_reg_789;
-wire   [63:0] zext_ln152_2_fu_707_p1;
+wire   [2:0] trunc_ln156_fu_683_p1;
+reg   [2:0] trunc_ln156_reg_780;
+wire   [2:0] trunc_ln157_fu_690_p1;
+reg   [2:0] trunc_ln157_reg_789;
+wire   [63:0] zext_ln158_2_fu_707_p1;
 reg   [12:0] i_fu_118;
 wire   [12:0] i_5_fu_603_p2;
 wire    ap_loop_init;
@@ -338,14 +338,14 @@ reg    grid_20_we1_local;
 reg    grid_20_ce1_local;
 reg    grid_24_we1_local;
 reg    grid_24_ce1_local;
-wire   [5:0] mul_ln150_fu_627_p0;
-wire   [7:0] mul_ln150_fu_627_p1;
-wire   [12:0] mul_ln150_fu_627_p2;
+wire   [5:0] mul_ln156_fu_627_p0;
+wire   [7:0] mul_ln156_fu_627_p1;
+wire   [12:0] mul_ln156_fu_627_p2;
 wire   [5:0] grp_fu_643_p0;
 wire   [3:0] grp_fu_643_p1;
-wire   [5:0] mul_ln151_fu_653_p0;
-wire   [7:0] mul_ln151_fu_653_p1;
-wire   [12:0] mul_ln151_fu_653_p2;
+wire   [5:0] mul_ln157_fu_653_p0;
+wire   [7:0] mul_ln157_fu_653_p1;
+wire   [12:0] mul_ln157_fu_653_p2;
 wire   [3:0] grp_fu_669_p1;
 wire   [2:0] grp_fu_643_p2;
 wire   [2:0] grp_fu_669_p2;
@@ -375,8 +375,8 @@ wire    ap_ready_sig;
 wire    ap_done_sig;
 wire   [7:0] grp_fu_735_p00;
 wire   [7:0] grp_fu_735_p20;
-wire   [12:0] mul_ln150_fu_627_p00;
-wire   [12:0] mul_ln151_fu_653_p00;
+wire   [12:0] mul_ln156_fu_627_p00;
+wire   [12:0] mul_ln157_fu_653_p00;
 wire    ap_ce_reg;
 
 // power-on initialization
@@ -402,10 +402,10 @@ top_kernel_mul_6ns_8ns_13_1_1 #(
     .din0_WIDTH( 6 ),
     .din1_WIDTH( 8 ),
     .dout_WIDTH( 13 ))
-mul_6ns_8ns_13_1_1_U1098(
-    .din0(mul_ln150_fu_627_p0),
-    .din1(mul_ln150_fu_627_p1),
-    .dout(mul_ln150_fu_627_p2)
+mul_6ns_8ns_13_1_1_U1092(
+    .din0(mul_ln156_fu_627_p0),
+    .din1(mul_ln156_fu_627_p1),
+    .dout(mul_ln156_fu_627_p2)
 );
 
 top_kernel_urem_6ns_4ns_3_10_1 #(
@@ -414,7 +414,7 @@ top_kernel_urem_6ns_4ns_3_10_1 #(
     .din0_WIDTH( 6 ),
     .din1_WIDTH( 4 ),
     .dout_WIDTH( 3 ))
-urem_6ns_4ns_3_10_1_U1099(
+urem_6ns_4ns_3_10_1_U1093(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_643_p0),
@@ -429,10 +429,10 @@ top_kernel_mul_6ns_8ns_13_1_1 #(
     .din0_WIDTH( 6 ),
     .din1_WIDTH( 8 ),
     .dout_WIDTH( 13 ))
-mul_6ns_8ns_13_1_1_U1100(
-    .din0(mul_ln151_fu_653_p0),
-    .din1(mul_ln151_fu_653_p1),
-    .dout(mul_ln151_fu_653_p2)
+mul_6ns_8ns_13_1_1_U1094(
+    .din0(mul_ln157_fu_653_p0),
+    .din1(mul_ln157_fu_653_p1),
+    .dout(mul_ln157_fu_653_p2)
 );
 
 top_kernel_urem_6ns_4ns_3_10_1 #(
@@ -441,7 +441,7 @@ top_kernel_urem_6ns_4ns_3_10_1 #(
     .din0_WIDTH( 6 ),
     .din1_WIDTH( 4 ),
     .dout_WIDTH( 3 ))
-urem_6ns_4ns_3_10_1_U1101(
+urem_6ns_4ns_3_10_1_U1095(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(c_fu_609_p1),
@@ -457,7 +457,7 @@ top_kernel_mac_muladd_4ns_4ns_4ns_8_4_1 #(
     .din1_WIDTH( 4 ),
     .din2_WIDTH( 4 ),
     .dout_WIDTH( 8 ))
-mac_muladd_4ns_4ns_4ns_8_4_1_U1102(
+mac_muladd_4ns_4ns_4ns_8_4_1_U1096(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_735_p0),
@@ -606,7 +606,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln148_fu_597_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+        if (((icmp_ln153_fu_597_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
             i_fu_118 <= i_5_fu_603_p2;
         end else if ((ap_loop_init == 1'b1)) begin
             i_fu_118 <= 13'd0;
@@ -618,9 +618,9 @@ always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
         ap_loop_exit_ready_pp0_iter2_reg <= ap_loop_exit_ready_pp0_iter1_reg;
-        tmp_102_reg_770 <= {{mul_ln151_fu_653_p2[12:9]}};
-        tmp_102_reg_770_pp0_iter1_reg <= tmp_102_reg_770;
-        tmp_reg_765 <= {{mul_ln150_fu_627_p2[12:9]}};
+        tmp_100_reg_770 <= {{mul_ln157_fu_653_p2[12:9]}};
+        tmp_100_reg_770_pp0_iter1_reg <= tmp_100_reg_770;
+        tmp_reg_765 <= {{mul_ln156_fu_627_p2[12:9]}};
         tmp_reg_765_pp0_iter1_reg <= tmp_reg_765;
     end
 end
@@ -634,25 +634,25 @@ always @ (posedge ap_clk) begin
         ap_loop_exit_ready_pp0_iter7_reg <= ap_loop_exit_ready_pp0_iter6_reg;
         ap_loop_exit_ready_pp0_iter8_reg <= ap_loop_exit_ready_pp0_iter7_reg;
         ap_loop_exit_ready_pp0_iter9_reg <= ap_loop_exit_ready_pp0_iter8_reg;
-        tmp_102_reg_770_pp0_iter2_reg <= tmp_102_reg_770_pp0_iter1_reg;
-        tmp_102_reg_770_pp0_iter3_reg <= tmp_102_reg_770_pp0_iter2_reg;
-        tmp_102_reg_770_pp0_iter4_reg <= tmp_102_reg_770_pp0_iter3_reg;
-        tmp_102_reg_770_pp0_iter5_reg <= tmp_102_reg_770_pp0_iter4_reg;
-        tmp_102_reg_770_pp0_iter6_reg <= tmp_102_reg_770_pp0_iter5_reg;
-        tmp_102_reg_770_pp0_iter7_reg <= tmp_102_reg_770_pp0_iter6_reg;
-        tmp_102_reg_770_pp0_iter8_reg <= tmp_102_reg_770_pp0_iter7_reg;
+        tmp_100_reg_770_pp0_iter2_reg <= tmp_100_reg_770_pp0_iter1_reg;
+        tmp_100_reg_770_pp0_iter3_reg <= tmp_100_reg_770_pp0_iter2_reg;
+        tmp_100_reg_770_pp0_iter4_reg <= tmp_100_reg_770_pp0_iter3_reg;
+        tmp_100_reg_770_pp0_iter5_reg <= tmp_100_reg_770_pp0_iter4_reg;
+        tmp_100_reg_770_pp0_iter6_reg <= tmp_100_reg_770_pp0_iter5_reg;
+        tmp_100_reg_770_pp0_iter7_reg <= tmp_100_reg_770_pp0_iter6_reg;
+        tmp_100_reg_770_pp0_iter8_reg <= tmp_100_reg_770_pp0_iter7_reg;
         tmp_reg_765_pp0_iter2_reg <= tmp_reg_765_pp0_iter1_reg;
         tmp_reg_765_pp0_iter3_reg <= tmp_reg_765_pp0_iter2_reg;
         tmp_reg_765_pp0_iter4_reg <= tmp_reg_765_pp0_iter3_reg;
         tmp_reg_765_pp0_iter5_reg <= tmp_reg_765_pp0_iter4_reg;
         tmp_reg_765_pp0_iter6_reg <= tmp_reg_765_pp0_iter5_reg;
-        trunc_ln150_reg_780 <= trunc_ln150_fu_683_p1;
-        trunc_ln151_reg_789 <= trunc_ln151_fu_690_p1;
+        trunc_ln156_reg_780 <= trunc_ln156_fu_683_p1;
+        trunc_ln157_reg_789 <= trunc_ln157_fu_690_p1;
     end
 end
 
 always @ (*) begin
-    if (((icmp_ln148_fu_597_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((icmp_ln153_fu_597_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -724,7 +724,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd0) & (trunc_ln150_reg_780 == 3'd2))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd0) & (trunc_ln156_reg_780 == 3'd2))) begin
         grid_10_we1_local = 1'b1;
     end else begin
         grid_10_we1_local = 1'b0;
@@ -740,7 +740,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd1) & (trunc_ln150_reg_780 == 3'd2))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd1) & (trunc_ln156_reg_780 == 3'd2))) begin
         grid_11_we1_local = 1'b1;
     end else begin
         grid_11_we1_local = 1'b0;
@@ -756,7 +756,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd2) & (trunc_ln150_reg_780 == 3'd2))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd2) & (trunc_ln156_reg_780 == 3'd2))) begin
         grid_12_we1_local = 1'b1;
     end else begin
         grid_12_we1_local = 1'b0;
@@ -772,7 +772,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd3) & (trunc_ln150_reg_780 == 3'd2))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd3) & (trunc_ln156_reg_780 == 3'd2))) begin
         grid_13_we1_local = 1'b1;
     end else begin
         grid_13_we1_local = 1'b0;
@@ -788,7 +788,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~(trunc_ln151_reg_789 == 3'd0) & ~(trunc_ln151_reg_789 == 3'd1) & ~(trunc_ln151_reg_789 == 3'd2) & ~(trunc_ln151_reg_789 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln150_reg_780 == 3'd2))) begin
+    if ((~(trunc_ln157_reg_789 == 3'd0) & ~(trunc_ln157_reg_789 == 3'd1) & ~(trunc_ln157_reg_789 == 3'd2) & ~(trunc_ln157_reg_789 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln156_reg_780 == 3'd2))) begin
         grid_14_we1_local = 1'b1;
     end else begin
         grid_14_we1_local = 1'b0;
@@ -804,7 +804,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd0) & (trunc_ln150_reg_780 == 3'd3))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd0) & (trunc_ln156_reg_780 == 3'd3))) begin
         grid_15_we1_local = 1'b1;
     end else begin
         grid_15_we1_local = 1'b0;
@@ -820,7 +820,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd1) & (trunc_ln150_reg_780 == 3'd3))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd1) & (trunc_ln156_reg_780 == 3'd3))) begin
         grid_16_we1_local = 1'b1;
     end else begin
         grid_16_we1_local = 1'b0;
@@ -836,7 +836,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd2) & (trunc_ln150_reg_780 == 3'd3))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd2) & (trunc_ln156_reg_780 == 3'd3))) begin
         grid_17_we1_local = 1'b1;
     end else begin
         grid_17_we1_local = 1'b0;
@@ -852,7 +852,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd3) & (trunc_ln150_reg_780 == 3'd3))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd3) & (trunc_ln156_reg_780 == 3'd3))) begin
         grid_18_we1_local = 1'b1;
     end else begin
         grid_18_we1_local = 1'b0;
@@ -868,7 +868,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~(trunc_ln151_reg_789 == 3'd0) & ~(trunc_ln151_reg_789 == 3'd1) & ~(trunc_ln151_reg_789 == 3'd2) & ~(trunc_ln151_reg_789 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln150_reg_780 == 3'd3))) begin
+    if ((~(trunc_ln157_reg_789 == 3'd0) & ~(trunc_ln157_reg_789 == 3'd1) & ~(trunc_ln157_reg_789 == 3'd2) & ~(trunc_ln157_reg_789 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln156_reg_780 == 3'd3))) begin
         grid_19_we1_local = 1'b1;
     end else begin
         grid_19_we1_local = 1'b0;
@@ -884,7 +884,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd1) & (trunc_ln150_reg_780 == 3'd0))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd1) & (trunc_ln156_reg_780 == 3'd0))) begin
         grid_1_we1_local = 1'b1;
     end else begin
         grid_1_we1_local = 1'b0;
@@ -900,7 +900,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~(trunc_ln150_reg_780 == 3'd0) & ~(trunc_ln150_reg_780 == 3'd1) & ~(trunc_ln150_reg_780 == 3'd2) & ~(trunc_ln150_reg_780 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd0))) begin
+    if ((~(trunc_ln156_reg_780 == 3'd0) & ~(trunc_ln156_reg_780 == 3'd1) & ~(trunc_ln156_reg_780 == 3'd2) & ~(trunc_ln156_reg_780 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd0))) begin
         grid_20_we1_local = 1'b1;
     end else begin
         grid_20_we1_local = 1'b0;
@@ -916,7 +916,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~(trunc_ln150_reg_780 == 3'd0) & ~(trunc_ln150_reg_780 == 3'd1) & ~(trunc_ln150_reg_780 == 3'd2) & ~(trunc_ln150_reg_780 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd1))) begin
+    if ((~(trunc_ln156_reg_780 == 3'd0) & ~(trunc_ln156_reg_780 == 3'd1) & ~(trunc_ln156_reg_780 == 3'd2) & ~(trunc_ln156_reg_780 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd1))) begin
         grid_21_we1_local = 1'b1;
     end else begin
         grid_21_we1_local = 1'b0;
@@ -932,7 +932,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~(trunc_ln150_reg_780 == 3'd0) & ~(trunc_ln150_reg_780 == 3'd1) & ~(trunc_ln150_reg_780 == 3'd2) & ~(trunc_ln150_reg_780 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd2))) begin
+    if ((~(trunc_ln156_reg_780 == 3'd0) & ~(trunc_ln156_reg_780 == 3'd1) & ~(trunc_ln156_reg_780 == 3'd2) & ~(trunc_ln156_reg_780 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd2))) begin
         grid_22_we1_local = 1'b1;
     end else begin
         grid_22_we1_local = 1'b0;
@@ -948,7 +948,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~(trunc_ln150_reg_780 == 3'd0) & ~(trunc_ln150_reg_780 == 3'd1) & ~(trunc_ln150_reg_780 == 3'd2) & ~(trunc_ln150_reg_780 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd3))) begin
+    if ((~(trunc_ln156_reg_780 == 3'd0) & ~(trunc_ln156_reg_780 == 3'd1) & ~(trunc_ln156_reg_780 == 3'd2) & ~(trunc_ln156_reg_780 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd3))) begin
         grid_23_we1_local = 1'b1;
     end else begin
         grid_23_we1_local = 1'b0;
@@ -964,7 +964,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~(trunc_ln150_reg_780 == 3'd0) & ~(trunc_ln150_reg_780 == 3'd1) & ~(trunc_ln150_reg_780 == 3'd2) & ~(trunc_ln151_reg_789 == 3'd0) & ~(trunc_ln151_reg_789 == 3'd1) & ~(trunc_ln151_reg_789 == 3'd2) & ~(trunc_ln151_reg_789 == 3'd3) & ~(trunc_ln150_reg_780 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1))) begin
+    if ((~(trunc_ln156_reg_780 == 3'd0) & ~(trunc_ln156_reg_780 == 3'd1) & ~(trunc_ln156_reg_780 == 3'd2) & ~(trunc_ln157_reg_789 == 3'd0) & ~(trunc_ln157_reg_789 == 3'd1) & ~(trunc_ln157_reg_789 == 3'd2) & ~(trunc_ln157_reg_789 == 3'd3) & ~(trunc_ln156_reg_780 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1))) begin
         grid_24_we1_local = 1'b1;
     end else begin
         grid_24_we1_local = 1'b0;
@@ -980,7 +980,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd2) & (trunc_ln150_reg_780 == 3'd0))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd2) & (trunc_ln156_reg_780 == 3'd0))) begin
         grid_2_we1_local = 1'b1;
     end else begin
         grid_2_we1_local = 1'b0;
@@ -996,7 +996,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd3) & (trunc_ln150_reg_780 == 3'd0))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd3) & (trunc_ln156_reg_780 == 3'd0))) begin
         grid_3_we1_local = 1'b1;
     end else begin
         grid_3_we1_local = 1'b0;
@@ -1012,7 +1012,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~(trunc_ln151_reg_789 == 3'd0) & ~(trunc_ln151_reg_789 == 3'd1) & ~(trunc_ln151_reg_789 == 3'd2) & ~(trunc_ln151_reg_789 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln150_reg_780 == 3'd0))) begin
+    if ((~(trunc_ln157_reg_789 == 3'd0) & ~(trunc_ln157_reg_789 == 3'd1) & ~(trunc_ln157_reg_789 == 3'd2) & ~(trunc_ln157_reg_789 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln156_reg_780 == 3'd0))) begin
         grid_4_we1_local = 1'b1;
     end else begin
         grid_4_we1_local = 1'b0;
@@ -1028,7 +1028,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd0) & (trunc_ln150_reg_780 == 3'd1))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd0) & (trunc_ln156_reg_780 == 3'd1))) begin
         grid_5_we1_local = 1'b1;
     end else begin
         grid_5_we1_local = 1'b0;
@@ -1044,7 +1044,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd1) & (trunc_ln150_reg_780 == 3'd1))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd1) & (trunc_ln156_reg_780 == 3'd1))) begin
         grid_6_we1_local = 1'b1;
     end else begin
         grid_6_we1_local = 1'b0;
@@ -1060,7 +1060,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd2) & (trunc_ln150_reg_780 == 3'd1))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd2) & (trunc_ln156_reg_780 == 3'd1))) begin
         grid_7_we1_local = 1'b1;
     end else begin
         grid_7_we1_local = 1'b0;
@@ -1076,7 +1076,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd3) & (trunc_ln150_reg_780 == 3'd1))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd3) & (trunc_ln156_reg_780 == 3'd1))) begin
         grid_8_we1_local = 1'b1;
     end else begin
         grid_8_we1_local = 1'b0;
@@ -1092,7 +1092,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~(trunc_ln151_reg_789 == 3'd0) & ~(trunc_ln151_reg_789 == 3'd1) & ~(trunc_ln151_reg_789 == 3'd2) & ~(trunc_ln151_reg_789 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln150_reg_780 == 3'd1))) begin
+    if ((~(trunc_ln157_reg_789 == 3'd0) & ~(trunc_ln157_reg_789 == 3'd1) & ~(trunc_ln157_reg_789 == 3'd2) & ~(trunc_ln157_reg_789 == 3'd3) & (1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln156_reg_780 == 3'd1))) begin
         grid_9_we1_local = 1'b1;
     end else begin
         grid_9_we1_local = 1'b0;
@@ -1108,7 +1108,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln151_reg_789 == 3'd0) & (trunc_ln150_reg_780 == 3'd0))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter10 == 1'b1) & (trunc_ln157_reg_789 == 3'd0) & (trunc_ln156_reg_780 == 3'd0))) begin
         grid_we1_local = 1'b1;
     end else begin
         grid_we1_local = 1'b0;
@@ -1180,7 +1180,7 @@ assign ap_ready = ap_ready_sig;
 
 assign c_fu_609_p1 = ap_sig_allocacmp_i_4[5:0];
 
-assign grid_10_address1 = zext_ln152_2_fu_707_p1;
+assign grid_10_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_10_ce1 = grid_10_ce1_local;
 
@@ -1188,7 +1188,7 @@ assign grid_10_d1 = equalized_stream_dout;
 
 assign grid_10_we1 = grid_10_we1_local;
 
-assign grid_11_address1 = zext_ln152_2_fu_707_p1;
+assign grid_11_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_11_ce1 = grid_11_ce1_local;
 
@@ -1196,7 +1196,7 @@ assign grid_11_d1 = equalized_stream_dout;
 
 assign grid_11_we1 = grid_11_we1_local;
 
-assign grid_12_address1 = zext_ln152_2_fu_707_p1;
+assign grid_12_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_12_ce1 = grid_12_ce1_local;
 
@@ -1204,7 +1204,7 @@ assign grid_12_d1 = equalized_stream_dout;
 
 assign grid_12_we1 = grid_12_we1_local;
 
-assign grid_13_address1 = zext_ln152_2_fu_707_p1;
+assign grid_13_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_13_ce1 = grid_13_ce1_local;
 
@@ -1212,7 +1212,7 @@ assign grid_13_d1 = equalized_stream_dout;
 
 assign grid_13_we1 = grid_13_we1_local;
 
-assign grid_14_address1 = zext_ln152_2_fu_707_p1;
+assign grid_14_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_14_ce1 = grid_14_ce1_local;
 
@@ -1220,7 +1220,7 @@ assign grid_14_d1 = equalized_stream_dout;
 
 assign grid_14_we1 = grid_14_we1_local;
 
-assign grid_15_address1 = zext_ln152_2_fu_707_p1;
+assign grid_15_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_15_ce1 = grid_15_ce1_local;
 
@@ -1228,7 +1228,7 @@ assign grid_15_d1 = equalized_stream_dout;
 
 assign grid_15_we1 = grid_15_we1_local;
 
-assign grid_16_address1 = zext_ln152_2_fu_707_p1;
+assign grid_16_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_16_ce1 = grid_16_ce1_local;
 
@@ -1236,7 +1236,7 @@ assign grid_16_d1 = equalized_stream_dout;
 
 assign grid_16_we1 = grid_16_we1_local;
 
-assign grid_17_address1 = zext_ln152_2_fu_707_p1;
+assign grid_17_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_17_ce1 = grid_17_ce1_local;
 
@@ -1244,7 +1244,7 @@ assign grid_17_d1 = equalized_stream_dout;
 
 assign grid_17_we1 = grid_17_we1_local;
 
-assign grid_18_address1 = zext_ln152_2_fu_707_p1;
+assign grid_18_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_18_ce1 = grid_18_ce1_local;
 
@@ -1252,7 +1252,7 @@ assign grid_18_d1 = equalized_stream_dout;
 
 assign grid_18_we1 = grid_18_we1_local;
 
-assign grid_19_address1 = zext_ln152_2_fu_707_p1;
+assign grid_19_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_19_ce1 = grid_19_ce1_local;
 
@@ -1260,7 +1260,7 @@ assign grid_19_d1 = equalized_stream_dout;
 
 assign grid_19_we1 = grid_19_we1_local;
 
-assign grid_1_address1 = zext_ln152_2_fu_707_p1;
+assign grid_1_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_1_ce1 = grid_1_ce1_local;
 
@@ -1268,7 +1268,7 @@ assign grid_1_d1 = equalized_stream_dout;
 
 assign grid_1_we1 = grid_1_we1_local;
 
-assign grid_20_address1 = zext_ln152_2_fu_707_p1;
+assign grid_20_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_20_ce1 = grid_20_ce1_local;
 
@@ -1276,7 +1276,7 @@ assign grid_20_d1 = equalized_stream_dout;
 
 assign grid_20_we1 = grid_20_we1_local;
 
-assign grid_21_address1 = zext_ln152_2_fu_707_p1;
+assign grid_21_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_21_ce1 = grid_21_ce1_local;
 
@@ -1284,7 +1284,7 @@ assign grid_21_d1 = equalized_stream_dout;
 
 assign grid_21_we1 = grid_21_we1_local;
 
-assign grid_22_address1 = zext_ln152_2_fu_707_p1;
+assign grid_22_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_22_ce1 = grid_22_ce1_local;
 
@@ -1292,7 +1292,7 @@ assign grid_22_d1 = equalized_stream_dout;
 
 assign grid_22_we1 = grid_22_we1_local;
 
-assign grid_23_address1 = zext_ln152_2_fu_707_p1;
+assign grid_23_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_23_ce1 = grid_23_ce1_local;
 
@@ -1300,7 +1300,7 @@ assign grid_23_d1 = equalized_stream_dout;
 
 assign grid_23_we1 = grid_23_we1_local;
 
-assign grid_24_address1 = zext_ln152_2_fu_707_p1;
+assign grid_24_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_24_ce1 = grid_24_ce1_local;
 
@@ -1308,7 +1308,7 @@ assign grid_24_d1 = equalized_stream_dout;
 
 assign grid_24_we1 = grid_24_we1_local;
 
-assign grid_2_address1 = zext_ln152_2_fu_707_p1;
+assign grid_2_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_2_ce1 = grid_2_ce1_local;
 
@@ -1316,7 +1316,7 @@ assign grid_2_d1 = equalized_stream_dout;
 
 assign grid_2_we1 = grid_2_we1_local;
 
-assign grid_3_address1 = zext_ln152_2_fu_707_p1;
+assign grid_3_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_3_ce1 = grid_3_ce1_local;
 
@@ -1324,7 +1324,7 @@ assign grid_3_d1 = equalized_stream_dout;
 
 assign grid_3_we1 = grid_3_we1_local;
 
-assign grid_4_address1 = zext_ln152_2_fu_707_p1;
+assign grid_4_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_4_ce1 = grid_4_ce1_local;
 
@@ -1332,7 +1332,7 @@ assign grid_4_d1 = equalized_stream_dout;
 
 assign grid_4_we1 = grid_4_we1_local;
 
-assign grid_5_address1 = zext_ln152_2_fu_707_p1;
+assign grid_5_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_5_ce1 = grid_5_ce1_local;
 
@@ -1340,7 +1340,7 @@ assign grid_5_d1 = equalized_stream_dout;
 
 assign grid_5_we1 = grid_5_we1_local;
 
-assign grid_6_address1 = zext_ln152_2_fu_707_p1;
+assign grid_6_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_6_ce1 = grid_6_ce1_local;
 
@@ -1348,7 +1348,7 @@ assign grid_6_d1 = equalized_stream_dout;
 
 assign grid_6_we1 = grid_6_we1_local;
 
-assign grid_7_address1 = zext_ln152_2_fu_707_p1;
+assign grid_7_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_7_ce1 = grid_7_ce1_local;
 
@@ -1356,7 +1356,7 @@ assign grid_7_d1 = equalized_stream_dout;
 
 assign grid_7_we1 = grid_7_we1_local;
 
-assign grid_8_address1 = zext_ln152_2_fu_707_p1;
+assign grid_8_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_8_ce1 = grid_8_ce1_local;
 
@@ -1364,7 +1364,7 @@ assign grid_8_d1 = equalized_stream_dout;
 
 assign grid_8_we1 = grid_8_we1_local;
 
-assign grid_9_address1 = zext_ln152_2_fu_707_p1;
+assign grid_9_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_9_ce1 = grid_9_ce1_local;
 
@@ -1372,7 +1372,7 @@ assign grid_9_d1 = equalized_stream_dout;
 
 assign grid_9_we1 = grid_9_we1_local;
 
-assign grid_address1 = zext_ln152_2_fu_707_p1;
+assign grid_address1 = zext_ln158_2_fu_707_p1;
 
 assign grid_ce1 = grid_ce1_local;
 
@@ -1394,30 +1394,30 @@ assign grp_fu_735_p1 = 8'd13;
 
 assign grp_fu_735_p2 = grp_fu_735_p20;
 
-assign grp_fu_735_p20 = tmp_102_reg_770_pp0_iter8_reg;
+assign grp_fu_735_p20 = tmp_100_reg_770_pp0_iter8_reg;
 
 assign i_5_fu_603_p2 = (ap_sig_allocacmp_i_4 + 13'd1);
 
-assign icmp_ln148_fu_597_p2 = ((ap_sig_allocacmp_i_4 == 13'd4096) ? 1'b1 : 1'b0);
+assign icmp_ln153_fu_597_p2 = ((ap_sig_allocacmp_i_4 == 13'd4096) ? 1'b1 : 1'b0);
 
-assign mul_ln150_fu_627_p0 = mul_ln150_fu_627_p00;
+assign mul_ln156_fu_627_p0 = mul_ln156_fu_627_p00;
 
-assign mul_ln150_fu_627_p00 = trunc_ln_fu_613_p4;
+assign mul_ln156_fu_627_p00 = trunc_ln_fu_613_p4;
 
-assign mul_ln150_fu_627_p1 = 13'd103;
+assign mul_ln156_fu_627_p1 = 13'd103;
 
-assign mul_ln151_fu_653_p0 = mul_ln151_fu_653_p00;
+assign mul_ln157_fu_653_p0 = mul_ln157_fu_653_p00;
 
-assign mul_ln151_fu_653_p00 = c_fu_609_p1;
+assign mul_ln157_fu_653_p00 = c_fu_609_p1;
 
-assign mul_ln151_fu_653_p1 = 13'd103;
+assign mul_ln157_fu_653_p1 = 13'd103;
 
-assign trunc_ln150_fu_683_p1 = grp_fu_643_p2[2:0];
+assign trunc_ln156_fu_683_p1 = grp_fu_643_p2[2:0];
 
-assign trunc_ln151_fu_690_p1 = grp_fu_669_p2[2:0];
+assign trunc_ln157_fu_690_p1 = grp_fu_669_p2[2:0];
 
 assign trunc_ln_fu_613_p4 = {{ap_sig_allocacmp_i_4[11:6]}};
 
-assign zext_ln152_2_fu_707_p1 = grp_fu_735_p3;
+assign zext_ln158_2_fu_707_p1 = grp_fu_735_p3;
 
 endmodule //top_kernel_stage_gaussian_Pipeline_READ_IN

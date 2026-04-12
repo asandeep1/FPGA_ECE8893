@@ -216,7 +216,7 @@
     endfunction
 
     // get the proc path based on dl vector
-    function [448:0] proc_path(input [PROC_NUM - 1:0] dl_vec);
+    function [368:0] proc_path(input [PROC_NUM - 1:0] dl_vec);
         integer index;
         begin
             index = proc_index(dl_vec);
@@ -237,7 +237,7 @@
                     proc_path = "top_kernel_top_kernel.stage_morphology_U0";
                 end
                 5 : begin
-                    proc_path = "top_kernel_top_kernel.Loop_VITIS_LOOP_393_1_proc_U0";
+                    proc_path = "top_kernel_top_kernel.write_output_U0";
                 end
                 default : begin
                     proc_path = "unknown";
@@ -257,7 +257,7 @@
     endtask
 
     // print the start of a cycle
-    task print_cycle_start(input reg [448:0] proc_path, input integer cycle_id);
+    task print_cycle_start(input reg [368:0] proc_path, input integer cycle_id);
         begin
             $display("/////////////////////////");
             $display("// Dependence cycle %0d:", cycle_id);
@@ -282,7 +282,7 @@
     endtask
 
     // print one proc component in the cycle
-    task print_cycle_proc_comp(input reg [448:0] proc_path, input integer cycle_comp_id);
+    task print_cycle_proc_comp(input reg [368:0] proc_path, input integer cycle_comp_id);
         begin
             $display("// (%0d): Process: %0s", cycle_comp_id, proc_path);
             $fdisplay(fp, "Dependence_Process_ID %0d", cycle_comp_id);
@@ -292,7 +292,7 @@
 
     // print one channel component in the cycle
     task print_cycle_chan_comp(input [PROC_NUM - 1:0] dl_vec1, input [PROC_NUM - 1:0] dl_vec2);
-        reg [544:0] chan_path;
+        reg [464:0] chan_path;
         integer index1;
         integer index2;
         begin
@@ -301,25 +301,25 @@
             case (index1)
                 0 : begin // for proc 'top_kernel_top_kernel.entry_proc_U0'
                     case(index2)
-                    5: begin //  for dep proc 'top_kernel_top_kernel.Loop_VITIS_LOOP_393_1_proc_U0'
+                    5: begin //  for dep proc 'top_kernel_top_kernel.write_output_U0'
 // for dep channel 'top_kernel_top_kernel.out_r_c_U' info is :
 // blk sig is {~top_kernel_top_kernel_inst.entry_proc_U0.out_r_c_blk_n data_FIFO}
                         if ((~entry_proc_U0.out_r_c_blk_n)) begin
                             if (~out_r_c_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.out_r_c_U' written by process 'top_kernel_top_kernel.Loop_VITIS_LOOP_393_1_proc_U0'");
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.out_r_c_U' written by process 'top_kernel_top_kernel.write_output_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.out_r_c_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
                             else if (~out_r_c_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.out_r_c_U' read by process 'top_kernel_top_kernel.Loop_VITIS_LOOP_393_1_proc_U0'");
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.out_r_c_U' read by process 'top_kernel_top_kernel.write_output_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.out_r_c_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'top_kernel_top_kernel.start_for_Loop_VITIS_LOOP_393_1_proc_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_Loop_VITIS_LOOP_393_1_proc_U0_U.if_full_n & top_kernel_top_kernel_inst.entry_proc_U0.ap_start & ~top_kernel_top_kernel_inst.entry_proc_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~top_kernel_top_kernel_inst.start_for_Loop_VITIS_LOOP_393_1_proc_U0_U.if_read} start_FIFO}
-                        if ((~start_for_Loop_VITIS_LOOP_393_1_proc_U0_U.if_full_n & entry_proc_U0.ap_start & ~entry_proc_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~start_for_Loop_VITIS_LOOP_393_1_proc_U0_U.if_read)) begin
-                            $display("//      Blocked by full output start propagation FIFO 'top_kernel_top_kernel.start_for_Loop_VITIS_LOOP_393_1_proc_U0_U' read by process 'top_kernel_top_kernel.Loop_VITIS_LOOP_393_1_proc_U0',");
+// for dep channel 'top_kernel_top_kernel.start_for_write_output_U0_U' info is :
+// blk sig is {{~top_kernel_top_kernel_inst.start_for_write_output_U0_U.if_full_n & top_kernel_top_kernel_inst.entry_proc_U0.ap_start & ~top_kernel_top_kernel_inst.entry_proc_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~top_kernel_top_kernel_inst.start_for_write_output_U0_U.if_read} start_FIFO}
+                        if ((~start_for_write_output_U0_U.if_full_n & entry_proc_U0.ap_start & ~entry_proc_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~start_for_write_output_U0_U.if_read)) begin
+                            $display("//      Blocked by full output start propagation FIFO 'top_kernel_top_kernel.start_for_write_output_U0_U' read by process 'top_kernel_top_kernel.write_output_U0',");
                         end
                     end
                     1: begin //  for dep proc 'top_kernel_top_kernel.stage_rgb2eq_U0'
@@ -388,8 +388,8 @@
                     end
                     3: begin //  for dep proc 'top_kernel_top_kernel.stage_bilateral_U0'
 // for dep channel 'top_kernel_top_kernel.gaussian_stream_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.stage_gaussian_U0.grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186.gaussian_stream_blk_n data_FIFO}
-                        if ((~stage_gaussian_U0.grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186.gaussian_stream_blk_n)) begin
+// blk sig is {~top_kernel_top_kernel_inst.stage_gaussian_U0.grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186.gaussian_stream_blk_n data_FIFO}
+                        if ((~stage_gaussian_U0.grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186.gaussian_stream_blk_n)) begin
                             if (~gaussian_stream_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.gaussian_stream_U' written by process 'top_kernel_top_kernel.stage_bilateral_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.gaussian_stream_U");
@@ -434,8 +434,8 @@
                     end
                     4: begin //  for dep proc 'top_kernel_top_kernel.stage_morphology_U0'
 // for dep channel 'top_kernel_top_kernel.bilateral_stream_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.stage_bilateral_U0.grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90.bilateral_stream_blk_n data_FIFO}
-                        if ((~stage_bilateral_U0.grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90.bilateral_stream_blk_n)) begin
+// blk sig is {~top_kernel_top_kernel_inst.stage_bilateral_U0.grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90.bilateral_stream_blk_n data_FIFO}
+                        if ((~stage_bilateral_U0.grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90.bilateral_stream_blk_n)) begin
                             if (~bilateral_stream_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.bilateral_stream_U' written by process 'top_kernel_top_kernel.stage_morphology_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.bilateral_stream_U");
@@ -478,17 +478,17 @@
                             $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_stage_morphology_U0_U' written by process 'top_kernel_top_kernel.stage_bilateral_U0',");
                         end
                     end
-                    5: begin //  for dep proc 'top_kernel_top_kernel.Loop_VITIS_LOOP_393_1_proc_U0'
+                    5: begin //  for dep proc 'top_kernel_top_kernel.write_output_U0'
 // for dep channel 'top_kernel_top_kernel.morphology_stream_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.stage_morphology_U0.grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150.morphology_stream_blk_n data_FIFO}
-                        if ((~stage_morphology_U0.grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150.morphology_stream_blk_n)) begin
+// blk sig is {~top_kernel_top_kernel_inst.stage_morphology_U0.grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150.morphology_stream_blk_n data_FIFO}
+                        if ((~stage_morphology_U0.grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150.morphology_stream_blk_n)) begin
                             if (~morphology_stream_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.morphology_stream_U' written by process 'top_kernel_top_kernel.Loop_VITIS_LOOP_393_1_proc_U0'");
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.morphology_stream_U' written by process 'top_kernel_top_kernel.write_output_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.morphology_stream_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
                             else if (~morphology_stream_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.morphology_stream_U' read by process 'top_kernel_top_kernel.Loop_VITIS_LOOP_393_1_proc_U0'");
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.morphology_stream_U' read by process 'top_kernel_top_kernel.write_output_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.morphology_stream_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
@@ -496,12 +496,28 @@
                     end
                     endcase
                 end
-                5 : begin // for proc 'top_kernel_top_kernel.Loop_VITIS_LOOP_393_1_proc_U0'
+                5 : begin // for proc 'top_kernel_top_kernel.write_output_U0'
                     case(index2)
+                    4: begin //  for dep proc 'top_kernel_top_kernel.stage_morphology_U0'
+// for dep channel 'top_kernel_top_kernel.morphology_stream_U' info is :
+// blk sig is {~top_kernel_top_kernel_inst.write_output_U0.morphology_stream_blk_n data_FIFO}
+                        if ((~write_output_U0.morphology_stream_blk_n)) begin
+                            if (~morphology_stream_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.morphology_stream_U' written by process 'top_kernel_top_kernel.stage_morphology_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.morphology_stream_U");
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~morphology_stream_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.morphology_stream_U' read by process 'top_kernel_top_kernel.stage_morphology_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.morphology_stream_U");
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                        end
+                    end
                     0: begin //  for dep proc 'top_kernel_top_kernel.entry_proc_U0'
 // for dep channel 'top_kernel_top_kernel.out_r_c_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.Loop_VITIS_LOOP_393_1_proc_U0.out_r_blk_n data_FIFO}
-                        if ((~Loop_VITIS_LOOP_393_1_proc_U0.out_r_blk_n)) begin
+// blk sig is {~top_kernel_top_kernel_inst.write_output_U0.out_r_blk_n data_FIFO}
+                        if ((~write_output_U0.out_r_blk_n)) begin
                             if (~out_r_c_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.out_r_c_U' written by process 'top_kernel_top_kernel.entry_proc_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.out_r_c_U");
@@ -513,26 +529,10 @@
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'top_kernel_top_kernel.start_for_Loop_VITIS_LOOP_393_1_proc_U0_U' info is :
-// blk sig is {{~top_kernel_top_kernel_inst.start_for_Loop_VITIS_LOOP_393_1_proc_U0_U.if_empty_n & top_kernel_top_kernel_inst.Loop_VITIS_LOOP_393_1_proc_U0.ap_idle & ~top_kernel_top_kernel_inst.start_for_Loop_VITIS_LOOP_393_1_proc_U0_U.if_write} start_FIFO}
-                        if ((~start_for_Loop_VITIS_LOOP_393_1_proc_U0_U.if_empty_n & Loop_VITIS_LOOP_393_1_proc_U0.ap_idle & ~start_for_Loop_VITIS_LOOP_393_1_proc_U0_U.if_write)) begin
-                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_Loop_VITIS_LOOP_393_1_proc_U0_U' written by process 'top_kernel_top_kernel.entry_proc_U0',");
-                        end
-                    end
-                    4: begin //  for dep proc 'top_kernel_top_kernel.stage_morphology_U0'
-// for dep channel 'top_kernel_top_kernel.morphology_stream_U' info is :
-// blk sig is {~top_kernel_top_kernel_inst.Loop_VITIS_LOOP_393_1_proc_U0.morphology_stream_blk_n data_FIFO}
-                        if ((~Loop_VITIS_LOOP_393_1_proc_U0.morphology_stream_blk_n)) begin
-                            if (~morphology_stream_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'top_kernel_top_kernel.morphology_stream_U' written by process 'top_kernel_top_kernel.stage_morphology_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.morphology_stream_U");
-                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
-                            end
-                            else if (~morphology_stream_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'top_kernel_top_kernel.morphology_stream_U' read by process 'top_kernel_top_kernel.stage_morphology_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path top_kernel_top_kernel.morphology_stream_U");
-                                $fdisplay(fp, "Dependence_Channel_status FULL");
-                            end
+// for dep channel 'top_kernel_top_kernel.start_for_write_output_U0_U' info is :
+// blk sig is {{~top_kernel_top_kernel_inst.start_for_write_output_U0_U.if_empty_n & top_kernel_top_kernel_inst.write_output_U0.ap_idle & ~top_kernel_top_kernel_inst.start_for_write_output_U0_U.if_write} start_FIFO}
+                        if ((~start_for_write_output_U0_U.if_empty_n & write_output_U0.ap_idle & ~start_for_write_output_U0_U.if_write)) begin
+                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'top_kernel_top_kernel.start_for_write_output_U0_U' written by process 'top_kernel_top_kernel.entry_proc_U0',");
                         end
                     end
                     endcase

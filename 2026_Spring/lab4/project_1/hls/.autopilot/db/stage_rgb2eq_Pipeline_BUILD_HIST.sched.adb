@@ -37,7 +37,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -9275,7 +9275,7 @@
 						<name>idx_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>102</lineNumber>
+						<lineNumber>105</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -9291,7 +9291,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>102</second>
+										<second>105</second>
 									</item>
 								</second>
 							</item>
@@ -9331,7 +9331,7 @@
 						<name>histogram</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -9347,7 +9347,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -9387,7 +9387,7 @@
 						<name>histogram_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -9403,7 +9403,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -9443,7 +9443,7 @@
 						<name>histogram_2</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -9459,7 +9459,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -9499,7 +9499,7 @@
 						<name>histogram_3</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -9515,7 +9515,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -9555,7 +9555,7 @@
 						<name>histogram_4</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -9571,7 +9571,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -9611,7 +9611,7 @@
 						<name>histogram_5</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -9627,7 +9627,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -9667,7 +9667,7 @@
 						<name>histogram_6</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -9683,7 +9683,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -9723,7 +9723,7 @@
 						<name>histogram_7</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -9739,7 +9739,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -9779,7 +9779,7 @@
 						<name>histogram_8</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -9795,7 +9795,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -9835,7 +9835,7 @@
 						<name>histogram_9</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -9851,7 +9851,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -9891,7 +9891,7 @@
 						<name>histogram_10</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -9907,7 +9907,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -9947,7 +9947,7 @@
 						<name>histogram_11</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -9963,7 +9963,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10003,7 +10003,7 @@
 						<name>histogram_12</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10019,7 +10019,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10059,7 +10059,7 @@
 						<name>histogram_13</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10075,7 +10075,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10115,7 +10115,7 @@
 						<name>histogram_14</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10131,7 +10131,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10171,7 +10171,7 @@
 						<name>histogram_15</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10187,7 +10187,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10227,7 +10227,7 @@
 						<name>histogram_16</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10243,7 +10243,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10283,7 +10283,7 @@
 						<name>histogram_17</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10299,7 +10299,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10339,7 +10339,7 @@
 						<name>histogram_18</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10355,7 +10355,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10395,7 +10395,7 @@
 						<name>histogram_19</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10411,7 +10411,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10451,7 +10451,7 @@
 						<name>histogram_20</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10467,7 +10467,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10507,7 +10507,7 @@
 						<name>histogram_21</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10523,7 +10523,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10563,7 +10563,7 @@
 						<name>histogram_22</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10579,7 +10579,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10619,7 +10619,7 @@
 						<name>histogram_23</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10635,7 +10635,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10675,7 +10675,7 @@
 						<name>histogram_24</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10691,7 +10691,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10731,7 +10731,7 @@
 						<name>histogram_25</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10747,7 +10747,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10787,7 +10787,7 @@
 						<name>histogram_26</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10803,7 +10803,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10843,7 +10843,7 @@
 						<name>histogram_27</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10859,7 +10859,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10899,7 +10899,7 @@
 						<name>histogram_28</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10915,7 +10915,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -10955,7 +10955,7 @@
 						<name>histogram_29</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -10971,7 +10971,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11011,7 +11011,7 @@
 						<name>histogram_30</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11027,7 +11027,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11067,7 +11067,7 @@
 						<name>histogram_31</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11083,7 +11083,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11123,7 +11123,7 @@
 						<name>histogram_32</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11139,7 +11139,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11179,7 +11179,7 @@
 						<name>histogram_33</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11195,7 +11195,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11235,7 +11235,7 @@
 						<name>histogram_34</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11251,7 +11251,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11291,7 +11291,7 @@
 						<name>histogram_35</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11307,7 +11307,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11347,7 +11347,7 @@
 						<name>histogram_36</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11363,7 +11363,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11403,7 +11403,7 @@
 						<name>histogram_37</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11419,7 +11419,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11459,7 +11459,7 @@
 						<name>histogram_38</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11475,7 +11475,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11515,7 +11515,7 @@
 						<name>histogram_39</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11531,7 +11531,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11571,7 +11571,7 @@
 						<name>histogram_40</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11587,7 +11587,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11627,7 +11627,7 @@
 						<name>histogram_41</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11643,7 +11643,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11683,7 +11683,7 @@
 						<name>histogram_42</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11699,7 +11699,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11739,7 +11739,7 @@
 						<name>histogram_43</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11755,7 +11755,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11795,7 +11795,7 @@
 						<name>histogram_44</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11811,7 +11811,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11851,7 +11851,7 @@
 						<name>histogram_45</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11867,7 +11867,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11907,7 +11907,7 @@
 						<name>histogram_46</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11923,7 +11923,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -11963,7 +11963,7 @@
 						<name>histogram_47</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -11979,7 +11979,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12019,7 +12019,7 @@
 						<name>histogram_48</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12035,7 +12035,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12075,7 +12075,7 @@
 						<name>histogram_49</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12091,7 +12091,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12131,7 +12131,7 @@
 						<name>histogram_50</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12147,7 +12147,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12187,7 +12187,7 @@
 						<name>histogram_51</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12203,7 +12203,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12243,7 +12243,7 @@
 						<name>histogram_52</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12259,7 +12259,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12299,7 +12299,7 @@
 						<name>histogram_53</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12315,7 +12315,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12355,7 +12355,7 @@
 						<name>histogram_54</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12371,7 +12371,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12411,7 +12411,7 @@
 						<name>histogram_55</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12427,7 +12427,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12467,7 +12467,7 @@
 						<name>histogram_56</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12483,7 +12483,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12523,7 +12523,7 @@
 						<name>histogram_57</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12539,7 +12539,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12579,7 +12579,7 @@
 						<name>histogram_58</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12595,7 +12595,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12635,7 +12635,7 @@
 						<name>histogram_59</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12651,7 +12651,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12691,7 +12691,7 @@
 						<name>histogram_60</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12707,7 +12707,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12747,7 +12747,7 @@
 						<name>histogram_61</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12763,7 +12763,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12803,7 +12803,7 @@
 						<name>histogram_62</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12819,7 +12819,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12859,7 +12859,7 @@
 						<name>histogram_63</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12875,7 +12875,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12915,7 +12915,7 @@
 						<name>histogram_64</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12931,7 +12931,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -12971,7 +12971,7 @@
 						<name>histogram_65</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -12987,7 +12987,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13027,7 +13027,7 @@
 						<name>histogram_66</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13043,7 +13043,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13083,7 +13083,7 @@
 						<name>histogram_67</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13099,7 +13099,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13139,7 +13139,7 @@
 						<name>histogram_68</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13155,7 +13155,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13195,7 +13195,7 @@
 						<name>histogram_69</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13211,7 +13211,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13251,7 +13251,7 @@
 						<name>histogram_70</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13267,7 +13267,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13307,7 +13307,7 @@
 						<name>histogram_71</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13323,7 +13323,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13363,7 +13363,7 @@
 						<name>histogram_72</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13379,7 +13379,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13419,7 +13419,7 @@
 						<name>histogram_73</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13435,7 +13435,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13475,7 +13475,7 @@
 						<name>histogram_74</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13491,7 +13491,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13531,7 +13531,7 @@
 						<name>histogram_75</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13547,7 +13547,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13587,7 +13587,7 @@
 						<name>histogram_76</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13603,7 +13603,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13643,7 +13643,7 @@
 						<name>histogram_77</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13659,7 +13659,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13699,7 +13699,7 @@
 						<name>histogram_78</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13715,7 +13715,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13755,7 +13755,7 @@
 						<name>histogram_79</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13771,7 +13771,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13811,7 +13811,7 @@
 						<name>histogram_80</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13827,7 +13827,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13867,7 +13867,7 @@
 						<name>histogram_81</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13883,7 +13883,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13923,7 +13923,7 @@
 						<name>histogram_82</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13939,7 +13939,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -13979,7 +13979,7 @@
 						<name>histogram_83</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -13995,7 +13995,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14035,7 +14035,7 @@
 						<name>histogram_84</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14051,7 +14051,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14091,7 +14091,7 @@
 						<name>histogram_85</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14107,7 +14107,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14147,7 +14147,7 @@
 						<name>histogram_86</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14163,7 +14163,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14203,7 +14203,7 @@
 						<name>histogram_87</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14219,7 +14219,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14259,7 +14259,7 @@
 						<name>histogram_88</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14275,7 +14275,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14315,7 +14315,7 @@
 						<name>histogram_89</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14331,7 +14331,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14371,7 +14371,7 @@
 						<name>histogram_90</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14387,7 +14387,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14427,7 +14427,7 @@
 						<name>histogram_91</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14443,7 +14443,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14483,7 +14483,7 @@
 						<name>histogram_92</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14499,7 +14499,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14539,7 +14539,7 @@
 						<name>histogram_93</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14555,7 +14555,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14595,7 +14595,7 @@
 						<name>histogram_94</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14611,7 +14611,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14651,7 +14651,7 @@
 						<name>histogram_95</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14667,7 +14667,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14707,7 +14707,7 @@
 						<name>histogram_96</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14723,7 +14723,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14763,7 +14763,7 @@
 						<name>histogram_97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14779,7 +14779,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14819,7 +14819,7 @@
 						<name>histogram_98</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14835,7 +14835,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14875,7 +14875,7 @@
 						<name>histogram_99</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14891,7 +14891,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14931,7 +14931,7 @@
 						<name>histogram_100</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -14947,7 +14947,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -14987,7 +14987,7 @@
 						<name>histogram_101</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15003,7 +15003,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15043,7 +15043,7 @@
 						<name>histogram_102</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15059,7 +15059,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15099,7 +15099,7 @@
 						<name>histogram_103</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15115,7 +15115,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15155,7 +15155,7 @@
 						<name>histogram_104</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15171,7 +15171,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15211,7 +15211,7 @@
 						<name>histogram_105</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15227,7 +15227,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15267,7 +15267,7 @@
 						<name>histogram_106</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15283,7 +15283,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15323,7 +15323,7 @@
 						<name>histogram_107</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15339,7 +15339,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15379,7 +15379,7 @@
 						<name>histogram_108</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15395,7 +15395,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15435,7 +15435,7 @@
 						<name>histogram_109</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15451,7 +15451,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15491,7 +15491,7 @@
 						<name>histogram_110</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15507,7 +15507,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15547,7 +15547,7 @@
 						<name>histogram_111</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15563,7 +15563,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15603,7 +15603,7 @@
 						<name>histogram_112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15619,7 +15619,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15659,7 +15659,7 @@
 						<name>histogram_113</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15675,7 +15675,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15715,7 +15715,7 @@
 						<name>histogram_114</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15731,7 +15731,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15771,7 +15771,7 @@
 						<name>histogram_115</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15787,7 +15787,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15827,7 +15827,7 @@
 						<name>histogram_116</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15843,7 +15843,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15883,7 +15883,7 @@
 						<name>histogram_117</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15899,7 +15899,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15939,7 +15939,7 @@
 						<name>histogram_118</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -15955,7 +15955,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -15995,7 +15995,7 @@
 						<name>histogram_119</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16011,7 +16011,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16051,7 +16051,7 @@
 						<name>histogram_120</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16067,7 +16067,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16107,7 +16107,7 @@
 						<name>histogram_121</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16123,7 +16123,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16163,7 +16163,7 @@
 						<name>histogram_122</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16179,7 +16179,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16219,7 +16219,7 @@
 						<name>histogram_123</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16235,7 +16235,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16275,7 +16275,7 @@
 						<name>histogram_124</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16291,7 +16291,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16331,7 +16331,7 @@
 						<name>histogram_125</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16347,7 +16347,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16387,7 +16387,7 @@
 						<name>histogram_126</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16403,7 +16403,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16443,7 +16443,7 @@
 						<name>histogram_127</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16459,7 +16459,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16499,7 +16499,7 @@
 						<name>histogram_128</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16515,7 +16515,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16555,7 +16555,7 @@
 						<name>histogram_129</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16571,7 +16571,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16611,7 +16611,7 @@
 						<name>histogram_130</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16627,7 +16627,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16667,7 +16667,7 @@
 						<name>histogram_131</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16683,7 +16683,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16723,7 +16723,7 @@
 						<name>histogram_132</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16739,7 +16739,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16779,7 +16779,7 @@
 						<name>histogram_133</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16795,7 +16795,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16835,7 +16835,7 @@
 						<name>histogram_134</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16851,7 +16851,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16891,7 +16891,7 @@
 						<name>histogram_135</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16907,7 +16907,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -16947,7 +16947,7 @@
 						<name>histogram_136</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -16963,7 +16963,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17003,7 +17003,7 @@
 						<name>histogram_137</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17019,7 +17019,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17059,7 +17059,7 @@
 						<name>histogram_138</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17075,7 +17075,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17115,7 +17115,7 @@
 						<name>histogram_139</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17131,7 +17131,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17171,7 +17171,7 @@
 						<name>histogram_140</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17187,7 +17187,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17227,7 +17227,7 @@
 						<name>histogram_141</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17243,7 +17243,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17283,7 +17283,7 @@
 						<name>histogram_142</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17299,7 +17299,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17339,7 +17339,7 @@
 						<name>histogram_143</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17355,7 +17355,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17395,7 +17395,7 @@
 						<name>histogram_144</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17411,7 +17411,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17451,7 +17451,7 @@
 						<name>histogram_145</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17467,7 +17467,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17507,7 +17507,7 @@
 						<name>histogram_146</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17523,7 +17523,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17563,7 +17563,7 @@
 						<name>histogram_147</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17579,7 +17579,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17619,7 +17619,7 @@
 						<name>histogram_148</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17635,7 +17635,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17675,7 +17675,7 @@
 						<name>histogram_149</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17691,7 +17691,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17731,7 +17731,7 @@
 						<name>histogram_150</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17747,7 +17747,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17787,7 +17787,7 @@
 						<name>histogram_151</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17803,7 +17803,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17843,7 +17843,7 @@
 						<name>histogram_152</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17859,7 +17859,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17899,7 +17899,7 @@
 						<name>histogram_153</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17915,7 +17915,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -17955,7 +17955,7 @@
 						<name>histogram_154</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -17971,7 +17971,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18011,7 +18011,7 @@
 						<name>histogram_155</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18027,7 +18027,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18067,7 +18067,7 @@
 						<name>histogram_156</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18083,7 +18083,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18123,7 +18123,7 @@
 						<name>histogram_157</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18139,7 +18139,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18179,7 +18179,7 @@
 						<name>histogram_158</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18195,7 +18195,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18235,7 +18235,7 @@
 						<name>histogram_159</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18251,7 +18251,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18291,7 +18291,7 @@
 						<name>histogram_160</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18307,7 +18307,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18347,7 +18347,7 @@
 						<name>histogram_161</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18363,7 +18363,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18403,7 +18403,7 @@
 						<name>histogram_162</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18419,7 +18419,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18459,7 +18459,7 @@
 						<name>histogram_163</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18475,7 +18475,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18515,7 +18515,7 @@
 						<name>histogram_164</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18531,7 +18531,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18571,7 +18571,7 @@
 						<name>histogram_165</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18587,7 +18587,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18627,7 +18627,7 @@
 						<name>histogram_166</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18643,7 +18643,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18683,7 +18683,7 @@
 						<name>histogram_167</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18699,7 +18699,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18739,7 +18739,7 @@
 						<name>histogram_168</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18755,7 +18755,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18795,7 +18795,7 @@
 						<name>histogram_169</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18811,7 +18811,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18851,7 +18851,7 @@
 						<name>histogram_170</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18867,7 +18867,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18907,7 +18907,7 @@
 						<name>histogram_171</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18923,7 +18923,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -18963,7 +18963,7 @@
 						<name>histogram_172</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -18979,7 +18979,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19019,7 +19019,7 @@
 						<name>histogram_173</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19035,7 +19035,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19075,7 +19075,7 @@
 						<name>histogram_174</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19091,7 +19091,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19131,7 +19131,7 @@
 						<name>histogram_175</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19147,7 +19147,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19187,7 +19187,7 @@
 						<name>histogram_176</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19203,7 +19203,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19243,7 +19243,7 @@
 						<name>histogram_177</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19259,7 +19259,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19299,7 +19299,7 @@
 						<name>histogram_178</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19315,7 +19315,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19355,7 +19355,7 @@
 						<name>histogram_179</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19371,7 +19371,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19411,7 +19411,7 @@
 						<name>histogram_180</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19427,7 +19427,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19467,7 +19467,7 @@
 						<name>histogram_181</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19483,7 +19483,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19523,7 +19523,7 @@
 						<name>histogram_182</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19539,7 +19539,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19579,7 +19579,7 @@
 						<name>histogram_183</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19595,7 +19595,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19635,7 +19635,7 @@
 						<name>histogram_184</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19651,7 +19651,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19691,7 +19691,7 @@
 						<name>histogram_185</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19707,7 +19707,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19747,7 +19747,7 @@
 						<name>histogram_186</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19763,7 +19763,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19803,7 +19803,7 @@
 						<name>histogram_187</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19819,7 +19819,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19859,7 +19859,7 @@
 						<name>histogram_188</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19875,7 +19875,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19915,7 +19915,7 @@
 						<name>histogram_189</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19931,7 +19931,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -19971,7 +19971,7 @@
 						<name>histogram_190</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -19987,7 +19987,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20027,7 +20027,7 @@
 						<name>histogram_191</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20043,7 +20043,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20083,7 +20083,7 @@
 						<name>histogram_192</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20099,7 +20099,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20139,7 +20139,7 @@
 						<name>histogram_193</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20155,7 +20155,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20195,7 +20195,7 @@
 						<name>histogram_194</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20211,7 +20211,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20251,7 +20251,7 @@
 						<name>histogram_195</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20267,7 +20267,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20307,7 +20307,7 @@
 						<name>histogram_196</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20323,7 +20323,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20363,7 +20363,7 @@
 						<name>histogram_197</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20379,7 +20379,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20419,7 +20419,7 @@
 						<name>histogram_198</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20435,7 +20435,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20475,7 +20475,7 @@
 						<name>histogram_199</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20491,7 +20491,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20531,7 +20531,7 @@
 						<name>histogram_200</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20547,7 +20547,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20587,7 +20587,7 @@
 						<name>histogram_201</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20603,7 +20603,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20643,7 +20643,7 @@
 						<name>histogram_202</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20659,7 +20659,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20699,7 +20699,7 @@
 						<name>histogram_203</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20715,7 +20715,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20755,7 +20755,7 @@
 						<name>histogram_204</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20771,7 +20771,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20811,7 +20811,7 @@
 						<name>histogram_205</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20827,7 +20827,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20867,7 +20867,7 @@
 						<name>histogram_206</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20883,7 +20883,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20923,7 +20923,7 @@
 						<name>histogram_207</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20939,7 +20939,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -20979,7 +20979,7 @@
 						<name>histogram_208</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -20995,7 +20995,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21035,7 +21035,7 @@
 						<name>histogram_209</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21051,7 +21051,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21091,7 +21091,7 @@
 						<name>histogram_210</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21107,7 +21107,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21147,7 +21147,7 @@
 						<name>histogram_211</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21163,7 +21163,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21203,7 +21203,7 @@
 						<name>histogram_212</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21219,7 +21219,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21259,7 +21259,7 @@
 						<name>histogram_213</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21275,7 +21275,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21315,7 +21315,7 @@
 						<name>histogram_214</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21331,7 +21331,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21371,7 +21371,7 @@
 						<name>histogram_215</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21387,7 +21387,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21427,7 +21427,7 @@
 						<name>histogram_216</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21443,7 +21443,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21483,7 +21483,7 @@
 						<name>histogram_217</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21499,7 +21499,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21539,7 +21539,7 @@
 						<name>histogram_218</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21555,7 +21555,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21595,7 +21595,7 @@
 						<name>histogram_219</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21611,7 +21611,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21651,7 +21651,7 @@
 						<name>histogram_220</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21667,7 +21667,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21707,7 +21707,7 @@
 						<name>histogram_221</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21723,7 +21723,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21763,7 +21763,7 @@
 						<name>histogram_222</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21779,7 +21779,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21819,7 +21819,7 @@
 						<name>histogram_223</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21835,7 +21835,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21875,7 +21875,7 @@
 						<name>histogram_224</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21891,7 +21891,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21931,7 +21931,7 @@
 						<name>histogram_225</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -21947,7 +21947,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -21987,7 +21987,7 @@
 						<name>histogram_226</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22003,7 +22003,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22043,7 +22043,7 @@
 						<name>histogram_227</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22059,7 +22059,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22099,7 +22099,7 @@
 						<name>histogram_228</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22115,7 +22115,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22155,7 +22155,7 @@
 						<name>histogram_229</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22171,7 +22171,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22211,7 +22211,7 @@
 						<name>histogram_230</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22227,7 +22227,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22267,7 +22267,7 @@
 						<name>histogram_231</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22283,7 +22283,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22323,7 +22323,7 @@
 						<name>histogram_232</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22339,7 +22339,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22379,7 +22379,7 @@
 						<name>histogram_233</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22395,7 +22395,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22435,7 +22435,7 @@
 						<name>histogram_234</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22451,7 +22451,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22491,7 +22491,7 @@
 						<name>histogram_235</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22507,7 +22507,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22547,7 +22547,7 @@
 						<name>histogram_236</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22563,7 +22563,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22603,7 +22603,7 @@
 						<name>histogram_237</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22619,7 +22619,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22659,7 +22659,7 @@
 						<name>histogram_238</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22675,7 +22675,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22715,7 +22715,7 @@
 						<name>histogram_239</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22731,7 +22731,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22771,7 +22771,7 @@
 						<name>histogram_240</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22787,7 +22787,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22827,7 +22827,7 @@
 						<name>histogram_241</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22843,7 +22843,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22883,7 +22883,7 @@
 						<name>histogram_242</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22899,7 +22899,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22939,7 +22939,7 @@
 						<name>histogram_243</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -22955,7 +22955,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -22995,7 +22995,7 @@
 						<name>histogram_244</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23011,7 +23011,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23051,7 +23051,7 @@
 						<name>histogram_245</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23067,7 +23067,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23107,7 +23107,7 @@
 						<name>histogram_246</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23123,7 +23123,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23163,7 +23163,7 @@
 						<name>histogram_247</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23179,7 +23179,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23219,7 +23219,7 @@
 						<name>histogram_248</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23235,7 +23235,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23275,7 +23275,7 @@
 						<name>histogram_249</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23291,7 +23291,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23331,7 +23331,7 @@
 						<name>histogram_250</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23347,7 +23347,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23387,7 +23387,7 @@
 						<name>histogram_251</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23403,7 +23403,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23443,7 +23443,7 @@
 						<name>histogram_252</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23459,7 +23459,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23499,7 +23499,7 @@
 						<name>histogram_253</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23515,7 +23515,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23555,7 +23555,7 @@
 						<name>histogram_254</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23571,7 +23571,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23611,7 +23611,7 @@
 						<name>histogram_255</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23627,7 +23627,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23664,10 +23664,10 @@
 					<Obj>
 						<type>0</type>
 						<id>515</id>
-						<name>histogram_255_write_ln94</name>
+						<name>histogram_255_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23683,7 +23683,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23721,10 +23721,10 @@
 					<Obj>
 						<type>0</type>
 						<id>516</id>
-						<name>histogram_254_write_ln94</name>
+						<name>histogram_254_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23740,7 +23740,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23778,10 +23778,10 @@
 					<Obj>
 						<type>0</type>
 						<id>517</id>
-						<name>histogram_253_write_ln94</name>
+						<name>histogram_253_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23797,7 +23797,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23835,10 +23835,10 @@
 					<Obj>
 						<type>0</type>
 						<id>518</id>
-						<name>histogram_252_write_ln94</name>
+						<name>histogram_252_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23854,7 +23854,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23892,10 +23892,10 @@
 					<Obj>
 						<type>0</type>
 						<id>519</id>
-						<name>histogram_251_write_ln94</name>
+						<name>histogram_251_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23911,7 +23911,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -23949,10 +23949,10 @@
 					<Obj>
 						<type>0</type>
 						<id>520</id>
-						<name>histogram_250_write_ln94</name>
+						<name>histogram_250_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -23968,7 +23968,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24006,10 +24006,10 @@
 					<Obj>
 						<type>0</type>
 						<id>521</id>
-						<name>histogram_249_write_ln94</name>
+						<name>histogram_249_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24025,7 +24025,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24063,10 +24063,10 @@
 					<Obj>
 						<type>0</type>
 						<id>522</id>
-						<name>histogram_248_write_ln94</name>
+						<name>histogram_248_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24082,7 +24082,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24120,10 +24120,10 @@
 					<Obj>
 						<type>0</type>
 						<id>523</id>
-						<name>histogram_247_write_ln94</name>
+						<name>histogram_247_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24139,7 +24139,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24177,10 +24177,10 @@
 					<Obj>
 						<type>0</type>
 						<id>524</id>
-						<name>histogram_246_write_ln94</name>
+						<name>histogram_246_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24196,7 +24196,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24234,10 +24234,10 @@
 					<Obj>
 						<type>0</type>
 						<id>525</id>
-						<name>histogram_245_write_ln94</name>
+						<name>histogram_245_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24253,7 +24253,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24291,10 +24291,10 @@
 					<Obj>
 						<type>0</type>
 						<id>526</id>
-						<name>histogram_244_write_ln94</name>
+						<name>histogram_244_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24310,7 +24310,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24348,10 +24348,10 @@
 					<Obj>
 						<type>0</type>
 						<id>527</id>
-						<name>histogram_243_write_ln94</name>
+						<name>histogram_243_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24367,7 +24367,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24405,10 +24405,10 @@
 					<Obj>
 						<type>0</type>
 						<id>528</id>
-						<name>histogram_242_write_ln94</name>
+						<name>histogram_242_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24424,7 +24424,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24462,10 +24462,10 @@
 					<Obj>
 						<type>0</type>
 						<id>529</id>
-						<name>histogram_241_write_ln94</name>
+						<name>histogram_241_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24481,7 +24481,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24519,10 +24519,10 @@
 					<Obj>
 						<type>0</type>
 						<id>530</id>
-						<name>histogram_240_write_ln94</name>
+						<name>histogram_240_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24538,7 +24538,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24576,10 +24576,10 @@
 					<Obj>
 						<type>0</type>
 						<id>531</id>
-						<name>histogram_239_write_ln94</name>
+						<name>histogram_239_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24595,7 +24595,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24633,10 +24633,10 @@
 					<Obj>
 						<type>0</type>
 						<id>532</id>
-						<name>histogram_238_write_ln94</name>
+						<name>histogram_238_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24652,7 +24652,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24690,10 +24690,10 @@
 					<Obj>
 						<type>0</type>
 						<id>533</id>
-						<name>histogram_237_write_ln94</name>
+						<name>histogram_237_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24709,7 +24709,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24747,10 +24747,10 @@
 					<Obj>
 						<type>0</type>
 						<id>534</id>
-						<name>histogram_236_write_ln94</name>
+						<name>histogram_236_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24766,7 +24766,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24804,10 +24804,10 @@
 					<Obj>
 						<type>0</type>
 						<id>535</id>
-						<name>histogram_235_write_ln94</name>
+						<name>histogram_235_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24823,7 +24823,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24861,10 +24861,10 @@
 					<Obj>
 						<type>0</type>
 						<id>536</id>
-						<name>histogram_234_write_ln94</name>
+						<name>histogram_234_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24880,7 +24880,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24918,10 +24918,10 @@
 					<Obj>
 						<type>0</type>
 						<id>537</id>
-						<name>histogram_233_write_ln94</name>
+						<name>histogram_233_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24937,7 +24937,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -24975,10 +24975,10 @@
 					<Obj>
 						<type>0</type>
 						<id>538</id>
-						<name>histogram_232_write_ln94</name>
+						<name>histogram_232_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -24994,7 +24994,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25032,10 +25032,10 @@
 					<Obj>
 						<type>0</type>
 						<id>539</id>
-						<name>histogram_231_write_ln94</name>
+						<name>histogram_231_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25051,7 +25051,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25089,10 +25089,10 @@
 					<Obj>
 						<type>0</type>
 						<id>540</id>
-						<name>histogram_230_write_ln94</name>
+						<name>histogram_230_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25108,7 +25108,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25146,10 +25146,10 @@
 					<Obj>
 						<type>0</type>
 						<id>541</id>
-						<name>histogram_229_write_ln94</name>
+						<name>histogram_229_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25165,7 +25165,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25203,10 +25203,10 @@
 					<Obj>
 						<type>0</type>
 						<id>542</id>
-						<name>histogram_228_write_ln94</name>
+						<name>histogram_228_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25222,7 +25222,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25260,10 +25260,10 @@
 					<Obj>
 						<type>0</type>
 						<id>543</id>
-						<name>histogram_227_write_ln94</name>
+						<name>histogram_227_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25279,7 +25279,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25317,10 +25317,10 @@
 					<Obj>
 						<type>0</type>
 						<id>544</id>
-						<name>histogram_226_write_ln94</name>
+						<name>histogram_226_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25336,7 +25336,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25374,10 +25374,10 @@
 					<Obj>
 						<type>0</type>
 						<id>545</id>
-						<name>histogram_225_write_ln94</name>
+						<name>histogram_225_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25393,7 +25393,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25431,10 +25431,10 @@
 					<Obj>
 						<type>0</type>
 						<id>546</id>
-						<name>histogram_224_write_ln94</name>
+						<name>histogram_224_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25450,7 +25450,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25488,10 +25488,10 @@
 					<Obj>
 						<type>0</type>
 						<id>547</id>
-						<name>histogram_223_write_ln94</name>
+						<name>histogram_223_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25507,7 +25507,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25545,10 +25545,10 @@
 					<Obj>
 						<type>0</type>
 						<id>548</id>
-						<name>histogram_222_write_ln94</name>
+						<name>histogram_222_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25564,7 +25564,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25602,10 +25602,10 @@
 					<Obj>
 						<type>0</type>
 						<id>549</id>
-						<name>histogram_221_write_ln94</name>
+						<name>histogram_221_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25621,7 +25621,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25659,10 +25659,10 @@
 					<Obj>
 						<type>0</type>
 						<id>550</id>
-						<name>histogram_220_write_ln94</name>
+						<name>histogram_220_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25678,7 +25678,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25716,10 +25716,10 @@
 					<Obj>
 						<type>0</type>
 						<id>551</id>
-						<name>histogram_219_write_ln94</name>
+						<name>histogram_219_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25735,7 +25735,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25773,10 +25773,10 @@
 					<Obj>
 						<type>0</type>
 						<id>552</id>
-						<name>histogram_218_write_ln94</name>
+						<name>histogram_218_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25792,7 +25792,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25830,10 +25830,10 @@
 					<Obj>
 						<type>0</type>
 						<id>553</id>
-						<name>histogram_217_write_ln94</name>
+						<name>histogram_217_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25849,7 +25849,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25887,10 +25887,10 @@
 					<Obj>
 						<type>0</type>
 						<id>554</id>
-						<name>histogram_216_write_ln94</name>
+						<name>histogram_216_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25906,7 +25906,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -25944,10 +25944,10 @@
 					<Obj>
 						<type>0</type>
 						<id>555</id>
-						<name>histogram_215_write_ln94</name>
+						<name>histogram_215_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -25963,7 +25963,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26001,10 +26001,10 @@
 					<Obj>
 						<type>0</type>
 						<id>556</id>
-						<name>histogram_214_write_ln94</name>
+						<name>histogram_214_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26020,7 +26020,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26058,10 +26058,10 @@
 					<Obj>
 						<type>0</type>
 						<id>557</id>
-						<name>histogram_213_write_ln94</name>
+						<name>histogram_213_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26077,7 +26077,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26115,10 +26115,10 @@
 					<Obj>
 						<type>0</type>
 						<id>558</id>
-						<name>histogram_212_write_ln94</name>
+						<name>histogram_212_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26134,7 +26134,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26172,10 +26172,10 @@
 					<Obj>
 						<type>0</type>
 						<id>559</id>
-						<name>histogram_211_write_ln94</name>
+						<name>histogram_211_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26191,7 +26191,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26229,10 +26229,10 @@
 					<Obj>
 						<type>0</type>
 						<id>560</id>
-						<name>histogram_210_write_ln94</name>
+						<name>histogram_210_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26248,7 +26248,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26286,10 +26286,10 @@
 					<Obj>
 						<type>0</type>
 						<id>561</id>
-						<name>histogram_209_write_ln94</name>
+						<name>histogram_209_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26305,7 +26305,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26343,10 +26343,10 @@
 					<Obj>
 						<type>0</type>
 						<id>562</id>
-						<name>histogram_208_write_ln94</name>
+						<name>histogram_208_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26362,7 +26362,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26400,10 +26400,10 @@
 					<Obj>
 						<type>0</type>
 						<id>563</id>
-						<name>histogram_207_write_ln94</name>
+						<name>histogram_207_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26419,7 +26419,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26457,10 +26457,10 @@
 					<Obj>
 						<type>0</type>
 						<id>564</id>
-						<name>histogram_206_write_ln94</name>
+						<name>histogram_206_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26476,7 +26476,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26514,10 +26514,10 @@
 					<Obj>
 						<type>0</type>
 						<id>565</id>
-						<name>histogram_205_write_ln94</name>
+						<name>histogram_205_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26533,7 +26533,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26571,10 +26571,10 @@
 					<Obj>
 						<type>0</type>
 						<id>566</id>
-						<name>histogram_204_write_ln94</name>
+						<name>histogram_204_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26590,7 +26590,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26628,10 +26628,10 @@
 					<Obj>
 						<type>0</type>
 						<id>567</id>
-						<name>histogram_203_write_ln94</name>
+						<name>histogram_203_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26647,7 +26647,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26685,10 +26685,10 @@
 					<Obj>
 						<type>0</type>
 						<id>568</id>
-						<name>histogram_202_write_ln94</name>
+						<name>histogram_202_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26704,7 +26704,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26742,10 +26742,10 @@
 					<Obj>
 						<type>0</type>
 						<id>569</id>
-						<name>histogram_201_write_ln94</name>
+						<name>histogram_201_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26761,7 +26761,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26799,10 +26799,10 @@
 					<Obj>
 						<type>0</type>
 						<id>570</id>
-						<name>histogram_200_write_ln94</name>
+						<name>histogram_200_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26818,7 +26818,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26856,10 +26856,10 @@
 					<Obj>
 						<type>0</type>
 						<id>571</id>
-						<name>histogram_199_write_ln94</name>
+						<name>histogram_199_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26875,7 +26875,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26913,10 +26913,10 @@
 					<Obj>
 						<type>0</type>
 						<id>572</id>
-						<name>histogram_198_write_ln94</name>
+						<name>histogram_198_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26932,7 +26932,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -26970,10 +26970,10 @@
 					<Obj>
 						<type>0</type>
 						<id>573</id>
-						<name>histogram_197_write_ln94</name>
+						<name>histogram_197_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -26989,7 +26989,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27027,10 +27027,10 @@
 					<Obj>
 						<type>0</type>
 						<id>574</id>
-						<name>histogram_196_write_ln94</name>
+						<name>histogram_196_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27046,7 +27046,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27084,10 +27084,10 @@
 					<Obj>
 						<type>0</type>
 						<id>575</id>
-						<name>histogram_195_write_ln94</name>
+						<name>histogram_195_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27103,7 +27103,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27141,10 +27141,10 @@
 					<Obj>
 						<type>0</type>
 						<id>576</id>
-						<name>histogram_194_write_ln94</name>
+						<name>histogram_194_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27160,7 +27160,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27198,10 +27198,10 @@
 					<Obj>
 						<type>0</type>
 						<id>577</id>
-						<name>histogram_193_write_ln94</name>
+						<name>histogram_193_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27217,7 +27217,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27255,10 +27255,10 @@
 					<Obj>
 						<type>0</type>
 						<id>578</id>
-						<name>histogram_192_write_ln94</name>
+						<name>histogram_192_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27274,7 +27274,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27312,10 +27312,10 @@
 					<Obj>
 						<type>0</type>
 						<id>579</id>
-						<name>histogram_191_write_ln94</name>
+						<name>histogram_191_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27331,7 +27331,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27369,10 +27369,10 @@
 					<Obj>
 						<type>0</type>
 						<id>580</id>
-						<name>histogram_190_write_ln94</name>
+						<name>histogram_190_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27388,7 +27388,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27426,10 +27426,10 @@
 					<Obj>
 						<type>0</type>
 						<id>581</id>
-						<name>histogram_189_write_ln94</name>
+						<name>histogram_189_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27445,7 +27445,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27483,10 +27483,10 @@
 					<Obj>
 						<type>0</type>
 						<id>582</id>
-						<name>histogram_188_write_ln94</name>
+						<name>histogram_188_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27502,7 +27502,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27540,10 +27540,10 @@
 					<Obj>
 						<type>0</type>
 						<id>583</id>
-						<name>histogram_187_write_ln94</name>
+						<name>histogram_187_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27559,7 +27559,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27597,10 +27597,10 @@
 					<Obj>
 						<type>0</type>
 						<id>584</id>
-						<name>histogram_186_write_ln94</name>
+						<name>histogram_186_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27616,7 +27616,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27654,10 +27654,10 @@
 					<Obj>
 						<type>0</type>
 						<id>585</id>
-						<name>histogram_185_write_ln94</name>
+						<name>histogram_185_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27673,7 +27673,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27711,10 +27711,10 @@
 					<Obj>
 						<type>0</type>
 						<id>586</id>
-						<name>histogram_184_write_ln94</name>
+						<name>histogram_184_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27730,7 +27730,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27768,10 +27768,10 @@
 					<Obj>
 						<type>0</type>
 						<id>587</id>
-						<name>histogram_183_write_ln94</name>
+						<name>histogram_183_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27787,7 +27787,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27825,10 +27825,10 @@
 					<Obj>
 						<type>0</type>
 						<id>588</id>
-						<name>histogram_182_write_ln94</name>
+						<name>histogram_182_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27844,7 +27844,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27882,10 +27882,10 @@
 					<Obj>
 						<type>0</type>
 						<id>589</id>
-						<name>histogram_181_write_ln94</name>
+						<name>histogram_181_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27901,7 +27901,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27939,10 +27939,10 @@
 					<Obj>
 						<type>0</type>
 						<id>590</id>
-						<name>histogram_180_write_ln94</name>
+						<name>histogram_180_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -27958,7 +27958,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -27996,10 +27996,10 @@
 					<Obj>
 						<type>0</type>
 						<id>591</id>
-						<name>histogram_179_write_ln94</name>
+						<name>histogram_179_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28015,7 +28015,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28053,10 +28053,10 @@
 					<Obj>
 						<type>0</type>
 						<id>592</id>
-						<name>histogram_178_write_ln94</name>
+						<name>histogram_178_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28072,7 +28072,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28110,10 +28110,10 @@
 					<Obj>
 						<type>0</type>
 						<id>593</id>
-						<name>histogram_177_write_ln94</name>
+						<name>histogram_177_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28129,7 +28129,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28167,10 +28167,10 @@
 					<Obj>
 						<type>0</type>
 						<id>594</id>
-						<name>histogram_176_write_ln94</name>
+						<name>histogram_176_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28186,7 +28186,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28224,10 +28224,10 @@
 					<Obj>
 						<type>0</type>
 						<id>595</id>
-						<name>histogram_175_write_ln94</name>
+						<name>histogram_175_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28243,7 +28243,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28281,10 +28281,10 @@
 					<Obj>
 						<type>0</type>
 						<id>596</id>
-						<name>histogram_174_write_ln94</name>
+						<name>histogram_174_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28300,7 +28300,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28338,10 +28338,10 @@
 					<Obj>
 						<type>0</type>
 						<id>597</id>
-						<name>histogram_173_write_ln94</name>
+						<name>histogram_173_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28357,7 +28357,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28395,10 +28395,10 @@
 					<Obj>
 						<type>0</type>
 						<id>598</id>
-						<name>histogram_172_write_ln94</name>
+						<name>histogram_172_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28414,7 +28414,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28452,10 +28452,10 @@
 					<Obj>
 						<type>0</type>
 						<id>599</id>
-						<name>histogram_171_write_ln94</name>
+						<name>histogram_171_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28471,7 +28471,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28509,10 +28509,10 @@
 					<Obj>
 						<type>0</type>
 						<id>600</id>
-						<name>histogram_170_write_ln94</name>
+						<name>histogram_170_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28528,7 +28528,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28566,10 +28566,10 @@
 					<Obj>
 						<type>0</type>
 						<id>601</id>
-						<name>histogram_169_write_ln94</name>
+						<name>histogram_169_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28585,7 +28585,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28623,10 +28623,10 @@
 					<Obj>
 						<type>0</type>
 						<id>602</id>
-						<name>histogram_168_write_ln94</name>
+						<name>histogram_168_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28642,7 +28642,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28680,10 +28680,10 @@
 					<Obj>
 						<type>0</type>
 						<id>603</id>
-						<name>histogram_167_write_ln94</name>
+						<name>histogram_167_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28699,7 +28699,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28737,10 +28737,10 @@
 					<Obj>
 						<type>0</type>
 						<id>604</id>
-						<name>histogram_166_write_ln94</name>
+						<name>histogram_166_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28756,7 +28756,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28794,10 +28794,10 @@
 					<Obj>
 						<type>0</type>
 						<id>605</id>
-						<name>histogram_165_write_ln94</name>
+						<name>histogram_165_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28813,7 +28813,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28851,10 +28851,10 @@
 					<Obj>
 						<type>0</type>
 						<id>606</id>
-						<name>histogram_164_write_ln94</name>
+						<name>histogram_164_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28870,7 +28870,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28908,10 +28908,10 @@
 					<Obj>
 						<type>0</type>
 						<id>607</id>
-						<name>histogram_163_write_ln94</name>
+						<name>histogram_163_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28927,7 +28927,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -28965,10 +28965,10 @@
 					<Obj>
 						<type>0</type>
 						<id>608</id>
-						<name>histogram_162_write_ln94</name>
+						<name>histogram_162_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -28984,7 +28984,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29022,10 +29022,10 @@
 					<Obj>
 						<type>0</type>
 						<id>609</id>
-						<name>histogram_161_write_ln94</name>
+						<name>histogram_161_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29041,7 +29041,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29079,10 +29079,10 @@
 					<Obj>
 						<type>0</type>
 						<id>610</id>
-						<name>histogram_160_write_ln94</name>
+						<name>histogram_160_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29098,7 +29098,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29136,10 +29136,10 @@
 					<Obj>
 						<type>0</type>
 						<id>611</id>
-						<name>histogram_159_write_ln94</name>
+						<name>histogram_159_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29155,7 +29155,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29193,10 +29193,10 @@
 					<Obj>
 						<type>0</type>
 						<id>612</id>
-						<name>histogram_158_write_ln94</name>
+						<name>histogram_158_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29212,7 +29212,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29250,10 +29250,10 @@
 					<Obj>
 						<type>0</type>
 						<id>613</id>
-						<name>histogram_157_write_ln94</name>
+						<name>histogram_157_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29269,7 +29269,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29307,10 +29307,10 @@
 					<Obj>
 						<type>0</type>
 						<id>614</id>
-						<name>histogram_156_write_ln94</name>
+						<name>histogram_156_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29326,7 +29326,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29364,10 +29364,10 @@
 					<Obj>
 						<type>0</type>
 						<id>615</id>
-						<name>histogram_155_write_ln94</name>
+						<name>histogram_155_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29383,7 +29383,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29421,10 +29421,10 @@
 					<Obj>
 						<type>0</type>
 						<id>616</id>
-						<name>histogram_154_write_ln94</name>
+						<name>histogram_154_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29440,7 +29440,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29478,10 +29478,10 @@
 					<Obj>
 						<type>0</type>
 						<id>617</id>
-						<name>histogram_153_write_ln94</name>
+						<name>histogram_153_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29497,7 +29497,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29535,10 +29535,10 @@
 					<Obj>
 						<type>0</type>
 						<id>618</id>
-						<name>histogram_152_write_ln94</name>
+						<name>histogram_152_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29554,7 +29554,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29592,10 +29592,10 @@
 					<Obj>
 						<type>0</type>
 						<id>619</id>
-						<name>histogram_151_write_ln94</name>
+						<name>histogram_151_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29611,7 +29611,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29649,10 +29649,10 @@
 					<Obj>
 						<type>0</type>
 						<id>620</id>
-						<name>histogram_150_write_ln94</name>
+						<name>histogram_150_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29668,7 +29668,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29706,10 +29706,10 @@
 					<Obj>
 						<type>0</type>
 						<id>621</id>
-						<name>histogram_149_write_ln94</name>
+						<name>histogram_149_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29725,7 +29725,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29763,10 +29763,10 @@
 					<Obj>
 						<type>0</type>
 						<id>622</id>
-						<name>histogram_148_write_ln94</name>
+						<name>histogram_148_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29782,7 +29782,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29820,10 +29820,10 @@
 					<Obj>
 						<type>0</type>
 						<id>623</id>
-						<name>histogram_147_write_ln94</name>
+						<name>histogram_147_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29839,7 +29839,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29877,10 +29877,10 @@
 					<Obj>
 						<type>0</type>
 						<id>624</id>
-						<name>histogram_146_write_ln94</name>
+						<name>histogram_146_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29896,7 +29896,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29934,10 +29934,10 @@
 					<Obj>
 						<type>0</type>
 						<id>625</id>
-						<name>histogram_145_write_ln94</name>
+						<name>histogram_145_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -29953,7 +29953,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -29991,10 +29991,10 @@
 					<Obj>
 						<type>0</type>
 						<id>626</id>
-						<name>histogram_144_write_ln94</name>
+						<name>histogram_144_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30010,7 +30010,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30048,10 +30048,10 @@
 					<Obj>
 						<type>0</type>
 						<id>627</id>
-						<name>histogram_143_write_ln94</name>
+						<name>histogram_143_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30067,7 +30067,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30105,10 +30105,10 @@
 					<Obj>
 						<type>0</type>
 						<id>628</id>
-						<name>histogram_142_write_ln94</name>
+						<name>histogram_142_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30124,7 +30124,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30162,10 +30162,10 @@
 					<Obj>
 						<type>0</type>
 						<id>629</id>
-						<name>histogram_141_write_ln94</name>
+						<name>histogram_141_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30181,7 +30181,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30219,10 +30219,10 @@
 					<Obj>
 						<type>0</type>
 						<id>630</id>
-						<name>histogram_140_write_ln94</name>
+						<name>histogram_140_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30238,7 +30238,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30276,10 +30276,10 @@
 					<Obj>
 						<type>0</type>
 						<id>631</id>
-						<name>histogram_139_write_ln94</name>
+						<name>histogram_139_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30295,7 +30295,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30333,10 +30333,10 @@
 					<Obj>
 						<type>0</type>
 						<id>632</id>
-						<name>histogram_138_write_ln94</name>
+						<name>histogram_138_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30352,7 +30352,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30390,10 +30390,10 @@
 					<Obj>
 						<type>0</type>
 						<id>633</id>
-						<name>histogram_137_write_ln94</name>
+						<name>histogram_137_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30409,7 +30409,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30447,10 +30447,10 @@
 					<Obj>
 						<type>0</type>
 						<id>634</id>
-						<name>histogram_136_write_ln94</name>
+						<name>histogram_136_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30466,7 +30466,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30504,10 +30504,10 @@
 					<Obj>
 						<type>0</type>
 						<id>635</id>
-						<name>histogram_135_write_ln94</name>
+						<name>histogram_135_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30523,7 +30523,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30561,10 +30561,10 @@
 					<Obj>
 						<type>0</type>
 						<id>636</id>
-						<name>histogram_134_write_ln94</name>
+						<name>histogram_134_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30580,7 +30580,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30618,10 +30618,10 @@
 					<Obj>
 						<type>0</type>
 						<id>637</id>
-						<name>histogram_133_write_ln94</name>
+						<name>histogram_133_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30637,7 +30637,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30675,10 +30675,10 @@
 					<Obj>
 						<type>0</type>
 						<id>638</id>
-						<name>histogram_132_write_ln94</name>
+						<name>histogram_132_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30694,7 +30694,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30732,10 +30732,10 @@
 					<Obj>
 						<type>0</type>
 						<id>639</id>
-						<name>histogram_131_write_ln94</name>
+						<name>histogram_131_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30751,7 +30751,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30789,10 +30789,10 @@
 					<Obj>
 						<type>0</type>
 						<id>640</id>
-						<name>histogram_130_write_ln94</name>
+						<name>histogram_130_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30808,7 +30808,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30846,10 +30846,10 @@
 					<Obj>
 						<type>0</type>
 						<id>641</id>
-						<name>histogram_129_write_ln94</name>
+						<name>histogram_129_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30865,7 +30865,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30903,10 +30903,10 @@
 					<Obj>
 						<type>0</type>
 						<id>642</id>
-						<name>histogram_128_write_ln94</name>
+						<name>histogram_128_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30922,7 +30922,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -30960,10 +30960,10 @@
 					<Obj>
 						<type>0</type>
 						<id>643</id>
-						<name>histogram_127_write_ln94</name>
+						<name>histogram_127_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -30979,7 +30979,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31017,10 +31017,10 @@
 					<Obj>
 						<type>0</type>
 						<id>644</id>
-						<name>histogram_126_write_ln94</name>
+						<name>histogram_126_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31036,7 +31036,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31074,10 +31074,10 @@
 					<Obj>
 						<type>0</type>
 						<id>645</id>
-						<name>histogram_125_write_ln94</name>
+						<name>histogram_125_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31093,7 +31093,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31131,10 +31131,10 @@
 					<Obj>
 						<type>0</type>
 						<id>646</id>
-						<name>histogram_124_write_ln94</name>
+						<name>histogram_124_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31150,7 +31150,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31188,10 +31188,10 @@
 					<Obj>
 						<type>0</type>
 						<id>647</id>
-						<name>histogram_123_write_ln94</name>
+						<name>histogram_123_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31207,7 +31207,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31245,10 +31245,10 @@
 					<Obj>
 						<type>0</type>
 						<id>648</id>
-						<name>histogram_122_write_ln94</name>
+						<name>histogram_122_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31264,7 +31264,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31302,10 +31302,10 @@
 					<Obj>
 						<type>0</type>
 						<id>649</id>
-						<name>histogram_121_write_ln94</name>
+						<name>histogram_121_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31321,7 +31321,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31359,10 +31359,10 @@
 					<Obj>
 						<type>0</type>
 						<id>650</id>
-						<name>histogram_120_write_ln94</name>
+						<name>histogram_120_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31378,7 +31378,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31416,10 +31416,10 @@
 					<Obj>
 						<type>0</type>
 						<id>651</id>
-						<name>histogram_119_write_ln94</name>
+						<name>histogram_119_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31435,7 +31435,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31473,10 +31473,10 @@
 					<Obj>
 						<type>0</type>
 						<id>652</id>
-						<name>histogram_118_write_ln94</name>
+						<name>histogram_118_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31492,7 +31492,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31530,10 +31530,10 @@
 					<Obj>
 						<type>0</type>
 						<id>653</id>
-						<name>histogram_117_write_ln94</name>
+						<name>histogram_117_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31549,7 +31549,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31587,10 +31587,10 @@
 					<Obj>
 						<type>0</type>
 						<id>654</id>
-						<name>histogram_116_write_ln94</name>
+						<name>histogram_116_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31606,7 +31606,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31644,10 +31644,10 @@
 					<Obj>
 						<type>0</type>
 						<id>655</id>
-						<name>histogram_115_write_ln94</name>
+						<name>histogram_115_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31663,7 +31663,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31701,10 +31701,10 @@
 					<Obj>
 						<type>0</type>
 						<id>656</id>
-						<name>histogram_114_write_ln94</name>
+						<name>histogram_114_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31720,7 +31720,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31758,10 +31758,10 @@
 					<Obj>
 						<type>0</type>
 						<id>657</id>
-						<name>histogram_113_write_ln94</name>
+						<name>histogram_113_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31777,7 +31777,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31815,10 +31815,10 @@
 					<Obj>
 						<type>0</type>
 						<id>658</id>
-						<name>histogram_112_write_ln94</name>
+						<name>histogram_112_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31834,7 +31834,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31872,10 +31872,10 @@
 					<Obj>
 						<type>0</type>
 						<id>659</id>
-						<name>histogram_111_write_ln94</name>
+						<name>histogram_111_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31891,7 +31891,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31929,10 +31929,10 @@
 					<Obj>
 						<type>0</type>
 						<id>660</id>
-						<name>histogram_110_write_ln94</name>
+						<name>histogram_110_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -31948,7 +31948,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -31986,10 +31986,10 @@
 					<Obj>
 						<type>0</type>
 						<id>661</id>
-						<name>histogram_109_write_ln94</name>
+						<name>histogram_109_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32005,7 +32005,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32043,10 +32043,10 @@
 					<Obj>
 						<type>0</type>
 						<id>662</id>
-						<name>histogram_108_write_ln94</name>
+						<name>histogram_108_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32062,7 +32062,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32100,10 +32100,10 @@
 					<Obj>
 						<type>0</type>
 						<id>663</id>
-						<name>histogram_107_write_ln94</name>
+						<name>histogram_107_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32119,7 +32119,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32157,10 +32157,10 @@
 					<Obj>
 						<type>0</type>
 						<id>664</id>
-						<name>histogram_106_write_ln94</name>
+						<name>histogram_106_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32176,7 +32176,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32214,10 +32214,10 @@
 					<Obj>
 						<type>0</type>
 						<id>665</id>
-						<name>histogram_105_write_ln94</name>
+						<name>histogram_105_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32233,7 +32233,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32271,10 +32271,10 @@
 					<Obj>
 						<type>0</type>
 						<id>666</id>
-						<name>histogram_104_write_ln94</name>
+						<name>histogram_104_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32290,7 +32290,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32328,10 +32328,10 @@
 					<Obj>
 						<type>0</type>
 						<id>667</id>
-						<name>histogram_103_write_ln94</name>
+						<name>histogram_103_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32347,7 +32347,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32385,10 +32385,10 @@
 					<Obj>
 						<type>0</type>
 						<id>668</id>
-						<name>histogram_102_write_ln94</name>
+						<name>histogram_102_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32404,7 +32404,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32442,10 +32442,10 @@
 					<Obj>
 						<type>0</type>
 						<id>669</id>
-						<name>histogram_101_write_ln94</name>
+						<name>histogram_101_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32461,7 +32461,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32499,10 +32499,10 @@
 					<Obj>
 						<type>0</type>
 						<id>670</id>
-						<name>histogram_100_write_ln94</name>
+						<name>histogram_100_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32518,7 +32518,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32556,10 +32556,10 @@
 					<Obj>
 						<type>0</type>
 						<id>671</id>
-						<name>histogram_99_write_ln94</name>
+						<name>histogram_99_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32575,7 +32575,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32613,10 +32613,10 @@
 					<Obj>
 						<type>0</type>
 						<id>672</id>
-						<name>histogram_98_write_ln94</name>
+						<name>histogram_98_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32632,7 +32632,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32670,10 +32670,10 @@
 					<Obj>
 						<type>0</type>
 						<id>673</id>
-						<name>histogram_97_write_ln94</name>
+						<name>histogram_97_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32689,7 +32689,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32727,10 +32727,10 @@
 					<Obj>
 						<type>0</type>
 						<id>674</id>
-						<name>histogram_96_write_ln94</name>
+						<name>histogram_96_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32746,7 +32746,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32784,10 +32784,10 @@
 					<Obj>
 						<type>0</type>
 						<id>675</id>
-						<name>histogram_95_write_ln94</name>
+						<name>histogram_95_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32803,7 +32803,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32841,10 +32841,10 @@
 					<Obj>
 						<type>0</type>
 						<id>676</id>
-						<name>histogram_94_write_ln94</name>
+						<name>histogram_94_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32860,7 +32860,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32898,10 +32898,10 @@
 					<Obj>
 						<type>0</type>
 						<id>677</id>
-						<name>histogram_93_write_ln94</name>
+						<name>histogram_93_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32917,7 +32917,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -32955,10 +32955,10 @@
 					<Obj>
 						<type>0</type>
 						<id>678</id>
-						<name>histogram_92_write_ln94</name>
+						<name>histogram_92_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -32974,7 +32974,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33012,10 +33012,10 @@
 					<Obj>
 						<type>0</type>
 						<id>679</id>
-						<name>histogram_91_write_ln94</name>
+						<name>histogram_91_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33031,7 +33031,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33069,10 +33069,10 @@
 					<Obj>
 						<type>0</type>
 						<id>680</id>
-						<name>histogram_90_write_ln94</name>
+						<name>histogram_90_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33088,7 +33088,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33126,10 +33126,10 @@
 					<Obj>
 						<type>0</type>
 						<id>681</id>
-						<name>histogram_89_write_ln94</name>
+						<name>histogram_89_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33145,7 +33145,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33183,10 +33183,10 @@
 					<Obj>
 						<type>0</type>
 						<id>682</id>
-						<name>histogram_88_write_ln94</name>
+						<name>histogram_88_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33202,7 +33202,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33240,10 +33240,10 @@
 					<Obj>
 						<type>0</type>
 						<id>683</id>
-						<name>histogram_87_write_ln94</name>
+						<name>histogram_87_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33259,7 +33259,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33297,10 +33297,10 @@
 					<Obj>
 						<type>0</type>
 						<id>684</id>
-						<name>histogram_86_write_ln94</name>
+						<name>histogram_86_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33316,7 +33316,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33354,10 +33354,10 @@
 					<Obj>
 						<type>0</type>
 						<id>685</id>
-						<name>histogram_85_write_ln94</name>
+						<name>histogram_85_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33373,7 +33373,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33411,10 +33411,10 @@
 					<Obj>
 						<type>0</type>
 						<id>686</id>
-						<name>histogram_84_write_ln94</name>
+						<name>histogram_84_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33430,7 +33430,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33468,10 +33468,10 @@
 					<Obj>
 						<type>0</type>
 						<id>687</id>
-						<name>histogram_83_write_ln94</name>
+						<name>histogram_83_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33487,7 +33487,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33525,10 +33525,10 @@
 					<Obj>
 						<type>0</type>
 						<id>688</id>
-						<name>histogram_82_write_ln94</name>
+						<name>histogram_82_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33544,7 +33544,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33582,10 +33582,10 @@
 					<Obj>
 						<type>0</type>
 						<id>689</id>
-						<name>histogram_81_write_ln94</name>
+						<name>histogram_81_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33601,7 +33601,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33639,10 +33639,10 @@
 					<Obj>
 						<type>0</type>
 						<id>690</id>
-						<name>histogram_80_write_ln94</name>
+						<name>histogram_80_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33658,7 +33658,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33696,10 +33696,10 @@
 					<Obj>
 						<type>0</type>
 						<id>691</id>
-						<name>histogram_79_write_ln94</name>
+						<name>histogram_79_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33715,7 +33715,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33753,10 +33753,10 @@
 					<Obj>
 						<type>0</type>
 						<id>692</id>
-						<name>histogram_78_write_ln94</name>
+						<name>histogram_78_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33772,7 +33772,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33810,10 +33810,10 @@
 					<Obj>
 						<type>0</type>
 						<id>693</id>
-						<name>histogram_77_write_ln94</name>
+						<name>histogram_77_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33829,7 +33829,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33867,10 +33867,10 @@
 					<Obj>
 						<type>0</type>
 						<id>694</id>
-						<name>histogram_76_write_ln94</name>
+						<name>histogram_76_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33886,7 +33886,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33924,10 +33924,10 @@
 					<Obj>
 						<type>0</type>
 						<id>695</id>
-						<name>histogram_75_write_ln94</name>
+						<name>histogram_75_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -33943,7 +33943,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -33981,10 +33981,10 @@
 					<Obj>
 						<type>0</type>
 						<id>696</id>
-						<name>histogram_74_write_ln94</name>
+						<name>histogram_74_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34000,7 +34000,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34038,10 +34038,10 @@
 					<Obj>
 						<type>0</type>
 						<id>697</id>
-						<name>histogram_73_write_ln94</name>
+						<name>histogram_73_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34057,7 +34057,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34095,10 +34095,10 @@
 					<Obj>
 						<type>0</type>
 						<id>698</id>
-						<name>histogram_72_write_ln94</name>
+						<name>histogram_72_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34114,7 +34114,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34152,10 +34152,10 @@
 					<Obj>
 						<type>0</type>
 						<id>699</id>
-						<name>histogram_71_write_ln94</name>
+						<name>histogram_71_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34171,7 +34171,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34209,10 +34209,10 @@
 					<Obj>
 						<type>0</type>
 						<id>700</id>
-						<name>histogram_70_write_ln94</name>
+						<name>histogram_70_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34228,7 +34228,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34266,10 +34266,10 @@
 					<Obj>
 						<type>0</type>
 						<id>701</id>
-						<name>histogram_69_write_ln94</name>
+						<name>histogram_69_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34285,7 +34285,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34323,10 +34323,10 @@
 					<Obj>
 						<type>0</type>
 						<id>702</id>
-						<name>histogram_68_write_ln94</name>
+						<name>histogram_68_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34342,7 +34342,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34380,10 +34380,10 @@
 					<Obj>
 						<type>0</type>
 						<id>703</id>
-						<name>histogram_67_write_ln94</name>
+						<name>histogram_67_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34399,7 +34399,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34437,10 +34437,10 @@
 					<Obj>
 						<type>0</type>
 						<id>704</id>
-						<name>histogram_66_write_ln94</name>
+						<name>histogram_66_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34456,7 +34456,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34494,10 +34494,10 @@
 					<Obj>
 						<type>0</type>
 						<id>705</id>
-						<name>histogram_65_write_ln94</name>
+						<name>histogram_65_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34513,7 +34513,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34551,10 +34551,10 @@
 					<Obj>
 						<type>0</type>
 						<id>706</id>
-						<name>histogram_64_write_ln94</name>
+						<name>histogram_64_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34570,7 +34570,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34608,10 +34608,10 @@
 					<Obj>
 						<type>0</type>
 						<id>707</id>
-						<name>histogram_63_write_ln94</name>
+						<name>histogram_63_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34627,7 +34627,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34665,10 +34665,10 @@
 					<Obj>
 						<type>0</type>
 						<id>708</id>
-						<name>histogram_62_write_ln94</name>
+						<name>histogram_62_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34684,7 +34684,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34722,10 +34722,10 @@
 					<Obj>
 						<type>0</type>
 						<id>709</id>
-						<name>histogram_61_write_ln94</name>
+						<name>histogram_61_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34741,7 +34741,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34779,10 +34779,10 @@
 					<Obj>
 						<type>0</type>
 						<id>710</id>
-						<name>histogram_60_write_ln94</name>
+						<name>histogram_60_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34798,7 +34798,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34836,10 +34836,10 @@
 					<Obj>
 						<type>0</type>
 						<id>711</id>
-						<name>histogram_59_write_ln94</name>
+						<name>histogram_59_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34855,7 +34855,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34893,10 +34893,10 @@
 					<Obj>
 						<type>0</type>
 						<id>712</id>
-						<name>histogram_58_write_ln94</name>
+						<name>histogram_58_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34912,7 +34912,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -34950,10 +34950,10 @@
 					<Obj>
 						<type>0</type>
 						<id>713</id>
-						<name>histogram_57_write_ln94</name>
+						<name>histogram_57_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -34969,7 +34969,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35007,10 +35007,10 @@
 					<Obj>
 						<type>0</type>
 						<id>714</id>
-						<name>histogram_56_write_ln94</name>
+						<name>histogram_56_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35026,7 +35026,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35064,10 +35064,10 @@
 					<Obj>
 						<type>0</type>
 						<id>715</id>
-						<name>histogram_55_write_ln94</name>
+						<name>histogram_55_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35083,7 +35083,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35121,10 +35121,10 @@
 					<Obj>
 						<type>0</type>
 						<id>716</id>
-						<name>histogram_54_write_ln94</name>
+						<name>histogram_54_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35140,7 +35140,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35178,10 +35178,10 @@
 					<Obj>
 						<type>0</type>
 						<id>717</id>
-						<name>histogram_53_write_ln94</name>
+						<name>histogram_53_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35197,7 +35197,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35235,10 +35235,10 @@
 					<Obj>
 						<type>0</type>
 						<id>718</id>
-						<name>histogram_52_write_ln94</name>
+						<name>histogram_52_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35254,7 +35254,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35292,10 +35292,10 @@
 					<Obj>
 						<type>0</type>
 						<id>719</id>
-						<name>histogram_51_write_ln94</name>
+						<name>histogram_51_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35311,7 +35311,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35349,10 +35349,10 @@
 					<Obj>
 						<type>0</type>
 						<id>720</id>
-						<name>histogram_50_write_ln94</name>
+						<name>histogram_50_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35368,7 +35368,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35406,10 +35406,10 @@
 					<Obj>
 						<type>0</type>
 						<id>721</id>
-						<name>histogram_49_write_ln94</name>
+						<name>histogram_49_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35425,7 +35425,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35463,10 +35463,10 @@
 					<Obj>
 						<type>0</type>
 						<id>722</id>
-						<name>histogram_48_write_ln94</name>
+						<name>histogram_48_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35482,7 +35482,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35520,10 +35520,10 @@
 					<Obj>
 						<type>0</type>
 						<id>723</id>
-						<name>histogram_47_write_ln94</name>
+						<name>histogram_47_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35539,7 +35539,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35577,10 +35577,10 @@
 					<Obj>
 						<type>0</type>
 						<id>724</id>
-						<name>histogram_46_write_ln94</name>
+						<name>histogram_46_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35596,7 +35596,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35634,10 +35634,10 @@
 					<Obj>
 						<type>0</type>
 						<id>725</id>
-						<name>histogram_45_write_ln94</name>
+						<name>histogram_45_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35653,7 +35653,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35691,10 +35691,10 @@
 					<Obj>
 						<type>0</type>
 						<id>726</id>
-						<name>histogram_44_write_ln94</name>
+						<name>histogram_44_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35710,7 +35710,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35748,10 +35748,10 @@
 					<Obj>
 						<type>0</type>
 						<id>727</id>
-						<name>histogram_43_write_ln94</name>
+						<name>histogram_43_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35767,7 +35767,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35805,10 +35805,10 @@
 					<Obj>
 						<type>0</type>
 						<id>728</id>
-						<name>histogram_42_write_ln94</name>
+						<name>histogram_42_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35824,7 +35824,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35862,10 +35862,10 @@
 					<Obj>
 						<type>0</type>
 						<id>729</id>
-						<name>histogram_41_write_ln94</name>
+						<name>histogram_41_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35881,7 +35881,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35919,10 +35919,10 @@
 					<Obj>
 						<type>0</type>
 						<id>730</id>
-						<name>histogram_40_write_ln94</name>
+						<name>histogram_40_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35938,7 +35938,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -35976,10 +35976,10 @@
 					<Obj>
 						<type>0</type>
 						<id>731</id>
-						<name>histogram_39_write_ln94</name>
+						<name>histogram_39_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -35995,7 +35995,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36033,10 +36033,10 @@
 					<Obj>
 						<type>0</type>
 						<id>732</id>
-						<name>histogram_38_write_ln94</name>
+						<name>histogram_38_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36052,7 +36052,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36090,10 +36090,10 @@
 					<Obj>
 						<type>0</type>
 						<id>733</id>
-						<name>histogram_37_write_ln94</name>
+						<name>histogram_37_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36109,7 +36109,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36147,10 +36147,10 @@
 					<Obj>
 						<type>0</type>
 						<id>734</id>
-						<name>histogram_36_write_ln94</name>
+						<name>histogram_36_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36166,7 +36166,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36204,10 +36204,10 @@
 					<Obj>
 						<type>0</type>
 						<id>735</id>
-						<name>histogram_35_write_ln94</name>
+						<name>histogram_35_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36223,7 +36223,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36261,10 +36261,10 @@
 					<Obj>
 						<type>0</type>
 						<id>736</id>
-						<name>histogram_34_write_ln94</name>
+						<name>histogram_34_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36280,7 +36280,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36318,10 +36318,10 @@
 					<Obj>
 						<type>0</type>
 						<id>737</id>
-						<name>histogram_33_write_ln94</name>
+						<name>histogram_33_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36337,7 +36337,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36375,10 +36375,10 @@
 					<Obj>
 						<type>0</type>
 						<id>738</id>
-						<name>histogram_32_write_ln94</name>
+						<name>histogram_32_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36394,7 +36394,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36432,10 +36432,10 @@
 					<Obj>
 						<type>0</type>
 						<id>739</id>
-						<name>histogram_31_write_ln94</name>
+						<name>histogram_31_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36451,7 +36451,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36489,10 +36489,10 @@
 					<Obj>
 						<type>0</type>
 						<id>740</id>
-						<name>histogram_30_write_ln94</name>
+						<name>histogram_30_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36508,7 +36508,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36546,10 +36546,10 @@
 					<Obj>
 						<type>0</type>
 						<id>741</id>
-						<name>histogram_29_write_ln94</name>
+						<name>histogram_29_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36565,7 +36565,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36603,10 +36603,10 @@
 					<Obj>
 						<type>0</type>
 						<id>742</id>
-						<name>histogram_28_write_ln94</name>
+						<name>histogram_28_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36622,7 +36622,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36660,10 +36660,10 @@
 					<Obj>
 						<type>0</type>
 						<id>743</id>
-						<name>histogram_27_write_ln94</name>
+						<name>histogram_27_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36679,7 +36679,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36717,10 +36717,10 @@
 					<Obj>
 						<type>0</type>
 						<id>744</id>
-						<name>histogram_26_write_ln94</name>
+						<name>histogram_26_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36736,7 +36736,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36774,10 +36774,10 @@
 					<Obj>
 						<type>0</type>
 						<id>745</id>
-						<name>histogram_25_write_ln94</name>
+						<name>histogram_25_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36793,7 +36793,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36831,10 +36831,10 @@
 					<Obj>
 						<type>0</type>
 						<id>746</id>
-						<name>histogram_24_write_ln94</name>
+						<name>histogram_24_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36850,7 +36850,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36888,10 +36888,10 @@
 					<Obj>
 						<type>0</type>
 						<id>747</id>
-						<name>histogram_23_write_ln94</name>
+						<name>histogram_23_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36907,7 +36907,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -36945,10 +36945,10 @@
 					<Obj>
 						<type>0</type>
 						<id>748</id>
-						<name>histogram_22_write_ln94</name>
+						<name>histogram_22_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -36964,7 +36964,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37002,10 +37002,10 @@
 					<Obj>
 						<type>0</type>
 						<id>749</id>
-						<name>histogram_21_write_ln94</name>
+						<name>histogram_21_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37021,7 +37021,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37059,10 +37059,10 @@
 					<Obj>
 						<type>0</type>
 						<id>750</id>
-						<name>histogram_20_write_ln94</name>
+						<name>histogram_20_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37078,7 +37078,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37116,10 +37116,10 @@
 					<Obj>
 						<type>0</type>
 						<id>751</id>
-						<name>histogram_19_write_ln94</name>
+						<name>histogram_19_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37135,7 +37135,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37173,10 +37173,10 @@
 					<Obj>
 						<type>0</type>
 						<id>752</id>
-						<name>histogram_18_write_ln94</name>
+						<name>histogram_18_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37192,7 +37192,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37230,10 +37230,10 @@
 					<Obj>
 						<type>0</type>
 						<id>753</id>
-						<name>histogram_17_write_ln94</name>
+						<name>histogram_17_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37249,7 +37249,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37287,10 +37287,10 @@
 					<Obj>
 						<type>0</type>
 						<id>754</id>
-						<name>histogram_16_write_ln94</name>
+						<name>histogram_16_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37306,7 +37306,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37344,10 +37344,10 @@
 					<Obj>
 						<type>0</type>
 						<id>755</id>
-						<name>histogram_15_write_ln94</name>
+						<name>histogram_15_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37363,7 +37363,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37401,10 +37401,10 @@
 					<Obj>
 						<type>0</type>
 						<id>756</id>
-						<name>histogram_14_write_ln94</name>
+						<name>histogram_14_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37420,7 +37420,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37458,10 +37458,10 @@
 					<Obj>
 						<type>0</type>
 						<id>757</id>
-						<name>histogram_13_write_ln94</name>
+						<name>histogram_13_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37477,7 +37477,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37515,10 +37515,10 @@
 					<Obj>
 						<type>0</type>
 						<id>758</id>
-						<name>histogram_12_write_ln94</name>
+						<name>histogram_12_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37534,7 +37534,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37572,10 +37572,10 @@
 					<Obj>
 						<type>0</type>
 						<id>759</id>
-						<name>histogram_11_write_ln94</name>
+						<name>histogram_11_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37591,7 +37591,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37629,10 +37629,10 @@
 					<Obj>
 						<type>0</type>
 						<id>760</id>
-						<name>histogram_10_write_ln94</name>
+						<name>histogram_10_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37648,7 +37648,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37686,10 +37686,10 @@
 					<Obj>
 						<type>0</type>
 						<id>761</id>
-						<name>histogram_9_write_ln94</name>
+						<name>histogram_9_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37705,7 +37705,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37743,10 +37743,10 @@
 					<Obj>
 						<type>0</type>
 						<id>762</id>
-						<name>histogram_8_write_ln94</name>
+						<name>histogram_8_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37762,7 +37762,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37800,10 +37800,10 @@
 					<Obj>
 						<type>0</type>
 						<id>763</id>
-						<name>histogram_7_write_ln94</name>
+						<name>histogram_7_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37819,7 +37819,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37857,10 +37857,10 @@
 					<Obj>
 						<type>0</type>
 						<id>764</id>
-						<name>histogram_6_write_ln94</name>
+						<name>histogram_6_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37876,7 +37876,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37914,10 +37914,10 @@
 					<Obj>
 						<type>0</type>
 						<id>765</id>
-						<name>histogram_5_write_ln94</name>
+						<name>histogram_5_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37933,7 +37933,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -37971,10 +37971,10 @@
 					<Obj>
 						<type>0</type>
 						<id>766</id>
-						<name>histogram_4_write_ln94</name>
+						<name>histogram_4_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -37990,7 +37990,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -38028,10 +38028,10 @@
 					<Obj>
 						<type>0</type>
 						<id>767</id>
-						<name>histogram_3_write_ln94</name>
+						<name>histogram_3_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38047,7 +38047,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -38085,10 +38085,10 @@
 					<Obj>
 						<type>0</type>
 						<id>768</id>
-						<name>histogram_2_write_ln94</name>
+						<name>histogram_2_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38104,7 +38104,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -38142,10 +38142,10 @@
 					<Obj>
 						<type>0</type>
 						<id>769</id>
-						<name>histogram_1_write_ln94</name>
+						<name>histogram_1_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38161,7 +38161,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -38199,10 +38199,10 @@
 					<Obj>
 						<type>0</type>
 						<id>770</id>
-						<name>histogram_write_ln94</name>
+						<name>histogram_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38218,7 +38218,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -38256,10 +38256,10 @@
 					<Obj>
 						<type>0</type>
 						<id>771</id>
-						<name>idx_1_write_ln102</name>
+						<name>idx_1_write_ln105</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>102</lineNumber>
+						<lineNumber>105</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38275,7 +38275,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>102</second>
+										<second>105</second>
 									</item>
 								</second>
 							</item>
@@ -38358,7 +38358,7 @@
 						<name>idx</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>102</lineNumber>
+						<lineNumber>105</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38374,7 +38374,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>102</second>
+										<second>105</second>
 									</item>
 								</second>
 							</item>
@@ -38412,10 +38412,10 @@
 					<Obj>
 						<type>0</type>
 						<id>775</id>
-						<name>icmp_ln102</name>
+						<name>icmp_ln105</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>102</lineNumber>
+						<lineNumber>105</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38431,7 +38431,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>102</second>
+										<second>105</second>
 									</item>
 								</second>
 							</item>
@@ -38469,10 +38469,10 @@
 					<Obj>
 						<type>0</type>
 						<id>776</id>
-						<name>add_ln102</name>
+						<name>add_ln105</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>102</lineNumber>
+						<lineNumber>105</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38488,7 +38488,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>102</second>
+										<second>105</second>
 									</item>
 								</second>
 							</item>
@@ -38526,10 +38526,10 @@
 					<Obj>
 						<type>0</type>
 						<id>777</id>
-						<name>br_ln102</name>
+						<name>br_ln105</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>102</lineNumber>
+						<lineNumber>105</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38545,7 +38545,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>102</second>
+										<second>105</second>
 									</item>
 								</second>
 							</item>
@@ -38587,7 +38587,7 @@
 						<name>histogram_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38603,7 +38603,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -38644,7 +38644,7 @@
 						<name>histogram_1_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38660,7 +38660,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -38701,7 +38701,7 @@
 						<name>histogram_2_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38717,7 +38717,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -38758,7 +38758,7 @@
 						<name>histogram_3_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38774,7 +38774,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -38815,7 +38815,7 @@
 						<name>histogram_4_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38831,7 +38831,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -38872,7 +38872,7 @@
 						<name>histogram_5_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38888,7 +38888,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -38929,7 +38929,7 @@
 						<name>histogram_6_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -38945,7 +38945,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -38986,7 +38986,7 @@
 						<name>histogram_7_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39002,7 +39002,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39043,7 +39043,7 @@
 						<name>histogram_8_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39059,7 +39059,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39100,7 +39100,7 @@
 						<name>histogram_9_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39116,7 +39116,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39157,7 +39157,7 @@
 						<name>histogram_10_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39173,7 +39173,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39214,7 +39214,7 @@
 						<name>histogram_11_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39230,7 +39230,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39271,7 +39271,7 @@
 						<name>histogram_12_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39287,7 +39287,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39328,7 +39328,7 @@
 						<name>histogram_13_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39344,7 +39344,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39385,7 +39385,7 @@
 						<name>histogram_14_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39401,7 +39401,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39442,7 +39442,7 @@
 						<name>histogram_15_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39458,7 +39458,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39499,7 +39499,7 @@
 						<name>histogram_16_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39515,7 +39515,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39556,7 +39556,7 @@
 						<name>histogram_17_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39572,7 +39572,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39613,7 +39613,7 @@
 						<name>histogram_18_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39629,7 +39629,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39670,7 +39670,7 @@
 						<name>histogram_19_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39686,7 +39686,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39727,7 +39727,7 @@
 						<name>histogram_20_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39743,7 +39743,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39784,7 +39784,7 @@
 						<name>histogram_21_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39800,7 +39800,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39841,7 +39841,7 @@
 						<name>histogram_22_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39857,7 +39857,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39898,7 +39898,7 @@
 						<name>histogram_23_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39914,7 +39914,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -39955,7 +39955,7 @@
 						<name>histogram_24_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -39971,7 +39971,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40012,7 +40012,7 @@
 						<name>histogram_25_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40028,7 +40028,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40069,7 +40069,7 @@
 						<name>histogram_26_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40085,7 +40085,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40126,7 +40126,7 @@
 						<name>histogram_27_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40142,7 +40142,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40183,7 +40183,7 @@
 						<name>histogram_28_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40199,7 +40199,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40240,7 +40240,7 @@
 						<name>histogram_29_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40256,7 +40256,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40297,7 +40297,7 @@
 						<name>histogram_30_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40313,7 +40313,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40354,7 +40354,7 @@
 						<name>histogram_31_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40370,7 +40370,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40411,7 +40411,7 @@
 						<name>histogram_32_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40427,7 +40427,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40468,7 +40468,7 @@
 						<name>histogram_33_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40484,7 +40484,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40525,7 +40525,7 @@
 						<name>histogram_34_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40541,7 +40541,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40582,7 +40582,7 @@
 						<name>histogram_35_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40598,7 +40598,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40639,7 +40639,7 @@
 						<name>histogram_36_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40655,7 +40655,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40696,7 +40696,7 @@
 						<name>histogram_37_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40712,7 +40712,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40753,7 +40753,7 @@
 						<name>histogram_38_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40769,7 +40769,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40810,7 +40810,7 @@
 						<name>histogram_39_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40826,7 +40826,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40867,7 +40867,7 @@
 						<name>histogram_40_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40883,7 +40883,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40924,7 +40924,7 @@
 						<name>histogram_41_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40940,7 +40940,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -40981,7 +40981,7 @@
 						<name>histogram_42_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -40997,7 +40997,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41038,7 +41038,7 @@
 						<name>histogram_43_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41054,7 +41054,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41095,7 +41095,7 @@
 						<name>histogram_44_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41111,7 +41111,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41152,7 +41152,7 @@
 						<name>histogram_45_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41168,7 +41168,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41209,7 +41209,7 @@
 						<name>histogram_46_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41225,7 +41225,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41266,7 +41266,7 @@
 						<name>histogram_47_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41282,7 +41282,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41323,7 +41323,7 @@
 						<name>histogram_48_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41339,7 +41339,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41380,7 +41380,7 @@
 						<name>histogram_49_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41396,7 +41396,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41437,7 +41437,7 @@
 						<name>histogram_50_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41453,7 +41453,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41494,7 +41494,7 @@
 						<name>histogram_51_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41510,7 +41510,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41551,7 +41551,7 @@
 						<name>histogram_52_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41567,7 +41567,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41608,7 +41608,7 @@
 						<name>histogram_53_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41624,7 +41624,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41665,7 +41665,7 @@
 						<name>histogram_54_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41681,7 +41681,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41722,7 +41722,7 @@
 						<name>histogram_55_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41738,7 +41738,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41779,7 +41779,7 @@
 						<name>histogram_56_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41795,7 +41795,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41836,7 +41836,7 @@
 						<name>histogram_57_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41852,7 +41852,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41893,7 +41893,7 @@
 						<name>histogram_58_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41909,7 +41909,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -41950,7 +41950,7 @@
 						<name>histogram_59_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -41966,7 +41966,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42007,7 +42007,7 @@
 						<name>histogram_60_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42023,7 +42023,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42064,7 +42064,7 @@
 						<name>histogram_61_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42080,7 +42080,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42121,7 +42121,7 @@
 						<name>histogram_62_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42137,7 +42137,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42178,7 +42178,7 @@
 						<name>histogram_63_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42194,7 +42194,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42235,7 +42235,7 @@
 						<name>histogram_64_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42251,7 +42251,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42292,7 +42292,7 @@
 						<name>histogram_65_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42308,7 +42308,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42349,7 +42349,7 @@
 						<name>histogram_66_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42365,7 +42365,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42406,7 +42406,7 @@
 						<name>histogram_67_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42422,7 +42422,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42463,7 +42463,7 @@
 						<name>histogram_68_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42479,7 +42479,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42520,7 +42520,7 @@
 						<name>histogram_69_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42536,7 +42536,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42577,7 +42577,7 @@
 						<name>histogram_70_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42593,7 +42593,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42634,7 +42634,7 @@
 						<name>histogram_71_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42650,7 +42650,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42691,7 +42691,7 @@
 						<name>histogram_72_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42707,7 +42707,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42748,7 +42748,7 @@
 						<name>histogram_73_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42764,7 +42764,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42805,7 +42805,7 @@
 						<name>histogram_74_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42821,7 +42821,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42862,7 +42862,7 @@
 						<name>histogram_75_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42878,7 +42878,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42919,7 +42919,7 @@
 						<name>histogram_76_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42935,7 +42935,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -42976,7 +42976,7 @@
 						<name>histogram_77_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -42992,7 +42992,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43033,7 +43033,7 @@
 						<name>histogram_78_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43049,7 +43049,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43090,7 +43090,7 @@
 						<name>histogram_79_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43106,7 +43106,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43147,7 +43147,7 @@
 						<name>histogram_80_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43163,7 +43163,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43204,7 +43204,7 @@
 						<name>histogram_81_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43220,7 +43220,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43261,7 +43261,7 @@
 						<name>histogram_82_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43277,7 +43277,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43318,7 +43318,7 @@
 						<name>histogram_83_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43334,7 +43334,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43375,7 +43375,7 @@
 						<name>histogram_84_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43391,7 +43391,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43432,7 +43432,7 @@
 						<name>histogram_85_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43448,7 +43448,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43489,7 +43489,7 @@
 						<name>histogram_86_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43505,7 +43505,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43546,7 +43546,7 @@
 						<name>histogram_87_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43562,7 +43562,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43603,7 +43603,7 @@
 						<name>histogram_88_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43619,7 +43619,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43660,7 +43660,7 @@
 						<name>histogram_89_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43676,7 +43676,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43717,7 +43717,7 @@
 						<name>histogram_90_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43733,7 +43733,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43774,7 +43774,7 @@
 						<name>histogram_91_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43790,7 +43790,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43831,7 +43831,7 @@
 						<name>histogram_92_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43847,7 +43847,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43888,7 +43888,7 @@
 						<name>histogram_93_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43904,7 +43904,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -43945,7 +43945,7 @@
 						<name>histogram_94_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -43961,7 +43961,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44002,7 +44002,7 @@
 						<name>histogram_95_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44018,7 +44018,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44059,7 +44059,7 @@
 						<name>histogram_96_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44075,7 +44075,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44116,7 +44116,7 @@
 						<name>histogram_97_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44132,7 +44132,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44173,7 +44173,7 @@
 						<name>histogram_98_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44189,7 +44189,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44230,7 +44230,7 @@
 						<name>histogram_99_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44246,7 +44246,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44287,7 +44287,7 @@
 						<name>histogram_100_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44303,7 +44303,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44344,7 +44344,7 @@
 						<name>histogram_101_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44360,7 +44360,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44401,7 +44401,7 @@
 						<name>histogram_102_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44417,7 +44417,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44458,7 +44458,7 @@
 						<name>histogram_103_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44474,7 +44474,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44515,7 +44515,7 @@
 						<name>histogram_104_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44531,7 +44531,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44572,7 +44572,7 @@
 						<name>histogram_105_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44588,7 +44588,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44629,7 +44629,7 @@
 						<name>histogram_106_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44645,7 +44645,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44686,7 +44686,7 @@
 						<name>histogram_107_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44702,7 +44702,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44743,7 +44743,7 @@
 						<name>histogram_108_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44759,7 +44759,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44800,7 +44800,7 @@
 						<name>histogram_109_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44816,7 +44816,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44857,7 +44857,7 @@
 						<name>histogram_110_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44873,7 +44873,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44914,7 +44914,7 @@
 						<name>histogram_111_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44930,7 +44930,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -44971,7 +44971,7 @@
 						<name>histogram_112_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -44987,7 +44987,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45028,7 +45028,7 @@
 						<name>histogram_113_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45044,7 +45044,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45085,7 +45085,7 @@
 						<name>histogram_114_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45101,7 +45101,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45142,7 +45142,7 @@
 						<name>histogram_115_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45158,7 +45158,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45199,7 +45199,7 @@
 						<name>histogram_116_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45215,7 +45215,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45256,7 +45256,7 @@
 						<name>histogram_117_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45272,7 +45272,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45313,7 +45313,7 @@
 						<name>histogram_118_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45329,7 +45329,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45370,7 +45370,7 @@
 						<name>histogram_119_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45386,7 +45386,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45427,7 +45427,7 @@
 						<name>histogram_120_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45443,7 +45443,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45484,7 +45484,7 @@
 						<name>histogram_121_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45500,7 +45500,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45541,7 +45541,7 @@
 						<name>histogram_122_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45557,7 +45557,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45598,7 +45598,7 @@
 						<name>histogram_123_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45614,7 +45614,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45655,7 +45655,7 @@
 						<name>histogram_124_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45671,7 +45671,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45712,7 +45712,7 @@
 						<name>histogram_125_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45728,7 +45728,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45769,7 +45769,7 @@
 						<name>histogram_126_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45785,7 +45785,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45826,7 +45826,7 @@
 						<name>histogram_127_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45842,7 +45842,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45883,7 +45883,7 @@
 						<name>histogram_128_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45899,7 +45899,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45940,7 +45940,7 @@
 						<name>histogram_129_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -45956,7 +45956,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -45997,7 +45997,7 @@
 						<name>histogram_130_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46013,7 +46013,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46054,7 +46054,7 @@
 						<name>histogram_131_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46070,7 +46070,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46111,7 +46111,7 @@
 						<name>histogram_132_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46127,7 +46127,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46168,7 +46168,7 @@
 						<name>histogram_133_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46184,7 +46184,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46225,7 +46225,7 @@
 						<name>histogram_134_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46241,7 +46241,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46282,7 +46282,7 @@
 						<name>histogram_135_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46298,7 +46298,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46339,7 +46339,7 @@
 						<name>histogram_136_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46355,7 +46355,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46396,7 +46396,7 @@
 						<name>histogram_137_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46412,7 +46412,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46453,7 +46453,7 @@
 						<name>histogram_138_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46469,7 +46469,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46510,7 +46510,7 @@
 						<name>histogram_139_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46526,7 +46526,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46567,7 +46567,7 @@
 						<name>histogram_140_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46583,7 +46583,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46624,7 +46624,7 @@
 						<name>histogram_141_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46640,7 +46640,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46681,7 +46681,7 @@
 						<name>histogram_142_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46697,7 +46697,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46738,7 +46738,7 @@
 						<name>histogram_143_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46754,7 +46754,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46795,7 +46795,7 @@
 						<name>histogram_144_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46811,7 +46811,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46852,7 +46852,7 @@
 						<name>histogram_145_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46868,7 +46868,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46909,7 +46909,7 @@
 						<name>histogram_146_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46925,7 +46925,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -46966,7 +46966,7 @@
 						<name>histogram_147_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -46982,7 +46982,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47023,7 +47023,7 @@
 						<name>histogram_148_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47039,7 +47039,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47080,7 +47080,7 @@
 						<name>histogram_149_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47096,7 +47096,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47137,7 +47137,7 @@
 						<name>histogram_150_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47153,7 +47153,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47194,7 +47194,7 @@
 						<name>histogram_151_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47210,7 +47210,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47251,7 +47251,7 @@
 						<name>histogram_152_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47267,7 +47267,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47308,7 +47308,7 @@
 						<name>histogram_153_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47324,7 +47324,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47365,7 +47365,7 @@
 						<name>histogram_154_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47381,7 +47381,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47422,7 +47422,7 @@
 						<name>histogram_155_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47438,7 +47438,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47479,7 +47479,7 @@
 						<name>histogram_156_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47495,7 +47495,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47536,7 +47536,7 @@
 						<name>histogram_157_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47552,7 +47552,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47593,7 +47593,7 @@
 						<name>histogram_158_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47609,7 +47609,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47650,7 +47650,7 @@
 						<name>histogram_159_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47666,7 +47666,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47707,7 +47707,7 @@
 						<name>histogram_160_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47723,7 +47723,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47764,7 +47764,7 @@
 						<name>histogram_161_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47780,7 +47780,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47821,7 +47821,7 @@
 						<name>histogram_162_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47837,7 +47837,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47878,7 +47878,7 @@
 						<name>histogram_163_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47894,7 +47894,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47935,7 +47935,7 @@
 						<name>histogram_164_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -47951,7 +47951,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -47992,7 +47992,7 @@
 						<name>histogram_165_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48008,7 +48008,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48049,7 +48049,7 @@
 						<name>histogram_166_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48065,7 +48065,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48106,7 +48106,7 @@
 						<name>histogram_167_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48122,7 +48122,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48163,7 +48163,7 @@
 						<name>histogram_168_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48179,7 +48179,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48220,7 +48220,7 @@
 						<name>histogram_169_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48236,7 +48236,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48277,7 +48277,7 @@
 						<name>histogram_170_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48293,7 +48293,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48334,7 +48334,7 @@
 						<name>histogram_171_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48350,7 +48350,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48391,7 +48391,7 @@
 						<name>histogram_172_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48407,7 +48407,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48448,7 +48448,7 @@
 						<name>histogram_173_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48464,7 +48464,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48505,7 +48505,7 @@
 						<name>histogram_174_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48521,7 +48521,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48562,7 +48562,7 @@
 						<name>histogram_175_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48578,7 +48578,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48619,7 +48619,7 @@
 						<name>histogram_176_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48635,7 +48635,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48676,7 +48676,7 @@
 						<name>histogram_177_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48692,7 +48692,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48733,7 +48733,7 @@
 						<name>histogram_178_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48749,7 +48749,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48790,7 +48790,7 @@
 						<name>histogram_179_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48806,7 +48806,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48847,7 +48847,7 @@
 						<name>histogram_180_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48863,7 +48863,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48904,7 +48904,7 @@
 						<name>histogram_181_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48920,7 +48920,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -48961,7 +48961,7 @@
 						<name>histogram_182_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -48977,7 +48977,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49018,7 +49018,7 @@
 						<name>histogram_183_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49034,7 +49034,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49075,7 +49075,7 @@
 						<name>histogram_184_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49091,7 +49091,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49132,7 +49132,7 @@
 						<name>histogram_185_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49148,7 +49148,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49189,7 +49189,7 @@
 						<name>histogram_186_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49205,7 +49205,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49246,7 +49246,7 @@
 						<name>histogram_187_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49262,7 +49262,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49303,7 +49303,7 @@
 						<name>histogram_188_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49319,7 +49319,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49360,7 +49360,7 @@
 						<name>histogram_189_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49376,7 +49376,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49417,7 +49417,7 @@
 						<name>histogram_190_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49433,7 +49433,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49474,7 +49474,7 @@
 						<name>histogram_191_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49490,7 +49490,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49531,7 +49531,7 @@
 						<name>histogram_192_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49547,7 +49547,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49588,7 +49588,7 @@
 						<name>histogram_193_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49604,7 +49604,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49645,7 +49645,7 @@
 						<name>histogram_194_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49661,7 +49661,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49702,7 +49702,7 @@
 						<name>histogram_195_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49718,7 +49718,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49759,7 +49759,7 @@
 						<name>histogram_196_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49775,7 +49775,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49816,7 +49816,7 @@
 						<name>histogram_197_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49832,7 +49832,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49873,7 +49873,7 @@
 						<name>histogram_198_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49889,7 +49889,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49930,7 +49930,7 @@
 						<name>histogram_199_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -49946,7 +49946,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -49987,7 +49987,7 @@
 						<name>histogram_200_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50003,7 +50003,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50044,7 +50044,7 @@
 						<name>histogram_201_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50060,7 +50060,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50101,7 +50101,7 @@
 						<name>histogram_202_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50117,7 +50117,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50158,7 +50158,7 @@
 						<name>histogram_203_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50174,7 +50174,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50215,7 +50215,7 @@
 						<name>histogram_204_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50231,7 +50231,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50272,7 +50272,7 @@
 						<name>histogram_205_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50288,7 +50288,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50329,7 +50329,7 @@
 						<name>histogram_206_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50345,7 +50345,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50386,7 +50386,7 @@
 						<name>histogram_207_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50402,7 +50402,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50443,7 +50443,7 @@
 						<name>histogram_208_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50459,7 +50459,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50500,7 +50500,7 @@
 						<name>histogram_209_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50516,7 +50516,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50557,7 +50557,7 @@
 						<name>histogram_210_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50573,7 +50573,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50614,7 +50614,7 @@
 						<name>histogram_211_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50630,7 +50630,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50671,7 +50671,7 @@
 						<name>histogram_212_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50687,7 +50687,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50728,7 +50728,7 @@
 						<name>histogram_213_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50744,7 +50744,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50785,7 +50785,7 @@
 						<name>histogram_214_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50801,7 +50801,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50842,7 +50842,7 @@
 						<name>histogram_215_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50858,7 +50858,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50899,7 +50899,7 @@
 						<name>histogram_216_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50915,7 +50915,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -50956,7 +50956,7 @@
 						<name>histogram_217_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -50972,7 +50972,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51013,7 +51013,7 @@
 						<name>histogram_218_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51029,7 +51029,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51070,7 +51070,7 @@
 						<name>histogram_219_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51086,7 +51086,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51127,7 +51127,7 @@
 						<name>histogram_220_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51143,7 +51143,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51184,7 +51184,7 @@
 						<name>histogram_221_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51200,7 +51200,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51241,7 +51241,7 @@
 						<name>histogram_222_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51257,7 +51257,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51298,7 +51298,7 @@
 						<name>histogram_223_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51314,7 +51314,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51355,7 +51355,7 @@
 						<name>histogram_224_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51371,7 +51371,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51412,7 +51412,7 @@
 						<name>histogram_225_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51428,7 +51428,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51469,7 +51469,7 @@
 						<name>histogram_226_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51485,7 +51485,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51526,7 +51526,7 @@
 						<name>histogram_227_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51542,7 +51542,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51583,7 +51583,7 @@
 						<name>histogram_228_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51599,7 +51599,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51640,7 +51640,7 @@
 						<name>histogram_229_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51656,7 +51656,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51697,7 +51697,7 @@
 						<name>histogram_230_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51713,7 +51713,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51754,7 +51754,7 @@
 						<name>histogram_231_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51770,7 +51770,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51811,7 +51811,7 @@
 						<name>histogram_232_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51827,7 +51827,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51868,7 +51868,7 @@
 						<name>histogram_233_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51884,7 +51884,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51925,7 +51925,7 @@
 						<name>histogram_234_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51941,7 +51941,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -51982,7 +51982,7 @@
 						<name>histogram_235_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -51998,7 +51998,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52039,7 +52039,7 @@
 						<name>histogram_236_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52055,7 +52055,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52096,7 +52096,7 @@
 						<name>histogram_237_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52112,7 +52112,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52153,7 +52153,7 @@
 						<name>histogram_238_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52169,7 +52169,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52210,7 +52210,7 @@
 						<name>histogram_239_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52226,7 +52226,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52267,7 +52267,7 @@
 						<name>histogram_240_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52283,7 +52283,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52324,7 +52324,7 @@
 						<name>histogram_241_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52340,7 +52340,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52381,7 +52381,7 @@
 						<name>histogram_242_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52397,7 +52397,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52438,7 +52438,7 @@
 						<name>histogram_243_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52454,7 +52454,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52495,7 +52495,7 @@
 						<name>histogram_244_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52511,7 +52511,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52552,7 +52552,7 @@
 						<name>histogram_245_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52568,7 +52568,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52609,7 +52609,7 @@
 						<name>histogram_246_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52625,7 +52625,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52666,7 +52666,7 @@
 						<name>histogram_247_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52682,7 +52682,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52723,7 +52723,7 @@
 						<name>histogram_248_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52739,7 +52739,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52780,7 +52780,7 @@
 						<name>histogram_249_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52796,7 +52796,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52837,7 +52837,7 @@
 						<name>histogram_250_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52853,7 +52853,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52894,7 +52894,7 @@
 						<name>histogram_251_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52910,7 +52910,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -52951,7 +52951,7 @@
 						<name>histogram_252_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -52967,7 +52967,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -53008,7 +53008,7 @@
 						<name>histogram_253_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -53024,7 +53024,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -53065,7 +53065,7 @@
 						<name>histogram_254_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -53081,7 +53081,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -53122,7 +53122,7 @@
 						<name>histogram_255_load_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -53138,7 +53138,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -53176,10 +53176,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1035</id>
-						<name>zext_ln102</name>
+						<name>zext_ln105</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>102</lineNumber>
+						<lineNumber>105</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -53195,7 +53195,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>102</second>
+										<second>105</second>
 									</item>
 								</second>
 							</item>
@@ -53235,7 +53235,7 @@
 						<name>intensity_buf_addr</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>104</lineNumber>
+						<lineNumber>108</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -53251,7 +53251,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>104</second>
+										<second>108</second>
 									</item>
 								</second>
 							</item>
@@ -53293,7 +53293,7 @@
 						<name>v</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>105</lineNumber>
+						<lineNumber>109</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -53309,7 +53309,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -53325,7 +53325,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -53372,7 +53372,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -53401,7 +53401,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.98</m_delay>
+				<m_delay>0.96</m_delay>
 				<m_topoIndex>525</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -53436,7 +53436,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -53501,7 +53501,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -53517,7 +53517,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -53530,7 +53530,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.98</m_delay>
+				<m_delay>0.96</m_delay>
 				<m_topoIndex>527</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -53565,7 +53565,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -53581,7 +53581,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -53595,7 +53595,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.54</m_delay>
+				<m_delay>0.43</m_delay>
 				<m_topoIndex>528</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -53604,7 +53604,7 @@
 					<Obj>
 						<type>0</type>
 						<id>1045</id>
-						<name>tmp_5</name>
+						<name>tmp_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -53630,7 +53630,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -53646,7 +53646,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -53660,7 +53660,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.71</m_delay>
+				<m_delay>0.67</m_delay>
 				<m_topoIndex>529</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -53695,7 +53695,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -53758,7 +53758,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -53774,7 +53774,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>38</bitwidth>
+					<bitwidth>36</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -53821,7 +53821,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -53859,7 +53859,7 @@
 					<Obj>
 						<type>0</type>
 						<id>1049</id>
-						<name>zext_ln51_1</name>
+						<name>zext_ln51_3</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -53885,7 +53885,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -53901,7 +53901,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>38</bitwidth>
+					<bitwidth>36</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -53948,7 +53948,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -53964,7 +53964,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>38</bitwidth>
+					<bitwidth>36</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -53977,7 +53977,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.24</m_delay>
+				<m_delay>1.14</m_delay>
 				<m_topoIndex>534</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -54012,7 +54012,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -54028,7 +54028,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>37</bitwidth>
+					<bitwidth>35</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -54052,7 +54052,7 @@
 					<Obj>
 						<type>0</type>
 						<id>1052</id>
-						<name>zext_ln51_2</name>
+						<name>zext_ln51_4</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -54078,7 +54078,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -54115,7 +54115,7 @@
 					<Obj>
 						<type>0</type>
 						<id>1053</id>
-						<name>tmp_26</name>
+						<name>tmp_33</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -54141,7 +54141,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -54180,7 +54180,7 @@
 					<Obj>
 						<type>0</type>
 						<id>1054</id>
-						<name>select_ln51_2</name>
+						<name>select_ln51_3</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -54206,7 +54206,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -54245,7 +54245,7 @@
 					<Obj>
 						<type>0</type>
 						<id>1055</id>
-						<name>sub_ln51_1</name>
+						<name>sub_ln51_2</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -54271,7 +54271,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -54335,7 +54335,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -54372,7 +54372,7 @@
 					<Obj>
 						<type>0</type>
 						<id>1057</id>
-						<name>add_ln51_1</name>
+						<name>add_ln51_2</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -54398,7 +54398,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -54436,7 +54436,7 @@
 					<Obj>
 						<type>0</type>
 						<id>1058</id>
-						<name>tmp_8</name>
+						<name>tmp_9</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -54462,7 +54462,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -54527,7 +54527,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -54594,7 +54594,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -54657,7 +54657,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -54720,7 +54720,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>105</second>
+										<second>109</second>
 									</item>
 								</second>
 							</item>
@@ -54777,7 +54777,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -54868,7 +54868,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -54961,7 +54961,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -55054,7 +55054,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -55147,7 +55147,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -55238,7 +55238,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -55325,7 +55325,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -55409,7 +55409,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -55500,7 +55500,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -55573,7 +55573,7 @@
 					<Obj>
 						<type>0</type>
 						<id>1072</id>
-						<name>tmp_28</name>
+						<name>tmp_37</name>
 						<fileName>/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
 						<fileDirectory>/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>18</lineNumber>
@@ -55592,7 +55592,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -55678,7 +55678,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -55744,7 +55744,7 @@
 					<Obj>
 						<type>0</type>
 						<id>1074</id>
-						<name>sext_ln18</name>
+						<name>sext_ln18_6</name>
 						<fileName>/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
 						<fileDirectory>/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>18</lineNumber>
@@ -55763,7 +55763,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -55828,7 +55828,7 @@
 					<Obj>
 						<type>0</type>
 						<id>1075</id>
-						<name>select_ln18</name>
+						<name>select_ln18_6</name>
 						<fileName>/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
 						<fileDirectory>/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>18</lineNumber>
@@ -55847,7 +55847,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -55914,7 +55914,7 @@
 					<Obj>
 						<type>0</type>
 						<id>1076</id>
-						<name>sext_ln18_2</name>
+						<name>sext_ln18</name>
 						<fileName>/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
 						<fileDirectory>/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>18</lineNumber>
@@ -55933,7 +55933,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -56017,7 +56017,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -56101,7 +56101,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -56186,7 +56186,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -56271,7 +56271,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -56339,7 +56339,7 @@
 					<Obj>
 						<type>0</type>
 						<id>1081</id>
-						<name>tmp_15</name>
+						<name>tmp_19</name>
 						<fileName>/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
 						<fileDirectory>/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>21</lineNumber>
@@ -56358,7 +56358,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -56445,7 +56445,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -56512,7 +56512,7 @@
 					<Obj>
 						<type>0</type>
 						<id>1083</id>
-						<name>result_3</name>
+						<name>result_15</name>
 						<fileName>/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
 						<fileDirectory>/wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>59</lineNumber>
@@ -56531,7 +56531,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -56616,7 +56616,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -56702,7 +56702,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>106</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -56767,10 +56767,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1086</id>
-						<name>tmp_29</name>
+						<name>tmp_38</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>107</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -56786,7 +56786,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>107</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -56825,10 +56825,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1087</id>
-						<name>tmp_30</name>
+						<name>tmp_39</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>107</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -56844,7 +56844,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>107</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -56884,10 +56884,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1088</id>
-						<name>icmp_ln107</name>
+						<name>icmp_ln111</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>107</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -56903,7 +56903,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>107</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -56941,10 +56941,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1089</id>
-						<name>xor_ln107</name>
+						<name>xor_ln111</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>107</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -56960,7 +56960,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>107</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -56998,10 +56998,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1090</id>
-						<name>select_ln107</name>
+						<name>select_ln111</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>107</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -57017,7 +57017,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>107</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -57056,10 +57056,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1091</id>
-						<name>or_ln107</name>
+						<name>or_ln111</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>107</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -57075,7 +57075,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>107</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -57116,7 +57116,7 @@
 						<name>bin_2</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>107</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -57132,7 +57132,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>107</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -57171,10 +57171,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1093</id>
-						<name>tmp_14</name>
+						<name>tmp_4</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -57190,7 +57190,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -57744,7 +57744,7 @@
 						<name>histogram_256</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -57760,7 +57760,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -57798,10 +57798,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1095</id>
-						<name>_ln108</name>
+						<name>_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -57817,7 +57817,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -58365,10 +58365,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1097</id>
-						<name>histogram_254_write_ln94</name>
+						<name>histogram_254_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -58384,7 +58384,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -58424,10 +58424,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1098</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -58443,7 +58443,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -58480,10 +58480,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1100</id>
-						<name>histogram_253_write_ln94</name>
+						<name>histogram_253_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -58499,7 +58499,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -58539,10 +58539,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1101</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -58558,7 +58558,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -58595,10 +58595,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1103</id>
-						<name>histogram_252_write_ln94</name>
+						<name>histogram_252_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -58614,7 +58614,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -58654,10 +58654,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1104</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -58673,7 +58673,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -58710,10 +58710,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1106</id>
-						<name>histogram_251_write_ln94</name>
+						<name>histogram_251_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -58729,7 +58729,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -58769,10 +58769,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1107</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -58788,7 +58788,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -58825,10 +58825,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1109</id>
-						<name>histogram_250_write_ln94</name>
+						<name>histogram_250_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -58844,7 +58844,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -58884,10 +58884,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1110</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -58903,7 +58903,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -58940,10 +58940,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1112</id>
-						<name>histogram_249_write_ln94</name>
+						<name>histogram_249_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -58959,7 +58959,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -58999,10 +58999,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1113</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59018,7 +59018,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -59055,10 +59055,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1115</id>
-						<name>histogram_248_write_ln94</name>
+						<name>histogram_248_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59074,7 +59074,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -59114,10 +59114,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1116</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59133,7 +59133,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -59170,10 +59170,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1118</id>
-						<name>histogram_247_write_ln94</name>
+						<name>histogram_247_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59189,7 +59189,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -59229,10 +59229,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1119</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59248,7 +59248,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -59285,10 +59285,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1121</id>
-						<name>histogram_246_write_ln94</name>
+						<name>histogram_246_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59304,7 +59304,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -59344,10 +59344,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1122</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59363,7 +59363,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -59400,10 +59400,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1124</id>
-						<name>histogram_245_write_ln94</name>
+						<name>histogram_245_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59419,7 +59419,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -59459,10 +59459,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1125</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59478,7 +59478,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -59515,10 +59515,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1127</id>
-						<name>histogram_244_write_ln94</name>
+						<name>histogram_244_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59534,7 +59534,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -59574,10 +59574,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1128</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59593,7 +59593,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -59630,10 +59630,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1130</id>
-						<name>histogram_243_write_ln94</name>
+						<name>histogram_243_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59649,7 +59649,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -59689,10 +59689,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1131</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59708,7 +59708,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -59745,10 +59745,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1133</id>
-						<name>histogram_242_write_ln94</name>
+						<name>histogram_242_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59764,7 +59764,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -59804,10 +59804,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1134</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59823,7 +59823,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -59860,10 +59860,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1136</id>
-						<name>histogram_241_write_ln94</name>
+						<name>histogram_241_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59879,7 +59879,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -59919,10 +59919,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1137</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59938,7 +59938,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -59975,10 +59975,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1139</id>
-						<name>histogram_240_write_ln94</name>
+						<name>histogram_240_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -59994,7 +59994,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -60034,10 +60034,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1140</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60053,7 +60053,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -60090,10 +60090,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1142</id>
-						<name>histogram_239_write_ln94</name>
+						<name>histogram_239_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60109,7 +60109,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -60149,10 +60149,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1143</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60168,7 +60168,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -60205,10 +60205,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1145</id>
-						<name>histogram_238_write_ln94</name>
+						<name>histogram_238_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60224,7 +60224,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -60264,10 +60264,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1146</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60283,7 +60283,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -60320,10 +60320,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1148</id>
-						<name>histogram_237_write_ln94</name>
+						<name>histogram_237_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60339,7 +60339,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -60379,10 +60379,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1149</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60398,7 +60398,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -60435,10 +60435,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1151</id>
-						<name>histogram_236_write_ln94</name>
+						<name>histogram_236_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60454,7 +60454,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -60494,10 +60494,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1152</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60513,7 +60513,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -60550,10 +60550,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1154</id>
-						<name>histogram_235_write_ln94</name>
+						<name>histogram_235_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60569,7 +60569,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -60609,10 +60609,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1155</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60628,7 +60628,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -60665,10 +60665,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1157</id>
-						<name>histogram_234_write_ln94</name>
+						<name>histogram_234_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60684,7 +60684,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -60724,10 +60724,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1158</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60743,7 +60743,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -60780,10 +60780,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1160</id>
-						<name>histogram_233_write_ln94</name>
+						<name>histogram_233_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60799,7 +60799,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -60839,10 +60839,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1161</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60858,7 +60858,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -60895,10 +60895,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1163</id>
-						<name>histogram_232_write_ln94</name>
+						<name>histogram_232_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60914,7 +60914,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -60954,10 +60954,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1164</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -60973,7 +60973,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -61010,10 +61010,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1166</id>
-						<name>histogram_231_write_ln94</name>
+						<name>histogram_231_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61029,7 +61029,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -61069,10 +61069,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1167</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61088,7 +61088,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -61125,10 +61125,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1169</id>
-						<name>histogram_230_write_ln94</name>
+						<name>histogram_230_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61144,7 +61144,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -61184,10 +61184,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1170</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61203,7 +61203,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -61240,10 +61240,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1172</id>
-						<name>histogram_229_write_ln94</name>
+						<name>histogram_229_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61259,7 +61259,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -61299,10 +61299,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1173</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61318,7 +61318,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -61355,10 +61355,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1175</id>
-						<name>histogram_228_write_ln94</name>
+						<name>histogram_228_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61374,7 +61374,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -61414,10 +61414,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1176</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61433,7 +61433,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -61470,10 +61470,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1178</id>
-						<name>histogram_227_write_ln94</name>
+						<name>histogram_227_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61489,7 +61489,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -61529,10 +61529,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1179</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61548,7 +61548,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -61585,10 +61585,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1181</id>
-						<name>histogram_226_write_ln94</name>
+						<name>histogram_226_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61604,7 +61604,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -61644,10 +61644,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1182</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61663,7 +61663,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -61700,10 +61700,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1184</id>
-						<name>histogram_225_write_ln94</name>
+						<name>histogram_225_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61719,7 +61719,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -61759,10 +61759,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1185</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61778,7 +61778,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -61815,10 +61815,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1187</id>
-						<name>histogram_224_write_ln94</name>
+						<name>histogram_224_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61834,7 +61834,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -61874,10 +61874,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1188</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61893,7 +61893,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -61930,10 +61930,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1190</id>
-						<name>histogram_223_write_ln94</name>
+						<name>histogram_223_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -61949,7 +61949,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -61989,10 +61989,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1191</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62008,7 +62008,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -62045,10 +62045,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1193</id>
-						<name>histogram_222_write_ln94</name>
+						<name>histogram_222_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62064,7 +62064,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -62104,10 +62104,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1194</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62123,7 +62123,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -62160,10 +62160,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1196</id>
-						<name>histogram_221_write_ln94</name>
+						<name>histogram_221_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62179,7 +62179,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -62219,10 +62219,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1197</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62238,7 +62238,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -62275,10 +62275,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1199</id>
-						<name>histogram_220_write_ln94</name>
+						<name>histogram_220_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62294,7 +62294,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -62334,10 +62334,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1200</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62353,7 +62353,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -62390,10 +62390,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1202</id>
-						<name>histogram_219_write_ln94</name>
+						<name>histogram_219_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62409,7 +62409,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -62449,10 +62449,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1203</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62468,7 +62468,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -62505,10 +62505,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1205</id>
-						<name>histogram_218_write_ln94</name>
+						<name>histogram_218_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62524,7 +62524,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -62564,10 +62564,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1206</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62583,7 +62583,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -62620,10 +62620,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1208</id>
-						<name>histogram_217_write_ln94</name>
+						<name>histogram_217_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62639,7 +62639,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -62679,10 +62679,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1209</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62698,7 +62698,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -62735,10 +62735,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1211</id>
-						<name>histogram_216_write_ln94</name>
+						<name>histogram_216_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62754,7 +62754,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -62794,10 +62794,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1212</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62813,7 +62813,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -62850,10 +62850,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1214</id>
-						<name>histogram_215_write_ln94</name>
+						<name>histogram_215_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62869,7 +62869,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -62909,10 +62909,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1215</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62928,7 +62928,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -62965,10 +62965,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1217</id>
-						<name>histogram_214_write_ln94</name>
+						<name>histogram_214_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -62984,7 +62984,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -63024,10 +63024,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1218</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63043,7 +63043,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -63080,10 +63080,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1220</id>
-						<name>histogram_213_write_ln94</name>
+						<name>histogram_213_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63099,7 +63099,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -63139,10 +63139,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1221</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63158,7 +63158,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -63195,10 +63195,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1223</id>
-						<name>histogram_212_write_ln94</name>
+						<name>histogram_212_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63214,7 +63214,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -63254,10 +63254,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1224</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63273,7 +63273,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -63310,10 +63310,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1226</id>
-						<name>histogram_211_write_ln94</name>
+						<name>histogram_211_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63329,7 +63329,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -63369,10 +63369,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1227</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63388,7 +63388,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -63425,10 +63425,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1229</id>
-						<name>histogram_210_write_ln94</name>
+						<name>histogram_210_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63444,7 +63444,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -63484,10 +63484,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1230</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63503,7 +63503,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -63540,10 +63540,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1232</id>
-						<name>histogram_209_write_ln94</name>
+						<name>histogram_209_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63559,7 +63559,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -63599,10 +63599,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1233</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63618,7 +63618,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -63655,10 +63655,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1235</id>
-						<name>histogram_208_write_ln94</name>
+						<name>histogram_208_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63674,7 +63674,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -63714,10 +63714,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1236</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63733,7 +63733,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -63770,10 +63770,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1238</id>
-						<name>histogram_207_write_ln94</name>
+						<name>histogram_207_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63789,7 +63789,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -63829,10 +63829,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1239</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63848,7 +63848,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -63885,10 +63885,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1241</id>
-						<name>histogram_206_write_ln94</name>
+						<name>histogram_206_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63904,7 +63904,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -63944,10 +63944,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1242</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -63963,7 +63963,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -64000,10 +64000,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1244</id>
-						<name>histogram_205_write_ln94</name>
+						<name>histogram_205_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64019,7 +64019,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -64059,10 +64059,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1245</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64078,7 +64078,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -64115,10 +64115,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1247</id>
-						<name>histogram_204_write_ln94</name>
+						<name>histogram_204_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64134,7 +64134,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -64174,10 +64174,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1248</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64193,7 +64193,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -64230,10 +64230,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1250</id>
-						<name>histogram_203_write_ln94</name>
+						<name>histogram_203_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64249,7 +64249,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -64289,10 +64289,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1251</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64308,7 +64308,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -64345,10 +64345,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1253</id>
-						<name>histogram_202_write_ln94</name>
+						<name>histogram_202_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64364,7 +64364,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -64404,10 +64404,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1254</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64423,7 +64423,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -64460,10 +64460,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1256</id>
-						<name>histogram_201_write_ln94</name>
+						<name>histogram_201_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64479,7 +64479,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -64519,10 +64519,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1257</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64538,7 +64538,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -64575,10 +64575,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1259</id>
-						<name>histogram_200_write_ln94</name>
+						<name>histogram_200_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64594,7 +64594,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -64634,10 +64634,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1260</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64653,7 +64653,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -64690,10 +64690,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1262</id>
-						<name>histogram_199_write_ln94</name>
+						<name>histogram_199_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64709,7 +64709,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -64749,10 +64749,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1263</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64768,7 +64768,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -64805,10 +64805,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1265</id>
-						<name>histogram_198_write_ln94</name>
+						<name>histogram_198_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64824,7 +64824,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -64864,10 +64864,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1266</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64883,7 +64883,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -64920,10 +64920,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1268</id>
-						<name>histogram_197_write_ln94</name>
+						<name>histogram_197_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64939,7 +64939,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -64979,10 +64979,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1269</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -64998,7 +64998,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -65035,10 +65035,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1271</id>
-						<name>histogram_196_write_ln94</name>
+						<name>histogram_196_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65054,7 +65054,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -65094,10 +65094,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1272</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65113,7 +65113,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -65150,10 +65150,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1274</id>
-						<name>histogram_195_write_ln94</name>
+						<name>histogram_195_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65169,7 +65169,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -65209,10 +65209,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1275</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65228,7 +65228,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -65265,10 +65265,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1277</id>
-						<name>histogram_194_write_ln94</name>
+						<name>histogram_194_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65284,7 +65284,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -65324,10 +65324,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1278</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65343,7 +65343,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -65380,10 +65380,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1280</id>
-						<name>histogram_193_write_ln94</name>
+						<name>histogram_193_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65399,7 +65399,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -65439,10 +65439,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1281</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65458,7 +65458,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -65495,10 +65495,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1283</id>
-						<name>histogram_192_write_ln94</name>
+						<name>histogram_192_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65514,7 +65514,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -65554,10 +65554,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1284</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65573,7 +65573,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -65610,10 +65610,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1286</id>
-						<name>histogram_191_write_ln94</name>
+						<name>histogram_191_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65629,7 +65629,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -65669,10 +65669,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1287</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65688,7 +65688,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -65725,10 +65725,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1289</id>
-						<name>histogram_190_write_ln94</name>
+						<name>histogram_190_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65744,7 +65744,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -65784,10 +65784,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1290</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65803,7 +65803,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -65840,10 +65840,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1292</id>
-						<name>histogram_189_write_ln94</name>
+						<name>histogram_189_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65859,7 +65859,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -65899,10 +65899,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1293</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65918,7 +65918,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -65955,10 +65955,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1295</id>
-						<name>histogram_188_write_ln94</name>
+						<name>histogram_188_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -65974,7 +65974,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -66014,10 +66014,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1296</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66033,7 +66033,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -66070,10 +66070,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1298</id>
-						<name>histogram_187_write_ln94</name>
+						<name>histogram_187_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66089,7 +66089,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -66129,10 +66129,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1299</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66148,7 +66148,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -66185,10 +66185,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1301</id>
-						<name>histogram_186_write_ln94</name>
+						<name>histogram_186_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66204,7 +66204,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -66244,10 +66244,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1302</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66263,7 +66263,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -66300,10 +66300,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1304</id>
-						<name>histogram_185_write_ln94</name>
+						<name>histogram_185_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66319,7 +66319,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -66359,10 +66359,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1305</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66378,7 +66378,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -66415,10 +66415,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1307</id>
-						<name>histogram_184_write_ln94</name>
+						<name>histogram_184_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66434,7 +66434,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -66474,10 +66474,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1308</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66493,7 +66493,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -66530,10 +66530,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1310</id>
-						<name>histogram_183_write_ln94</name>
+						<name>histogram_183_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66549,7 +66549,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -66589,10 +66589,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1311</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66608,7 +66608,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -66645,10 +66645,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1313</id>
-						<name>histogram_182_write_ln94</name>
+						<name>histogram_182_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66664,7 +66664,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -66704,10 +66704,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1314</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66723,7 +66723,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -66760,10 +66760,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1316</id>
-						<name>histogram_181_write_ln94</name>
+						<name>histogram_181_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66779,7 +66779,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -66819,10 +66819,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1317</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66838,7 +66838,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -66875,10 +66875,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1319</id>
-						<name>histogram_180_write_ln94</name>
+						<name>histogram_180_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66894,7 +66894,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -66934,10 +66934,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1320</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -66953,7 +66953,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -66990,10 +66990,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1322</id>
-						<name>histogram_179_write_ln94</name>
+						<name>histogram_179_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67009,7 +67009,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -67049,10 +67049,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1323</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67068,7 +67068,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -67105,10 +67105,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1325</id>
-						<name>histogram_178_write_ln94</name>
+						<name>histogram_178_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67124,7 +67124,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -67164,10 +67164,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1326</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67183,7 +67183,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -67220,10 +67220,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1328</id>
-						<name>histogram_177_write_ln94</name>
+						<name>histogram_177_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67239,7 +67239,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -67279,10 +67279,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1329</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67298,7 +67298,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -67335,10 +67335,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1331</id>
-						<name>histogram_176_write_ln94</name>
+						<name>histogram_176_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67354,7 +67354,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -67394,10 +67394,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1332</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67413,7 +67413,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -67450,10 +67450,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1334</id>
-						<name>histogram_175_write_ln94</name>
+						<name>histogram_175_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67469,7 +67469,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -67509,10 +67509,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1335</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67528,7 +67528,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -67565,10 +67565,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1337</id>
-						<name>histogram_174_write_ln94</name>
+						<name>histogram_174_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67584,7 +67584,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -67624,10 +67624,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1338</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67643,7 +67643,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -67680,10 +67680,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1340</id>
-						<name>histogram_173_write_ln94</name>
+						<name>histogram_173_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67699,7 +67699,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -67739,10 +67739,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1341</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67758,7 +67758,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -67795,10 +67795,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1343</id>
-						<name>histogram_172_write_ln94</name>
+						<name>histogram_172_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67814,7 +67814,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -67854,10 +67854,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1344</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67873,7 +67873,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -67910,10 +67910,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1346</id>
-						<name>histogram_171_write_ln94</name>
+						<name>histogram_171_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67929,7 +67929,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -67957,7 +67957,7 @@
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>1</m_isOnCriticalPath>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.48</m_delay>
@@ -67969,10 +67969,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1347</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -67988,7 +67988,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -68025,10 +68025,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1349</id>
-						<name>histogram_170_write_ln94</name>
+						<name>histogram_170_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68044,7 +68044,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -68084,10 +68084,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1350</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68103,7 +68103,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -68140,10 +68140,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1352</id>
-						<name>histogram_169_write_ln94</name>
+						<name>histogram_169_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68159,7 +68159,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -68199,10 +68199,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1353</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68218,7 +68218,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -68255,10 +68255,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1355</id>
-						<name>histogram_168_write_ln94</name>
+						<name>histogram_168_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68274,7 +68274,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -68314,10 +68314,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1356</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68333,7 +68333,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -68370,10 +68370,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1358</id>
-						<name>histogram_167_write_ln94</name>
+						<name>histogram_167_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68389,7 +68389,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -68429,10 +68429,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1359</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68448,7 +68448,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -68485,10 +68485,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1361</id>
-						<name>histogram_166_write_ln94</name>
+						<name>histogram_166_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68504,7 +68504,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -68544,10 +68544,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1362</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68563,7 +68563,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -68600,10 +68600,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1364</id>
-						<name>histogram_165_write_ln94</name>
+						<name>histogram_165_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68619,7 +68619,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -68659,10 +68659,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1365</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68678,7 +68678,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -68715,10 +68715,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1367</id>
-						<name>histogram_164_write_ln94</name>
+						<name>histogram_164_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68734,7 +68734,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -68774,10 +68774,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1368</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68793,7 +68793,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -68830,10 +68830,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1370</id>
-						<name>histogram_163_write_ln94</name>
+						<name>histogram_163_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68849,7 +68849,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -68889,10 +68889,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1371</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68908,7 +68908,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -68945,10 +68945,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1373</id>
-						<name>histogram_162_write_ln94</name>
+						<name>histogram_162_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -68964,7 +68964,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -69004,10 +69004,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1374</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69023,7 +69023,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -69060,10 +69060,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1376</id>
-						<name>histogram_161_write_ln94</name>
+						<name>histogram_161_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69079,7 +69079,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -69119,10 +69119,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1377</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69138,7 +69138,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -69175,10 +69175,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1379</id>
-						<name>histogram_160_write_ln94</name>
+						<name>histogram_160_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69194,7 +69194,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -69234,10 +69234,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1380</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69253,7 +69253,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -69290,10 +69290,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1382</id>
-						<name>histogram_159_write_ln94</name>
+						<name>histogram_159_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69309,7 +69309,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -69349,10 +69349,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1383</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69368,7 +69368,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -69405,10 +69405,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1385</id>
-						<name>histogram_158_write_ln94</name>
+						<name>histogram_158_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69424,7 +69424,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -69464,10 +69464,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1386</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69483,7 +69483,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -69520,10 +69520,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1388</id>
-						<name>histogram_157_write_ln94</name>
+						<name>histogram_157_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69539,7 +69539,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -69579,10 +69579,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1389</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69598,7 +69598,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -69635,10 +69635,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1391</id>
-						<name>histogram_156_write_ln94</name>
+						<name>histogram_156_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69654,7 +69654,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -69694,10 +69694,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1392</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69713,7 +69713,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -69750,10 +69750,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1394</id>
-						<name>histogram_155_write_ln94</name>
+						<name>histogram_155_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69769,7 +69769,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -69809,10 +69809,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1395</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69828,7 +69828,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -69865,10 +69865,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1397</id>
-						<name>histogram_154_write_ln94</name>
+						<name>histogram_154_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69884,7 +69884,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -69924,10 +69924,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1398</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69943,7 +69943,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -69980,10 +69980,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1400</id>
-						<name>histogram_153_write_ln94</name>
+						<name>histogram_153_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -69999,7 +69999,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -70039,10 +70039,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1401</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70058,7 +70058,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -70095,10 +70095,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1403</id>
-						<name>histogram_152_write_ln94</name>
+						<name>histogram_152_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70114,7 +70114,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -70154,10 +70154,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1404</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70173,7 +70173,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -70210,10 +70210,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1406</id>
-						<name>histogram_151_write_ln94</name>
+						<name>histogram_151_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70229,7 +70229,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -70269,10 +70269,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1407</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70288,7 +70288,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -70325,10 +70325,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1409</id>
-						<name>histogram_150_write_ln94</name>
+						<name>histogram_150_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70344,7 +70344,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -70384,10 +70384,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1410</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70403,7 +70403,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -70440,10 +70440,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1412</id>
-						<name>histogram_149_write_ln94</name>
+						<name>histogram_149_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70459,7 +70459,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -70499,10 +70499,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1413</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70518,7 +70518,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -70555,10 +70555,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1415</id>
-						<name>histogram_148_write_ln94</name>
+						<name>histogram_148_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70574,7 +70574,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -70614,10 +70614,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1416</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70633,7 +70633,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -70670,10 +70670,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1418</id>
-						<name>histogram_147_write_ln94</name>
+						<name>histogram_147_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70689,7 +70689,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -70729,10 +70729,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1419</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70748,7 +70748,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -70785,10 +70785,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1421</id>
-						<name>histogram_146_write_ln94</name>
+						<name>histogram_146_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70804,7 +70804,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -70844,10 +70844,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1422</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70863,7 +70863,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -70900,10 +70900,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1424</id>
-						<name>histogram_145_write_ln94</name>
+						<name>histogram_145_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70919,7 +70919,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -70959,10 +70959,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1425</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -70978,7 +70978,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -71015,10 +71015,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1427</id>
-						<name>histogram_144_write_ln94</name>
+						<name>histogram_144_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71034,7 +71034,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -71074,10 +71074,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1428</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71093,7 +71093,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -71130,10 +71130,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1430</id>
-						<name>histogram_143_write_ln94</name>
+						<name>histogram_143_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71149,7 +71149,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -71189,10 +71189,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1431</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71208,7 +71208,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -71245,10 +71245,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1433</id>
-						<name>histogram_142_write_ln94</name>
+						<name>histogram_142_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71264,7 +71264,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -71304,10 +71304,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1434</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71323,7 +71323,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -71360,10 +71360,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1436</id>
-						<name>histogram_141_write_ln94</name>
+						<name>histogram_141_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71379,7 +71379,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -71419,10 +71419,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1437</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71438,7 +71438,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -71475,10 +71475,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1439</id>
-						<name>histogram_140_write_ln94</name>
+						<name>histogram_140_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71494,7 +71494,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -71534,10 +71534,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1440</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71553,7 +71553,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -71590,10 +71590,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1442</id>
-						<name>histogram_139_write_ln94</name>
+						<name>histogram_139_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71609,7 +71609,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -71649,10 +71649,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1443</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71668,7 +71668,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -71705,10 +71705,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1445</id>
-						<name>histogram_138_write_ln94</name>
+						<name>histogram_138_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71724,7 +71724,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -71764,10 +71764,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1446</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71783,7 +71783,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -71820,10 +71820,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1448</id>
-						<name>histogram_137_write_ln94</name>
+						<name>histogram_137_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71839,7 +71839,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -71879,10 +71879,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1449</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71898,7 +71898,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -71935,10 +71935,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1451</id>
-						<name>histogram_136_write_ln94</name>
+						<name>histogram_136_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -71954,7 +71954,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -71994,10 +71994,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1452</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72013,7 +72013,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -72050,10 +72050,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1454</id>
-						<name>histogram_135_write_ln94</name>
+						<name>histogram_135_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72069,7 +72069,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -72109,10 +72109,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1455</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72128,7 +72128,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -72165,10 +72165,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1457</id>
-						<name>histogram_134_write_ln94</name>
+						<name>histogram_134_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72184,7 +72184,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -72224,10 +72224,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1458</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72243,7 +72243,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -72280,10 +72280,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1460</id>
-						<name>histogram_133_write_ln94</name>
+						<name>histogram_133_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72299,7 +72299,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -72339,10 +72339,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1461</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72358,7 +72358,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -72395,10 +72395,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1463</id>
-						<name>histogram_132_write_ln94</name>
+						<name>histogram_132_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72414,7 +72414,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -72454,10 +72454,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1464</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72473,7 +72473,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -72510,10 +72510,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1466</id>
-						<name>histogram_131_write_ln94</name>
+						<name>histogram_131_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72529,7 +72529,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -72569,10 +72569,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1467</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72588,7 +72588,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -72625,10 +72625,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1469</id>
-						<name>histogram_130_write_ln94</name>
+						<name>histogram_130_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72644,7 +72644,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -72684,10 +72684,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1470</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72703,7 +72703,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -72740,10 +72740,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1472</id>
-						<name>histogram_129_write_ln94</name>
+						<name>histogram_129_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72759,7 +72759,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -72799,10 +72799,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1473</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72818,7 +72818,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -72855,10 +72855,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1475</id>
-						<name>histogram_128_write_ln94</name>
+						<name>histogram_128_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72874,7 +72874,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -72914,10 +72914,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1476</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72933,7 +72933,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -72970,10 +72970,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1478</id>
-						<name>histogram_127_write_ln94</name>
+						<name>histogram_127_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -72989,7 +72989,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -73029,10 +73029,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1479</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73048,7 +73048,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -73085,10 +73085,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1481</id>
-						<name>histogram_126_write_ln94</name>
+						<name>histogram_126_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73104,7 +73104,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -73144,10 +73144,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1482</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73163,7 +73163,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -73200,10 +73200,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1484</id>
-						<name>histogram_125_write_ln94</name>
+						<name>histogram_125_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73219,7 +73219,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -73259,10 +73259,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1485</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73278,7 +73278,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -73315,10 +73315,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1487</id>
-						<name>histogram_124_write_ln94</name>
+						<name>histogram_124_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73334,7 +73334,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -73374,10 +73374,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1488</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73393,7 +73393,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -73430,10 +73430,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1490</id>
-						<name>histogram_123_write_ln94</name>
+						<name>histogram_123_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73449,7 +73449,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -73489,10 +73489,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1491</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73508,7 +73508,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -73545,10 +73545,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1493</id>
-						<name>histogram_122_write_ln94</name>
+						<name>histogram_122_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73564,7 +73564,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -73604,10 +73604,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1494</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73623,7 +73623,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -73660,10 +73660,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1496</id>
-						<name>histogram_121_write_ln94</name>
+						<name>histogram_121_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73679,7 +73679,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -73719,10 +73719,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1497</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73738,7 +73738,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -73775,10 +73775,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1499</id>
-						<name>histogram_120_write_ln94</name>
+						<name>histogram_120_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73794,7 +73794,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -73834,10 +73834,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1500</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73853,7 +73853,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -73890,10 +73890,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1502</id>
-						<name>histogram_119_write_ln94</name>
+						<name>histogram_119_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73909,7 +73909,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -73949,10 +73949,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1503</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -73968,7 +73968,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -74005,10 +74005,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1505</id>
-						<name>histogram_118_write_ln94</name>
+						<name>histogram_118_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74024,7 +74024,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -74064,10 +74064,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1506</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74083,7 +74083,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -74120,10 +74120,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1508</id>
-						<name>histogram_117_write_ln94</name>
+						<name>histogram_117_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74139,7 +74139,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -74179,10 +74179,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1509</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74198,7 +74198,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -74235,10 +74235,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1511</id>
-						<name>histogram_116_write_ln94</name>
+						<name>histogram_116_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74254,7 +74254,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -74294,10 +74294,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1512</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74313,7 +74313,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -74350,10 +74350,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1514</id>
-						<name>histogram_115_write_ln94</name>
+						<name>histogram_115_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74369,7 +74369,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -74409,10 +74409,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1515</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74428,7 +74428,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -74465,10 +74465,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1517</id>
-						<name>histogram_114_write_ln94</name>
+						<name>histogram_114_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74484,7 +74484,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -74524,10 +74524,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1518</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74543,7 +74543,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -74580,10 +74580,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1520</id>
-						<name>histogram_113_write_ln94</name>
+						<name>histogram_113_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74599,7 +74599,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -74639,10 +74639,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1521</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74658,7 +74658,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -74695,10 +74695,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1523</id>
-						<name>histogram_112_write_ln94</name>
+						<name>histogram_112_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74714,7 +74714,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -74754,10 +74754,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1524</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74773,7 +74773,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -74810,10 +74810,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1526</id>
-						<name>histogram_111_write_ln94</name>
+						<name>histogram_111_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74829,7 +74829,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -74869,10 +74869,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1527</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74888,7 +74888,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -74925,10 +74925,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1529</id>
-						<name>histogram_110_write_ln94</name>
+						<name>histogram_110_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -74944,7 +74944,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -74984,10 +74984,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1530</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75003,7 +75003,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -75040,10 +75040,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1532</id>
-						<name>histogram_109_write_ln94</name>
+						<name>histogram_109_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75059,7 +75059,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -75099,10 +75099,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1533</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75118,7 +75118,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -75155,10 +75155,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1535</id>
-						<name>histogram_108_write_ln94</name>
+						<name>histogram_108_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75174,7 +75174,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -75214,10 +75214,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1536</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75233,7 +75233,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -75270,10 +75270,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1538</id>
-						<name>histogram_107_write_ln94</name>
+						<name>histogram_107_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75289,7 +75289,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -75329,10 +75329,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1539</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75348,7 +75348,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -75385,10 +75385,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1541</id>
-						<name>histogram_106_write_ln94</name>
+						<name>histogram_106_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75404,7 +75404,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -75444,10 +75444,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1542</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75463,7 +75463,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -75500,10 +75500,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1544</id>
-						<name>histogram_105_write_ln94</name>
+						<name>histogram_105_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75519,7 +75519,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -75559,10 +75559,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1545</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75578,7 +75578,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -75615,10 +75615,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1547</id>
-						<name>histogram_104_write_ln94</name>
+						<name>histogram_104_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75634,7 +75634,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -75674,10 +75674,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1548</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75693,7 +75693,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -75730,10 +75730,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1550</id>
-						<name>histogram_103_write_ln94</name>
+						<name>histogram_103_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75749,7 +75749,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -75789,10 +75789,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1551</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75808,7 +75808,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -75845,10 +75845,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1553</id>
-						<name>histogram_102_write_ln94</name>
+						<name>histogram_102_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75864,7 +75864,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -75904,10 +75904,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1554</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75923,7 +75923,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -75960,10 +75960,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1556</id>
-						<name>histogram_101_write_ln94</name>
+						<name>histogram_101_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -75979,7 +75979,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -76019,10 +76019,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1557</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76038,7 +76038,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -76075,10 +76075,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1559</id>
-						<name>histogram_100_write_ln94</name>
+						<name>histogram_100_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76094,7 +76094,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -76134,10 +76134,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1560</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76153,7 +76153,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -76190,10 +76190,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1562</id>
-						<name>histogram_99_write_ln94</name>
+						<name>histogram_99_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76209,7 +76209,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -76249,10 +76249,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1563</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76268,7 +76268,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -76305,10 +76305,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1565</id>
-						<name>histogram_98_write_ln94</name>
+						<name>histogram_98_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76324,7 +76324,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -76352,7 +76352,7 @@
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isOnCriticalPath>1</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.48</m_delay>
@@ -76364,10 +76364,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1566</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76383,7 +76383,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -76420,10 +76420,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1568</id>
-						<name>histogram_97_write_ln94</name>
+						<name>histogram_97_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76439,7 +76439,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -76479,10 +76479,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1569</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76498,7 +76498,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -76535,10 +76535,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1571</id>
-						<name>histogram_96_write_ln94</name>
+						<name>histogram_96_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76554,7 +76554,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -76594,10 +76594,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1572</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76613,7 +76613,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -76650,10 +76650,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1574</id>
-						<name>histogram_95_write_ln94</name>
+						<name>histogram_95_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76669,7 +76669,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -76709,10 +76709,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1575</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76728,7 +76728,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -76765,10 +76765,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1577</id>
-						<name>histogram_94_write_ln94</name>
+						<name>histogram_94_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76784,7 +76784,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -76824,10 +76824,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1578</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76843,7 +76843,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -76880,10 +76880,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1580</id>
-						<name>histogram_93_write_ln94</name>
+						<name>histogram_93_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76899,7 +76899,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -76939,10 +76939,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1581</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -76958,7 +76958,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -76995,10 +76995,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1583</id>
-						<name>histogram_92_write_ln94</name>
+						<name>histogram_92_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77014,7 +77014,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -77054,10 +77054,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1584</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77073,7 +77073,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -77110,10 +77110,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1586</id>
-						<name>histogram_91_write_ln94</name>
+						<name>histogram_91_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77129,7 +77129,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -77169,10 +77169,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1587</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77188,7 +77188,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -77225,10 +77225,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1589</id>
-						<name>histogram_90_write_ln94</name>
+						<name>histogram_90_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77244,7 +77244,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -77284,10 +77284,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1590</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77303,7 +77303,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -77340,10 +77340,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1592</id>
-						<name>histogram_89_write_ln94</name>
+						<name>histogram_89_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77359,7 +77359,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -77399,10 +77399,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1593</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77418,7 +77418,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -77455,10 +77455,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1595</id>
-						<name>histogram_88_write_ln94</name>
+						<name>histogram_88_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77474,7 +77474,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -77514,10 +77514,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1596</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77533,7 +77533,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -77570,10 +77570,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1598</id>
-						<name>histogram_87_write_ln94</name>
+						<name>histogram_87_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77589,7 +77589,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -77629,10 +77629,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1599</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77648,7 +77648,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -77685,10 +77685,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1601</id>
-						<name>histogram_86_write_ln94</name>
+						<name>histogram_86_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77704,7 +77704,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -77744,10 +77744,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1602</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77763,7 +77763,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -77800,10 +77800,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1604</id>
-						<name>histogram_85_write_ln94</name>
+						<name>histogram_85_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77819,7 +77819,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -77859,10 +77859,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1605</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77878,7 +77878,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -77915,10 +77915,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1607</id>
-						<name>histogram_84_write_ln94</name>
+						<name>histogram_84_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77934,7 +77934,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -77974,10 +77974,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1608</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -77993,7 +77993,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -78030,10 +78030,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1610</id>
-						<name>histogram_83_write_ln94</name>
+						<name>histogram_83_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78049,7 +78049,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -78089,10 +78089,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1611</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78108,7 +78108,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -78145,10 +78145,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1613</id>
-						<name>histogram_82_write_ln94</name>
+						<name>histogram_82_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78164,7 +78164,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -78204,10 +78204,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1614</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78223,7 +78223,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -78260,10 +78260,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1616</id>
-						<name>histogram_81_write_ln94</name>
+						<name>histogram_81_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78279,7 +78279,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -78319,10 +78319,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1617</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78338,7 +78338,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -78375,10 +78375,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1619</id>
-						<name>histogram_80_write_ln94</name>
+						<name>histogram_80_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78394,7 +78394,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -78434,10 +78434,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1620</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78453,7 +78453,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -78490,10 +78490,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1622</id>
-						<name>histogram_79_write_ln94</name>
+						<name>histogram_79_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78509,7 +78509,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -78549,10 +78549,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1623</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78568,7 +78568,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -78605,10 +78605,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1625</id>
-						<name>histogram_78_write_ln94</name>
+						<name>histogram_78_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78624,7 +78624,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -78664,10 +78664,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1626</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78683,7 +78683,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -78720,10 +78720,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1628</id>
-						<name>histogram_77_write_ln94</name>
+						<name>histogram_77_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78739,7 +78739,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -78779,10 +78779,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1629</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78798,7 +78798,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -78835,10 +78835,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1631</id>
-						<name>histogram_76_write_ln94</name>
+						<name>histogram_76_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78854,7 +78854,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -78894,10 +78894,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1632</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78913,7 +78913,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -78950,10 +78950,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1634</id>
-						<name>histogram_75_write_ln94</name>
+						<name>histogram_75_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -78969,7 +78969,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -79009,10 +79009,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1635</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79028,7 +79028,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -79065,10 +79065,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1637</id>
-						<name>histogram_74_write_ln94</name>
+						<name>histogram_74_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79084,7 +79084,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -79124,10 +79124,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1638</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79143,7 +79143,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -79180,10 +79180,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1640</id>
-						<name>histogram_73_write_ln94</name>
+						<name>histogram_73_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79199,7 +79199,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -79239,10 +79239,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1641</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79258,7 +79258,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -79295,10 +79295,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1643</id>
-						<name>histogram_72_write_ln94</name>
+						<name>histogram_72_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79314,7 +79314,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -79354,10 +79354,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1644</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79373,7 +79373,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -79410,10 +79410,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1646</id>
-						<name>histogram_71_write_ln94</name>
+						<name>histogram_71_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79429,7 +79429,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -79469,10 +79469,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1647</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79488,7 +79488,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -79525,10 +79525,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1649</id>
-						<name>histogram_70_write_ln94</name>
+						<name>histogram_70_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79544,7 +79544,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -79584,10 +79584,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1650</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79603,7 +79603,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -79640,10 +79640,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1652</id>
-						<name>histogram_69_write_ln94</name>
+						<name>histogram_69_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79659,7 +79659,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -79699,10 +79699,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1653</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79718,7 +79718,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -79755,10 +79755,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1655</id>
-						<name>histogram_68_write_ln94</name>
+						<name>histogram_68_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79774,7 +79774,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -79814,10 +79814,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1656</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79833,7 +79833,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -79870,10 +79870,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1658</id>
-						<name>histogram_67_write_ln94</name>
+						<name>histogram_67_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79889,7 +79889,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -79929,10 +79929,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1659</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -79948,7 +79948,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -79985,10 +79985,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1661</id>
-						<name>histogram_66_write_ln94</name>
+						<name>histogram_66_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80004,7 +80004,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -80044,10 +80044,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1662</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80063,7 +80063,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -80100,10 +80100,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1664</id>
-						<name>histogram_65_write_ln94</name>
+						<name>histogram_65_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80119,7 +80119,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -80159,10 +80159,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1665</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80178,7 +80178,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -80215,10 +80215,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1667</id>
-						<name>histogram_64_write_ln94</name>
+						<name>histogram_64_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80234,7 +80234,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -80274,10 +80274,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1668</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80293,7 +80293,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -80330,10 +80330,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1670</id>
-						<name>histogram_63_write_ln94</name>
+						<name>histogram_63_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80349,7 +80349,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -80389,10 +80389,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1671</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80408,7 +80408,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -80445,10 +80445,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1673</id>
-						<name>histogram_62_write_ln94</name>
+						<name>histogram_62_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80464,7 +80464,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -80504,10 +80504,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1674</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80523,7 +80523,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -80560,10 +80560,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1676</id>
-						<name>histogram_61_write_ln94</name>
+						<name>histogram_61_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80579,7 +80579,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -80619,10 +80619,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1677</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80638,7 +80638,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -80675,10 +80675,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1679</id>
-						<name>histogram_60_write_ln94</name>
+						<name>histogram_60_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80694,7 +80694,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -80734,10 +80734,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1680</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80753,7 +80753,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -80790,10 +80790,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1682</id>
-						<name>histogram_59_write_ln94</name>
+						<name>histogram_59_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80809,7 +80809,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -80849,10 +80849,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1683</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80868,7 +80868,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -80905,10 +80905,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1685</id>
-						<name>histogram_58_write_ln94</name>
+						<name>histogram_58_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80924,7 +80924,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -80964,10 +80964,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1686</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -80983,7 +80983,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -81020,10 +81020,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1688</id>
-						<name>histogram_57_write_ln94</name>
+						<name>histogram_57_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81039,7 +81039,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -81079,10 +81079,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1689</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81098,7 +81098,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -81135,10 +81135,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1691</id>
-						<name>histogram_56_write_ln94</name>
+						<name>histogram_56_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81154,7 +81154,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -81194,10 +81194,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1692</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81213,7 +81213,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -81250,10 +81250,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1694</id>
-						<name>histogram_55_write_ln94</name>
+						<name>histogram_55_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81269,7 +81269,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -81309,10 +81309,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1695</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81328,7 +81328,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -81365,10 +81365,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1697</id>
-						<name>histogram_54_write_ln94</name>
+						<name>histogram_54_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81384,7 +81384,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -81424,10 +81424,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1698</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81443,7 +81443,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -81480,10 +81480,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1700</id>
-						<name>histogram_53_write_ln94</name>
+						<name>histogram_53_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81499,7 +81499,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -81539,10 +81539,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1701</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81558,7 +81558,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -81595,10 +81595,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1703</id>
-						<name>histogram_52_write_ln94</name>
+						<name>histogram_52_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81614,7 +81614,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -81654,10 +81654,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1704</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81673,7 +81673,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -81710,10 +81710,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1706</id>
-						<name>histogram_51_write_ln94</name>
+						<name>histogram_51_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81729,7 +81729,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -81769,10 +81769,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1707</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81788,7 +81788,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -81825,10 +81825,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1709</id>
-						<name>histogram_50_write_ln94</name>
+						<name>histogram_50_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81844,7 +81844,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -81884,10 +81884,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1710</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81903,7 +81903,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -81940,10 +81940,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1712</id>
-						<name>histogram_49_write_ln94</name>
+						<name>histogram_49_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -81959,7 +81959,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -81999,10 +81999,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1713</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82018,7 +82018,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -82055,10 +82055,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1715</id>
-						<name>histogram_48_write_ln94</name>
+						<name>histogram_48_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82074,7 +82074,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -82114,10 +82114,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1716</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82133,7 +82133,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -82170,10 +82170,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1718</id>
-						<name>histogram_47_write_ln94</name>
+						<name>histogram_47_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82189,7 +82189,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -82229,10 +82229,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1719</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82248,7 +82248,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -82285,10 +82285,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1721</id>
-						<name>histogram_46_write_ln94</name>
+						<name>histogram_46_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82304,7 +82304,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -82344,10 +82344,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1722</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82363,7 +82363,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -82400,10 +82400,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1724</id>
-						<name>histogram_45_write_ln94</name>
+						<name>histogram_45_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82419,7 +82419,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -82459,10 +82459,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1725</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82478,7 +82478,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -82515,10 +82515,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1727</id>
-						<name>histogram_44_write_ln94</name>
+						<name>histogram_44_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82534,7 +82534,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -82574,10 +82574,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1728</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82593,7 +82593,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -82630,10 +82630,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1730</id>
-						<name>histogram_43_write_ln94</name>
+						<name>histogram_43_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82649,7 +82649,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -82689,10 +82689,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1731</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82708,7 +82708,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -82745,10 +82745,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1733</id>
-						<name>histogram_42_write_ln94</name>
+						<name>histogram_42_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82764,7 +82764,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -82804,10 +82804,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1734</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82823,7 +82823,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -82860,10 +82860,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1736</id>
-						<name>histogram_41_write_ln94</name>
+						<name>histogram_41_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82879,7 +82879,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -82919,10 +82919,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1737</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82938,7 +82938,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -82975,10 +82975,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1739</id>
-						<name>histogram_40_write_ln94</name>
+						<name>histogram_40_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -82994,7 +82994,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -83034,10 +83034,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1740</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83053,7 +83053,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -83090,10 +83090,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1742</id>
-						<name>histogram_39_write_ln94</name>
+						<name>histogram_39_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83109,7 +83109,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -83149,10 +83149,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1743</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83168,7 +83168,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -83205,10 +83205,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1745</id>
-						<name>histogram_38_write_ln94</name>
+						<name>histogram_38_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83224,7 +83224,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -83264,10 +83264,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1746</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83283,7 +83283,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -83320,10 +83320,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1748</id>
-						<name>histogram_37_write_ln94</name>
+						<name>histogram_37_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83339,7 +83339,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -83379,10 +83379,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1749</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83398,7 +83398,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -83435,10 +83435,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1751</id>
-						<name>histogram_36_write_ln94</name>
+						<name>histogram_36_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83454,7 +83454,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -83494,10 +83494,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1752</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83513,7 +83513,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -83550,10 +83550,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1754</id>
-						<name>histogram_35_write_ln94</name>
+						<name>histogram_35_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83569,7 +83569,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -83609,10 +83609,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1755</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83628,7 +83628,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -83665,10 +83665,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1757</id>
-						<name>histogram_34_write_ln94</name>
+						<name>histogram_34_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83684,7 +83684,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -83724,10 +83724,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1758</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83743,7 +83743,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -83780,10 +83780,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1760</id>
-						<name>histogram_33_write_ln94</name>
+						<name>histogram_33_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83799,7 +83799,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -83839,10 +83839,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1761</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83858,7 +83858,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -83895,10 +83895,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1763</id>
-						<name>histogram_32_write_ln94</name>
+						<name>histogram_32_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83914,7 +83914,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -83954,10 +83954,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1764</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -83973,7 +83973,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -84010,10 +84010,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1766</id>
-						<name>histogram_31_write_ln94</name>
+						<name>histogram_31_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84029,7 +84029,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -84069,10 +84069,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1767</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84088,7 +84088,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -84125,10 +84125,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1769</id>
-						<name>histogram_30_write_ln94</name>
+						<name>histogram_30_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84144,7 +84144,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -84184,10 +84184,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1770</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84203,7 +84203,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -84240,10 +84240,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1772</id>
-						<name>histogram_29_write_ln94</name>
+						<name>histogram_29_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84259,7 +84259,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -84299,10 +84299,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1773</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84318,7 +84318,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -84355,10 +84355,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1775</id>
-						<name>histogram_28_write_ln94</name>
+						<name>histogram_28_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84374,7 +84374,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -84414,10 +84414,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1776</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84433,7 +84433,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -84470,10 +84470,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1778</id>
-						<name>histogram_27_write_ln94</name>
+						<name>histogram_27_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84489,7 +84489,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -84529,10 +84529,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1779</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84548,7 +84548,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -84585,10 +84585,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1781</id>
-						<name>histogram_26_write_ln94</name>
+						<name>histogram_26_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84604,7 +84604,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -84644,10 +84644,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1782</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84663,7 +84663,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -84700,10 +84700,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1784</id>
-						<name>histogram_25_write_ln94</name>
+						<name>histogram_25_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84719,7 +84719,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -84759,10 +84759,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1785</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84778,7 +84778,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -84815,10 +84815,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1787</id>
-						<name>histogram_24_write_ln94</name>
+						<name>histogram_24_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84834,7 +84834,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -84874,10 +84874,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1788</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84893,7 +84893,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -84930,10 +84930,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1790</id>
-						<name>histogram_23_write_ln94</name>
+						<name>histogram_23_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -84949,7 +84949,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -84989,10 +84989,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1791</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85008,7 +85008,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -85045,10 +85045,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1793</id>
-						<name>histogram_22_write_ln94</name>
+						<name>histogram_22_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85064,7 +85064,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -85104,10 +85104,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1794</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85123,7 +85123,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -85160,10 +85160,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1796</id>
-						<name>histogram_21_write_ln94</name>
+						<name>histogram_21_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85179,7 +85179,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -85219,10 +85219,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1797</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85238,7 +85238,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -85275,10 +85275,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1799</id>
-						<name>histogram_20_write_ln94</name>
+						<name>histogram_20_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85294,7 +85294,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -85334,10 +85334,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1800</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85353,7 +85353,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -85390,10 +85390,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1802</id>
-						<name>histogram_19_write_ln94</name>
+						<name>histogram_19_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85409,7 +85409,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -85449,10 +85449,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1803</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85468,7 +85468,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -85505,10 +85505,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1805</id>
-						<name>histogram_18_write_ln94</name>
+						<name>histogram_18_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85524,7 +85524,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -85564,10 +85564,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1806</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85583,7 +85583,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -85620,10 +85620,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1808</id>
-						<name>histogram_17_write_ln94</name>
+						<name>histogram_17_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85639,7 +85639,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -85679,10 +85679,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1809</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85698,7 +85698,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -85735,10 +85735,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1811</id>
-						<name>histogram_16_write_ln94</name>
+						<name>histogram_16_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85754,7 +85754,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -85794,10 +85794,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1812</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85813,7 +85813,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -85850,10 +85850,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1814</id>
-						<name>histogram_15_write_ln94</name>
+						<name>histogram_15_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85869,7 +85869,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -85909,10 +85909,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1815</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85928,7 +85928,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -85965,10 +85965,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1817</id>
-						<name>histogram_14_write_ln94</name>
+						<name>histogram_14_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -85984,7 +85984,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -86024,10 +86024,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1818</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86043,7 +86043,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -86080,10 +86080,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1820</id>
-						<name>histogram_13_write_ln94</name>
+						<name>histogram_13_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86099,7 +86099,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -86139,10 +86139,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1821</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86158,7 +86158,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -86195,10 +86195,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1823</id>
-						<name>histogram_12_write_ln94</name>
+						<name>histogram_12_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86214,7 +86214,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -86254,10 +86254,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1824</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86273,7 +86273,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -86310,10 +86310,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1826</id>
-						<name>histogram_11_write_ln94</name>
+						<name>histogram_11_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86329,7 +86329,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -86369,10 +86369,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1827</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86388,7 +86388,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -86425,10 +86425,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1829</id>
-						<name>histogram_10_write_ln94</name>
+						<name>histogram_10_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86444,7 +86444,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -86484,10 +86484,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1830</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86503,7 +86503,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -86540,10 +86540,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1832</id>
-						<name>histogram_9_write_ln94</name>
+						<name>histogram_9_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86559,7 +86559,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -86599,10 +86599,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1833</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86618,7 +86618,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -86655,10 +86655,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1835</id>
-						<name>histogram_8_write_ln94</name>
+						<name>histogram_8_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86674,7 +86674,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -86714,10 +86714,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1836</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86733,7 +86733,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -86770,10 +86770,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1838</id>
-						<name>histogram_7_write_ln94</name>
+						<name>histogram_7_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86789,7 +86789,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -86829,10 +86829,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1839</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86848,7 +86848,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -86885,10 +86885,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1841</id>
-						<name>histogram_6_write_ln94</name>
+						<name>histogram_6_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86904,7 +86904,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -86944,10 +86944,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1842</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -86963,7 +86963,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -87000,10 +87000,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1844</id>
-						<name>histogram_5_write_ln94</name>
+						<name>histogram_5_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87019,7 +87019,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -87059,10 +87059,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1845</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87078,7 +87078,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -87115,10 +87115,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1847</id>
-						<name>histogram_4_write_ln94</name>
+						<name>histogram_4_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87134,7 +87134,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -87174,10 +87174,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1848</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87193,7 +87193,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -87230,10 +87230,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1850</id>
-						<name>histogram_3_write_ln94</name>
+						<name>histogram_3_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87249,7 +87249,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -87289,10 +87289,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1851</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87308,7 +87308,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -87345,10 +87345,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1853</id>
-						<name>histogram_2_write_ln94</name>
+						<name>histogram_2_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87364,7 +87364,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -87404,10 +87404,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1854</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87423,7 +87423,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -87460,10 +87460,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1856</id>
-						<name>histogram_1_write_ln94</name>
+						<name>histogram_1_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87479,7 +87479,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -87519,10 +87519,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1857</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87538,7 +87538,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -87575,10 +87575,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1859</id>
-						<name>histogram_write_ln94</name>
+						<name>histogram_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87594,7 +87594,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -87634,10 +87634,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1860</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87653,7 +87653,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -87690,10 +87690,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1862</id>
-						<name>histogram_255_write_ln94</name>
+						<name>histogram_255_write_ln97</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>97</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87709,7 +87709,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>94</second>
+										<second>97</second>
 									</item>
 								</second>
 							</item>
@@ -87749,10 +87749,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1863</id>
-						<name>br_ln108</name>
+						<name>br_ln112</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87768,7 +87768,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>108</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -87805,10 +87805,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1865</id>
-						<name>idx_1_write_ln102</name>
+						<name>idx_1_write_ln105</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>102</lineNumber>
+						<lineNumber>105</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87824,7 +87824,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>102</second>
+										<second>105</second>
 									</item>
 								</second>
 							</item>
@@ -87864,10 +87864,10 @@
 					<Obj>
 						<type>0</type>
 						<id>1866</id>
-						<name>br_ln102</name>
+						<name>br_ln105</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4</fileDirectory>
-						<lineNumber>102</lineNumber>
+						<lineNumber>105</lineNumber>
 						<contextFuncName>stage_rgb2eq</contextFuncName>
 						<contextNormFuncName>stage_rgb2eq</contextNormFuncName>
 						<inlineStackInfo>
@@ -87883,7 +87883,7 @@
 											<first>top.cpp</first>
 											<second>stage_rgb2eq</second>
 										</first>
-										<second>102</second>
+										<second>105</second>
 									</item>
 								</second>
 							</item>
@@ -110444,7 +110444,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>14</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>0</content>
@@ -110478,7 +110478,7 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>13</content>
+				<content>11</content>
 			</item>
 			<item class_id_reference="16" object_id="_2126">
 				<Value>
@@ -110540,7 +110540,7 @@
 					<bitwidth>5</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>11</content>
+				<content>13</content>
 			</item>
 			<item class_id_reference="16" object_id="_2128">
 				<Value>
@@ -110571,7 +110571,7 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>37</content>
+				<content>35</content>
 			</item>
 			<item class_id_reference="16" object_id="_2129">
 				<Value>
@@ -110695,7 +110695,7 @@
 					<bitwidth>5</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>3</content>
+				<content>2</content>
 			</item>
 			<item class_id_reference="16" object_id="_2133">
 				<Value>
@@ -119812,7 +119812,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1099</id>
-					<name>for.body24.split_ifconv.arrayidx35.exit_crit_edge</name>
+					<name>for.body24.split_ifconv.arrayidx36.exit_crit_edge</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -119844,7 +119844,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1102</id>
-					<name>arrayidx35.case.253</name>
+					<name>arrayidx36.case.253</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -119876,7 +119876,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1105</id>
-					<name>arrayidx35.case.252</name>
+					<name>arrayidx36.case.252</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -119908,7 +119908,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1108</id>
-					<name>arrayidx35.case.251</name>
+					<name>arrayidx36.case.251</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -119940,7 +119940,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1111</id>
-					<name>arrayidx35.case.250</name>
+					<name>arrayidx36.case.250</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -119972,7 +119972,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1114</id>
-					<name>arrayidx35.case.249</name>
+					<name>arrayidx36.case.249</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120004,7 +120004,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1117</id>
-					<name>arrayidx35.case.248</name>
+					<name>arrayidx36.case.248</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120036,7 +120036,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1120</id>
-					<name>arrayidx35.case.247</name>
+					<name>arrayidx36.case.247</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120068,7 +120068,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1123</id>
-					<name>arrayidx35.case.246</name>
+					<name>arrayidx36.case.246</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120100,7 +120100,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1126</id>
-					<name>arrayidx35.case.245</name>
+					<name>arrayidx36.case.245</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120132,7 +120132,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1129</id>
-					<name>arrayidx35.case.244</name>
+					<name>arrayidx36.case.244</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120164,7 +120164,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1132</id>
-					<name>arrayidx35.case.243</name>
+					<name>arrayidx36.case.243</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120196,7 +120196,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1135</id>
-					<name>arrayidx35.case.242</name>
+					<name>arrayidx36.case.242</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120228,7 +120228,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1138</id>
-					<name>arrayidx35.case.241</name>
+					<name>arrayidx36.case.241</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120260,7 +120260,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1141</id>
-					<name>arrayidx35.case.240</name>
+					<name>arrayidx36.case.240</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120292,7 +120292,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1144</id>
-					<name>arrayidx35.case.239</name>
+					<name>arrayidx36.case.239</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120324,7 +120324,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1147</id>
-					<name>arrayidx35.case.238</name>
+					<name>arrayidx36.case.238</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120356,7 +120356,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1150</id>
-					<name>arrayidx35.case.237</name>
+					<name>arrayidx36.case.237</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120388,7 +120388,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1153</id>
-					<name>arrayidx35.case.236</name>
+					<name>arrayidx36.case.236</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120420,7 +120420,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1156</id>
-					<name>arrayidx35.case.235</name>
+					<name>arrayidx36.case.235</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120452,7 +120452,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1159</id>
-					<name>arrayidx35.case.234</name>
+					<name>arrayidx36.case.234</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120484,7 +120484,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1162</id>
-					<name>arrayidx35.case.233</name>
+					<name>arrayidx36.case.233</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120516,7 +120516,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1165</id>
-					<name>arrayidx35.case.232</name>
+					<name>arrayidx36.case.232</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120548,7 +120548,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1168</id>
-					<name>arrayidx35.case.231</name>
+					<name>arrayidx36.case.231</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120580,7 +120580,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1171</id>
-					<name>arrayidx35.case.230</name>
+					<name>arrayidx36.case.230</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120612,7 +120612,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1174</id>
-					<name>arrayidx35.case.229</name>
+					<name>arrayidx36.case.229</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120644,7 +120644,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1177</id>
-					<name>arrayidx35.case.228</name>
+					<name>arrayidx36.case.228</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120676,7 +120676,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1180</id>
-					<name>arrayidx35.case.227</name>
+					<name>arrayidx36.case.227</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120708,7 +120708,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1183</id>
-					<name>arrayidx35.case.226</name>
+					<name>arrayidx36.case.226</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120740,7 +120740,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1186</id>
-					<name>arrayidx35.case.225</name>
+					<name>arrayidx36.case.225</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120772,7 +120772,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1189</id>
-					<name>arrayidx35.case.224</name>
+					<name>arrayidx36.case.224</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120804,7 +120804,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1192</id>
-					<name>arrayidx35.case.223</name>
+					<name>arrayidx36.case.223</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120836,7 +120836,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1195</id>
-					<name>arrayidx35.case.222</name>
+					<name>arrayidx36.case.222</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120868,7 +120868,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1198</id>
-					<name>arrayidx35.case.221</name>
+					<name>arrayidx36.case.221</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120900,7 +120900,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1201</id>
-					<name>arrayidx35.case.220</name>
+					<name>arrayidx36.case.220</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120932,7 +120932,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1204</id>
-					<name>arrayidx35.case.219</name>
+					<name>arrayidx36.case.219</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120964,7 +120964,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1207</id>
-					<name>arrayidx35.case.218</name>
+					<name>arrayidx36.case.218</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -120996,7 +120996,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1210</id>
-					<name>arrayidx35.case.217</name>
+					<name>arrayidx36.case.217</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121028,7 +121028,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1213</id>
-					<name>arrayidx35.case.216</name>
+					<name>arrayidx36.case.216</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121060,7 +121060,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1216</id>
-					<name>arrayidx35.case.215</name>
+					<name>arrayidx36.case.215</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121092,7 +121092,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1219</id>
-					<name>arrayidx35.case.214</name>
+					<name>arrayidx36.case.214</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121124,7 +121124,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1222</id>
-					<name>arrayidx35.case.213</name>
+					<name>arrayidx36.case.213</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121156,7 +121156,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1225</id>
-					<name>arrayidx35.case.212</name>
+					<name>arrayidx36.case.212</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121188,7 +121188,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1228</id>
-					<name>arrayidx35.case.211</name>
+					<name>arrayidx36.case.211</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121220,7 +121220,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1231</id>
-					<name>arrayidx35.case.210</name>
+					<name>arrayidx36.case.210</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121252,7 +121252,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1234</id>
-					<name>arrayidx35.case.209</name>
+					<name>arrayidx36.case.209</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121284,7 +121284,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1237</id>
-					<name>arrayidx35.case.208</name>
+					<name>arrayidx36.case.208</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121316,7 +121316,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1240</id>
-					<name>arrayidx35.case.207</name>
+					<name>arrayidx36.case.207</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121348,7 +121348,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1243</id>
-					<name>arrayidx35.case.206</name>
+					<name>arrayidx36.case.206</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121380,7 +121380,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1246</id>
-					<name>arrayidx35.case.205</name>
+					<name>arrayidx36.case.205</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121412,7 +121412,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1249</id>
-					<name>arrayidx35.case.204</name>
+					<name>arrayidx36.case.204</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121444,7 +121444,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1252</id>
-					<name>arrayidx35.case.203</name>
+					<name>arrayidx36.case.203</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121476,7 +121476,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1255</id>
-					<name>arrayidx35.case.202</name>
+					<name>arrayidx36.case.202</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121508,7 +121508,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1258</id>
-					<name>arrayidx35.case.201</name>
+					<name>arrayidx36.case.201</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121540,7 +121540,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1261</id>
-					<name>arrayidx35.case.200</name>
+					<name>arrayidx36.case.200</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121572,7 +121572,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1264</id>
-					<name>arrayidx35.case.199</name>
+					<name>arrayidx36.case.199</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121604,7 +121604,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1267</id>
-					<name>arrayidx35.case.198</name>
+					<name>arrayidx36.case.198</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121636,7 +121636,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1270</id>
-					<name>arrayidx35.case.197</name>
+					<name>arrayidx36.case.197</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121668,7 +121668,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1273</id>
-					<name>arrayidx35.case.196</name>
+					<name>arrayidx36.case.196</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121700,7 +121700,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1276</id>
-					<name>arrayidx35.case.195</name>
+					<name>arrayidx36.case.195</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121732,7 +121732,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1279</id>
-					<name>arrayidx35.case.194</name>
+					<name>arrayidx36.case.194</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121764,7 +121764,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1282</id>
-					<name>arrayidx35.case.193</name>
+					<name>arrayidx36.case.193</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121796,7 +121796,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1285</id>
-					<name>arrayidx35.case.192</name>
+					<name>arrayidx36.case.192</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121828,7 +121828,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1288</id>
-					<name>arrayidx35.case.191</name>
+					<name>arrayidx36.case.191</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121860,7 +121860,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1291</id>
-					<name>arrayidx35.case.190</name>
+					<name>arrayidx36.case.190</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121892,7 +121892,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1294</id>
-					<name>arrayidx35.case.189</name>
+					<name>arrayidx36.case.189</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121924,7 +121924,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1297</id>
-					<name>arrayidx35.case.188</name>
+					<name>arrayidx36.case.188</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121956,7 +121956,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1300</id>
-					<name>arrayidx35.case.187</name>
+					<name>arrayidx36.case.187</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -121988,7 +121988,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1303</id>
-					<name>arrayidx35.case.186</name>
+					<name>arrayidx36.case.186</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122020,7 +122020,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1306</id>
-					<name>arrayidx35.case.185</name>
+					<name>arrayidx36.case.185</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122052,7 +122052,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1309</id>
-					<name>arrayidx35.case.184</name>
+					<name>arrayidx36.case.184</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122084,7 +122084,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1312</id>
-					<name>arrayidx35.case.183</name>
+					<name>arrayidx36.case.183</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122116,7 +122116,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1315</id>
-					<name>arrayidx35.case.182</name>
+					<name>arrayidx36.case.182</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122148,7 +122148,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1318</id>
-					<name>arrayidx35.case.181</name>
+					<name>arrayidx36.case.181</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122180,7 +122180,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1321</id>
-					<name>arrayidx35.case.180</name>
+					<name>arrayidx36.case.180</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122212,7 +122212,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1324</id>
-					<name>arrayidx35.case.179</name>
+					<name>arrayidx36.case.179</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122244,7 +122244,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1327</id>
-					<name>arrayidx35.case.178</name>
+					<name>arrayidx36.case.178</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122276,7 +122276,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1330</id>
-					<name>arrayidx35.case.177</name>
+					<name>arrayidx36.case.177</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122308,7 +122308,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1333</id>
-					<name>arrayidx35.case.176</name>
+					<name>arrayidx36.case.176</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122340,7 +122340,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1336</id>
-					<name>arrayidx35.case.175</name>
+					<name>arrayidx36.case.175</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122372,7 +122372,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1339</id>
-					<name>arrayidx35.case.174</name>
+					<name>arrayidx36.case.174</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122404,7 +122404,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1342</id>
-					<name>arrayidx35.case.173</name>
+					<name>arrayidx36.case.173</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122436,7 +122436,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1345</id>
-					<name>arrayidx35.case.172</name>
+					<name>arrayidx36.case.172</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122468,7 +122468,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1348</id>
-					<name>arrayidx35.case.171</name>
+					<name>arrayidx36.case.171</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122500,7 +122500,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1351</id>
-					<name>arrayidx35.case.170</name>
+					<name>arrayidx36.case.170</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122532,7 +122532,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1354</id>
-					<name>arrayidx35.case.169</name>
+					<name>arrayidx36.case.169</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122564,7 +122564,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1357</id>
-					<name>arrayidx35.case.168</name>
+					<name>arrayidx36.case.168</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122596,7 +122596,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1360</id>
-					<name>arrayidx35.case.167</name>
+					<name>arrayidx36.case.167</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122628,7 +122628,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1363</id>
-					<name>arrayidx35.case.166</name>
+					<name>arrayidx36.case.166</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122660,7 +122660,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1366</id>
-					<name>arrayidx35.case.165</name>
+					<name>arrayidx36.case.165</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122692,7 +122692,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1369</id>
-					<name>arrayidx35.case.164</name>
+					<name>arrayidx36.case.164</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122724,7 +122724,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1372</id>
-					<name>arrayidx35.case.163</name>
+					<name>arrayidx36.case.163</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122756,7 +122756,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1375</id>
-					<name>arrayidx35.case.162</name>
+					<name>arrayidx36.case.162</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122788,7 +122788,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1378</id>
-					<name>arrayidx35.case.161</name>
+					<name>arrayidx36.case.161</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122820,7 +122820,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1381</id>
-					<name>arrayidx35.case.160</name>
+					<name>arrayidx36.case.160</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122852,7 +122852,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1384</id>
-					<name>arrayidx35.case.159</name>
+					<name>arrayidx36.case.159</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122884,7 +122884,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1387</id>
-					<name>arrayidx35.case.158</name>
+					<name>arrayidx36.case.158</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122916,7 +122916,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1390</id>
-					<name>arrayidx35.case.157</name>
+					<name>arrayidx36.case.157</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122948,7 +122948,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1393</id>
-					<name>arrayidx35.case.156</name>
+					<name>arrayidx36.case.156</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -122980,7 +122980,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1396</id>
-					<name>arrayidx35.case.155</name>
+					<name>arrayidx36.case.155</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123012,7 +123012,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1399</id>
-					<name>arrayidx35.case.154</name>
+					<name>arrayidx36.case.154</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123044,7 +123044,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1402</id>
-					<name>arrayidx35.case.153</name>
+					<name>arrayidx36.case.153</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123076,7 +123076,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1405</id>
-					<name>arrayidx35.case.152</name>
+					<name>arrayidx36.case.152</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123108,7 +123108,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1408</id>
-					<name>arrayidx35.case.151</name>
+					<name>arrayidx36.case.151</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123140,7 +123140,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1411</id>
-					<name>arrayidx35.case.150</name>
+					<name>arrayidx36.case.150</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123172,7 +123172,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1414</id>
-					<name>arrayidx35.case.149</name>
+					<name>arrayidx36.case.149</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123204,7 +123204,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1417</id>
-					<name>arrayidx35.case.148</name>
+					<name>arrayidx36.case.148</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123236,7 +123236,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1420</id>
-					<name>arrayidx35.case.147</name>
+					<name>arrayidx36.case.147</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123268,7 +123268,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1423</id>
-					<name>arrayidx35.case.146</name>
+					<name>arrayidx36.case.146</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123300,7 +123300,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1426</id>
-					<name>arrayidx35.case.145</name>
+					<name>arrayidx36.case.145</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123332,7 +123332,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1429</id>
-					<name>arrayidx35.case.144</name>
+					<name>arrayidx36.case.144</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123364,7 +123364,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1432</id>
-					<name>arrayidx35.case.143</name>
+					<name>arrayidx36.case.143</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123396,7 +123396,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1435</id>
-					<name>arrayidx35.case.142</name>
+					<name>arrayidx36.case.142</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123428,7 +123428,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1438</id>
-					<name>arrayidx35.case.141</name>
+					<name>arrayidx36.case.141</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123460,7 +123460,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1441</id>
-					<name>arrayidx35.case.140</name>
+					<name>arrayidx36.case.140</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123492,7 +123492,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1444</id>
-					<name>arrayidx35.case.139</name>
+					<name>arrayidx36.case.139</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123524,7 +123524,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1447</id>
-					<name>arrayidx35.case.138</name>
+					<name>arrayidx36.case.138</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123556,7 +123556,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1450</id>
-					<name>arrayidx35.case.137</name>
+					<name>arrayidx36.case.137</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123588,7 +123588,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1453</id>
-					<name>arrayidx35.case.136</name>
+					<name>arrayidx36.case.136</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123620,7 +123620,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1456</id>
-					<name>arrayidx35.case.135</name>
+					<name>arrayidx36.case.135</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123652,7 +123652,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1459</id>
-					<name>arrayidx35.case.134</name>
+					<name>arrayidx36.case.134</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123684,7 +123684,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1462</id>
-					<name>arrayidx35.case.133</name>
+					<name>arrayidx36.case.133</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123716,7 +123716,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1465</id>
-					<name>arrayidx35.case.132</name>
+					<name>arrayidx36.case.132</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123748,7 +123748,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1468</id>
-					<name>arrayidx35.case.131</name>
+					<name>arrayidx36.case.131</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123780,7 +123780,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1471</id>
-					<name>arrayidx35.case.130</name>
+					<name>arrayidx36.case.130</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123812,7 +123812,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1474</id>
-					<name>arrayidx35.case.129</name>
+					<name>arrayidx36.case.129</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123844,7 +123844,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1477</id>
-					<name>arrayidx35.case.128</name>
+					<name>arrayidx36.case.128</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123876,7 +123876,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1480</id>
-					<name>arrayidx35.case.127</name>
+					<name>arrayidx36.case.127</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123908,7 +123908,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1483</id>
-					<name>arrayidx35.case.126</name>
+					<name>arrayidx36.case.126</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123940,7 +123940,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1486</id>
-					<name>arrayidx35.case.125</name>
+					<name>arrayidx36.case.125</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -123972,7 +123972,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1489</id>
-					<name>arrayidx35.case.124</name>
+					<name>arrayidx36.case.124</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124004,7 +124004,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1492</id>
-					<name>arrayidx35.case.123</name>
+					<name>arrayidx36.case.123</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124036,7 +124036,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1495</id>
-					<name>arrayidx35.case.122</name>
+					<name>arrayidx36.case.122</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124068,7 +124068,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1498</id>
-					<name>arrayidx35.case.121</name>
+					<name>arrayidx36.case.121</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124100,7 +124100,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1501</id>
-					<name>arrayidx35.case.120</name>
+					<name>arrayidx36.case.120</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124132,7 +124132,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1504</id>
-					<name>arrayidx35.case.119</name>
+					<name>arrayidx36.case.119</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124164,7 +124164,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1507</id>
-					<name>arrayidx35.case.118</name>
+					<name>arrayidx36.case.118</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124196,7 +124196,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1510</id>
-					<name>arrayidx35.case.117</name>
+					<name>arrayidx36.case.117</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124228,7 +124228,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1513</id>
-					<name>arrayidx35.case.116</name>
+					<name>arrayidx36.case.116</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124260,7 +124260,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1516</id>
-					<name>arrayidx35.case.115</name>
+					<name>arrayidx36.case.115</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124292,7 +124292,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1519</id>
-					<name>arrayidx35.case.114</name>
+					<name>arrayidx36.case.114</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124324,7 +124324,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1522</id>
-					<name>arrayidx35.case.113</name>
+					<name>arrayidx36.case.113</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124356,7 +124356,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1525</id>
-					<name>arrayidx35.case.112</name>
+					<name>arrayidx36.case.112</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124388,7 +124388,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1528</id>
-					<name>arrayidx35.case.111</name>
+					<name>arrayidx36.case.111</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124420,7 +124420,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1531</id>
-					<name>arrayidx35.case.110</name>
+					<name>arrayidx36.case.110</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124452,7 +124452,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1534</id>
-					<name>arrayidx35.case.109</name>
+					<name>arrayidx36.case.109</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124484,7 +124484,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1537</id>
-					<name>arrayidx35.case.108</name>
+					<name>arrayidx36.case.108</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124516,7 +124516,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1540</id>
-					<name>arrayidx35.case.107</name>
+					<name>arrayidx36.case.107</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124548,7 +124548,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1543</id>
-					<name>arrayidx35.case.106</name>
+					<name>arrayidx36.case.106</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124580,7 +124580,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1546</id>
-					<name>arrayidx35.case.105</name>
+					<name>arrayidx36.case.105</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124612,7 +124612,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1549</id>
-					<name>arrayidx35.case.104</name>
+					<name>arrayidx36.case.104</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124644,7 +124644,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1552</id>
-					<name>arrayidx35.case.103</name>
+					<name>arrayidx36.case.103</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124676,7 +124676,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1555</id>
-					<name>arrayidx35.case.102</name>
+					<name>arrayidx36.case.102</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124708,7 +124708,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1558</id>
-					<name>arrayidx35.case.101</name>
+					<name>arrayidx36.case.101</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124740,7 +124740,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1561</id>
-					<name>arrayidx35.case.100</name>
+					<name>arrayidx36.case.100</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124772,7 +124772,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1564</id>
-					<name>arrayidx35.case.99</name>
+					<name>arrayidx36.case.99</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124804,7 +124804,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1567</id>
-					<name>arrayidx35.case.98</name>
+					<name>arrayidx36.case.98</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124836,7 +124836,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1570</id>
-					<name>arrayidx35.case.97</name>
+					<name>arrayidx36.case.97</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124868,7 +124868,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1573</id>
-					<name>arrayidx35.case.96</name>
+					<name>arrayidx36.case.96</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124900,7 +124900,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1576</id>
-					<name>arrayidx35.case.95</name>
+					<name>arrayidx36.case.95</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124932,7 +124932,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1579</id>
-					<name>arrayidx35.case.94</name>
+					<name>arrayidx36.case.94</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124964,7 +124964,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1582</id>
-					<name>arrayidx35.case.93</name>
+					<name>arrayidx36.case.93</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -124996,7 +124996,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1585</id>
-					<name>arrayidx35.case.92</name>
+					<name>arrayidx36.case.92</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125028,7 +125028,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1588</id>
-					<name>arrayidx35.case.91</name>
+					<name>arrayidx36.case.91</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125060,7 +125060,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1591</id>
-					<name>arrayidx35.case.90</name>
+					<name>arrayidx36.case.90</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125092,7 +125092,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1594</id>
-					<name>arrayidx35.case.89</name>
+					<name>arrayidx36.case.89</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125124,7 +125124,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1597</id>
-					<name>arrayidx35.case.88</name>
+					<name>arrayidx36.case.88</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125156,7 +125156,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1600</id>
-					<name>arrayidx35.case.87</name>
+					<name>arrayidx36.case.87</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125188,7 +125188,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1603</id>
-					<name>arrayidx35.case.86</name>
+					<name>arrayidx36.case.86</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125220,7 +125220,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1606</id>
-					<name>arrayidx35.case.85</name>
+					<name>arrayidx36.case.85</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125252,7 +125252,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1609</id>
-					<name>arrayidx35.case.84</name>
+					<name>arrayidx36.case.84</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125284,7 +125284,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1612</id>
-					<name>arrayidx35.case.83</name>
+					<name>arrayidx36.case.83</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125316,7 +125316,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1615</id>
-					<name>arrayidx35.case.82</name>
+					<name>arrayidx36.case.82</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125348,7 +125348,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1618</id>
-					<name>arrayidx35.case.81</name>
+					<name>arrayidx36.case.81</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125380,7 +125380,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1621</id>
-					<name>arrayidx35.case.80</name>
+					<name>arrayidx36.case.80</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125412,7 +125412,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1624</id>
-					<name>arrayidx35.case.79</name>
+					<name>arrayidx36.case.79</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125444,7 +125444,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1627</id>
-					<name>arrayidx35.case.78</name>
+					<name>arrayidx36.case.78</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125476,7 +125476,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1630</id>
-					<name>arrayidx35.case.77</name>
+					<name>arrayidx36.case.77</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125508,7 +125508,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1633</id>
-					<name>arrayidx35.case.76</name>
+					<name>arrayidx36.case.76</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125540,7 +125540,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1636</id>
-					<name>arrayidx35.case.75</name>
+					<name>arrayidx36.case.75</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125572,7 +125572,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1639</id>
-					<name>arrayidx35.case.74</name>
+					<name>arrayidx36.case.74</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125604,7 +125604,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1642</id>
-					<name>arrayidx35.case.73</name>
+					<name>arrayidx36.case.73</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125636,7 +125636,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1645</id>
-					<name>arrayidx35.case.72</name>
+					<name>arrayidx36.case.72</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125668,7 +125668,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1648</id>
-					<name>arrayidx35.case.71</name>
+					<name>arrayidx36.case.71</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125700,7 +125700,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1651</id>
-					<name>arrayidx35.case.70</name>
+					<name>arrayidx36.case.70</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125732,7 +125732,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1654</id>
-					<name>arrayidx35.case.69</name>
+					<name>arrayidx36.case.69</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125764,7 +125764,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1657</id>
-					<name>arrayidx35.case.68</name>
+					<name>arrayidx36.case.68</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125796,7 +125796,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1660</id>
-					<name>arrayidx35.case.67</name>
+					<name>arrayidx36.case.67</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125828,7 +125828,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1663</id>
-					<name>arrayidx35.case.66</name>
+					<name>arrayidx36.case.66</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125860,7 +125860,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1666</id>
-					<name>arrayidx35.case.65</name>
+					<name>arrayidx36.case.65</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125892,7 +125892,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1669</id>
-					<name>arrayidx35.case.64</name>
+					<name>arrayidx36.case.64</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125924,7 +125924,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1672</id>
-					<name>arrayidx35.case.63</name>
+					<name>arrayidx36.case.63</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125956,7 +125956,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1675</id>
-					<name>arrayidx35.case.62</name>
+					<name>arrayidx36.case.62</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -125988,7 +125988,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1678</id>
-					<name>arrayidx35.case.61</name>
+					<name>arrayidx36.case.61</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126020,7 +126020,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1681</id>
-					<name>arrayidx35.case.60</name>
+					<name>arrayidx36.case.60</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126052,7 +126052,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1684</id>
-					<name>arrayidx35.case.59</name>
+					<name>arrayidx36.case.59</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126084,7 +126084,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1687</id>
-					<name>arrayidx35.case.58</name>
+					<name>arrayidx36.case.58</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126116,7 +126116,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1690</id>
-					<name>arrayidx35.case.57</name>
+					<name>arrayidx36.case.57</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126148,7 +126148,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1693</id>
-					<name>arrayidx35.case.56</name>
+					<name>arrayidx36.case.56</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126180,7 +126180,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1696</id>
-					<name>arrayidx35.case.55</name>
+					<name>arrayidx36.case.55</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126212,7 +126212,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1699</id>
-					<name>arrayidx35.case.54</name>
+					<name>arrayidx36.case.54</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126244,7 +126244,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1702</id>
-					<name>arrayidx35.case.53</name>
+					<name>arrayidx36.case.53</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126276,7 +126276,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1705</id>
-					<name>arrayidx35.case.52</name>
+					<name>arrayidx36.case.52</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126308,7 +126308,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1708</id>
-					<name>arrayidx35.case.51</name>
+					<name>arrayidx36.case.51</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126340,7 +126340,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1711</id>
-					<name>arrayidx35.case.50</name>
+					<name>arrayidx36.case.50</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126372,7 +126372,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1714</id>
-					<name>arrayidx35.case.49</name>
+					<name>arrayidx36.case.49</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126404,7 +126404,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1717</id>
-					<name>arrayidx35.case.48</name>
+					<name>arrayidx36.case.48</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126436,7 +126436,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1720</id>
-					<name>arrayidx35.case.47</name>
+					<name>arrayidx36.case.47</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126468,7 +126468,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1723</id>
-					<name>arrayidx35.case.46</name>
+					<name>arrayidx36.case.46</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126500,7 +126500,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1726</id>
-					<name>arrayidx35.case.45</name>
+					<name>arrayidx36.case.45</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126532,7 +126532,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1729</id>
-					<name>arrayidx35.case.44</name>
+					<name>arrayidx36.case.44</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126564,7 +126564,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1732</id>
-					<name>arrayidx35.case.43</name>
+					<name>arrayidx36.case.43</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126596,7 +126596,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1735</id>
-					<name>arrayidx35.case.42</name>
+					<name>arrayidx36.case.42</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126628,7 +126628,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1738</id>
-					<name>arrayidx35.case.41</name>
+					<name>arrayidx36.case.41</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126660,7 +126660,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1741</id>
-					<name>arrayidx35.case.40</name>
+					<name>arrayidx36.case.40</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126692,7 +126692,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1744</id>
-					<name>arrayidx35.case.39</name>
+					<name>arrayidx36.case.39</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126724,7 +126724,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1747</id>
-					<name>arrayidx35.case.38</name>
+					<name>arrayidx36.case.38</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126756,7 +126756,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1750</id>
-					<name>arrayidx35.case.37</name>
+					<name>arrayidx36.case.37</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126788,7 +126788,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1753</id>
-					<name>arrayidx35.case.36</name>
+					<name>arrayidx36.case.36</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126820,7 +126820,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1756</id>
-					<name>arrayidx35.case.35</name>
+					<name>arrayidx36.case.35</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126852,7 +126852,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1759</id>
-					<name>arrayidx35.case.34</name>
+					<name>arrayidx36.case.34</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126884,7 +126884,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1762</id>
-					<name>arrayidx35.case.33</name>
+					<name>arrayidx36.case.33</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126916,7 +126916,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1765</id>
-					<name>arrayidx35.case.32</name>
+					<name>arrayidx36.case.32</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126948,7 +126948,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1768</id>
-					<name>arrayidx35.case.31</name>
+					<name>arrayidx36.case.31</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -126980,7 +126980,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1771</id>
-					<name>arrayidx35.case.30</name>
+					<name>arrayidx36.case.30</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127012,7 +127012,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1774</id>
-					<name>arrayidx35.case.29</name>
+					<name>arrayidx36.case.29</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127044,7 +127044,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1777</id>
-					<name>arrayidx35.case.28</name>
+					<name>arrayidx36.case.28</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127076,7 +127076,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1780</id>
-					<name>arrayidx35.case.27</name>
+					<name>arrayidx36.case.27</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127108,7 +127108,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1783</id>
-					<name>arrayidx35.case.26</name>
+					<name>arrayidx36.case.26</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127140,7 +127140,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1786</id>
-					<name>arrayidx35.case.25</name>
+					<name>arrayidx36.case.25</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127172,7 +127172,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1789</id>
-					<name>arrayidx35.case.24</name>
+					<name>arrayidx36.case.24</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127204,7 +127204,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1792</id>
-					<name>arrayidx35.case.23</name>
+					<name>arrayidx36.case.23</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127236,7 +127236,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1795</id>
-					<name>arrayidx35.case.22</name>
+					<name>arrayidx36.case.22</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127268,7 +127268,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1798</id>
-					<name>arrayidx35.case.21</name>
+					<name>arrayidx36.case.21</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127300,7 +127300,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1801</id>
-					<name>arrayidx35.case.20</name>
+					<name>arrayidx36.case.20</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127332,7 +127332,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1804</id>
-					<name>arrayidx35.case.19</name>
+					<name>arrayidx36.case.19</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127364,7 +127364,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1807</id>
-					<name>arrayidx35.case.18</name>
+					<name>arrayidx36.case.18</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127396,7 +127396,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1810</id>
-					<name>arrayidx35.case.17</name>
+					<name>arrayidx36.case.17</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127428,7 +127428,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1813</id>
-					<name>arrayidx35.case.16</name>
+					<name>arrayidx36.case.16</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127460,7 +127460,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1816</id>
-					<name>arrayidx35.case.15</name>
+					<name>arrayidx36.case.15</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127492,7 +127492,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1819</id>
-					<name>arrayidx35.case.14</name>
+					<name>arrayidx36.case.14</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127524,7 +127524,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1822</id>
-					<name>arrayidx35.case.13</name>
+					<name>arrayidx36.case.13</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127556,7 +127556,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1825</id>
-					<name>arrayidx35.case.12</name>
+					<name>arrayidx36.case.12</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127588,7 +127588,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1828</id>
-					<name>arrayidx35.case.11</name>
+					<name>arrayidx36.case.11</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127620,7 +127620,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1831</id>
-					<name>arrayidx35.case.10</name>
+					<name>arrayidx36.case.10</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127652,7 +127652,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1834</id>
-					<name>arrayidx35.case.9</name>
+					<name>arrayidx36.case.9</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127684,7 +127684,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1837</id>
-					<name>arrayidx35.case.8</name>
+					<name>arrayidx36.case.8</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127716,7 +127716,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1840</id>
-					<name>arrayidx35.case.7</name>
+					<name>arrayidx36.case.7</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127748,7 +127748,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1843</id>
-					<name>arrayidx35.case.6</name>
+					<name>arrayidx36.case.6</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127780,7 +127780,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1846</id>
-					<name>arrayidx35.case.5</name>
+					<name>arrayidx36.case.5</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127812,7 +127812,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1849</id>
-					<name>arrayidx35.case.4</name>
+					<name>arrayidx36.case.4</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127844,7 +127844,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1852</id>
-					<name>arrayidx35.case.3</name>
+					<name>arrayidx36.case.3</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127876,7 +127876,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1855</id>
-					<name>arrayidx35.case.2</name>
+					<name>arrayidx36.case.2</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127908,7 +127908,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1858</id>
-					<name>arrayidx35.case.1</name>
+					<name>arrayidx36.case.1</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127940,7 +127940,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1861</id>
-					<name>arrayidx35.case.0</name>
+					<name>arrayidx36.case.0</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -127972,7 +127972,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1864</id>
-					<name>arrayidx35.case.255</name>
+					<name>arrayidx36.case.255</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -128004,7 +128004,7 @@
 				<Obj>
 					<type>3</type>
 					<id>1867</id>
-					<name>arrayidx35.exit</name>
+					<name>arrayidx36.exit</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -128036,7 +128036,7 @@
 				<Obj>
 					<type>3</type>
 					<id>2381</id>
-					<name>for.inc54.preheader.exitStub</name>
+					<name>for.inc55.preheader.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>

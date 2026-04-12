@@ -15,7 +15,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1517 \
+    id 1496 \
     name gaussian_stream \
     type fifo \
     dir I \
@@ -23,14 +23,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_gaussian_stream \
     op interface \
-    ports { gaussian_stream_dout { I 14 vector } gaussian_stream_empty_n { I 1 bit } gaussian_stream_read { O 1 bit } gaussian_stream_num_data_valid { I 9 vector } gaussian_stream_fifo_cap { I 9 vector } } \
+    ports { gaussian_stream_dout { I 12 vector } gaussian_stream_empty_n { I 1 bit } gaussian_stream_read { O 1 bit } gaussian_stream_num_data_valid { I 9 vector } gaussian_stream_fifo_cap { I 9 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1518 \
+    id 1497 \
     name bilateral_stream \
     type fifo \
     dir O \
@@ -38,7 +38,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_bilateral_stream \
     op interface \
-    ports { bilateral_stream_din { O 14 vector } bilateral_stream_full_n { I 1 bit } bilateral_stream_write { O 1 bit } bilateral_stream_num_data_valid { I 32 vector } bilateral_stream_fifo_cap { I 32 vector } } \
+    ports { bilateral_stream_din { O 12 vector } bilateral_stream_full_n { I 1 bit } bilateral_stream_write { O 1 bit } bilateral_stream_num_data_valid { I 32 vector } bilateral_stream_fifo_cap { I 32 vector } } \
 } "
 }
 

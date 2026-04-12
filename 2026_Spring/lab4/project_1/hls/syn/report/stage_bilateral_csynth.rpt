@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'stage_bilateral'
 ================================================================
-* Date:           Fri Apr 10 20:50:54 2026
+* Date:           Sat Apr 11 20:28:38 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
     |   min   |   max   |    min    |    max    |  min |  max |   Type  |
     +---------+---------+-----------+-----------+------+------+---------+
-    |     8351|     8351|  33.404 us|  33.404 us|  8351|  8351|       no|
+    |     8348|     8348|  33.392 us|  33.392 us|  8348|  8348|       no|
     +---------+---------+-----------+-----------+------+------+---------+
 
     + Detail: 
@@ -39,7 +39,7 @@
         |                              Instance                             |                          Module                         |   min   |   max   |    min    |    max    |  min |  max |                      Type                      |
         +-------------------------------------------------------------------+---------------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
         |grp_stage_bilateral_Pipeline_READ_IN_fu_66                         |stage_bilateral_Pipeline_READ_IN                         |     4107|     4107|  16.428 us|  16.428 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90  |stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3  |     4241|     4241|  16.964 us|  16.964 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90  |stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3  |     4238|     4238|  16.952 us|  16.952 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
         +-------------------------------------------------------------------+---------------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
 
         * Loop: 
@@ -57,16 +57,16 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       0|      2|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        -|  158|   31509|  34189|    -|
+|Instance         |        -|  158|   30653|  33305|    -|
 |Memory           |        9|    -|       0|      0|    -|
 |Multiplexer      |        -|    -|       0|    287|    -|
 |Register         |        -|    -|       8|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        9|  158|   31517|  34478|    0|
+|Total            |        9|  158|   30661|  33594|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      432|  360|  141120|  70560|    0|
 +-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        2|   43|      22|     48|    0|
+|Utilization (%)  |        2|   43|      21|     47|    0|
 +-----------------+---------+-----+--------+-------+-----+
 
 + Detail: 
@@ -74,10 +74,10 @@
     +-------------------------------------------------------------------+---------------------------------------------------------+---------+-----+-------+-------+-----+
     |                              Instance                             |                          Module                         | BRAM_18K| DSP |   FF  |  LUT  | URAM|
     +-------------------------------------------------------------------+---------------------------------------------------------+---------+-----+-------+-------+-----+
-    |grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90  |stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3  |        0|  157|  31068|  33819|    0|
+    |grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90  |stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3  |        0|  157|  30212|  32935|    0|
     |grp_stage_bilateral_Pipeline_READ_IN_fu_66                         |stage_bilateral_Pipeline_READ_IN                         |        0|    1|    441|    370|    0|
     +-------------------------------------------------------------------+---------------------------------------------------------+---------+-----+-------+-------+-----+
-    |Total                                                              |                                                         |        0|  158|  31509|  34189|    0|
+    |Total                                                              |                                                         |        0|  158|  30653|  33305|    0|
     +-------------------------------------------------------------------+---------------------------------------------------------+---------+-----+-------+-------+-----+
 
     * DSP: 
@@ -87,17 +87,17 @@
     +-----------+---------------------------------------+---------+---+----+-----+------+-----+------+-------------+
     |   Memory  |                 Module                | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
     +-----------+---------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |grid_U     |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
-    |grid_25_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
-    |grid_26_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
-    |grid_27_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
-    |grid_28_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
-    |grid_29_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
-    |grid_30_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
-    |grid_31_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
-    |grid_32_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   14|     1|         6776|
+    |grid_U     |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   12|     1|         5808|
+    |grid_25_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   12|     1|         5808|
+    |grid_26_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   12|     1|         5808|
+    |grid_27_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   12|     1|         5808|
+    |grid_28_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   12|     1|         5808|
+    |grid_29_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   12|     1|         5808|
+    |grid_30_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   12|     1|         5808|
+    |grid_31_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   12|     1|         5808|
+    |grid_32_U  |stage_bilateral_grid_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|   484|   12|     1|         5808|
     +-----------+---------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |Total      |                                       |        9|  0|   0|    0|  4356|  126|     9|        60984|
+    |Total      |                                       |        9|  0|   0|    0|  4356|  108|     9|        52272|
     +-----------+---------------------------------------+---------+---+----+-----+------+-----+------+-------------+
 
     * FIFO: 
@@ -156,7 +156,7 @@
     +--------------------------------------------------------------------------------+---+----+-----+-----------+
     |ap_CS_fsm                                                                       |  4|   0|    4|          0|
     |ap_done_reg                                                                     |  1|   0|    1|          0|
-    |grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90_ap_start_reg  |  1|   0|    1|          0|
+    |grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90_ap_start_reg  |  1|   0|    1|          0|
     |grp_stage_bilateral_Pipeline_READ_IN_fu_66_ap_start_reg                         |  1|   0|    1|          0|
     |start_once_reg                                                                  |  1|   0|    1|          0|
     +--------------------------------------------------------------------------------+---+----+-----+-----------+
@@ -182,12 +182,12 @@
 |ap_ready                         |  out|    1|  ap_ctrl_hs|   stage_bilateral|  return value|
 |start_out                        |  out|    1|  ap_ctrl_hs|   stage_bilateral|  return value|
 |start_write                      |  out|    1|  ap_ctrl_hs|   stage_bilateral|  return value|
-|gaussian_stream_dout             |   in|   14|     ap_fifo|   gaussian_stream|       pointer|
+|gaussian_stream_dout             |   in|   12|     ap_fifo|   gaussian_stream|       pointer|
 |gaussian_stream_empty_n          |   in|    1|     ap_fifo|   gaussian_stream|       pointer|
 |gaussian_stream_read             |  out|    1|     ap_fifo|   gaussian_stream|       pointer|
 |gaussian_stream_num_data_valid   |   in|    9|     ap_fifo|   gaussian_stream|       pointer|
 |gaussian_stream_fifo_cap         |   in|    9|     ap_fifo|   gaussian_stream|       pointer|
-|bilateral_stream_din             |  out|   14|     ap_fifo|  bilateral_stream|       pointer|
+|bilateral_stream_din             |  out|   12|     ap_fifo|  bilateral_stream|       pointer|
 |bilateral_stream_full_n          |   in|    1|     ap_fifo|  bilateral_stream|       pointer|
 |bilateral_stream_write           |  out|    1|     ap_fifo|  bilateral_stream|       pointer|
 |bilateral_stream_num_data_valid  |   in|   32|     ap_fifo|  bilateral_stream|       pointer|

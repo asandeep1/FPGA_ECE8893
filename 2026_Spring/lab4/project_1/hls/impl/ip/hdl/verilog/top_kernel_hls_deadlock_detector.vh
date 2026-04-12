@@ -256,7 +256,7 @@ end
 
     assign proc_0_data_FIFO_blk[0] = 1'b0 | (~entry_proc_U0.out_r_c_blk_n);
     assign proc_0_data_PIPO_blk[0] = 1'b0;
-    assign proc_0_start_FIFO_blk[0] = 1'b0 | (~start_for_Loop_VITIS_LOOP_393_1_proc_U0_U.if_full_n & entry_proc_U0.ap_start & ~entry_proc_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~start_for_Loop_VITIS_LOOP_393_1_proc_U0_U.if_read);
+    assign proc_0_start_FIFO_blk[0] = 1'b0 | (~start_for_write_output_U0_U.if_full_n & entry_proc_U0.ap_start & ~entry_proc_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~start_for_write_output_U0_U.if_read);
     assign proc_0_TLF_FIFO_blk[0] = 1'b0;
     assign proc_0_input_sync_blk[0] = 1'b0;
     assign proc_0_output_sync_blk[0] = 1'b0;
@@ -363,7 +363,7 @@ end
     assign proc_2_input_sync_blk[0] = 1'b0;
     assign proc_2_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_2[0] = dl_detect_out ? proc_dep_vld_vec_2_reg[0] : (proc_2_data_FIFO_blk[0] | proc_2_data_PIPO_blk[0] | proc_2_start_FIFO_blk[0] | proc_2_TLF_FIFO_blk[0] | proc_2_input_sync_blk[0] | proc_2_output_sync_blk[0]);
-    assign proc_2_data_FIFO_blk[1] = 1'b0 | (~stage_gaussian_U0.grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1_fu_186.gaussian_stream_blk_n);
+    assign proc_2_data_FIFO_blk[1] = 1'b0 | (~stage_gaussian_U0.grp_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1_fu_186.gaussian_stream_blk_n);
     assign proc_2_data_PIPO_blk[1] = 1'b0;
     assign proc_2_start_FIFO_blk[1] = 1'b0 | (~start_for_stage_bilateral_U0_U.if_full_n & stage_gaussian_U0.ap_start & ~stage_gaussian_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~start_for_stage_bilateral_U0_U.if_read);
     assign proc_2_TLF_FIFO_blk[1] = 1'b0;
@@ -414,7 +414,7 @@ end
     assign proc_3_input_sync_blk[0] = 1'b0;
     assign proc_3_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_3[0] = dl_detect_out ? proc_dep_vld_vec_3_reg[0] : (proc_3_data_FIFO_blk[0] | proc_3_data_PIPO_blk[0] | proc_3_start_FIFO_blk[0] | proc_3_TLF_FIFO_blk[0] | proc_3_input_sync_blk[0] | proc_3_output_sync_blk[0]);
-    assign proc_3_data_FIFO_blk[1] = 1'b0 | (~stage_bilateral_U0.grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3_fu_90.bilateral_stream_blk_n);
+    assign proc_3_data_FIFO_blk[1] = 1'b0 | (~stage_bilateral_U0.grp_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3_fu_90.bilateral_stream_blk_n);
     assign proc_3_data_PIPO_blk[1] = 1'b0;
     assign proc_3_start_FIFO_blk[1] = 1'b0 | (~start_for_stage_morphology_U0_U.if_full_n & stage_bilateral_U0.ap_start & ~stage_bilateral_U0.real_start & (trans_in_cnt_2 == trans_out_cnt_2) & ~start_for_stage_morphology_U0_U.if_read);
     assign proc_3_TLF_FIFO_blk[1] = 1'b0;
@@ -465,7 +465,7 @@ end
     assign proc_4_input_sync_blk[0] = 1'b0;
     assign proc_4_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_4[0] = dl_detect_out ? proc_dep_vld_vec_4_reg[0] : (proc_4_data_FIFO_blk[0] | proc_4_data_PIPO_blk[0] | proc_4_start_FIFO_blk[0] | proc_4_TLF_FIFO_blk[0] | proc_4_input_sync_blk[0] | proc_4_output_sync_blk[0]);
-    assign proc_4_data_FIFO_blk[1] = 1'b0 | (~stage_morphology_U0.grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150.morphology_stream_blk_n);
+    assign proc_4_data_FIFO_blk[1] = 1'b0 | (~stage_morphology_U0.grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150.morphology_stream_blk_n);
     assign proc_4_data_PIPO_blk[1] = 1'b0;
     assign proc_4_start_FIFO_blk[1] = 1'b0;
     assign proc_4_TLF_FIFO_blk[1] = 1'b0;
@@ -493,7 +493,7 @@ end
     assign dep_chan_data_4_5 = out_chan_dep_data_4;
     assign token_4_5 = token_out_vec_4[1];
 
-    // Process: Loop_VITIS_LOOP_393_1_proc_U0
+    // Process: write_output_U0
     top_kernel_hls_deadlock_detect_unit #(6, 5, 2, 2) top_kernel_hls_deadlock_detect_unit_5 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -509,16 +509,16 @@ end
         .token_out_vec(token_out_vec_5),
         .dl_detect_out(dl_in_vec[5]));
 
-    assign proc_5_data_FIFO_blk[0] = 1'b0 | (~Loop_VITIS_LOOP_393_1_proc_U0.out_r_blk_n);
+    assign proc_5_data_FIFO_blk[0] = 1'b0 | (~write_output_U0.morphology_stream_blk_n);
     assign proc_5_data_PIPO_blk[0] = 1'b0;
-    assign proc_5_start_FIFO_blk[0] = 1'b0 | (~start_for_Loop_VITIS_LOOP_393_1_proc_U0_U.if_empty_n & Loop_VITIS_LOOP_393_1_proc_U0.ap_idle & ~start_for_Loop_VITIS_LOOP_393_1_proc_U0_U.if_write);
+    assign proc_5_start_FIFO_blk[0] = 1'b0;
     assign proc_5_TLF_FIFO_blk[0] = 1'b0;
     assign proc_5_input_sync_blk[0] = 1'b0;
     assign proc_5_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_5[0] = dl_detect_out ? proc_dep_vld_vec_5_reg[0] : (proc_5_data_FIFO_blk[0] | proc_5_data_PIPO_blk[0] | proc_5_start_FIFO_blk[0] | proc_5_TLF_FIFO_blk[0] | proc_5_input_sync_blk[0] | proc_5_output_sync_blk[0]);
-    assign proc_5_data_FIFO_blk[1] = 1'b0 | (~Loop_VITIS_LOOP_393_1_proc_U0.morphology_stream_blk_n);
+    assign proc_5_data_FIFO_blk[1] = 1'b0 | (~write_output_U0.out_r_blk_n);
     assign proc_5_data_PIPO_blk[1] = 1'b0;
-    assign proc_5_start_FIFO_blk[1] = 1'b0;
+    assign proc_5_start_FIFO_blk[1] = 1'b0 | (~start_for_write_output_U0_U.if_empty_n & write_output_U0.ap_idle & ~start_for_write_output_U0_U.if_write);
     assign proc_5_TLF_FIFO_blk[1] = 1'b0;
     assign proc_5_input_sync_blk[1] = 1'b0;
     assign proc_5_output_sync_blk[1] = 1'b0;
@@ -537,12 +537,12 @@ end
     assign in_chan_dep_vld_vec_5[1] = dep_chan_vld_4_5;
     assign in_chan_dep_data_vec_5[11 : 6] = dep_chan_data_4_5;
     assign token_in_vec_5[1] = token_4_5;
-    assign dep_chan_vld_5_0 = out_chan_dep_vld_vec_5[0];
-    assign dep_chan_data_5_0 = out_chan_dep_data_5;
-    assign token_5_0 = token_out_vec_5[0];
-    assign dep_chan_vld_5_4 = out_chan_dep_vld_vec_5[1];
+    assign dep_chan_vld_5_4 = out_chan_dep_vld_vec_5[0];
     assign dep_chan_data_5_4 = out_chan_dep_data_5;
-    assign token_5_4 = token_out_vec_5[1];
+    assign token_5_4 = token_out_vec_5[0];
+    assign dep_chan_vld_5_0 = out_chan_dep_vld_vec_5[1];
+    assign dep_chan_data_5_0 = out_chan_dep_data_5;
+    assign token_5_0 = token_out_vec_5[1];
 
 
 `include "top_kernel_hls_deadlock_report_unit.vh"

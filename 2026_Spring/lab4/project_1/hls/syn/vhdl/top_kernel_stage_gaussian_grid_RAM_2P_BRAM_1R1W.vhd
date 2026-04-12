@@ -11,7 +11,7 @@ use ieee.std_logic_unsigned.all;
 entity top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W is 
     generic(
         MEM_TYPE        : string    := "block"; 
-        DataWidth       : integer   := 14; 
+        DataWidth       : integer   := 12; 
         AddressWidth    : integer   := 8;
         AddressRange    : integer   := 169
     ); 

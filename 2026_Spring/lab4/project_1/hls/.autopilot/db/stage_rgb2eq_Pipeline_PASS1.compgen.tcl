@@ -1,24 +1,12 @@
 # This script segment is generated automatically by AutoPilot
 
-set name top_kernel_fadd_32ns_32ns_32_10_full_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 9 ALLOW_PRAGMA 1
-}
-
-
-set name top_kernel_fmul_32ns_32ns_32_7_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fmul} IMPL {maxdsp} LATENCY 6 ALLOW_PRAGMA 1
-}
-
-
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler top_kernel_bitselect_1ns_54ns_6ns_1_1_1 BINDTYPE {op} TYPE {bitselect} IMPL {auto}
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler top_kernel_sparsemux_7_2_14_1_1 BINDTYPE {op} TYPE {sparsemux} IMPL {onehotencoding_realdef}
+	::AP::rtl_comp_handler top_kernel_sparsemux_7_2_12_1_1 BINDTYPE {op} TYPE {sparsemux} IMPL {onehotencoding_realdef}
 }
 
 
@@ -38,14 +26,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 28 \
+    id 22 \
     name intensity_buf \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename intensity_buf \
     op interface \
-    ports { intensity_buf_address0 { O 12 vector } intensity_buf_ce0 { O 1 bit } intensity_buf_we0 { O 1 bit } intensity_buf_d0 { O 14 vector } } \
+    ports { intensity_buf_address0 { O 12 vector } intensity_buf_ce0 { O 1 bit } intensity_buf_we0 { O 1 bit } intensity_buf_d0 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'intensity_buf'"
@@ -56,7 +44,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 22 \
+    id 16 \
     name gmem0 \
     type other \
     dir I \
@@ -71,7 +59,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 23 \
+    id 17 \
     name sext_ln84 \
     type other \
     dir I \
@@ -86,7 +74,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 24 \
+    id 18 \
     name gmem1 \
     type other \
     dir I \
@@ -101,7 +89,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 25 \
+    id 19 \
     name sext_ln84_1 \
     type other \
     dir I \
@@ -116,7 +104,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 26 \
+    id 20 \
     name gmem2 \
     type other \
     dir I \
@@ -131,7 +119,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 27 \
+    id 21 \
     name sext_ln84_2 \
     type other \
     dir I \

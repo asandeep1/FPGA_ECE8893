@@ -1,24 +1,39 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "3 1 2 5 4",
+    "calls": "6 2 5 3 1",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "top.cpp",
-    "fileloc": 360,
+    "fileloc": 387,
     "instructions": 38,
     "memory_accesses": 0,
     "name": "top_kernel",
-    "total_instructions": 10058
+    "total_instructions": 9998
   },
   "1": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 18,
+    "file": "top.cpp",
+    "fileloc": 374,
+    "instructions": 74,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 3,
+    "name": "write_output",
+    "total_instructions": 74
+  },
+  "2": {
     "basicblocks": 49,
     "calls": "",
     "control_depth": 3,
     "def_use_depth": 369,
     "file": "top.cpp",
-    "fileloc": 139,
-    "instructions": 3059,
+    "fileloc": 144,
+    "instructions": 2984,
     "loads": {
       "L": 651
     },
@@ -27,66 +42,15 @@
     "stores": {
       "L": 26
     },
-    "total_instructions": 3059
-  },
-  "2": {
-    "basicblocks": 669,
-    "calls": "",
-    "control_depth": 7,
-    "def_use_depth": 189,
-    "file": "top.cpp",
-    "fileloc": 210,
-    "instructions": 4049,
-    "loads": {
-      "L": 82
-    },
-    "memory_accesses": 98,
-    "name": "stage_bilateral",
-    "stores": {
-      "L": 10
-    },
-    "total_instructions": 4049
+    "total_instructions": 2984
   },
   "3": {
-    "basicblocks": 598,
-    "calls": "",
-    "control_depth": 6,
-    "def_use_depth": 57,
-    "file": "top.cpp",
-    "fileloc": 75,
-    "instructions": 2067,
-    "loads": {
-      "L": 2
-    },
-    "memory_accesses": 10,
-    "name": "stage_rgb2eq",
-    "stores": {
-      "L": 2
-    },
-    "total_instructions": 2067
-  },
-  "4": {
-    "basicblocks": 13,
-    "calls": "",
-    "control_depth": 3,
-    "def_use_depth": 18,
-    "file": "top.cpp",
-    "fileloc": 0,
-    "instructions": 74,
-    "loads": {
-      "L": 1
-    },
-    "memory_accesses": 3,
-    "name": "_Z10top_kernelPKfS0_S0_Pf_",
-    "total_instructions": 74
-  },
-  "5": {
     "basicblocks": 52,
     "calls": "",
     "control_depth": 3,
     "def_use_depth": 25,
     "file": "top.cpp",
-    "fileloc": 283,
+    "fileloc": 294,
     "instructions": 771,
     "loads": {
       "L": 163
@@ -97,5 +61,53 @@
       "L": 19
     },
     "total_instructions": 771
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 11,
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 51,
+    "instructions": 24,
+    "memory_accesses": 0,
+    "name": "__hls_fptosi_float_i32",
+    "total_instructions": 24
+  },
+  "5": {
+    "basicblocks": 669,
+    "calls": "",
+    "control_depth": 7,
+    "def_use_depth": 189,
+    "file": "top.cpp",
+    "fileloc": 218,
+    "instructions": 3987,
+    "loads": {
+      "L": 82
+    },
+    "memory_accesses": 98,
+    "name": "stage_bilateral",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 3987
+  },
+  "6": {
+    "basicblocks": 598,
+    "calls": "4 4 4 4 4",
+    "control_depth": 6,
+    "def_use_depth": 48,
+    "file": "top.cpp",
+    "fileloc": 75,
+    "instructions": 2024,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 10,
+    "name": "stage_rgb2eq",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 2144
   }
 }

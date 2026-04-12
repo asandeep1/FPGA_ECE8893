@@ -109,212 +109,225 @@ Args:
                        Line: 51, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: top.cpp, Line: 90, Column: 30 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'float_to_inter(float)'
-    DebugLoc:        { File: top.cpp, Line: 44, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: top.cpp, Line: 105, Column: 23 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'inter_to_float(ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>)'
-    DebugLoc:        { File: top.cpp, Line: 49, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
-  - String:          ''''
-...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 106, Column: 24 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+DebugLoc:        { File: top.cpp, Line: 88, Column: 19 }
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - Callee:          __hls_fptosi_float_i32
     DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
                        Line: 51, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+  - Caller:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
     DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: top.cpp, Line: 232, Column: 43 }
-Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 93, Column: 30 }
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float_to_inter(float)'
+    DebugLoc:        { File: top.cpp, Line: 44, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: top.cpp, Line: 109, Column: 23 }
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'inter_to_float(ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>)'
+    DebugLoc:        { File: top.cpp, Line: 49, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: top.cpp, Line: 241, Column: 43 }
+Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'fast_exp_approx(float)'
     DebugLoc:        { File: top.cpp, Line: 58, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'stage_bilateral(hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 211, Column: 0 }
+  - Caller:          'stage_bilateral(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 219, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: top.cpp, Line: 259, Column: 44 }
-Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 270, Column: 44 }
+Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'inter_to_float(ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>)'
+  - Callee:          'inter_to_float(ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>)'
     DebugLoc:        { File: top.cpp, Line: 49, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'stage_bilateral(hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 211, Column: 0 }
+  - Caller:          'stage_bilateral(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 219, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: top.cpp, Line: 380, Column: 18 }
+Function:        _Z12write_outputRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEEPf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'inter_to_float(ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>)'
+    DebugLoc:        { File: top.cpp, Line: 49, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'write_output(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, float*)'
+    DebugLoc:        { File: top.cpp, Line: 374, Column: 0 }
   - String:          ''''
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 381, Column: 2 }
+DebugLoc:        { File: top.cpp, Line: 408, Column: 2 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
-  - Callee:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+  - Callee:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
     DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 384, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 411, Column: 5 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
-  - Callee:          'stage_gaussian(hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 140, Column: 0 }
+  - Callee:          'stage_gaussian(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 145, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 387, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 414, Column: 5 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
-  - Callee:          'stage_bilateral(hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 211, Column: 0 }
+  - Callee:          'stage_bilateral(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 219, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 390, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 417, Column: 5 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
-  - Callee:          'stage_morphology(hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 284, Column: 0 }
+  - Callee:          'stage_morphology(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 295, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: top.cpp, Line: 420, Column: 5 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - Callee:          'write_output(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, float*)'
+    DebugLoc:        { File: top.cpp, Line: 374, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: top.cpp, Line: 396, Column: 18 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'inter_to_float(ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>)'
-    DebugLoc:        { File: top.cpp, Line: 49, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
-  - String:          ''''
-...
---- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 341, Column: 35 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 355, Column: 35 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_341_5
+  - LoopName:        VITIS_LOOP_355_5
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 342, Column: 39 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 356, Column: 39 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_342_6
+  - LoopName:        VITIS_LOOP_356_6
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 313, Column: 35 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 326, Column: 35 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_313_2
+  - LoopName:        VITIS_LOOP_326_2
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 314, Column: 39 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 327, Column: 39 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_314_3
+  - LoopName:        VITIS_LOOP_327_3
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 252, Column: 35 }
-Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 263, Column: 35 }
+Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_252_4
+  - LoopName:        VITIS_LOOP_263_4
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: top.cpp, Line: 253, Column: 39 }
-Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 264, Column: 39 }
+Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_253_5
+  - LoopName:        VITIS_LOOP_264_5
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 284, Column: 0 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 295, Column: 0 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_341_5
+  - LoopName:        VITIS_LOOP_355_5
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:341:35'
+  - LoopLoc:         'top.cpp:355:35'
   - String:          ') '
   - String:          'in function '''
   - String:          stage_morphology
@@ -324,13 +337,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 284, Column: 0 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 295, Column: 0 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_342_6
+  - LoopName:        VITIS_LOOP_356_6
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:342:39'
+  - LoopLoc:         'top.cpp:356:39'
   - String:          ') '
   - String:          'in function '''
   - String:          stage_morphology
@@ -340,13 +353,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 284, Column: 0 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 295, Column: 0 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_342_6
+  - LoopName:        VITIS_LOOP_356_6
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:342:39'
+  - LoopLoc:         'top.cpp:356:39'
   - String:          ') '
   - String:          'in function '''
   - String:          stage_morphology
@@ -356,13 +369,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 284, Column: 0 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 295, Column: 0 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_342_6
+  - LoopName:        VITIS_LOOP_356_6
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:342:39'
+  - LoopLoc:         'top.cpp:356:39'
   - String:          ') '
   - String:          'in function '''
   - String:          stage_morphology
@@ -372,13 +385,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 284, Column: 0 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 295, Column: 0 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_313_2
+  - LoopName:        VITIS_LOOP_326_2
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:313:35'
+  - LoopLoc:         'top.cpp:326:35'
   - String:          ') '
   - String:          'in function '''
   - String:          stage_morphology
@@ -388,13 +401,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 284, Column: 0 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 295, Column: 0 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_314_3
+  - LoopName:        VITIS_LOOP_327_3
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:314:39'
+  - LoopLoc:         'top.cpp:327:39'
   - String:          ') '
   - String:          'in function '''
   - String:          stage_morphology
@@ -404,13 +417,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 284, Column: 0 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 295, Column: 0 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_314_3
+  - LoopName:        VITIS_LOOP_327_3
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:314:39'
+  - LoopLoc:         'top.cpp:327:39'
   - String:          ') '
   - String:          'in function '''
   - String:          stage_morphology
@@ -420,13 +433,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 284, Column: 0 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 295, Column: 0 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_314_3
+  - LoopName:        VITIS_LOOP_327_3
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:314:39'
+  - LoopLoc:         'top.cpp:327:39'
   - String:          ') '
   - String:          'in function '''
   - String:          stage_morphology
@@ -436,13 +449,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 211, Column: 0 }
-Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 219, Column: 0 }
+Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_252_4
+  - LoopName:        VITIS_LOOP_263_4
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:252:35'
+  - LoopLoc:         'top.cpp:263:35'
   - String:          ') '
   - String:          'in function '''
   - String:          stage_bilateral
@@ -452,13 +465,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 211, Column: 0 }
-Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 219, Column: 0 }
+Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_253_5
+  - LoopName:        VITIS_LOOP_264_5
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:253:39'
+  - LoopLoc:         'top.cpp:264:39'
   - String:          ') '
   - String:          'in function '''
   - String:          stage_bilateral
@@ -468,13 +481,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 211, Column: 0 }
-Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 219, Column: 0 }
+Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_253_5
+  - LoopName:        VITIS_LOOP_264_5
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:253:39'
+  - LoopLoc:         'top.cpp:264:39'
   - String:          ') '
   - String:          'in function '''
   - String:          stage_bilateral
@@ -484,13 +497,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: top.cpp, Line: 211, Column: 0 }
-Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 219, Column: 0 }
+Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_253_5
+  - LoopName:        VITIS_LOOP_264_5
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:253:39'
+  - LoopLoc:         'top.cpp:264:39'
   - String:          ') '
   - String:          'in function '''
   - String:          stage_bilateral
@@ -501,12 +514,12 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_96_1
+  - LoopName:        VITIS_LOOP_99_1
   - String:          ''' ('
-  - LoopLoc:         'top.cpp:96:19'
+  - LoopLoc:         'top.cpp:99:19'
   - String:          ') '
   - String:          'in function '''
   - String:          stage_rgb2eq
@@ -612,67 +625,80 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 106, Column: 24 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+DebugLoc:        { File: top.cpp, Line: 88, Column: 19 }
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - Callee:          __hls_fptosi_float_i32
     DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
                        Line: 51, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+  - Caller:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
     DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 381, Column: 2 }
+DebugLoc:        { File: top.cpp, Line: 408, Column: 2 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
-  - Callee:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+  - Callee:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
     DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 384, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 411, Column: 5 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
-  - Callee:          'stage_gaussian(hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 140, Column: 0 }
+  - Callee:          'stage_gaussian(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 145, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 387, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 414, Column: 5 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
-  - Callee:          'stage_bilateral(hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 211, Column: 0 }
+  - Callee:          'stage_bilateral(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 219, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 390, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 417, Column: 5 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
-  - Callee:          'stage_morphology(hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 284, Column: 0 }
+  - Callee:          'stage_morphology(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 295, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: top.cpp, Line: 420, Column: 5 }
+Function:        _Z10top_kernelPKfS0_S0_Pf
+Args:            
+  - Callee:          'write_output(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, float*)'
+    DebugLoc:        { File: top.cpp, Line: 374, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -681,7 +707,7 @@ Name:            NeverInline
 Function:        apatb_top_kernel_ir
 Args:            
   - Callee:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          apatb_top_kernel_ir
   - String:          ' because it should never be inlined (cost=never)'
@@ -789,25 +815,10 @@ Args:
   - String:          ''''
 ...
 --- !Passed
-Pass:            reflow-inliner
-Name:            Inline
-DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          __hls_fptosi_float_i32
-    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
-                       Line: 51, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
-  - String:          ''''
-...
---- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 94, Column: 9 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+DebugLoc:        { File: top.cpp, Line: 97, Column: 9 }
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -824,8 +835,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 112, Column: 9 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+DebugLoc:        { File: top.cpp, Line: 116, Column: 9 }
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -842,38 +853,8 @@ Args:
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: top.cpp, Line: 393, Column: 23 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
-Args:            
-  - String:          'Sequential '
-  - Direction:       write
-  - String:          ' of length '
-  - Length:          '4096'
-  - String:          ' has been inferred'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        out2seq
-  - ArrayName:       out
-  - String:          ' '
-  - BundleName:      gmem3
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_393_1
-  - String:          ' '
-  - LoopLoc:         'top.cpp:393:23'
-  - String:          ' '
-  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
-  - String:          ' '
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      store
-    DebugLoc:        { File: top.cpp, Line: 396, Column: 16 }
-  - OrigDirection:   write
-  - OrigID:          for.inc.store.3
-...
---- !Passed
-Pass:            reflow-burst-inference
-Name:            BurstInferred
 DebugLoc:        { File: top.cpp, Line: 84, Column: 5 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Sequential '
   - Direction:       read
@@ -890,12 +871,12 @@ Args:
   - String:          ' '
   - LoopLoc:         'top.cpp:84:5'
   - String:          ' '
-  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
     DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: top.cpp, Line: 86, Column: 13 }
+    DebugLoc:        { File: top.cpp, Line: 88, Column: 19 }
   - OrigDirection:   read
   - OrigID:          for.inc.load.4
 ...
@@ -903,7 +884,7 @@ Args:
 Pass:            reflow-burst-inference
 Name:            BurstInferred
 DebugLoc:        { File: top.cpp, Line: 84, Column: 5 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Sequential '
   - Direction:       read
@@ -920,12 +901,12 @@ Args:
   - String:          ' '
   - LoopLoc:         'top.cpp:84:5'
   - String:          ' '
-  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
     DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: top.cpp, Line: 87, Column: 20 }
+    DebugLoc:        { File: top.cpp, Line: 89, Column: 26 }
   - OrigDirection:   read
   - OrigID:          for.inc.load.9
 ...
@@ -933,7 +914,7 @@ Args:
 Pass:            reflow-burst-inference
 Name:            BurstInferred
 DebugLoc:        { File: top.cpp, Line: 84, Column: 5 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Sequential '
   - Direction:       read
@@ -950,47 +931,50 @@ Args:
   - String:          ' '
   - LoopLoc:         'top.cpp:84:5'
   - String:          ' '
-  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
     DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: top.cpp, Line: 88, Column: 20 }
+    DebugLoc:        { File: top.cpp, Line: 90, Column: 26 }
   - OrigDirection:   read
   - OrigID:          for.inc.load.14
 ...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: top.cpp, Line: 393, Column: 23 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: top.cpp, Line: 376, Column: 20 }
+Function:        _Z12write_outputRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEEPf
 Args:            
-  - String:          'Could not widen since type '
-  - Type:            float
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: top.cpp, Line: 393, Column: 23 }
-  - OrigDirection:   write
-  - OrigID:          out2seq
+  - AccessID:        out2seq
   - ArrayName:       out
   - String:          ' '
   - BundleName:      gmem3
   - String:          ' '
-  - LoopName:        VITIS_LOOP_393_1
+  - LoopName:        VITIS_LOOP_376_1
   - String:          ' '
-  - LoopLoc:         'top.cpp:393:23'
+  - LoopLoc:         'top.cpp:376:20'
   - String:          ' '
-  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+  - Function:        'write_output(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, float*)'
+    DebugLoc:        { File: top.cpp, Line: 374, Column: 0 }
   - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: top.cpp, Line: 380, Column: 16 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.store.3
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
 DebugLoc:        { File: top.cpp, Line: 84, Column: 5 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Could not widen since type '
   - Type:            float
@@ -1009,7 +993,7 @@ Args:
   - String:          ' '
   - LoopLoc:         'top.cpp:84:5'
   - String:          ' '
-  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
     DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
   - String:          ' '
 ...
@@ -1017,7 +1001,7 @@ Args:
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
 DebugLoc:        { File: top.cpp, Line: 84, Column: 5 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Could not widen since type '
   - Type:            float
@@ -1036,7 +1020,7 @@ Args:
   - String:          ' '
   - LoopLoc:         'top.cpp:84:5'
   - String:          ' '
-  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
     DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
   - String:          ' '
 ...
@@ -1044,7 +1028,7 @@ Args:
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
 DebugLoc:        { File: top.cpp, Line: 84, Column: 5 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE
 Args:            
   - String:          'Could not widen since type '
   - Type:            float
@@ -1063,15 +1047,42 @@ Args:
   - String:          ' '
   - LoopLoc:         'top.cpp:84:5'
   - String:          ' '
-  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
     DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: top.cpp, Line: 376, Column: 20 }
+Function:        _Z12write_outputRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEEPf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: top.cpp, Line: 376, Column: 20 }
+  - OrigDirection:   write
+  - OrigID:          out2seq
+  - ArrayName:       out
+  - String:          ' '
+  - BundleName:      gmem3
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_376_1
+  - String:          ' '
+  - LoopLoc:         'top.cpp:376:20'
+  - String:          ' '
+  - Function:        'write_output(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, float*)'
+    DebugLoc:        { File: top.cpp, Line: 374, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: top.cpp, Line: 143, Column: 10 }
-Function:        _Z14stage_gaussianRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 148, Column: 10 }
+Function:        _Z14stage_gaussianRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -1081,18 +1092,18 @@ Args:
   - String:          ' '
   - PragmaFunction:  stage_gaussian
   - String:          ' '
-  - varLoc:          'top.cpp:143:10'
+  - varLoc:          'top.cpp:148:10'
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:159:9'
-    DebugLoc:        { File: top.cpp, Line: 159, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:165:9'
+    DebugLoc:        { File: top.cpp, Line: 165, Column: 9 }
   - VarName:         grid
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 159, Column: 9 }
-Function:        _Z14stage_gaussianRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 165, Column: 9 }
+Function:        _Z14stage_gaussianRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -1112,8 +1123,8 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: top.cpp, Line: 143, Column: 10 }
-Function:        _Z14stage_gaussianRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 148, Column: 10 }
+Function:        _Z14stage_gaussianRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -1123,18 +1134,18 @@ Args:
   - String:          ' '
   - PragmaFunction:  stage_gaussian
   - String:          ' '
-  - varLoc:          'top.cpp:143:10'
+  - varLoc:          'top.cpp:148:10'
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:159:9'
-    DebugLoc:        { File: top.cpp, Line: 159, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:165:9'
+    DebugLoc:        { File: top.cpp, Line: 165, Column: 9 }
   - VarName:         grid
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 159, Column: 9 }
-Function:        _Z14stage_gaussianRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 165, Column: 9 }
+Function:        _Z14stage_gaussianRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -1154,8 +1165,8 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: top.cpp, Line: 214, Column: 10 }
-Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 222, Column: 10 }
+Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -1165,18 +1176,18 @@ Args:
   - String:          ' '
   - PragmaFunction:  stage_bilateral
   - String:          ' '
-  - varLoc:          'top.cpp:214:10'
+  - varLoc:          'top.cpp:222:10'
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:240:9'
-    DebugLoc:        { File: top.cpp, Line: 240, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:249:9'
+    DebugLoc:        { File: top.cpp, Line: 249, Column: 9 }
   - VarName:         grid
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 240, Column: 9 }
-Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 249, Column: 9 }
+Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -1196,8 +1207,8 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: top.cpp, Line: 214, Column: 10 }
-Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 222, Column: 10 }
+Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -1207,18 +1218,18 @@ Args:
   - String:          ' '
   - PragmaFunction:  stage_bilateral
   - String:          ' '
-  - varLoc:          'top.cpp:214:10'
+  - varLoc:          'top.cpp:222:10'
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:240:9'
-    DebugLoc:        { File: top.cpp, Line: 240, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:249:9'
+    DebugLoc:        { File: top.cpp, Line: 249, Column: 9 }
   - VarName:         grid
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 240, Column: 9 }
-Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 249, Column: 9 }
+Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -1238,8 +1249,8 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: top.cpp, Line: 287, Column: 10 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 298, Column: 10 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -1249,18 +1260,18 @@ Args:
   - String:          ' '
   - PragmaFunction:  stage_morphology
   - String:          ' '
-  - varLoc:          'top.cpp:287:10'
+  - varLoc:          'top.cpp:298:10'
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:305:9'
-    DebugLoc:        { File: top.cpp, Line: 305, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:317:9'
+    DebugLoc:        { File: top.cpp, Line: 317, Column: 9 }
   - VarName:         bilateral_buf
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 305, Column: 9 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 317, Column: 9 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -1280,8 +1291,8 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: top.cpp, Line: 287, Column: 10 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 298, Column: 10 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -1291,18 +1302,18 @@ Args:
   - String:          ' '
   - PragmaFunction:  stage_morphology
   - String:          ' '
-  - varLoc:          'top.cpp:287:10'
+  - varLoc:          'top.cpp:298:10'
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:305:9'
-    DebugLoc:        { File: top.cpp, Line: 305, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:317:9'
+    DebugLoc:        { File: top.cpp, Line: 317, Column: 9 }
   - VarName:         bilateral_buf
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 305, Column: 9 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 317, Column: 9 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -1322,8 +1333,8 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: top.cpp, Line: 288, Column: 13 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 299, Column: 13 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -1333,18 +1344,18 @@ Args:
   - String:          ' '
   - PragmaFunction:  stage_morphology
   - String:          ' '
-  - varLoc:          'top.cpp:288:13'
+  - varLoc:          'top.cpp:299:13'
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:333:9'
-    DebugLoc:        { File: top.cpp, Line: 333, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:346:9'
+    DebugLoc:        { File: top.cpp, Line: 346, Column: 9 }
   - VarName:         eroded_buf
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 333, Column: 9 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 346, Column: 9 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -1364,8 +1375,8 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: top.cpp, Line: 288, Column: 13 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 299, Column: 13 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -1375,18 +1386,18 @@ Args:
   - String:          ' '
   - PragmaFunction:  stage_morphology
   - String:          ' '
-  - varLoc:          'top.cpp:288:13'
+  - varLoc:          'top.cpp:299:13'
   - String:          ' '
-  - PragmaSrcLoc:    'top.cpp:333:9'
-    DebugLoc:        { File: top.cpp, Line: 333, Column: 9 }
+  - PragmaSrcLoc:    'top.cpp:346:9'
+    DebugLoc:        { File: top.cpp, Line: 346, Column: 9 }
   - VarName:         eroded_buf
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: top.cpp, Line: 333, Column: 9 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 346, Column: 9 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -1406,8 +1417,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 143, Column: 10 }
-Function:        _Z14stage_gaussianRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 148, Column: 10 }
+Function:        _Z14stage_gaussianRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1434,8 +1445,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 214, Column: 10 }
-Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 222, Column: 10 }
+Function:        _Z15stage_bilateralRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1462,8 +1473,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 287, Column: 10 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 298, Column: 10 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1490,8 +1501,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: top.cpp, Line: 288, Column: 13 }
-Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
+DebugLoc:        { File: top.cpp, Line: 299, Column: 13 }
+Function:        _Z16stage_morphologyRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEES6_
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1519,7 +1530,7 @@ Args:
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
 DebugLoc:        { File: top.cpp, Line: 84, Column: 5 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE.1
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -1539,7 +1550,7 @@ Args:
   - String:          ' '
   - LoopLoc:         'top.cpp:84:5'
   - String:          ' '
-  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&) (.1)'
+  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&) (.1)'
     DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
   - String:          ' '
 ...
@@ -1547,7 +1558,7 @@ Args:
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
 DebugLoc:        { File: top.cpp, Line: 84, Column: 5 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE.1
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -1569,7 +1580,7 @@ Args:
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
 DebugLoc:        { File: top.cpp, Line: 84, Column: 5 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE.1
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -1589,7 +1600,7 @@ Args:
   - String:          ' '
   - LoopLoc:         'top.cpp:84:5'
   - String:          ' '
-  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&) (.1)'
+  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&) (.1)'
     DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
   - String:          ' '
 ...
@@ -1597,7 +1608,7 @@ Args:
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
 DebugLoc:        { File: top.cpp, Line: 84, Column: 5 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE.1
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -1619,7 +1630,7 @@ Args:
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
 DebugLoc:        { File: top.cpp, Line: 84, Column: 5 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE.1
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -1639,7 +1650,7 @@ Args:
   - String:          ' '
   - LoopLoc:         'top.cpp:84:5'
   - String:          ' '
-  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&) (.1)'
+  - Function:        'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&) (.1)'
     DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
   - String:          ' '
 ...
@@ -1647,7 +1658,7 @@ Args:
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
 DebugLoc:        { File: top.cpp, Line: 84, Column: 5 }
-Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi14ELi3EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE.1
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -1668,8 +1679,8 @@ Args:
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: top.cpp, Line: 393, Column: 23 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
+DebugLoc:        { File: top.cpp, Line: 376, Column: 20 }
+Function:        _Z12write_outputRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEEPf.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       writes
@@ -1685,19 +1696,19 @@ Args:
   - String:          ' '
   - BundleName:      gmem3
   - String:          ' '
-  - LoopName:        VITIS_LOOP_393_1
+  - LoopName:        VITIS_LOOP_376_1
   - String:          ' '
-  - LoopLoc:         'top.cpp:393:23'
+  - LoopLoc:         'top.cpp:376:20'
   - String:          ' '
-  - Function:        'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+  - Function:        'write_output(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, float*) (.1)'
+    DebugLoc:        { File: top.cpp, Line: 374, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: top.cpp, Line: 393, Column: 23 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
+DebugLoc:        { File: top.cpp, Line: 376, Column: 20 }
+Function:        _Z12write_outputRN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEEPf.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       writes
@@ -1706,91 +1717,91 @@ Args:
   - String:          ' and bit width '
   - Width:           '32'
   - String:          ' in loop '''
-  - LoopName:        VITIS_LOOP_393_1
+  - LoopName:        VITIS_LOOP_376_1
   - String:          '''('
-  - LoopLoc:         'top.cpp:393:23'
+  - LoopLoc:         'top.cpp:376:20'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
   - BundleName:      gmem3
   - String:          '''.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
 ...
---- !Passed
-Pass:            reflow-extract-cfg-in-dataflow
-Name:            LoopExtractionForDataflow
-DebugLoc:        { File: top.cpp, Line: 393, Column: 23 }
-Function:        _Z10top_kernelPKfS0_S0_Pf
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: top.cpp, Line: 88, Column: 19 }
+Function:        _Z12stage_rgb2eqPKfS0_S0_RN3hls6streamI8ap_fixedILi12ELi2EL9ap_q_mode0EL9ap_o_mode0ELi0EELi0EEE.1
 Args:            
-  - String:          'Changing loop '''
-  - LoopName:        Loop_VITIS_LOOP_393_1_proc
-  - String:          ''' ('
-  - LoopLoc:         'top.cpp:393:23'
-  - String:          ') to a process function for dataflow in function '''
-  - Name:            top_kernel
-  - String:          ''''
+  - Callee:          __hls_fptosi_float_i32
+    DebugLoc:        { File: /wrk/ci/prod/2025.1.1/hls_product/continuous/218/2025.1.1/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
+                       Line: 51, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&) (.1)'
+    DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 381, Column: 2 }
+DebugLoc:        { File: top.cpp, Line: 408, Column: 2 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
-  - Callee:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&) (.1)'
+  - Callee:          'stage_rgb2eq(float const*, float const*, float const*, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&) (.1)'
     DebugLoc:        { File: top.cpp, Line: 76, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 384, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 411, Column: 5 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
-  - Callee:          'stage_gaussian(hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 140, Column: 0 }
+  - Callee:          'stage_gaussian(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 145, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 387, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 414, Column: 5 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
-  - Callee:          'stage_bilateral(hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 211, Column: 0 }
+  - Callee:          'stage_bilateral(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 219, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 390, Column: 5 }
+DebugLoc:        { File: top.cpp, Line: 417, Column: 5 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
-  - Callee:          'stage_morphology(hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<14, 3, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
-    DebugLoc:        { File: top.cpp, Line: 284, Column: 0 }
+  - Callee:          'stage_morphology(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&)'
+    DebugLoc:        { File: top.cpp, Line: 295, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: top.cpp, Line: 393, Column: 23 }
+DebugLoc:        { File: top.cpp, Line: 420, Column: 5 }
 Function:        _Z10top_kernelPKfS0_S0_Pf
 Args:            
-  - Callee:          Loop_VITIS_LOOP_393_1_proc
-    DebugLoc:        { File: top.cpp, Line: 0, Column: 0 }
+  - Callee:          'write_output(hls::stream<ap_fixed<12, 2, (ap_q_mode)0, (ap_o_mode)0, 0>, 0>&, float*) (.1)'
+    DebugLoc:        { File: top.cpp, Line: 374, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'top_kernel(float const*, float const*, float const*, float*)'
-    DebugLoc:        { File: top.cpp, Line: 360, Column: 0 }
+    DebugLoc:        { File: top.cpp, Line: 387, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...

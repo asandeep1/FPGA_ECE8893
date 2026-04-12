@@ -15,7 +15,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1262 \
+    id 1242 \
     name equalized_stream \
     type fifo \
     dir I \
@@ -23,14 +23,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_equalized_stream \
     op interface \
-    ports { equalized_stream_dout { I 14 vector } equalized_stream_empty_n { I 1 bit } equalized_stream_read { O 1 bit } equalized_stream_num_data_valid { I 9 vector } equalized_stream_fifo_cap { I 9 vector } } \
+    ports { equalized_stream_dout { I 12 vector } equalized_stream_empty_n { I 1 bit } equalized_stream_read { O 1 bit } equalized_stream_num_data_valid { I 9 vector } equalized_stream_fifo_cap { I 9 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1263 \
+    id 1243 \
     name gaussian_stream \
     type fifo \
     dir O \
@@ -38,7 +38,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_gaussian_stream \
     op interface \
-    ports { gaussian_stream_din { O 14 vector } gaussian_stream_full_n { I 1 bit } gaussian_stream_write { O 1 bit } gaussian_stream_num_data_valid { I 32 vector } gaussian_stream_fifo_cap { I 32 vector } } \
+    ports { gaussian_stream_din { O 12 vector } gaussian_stream_full_n { I 1 bit } gaussian_stream_write { O 1 bit } gaussian_stream_num_data_valid { I 32 vector } gaussian_stream_fifo_cap { I 32 vector } } \
 } "
 }
 

@@ -14,60 +14,57 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE88
 INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_mul_16s_10ns_26_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_mul_16s_10ns_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_fifo_w64_d6_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w64_d6_S
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w64_d6_S_ShiftReg
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_entry_proc.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_entry_proc
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_rgb2eq_Pipeline_PASS1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_stage_rgb2eq_Pipeline_PASS1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_rgb2eq_Pipeline_BUILD_HIST.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_stage_rgb2eq_Pipeline_BUILD_HIST
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_stage_rgb2eq_Pipeline_VITIS_LOOP_115_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_stage_rgb2eq_Pipeline_VITIS_LOOP_119_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_rgb2eq_Pipeline_PASS2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_stage_rgb2eq_Pipeline_PASS2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_rgb2eq.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_stage_rgb2eq
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_gaussian_Pipeline_READ_IN.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_stage_gaussian_Pipeline_READ_IN
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_158_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_stage_gaussian_Pipeline_GAUSSIAN_OUT_VITIS_LOOP_164_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_gaussian.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_stage_gaussian
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_bilateral_Pipeline_READ_IN.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_stage_bilateral_Pipeline_READ_IN
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_239_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_stage_bilateral_Pipeline_BILATERAL_OUT_VITIS_LOOP_248_3
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_bilateral.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_stage_bilateral
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_morphology_Pipeline_READ_BILATERAL.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_stage_morphology_Pipeline_READ_BILATERAL
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_morphology.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_stage_morphology
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_Loop_VITIS_LOOP_393_1_proc.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_Loop_VITIS_LOOP_393_1_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_write_output.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_write_output
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_flow_control_loop_pipe_sequential_init
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_flow_control_loop_pipe.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_flow_control_loop_pipe
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_fadd_32ns_32ns_32_10_full_dsp_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_fadd_32ns_32ns_32_10_full_dsp_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_fmul_32ns_32ns_32_7_max_dsp_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_fmul_32ns_32ns_32_7_max_dsp_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_bitselect_1ns_54ns_6ns_1_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_bitselect_1ns_54ns_6ns_1_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sparsemux_7_2_14_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_7_2_14_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sparsemux_7_2_12_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_7_2_12_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sparsemux_7_2_1_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_7_2_1_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_ctlz_14_14_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_ctlz_14_14_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_ctlz_12_12_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_ctlz_12_12_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sparsemux_513_8_32_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_513_8_32_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sparsemux_511_8_32_1_1.v" into library xil_defaultlib
@@ -76,10 +73,12 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE88
 INFO: [VRFC 10-311] analyzing module top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_fsub_32ns_32ns_32_10_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fsub_32ns_32ns_32_10_full_dsp_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sitofp_32ns_32_7_no_dsp_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_sitofp_32ns_32_7_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_fmul_32ns_32ns_32_7_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fmul_32ns_32ns_32_7_max_dsp_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_fpext_32ns_64_2_no_dsp_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_fpext_32ns_64_2_no_dsp_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_rgb2eq_intensity_buf_RAM_AUTO_1R1W.v" into library xil_defaultlib
@@ -94,8 +93,8 @@ INFO: [VRFC 10-311] analyzing module top_kernel_mac_muladd_4ns_4ns_4ns_8_4_1_DSP
 INFO: [VRFC 10-311] analyzing module top_kernel_mac_muladd_4ns_4ns_4ns_8_4_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_mul_64ns_66ns_129_5_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_mul_64ns_66ns_129_5_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sparsemux_11_3_14_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_11_3_14_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sparsemux_11_3_12_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_11_3_12_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_urem_7ns_4ns_3_11_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_urem_7ns_4ns_3_11_1_divider
 INFO: [VRFC 10-311] analyzing module top_kernel_urem_7ns_4ns_3_11_1
@@ -105,14 +104,12 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE88
 INFO: [VRFC 10-311] analyzing module top_kernel_mul_5ns_5ns_8_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_mul_8s_5ns_8_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_mul_8s_5ns_8_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_mul_16s_8ns_24_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_mul_16s_8ns_24_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_mul_16s_9ns_25_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_mul_16s_9ns_25_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_mul_16s_11ns_27_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_mul_16s_11ns_27_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_mul_16s_12ns_28_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_mul_16s_12ns_28_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_mul_14s_9ns_23_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_14s_9ns_23_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_mul_14s_10ns_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_14s_10ns_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_mul_14s_11ns_25_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_14s_11ns_25_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_stage_gaussian_grid_RAM_2P_BRAM_1R1W
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_urem_6ns_3ns_2_10_1.v" into library xil_defaultlib
@@ -121,10 +118,8 @@ INFO: [VRFC 10-311] analyzing module top_kernel_urem_6ns_3ns_2_10_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_mac_muladd_5ns_5ns_5ns_9_4_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_mac_muladd_5ns_5ns_5ns_9_4_1_DSP48_0
 INFO: [VRFC 10-311] analyzing module top_kernel_mac_muladd_5ns_5ns_5ns_9_4_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_fsub_32ns_32ns_32_10_full_dsp_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_fsub_32ns_32ns_32_10_full_dsp_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sparsemux_7_2_14_1_1_x.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_7_2_14_1_1_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sparsemux_7_2_12_1_1_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_7_2_12_1_1_x
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_urem_7ns_3ns_2_11_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_urem_7ns_3ns_2_11_1_divider
 INFO: [VRFC 10-311] analyzing module top_kernel_urem_7ns_3ns_2_11_1
@@ -134,24 +129,21 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE88
 INFO: [VRFC 10-311] analyzing module top_kernel_mul_9s_6ns_9_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sparsemux_9_3_32_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_9_3_32_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sparsemux_7_2_18_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_7_2_18_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_mul_18s_16s_34_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_mul_18s_16s_34_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sdiv_31ns_19ns_31_35_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_31ns_19ns_31_35_1_divider
-INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_31ns_19ns_31_35_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sparsemux_7_2_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sparsemux_7_2_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_mul_16s_14s_30_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_mul_16s_14s_30_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_sdiv_28ns_17ns_28_32_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_28ns_17ns_28_32_1_divider
+INFO: [VRFC 10-311] analyzing module top_kernel_sdiv_28ns_17ns_28_32_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_fifo_w64_d6_S.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w64_d6_S
-INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w64_d6_S_ShiftReg
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_fifo_w14_d256_A.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w14_d256_A
-INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w14_d256_A_ram
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_start_for_Loop_VITIS_LOOP_393_1_proc_U0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kernel_start_for_Loop_VITIS_LOOP_393_1_proc_U0
-INFO: [VRFC 10-311] analyzing module top_kernel_start_for_Loop_VITIS_LOOP_393_1_proc_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_fifo_w12_d256_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w12_d256_A
+INFO: [VRFC 10-311] analyzing module top_kernel_fifo_w12_d256_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_start_for_write_output_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_write_output_U0
+INFO: [VRFC 10-311] analyzing module top_kernel_start_for_write_output_U0_ShiftReg
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/top_kernel_start_for_stage_gaussian_U0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_start_for_stage_gaussian_U0
 INFO: [VRFC 10-311] analyzing module top_kernel_start_for_stage_gaussian_U0_ShiftReg
@@ -217,22 +209,18 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE88
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/svtb/misc_interface.sv" into library xil_defaultlib
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/svtb/sv_module_top.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sv_module_top
-INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip'
-INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip'
 INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip'
 INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip'
-INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip'
-INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/top_kernel_sitofp_32ns_32_7_no_dsp_1_ip.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'top_kernel_sitofp_32ns_32_7_no_dsp_1_ip'
-INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/top_kernel_fpext_32ns_64_2_no_dsp_1_ip.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'top_kernel_fpext_32ns_64_2_no_dsp_1_ip'
 INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/top_kernel_sitofp_32ns_32_7_no_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_kernel_sitofp_32ns_32_7_no_dsp_1_ip'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip'
+INFO: [VRFC 10-163] Analyzing VHDL file "/nethome/asandeep6/FPGA_ECE8893/2026_Spring/lab4/project_1/hls/sim/verilog/ip/xil_defaultlib/top_kernel_fpext_32ns_64_2_no_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_kernel_fpext_32ns_64_2_no_dsp_1_ip'
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
@@ -257,8 +245,8 @@ Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_signed
 Compiling package floating_point_v7_1_20.floating_point_v7_1_20_pkg
 Compiling package floating_point_v7_1_20.flt_utils
-Compiling package xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv_comp
 Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv_comp
 Compiling package ieee.vital_timing
 Compiling package ieee.vital_primitives
 Compiling package unisim.vpkg
@@ -331,32 +319,131 @@ Compiling module xil_defaultlib.top_kernel_gmem3_m_axi_write(CON...
 Compiling module xil_defaultlib.top_kernel_gmem3_m_axi(C_M_AXI_A...
 Compiling module xil_defaultlib.top_kernel_entry_proc
 Compiling module xil_defaultlib.top_kernel_stage_rgb2eq_intensit...
+Compiling module xil_defaultlib.top_kernel_bitselect_1ns_54ns_6n...
+Compiling module xil_defaultlib.top_kernel_sparsemux_7_2_12_1_1(...
+Compiling module xil_defaultlib.top_kernel_sparsemux_7_2_1_1_1(s...
+Compiling module xil_defaultlib.top_kernel_flow_control_loop_pip...
+Compiling module xil_defaultlib.top_kernel_stage_rgb2eq_Pipeline...
+Compiling module xil_defaultlib.top_kernel_ctlz_12_12_1_1(din_WI...
+Compiling module xil_defaultlib.top_kernel_sparsemux_513_8_32_1_...
+Compiling module xil_defaultlib.top_kernel_stage_rgb2eq_Pipeline...
+Compiling module xil_defaultlib.top_kernel_sparsemux_511_8_32_1_...
+Compiling module xil_defaultlib.top_kernel_stage_rgb2eq_Pipeline...
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=23)\]
 Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=24,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=25,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_20.flt_div_mant_addsub [\flt_div_mant_addsub(c_xdevicefa...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=26)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [delay_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=26,length=0)\]
+Compiling architecture virtex of entity floating_point_v7_1_20.flt_div_mant [\flt_div_mant(c_xdevicefamily="z...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=10,length=2,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_20.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=25,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=2,length=2,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=2,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=26,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=8,length=24)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=24,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=3,length=23,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,length=24,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=23,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=14)\]
+Compiling architecture rtl of entity floating_point_v7_1_20.flt_div_exp [\flt_div_exp(c_xdevicefamily="no...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=8,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=11,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=12,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=11)\]
+Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=14,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=25,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=3,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_20.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_20.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_20.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture virtex of entity floating_point_v7_1_20.flt_div [\flt_div(c_xdevicefamily="zynqup...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=32,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20_viv [\floating_point_v7_1_20_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20 [\floating_point_v7_1_20(c_xdevic...]
+Compiling architecture top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip_arch of entity xil_defaultlib.top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip [top_kernel_fdiv_32ns_32ns_32_30_...]
+Compiling module xil_defaultlib.top_kernel_fdiv_32ns_32ns_32_30_...
+Compiling architecture synth of entity floating_point_v7_1_20.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_20.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_20.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_20.compare_eq [\compare_eq(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=16,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_20.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_20.fp_cmp [\fp_cmp(c_xdevicefamily="zynqupl...]
+Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20_viv [\floating_point_v7_1_20_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20 [\floating_point_v7_1_20(c_xdevic...]
+Compiling architecture top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip_arch of entity xil_defaultlib.top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip [top_kernel_fcmp_32ns_32ns_1_3_no...]
+Compiling module xil_defaultlib.top_kernel_fcmp_32ns_32ns_1_3_no...
+Compiling module xil_defaultlib.top_kernel_stage_rgb2eq_Pipeline...
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
 Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=7,length=0)\]
 Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
 Compiling architecture synth of entity floating_point_v7_1_20.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
-Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
-Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
-Compiling architecture fde_v of entity unisim.FDE [fde_default]
 Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=0)\]
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
 Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=24,fast_input=true)...]
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
 Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=16)\]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [delay_default]
 Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,bcascreg=0,breg...]
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,length=0)\]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
 Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=48,length=0)\]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=24,length=0)\]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=16,length=0)\]
 Compiling architecture rtl of entity floating_point_v7_1_20.dsp48e1_wrapper [\dsp48e1_wrapper(c_part="xczu3eg...]
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
 Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=2)\]
@@ -399,18 +486,12 @@ Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [
 Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=10)\]
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
 Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,length=0,fast_inp...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=8,length=0)\]
 Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
 Compiling architecture synth of entity floating_point_v7_1_20.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(fast_input=true)\]
 Compiling architecture rtl of entity floating_point_v7_1_20.special_detect [\special_detect(c_xdevicefamily=...]
 Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
 Compiling architecture synth of entity floating_point_v7_1_20.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
 Compiling architecture synth of entity floating_point_v7_1_20.compare [\compare(c_xdevicefamily="zynqup...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=8)\]
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
 Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=2,length=5,fast_inp...]
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
@@ -418,154 +499,16 @@ Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
 Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=5,fast_input=true)...]
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,fast_input=true)\]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=2,length=0,fast_inp...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
 Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=12)\]
 Compiling architecture rtl of entity floating_point_v7_1_20.flt_add_exp_sp [\flt_add_exp_sp(c_xdevicefamily=...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=23)\]
 Compiling architecture synth of entity floating_point_v7_1_20.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
 Compiling architecture rtl of entity floating_point_v7_1_20.flt_add_dsp [\flt_add_dsp(c_xdevicefamily="zy...]
 Compiling architecture rtl of entity floating_point_v7_1_20.flt_add [\flt_add(c_xdevicefamily="zynqup...]
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=32,length=0)\]
 Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20_viv [\floating_point_v7_1_20_viv(c_xd...]
 Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20 [\floating_point_v7_1_20(c_xdevic...]
-Compiling architecture top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip_arch of entity xil_defaultlib.top_kernel_fadd_32ns_32ns_32_10_full_dsp_1_ip [top_kernel_fadd_32ns_32ns_32_10_...]
-Compiling module xil_defaultlib.top_kernel_fadd_32ns_32ns_32_10_...
-Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=17,length=0)\]
-Compiling architecture rtl of entity floating_point_v7_1_20.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
-Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,a_...]
-Compiling architecture rtl of entity floating_point_v7_1_20.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
-Compiling architecture struct of entity floating_point_v7_1_20.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl(registers=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.fix_mult [\fix_mult(c_xdevicefamily="zynqu...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=7)\]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=8,fast_input=true)\]
-Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
-Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
-Compiling architecture synth of entity floating_point_v7_1_20.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=0,fast_input=true)...]
-Compiling architecture rtl of entity floating_point_v7_1_20.special_detect [\special_detect(c_xdevicefamily=...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=2,length=2,fast_inp...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=2,fast_input=true)...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=3,fast_input=true)...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,length=2,fast_inp...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=3,length=0,fast_inp...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=14)\]
-Compiling architecture rtl of entity floating_point_v7_1_20.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="z...]
-Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=30,length=0)\]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=18,length=0)\]
-Compiling architecture rtl of entity floating_point_v7_1_20.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=25)\]
-Compiling architecture struct of entity floating_point_v7_1_20.flt_round_dsp_opt_full [\flt_round_dsp_opt_full(c_xdevic...]
-Compiling architecture rtl of entity floating_point_v7_1_20.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
-Compiling architecture synth of entity floating_point_v7_1_20.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.flt_mult [\flt_mult(c_xdevicefamily="zynqu...]
-Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20_viv [\floating_point_v7_1_20_viv(c_xd...]
-Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20 [\floating_point_v7_1_20(c_xdevic...]
-Compiling architecture top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip_arch of entity xil_defaultlib.top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip [top_kernel_fmul_32ns_32ns_32_7_m...]
-Compiling module xil_defaultlib.top_kernel_fmul_32ns_32ns_32_7_m...
-Compiling module xil_defaultlib.top_kernel_bitselect_1ns_54ns_6n...
-Compiling module xil_defaultlib.top_kernel_sparsemux_7_2_14_1_1(...
-Compiling module xil_defaultlib.top_kernel_sparsemux_7_2_1_1_1(s...
-Compiling module xil_defaultlib.top_kernel_flow_control_loop_pip...
-Compiling module xil_defaultlib.top_kernel_stage_rgb2eq_Pipeline...
-Compiling module xil_defaultlib.top_kernel_ctlz_14_14_1_1(din_WI...
-Compiling module xil_defaultlib.top_kernel_sparsemux_513_8_32_1_...
-Compiling module xil_defaultlib.top_kernel_stage_rgb2eq_Pipeline...
-Compiling module xil_defaultlib.top_kernel_sparsemux_511_8_32_1_...
-Compiling module xil_defaultlib.top_kernel_stage_rgb2eq_Pipeline...
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=25,fast_input=true)...]
-Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
-Compiling architecture synth of entity floating_point_v7_1_20.flt_div_mant_addsub [\flt_div_mant_addsub(c_xdevicefa...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=26)\]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=26,length=0)\]
-Compiling architecture virtex of entity floating_point_v7_1_20.flt_div_mant [\flt_div_mant(c_xdevicefamily="z...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=10,length=2,fast_in...]
-Compiling architecture rtl of entity floating_point_v7_1_20.special_detect [\special_detect(c_xdevicefamily=...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=25,fast_input=true...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=26,fast_input=true...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=8,length=24)\]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=24,fast_input=true...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=3,length=23,fast_in...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,length=24,fast_in...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=23,fast_input=true...]
-Compiling architecture rtl of entity floating_point_v7_1_20.flt_div_exp [\flt_div_exp(c_xdevicefamily="no...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=11,length=0)\]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=12,fast_input=true)...]
-Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=11)\]
-Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
-Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=14,length=0)\]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=25,length=0,fast_in...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=3,length=0)\]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
-Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=2,length=0)\]
-Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
-Compiling architecture rtl of entity floating_point_v7_1_20.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
-Compiling architecture rtl of entity floating_point_v7_1_20.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
-Compiling architecture synth of entity floating_point_v7_1_20.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
-Compiling architecture virtex of entity floating_point_v7_1_20.flt_div [\flt_div(c_xdevicefamily="zynqup...]
-Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20_viv [\floating_point_v7_1_20_viv(c_xd...]
-Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20 [\floating_point_v7_1_20(c_xdevic...]
-Compiling architecture top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip_arch of entity xil_defaultlib.top_kernel_fdiv_32ns_32ns_32_30_no_dsp_1_ip [top_kernel_fdiv_32ns_32ns_32_30_...]
-Compiling module xil_defaultlib.top_kernel_fdiv_32ns_32ns_32_30_...
-Compiling architecture synth of entity floating_point_v7_1_20.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
-Compiling architecture synth of entity floating_point_v7_1_20.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
-Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
-Compiling architecture synth of entity floating_point_v7_1_20.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
-Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
-Compiling architecture synth of entity floating_point_v7_1_20.compare_eq [\compare_eq(c_xdevicefamily="zyn...]
-Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
-Compiling architecture synth of entity floating_point_v7_1_20.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
-Compiling architecture rtl of entity floating_point_v7_1_20.fp_cmp [\fp_cmp(c_xdevicefamily="zynqupl...]
-Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20_viv [\floating_point_v7_1_20_viv(c_xd...]
-Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20 [\floating_point_v7_1_20(c_xdevic...]
-Compiling architecture top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip_arch of entity xil_defaultlib.top_kernel_fcmp_32ns_32ns_1_3_no_dsp_1_ip [top_kernel_fcmp_32ns_32ns_1_3_no...]
-Compiling module xil_defaultlib.top_kernel_fcmp_32ns_32ns_1_3_no...
-Compiling module xil_defaultlib.top_kernel_stage_rgb2eq_Pipeline...
-Compiling architecture rtl of entity floating_point_v7_1_20.flt_add [\flt_add(c_xdevicefamily="zynqup...]
-Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20_viv [\floating_point_v7_1_20_viv(c_xd...]
-Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20 [\floating_point_v7_1_20(c_xdevic...]
-Compiling architecture top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip_arch of entity xil_defaultlib.top_kernel_faddfsub_32ns_32ns_32_10_full_dsp_1_ip [top_kernel_faddfsub_32ns_32ns_32...]
-Compiling module xil_defaultlib.top_kernel_faddfsub_32ns_32ns_32...
+Compiling architecture top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip_arch of entity xil_defaultlib.top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip [top_kernel_fsub_32ns_32ns_32_10_...]
+Compiling module xil_defaultlib.top_kernel_fsub_32ns_32ns_32_10_...
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
 Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=31,length=0)\]
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
@@ -590,6 +533,46 @@ Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7
 Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20 [\floating_point_v7_1_20(c_xdevic...]
 Compiling architecture top_kernel_sitofp_32ns_32_7_no_dsp_1_ip_arch of entity xil_defaultlib.top_kernel_sitofp_32ns_32_7_no_dsp_1_ip [top_kernel_sitofp_32ns_32_7_no_d...]
 Compiling module xil_defaultlib.top_kernel_sitofp_32ns_32_7_no_d...
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=17,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_20.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,a_...]
+Compiling architecture rtl of entity floating_point_v7_1_20.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_20.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl(registers=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.fix_mult [\fix_mult(c_xdevicefamily="zynqu...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=7)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=8,fast_input=true)\]
+Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_20.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_20.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=3,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,length=2,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_20.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="z...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=18,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_20.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=25)\]
+Compiling architecture struct of entity floating_point_v7_1_20.flt_round_dsp_opt_full [\flt_round_dsp_opt_full(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_20.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_20.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.flt_mult [\flt_mult(c_xdevicefamily="zynqu...]
+Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20_viv [\floating_point_v7_1_20_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20 [\floating_point_v7_1_20(c_xdevic...]
+Compiling architecture top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip_arch of entity xil_defaultlib.top_kernel_fmul_32ns_32ns_32_7_max_dsp_1_ip [top_kernel_fmul_32ns_32ns_32_7_m...]
+Compiling module xil_defaultlib.top_kernel_fmul_32ns_32ns_32_7_m...
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
 Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=23,length=0)\]
 Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="ki...]
@@ -613,17 +596,15 @@ Compiling module xil_defaultlib.top_kernel_mac_muladd_4ns_4ns_4n...
 Compiling module xil_defaultlib.top_kernel_mac_muladd_4ns_4ns_4n...
 Compiling module xil_defaultlib.top_kernel_stage_gaussian_Pipeli...
 Compiling module xil_defaultlib.top_kernel_mul_64ns_66ns_129_5_1...
-Compiling module xil_defaultlib.top_kernel_sparsemux_11_3_14_1_1...
+Compiling module xil_defaultlib.top_kernel_sparsemux_11_3_12_1_1...
 Compiling module xil_defaultlib.top_kernel_urem_7ns_4ns_3_11_1_d...
 Compiling module xil_defaultlib.top_kernel_urem_7ns_4ns_3_11_1(N...
 Compiling module xil_defaultlib.top_kernel_mul_7ns_9ns_15_1_1(NU...
 Compiling module xil_defaultlib.top_kernel_mul_5ns_5ns_8_1_1(NUM...
 Compiling module xil_defaultlib.top_kernel_mul_8s_5ns_8_1_1(NUM_...
-Compiling module xil_defaultlib.top_kernel_mul_16s_8ns_24_1_1(NU...
-Compiling module xil_defaultlib.top_kernel_mul_16s_9ns_25_1_1(NU...
-Compiling module xil_defaultlib.top_kernel_mul_16s_10ns_26_1_1(N...
-Compiling module xil_defaultlib.top_kernel_mul_16s_11ns_27_1_1(N...
-Compiling module xil_defaultlib.top_kernel_mul_16s_12ns_28_1_1(N...
+Compiling module xil_defaultlib.top_kernel_mul_14s_9ns_23_1_1(NU...
+Compiling module xil_defaultlib.top_kernel_mul_14s_10ns_24_1_1(N...
+Compiling module xil_defaultlib.top_kernel_mul_14s_11ns_25_1_1(N...
 Compiling module xil_defaultlib.top_kernel_stage_gaussian_Pipeli...
 Compiling module xil_defaultlib.top_kernel_stage_gaussian
 Compiling module xil_defaultlib.top_kernel_stage_bilateral_grid_...
@@ -632,21 +613,16 @@ Compiling module xil_defaultlib.top_kernel_urem_6ns_3ns_2_10_1(N...
 Compiling module xil_defaultlib.top_kernel_mac_muladd_5ns_5ns_5n...
 Compiling module xil_defaultlib.top_kernel_mac_muladd_5ns_5ns_5n...
 Compiling module xil_defaultlib.top_kernel_stage_bilateral_Pipel...
-Compiling architecture rtl of entity floating_point_v7_1_20.flt_add [\flt_add(c_xdevicefamily="zynqup...]
-Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20_viv [\floating_point_v7_1_20_viv(c_xd...]
-Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20 [\floating_point_v7_1_20(c_xdevic...]
-Compiling architecture top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip_arch of entity xil_defaultlib.top_kernel_fsub_32ns_32ns_32_10_full_dsp_1_ip [top_kernel_fsub_32ns_32ns_32_10_...]
-Compiling module xil_defaultlib.top_kernel_fsub_32ns_32ns_32_10_...
-Compiling module xil_defaultlib.top_kernel_sparsemux_7_2_14_1_1_...
+Compiling module xil_defaultlib.top_kernel_sparsemux_7_2_12_1_1_...
 Compiling module xil_defaultlib.top_kernel_urem_7ns_3ns_2_11_1_d...
 Compiling module xil_defaultlib.top_kernel_urem_7ns_3ns_2_11_1(N...
 Compiling module xil_defaultlib.top_kernel_mul_6ns_6ns_9_1_1(NUM...
 Compiling module xil_defaultlib.top_kernel_mul_9s_6ns_9_1_1(NUM_...
 Compiling module xil_defaultlib.top_kernel_sparsemux_9_3_32_1_1(...
-Compiling module xil_defaultlib.top_kernel_sparsemux_7_2_18_1_1(...
-Compiling module xil_defaultlib.top_kernel_mul_18s_16s_34_1_1(NU...
-Compiling module xil_defaultlib.top_kernel_sdiv_31ns_19ns_31_35_...
-Compiling module xil_defaultlib.top_kernel_sdiv_31ns_19ns_31_35_...
+Compiling module xil_defaultlib.top_kernel_sparsemux_7_2_16_1_1(...
+Compiling module xil_defaultlib.top_kernel_mul_16s_14s_30_1_1(NU...
+Compiling module xil_defaultlib.top_kernel_sdiv_28ns_17ns_28_32_...
+Compiling module xil_defaultlib.top_kernel_sdiv_28ns_17ns_28_32_...
 Compiling module xil_defaultlib.top_kernel_stage_bilateral_Pipel...
 Compiling module xil_defaultlib.top_kernel_stage_bilateral
 Compiling module xil_defaultlib.top_kernel_stage_morphology_Pipe...
@@ -654,13 +630,13 @@ Compiling module xil_defaultlib.top_kernel_stage_morphology_Pipe...
 Compiling module xil_defaultlib.top_kernel_stage_morphology_Pipe...
 Compiling module xil_defaultlib.top_kernel_stage_morphology
 Compiling module xil_defaultlib.top_kernel_flow_control_loop_pip...
-Compiling module xil_defaultlib.top_kernel_Loop_VITIS_LOOP_393_1...
+Compiling module xil_defaultlib.top_kernel_write_output
 Compiling module xil_defaultlib.top_kernel_fifo_w64_d6_S_ShiftRe...
 Compiling module xil_defaultlib.top_kernel_fifo_w64_d6_S_default
-Compiling module xil_defaultlib.top_kernel_fifo_w14_d256_A_ram(D...
-Compiling module xil_defaultlib.top_kernel_fifo_w14_d256_A_defau...
-Compiling module xil_defaultlib.top_kernel_start_for_Loop_VITIS_...
-Compiling module xil_defaultlib.top_kernel_start_for_Loop_VITIS_...
+Compiling module xil_defaultlib.top_kernel_fifo_w12_d256_A_ram(D...
+Compiling module xil_defaultlib.top_kernel_fifo_w12_d256_A_defau...
+Compiling module xil_defaultlib.top_kernel_start_for_write_outpu...
+Compiling module xil_defaultlib.top_kernel_start_for_write_outpu...
 Compiling module xil_defaultlib.top_kernel_start_for_stage_gauss...
 Compiling module xil_defaultlib.top_kernel_start_for_stage_gauss...
 Compiling module xil_defaultlib.top_kernel_start_for_stage_bilat...

@@ -18,16 +18,16 @@
 <PipelineType>loop auto-rewind stp (delay=0 cycles)</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>2.920</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.320</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>4138</Best-caseLatency>
-<Average-caseLatency>4138</Average-caseLatency>
-<Worst-caseLatency>4138</Worst-caseLatency>
-<Best-caseRealTimeLatency>16.552 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>16.552 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>16.552 us</Worst-caseRealTimeLatency>
+<Best-caseLatency>4121</Best-caseLatency>
+<Average-caseLatency>4121</Average-caseLatency>
+<Worst-caseLatency>4121</Worst-caseLatency>
+<Best-caseRealTimeLatency>16.484 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>16.484 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>16.484 us</Worst-caseRealTimeLatency>
 <Interval-min>4097</Interval-min>
 <Interval-max>4097</Interval-max>
 <PerformancePragma>-</PerformancePragma>
@@ -37,17 +37,17 @@
 <Slack>2.92</Slack>
 <TripCount>4096</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>4136</Latency>
-<AbsoluteTimeLatency>16544</AbsoluteTimeLatency>
+<Latency>4119</Latency>
+<AbsoluteTimeLatency>16476</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>42</PipelineDepth>
+<PipelineDepth>25</PipelineDepth>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
 </PASS1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
-<IssueType>-</IssueType>
+<IssueType>Timing Violation</IssueType>
 <ViolationType>-</ViolationType>
 <SourceLocation>top.cpp:84</SourceLocation>
 <SummaryOfLoopViolations>
@@ -63,10 +63,10 @@
 
 <AreaEstimates>
 <Resources>
-<DSP>11</DSP>
-<FF>2015</FF>
-<LUT>2279</LUT>
+<FF>1310</FF>
+<LUT>3664</LUT>
 <BRAM_18K>0</BRAM_18K>
+<DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -146,61 +146,6 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_3204_p_din0</name>
-<Object>stage_rgb2eq_Pipeline_PASS1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_3204_p_din1</name>
-<Object>stage_rgb2eq_Pipeline_PASS1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_3204_p_opcode</name>
-<Object>stage_rgb2eq_Pipeline_PASS1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_3204_p_dout0</name>
-<Object>stage_rgb2eq_Pipeline_PASS1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>grp_fu_3204_p_ce</name>
-<Object>stage_rgb2eq_Pipeline_PASS1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>grp_fu_9960_p_din0</name>
 <Object>stage_rgb2eq_Pipeline_PASS1</Object>
 <Type>return value</Type>
@@ -235,6 +180,39 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_9960_p_ce</name>
+<Object>stage_rgb2eq_Pipeline_PASS1</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_3209_p_din0</name>
+<Object>stage_rgb2eq_Pipeline_PASS1</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_3209_p_dout0</name>
+<Object>stage_rgb2eq_Pipeline_PASS1</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_3209_p_ce</name>
 <Object>stage_rgb2eq_Pipeline_PASS1</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -1869,7 +1847,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>14</Bits>
+<Bits>12</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>

@@ -1,74 +1,23 @@
 {
   "0": {
-    "basicblocks": 12,
-    "calls": "3 1 9 2",
-    "control_depth": 2,
-    "def_use_depth": 18,
-    "file": "top.cpp",
-    "fileloc": 360,
-    "instructions": 91,
-    "memory_accesses": 2,
-    "name": "top_kernel",
-    "stores": {
-      "T": 1
-    },
-    "total_instructions": 7299
-  },
-  "1": {
-    "basicblocks": 62,
-    "calls": "",
-    "control_depth": 2,
-    "def_use_depth": 368,
-    "file": "top.cpp",
-    "fileloc": 139,
-    "instructions": 1423,
-    "loads": {
-      "L": 26
-    },
-    "memory_accesses": 29,
-    "name": "stage_gaussian",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 1423
-  },
-  "10": {
     "basicblocks": 1,
-    "calls": "",
+    "calls": "12 7 2 1 6",
     "control_depth": 0,
     "def_use_depth": 1,
-    "file": "x_hls_utils.h",
-    "fileloc": 349,
-    "instructions": 3,
-    "loads": {
-      "L": 1
-    },
+    "file": "top.cpp",
+    "fileloc": 387,
+    "instructions": 23,
     "memory_accesses": 0,
-    "name": "__signbit",
-    "total_instructions": 3
+    "name": "top_kernel",
+    "total_instructions": 7294
   },
-  "11": {
-    "basicblocks": 1,
-    "calls": "8 6 4 10",
-    "control_depth": 0,
-    "def_use_depth": 10,
-    "file": "hls_case_IEEE754.h",
-    "fileloc": 12,
-    "instructions": 30,
-    "loads": {
-      "L": 1
-    },
-    "memory_accesses": 0,
-    "name": "generic_cast_IEEE754<int, AP_TRN_ZERO, float>",
-    "total_instructions": 51
-  },
-  "2": {
+  "1": {
     "basicblocks": 17,
     "calls": "",
     "control_depth": 2,
     "def_use_depth": 33,
     "file": "top.cpp",
-    "fileloc": 283,
+    "fileloc": 294,
     "instructions": 295,
     "loads": {
       "L": 38
@@ -80,25 +29,7 @@
     },
     "total_instructions": 295
   },
-  "3": {
-    "basicblocks": 27,
-    "calls": "5 5",
-    "control_depth": 2,
-    "def_use_depth": 29,
-    "file": "top.cpp",
-    "fileloc": 75,
-    "instructions": 732,
-    "loads": {
-      "L": 12
-    },
-    "memory_accesses": 17,
-    "name": "stage_rgb2eq",
-    "stores": {
-      "L": 260
-    },
-    "total_instructions": 1146
-  },
-  "4": {
+  "10": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -113,19 +44,70 @@
     "name": "expv",
     "total_instructions": 4
   },
-  "5": {
+  "11": {
     "basicblocks": 1,
-    "calls": "7",
+    "calls": "8 4 10 9",
+    "control_depth": 0,
+    "def_use_depth": 10,
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 12,
+    "instructions": 30,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "generic_cast_IEEE754<int, AP_TRN_ZERO, float>",
+    "total_instructions": 51
+  },
+  "12": {
+    "basicblocks": 27,
+    "calls": "5 5 5 5 5",
+    "control_depth": 2,
+    "def_use_depth": 29,
+    "file": "top.cpp",
+    "fileloc": 75,
+    "instructions": 733,
+    "loads": {
+      "L": 12
+    },
+    "memory_accesses": 17,
+    "name": "stage_rgb2eq",
+    "stores": {
+      "L": 260
+    },
+    "total_instructions": 1312
+  },
+  "2": {
+    "basicblocks": 177,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 146,
+    "file": "top.cpp",
+    "fileloc": 218,
+    "instructions": 1574,
+    "loads": {
+      "L": 28
+    },
+    "memory_accesses": 49,
+    "name": "stage_bilateral",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4274
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "11",
     "control_depth": 0,
     "def_use_depth": 1,
-    "file": "lib_floatconversion.cpp",
-    "fileloc": 51,
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 116,
     "instructions": 2,
     "memory_accesses": 0,
-    "name": "__hls_fptosi_float_i32",
-    "total_instructions": 55
+    "name": "generic_cast_IEEE754<int, float>",
+    "total_instructions": 53
   },
-  "6": {
+  "4": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -143,17 +125,50 @@
     },
     "total_instructions": 6
   },
-  "7": {
+  "5": {
     "basicblocks": 1,
-    "calls": "11",
+    "calls": "3",
     "control_depth": 0,
     "def_use_depth": 1,
-    "file": "hls_case_IEEE754.h",
-    "fileloc": 116,
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 51,
     "instructions": 2,
     "memory_accesses": 0,
-    "name": "generic_cast_IEEE754<int, float>",
-    "total_instructions": 53
+    "name": "__hls_fptosi_float_i32",
+    "total_instructions": 55
+  },
+  "6": {
+    "basicblocks": 12,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 18,
+    "file": "top.cpp",
+    "fileloc": 374,
+    "instructions": 66,
+    "memory_accesses": 2,
+    "name": "write_output",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 66
+  },
+  "7": {
+    "basicblocks": 62,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 368,
+    "file": "top.cpp",
+    "fileloc": 144,
+    "instructions": 1324,
+    "loads": {
+      "L": 26
+    },
+    "memory_accesses": 29,
+    "name": "stage_gaussian",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 1324
   },
   "8": {
     "basicblocks": 1,
@@ -171,21 +186,18 @@
     "total_instructions": 8
   },
   "9": {
-    "basicblocks": 177,
+    "basicblocks": 1,
     "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 146,
-    "file": "top.cpp",
-    "fileloc": 210,
-    "instructions": 1608,
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "x_hls_utils.h",
+    "fileloc": 349,
+    "instructions": 3,
     "loads": {
-      "L": 28
-    },
-    "memory_accesses": 49,
-    "name": "stage_bilateral",
-    "stores": {
       "L": 1
     },
-    "total_instructions": 4344
+    "memory_accesses": 0,
+    "name": "__signbit",
+    "total_instructions": 3
   }
 }

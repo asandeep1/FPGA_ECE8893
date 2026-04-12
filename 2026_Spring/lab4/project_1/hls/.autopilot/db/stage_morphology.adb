@@ -37,7 +37,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>3</if_type>
@@ -73,7 +73,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <direction>1</direction>
           <if_type>3</if_type>
@@ -95,7 +95,7 @@
               <name>bilateral_buf</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>287</lineNumber>
+              <lineNumber>298</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -111,7 +111,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>287</second>
+                      <second>298</second>
                     </item>
                   </second>
                 </item>
@@ -127,7 +127,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -151,7 +151,7 @@
               <name>bilateral_buf_1</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>287</lineNumber>
+              <lineNumber>298</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -167,7 +167,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>287</second>
+                      <second>298</second>
                     </item>
                   </second>
                 </item>
@@ -183,7 +183,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -207,7 +207,7 @@
               <name>bilateral_buf_2</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>287</lineNumber>
+              <lineNumber>298</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -223,7 +223,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>287</second>
+                      <second>298</second>
                     </item>
                   </second>
                 </item>
@@ -239,7 +239,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -263,7 +263,7 @@
               <name>bilateral_buf_3</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>287</lineNumber>
+              <lineNumber>298</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -279,7 +279,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>287</second>
+                      <second>298</second>
                     </item>
                   </second>
                 </item>
@@ -295,7 +295,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -319,7 +319,7 @@
               <name>bilateral_buf_4</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>287</lineNumber>
+              <lineNumber>298</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -335,7 +335,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>287</second>
+                      <second>298</second>
                     </item>
                   </second>
                 </item>
@@ -351,7 +351,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -375,7 +375,7 @@
               <name>bilateral_buf_5</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>287</lineNumber>
+              <lineNumber>298</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -391,7 +391,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>287</second>
+                      <second>298</second>
                     </item>
                   </second>
                 </item>
@@ -407,7 +407,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -431,7 +431,7 @@
               <name>bilateral_buf_6</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>287</lineNumber>
+              <lineNumber>298</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -447,7 +447,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>287</second>
+                      <second>298</second>
                     </item>
                   </second>
                 </item>
@@ -463,7 +463,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -487,7 +487,7 @@
               <name>bilateral_buf_7</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>287</lineNumber>
+              <lineNumber>298</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -503,7 +503,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>287</second>
+                      <second>298</second>
                     </item>
                   </second>
                 </item>
@@ -519,7 +519,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -543,7 +543,7 @@
               <name>bilateral_buf_8</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>287</lineNumber>
+              <lineNumber>298</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -559,7 +559,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>287</second>
+                      <second>298</second>
                     </item>
                   </second>
                 </item>
@@ -575,7 +575,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -599,7 +599,7 @@
               <name>eroded_buf</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>288</lineNumber>
+              <lineNumber>299</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -615,7 +615,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>288</second>
+                      <second>299</second>
                     </item>
                   </second>
                 </item>
@@ -631,7 +631,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -655,7 +655,7 @@
               <name>eroded_buf_1</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>288</lineNumber>
+              <lineNumber>299</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -671,7 +671,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>288</second>
+                      <second>299</second>
                     </item>
                   </second>
                 </item>
@@ -687,7 +687,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -711,7 +711,7 @@
               <name>eroded_buf_2</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>288</lineNumber>
+              <lineNumber>299</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -727,7 +727,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>288</second>
+                      <second>299</second>
                     </item>
                   </second>
                 </item>
@@ -743,7 +743,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -767,7 +767,7 @@
               <name>eroded_buf_3</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>288</lineNumber>
+              <lineNumber>299</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -783,7 +783,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>288</second>
+                      <second>299</second>
                     </item>
                   </second>
                 </item>
@@ -799,7 +799,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -823,7 +823,7 @@
               <name>eroded_buf_4</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>288</lineNumber>
+              <lineNumber>299</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -839,7 +839,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>288</second>
+                      <second>299</second>
                     </item>
                   </second>
                 </item>
@@ -855,7 +855,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -879,7 +879,7 @@
               <name>eroded_buf_5</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>288</lineNumber>
+              <lineNumber>299</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -895,7 +895,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>288</second>
+                      <second>299</second>
                     </item>
                   </second>
                 </item>
@@ -911,7 +911,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -935,7 +935,7 @@
               <name>eroded_buf_6</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>288</lineNumber>
+              <lineNumber>299</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -951,7 +951,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>288</second>
+                      <second>299</second>
                     </item>
                   </second>
                 </item>
@@ -967,7 +967,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -991,7 +991,7 @@
               <name>eroded_buf_7</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>288</lineNumber>
+              <lineNumber>299</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -1007,7 +1007,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>288</second>
+                      <second>299</second>
                     </item>
                   </second>
                 </item>
@@ -1023,7 +1023,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -1047,7 +1047,7 @@
               <name>eroded_buf_8</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>288</lineNumber>
+              <lineNumber>299</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -1063,7 +1063,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>288</second>
+                      <second>299</second>
                     </item>
                   </second>
                 </item>
@@ -1079,7 +1079,7 @@
               <coreId>93</coreId>
               <rtlModuleName>top_kernel_stage_bilateral_grid_RAM_2P_BRAM_1R1W</rtlModuleName>
             </Obj>
-            <bitwidth>14</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -1152,10 +1152,10 @@
             <Obj>
               <type>0</type>
               <id>42</id>
-              <name>_ln303</name>
+              <name>_ln315</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>303</lineNumber>
+              <lineNumber>315</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -1171,7 +1171,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>303</second>
+                      <second>315</second>
                     </item>
                   </second>
                 </item>
@@ -1213,10 +1213,10 @@
             <Obj>
               <type>0</type>
               <id>43</id>
-              <name>_ln303</name>
+              <name>_ln315</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>303</lineNumber>
+              <lineNumber>315</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -1232,7 +1232,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>303</second>
+                      <second>315</second>
                     </item>
                   </second>
                 </item>
@@ -1285,7 +1285,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128</rtlName>
+              <rtlName>grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1336,10 +1336,10 @@
             <Obj>
               <type>0</type>
               <id>45</id>
-              <name>_ln331</name>
+              <name>_ln344</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>331</lineNumber>
+              <lineNumber>344</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -1355,7 +1355,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>331</second>
+                      <second>344</second>
                     </item>
                   </second>
                 </item>
@@ -1408,7 +1408,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150</rtlName>
+              <rtlName>grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1454,10 +1454,10 @@
             <Obj>
               <type>0</type>
               <id>47</id>
-              <name>_ln355</name>
+              <name>_ln369</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>355</lineNumber>
+              <lineNumber>369</lineNumber>
               <contextFuncName>stage_morphology</contextFuncName>
               <contextNormFuncName>stage_morphology</contextNormFuncName>
               <inlineStackInfo>
@@ -1473,7 +1473,7 @@
                         <first>top.cpp</first>
                         <second>stage_morphology</second>
                       </first>
-                      <second>355</second>
+                      <second>369</second>
                     </item>
                   </second>
                 </item>
@@ -1637,7 +1637,7 @@
             <Obj>
               <type>2</type>
               <id>93</id>
-              <name>stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1</name>
+              <name>stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -1661,14 +1661,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1&gt;</content>
+          <content>&lt;constant:stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_33">
           <Value>
             <Obj>
               <type>2</type>
               <id>118</id>
-              <name>stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4</name>
+              <name>stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -1692,7 +1692,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4&gt;</content>
+          <content>&lt;constant:stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -2347,8 +2347,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>12348</mMinLatency>
-        <mMaxLatency>12348</mMaxLatency>
+        <mMinLatency>12344</mMinLatency>
+        <mMaxLatency>12344</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"></mDfPipe>
       </item>
@@ -2725,7 +2725,7 @@
         <count>4</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150 (stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4)</first>
+          <first>grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150 (stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -2735,16 +2735,16 @@
             </item>
             <item>
               <first>FF</first>
-              <second>1774</second>
+              <second>1652</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>2439</second>
+              <second>2369</second>
             </item>
           </second>
         </item>
         <item>
-          <first>grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128 (stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1)</first>
+          <first>grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128 (stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2754,11 +2754,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>2031</second>
+              <second>1902</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>2553</second>
+              <second>2483</second>
             </item>
           </second>
         </item>
@@ -2782,7 +2782,7 @@
           </second>
         </item>
         <item>
-          <first>mul_64ns_66ns_129_5_1_U1620 (mul_64ns_66ns_129_5_1)</first>
+          <first>mul_64ns_66ns_129_5_1_U1599 (mul_64ns_66ns_129_5_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -2846,7 +2846,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -2854,7 +2854,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -2881,7 +2881,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -2889,7 +2889,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -2916,7 +2916,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -2924,7 +2924,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -2951,7 +2951,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -2959,7 +2959,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -2986,7 +2986,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -2994,7 +2994,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3021,7 +3021,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3029,7 +3029,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3056,7 +3056,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3064,7 +3064,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3091,7 +3091,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3099,7 +3099,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3126,7 +3126,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3134,7 +3134,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3161,7 +3161,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3169,7 +3169,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3196,7 +3196,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3204,7 +3204,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3231,7 +3231,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3239,7 +3239,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3266,7 +3266,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3274,7 +3274,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3301,7 +3301,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3309,7 +3309,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3336,7 +3336,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3344,7 +3344,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3371,7 +3371,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3379,7 +3379,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3406,7 +3406,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3414,7 +3414,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3441,7 +3441,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>14</second>
+              <second>12</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3449,7 +3449,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6776</second>
+              <second>5808</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -5105,7 +5105,7 @@
           </second>
         </item>
         <item>
-          <first>grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150_ap_start_reg</first>
+          <first>grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5124,7 +5124,7 @@
           </second>
         </item>
         <item>
-          <first>grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128_ap_start_reg</first>
+          <first>grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5166,14 +5166,14 @@
         <count>4</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150</first>
+          <first>grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128</first>
+          <first>grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -5187,7 +5187,7 @@
           </second>
         </item>
         <item>
-          <first>mul_64ns_66ns_129_5_1_U1620</first>
+          <first>mul_64ns_66ns_129_5_1_U1599</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -5198,7 +5198,7 @@
         <count>4</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150 (stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4)</first>
+          <first>grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150 (stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5206,7 +5206,7 @@
           </second>
         </item>
         <item>
-          <first>grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128 (stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1)</first>
+          <first>grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128 (stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5222,7 +5222,7 @@
           </second>
         </item>
         <item>
-          <first>mul_64ns_66ns_129_5_1_U1620 (mul_64ns_66ns_129_5_1)</first>
+          <first>mul_64ns_66ns_129_5_1_U1599 (mul_64ns_66ns_129_5_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -5929,7 +5929,7 @@
         </second>
       </item>
       <item>
-        <first>fence_ln303_fu_165</first>
+        <first>fence_ln315_fu_165</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5937,7 +5937,7 @@
         </second>
       </item>
       <item>
-        <first>fence_ln303_fu_177</first>
+        <first>fence_ln315_fu_177</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5945,7 +5945,7 @@
         </second>
       </item>
       <item>
-        <first>fence_ln331_fu_189</first>
+        <first>fence_ln344_fu_189</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5957,7 +5957,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_332_4_fu_150</first>
+        <first>grp_stage_morphology_Pipeline_DILATION_LOOP_VITIS_LOOP_345_4_fu_150</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -5966,7 +5966,7 @@
         </second>
       </item>
       <item>
-        <first>grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_304_1_fu_128</first>
+        <first>grp_stage_morphology_Pipeline_EROSION_LOOP_VITIS_LOOP_316_1_fu_128</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
